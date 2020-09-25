@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="tw">
+<html lang="en">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>這是你的人生 - 5etools</title>
+	<title>This Is Your Life - 5etools</title>
+
+	<link rel="manifest" href="manifest.webmanifest">
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="icon-320.png">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		h4 {
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid #333;
 			width: 100%;
+		}
+
+		.night-mode h4 {
+			border-bottom: 1px solid #555;
 		}
 
 		h5 {
@@ -30,9 +43,8 @@
 			margin-bottom: 3px;
 		}
 
-		.output-wrp-border {
+		.life__output-wrp-border {
 			border-radius: 4px;
-			margin-bottom: 3px;
 		}
 
 		.wrp-sect-head {
@@ -44,7 +56,7 @@
 			margin: 6px 0 6px 6px;
 		}
 
-		.output {
+		.life__output {
 			background: none;
 		}
 
@@ -66,10 +78,10 @@
 		}
 
 		.btn-reroll::before {
-			content: "重骰";
+			content: "Reroll";
 		}
 
-		.output {
+		.life__output {
 			margin: 1em 0;
 			padding: 0.2em 0.7em;
 			border-radius: 0.2em;
@@ -79,99 +91,94 @@
 </head>
 
 <body>
+<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container">
 
-		<h1 class="page__title">這是你的人生</h1>
-		<p class="page__subtitle">選擇選項，然後點擊生成。</p>
+		<h1 class="page__title">This Is Your Life</h1>
+		<p class="page__subtitle">Select options, and hit generate.</p>
 	</div>
 </header>
+
 <nav class="container page__nav" id="navigation">
-	<ul class="nav nav-pills" id="navbar">
-	</ul>
+	<ul class="nav page__nav-inner" id="navbar"></ul>
 </nav>
 
-<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><!--5ETOOLS_AD_RIGHT_2--></div>
+<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <main class="container">
 
-	<div class="row noprint">
+	<div class="row no-print">
 		<div class="form-group col-2-4">
-			<label for="race">種族</label>
-			<select class="form-control form-inline" id="race"></select>
+			<label for="race">Race</label>
+			<select class="form-control form-inline" id="race" disabled><option>Loading...</option></select>
 		</div>
 
 		<div class="form-group col-2-4">
-			<label for="cha">魅力調整值</label>
-			<select class="form-control form-inline" id="cha"></select>
+			<label for="cha">Charisma Modifier</label>
+			<select class="form-control form-inline" id="cha" disabled><option>Loading...</option></select>
 		</div>
 
 		<div class="form-group col-2-4">
-			<label for="race">背景</label>
-			<select class="form-control form-inline" id="background"></select>
+			<label for="race">Background</label>
+			<select class="form-control form-inline" id="background" disabled><option>Loading...</option></select>
 		</div>
 
 		<div class="form-group col-2-4">
-			<label for="race">職業</label>
-			<select class="form-control form-inline" id="class"></select>
+			<label for="race">Class</label>
+			<select class="form-control form-inline" id="class" disabled><option>Loading...</option></select>
 		</div>
 
 		<div class="form-group col-2-4">
-			<label for="age"><i>年齡</i></label>
-			<select class="form-control form-inline" id="age">
-				<option value="" style="font-style: normal;">隨機</option>
-				<option value="1" class="italic">20歲或更年輕</option>
-				<option value="21" class="italic">21&mdash;30歲</option>
-				<option value="60" class="italic">31&mdash;40歲</option>
-				<option value="70" class="italic">41&mdash;50歲</option>
-				<option value="90" class="italic">51&mdash;60歲</option>
-				<option value="100" class="italic">61歲或更老</option>
-			</select>
+			<label for="age"><i>Age</i></label>
+			<select class="form-control form-inline" id="age" disabled><option>Loading...</option></select>
 		</div>
 	</div>
-	<div class="row noprint">
+	<div class="row no-print">
 		<div class="form-group col-12">
-			<button class="btn btn-default" onclick="roll()">生成</button>
+			<button class="btn btn-default" onclick="roll()">Generate</button>
 		</div>
 	</div>
 
-	<div class="row noprint" style="padding: 0 3em;">
-		<p>這個生成器是基於<a href="#" id="xge_link">《姍納薩的萬事指南》</a>第61-73頁的規則和表格。</p>
-		<p><i>注意：以斜體顯示所產生的文字內容是為了讓使用變得更容易和快速，它們並不對應原本生成器中的任何表格。隨你喜好忽視它們。</i></p>
+	<div class="row no-print" style="padding: 0 3em;">
+		<p>Based on the tables and rules in <a href="#" id="xge_link">Xanathar's Guide to Everything</a>, pages 61-73.</p>
+		<p><i>NOTE: Text displayed in italics is generated for the sake of ease and speed of use, and does not correspond to a table in the original generator. Ignore it as you see fit.</i></p>
 	</div>
 
-	<hr class="output" style="display: none;">
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>雙親</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectParents()"></button></div>
+	<hr class="life__output" style="display: none; background: transparent">
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Parents</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectParents()"></button></div>
 		<p id="parents"></p>
 	</div>
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>出生地</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectBirthplace()"></button></div>
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Birthplace</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectBirthplace()"></button></div>
 		<p id="birthplace"></p>
 	</div>
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>兄弟姊妹</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectSiblings()"></button></div>
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Siblings</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectSiblings()"></button></div>
 		<p id="siblings"></p>
 	</div>
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>家族和朋友</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectFamily()"></button></div>
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Family and Friends</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectFamily()"></button></div>
 		<p id="family"></p>
 	</div>
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>個人抉擇</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectPersonalDecisions()"></button></div>
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Personal Decisions</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectPersonalDecisions()"></button></div>
 		<p id="personal"></p>
 	</div>
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>職業訓練</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectClassTraining()"></button></div>
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Class Training</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectClassTraining()"></button></div>
 		<p id="clss"></p>
 	</div>
-	<div class="row output" style="display: none;">
-		<div class="wrp-sect-head"><h4>人生大事</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectLifeEvents()"></button></div>
+	<div class="row life__output night__shadow-big" style="display: none;">
+		<div class="wrp-sect-head"><h4>Life Events</h4><button class="btn btn-xs btn-default btn-reroll" onclick="sectLifeEvents()"></button></div>
 		<p id="events"></p>
 	</div>
 </main>
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
@@ -179,9 +186,10 @@
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/lifegen.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>

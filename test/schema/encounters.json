@@ -1,6 +1,6 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.0.0",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.2.1",
 	"title": "EncounterArray",
 	"type": "object",
 
@@ -13,14 +13,14 @@
 				"max": {
 					"type": "integer"
 				},
-				"enc": {
-					"$ref": "/Entry"
+				"result": {
+					"$ref": "entry.json"
 				}
 			},
 			"required": [
 				"min",
 				"max",
-				"enc"
+				"result"
 			],
 			"additionalProperties": false
 		},
@@ -33,9 +33,14 @@
 				"maxlvl": {
 					"type": "integer"
 				},
+				"diceType": {
+					"type": "integer"
+				},
 				"table": {
 					"type": "array",
-					"items": "#/definitions/encounterTableRow"
+					"items": {
+						"$ref": "#/definitions/encounterTableRow"
+					}
 				}
 			},
 			"required": [
@@ -48,7 +53,7 @@
 
 		"encounter": {
 			"properties": {
-				"location": {
+				"name": {
 					"type": "string"
 				},
 				"source": {
@@ -59,10 +64,13 @@
 					"items": {
 						"$ref": "#/definitions/encounterTable"
 					}
+				},
+				"page": {
+					"type": "integer"
 				}
 			},
 			"required": [
-				"location",
+				"name",
 				"source",
 				"tables"
 			],
@@ -79,6 +87,6 @@
 		}
 	},
 
-	"required": "encounter",
+	"required": ["encounter"],
 	"additionalProperties": false
 }

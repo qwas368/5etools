@@ -6,10 +6,11 @@ module.exports = {
 		"jquery": true
 	},
 	"parserOptions": {
-		"ecmaVersion": 9
+		"ecmaVersion": 9,
+		"sourceType": "module"
 	},
 	"rules": {
-		"accessor-pairs": "error",
+		"accessor-pairs": "off",
 		"arrow-spacing": ["error", {"before": true, "after": true}],
 		"block-spacing": ["error", "always"],
 		"brace-style": ["error", "1tbs", {"allowSingleLine": true}],
@@ -134,7 +135,18 @@ module.exports = {
 		"no-with": "error",
 		"object-property-newline": ["error", {"allowMultiplePropertiesPerLine": true}],
 		"one-var": ["error", {"initialized": "never"}],
-		"operator-linebreak": ["error", "after", {"overrides": {"?": "before", ":": "before"}}],
+		"operator-linebreak": ["error", "after", {
+			"overrides": {
+				"?": "before",
+				":": "before",
+				"+": "before",
+				"-": "before",
+				"*": "before",
+				"/": "before",
+				"||": "before",
+				"&&": "before"
+			}
+		}],
 		"padded-blocks": ["error", {"blocks": "never", "switches": "never", "classes": "never"}],
 		"prefer-promise-reject-errors": "error",
 		"rest-spread-spacing": ["error", "never"],
@@ -160,6 +172,12 @@ module.exports = {
 		"valid-typeof": ["error", {"requireStringLiterals": true}],
 		"wrap-iife": ["error", "any", {"functionPrototypeMethods": true}],
 		"yield-star-spacing": ["error", "both"],
-		"yoda": ["error", "never"]
+		"yoda": ["error", "never"],
+		"no-prototype-builtins": "off",
+		"require-atomic-updates": "off",
+		"no-console": "error",
+		"prefer-template": "error",
+		"quotes": ["error", "double", {"allowTemplateLiterals": true}],
+		"no-var": "error"
 	}
 };

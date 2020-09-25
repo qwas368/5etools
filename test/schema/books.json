@@ -1,6 +1,6 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.0.1",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.1.0",
 	"type": "object",
 	"properties": {
 		"book": {
@@ -14,13 +14,16 @@
 					"id": {
 						"type": "string"
 					},
+					"source": {
+						"type": "string"
+					},
 					"author": {
 						"type": "string"
 					},
 					"published": {
 						"type": "string"
 					},
-					"image": {
+					"coverUrl": {
 						"type": "string"
 					},
 					"contents": {
@@ -84,7 +87,9 @@
 				"required": [
 					"name",
 					"id",
-					"contents"
+					"source",
+					"contents",
+					"published"
 				]
 			}
 		}

@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="tw">
+<html lang="en">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>DM屏幕 - 5etools</title>
+	<title>DM Screen - 5etools</title>
 
-	<link rel="manifest" href="manifest.json">
+	<link rel="manifest" href="manifest.webmanifest">
 
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="icon-320.png">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		body.dm-screen-locked .panel-control-bar,
@@ -31,10 +39,7 @@
 
 		label {
 			margin-bottom: 0;
-		}
-
-		input[type=checkbox] {
-			margin: 0;
+			font-weight: initial;
 		}
 
 		.dm-screen {
@@ -200,6 +205,10 @@
 			background: white;
 		}
 
+		.night-mode .content-tab-bar {
+			border-color: #555;
+		}
+
 		.content-tab-bar-inner {
 			display: flex;
 			overflow: hidden;
@@ -212,6 +221,11 @@
 			border-top: 0;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
+		}
+
+		.content-tab-title {
+			max-width: 80px;
+			display: block;
 		}
 
 		.content-tab-remove {
@@ -329,9 +343,8 @@
 		.panel-addmenu-tab-head {
 			border-bottom-right-radius: 0;
 			border-bottom-left-radius: 0;
-			padding: 5px;
+			padding: 4px 5px;
 			cursor: pointer;
-			margin-top: -3px;
 		}
 
 		.panel-addmenu-view {
@@ -359,7 +372,7 @@
 			margin-bottom: 5px;
 		}
 
-		.panel-content-wrapper-inner th.name {
+		.panel-content-wrapper-inner .rnd-name {
 			font-size: 1.6em;
 		}
 
@@ -418,6 +431,10 @@
 			width: 100%;
 			height: 100%;
 			background: #ffffff;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			display: flex;
 		}
 
 		.panel-content-textarea {
@@ -456,7 +473,11 @@
 
 		body.is-fullscreen .sidemenu__toggle {
 			top: 12px;
-			left: -12px;
+			left: -31px;
+		}
+
+		body.is-fullscreen .sidemenu__hotzone {
+			width: 3px;
 		}
 
 		.sidemenu__history {
@@ -558,6 +579,10 @@
 			min-width: min-content;
 		}
 
+		.night-mode .dm-init-wrp-header {
+			border-color: #555;
+		}
+
 		.dm-init-header {
 			padding: 5px 0;
 			width: 100%;
@@ -624,6 +649,10 @@
 			border: 1px solid #ccc;
 		}
 
+		.night-mode .init-wrp-creature {
+			border-color: #555;
+		}
+
 		.dm-init-row .init-wrp-creature .btn {
 			margin-right: 3px;
 			padding: 0 1px;
@@ -641,6 +670,7 @@
 			padding: 5px 3px;
 			border-radius: 0;
 			margin-right: 3px;
+			height: auto;
 		}
 
 		.dm-init-name {
@@ -666,6 +696,10 @@
 			display: flex;
 		}
 
+		.night-mode .dm-init-wrp-controls {
+			border-color: #555;
+		}
+
 		.dm_init__rounds {
 			width: 35px;
 			height: 22px;
@@ -677,7 +711,7 @@
 
 		.dm-init-modal-wrp-rows {
 			min-width: 400px;
-			padding: 7px 0;
+			padding: 7px;
 		}
 
 		.btn-dm-init-cond {
@@ -766,6 +800,10 @@
 			width: 40px;
 		}
 
+		.dm_init__stat_ipt[type=checkbox] {
+			margin-right: 3px;
+		}
+
 		/* player view */
 		textarea.dm_init__pl_textarea {
 			resize: none;
@@ -818,6 +856,10 @@
 			padding-top: 3px;
 			border-top: 1px solid #ccc;
 			flex-shrink: 0;
+		}
+
+		.night-mode .dm_money__ctrl {
+			border-color: #555;
 		}
 
 		.dm_money__ctrl__lhs {
@@ -875,6 +917,7 @@
 		@media (max-width: 991px) {
 			.viewport-wrapper {
 				bottom: 0;
+				height: 100vh;
 			}
 		}
 
@@ -890,21 +933,390 @@
 			display: none !important;
 		}
 
-		.panel-content-wrapper table.stats.stats-book--hover {
+		.panel-content-wrapper .stats--book-hover {
 			box-shadow: none;
 		}
 
 		.dm-book__wrp-content {
 			overflow-y: auto;
 			overflow-x: hidden;
+			transform: translateZ(0);
 		}
 
 		.dm-book__wrp-controls {
-			padding-top: 2px;
-			padding-right: 2px;
-			padding-bottom: 1px;
+			padding: 2px 2px 1px 21px;
 			border-top: 1px solid #ccc;
 			justify-content: flex-end;
+		}
+
+		.night-mode .dm-book__wrp-controls {
+			border-color: #555;
+		}
+
+		.dm-book__controls-title {
+			height: 20px;
+			padding: 0 3px;
+			width: 50%;
+			flex-grow: 0;
+		}
+
+		/* region Clock/Calendar */
+		.dm-time__btn-time {
+			width: 20px;
+		}
+
+		.dm-time__btn-time--top {
+			border-bottom: 0;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.dm-time__btn-time--bottom {
+			border-top: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		.dm-time__sep-time {
+			font-size: 32px;
+			position: relative;
+			top: -2px;
+		}
+
+		.dm-time__ipt-time {
+			width: 20px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.dm-time__bar-clock {
+			height: calc(100% - 8px);
+			margin: 4px 8px;
+			flex-shrink: 0;
+			border-left: 1px solid #ccc;
+		}
+
+		.night-mode .dm-time__bar-clock {
+			border-color: #555;
+		}
+
+		.dm-time__btn-day {
+			width: 16px;
+		}
+
+		.dm-time__wrp-weather {
+			width: 100px;
+		}
+
+		.dm-time__btn-weather {
+			width: 34px;
+			padding: 0;
+			font-size: 21px;
+			text-align: center;
+			height: 33px;
+			line-height: 33px;
+		}
+
+		.dm-time__btn-random-weather {
+			border: 0;
+			padding: 0;
+		}
+
+		.dm-time__ipt-weather {
+			width: 40px;
+		}
+
+		.dm-time__btn-date-adjust {
+			width: 27px;
+			padding: 1px 3px;
+			flex-shrink: 0;
+			flex-grow: 0;
+		}
+
+		.dm-time__disp-calendar-day {
+			cursor: pointer;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			padding: 0 2px;
+			font-size: 12px;
+			line-height: 1.5;
+			min-height: 21px;
+			user-select: none;
+		}
+
+		.night-mode .dm-time__disp-calendar-day {
+			border-color: #555;
+		}
+
+		.dm-time__disp-calendar-day--active {
+			background: #aaa4;
+		}
+
+		.dm-time__disp-day-entry {
+			position: absolute;
+			right: 2px;
+			border-radius: 3px;
+			width: 9px;
+			height: 9px;
+			line-height: 16px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.dm-time__disp-day-entry--event {
+			top: 1px;
+			color: #61adef;
+		}
+
+		.dm-time__disp-day-entry--encounter {
+			top: 10px;
+			color: #5cb85c;
+		}
+
+		.dm-time__disp-clock-entry {
+			width: 12px;
+			height: 12px;
+			text-align: center;
+			position: relative;
+			font-size: 20px;
+			top: -4px;
+			font-weight: bold;
+			cursor: pointer;
+			user-select: none;
+		}
+
+		.dm-time__disp-clock-entry--event {
+			color: #61adef;
+		}
+
+		.dm-time__disp-clock-entry--encounter {
+			color: #5cb85c;
+		}
+
+		.dm-time__disp-clock-entry--used-encounter {
+			color: #8a8a8a; /* Desaturated gren */
+		}
+
+		.night-mode .dm-time__disp-day-entry--event,
+		.night-mode .dm-time__disp-clock-entry--event {
+			color: #7398b7;
+		}
+
+		.night-mode .dm-time__disp-day-entry--encounter,
+		.night-mode .dm-time__disp-clock-entry--encounter {
+			color: #64cc64;
+		}
+
+		.night-mode .dm-time__disp-clock-entry--used-encounter {
+			color: #989898; /* Desaturated night green */
+		}
+
+		.dm-time__wrp-clock-events {
+			max-width: 100px;
+		}
+
+		.dm-time__day-entry-header {
+			font-size: 15px;
+		}
+
+		.dm-time__day-entry-wrapper {
+			max-height: 70%;
+		}
+
+		.dm-time__spc-column-delete {
+			width: calc(24px + 0.5rem);
+		}
+
+		.dm-time__row-delete:only-child .btn-danger {
+			display: none;
+		}
+
+		.dm-time__spc-button {
+			display: none;
+			width: 24px;
+			height: 1px;
+			flex-shrink: 0;
+		}
+
+		.dm-time__row-delete:only-child .dm-time__spc-button {
+			display: block;
+		}
+
+		.dm-time__wrp-event-entries {
+			box-shadow: none;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			margin-top: 3px;
+			margin-left: 6px;
+			width: calc(100% - 6px);
+		}
+
+		.night-mode .dm-time__wrp-event-entries {
+			border-color: #555;
+		}
+
+		.dm-time__bar-entry {
+			margin: 0 4px;
+			border-left: 1px solid #ccc;
+		}
+
+		.night-mode .dm-time__bar-entry {
+			border-color: #555;
+		}
+
+		.dm-time__wind-speed {
+			font-size: 10px;
+		}
+
+		.dm-time__ipt-color-moon {
+			width: 22px;
+		}
+
+		.dm-time__spc-drag-header {
+			width: 14px;
+		}
+
+		.dm-time__disp-day-moon {
+			position: absolute;
+			top: 1px;
+			left: 1px;
+		}
+
+		.dm-time__cvs-moon {
+			border-radius: 50%;
+		}
+
+		.night-mode .dm-time__cvs-moon {
+			border: 1px solid #555;
+		}
+
+		.dm-time__clock-moon-phase {
+			width: 16px;
+			height: 16px;
+		}
+
+		.dm-time__calendar-moon-phase {
+			width: 8px;
+			height: 8px;
+			margin-bottom: 1px;
+			line-height: 8px;
+		}
+
+		.dm-time__calendar-moon-phase .glyphicon {
+			top: 0;
+			font-size: 8px;
+		}
+
+		.dm-time__calendar-moon-phase:last-child {
+			margin-bottom: 0;
+		}
+
+		.dm-time__calendar-ipt-date,
+		.night-mode .dm-time__calendar-ipt-date{
+			background: transparent;
+		}
+
+		.dm-time__calendar-ipt-date--slashed-right {
+			border-right: 0;
+		}
+
+		.dm-time__calendar-ipt-date--slashed-left {
+			border-left: 0;
+		}
+
+		.dm-time__calendar-date-sep {
+			margin-left: -2px;
+			margin-right: -2px;
+			pointer-events: none;
+			user-select: none;
+		}
+
+		.dm-time__ipt-event-time {
+			width: 40px;
+		}
+		/* endregion */
+
+		/* region Counter */
+		.dm-cnt__ipt {
+			background: transparent;
+			flex-shrink: 0;
+			flex-grow: 0;
+			width: 50px;
+		}
+
+		.night-mode .dm-cnt__ipt {
+			background: transparent;
+		}
+
+		.dm-cnt__ipt--cur {
+			border-right: 0;
+		}
+
+		.dm-cnt__ipt--max {
+			border-left: 0;
+		}
+
+		.dm-cnt__slash {
+			margin-left: -2px;
+			margin-right: -2px;
+			width: 4px;
+			pointer-events: none;
+			user-select: none;
+		}
+		/* endregion */
+
+		/* region Map viewer */
+		.dm-map__picker-wrp-img {
+			display: inline-block;
+			width: 320px;
+			height: 340px;
+			line-height: 320px;
+			text-align: center;
+			font-size: 0;
+			border: 2px solid #ccc;
+		}
+
+		.dm-map__picker-img {
+			width: auto;
+			height: 320px;
+			vertical-align: middle;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.dm-map__picker-disp-name {
+			right: 14px;
+			bottom: 0;
+			left: 14px;
+			top: calc(100% - 20px);
+			line-height: 20px;
+			font-size: 14px;
+			background: white;
+			border-top: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+		.night-mode .dm-map__picker-wrp-img {
+			border-color: #555;
+		}
+
+		.night-mode .dm-map__picker-disp-name {
+			background: #222;
+			border-color: #555;
+		}
+		/* endregion */
+
+		.dm-blank__panel {
+			background: white;
+		}
+
+		.night-mode .dm-blank__panel {
+			background: #222;
 		}
 	</style>
 </head>
@@ -914,12 +1326,12 @@
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container">
 
-			<h1 class="page__title">DM屏幕</h1>
-			<p class="page__subtitle">構築你個人的DM屏幕</p>
+			<h1 class="page__title">DM Screen</h1>
+			<p class="page__subtitle">Build a personalised DM screen</p>
 		</div>
 	</header>
 	<nav class="container page__nav" id="navigation">
-		<ul class="nav nav-pills" id="navbar">
+		<ul class="nav page__nav-inner" id="navbar">
 		</ul>
 	</nav>
 	<div class="dm-screen">
@@ -934,11 +1346,14 @@
 </div>
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+<script type="text/javascript" src="lib/peerjs.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery.panzoom.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>
 <script type="text/javascript" src="lib/lzma.js"></script>
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="js/utils-p2p.js"></script>
@@ -946,17 +1361,21 @@
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
+<script type="text/javascript" src="js/render-map.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/initiativetrackerutils.js"></script>
 <script type="text/javascript" src="js/dmscreen.js"></script>
 <script type="text/javascript" src="js/dmscreen-initiativetracker.js"></script>
 <script type="text/javascript" src="js/dmscreen-playerinitiativetracker.js"></script>
 <script type="text/javascript" src="js/dmscreen-moneyconverter.js"></script>
-<script type="text/javascript" src="js/history.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/dmscreen-timetracker.js"></script>
+<script type="text/javascript" src="js/dmscreen-counter.js"></script>
+<script type="text/javascript" src="js/dmscreen-mapper.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/bootstrap-tooltip.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-<script type="text/javascript" src="lib/bootstrap-tooltip.js"></script>
 </body>
 
 </html>

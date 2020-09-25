@@ -2,7 +2,7 @@
 	"data": [
 		{
 			"type": "section",
-			"name": "DM屏幕", "ENG_name": "DM Screen",
+			"name": "DM Screen",
 			"entries": [
 				{
 					"type": "table",
@@ -12,7 +12,7 @@
 						"Characteristic"
 					],
 					"colStyles": [
-						"col-2 text-align-center",
+						"col-2 text-center",
 						"col-10"
 					],
 					"rows": [
@@ -109,7 +109,7 @@
 						"Ideal (Alignment)"
 					],
 					"colStyles": [
-						"col-2 text-align-center",
+						"col-2 text-center",
 						"col-10"
 					],
 					"rows": [
@@ -206,7 +206,7 @@
 						"Bonds"
 					],
 					"colStyles": [
-						"col-2 text-align-center",
+						"col-2 text-center",
 						"col-10"
 					],
 					"rows": [
@@ -263,7 +263,7 @@
 						"Flaw"
 					],
 					"colStyles": [
-						"col-2 text-align-center",
+						"col-2 text-center",
 						"col-10"
 					],
 					"rows": [
@@ -331,8 +331,8 @@
 								"Beginning"
 							],
 							"colStyles": [
-								"col-6 text-align-center",
-								"col-6 text-align-center"
+								"col-6 text-center",
+								"col-6 text-center"
 							],
 							"rows": [
 								[
@@ -424,8 +424,8 @@
 								"Middle"
 							],
 							"colStyles": [
-								"col-6 text-align-center",
-								"col-6 text-align-center"
+								"col-6 text-center",
+								"col-6 text-center"
 							],
 							"rows": [
 								[
@@ -517,8 +517,8 @@
 								"End"
 							],
 							"colStyles": [
-								"col-6 text-align-center",
-								"col-6 text-align-center"
+								"col-6 text-center",
+								"col-6 text-center"
 							],
 							"rows": [
 								[
@@ -706,31 +706,31 @@
 				},
 				{
 					"type": "table",
-					"caption": "有事發生了！", "ENG_name": "DM Screen; Something happens!",
+					"caption": "Something happens!",
 					"colLabels": [
 						"d20",
 						"Event"
 					],
 					"colStyles": [
-						"col-2 text-align-center",
+						"col-2 text-center",
 						"col-10"
 					],
 					"rows": [
 						[
 							1,
-							"一扇門打開了。"
+							"A door opens."
 						],
 						[
 							2,
-							"一團火焰開始燃燒。"
+							"A fire starts."
 						],
 						[
 							3,
-							"一顆流星劃過天際。"
+							"A meter shoots across the sky."
 						],
 						[
 							4,
-							"一隻怪物出現了。"
+							"A monster appears."
 						],
 						[
 							5,
@@ -742,7 +742,7 @@
 						],
 						[
 							7,
-							"一顆詭異的星出現在空中。"
+							"A strange star appears in the sky."
 						],
 						[
 							8,
@@ -754,11 +754,11 @@
 						],
 						[
 							10,
-							"某人產生了既視感。"
+							"Someone experiences déjà vu."
 						],
 						[
 							11,
-							"某人生氣了。"
+							"Someone gets angry."
 						],
 						[
 							12,
@@ -803,13 +803,13 @@
 				},
 				{
 					"type": "table",
-					"caption": "Quick Finds", "ENG_name": "DM Screen; Quick Finds",
+					"caption": "Quick Finds",
 					"colLabels": [
 						"d12",
 						"Find"
 					],
 					"colStyles": [
-						"col-2 text-align-center",
+						"col-2 text-center",
 						"col-10"
 					],
 					"rows": [
@@ -868,12 +868,12 @@
 				},
 				{
 					"type": "table",
-					"caption": "光照", "ENG_name": "DM Screen; Light",
+					"caption": "Light",
 					"colLabels": [
-						"來源",
-						"明亮光照",
-						"微光光照",
-						"持續時間"
+						"Source",
+						"Bright Light",
+						"Dim Light",
+						"Duration"
 					],
 					"colStyles": [
 						"col-3",
@@ -883,51 +883,52 @@
 					],
 					"rows": [
 						[
-							"蠟燭",
-							"5 呎",
-							"+5 呎",
-							"1 小時"
+							"Candle",
+							"5 ft.",
+							"+ 5 ft.",
+							"1 hour"
 						],
 						[
-							"油燈",
-							"15 呎",
-							"+30 呎",
-							"6 小時"
+							"Lamp",
+							"15 ft.",
+							"+ 30 ft.",
+							"6 hours"
 						],
 						[
-							"牛眼提燈",
-							"60 呎錐形",
-							"+60 呎",
-							"6 小時"
+							"Lantern, bullseye",
+							"60 ft. cone",
+							"+ 60 ft.",
+							"6 hours"
 						],
 						[
-							"附蓋提燈",
-							"30 呎",
-							"+30 呎",
-							"6 小時"
+							"Lantern, hooded",
+							"30 ft.",
+							"+ 30 ft.",
+							"6 hours"
 						],
 						{
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"降下燈蓋",
+								"Lowered hood",
 								"\u2014",
-								"+5 呎",
+								"+ 5 ft.",
 								"\u2014"
 							]
 						},
 						[
-							"火炬",
-							"20 呎",
-							"+20 呎",
-							"1 小時"
+							"Torch",
+							"20 ft.",
+							"+ 20 ft.",
+							"1 hour"
 						]
 					],
 					"data": {
 						"tableChapterIgnore": true
 					}
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }

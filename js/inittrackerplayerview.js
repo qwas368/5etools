@@ -1,32 +1,46 @@
 "use strict";
 
-const STORAGE_SHORT_TOKEN = "st";
-
 window.addEventListener("load", () => {
 	ExcludeUtil.pInitialise(); // don't await, as this is only used for search
 
 	const view = new InitiativeTrackerPlayerMessageHandlerPage();
-	const storedCbShortVal = StorageUtil.syncGetForPage(STORAGE_SHORT_TOKEN);
 
-	const $iptServerToken = $(`#initp__ipt_server_token`).disableSpellcheck();
-	const $btnGenClientToken = $(`#initp__btn_gen_client_token`);
-	const $iptClientToken = $(`#initp__ipt_client_token`).disableSpellcheck();
-	const $cbShortToken = $(`#initp__cb_short`)
-		.change(() => StorageUtil.syncSetForPage(STORAGE_SHORT_TOKEN, $cbShortToken.prop("checked")))
-		.prop("checked", storedCbShortVal == null ? true : storedCbShortVal);
+	const $iptPlayerName = $(`#initp__ipt_player_name`)
+		.change(() => $iptServerToken.removeClass("form-control--error"))
+		.disableSpellcheck();
 
-	const ui = new InitiativeTrackerPlayerUi(view, $iptServerToken, $btnGenClientToken, $iptClientToken, $cbShortToken);
-	ui.init();
+	const $iptServerToken = $(`#initp__ipt_server_token`)
+		.change(() => $iptPlayerName.removeClass("form-control--error"))
+		.disableSpellcheck();
+
+	const $btnConnect = $(`#initp__btn_connect`)
+		.click(async () => {
+			if (!$iptPlayerName.val().trim()) return $iptPlayerName.addClass("form-control--error");
+			if (!$iptServerToken.val().trim()) return $iptServerToken.addClass("form-control--error");
+
+			try {
+				$btnConnect.attr("disabled", true);
+				const ui = new InitiativeTrackerPlayerUi(view, $iptPlayerName.val(), $iptServerToken.val());
+				await ui.pInit();
+				InitiativeTrackerPlayerMessageHandlerPage.initUnloadMessage();
+				view.initUi();
+			} catch (e) {
+				$btnConnect.attr("disabled", false);
+				throw e;
+			}
+		});
 
 	const $body = $(`body`);
 	$body.on("keypress", (e) => {
-		if (((e.key === "f") && noModifierKeys(e))) {
-			if (MiscUtil.isInInput(e)) return;
+		if (((e.key === "f") && EventUtil.noModifierKeys(e))) {
+			if (EventUtil.isInInput(e)) return;
 			e.preventDefault();
 
 			if (view.isActive) $body.toggleClass("is-fullscreen");
 		}
 	});
+
+	window.dispatchEvent(new Event("toolsLoaded"));
 });
 
 class InitiativeTrackerPlayerMessageHandlerPage extends InitiativeTrackerPlayerMessageHandler {
@@ -44,13 +58,13 @@ class InitiativeTrackerPlayerMessageHandlerPage extends InitiativeTrackerPlayerM
 		this._$meta = $(`.initp__meta`);
 		this._$head = $(`.initp__header`);
 		this._$rows = $(`.initp__rows`);
+	}
 
+	static initUnloadMessage () {
 		$(window).on("beforeunload", evt => {
-			if (this._clientData.client.isActive) {
-				const message = `The connection will be closed`;
-				(evt || window.event).message = message;
-				return message;
-			}
+			const message = `The connection will be closed`;
+			(evt || window.event).message = message;
+			return message;
 		});
 	}
 }

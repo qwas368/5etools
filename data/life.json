@@ -1,7 +1,7 @@
 {
 	"lifeClass": [
 		{
-			"name": "野蠻人",
+			"name": "Barbarian",
 			"source": "PHB",
 			"reasons": [
 				"My devotion to my people lifted me in battle, making me powerful and dangerous.",
@@ -41,7 +41,7 @@
 			}
 		},
 		{
-			"name": "吟遊詩人",
+			"name": "Bard",
 			"source": "PHB",
 			"reasons": [
 				"I awakened my latent bardic abilities through trial and error.",
@@ -80,7 +80,7 @@
 			}
 		},
 		{
-			"name": "牧師",
+			"name": "Cleric",
 			"source": "PHB",
 			"reasons": [
 				"A supernatural being in service to the gods called me to become a divine agent in the world.",
@@ -117,7 +117,7 @@
 			}
 		},
 		{
-			"name": "德魯伊",
+			"name": "Druid",
 			"source": "PHB",
 			"reasons": [
 				"I saw too much devastation in the wild places, too much of nature's splendor ruined by the despoilers. I joined a circle of druids to fight back against the enemies of nature.",
@@ -158,7 +158,7 @@
 			}
 		},
 		{
-			"name": "戰士",
+			"name": "Fighter",
 			"source": "PHB",
 			"reasons": [
 				"I wanted to hone my combat skills, and so I joined a war college.",
@@ -198,7 +198,7 @@
 			}
 		},
 		{
-			"name": "武僧",
+			"name": "Monk",
 			"source": "PHB",
 			"reasons": [
 				"I was chosen to study at a secluded monastery. There, I was taught the fundamental techniques required to eventually master a tradition.",
@@ -238,7 +238,7 @@
 			}
 		},
 		{
-			"name": "聖騎士",
+			"name": "Paladin",
 			"source": "PHB",
 			"reasons": [
 				"A fantastical being appeared before me and called on me to undertake a holy quest.",
@@ -286,7 +286,7 @@
 			}
 		},
 		{
-			"name": "遊俠",
+			"name": "Ranger",
 			"source": "PHB",
 			"reasons": [
 				"I found purpose while I honed my hunting skills by bringing down dangerous animals at the edge of civilization.",
@@ -325,7 +325,7 @@
 			}
 		},
 		{
-			"name": "盜賊",
+			"name": "Rogue",
 			"source": "PHB",
 			"reasons": [
 				"I've always been nimble and quick of wit, so I decided to use those talents to help me make my way in the world.",
@@ -366,7 +366,7 @@
 			}
 		},
 		{
-			"name": "術士",
+			"name": "Sorcerer",
 			"source": "PHB",
 			"reasons": [
 				"When I was born, all the water in the house froze solid, the milk spoiled, or all the iron turned to copper. My family is convinced that this event was a harbinger of stranger things to come for me.",
@@ -412,7 +412,7 @@
 			}
 		},
 		{
-			"name": "契術師",
+			"name": "Warlock",
 			"source": "PHB",
 			"reasons": [
 				"While wandering around in a forbidden place, I encountered an otherworldly being that offered to enter into a pact with me.",
@@ -450,7 +450,7 @@
 			}
 		},
 		{
-			"name": "法師",
+			"name": "Wizard",
 			"source": "PHB",
 			"reasons": [
 				"An old wizard chose me from among several candidates to serve an apprenticeship.",
@@ -491,11 +491,11 @@
 	],
 	"lifeBackground": [
 		{
-			"name": "侍僧",
+			"name": "Acolyte",
 			"source": "PHB",
 			"reasons": [
-				"我在小時候就離家出走，並受到了一座寺院的收容。",
-				"我的家族My family gave me to a temple, since they were unable or unwilling to care for me.",
+				"I ran away from home at an early age and found refuge in a temple.",
+				"My family gave me to a temple, since they were unable or unwilling to care for me.",
 				"I grew up in a household with strong religious convictions. Entering the service of one or more gods seemed natural.",
 				"An impassioned sermon struck a chord deep in my soul and moved me to serve the faith.",
 				"I followed a childhood friend, a respected acquaintance, or someone I loved into religious service.",
@@ -503,7 +503,7 @@
 			]
 		},
 		{
-			"name": "詐欺師",
+			"name": "Charlatan",
 			"source": "PHB",
 			"reasons": [
 				"I was left to my own devices, and my knack for manipulating others helped me survive.",
@@ -515,7 +515,7 @@
 			]
 		},
 		{
-			"name": "罪犯",
+			"name": "Criminal",
 			"source": "PHB",
 			"reasons": [
 				"I resented authority in my younger days and saw a life of crime as the best way to fight against tyranny and oppression.",
@@ -527,7 +527,7 @@
 			]
 		},
 		{
-			"name": "藝人",
+			"name": "Entertainer",
 			"source": "PHB",
 			"reasons": [
 				"Members of my family made ends meet by performing, so it was fitting for me to follow their example.",
@@ -539,7 +539,7 @@
 			]
 		},
 		{
-			"name": "平民英雄",
+			"name": "Folk Hero",
 			"source": "PHB",
 			"reasons": [
 				"I learned what was right and wrong from my family.",
@@ -551,7 +551,7 @@
 			]
 		},
 		{
-			"name": "公會工匠 (公會商人)",
+			"name": "Guild Artisan (Guild Merchant)",
 			"source": "PHB",
 			"reasons": [
 				"I was apprenticed to a master who taught me the guild's business.",
@@ -563,7 +563,7 @@
 			]
 		},
 		{
-			"name": "隱士",
+			"name": "Hermit",
 			"source": "PHB",
 			"reasons": [
 				"My enemies ruined my reputation, and I fled to the wilds to avoid further disparagement.",
@@ -575,7 +575,7 @@
 			]
 		},
 		{
-			"name": "貴族",
+			"name": "Noble",
 			"source": "PHB",
 			"reasons": [
 				"I come from an old and storied family, and it fell to me to preserve the family name.",
@@ -587,7 +587,7 @@
 			]
 		},
 		{
-			"name": "化外之民",
+			"name": "Outlander",
 			"source": "PHB",
 			"reasons": [
 				"I spent a lot of time in the wilderness as a youngster, and I came to love that way of life.",
@@ -599,7 +599,7 @@
 			]
 		},
 		{
-			"name": "學者",
+			"name": "Sage",
 			"source": "PHB",
 			"reasons": [
 				"I was naturally curious, so I packed up and went to a university to learn more about the world.",
@@ -611,7 +611,7 @@
 			]
 		},
 		{
-			"name": "水手",
+			"name": "Sailor",
 			"source": "PHB",
 			"reasons": [
 				"I was press-ganged by pirates and forced to serve on their ship until I finally escaped.",
@@ -623,7 +623,7 @@
 			]
 		},
 		{
-			"name": "士兵",
+			"name": "Soldier",
 			"source": "PHB",
 			"reasons": [
 				"I joined the militia to help protect my community from monsters.",
@@ -635,7 +635,7 @@
 			]
 		},
 		{
-			"name": "孤兒",
+			"name": "Urchin",
 			"source": "PHB",
 			"reasons": [
 				"Wanderlust caused me to leave my family to see the world. I look after myself.",

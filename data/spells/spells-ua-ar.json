@@ -1,7 +1,9 @@
 {
 	"spell": [
 		{
-			"name": "祕法武器", "ENG_name": "Arcane Weapon",
+			"name": "Arcane Weapon",
+			"source": "UAArtificerRevisited",
+			"page": 10,
 			"level": 1,
 			"school": "T",
 			"time": [
@@ -30,29 +32,19 @@
 					"concentration": true
 				}
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Artificer Revisited",
-						"source": "UAArtificerRevisited"
-					}
-				]
-			},
-			"source": "UAArtificerRevisited",
 			"entries": [
-				"你將祕法能量引導注入一把你所持握的簡易或軍用武器，並選擇一種傷害類型：酸蝕、寒冰、火焰、閃電、毒素、或雷鳴。直到此法術結束前，你在使用該武器命中任何目標時將造成額外{@dice 1d6}所選類型的傷害。若該武器原本不是魔法武器，則它將在法術持續期間變成一把魔法武器。",
-				"以一個附贈動作，你可以改變該武器的傷害類型，從上述選項中選擇。"
+				"You channel arcane energy into one simple or martial weapon you're holding, and choose one damage type: acid, cold, fire, lightning, poison, or thunder. Until the spell ends, you deal an extra {@damage 1d6} damage of the chosen type to any target you hit with the weapon. If the weapon isn't magical, it becomes a magic weapon for the spell's duration.",
+				"As a bonus action, you can change the damage type, choosing from the options above."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "升環效果",
+					"name": "At Higher Levels",
 					"entries": [
-						"當你使用3環或更高的法術位施放此法術時，你可以維持你在此法術的專注最多8小時。"
+						"When you cast this spell using a spell slot of 3rd level or higher, you can maintain your concentration on the spell for up to 8 hours."
 					]
 				}
 			],
-			"page": 10,
 			"damageInflict": [
 				"acid",
 				"cold",
@@ -63,7 +55,15 @@
 			],
 			"areaTags": [
 				"ST"
-			]
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer (Revisited)",
+						"source": "UAArtificerRevisited"
+					}
+				]
+			}
 		}
 	]
 }

@@ -1,7 +1,7 @@
 {
 	"individual": [
 		{
-			"name": "挑戰等級 0-4", "ENG_name": "Challenge 0-4",
+			"name": "Challenge 0-4",
 			"source": "DMG",
 			"page": 136,
 			"mincr": 0,
@@ -45,7 +45,7 @@
 			]
 		},
 		{
-			"name": "挑戰等級 5-10", "ENG_name": "Challenge 5-10",
+			"name": "Challenge 5-10",
 			"source": "DMG",
 			"page": 136,
 			"mincr": 5,
@@ -93,7 +93,7 @@
 			]
 		},
 		{
-			"name": "挑戰等級 11-16", "ENG_name": "Challenge 11-16",
+			"name": "Challenge 11-16",
 			"source": "DMG",
 			"page": 136,
 			"mincr": 11,
@@ -134,7 +134,7 @@
 			]
 		},
 		{
-			"name": "挑戰等級 17+", "ENG_name": "Challenge 17+",
+			"name": "Challenge 17+",
 			"source": "DMG",
 			"page": 136,
 			"mincr": 17,
@@ -145,7 +145,7 @@
 					"max": 15,
 					"coins": {
 						"ep": "2d6*1000",
-						"pp": "8d6*100"
+						"gp": "8d6*100"
 					}
 				},
 				{
@@ -169,7 +169,7 @@
 	],
 	"hoard": [
 		{
-			"name": "挑戰等級 0-4", "ENG_name": "Challenge 0-4",
+			"name": "Challenge 0-4",
 			"source": "DMG",
 			"page": 137,
 			"mincr": 0,
@@ -367,7 +367,7 @@
 			]
 		},
 		{
-			"name": "挑戰等級 5-10", "ENG_name": "Challenge 5-10",
+			"name": "Challenge 5-10",
 			"source": "DMG",
 			"page": 137,
 			"mincr": 5,
@@ -706,7 +706,7 @@
 			]
 		},
 		{
-			"name": "挑戰等級 11-16", "ENG_name": "Challenge 11-16",
+			"name": "Challenge 11-16",
 			"source": "DMG",
 			"page": 138,
 			"mincr": 11,
@@ -1091,7 +1091,7 @@
 			]
 		},
 		{
-			"name": "挑戰等級 17+", "ENG_name": "Challenge 17+",
+			"name": "Challenge 17+",
 			"source": "DMG",
 			"page": 137,
 			"mincr": 17,
@@ -1398,103 +1398,103 @@
 	],
 	"gemstones": [
 		{
-			"name": "價值 10金幣 的寶石", "ENG_name": "10 gp Gemstones",
+			"name": "10 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
 			"type": "10",
 			"table": [
-				"藍銅礦 (不透光 深藍色斑駁紋理)",
-				"條紋瑪瑙 (透光 棕、藍、白、或紅色條紋)",
-				"青石英 (透光 淡藍色)",
-				"眼狀瑪瑙 (透光 灰色、白色、棕色、藍色、或綠色圓形花紋)",
-				"赤鐵礦 (不透光 灰黑色)",
-				"青金石 (不透光 深淺藍混色帶黃斑)",
-				"孔雀石 (不透光 帶紋深淺綠混色)",
-				"苔紋瑪瑙 (透光 粉紅色或黃白色帶灰或綠色的蘚狀斑紋)",
-				"黑曜石 (不透光 黑色)",
-				"紅紋石 (不透光 淺粉紅色)",
-				"虎眼石 (透光 棕中帶金)",
-				"綠松石 (不透光 淺藍綠色)"
+				"Azurite (opaque mottled deep blue)",
+				"Banded agate (translucent striped brown, blue, white, or red)",
+				"Blue quartz (transparent pale blue)",
+				"Eye agate (translucent circles of gray, white brown, blue, or green)",
+				"Hematite (opaque gray-black)",
+				"Lapis lazuli (opaque light and dark blue with yellow flecks)",
+				"Malachite (opaque striated light and dark green)",
+				"Moss agate (translucent pink or yellow-white with mossy gray or green markings)",
+				"Obsidian (opaque black)",
+				"Rhodochrosite (opaque light pink)",
+				"Tiger eye (translucent brown with golden center)",
+				"Turquoise (opaque light blue-green)"
 			]
 		},
 		{
-			"name": "價值 50金幣 的寶石", "ENG_name": "50 gp Gemstones",
+			"name": "50 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
 			"type": "50",
 			"table": [
-				"血石 (不透光 帶紅斑的深灰色)",
-				"紅玉髓 (不透光 橙色到紅棕色)",
-				"玉髓 (不透光 乳白色)",
-				"綠玉髓 (不透光 綠色)",
-				"黃水晶 (透光 淡黃褐色)",
-				"碧玉 (不透光 藍色、黑色、或棕色)",
-				"月長石 (透光 淡藍色光輝的白色)",
-				"縞瑪瑙 (不透光 黑白相間、純黑、或純白)",
-				"石英 (透光 白色、煙灰色、或黃色)",
-				"紅縞瑪瑙 (不透光 紅白帶狀紋路)",
-				"星光粉晶 (透光 玫瑰色中央帶有白色星形紋路)",
-				"鋯石 (透光 淡藍綠色)"
+				"Bloodstone (opaque dark gray with red flecks)",
+				"Carnelian (opaque orange to red-brown)",
+				"Chalcedony (opaque white)",
+				"Chrysoprase (translucent green)",
+				"Citrine (transparent pale yellow-brown)",
+				"Jasper (opaque blue, black, or brown)",
+				"Moonstone (translucent white with pale blue glow)",
+				"Onyx (opaque bands of black and white, or pure black or white)",
+				"Quartz (transparent white, smoky gray, or yellow)",
+				"Sardonyx (opaque bands of red and white)",
+				"Star rose quartz (translucent rosy stone with white star-shaped center)",
+				"Zircon (transparent pale blue-green)"
 			]
 		},
 		{
-			"name": "價值 100金幣 的寶石", "ENG_name": "100 gp Gemstones",
+			"name": "100 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
 			"type": "100",
 			"table": [
-				"琥珀 (透光 水金色到貴金色)",
-				"紫晶 (透光 深紫色)",
-				"金綠寶石 (透光 黃綠色到淡綠色)",
-				"珊瑚 (不透光 緋紅色)",
-				"石榴石 (透光 紅色、棕綠色、或紫色)",
-				"翡翠 (透光 淺綠色、深綠色、或白色)",
-				"煤玉 (不透光 深黑色)",
-				"珍珠 (不透光 帶光澤的白色、黃色、或粉紅色)",
-				"尖晶石 (透光 紅色、紅棕色、或深綠色)",
-				"電氣石 (透光 淡綠色、藍色、褐色、或紅色)"
+				"Amber (transparent watery gold to rich gold)",
+				"Amethyst (transparent deep purple)",
+				"Chrysoberyl (transparent yellow-green to pale green)",
+				"Coral (opaque crimson)",
+				"Garnet (transparent red, brown-green, or violet)",
+				"Jade (translucent light green, deep green, or white)",
+				"Jet (opaque deep black)",
+				"Pearl (opaque lustrous white, yellow, or pink)",
+				"Spinel (transparent red, red-brown, or deep green)",
+				"Tourmaline (transparent pale green, blue, brown , or red)"
 			]
 		},
 		{
-			"name": "價值 500金幣 的寶石", "ENG_name": "500 gp Gemstones",
+			"name": "500 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
 			"type": "500",
 			"table": [
-				"亞歷山大變石 (透光 深綠色)",
-				"海藍寶石 (透光 淡青綠色)",
-				"黑珍珠 (不透光 純黑色)",
-				"藍尖晶石 (透光 深藍色)",
-				"橄欖石 (透光 貴橄欖綠色)",
-				"黃玉 (透光 金黃色)"
+				"Alexandrite (transparent dark green)",
+				"Aquamarine (transparent pale blue-green)",
+				"Black pearl (opaque pure black)",
+				"Blue spinel (transparent deep blue)",
+				"Peridot (transparent rich olive green)",
+				"Topaz (transparent golden yellow)"
 			]
 		},
 		{
-			"name": "價值 1,000金幣 的寶石", "ENG_name": "1,000 gp Gemstones",
+			"name": "1,000 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
 			"type": "1000",
 			"table": [
-				"黑蛋白石 (透光 帶有黑色和金色斑紋的暗綠色)",
-				"青藍寶石 (透光 藍白色至中等藍色)",
-				"綠寶石 (透光 深翠綠色)",
-				"火蛋白石 (透光火紅色)",
-				"蛋白石 (透光 帶綠和金點的淡藍色)",
-				"星彩紅寶石 (透光 中央帶有白色星形紋路的紅寶石)",
-				"星彩藍寶石 (透光 中央帶有白色星形紋路的藍寶石)",
-				"黃寶石 (透光 焰黃色或黃綠色)"
+				"Black opal (translucent dark green with black mottling and golden flecks)",
+				"Blue sapphire (transparent blue-white to medium blue)",
+				"Emerald (transparent deep bright green)",
+				"Fire opal (translucent fiery red)",
+				"Opal (translucent pale blue with green and golden mottling)",
+				"Star ruby (translucent ruby with white star-shaped center)",
+				"Star sapphire (translucent blue sapphire with white star-shaped center)",
+				"Yellow sapphire (transparent fiery yellow or yellow-green)"
 			]
 		},
 		{
-			"name": "價值 5,000金幣 的寶石", "ENG_name": "5,000 gp Gemstones",
+			"name": "5,000 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
 			"type": "5000",
 			"table": [
-				"黑藍寶石 (半透光 閃耀著高亮光澤的黑色)",
-				"鑽石 (透光 藍白色、鮮黃色、粉紅色、棕色、或藍色)",
-				"紅鋯石 (透光 焰橘色)",
-				"紅寶石 (透光 透紅色到深緋色)"
+				"Black sapphire (translucent lustrous black with glowing highlights)",
+				"Diamond (transparent blue-white, canary, pink, brown, or blue)",
+				"Jacinth (transparent fiery orange)",
+				"Ruby (transparent clear red to deep crimson)"
 			]
 		}
 	],
@@ -1505,16 +1505,16 @@
 			"page": 134,
 			"type": "25",
 			"table": [
-				"銀質水壺",
-				"骨製雕像",
-				"黃金小手鐲",
-				"金絲編織的法衣",
-				"由銀絲縫製的漆黑天鵝絨面具",
-				"銀絲裝飾的銅製酒杯",
-				"一對骨製骰子",
-				"鑲在彩繪木框中的小鏡子",
-				"繡花絲綢手帕",
-				"內部繪有彩繪肖像的黃金鏈墜盒"
+				"Silver ewer",
+				"Carved bone statuette",
+				"Small gold bracelet",
+				"Cloth-of-gold vestments",
+				"Black velvet mask stitched with silver thread",
+				"Copper chalice with silver filigree",
+				"Pair of engraved bone dice",
+				"Small mirror set in a painted wooden frame",
+				"Embroidered silk handkerchief",
+				"Gold locket with a painted portrait inside"
 			]
 		},
 		{
@@ -1523,16 +1523,16 @@
 			"page": 135,
 			"type": "250",
 			"table": [
-				"鑲有血石的黃金戒指",
-				"象牙雕像",
-				"黃金大手鐲",
-				"附有寶石墜飾的銀製項鍊",
-				"青銅王冠",
-				"帶有金色刺繡的絲綢長袍",
-				"做工精良的大型織錦",
-				"鑲有翡翠的黃銅馬克杯",
-				"一盒綠松石製的動物雕像",
-				"珀金絲裝飾的黃金鳥籠"
+				"Gold ring set with bloodstones",
+				"Carved ivory statuette",
+				"Large gold bracelet",
+				"Silver necklace with a gemstone pendant",
+				"Bronze crown",
+				"Silk robe with gold embroidery",
+				"Large well-made tapestry",
+				"Brass mug with jade inlay",
+				"Box of turquoise animal figurines",
+				"Gold bird cage with electrum filigree"
 			]
 		},
 		{
@@ -1541,16 +1541,17 @@
 			"page": 135,
 			"type": "750",
 			"table": [
-				"鑲有月長石的銀質酒杯",
-				"劍柄鑲有煤玉的鋼質鍍銀長劍",
-				"異國木材雕製且鑲有象牙和鋯石的豎琴",
-				"小型黃金神像",
-				"鑲有紅色石榴石做為眼睛的金龍梳",
-				"壓印著金箔葉並鑲有紫晶的軟木瓶塞",
-				"柄端鑲有黑珍珠的珀金儀式匕首",
-				"銀白銀和黃金製的胸針",
-				"鑲有金飾和嵌物的黑曜石雕像",
-				"金漆戰爭面具"
+				"Silver chalice set with moonstones",
+				"Silver-plated steel longsword with jet set in hilt",
+				"Carved harp of exotic wood with ivory inlay and zircon gems",
+				"Small gold idol",
+				"Gold dragon comb set with red garnets as eyes",
+				"Bottle stopper cork embossed with gold leaf and",
+				"set with amethysts",
+				"Ceremonial electrum dagger with a black pearl in the pommel",
+				"Silver and gold brooch",
+				"Obsidian statuette with gold fittings and inlay",
+				"Painted gold war mask"
 			]
 		},
 		{
@@ -1559,16 +1560,15 @@
 			"page": 135,
 			"type": "2500",
 			"table": [
-				"鑲有火蛋白石的純金鍊條",
-				"古老的名畫",
-				"繡花絲綢和天鵝絨編織並鑲有許多月長石的披風",
-				"鑲有一顆藍寶石的鉑金手鐲",
-				"鑲有珠寶片的繡花絲綢手套",
-				"鑲有珠寶的腳鐲",
-				"黃金音樂盒",
-				"鑲有四顆海藍寶石的黃金項鍊",
-				"鑲有藍寶石和月長石的單邊眼罩",
-				"串著粉紅小珍珠的項鍊"
+				"Fine gold chain set with a fire opal",
+				"Old masterpiece painting",
+				"Embroidered silk and velvet mantle set with numerous moonstones",
+				"Platinum bracelet set with a sapphire",
+				"Embroidered glove set with jewel chips jeweled anklet",
+				"Gold music box",
+				"Gold circlet set with four aquamarines",
+				"Eye patch with a mock eye set in blue sapphire and moonstone",
+				"A necklace string of small pink pearls"
 			]
 		},
 		{
@@ -1577,20 +1577,20 @@
 			"page": 135,
 			"type": "7500",
 			"table": [
-				"鑲有珠寶的黃金王冠",
-				"鑲有珠寶的鉑金戒指",
-				"鑲有紅寶石的小型黃金雕像",
-				"鑲有綠寶石的黃金杯",
-				"鉑金絲裝飾的黃金首飾盒",
-				"金漆兒童石棺",
-				"翡翠棋盤和純金棋子",
-				"鑲有珠寶的金絲象牙角杯"
+				"Jeweled gold crown",
+				"Jeweled platinum ring",
+				"Small gold statuette set with rubies",
+				"Gold cup set with emeralds",
+				"Gold jewelry box with platinum filigree",
+				"Painted gold child's sarcophagus",
+				"Jade game board with solid gold playing pieces",
+				"Bejeweled ivory drinking horn with gold filigree"
 			]
 		}
 	],
 	"magicitems": [
 		{
-			"name": "魔法物品表A", "ENG_name": "Magic Item Table A",
+			"name": "Magic Item Table A",
 			"source": "DMG",
 			"page": 144,
 			"type": "A",
@@ -1598,50 +1598,50 @@
 				{
 					"min": 1,
 					"max": 50,
-					"item": "{@item 治療藥水}"
+					"item": "{@item Potion of Healing}"
 				},
 				{
 					"min": 51,
 					"max": 60,
-					"item": "{@item 法術卷軸(戲法)}",
+					"item": "{@item Spell Scroll (Cantrip)}",
 					"spellLevel": 0
 				},
 				{
 					"min": 61,
 					"max": 70,
-					"item": "{@item 攀爬藥水}"
+					"item": "{@item Potion of Climbing}"
 				},
 				{
 					"min": 71,
 					"max": 90,
-					"item": "{@item 法術卷軸(1環)}",
+					"item": "{@item Spell Scroll (1st Level)}",
 					"spellLevel": 1
 				},
 				{
 					"min": 91,
 					"max": 94,
-					"item": "{@item 法術卷軸(2環)}",
+					"item": "{@item Spell Scroll (2nd Level)}",
 					"spellLevel": 2
 				},
 				{
 					"min": 95,
 					"max": 98,
-					"item": "{@item 良效治療藥水}"
+					"item": "{@item Potion of Greater Healing}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 次元袋}"
+					"item": "{@item Bag of Holding}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 漂浮光球}"
+					"item": "{@item Driftglobe}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表B", "ENG_name": "Magic Item Table B",
+			"name": "Magic Item Table B",
 			"source": "DMG",
 			"page": 144,
 			"type": "B",
@@ -1649,19 +1649,19 @@
 				{
 					"min": 1,
 					"max": 15,
-					"item": "{@item 良效治療藥水}"
+					"item": "{@item Potion of Greater Healing}"
 				},
 				{
 					"min": 16,
 					"max": 22,
-					"item": "{@item 火焰吐息藥水}"
+					"item": "{@item Potion of Fire Breath}"
 				},
 				{
 					"min": 23,
 					"max": 29,
 					"choose": {
 						"fromGroup": [
-							"抗性藥水"
+							"Potion of Resistance"
 						]
 					}
 				},
@@ -1670,128 +1670,128 @@
 					"max": 34,
 					"choose": {
 						"fromGeneric": [
-							"彈藥+1"
+							"+1 Ammunition"
 						]
 					}
 				},
 				{
 					"min": 35,
 					"max": 39,
-					"item": "{@item 化獸為友藥水}"
+					"item": "{@item Potion of Animal Friendship}"
 				},
 				{
 					"min": 40,
 					"max": 44,
-					"item": "{@item 山丘巨人之力藥水}"
+					"item": "{@item Potion of Hill Giant Strength}"
 				},
 				{
 					"min": 45,
 					"max": 49,
-					"item": "{@item 成長藥水}"
+					"item": "{@item Potion of Growth}"
 				},
 				{
 					"min": 50,
 					"max": 54,
-					"item": "{@item 水下呼吸藥水}"
+					"item": "{@item Potion of Water Breathing}"
 				},
 				{
 					"min": 55,
 					"max": 59,
-					"item": "{@item 法術卷軸(2環)}",
+					"item": "{@item Spell Scroll (2nd Level)}",
 					"spellLevel": 2
 				},
 				{
 					"min": 60,
 					"max": 64,
-					"item": "{@item 法術卷軸(3環)}",
+					"item": "{@item Spell Scroll (3rd Level)}",
 					"spellLevel": 3
 				},
 				{
 					"min": 65,
 					"max": 67,
-					"item": "{@item 次元袋}"
+					"item": "{@item Bag of Holding}"
 				},
 				{
 					"min": 68,
 					"max": 70,
-					"item": "{@item 卡夫統靈藥}"
+					"item": "{@item Keoghtom's Ointment}"
 				},
 				{
 					"min": 71,
 					"max": 73,
-					"item": "{@item 滑溜之油}"
+					"item": "{@item Oil of Slipperiness}"
 				},
 				{
 					"min": 74,
 					"max": 75,
-					"item": "{@item 無蹤塵}"
+					"item": "{@item Dust of Disappearance}"
 				},
 				{
 					"min": 76,
 					"max": 77,
-					"item": "{@item 乾燥塵}"
+					"item": "{@item Dust of Dryness}"
 				},
 				{
 					"min": 78,
 					"max": 79,
-					"item": "{@item 噴嚏窒息塵}"
+					"item": "{@item Dust of Sneezing and Choking}"
 				},
 				{
 					"min": 80,
 					"max": 81,
-					"item": "{@item 元素寶石}"
+					"item": "{@item Elemental Gem}"
 				},
 				{
 					"min": 82,
 					"max": 83,
-					"item": "{@item 迷情媚藥}"
+					"item": "{@item Philter of Love}"
 				},
 				{
 					"min": 84,
 					"max": 84,
-					"item": "{@item 煉金壺}"
+					"item": "{@item Alchemy Jug}"
 				},
 				{
 					"min": 85,
 					"max": 85,
-					"item": "{@item 水下呼吸帽}"
+					"item": "{@item Cap of Water Breathing}"
 				},
 				{
 					"min": 86,
 					"max": 86,
-					"item": "{@item 魟魚斗篷}"
+					"item": "{@item Cloak of the Manta Ray}"
 				},
 				{
 					"min": 87,
 					"max": 87,
-					"item": "{@item 漂浮光球}"
+					"item": "{@item Driftglobe}"
 				},
 				{
 					"min": 88,
 					"max": 88,
-					"item": "{@item 夜視護目鏡}"
+					"item": "{@item Goggles of Night}"
 				},
 				{
 					"min": 89,
 					"max": 89,
-					"item": "{@item 通曉語言頭盔}"
+					"item": "{@item Helm of Comprehending Languages}"
 				},
 				{
 					"min": 90,
 					"max": 90,
-					"item": "{@item 不動權杖}"
+					"item": "{@item Immovable Rod}"
 				},
 				{
 					"min": 91,
 					"max": 91,
-					"item": "{@item 顯像提燈}"
+					"item": "{@item Lantern of Revealing}"
 				},
 				{
 					"min": 92,
 					"max": 92,
 					"choose": {
 						"fromGeneric": [
-							"水手護甲"
+							"Mariner's Armor"
 						]
 					}
 				},
@@ -1800,49 +1800,49 @@
 					"max": 93,
 					"choose": {
 						"fromGeneric": [
-							"秘銀護甲"
+							"Mithral Armor"
 						]
 					}
 				},
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 劇毒藥水}"
+					"item": "{@item Potion of Poison}"
 				},
 				{
 					"min": 95,
 					"max": 95,
-					"item": "{@item 游泳戒指}"
+					"item": "{@item Ring of Swimming}"
 				},
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 雜貨法袍}"
+					"item": "{@item Robe of Useful Items}"
 				},
 				{
 					"min": 97,
 					"max": 97,
-					"item": "{@item 攀爬繩}"
+					"item": "{@item Rope of Climbing}"
 				},
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 騎兵鞍座}"
+					"item": "{@item Saddle of the Cavalier}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 偵測魔法魔杖}"
+					"item": "{@item Wand of Magic Detection}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 探秘魔杖}"
+					"item": "{@item Wand of Secrets}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表C", "ENG_name": "Magic Item Table C",
+			"name": "Magic Item Table C",
 			"source": "DMG",
 			"page": 145,
 			"type": "C",
@@ -1850,12 +1850,12 @@
 				{
 					"min": 1,
 					"max": 15,
-					"item": "{@item 強效治療藥水}"
+					"item": "{@item Potion of Superior Healing}"
 				},
 				{
 					"min": 16,
 					"max": 22,
-					"item": "{@item 法術卷軸(4環)}",
+					"item": "{@item Spell Scroll (4th Level)}",
 					"spellLevel": 4
 				},
 				{
@@ -1863,140 +1863,140 @@
 					"max": 27,
 					"choose": {
 						"fromGeneric": [
-							"彈藥+2"
+							"+2 Ammunition"
 						]
 					}
 				},
 				{
 					"min": 28,
 					"max": 32,
-					"item": "{@item 銳眼藥水}"
+					"item": "{@item Potion of Clairvoyance}"
 				},
 				{
 					"min": 33,
 					"max": 37,
-					"item": "{@item 縮小藥水}"
+					"item": "{@item Potion of Diminution}"
 				},
 				{
 					"min": 38,
 					"max": 42,
-					"item": "{@item 氣化形體藥水}"
+					"item": "{@item Potion of Gaseous Form}"
 				},
 				{
 					"min": 43,
 					"max": 47,
-					"item": "{@item 霜巨人之力藥水}"
+					"item": "{@item Potion of Frost Giant Strength}"
 				},
 				{
 					"min": 48,
 					"max": 52,
-					"item": "{@item 石巨人之力藥水}"
+					"item": "{@item Potion of Stone Giant Strength}"
 				},
 				{
 					"min": 53,
 					"max": 57,
-					"item": "{@item 英雄氣概藥水}"
+					"item": "{@item Potion of Heroism}"
 				},
 				{
 					"min": 58,
 					"max": 62,
-					"item": "{@item 無敵藥水}"
+					"item": "{@item Potion of Invulnerability}"
 				},
 				{
 					"min": 63,
 					"max": 67,
-					"item": "{@item 讀心藥水}"
+					"item": "{@item Potion of Mind Reading}"
 				},
 				{
 					"min": 68,
 					"max": 72,
-					"item": "{@item 法術卷軸(5環)}",
+					"item": "{@item Spell Scroll (5th Level)}",
 					"spellLevel": 5
 				},
 				{
 					"min": 73,
 					"max": 75,
-					"item": "{@item 健康靈藥}"
+					"item": "{@item Elixir of Health}"
 				},
 				{
 					"min": 76,
 					"max": 78,
-					"item": "{@item 乙太化之油}"
+					"item": "{@item Oil of Etherealness}"
 				},
 				{
 					"min": 79,
 					"max": 81,
-					"item": "{@item 火巨人之力藥水}"
+					"item": "{@item Potion of Fire Giant Strength}"
 				},
 				{
 					"min": 82,
 					"max": 84,
-					"item": "{@item 誇爾羽符}"
+					"item": "{@item Quaal's Feather Token}"
 				},
 				{
 					"min": 85,
 					"max": 87,
-					"item": "{@item 防護卷軸}"
+					"item": "{@item Scroll of Protection}"
 				},
 				{
 					"min": 88,
 					"max": 89,
-					"item": "{@item 魔豆之袋}"
+					"item": "{@item Bag of Beans}"
 				},
 				{
 					"min": 90,
 					"max": 91,
-					"item": "{@item 力場珠}"
+					"item": "{@item Bead of Force}"
 				},
 				{
 					"min": 92,
 					"max": 92,
-					"item": "{@item 開門鐘琴}"
+					"item": "{@item Chime of Opening}"
 				},
 				{
 					"min": 93,
 					"max": 93,
-					"item": "{@item 無盡水瓶}"
+					"item": "{@item Decanter of Endless Water}"
 				},
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 微視鏡片}"
+					"item": "{@item Eyes of Minute Seeing}"
 				},
 				{
 					"min": 95,
 					"max": 95,
-					"item": "{@item 摺疊船}"
+					"item": "{@item Folding Boat}"
 				},
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 霍華德的便利袋}"
+					"item": "{@item Heward's Handy Haversack}"
 				},
 				{
 					"min": 97,
 					"max": 97,
-					"item": "{@item 加速馬蹄鐵}"
+					"item": "{@item Horseshoes of Speed}"
 				},
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 火球項鍊}"
+					"item": "{@item Necklace of Fireballs}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 健康護身符}"
+					"item": "{@item Periapt of Health}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 傳訊石}"
+					"item": "{@item Sending Stones}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表D", "ENG_name": "Magic Item Table D",
+			"name": "Magic Item Table D",
 			"source": "DMG",
 			"page": 145,
 			"type": "D",
@@ -2004,28 +2004,28 @@
 				{
 					"min": 1,
 					"max": 20,
-					"item": "{@item 極效治療藥水}"
+					"item": "{@item Potion of Supreme Healing}"
 				},
 				{
 					"min": 21,
 					"max": 30,
-					"item": "{@item 隱形藥水}"
+					"item": "{@item Potion of Invisibility}"
 				},
 				{
 					"min": 31,
 					"max": 40,
-					"item": "{@item 速度藥水}"
+					"item": "{@item Potion of Speed}"
 				},
 				{
 					"min": 41,
 					"max": 50,
-					"item": "{@item 法術卷軸(6環)}",
+					"item": "{@item Spell Scroll (6th level)}",
 					"spellLevel": 6
 				},
 				{
 					"min": 51,
 					"max": 57,
-					"item": "{@item 法術卷軸(7環)}",
+					"item": "{@item Spell Scroll (7th level)}",
 					"spellLevel": 7
 				},
 				{
@@ -2033,65 +2033,65 @@
 					"max": 62,
 					"choose": {
 						"fromGeneric": [
-							"彈藥+3"
+							"+3 Ammunition"
 						]
 					}
 				},
 				{
 					"min": 63,
 					"max": 67,
-					"item": "{@item 鋒銳之油}"
+					"item": "{@item Oil of Sharpness}"
 				},
 				{
 					"min": 68,
 					"max": 72,
-					"item": "{@item 飛行藥水}"
+					"item": "{@item Potion of Flying}"
 				},
 				{
 					"min": 73,
 					"max": 77,
-					"item": "{@item 雲巨人之力藥水}"
+					"item": "{@item Potion of Cloud Giant Strength}"
 				},
 				{
 					"min": 78,
 					"max": 82,
-					"item": "{@item 延壽藥水}"
+					"item": "{@item Potion of Longevity}"
 				},
 				{
 					"min": 83,
 					"max": 87,
-					"item": "{@item 活力藥水}"
+					"item": "{@item Potion of Vitality}"
 				},
 				{
 					"min": 88,
 					"max": 92,
-					"item": "{@item 法術卷軸(8環)}",
+					"item": "{@item Spell Scroll (8th level)}",
 					"spellLevel": 8
 				},
 				{
 					"min": 93,
 					"max": 95,
-					"item": "{@item 西風馬蹄鐵}"
+					"item": "{@item Horseshoes of a Zephyr}"
 				},
 				{
 					"min": 96,
 					"max": 98,
-					"item": "{@item 諾澤爾的驚奇顏料}"
+					"item": "{@item Nolzur's Marvelous Pigments}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 吞噬袋}"
+					"item": "{@item Bag of Devouring}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 便攜式次元洞}"
+					"item": "{@item Portable Hole}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表E", "ENG_name": "Magic Item Table E",
+			"name": "Magic Item Table E",
 			"source": "DMG",
 			"page": 145,
 			"type": "E",
@@ -2099,44 +2099,44 @@
 				{
 					"min": 1,
 					"max": 30,
-					"item": "{@item 法術卷軸(8環)}",
+					"item": "{@item Spell Scroll (8th level)}",
 					"spellLevel": 8
 				},
 				{
 					"min": 31,
 					"max": 55,
-					"item": "{@item 風暴巨人之力藥水}"
+					"item": "{@item Potion of Storm Giant Strength}"
 				},
 				{
 					"min": 56,
 					"max": 70,
-					"item": "{@item 極效治療藥水}"
+					"item": "{@item Potion of Supreme Healing}"
 				},
 				{
 					"min": 71,
-					"max": 86,
-					"item": "{@item 法術卷軸(9環)}",
+					"max": 85,
+					"item": "{@item Spell Scroll (9th level)}",
 					"spellLevel": 9
 				},
 				{
 					"min": 86,
 					"max": 93,
-					"item": "{@item 萬溶劑}"
+					"item": "{@item Universal Solvent}"
 				},
 				{
 					"min": 94,
 					"max": 98,
-					"item": "{@item 屠殺箭}"
+					"item": "{@item Arrow of Slaying}"
 				},
 				{
 					"min": 99,
 					"max": 100,
-					"item": "{@item 至尊膠}"
+					"item": "{@item Sovereign Glue}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表F", "ENG_name": "Magic Item Table F",
+			"name": "Magic Item Table F",
 			"source": "DMG",
 			"page": 146,
 			"type": "F",
@@ -2146,317 +2146,317 @@
 					"max": 15,
 					"choose": {
 						"fromGeneric": [
-							"武器+1"
+							"+1 Weapon"
 						]
 					}
 				},
 				{
 					"min": 16,
 					"max": 18,
-					"item": "{@item 盾牌+1}"
+					"item": "+1 shield"
 				},
 				{
 					"min": 19,
 					"max": 21,
-					"item": "{@item 哨衛之盾}"
+					"item": "{@item Sentinel Shield}"
 				},
 				{
 					"min": 22,
 					"max": 23,
-					"item": "{@item 反偵測定位護符}"
+					"item": "{@item Amulet of Proof Against Detection and Location}"
 				},
 				{
 					"min": 24,
 					"max": 25,
-					"item": "{@item 精靈之靴}"
+					"item": "{@item Boots of Elvenkind}"
 				},
 				{
 					"min": 26,
 					"max": 27,
-					"item": "{@item 跑跳之靴}"
+					"item": "{@item Boots of Striding and Springing}"
 				},
 				{
 					"min": 28,
 					"max": 29,
-					"item": "{@item 射手護腕}"
+					"item": "{@item Bracers of Archery}"
 				},
 				{
 					"min": 30,
 					"max": 31,
-					"item": "{@item 護盾胸針}"
+					"item": "{@item Brooch of Shielding}"
 				},
 				{
 					"min": 32,
 					"max": 33,
-					"item": "{@item 飛天掃帚}"
+					"item": "{@item Broom of Flying}"
 				},
 				{
 					"min": 34,
 					"max": 35,
-					"item": "{@item 精靈斗篷}"
+					"item": "{@item Cloak of Elvenkind}"
 				},
 				{
 					"min": 36,
 					"max": 37,
-					"item": "{@item 防護斗篷}"
+					"item": "{@item Cloak of Protection}"
 				},
 				{
 					"min": 38,
 					"max": 39,
-					"item": "{@item 食人魔力量護手}"
+					"item": "{@item Gauntlets of Ogre Power}"
 				},
 				{
 					"min": 40,
 					"max": 41,
-					"item": "{@item 易容帽}"
+					"item": "{@item Hat of Disguise}"
 				},
 				{
 					"min": 42,
 					"max": 43,
-					"item": "{@item 閃電標槍}"
+					"item": "{@item Javelin of Lightning}"
 				},
 				{
 					"min": 44,
 					"max": 45,
-					"item": "{@item 法力再生珍珠}"
+					"item": "{@item Pearl of Power}"
 				},
 				{
 					"min": 46,
 					"max": 47,
-					"item": "{@item 掌契者權杖+1}"
+					"item": "+1 rod of the pact keeper"
 				},
 				{
 					"min": 48,
 					"max": 49,
-					"item": "{@item 蛛行拖鞋}"
+					"item": "{@item Slippers of Spider Climbing}"
 				},
 				{
 					"min": 50,
 					"max": 51,
-					"item": "{@item 蝰蛇法杖}"
+					"item": "{@item Staff of the Adder}"
 				},
 				{
 					"min": 52,
 					"max": 53,
-					"item": "{@item 巨蟒法杖}"
+					"item": "{@item Staff of the Python}"
 				},
 				{
 					"min": 54,
 					"max": 55,
 					"choose": {
 						"fromGeneric": [
-							"復仇之劍"
+							"Sword of Vengeance"
 						]
 					}
 				},
 				{
 					"min": 56,
 					"max": 57,
-					"item": "{@item 命令魚類三叉戟}"
+					"item": "{@item Trident of Fish Command}"
 				},
 				{
 					"min": 58,
 					"max": 59,
-					"item": "{@item 魔法飛彈魔杖}"
+					"item": "{@item Wand of Magic Missiles}"
 				},
 				{
 					"min": 60,
 					"max": 61,
-					"item": "{@item 戰法師魔杖+1}"
+					"item": "+1 wand of the war mage"
 				},
 				{
 					"min": 62,
 					"max": 63,
-					"item": "{@item 蛛網魔杖}"
+					"item": "{@item Wand of Web}"
 				},
 				{
 					"min": 64,
 					"max": 65,
 					"choose": {
 						"fromGeneric": [
-							"警戒武器"
+							"Weapon of Warning"
 						]
 					}
 				},
 				{
 					"min": 66,
 					"max": 66,
-					"item": "{@item 精金鎖子甲}"
+					"item": "{@item Adamantine Chain Mail}"
 				},
 				{
 					"min": 67,
 					"max": 67,
-					"item": "{@item 精金鏈甲衫}"
+					"item": "{@item Adamantine Chain Shirt}"
 				},
 				{
 					"min": 68,
 					"max": 68,
-					"item": "{@item 精金鱗甲}"
+					"item": "{@item Adamantine Scale Mail}"
 				},
 				{
 					"min": 69,
 					"max": 69,
-					"item": "{@item 魔術袋，灰色}"
+					"item": "{@item Bag of Tricks, Gray}"
 				},
 				{
 					"min": 70,
 					"max": 70,
-					"item": "{@item 魔術袋，鐵鏽色}"
+					"item": "{@item Bag of Tricks, Rust}"
 				},
 				{
 					"min": 71,
 					"max": 71,
-					"item": "{@item 魔術袋，棕褐色}"
+					"item": "{@item Bag of Tricks, Tan}"
 				},
 				{
 					"min": 72,
 					"max": 72,
-					"item": "{@item 雪地之靴}"
+					"item": "{@item Boots of the Winterlands}"
 				},
 				{
 					"min": 73,
 					"max": 73,
-					"item": "{@item 爆裂頭飾}"
+					"item": "{@item Circlet of Blasting}"
 				},
 				{
 					"min": 74,
 					"max": 74,
-					"item": "{@item 幻象牌組}"
+					"item": "{@item Deck of Illusions}"
 				},
 				{
 					"min": 75,
 					"max": 75,
-					"item": "{@item 無盡煙壺}"
+					"item": "{@item Eversmoking Bottle}"
 				},
 				{
 					"min": 76,
 					"max": 76,
-					"item": "{@item 魅惑鏡片}"
+					"item": "{@item Eyes of Charming}"
 				},
 				{
 					"min": 77,
 					"max": 77,
-					"item": "{@item 鷹眼鏡片}"
+					"item": "{@item Eyes of the Eagle}"
 				},
 				{
 					"min": 78,
 					"max": 78,
-					"item": "{@item 異能塑像，白銀渡鴉}"
+					"item": "{@item Figurine of Wondrous Power, Silver Raven}"
 				},
 				{
 					"min": 79,
 					"max": 79,
-					"item": "{@item 光彩奪目寶石}"
+					"item": "{@item Gem of Brightness}"
 				},
 				{
 					"min": 80,
 					"max": 80,
-					"item": "{@item 避矢奪箭手套}"
+					"item": "{@item Gloves of Missile Snaring}"
 				},
 				{
 					"min": 81,
 					"max": 81,
-					"item": "{@item 游泳攀爬手套}"
+					"item": "{@item Gloves of Swimming and Climbing}"
 				},
 				{
 					"min": 82,
 					"max": 82,
-					"item": "{@item 竊賊手套}"
+					"item": "{@item Gloves of Thievery}"
 				},
 				{
 					"min": 83,
 					"max": 83,
-					"item": "{@item 智力頭帶}"
+					"item": "{@item Headband of Intellect}"
 				},
 				{
 					"min": 84,
 					"max": 84,
-					"item": "{@item 心靈感應頭盔}"
+					"item": "{@item Helm of Telepathy}"
 				},
 				{
 					"min": 85,
 					"max": 85,
-					"item": "{@item 吟遊詩人樂器，安眠魯特琴}"
+					"item": "{@item Instrument of the Bards, Doss Lute}"
 				},
 				{
 					"min": 86,
 					"max": 86,
-					"item": "{@item 吟遊詩人樂器，佛克路坎三弦琴}"
+					"item": "{@item Instrument of the Bards, Fochlucan Bandore}"
 				},
 				{
 					"min": 87,
 					"max": 87,
-					"item": "{@item 吟遊詩人樂器，麥克-弗瑞米西特琴}"
+					"item": "{@item Instrument of the Bards, Mac-Fuirmidh Cittern}"
 				},
 				{
 					"min": 88,
 					"max": 88,
-					"item": "{@item 讀心勳章}"
+					"item": "{@item Medallion of Thoughts}"
 				},
 				{
 					"min": 89,
 					"max": 89,
-					"item": "{@item 適應項鍊}"
+					"item": "{@item Necklace of Adaptation}"
 				},
 				{
 					"min": 90,
 					"max": 90,
-					"item": "{@item 癒合護身符}"
+					"item": "{@item Periapt of Wound Closure}"
 				},
 				{
 					"min": 91,
 					"max": 91,
-					"item": "{@item 顫慄之笛}"
+					"item": "{@item Pipes of Haunting}"
 				},
 				{
 					"min": 92,
 					"max": 92,
-					"item": "{@item 喚鼠排笛}"
+					"item": "{@item Pipes of the Sewers}"
 				},
 				{
 					"min": 93,
 					"max": 93,
-					"item": "{@item 跳躍戒指}"
+					"item": "{@item Ring of Jumping}"
 				},
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 心靈護盾戒指}"
+					"item": "{@item Ring of Mind Shielding}"
 				},
 				{
 					"min": 95,
 					"max": 95,
-					"item": "{@item 溫暖戒指}"
+					"item": "{@item Ring of Warmth}"
 				},
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 水行戒指}"
+					"item": "{@item Ring of Water Walking}"
 				},
 				{
 					"min": 97,
 					"max": 97,
-					"item": "{@item 艾羅娜的箭袋}"
+					"item": "{@item Quiver of Ehlonna}"
 				},
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 幸運石}"
+					"item": "{@item Stone of Good Luck}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 造風之扇}"
+					"item": "{@item Wind Fan}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 飛翼之靴}"
+					"item": "{@item Winged Boots}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表G", "ENG_name": "Magic Item Table G",
+			"name": "Magic Item Table G",
 			"source": "DMG",
 			"page": 147,
 			"type": "G",
@@ -2466,497 +2466,497 @@
 					"max": 11,
 					"choose": {
 						"fromGeneric": [
-							"武器+2"
+							"+2 Weapon"
 						]
 					}
 				},
 				{
 					"min": 12,
 					"max": 14,
-					"item": "異能塑像",
+					"item": "Figurine of Wondrous Power",
 					"table": [
 						{
 							"min": 1,
-							"item": "{@item 異能塑像，青銅獅鷲}"
+							"item": "{@item Figurine of Wondrous Power, Bronze Griffon}"
 						},
 						{
 							"min": 2,
-							"item": "{@item 異能塑像，黑檀木蒼蠅}"
+							"item": "{@item Figurine of Wondrous Power, Ebony Fly}"
 						},
 						{
 							"min": 3,
-							"item": "{@item 異能塑像，黃金獅子}"
+							"item": "{@item Figurine of Wondrous Power, Golden Lions}"
 						},
 						{
 							"min": 4,
-							"item": "{@item 異能塑像，象牙山羊}"
+							"item": "{@item Figurine of Wondrous Power, Ivory Goats}"
 						},
 						{
 							"min": 5,
-							"item": "{@item 異能塑像，大理石象}"
+							"item": "{@item Figurine of Wondrous Power, Marble Elephant}"
 						},
 						{
 							"min": 6,
 							"max": 7,
-							"item": "{@item 異能塑像，瑪瑙犬}"
+							"item": "{@item Figurine of Wondrous Power, Onyx Dog}"
 						},
 						{
 							"min": 8,
-							"item": "{@item 異能塑像，蛇紋石貓頭鷹}"
+							"item": "{@item Figurine of Wondrous Power, Serpentine Owl}"
 						}
 					]
 				},
 				{
 					"min": 15,
 					"max": 15,
-					"item": "{@item 精金護胸甲}"
+					"item": "{@item Adamantine Breastplate}"
 				},
 				{
 					"min": 16,
 					"max": 16,
-					"item": "{@item 精金條板甲}"
+					"item": "{@item Adamantine Splint Armor}"
 				},
 				{
 					"min": 17,
 					"max": 17,
-					"item": "{@item 健康護符}"
+					"item": "{@item Amulet of Health}"
 				},
 				{
 					"min": 18,
 					"max": 18,
 					"choose": {
 						"fromGroup": [
-							"易傷護甲"
+							"Armor of Vulnerability"
 						]
 					}
 				},
 				{
 					"min": 19,
 					"max": 19,
-					"item": "{@item 捕箭盾}"
+					"item": "{@item Arrow-catching Shield}"
 				},
 				{
 					"min": 20,
 					"max": 20,
-					"item": "{@item 矮人腰帶}"
+					"item": "{@item Belt of Dwarvenkind}"
 				},
 				{
 					"min": 21,
 					"max": 21,
-					"item": "{@item 山丘巨人力量腰帶}"
+					"item": "{@item Belt of Hill Giant Strength}"
 				},
 				{
 					"min": 22,
 					"max": 22,
 					"choose": {
 						"fromGeneric": [
-							"狂戰士之斧"
+							"Berserker Axe"
 						]
 					}
 				},
 				{
 					"min": 23,
 					"max": 23,
-					"item": "{@item 浮空之靴}"
+					"item": "{@item Boots of Levitation}"
 				},
 				{
 					"min": 24,
 					"max": 24,
-					"item": "{@item 速度之靴}"
+					"item": "{@item Boots of Speed}"
 				},
 				{
 					"min": 25,
 					"max": 25,
-					"item": "{@item 命令水元素水缽}"
+					"item": "{@item Bowl of Commanding Water Elementals}"
 				},
 				{
 					"min": 26,
 					"max": 26,
-					"item": "{@item ​防禦護腕}"
+					"item": "{@item Bracers of Defense}"
 				},
 				{
 					"min": 27,
 					"max": 27,
-					"item": "{@item 命令火元素火盆}"
+					"item": "{@item Brazier of Commanding Fire Elementals}"
 				},
 				{
 					"min": 28,
 					"max": 28,
-					"item": "{@item 郎中披肩}"
+					"item": "{@item Cape of the Mountebank}"
 				},
 				{
 					"min": 29,
 					"max": 29,
-					"item": "{@item 控制氣元素香爐}"
+					"item": "{@item Censer of Controlling Air Elementals}"
 				},
 				{
 					"min": 30,
 					"max": 30,
-					"item": "{@item 鎖子甲+1}"
+					"item": "+1 chain mail"
 				},
 				{
 					"min": 31,
 					"max": 31,
-					"item": "抗性鎖子甲",
+					"item": "Chain Mail of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性鎖子甲",
-							"寒冰抗性鎖子甲",
-							"火焰抗性鎖子甲",
-							"力場抗性鎖子甲",
-							"閃電抗性鎖子甲",
-							"死靈抗性鎖子甲",
-							"毒素抗性鎖子甲",
-							"精神抗性鎖子甲",
-							"光耀抗性鎖子甲",
-							"雷鳴抗性鎖子甲"
+							"Chain Mail of Acid Resistance",
+							"Chain Mail of Cold Resistance",
+							"Chain Mail of Fire Resistance",
+							"Chain Mail of Force Resistance",
+							"Chain Mail of Lightning Resistance",
+							"Chain Mail of Necrotic Resistance",
+							"Chain Mail of Poison Resistance",
+							"Chain Mail of Psychic Resistance",
+							"Chain Mail of Radiant Resistance",
+							"Chain Mail of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 32,
 					"max": 32,
-					"item": "{@item 鏈甲衫+1}"
+					"item": "+1 chain shirt"
 				},
 				{
 					"min": 33,
 					"max": 33,
-					"item": "抗性鏈甲衫",
+					"item": "Chain Shirt of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性鏈甲衫",
-							"寒冰抗性鏈甲衫",
-							"火焰抗性鏈甲衫",
-							"力場抗性鏈甲衫",
-							"閃電抗性鏈甲衫",
-							"死靈抗性鏈甲衫",
-							"毒素抗性鏈甲衫",
-							"精神抗性鏈甲衫",
-							"光耀抗性鏈甲衫",
-							"雷鳴抗性鏈甲衫"
+							"Chain Shirt of Acid Resistance",
+							"Chain Shirt of Cold Resistance",
+							"Chain Shirt of Fire Resistance",
+							"Chain Shirt of Force Resistance",
+							"Chain Shirt of Lightning Resistance",
+							"Chain Shirt of Necrotic Resistance",
+							"Chain Shirt of Poison Resistance",
+							"Chain Shirt of Psychic Resistance",
+							"Chain Shirt of Radiant Resistance",
+							"Chain Shirt of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 34,
 					"max": 34,
-					"item": "{@item 位移斗篷}"
+					"item": "{@item Cloak of Displacement}"
 				},
 				{
 					"min": 35,
 					"max": 35,
-					"item": "{@item 蝙蝠斗篷}"
+					"item": "{@item Cloak of the Bat}"
 				},
 				{
 					"min": 36,
 					"max": 36,
-					"item": "{@item 力場魔方}"
+					"item": "{@item Cube of Force}"
 				},
 				{
 					"min": 37,
 					"max": 37,
-					"item": "{@item 戴恩的瞬間要塞}"
+					"item": "{@item Daern's Instant Fortress}"
 				},
 				{
 					"min": 38,
 					"max": 38,
-					"item": "{@item 淬毒匕首}"
+					"item": "{@item Dagger of Venom}"
 				},
 				{
 					"min": 39,
 					"max": 39,
-					"item": "{@item 次元鐐銬}"
+					"item": "{@item Dimensional Shackles}"
 				},
 				{
 					"min": 40,
 					"max": 40,
 					"choose": {
 						"fromGeneric": [
-							"屠龍者"
+							"Dragon Slayer"
 						]
 					}
 				},
 				{
 					"min": 41,
 					"max": 41,
-					"item": "{@item 精靈鏈甲}"
+					"item": "{@item Elven Chain}"
 				},
 				{
 					"min": 42,
 					"max": 42,
 					"choose": {
 						"fromGeneric": [
-							"焰舌"
+							"Flame Tongue"
 						]
 					}
 				},
 				{
 					"min": 43,
 					"max": 43,
-					"item": "{@item 真視寶石}"
+					"item": "{@item Gem of Seeing}"
 				},
 				{
 					"min": 44,
 					"max": 44,
 					"choose": {
 						"fromGeneric": [
-							"巨人殺手"
+							"Giant Slayer"
 						]
 					}
 				},
 				{
 					"min": 45,
 					"max": 45,
-					"item": "{@item 幻惑鑲釘皮甲}"
+					"item": "{@item Glamoured Studded Leather}"
 				},
 				{
 					"min": 46,
 					"max": 46,
-					"item": "{@item 傳送頭盔}"
+					"item": "{@item Helm of Teleportation}"
 				},
 				{
 					"min": 47,
 					"max": 47,
-					"item": "{@item 音爆號角}"
+					"item": "{@item Horn of Blasting}"
 				},
 				{
 					"min": 48,
 					"max": 48,
-					"item": "瓦爾哈拉號角 ({@item 瓦爾哈拉號角，白銀|dmg|白銀} 或 {@item 瓦爾哈拉號角，黃銅|dmg|黃銅})"
+					"item": "Horn of Valhalla ({@item Horn of Valhalla, Silver||silver} or {@item Horn of Valhalla, Brass||brass})"
 				},
 				{
 					"min": 49,
 					"max": 49,
-					"item": "{@item 吟遊詩人樂器，凱納斯曼陀林}"
+					"item": "{@item Instrument of the Bards, Canaith Mandolin}"
 				},
 				{
 					"min": 50,
 					"max": 50,
-					"item": "{@item 吟遊詩人樂器，科里里拉琴}"
+					"item": "{@item Instrument of the Bards, Cli Lyre}"
 				},
 				{
 					"min": 51,
 					"max": 51,
-					"item": "{@item 艾恩石，警覺}"
+					"item": "{@item Ioun Stone, Awareness}"
 				},
 				{
 					"min": 52,
 					"max": 52,
-					"item": "{@item 艾恩石，防護}"
+					"item": "{@item Ioun Stone, Protection}"
 				},
 				{
 					"min": 53,
 					"max": 53,
-					"item": "{@item 艾恩石，儲法}"
+					"item": "{@item Ioun Stone, Reserve}"
 				},
 				{
 					"min": 54,
 					"max": 54,
-					"item": "{@item 艾恩石，維生}"
+					"item": "{@item Ioun Stone, Sustenance}"
 				},
 				{
 					"min": 55,
 					"max": 55,
-					"item": "{@item 比拉羅的鐵索}"
+					"item": "{@item Iron Bands of Bilarro}"
 				},
 				{
 					"min": 56,
 					"max": 56,
-					"item": "{@item 皮甲+1}"
+					"item": "+1 leather armor"
 				},
 				{
 					"min": 57,
 					"max": 57,
-					"item": "抗性皮甲",
+					"item": "Leather Armor of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性皮甲",
-							"寒冰抗性皮甲",
-							"火焰抗性皮甲",
-							"力場抗性皮甲",
-							"閃電抗性皮甲",
-							"死靈抗性皮甲",
-							"毒素抗性皮甲",
-							"精神抗性皮甲",
-							"光耀抗性皮甲",
-							"雷鳴抗性皮甲"
+							"Leather Armor of Acid Resistance",
+							"Leather Armor of Cold Resistance",
+							"Leather Armor of Fire Resistance",
+							"Leather Armor of Force Resistance",
+							"Leather Armor of Lightning Resistance",
+							"Leather Armor of Necrotic Resistance",
+							"Leather Armor of Poison Resistance",
+							"Leather Armor of Psychic Resistance",
+							"Leather Armor of Radiant Resistance",
+							"Leather Armor of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 58,
 					"max": 58,
-					"item": "{@item 瓦解之錘}"
+					"item": "{@item Mace of Disruption}"
 				},
 				{
 					"min": 59,
 					"max": 59,
-					"item": "{@item 打擊之錘}"
+					"item": "{@item Mace of Smiting}"
 				},
 				{
 					"min": 60,
 					"max": 60,
-					"item": "{@item 恐懼之錘}"
+					"item": "{@item Mace of Terror}"
 				},
 				{
 					"min": 61,
 					"max": 61,
-					"item": "{@item 法術抗性披肩}"
+					"item": "{@item Mantle of Spell Resistance}"
 				},
 				{
 					"min": 62,
 					"max": 62,
-					"item": "{@item 念珠項鍊}"
+					"item": "{@item Necklace of Prayer Beads}"
 				},
 				{
 					"min": 63,
 					"max": 63,
-					"item": "{@item 辟毒護身符}"
+					"item": "{@item Periapt of Proof against Poison}"
 				},
 				{
 					"min": 64,
 					"max": 64,
-					"item": "{@item 支配動物戒指}"
+					"item": "{@item Ring of Animal Influence}"
 				},
 				{
 					"min": 65,
 					"max": 65,
-					"item": "{@item 閃避戒指}"
+					"item": "{@item Ring of Evasion}"
 				},
 				{
 					"min": 66,
 					"max": 66,
-					"item": "{@item 羽落戒指}"
+					"item": "{@item Ring of Feather Falling}"
 				},
 				{
 					"min": 67,
 					"max": 67,
-					"item": "{@item 自由行動戒指}"
+					"item": "{@item Ring of Free Action}"
 				},
 				{
 					"min": 68,
 					"max": 68,
-					"item": "{@item 防護戒指}"
+					"item": "{@item Ring of Protection}"
 				},
 				{
 					"min": 69,
 					"max": 69,
 					"choose": {
 						"fromGeneric": [
-							"抗性戒指"
+							"Ring of Resistance"
 						]
 					}
 				},
 				{
 					"min": 70,
 					"max": 70,
-					"item": "{@item 法術儲存戒指}"
+					"item": "{@item Ring of Spell Storing}"
 				},
 				{
 					"min": 71,
 					"max": 71,
-					"item": "{@item 公羊戒指}"
+					"item": "{@item Ring of the Ram}"
 				},
 				{
 					"min": 72,
 					"max": 72,
-					"item": "{@item X光視覺戒指}"
+					"item": "{@item Ring of X-ray Vision}"
 				},
 				{
 					"min": 73,
 					"max": 73,
-					"item": "{@item 百眼法袍}"
+					"item": "{@item Robe of Eyes}"
 				},
 				{
 					"min": 74,
 					"max": 74,
-					"item": "{@item 統治權杖}"
+					"item": "{@item Rod of Rulership}"
 				},
 				{
 					"min": 75,
 					"max": 75,
-					"item": "{@item 掌契者權杖+2}"
+					"item": "+2 rod of the pact keeper"
 				},
 				{
 					"min": 76,
 					"max": 76,
-					"item": "{@item 糾纏繩}"
+					"item": "{@item Rope of Entanglement}"
 				},
 				{
 					"min": 77,
 					"max": 77,
-					"item": "{@item 鱗甲+1}"
+					"item": "+1 scale mail"
 				},
 				{
 					"min": 78,
 					"max": 78,
-					"item": "抗性鱗甲",
+					"item": "Scale Mail of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性鱗甲",
-							"寒冰抗性鱗甲",
-							"火焰抗性鱗甲",
-							"力場抗性鱗甲",
-							"閃電抗性鱗甲",
-							"死靈抗性鱗甲",
-							"毒素抗性鱗甲",
-							"精神抗性鱗甲",
-							"光耀抗性鱗甲",
-							"雷鳴抗性鱗甲"
+							"Scale Mail of Acid Resistance",
+							"Scale Mail of Cold Resistance",
+							"Scale Mail of Fire Resistance",
+							"Scale Mail of Force Resistance",
+							"Scale Mail of Lightning Resistance",
+							"Scale Mail of Necrotic Resistance",
+							"Scale Mail of Poison Resistance",
+							"Scale Mail of Psychic Resistance",
+							"Scale Mail of Radiant Resistance",
+							"Scale Mail of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 79,
 					"max": 79,
-					"item": "{@item 盾牌+2}"
+					"item": "+2 shield"
 				},
 				{
 					"min": 80,
 					"max": 80,
-					"item": "{@item 飛彈吸引之盾}"
+					"item": "{@item Shield of Missile Attraction}"
 				},
 				{
 					"min": 81,
 					"max": 81,
-					"item": "{@item 魅惑法杖}"
+					"item": "{@item Staff of Charming}"
 				},
 				{
 					"min": 82,
 					"max": 82,
-					"item": "{@item 治癒法杖}"
+					"item": "{@item Staff of Healing}"
 				},
 				{
 					"min": 83,
 					"max": 83,
-					"item": "{@item 蟲群法杖}"
+					"item": "{@item Staff of Swarming Insects}"
 				},
 				{
 					"min": 84,
 					"max": 84,
-					"item": "{@item 林地法杖}"
+					"item": "{@item Staff of the Woodlands}"
 				},
 				{
 					"min": 85,
 					"max": 85,
-					"item": "{@item 凋零法杖}"
+					"item": "{@item Staff of Withering}"
 				},
 				{
 					"min": 86,
 					"max": 86,
-					"item": "{@item 控制土元素之石}"
+					"item": "{@item Stone of Controlling Earth Elementals}"
 				},
 				{
 					"min": 87,
 					"max": 87,
-					"item": "{@item 陽炎劍}"
+					"item": "{@item Sun Blade}"
 				},
 				{
 					"min": 88,
 					"max": 88,
 					"choose": {
 						"fromGeneric": [
-							"竊命之劍"
+							"Sword of Life Stealing"
 						]
 					}
 				},
@@ -2965,73 +2965,73 @@
 					"max": 89,
 					"choose": {
 						"fromGeneric": [
-							"重創之劍"
+							"Sword of Wounding"
 						]
 					}
 				},
 				{
 					"min": 90,
 					"max": 90,
-					"item": "{@item 觸手權杖}"
+					"item": "{@item Tentacle Rod}"
 				},
 				{
 					"min": 91,
 					"max": 91,
 					"choose": {
 						"fromGeneric": [
-							"惡毒武器"
+							"Vicious Weapon"
 						]
 					}
 				},
 				{
 					"min": 92,
 					"max": 92,
-					"item": "{@item 定身魔杖}"
+					"item": "{@item Wand of Binding}"
 				},
 				{
 					"min": 93,
 					"max": 93,
-					"item": "{@item 搜敵魔杖}"
+					"item": "{@item Wand of Enemy Detection}"
 				},
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 恐懼魔杖}"
+					"item": "{@item Wand of Fear}"
 				},
 				{
 					"min": 95,
 					"max": 95,
-					"item": "{@item 火球魔杖}"
+					"item": "{@item Wand of Fireballs}"
 				},
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 閃電束魔杖}"
+					"item": "{@item Wand of Lightning Bolts}"
 				},
 				{
 					"min": 97,
 					"max": 97,
-					"item": "{@item 麻痺魔杖}"
+					"item": "{@item Wand of Paralysis}"
 				},
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 戰法師魔杖+2}"
+					"item": "+2 wand of the war mage"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 驚奇魔杖}"
+					"item": "{@item Wand of Wonder}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 飛行之翼}"
+					"item": "{@item Wings of Flying}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表H", "ENG_name": "Magic Item Table H",
+			"name": "Magic Item Table H",
 			"source": "DMG",
 			"page": 148,
 			"type": "H",
@@ -3041,427 +3041,427 @@
 					"max": 10,
 					"choose": {
 						"fromGeneric": [
-							"武器+3"
+							"+3 Weapon"
 						]
 					}
 				},
 				{
 					"min": 11,
 					"max": 12,
-					"item": "{@item 位面護符}"
+					"item": "{@item Amulet of the Planes}"
 				},
 				{
 					"min": 13,
 					"max": 14,
 					"choose": {
 						"fromGroup": [
-							"飛天魔毯"
+							"Carpet of Flying"
 						]
 					}
 				},
 				{
 					"min": 15,
 					"max": 16,
-					"item": "{@item 水晶球}"
+					"item": "{@item Crystal Ball}"
 				},
 				{
 					"min": 17,
 					"max": 18,
-					"item": "{@item 再生戒指}"
+					"item": "{@item Ring of Regeneration}"
 				},
 				{
 					"min": 19,
 					"max": 20,
-					"item": "{@item 流星戒指}"
+					"item": "{@item Ring of Shooting Stars}"
 				},
 				{
 					"min": 21,
 					"max": 22,
-					"item": "{@item 心靈遙控戒指}"
+					"item": "{@item Ring of Telekinesis}"
 				},
 				{
 					"min": 23,
 					"max": 24,
-					"item": "{@item 虹光法袍}"
+					"item": "{@item Robe of Scintillating Colors}"
 				},
 				{
 					"min": 25,
 					"max": 26,
-					"item": "{@item 星辰法袍}"
+					"item": "{@item Robe of Stars}"
 				},
 				{
 					"min": 27,
 					"max": 28,
-					"item": "{@item 吸收權杖}"
+					"item": "{@item Rod of absorption}"
 				},
 				{
 					"min": 29,
 					"max": 30,
-					"item": "{@item 警示權杖}"
+					"item": "{@item Rod of Alertness}"
 				},
 				{
 					"min": 31,
 					"max": 32,
-					"item": "{@item 庇護權杖}"
+					"item": "{@item Rod of Security}"
 				},
 				{
 					"min": 33,
 					"max": 34,
-					"item": "{@item 掌契者權杖+3}"
+					"item": "+3 rod of the pact keeper"
 				},
 				{
 					"min": 35,
 					"max": 36,
-					"item": "{@item 急速彎刀}"
+					"item": "{@item Scimitar of Speed}"
 				},
 				{
 					"min": 37,
 					"max": 38,
-					"item": "{@item 盾牌+3}"
+					"item": "+3 shield"
 				},
 				{
 					"min": 39,
 					"max": 40,
-					"item": "{@item 火焰法杖}"
+					"item": "{@item Staff of Fire}"
 				},
 				{
 					"min": 41,
 					"max": 42,
-					"item": "{@item 冰霜法杖}"
+					"item": "{@item Staff of Frost}"
 				},
 				{
 					"min": 43,
 					"max": 44,
-					"item": "{@item 威力法杖}"
+					"item": "{@item Staff of Power}"
 				},
 				{
 					"min": 45,
 					"max": 46,
-					"item": "{@item 強襲法杖}"
+					"item": "{@item Staff of Striking}"
 				},
 				{
 					"min": 47,
 					"max": 48,
-					"item": "{@item 雷霆閃電法杖}"
+					"item": "{@item Staff of Thunder and Lightning}"
 				},
 				{
 					"min": 49,
 					"max": 50,
 					"choose": {
 						"fromGeneric": [
-							"鋒銳之劍"
+							"Sword of Sharpness"
 						]
 					}
 				},
 				{
 					"min": 51,
 					"max": 52,
-					"item": "{@item 變形魔杖}"
+					"item": "{@item Wand of Polymorph}"
 				},
 				{
 					"min": 53,
 					"max": 54,
-					"item": "{@item 戰法師魔杖+3}"
+					"item": "+3 wand of the war mage"
 				},
 				{
 					"min": 55,
 					"max": 55,
-					"item": "{@item 精金半身板甲}"
+					"item": "{@item Adamantine Half Plate Armor}"
 				},
 				{
 					"min": 56,
 					"max": 56,
-					"item": "{@item 精金全身板甲}"
+					"item": "{@item Adamantine Plate Armor}"
 				},
 				{
 					"min": 57,
 					"max": 57,
-					"item": "{@item 活化盾}"
+					"item": "{@item Animated Shield}"
 				},
 				{
 					"min": 58,
 					"max": 58,
-					"item": "{@item 火巨人力量腰帶}"
+					"item": "{@item Belt of Fire Giant Strength}"
 				},
 				{
 					"min": 59,
 					"max": 59,
-					"item": "{@item 霜巨人力量腰帶|dmg|霜} 或 {@item 石巨人力量腰帶|dmg|石}巨人力量腰帶",
+					"item": "Belt of {@item Belt of Frost Giant Strength||frost} or {@item Belt of Stone Giant Strength||stone} giant strength",
 					"choose": {
 						"fromItems": [
-							"霜巨人力量腰帶",
-							"石巨人力量腰帶"
+							"Belt of Frost Giant Strength",
+							"Belt of Stone Giant Strength"
 						]
 					}
 				},
 				{
 					"min": 60,
 					"max": 60,
-					"item": "{@item 護胸甲+1}"
+					"item": "+1 breastplate"
 				},
 				{
 					"min": 61,
 					"max": 61,
-					"item": "抗性護胸甲",
+					"item": "Breastplate of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性護胸甲",
-							"寒冰抗性護胸甲",
-							"火焰抗性護胸甲",
-							"力場抗性護胸甲",
-							"閃電抗性護胸甲",
-							"死靈抗性護胸甲",
-							"毒素抗性護胸甲",
-							"精神抗性護胸甲",
-							"光耀抗性護胸甲",
-							"雷鳴抗性護胸甲"
+							"Breastplate of Acid Resistance",
+							"Breastplate of Cold Resistance",
+							"Breastplate of Fire Resistance",
+							"Breastplate of Force Resistance",
+							"Breastplate of Lightning Resistance",
+							"Breastplate of Necrotic Resistance",
+							"Breastplate of Poison Resistance",
+							"Breastplate of Psychic Resistance",
+							"Breastplate of Radiant Resistance",
+							"Breastplate of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 62,
 					"max": 62,
-					"item": "{@item 祈神蠟燭}"
+					"item": "{@item Candle of Invocation}"
 				},
 				{
 					"min": 63,
 					"max": 63,
-					"item": "{@item 鎖子甲+2}"
+					"item": "+2 chain mail"
 				},
 				{
 					"min": 64,
 					"max": 64,
-					"item": "{@item 鏈甲衫+2}"
+					"item": "+2 chain shirt"
 				},
 				{
 					"min": 65,
 					"max": 65,
-					"item": "{@item 節肢斗篷}"
+					"item": "{@item Cloak of Arachnida}"
 				},
 				{
 					"min": 66,
 					"max": 66,
 					"choose": {
 						"fromGeneric": [
-							"舞空劍"
+							"Dancing Sword"
 						]
 					}
 				},
 				{
 					"min": 67,
 					"max": 67,
-					"item": "{@item 惡魔護甲}"
+					"item": "{@item Demon Armor}"
 				},
 				{
 					"min": 68,
 					"max": 68,
 					"choose": {
 						"fromGroup": [
-							"龍鱗甲"
+							"Dragon Scale Mail"
 						]
 					}
 				},
 				{
 					"min": 69,
 					"max": 69,
-					"item": "{@item 矮人板甲}"
+					"item": "{@item Dwarven Plate}"
 				},
 				{
 					"min": 70,
 					"max": 70,
-					"item": "{@item 矮人飛錘}"
+					"item": "{@item Dwarven Thrower}"
 				},
 				{
 					"min": 71,
 					"max": 71,
-					"item": "{@item 火巨靈囚瓶}"
+					"item": "{@item Efreeti Bottle}"
 				},
 				{
 					"min": 72,
 					"max": 72,
-					"item": "{@item 異能塑像，黑曜石駒}"
+					"item": "{@item Figurine of Wondrous Power, Obsidian Steed}"
 				},
 				{
 					"min": 73,
 					"max": 73,
-					"item": "{@item 霜銘}",
+					"item": "{@item Frost Brand}",
 					"choose": {
 						"fromGeneric": [
-							"霜銘"
+							"Frost Brand"
 						]
 					}
 				},
 				{
 					"min": 74,
 					"max": 74,
-					"item": "{@item 光輝頭盔}"
+					"item": "{@item Helm of Brilliance}"
 				},
 				{
 					"min": 75,
 					"max": 75,
-					"item": "{@item 瓦爾哈拉號角，青銅}"
+					"item": "{@item Horn of Valhalla, Bronze}"
 				},
 				{
 					"min": 76,
 					"max": 76,
-					"item": "{@item 吟遊詩人樂器，安斯翠瑟豎琴}"
+					"item": "{@item Instrument of the Bards, Anstruth Harp}"
 				},
 				{
 					"min": 77,
 					"max": 77,
-					"item": "{@item 艾恩石，吸收},"
+					"item": "{@item Ioun Stone, Absorption},"
 				},
 				{
 					"min": 78,
 					"max": 78,
-					"item": "{@item 艾恩石，機敏},"
+					"item": "{@item Ioun Stone, Agility},"
 				},
 				{
 					"min": 79,
 					"max": 79,
-					"item": "{@item 艾恩石，堅韌},"
+					"item": "{@item Ioun Stone, Fortitude},"
 				},
 				{
 					"min": 80,
 					"max": 80,
-					"item": "{@item 艾恩石，洞悉}"
+					"item": "{@item Ioun Stone, Insight}"
 				},
 				{
 					"min": 81,
 					"max": 81,
-					"item": "{@item 艾恩石，才智}"
+					"item": "{@item Ioun Stone, Intellect}"
 				},
 				{
 					"min": 82,
 					"max": 82,
-					"item": "{@item 艾恩石，統御}"
+					"item": "{@item Ioun Stone, Leadership}"
 				},
 				{
 					"min": 83,
 					"max": 83,
-					"item": "{@item 艾恩石，力量}"
+					"item": "{@item Ioun Stone, Strength}"
 				},
 				{
 					"min": 84,
 					"max": 84,
-					"item": "{@item 皮甲+2}"
+					"item": "+2 leather armor"
 				},
 				{
 					"min": 85,
 					"max": 85,
-					"item": "{@item 強身健體手冊}"
+					"item": "{@item Manual of Bodily Health}"
 				},
 				{
 					"min": 86,
 					"max": 86,
-					"item": "{@item 增益鍛鍊手冊}"
+					"item": "{@item Manual of Gainful Exercise}"
 				},
 				{
 					"min": 87,
 					"max": 87,
 					"choose": {
 						"fromGroup": [
-							"魔像手冊"
+							"Manual of Golems"
 						]
 					}
 				},
 				{
 					"min": 88,
 					"max": 88,
-					"item": "{@item 迅捷行動手冊}"
+					"item": "{@item Manual of Quickness of Action}"
 				},
 				{
 					"min": 89,
 					"max": 89,
-					"item": "{@item 攝心魔鏡}"
+					"item": "{@item Mirror of Life Trapping}"
 				},
 				{
 					"min": 90,
 					"max": 90,
-					"item": "{@item 九轉奪命劍}"
+					"item": "{@item Nine Lives Stealer}"
 				},
 				{
 					"min": 91,
 					"max": 91,
-					"item": "{@item 誓仇弓}"
+					"item": "{@item Oathbow}"
 				},
 				{
 					"min": 92,
 					"max": 92,
-					"item": "{@item 鱗甲+2}"
+					"item": "+2 scale mail"
 				},
 				{
 					"min": 93,
 					"max": 93,
-					"item": "{@item 抗法盾牌}"
+					"item": "{@item Spellguard Shield}"
 				},
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 條板甲+1}"
+					"item": "+1 splint armor"
 				},
 				{
 					"min": 95,
 					"max": 95,
-					"item": "抗性條板甲",
+					"item": "Splint Armor of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性條板甲",
-							"寒冰抗性條板甲",
-							"火焰抗性條板甲",
-							"力場抗性條板甲",
-							"閃電抗性條板甲",
-							"死靈抗性條板甲",
-							"毒素抗性條板甲",
-							"精神抗性條板甲",
-							"光耀抗性條板甲",
-							"雷鳴抗性條板甲"
+							"Splint Armor of Acid Resistance",
+							"Splint Armor of Cold Resistance",
+							"Splint Armor of Fire Resistance",
+							"Splint Armor of Force Resistance",
+							"Splint Armor of Lightning Resistance",
+							"Splint Armor of Necrotic Resistance",
+							"Splint Armor of Poison Resistance",
+							"Splint Armor of Psychic Resistance",
+							"Splint Armor of Radiant Resistance",
+							"Splint Armor of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 鑲釘皮甲+1}"
+					"item": "+1 studded leather armor"
 				},
 				{
 					"min": 97,
 					"max": 97,
-					"item": "抗性鑲釘皮甲",
+					"item": "Studded Leather Armor of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性鑲釘皮甲",
-							"寒冰抗性鑲釘皮甲",
-							"火焰抗性鑲釘皮甲",
-							"力場抗性鑲釘皮甲",
-							"閃電抗性鑲釘皮甲",
-							"死靈抗性鑲釘皮甲",
-							"毒素抗性鑲釘皮甲",
-							"精神抗性鑲釘皮甲",
-							"光耀抗性鑲釘皮甲",
-							"雷鳴抗性鑲釘皮甲"
+							"Studded Leather Armor of Acid Resistance",
+							"Studded Leather Armor of Cold Resistance",
+							"Studded Leather Armor of Fire Resistance",
+							"Studded Leather Armor of Force Resistance",
+							"Studded Leather Armor of Lightning Resistance",
+							"Studded Leather Armor of Necrotic Resistance",
+							"Studded Leather Armor of Poison Resistance",
+							"Studded Leather Armor of Psychic Resistance",
+							"Studded Leather Armor of Radiant Resistance",
+							"Studded Leather Armor of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 清澈思想卷冊}"
+					"item": "{@item Tome of Clear Thought}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 統御影響卷冊}"
+					"item": "{@item Tome of Leadership and Influence}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 通曉卷冊}"
+					"item": "{@item Tome of Understanding}"
 				}
 			]
 		},
 		{
-			"name": "魔法物品表I", "ENG_name": "Magic Item Table I",
+			"name": "Magic Item Table I",
 			"source": "DMG",
 			"page": 149,
 			"type": "I",
@@ -3471,21 +3471,21 @@
 					"max": 5,
 					"choose": {
 						"fromGeneric": [
-							"防禦者"
+							"Defender"
 						]
 					}
 				},
 				{
 					"min": 6,
 					"max": 10,
-					"item": "{@item 雷神之鎚}"
+					"item": "{@item Hammer of Thunderbolts}"
 				},
 				{
 					"min": 11,
 					"max": 15,
 					"choose": {
 						"fromGeneric": [
-							"吉兆之刃"
+							"Luck Blade"
 						]
 					}
 				},
@@ -3494,7 +3494,7 @@
 					"max": 20,
 					"choose": {
 						"fromGroup": [
-							"應答之劍"
+							"Sword of Answering"
 						]
 					}
 				},
@@ -3503,321 +3503,321 @@
 					"max": 23,
 					"choose": {
 						"fromGeneric": [
-							"神聖復仇者"
+							"Holy Avenger"
 						]
 					}
 				},
 				{
 					"min": 24,
 					"max": 26,
-					"item": "{@item 氣巨靈召喚戒指}"
+					"item": "{@item Ring of Djinni Summoning}"
 				},
 				{
 					"min": 27,
 					"max": 29,
-					"item": "{@item 隱身戒指}"
+					"item": "{@item Ring of Invisibility}"
 				},
 				{
 					"min": 30,
 					"max": 32,
-					"item": "{@item 法術反轉戒指}"
+					"item": "{@item Ring of Spell Turning}"
 				},
 				{
 					"min": 33,
 					"max": 35,
-					"item": "{@item 王者力量權杖}"
+					"item": "{@item Rod of Lordly Might}"
 				},
 				{
 					"min": 36,
 					"max": 38,
-					"item": "{@item 賢者法杖}"
+					"item": "{@item Staff of the Magi}"
 				},
 				{
 					"min": 39,
 					"max": 41,
-					"item": "{@item 斬首之劍}"
+					"item": "{@item Vorpal sword}"
 				},
 				{
 					"min": 42,
 					"max": 43,
-					"item": "{@item 雲巨人力量腰帶}"
+					"item": "{@item Belt of Cloud Giant Strength}"
 				},
 				{
 					"min": 44,
 					"max": 45,
-					"item": "{@item 護胸甲+2}"
+					"item": "+2 breastplate"
 				},
 				{
 					"min": 46,
 					"max": 47,
-					"item": "{@item 鎖子甲+3}"
+					"item": "+3 chain mail"
 				},
 				{
 					"min": 48,
 					"max": 49,
-					"item": "{@item 鏈甲衫+3}"
+					"item": "+3 chain shirt"
 				},
 				{
 					"min": 50,
 					"max": 51,
-					"item": "{@item 隱形斗篷}"
+					"item": "{@item Cloak of Invisibility}"
 				},
 				{
 					"min": 52,
 					"max": 53,
-					"item": "水晶球(傳說版本)",
+					"item": "Crystal Ball (legendary version)",
 					"choose": {
 						"fromItems": [
-							"讀心水晶球",
-							"心靈感應水晶球",
-							"真知水晶球"
+							"Crystal Ball of Mind Reading",
+							"Crystal Ball of Telepathy",
+							"Crystal Ball of True Seeing"
 						]
 					}
 				},
 				{
 					"min": 54,
 					"max": 55,
-					"item": "{@item 半身板甲+1}"
+					"item": "+1 half plate armor"
 				},
 				{
 					"min": 56,
 					"max": 57,
-					"item": "{@item 收妖瓶}"
+					"item": "{@item Iron Flask}"
 				},
 				{
 					"min": 58,
 					"max": 59,
-					"item": "{@item 皮甲+3}"
+					"item": "+3 leather armor"
 				},
 				{
 					"min": 60,
 					"max": 61,
-					"item": "{@item 全身板甲+1}"
+					"item": "+1 plate armor"
 				},
 				{
 					"min": 62,
 					"max": 63,
-					"item": "{@item 大法師法袍}"
+					"item": "{@item Robe of the Archmagi}"
 				},
 				{
 					"min": 64,
 					"max": 65,
-					"item": "{@item 復活權杖}"
+					"item": "{@item Rod of Resurrection}"
 				},
 				{
 					"min": 66,
 					"max": 67,
-					"item": "{@item 鱗甲+1}"
+					"item": "+1 scale mail"
 				},
 				{
 					"min": 68,
 					"max": 69,
-					"item": "{@item 防護聖甲蟲}"
+					"item": "{@item Scarab of Protection}"
 				},
 				{
 					"min": 70,
 					"max": 71,
-					"item": "{@item 條板甲+2}"
+					"item": "+2 splint armor"
 				},
 				{
 					"min": 72,
 					"max": 73,
-					"item": "{@item 鑲釘皮甲+2}"
+					"item": "+2 studded leather armor"
 				},
 				{
 					"min": 74,
 					"max": 75,
-					"item": "{@item 諸界之井}"
+					"item": "{@item Well of Many Worlds}"
 				},
 				{
 					"min": 76,
 					"max": 76,
-					"item": "魔法護甲",
+					"item": "Magic armor",
 					"table": [
 						{
 							"min": 1,
 							"max": 2,
-							"item": "{@item 半身板甲+2}"
+							"item": "+2 half plate armor"
 						},
 						{
 							"min": 3,
 							"max": 4,
-							"item": "{@item 全身板甲+2}"
+							"item": "+2 plate armor"
 						},
 						{
 							"min": 5,
 							"max": 6,
-							"item": "{@item 鑲釘皮甲+3}"
+							"item": "+3 studded leather armor"
 						},
 						{
 							"min": 7,
 							"max": 8,
-							"item": "{@item 護胸甲+3}"
+							"item": "+3 breastplate"
 						},
 						{
 							"min": 9,
 							"max": 10,
-							"item": "{@item 條板甲+3}"
+							"item": "+3 splint armor"
 						},
 						{
 							"min": 11,
 							"max": 11,
-							"item": "{@item 半身板甲+3}"
+							"item": "+3 half plate armor"
 						},
 						{
 							"min": 12,
 							"max": 12,
-							"item": "{@item 全身板甲+3}"
+							"item": "+3 plate armor"
 						}
 					]
 				},
 				{
 					"min": 77,
 					"max": 77,
-					"item": "{@item 夸力許裝置}"
+					"item": "{@item Apparatus of Kwalish}"
 				},
 				{
 					"min": 78,
 					"max": 78,
-					"item": "{@item 堅不可摧護甲}"
+					"item": "{@item Armor of Invulnerability}"
 				},
 				{
 					"min": 79,
 					"max": 79,
-					"item": "{@item 風暴巨人力量腰帶}"
+					"item": "{@item Belt of Storm Giant Strength}"
 				},
 				{
 					"min": 80,
 					"max": 80,
-					"item": "{@item 界門魔方}"
+					"item": "{@item Cubic Gate}"
 				},
 				{
 					"min": 81,
 					"max": 81,
-					"item": "{@item 萬象無常牌}"
+					"item": "{@item Deck of Many Things}"
 				},
 				{
 					"min": 82,
 					"max": 82,
-					"item": "{@item 火巨靈鏈甲}"
+					"item": "{@item Efreeti Chain}"
 				},
 				{
 					"min": 83,
 					"max": 83,
-					"item": "抗性半身板甲",
+					"item": "Half Plate Armor of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性半身板甲",
-							"寒冰抗性半身板甲",
-							"火焰抗性半身板甲",
-							"力場抗性半身板甲",
-							"閃電抗性半身板甲",
-							"死靈抗性半身板甲",
-							"毒素抗性半身板甲",
-							"精神抗性半身板甲",
-							"光耀抗性半身板甲",
-							"雷鳴抗性半身板甲"
+							"Half Plate Armor of Acid Resistance",
+							"Half Plate Armor of Cold Resistance",
+							"Half Plate Armor of Fire Resistance",
+							"Half Plate Armor of Force Resistance",
+							"Half Plate Armor of Lightning Resistance",
+							"Half Plate Armor of Necrotic Resistance",
+							"Half Plate Armor of Poison Resistance",
+							"Half Plate Armor of Psychic Resistance",
+							"Half Plate Armor of Radiant Resistance",
+							"Half Plate Armor of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 84,
 					"max": 84,
-					"item": "{@item 瓦爾哈拉號角，黑鐵}"
+					"item": "{@item Horn of Valhalla, Iron}"
 				},
 				{
 					"min": 85,
 					"max": 85,
-					"item": "{@item 吟遊詩人樂器，奧萊姆豎琴}"
+					"item": "{@item Instrument of the Bards, Ollamh Harp}"
 				},
 				{
 					"min": 86,
 					"max": 86,
-					"item": "{@item 艾恩石，強效吸收}"
+					"item": "{@item Ioun Stone, Greater Absorption}"
 				},
 				{
 					"min": 87,
 					"max": 87,
-					"item": "{@item 艾恩石，精通}"
+					"item": "{@item Ioun Stone, Mastery}"
 				},
 				{
 					"min": 88,
 					"max": 88,
-					"item": "{@item 艾恩石，再生}"
+					"item": "{@item Ioun Stone, Regeneration}"
 				},
 				{
 					"min": 89,
 					"max": 89,
-					"item": "{@item 乙太化板甲}"
+					"item": "{@item Plate armor of etherealness}"
 				},
 				{
 					"min": 90,
 					"max": 90,
-					"item": "抗性全身板甲",
+					"item": "Plate Armor of Resistance",
 					"choose": {
 						"fromItems": [
-							"酸蝕抗性全身板甲",
-							"寒冰抗性全身板甲",
-							"火焰抗性全身板甲",
-							"力場抗性全身板甲",
-							"閃電抗性全身板甲",
-							"死靈抗性全身板甲",
-							"毒素抗性全身板甲",
-							"精神抗性全身板甲",
-							"光耀抗性全身板甲",
-							"雷鳴抗性全身板甲"
+							"Plate Armor of Acid Resistance",
+							"Plate Armor of Cold Resistance",
+							"Plate Armor of Fire Resistance",
+							"Plate Armor of Force Resistance",
+							"Plate Armor of Lightning Resistance",
+							"Plate Armor of Necrotic Resistance",
+							"Plate Armor of Poison Resistance",
+							"Plate Armor of Psychic Resistance",
+							"Plate Armor of Radiant Resistance",
+							"Plate Armor of Thunder Resistance"
 						]
 					}
 				},
 				{
 					"min": 91,
 					"max": 91,
-					"item": "{@item 命令氣元素戒指}"
+					"item": "{@item Ring of Air Elemental Command}"
 				},
 				{
 					"min": 92,
 					"max": 92,
-					"item": "{@item 命令土元素戒指}"
+					"item": "{@item Ring of Earth Elemental Command}"
 				},
 				{
 					"min": 93,
 					"max": 93,
-					"item": "{@item 命令火元素戒指}"
+					"item": "{@item Ring of Fire Elemental Command}"
 				},
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 三願戒指}"
+					"item": "{@item Ring of Three Wishes}"
 				},
 				{
 					"min": 95,
 					"max": 95,
-					"item": "{@item 命令水元素戒指}"
+					"item": "{@item Ring of Water Elemental Command}"
 				},
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 湮滅法球}"
+					"item": "{@item Sphere of Annihilation}"
 				},
 				{
 					"min": 97,
 					"max": 97,
-					"item": "{@item 純善護符}"
+					"item": "{@item Talisman of Pure Good}"
 				},
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 法球護符}"
+					"item": "{@item Talisman of the Sphere}"
 				},
 				{
 					"min": 99,
 					"max": 99,
-					"item": "{@item 至惡護符}"
+					"item": "{@item Talisman of Ultimate Evil}"
 				},
 				{
 					"min": 100,
 					"max": 100,
-					"item": "{@item 靜語卷冊}"
+					"item": "{@item Tome of the Stilled Tongue}"
 				}
 			]
 		}

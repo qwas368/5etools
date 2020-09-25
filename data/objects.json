@@ -1,209 +1,158 @@
 {
 	"object": [
 		{
-			"name": "弩砲", "ENG_name": "Ballista",
+			"name": "Ballista",
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
-			"type": "SW",
+			"objectType": "SW",
 			"ac": "15",
 			"hp": "50",
-			"immune": "poison, psychic",
+			"immune": [
+				"poison",
+				"psychic"
+			],
 			"entries": [
-				"弩砲是一副發射重型弩矢的巨型十字弩。其攻擊發射前必須先進行裝填和瞄準作業。使用該武器時，進行裝填、瞄準以及攻擊發射三項作業需要分別花費一個動作。"
+				"A ballista is a massive crossbow that fires heavy bolts. Before it can be fired, it must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it."
 			],
 			"actionEntries": [
 				{
 					"type": "actions",
-					"name": "弩矢",
+					"name": "Bolt",
 					"entries": [
 						{
 							"type": "attack",
 							"attackType": "RW",
 							"attackEntries": [
-								"命中 {@hit +6} , 射程 120/480 呎., 單一目標。"
+								"{@hit +6} to hit, range 120/480 ft., one target."
 							],
 							"hitEntries": [
-								"16 ({@dice 3d10}) 穿刺傷害。"
+								"16 ({@damage 3d10}) piercing damage."
 							]
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
-			"name": "火砲","ENG_name": "Cannon",
-			"size": "L",
-			"type": "SW",
+			"name": "Cannon",
 			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
 			"ac": "19",
 			"hp": "75",
-			"immune": "poison, psychic",
-			"entries": [
-				"火砲使用火藥推動重型鐵球，使其以毀滅性的速度從空中劃過進行政擊。在沒有火藥設定的戰役中，火砲可以設定為由聰明的侏儒或是工程法師所設計的奧法驅動設備。",
-				"火砲通常安裝在帶輪的木質砲台上。其攻擊發射前必須先進行裝填和瞄準作業。使用該武器時，進行裝填、瞄準以及攻擊發射三項作業需要分別花費一個動作。"
+			"immune": [
+				"poison",
+				"psychic"
 			],
-			"page": 255,
+			"entries": [
+				"A cannon uses gunpowder to propel heavy balls of cast iron through the air at destructive speeds. In a campaign without gunpowder, a cannon might be an arcane device built by clever gnomes or wizardly engineers.",
+				"A cannon is usually supported in a wooden frame with wheels. Before it can be fired, the cannon must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it."
+			],
 			"actionEntries": [
 				{
 					"type": "actions",
-					"name": "砲彈",
+					"name": "Cannon Ball",
 					"entries": [
 						{
 							"type": "attack",
 							"attackType": "RW",
 							"attackEntries": [
-								"命中 {@hit +6} , 射程 600/2,400 呎., 單一目標。"
+								"{@hit +6} to hit, range 600/2,400 ft., one target."
 							],
 							"hitEntries": [
-								"44 ({@dice 8d10}) 鈍擊傷害。"
+								"44 ({@damage 8d10}) bludgeoning damage."
 							]
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
-			"name": "吊掛大鍋","ENG_name": "Cauldron, Suspended",
+			"name": "Captain A-Hole",
+			"isNpc": true,
+			"source": "RMBRE",
+			"page": 21,
 			"size": "L",
-			"type": "SW",
+			"objectType": "U",
+			"ac": "17",
+			"hp": "50",
+			"speed": 0,
+			"str": 14,
+			"dex": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Cannon",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +5} to hit, range 30 ft., one target."
+							],
+							"hitEntries": [
+								"3 ({@damage 1d6}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Cauldron, Suspended",
 			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
 			"ac": "19",
 			"hp": "20",
-			"immune": "poison, psychic",
-			"entries": [
-				"大鍋的主體是一口吊掛起來的鋼鐵鍋，以方便使之側翻並倒出內裡所裝載物質。大鍋一日倒空，則必須重新裝填物質進鍋內，通常還需要對新加入物質進行加熱才可再次使用。裝填大鍋需要花費三個動作，傾倒大鍋需要花費一個動作。",
-				"大鍋可以裝填其他液體，比如強酸或者綠軟泥，並依不同物質具有不同效應。"
+			"immune": [
+				"poison",
+				"psychic"
 			],
-			"page": 255,
+			"entries": [
+				"A cauldron is an iron pot suspended so that it can be tipped easily, spilling its contents. Once emptied, a cauldron must be refilled-and its contents must usually be reheated-before it can be used again. It takes three actions to fill a cauldron and one action to tip it.",
+				"Cauldrons can be filled with other liquids, such as acid or {@hazard green slime}, with different effects."
+			],
 			"actionEntries": [
 				{
 					"type": "entries",
-					"name": "滾油",
+					"name": "Boiling Oil",
 					"entries": [
-						"大鍋向其正下方10尺方形區域倒出滾油。在區域內的生物必須進行一次DC15的敏捷豁免，豁免失敗者將受到10({@dice 3d6})的火焰傷害，豁免成功則傷害減半。"
+						"The cauldron pours boiling oil onto a 10-foot-square area directly below it. Any creature in the area must make a DC 15 Dexterity saving throw, taking 10 ({@damage 3d6}) fire damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			]
 		},
 		{
-			"name": "彈射投石機","ENG_name": "Mangonel",
-			"size": "L",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "100",
-			"immune": "poison, psychic",
-			"entries": [
-				"彈射投石機是一種以弧線拋射重型投石的彈道武器，其投出的石彈可以擊中身處掩護的目標。彈射投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
-				"彈射投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥並依不同種類而產生不同的效果。"
-			],
-			"page": 255,
-			"actionEntries": [
-				{
-					"type": "actions",
-					"name": "彈射投石",
-					"entries": [
-						{
-							"type": "attack",
-							"attackType": "RW",
-							"attackEntries": [
-								"命中 {@hit +5} , 射程 200/800 呎. (無法命中 60 呎內目標), 單一目標。"
-							],
-							"hitEntries": [
-								"27 ({@dice 5d10}) 鈍擊傷害。"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "攻城槌","ENG_name": "Ram",
-			"size": "L",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "100",
-			"immune": "poison, psychic",
-			"entries": [
-				"攻城槌的底座是一個可移動的框架，一根粗圓木作為其主體，用鐵鍊裝架在兩個帶蓋頂的橫樑上。圓木前端鑲裱著鐵皮外殼，用以擊穿大門與路障。",
-				"攻城槌需要至少四名中型體型的生物進行操作。由於兩邊的橫梁帶有蓋頂，操作者對來自前方的攻擊處於全身掩護。"
-			],
-			"page": 255,
-			"actionEntries": [
-				{
-					"type": "actions",
-					"name": "攻城槌",
-					"entries": [
-						{
-							"type": "attack",
-							"attackType": "MW",
-							"attackEntries": [
-								"命中 {@hit +8} , 觸及 5 呎., 單一目標。"
-							],
-							"hitEntries": [
-								"16 ({@dice 3d10}) 鈍擊傷害。"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "攻城塔","ENG_name": "Siege Tower",
-			"size": "G",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "200",
-			"immune": "poison, psychic",
-			"entries": [
-				"攻城塔是一個可移動的木質建築，其主體由框架結構組成牆身上設置著百葉窗孔。塔底設置了大型的木輪或滾軸，讓其可被士兵或負重牲畜進行推拉進而進行移動。中型或更小體型的生物可以使用攻城塔直接到達40尺高的城墻上。攻城塔內的生物對來自塔外的攻擊處於全身掩護。"
-			],
-			"page": 256
-		},
-		{
-			"name": "配重投石機","ENG_name": "Trebuchet",
-			"size": "H",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "150",
-			"immune": "poison, psychic",
-			"page": 256,
-			"entries": [
-				"配重投石機是一種以弧線投擲重載石彈的彈道武器，其投出的石彈可以擊中身處掩護的目標。配重投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
-				"配重投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥，比如油桶或者污物，並依不同彈藥而產生不同的效果。"
-			],
-			"actionEntries": [
-				{
-					"type": "actions",
-					"name": "配重投石",
-					"entries": [
-						{
-							"type": "attack",
-							"attackType": "RW",
-							"attackEntries": [
-								"命中 {@hit +5} , 射程 300/1,200 呎. (無法命中 60 呎內目標), 單一目標。"
-							],
-							"hitEntries": [
-								"44 ({@dice 8d10}) 鈍擊傷害。"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Generic Object","ENG_name": "Generic Object",
-			"size": "V",
-			"type": "GEN",
+			"name": "Generic Object",
 			"source": "DMG",
 			"page": 246,
+			"srd": true,
+			"size": "V",
+			"objectType": "GEN",
 			"ac": "Varies (see below)",
 			"hp": "Varies (see below)",
-			"immune": "Varies (see below)",
+			"immune": [
+				{
+					"special": "Varies (see below)"
+				}
+			],
 			"entries": [
 				"When characters need to saw through ropes, shatter a window, or smash a vampire's coffin, the only hard and fast rule is this: given enough time and the right tools, characters can destroy any destructible object. Use common sense when determining a character's success at damaging an object. Can a fighter cut through a section of a stone wall with a sword? No, the sword is likely to break before the wall does.",
 				"For the purpose of these rules, an object is a discrete, inanimate item like a window, door, sword, book, table, chair, or stone, not a building or a vehicle that is composed of many other objects.",
@@ -326,26 +275,35 @@
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Gulthias Tree",
 			"source": "TftYP",
 			"page": 31,
 			"size": "G",
+			"objectType": "U",
 			"ac": "10",
 			"hp": "35",
-			"type": "U",
-			"immune": "necrotic, poison, psychic",
-			"resist": "piercing",
-			"vulnerable": "fire",
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"resist": [
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"entries": [
 				{
 					"type": "entries",
 					"name": "Fruit",
 					"entries": [
 						"Two magical fruits (evocation school) ripen on the tree each year. Each fruit resembles an apple, but it slowly extrudes from the tree like a cyst.",
-						"Up to a week before the summer solstice, a ruby red fruit grows. Someone other than a construct who eats a quarter or more of it regains 70 hit points. In addition, any {@condition blinded|phb|blindness}, {@condition deafened|phb|deafness}, and diseases affecting the eater end.",
+						"Up to a week before the summer solstice, a ruby red fruit grows. Someone other than a construct who eats a quarter or more of it regains 70 hit points. In addition, any {@condition blinded||blindness}, {@condition deafened||deafness}, and diseases affecting the eater end.",
 						"Up to a week before the winter solstice, a sickly white fruit grows. Someone who eats a quarter or more of it takes 70 necrotic damage. Each fruit has {@dice 1d4} seeds that, if planted, grow leafless woody shrubs that animate as twig blights after one year."
 					]
 				},
@@ -370,7 +328,135 @@
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Mangonel",
+			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "100",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"A mangonel is a type of catapult that hurls heavy projectiles in a high arc. This payload can hit targets behind cover. Before the mangonel can be fired, it must be loaded and aimed. It takes two actions to load the weapon, two actions to aim it, and one action to fire it.",
+				"A mangonel typically hurls a heavy stone, although it can hurl other kinds of projectiles, with different effects."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Mangonel Stone",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +5} to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target."
+							],
+							"hitEntries": [
+								"27 ({@damage 5d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ram",
+			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "100",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"A ram consists of a movable gallery equipped with a heavy log suspended from two roof beams by chains.",
+				"The log is shod in iron and used to batter through doors and barricades.",
+				"It takes a minimum of four Medium creatures to operate a ram. Because of the gallery roof, these operators have total cover against attacks from above."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Ram",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "MW",
+							"attackEntries": [
+								"{@hit +8} to hit, reach 5 ft., one object."
+							],
+							"hitEntries": [
+								"16 ({@damage 3d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Siege Tower",
+			"source": "DMG",
+			"page": 256,
+			"size": "G",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "200",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"A siege tower is a mobile wooden structure with a beam frame and slats in its walls. Large wooden wheels or rollers allow the tower to be pushed or pulled by soldiers or beasts of burden. Medium or smaller creatures can use the siege tower to reach the top of walls up to 40 feet high. A creature in the tower has total cover from attacks outside the tower."
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Trebuchet",
+			"source": "DMG",
+			"page": 256,
+			"size": "H",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "150",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"A trebuchet is a powerful catapult that throws its payload in a high arc, so it can hit targets behind cover.",
+				"Before the trebuchet can be fired, it must be loaded and aimed. It takes two actions to load the weapon, two actions to aim it, and one action to fire it.",
+				"A trebuchet typically hurls a heavy stone. However, it can launch other kinds of projectiles, such as barrels of oil or sewage, with different effects."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Trebuchet Stone",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +5} to hit, range 300/1,200 ft. (can't hit targets within 60 feet of it), one target."
+							],
+							"hitEntries": [
+								"44 ({@damage 8d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
 		}
 	]
 }

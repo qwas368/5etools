@@ -2,50 +2,41 @@
 
 const CONTENTS_URL = "data/adventures.json";
 
-window.onload = function load () {
+window.addEventListener("load", () => {
 	BookUtil.renderArea = $(`#pagecontent`);
-
-	BookUtil.renderArea.append(Renderer.utils.getBorderTr());
-	BookUtil.renderArea.append(`<tr><td colspan="6" class="initial-message book-loading-message">Loading...</td></tr>`);
-	BookUtil.renderArea.append(Renderer.utils.getBorderTr());
-
 	ExcludeUtil.pInitialise(); // don't await, as this is only used for search
-	Omnisearch.addScrollTopFloat();
 	DataUtil.loadJSON(CONTENTS_URL).then(onJsonLoad);
-};
+});
 
-let list;
 let adventures = [];
 let adI = 0;
 function onJsonLoad (data) {
-	$("ul.contents").append($(`<li><a href='adventures.html'><span class='name'>\u21FD All Adventures</span></a></li>`));
-
-	list = new List("listcontainer", {
-		valueNames: ['name'],
-		listClass: "contents"
-	});
+	$("ul.contents").append($(`<li><a href='adventures.html' class="lst--border"><span class='name'>\u21FD All Adventures</span></a></li>`));
 
 	BookUtil.baseDataUrl = "data/adventure/adventure-";
 	BookUtil.homebrewIndex = "adventure";
 	BookUtil.homebrewData = "adventureData";
 	BookUtil.initLinkGrabbers();
+	BookUtil.initScrollTopFloat();
+
+	BookUtil.contentType = "adventure";
 
 	addAdventures(data);
 
 	$(`.book-head-message`).text(`Select an adventure from the list on the left`);
-	$(`.book-loading-message`).text(`Select a book to begin`);
+	$(`.book-loading-message`).text(`Select an adventure to begin`);
 
 	window.onhashchange = BookUtil.booksHashChange;
 	BrewUtil.pAddBrewData()
 		.then(handleBrew)
 		.then(() => BrewUtil.pAddLocalBrewData())
-		.catch(BrewUtil.pPurgeBrew)
 		.then(() => {
 			if (window.location.hash.length) {
 				BookUtil.booksHashChange();
 			} else {
 				$(`.contents-item`).show();
 			}
+			window.dispatchEvent(new Event("toolsLoaded"));
 		});
 }
 
@@ -58,9 +49,8 @@ function handleBrew (homebrew) {
 function addAdventures (data) {
 	if (!data.adventure || !data.adventure.length) return;
 
-	adventures = adventures.concat(data.adventure);
+	adventures.push(...data.adventure);
 	BookUtil.bookIndex = adventures;
-	BookUtil.contentType = "adventure";
 
 	const adventuresList = $("ul.contents");
 	let tempString = "";

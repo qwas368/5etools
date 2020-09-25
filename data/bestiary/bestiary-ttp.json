@@ -1,8 +1,16 @@
 {
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"MTF": "TTP"
+			}
+		}
+	},
 	"monster": [
 		{
-			"source": "TTP",
 			"name": "Decapus",
+			"source": "TTP",
+			"page": 21,
 			"size": "L",
 			"type": "monstrosity",
 			"alignment": [
@@ -12,7 +20,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -35,7 +43,9 @@
 				"perception": "+2",
 				"stealth": "+4"
 			},
-			"senses": "darkvision 60 ft.",
+			"senses": [
+				"darkvision 60 ft."
+			],
 			"passive": 12,
 			"cr": "4",
 			"action": [
@@ -54,26 +64,35 @@
 				{
 					"name": "Tentacles",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}24 ({@damage 9d4 + 2}) bludgeoning damage or 14 ({@damage 5d4 + 2}) bludgeoning damage if the decapus is grappling a creature other than the target or if the decapus is on the ground or floor. The target is also {@condition grappled} (escape DC 14) unless the decapus is already grappling a creature. Until this grapple ends, the target is {@condition restrained}."
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}24 ({@damage 9d4 + 2}) bludgeoning damage or 14 ({@damage 5d4 + 2}) bludgeoning damage if the decapus is grappling a creature other than the target or if the decapus is on the ground or floor. The target is also {@condition grappled} (escape {@dc 14}) unless the decapus is already grappling a creature. Until this grapple ends, the target is {@condition restrained}."
 					]
 				}
 			],
-			"page": 21,
+			"hasToken": true,
+			"senseTags": [
+				"D"
+			],
 			"actionTags": [
 				"Multiattack",
 				"Tentacles"
 			],
-			"senseTags": [
-				"D"
-			],
 			"damageTags": [
-				"P",
-				"B"
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
 			]
 		},
 		{
-			"source": "TTP",
 			"name": "Geonid",
+			"source": "TTP",
+			"page": 22,
 			"size": "S",
 			"type": "elemental",
 			"alignment": [
@@ -83,7 +102,7 @@
 				{
 					"ac": 17,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -104,7 +123,10 @@
 				"perception": "+4",
 				"stealth": "+2"
 			},
-			"senses": "darkvision 60 ft., tremorsense 30 ft.",
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
 			"passive": 14,
 			"cr": "1/4",
 			"trait": [
@@ -129,21 +151,25 @@
 					]
 				}
 			],
-			"page": 22,
+			"hasToken": true,
 			"senseTags": [
 				"D",
 				"T"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
 			"name": "Giant Slug",
 			"isNpc": true,
+			"source": "TTP",
+			"page": 18,
 			"size": "L",
 			"type": "monstrosity",
-			"source": "TTP",
 			"alignment": [
 				"U"
 			],
@@ -151,7 +177,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -172,10 +198,32 @@
 			"skill": {
 				"perception": "+3"
 			},
-			"senses": "darkvision 60 ft.",
-			"languages": "Abyssal, Aquan, Common",
+			"senses": [
+				"darkvision 60 ft."
+			],
 			"passive": 13,
+			"languages": [
+				"Abyssal",
+				"Aquan",
+				"Common"
+			],
 			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The slug's innate spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell guiding bolt}",
+							"{@spell sanctuary}",
+							"{@spell spiritual weapon}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
 			"trait": [
 				{
 					"name": "Keen Smell",
@@ -200,7 +248,7 @@
 				{
 					"name": "Tentacles",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}4 ({@damage 1d4 + 2}) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}4 ({@damage 1d4 + 2}) poison damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success."
 					]
 				},
 				{
@@ -218,26 +266,13 @@
 					]
 				}
 			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The slug's innate spellcasting ability is Wisdom (spell save DC 11, {@hit 3} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
-					],
-					"daily": {
-						"1e": [
-							"{@spell guiding bolt}",
-							"{@spell sanctuary}",
-							"{@spell spiritual weapon}"
-						]
-					},
-					"ability": "wis"
-				}
-			],
-			"page": 18,
+			"hasToken": true,
 			"traitTags": [
 				"Keen Senses",
 				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
 			],
 			"actionTags": [
 				"Multiattack",
@@ -248,21 +283,23 @@
 				"AQ",
 				"C"
 			],
-			"senseTags": [
-				"D"
+			"damageTags": [
+				"B",
+				"I",
+				"P"
 			],
 			"spellcastingTags": [
 				"I"
 			],
-			"damageTags": [
-				"I",
-				"P",
-				"B"
+			"miscTags": [
+				"MW",
+				"RCH"
 			]
 		},
 		{
-			"source": "TTP",
 			"name": "Topi",
+			"source": "TTP",
+			"page": 22,
 			"size": "S",
 			"type": "undead",
 			"alignment": [
@@ -273,7 +310,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -290,6 +327,10 @@
 			"int": 6,
 			"wis": 10,
 			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
 			"resist": [
 				"bludgeoning"
 			],
@@ -299,9 +340,9 @@
 			"conditionImmune": [
 				"poisoned"
 			],
-			"senses": "darkvision 60 ft.",
-			"languages": "understands the languages it knew in life but can't speak",
-			"passive": 10,
+			"languages": [
+				"understands the languages it knew in life but can't speak"
+			],
 			"cr": "1/2",
 			"trait": [
 				{
@@ -321,11 +362,11 @@
 				{
 					"name": "Venomous Claws",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage plus 2 ({@damage 1d4}) poison damage, and the target must succeed on a DC 11 Constitution saving throw or be {@condition poisoned} until the end of the target's next turn."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage plus 2 ({@damage 1d4}) poison damage, and the target must succeed on a {@dc 11} Constitution saving throw or be {@condition poisoned} until the end of the target's next turn."
 					]
 				}
 			],
-			"page": 22,
+			"hasToken": true,
 			"traitTags": [
 				"Turn Resistance",
 				"Undead Fortitude"
@@ -334,224 +375,18 @@
 				"D"
 			],
 			"languageTags": [
-				"CS"
+				"CS",
+				"LF"
 			],
 			"damageTags": [
-				"S",
-				"I"
-			]
-		},
-		{
-			"source": "TTP",
-			"name": "Tortle",
-			"size": "M",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"tortle"
-				]
-			},
-			"alignment": [
-				"L",
-				"G"
+				"I",
+				"S"
 			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"天生護甲"
-					]
-				}
+			"miscTags": [
+				"MW"
 			],
-			"hp": {
-				"average": 22,
-				"formula": "4d8 + 4"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 15,
-			"dex": 10,
-			"con": 12,
-			"int": 11,
-			"wis": 13,
-			"cha": 12,
-			"skill": {
-				"athletics": "+4",
-				"survival": "+3"
-			},
-			"languages": "Aquan, Common",
-			"passive": 11,
-			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"The tortle can hold its breath for 1 hour."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
-					]
-				},
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage when used with two hands."
-					]
-				},
-				{
-					"name": "Light Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 2} to hit, range 80/320 ft., one target. {@h}4 ({@damage 1d8}) piercing damage."
-					]
-				},
-				{
-					"name": "Shell Defense",
-					"entries": [
-						"The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is {@condition prone}, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
-					]
-				}
-			],
-			"page": 23,
-			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/712/tortle.mp3",
-			"traitTags": [
-				"Hold Breath"
-			],
-			"languageTags": [
-				"AQ",
-				"C"
-			],
-			"damageTags": [
-				"S",
-				"B",
-				"P"
-			]
-		},
-		{
-			"source": "TTP",
-			"name": "Tortle Druid",
-			"size": "M",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"tortle"
-				]
-			},
-			"alignment": [
-				"L",
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"天生護甲"
-					]
-				}
-			],
-			"hp": {
-				"average": 33,
-				"formula": "6d8 + 6"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 14,
-			"dex": 10,
-			"con": 12,
-			"int": 11,
-			"wis": 15,
-			"cha": 12,
-			"skill": {
-				"animal handling": "+4",
-				"nature": "+2",
-				"survival": "+4"
-			},
-			"languages": "Aquan, Common",
-			"passive": 12,
-			"cr": "2",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The tortle is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell 德魯伊伎倆}",
-								"{@spell guidance}",
-								"{@spell produce flame}"
-							]
-						},
-						"1": {
-							"slots": 4,
-							"spells": [
-								"{@spell animal friendship}",
-								"{@spell cure wounds}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
-							]
-						},
-						"2": {
-							"slots": 3,
-							"spells": [
-								"{@spell darkvision}",
-								"{@spell hold person}"
-							]
-						}
-					},
-					"ability": "wis"
-				}
-			],
-			"trait": [
-				{
-					"name": "Hold Breath",
-					"entries": [
-						"The tortle can hold its breath for 1 hour."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
-					]
-				},
-				{
-					"name": "Quarterstaff",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage when used with two hands."
-					]
-				},
-				{
-					"name": "Shell Defense",
-					"entries": [
-						"The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is {@condition prone}, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
-					]
-				}
-			],
-			"page": 23,
-			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/711/tortle-druid.mp3",
-			"traitTags": [
-				"Hold Breath"
-			],
-			"languageTags": [
-				"AQ",
-				"C"
-			],
-			"spellcastingTags": [
-				"CD"
-			],
-			"damageTags": [
-				"S",
-				"B"
+			"conditionInflict": [
+				"poisoned"
 			]
 		}
 	]

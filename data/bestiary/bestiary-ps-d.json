@@ -1,9 +1,16 @@
 {
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		}
+	},
 	"monster": [
 		{
+			"name": "Homarid",
 			"source": "PSD",
 			"page": 15,
-			"name": "Homarid",
 			"size": "M",
 			"type": "monstrosity",
 			"alignment": [
@@ -14,7 +21,7 @@
 				{
 					"ac": 14,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -36,13 +43,17 @@
 				"perception": "+4",
 				"stealth": "+3"
 			},
-			"senses": "darkvision 60 ft.",
+			"senses": [
+				"darkvision 60 ft."
+			],
 			"passive": 14,
-			"languages": "Homarid",
+			"languages": [
+				"Homarid"
+			],
 			"cr": "1",
 			"trait": [
 				{
-					"name": "兩棲", "tENG_name": "Amphibious",
+					"name": "Amphibious",
 					"entries": [
 						"The homarid can breathe air and water."
 					]
@@ -58,30 +69,37 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, and the target is {@condition grappled} (escape DC 11). The homarid has two claws, each of which can grapple only one target."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, and the target is {@condition grappled} (escape {@dc 11}). The homarid has two claws, each of which can grapple only one target."
 					]
 				}
 			],
-			"languageTags": [
-				"OTH"
+			"hasToken": true,
+			"traitTags": [
+				"Amphibious"
 			],
 			"senseTags": [
 				"D"
 			],
-			"traitTags": [
-				"Amphibious"
-			],
 			"actionTags": [
 				"Multiattack"
 			],
+			"languageTags": [
+				"OTH"
+			],
 			"damageTags": [
 				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
 			]
 		},
 		{
+			"name": "Kavu Predator",
 			"source": "PSD",
 			"page": 24,
-			"name": "Kavu Predator",
 			"size": "L",
 			"type": "beast",
 			"alignment": [
@@ -91,7 +109,7 @@
 				{
 					"ac": 15,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -113,15 +131,19 @@
 				"perception": "+4",
 				"stealth": "+5"
 			},
-			"senses": "darkvision 60 ft.",
+			"senses": [
+				"darkvision 60 ft."
+			],
 			"passive": 14,
-			"languages": "understands Elvish",
+			"languages": [
+				"understands Elvish"
+			],
 			"cr": "2",
 			"trait": [
 				{
 					"name": "Pounce",
 					"entries": [
-						"If the kavu moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the kavu can make one bite attack against it as a bonus action."
+						"If the kavu moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the kavu can make one bite attack against it as a bonus action."
 					]
 				}
 			],
@@ -145,27 +167,34 @@
 					]
 				}
 			],
-			"languageTags": [
-				"E"
+			"hasToken": true,
+			"traitTags": [
+				"Pounce"
 			],
 			"senseTags": [
 				"D"
 			],
-			"traitTags": [
-				"Pounce"
-			],
 			"actionTags": [
 				"Multiattack"
+			],
+			"languageTags": [
+				"E"
 			],
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
 			]
 		},
 		{
+			"name": "Steel Leaf Kavu",
 			"source": "PSD",
 			"page": 24,
-			"name": "Steel Leaf Kavu",
 			"size": "L",
 			"type": "beast",
 			"alignment": [
@@ -175,7 +204,7 @@
 				{
 					"ac": 16,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -195,15 +224,19 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"senses": "darkvision 60 ft.",
+			"senses": [
+				"darkvision 60 ft."
+			],
 			"passive": 14,
-			"languages": "understands Elvish",
+			"languages": [
+				"understands Elvish"
+			],
 			"cr": "4",
 			"trait": [
 				{
 					"name": "Raking Charge",
 					"entries": [
-						"If the kavu moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the kavu can make one rend attack against it as a bonus action."
+						"If the kavu moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the kavu can make one rend attack against it as a bonus action."
 					]
 				}
 			],
@@ -221,16 +254,33 @@
 					]
 				}
 			],
-			"languageTags": [
-				"E"
-			],
+			"hasToken": true,
 			"senseTags": [
 				"D"
+			],
+			"languageTags": [
+				"E"
 			],
 			"damageTags": [
 				"P",
 				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
 			]
+		},
+		{
+			"name": "Zombie Horse",
+			"source": "PSD",
+			"page": 17,
+			"_copy": {
+				"name": "Zombie",
+				"source": "MM"
+			},
+			"size": "L"
 		}
 	]
 }

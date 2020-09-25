@@ -5,15 +5,14 @@ const MONSTER_FEATURES_JSON_URL = "data/monsterfeatures.json";
 let msbcr;
 let monsterFeatures;
 
-window.onload = function load () {
+window.addEventListener("load", async () => {
 	ExcludeUtil.pInitialise(); // don't await, as this is only used for search
-	DataUtil.loadJSON(MONSTER_STATS_BY_CR_JSON_URL).then(addMSBCR);
-};
+	msbcr = await DataUtil.loadJSON(MONSTER_STATS_BY_CR_JSON_URL);
+	const mfData = await DataUtil.loadJSON(MONSTER_FEATURES_JSON_URL);
+	addMonsterFeatures(mfData);
 
-function addMSBCR (crData) {
-	msbcr = crData;
-	DataUtil.loadJSON(MONSTER_FEATURES_JSON_URL).then(addMonsterFeatures);
-}
+	window.dispatchEvent(new Event("toolsLoaded"));
+});
 
 function addMonsterFeatures (mfData) {
 	monsterFeatures = mfData.monsterfeatures;
@@ -55,7 +54,7 @@ function addMonsterFeatures (mfData) {
 
 	// when clicking a row in the "Monster Statistics by Challenge Rating" table
 	$("#msbcr tr").not(":has(th)").click(function () {
-		if (!confirm("這麼做將會重置計算機。你確定嗎？")) return;
+		if (!confirm("This will reset the calculator. Are you sure?")) return;
 		$("#expectedcr").val($(this).children("td:eq(0)").html());
 		const [minHp, maxHp] = $(this).children("td:eq(4)").html().split("-").map(it => parseInt(it));
 		$("#hp").val(minHp + (maxHp - minHp) / 2);
@@ -84,13 +83,13 @@ function addMonsterFeatures (mfData) {
 		const numBox = f.numbox ? `<input type="number" value="0" min="0" class="form-control form-control--minimal crc__mon_feature_num input-xs ml-2">` : "";
 
 		$wrpMonFeatures.append(`
-			<label class="row crc__mon_feature">
+			<label class="row crc__mon_feature ui-tip__parent">
 				<div class="col-1 crc__mon_feature_wrp_cb">
 					<input type="checkbox" id="mf-${Parser.stringToSlug(f.name)}" title="${f.name}" data-hp="${f.hp}" data-ac="${f.ac}" data-dpr="${f.dpr}" data-attackbonus="${f.attackbonus}" class="crc__mon_feature_cb">${numBox}
 				</div>
 				<div class="col-2">${f.name}</div>
 				<div class="col-2">${Renderer.get().render(`{@creature ${f.example}}`)}</div>
-				<div class="col-7"><span title="${effectOnCr.join(", ")}" class="explanation">${f.effect}</span></div>
+				<div class="col-7"><span title="${effectOnCr.join(", ")}">${f.effect}</span></div>
 			</label>
 		`);
 	});
@@ -115,7 +114,7 @@ function addMonsterFeatures (mfData) {
 			$(`.crc__mon_feature_cb`).each((i, e) => {
 				const $cb = $(e);
 				const idCb = $cb.attr("id");
-				const val = History.getSubHash(idCb);
+				const val = Hist.getSubHash(idCb);
 				if (val) {
 					$cb.prop("checked", true);
 					if (val !== "true") {
@@ -132,9 +131,9 @@ function addMonsterFeatures (mfData) {
 		const curFeature = $cbFeature.attr("id");
 
 		if ($cbFeature.prop("checked")) {
-			History.setSubhash(curFeature, $iptNum.length ? $iptNum.val() : true);
+			Hist.setSubhash(curFeature, $iptNum.length ? $iptNum.val() : true);
 		} else {
-			History.setSubhash(curFeature, null)
+			Hist.setSubhash(curFeature, null)
 		}
 	}
 
@@ -154,7 +153,7 @@ function addMonsterFeatures (mfData) {
 	$("#monsterfeatures .crc__wrp_mon_features input").change(calculateCr);
 
 	$("#crcalc_reset").click(() => {
-		confirm("你確定要重置嗎？") && (() => {
+		confirm("Are you sure?") && (() => {
 			window.location = "";
 			parseUrl();
 		})();
@@ -287,15 +286,15 @@ function calculateCr () {
 	window.location = `#${hashParts.join(",")}`;
 
 	$("#croutput").html(`
-		<h4>挑戰等級：${cr}</h4>
-		<p>攻擊性CR: ${offensiveCR}</p>
-		<p>防禦性CR: ${defensiveCR}</p>
-		<p>熟練加值： +${msbcr.cr[finalCr].pb}</p>
-		<p>有效HP： ${effectiveHp} (${hitDice}${hitDiceSize}${conMod < 0 ? "" : "+"}${conMod * hitDice})</p>
-		<p>有效AC： ${ac}</p>
-		<p>每輪平均傷害： ${effectiveDpr}</p>
-		<p>${useSaveDc ? "豁免DC： " : "有效攻擊加值： +"}${attackBonus}</p>
-		<p>經驗值： ${Parser.crToXp(msbcr.cr[finalCr]._cr)}</p>
+		<h4>Challenge Rating: ${cr}</h4>
+		<p>Offensive CR: ${offensiveCR}</p>
+		<p>Defensive CR: ${defensiveCR}</p>
+		<p>Proficiency Bonus: +${msbcr.cr[finalCr].pb}</p>
+		<p>Effective HP: ${effectiveHp} (${hitDice}${hitDiceSize}${conMod < 0 ? "" : "+"}${conMod * hitDice})</p>
+		<p>Effective AC: ${ac}</p>
+		<p>Average Damage Per Round: ${effectiveDpr}</p>
+		<p>${useSaveDc ? "Save DC: " : "Effective Attack Bonus: +"}${attackBonus}</p>
+		<p>Experience Points: ${Parser.crToXp(msbcr.cr[finalCr]._cr)}</p>
 	`);
 }
 
@@ -314,5 +313,5 @@ function calculateHp () {
 }
 
 function fractionStrToDecimal (str) {
-	return str === "0" ? 0 : parseFloat(str.split('/').reduce((numerator, denominator) => numerator / denominator));
+	return str === "0" ? 0 : parseFloat(str.split("/").reduce((numerator, denominator) => numerator / denominator));
 }

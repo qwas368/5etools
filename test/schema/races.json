@@ -1,39 +1,229 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.1.1",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.4.2",
 	"type": "object",
 
 	"definitions": {
-		"speed": {
-			"oneOf": [
-				{
-					"type": "object",
-					"properties": {
-						"walk": {
-							"type": "integer"
-						},
-						"climb": {
-							"type": "integer"
-						},
-						"fly": {
-							"type": "integer"
-						},
-						"swim": {
-							"type": "integer"
-						}
-					},
-					"required": ["walk"],
-					"additionalProperties": false
+		"raceData": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
 				},
-				{
+				"alias": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"source": {
+					"type": "string"
+				},
+				"page": {
 					"type": "integer"
 				},
-				{
-					"type": {
-						"const": "Varies"
+				"otherSources": {
+					"$ref": "util.json#/definitions/otherSources"
+				},
+				"additionalSources": {
+					"$ref": "util.json#/definitions/additionalSources"
+				},
+				"ability": {
+					"$ref": "#/definitions/abilityScores"
+				},
+				"speed": {
+					"$ref": "util.json#/definitions/speed"
+				},
+				"size": {
+					"type": "string",
+					"enum": ["M", "S", "V"]
+				},
+				"entries": {
+					"type": "array",
+					"items": {
+						"$ref": "entry.json"
 					}
+				},
+				"soundClip": {
+					"$ref": "entry.json#/definitions/mediaHref"
+				},
+				"subraces": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string"
+							},
+							"alias": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							},
+							"source": {
+								"type": "string"
+							},
+							"page": {
+								"type": "integer"
+							},
+							"otherSources": {
+								"$ref": "util.json#/definitions/otherSources"
+							},
+							"ability": {
+								"$ref": "#/definitions/abilityScores"
+							},
+							"speed": {
+								"$ref": "util.json#/definitions/speed"
+							},
+							"entries": {
+								"type": "array",
+								"items": {
+									"$ref": "entry.json"
+								}
+							},
+							"darkvision": {
+								"type": "integer"
+							},
+							"traitTags": {
+								"oneOf": [
+									{
+										"type": "array",
+										"items": {
+											"$ref": "#/definitions/traitTag"
+										}
+									},
+									{
+										"type": "null"
+									}
+								]
+							},
+							"languageProficiencies": {
+								"$ref": "util.json#/definitions/languageProficiencies"
+							},
+							"skillProficiencies": {
+								"type": "array",
+								"items": {
+									"$ref": "util.json#/definitions/skillProficiencies"
+								}
+							},
+							"overwrite": {
+								"description": "Map of 'property' -> true where 'property' is a property on the base race which should be overwritten by that of the subrace",
+								"type": "object"
+							},
+							"srd": {
+								"$ref": "util.json#/definitions/srd"
+							},
+							"heightAndWeight": {
+								"oneOf": [
+									{
+										"$ref": "#/definitions/heightAndWeight"
+									},
+									{
+										"type": "null"
+									}
+								]
+							},
+							"additionalSpells": {
+								"$ref": "util.json#/definitions/additionalSpellsArray"
+							}
+						},
+						"additionalProperties": false
+					}
+				},
+				"darkvision": {
+					"type": "integer"
+				},
+				"traitTags": {
+					"oneOf": [
+						{
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/traitTag"
+							}
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"languageProficiencies": {
+					"$ref": "util.json#/definitions/languageProficiencies"
+				},
+				"skillProficiencies": {
+					"type": "array",
+					"items": {
+						"$ref": "util.json#/definitions/skillProficiencies"
+					}
+				},
+				"fluff": {
+					"description": "Homebrew use only.",
+					"oneOf": [
+						{
+							"type": "object",
+							"properties": {
+								"entries": {
+									"type": "array",
+									"items": {
+										"$ref": "entry.json"
+									}
+								},
+								"images": {
+									"type": "array",
+									"items": {
+										"$ref": "entry.json#/definitions/entryImage"
+									}
+								}
+							}
+						},
+						{
+							"description": "References \"raceFluff\" array items",
+							"type": "object",
+							"properties": {
+								"_raceFluff": {
+									"type": "object",
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"source": {
+											"type": "string"
+										}
+									}
+								},
+								"_appendRaceFluff": {
+									"type": "object",
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"source": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					]
+				},
+				"srd": {
+					"$ref": "util.json#/definitions/srd"
+				},
+				"heightAndWeight": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/heightAndWeight"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"additionalSpells": {
+					"$ref": "util.json#/definitions/additionalSpellsArray"
 				}
-			]
+			},
+			"additionalProperties": false
 		},
 
 		"traitTag": {
@@ -41,9 +231,12 @@
 			"enum": [
 				"Amphibious",
 				"Armor Proficiency",
+				"Blindsight",
+				"Damage Immunity",
 				"Damage Resistance",
 				"Dragonmark",
 				"Improved Resting",
+				"Magic Resistance",
 				"Monstrous Race",
 				"Natural Armor",
 				"NPC Race",
@@ -52,60 +245,35 @@
 				"Spellcasting",
 				"Tool Proficiency",
 				"Unarmed Strike",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			]
 		},
 
-		"languageTag": {
-			"type": "string",
-			"enum": [
-				"Abyssal",
-				"Aquan",
-				"Auran",
-				"Celestial",
-				"Choose",
-				"Common",
-				"Draconic",
-				"Dwarvish",
-				"Elvish",
-				"Giant",
-				"Gnomish",
-				"Goblin",
-				"Halfling",
-				"Infernal",
-				"Orc",
-				"Other",
-				"Primordial",
-				"Sylvan",
-				"Terran",
-				"Undercommon"
-			]
-		},
-
 		"abilityScores": {
-			"type": "object",
-			"properties": {
-				"str": {
-					"type": "integer"
-				},
-				"dex": {
-					"type": "integer"
-				},
-				"con": {
-					"type": "integer"
-				},
-				"int": {
-					"type": "integer"
-				},
-				"wis": {
-					"type": "integer"
-				},
-				"cha": {
-					"type": "integer"
-				},
-				"choose": {
-					"type": "array",
-					"items": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"str": {
+						"type": "integer"
+					},
+					"dex": {
+						"type": "integer"
+					},
+					"con": {
+						"type": "integer"
+					},
+					"int": {
+						"type": "integer"
+					},
+					"wis": {
+						"type": "integer"
+					},
+					"cha": {
+						"type": "integer"
+					},
+					"choose": {
 						"type": "object",
 						"properties": {
 							"from": {
@@ -120,32 +288,6 @@
 							},
 							"amount": {
 								"type": "integer"
-							},
-							"predefined": {
-								"type": "object",
-								"items": {
-									"type": "object",
-									"properties": {
-										"str": {
-											"type": "integer"
-										},
-										"dex": {
-											"type": "integer"
-										},
-										"con": {
-											"type": "integer"
-										},
-										"int": {
-											"type": "integer"
-										},
-										"wis": {
-											"type": "integer"
-										},
-										"cha": {
-											"type": "integer"
-										}
-									}
-								}
 							},
 							"weighted": {
 								"type": "object",
@@ -169,6 +311,52 @@
 					}
 				}
 			}
+		},
+
+		"heightAndWeight": {
+			"type": "object",
+			"properties": {
+				"baseHeight":  {"type": "integer"},
+				"heightMod": {"type": "string"},
+				"baseWeight":  {"type": "integer"},
+				"weightMod": {"type": "string"}
+			},
+			"required": [
+				"baseHeight",
+				"heightMod",
+				"baseWeight"
+			],
+			"additionalProperties": false
+		},
+
+		"race": {
+			"anyOf": [
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/raceData"
+						},
+						{
+							"required": [
+								"name",
+								"source"
+							]
+						}
+					]
+				},
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/raceData"
+						},
+						{
+							"$ref": "util.json#/definitions/copyBlock"
+						}
+					]
+				}
+			]
 		}
 	},
 
@@ -176,141 +364,11 @@
 		"race": {
 			"type": "array",
 			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"type": "string"
-					},
-					"source": {
-						"type": "string"
-					},
-					"page": {
-						"type": "integer"
-					},
-					"otherSources": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"source": {
-									"type": "string"
-								},
-								"page": {
-									"type": "integer"
-								}
-							},
-							"required": [
-								"source",
-								"page"
-							],
-							"additionalProperties": false
-						}
-					},
-					"ability": {
-						"$ref": "#/definitions/abilityScores"
-					},
-					"speed": {
-						"$ref": "#/definitions/speed"
-					},
-					"size": {
-						"type": "string",
-						"enum": ["M", "S", "V"]
-					},
-					"entries": {
-						"type": "array",
-						"items": {
-							"$ref": "/Entry"
-						}
-					},
-					"soundClip": {
-						"type": "string"
-					},
-					"subraces": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"source": {
-									"type": "string"
-								},
-								"page": {
-									"type": "integer"
-								},
-								"otherSources": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"source": {
-												"type": "string"
-											},
-											"page": {
-												"type": "integer"
-											}
-										},
-										"required": [
-											"source",
-											"page"
-										],
-										"additionalProperties": false
-									}
-								},
-								"ability": {
-									"$ref": "#/definitions/abilityScores"
-								},
-								"speed": {
-									"$ref": "#/definitions/speed"
-								},
-								"entries": {
-									"type": "array",
-									"items": {
-										"$ref": "/Entry"
-									}
-								},
-								"darkvision": {
-									"type": "integer"
-								},
-								"traitTags": {
-									"type": "array",
-									"items": {
-										"$ref": "#/definitions/traitTag"
-									}
-								},
-								"languageTags": {
-									"type": "array",
-									"items": {
-										"$ref": "#/definitions/languageTag"
-									}
-								}
-							},
-							"additionalProperties": false
-						}
-					},
-					"darkvision": {
-						"type": "integer"
-					},
-					"traitTags": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/traitTag"
-						}
-					},
-					"languageTags": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/languageTag"
-						}
-					}
-				},
-				"required": [
-					"name",
-					"source"
-				],
-				"additionalProperties": false
+				"$ref": "#/definitions/race"
 			}
+		},
+		"_meta": {
+			"$ref": "util.json#/definitions/metaBlock"
 		}
 	},
 	"additionalProperties": false

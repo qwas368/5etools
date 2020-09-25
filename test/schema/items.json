@@ -1,9 +1,9 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.2.3",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.8.0",
 	"type": "object",
 	"definitions": {
-		"item": {
+		"itemData": {
 			"type": "object",
 			"properties": {
 				"name": {
@@ -16,16 +16,16 @@
 					"type": "string",
 					"description": "\"None\" is for mundane items. \"Unknown (Magic)\" is for miscellaneous magical items. \"Unknown\" is for miscellaneous mundane items. \"Varies\" is for item groups.",
 					"enum": [
-						"Rare",
-						"None",
-						"Uncommon",
-						"Very Rare",
-						"Legendary",
-						"Artifact",
-						"Unknown",
-						"Common",
-						"Unknown (Magic)",
-						"Varies"
+						"rare",
+						"none",
+						"uncommon",
+						"very rare",
+						"legendary",
+						"artifact",
+						"unknown",
+						"common",
+						"unknown (magic)",
+						"varies"
 					]
 				},
 				"source": {
@@ -35,23 +35,7 @@
 					"type": "integer"
 				},
 				"additionalSources": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"source": {
-								"type": "string"
-							},
-							"page": {
-								"type": "integer"
-							}
-						},
-						"required": [
-							"source",
-							"page"
-						],
-						"additionalProperties": false
-					}
+					"$ref": "util.json#/definitions/additionalSources"
 				},
 				"baseItem": {
 					"type": "string"
@@ -59,20 +43,21 @@
 				"ac": {
 					"type": "integer"
 				},
+				"acSpecial": {
+					"description": "Free text field for homebrew use.",
+					"type": "string"
+				},
 				"age": {
 					"type": "string"
 				},
 				"ammunition": {
 					"type": "boolean"
 				},
-				"armor": {
-					"type": "boolean"
-				},
 				"axe": {
 					"type": "boolean"
 				},
-				"carryingcapacity": {
-					"type": "string"
+				"carryingCapacity": {
+					"type": "integer"
 				},
 				"dmg1": {
 					"type": "string"
@@ -86,36 +71,13 @@
 				"entries": {
 					"type": "array",
 					"items": {
-						"$ref": "/Entry"
+						"$ref": "entry.json"
 					}
 				},
 				"additionalEntries": {
 					"type": "array",
 					"items": {
-						"$ref": "/Entry"
-					}
-				},
-				"modifier": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"_category": {
-								"type": "string"
-							},
-							"__text": {
-								"type": "string"
-							},
-							"toString": {
-								"type": "array"
-							}
-						},
-						"required": [
-							"_category",
-							"__text",
-							"toString"
-						],
-						"additionalProperties": false
+						"$ref": "entry.json"
 					}
 				},
 				"property": {
@@ -151,25 +113,37 @@
 					"type": "string"
 				},
 				"speed": {
-					"type": "string"
+					"type": "integer"
 				},
 				"stealth": {
 					"type": "boolean"
 				},
 				"strength": {
-					"type": "string"
+					"type": ["string", "null"]
 				},
 				"sword": {
 					"type": "boolean"
 				},
-				"technology": {
-					"type": "string"
+				"firearm": {
+					"type": "boolean"
+				},
+				"staff": {
+					"description": "Adds the italicized \"Staff\" text to the item info line (below the name).",
+					"type": "boolean"
 				},
 				"tier": {
 					"type": "string"
 				},
 				"value": {
+					"description": "In copper pieces.",
+					"type": "number"
+				},
+				"currencyConversion": {
+					"description": "ID of a value conversion table. Homebrew only.",
 					"type": "string"
+				},
+				"valueMult": {
+					"type": "number"
 				},
 				"weapon": {
 					"type": "boolean"
@@ -178,12 +152,18 @@
 					"type": "string"
 				},
 				"weight": {
-					"type": "string"
+					"type": "number"
+				},
+				"weightMult": {
+					"type": "number"
 				},
 				"weightNote": {
 					"type": "string"
 				},
 				"wondrous": {
+					"type": "boolean"
+				},
+				"tattoo": {
 					"type": "boolean"
 				},
 				"sentient": {
@@ -192,8 +172,32 @@
 				"poison": {
 					"type": "boolean"
 				},
+				"poisonTypes": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"enum": ["ingested", "injury", "inhaled", "contact"]
+					}
+				},
 				"crew": {
 					"type": "integer"
+				},
+				"crewMin": {
+					"description": "For crews specified as an X-Y min-max.",
+					"type": "integer"
+				},
+				"crewMax": {
+					"description": "For crews specified as an X-Y min-max.",
+					"type": "integer"
+				},
+				"capPassenger": {
+					"type": "integer"
+				},
+				"capCargo": {
+					"type": "number"
+				},
+				"vehSpeed": {
+					"type": "number"
 				},
 				"vehAc": {
 					"type": "integer"
@@ -204,8 +208,19 @@
 				"vehDmgThresh": {
 					"type": "integer"
 				},
+				"travelCost": {
+					"description": "In copper pieces per mile per passenger.",
+					"type": "integer"
+				},
+				"shippingCost": {
+					"description": "In copper pieces per 100 lbs per mile.",
+					"type": "integer"
+				},
 				"charges": {
 					"type": ["string", "integer"]
+				},
+				"recharge": {
+					"enum": ["round", "restShort", "restLong", "dawn", "dusk", "midnight"]
 				},
 				"attachedSpells": {
 					"type": "array",
@@ -268,29 +283,140 @@
 				"lootTables": {
 					"type": "array",
 					"items": {
+						"type": "string"
+					}
+				},
+				"alCertificateId": {
+					"description": "Adventurers League item certificate ID; for use in homebrew.",
+					"type": "string"
+				},
+				"bonusAc": {
+					"type": "string"
+				},
+				"bonusWeapon": {
+					"type": "string"
+				},
+				"bonusWeaponAttack": {
+					"type": "string"
+				},
+				"bonusWeaponDamage": {
+					"type": "string"
+				},
+				"bonusSpellAttack": {
+					"type": "string"
+				},
+				"bonusSavingThrow": {
+					"type": "string"
+				},
+				"otherSources": {
+					"$ref": "util.json#/definitions/otherSources"
+				},
+				"srd": {
+					"$ref": "util.json#/definitions/srd"
+				},
+				"packContents": {
+					"type": "array",
+					"items": {
 						"oneOf": [
 							{
 								"type": "string"
 							},
 							{
 								"type": "object",
-								"name": {
-									"type": "string"
+								"properties": {
+									"special": {
+										"type": "string"
+									},
+									"quantity": {
+										"type": "integer"
+									}
 								},
-								"source": {
-									"type": "string"
-								}
+								"additionalProperties": false,
+								"required": ["special"]
+							},
+							{
+								"type": "object",
+								"properties": {
+									"item": {
+										"type": "string"
+									},
+									"quantity": {
+										"type": "integer"
+									}
+								},
+								"additionalProperties": false,
+								"required": ["item", "quantity"]
 							}
 						]
 					}
+				},
+				"containerCapacity": {
+					"type": "object",
+					"properties": {
+						"weight": {
+							"type": "array",
+							"items": {
+								"type": "integer"
+							}
+						},
+						"item": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"patternProperties": {
+									".*": {
+										"type": "integer"
+									}
+								},
+								"additionalProperties": false
+							}
+						},
+						"weightless": {
+							"description": "If the container renders its contents weightless.",
+							"type": "boolean"
+						}
+					},
+					"additionalProperties": false
+				},
+				"ammoType": {
+					"type": "string"
+				},
+				"grantsProficiency": {
+					"type": "boolean"
 				}
 			},
-			"required": [
-				"name",
-				"rarity",
-				"source"
-			],
 			"additionalProperties": false
+		},
+
+		"item": {
+			"anyOf": [
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/itemData"
+						},
+						{
+							"required": [
+								"name",
+								"rarity",
+								"source"
+							]
+						}
+					]
+				},
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/itemData"
+						},
+						{
+							"$ref": "util.json#/definitions/copyBlock"
+						}
+					]
+				}
+			]
 		}
 	},
 	"properties": {
@@ -306,6 +432,9 @@
 			"items": {
 				"$ref": "#/definitions/item"
 			}
+		},
+		"_meta": {
+			"$ref": "util.json#/definitions/metaBlock"
 		}
 	},
 	"additionalProperties": false

@@ -1,30 +1,434 @@
 {
 	"variant": [
 		{
-			"name": "精金彈藥", "ENG_name": "Adamantine Ammunition",
+			"name": "+1 Ammunition",
 			"type": "GV",
-			"entries": [
-				"由精金打造或鍍上精金的彈藥在用於破壞物體時通常會特別有效。每當一發精金彈藥命中一個物體時，該次命中視為重擊。",
-				"精金版本的彈藥每十發會比原始版本的價格高出500金幣，無論該彈藥是由該金屬打造或僅是鍍上該金屬。"
-			],
 			"requires": [
 				{
-					"ammunition": true
+					"type": "A"
+				},
+				{
+					"type": "AF"
 				}
 			],
+			"ammo": true,
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Unknown",
-				"source": "XGE",
-				"page": 71,
-				"namePrefix": "精金", "ENG_namePrefix": "Adamantine ",
+				"namePrefix": "+1 ",
+				"source": "DMG",
+				"page": 150,
+				"srd": true,
+				"tier": "minor",
+				"rarity": "uncommon",
+				"bonusWeapon": "+1",
 				"entries": [
-					"每當你使用此彈藥命中一個物體時，該次命中視為重擊。"
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+				],
+				"lootTables": [
+					"Magic Item Table B"
 				]
 			}
 		},
 		{
-			"name": "精金護甲", "ENG_name": "Adamantine Armor",
+			"name": "+1 Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+1 ",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusAc": "+1",
+				"entries": [
+					"You have a {=bonusAc} bonus to AC while wearing this armor."
+				]
+			}
+		},
+		{
+			"name": "+1 Shield (*)",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "S"
+				}
+			],
+			"entries": [
+				"{@note * This generic variant has the same name and source as the item {@item +1 shield}}.",
+				"While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+			],
+			"inherits": {
+				"namePrefix": "+1 ",
+				"source": "DMG",
+				"page": 200,
+				"srd": true,
+				"tier": "major",
+				"rarity": "uncommon",
+				"bonusAc": "+1",
+				"entries": [
+					"While holding this shield, you have a {=bonusAc} bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+				]
+			}
+		},
+		{
+			"name": "+1 Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"inherits": {
+				"namePrefix": "+1 ",
+				"source": "DMG",
+				"page": 213,
+				"srd": true,
+				"tier": "major",
+				"rarity": "uncommon",
+				"bonusWeapon": "+1",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon."
+				],
+				"lootTables": [
+					"Magic Item Table F"
+				]
+			}
+		},
+		{
+			"name": "+1 Weapon (no damage)",
+			"type": "GV",
+			"requires": [
+				{
+					"net": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+1 ",
+				"source": "DMG",
+				"page": 213,
+				"tier": "major",
+				"rarity": "uncommon",
+				"bonusWeaponAttack": "+1",
+				"entries": [
+					"You have a {=bonusWeaponAttack} bonus to attack rolls made with this weapon."
+				]
+			}
+		},
+		{
+			"name": "+2 Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"ammo": true,
+			"inherits": {
+				"namePrefix": "+2 ",
+				"source": "DMG",
+				"page": 150,
+				"srd": true,
+				"tier": "minor",
+				"rarity": "rare",
+				"bonusWeapon": "+2",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+				],
+				"lootTables": [
+					"Magic Item Table C"
+				]
+			}
+		},
+		{
+			"name": "+2 Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+2 ",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
+				"bonusAc": "+2",
+				"entries": [
+					"You have a {=bonusAc} bonus to AC while wearing this armor."
+				]
+			}
+		},
+		{
+			"name": "+2 Shield (*)",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "S"
+				}
+			],
+			"entries": [
+				"{@note * This generic variant has the same name and source as the item {@item +2 shield}}.",
+				"While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+			],
+			"inherits": {
+				"namePrefix": "+2 ",
+				"source": "DMG",
+				"page": 200,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusAc": "+2",
+				"entries": [
+					"While holding this shield, you have a {=bonusAc} bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+				]
+			}
+		},
+		{
+			"name": "+2 Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"inherits": {
+				"namePrefix": "+2 ",
+				"source": "DMG",
+				"page": 213,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusWeapon": "+2",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon."
+				],
+				"lootTables": [
+					"Magic Item Table G"
+				]
+			}
+		},
+		{
+			"name": "+2 Weapon (no damage)",
+			"type": "GV",
+			"requires": [
+				{
+					"net": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+2 ",
+				"source": "DMG",
+				"page": 213,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusWeaponAttack": "+2",
+				"entries": [
+					"You have a {=bonusWeaponAttack} bonus to attack rolls made with this weapon."
+				]
+			}
+		},
+		{
+			"name": "+3 Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"ammo": true,
+			"inherits": {
+				"namePrefix": "+3 ",
+				"source": "DMG",
+				"page": 150,
+				"srd": true,
+				"tier": "minor",
+				"rarity": "very rare",
+				"bonusWeapon": "+3",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+				],
+				"lootTables": [
+					"Magic Item Table D"
+				]
+			}
+		},
+		{
+			"name": "+3 Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+3 ",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
+				"tier": "major",
+				"rarity": "legendary",
+				"bonusAc": "+3",
+				"entries": [
+					"You have a {=bonusAc} bonus to AC while wearing this armor."
+				]
+			}
+		},
+		{
+			"name": "+3 Shield (*)",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "S"
+				}
+			],
+			"entries": [
+				"{@note * This generic variant has the same name and source as the item {@item +3 shield}}.",
+				"While holding this shield, you have a +3 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+			],
+			"inherits": {
+				"namePrefix": "+3 ",
+				"source": "DMG",
+				"page": 200,
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
+				"bonusAc": "+3",
+				"entries": [
+					"While holding this shield, you have a {=bonusAc} bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
+				]
+			}
+		},
+		{
+			"name": "+3 Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"inherits": {
+				"namePrefix": "+3 ",
+				"source": "DMG",
+				"page": 213,
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
+				"bonusWeapon": "+3",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon."
+				],
+				"lootTables": [
+					"Magic Item Table H"
+				]
+			}
+		},
+		{
+			"name": "+3 Weapon (no damage)",
+			"type": "GV",
+			"requires": [
+				{
+					"net": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+3 ",
+				"source": "DMG",
+				"page": 213,
+				"tier": "major",
+				"rarity": "very rare",
+				"bonusWeaponAttack": "+3",
+				"entries": [
+					"You have a {=bonusWeaponAttack} bonus to attack rolls made with this weapon."
+				]
+			}
+		},
+		{
+			"name": "Acheron Blade",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Acheron Blade ",
+				"source": "EGW",
+				"page": 265,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusWeapon": "+1",
+				"entries": [
+					"The black blade of this sword is crafted from a mysterious arcane alloy. You gain a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you are immune to effects that turn undead.",
+					{
+						"type": "entries",
+						"name": "Dark Blessing",
+						"entries": [
+							"While holding the sword, you can use an action to give yourself {@dice 1d4 + 4} temporary hit points. This property can't be used again until the next dusk."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Disheartening Strike",
+						"entries": [
+							"When you hit a creature with an attack using this weapon, you can fill the target with unsettling dread: the target has disadvantage on the next saving throw it makes before the end of your next turn. The creature ignores this effect if it's immune to the {@condition frightened} condition. Once you use this property, you can't do so again until the next dusk."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Adamantine Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"excludes": {
+				"name": "Energy Cell"
+			},
+			"ammo": true,
+			"entries": [
+				"Ammunition made of or coated with adamantine is unusually effective when used to break objects. Whenever a piece of adamantine ammunition hits an object, the hit is a critical hit.",
+				"The adamantine version of ten pieces of ammunition costs 500 gp more than the normal version, whether the ammunition is made of the metal or coated with it."
+			],
+			"inherits": {
+				"namePrefix": "Adamantine ",
+				"source": "XGE",
+				"page": 78,
+				"tier": "minor",
+				"rarity": "unknown",
+				"entries": [
+					"Whenever you hit an object using this ammunition, the hit is a critical hit."
+				]
+			}
+		},
+		{
+			"name": "Adamantine Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -38,156 +442,41 @@
 				"name": "Hide Armor"
 			},
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Uncommon",
+				"namePrefix": "Adamantine ",
 				"source": "DMG",
 				"page": 150,
-				"namePrefix": "精金", "ENG_namePrefix": "Adamantine ",
+				"srd": true,
+				"tier": "major",
+				"rarity": "uncommon",
 				"entries": [
-					"這套護甲是由精金打造，現存最堅硬的物質之一。當你穿著此護甲時，任何對你的重擊都將變為普通命中。"
+					"This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit."
 				]
 			}
 		},
 		{
-			"name": "精金武器", "ENG_name": "Adamantine Weapon",
+			"name": "Adamantine Weapon",
 			"type": "GV",
-			"entries": [
-				"由精金打造或鍍上精金的近戰武器在用於破壞物體時通常會特別有效。每當一把精金武器命中一個物體時，該次命中視為重擊。",
-				"精金版本的武器會比原始版本的價格高出500金幣，無論該武器是由該金屬打造或僅是鍍上該金屬。"
-			],
 			"requires": [
 				{
 					"weapon": true
 				}
 			],
 			"excludes": {
-				"name": "Net"
+				"net": true
 			},
+			"entries": [
+				"Melee weapons made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon hits an object, the hit is a critical hit.",
+				"The adamantine version of a melee weapon costs 500 gp more than the normal version, whether the weapon is made of the metal or coated with it."
+			],
 			"inherits": {
-				"rarity": "Unknown",
-				"tier": "Major",
+				"namePrefix": "Adamantine ",
 				"source": "XGE",
-				"page": 71,
-				"namePrefix": "精金", "ENG_namePrefix": "Adamantine ",
+				"page": 78,
+				"tier": "major",
+				"rarity": "unknown",
+				"valueExpression": "[[baseItem.value]] + 50000",
 				"entries": [
-					"每當你使用此武器命中一個物體時，該次命中視為重擊。"
-				]
-			}
-		},
-		{
-			"name": "彈藥+1", "ENG_name": "Ammunition +1",
-			"type": "GV",
-			"requires": [
-				{
-					"ammunition": true
-				}
-			],
-			"inherits": {
-				"genericBonus": "+1",
-				"tier": "Minor",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 150,
-				"nameSuffix": "+1", "ENG_nameSuffix": " +1",
-				"entries": [
-					"你在使用這發魔法彈藥進行的攻擊檢定和傷害骰上具有{=genericBonus}加值。一旦命中目標，這發彈藥就不再具有魔法效果。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ranged attacks +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "ranged damage +1",
-						"toString": [
-							null
-						]
-					}
-				],
-				"lootTables": [
-					"魔法物品表B"
-				]
-			}
-		},
-		{
-			"name": "彈藥+2", "ENG_name": "Ammunition +2",
-			"type": "GV",
-			"requires": [
-				{
-					"ammunition": true
-				}
-			],
-			"inherits": {
-				"genericBonus": "+2",
-				"tier": "Minor",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 150,
-				"nameSuffix": "+2", "ENG_nameSuffix": " +2",
-				"entries": [
-					"你在使用這發魔法彈藥進行的攻擊檢定和傷害骰上具有{=genericBonus}加值。一旦命中目標，這發彈藥就不再具有魔法效果。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ranged attacks +2",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "ranged damage +2",
-						"toString": [
-							null
-						]
-					}
-				],
-				"lootTables": [
-					"魔法物品表C"
-				]
-			}
-		},
-		{
-			"name": "彈藥+3", "ENG_name": "Ammunition +3",
-			"type": "GV",
-			"requires": [
-				{
-					"ammunition": true
-				}
-			],
-			"inherits": {
-				"genericBonus": "+3",
-				"tier": "Minor",
-				"rarity": "Very Rare",
-				"source": "DMG",
-				"page": 150,
-				"nameSuffix": "+3", "ENG_nameSuffix": " +3",
-				"entries": [
-					"你在使用這發魔法彈藥進行的攻擊檢定和傷害骰上具有{=genericBonus}加值。一旦命中目標，這發彈藥就不再具有魔法效果。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ranged attacks +3",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "ranged damage +3",
-						"toString": [
-							null
-						]
-					}
-				],
-				"lootTables": [
-					"魔法物品表D"
+					"Whenever you hit an object with this weapon, the hit is a critical hit."
 				]
 			}
 		},
@@ -203,19 +492,25 @@
 				"property": "2H"
 			},
 			"inherits": {
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 120,
-				"reqAttune": true,
 				"nameSuffix": " Armblade",
+				"source": "ERLW",
+				"page": 276,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 120
+					}
+				],
+				"rarity": "common",
+				"reqAttune": "by a warforged",
 				"entries": [
-					"An armblade is a weapon designed to integrate with the forearm of a warforged. If you're a warforged, you can attach an armblade by attuning to it. An attached armblade cannot be disarmed or removed from you against your will, but while the weapon is attached you cannot use that hand for other actions. You can spend one minute to end the attunement and remove the armblade.",
-					"An armblade isn't inherently considered to be a magic weapon for purposes of overcoming damage resistance. However, any sort of magical melee weapon could be created as an armblade, so you could acquire a vicious armblade or a vorpal armblade."
+					"An armblade is a magic weapon that attaches to your arm, becoming inseparable from you as long as you're attuned to it. To attune to this item, you must hold it against your forearm for the entire attunement period.",
+					"As a bonus action, you can retract the armblade into your forearm or extend it from there. While it is extended, you can use the weapon as if you were holding it, and you can't use that hand for other purposes."
 				]
 			}
 		},
 		{
-			"name": "護甲+1", "ENG_name": "Armor +1",
+			"name": "Armor of Acid Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -223,104 +518,18 @@
 				}
 			],
 			"inherits": {
-				"genericBonus": "+1",
-				"tier": "Major",
-				"rarity": "Rare",
+				"nameSuffix": " of Acid Resistance",
 				"source": "DMG",
 				"page": 152,
-				"nameSuffix": "+1", "ENG_nameSuffix": " +1",
-				"entries": [
-					"你在穿著此護甲時AC獲得{=genericBonus}加值。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ac +1",
-						"toString": [
-							null
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "護甲+2", "ENG_name": "Armor +2",
-			"type": "GV",
-			"requires": [
-				{
-					"armor": true
-				}
-			],
-			"inherits": {
-				"genericBonus": "+2",
-				"tier": "Major",
-				"rarity": "Very Rare",
-				"source": "DMG",
-				"page": 152,
-				"nameSuffix": "+2", "ENG_nameSuffix": " +2",
-				"entries": [
-					"你在穿著此護甲時AC獲得{=genericBonus}加值。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ac +2",
-						"toString": [
-							null
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "護甲+3", "ENG_name": "Armor +3",
-			"type": "GV",
-			"requires": [
-				{
-					"armor": true
-				}
-			],
-			"inherits": {
-				"genericBonus": "+3",
-				"tier": "Major",
-				"rarity": "Legendary",
-				"source": "DMG",
-				"page": 152,
-				"nameSuffix": "+3", "ENG_nameSuffix": " +3",
-				"entries": [
-					"你在穿著此護甲時AC獲得{=genericBonus}加值。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ac +3",
-						"toString": [
-							null
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "酸蝕抗性護甲", "ENG_name": "Armor of Acid Resistance",
-			"type": "GV",
-			"requires": [
-				{
-					"armor": true
-				}
-			],
-			"inherits": {
+				"srd": true,
 				"resist": "acid",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "酸蝕抗性", "ENG_nameSuffix": " of Acid Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "寒冰抗性護甲", "ENG_name": "Armor of Cold Resistance",
+			"name": "Armor of Cold Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -328,17 +537,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Cold Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "cold",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "寒冰抗性", "ENG_nameSuffix": " of Cold Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "火焰抗性護甲", "ENG_name": "Armor of Fire Resistance",
+			"name": "Armor of Fire Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -346,17 +556,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Fire Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "fire",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "火焰抗性", "ENG_nameSuffix": " of Fire Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "力場抗性護甲", "ENG_name": "Armor of Force Resistance",
+			"name": "Armor of Force Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -364,17 +575,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Force Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "force",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "力場抗性", "ENG_nameSuffix": " of Force Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "閃爍護甲", "ENG_name": "Armor of Gleaming",
+			"name": "Armor of Gleaming",
 			"type": "GV",
 			"requires": [
 				{
@@ -382,18 +594,18 @@
 				}
 			],
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Common",
+				"nameSuffix": " of Gleaming",
 				"source": "XGE",
 				"page": 136,
-				"nameSuffix": "閃爍", "ENG_nameSuffix": " of Gleaming",
+				"tier": "minor",
+				"rarity": "common",
 				"entries": [
-					"這件護甲永遠不會被弄髒。"
+					"This armor never gets dirty."
 				]
 			}
 		},
 		{
-			"name": "閃電抗性護甲", "ENG_name": "Armor of Lightning Resistance",
+			"name": "Armor of Lightning Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -401,17 +613,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Lightning Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "lightning",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "閃電抗性", "ENG_nameSuffix": " of Lightning Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "死靈抗性護甲", "ENG_name": "Armor of Necrotic Resistance",
+			"name": "Armor of Necrotic Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -419,17 +632,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Necrotic Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "necrotic",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "死靈抗性", "ENG_nameSuffix": " of Necrotic Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "毒素抗性護甲", "ENG_name": "Armor of Poison Resistance",
+			"name": "Armor of Poison Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -437,17 +651,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Poison Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "poison",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "毒素抗性", "ENG_nameSuffix": " of Poison Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "精神抗性護甲", "ENG_name": "Armor of Psychic Resistance",
+			"name": "Armor of Psychic Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -455,17 +670,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Psychic Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "psychic",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "精神抗性", "ENG_nameSuffix": " of Psychic Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "光耀抗性護甲", "ENG_name": "Armor of Radiant Resistance",
+			"name": "Armor of Radiant Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -473,17 +689,18 @@
 				}
 			],
 			"inherits": {
+				"nameSuffix": " of Radiant Resistance",
+				"source": "DMG",
+				"page": 152,
+				"srd": true,
 				"resist": "radiant",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "光耀抗性", "ENG_nameSuffix": " of Radiant Resistance"
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "雷鳴抗性護甲", "ENG_name": "Armor of Thunder Resistance",
+			"name": "Armor of Thunder Resistance",
 			"type": "GV",
 			"requires": [
 				{
@@ -491,45 +708,51 @@
 				}
 			],
 			"inherits": {
-				"resist": "thunder",
-				"tier": "Major",
-				"rarity": "Rare",
+				"nameSuffix": " of Thunder Resistance",
 				"source": "DMG",
-				"page": 162,
-				"reqAttune": true,
-				"namePrefix": "雷鳴抗性", "ENG_nameSuffix": " of Thunder Resistance"
+				"page": 152,
+				"srd": true,
+				"resist": "thunder",
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true
 			}
 		},
 		{
-			"name": "屠殺箭(通用)", "ENG_name": "Arrow of Slaying (Generic)",
+			"name": "Arrow of Slaying (Generic)",
 			"type": "GV",
-			"entries": [
-				"一支{@italic 屠殺箭}是一種用以屠殺特定種類生物的魔法武器。它們有些會比其他同類更局限於某個範圍；舉例來說，一支{@italic 龍族屠殺箭}和一支{@italic 藍龍屠殺箭}都可能存在。若一個屬於{@italic 屠殺箭}所關聯類型、種族、或團體的生物受到來自這支箭的傷害，該生物必須進行一次DC 17的體質豁免，若豁免失敗則受到額外的{@dice 6d10}穿刺傷害，豁免成功則只受到一半的傷害。",
-				"一旦一支{@italic 屠殺箭}對一個生物造成了它的額外傷害，它將變回非魔法箭矢。",
-				"儘管箭是最常見的種類，但也存在著其他類型的這類魔法彈藥，像是供弩使用的屠殺弩矢。"
-			],
 			"requires": [
 				{
-					"ammunition": true
+					"type": "A"
+				},
+				{
+					"type": "AF"
 				}
 			],
 			"excludes": {
 				"page": 268
 			},
+			"ammo": true,
+			"entries": [
+				"An {@italic arrow of slaying} is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both {@italic arrows of dragon slaying} and {@italic arrows of blue dragon slaying}. If a creature belonging to the type, race, or group associated with an {@italic arrow of slaying} takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra {@dice 6d10} piercing damage on a failed save, or half as much extra damage on a successful one.",
+				"Once an {@italic arrow of slaying} deals its extra damage to a creature, it becomes a nonmagical arrow.",
+				"Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common."
+			],
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Very Rare",
+				"nameSuffix": " of Slaying",
 				"source": "DMG",
 				"page": 152,
-				"namePrefix": "屠殺", "ENG_nameSuffix": " of Slaying",
+				"srd": true,
+				"tier": "minor",
+				"rarity": "very rare",
 				"entries": [
-					"一個屠殺{=baseName/l}是一種用以屠殺特定種類生物的魔法武器。它們有些會比其他同類更局限於某個範圍；舉例來說，一個{@italic 龍族屠殺{=baseName/l}}和一個{@italic 藍龍屠殺{=baseName/l}}都可能存在。若一個屬於{@italic 屠殺{=baseName/l}}所關聯類型、種族、或團體的生物受到來自這支{=baseName/l}的傷害，該生物必須進行一次DC 17的體質豁免，若豁免失敗則受到額外的{@dice 6d10}穿刺傷害，豁免成功則只受到一半的傷害。",
-					"一旦一個屠殺{=baseName/l}對一個生物造成了它的額外傷害，它將變回非魔法{=baseName/l}。"
+					"{=baseName/at} {=baseName/l} of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both {@i {=baseName/l}s of dragon slaying} and {@i {=baseName/l}s of blue dragon slaying}. If a creature belonging to the type, race, or group associated with {=baseName/a} {=baseName/l} of slaying takes damage from the {=baseName/l}, the creature must make a DC 17 Constitution saving throw, taking an extra {@dice 6d10} piercing damage on a failed save, or half as much extra damage on a successful one.",
+					"Once {=baseName/a} {=baseName/l} of slaying deals its extra damage to a creature, it becomes a nonmagical {=baseName/l}."
 				]
 			}
 		},
 		{
-			"name": "狂戰士之斧", "ENG_name": "Berserker Axe",
+			"name": "Berserker Axe",
 			"type": "GV",
 			"requires": [
 				{
@@ -537,47 +760,62 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
+				"namePrefix": "Berserker ",
 				"source": "DMG",
 				"page": 155,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
 				"reqAttune": true,
 				"curse": true,
-				"namePrefix": "狂戰士", "ENG_namePrefix": "Berserker ",
+				"bonusWeapon": "+1",
+				"bonusAc": "+1",
 				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。此外，當你同調於這把武器時，你的生命值最大值將增加等同你等級的數值。",
+					"You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.",
 					{
 						"type": "entries",
-						"name": "詛咒", "tENG_name": "Curse",
+						"name": "Curse",
 						"entries": [
-							"這把斧頭受到詛咒，且與它同調將會使詛咒蔓延到你身上。只要你還承受這個詛咒，你就會不願意與這把斧頭分開，且永遠會將它放在你的觸及範圍內。同時，除非距離你60呎內沒有任何你能看見或聽見的敵人，否則你在使用它以外的武器所進行的攻擊檢定中具有劣勢。"
+							"This axe is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the axe, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear."
 						]
 					},
-					"每當一個敵對生物在你持有這把斧頭時傷害你，你就必須成功通過一次DC 15的睿知豁免，否則陷入狂怒。當處於狂怒狀態時，你每輪都必須使用你的動作以這把斧頭攻擊距離你最近的生物。若你能夠進行額外攻擊以做為攻擊動作的一部份，則你可以使用這些攻擊，在你擊敗你當前的目標之後向著下一個最近生物移動並攻擊。若你有多個可選目標，則你隨機攻擊其中一個。你將維持狂怒直到你在周遭60呎內沒有任何你能看見或聽見的生物的情況下開始你的回合。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +1",
-						"toString": [
-							null
-						]
-					}
+					"Whenever a hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear."
 				],
 				"lootTables": [
-					"魔法物品表G"
+					"Magic Item Table G"
 				]
 			}
 		},
 		{
-			"name": "速脫護甲", "ENG_name": "Cast-Off Armor",
+			"name": "Blade of the Medusa",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of the Medusa",
+				"source": "LLK",
+				"page": 53,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"curse": true,
+				"entries": [
+					"When you attack a creature with this magic weapon and roll a 20 on the attack roll, the creature must make a DC 15 Constitution saving throw in addition to suffering the attack's normal effects. On a failed save, the creature is restrained and must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this effect three times, the effect ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition petrified} condition for 1 hour.",
+					"A creature is immune to this effect if it is immune to damage of the weapon's type, does not have a body made of flesh, or has legendary actions.",
+					{
+						"name": "Curse",
+						"type": "entries",
+						"entries": [
+							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon. Whenever you attack a creature with this weapon and roll a 1 on the attack roll, you must succeed on a DC 15 Constitution saving throw or be {@condition restrained} and forced to make additional saves against being {@condition petrified}, as above."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Cast-Off Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -585,18 +823,39 @@
 				}
 			],
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Common",
+				"namePrefix": "Cast-Off ",
 				"source": "XGE",
 				"page": 136,
-				"namePrefix": "速脫", "ENG_namePrefix": "Cast-Off ",
+				"tier": "minor",
+				"rarity": "common",
 				"entries": [
-					"你能夠以一個動作卸除這件護甲。"
+					"You can doff this armor as an action."
 				]
 			}
 		},
 		{
-			"name": "舞空劍", "ENG_name": "Dancing Sword",
+			"name": "Corpse Slayer",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Corpse Slayer ",
+				"source": "EGW",
+				"page": 266,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusWeapon": "+1",
+				"entries": [
+					"You gain a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon.",
+					"When you hit an undead creature with an attack using this weapon, the attack deals an extra {@damage 1d8} damage of the weapon's type, and the creature has disadvantage on saving throws against effects that turn undead until the start of your next turn."
+				]
+			}
+		},
+		{
+			"name": "Dancing Sword",
 			"type": "GV",
 			"requires": [
 				{
@@ -604,24 +863,25 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Very Rare",
+				"namePrefix": "Dancing ",
 				"source": "DMG",
 				"page": 161,
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
 				"reqAttune": true,
-				"namePrefix": "舞空", "ENG_namePrefix": "Dancing ",
 				"entries": [
-					"你可以使用一個附贈動作將這把魔法劍投向空中，並說出它的命令語。當你這麼做時，這把劍將開始浮空，飛行最多30呎距離，並攻擊一個距離它5呎內你所選擇的生物。這把劍使用你的攻擊檢定，且傷害骰也使用你的屬性調整值。",
-					"當這把劍浮在空中時，你可以使用一個附贈動作以讓它飛行最多30呎距離到另一個距離你30呎內的位置。做為這個附贈動作的一部份，你可以讓這把劍攻擊一個距離它5呎內的生物。",
-					"在這把浮空劍第四次攻擊之後，它將飛行最多30呎距離並嘗試回到你的手中。若你沒有手空著，則它將掉落在你腳邊的地上。若這把劍與你之間沒有暢通的路徑，則它將盡可能接近你並接著掉落地面。它也會在你抓住它、或你與它的距離超過30呎時停止浮空。"
+					"You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.",
+					"While the sword hovers, you can use a bonus action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same bonus action, you can cause the sword to attack one creature within 5 feet of it.",
+					"After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it."
 				],
 				"lootTables": [
-					"魔法物品表H"
+					"Magic Item Table H"
 				]
 			}
 		},
 		{
-			"name": "防禦者", "ENG_name": "Defender",
+			"name": "Defender",
 			"type": "GV",
 			"requires": [
 				{
@@ -629,23 +889,26 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Legendary",
+				"namePrefix": "Defender ",
 				"source": "DMG",
 				"page": 164,
+				"srd": true,
+				"tier": "major",
+				"rarity": "legendary",
 				"reqAttune": true,
-				"namePrefix": "防禦者", "ENG_namePrefix": "Defender ",
+				"bonusWeapon": "+3",
+				"bonusAc": "+1",
 				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+3加值。",
-					"你在你的每個回合第一次以這把劍進行攻擊時，你可以將這把劍一部份或全部的加值轉移到你的護甲等級上，而非將其用於該回合中的任何攻擊中。舉例來說，你可以將你在攻擊檢定和傷害骰中的加值降低為+1，並讓AC獲得+2的加值。這個加值調整將持續發揮效果直到你的下個回合開始，且你必須要持握這把劍才能從它獲得對AC的加值。"
+					"You gain a +3 bonus to attack and damage rolls made with this magic weapon.",
+					"The first time you attack with the sword on each of your turns, you can transfer some or all of the sword's bonus to your Armor Class, instead of using the bonus on any attacks that turn. For example, you could reduce the bonus to your attack and damage rolls to +1 and gain a +2 bonus to AC. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the sword to gain a bonus to AC from it."
 				],
 				"lootTables": [
-					"魔法物品表I"
+					"Magic Item Table I"
 				]
 			}
 		},
 		{
-			"name": "屠龍者", "ENG_name": "Dragon Slayer",
+			"name": "Dragon Slayer",
 			"type": "GV",
 			"requires": [
 				{
@@ -653,38 +916,66 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
+				"namePrefix": "Dragon Slayer ",
 				"source": "DMG",
 				"page": 166,
-				"namePrefix": "屠龍者", "ENG_namePrefix": "Dragon Slayer ",
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusWeapon": "+1",
+				"bonusAc": "+1",
 				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。",
-					"當你使用這把武器命中一隻龍，該龍將會受到額外的{@dice 3d6}該武器類型的傷害。對這個武器而言，「龍」是指任何類型為龍的生物，包括{@creature 龍龜}和{@creature 飛龍}。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +1",
-						"toString": [
-							null
-						]
-					}
+					"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+					"When you hit a dragon with this weapon, the dragon takes an extra {@dice 3d6} damage of the weapon's type. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns."
 				],
 				"lootTables": [
-					"魔法物品表G"
+					"Magic Item Table G"
 				]
 			}
 		},
 		{
-			"name": "焰舌", "ENG_name": "Flame Tongue",
+			"name": "Drow +1 Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Drow +1 ",
+				"source": "MM",
+				"page": 126,
+				"rarity": "unknown (magic)",
+				"bonusAc": "+1",
+				"entries": [
+					"You have a {=bonusAc} bonus to AC while wearing this armor. This armor loses its enchantment bonus permanently if it is exposed to sunlight for 1 hour or longer."
+				]
+			}
+		},
+		{
+			"name": "Drow +1 Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"inherits": {
+				"namePrefix": "Drow +1 ",
+				"source": "MM",
+				"page": 126,
+				"rarity": "unknown (magic)",
+				"bonusWeapon": "+1",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this weapon. This weapon loses its enchantment bonus permanently if it is exposed to sunlight for 1 hour or longer."
+				]
+			}
+		},
+		{
+			"name": "Flame Tongue",
 			"type": "GV",
 			"requires": [
 				{
@@ -692,22 +983,23 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
+				"namePrefix": "Flame Tongue ",
 				"source": "DMG",
 				"page": 170,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
 				"reqAttune": true,
-				"namePrefix": "焰舌", "ENG_namePrefix": "Flame Tongue ",
 				"entries": [
-					"你可以使用一個附贈動作以說出這把魔法劍的命令語，使火焰從劍刃迸發而出。這團烈焰將散發出40呎半徑的明亮光照和再延伸40呎的微光光照。當這把劍刃燃燒時，它將對任何它命中的目標造成額外的{@dice 2d6}火焰傷害。這團烈焰將持續直到你使用一個附贈動作再次說出命令語，或直到你把劍丟下或收入鞘中。"
+					"You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra {@dice 2d6} fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
 				],
 				"lootTables": [
-					"魔法物品表G"
+					"Magic Item Table G"
 				]
 			}
 		},
 		{
-			"name": "霜銘", "ENG_name": "Frost Brand",
+			"name": "Frost Brand",
 			"type": "GV",
 			"requires": [
 				{
@@ -715,24 +1007,52 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Very Rare",
+				"namePrefix": "Frost Brand ",
 				"source": "DMG",
 				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
 				"reqAttune": true,
-				"namePrefix": "霜銘", "ENG_namePrefix": "Frost Brand ",
 				"entries": [
-					"當你使用這把魔法劍以攻擊命中目標時，目標將受到額外的{@dice 1d6}寒冰傷害。此外，當你持握這把劍時，你具有對火焰傷害的抗性。",
-					"在嚴寒的溫度下，它的劍刃將散發出10呎半徑的明亮光照和再延伸10呎的微光光照。",
-					"當你抽出這把武器時，你可以熄滅距離你30呎內的所有非魔法火焰。這個特性每小時不能使用超過一次。"
+					"When you hit with an attack using this magic sword, the target takes an extra {@dice 1d6} cold damage. In addition, while you hold the sword, you have resistance to fire damage.",
+					"In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+					"When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour."
 				],
 				"lootTables": [
-					"魔法物品表H"
+					"Magic Item Table H"
 				]
 			}
 		},
 		{
-			"name": "巨人殺手", "ENG_name": "Giant Slayer",
+			"name": "Gambler's Blade",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Gambler's Blade ",
+				"source": "LLK",
+				"page": 55,
+				"rarity": "rare",
+				"reqAttune": true,
+				"curse": true,
+				"entries": [
+					"Choose a magical bonus of +1 to +3. This sword gains that bonus to its attack and damage rolls. For each point of bonus you choose for the sword, you take a corresponding penalty (\u22121 to \u22123) to your death saving throws. You can change this magical bonus each day at dawn.",
+					{
+						"name": "Curse",
+						"type": "entries",
+						"entries": [
+							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Giant Slayer",
 			"type": "GV",
 			"requires": [
 				{
@@ -743,38 +1063,44 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
+				"namePrefix": "Giant Slayer ",
 				"source": "DMG",
 				"page": 172,
-				"namePrefix": "巨人殺手", "ENG_namePrefix": "Giant Slayer ",
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusWeapon": "+1",
+				"bonusAc": "+1",
 				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。",
-					"當你使用這把武器命中一個巨人，該巨人將會受到額外的{@dice 2d6}該武器類型的傷害，且必須成功通過一次DC 15的力量豁免，否則將摔倒{@condition 伏地}。對這個武器而言，「巨人」是指任何類型為巨人的生物，包括{@creature 雙頭巨人}和{@creature 巨魔}。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +1",
-						"toString": [
-							null
-						]
-					}
+					"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+					"When you hit a giant with it, the giant takes an extra {@dice 2d6} damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall {@condition prone}. For the purpose of this weapon, \"giant\" refers to any creature with the giant type, including ettins and trolls."
 				],
 				"lootTables": [
-					"魔法物品表G"
+					"Magic Item Table G"
 				]
 			}
 		},
 		{
-			"name": "神聖復仇者", "ENG_name": "Holy Avenger",
+			"name": "Hellfire Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Hellfire ",
+				"source": "BGDIA",
+				"page": 223,
+				"rarity": "uncommon",
+				"entries": [
+					"This weapon is fashioned from infernal iron and traced with veins of hellfire that shed dim light in a 5-foot-radius.",
+					"Any humanoid killed by an attack made with this weapon has its soul funneled into the River Styx, where it's reborn instantly as a {@creature lemure} devil."
+				]
+			}
+		},
+		{
+			"name": "Holy Avenger",
 			"type": "GV",
 			"requires": [
 				{
@@ -782,34 +1108,21 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Legendary",
+				"namePrefix": "Holy Avenger ",
 				"source": "DMG",
 				"page": 174,
-				"namePrefix": "神聖復仇者", "ENG_namePrefix": "Holy Avenger ",
-				"reqAttune": "由聖騎士",
+				"srd": true,
+				"tier": "major",
+				"rarity": "legendary",
+				"reqAttune": "by a paladin",
+				"bonusWeapon": "+3",
+				"bonusAc": "+3",
 				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+3加值。當你以它命中一個邪魔或不死生物時，該生物將受到額外的{@dice 2d10}光耀傷害。",
-					"當你持握這把出鞘的劍時，它將創造出一道環繞著你的10呎半徑靈光。你和所有處於靈光中且對你友善的生物將在對抗法術或其他魔法的豁免檢定中具有優勢。若你的聖騎士職業等級為17或更高，則這個靈光的半徑將增加至30呎。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +3",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +3",
-						"toString": [
-							null
-						]
-					}
+					"You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra {@dice 2d10} radiant damage.",
+					"While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the paladin class, the radius of the aura increases to 30 feet."
 				],
 				"lootTables": [
-					"魔法物品表I"
+					"Magic Item Table I"
 				]
 			}
 		},
@@ -829,15 +1142,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Fernian Ash ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts fire damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one fire damage roll of the spell."
 				]
 			}
 		},
@@ -857,15 +1177,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Irian Rosewood ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts radiant damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one radiant damage roll of the spell."
 				]
 			}
 		},
@@ -885,15 +1212,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Kythrian Manchineel ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts acid or poison damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one acid or poison damage roll of the spell."
 				]
 			}
 		},
@@ -913,15 +1247,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Lamannian Oak ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts lightning or thunder damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one lightning or thunder damage roll of the spell."
 				]
 			}
 		},
@@ -941,43 +1282,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Mabaran Ebony ",
-				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts necrotic damage."
-				]
-			}
-		},
-		{
-			"name": "Imbued Wood (Quori Beech)",
-			"type": "GV",
-			"requires": [
-				{
-					"type": "SCF",
-					"scfType": "arcane"
-				}
-			],
-			"excludes": {
-				"name": [
-					"Crystal",
-					"Orb"
-				]
-			},
-			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
 				"reqAttune": true,
-				"namePrefix": "Quori Beech ",
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts psychic damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one necrotic damage roll of the spell."
 				]
 			}
 		},
@@ -997,15 +1317,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Risian Pine ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts cold damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one cold damage roll of the spell."
 				]
 			}
 		},
@@ -1025,15 +1352,22 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Shavarran Birch ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts force damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one force damage roll of the spell."
 				]
 			}
 		},
@@ -1053,105 +1387,27 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Xorian Wenge ",
+				"source": "ERLW",
+				"page": 277,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
+				"bonusAc": "+1",
 				"entries": [
-					"Powerful manifest zones can infuse local trees with planar energies. A gifted artificer can tap into this to create a wand, staff, or rod that is especially effective at channeling a particular type of energy.",
-					"An imbued wood arcane focus provides a +1 bonus when you roll damage for a spell that inflicts psychic damage."
+					"An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+					"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one psychic damage roll of the spell."
 				]
 			}
 		},
 		{
-			"name": "吉兆之刃", "ENG_name": "Luck Blade",
-			"type": "GV",
-			"entries": [
-				"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。當這把劍在你身上時，你同時在豁免檢定中獲得+1加值。",
-				{
-					"type": "entries",
-					"name": "幸運", "tENG_name": "Luck",
-					"entries": [
-						"若這把劍在你身上，你可以呼求它的好運以重骰一次你不滿意結果的攻擊檢定、屬性檢定、或豁免檢定（無須動作）你必須使用第二次擲骰的結果。這個特性直到下次日出之前都不能再被使用。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "許願", "tENG_name": "Wish",
-					"entries": [
-						"這把劍含有{@dice 1d4-1}發充能。當持握它時，你可以使用一個動作以消耗1發充能，並從它施放{@spell 祈願術}法術。這個特性直到下次日出之前都不能再被使用。這把劍若沒有任何剩餘的充能，則它將失去這個特性。"
-					]
-				}
-			],
-			"requires": [
-				{
-					"sword": true
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Legendary",
-				"source": "DMG",
-				"page": 179,
-				"namePrefix": "吉兆", "ENG_namePrefix": "Luck Blade ",
-				"reqAttune": true,
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。當這把劍在你身上時，你同時在豁免檢定中獲得+1加值。",
-					{
-						"type": "entries",
-						"name": "幸運", "tENG_name": "Luck",
-						"entries": [
-							"若這把劍在你身上，你可以呼求它的好運以重骰一次你不滿意結果的攻擊檢定、屬性檢定、或豁免檢定（無須動作）你必須使用第二次擲骰的結果。這個特性直到下次日出之前都不能再被使用。"
-						]
-					},
-					{
-						"type": "entries",
-						"name": "許願", "tENG_name": "Wish",
-						"entries": [
-							"這把劍含有{@dice 1d4-1}發充能。當持握它時，你可以使用一個動作以消耗1發充能，並從它施放{@spell 祈願術}法術。這個特性直到下次日出之前都不能再被使用。這把劍若沒有任何剩餘的充能，則它將失去這個特性。"
-						]
-					}
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "saving throws +1",
-						"toString": [
-							null
-						]
-					}
-				],
-				"charges": "{@dice 1d4-1}",
-				"attachedSpells": [
-					"wish"
-				],
-				"lootTables": [
-					"魔法物品表I"
-				]
-			},
-			"charges": "{@dice 1d4-1}",
-			"attachedSpells": [
-				"wish"
-			]
-		},
-		{
-			"name": "水手護甲", "ENG_name": "Mariner's Armor",
+			"name": "Last Stand Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -1159,21 +1415,132 @@
 				}
 			],
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 181,
-				"namePrefix": "水手", "ENG_namePrefix": "Mariner's ",
+				"namePrefix": "Last Stand Armor ",
+				"source": "EGW",
+				"page": 267,
+				"rarity": "very rare",
+				"bonusAc": "+1",
 				"entries": [
-					"當穿著此護甲時，你具有等同於你步行速度的游泳速度。此外，每當你在水中以0點生命值的狀態開始你的回合，這件護甲將會使你向著水面升起60呎的距離。這件護甲被飾以魚和貝類的圖案。"
-				],
-				"lootTables": [
-					"魔法物品表B"
+					"You have a {=bonusAc} bonus to AC while wearing this armor, which shimmers softly.",
+					"If you die while wearing the armor, it is destroyed, and each celestial, fey, and fiend with 30 feet of you must succeed on a DC 15 Charisma saving throw or be banished to its home plane of existence, unless it is already there."
 				]
 			}
 		},
 		{
-			"name": "心靈之刃", "ENG_name": "Mind Blade",
+			"name": "Living Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Living ",
+				"source": "ERLW",
+				"page": 278,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"bonusAc": "+1",
+				"entries": [
+					"This hideous armor is formed from black chitin, beneath which veins pulse and red sinews glisten. To attune to this item, you must wear it for the entire attunement period, during which tendrils on the inside burrow into you.",
+					"While wearing this armor, you have a {=bonusAc} bonus to Armor Class, and you have resistance to the following damage types: necrotic, poison, and psychic.",
+					{
+						"type": "entries",
+						"name": "Symbiotic Nature",
+						"entries": [
+							"The armor can't be removed from you while you're attuned to it, and you can't voluntarily end your attunement to it. If you're targeted by a spell that ends a curse, your attunement to the armor ends, and it detaches from you.",
+							"The armor requires fresh blood be fed to it. Immediately after you finish any long rest, you must either feed half of your remaining Hit Dice to the armor (round up) or take 1 level of {@condition exhaustion}."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Luck Blade",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"entries": [
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
+				{
+					"type": "entries",
+					"name": "Luck",
+					"entries": [
+						"If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wish",
+					"entries": [
+						"The sword has {@dice 1d4 - 1} charges. While holding it, you can use an action to expend 1 charge and cast the {@spell wish} spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+					]
+				}
+			],
+			"inherits": {
+				"namePrefix": "Luck Blade ",
+				"source": "DMG",
+				"page": 179,
+				"srd": true,
+				"tier": "major",
+				"rarity": "legendary",
+				"reqAttune": true,
+				"bonusWeapon": "+1",
+				"bonusAc": "+1",
+				"bonusSavingThrow": "+1",
+				"charges": "{@dice 1d4 - 1}",
+				"entries": [
+					"You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
+					{
+						"type": "entries",
+						"name": "Luck",
+						"entries": [
+							"If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Wish",
+						"entries": [
+							"The sword has {@dice 1d4 - 1} charges. While holding it, you can use an action to expend 1 charge and cast the {@spell wish} spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+						]
+					}
+				],
+				"attachedSpells": [
+					"wish"
+				],
+				"lootTables": [
+					"Magic Item Table I"
+				]
+			}
+		},
+		{
+			"name": "Mariner's Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Mariner's ",
+				"source": "DMG",
+				"page": 181,
+				"tier": "minor",
+				"rarity": "uncommon",
+				"entries": [
+					"While wearing this armor, you have a swimming speed equal to your walking speed. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface. The armor is decorated with fish and shell motifs."
+				],
+				"lootTables": [
+					"Magic Item Table B"
+				]
+			}
+		},
+		{
+			"name": "Mind Blade",
 			"type": "GV",
 			"requires": [
 				{
@@ -1181,18 +1548,18 @@
 				}
 			],
 			"inherits": {
-				"rarity": "Rare",
+				"namePrefix": "Mind Blade ",
 				"source": "VGM",
 				"page": 81,
-				"namePrefix": "心靈之刃", "ENG_namePrefix": "Mind Blade ",
-				"reqAttune": "由一名特定個體",
+				"rarity": "rare",
+				"reqAttune": "by a specific individual",
 				"entries": [
-					"奪心魔可以將任何非魔法刀劍轉變成一把心靈之刃。只有一個生物可以於它同調：一名特定的奪心魔，或者是它的其中一個奴僕。當在任何其他生物手中時，這把心靈之刃的功能就如同一把與相同種類的普通刀劍。而在它預定的持有者手中，這把心靈之刃是一把魔法武器，且可以對任何它所命中的目標造成額外的{@dice 2d6}精神傷害。"
+					"Mind flayers can turn any nonmagical sword into a mind blade. Only one creature can attune to it: either a specific mind flayer or one of its thralls. In the hands of any other creature, the mind blade functions as a normal sword of its kind. In the hands of its intended wielder, the mind blade is a magic weapon that deals an extra {@dice 2d6} psychic damage to any target it hits."
 				]
 			}
 		},
 		{
-			"name": "心靈鎧殼護甲", "ENG_name": "Mind Carapace Armor",
+			"name": "Mind Carapace Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -1200,18 +1567,18 @@
 				}
 			],
 			"inherits": {
-				"rarity": "Uncommon",
+				"namePrefix": "Mind Carapace ",
 				"source": "VGM",
 				"page": 81,
-				"namePrefix": "心靈鎧殼", "ENG_namePrefix": "Mind Carapace ",
-				"reqAttune": "由一名特定個體",
+				"rarity": "uncommon",
+				"reqAttune": "by a specific individual",
 				"entries": [
-					"任何一套非魔法重甲都可以被奪心魔轉變成心靈鎧殼護甲。只有一個生物可以於它同調：一名特定的奪心魔，或者是它的其中一個奴僕。當被任何其他生物穿著時，這件心靈鎧殼護甲的功能就如同一件與相同種類的普通護甲。而在它預定的穿著者身上，這件護甲將使它在智力、睿知、和魅力豁免中具有優勢，且讓其穿著者免疫於{@condition 恐懼}狀態。"
+					"Any nonmagical suit of heavy armor can be turned by mind flayers into mind carapace armor. Only one creature can attune to it: either a specific mind flayer or one of its thralls. While worn by any other creature, the mind carapace armor functions as normal armor of its kind. To its intended wearer, the armor grants advantage on Intelligence, Wisdom, and Charisma saving throws and makes its wearer immune to the {@condition frightened} condition."
 				]
 			}
 		},
 		{
-			"name": "秘銀護甲", "ENG_name": "Mithral Armor",
+			"name": "Mithral +1 Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -1225,22 +1592,76 @@
 				"name": "Hide Armor"
 			},
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Uncommon",
+				"namePrefix": "Mithral +1 ",
+				"source": "AI",
+				"page": 156,
+				"rarity": "rare",
+				"strength": null,
+				"bonusAc": "+1",
+				"stealth": false,
+				"entries": [
+					"You have a {=bonusAc} bonus to AC while wearing this armor.",
+					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version of the armor doesn't."
+				]
+			}
+		},
+		{
+			"name": "Mithral Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"excludes": {
+				"name": "Hide Armor"
+			},
+			"inherits": {
+				"namePrefix": "Mithral ",
 				"source": "DMG",
 				"page": 182,
+				"srd": true,
+				"tier": "minor",
+				"rarity": "uncommon",
+				"strength": null,
 				"stealth": false,
-				"namePrefix": "秘銀", "ENG_namePrefix": "Mithral ",
 				"entries": [
-					"秘銀是一種輕盈柔韌的金屬。一件秘銀鏈甲衫或護胸甲可以被穿在普通衣物之下。若該護甲原本會導致敏捷（隱匿）檢定承受劣勢，或具有對穿戴者力量屬性的需求，則該護甲的秘銀版本不會具有這些特性。"
+					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version of the armor doesn't."
 				],
 				"lootTables": [
-					"魔法物品表B"
+					"Magic Item Table B"
 				]
 			}
 		},
 		{
-			"name": "觸月之劍", "ENG_name": "Moon-Touched Sword",
+			"name": "Mizzium Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"excludes": {
+				"name": "Hide Armor"
+			},
+			"inherits": {
+				"namePrefix": "Mizzium ",
+				"source": "GGR",
+				"page": 179,
+				"rarity": "rare",
+				"entries": [
+					"This suit of armor is reinforced with a magically enhanced metal alloy called mizzium, which is made in Izzet foundries. While you're wearing the armor, any critical hit against you becomes a normal hit. In addition, when you are subjected to a magical effect that allows you to make a Strength or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw."
+				]
+			}
+		},
+		{
+			"name": "Moon-Touched Sword",
 			"type": "GV",
 			"requires": [
 				{
@@ -1248,18 +1669,18 @@
 				}
 			],
 			"inherits": {
-				"tier": "Minor",
-				"rarity": "Common",
+				"namePrefix": "Moon-Touched ",
 				"source": "XGE",
 				"page": 138,
-				"namePrefix": "觸月", "ENG_namePrefix": "Moon-Touched ",
+				"tier": "minor",
+				"rarity": "common",
 				"entries": [
-					"在黑暗環境中，這把劍出鞘的劍刃將散發出月光，創造出15呎半徑的明亮光照和再延伸15呎的微光光照。"
+					"In darkness, the unsheathed blade of this sword sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet."
 				]
 			}
 		},
 		{
-			"name": "九轉奪命劍", "ENG_name": "Nine Lives Stealer",
+			"name": "Nine Lives Stealer",
 			"type": "GV",
 			"requires": [
 				{
@@ -1267,35 +1688,21 @@
 				}
 			],
 			"inherits": {
-				"tier": "Major",
-				"rarity": "Very Rare",
+				"namePrefix": "Nine Lives Stealer ",
 				"source": "DMG",
 				"page": 183,
-				"namePrefix": "九轉奪命", "ENG_namePrefix": "Nine Lives Stealer ",
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
 				"reqAttune": true,
+				"bonusWeapon": "+2",
+				"charges": "{@dice 1d8 + 1}",
 				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+2加值。",
-					"這把劍含有{@dice 1d8+1}發充能。若你重擊一個擁有100點或更低生命值的生物，則它必須成功通過一次DC 15的體質豁免，否則將因為被這把劍吸乾生命力而立即被殺死（構裝體和不死生物免疫這個效果）。若該生物被殺死，這把劍將失去1發充能。當這把劍不再留有任何充能，它將失去這個特性。"
+					"You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
+					"The sword has {@dice 1d8 + 1} charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property."
 				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +2",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +2",
-						"toString": [
-							null
-						]
-					}
-				],
-				"charges": "{@dice 1d8+1}",
 				"lootTables": [
-					"魔法物品表H"
+					"Magic Item Table H"
 				]
 			}
 		},
@@ -1316,14 +1723,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Fernian Basalt ",
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take fire damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -1344,14 +1758,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Irian Quartz ",
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take radiant damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -1372,14 +1793,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Kythrian Skarn ",
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take acid or poison damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -1400,14 +1828,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Lamannian Flint ",
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take lightning or thunder damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -1428,42 +1863,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Mabaran Obsidian ",
-				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
-				]
-			}
-		},
-		{
-			"name": "Orb of Shielding (Quori Celestine)",
-			"type": "GV",
-			"requires": [
-				{
-					"type": "SCF",
-					"scfType": "arcane"
-				}
-			],
-			"excludes": {
-				"name": [
-					"Staff",
-					"Rod",
-					"Wand"
-				]
-			},
-			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
 				"reqAttune": true,
-				"namePrefix": "Quori Celestine ",
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take necrotic damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -1484,19 +1898,26 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Risian Shale ",
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
+				"reqAttune": true,
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take cold damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
 		{
-			"name": "Orb of Shielding (Shavaran Chert)",
+			"name": "Orb of Shielding (Shavarran Chert)",
 			"type": "GV",
 			"requires": [
 				{
@@ -1512,14 +1933,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
+				"namePrefix": "Shavarran Chert ",
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
+					{
+						"source": "UAWGE",
+						"page": 114
+					}
+				],
+				"rarity": "common",
 				"reqAttune": true,
-				"namePrefix": "Shavaran Chert ",
+				"wondrous": true,
 				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take force damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -1540,615 +1968,21 @@
 				]
 			},
 			"inherits": {
-				"wondrous": true,
-				"rarity": "Common",
-				"source": "UAWGE",
-				"page": 114,
-				"reqAttune": true,
 				"namePrefix": "Xorian Marble ",
-				"entries": [
-					"An orb of shielding is made from crystal or stone aligned to one of the planes. While you are holding the orb and take damage of the type associated with the material your orb is made from, you can use your reaction to reduce the damage by {@dice 1d4}."
-				]
-			}
-		},
-		{
-			"name": "盾牌+1", "ENG_name": "Shield, +1",
-			"type": "GV",
-			"requires": [
-				{
-					"type": "S"
-				}
-			],
-			"inherits": {
-				"genericBonus": "+1",
-				"tier": "Major",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 200,
-				"nameSuffix": "+1", "ENG_nameSuffix": " +1",
-				"entries": [
-					"當持握這面盾牌時，你的AC額外獲得{=genericBonus}加值。這個加值會加入這面盾牌原本對AC的加值中。"
-				],
-				"modifier": [
+				"source": "ERLW",
+				"page": 278,
+				"otherSources": [
 					{
-						"_category": "bonus",
-						"__text": "ac +1",
-						"toString": [
-							null
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "盾牌+2", "ENG_name": "Shield, +2",
-			"type": "GV",
-			"requires": [
-				{
-					"type": "S"
-				}
-			],
-			"inherits": {
-				"genericBonus": "+2",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 200,
-				"nameSuffix": "+2", "ENG_nameSuffix": " +2",
-				"entries": [
-					"當持握這面盾牌時，你的AC額外獲得{=genericBonus}加值。這個加值會加入這面盾牌原本對AC的加值中。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ac +2",
-						"toString": [
-							null
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "盾牌+3", "ENG_name": "Shield, +3",
-			"type": "GV",
-			"requires": [
-				{
-					"type": "S"
-				}
-			],
-			"inherits": {
-				"genericBonus": "+3",
-				"tier": "Major",
-				"rarity": "Very Rare",
-				"source": "DMG",
-				"page": 200,
-				"nameSuffix": "+3", "ENG_nameSuffix": " +3",
-				"entries": [
-					"當持握這面盾牌時，你的AC額外獲得{=genericBonus}加值。這個加值會加入這面盾牌原本對AC的加值中。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "ac +3",
-						"toString": [
-							null
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "銀質彈藥", "ENG_name": "Silvered Ammunition",
-			"type": "GV",
-			"entries": [
-				"有些對非魔法武器具有抗性或免疫能力的怪物仍會受到銀質彈藥的傷害，因此有些謹慎的冒險者們會投資額外的錢財為他們的彈藥鍍銀。你可以用100金幣為十發彈藥鍍銀。這些花費不僅代表了銀本身的價格，也包括了在不減損其效能的前提下鍍銀於彈藥上所需的時間和專業知識。"
-			],
-			"requires": [
-				{
-					"ammunition": true
-				}
-			],
-			"inherits": {
-				"tier": "Minor",
-				"rarity": "Unknown",
-				"source": "PHB",
-				"page": 148,
-				"namePrefix": "銀質", "ENG_namePrefix": "Silvered "
-			}
-		},
-		{
-			"name": "銀質武器", "ENG_name": "Silvered Weapon",
-			"type": "GV",
-			"entries": [
-				"有些對非魔法武器具有抗性或免疫能力的怪物仍會受到銀質武器的傷害，因此有些謹慎的冒險者們會投資額外的錢財為他們的武器鍍銀。你可以用100金幣為一把武器鍍銀。這些花費不僅代表了銀本身的價格，也包括了在不減損其效能的前提下鍍銀於武器上所需的時間和專業知識。"
-			],
-			"requires": [
-				{
-					"weapon": true
-				}
-			],
-			"excludes": {
-				"name": "Net"
-			},
-			"inherits": {
-				"rarity": "Unknown",
-				"tier": "Major",
-				"source": "PHB",
-				"page": 148,
-				"namePrefix": "銀質", "ENG_namePrefix": "Silvered "
-			}
-		},
-		{
-			"name": "燜燃護甲", "ENG_name": "Smoldering Armor",
-			"type": "GV",
-			"requires": [
-				{
-					"armor": true
-				}
-			],
-			"inherits": {
-				"tier": "Minor",
-				"rarity": "Common",
-				"source": "XGE",
-				"page": 139,
-				"namePrefix": "燜燃", "ENG_namePrefix": "Smoldering ",
-				"entries": [
-					"這件護甲會在被穿著時飄出一縷無害無味的煙霧。"
-				]
-			}
-		},
-		{
-			"name": "竊命之劍", "ENG_name": "Sword of Life Stealing",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 206,
-				"namePrefix": "竊命", "ENG_nameSuffix": " of Life Stealing",
-				"reqAttune": true,
-				"entries": [
-					"當你以這把魔法武器攻擊一個生物並在該攻擊檢定中骰出了20，若目標不為構裝體或不死生物，則目標將受到額外的10點死靈傷害。你也將獲得10點臨時生命值。",
-					"{@i 註記：根據SRD，其額外傷害為{@dice 3d6}死靈傷害。}"
-				],
-				"lootTables": [
-					"魔法物品表G"
-				]
-			}
-		},
-		{
-			"name": "鋒銳之劍", "ENG_name": "Sword of Sharpness",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true,
-					"dmgType": "S"
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Very Rare",
-				"source": "DMG",
-				"page": 206,
-				"nameSuffix": "鋒銳", "ENG_nameSuffix": " of Sharpness",
-				"reqAttune": true,
-				"entries": [
-					"當你以這把魔法武器攻擊並命中一個物體時，將你對目標的武器傷害骰取最大值。",
-					"當你以這把魔法武器攻擊一個生物並在該攻擊檢定中骰出了20，則目標將受到額外的14點劈砍傷害。接著骰另一顆{@dice d20}。若你骰出了20，則你將砍斷目標的其中一個肢體，並由DM決定這種損傷會有什麼效果。若該生物沒有可以被砍斷的肢體，則你將改為砍下它軀體的一部分。",
-					"{@i 註記：根據SRD，其額外傷害為{@dice 4d6}劈砍傷害，儘管{@link 這並不正確|https://twitter.com/JeremyECrawford/status/949111823990534144}}。",
-					"此外，你可以說出這把劍的命令語，使劍刃散發出10呎半徑的明亮光照和再延伸10呎的微光光照。再次說出命令語或將這把劍收入鞘中將會使這個光照熄滅。"
-				],
-				"lootTables": [
-					"魔法物品表H"
-				]
-			}
-		},
-		{
-			"name": "復仇之劍", "ENG_name": "Sword of Vengeance",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 206,
-				"namePrefix": "復仇", "ENG_nameSuffix": " of Vengeance",
-				"reqAttune": true,
-				"curse": true,
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。",
-					{
-						"name": "詛咒", "tENG_name": "Curse",
-						"type": "entries",
-						"entries": [
-							"這把劍受到詛咒，且被一個渴望復仇的靈魂所寄宿。與它同調將會使詛咒蔓延到你身上。只要你還承受這個詛咒，你就會不願意與這把劍分開，且永遠會將它放在你的觸及範圍內。當同調於這把武器時，你在使用它以外的武器所進行的攻擊檢定中具有劣勢。",
-							"此外，當這把劍在你身上時，每當你在戰鬥中受到傷害時，你都必須成功通過一次DC 15的睿知豁免。若豁免失敗，則你必須攻擊那個傷害你的生物直到你或它的生命值歸零，或直到你無法來到該生物身邊以對它進行近戰攻擊。",
-							"你能夠透過通常手段打破這個詛咒。或者，對這把劍施放{@spell 放逐術|phb}法術將強迫這個復仇靈魂離開它。這把劍接著將變回一把沒有其他屬性的+1武器。"
-						]
+						"source": "UAWGE",
+						"page": 114
 					}
 				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +1",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +1",
-						"toString": [
-							null
-						]
-					}
-				],
-				"lootTables": [
-					"魔法物品表F"
-				]
-			}
-		},
-		{
-			"name": "重創之劍", "ENG_name": "Sword of Wounding",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 207,
-				"namePrefix": "重創", "ENG_nameSuffix": " of Wounding",
+				"rarity": "common",
 				"reqAttune": true,
+				"wondrous": true,
 				"entries": [
-					"因這把武器的傷害而失去的生命值只能透過短休或長休回復，而無法藉由再生、魔法、或其他手段回復。",
-					"每回合一次，當你使用這把魔法武器以攻擊命中一個生物時，你可以在該目標身上留下創傷。在受創生物的每個回合開始時，它將為每個你在它身上留下的創傷而各自受到{@dice 1d4}死靈傷害，且它可以進行一次DC 15的體質豁免，豁免成功則結束所有這類創傷對它的影響。或者，受創生物或一個距離它5呎內的生物都可以使用一個動作以進行一次DC 15的睿知（{@skill 醫藥}）檢定，成功則結束這類創傷對它的影響。"
-				],
-				"lootTables": [
-					"魔法物品表G"
-				]
-			}
-		},
-		{
-			"name": "惡毒武器", "ENG_name": "Vicious Weapon",
-			"type": "GV",
-			"requires": [
-				{
-					"weapon": true
-				}
-			],
-			"excludes": {
-				"name": "Net"
-			},
-			"entries": [
-				"當你以這把魔法武器骰出了20時，目標將受到額外7點該武器類型的傷害。",
-				"{@i 註記：根據SRD，其額外傷害為{@dice 2d6}傷害。}"
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 209,
-				"namePrefix": "惡毒", "ENG_namePrefix": "Vicious ",
-				"entries": [
-					"當你以這把魔法武器骰出了20時，目標將受到額外的7點{=dmgType}傷害。",
-					"{@i 註記：根據SRD，其額外傷害為{@dice 2d6}{=dmgType}傷害。}"
-				],
-				"lootTables": [
-					"魔法物品表G"
-				]
-			}
-		},
-		{
-			"name": "斬首之劍", "ENG_name": "Vorpal Sword",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true,
-					"dmgType": "S"
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Legendary",
-				"source": "DMG",
-				"page": 209,
-				"namePrefix": "斬首", "ENG_namePrefix": "Vorpal ",
-				"reqAttune": true,
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有+3加值。此外，這把武器將忽略劈砍傷害的抗性。",
-					"當你以這把武器攻擊一個擁有至少一顆頭的生物，且在該攻擊檢定中骰出了20，則你將砍斷該生物的其中一顆頭。若該生物無法在失去那顆頭的情況下生存，則它將死亡。若一個生物免疫於劈砍傷害、沒有或不需要頭、擁有傳奇動作、或DM認為該生物太過巨大以至於這把劍無法砍斷它的頭顱，則該生物將免疫於這個效果。這類生物將改為因該次命中而受到額外的{@dice 6d8}劈砍傷害。"
-				],
-				"modifier": [
-					{
-						"_category": "bonus",
-						"__text": "melee attacks +3",
-						"toString": [
-							null
-						]
-					},
-					{
-						"_category": "bonus",
-						"__text": "melee damage +3",
-						"toString": [
-							null
-						]
-					}
-				],
-				"lootTables": [
-					"魔法物品表I"
-				]
-			}
-		},
-		{
-			"name": "衝擊彈藥", "ENG_name": "Walloping Ammunition",
-			"type": "GV",
-			"requires": [
-				{
-					"ammunition": true
-				}
-			],
-			"inherits": {
-				"tier": "Minor",
-				"rarity": "Common",
-				"source": "XGE",
-				"page": 139,
-				"namePrefix": "衝擊", "ENG_namePrefix": "Walloping ",
-				"entries": [
-					"這發彈藥富有衝擊力。一個被這發彈藥命中的生物必須成功通過一次DC 10的力量豁免，否則被擊倒{@condition 伏地}。"
-				]
-			}
-		},
-		{
-			"name": "武器(無傷害)+1", "ENG_name": "Weapon (no damage) +1",
-			"type": "GV",
-			"requires": [
-				{
-					"name": "Net"
-				}
-			],
-			"inherits": {
-				"genericBonus": "+1",
-				"tier": "Major",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 213,
-				"nameSuffix": "+1", "ENG_nameSuffix": " +1",
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定上具有{=genericBonus}加值。"
-				]
-			}
-		},
-		{
-			"name": "武器(無傷害)+2", "ENG_name": "Weapon (no damage) +2",
-			"type": "GV",
-			"requires": [
-				{
-					"name": "Net"
-				}
-			],
-			"inherits": {
-				"genericBonus": "+2",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 213,
-				"nameSuffix": "+2", "ENG_nameSuffix": " +2",
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定上具有{=genericBonus}加值。"
-				]
-			}
-		},
-		{
-			"name": "武器(無傷害)+3", "ENG_name": "Weapon (no damage) +3",
-			"type": "GV",
-			"requires": [
-				{
-					"name": "Net"
-				}
-			],
-			"inherits": {
-				"genericBonus": "+3",
-				"tier": "Major",
-				"rarity": "Very Rare",
-				"source": "DMG",
-				"page": 213,
-				"nameSuffix": "+3", "ENG_nameSuffix": " +3",
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定上具有{=genericBonus}加值。"
-				]
-			}
-		},
-		{
-			"name": "武器+1", "ENG_name": "Weapon +1",
-			"type": "GV",
-			"requires": [
-				{
-					"weapon": true
-				}
-			],
-			"excludes": {
-				"name": "Net"
-			},
-			"inherits": {
-				"genericBonus": "+1",
-				"tier": "Major",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 213,
-				"nameSuffix": "+1", "ENG_nameSuffix": " +1",
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有{=genericBonus}加值。"
-				],
-				"lootTables": [
-					"魔法物品表F"
-				]
-			}
-		},
-		{
-			"name": "武器+2", "ENG_name": "Weapon +2",
-			"type": "GV",
-			"requires": [
-				{
-					"weapon": true
-				}
-			],
-			"excludes": {
-				"name": "Net"
-			},
-			"inherits": {
-				"genericBonus": "+2",
-				"tier": "Major",
-				"rarity": "Rare",
-				"source": "DMG",
-				"page": 213,
-				"nameSuffix": "+2", "ENG_nameSuffix": " +2",
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有{=genericBonus}加值。"
-				],
-				"lootTables": [
-					"魔法物品表G"
-				]
-			}
-		},
-		{
-			"name": "武器+3", "ENG_name": "Weapon +3",
-			"type": "GV",
-			"requires": [
-				{
-					"weapon": true
-				}
-			],
-			"excludes": {
-				"name": "Net"
-			},
-			"inherits": {
-				"genericBonus": "+3",
-				"tier": "Major",
-				"rarity": "Very Rare",
-				"source": "DMG",
-				"page": 213,
-				"nameSuffix": "+3", "ENG_nameSuffix": " +3",
-				"entries": [
-					"你在使用這把武器進行的攻擊檢定和傷害骰上具有{=genericBonus}加值。"
-				],
-				"lootTables": [
-					"魔法物品表H"
-				]
-			}
-		},
-		{
-			"name": "警戒武器", "ENG_name": "Weapon of Warning",
-			"type": "GV",
-			"requires": [
-				{
-					"weapon": true
-				}
-			],
-			"inherits": {
-				"tier": "Major",
-				"rarity": "Uncommon",
-				"source": "DMG",
-				"page": 213,
-				"namePrefix": "警戒之", "ENG_nameSuffix": " of Warning",
-				"reqAttune": true,
-				"entries": [
-					"這把魔法武器會在危險時給你警告。當這把武器在你身上時，你在先攻檢定中具有優勢。此外，除非你們因為某些非魔法睡眠的原因而處於{@condition 無力}狀態，你和任何距離你30呎內的同伴都不會被突襲。若在戰鬥開始時你們正處於自然睡眠中，這把武器會神奇的喚醒你和你範圍內的同伴。"
-				],
-				"lootTables": [
-					"魔法物品表F"
-				]
-			}
-		},
-		{
-			"name": "Mizzium Armor",
-			"type": "GV",
-			"requires": [
-				{
-					"type": "HA"
-				},
-				{
-					"type": "MA"
-				}
-			],
-			"excludes": {
-				"name": "Hide Armor"
-			},
-			"inherits": {
-				"rarity": "Rare",
-				"source": "GGR",
-				"page": 179,
-				"namePrefix": "Mizzium ",
-				"entries": [
-					"This suit of armor is reinforced with a magically enhanced metal alloy called mizzium, which is made in Izzet foundries. While you're wearing the armor, any critical hit against you becomes a normal hit. In addition, when you are subjected to a magical effect that allows you to make a Strength or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw."
-				]
-			}
-		},
-		{
-			"name": "Blade of the Medusa",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true
-				}
-			],
-			"inherits": {
-				"rarity": "Very Rare",
-				"source": "LLK",
-				"page": 53,
-				"reqAttune": true,
-				"curse": true,
-				"nameSuffix": " of the Medusa",
-				"entries": [
-					"When you attack a creature with this magic weapon and roll a 20 on the attack roll, the creature must make a DC 15 Constitution saving throw in addition to suffering the attack's normal effects. On a failed save, the creature is restrained and must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this effect three times, the effect ends. If it fails its saves three times, it is turned to stone and subjected to the {@condition petrified} condition for 1 hour.",
-					"A creature is immune to this effect if it is immune to damage of the weapon's type, does not have a body made of flesh, or has legendary actions.",
-					{
-						"name": "詛咒", "tENG_name": "Curse",
-						"type": "entries",
-						"entries": [
-							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon. Whenever you attack a creature with this weapon and roll a 1 on the attack roll, you must succeed on a DC 15 Constitution saving throw or be {@condition restrained} and forced to make additional saves against being {@condition petrified}, as above."
-						]
-					}
-				]
-			}
-		},
-		{
-			"name": "Gambler's Blade",
-			"type": "GV",
-			"requires": [
-				{
-					"sword": true
-				}
-			],
-			"inherits": {
-				"rarity": "Rare",
-				"source": "LLK",
-				"page": 55,
-				"reqAttune": true,
-				"curse": true,
-				"namePrefix": "Gambler's Blade ",
-				"entries": [
-					"Choose a magical bonus of +1 to +3. This sword gains that bonus to its attack and damage rolls. For each point of bonus you choose for the sword, you take a corresponding penalty (\u22121 to \u22123) to your death saving throws. You can change this magical bonus each day at dawn.",
-					{
-						"name": "詛咒", "tENG_name": "Curse",
-						"type": "entries",
-						"entries": [
-							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon."
-						]
-					}
+					"An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you're a spellcaster, you can use this orb as a spellcasting focus.",
+					"If you're holding the orb when you take psychic damage, you can use your reaction to reduce the damage by {@dice 1d4} (to a minimum of 0)."
 				]
 			}
 		},
@@ -2161,12 +1995,12 @@
 				}
 			],
 			"inherits": {
-				"rarity": "Rare",
+				"namePrefix": "Polymorph Blade ",
 				"source": "LLK",
 				"page": 56,
+				"rarity": "very rare",
 				"reqAttune": true,
 				"curse": true,
-				"namePrefix": "Polymorph Blade ",
 				"entries": [
 					"When you attack a creature with this magic weapon and roll a 20 on the attack roll, the creature must make a DC 15 Wisdom saving throw in addition to suffering the attack's normal effects. On a failed save, the creature also suffers the effects of a {@spell polymorph} spell. Roll a d20 and consult the following table to determine the form the target creature is transformed into.",
 					{
@@ -2177,7 +2011,7 @@
 							"New Form"
 						],
 						"colStyles": [
-							"col-2 text-align-center",
+							"col-2 text-center",
 							"col-10"
 						],
 						"rows": [
@@ -2227,7 +2061,7 @@
 							],
 							[
 								"12",
-								"{@creature Riding Horse|mm|Horse}"
+								"{@creature Riding Horse||Horse}"
 							],
 							[
 								"13",
@@ -2265,7 +2099,7 @@
 					},
 					"A creature is immune to this effect if it is immune to damage of the weapon's type, is a shapechanger, or has legendary actions.",
 					{
-						"name": "詛咒", "tENG_name": "Curse",
+						"name": "Curse",
 						"type": "entries",
 						"entries": [
 							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon. Whenever you attack a creature with this weapon and roll a 1 on the attack roll, you suffer the effect of a {@spell polymorph} spell for 1 hour, rolling on the table to determine your new form."
@@ -2273,391 +2107,723 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Silvered Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"excludes": {
+				"name": "Energy Cell"
+			},
+			"ammo": true,
+			"entries": [
+				"Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver ammunition, so cautious adventurers invest extra coin to plate their ammunition in silver. You can silver ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the ammunition without making it less effective."
+			],
+			"inherits": {
+				"namePrefix": "Silvered ",
+				"source": "PHB",
+				"page": 148,
+				"tier": "minor",
+				"rarity": "unknown"
+			}
+		},
+		{
+			"name": "Silvered Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				"Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective."
+			],
+			"inherits": {
+				"namePrefix": "Silvered ",
+				"source": "PHB",
+				"page": 148,
+				"tier": "major",
+				"rarity": "unknown",
+				"valueExpression": "[[baseItem.value]] + 10000"
+			}
+		},
+		{
+			"name": "Smoldering Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Smoldering ",
+				"source": "XGE",
+				"page": 139,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"Wisps of harmless, odorless smoke rise from this armor while it is worn."
+				]
+			}
+		},
+		{
+			"name": "Sword of Life Stealing",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Life Stealing",
+				"source": "DMG",
+				"page": 206,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true,
+				"entries": [
+					"When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn't a construct or an undead. You also gain 10 temporary hit points.",
+					"{@i Note: According to the SRD, it is an extra {@dice 3d6} necrotic damage.}"
+				],
+				"lootTables": [
+					"Magic Item Table G"
+				]
+			}
+		},
+		{
+			"name": "Sword of Sharpness",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true,
+					"dmgType": "S"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Sharpness",
+				"source": "DMG",
+				"page": 206,
+				"srd": true,
+				"tier": "major",
+				"rarity": "very rare",
+				"reqAttune": true,
+				"entries": [
+					"When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.",
+					"When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another {@dice d20}. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead.",
+					"{@i Note: According to the SRD, it is an extra {@dice 4d6} slashing damage, although {@link this is incorrect|https://twitter.com/JeremyECrawford/status/949111823990534144}}.",
+					"In addition, you can speak the sword's command to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light."
+				],
+				"lootTables": [
+					"Magic Item Table H"
+				]
+			}
+		},
+		{
+			"name": "Sword of Vengeance",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Vengeance",
+				"source": "DMG",
+				"page": 206,
+				"tier": "major",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"curse": true,
+				"bonusWeapon": "+1",
+				"bonusAc": "+1",
+				"entries": [
+					"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+					{
+						"name": "Curse",
+						"type": "entries",
+						"entries": [
+							"This sword is cursed and possessed by a vengeful spirit. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the sword, keeping it on your person at all times. While attuned to this weapon, you have disadvantage on attack rolls made with weapons other than this one.",
+							"In addition, while the sword is on your person, you must succeed on a DC 15 Wisdom saving throw whenever you take damage in combat. On a failed save you must attack the creature that damaged you until you drop to 0 hit points or it does, or until you can't reach the creature to make a melee attack against it.",
+							"You can break the curse in the usual ways. Alternatively, casting {@spell banishment} on the sword forces the vengeful spirit to leave it. The sword then becomes a +1 weapon with no other properties."
+						]
+					}
+				],
+				"lootTables": [
+					"Magic Item Table F"
+				]
+			}
+		},
+		{
+			"name": "Sword of Wounding",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Wounding",
+				"source": "DMG",
+				"page": 207,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"reqAttune": true,
+				"entries": [
+					"Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.",
+					"Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes {@dice 1d4} necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
+				],
+				"lootTables": [
+					"Magic Item Table G"
+				]
+			}
+		},
+		{
+			"name": "Vicious +1 Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				"When you roll a 20 with this magic weapon, the target takes an extra 7 damage of the weapon's type.",
+				"{@i Note: According to the SRD, it is an extra {@dice 2d6} damage.}"
+			],
+			"inherits": {
+				"namePrefix": "Vicious +1 ",
+				"source": "AI",
+				"page": 149,
+				"rarity": "rare",
+				"bonusWeapon": "+1",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this weapon.",
+					"When you roll a 20 with this magic weapon, the target takes an extra 7 {=dmgType} damage.",
+					"{@i Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage.}"
+				]
+			}
+		},
+		{
+			"name": "Vicious Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				"When you roll a 20 with this magic weapon, the target takes an extra 7 damage of the weapon's type.",
+				"{@i Note: According to the SRD, it is an extra {@dice 2d6} damage.}"
+			],
+			"inherits": {
+				"namePrefix": "Vicious ",
+				"source": "DMG",
+				"page": 209,
+				"srd": true,
+				"tier": "major",
+				"rarity": "rare",
+				"entries": [
+					"When you roll a 20 with this magic weapon, the target takes an extra 7 {=dmgType} damage.",
+					"{@i Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage.}"
+				],
+				"lootTables": [
+					"Magic Item Table G"
+				]
+			}
+		},
+		{
+			"name": "Vorpal Sword",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true,
+					"dmgType": "S"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Vorpal ",
+				"source": "DMG",
+				"page": 209,
+				"srd": true,
+				"tier": "major",
+				"rarity": "legendary",
+				"reqAttune": true,
+				"bonusWeapon": "+3",
+				"bonusAc": "+3",
+				"entries": [
+					"You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.",
+					"When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the DM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra {@dice 6d8} slashing damage from the hit."
+				],
+				"lootTables": [
+					"Magic Item Table I"
+				]
+			}
+		},
+		{
+			"name": "Walloping Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"ammo": true,
+			"inherits": {
+				"namePrefix": "Walloping ",
+				"source": "XGE",
+				"page": 139,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					" This ammunition packs a wallop. A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked {@condition prone}."
+				]
+			}
+		},
+		{
+			"name": "Weapon of Certain Death",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Certain Death",
+				"source": "EGW",
+				"page": 270,
+				"rarity": "rare",
+				"entries": [
+					"When you damage a creature with an attack using this magic weapon, the target can't regain hit points until the start of your next turn."
+				]
+			}
+		},
+		{
+			"name": "Weapon of Warning",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Warning",
+				"source": "DMG",
+				"page": 213,
+				"tier": "major",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"entries": [
+					"This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when {@condition incapacitated} by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
+				],
+				"lootTables": [
+					"Magic Item Table F"
+				]
+			}
 		}
 	],
 	"linkedLootTables": {
 		"DMG": {
 			"Arrow of Slaying": [
-				"魔法物品表E"
+				"Magic Item Table E"
 			],
 			"Shield +1": [
-				"魔法物品表F"
+				"Magic Item Table F"
 			],
 			"Adamantine Chain Mail": [
-				"魔法物品表F"
+				"Magic Item Table F"
 			],
 			"Adamantine Chain Shirt": [
-				"魔法物品表F"
+				"Magic Item Table F"
 			],
 			"Adamantine Scale Mail": [
-				"魔法物品表F"
+				"Magic Item Table F"
 			],
 			"Adamantine Breastplate": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Adamantine Splint Armor": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail +1": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Acid Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Cold Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Fire Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Force Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Lightning Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Necrotic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Poison Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Psychic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Radiant Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Mail of Thunder Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt +1": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Acid Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Cold Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Fire Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Force Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Lightning Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Necrotic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Poison Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Psychic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Radiant Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Chain Shirt of Thunder Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor +1": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Acid Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Cold Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Fire Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Force Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Lightning Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Necrotic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Poison Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Psychic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Radiant Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Leather Armor of Thunder Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail +1": [
-				"魔法物品表G",
-				"魔法物品表I"
+				"Magic Item Table G",
+				"Magic Item Table I"
 			],
 			"Scale Mail of Acid Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Cold Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Fire Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Force Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Lightning Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Necrotic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Poison Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Psychic Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Radiant Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Scale Mail of Thunder Resistance": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Shield +2": [
-				"魔法物品表G"
+				"Magic Item Table G"
 			],
 			"Shield +3": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Adamantine Half Plate Armor": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Adamantine Plate Armor": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate +1": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Acid Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Cold Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Fire Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Force Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Lightning Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Necrotic Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Poison Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Psychic Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Radiant Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate of Thunder Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Chain Mail +2": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Chain Shirt +2": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Leather Armor +2": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Scale Mail +2": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor +1": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Acid Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Cold Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Fire Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Force Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Lightning Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Necrotic Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Poison Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Psychic Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Radiant Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Splint Armor of Thunder Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor +1": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Acid Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Cold Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Fire Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Force Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Lightning Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Necrotic Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Poison Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Psychic Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Radiant Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Studded Leather Armor of Thunder Resistance": [
-				"魔法物品表H"
+				"Magic Item Table H"
 			],
 			"Breastplate +2": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Chain Mail +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Chain Shirt +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor +1": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Leather Armor +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor +1": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Splint Armor +2": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Studded Leather Armor +2": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor +2": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor +2": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Studded Leather Armor +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Breastplate +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Splint Armor +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor +3": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Acid Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Cold Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Fire Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Force Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Lightning Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Necrotic Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Poison Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Psychic Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Radiant Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Half Plate Armor of Thunder Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Acid Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Cold Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Fire Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Force Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Lightning Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Necrotic Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Poison Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Psychic Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Radiant Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			],
 			"Plate Armor of Thunder Resistance": [
-				"魔法物品表I"
+				"Magic Item Table I"
 			]
 		}
 	}

@@ -2,9 +2,10 @@
 	"monster": [
 		{
 			"name": "Blazing Skeleton",
+			"source": "Stream",
+			"page": -1,
 			"size": "M",
 			"type": "undead",
-			"source": "Stream",
 			"alignment": [
 				"C",
 				"E"
@@ -31,20 +32,25 @@
 				"dex": "+6",
 				"cha": "+4"
 			},
-			"vulnerable": [
-				"bludgeoning"
+			"senses": [
+				"darkvision 60 ft."
 			],
+			"passive": 10,
 			"immune": [
 				"fire",
 				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
 			],
 			"conditionImmune": [
 				"exhaustion",
 				"poisoned"
 			],
-			"senses": "darkvision 60 ft.",
-			"passive": 10,
-			"languages": "Common, Abyssal",
+			"languages": [
+				"Common",
+				"Abyssal"
+			],
 			"cr": "1",
 			"trait": [
 				{
@@ -68,7 +74,7 @@
 					]
 				}
 			],
-			"page": 0,
+			"hasToken": true,
 			"senseTags": [
 				"D"
 			],
@@ -78,6 +84,10 @@
 			],
 			"damageTags": [
 				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
 			]
 		}
 	]

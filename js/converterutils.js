@@ -11,353 +11,393 @@
  * data, or common errors which should be corrected prior to running the parser).
  */
 
-class AcConvert {
-	static tryPostProcessAc (m, cbMan, cbErr) {
-		let nuAc = [];
-		const basic = /^(\d+)( \((.*?)\))?$/.exec(m.ac.trim());
-		if (basic) {
-			if (basic[3]) {
-				const brak = basic[3];
-				let cur = {
-					ac: Number(basic[1])
-				};
+String.prototype.split_handleColon = String.prototype.split_handleColon || function (str, maxSplits = Number.MAX_SAFE_INTEGER) {
+	if (str === "") return this.split("");
 
-				let nextPart = null;
+	const colonStr = `${str.trim()}:`;
+	const isColon = this.toLowerCase().startsWith(colonStr.toLowerCase());
 
-				const from = [];
+	const re = isColon ? new RegExp(colonStr, "ig") : new RegExp(str, "ig");
+	const targetString = isColon ? colonStr : str;
 
-				const splitter = StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX;
+	let m = re.exec(this);
+	let splits = 0;
+	const out = [];
+	const indexes = [];
 
-				const parts = brak.split(splitter).map(it => it.trim());
+	while (m && splits < maxSplits) {
+		indexes.push(m.index);
 
-				parts.forEach(p => {
-					const pLow = p.toLowerCase();
-					switch (pLow) {
-						// unhandled/other
-						case "unarmored defense":
-						case "suave defense":
-						case "armor scraps":
-						case "barding scraps":
-						case "patchwork armor":
-						case "see natural armor feature":
-						case "barkskin trait":
-						case "sylvan warrior":
-						case "cage":
-						case "chains":
-						case "coin mail":
-						case "crude armored coat":
-						case "improvised armor":
-						case "magic robes":
-						case "makeshift armor":
-						case "natural and mystic armor":
-						case "padded armor":
-						case "padded leather":
-						case "parrying dagger":
-						case "plant fiber armor":
-						case "plus armor worn":
-						case "rag armor":
-						case "ring of protection +2":
-						case "see below":
-						case "wicker armor":
-						case "bone armor":
-							from.push(p);
-							break;
+		splits++;
+		m = re.exec(this);
+	}
 
-						// au naturel
-						case "natural armor":
-						case "natural":
-							from.push("natural armor");
-							break;
+	if (indexes.length === 1) {
+		out.push(this.substring(0, indexes[0]));
+		out.push(this.substring(indexes[0] + targetString.length, this.length));
+	} else {
+		for (let i = 0; i < indexes.length - 1; ++i) {
+			const start = indexes[i];
 
-						// spells
-						case "foresight bonus":
-							from.push(`{@spell foresight} bonus`);
-							break;
+			if (i === 0) {
+				out.push(this.substring(0, start));
+			}
 
-						case "natural barkskin":
-							from.push(`natural {@spell barkskin}`);
-							break;
+			const end = indexes[i + 1];
+			out.push(this.substring(start + targetString.length, end));
 
-						case "mage armor":
-							from.push("{@spell mage armor}");
-							break;
+			if (i === indexes.length - 2) {
+				out.push(this.substring(end + targetString.length, this.length));
+			}
+		}
+	}
 
-						// armour
-						case "studded leather armor":
-						case "studded leather":
-							from.push("{@item studded leather armor|phb}");
-							break;
+	return out.map(it => it.trim());
+};
 
-						case "leather armor":
-						case "leather":
-							from.push("{@item leather armor|phb}");
-							break;
+String.prototype.indexOf_handleColon = String.prototype.indexOf_handleColon || function (str) {
+	const colonStr = `${str.trim()}:`;
+	const idxColon = this.toLowerCase().indexOf(colonStr.toLowerCase());
+	if (~idxColon) return idxColon;
+	return this.toLowerCase().indexOf(str.toLowerCase());
+};
 
-						case "half plate":
-							from.push("{@item half plate armor|phb}");
-							break;
+class ConverterConst {}
+ConverterConst.STR_RE_DAMAGE_TYPE = "(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder)";
+ConverterConst.RE_DAMAGE_TYPE = new RegExp(ConverterConst.STR_RE_DAMAGE_TYPE, "gi");
 
-						case "splint":
-						case "splint armor":
-							from.push("{@item splint armor|phb}");
-							break;
+class BaseParser {
+	static _getValidOptions (options) {
+		options = options || {};
+		if (!options.cbWarning || !options.cbOutput) throw new Error(`Missing required callback options!`);
+		return options;
+	}
 
-						case "chain mail":
-						case "chainmail":
-						case "chain armor":
-							from.push("{@item chain mail|phb}");
-							break;
+	// region conversion
+	static _getAsTitle (prop, line, titleCaseFields, isTitleCase) {
+		return titleCaseFields && titleCaseFields.includes(prop) && isTitleCase
+			? line.toLowerCase().toTitleCase()
+			: line;
+	}
 
-						case "scale mail":
-						case "scale armor":
-						case "scale":
-							from.push("{@item scale mail|phb}");
-							break;
+	static _getCleanInput (ipt) {
+		const iptClean = ipt
+			.replace(/[−–‒]/g, "-") // convert minus signs to hyphens
+		;
+		return CleanUtil.getCleanString(iptClean, false);
+	}
 
-						case "hide armor":
-						case "hide":
-							from.push("{@item hide armor|phb}");
-							break;
+	static _hasEntryContent (trait) {
+		return trait && (trait.name || (trait.entries.length === 1 && trait.entries[0]) || trait.entries.length > 1);
+	}
 
-						case "chain shirt":
-							from.push("{@item chain shirt|phb}");
-							break;
+	/**
+	 * Check if a line is likely to be a badly-newline'd continuation of the previous line.
+	 * @param entryArray
+	 * @param curLine
+	 * @param [opts]
+	 * @param [opts.noLowercase] Disable lowercase-word checking.
+	 * @param [opts.noNumber] Disable number checking.
+	 * @param [opts.noParenthesis] Disable parenthesis ("(") checking.
+	 * @param [opts.noSavingThrow] Disable saving throw checking.
+	 * @param [opts.noAbilityName] Disable ability checking.
+	 * @param [opts.noHit] Disable "Hit:" checking.
+	 * @param [opts.noSpellcastingAbility] Disable spellcasting ability checking.
+	 */
+	static _isContinuationLine (entryArray, curLine, opts) {
+		opts = opts || {};
 
-						case "breastplate":
-							from.push("{@item breastplate|phb}");
-							break;
+		// If there is no previous entry to add to, do not continue
+		if (typeof entryArray.last() !== "string") return false;
 
-						case "ring mail":
-							from.push("{@item ring mail|phb}");
-							break;
+		const cleanLine = curLine.trim();
 
-						case "plate mail":
-						case "platemail":
-						case "plate":
-						case "plate armor":
-						case "full plate":
-							from.push("{@item plate armor|phb}");
-							break;
+		// A lowercase word
+		if (/^[a-z]/.test(cleanLine) && !opts.noLowercase) return true;
+		// A number (e.g. damage; "5 (1d6 + 2)")
+		if (/^\d+\s+/.test(cleanLine) && !opts.noNumber) return true;
+		// Opening brackets (e.g. damage; "(1d6 + 2)")
+		if (/^\(/.test(cleanLine) && !opts.noParenthesis) return true;
+		// An ability score name followed by "saving throw"
+		if (/^(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)\s+saving throw/.test(cleanLine) && !opts.noSavingThrow) return true;
+		// An ability score name
+		if (/^(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)\s/.test(cleanLine) && !opts.noAbilityName) return true;
+		// "Hit:" e.g. inside creature attacks
+		if (/^Hit:/.test(cleanLine) && !opts.noHit) return true;
+		if (/^(Intelligence|Wisdom|Charisma)\s+\(/.test(cleanLine) && !opts.noSpellcastingAbility) return true;
 
-						case "shield":
-							from.push("{@item shield|phb}");
-							break;
+		return false;
+	}
 
-						case "shields":
-							from.push("{@item shield|phb|shields}");
-							break;
+	static _isJsonLine (curLine) { return curLine.startsWith(`__VE_JSON__`); }
+	static _getJsonFromLine (curLine) {
+		curLine = curLine.replace(/^__VE_JSON__/, "");
+		return JSON.parse(curLine);
+	}
+	// endregion
+}
 
-						// magic items
-						case "dwarven plate":
-							from.push("{@item dwarven plate}");
-							break;
-						case "elven chain":
-							from.push("{@item elven chain}");
-							break;
-						case "glamoured studded leather":
-							from.push("{@item glamoured studded leather}");
-							break;
-						case "bracers of defense":
-							from.push("{@item bracers of defense}");
-							break;
-						case "badge of the watch":
-							from.push("{@item Badge of the Watch|wdh}");
-							break;
-						case "ring of protection":
-							from.push("{@item ring of protection}");
-							break;
-						case "robe of the archmagi":
-							from.push("{@item robe of the archmagi}");
-							break;
-						case "staff of power":
-							from.push("{@item staff of power}");
-							break;
+class TaggerUtils {
+	/**
+	 *
+	 * @param targetTags e.g. `["@condition"]`
+	 * @param ptrStack
+	 * @param depth
+	 * @param str
+	 * @param tagCount
+	 * @param meta
+	 * @param meta.fnTag
+	 * @param [meta.isAllowTagsWithinTags]
+	 */
+	static walkerStringHandler (targetTags, ptrStack, depth, tagCount, str, meta) {
+		const tagSplit = Renderer.splitByTags(str);
+		const len = tagSplit.length;
+		for (let i = 0; i < len; ++i) {
+			const s = tagSplit[i];
+			if (!s) continue;
+			if (s.startsWith("{@")) {
+				const [tag, text] = Renderer.splitFirstSpace(s.slice(1, -1));
 
-						// TODO general auto-detect for enchanted versions of items
-						case "+3 plate armor":
-							from.push("{@item plate armor +3|dmg|+3 plate armor}");
-							break;
-						case "half plate armor +1":
-							from.push("{@item half plate armor +1|dmg|+1 half-plate armor}");
-							break;
-						case "scale mail +1":
-							from.push("{@item scale mail +1|dmg|+1 scale mail}");
-							break;
-						case "scale mail +2":
-							from.push("{@item scale mail +2|dmg|+2 scale mail}");
-							break;
-						case "splint mail +2":
-							from.push("{@item splint armor +2|dmg|+2 splint armor}");
-							break;
-						case "studded leather armor +1":
-							from.push("{@item studded leather armor +1|dmg|+1 studded leather armor}");
-							break;
-						case "+2 leather armor":
-							from.push("{@item leather armor +2|dmg|+2 leather armor}");
-							break;
-						case "+3 leather armor":
-							from.push("{@item leather armor +3|dmg|+3 leather armor}");
-							break;
-
-						default: {
-							if (pLow.endsWith("with mage armor") || pLow.endsWith("with barkskin")) {
-								const numMatch = /(\d+) with (.*)/.exec(pLow);
-								if (!numMatch) throw new Error("Spell AC but no leading number?");
-								let spell = null;
-								if (numMatch[2] === "mage armor") {
-									spell = `{@spell mage armor}`
-								} else if (numMatch[2] === "barkskin") {
-									spell = `{@spell barkskin}`
-								} else {
-									throw new Error(`Unhandled spell! ${numMatch[2]}`)
-								}
-
-								nextPart = {
-									ac: Number(numMatch[1]),
-									condition: `with ${spell}`,
-									braces: true
-								}
-							} else {
-								if (cbMan) cbMan(p, `AC requires manual checking: ${m.name} ${m.source} p${m.page}`);
-								nuAc.push(p)
-							}
-						}
-					}
-				});
-
-				if (from.length) {
-					cur.from = from;
-					nuAc.push(cur);
+				ptrStack._ += `{${tag}${text.length ? " " : ""}`;
+				if (!meta.isAllowTagsWithinTags) {
+					// Never tag anything within an existing tag
+					this.walkerStringHandler(targetTags, ptrStack, depth + 1, tagCount + 1, text, meta);
 				} else {
-					nuAc.push(cur.ac);
+					// Tag something within an existing tag only if it doesn't match our tag(s)
+					if (targetTags.includes(tag)) {
+						this.walkerStringHandler(targetTags, ptrStack, depth + 1, tagCount + 1, text, meta);
+					} else {
+						this.walkerStringHandler(targetTags, ptrStack, depth + 1, tagCount, text, meta);
+					}
 				}
-				if (nextPart) nuAc.push(nextPart)
+				ptrStack._ += `}`;
 			} else {
-				nuAc.push(Number(basic[1]));
+				// avoid tagging things wrapped in existing tags
+				if (tagCount) {
+					ptrStack._ += s;
+				} else {
+					let sMod = s;
+					sMod = meta.fnTag(sMod);
+					ptrStack._ += sMod;
+				}
 			}
-		} else {
-			if (cbErr) cbErr(m.ac, `${`${m.name} ${m.source} p${m.page}`.padEnd(48)} => ${m.ac}`);
-			nuAc.push(m.ac);
-		}
-		m.ac = nuAc;
-	}
-}
-
-class TagAttack {
-	static tryTagAttacks (m, cbMan) {
-		const handleProp = (prop) => {
-			if (m[prop]) {
-				m[prop].forEach(it => {
-					if (it.entries) {
-						const str = JSON.stringify(it.entries, null, "\t");
-						const out = str.replace(/([\t ]")((?:(?:[A-Z][a-z]*|or) )*Attack:) /g, (...m) => {
-							const lower = m[2].toLowerCase();
-							if (TagAttack.MAP[lower]) {
-								return `${m[1]}${TagAttack.MAP[lower]} `;
-							} else {
-								if (cbMan) cbMan(m[2]);
-								return m[0];
-							}
-						});
-						it.entries = JSON.parse(out);
-					}
-				})
-			}
-		};
-
-		handleProp("action");
-		handleProp("reaction");
-		handleProp("trait");
-		handleProp("legendary");
-		handleProp("variant");
-	}
-}
-TagAttack.MAP = {
-	"melee weapon attack:": "{@atk mw}",
-	"ranged weapon attack:": "{@atk rw}",
-	"melee attack:": "{@atk m}",
-	"ranged attack:": "{@atk r}",
-	"area attack:": "{@atk a}",
-	"area weapon attack:": "{@atk aw}",
-	"melee spell attack:": "{@atk ms}",
-	"melee or ranged weapon attack:": "{@atk mw,rw}",
-	"ranged spell attack:": "{@atk rs}",
-	"melee or ranged spell attack:": "{@atk ms,rs}",
-	"melee or ranged attack:": "{@atk m,r}"
-};
-
-class TagHit {
-	static tryTagHits (m) {
-		const handleProp = (prop) => {
-			if (m[prop]) {
-				m[prop].forEach(it => {
-					if (it.entries) {
-						const str = JSON.stringify(it.entries, null, "\t");
-						const out = str.replace(/Hit: /g, "{@h}");
-						it.entries = JSON.parse(out);
-					}
-				})
-			}
-		};
-
-		handleProp("action");
-		handleProp("reaction");
-		handleProp("trait");
-		handleProp("legendary");
-		handleProp("variant");
-	}
-}
-
-class AlignmentConvert {
-	static tryConvertAlignment (m, cbMan) {
-		const a = m.alignment;
-		if (!AlignmentConvert.ALIGNMENTS[a]) {
-			if (cbMan) cbMan(a);
-		} else {
-			m.alignment = AlignmentConvert.ALIGNMENTS[a];
 		}
 	}
 }
-AlignmentConvert.ALIGNMENTS = {
-	"lawful good": ["L", "G"],
-	"neutral good": ["N", "G"],
-	"chaotic good": ["C", "G"],
-	"chaotic neutral": ["C", "N"],
-	"lawful evil": ["L", "E"],
-	"lawful neutral": ["L", "N"],
-	"neutral evil": ["N", "E"], // TODO this was mistakenly marked as "L" "E" before; do a validation pass for all LE creatures -> check if NE
-	"chaotic evil": ["C", "E"],
 
-	"good": ["G"],
-	"lawful": ["L"],
-	"neutral": ["N"],
-	"chaotic": ["C"],
-	"evil": ["E"],
+class TagCondition {
+	static init (legendaryGroups, spells) {
+		TagCondition._ALL_LEGENDARY_GROUPS = legendaryGroups;
+		TagCondition._ALL_SPELLS = spells;
+	}
 
-	"unaligned": ["U"],
+	static _getConvertedEntry (mon, entry, inflictedSet) {
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		const nameStack = [];
+		const walkerHandlers = {
+			preObject: (obj) => nameStack.push(obj.name),
+			postObject: () => nameStack.pop(),
+			string: [
+				(str) => {
+					if (nameStack.includes("Antimagic Susceptibility")) return str;
+					if (nameStack.includes("Sneak Attack (1/Turn)")) return str;
+					const ptrStack = {_: ""};
+					return TagCondition._walkerStringHandler(ptrStack, 0, 0, str, inflictedSet)
+				}
+			]
+		};
+		entry = MiscUtil.copy(entry);
+		return walker.walk(entry, walkerHandlers);
+	}
 
-	"any alignment": ["A"],
+	static _walkerStringHandler (ptrStack, depth, conditionCount, str, inflictedSet) {
+		TaggerUtils.walkerStringHandler(
+			"@condition",
+			ptrStack,
+			depth,
+			conditionCount,
+			str,
+			{
+				fnTag: sMod => {
+					TagCondition._CONDITION_MATCHERS.forEach(r => sMod = sMod.replace(r, (...mt) => `{@condition ${mt[1]}}`));
+					return sMod;
+				}
+			}
+		);
 
-	"any non-good alignment": ["L", "NX", "C", "NY", "E"],
-	"any non-lawful alignment": ["NX", "C", "G", "NY", "E"],
-	"any non-evil alignment": ["L", "NX", "C", "NY", "G"],
-	"any non-chaotic alignment": ["NX", "L", "G", "NY", "E"],
+		// Only the outermost loop needs return the final string
+		if (depth !== 0) return;
 
-	"any chaotic alignment": ["C", "G", "NY", "E"],
-	"any evil alignment": ["L", "NX", "C", "E"],
-	"any lawful alignment": ["L", "G", "NY", "E"],
-	"any good alignment": ["L", "NX", "C", "G"],
+		// Collect inflicted conditions for tagging
+		if (inflictedSet) this._collectInflictedConditions(ptrStack._, inflictedSet)
 
-	"any neutral alignment": ["NX", "NY", "N"],
+		return ptrStack._;
+	}
 
-	// TODO general auto-detect for percentage-weighted alignments
-	"neutral good (50%) or neutral evil (50%)": [{alignment: ["N", "G"], chance: 50}, {alignment: ["N", "E"], chance: 50}],
-	"chaotic good (75%) or neutral evil (25%)": [{alignment: ["C", "G"], chance: 75}, {alignment: ["N", "E"], chance: 25}],
-	"chaotic good (75%) or chaotic evil (25%)": [{alignment: ["C", "G"], chance: 75}, {alignment: ["C", "E"], chance: 25}],
-	"chaotic good or chaotic neutral": [{alignment: ["C", "G"]}, {alignment: ["C", "N"]}],
-	"lawful neutral or lawful evil": [{alignment: ["L", "N"]}, {alignment: ["L", "E"]}],
-	"neutral evil (50%) or lawful evil (50%)": [{alignment: ["N", "E"], chance: 50}, {alignment: ["L", "E"], chance: 50}]
-};
+	static _handleProp (m, prop, inflictedSet) {
+		if (!m[prop]) return;
+
+		m[prop] = m[prop].map(entry => this._getConvertedEntry(m, entry, inflictedSet));
+	}
+
+	static tryTagConditions (m, isTagInflicted) {
+		const inflictedSet = isTagInflicted ? new Set() : null;
+
+		this._handleProp(m, "action", inflictedSet);
+		this._handleProp(m, "reaction", inflictedSet);
+		this._handleProp(m, "trait", inflictedSet);
+		this._handleProp(m, "legendary", inflictedSet);
+		this._handleProp(m, "mythic", inflictedSet);
+		this._handleProp(m, "variant", inflictedSet);
+		this._handleProp(m, "entries", inflictedSet);
+		this._handleProp(m, "entriesHigherLevel", inflictedSet);
+
+		if (!isTagInflicted) return;
+
+		if (inflictedSet.size) m.conditionInflict = [...inflictedSet];
+		else delete m.conditionInflict;
+	}
+
+	static _collectInflictedConditions (str, inflictedSet) {
+		TagCondition._CONDITION_INFLICTED_MATCHERS.forEach(re => str.replace(re, (...m) => {
+			inflictedSet.add(m[1]);
+
+			// ", {@condition ...}, ..."
+			if (m[2]) m[2].replace(/{@condition ([^}]+)}/g, (...n) => inflictedSet.add(n[1]));
+
+			// " and {@condition ...}
+			if (m[3]) m[3].replace(/{@condition ([^}]+)}/g, (...n) => inflictedSet.add(n[1]));
+		}));
+	}
+
+	static tryTagConditionsSpells (m, cbMan) {
+		if (!m.spellcasting) return false;
+
+		const inflictedSet = new Set();
+
+		// Collect known spells
+		const strSpellcasting = JSON.stringify(m.spellcasting);
+		const knownSpells = {};
+		strSpellcasting.replace(/{@spell ([^}]+)}/g, (...m) => {
+			let [spellName, spellSource] = m[1].split("|").map(it => it.toLowerCase());
+			spellSource = spellSource || SRC_PHB.toLowerCase();
+
+			(knownSpells[spellSource] = knownSpells[spellSource] || new Set()).add(spellName);
+		});
+
+		Object.entries(knownSpells)
+			.forEach(([source, spellSet]) => {
+				spellSet.forEach(it => {
+					const spell = TagCondition._ALL_SPELLS.find(s => (s.name.toLowerCase() === it || (typeof s.srd === "string" && s.srd.toLowerCase() === it)) && s.source.toLowerCase() === source);
+					if (!spell) return cbMan ? cbMan(`${it} :: ${source}`) : null;
+					if (spell.conditionInflict) spell.conditionInflict.forEach(c => inflictedSet.add(c));
+				});
+			});
+
+		if (inflictedSet.size) m.conditionInflictSpell = [...inflictedSet];
+		else delete m.conditionInflict;
+	}
+
+	static tryTagConditionsRegionalsLairs (m, cbMan) {
+		if (!m.legendaryGroup) return;
+
+		const inflictedSet = new Set();
+
+		const meta = TagCondition._ALL_LEGENDARY_GROUPS.find(it => it.name === m.legendaryGroup.name && it.source === m.legendaryGroup.source);
+		if (!meta) return cbMan ? cbMan(m.legendaryGroup) : null;
+		this._collectInflictedConditions(JSON.stringify(meta), inflictedSet);
+
+		if (inflictedSet.size) m.conditionInflictLegendary = [...inflictedSet];
+		else delete m.conditionInflictLegendary;
+	}
+
+	// region Run basic tagging
+	static tryRunBasic (it) {
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		return walker.walk(
+			it,
+			{
+				string: (str) => {
+					const ptrStack = {_: ""};
+					TaggerUtils.walkerStringHandler(
+						["@condition"],
+						ptrStack,
+						0,
+						0,
+						str,
+						{
+							fnTag: strMod => strMod.replace(TagCondition._CONDITION_MATCHER_WORD, (...m) => `${m[1]}{@condition ${m[2]}}${m[3]}`)
+						}
+					);
+					return ptrStack._;
+				}
+			}
+		);
+	}
+	// endregion
+}
+TagCondition._ALL_LEGENDARY_GROUPS = null;
+TagCondition._ALL_SPELLS = null;
+TagCondition._CONDITIONS = [
+	"blinded",
+	"charmed",
+	"deafened",
+	"exhaustion",
+	"frightened",
+	"grappled",
+	"incapacitated",
+	"invisible",
+	"paralyzed",
+	"petrified",
+	"poisoned",
+	"prone",
+	"restrained",
+	"stunned",
+	"unconscious"
+];
+TagCondition._CONDITION_MATCHERS = TagCondition._CONDITIONS.map(it => new RegExp(`(${it})`, "g"));
+TagCondition._CONDITION_MATCHER_WORD = new RegExp(`(^|[ "(\\u2013\\u2014])(${TagCondition._CONDITIONS.join("|")})([ "',.:;)\\u2013\\u2014]|$)`, "g");
+// Each should have one group which matches the condition name.
+//   A comma/and part is appended to the end to handle chains of conditions.
+TagCondition.__TGT = `(?:target|wielder)`;
+TagCondition._CONDITION_INFLICTED_MATCHERS = [
+	`(?:creature|enemy|target) (?:is|becomes) (?:\\w+ )?{@condition ([^}]+)}`,
+	`saving throw (?:by \\d+ or more, it )?is (?:\\w+ )?{@condition ([^}]+)}`, // MM :: Sphinx :: First Roar
+	`(?:the save|fails) by \\d+ or more, [^.!?]+?{@condition ([^}]+)}`, // VGM :: Fire Giant Dreadnought :: Shield Charge
+	`(?:${TagCondition.__TGT}|creatures?|humanoid|undead|other creatures|enemy) [^.!?]+?(?:succeed|make|pass)[^.!?]+?saving throw[^.!?]+?or (?:fall|be(?:come)?|is) (?:\\w+ )?{@condition ([^}]+)}`,
+	`and then be (?:\\w+ )?{@condition ([^}]+)}`,
+	`(?:be|is) knocked (?:\\w+ )?{@condition (prone|unconscious)}`,
+	`a (?:\\w+ )?{@condition [^}]+} (?:creature|enemy) is (?:\\w+ )?{@condition ([^}]+)}`, // e.g. `a frightened creature is paralyzed`
+	`the[^.!?]+?${TagCondition.__TGT} is[^.!?]+?{@condition ([^}]+)}`,
+	`the[^.!?]+?${TagCondition.__TGT} is [^.!?]+?, it is {@condition ([^}]+)}(?: \\(escape [^\\)]+\\))?`,
+	`begins to [^.!?]+? and is {@condition ([^}]+)}`, // e.g. `begins to turn to stone and is restrained`
+	`saving throw[^.!?]+?or [^.!?]+? and remain {@condition ([^}]+)}`, // e.g. `or fall asleep and remain unconscious`
+	`saving throw[^.!?]+?or be [^.!?]+? and land {@condition (prone)}`, // MM :: Cloud Giant :: Fling
+	`saving throw[^.!?]+?or be (?:pushed|pulled) [^.!?]+? and (?:\\w+ )?{@condition ([^}]+)}`, // MM :: Dragon Turtle :: Tail
+	`the engulfed (?:creature|enemy) [^.!?]+? {@condition ([^}]+)}`, // MM :: Gelatinous Cube :: Engulf
+	`the ${TagCondition.__TGT} is [^.!?]+? and (?:is )?{@condition ([^}]+)} while`, // MM :: Giant Centipede :: Bite
+	`on a failed save[^.!?]+?the (?:${TagCondition.__TGT}|creature) [^.!?]+? {@condition ([^}]+)}`, // MM :: Jackalwere :: Sleep Gaze
+	`on a failure[^.!?]+?${TagCondition.__TGT}[^.!?]+?(?:pushed|pulled)[^.!?]+?and (?:\\w+ )?{@condition ([^}]+)}`, // MM :: Marid :: Water Jet
+	`a[^.!?]+?(?:creature|enemy)[^.!?]+?to the[^.!?]+?is (?:also )?{@condition ([^}]+)}`, // MM :: Mimic :: Adhesive
+	`(?:creature|enemy) gains? \\w+ levels? of {@condition (exhaustion)}`, // MM :: Myconid Adult :: Euphoria Spores
+	`(?:saving throw|failed save)[^.!?]+? gains? \\w+ levels? of {@condition (exhaustion)}`, // ERLW :: Belashyrra :: Rend Reality
+	`(?:on a successful save|if the saving throw is successful), (?:the ${TagCondition.__TGT} |(?:a|the )creature |(?:an |the )enemy )[^.!?]*?isn't {@condition ([^}]+)}`,
+	`or take[^.!?]+?damage and (?:becomes?|is|be) {@condition ([^}]+)}`, // MM :: Quasit || Claw
+	`the (?:${TagCondition.__TGT}|creature|enemy) [^.!?]+? and is {@condition ([^}]+)}`, // MM :: Satyr :: Gentle Lullaby
+	`${TagCondition.__TGT}\\. [^.!?]+?damage[^.!?]+?and[^.!?]+?${TagCondition.__TGT} is {@condition ([^}]+)}`, // MM :: Vine Blight :: Constrict
+	`on a failure[^.!?]+?${TagCondition.__TGT} [^.!?]+?\\. [^.!?]+?is also {@condition ([^}]+)}`, // MM :: Water Elemental :: Whelm
+	`(?:(?:a|the|each) ${TagCondition.__TGT}|(?:a|the|each) creature|(?:an|each) enemy)[^.!?]+?takes?[^.!?]+?damage[^.!?]+?and [^.!?]+? {@condition ([^}]+)}`, // AI :: Keg Robot :: Hot Oil Spray
+	`(?:creatures|enemies) within \\d+ feet[^.!?]+must succeed[^.!?]+saving throw or be {@condition ([^}]+)}`, // VGM :: Deep Scion :: Psychic Screech
+	`creature that fails the save[^.!?]+?{@condition ([^}]+)}`, // VGM :: Gauth :: Stunning Gaze
+	`if the ${TagCondition.__TGT} is a creature[^.!?]+?saving throw[^.!?]*?\\. On a failed save[^.!?]+?{@condition ([^}]+)}`, // VGM :: Mindwitness :: Eye Rays
+	`while {@condition (?:[^}]+)} in this way, an? (?:${TagCondition.__TGT}|creature|enemy) [^.!?]+{@condition ([^}]+)}`, // VGM :: Vargouille :: Stunning Shriek
+	`${TagCondition.__TGT} must succeed[^.!?]+?saving throw[^.!?]+?{@condition ([^}]+)}`, // VGM :: Yuan-ti Pit Master :: Merrshaulk's Slumber
+	`fails the saving throw[^.!?]+?is instead{@condition ([^}]+)}`, // ERLW :: Sul Khatesh :: Maddening Secrets
+	`on a failure, the [^.!?]+? can [^.!?]+?{@condition ([^}]+)}`, // ERLW :: Zakya Rakshasa :: Martial Prowess
+	`the {@condition ([^}]+)} creature can repeat the saving throw`, // GGR :: Archon of the Triumvirate :: Pacifying Presence
+	`if the (?:${TagCondition.__TGT}|creature) is already {@condition [^}]+}, it becomes {@condition ([^}]+)}`,
+	`(?:creature|${TagCondition.__TGT}) (?:also becomes|is) {@condition ([^}]+)}` // MTF :: Eidolon :: Divine Dread
+].map(it => new RegExp(`${it}((?:, {@condition [^}]+})*)(,? (?:and|or) {@condition [^}]+})?`, "gi"));
 
 class TagUtil {
 	static isNoneOrEmpty (str) {
@@ -367,541 +407,70 @@ class TagUtil {
 }
 TagUtil.NONE_EMPTY_REGEX = /^(([-\u2014\u2013\u2221])+|none)$/gi;
 
-class TraitActionTag {
-	static tryRun (m, cbMan) {
-		function doTag (prop, outProp) {
-			function isTraits () {
-				return prop === "trait";
-			}
-
-			if (m[prop]) {
-				m[prop].forEach(t => {
-					if (!t.name) return;
-					t.name = t.name.trim();
-
-					const cleanName = t.name.toLowerCase();
-					const mapped = TraitActionTag.tags[prop][cleanName];
-					if (mapped) {
-						m[outProp] = m[outProp] || [];
-						if (mapped === true) m[outProp].push(t.name);
-						else m[outProp].push(mapped)
-					} else if (isTraits() && cleanName.startsWith("keen ")) {
-						m[outProp] = m[outProp] || [];
-						m[outProp].push("Keen Senses");
-					} else if (isTraits() && cleanName.startsWith("legendary resistance")) {
-						m[outProp] = m[outProp] || [];
-						m[outProp].push("Legendary Resistances");
-					} else if (isTraits() && cleanName.endsWith(" absorption")) {
-						m[outProp] = m[outProp] || [];
-						m[outProp].push("Damage Absorption");
-					} else {
-						if (cbMan) cbMan(prop, outProp, cleanName);
-					}
-				})
-			}
-		}
-		if (m.traitTags) m.traitTags = [];
-		if (m.actionTags) m.actionTags = [];
-
-		doTag("trait", "traitTags");
-		doTag("action", "actionTags");
-		doTag("reaction", "actionTags");
-
-		if (m.traitTags && !m.traitTags.length) delete m.traitTags;
-		if (m.actionTags && !m.actionTags.length) delete m.actionTags;
-	}
-}
-TraitActionTag.tags = { // true = map directly; string = map to this string
-	trait: {
-		"turn immunity": true,
-		"brute": true,
-		"antimagic susceptibility": true,
-		"sneak attack": true,
-		"sneak attack (1/turn)": "Sneak Attack",
-		"reckless": true,
-		"web sense": true,
-		"flyby": true,
-		"pounce": true,
-		"water breathing": true,
-
-		"turn resistance": true,
-		"turn defiance": "Turn Resistance",
-		"turning defiance": "Turn Resistance",
-		"turn resistance aura": "Turn Resistance",
-		"undead fortitude": true,
-
-		"aggressive": true,
-		"illumination": true,
-		"rampage": true,
-		"rejuvenation": true,
-		"web walker": true,
-		"incorporeal movement": true,
-
-		"keen hearing and smell": "Keen Senses",
-		"keen sight and smell": "Keen Senses",
-		"keen hearing and sight": "Keen Senses",
-		"keen hearing": "Keen Senses",
-		"keen smell": "Keen Senses",
-		"keen senses": true,
-
-		"hold breath": true,
-
-		"charge": true,
-
-		"fey ancestry": true,
-
-		"siege monster": true,
-
-		"pack tactics": true,
-
-		"regeneration": true,
-
-		"shapechanger": true,
-
-		"false appearance": true,
-
-		"spider climb": true,
-
-		"sunlight sensitivity": true,
-		"sunlight hypersensitivity": "Sunlight Sensitivity",
-		"light sensitivity": true,
-
-		"amphibious": true,
-
-		"legendary resistance (1/day)": "Legendary Resistances",
-		"legendary resistance (2/day)": "Legendary Resistances",
-		"legendary resistance (3/day)": "Legendary Resistances",
-		"legendary resistance (5/day)": "Legendary Resistances",
-
-		"magic weapon": "Magic Weapons",
-		"magic weapons": true,
-
-		"magic resistance": true,
-		"spell immunity": "Magic Resistance",
-
-		"ambush": "Ambusher",
-		"ambusher": true,
-
-		"amorphous": true,
-		"amorphous form": "Amorphous",
-
-		"death burst": true,
-		"death throes": "Death Burst",
-
-		"devil's sight": true,
-		"devil sight": "Devil's Sight",
-
-		"immutable form": true
-	},
-	action: {
-		"multiattack": true,
-		"frightful presence": true,
-		"teleport": true,
-		"swallow": true,
-		"tentacle": "Tentacles",
-		"tentacles": true
-	},
-	reaction: {
-		"parry": true
-	},
-	legendary: {
-		// unused
-	}
-};
-
-class LanguageTag {
-	static tryRun (m, cbAll, cbTracked) {
-		if (m.languages) {
-			m.languages = m.languages.trim();
-			if (TagUtil.isNoneOrEmpty(m.languages)) {
-				delete m.languages;
-				return;
-			} else {
-				m.languages = m.languages.replace(/but can(not|'t) speak/ig, "but can't speak")
-			}
-
-			m.languages.split(", ").map(it => it.trim()).filter(it => it).forEach(l => {
-				if (cbAll) cbAll(l);
-
-				Object.keys(LanguageTag.LANGUAGE_MAP).forEach(k => {
-					const v = LanguageTag.LANGUAGE_MAP[k];
-
-					const re = new RegExp(`(^|[^-a-zA-Z])${k}([^-a-zA-Z]|$)`, "g");
-
-					if (re.exec(l)) {
-						if ((v === "XX" || v === "X") && (l.includes("knew in life") || l.includes("spoke in life"))) return;
-						if (/(one|the) languages? of its creator/i.exec(l)) return;
-
-						if (cbTracked) cbTracked(v);
-
-						m.languageTags = m.languageTags || [];
-						if (!m.languageTags.includes(v)) {
-							m.languageTags.push(v);
-						}
-					}
-				})
-			});
-		}
-	}
-}
-LanguageTag.LANGUAGE_MAP = {
-	"Abyssal": "AB",
-	"Aquan": "AQ",
-	"Auran": "AU",
-	"Celestial": "CE",
-	"Common": "C",
-	"can't speak": "CS",
-	"Draconic": "DR",
-	"Dwarvish": "D",
-	"Elvish": "E",
-	"Giant": "GI",
-	"Gnomish": "G",
-	"Goblin": "GO",
-	"Halfling": "H",
-	"Infernal": "I",
-	"Orc": "O",
-	"Primordial": "P",
-	"Sylvan": "S",
-	"Terran": "T",
-	"Undercommon": "U",
-	"Aarakocra": "OTH",
-	"one additional": "X",
-	"Blink Dog": "OTH",
-	"Bothii": "OTH",
-	"Bullywug": "OTH",
-	"one other language": "X",
-	"plus six more": "X",
-	"plus two more languages": "X",
-	"up to five other languages": "X",
-	"Druidic": "DU",
-	"Giant Eagle": "OTH",
-	"Giant Elk": "OTH",
-	"Giant Owl": "OTH",
-	"Gith": "GTH",
-	"Grell": "OTH",
-	"Grung": "OTH",
-	"Homarid": "OTH",
-	"Hook Horror": "OTH",
-	"Ice Toad": "OTH",
-	"Ixitxachitl": "OTH",
-	"Kruthik": "OTH",
-	"Netherese": "OTH",
-	"Olman": "OTH",
-	"Otyugh": "OTH",
-	"Primal": "OTH",
-	"Sahuagin": "OTH",
-	"Sphinx": "OTH",
-	"Thayan": "OTH",
-	"Thri-kreen": "OTH",
-	"Tlincalli": "OTH",
-	"Troglodyte": "OTH",
-	"Umber Hulk": "OTH",
-	"Vegepygmy": "OTH",
-	"Winter Wolf": "OTH",
-	"Worg": "OTH",
-	"Yeti": "OTH",
-	"Yikaria": "OTH",
-	"all": "XX",
-	"all but rarely speaks": "XX",
-	"any one language": "X",
-	"any two languages": "X",
-	"any three languages": "X",
-	"any four languages": "X",
-	"any five languages": "X",
-	"any six languages": "X",
-	"one language of its creator's choice": "X",
-	"two other languages": "X",
-	"telepathy": "TP",
-	"thieves' cant": "TC",
-	"Thieves' cant": "TC",
-	"Deep Speech": "DS",
-	"Gnoll": "OTH",
-	"Ignan": "IG",
-	"Modron": "OTH",
-	"Slaad": "OTH",
-	"all languages": "XX",
-	"any language": "X"
-};
-
-class SenseTag {
-	static tryRun (m, cbAll) {
-		if (m.senses) {
-			if (TagUtil.isNoneOrEmpty(m.senses)) {
-				delete m.senses;
-			} else {
-				const senseTags = new Set();
-				m.senses.toLowerCase().split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX).map(it => it.trim())
-					.forEach(s => {
-						Object.entries(SenseTag.TAGS).forEach(([k, v]) => {
-							if (s.includes(k)) {
-								if (v === "D" && /\d\d\d ft/.exec(s)) senseTags.add("SD");
-								else senseTags.add(v);
-							}
-						});
-
-						if (cbAll) cbAll(s);
-					});
-
-				if (senseTags.size === 0) delete m.senseTags;
-				else m.senseTags = [...senseTags];
-			}
-		}
-	}
-}
-SenseTag.TAGS = {
-	"blindsight": "B",
-	"darkvision": "D",
-	"tremorsense": "T",
-	"truesight": "U"
-};
-
-class SpellcastingTypeTag {
-	static tryRun (m, cbAll) {
-		if (!m.spellcasting) {
-			delete m.spellcastingTags;
-		} else {
-			const tags = new Set();
-			m.spellcasting.forEach(sc => {
-				if (!sc.name) return;
-				if (/(^|[^a-zA-Z])psionics([^a-zA-Z]|$)/gi.exec(sc.name)) tags.add("P");
-				if (/(^|[^a-zA-Z])innate([^a-zA-Z]|$)/gi.exec(sc.name)) tags.add("I");
-				if (/(^|[^a-zA-Z])form([^a-zA-Z]|$)/gi.exec(sc.name)) tags.add("F");
-				if (/(^|[^a-zA-Z])shared([^a-zA-Z]|$)/gi.exec(sc.name)) tags.add("S");
-
-				if (sc.headerEntries) {
-					const strHeader = JSON.stringify(sc.headerEntries);
-					Object.entries(SpellcastingTypeTag.CLASSES).forEach(([tag, regex]) => {
-						regex.lastIndex = 0;
-						const match = regex.exec(strHeader);
-						if (match) {
-							tags.add(tag);
-							if (cbAll) cbAll(match[0]);
-						}
-					});
-				}
-
-				if (cbAll) cbAll(sc.name);
-			});
-			if (tags.size) m.spellcastingTags = [...tags];
-			else delete m.spellcastingTags;
-		}
-	}
-}
-SpellcastingTypeTag.CLASSES = {
-	"CB": /(^|[^a-zA-Z])bard([^a-zA-Z]|$)/gi,
-	"CC": /(^|[^a-zA-Z])cleric([^a-zA-Z]|$)/gi,
-	"CD": /(^|[^a-zA-Z])druid([^a-zA-Z]|$)/gi,
-	"CP": /(^|[^a-zA-Z])paladin([^a-zA-Z]|$)/gi,
-	"CR": /(^|[^a-zA-Z])ranger([^a-zA-Z]|$)/gi,
-	"CS": /(^|[^a-zA-Z])sorcerer([^a-zA-Z]|$)/gi,
-	"CL": /(^|[^a-zA-Z])warlock([^a-zA-Z]|$)/gi,
-	"CW": /(^|[^a-zA-Z])wizard([^a-zA-Z]|$)/gi
-};
-
-class DamageTypeTag {
-	static _handleProp (m, prop, typeSet) {
-		if (m[prop]) {
-			m[prop].forEach(it => {
-				if (it.entries) {
-					const str = JSON.stringify(it.entries, null, "\t");
-					str.replace(RollerUtil.REGEX_DAMAGE_DICE, (m0, average, prefix, diceExp, suffix) => {
-						suffix.replace(DamageTypeTag._TYPE_REGEX, (m0, type) => typeSet.add(DamageTypeTag._TYPE_LOOKUP[type]));
-					});
-				}
-			})
-		}
-	}
-
-	static tryRun (m) {
-		if (!DamageTypeTag._isInit) {
-			DamageTypeTag._isInit = true;
-			Object.entries(Parser.DMGTYPE_JSON_TO_FULL).forEach(([k, v]) => DamageTypeTag._TYPE_LOOKUP[v] = k);
-		}
-		const typeSet = new Set();
-		DamageTypeTag._handleProp(m, "action", typeSet);
-		DamageTypeTag._handleProp(m, "reaction", typeSet);
-		DamageTypeTag._handleProp(m, "trait", typeSet);
-		DamageTypeTag._handleProp(m, "legendary", typeSet);
-		DamageTypeTag._handleProp(m, "variant", typeSet);
-		if (typeSet.size) m.damageTags = [...typeSet];
-	}
-}
-DamageTypeTag._isInit = false;
-DamageTypeTag._TYPE_REGEX = /(acid|bludgeoning|cold|fire|force|lightning|necrotic|piercing|poison|psychic|radiant|slashing|thunder)/gi;
-DamageTypeTag._TYPE_LOOKUP = {};
-
-class SpellcastingTraitConvert {
-	static async pGetSpellData () {
-		const spellIndex = await DataUtil.loadJSON(`data/spells/index.json`);
-		return Promise.all(Object.values(spellIndex).map(f => DataUtil.loadJSON(`data/spells/${f}`)));
-	}
-
-	static init (spellData) {
-		// reversed so official sources take precedence over 3pp
-		spellData.reverse().forEach(d => d.spell.forEach(s => SpellcastingTraitConvert.SPELL_SRC_MAP[s.name.toLowerCase()] = s.source));
-	}
-
-	static tryParseSpellcasting (trait, isMarkdown, cbErr) {
-		let spellcasting = [];
-
-		function parseSpellcasting (trait) {
-			const splitter = StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX;
-
-			function getParsedSpells (thisLine) {
-				let spellPart = thisLine.substring(thisLine.indexOf(": ") + 2).trim();
-				if (isMarkdown) {
-					const cleanPart = (part) => {
-						part = part.trim();
-						while (part.startsWith("*") && part.endsWith("*")) {
-							part = part.replace(/^\*(.*)\*$/, "$1");
-						}
-						return part;
-					};
-
-					const cleanedInner = spellPart.split(splitter).map(it => cleanPart(it)).filter(it => it);
-					spellPart = cleanedInner.join(", ");
-
-					while (spellPart.startsWith("*") && spellPart.endsWith("*")) {
-						spellPart = spellPart.replace(/^\*(.*)\*$/, "$1");
-					}
-				}
-				return spellPart.split(splitter).map(i => parseSpell(i));
-			}
-
-			let name = trait.name;
-			let spellcastingEntry = {"name": name, "headerEntries": [parseToHit(trait.entries[0])]};
-			let doneHeader = false;
-			trait.entries.forEach((thisLine, i) => {
-				if (i === 0) return;
-				if (thisLine.includes("/rest")) {
-					doneHeader = true;
-					let property = thisLine.substr(0, 1) + (thisLine.includes(" each:") ? "e" : "");
-					const value = getParsedSpells(thisLine);
-					if (!spellcastingEntry.rest) spellcastingEntry.rest = {};
-					spellcastingEntry.rest[property] = value;
-				} else if (thisLine.includes("/day")) {
-					doneHeader = true;
-					let property = thisLine.substr(0, 1) + (thisLine.includes(" each:") ? "e" : "");
-					const value = getParsedSpells(thisLine);
-					if (!spellcastingEntry.daily) spellcastingEntry.daily = {};
-					spellcastingEntry.daily[property] = value;
-				} else if (thisLine.includes("/week")) {
-					doneHeader = true;
-					let property = thisLine.substr(0, 1) + (thisLine.includes(" each:") ? "e" : "");
-					const value = getParsedSpells(thisLine);
-					if (!spellcastingEntry.weekly) spellcastingEntry.weekly = {};
-					spellcastingEntry.weekly[property] = value;
-				} else if (thisLine.startsWith("Constant: ")) {
-					doneHeader = true;
-					spellcastingEntry.constant = getParsedSpells(thisLine);
-				} else if (thisLine.startsWith("At will: ")) {
-					doneHeader = true;
-					spellcastingEntry.will = getParsedSpells(thisLine);
-				} else if (thisLine.includes("Cantrip")) {
-					doneHeader = true;
-					const value = getParsedSpells(thisLine);
-					if (!spellcastingEntry.spells) spellcastingEntry.spells = {"0": {"spells": []}};
-					spellcastingEntry.spells["0"].spells = value;
-				} else if (thisLine.includes(" level") && thisLine.includes(": ")) {
-					doneHeader = true;
-					let property = thisLine.substr(0, 1);
-					const value = getParsedSpells(thisLine);
-					if (!spellcastingEntry.spells) spellcastingEntry.spells = {};
-					let slots = thisLine.includes(" slot") ? parseInt(thisLine.substr(11, 1)) : 0;
-					spellcastingEntry.spells[property] = {"slots": slots, "spells": value};
-					if (!spellcastingEntry.spells[property]) delete spellcastingEntry.spells[property];
-				} else {
-					if (doneHeader) {
-						if (!spellcastingEntry.footerEntries) spellcastingEntry.footerEntries = [];
-						spellcastingEntry.footerEntries.push(parseToHit(thisLine));
-					} else {
-						spellcastingEntry.headerEntries.push(parseToHit(thisLine));
-					}
-				}
-			});
-
-			SpellcastingTraitConvert.mutSpellcastingAbility(spellcastingEntry);
-
-			spellcasting.push(spellcastingEntry);
-		}
-
-		function parseSpell (name) {
-			function getSourcePart (spellName) {
-				const source = SpellcastingTraitConvert._getSpellSource(spellName);
-				return `${source && source !== SRC_PHB ? `|${source}` : ""}`;
-			}
-
-			name = name.trim();
-			let asterix = name.indexOf("*");
-			let brackets = name.indexOf(" (");
-			if (asterix !== -1) {
-				const trueName = name.substr(0, asterix);
-				return `{@spell ${trueName}${getSourcePart(trueName)}}*`;
-			} else if (brackets !== -1) {
-				const trueName = name.substr(0, brackets);
-				return `{@spell ${trueName}${getSourcePart(trueName)}}${name.substring(brackets)}`;
-			}
-			return `{@spell ${name}${getSourcePart(name)}}`;
-		}
-
-		function parseToHit (line) {
-			return line.replace(/( \+)(\d+)( to hit with spell)/g, (m0, m1, m2, m3) => ` {@hit ${m2}}${m3}`);
-		}
-
-		try {
-			parseSpellcasting(trait);
-			return {out: spellcasting, success: true};
-		} catch (e) {
-			cbErr && cbErr(`Failed to parse spellcasting: ${e.message}`);
-			return {out: trait, success: false};
-		}
-	}
-
-	static mutSpellcastingAbility (spellcastingEntry) {
-		if (spellcastingEntry.headerEntries) {
-			const m = /strength|dexterity|constitution|charisma|intelligence|wisdom/gi.exec(JSON.stringify(spellcastingEntry.headerEntries));
-			if (m) spellcastingEntry.ability = m[0].substring(0, 3).toLowerCase();
-		}
-	}
-
-	static _getSpellSource (spellName) {
-		if (spellName && SpellcastingTraitConvert.SPELL_SRC_MAP[spellName.toLowerCase()]) return SpellcastingTraitConvert.SPELL_SRC_MAP[spellName.toLowerCase()];
-		return null;
-	}
-}
-SpellcastingTraitConvert.SPELL_SRC_MAP = {};
-
 class DiceConvert {
 	static convertTraitActionDice (traitOrAction) {
 		if (traitOrAction.entries) {
-			traitOrAction.entries = traitOrAction.entries.filter(it => it.trim ? it.trim() : true).map(e => {
-				e = JSON.stringify(e);
-
-				// replace e.g. "+X to hit"
-				e = e.replace(/([-+])?\d+(?= to hit)/g, function (match) {
-					const cleanMatch = match.startsWith("+") ? match.replace("+", "") : match;
-					return `{@hit ${cleanMatch}}`
-				});
-
-				return JSON.parse(DiceConvert._getTaggedString(e));
-			});
+			traitOrAction.entries = traitOrAction.entries
+				.filter(it => it.trim ? it.trim() : true)
+				.map(entry => this._getConvertedEntry(entry, true));
 		}
 	}
 
-	static _getTaggedString (str) {
-		// un-tag dice
-		str = str.replace(/{@(?:dice|damage) ([^}]*)}/gi, "$1");
+	static getTaggedEntry (entry) {
+		return this._getConvertedEntry(entry);
+	}
+
+	static _getConvertedEntry (entry, isTagHits = false) {
+		if (!DiceConvert._walker) {
+			DiceConvert._walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+			DiceConvert._walkerHandlers = {string: DiceConvert._walkerStringHandler.bind(DiceConvert, isTagHits)};
+		}
+		entry = MiscUtil.copy(entry);
+		return DiceConvert._walker.walk(entry, DiceConvert._walkerHandlers);
+	}
+
+	static _walkerStringHandler (isTagHits, str) {
+		if (isTagHits) {
+			// replace e.g. "+X to hit"
+			str = str.replace(/([-+])?\d+(?= to hit)/g, function (match) {
+				const cleanMatch = match.startsWith("+") ? match.replace("+", "") : match;
+				return `{@hit ${cleanMatch}}`
+			});
+		}
 
 		// re-tag + format dice
-		str = str.replace(/((\s*[-+]\s*)?(([1-9]\d*)?d([1-9]\d*)(\s*?[-+×x]\s*?\d+)?))+/gi, (...m) => {
-			const expanded = m[0].replace(/([^0-9d])/gi, " $1 ").replace(/\s+/g, " ");
+		str = str.replace(/((\s*[-+]\s*)?(([1-9]\d*)?d([1-9]\d*)(\s*?[-+×x*÷/]\s*?(\d,\d|\d)+(\.\d+)?)?))+/gi, (...m) => {
+			const expanded = m[0].replace(/([^0-9d.,])/gi, " $1 ").replace(/\s+/g, " ");
 			return `{@dice ${expanded}}`;
 		});
 
-		// tag damage
-		str = str.replace(/(\d+)( \({@dice )([-+0-9d ]*)(}\) [a-z]+( or [a-z]+)? damage)/ig, (...m) => {
-			return m[0].replace(/{@dice /gi, "{@damage ");
-		});
+		// unwrap double-tagged
+		let last;
+		do {
+			last = str;
+			str = str.replace(/{@(dice|damage|scaledice|scaledamage|d20) ([^}]*){@(dice|damage|scaledice|scaledamage|d20) ([^}]*)}([^}]*)}/gi, (...m) => {
+				// Choose the strongest dice type we have
+				const nxtType = [
+					m[1] === "scaledamage" || m[3] === "scaledamage" ? "scaledamage" : null,
+					m[1] === "damage" || m[3] === "damage" ? "damage" : null,
+					m[1] === "d20" || m[3] === "d20" ? "d20" : null,
+					m[1] === "scaledice" || m[3] === "scaledice" ? "scaledice" : null,
+					m[1] === "dice" || m[3] === "dice" ? "dice" : null
+				].filter(Boolean)[0];
+				return `{@${nxtType} ${m[2]}${m[4]}${m[5]}}`;
+			});
+		} while (last !== str);
+
+		do {
+			last = str;
+			str = str.replace(/{@b ({@(?:dice|damage|scaledice|scaledamage|d20) ([^}]*)})}/gi, "$1");
+		} while (last !== str);
+
+		// tag @damage (creature style)
+		str = str.replace(/\d+ \({@dice (?:[-+0-9d ]*)}\)(?:\s+[-+]\s+[-+a-zA-Z0-9 ]*?)?(?: [a-z]+(?:(?:, |, or | or )[a-z]+)*)? damage/ig, (...m) => m[0].replace(/{@dice /gi, "{@damage "));
+
+		// tag @damage (spell/etc style)
+		str = str.replace(/{@dice (?:[-+0-9d ]*)}(?:\s+[-+]\s+[-+a-zA-Z0-9 ]*?)?(?: [a-z]+(?:(?:, |, or | or )[a-z]+)*)? damage/ig, (...m) => m[0].replace(/{@dice /gi, "{@damage "));
 
 		return str;
 	}
@@ -914,50 +483,279 @@ class DiceConvert {
 		}
 	}
 }
+DiceConvert._walker = null;
 
-class RechargeConvert {
-	static tryConvertRecharge (traitOrAction, cbAll, cbMan) {
-		if (traitOrAction.name) {
-			traitOrAction.name = traitOrAction.name.replace(/\((Recharge )(\d.*?)\)$/gi, (...m) => {
-				if (cbAll) cbAll(m[2]);
-				const num = m[2][0];
-				if (num === "6") return `{@recharge}`;
-				if (isNaN(Number(num))) {
-					if (cbMan) cbMan(traitOrAction.name);
-					return m[0];
+class ArtifactPropertiesTag {
+	static tryRun (it, opts) {
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		walker.walk(it, {
+			string: (str) => str.replace(/major beneficial|minor beneficial|major detrimental|minor detrimental/gi, (...m) => {
+				const mode = m[0].trim().toLowerCase();
+
+				switch (mode) {
+					case "major beneficial": return `{@table Artifact Properties; Major Beneficial Properties|dmg|${m[0]}}`;
+					case "minor beneficial": return `{@table Artifact Properties; Minor Beneficial Properties|dmg|${m[0]}}`;
+					case "major detrimental": return `{@table Artifact Properties; Major Detrimental Properties|dmg|${m[0]}}`;
+					case "minor detrimental": return `{@table Artifact Properties; Minor Detrimental Properties|dmg|${m[0]}}`;
 				}
-				return `{@recharge ${num}}`;
-			});
+			})
+		})
+	}
+}
+
+class SkillTag {
+	static tryRun (it) {
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		return walker.walk(
+			it,
+			{
+				string: (str) => {
+					const ptrStack = {_: ""};
+					TaggerUtils.walkerStringHandler(
+						["@skill"],
+						ptrStack,
+						0,
+						0,
+						str,
+						{
+							fnTag: this._fnTag
+						}
+					);
+					return ptrStack._;
+				}
+			}
+		);
+	}
+
+	static _fnTag (strMod) {
+		return strMod.replace(/(^|[ "(\u2013\u2014])(Acrobatics|Animal Handling|Arcana|Athletics|Deception|History|Insight|Intimidation|Investigation|Medicine|Nature|Perception|Performance|Persuasion|Religion|Sleight of Hand|Stealth|Survival)([ "',.:;)\u2013\u2014]|$)/g, (...m) => `${m[1]}{@skill ${m[2]}}${m[3]}`);
+	}
+}
+
+class ActionTag {
+	static tryRun (it) {
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		return walker.walk(
+			it,
+			{
+				string: (str) => {
+					const ptrStack = {_: ""};
+					TaggerUtils.walkerStringHandler(
+						["@action"],
+						ptrStack,
+						0,
+						0,
+						str,
+						{
+							fnTag: this._fnTag
+						}
+					);
+					return ptrStack._;
+				}
+			}
+		);
+	}
+
+	static _fnTag (strMod) {
+		const mAction = /(^|[ "(\u2013\u2014])(Attack|Dash|Disengage|Dodge|Help|Hide|Ready|Search|Use an Object)([ "',.:;)\u2013\u2014]|$)/g.exec(strMod);
+		if (!mAction) return strMod;
+
+		const ixMatchEnd = mAction.index + mAction[0].length;
+
+		const reSplitTokens = /[ \u2013\u2014]/g;
+		const reCleanTokenStart = /^["'\u2013\u2014]/g;
+
+		const prevWord = (strMod.slice(0, mAction.index).split(reSplitTokens).last() || "").replace(reCleanTokenStart, "");
+		const nxtWord = (strMod.slice(ixMatchEnd, strMod.length).split(reSplitTokens)[0] || "").replace(reCleanTokenStart, "");
+		if ((prevWord && /^[A-Z]/.test(prevWord)) || (nxtWord && /^[A-Z]/.test(nxtWord))) return strMod; // Avoid tagging words in titles
+
+		const replaceAs = `${mAction[1]}{@action ${mAction[2]}}${mAction[3]}`;
+		return `${strMod.slice(0, mAction.index)}${replaceAs}${strMod.slice(ixMatchEnd, strMod.length)}`
+			.replace(/{@action Attack} (and|or) damage roll/g, "Attack $1 damage roll")
+		;
+	}
+}
+
+class SenseTag {
+	static tryRun (it) {
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		return walker.walk(
+			it,
+			{
+				string: (str) => {
+					const ptrStack = {_: ""};
+					TaggerUtils.walkerStringHandler(
+						["@sense"],
+						ptrStack,
+						0,
+						0,
+						str,
+						{
+							fnTag: this._fnTag
+						}
+					);
+					return ptrStack._;
+				}
+			}
+		);
+	}
+
+	static _fnTag (strMod) {
+		return strMod.replace(/(tremorsense|blindsight|truesight|darkvision)/g, (...m) => `{@sense ${m[0]}}`);
+	}
+}
+
+class EntryConvert {
+	static tryRun (stats, prop) {
+		if (!stats[prop]) return;
+		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		walker.walk(
+			stats,
+			{
+				array: (arr, objProp) => {
+					if (objProp !== prop) return arr;
+
+					const getNewList = () => ({type: "list", items: []});
+					const checkFinalizeList = () => {
+						if (tmpList.items.length) {
+							out.push(tmpList);
+							tmpList = getNewList();
+						}
+					};
+
+					const out = [];
+					let tmpList = getNewList();
+
+					for (let i = 0; i < arr.length; ++i) {
+						const it = arr[i];
+
+						if (typeof it !== "string") {
+							checkFinalizeList();
+							out.push(it);
+							continue;
+						}
+
+						const mBullet = /^\s*[-•]\s*(.*)$/.exec(it);
+						if (!mBullet) {
+							checkFinalizeList();
+							out.push(it);
+							continue;
+						}
+
+						tmpList.items.push(mBullet[1].trim());
+					}
+
+					checkFinalizeList();
+
+					return out;
+				}
+			}
+		)
+	}
+
+	static coalesceLines (ptrI, toConvert) {
+		let curLine = toConvert[ptrI._].trim();
+
+		const entries = [];
+		const stack = [
+			entries
+		];
+
+		const popList = () => { while (stack.last().type === "list") stack.pop(); }
+		const popNestedEntries = () => { while (stack.length > 1) stack.pop(); }
+
+		const addEntry = (entry, canCombine) => {
+			canCombine = canCombine && typeof entry === "string";
+
+			const target = stack.last();
+			if (target instanceof Array) {
+				if (canCombine && typeof target.last() === "string") {
+					target.last(`${target.last().trimRight()} ${entry.trimLeft()}`)
+				} else {
+					target.push(entry);
+				}
+			} else if (target.type === "list") {
+				if (canCombine && typeof target.items.last() === "string") {
+					target.items.last(`${target.items.last().trimRight()} ${entry.trimLeft()}`)
+				} else {
+					target.items.push(entry);
+				}
+			} else if (target.type === "entries") {
+				if (canCombine && typeof target.entries.last() === "string") {
+					target.entries.last(`${target.entries.last().trimRight()} ${entry.trimLeft()}`)
+				} else {
+					target.entries.push(entry);
+				}
+			}
+
+			if (typeof entry !== "string") stack.push(entry);
+		};
+
+		const getCurrentEntryArray = () => {
+			if (stack.last().type === "list") return stack.last().items;
+			if (stack.last().type === "entries") return stack.last().entries;
+			return stack.last();
+		};
+
+		while (ptrI._ < toConvert.length) {
+			if (BaseParser._isJsonLine(curLine)) {
+				popNestedEntries(); // this implicitly pops nested lists
+
+				addEntry(BaseParser._getJsonFromLine(curLine));
+			} else if (ConvertUtil.isListItemLine(curLine)) {
+				if (stack.last().type !== "list") {
+					const list = {
+						type: "list",
+						items: []
+					};
+					addEntry(list);
+				}
+
+				curLine = curLine.replace(/^\s*•\s*/, "");
+				addEntry(curLine.trim());
+			} else if (ConvertUtil.isNameLine(curLine)) {
+				popNestedEntries(); // this implicitly pops nested lists
+
+				const {name, entry} = ConvertUtil.splitNameLine(curLine);
+
+				const parentEntry = {
+					type: "entries",
+					name,
+					entries: [entry]
+				};
+
+				addEntry(parentEntry);
+			} else if (ConvertUtil.isTitleLine(curLine)) {
+				popNestedEntries(); // this implicitly pops nested lists
+
+				const entry = {
+					type: "entries",
+					name: curLine.trim(),
+					entries: []
+				};
+
+				addEntry(entry);
+			} else if (BaseParser._isContinuationLine(getCurrentEntryArray(), curLine)) {
+				addEntry(curLine.trim(), true);
+			} else {
+				popList();
+
+				addEntry(curLine.trim());
+			}
+
+			ptrI._++;
+			curLine = toConvert[ptrI._];
 		}
+
+		return entries;
 	}
 }
-
-class TextClean {
-	static getCleanedJson (str) {
-		str = str.replace(TextClean.REPLACEMENT_REGEX, (match) => TextClean.REPLACEMENTS[match]);
-		return str.replace(/\s*(\\u2014|\\u2013)\s*/g, "$1");
-	}
-
-	static getReplacedQuotesText (str) {
-		return str
-			.replace(/’/g, "'")
-			.replace(/[“”]/g, `"`)
-			.replace(/…/g, `...`)
-	}
-}
-TextClean.REPLACEMENTS = {
-	"—": "\\u2014",
-	"–": "\\u2013",
-	"−": "\\u2212",
-	"’": "'",
-	"“": '\\"',
-	"”": '\\"',
-	"…": "..."
-};
-TextClean.REPLACEMENT_REGEX = new RegExp(Object.keys(TextClean.REPLACEMENTS).join("|"), 'g');
 
 class ConvertUtil {
+	static getTokens (str) { return str.split(/[ \n\u2013\u2014]/g).map(it => it.trim()).filter(Boolean); }
+
 	/**
+	 * (Inline titles)
 	 * Checks if a line of text starts with a name, e.g.
 	 * "Big Attack. Lorem ipsum..." vs "Lorem ipsum..."
 	 */
@@ -976,9 +774,35 @@ class ConvertUtil {
 			return !isStopword;
 		});
 
-		// if it's in title case after removing all stopwords, it's a name
 		const namePartNoStopwords = cleanTokens.join("");
+
+		// if it's an ability score, it's not a name
+		if (Object.values(Parser.ATB_ABV_TO_FULL).includes(namePartNoStopwords.trim())) return false;
+
+		// if it's in title case after removing all stopwords, it's a name
 		return namePartNoStopwords.toTitleCase() === namePartNoStopwords;
+	}
+
+	static isTitleLine (line) {
+		line = line.trim();
+		if (/[.!?:]/.test(line)) return false;
+		return line.toTitleCase() === line;
+	}
+
+	static isListItemLine (line) { return line.trim().startsWith("•") }
+
+	static splitNameLine (line) {
+		const rawName = line.split(/([.!?:])/g)[0];
+		const entry = line.substring(rawName.length + 1, line.length).trim();
+		const name = this.getCleanTraitActionName(rawName)
+		return {name, entry};
+	}
+
+	static getCleanTraitActionName (name) {
+		return name
+			// capitalise unit in e.g. "(3/Day)"
+			.replace(/(\(\d+\/)([a-z])([^)]+\))/g, (...m) => `${m[1]}${m[2].toUpperCase()}${m[3]}`)
+		;
 	}
 
 	/**
@@ -1025,22 +849,20 @@ class ConvertUtil {
 
 		return cleanString;
 	}
+
+	static cleanDashes (str) { return str.replace(/[-\u2011-\u2015]/g, "-"); }
 }
 
 if (typeof module !== "undefined") {
 	module.exports = {
-		AcConvert,
-		TagAttack,
-		TagHit,
-		AlignmentConvert,
-		TraitActionTag,
-		LanguageTag,
+		BaseParser,
+		TagCondition,
 		SenseTag,
-		SpellcastingTypeTag,
-		DamageTypeTag,
-		TextClean,
-		SpellcastingTraitConvert,
 		DiceConvert,
-		RechargeConvert
+		ArtifactPropertiesTag,
+		EntryConvert,
+		SkillTag,
+		ActionTag,
+		TaggerUtils
 	};
 }

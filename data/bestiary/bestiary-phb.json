@@ -1,8 +1,9 @@
 {
 	"monster": [
 		{
+			"name": "Animated Object (Huge)",
 			"source": "PHB",
-			"name": "活化物體(巨型)", "ENG_name": "Animated Object (Huge)",
+			"page": 213,
 			"size": "H",
 			"type": "construct",
 			"alignment": [
@@ -12,7 +13,7 @@
 				{
 					"ac": 10,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -29,38 +30,43 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
-					"name": "活化",
+					"name": "Animated",
 					"entries": [
-						"若這個物體沒有腳或其他可用來移動的構造，則它將改為具有30呎的飛行速度並且可以浮空。若這個物體被牢牢固定再某個表面或更大的物體上，例如一條被栓在牆上的鎖鏈，則它的移動速度為0呎。",
-						"當這個活化物體的生命值歸零，它將回復它原本的物體型態，且剩餘的傷害將被帶到它原本的型態。",
-						"根據物體的型態，DM可能會裁定某個特定物體的猛擊攻擊將造成劈砍或穿刺傷害。"
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "猛擊",
+					"name": "Slam",
 					"entries": [
-						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}16 ({@damage 2d12 + 4})鈍擊傷害。"
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d12 + 4}) bludgeoning damage."
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
+			"name": "Animated Object (Large)",
 			"source": "PHB",
-			"name": "活化物體(大型)", "ENG_name": "Animated Object (Large)",
+			"page": 213,
 			"size": "L",
 			"type": "construct",
 			"alignment": [
@@ -70,7 +76,7 @@
 				{
 					"ac": 10,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -87,38 +93,43 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
-					"name": "活化",
+					"name": "Animated",
 					"entries": [
-						"若這個物體沒有腳或其他可用來移動的構造，則它將改為具有30呎的飛行速度並且可以浮空。若這個物體被牢牢固定再某個表面或更大的物體上，例如一條被栓在牆上的鎖鏈，則它的移動速度為0呎。",
-						"當這個活化物體的生命值歸零，它將回復它原本的物體型態，且剩餘的傷害將被帶到它原本的型態。",
-						"根據物體的型態，DM可能會裁定某個特定物體的猛擊攻擊將造成劈砍或穿刺傷害。"
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "猛擊",
+					"name": "Slam",
 					"entries": [
-						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}12 ({@damage 2d10 + 2})鈍擊傷害。"
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d10 + 2}) bludgeoning damage."
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
+			"name": "Animated Object (Medium)",
 			"source": "PHB",
-			"name": "活化物體(中型)", "ENG_name": "Animated Object (Medium)",
+			"page": 213,
 			"size": "M",
 			"type": "construct",
 			"alignment": [
@@ -128,7 +139,7 @@
 				{
 					"ac": 13,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -145,38 +156,43 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
-					"name": "活化",
+					"name": "Animated",
 					"entries": [
-						"若這個物體沒有腳或其他可用來移動的構造，則它將改為具有30呎的飛行速度並且可以浮空。若這個物體被牢牢固定再某個表面或更大的物體上，例如一條被栓在牆上的鎖鏈，則它的移動速度為0呎。",
-						"當這個活化物體的生命值歸零，它將回復它原本的物體型態，且剩餘的傷害將被帶到它原本的型態。",
-						"根據物體的型態，DM可能會裁定某個特定物體的猛擊攻擊將造成劈砍或穿刺傷害。"
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "猛擊",
+					"name": "Slam",
 					"entries": [
-						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 2d6 + 1})鈍擊傷害。"
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 1}) bludgeoning damage."
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
+			"name": "Animated Object (Small)",
 			"source": "PHB",
-			"name": "活化物體(小型)", "ENG_name": "Animated Object (Small)",
+			"page": 213,
 			"size": "S",
 			"type": "construct",
 			"alignment": [
@@ -186,7 +202,7 @@
 				{
 					"ac": 16,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -203,38 +219,43 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
-					"name": "活化",
+					"name": "Animated",
 					"entries": [
-						"若這個物體沒有腳或其他可用來移動的構造，則它將改為具有30呎的飛行速度並且可以浮空。若這個物體被牢牢固定再某個表面或更大的物體上，例如一條被栓在牆上的鎖鏈，則它的移動速度為0呎。",
-						"當這個活化物體的生命值歸零，它將回復它原本的物體型態，且剩餘的傷害將被帶到它原本的型態。",
-						"根據物體的型態，DM可能會裁定某個特定物體的猛擊攻擊將造成劈砍或穿刺傷害。"
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "猛擊",
+					"name": "Slam",
 					"entries": [
-						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2})鈍擊傷害。"
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
+			"name": "Animated Object (Tiny)",
 			"source": "PHB",
-			"name": "活化物體(微型)", "ENG_name": "Animated Object (Tiny)",
+			"page": 213,
 			"size": "T",
 			"type": "construct",
 			"alignment": [
@@ -244,7 +265,7 @@
 				{
 					"ac": 18,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
@@ -261,33 +282,37 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
-					"name": "活化",
+					"name": "Animated",
 					"entries": [
-						"若這個物體沒有腳或其他可用來移動的構造，則它將改為具有30呎的飛行速度並且可以浮空。若這個物體被牢牢固定再某個表面或更大的物體上，例如一條被栓在牆上的鎖鏈，則它的移動速度為0呎。",
-						"當這個活化物體的生命值歸零，它將回復它原本的物體型態，且剩餘的傷害將被帶到它原本的型態。",
-						"根據物體的型態，DM可能會裁定某個特定物體的猛擊攻擊將造成劈砍或穿刺傷害。"
+						"If the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0.",
+						"When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+						"The DM might rule that a specific objects slam attack inflicts slashing or piercing damage based on its form."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "猛擊",
+					"name": "Slam",
 					"entries": [
-						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}6 ({@damage 1d4 + 4})鈍擊傷害。"
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]

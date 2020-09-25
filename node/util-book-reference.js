@@ -1,22 +1,22 @@
-const ut = require('../js/utils.js');
-const er = require('../js/render.js');
+require("../js/utils.js");
+require("../js/render.js");
 
 UtilBookReference = {
 	getSections (refId) {
 		switch (refId) {
 			case "bookref-quick":
 				return [
-					"角色創建",
-					"裝備",
-					"遊玩遊戲",
-					"戰鬥",
-					"冒險"
+					"Character Creation",
+					"Equipment",
+					"Playing the Game",
+					"Combat",
+					"Adventuring"
 				];
 			case "bookref-dmscreen":
 				return [
-					"運行遊戲",
-					"戰鬥",
-					"派系"
+					"Running the Game",
+					"Combat",
+					"Factions"
 				];
 			default:
 				throw new Error(`No sections defined for book id ${refId}`);
@@ -45,7 +45,7 @@ UtilBookReference = {
 		function reset () {
 			bookData = [];
 			index.book.forEach(b => {
-				const data = {source: b.id, file: JSON.parse(JSON.stringify(books[b.id.toLowerCase()]))};
+				const data = {source: b.id, file: MiscUtil.copy(books[b.id.toLowerCase()])};
 				bookData.push(data);
 			});
 		}
@@ -81,10 +81,9 @@ UtilBookReference = {
 						};
 					}
 
-					const toAdd = JSON.parse(JSON.stringify(ent));
+					const toAdd = MiscUtil.copy(ent);
 					toAdd.type = "section";
 					const discard = !!toAdd.data.allowRefDupe;
-					delete toAdd.data;
 					recursiveSetSource(toAdd, source);
 					out[sect].sections.push(toAdd);
 					return discard;
@@ -102,7 +101,7 @@ UtilBookReference = {
 			});
 
 			Object.keys(out).sort().forEach(i => {
-				const sects = out[i].sections;//.sort((a, b) => SortUtil.ascSort(a.name, b.name));
+				const sects = out[i].sections.sort((a, b) => SortUtil.ascSort(a.name, b.name));
 				const header = outJson.reference[refType.id];
 				header.contents.push({
 					name: out[i].sectName,
@@ -116,6 +115,18 @@ UtilBookReference = {
 				outJson.data[refType.id].push(toAdd);
 			});
 		});
+
+		const walker = MiscUtil.getWalker();
+
+		walker.walk(
+			outJson.data,
+			{
+				object: (obj) => {
+					delete obj.id; // Remove IDs to avoid duplicates
+					return obj;
+				}
+			}
+		);
 
 		return outJson;
 	}

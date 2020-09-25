@@ -1,6 +1,6 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.0.1",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"version": "1.1.1",
 	"type": "object",
 	"properties": {
 		"adventure": {
@@ -12,6 +12,34 @@
 						"type": "string"
 					},
 					"id": {
+						"type": "string"
+					},
+					"source": {
+						"type": "string"
+					},
+					"alAveragePlayerLevel": {
+						"description": "Adventurers League APL; for use in homebrew.",
+						"type": "integer"
+					},
+					"alLength": {
+						"description": "Adventurers League length (in hours); for use in homebrew.",
+						"type": "object",
+						"oneOf": [
+							{
+								"properties": {
+									"min": {"type": "integer"},
+									"max": {"type": "integer"}
+								}
+							},
+							{
+								"properties": {
+									"exact": {"type": "integer"}
+								}
+							}
+						]
+					},
+					"alId": {
+						"description": "Adventurers League ID; for use in homebrew.",
 						"type": "string"
 					},
 					"contents": {
@@ -106,6 +134,13 @@
 						"type": "string",
 						"format": "date"
 					},
+					"publishedOrder": {
+						"description": "A sorting order for adventures within a single source.",
+						"type": "integer"
+					},
+					"coverUrl": {
+						"type": "string"
+					},
 					"storyline": {
 						"type": "string",
 						"enum": [
@@ -119,7 +154,15 @@
 							"Tomb of Annihilation",
 							"Waterdeep",
 							"Ravnica",
-							"Extra Life"
+							"Extra Life",
+							"Ghosts of Saltmarsh",
+							"Acquisitions Incorporated",
+							"Essentials Kit",
+							"Stranger Things",
+							"Baldur's Gate",
+							"Eberron",
+							"Rick and Morty",
+							"Wildemount"
 						]
 					}
 				},
@@ -127,6 +170,7 @@
 				"required": [
 					"name",
 					"id",
+					"source",
 					"contents",
 					"level",
 					"published",

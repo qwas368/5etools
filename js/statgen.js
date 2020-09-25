@@ -12,13 +12,14 @@ class StatGen {
 	}
 
 	async init () {
+		this.raceStats = null;
 		this.raceChoiceAmount = null;
 		this.raceChoiceCount = null;
 		this.raceData = null;
 		this.$advanced = $(`#advanced`);
 		this.$budget = $(`#budget`);
 		this.budget = StatGen.DEFAULT_POINTS;
-		this.doSaveDebounced = MiscUtil.debounce(this.doSaveState, 200, true);
+		this.doSaveDebounced = MiscUtil.debounce(this.doSaveState, 200, {leading: true});
 
 		await ExcludeUtil.pInitialise();
 		await this.pLoadRaceJson();
@@ -26,7 +27,7 @@ class StatGen {
 
 		// load from local storage
 		try {
-			const savedState = await StorageUtil.pGet(POINTBUY_STORAGE);
+			const savedState = await StorageUtil.pGet(VeCt.STORAGE_POINTBUY);
 			if (StatGen.isValidState(savedState)) this.doLoadStateFrom(savedState);
 			else this.savedState = MiscUtil.copy(StatGen.DEFAULT_COSTS);
 		} catch (e) {
@@ -143,34 +144,55 @@ class StatGen {
 
 	doSaveState () {
 		if (!this.isInit) return;
-		StorageUtil.pSet(POINTBUY_STORAGE, this.getSaveableState());
+		StorageUtil.pSet(VeCt.STORAGE_POINTBUY, this.getSaveableState());
 	}
 
 	async pLoadRaceJson () {
 		const data = await DataUtil.loadJSON(RACE_JSON_URL);
 
-		let brew;
-		try {
-			brew = await BrewUtil.pAddBrewData();
-		} catch (e) {
-			return BrewUtil.pPurgeBrew();
-		}
+		const brew = await BrewUtil.pAddBrewData();
 
 		this.raceData = Renderer.race.mergeSubraces(data.race);
 		if (brew.race) this.raceData = this.raceData.concat(brew.race);
-		this.raceData = this.raceData.filter(it => !ExcludeUtil.isExcluded(it.name, "race", it.source));
+		this.raceData = this.raceData.filter(it => {
+			const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES](it);
+			return !ExcludeUtil.isExcluded(hash, "race", it.source);
+		});
 
 		$("#rollbutton").click(() => this.rollStats());
 
 		const isCrypto = RollerUtil.isCrypto();
-		const titleStr = isCrypto ? "數字將透過Crypto.getRandomValues()產生" : "數字將透過Math.random()產生";
-		$(`#roller-mode`).html(`密碼學安全強亂數生成器：<span title="${titleStr}" class="crypto-${isCrypto}">${isCrypto ? `<span class="glyphicon glyphicon-lock"></span> 啟用` : `<span class="glyphicon glyphicon-ban-circle"></span> 無法使用`}</span>`);
+		const titleStr = isCrypto ? "Numbers will be generated using Crypto.getRandomValues()" : "Numbers will be generated using Math.random()";
+		$(`#roller-mode`).html(`Cryptographically strong random generation: <span title="${titleStr}" class="crypto-${isCrypto}">${isCrypto ? `<span class="glyphicon glyphicon-lock"></span> enabled` : `<span class="glyphicon glyphicon-ban-circle"></span> not available`}</span>`);
 
-		$("#reset").click(() => {
+		const doReset = () => {
 			$(".base").val(this.statMin);
 			$(".pbuy__user_add").val(0);
 			$(".choose").prop("checked", false);
 			this.changeBase();
+		};
+
+		$("#reset").click(() => doReset());
+
+		$("#randomise").click(() => {
+			doReset();
+
+			let tries = 999;
+			const $iptAttrs = [...$(".base")].map(ele => $(ele));
+			while (tries > 0) {
+				tries--;
+
+				const $iptAttrsCanIncrease = $iptAttrs.filter(it => Number(it.val()) < this.statMax);
+				const $toBump = RollerUtil.rollOnArray($iptAttrsCanIncrease);
+				const oldVal = Number($toBump.val());
+				$toBump.val(oldVal + 1);
+				this.changeBase();
+
+				const constBudget = this.getCostAndBudget();
+				const remain = constBudget.budget - constBudget.cost;
+				if (remain === 0) return;
+				else if (remain < 0) $toBump.val(oldVal);
+			}
 		});
 
 		$(".base").on("input", () => this.changeBase());
@@ -179,8 +201,8 @@ class StatGen {
 		const races = this.raceData.map(x => ({name: x.name, source: x.source})).sort((a, b) => SortUtil.ascSort(a.name, b.name) || SortUtil.ascSort(a.source, b.source));
 		const options = races.map(it => `<option value="${it.name}_${it.source}">${it.name} ${it.source !== SRC_PHB ? `[${Parser.sourceJsonToAbv(it.source)}]` : ""}</option>`).join("");
 		$("#race")
-			.append(`<option value="">無</option>`)
-			.append(`<option value="_CUSTOM">客製化</option>`)
+			.append(`<option value="">None</option>`)
+			.append(`<option value="_CUSTOM">Custom</option>`)
 			.append(options)
 			.change(() => this.changeRace())
 			.change();
@@ -192,9 +214,9 @@ class StatGen {
 		$table.empty().append(`
 			<thead>
 				<tr>
-					<th class="col-4 pbuy__adv-col-3">屬性值</th>
-					<th class="col-4 pbuy__adv-col-3">調整值</th>
-					<th class="col-4 pbuy__adv-col-3">點數花費</th>
+					<th class="col-4 pbuy__adv-col-3">Score</th>
+					<th class="col-4 pbuy__adv-col-3">Modifier</th>
+					<th class="col-4 pbuy__adv-col-3">Point Cost</th>
 					<th class="col-3 pbuy__adv--visible"></th>
 				</tr>
 			</thead>
@@ -243,7 +265,7 @@ class StatGen {
 
 			const $wrpBtnsTop = $(`<div class="pbuy__add_row_btn_wrap"/>`).insertBefore($table);
 
-			const $btnAddLow = $(`<button class="btn btn-xs btn-primary" style="margin-right: 7px;">加入更低數值</button>`)
+			const $btnAddLow = $(`<button class="btn btn-xs btn-primary" style="margin-right: 7px;">Add Lower Score</button>`)
 				.click(() => {
 					const lowest = Object.keys(this.savedState).map(Number).sort(SortUtil.ascSort)[0];
 					if (lowest === 0) {
@@ -259,7 +281,7 @@ class StatGen {
 					this.renderCostsTable();
 				}).appendTo($wrpBtnsTop);
 
-			const $btnAddHigh = $(`<button class="btn btn-xs btn-primary" style="margin-right: 14px;">加入更高數值</button>`)
+			const $btnAddHigh = $(`<button class="btn btn-xs btn-primary" style="margin-right: 14px;">Add Higher Score</button>`)
 				.click(() => {
 					const highest = Object.keys(this.savedState).map(Number).sort(SortUtil.ascSort).reverse()[0];
 
@@ -269,7 +291,7 @@ class StatGen {
 					this.renderCostsTable();
 				}).appendTo($wrpBtnsTop);
 
-			const $btnReset = $(`<button class="btn btn-xs btn-default">重置</button>`)
+			const $btnReset = $(`<button class="btn btn-xs btn-default">Reset</button>`)
 				.click(() => {
 					this.savedState = MiscUtil.copy(StatGen.DEFAULT_COSTS);
 					this.budget = StatGen.DEFAULT_POINTS;
@@ -349,8 +371,9 @@ class StatGen {
 		if (this.raceChoiceAmount == null) return;
 		if ($("input.choose:checked").length > this.raceChoiceCount) return ele.checked = false;
 
-		$(".racial", ele.parentNode.parentNode)
-			.val(ele.checked ? this.raceChoiceAmount : 0);
+		const baseStat = this.raceStats[$(ele).closest("tr").attr("id")] || 0;
+		$(".racial", $(ele).closest("tr"))
+			.val(ele.checked ? baseStat + this.raceChoiceAmount : baseStat);
 		if (updateTotal) this.changeTotal();
 	}
 
@@ -364,17 +387,19 @@ class StatGen {
 			$(".choose").hide().prop("checked", false);
 			$(".pbuy__choose_dummy").hide();
 
-			if (!stats.choose) {
+			// TODO this only handles the most basic "choose" format
+			if (!stats.choose || !stats.choose.from) {
 				this.raceChoiceAmount = null;
 				this.raceChoiceCount = null;
 				return;
 			}
 
-			const {from} = stats.choose[0];
-			this.raceChoiceAmount = stats.choose[0].amount || 1;
-			this.raceChoiceCount = stats.choose[0].count;
+			this.raceStats = stats;
+			const {from} = stats.choose;
+			this.raceChoiceAmount = stats.choose.amount || 1;
+			this.raceChoiceCount = stats.choose.count;
 
-			$chooseHead.text(`選擇${this.raceChoiceCount}項`).show();
+			$chooseHead.text(`Choose ${this.raceChoiceCount}`).show();
 			Parser.ABIL_ABVS.forEach(abi => $(`#${abi} .${from.includes(abi) ? "choose" : "pbuy__choose_dummy"}`).show());
 		};
 
@@ -394,7 +419,7 @@ class StatGen {
 			$(`#custom`).hide();
 			const stats = race === ""
 				? {}
-				: this.raceData.find(({name, source}) => `${name}_${source}` === race).ability;
+				: this.raceData.find(({name, source}) => `${name}_${source}` === race).ability[0];
 			handleStats(stats);
 		}
 	}
@@ -408,7 +433,7 @@ class StatGen {
 
 	checkBudget (costBudget) {
 		if (!costBudget) costBudget = this.getCostAndBudget();
-		$(`#remaining`).toggleClass("error-background", costBudget.cost > costBudget.budget);
+		$(`#remaining`).toggleClass("form-control--error", costBudget.cost > costBudget.budget);
 	}
 
 	changeBase () {
@@ -433,7 +458,7 @@ class StatGen {
 	rollStats () {
 		const formula = $(`#stats-formula`).val();
 
-		const tree = Renderer.dice._parse2(formula);
+		const tree = Renderer.dice.lang.getTree3(formula);
 
 		const $rolled = $("#rolled");
 		if (!tree) {
@@ -472,10 +497,12 @@ StatGen.DEFAULT_POINTS = 27;
 
 const statGen = new StatGen();
 
-window.onload = async function load () {
+window.addEventListener("load", async () => {
 	await statGen.init();
 	hashchange();
-};
+
+	window.dispatchEvent(new Event("toolsLoaded"));
+});
 
 function hashchange () {
 	const VALID_HASHES = [

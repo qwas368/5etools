@@ -1,105 +1,14 @@
 {
-	"item": [
+	"itemFluff": [
 		{
-			"name": "銅幣(cp)", "ENG_name": "Copper (cp)",
-			"source": "PHB",
+			"name": "Akmon, Hammer of Purphoros",
+			"source": "MOT",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Copper (cp).jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "珀金幣(ep)", "ENG_name": "Electrum (ep)",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Electrum (ep).jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "金幣(gp)", "ENG_name": "Gold (gp)",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Gold (gp).jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "醫療工具組", "ENG_name": "Healer's Kit",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Healer's Kit.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "鉑金幣(pp)", "ENG_name": "Platinum (pp)",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Platinum (pp).jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "銀幣(sp)", "ENG_name": "Silver (sp)",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Silver (sp).jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "盜賊工具", "ENG_name": "Thieves' Tools",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Thieves' Tools.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "飾品(PHB)", "ENG_name": "Trinket (PHB)",
-			"source": "PHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Trinket (PHB).png"
+						"path": "items/MOT/Akmon, Hammer of Purphoros.jpg"
 					}
 				}
 			]
@@ -144,6 +53,19 @@
 			]
 		},
 		{
+			"name": "Amulet of the Drunkard",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Amulet of the Drunkard.png"
+					}
+				}
+			]
+		},
+		{
 			"name": "Amulet of the Planes",
 			"source": "DMG",
 			"images": [
@@ -165,19 +87,6 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Animated Shield.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Instrument of the Bards, Anstruth Harp",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Instrument of the Bards, Anstruth Harp.jpg"
 					}
 				}
 			]
@@ -308,6 +217,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Bag of Tricks.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Battle Standard of Infernal Power",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BGDIA/Battle Standard of Infernal Power.jpg"
 					}
 				}
 			]
@@ -521,14 +443,14 @@
 			]
 		},
 		{
-			"name": "Instrument of the Bards, Canaith Mandolin",
-			"source": "DMG",
+			"name": "Butcher's Bib",
+			"source": "EGW",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Instrument of the Bards, Canaith Mandolin.jpg"
+						"path": "items/EGW/Butcher's Bib.png"
 					}
 				}
 			]
@@ -555,6 +477,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Cape of the Mountebank.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Cartographer's Map Case",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/cartographers-map-case.jpg"
 					}
 				}
 			]
@@ -594,19 +529,6 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Circlet of Blasting.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Instrument of the Bards, Cli Lyre",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Instrument of the Bards, Cli Lyre.jpg"
 					}
 				}
 			]
@@ -664,6 +586,19 @@
 			]
 		},
 		{
+			"name": "Coin of Decisionry",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/coin-of-decisionry.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Conch of Teleportation",
 			"source": "SKT",
 			"images": [
@@ -672,6 +607,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Conch of Teleportation.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Copper (cp)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Copper (cp).jpg"
 					}
 				}
 			]
@@ -742,6 +690,32 @@
 			]
 		},
 		{
+			"name": "Danoth's Visor",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Danoth's Visor.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Dawnbringer",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/OotA/Dawnbringer.png"
+					}
+				}
+			]
+		},
+		{
 			"name": "Decanter of Endless Water",
 			"source": "DMG",
 			"images": [
@@ -781,6 +755,19 @@
 			]
 		},
 		{
+			"name": "Dekella, Bident of Thassa",
+			"source": "MOT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/MOT/Dekella, Bident of Thassa.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Demon Armor",
 			"source": "DMG",
 			"images": [
@@ -807,15 +794,32 @@
 			]
 		},
 		{
-			"name": "Instrument of the Bards, Doss Lute",
-			"source": "DMG",
+			"name": "Documancy Satchel",
+			"source": "AI",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Instrument of the Bards, Doss Lute.jpg"
+						"path": "items/AI/documancy-satchel.jpg"
 					}
+				}
+			]
+		},
+		{
+			"name": "Double-Bladed Scimitar",
+			"source": "ERLW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"The double-bladed scimitar is the signature weapon of Valenar elves. A haft of fine wood supports a long, curving blade on either end. Forged with techniques honed over centuries, these blades are strong, sharp, and remarkably light. Each scimitar is a masterpiece, and as a result the double-bladed scimitar is an expensive weapon (100 gp)\u2014few though ever have the opportunity to purchase one. A Valenar blade in the hands of a non-elf is generally assumed to have been stolen or looted from a fallen foe, and a Valenar elf might feel entitled to demand its return or challenge the bearer to prove they're worthy to wield it."
+							]
+						}
+					]
 				}
 			]
 		},
@@ -893,6 +897,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Drown.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Duskcrusher",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Duskcrusher.png"
 					}
 				}
 			]
@@ -976,6 +993,19 @@
 			]
 		},
 		{
+			"name": "Electrum (ep)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Electrum (ep).jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Elemental Gem",
 			"source": "DMG",
 			"images": [
@@ -1002,6 +1032,19 @@
 			]
 		},
 		{
+			"name": "Ephixis, Bow of Nylea",
+			"source": "MOT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/MOT/Ephixis, Bow of Nylea.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Eversmoking Bottle",
 			"source": "DMG",
 			"images": [
@@ -1010,19 +1053,6 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Eversmoking Bottle.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Hand of Vecna",
-			"source": "DMG",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Hand of Vecna.jpg"
 					}
 				}
 			]
@@ -1067,19 +1097,6 @@
 			]
 		},
 		{
-			"name": "Feather Token",
-			"source": "UAWGE",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "items/Feather Token.jpg"
-					}
-				}
-			]
-		},
-		{
 			"name": "Figurine of Wondrous Power",
 			"source": "DMG",
 			"images": [
@@ -1106,14 +1123,14 @@
 			]
 		},
 		{
-			"name": "Instrument of the Bards, Fochlucan Bandore",
-			"source": "DMG",
+			"name": "Flying Chariot",
+			"source": "MOT",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Instrument of the Bards, Fochlucan Bandore.jpg"
+						"path": "items/MOT/Flying Chariot.png"
 					}
 				}
 			]
@@ -1236,6 +1253,58 @@
 			]
 		},
 		{
+			"name": "Gold (gp)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Gold (gp).jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Greater Silver Sword",
+			"source": "MTF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/MTF/Greater Silver Sword.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Grimoire Infinitus",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Grimoire Infinitus.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Grovelthrash",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Grovelthrash.png"
+					}
+				}
+			]
+		},
+		{
 			"name": "Guild Keyrune",
 			"source": "GGR",
 			"images": [
@@ -1275,6 +1344,19 @@
 			]
 		},
 		{
+			"name": "Hand of Vecna",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Hand of Vecna.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Headband of Intellect",
 			"source": "DMG",
 			"images": [
@@ -1283,6 +1365,32 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Headband of Intellect.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Healer's Kit",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Healer's Kit.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Hellfire Weapon",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BGDIA/Hellfire Weapon.jpg"
 					}
 				}
 			]
@@ -1309,6 +1417,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Helm of Comprehending Languages.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Helm of Devil Command",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BGDIA/Helm of Devil Command.jpg"
 					}
 				}
 			]
@@ -1431,6 +1552,19 @@
 			]
 		},
 		{
+			"name": "Infiltrator's Key",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Infiltrator's Key.png"
+					}
+				}
+			]
+		},
+		{
 			"name": "Instrument of the Bards",
 			"source": "DMG",
 			"images": [
@@ -1439,6 +1573,97 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Instrument of the Bards.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Anstruth Harp",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Anstruth Harp.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Canaith Mandolin",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Canaith Mandolin.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Cli Lyre",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Cli Lyre.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Doss Lute",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Doss Lute.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Fochlucan Bandore",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Fochlucan Bandore.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Mac-Fuirmidh Cittern.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Ollamh Harp",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Instrument of the Bards, Ollamh Harp.jpg"
 					}
 				}
 			]
@@ -1509,6 +1734,19 @@
 			]
 		},
 		{
+			"name": "Khrusor, Spear of Heliod",
+			"source": "MOT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/MOT/Khrusor, Spear of Heliod.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Lantern of Revealing",
 			"source": "DMG",
 			"images": [
@@ -1517,6 +1755,32 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Lantern of Revealing.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Lash of Shadows",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Lash of Shadows.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Living Loot Satchel",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/living-loot-satchel.jpg"
 					}
 				}
 			]
@@ -1543,6 +1807,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Luck Blade.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Luxon Beacon",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Luxon Beacon.png"
 					}
 				}
 			]
@@ -1587,14 +1864,14 @@
 			]
 		},
 		{
-			"name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
-			"source": "DMG",
+			"name": "Mace of the Black Crown",
+			"source": "EGW",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Instrument of the Bards, Mac-Fuirmidh Cittern.jpg"
+						"path": "items/EGW/Mace of the Black Crown.png"
 					}
 				}
 			]
@@ -1673,6 +1950,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Mask of the Dragon Queen.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Mastix, Whip of Erebos",
+			"source": "MOT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/MOT/Mastix, Whip of Erebos.jpg"
 					}
 				}
 			]
@@ -1821,14 +2111,14 @@
 			]
 		},
 		{
-			"name": "Instrument of the Bards, Ollamh Harp",
-			"source": "DMG",
+			"name": "Occultant Abacus",
+			"source": "AI",
 			"images": [
 				{
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Instrument of the Bards, Ollamh Harp.jpg"
+						"path": "items/AI/occultant-abacus.jpg"
 					}
 				}
 			]
@@ -1842,6 +2132,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Orb of Dragonkind.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Orrery of the Wanderer",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/Orrery of the Wanderer.png"
 					}
 				}
 			]
@@ -1907,6 +2210,58 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Pipes of the Sewers.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Piwafwi (Cloak of Elvenkind)",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/OotA/Piwafwi (Cloak of Elvenkind).png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Platinum (pp)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Platinum (pp).jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Prosthetic Limb",
+			"source": "ERLW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/ERLW/Prosthetic Limb.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Pyxis of Pandemonium",
+			"source": "MOT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/MOT/Pyxis of Pandemonium.jpg"
 					}
 				}
 			]
@@ -2055,6 +2410,19 @@
 			]
 		},
 		{
+			"name": "Ring of Obscuring",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Ring of Obscuring.png"
+					}
+				}
+			]
+		},
+		{
 			"name": "Ring of Protection",
 			"source": "DMG",
 			"images": [
@@ -2062,7 +2430,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Ring of Protection.jpg"
+						"path": "items/Ring of Protection.png"
 					}
 				}
 			]
@@ -2328,6 +2696,19 @@
 			]
 		},
 		{
+			"name": "Ruin's Wake",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Ruin's Wake.png"
+					}
+				}
+			]
+		},
+		{
 			"name": "Saint Markovia's Thighbone",
 			"source": "CoS",
 			"images": [
@@ -2349,6 +2730,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Scarab of Protection.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sending Stone",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/sending-stone.jpg"
 					}
 				}
 			]
@@ -2380,6 +2774,32 @@
 			]
 		},
 		{
+			"name": "Shield of the Hidden Lord",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BGDIA/Shield of the Hidden Lord.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Silver (sp)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Silver (sp).jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Skyblinder Staff",
 			"source": "GGR",
 			"images": [
@@ -2406,6 +2826,19 @@
 			]
 		},
 		{
+			"name": "Soul Coin",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BGDIA/Soul Coin.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Sovereign Glue",
 			"source": "DMG",
 			"images": [
@@ -2414,6 +2847,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Sovereign Glue.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Spell Bottle",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Spell Bottle.png"
 					}
 				}
 			]
@@ -2692,6 +3138,19 @@
 			]
 		},
 		{
+			"name": "Sword of Zariel",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BGDIA/Sword of Zariel.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Talisman of the Sphere",
 			"source": "DMG",
 			"images": [
@@ -2726,6 +3185,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Tentacle Rod.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Thieves' Tools",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Thieves' Tools.jpg"
 					}
 				}
 			]
@@ -2783,6 +3255,19 @@
 			]
 		},
 		{
+			"name": "Travel Alchemical Kit",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/travel-alchemical-kit.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Trident of Fish Command",
 			"source": "DMG",
 			"images": [
@@ -2791,6 +3276,46 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Trident of Fish Command.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Trinket (AI)",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/Trinket.png"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/Trinket-2.png"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/Trinket-3.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Trinket (PHB)",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/Trinket (PHB).png"
 					}
 				}
 			]
@@ -2920,7 +3445,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Wand of Magic Missiles.jpg"
+						"path": "items/Wand of Magic Missiles.png"
 					}
 				}
 			]
@@ -3043,6 +3568,19 @@
 			]
 		},
 		{
+			"name": "Whisper Jar",
+			"source": "AI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/AI/whisper-jar.jpg"
+					}
+				}
+			]
+		},
+		{
 			"name": "Wind Fan",
 			"source": "DMG",
 			"images": [
@@ -3076,7 +3614,7 @@
 					"type": "image",
 					"href": {
 						"type": "internal",
-						"path": "items/Winged Boots.jpg"
+						"path": "items/Winged Boots.png"
 					}
 				}
 			]
@@ -3090,6 +3628,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/Wings of Flying.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Wreath of the Prism",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/EGW/Wreath of the Prism.png"
 					}
 				}
 			]

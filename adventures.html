@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="tw">
+<html lang="en">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>冒險模組 - 5etools</title>
+	<title>Adventures - 5etools</title>
+
+	<link rel="manifest" href="manifest.webmanifest">
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="icon-320.png">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
+
 	<style>
 		ul.list li:hover {
 			background: inherit;
@@ -39,54 +49,64 @@
 </head>
 
 <body>
+<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container">
-		<h1 class="page__title">冒險模組</h1>
-		<p class="page__subtitle">瀏覽冒險模組的名稱與內容</p>
+		<h1 class="page__title">Adventures</h1>
+		<p class="page__subtitle">Browse adventures by name and contents</p>
 	</div>
 </header>
 
-<nav class="container page__nav" id="navigation"><ul class="nav nav-pills" id="navbar"></ul></nav>
+<nav class="container page__nav" id="navigation"><ul class="nav page__nav-inner" id="navbar"></ul></nav>
 
-<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><!--5ETOOLS_AD_RIGHT_2--></div>
+<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <div class="container view-col-wrapper">
 	<div class="view-col" id="listcontainer">
-		<div class="input-group">
-			<input type="search" id="search" class="search form-control" placeholder="搜尋冒險模組...">
-			<span class="input-group-btn"><button class="btn btn-default" id="reset">重置</button></span>
+		<div class="lst__form-top">
+			<input type="search" id="search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control" placeholder="Find adventure...">
+			<button class="btn btn-default" id="reset">Reset</button>
 		</div>
 
-		<div id="filtertools" class="sortlabel btn-group">
-			<button class="col-6 sort btn btn-default btn-xs" data-sort="name">名稱<span class="caret_wrp"></span></button>
-			<button class="col-2-5 sort btn btn-default btn-xs" data-sort="storyline">故事情節<span class="caret_wrp"></span></button>
-			<button class="col-1-3 sort btn btn-default btn-xs" data-sort="level">等級<span class="caret_wrp"></span></button>
-			<button class="col-2-2 sort btn btn-default btn-xs" data-sort="published">出版時間<span class="caret_wrp"></span></button>
+		<div id="filtertools" class="sortlabel input-group input-group--bottom flex no-shrink">
+			<button class="col-6 sort btn btn-default btn-xs" data-sort="name">Name <span class="caret_wrp"></span></button>
+			<button class="col-2-5 sort btn btn-default btn-xs" data-sort="storyline">Storyline <span class="caret_wrp"></span></button>
+			<button class="col-1-3 sort btn btn-default btn-xs" data-sort="level">Levels <span class="caret_wrp"></span></button>
+			<button class="sort btn btn-default btn-xs" data-sort="published">Published <span class="caret_wrp"></span></button>
 		</div>
 
 		<ul class="list books">
 			<!-- populate with JS -->
 		</ul>
 
-		<div class="text-align-center wrp-footer-buttons">
-			<button class="btn btn-default btn-xs btn-file btn-info" id="manage-brew">管理自製內容</button>
+		<div class="text-center wrp-footer-buttons">
+			<button class="btn btn-xs btn-info" id="manage-brew">Manage Homebrew</button>
+		</div>
+
+		<hr class="hr-3 mt-4">
+
+		<div class="books--alt flex-h-center flex-wrap bks__wrp-bookshelf">
+			<!-- populate with JS -->
 		</div>
 	</div>
 </div>
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/bookutils.js"></script>
 <script type="text/javascript" src="js/bookslist.js"></script>
 <script type="text/javascript" src="js/adventures.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>

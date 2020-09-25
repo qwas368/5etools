@@ -1,31 +1,32 @@
 {
 	"book": [
 		{
-			"name": "玩家手冊",
+			"name": "Player's Handbook",
 			"id": "PHB",
-			"author": "Wizards RPG Team",
+			"source": "PHB",
+			"coverUrl": "img/covers/PHB.png",
 			"published": "2014-08-19",
-			"image": "assets/misc/covers/book-phb.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
-					"name": "簡介",
+					"name": "Introduction",
 					"headers": [
-						"充滿冒險的世界",
-						"使用本書",
-						"如何進行遊戲",
-						"冒險"
+						"Worlds of Adventure",
+						"Using This Book",
+						"How to Play",
+						"Adventures"
 					]
 				},
 				{
-					"name": "一步步創建角色",
+					"name": "Step-by-Step Characters",
 					"headers": [
-						"1. 選擇種族",
-						"2. 選擇職業",
-						"3. 決定屬性值",
-						"4. 描述你的角色",
-						"5. 選擇裝備",
-						"6. 集結",
-						"高於 1 級"
+						"1. Choose a Race",
+						"2. Choose a Class",
+						"3. Determine Ability Scores",
+						"4. Describe Your Character",
+						"5. Choose Equipment",
+						"6. Come Together",
+						"Beyond 1st Level"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -33,9 +34,9 @@
 					}
 				},
 				{
-					"name": "種族",
+					"name": "Races",
 					"headers": [
-						"選擇種族"
+						"Choosing a Race"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -43,20 +44,20 @@
 					}
 				},
 				{
-					"name": "職業",
+					"name": "Classes",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 3
 					}
 				},
 				{
-					"name": "個性與背景",
+					"name": "Personality and Background",
 					"headers": [
-						"角色細節",
-						"陣營",
-						"語言",
-						"激勵",
-						"背景"
+						"Character Details",
+						"Alignment",
+						"Languages",
+						"Inspiration",
+						"Backgrounds"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -64,18 +65,18 @@
 					}
 				},
 				{
-					"name": "裝備",
+					"name": "Equipment",
 					"headers": [
-						"起始裝備",
-						"財富",
-						"護甲與盾牌",
-						"武器",
-						"冒險裝備",
-						"工具",
-						"坐騎與載具",
-						"貿易商品",
-						"開銷",
-						"飾品"
+						"Starting Equipment",
+						"Wealth",
+						"Armor and Shields",
+						"Weapons",
+						"Adventuring Gear",
+						"Tools",
+						"Mounts and Vehicles",
+						"Trade Goods",
+						"Expenses",
+						"Trinkets"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -83,10 +84,10 @@
 					}
 				},
 				{
-					"name": "自定義選項",
+					"name": "Customization Options",
 					"headers": [
-						"兼職",
-						"專長"
+						"Multiclassing",
+						"Feats"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -94,14 +95,14 @@
 					}
 				},
 				{
-					"name": "屬性值應用",
+					"name": "Using Ability Scores",
 					"headers": [
-						"屬性值與調整值",
-						"優勢與劣勢",
-						"熟練加值",
-						"屬性檢定",
-						"各屬性值應用",
-						"豁免檢定"
+						"Ability Scores and Modifiers",
+						"Advantage and Disadvantage",
+						"Proficiency Bonus",
+						"Ability Checks",
+						"Using Each Ability",
+						"Saving Throws"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -109,14 +110,14 @@
 					}
 				},
 				{
-					"name": "冒險",
+					"name": "Adventuring",
 					"headers": [
-						"時間",
-						"移動",
-						"環境",
-						"社交",
-						"休息",
-						"冒險之餘"
+						"Time",
+						"Movement",
+						"The Environment",
+						"Social Interaction",
+						"Resting",
+						"Between Adventures"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -124,16 +125,16 @@
 					}
 				},
 				{
-					"name": "戰鬥",
+					"name": "Combat",
 					"headers": [
-						"戰鬥的流程",
-						"移動與位置",
-						"戰鬥中的動作",
-						"進行攻擊",
-						"掩護",
-						"傷害與治療",
-						"騎乘戰鬥",
-						"水下戰鬥"
+						"The Order of Combat",
+						"Movement and Position",
+						"Actions in Combat",
+						"Making an Attack",
+						"Cover",
+						"Damage and Healing",
+						"Mounted Combat",
+						"Underwater Combat"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -141,10 +142,10 @@
 					}
 				},
 				{
-					"name": "施法",
+					"name": "Spellcasting",
 					"headers": [
-						"法術是什麼?",
-						"施展法術"
+						"What Is a Spell?",
+						"Casting a Spell"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -152,24 +153,31 @@
 					}
 				},
 				{
-					"name": "狀態",
+					"name": "Spells",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 11
+					}
+				},
+				{
+					"name": "Conditions",
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "A"
 					}
 				},
 				{
-					"name": "多元宇宙諸神",
+					"name": "Gods of the Multiverse",
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "B"
 					}
 				},
 				{
-					"name": "存在位面",
+					"name": "The Planes of Existence",
 					"headers": [
-						"物質位面",
-						"物質界外"
+						"The Material Plane",
+						"Beyond the Material"
 					],
 					"ordinal": {
 						"type": "appendix",
@@ -181,9 +189,10 @@
 		{
 			"name": "Monster Manual",
 			"id": "MM",
-			"author": "Wizards RPG Team",
+			"source": "MM",
+			"coverUrl": "img/covers/MM.png",
 			"published": "2014-09-30",
-			"image": "assets/misc/covers/book-mm.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Introduction",
@@ -215,35 +224,36 @@
 			]
 		},
 		{
-			"name": "城主指南",
+			"name": "Dungeon Master's Guide",
 			"id": "DMG",
-			"author": "Wizards RPG Team",
+			"source": "DMG",
+			"coverUrl": "img/covers/DMG.png",
 			"published": "2014-12-09",
-			"image": "assets/misc/covers/book-dmg.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
-					"name": "簡介",
+					"name": "Introduction",
 					"headers": [
-						"地下城主",
-						"如何使用本書",
-						"了解你的玩家"
+						"The Dungeon Master",
+						"How to Use This Book",
+						"Know Your Players"
 					]
 				},
 				{
-					"name": "你的世界",
+					"name": "A World of Your Own",
 					"headers": [
-						"大環境",
-						"世間諸神",
-						"繪製戰役",
-						"聚居地",
-						"語言與方言",
-						"派係與組織",
-						"世界中的魔法",
-						"創作戰役",
-						"戰役事件",
-						"遊戲風格",
-						"遊戲階段",
-						"奇幻風格"
+						"The Big Picture",
+						"Gods of Your World",
+						"Mapping Your Campaign",
+						"Settlements",
+						"Languages and Dialects",
+						"Factions and Organizations",
+						"Magic in Your World",
+						"Creating a Campaign",
+						"Campaign Events",
+						"Play Style",
+						"Tiers of Play",
+						"Flavors of Fantasy"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -251,18 +261,18 @@
 					}
 				},
 				{
-					"name": "創建多元宇宙",
+					"name": "Creating a Multiverse",
 					"headers": [
-						"諸位面",
-						"位面旅行",
-						"星界位面",
-						"乙太位面",
-						"妖精荒野",
-						"堕影冥界",
-						"內層位面",
-						"外層位面",
-						"其他位面",
-						"物質位面中的已知世界"
+						"The Planes",
+						"Planar Travel",
+						"Astral Plane",
+						"Ethereal Plane",
+						"Feywild",
+						"Shadowfell",
+						"Inner Planes",
+						"Outer Planes",
+						"Other Planes",
+						"Known Worlds of the Material Plane"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -270,15 +280,15 @@
 					}
 				},
 				{
-					"name": "創建冒險",
+					"name": "Creating Adventures",
 					"headers": [
-						"大冒險的基本要素",
-						"已出版的冒險",
-						"冒險故事結構",
-						"冒險類型",
-						"困境",
-						"創建遭遇",
-						"隨機遭遇"
+						"Elements of a Great Adventure",
+						"Published Adventures",
+						"Adventure Structure",
+						"Adventure Types",
+						"Complications",
+						"Creating Encounters",
+						"Random Encounters"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -286,15 +296,15 @@
 					}
 				},
 				{
-					"name": "創建非玩家角色",
+					"name": "Creating Nonplayer Characters",
 					"headers": [
-						"設計非玩家角色",
-						"非玩家角色隊友",
-						"聯絡員",
-						"雇員",
-						"小角色",
-						"反派",
-						"反派職業選項"
+						"Designing NPCs",
+						"NPC Party Members",
+						"Contacts",
+						"Hirelings",
+						"Extras",
+						"Villains",
+						"Villainous Class Options"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -302,18 +312,18 @@
 					}
 				},
 				{
-					"name": "冒險環境",
+					"name": "Adventure Environments",
 					"headers": [
-						"地下城",
-						"繪製地下城",
-						"野外",
-						"繪製野外",
-						"野外求生",
-						"聚居地",
-						"繪製聚居地",
-						"城中遭遇",
-						"非常規環境",
-						"陷阱"
+						"Dungeons",
+						"Mapping a Dungeon",
+						"Wilderness",
+						"Mapping a Wilderness",
+						"Wilderness Survival",
+						"Settlement",
+						"Mapping a Settlement",
+						"Urban Encounters",
+						"Unusual Environments",
+						"Traps"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -321,12 +331,12 @@
 					}
 				},
 				{
-					"name": "冒險之餘",
+					"name": "Between Adventures",
 					"headers": [
-						"銜接冒險",
-						"戰役跟進",
-						"周期開支",
-						"休整期活動"
+						"Linking Adventures",
+						"Campaign Tracking",
+						"Recurring Expenses",
+						"Downtime Activities"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -334,14 +344,14 @@
 					}
 				},
 				{
-					"name": "寶藏",
+					"name": "Treasure",
 					"headers": [
-						"寶藏類型",
-						"隨機寶藏",
-						"魔法物品",
-						"智能魔法物品",
-						"神器",
-						"其他獎勵"
+						"Types of Treasure",
+						"Random Treasure",
+						"Magic Items",
+						"Sentient Magic Items",
+						"Artifacts",
+						"Other Rewards"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -349,21 +359,21 @@
 					}
 				},
 				{
-					"name": "運行遊戲",
+					"name": "Running the Game",
 					"headers": [
-						"跑團原則",
-						"擲骰",
-						"屬性值應用",
-						"探索",
-						"社交",
-						"物件",
-						"戰鬥",
-						"追逐",
-						"攻城裝備",
-						"疾病",
-						"毒藥",
-						"瘋狂",
-						"經驗值"
+						"Table Rules",
+						"The Role of Dice",
+						"Using Ability Scores",
+						"Exploration",
+						"Social Interaction",
+						"Objects",
+						"Combat",
+						"Chases",
+						"Siege Equipment",
+						"Diseases",
+						"Poisons",
+						"Madness",
+						"Experience Points"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -401,15 +411,49 @@
 						"type": "appendix",
 						"identifier": "A"
 					}
+				},
+				{
+					"name": "Monster Lists",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
+				},
+				{
+					"name": "Maps",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "C"
+					}
+				},
+				{
+					"name": "Dungeon Master Inspiration",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "D"
+					}
+				}
+			]
+		},
+		{
+			"name": "Dungeon Master's Screen",
+			"id": "Screen",
+			"source": "Screen",
+			"coverUrl": "img/covers/Screen.png",
+			"published": "2015-01-20",
+			"contents": [
+				{
+					"name": "Tables"
 				}
 			]
 		},
 		{
 			"name": "Sword Coast Adventurer's Guide",
 			"id": "SCAG",
-			"author": "Wizards RPG Team",
+			"source": "SCAG",
+			"coverUrl": "img/covers/SCAG.png",
 			"published": "2015-11-03",
-			"image": "assets/misc/covers/book-scag.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Preface"
@@ -511,11 +555,36 @@
 			]
 		},
 		{
+			"name": "Adventurers League",
+			"id": "AL",
+			"source": "AL",
+			"coverUrl": "img/covers/AL.png",
+			"published": "2016-08-26",
+			"contents": [
+				{
+					"name": "Faction Guide",
+					"headers": [
+						"Faction Advancement and Benefits",
+						"Apprenticeship",
+						"Harpers",
+						"Order of the Gauntlet",
+						"Emerald Enclave",
+						"Lords' Alliance",
+						"Zhentarim"
+					]
+				},
+				{
+					"name": "Further Information"
+				}
+			]
+		},
+		{
 			"name": "Volo's Guide to Monsters",
 			"id": "VGM",
-			"author": "Wizards RPG Team",
+			"source": "VGM",
+			"coverUrl": "img/covers/VGM.png",
 			"published": "2016-11-15",
-			"image": "assets/misc/covers/book-vgm.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Monster Lore",
@@ -550,9 +619,10 @@
 		{
 			"name": "Xanathar's Guide to Everything",
 			"id": "XGE",
-			"author": "Wizards RPG Team",
+			"source": "XGE",
+			"coverUrl": "img/covers/XGE.png",
 			"published": "2017-11-21",
-			"image": "assets/misc/covers/book-xge.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "Introduction",
@@ -625,9 +695,10 @@
 		{
 			"name": "Mordenkainen's Tome of Foes",
 			"id": "MTF",
-			"author": "Wizards RPG Team",
+			"source": "MTF",
+			"coverUrl": "img/covers/MTF.png",
 			"published": "2018-05-29",
-			"image": "assets/misc/covers/book-mtf.png",
+			"author": "Wizards RPG Team",
 			"contents": [
 				{
 					"name": "The Blood War",
@@ -715,38 +786,11 @@
 			]
 		},
 		{
-			"name": "Adventurers League",
-			"id": "AL",
-			"contents": [
-				{
-					"name": "Faction Guide",
-					"headers": [
-						"Faction Advancement and Benefits",
-						"Apprenticeship",
-						"Harpers",
-						"Order of the Gauntlet",
-						"Emerald Enclave",
-						"Lords' Alliance",
-						"Zhentarim"
-					]
-				},
-				{
-					"name": "Further Information"
-				}
-			]
-		},
-		{
-			"name": "Dungeon Master's Screen",
-			"id": "Screen",
-			"contents": [
-				{
-					"name": "Tables"
-				}
-			]
-		},
-		{
 			"name": "Guildmasters' Guide to Ravnica",
 			"id": "GGR",
+			"source": "GGR",
+			"coverUrl": "img/covers/GGR.png",
+			"published": "2018-11-20",
 			"contents": [
 				{
 					"name": "Welcome to Ravnica",
@@ -865,6 +909,878 @@
 						"Selesnya NPCs",
 						"Simic NPCs"
 					]
+				}
+			]
+		},
+		{
+			"name": "Sage Advice Compendium",
+			"id": "SAC",
+			"source": "SAC",
+			"coverUrl": "img/covers/SAC.png",
+			"published": "2019-01-31",
+			"contents": [
+				{
+					"name": "Sage Advice Compendium",
+					"headers": [
+						"Rules References",
+						"Compiled Answers",
+						"The Role of Rules",
+						"Character Creation",
+						"Racial Traits",
+						"Class Features",
+						"Backgrounds",
+						"Equipment",
+						"Multiclassing",
+						"Feats",
+						"Ability Checks",
+						"Adventuring",
+						"Combat",
+						"Spellcasting",
+						"Monsters",
+						"Magic Items"
+					]
+				}
+			]
+		},
+		{
+			"name": "Acquisitions Incorporated",
+			"id": "AI",
+			"source": "AI",
+			"coverUrl": "img/covers/AI.png",
+			"published": "2019-06-18",
+			"contents": [
+				{
+					"name": "Acquisitions Incorporated",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"It's Just Business",
+						"A Corporate Prospectus",
+						"Fast Franchise Generator"
+					]
+				},
+				{
+					"name": "Growing Your Franchise",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Franchise Advancement",
+						"Company Positions",
+						{
+							"depth": 1,
+							"header": "Cartographer"
+						},
+						{
+							"depth": 1,
+							"header": "Decisionist"
+						},
+						{
+							"depth": 1,
+							"header": "Documancer"
+						},
+						{
+							"depth": 1,
+							"header": "Hoardsperson"
+						},
+						{
+							"depth": 1,
+							"header": "Loremonger"
+						},
+						{
+							"depth": 1,
+							"header": "Obviator"
+						},
+						{
+							"depth": 1,
+							"header": "Occultant"
+						},
+						{
+							"depth": 1,
+							"header": "Secretarian"
+						},
+						"Franchise Tasks and Downtime"
+					]
+				},
+				{
+					"name": "Player Options",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Backgrounds",
+						"Playing with Class",
+						"New Race: Verdan",
+						"New Spells",
+						"Factions and Rivals"
+					]
+				},
+				{
+					"name": "Acq Inc",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					},
+					"headers": [
+						"Omin Dran",
+						"Jim Darkmagic",
+						"Viari",
+						"Môrgæn",
+						"Flabbergast",
+						"The \"C\" Team",
+						"The \"B\" Team",
+						"House Dran"
+					]
+				},
+				{
+					"name": "Monsters",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					},
+					"headers": [
+						"Iconic Faction Features",
+						"Iconic Franchise Features"
+					]
+				},
+				{
+					"name": "Vehicles",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "C"
+					}
+				},
+				{
+					"name": "Orrery and Components",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "D"
+					}
+				},
+				{
+					"name": "Trinkets",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "E"
+					}
+				}
+			]
+		},
+		{
+			"name": "Eberron: Rising from the Last War",
+			"id": "ERLW",
+			"source": "ERLW",
+			"coverUrl": "img/covers/ERLW.png",
+			"published": "2019-11-19",
+			"contents": [
+				{
+					"name": "Welcome to Eberron",
+					"headers": [
+						"Using This Book",
+						"Seven Things to Know",
+						"History of Eberron",
+						"Life in Khorvaire",
+						"Pulp Adventure",
+						"Noir Intrigue",
+						"A Magical World",
+						"The Last War",
+						"The Draconic Prophecy"
+					]
+				},
+				{
+					"name": "Character Creation",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Races",
+						"Changelings",
+						"Dragonborn",
+						"Dwarves",
+						"Elves",
+						"Gnomes",
+						"Goblinoids",
+						"Half-Elves",
+						"Halflings",
+						"Humans",
+						"Kalashtar",
+						"Orcs and Half-Orcs",
+						"Shifters",
+						"Tieflings",
+						"Warforged"
+					]
+				},
+				{
+					"name": "Character Creation - Dragonmarks",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Dragonmarks",
+						"The Mark of Detection",
+						"The Mark of Finding",
+						"The Mark of Handling",
+						"The Mark of Healing",
+						"The Mark of Hospitality",
+						"The Mark of Making",
+						"The Mark of Passage",
+						"The Mark of Scribing",
+						"The Mark of Sentinel",
+						"The Mark of Shadow",
+						"The Mark of Storm",
+						"The Mark of Warding",
+						"Aberrant Dragonmarks",
+						"Background"
+					]
+				},
+				{
+					"name": "Character Creation - Artificer",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Class: Artificer",
+						"Class Features",
+						"Artificer Specialists",
+						"Artificer Infusions"
+					]
+				},
+				{
+					"name": "Character Creation - Group Patrons",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"How Patrons Work",
+						"Patrons in Eberron",
+						"Adventurers' Guild",
+						"Crime Syndicate",
+						"Dragonmarked House",
+						"Espionage Agency",
+						"Head of State",
+						"Immortal Being",
+						"Inquisitive Agency",
+						"Military Force",
+						"Newspaper",
+						"Religious Order",
+						"University"
+					]
+				},
+				{
+					"name": "Khorvaire Gazetteer",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Nations of Khorvaire",
+						"Aundair",
+						"Breland",
+						"Cyre (The Mournland)",
+						"Darguun",
+						"Demon Wastes",
+						"Droaam",
+						"Eldeen Reaches",
+						"Karrnath",
+						"Lhazaar Principalities",
+						"Mror Holds",
+						"Q'barra",
+						"Shadow Marches",
+						"Talenta Plains",
+						"Thrane",
+						"Thronehold",
+						"Valenar",
+						"Zilargo"
+					]
+				},
+				{
+					"name": "Khorvaire Gazeteer - Distant Lands",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Aerenal",
+						"Argonnessen",
+						"Khyber",
+						"North and South Poles",
+						"Sarlona",
+						"Xen'drik"
+					]
+				},
+				{
+					"name": "Khorvaire Gazeteer - Faiths of Khorvaire",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Deities of Eberron",
+						"Sovereign Host",
+						"Dark Six",
+						"Church of the Silver Flame",
+						"Blood of Vol",
+						"Cults of the Dragon Below",
+						"Path of Light",
+						"Spirits of the Past",
+						"Undying Court",
+						"Druids of Khorvaire"
+					]
+				},
+				{
+					"name": "Sharn, City of Towers",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"The Shape of Sharn",
+						"Guide to the City",
+						"Wards of Sharn",
+						"Central Plateau",
+						"Dura",
+						"Menthis Plateau",
+						"Northedge",
+						"Tavick's Landing",
+						"Above and Below",
+						"Dungeons of Sharn",
+						"Criminal Activities",
+						"Forces of the Law"
+					]
+				},
+				{
+					"name": "Building Eberron Adventures",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Adventure Themes",
+						"The Aurum",
+						"Cults of the Dragon Below",
+						"Dragonmarked Houses",
+						"Dragons",
+						"The Dreaming Dark",
+						"Droaam",
+						"Gatekeepers",
+						"Goblinoids (Heirs of Dhakaan)"
+					]
+				},
+				{
+					"name": "Building Eberron Adventures",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"The Last War",
+						"Lord of Blades",
+						"The Lords of Dust",
+						"The Mournland",
+						"Order of the Emerald Claw",
+						"Planes of Existence",
+						"Tour of the Planes",
+						"Eberron and the Multiverse",
+						"Gods, Celestials, and Fiends",
+						"Travel"
+					]
+				},
+				{
+					"name": "Building Eberron Adventures - Sharn",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Adventures in Sharn",
+						"Crime in Sharn",
+						"The Boromar Clan",
+						"Daask",
+						"House Tarkanan",
+						"The Tyrants",
+						"Sharn Watch"
+					]
+				},
+				{
+					"name": "Treasures",
+					"headers": [
+						"Dragonshards",
+						"Magic Items",
+						"Eldritch Machines",
+						"Everyday Magic Items"
+					]
+				},
+				{
+					"name": "Friends and Foes",
+					"headers": [
+						"Daelkyr",
+						"Living Spells"
+					]
+				}
+			]
+		},
+		{
+			"name": "Dungeons & Dragons vs. Rick and Morty: Basic Rules",
+			"id": "RMR",
+			"source": "RMR",
+			"coverUrl": "img/covers/RMR.png",
+			"published": "2019-11-19",
+			"contents": [
+				{
+					"name": "How to Play",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Getting Started",
+						{
+							"depth": 1,
+							"header": "1. The DM describes the environment"
+						},
+						{
+							"depth": 1,
+							"header": "2. The players describe what they want to do"
+						},
+						{
+							"depth": 1,
+							"header": "3. The DM narrates the results of the adventurers' actions."
+						},
+						"Six Abilities",
+						{
+							"depth": 1,
+							"header": "1. Roll the die"
+						},
+						{
+							"depth": 1,
+							"header": "2. Apply circumstantial bonuses and penalties"
+						},
+						{
+							"depth": 1,
+							"header": "3. Compare the total to a target number"
+						}
+					]
+				},
+				{
+					"name": "Combat",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"The Order of Combat",
+						"Movement and Position",
+						"Actions in Combat",
+						"Making an Attack",
+						"Cover",
+						"Damage and Healing"
+					]
+				},
+				{
+					"name": "Adventuring",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Travel",
+						"Resting",
+						"Rewards",
+						"Equipment",
+						"Armor and Shields",
+						"Weapons",
+						"Miscellaneous Gear and Services"
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"What Is a Spell?",
+						"Casting a Spell",
+						"Spell Lists",
+						"Spells"
+					]
+				},
+				{
+					"name": "Conditions",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					},
+					"headers": [
+						"Blinded",
+						"Charmed",
+						"Deafened",
+						"Exhaustion",
+						"Frightened",
+						"Grappled",
+						"Incapacitated",
+						"Invisible",
+						"Paralyzed",
+						"Petrified",
+						"Poisoned",
+						"Prone",
+						"Restrained",
+						"Stunned",
+						"Unconscious"
+					]
+				},
+				{
+					"name": "WHAT IS THE F***ING POINT?!",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
+				}
+			]
+		},
+		{
+			"name": "Explorer's Guide to Wildemount",
+			"id": "EGW",
+			"source": "EGW",
+			"coverUrl": "img/covers/EGW.png",
+			"published": "2020-03-17",
+			"contents": [
+				{
+					"name": "Preface"
+				},
+				{
+					"name": "Welcome to Wildemount",
+					"headers": [
+						"A New D&D Setting",
+						"Nations of Wildemount",
+						"What's in This Book?",
+						"War!",
+						"Calendar and Time",
+						"Moons of Exandria",
+						"Daily Life in Wildemount"
+					]
+				},
+				{
+					"name": "Story of Wildemount",
+					"headers": [
+						"History of Wildemount",
+						"Wildemount after the Calamity",
+						"Pantheon of Exandria",
+						"Prime Deities",
+						"Betrayer Gods",
+						"Lesser Idols"
+					]
+				},
+				{
+					"name": "Factions and Societies",
+					"headers": [
+						"Dwendalian Empire",
+						"Kryn Dynasty",
+						"Cerberus Assembly",
+						"Clovis Concord",
+						"The Myriad",
+						"Children of Malice",
+						"Diarchy of Uthodurn",
+						"Tribes of Shadycreek Run",
+						"Library of the Cobalt Soul",
+						"Scars of Scale and Tooth",
+						"Claret Orders",
+						"Golden Grin",
+						"The Revelry"
+					]
+				},
+				{
+					"name": "Wildemount Gazetteer",
+					"headers": [
+						"Regions"
+					]
+				},
+				{
+					"name": "Menagerie Coast",
+					"headers": [
+						"Areas (A-C)",
+						"Areas (D-F)",
+						"Areas (G-O)",
+						"Areas (P-R)",
+						"Areas (S-Z)"
+					]
+				},
+				{
+					"name": "Marrow Valley",
+					"headers": [
+						"Areas (A-C)",
+						"Areas (D-K)",
+						"Areas (L-Z)"
+					]
+				},
+				{
+					"name": "Zemni Fields",
+					"headers": [
+						"Areas (A-K)",
+						"Areas (N-R)",
+						"Areas (S-Z)"
+					]
+				},
+				{
+					"name": "Greying Wildlands",
+					"headers": [
+						"Areas (A-M)",
+						"Areas (P-Z)"
+					]
+				},
+				{
+					"name": "Eiselcross",
+					"headers": [
+						"Encounters in Eiselcross",
+						"Islands of Eiselcross",
+						"Wildfolk of Eiselcross",
+						"Areas (A-M)",
+						"Areas (R-Z)"
+					]
+				},
+				{
+					"name": "Wastes of Xhorhas",
+					"headers": [
+						"Areas (A-D)",
+						"Areas (F-R)",
+						"Areas (S-Z)"
+					]
+				},
+				{
+					"name": "Blightshore"
+				},
+				{
+					"name": "Distant Lands of Exandria"
+				},
+				{
+					"name": "Character Options",
+					"headers": [
+						"Races",
+						"Dwarves",
+						"Elves",
+						"Halflings",
+						"Humans",
+						"Aarakocra",
+						"Aasimar",
+						"Dragonborn",
+						"Firbolgs",
+						"Genasi",
+						"Gnomes",
+						"Goblinkin",
+						"Goliaths",
+						"Half-Elves",
+						"Kenku",
+						"Orcs and Half-Orcs",
+						"Tabaxi",
+						"Tieflings",
+						"Tortles",
+						"Hollow One"
+					]
+				},
+				{
+					"name": "Subclasses",
+					"headers": [
+						"Dunamis and Dunamancy",
+						"Fighter",
+						"Wizard",
+						"Dunamancy Spells",
+						"Spell Descriptions",
+						"Heroic Chronicle",
+						"Backgrounds"
+					]
+				},
+				{
+					"name": "Adventures in Wildemount",
+					"headers": [
+						"Using These Adventures"
+					]
+				},
+				{
+					"name": "Wildemount Treasures",
+					"headers": [
+						"Magic Items of Wildemount",
+						"Vestiges of Divergence",
+						"Arms of the Betrayers",
+						"Artifact Descriptions"
+					]
+				},
+				{
+					"name": "Wildemount Bestiary"
+				},
+				{
+					"name": "Glossary"
+				},
+				{
+					"name": "Maps"
+				}
+			]
+		},
+		{
+			"name": "Mythic Odysseys of Theros",
+			"id": "MOT",
+			"source": "MOT",
+			"coverUrl": "img/covers/MOT.png",
+			"published": "2020-06-02",
+			"contents": [
+				{
+					"name": "Welcome to Theros",
+					"headers": [
+						"Dreams of Divinity",
+						"History and Myth",
+						"Languages"
+					]
+				},
+				{
+					"name": "Character Creation",
+					"headers": [
+						"Heroic Drive",
+						"Supernatural Gifts",
+						"Races",
+						"Subclass Options",
+						"Background"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					}
+				},
+				{
+					"name": "Gods of Theros",
+					"headers": [
+						"Divine Characteristics",
+						"Worship",
+						"Clerics and Champions",
+						"Piety",
+						"The Gods"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					}
+				},
+				{
+					"name": "Realms of Gods and Mortals",
+					"headers": [
+						"The Mortal Realm",
+						"Akros",
+						"Meletis",
+						"Setessa",
+						"Oreskos",
+						"Phoberos and Skophos",
+						"Realms of the Returned",
+						"The Siren Sea",
+						"Skola Vale",
+						"The Katachthon Mountains",
+						"The Oraniad Mountains",
+						"Realms of the Gods"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					}
+				},
+				{
+					"name": "Creating Theros Adventures",
+					"headers": [
+						"God-Based Adventures",
+						"Divine Assistance",
+						"Athreos",
+						"Ephara",
+						"Erebos",
+						"Heliod",
+						"Iroas",
+						"Karametra",
+						"Keranos",
+						"Klothys",
+						"Kruphix",
+						"Mogis",
+						"Nylea",
+						"Pharika",
+						"Phenax",
+						"Purphoros",
+						"Thassa",
+						"Nautical Adventures",
+						"Underworld Adventures",
+						"No Silent Secret",
+						"Story Overview",
+						"Running the Adventure",
+						"Starting the Adventure",
+						"What the Dead See",
+						"Into the Wilds",
+						"The Court of Orestes",
+						{
+							"depth": 1,
+							"header": "1. Khystonos Riverbank"
+						},
+						{
+							"depth": 1,
+							"header": "2. Antechamber"
+						},
+						{
+							"depth": 1,
+							"header": "3. Viewing Room"
+						},
+						{
+							"depth": 1,
+							"header": "4. Flooded Catacomb"
+						},
+						{
+							"depth": 1,
+							"header": "5. Crypts of the Deathless"
+						},
+						{
+							"depth": 1,
+							"header": "6. Shrine of Phenax"
+						},
+						{
+							"depth": 1,
+							"header": "7. Tomb of Orestes"
+						},
+						{
+							"depth": 1,
+							"header": "8. Cave and Tunnel"
+						},
+						"Deciphering the Mask",
+						"Myths to Be Told"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					}
+				},
+				{
+					"name": "Treasures",
+					"headers": [
+						"Magic Items",
+						"Magic Item Descriptions",
+						"Artifacts",
+						"Artifact Descriptions"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					}
+				},
+				{
+					"name": "Friends and Foes",
+					"headers": [
+						"Nyxborn Creatures",
+						"Classic Monsters",
+						"Bestiary",
+						"Mythic Monsters"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					}
 				}
 			]
 		}

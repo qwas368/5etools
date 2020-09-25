@@ -1,8 +1,9 @@
 {
 	"monster": [
 		{
+			"name": "Alchemical Homunculus",
 			"source": "UAArtificerRevisited",
-			"name": "煉金人工生命體", "ENG_name": "Alchemical Homunculus",
+			"page": 6,
 			"size": "T",
 			"type": "construct",
 			"alignment": [
@@ -12,12 +13,12 @@
 				{
 					"ac": 13,
 					"from": [
-						"天生護甲"
+						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"special": "等同於你奇械師職業等級的五倍 + 你的智力調整值"
+				"special": "equal to five times your level in this class + your Intelligence modifier"
 			},
 			"speed": {
 				"walk": 20,
@@ -33,6 +34,10 @@
 				"perception": "+4",
 				"stealth": "+4"
 			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
 			"immune": [
 				"acid",
 				"poison"
@@ -42,55 +47,151 @@
 				"exhaustion",
 				"poisoned"
 			],
-			"passive": 10,
-			"senses": "黑暗視覺60呎",
-			"languages": "理解你所說的語言",
-			"cr": "Unknown",
+			"languages": [
+				"understands the languages you speak"
+			],
 			"trait": [
 				{
-					"name": "主人之力", "tENG_name": "Might of the Master",
+					"name": "Might of the Master",
 					"entries": [
-						"每當你的熟練加值提升1點，下列數據也會跟著提升1點：煉金人工生命體的技能加值、以及它酸性唾沫的命中加值和傷害加值。"
+						"The following numbers increase by 1 when your proficiency bonus increases by 1: the homunculus's skill bonuses and the bonuses to hit and damage of its Acidic Spittle."
 					]
 				}
 			],
+			"actionNote": "Requires Your Bonus Action",
 			"action": [
 				{
-					"name": "酸性唾沫", "tENG_name": "Acidic Spittle",
+					"name": "Acidic Spittle",
 					"entries": [
-						"{@atk rw} 命中{@hit 4}，射程30呎，單一你所能看見的目標。{@h}{@dice 1d6 + 2}酸蝕傷害。"
+						"{@atk rw} {@hit 4} to hit, range 30 ft., one target you can see. {@h}{@damage 1d6 + 2} acid damage."
 					]
 				},
 				{
-					"name": "煉金藥膏 (3/日)", "tENG_name": "Alchemical Salve (3/Day)",
+					"name": "Alchemical Salve (3/Day)",
 					"entries": [
-						"煉金人工生命體製造出一劑藥膏並觸碰一個你所指定的生物。目標將接受下列其中一個你所選擇的魔法效果：",
+						"The homunculus produces a salve and touches one creature you designate. The target receives one of the following magical benefits of your choice:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "浮力", "tENG_name": "Buoyancy",
-									"entry": "目標獲得10呎的飛行速度，持續10分鐘。"
+									"name": "Buoyancy",
+									"entry": "The target gains a flying speed of 10 feet for 10 minutes."
 								},
 								{
 									"type": "item",
-									"name": "激勵", "tENG_name": "Inspiration",
-									"entry": "目標將感到醍醐灌頂，在接下來1小時內在某些屬性檢定中獲得優勢。目標可以在檢定擲骰之前或之後選擇是否使用此效果。這個魔法將在目標使用等同於你智力調整值的次數（最少1次）後被耗盡。"
+									"name": "Inspiration",
+									"entry": "The target feels giddy and effective, gaining advantage on certain ability checks in the next hour. The target chooses the checks before or after rolling. The magic runs out after the target has used it on a number of checks equal to your Intelligence modifier (minimum of 1)."
 								},
 								{
 									"type": "item",
-									"name": "韌性", "tENG_name": "Resilience",
-									"entry": "目標獲得等同於{@dice 2d6}+你的智力調整值的臨時生命值。"
+									"name": "Resilience",
+									"entry": "The target gains a number of temporary hit points equal to {@dice 2d6} + your Intelligence modifier."
 								}
 							]
 						}
 					]
 				}
 			],
+			"hasToken": true,
 			"senseTags": [
 				"D"
+			],
+			"miscTags": [
+				"RW"
+			]
+		},
+		{
+			"name": "Iron Defender",
+			"source": "UAArtificerRevisited",
+			"page": 11,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "equal to five times your level in this class + your Intelligence modifier + the iron defender's Constitution modifier"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 4,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages you speak"
+			],
+			"trait": [
+				{
+					"name": "Might of the Master",
+					"entries": [
+						"The following numbers increase by 1 when your proficiency bonus increases by 1: the iron defender's skill bonuses, the bonuses to hit and damage of its bite, and the number of hit points restored by its Repair action."
+					]
+				},
+				{
+					"name": "Vigilant",
+					"entries": [
+						"The iron defender can't be surprised."
+					]
+				}
+			],
+			"actionNote": "Requires Your Bonus Action",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + 2} piercing damage."
+					]
+				},
+				{
+					"name": "Repair (3/Day)",
+					"entries": [
+						"The magical mechanisms inside the iron defender restore {@dice 2d8 + 2} hit points to itself or to one construct or object within 5 feet of it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Defensive Pounce",
+					"entries": [
+						"The iron defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the iron defender."
+					]
+				}
+			],
+			"hasToken": true,
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]
