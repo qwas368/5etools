@@ -98,6 +98,9 @@ class RacesPage extends ListPage {
 			{
 				uniqueId: race.uniqueId ? race.uniqueId : rcI,
 				isExcluded
+			},
+			{
+				translate_name: race.translate_name
 			}
 		);
 

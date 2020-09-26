@@ -37,8 +37,8 @@ class SpellsPage {
 		const range = Parser.spRangeToFull(spell.range);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border">
-			<span class="bold col-2-9 pl-0">${spell.name}</span>
-			<span class="col-1-5 text-center">${Parser.spLevelToFull(spell.level)}${spell.meta && spell.meta.ritual ? " (rit.)" : ""}${spell.meta && spell.meta.technomagic ? " (tec.)" : ""}</span>
+			<span class="bold col-2-9 pl-0">${spell.translate_name || spell.name}</span>
+			<span class="col-1-5">${Parser.spLevelToFull(spell.level)}${spell.meta && spell.meta.ritual ? " (儀.)" : ""}${spell.meta && spell.meta.technomagic ? " (科.)" : ""}</span>
 			<span class="col-1-7 text-center">${time}</span>
 			<span class="col-1-2 school_${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
 			<span class="col-0-6 text-center" title="Concentration">${concentration}</span>
@@ -90,9 +90,9 @@ class SpellsPage {
 		const range = Parser.spRangeToFull(spell.range);
 
 		const $ele = $(`<li class="row">
-			<a href="#${UrlUtil.autoEncodeHash(spell)}" title="${spell.name}" class="lst--border">
-				<span class="bold col-3-2 pl-0">${spell.name}</span>
-				<span class="capitalise col-1-5 text-center">${Parser.spLevelToFull(spell.level)}</span>
+			<a href="#${UrlUtil.autoEncodeHash(spell)}" title="${spell.translate_name || spell.name}" class="lst--border">
+				<span class="bold col-3-2 pl-0">${spell.translate_name || spell.name}</span>
+				<span class="capitalise col-1-5">${Parser.spLevelToFull(spell.level)}</span>
 				<span class="col-1-8 text-center">${time}</span>
 				<span class="capitalise col-1-6 school_${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
 				<span class="concentration--sublist col-0-7 text-center" title="Concentration">${concentration}</span>
@@ -137,7 +137,7 @@ class SpellsPage {
 		}
 
 		const statTab = Renderer.utils.tabButton(
-			"Spell",
+			"法術",
 			() => {},
 			buildStatsTab
 		);
@@ -147,7 +147,7 @@ class SpellsPage {
 			buildFluffTab
 		);
 		const picTab = Renderer.utils.tabButton(
-			"Images",
+			"插圖",
 			() => {},
 			buildFluffTab.bind(null, true)
 		);
@@ -203,26 +203,26 @@ async function pPostLoad () {
 		"Spells",
 		spellList,
 		{
-			name: {name: "Name", transform: true},
-			source: {name: "Source", transform: (it) => `<span class="${Parser.sourceJsonToColor(it)}" title="${Parser.sourceJsonToFull(it)}" ${BrewUtil.sourceJsonToStyle(it.source)}>${Parser.sourceJsonToAbv(it)}</span>`},
-			level: {name: "Level", transform: (it) => Parser.spLevelToFull(it)},
-			time: {name: "Casting Time", transform: (it) => PageFilterSpells.getTblTimeStr(it[0])},
-			duration: {name: "Duration", transform: (it) => Parser.spDurationToFull(it)},
-			_school: {name: "School", transform: (sp) => `<span class="school_${sp.school}" ${Parser.spSchoolAbvToStyle(sp.school)}>${Parser.spSchoolAndSubschoolsAbvsToFull(sp.school, sp.subschools)}</span>`},
-			range: {name: "Range", transform: (it) => Parser.spRangeToFull(it)},
-			_components: {name: "Components", transform: (sp) => Parser.spComponentsToFull(sp.components, sp.level)},
+			name: {name: "名稱", transform: true},
+			source: {name: "資源", transform: (it) => `<span class="${Parser.sourceJsonToColor(it)}" title="${Parser.sourceJsonToFull(it)}" ${BrewUtil.sourceJsonToStyle(it.source)}>${Parser.sourceJsonToAbv(it)}</span>`},
+			level: {name: "環階", transform: (it) => Parser.spLevelToFull(it)},
+			time: {name: "施法時間", transform: (it) => PageFilterSpells.getTblTimeStr(it[0])},
+			duration: {name: "持續時間", transform: (it) => Parser.spDurationToFull(it)},
+			_school: {name: "學派", transform: (sp) => `<span class="school_${sp.school}" ${Parser.spSchoolAbvToStyle(sp.school)}>${Parser.spSchoolAndSubschoolsAbvsToFull(sp.school, sp.subschools)}</span>`},
+			range: {name: "射程", transform: (it) => Parser.spRangeToFull(it)},
+			_components: {name: "構材", transform: (sp) => Parser.spComponentsToFull(sp.components, sp.level)},
 			_classes: {
-				name: "Classes",
+				name: "職業",
 				transform: (sp) => {
 					const fromClassList = Renderer.spell.getCombinedClasses(sp, "fromClassList");
 					return Parser.spMainClassesToFull(fromClassList);
 				}
 			},
-			entries: {name: "Text", transform: (it) => Renderer.get().render({type: "entries", entries: it}, 1), flex: 3},
-			entriesHigherLevel: {name: "At Higher Levels", transform: (it) => Renderer.get().render({type: "entries", entries: (it || [])}, 1), flex: 2}
+			entries: {name: "內容", transform: (it) => Renderer.get().render({type: "entries", entries: it}, 1), flex: 3},
+			entriesHigherLevel: {name: "升環效果", transform: (it) => Renderer.get().render({type: "entries", entries: (it || [])}, 1), flex: 2}
 		},
 		{generator: ListUtil.basicFilterGenerator},
-		(a, b) => SortUtil.ascSort(a.name, b.name) || SortUtil.ascSort(a.source, b.source)
+		(a, b) => SortUtil.ascSort(a.level, b.level) || SortUtil.ascSort(a.name, b.name)
 	);
 }
 
@@ -263,8 +263,8 @@ async function pPageInit (loadedSources) {
 	spellBookView = new BookModeView({
 		hashKey: "bookview",
 		$openBtn: $(`#btn-spellbook`),
-		noneVisibleMsg: "If you wish to view multiple spells, please first make a list",
-		pageTitle: "Spells Book View",
+		noneVisibleMsg: "如果你想要一次檢視多個法術，請先創造一份清單",
+		pageTitle: "法術 - 書頁檢視",
 		popTblGetNumShown: ($wrpContent, $dispName, $wrpControls) => {
 			const toShow = ListUtil.getSublistedIds().map(id => spellList[id])
 				.sort((a, b) => SortUtil.ascSortLower(a.name, b.name));
@@ -278,8 +278,8 @@ async function pPageInit (loadedSources) {
 			const lastOrder = StorageUtil.syncGetForPage(SpellsPage._BOOK_VIEW_MODE_K);
 
 			const $selSortMode = $(`<select class="form-control">
-				<option value="0">Spell Level</option>
-				<option value="1">Alphabetical</option>
+				<option value="0">法術環階</option>
+				<option value="1">名稱</option>
 			</select>`)
 				.change(() => {
 					if (!toShow.length && Hist.lastLoadedId != null) return;
@@ -338,6 +338,8 @@ async function pPageInit (loadedSources) {
 	await BrewUtil.pAddLocalBrewData(); // load local homebrew, so we can add any local spell classes
 	BrewUtil.bind({pHandleBrew: null}); // unbind temporary handler
 	Renderer.spell.populateHomebrewClassLookup(homebrew);
+
+	list.sort("level");
 }
 
 let spellList = [];

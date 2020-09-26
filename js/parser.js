@@ -728,7 +728,7 @@ Parser.spSchoolAndSubschoolsAbvsToFull = function (school, subschools) {
 
 Parser.spSchoolAbvToFull = function (schoolOrSubschool) {
 	const out = Parser._parse_aToB(Parser.SP_SCHOOL_ABV_TO_FULL, schoolOrSubschool);
-	if (Parser.SP_SCHOOL_ABV_TO_FULL[schoolOrSubschool]) return out;
+	if (Parser.SP_SCHOOL_ABV_TO_FULL[schoolOrSubschool]) return (schoolOrSubschool===SKL_ABV_PSI)? out: `${out}系`;
 	if (BrewUtil.homebrewMeta && BrewUtil.homebrewMeta.spellSchools && BrewUtil.homebrewMeta.spellSchools[schoolOrSubschool]) return BrewUtil.homebrewMeta.spellSchools[schoolOrSubschool].full;
 	return out;
 };
@@ -764,8 +764,8 @@ Parser.getOrdinalForm = function (i) {
 };
 
 Parser.spLevelToFull = function (level) {
-	if (level === 0) return "Cantrip";
-	else return Parser.getOrdinalForm(level);
+	if (level === 0) return "戲法";
+	else return `${level}環`;//Parser.getOrdinalForm(level);
 };
 
 Parser.getArticle = function (str) {
@@ -794,14 +794,15 @@ Parser.spMetaToFull = function (meta) {
 };
 
 Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools) {
-	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : `${Parser.spLevelToFull(level)}-level`;
-	const levelSchoolStr = level === 0 ? `${Parser.spSchoolAbvToFull(school)} ${levelPart}` : `${levelPart} ${Parser.spSchoolAbvToFull(school).toLowerCase()}`;
+	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : `${Parser.spLevelToFull(level)}`;
+	const levelSchoolStr = level === 0 ? `${levelPart} ${Parser.spSchoolAbvToFull(school)}` : `${levelPart} ${Parser.spSchoolAbvToFull(school).toLowerCase()}`;
 
+	const meta_tagName = {"ritual":"儀式", "technomagic": "科技魔法"};
 	const metaArr = Parser.spMetaToArr(meta);
 	if (metaArr.length || (subschools && subschools.length)) {
 		const metaAndSubschoolPart = [
 			(subschools || []).map(sub => Parser.spSchoolAbvToFull(sub)).join(", "),
-			metaArr.join(", ")
+			metaArr.map(tag=>{return meta_tagName[tag]||tag;}).join(", ")
 		].filter(Boolean).join("; ").toLowerCase();
 		return `${levelSchoolStr} (${metaAndSubschoolPart})`;
 	}
@@ -813,8 +814,11 @@ Parser.spTimeListToFull = function (times, isStripTags) {
 };
 
 Parser.getTimeToFull = function (time) {
-	return `${time.number} ${time.unit === "bonus" ? "bonus action" : time.unit}${time.number > 1 ? "s" : ""}`;
+	return `${time.number} ${Parser.SP_TIME_SINGLETONS.includes(time.unit) && time.unit!=Parser.SP_TM_ROUND ? "個" : ""}${Parser.TIME_UNIT_TARNSLATE[time.unit] || time.unit}`;
 };
+Parser.TIME_UNIT_TARNSLATE = {
+	"bonus": "附贈動作", "action": "動作", "reaction": "反應", "round": "輪", "minute": "分鐘", "hour": "小時"
+}
 
 RNG_SPECIAL = "special";
 RNG_POINT = "point";
@@ -831,7 +835,7 @@ RNG_UNLIMITED = "unlimited";
 RNG_UNLIMITED_SAME_PLANE = "plane";
 RNG_TOUCH = "touch";
 Parser.SP_RANGE_TYPE_TO_FULL = {
-	[RNG_SPECIAL]: "Special",
+	[RNG_SPECIAL]: "特殊",
 	[RNG_POINT]: "Point",
 	[RNG_LINE]: "Line",
 	[RNG_CUBE]: "Cube",
@@ -840,11 +844,11 @@ Parser.SP_RANGE_TYPE_TO_FULL = {
 	[RNG_SPHERE]: "Sphere",
 	[RNG_HEMISPHERE]: "Hemisphere",
 	[RNG_CYLINDER]: "Cylinder",
-	[RNG_SELF]: "Self",
-	[RNG_SIGHT]: "Sight",
-	[RNG_UNLIMITED]: "Unlimited",
+	[RNG_SELF]: "自身",
+	[RNG_SIGHT]: "視線",
+	[RNG_UNLIMITED]: "無限",
 	[RNG_UNLIMITED_SAME_PLANE]: "Unlimited on the same plane",
-	[RNG_TOUCH]: "Touch"
+	[RNG_TOUCH]: "觸碰"
 };
 
 Parser.spRangeTypeToFull = function (range) {
@@ -854,8 +858,8 @@ Parser.spRangeTypeToFull = function (range) {
 UNT_FEET = "feet";
 UNT_MILES = "miles";
 Parser.SP_DIST_TYPE_TO_FULL = {
-	[UNT_FEET]: "Feet",
-	[UNT_MILES]: "Miles",
+	[UNT_FEET]: "呎",
+	[UNT_MILES]: "哩",
 	[RNG_SELF]: Parser.SP_RANGE_TYPE_TO_FULL[RNG_SELF],
 	[RNG_TOUCH]: Parser.SP_RANGE_TYPE_TO_FULL[RNG_TOUCH],
 	[RNG_SIGHT]: Parser.SP_RANGE_TYPE_TO_FULL[RNG_SIGHT],
@@ -951,18 +955,22 @@ Parser.spRangeToFull._renderPoint = function (range) {
 		case UNT_FEET:
 		case UNT_MILES:
 		default:
-			return `${dist.amount} ${dist.amount === 1 ? Parser.getSingletonUnit(dist.type) : dist.type}`;
+			return `${dist.amount} ${Parser.getSingletonUnit(dist.type)}`;
 	}
 };
 Parser.spRangeToFull._renderArea = function (range) {
 	const size = range.distance;
-	return `Self (${size.amount}-${Parser.getSingletonUnit(size.type)}${Parser.spRangeToFull._getAreaStyleString(range)}${range.type === RNG_CYLINDER ? `${size.amountSecondary != null && size.typeSecondary != null ? `, ${size.amountSecondary}-${Parser.getSingletonUnit(size.typeSecondary)}-high` : ""} cylinder` : ""})`;
+	return `自身 (${size.amount}${Parser.getSingletonUnit(size.type)}${Parser.spRangeToFull._getAreaStyleString(range)}${range.type === RNG_CYLINDER ? `${size.amountSecondary != null && size.typeSecondary != null ? `, ${size.amountSecondary}-${Parser.getSingletonUnit(size.typeSecondary)}-高` : ""} 圓柱` : ""})`;
 };
 Parser.spRangeToFull._getAreaStyleString = function (range) {
 	switch (range.type) {
-		case RNG_SPHERE: return " radius";
-		case RNG_HEMISPHERE: return `-radius ${range.type}`;
-		case RNG_CYLINDER: return "-radius";
+		case RNG_RADIUS:
+		case RNG_CYLINDER:
+		case RNG_SPHERE: return "半徑";
+		case RNG_HEMISPHERE: return `半徑半球`;
+		case RNG_CONE: return `錐形`;
+		case RNG_LINE: return `直線`;
+		case RNG_CUBE: return `立方`;
 		default: return ` ${range.type}`;
 	}
 };
@@ -970,9 +978,9 @@ Parser.spRangeToFull._getAreaStyleString = function (range) {
 Parser.getSingletonUnit = function (unit, isShort) {
 	switch (unit) {
 		case UNT_FEET:
-			return isShort ? "ft." : "foot";
+			return isShort ? "呎" : "呎";
 		case UNT_MILES:
-			return isShort ? "mi." : "mile";
+			return isShort ? "哩" : "哩";
 		default: {
 			const fromBrew = MiscUtil.get(BrewUtil.homebrewMeta, "spellDistanceUnits", unit, "singular");
 			if (fromBrew) return fromBrew;
@@ -1009,18 +1017,18 @@ Parser.DIST_TYPES = [
 ];
 
 Parser.spComponentsToFull = function (comp, level) {
-	if (!comp) return "None";
+	if (!comp) return "無";
 	const out = [];
-	if (comp.v) out.push("V");
-	if (comp.s) out.push("S");
-	if (comp.m != null) out.push(`M${comp.m !== true ? ` (${comp.m.text != null ? comp.m.text : comp.m})` : ""}`);
-	if (comp.r) out.push(`R (${level} gp)`);
-	return out.join(", ") || "None";
+	if (comp.v) out.push("聲音");
+	if (comp.s) out.push("姿勢");
+	if (comp.m != null) out.push(`材料 ${comp.m !== true ? ` (${comp.m.text != null ? comp.m.text : comp.m})` : ""}`);
+	if (comp.r) out.push(`R (${level} 金幣)`);
+	return out.join(", ") || "無";
 };
 
 Parser.SP_END_TYPE_TO_FULL = {
-	"dispel": "dispelled",
-	"trigger": "triggered",
+	"dispel": "被解消",
+	"trigger": "被觸發",
 	"discharge": "discharged"
 };
 Parser.spEndTypeToFull = function (type) {
@@ -1032,18 +1040,18 @@ Parser.spDurationToFull = function (dur) {
 	const outParts = dur.map(d => {
 		switch (d.type) {
 			case "special":
-				return "Special";
+				return "特殊";
 			case "instant":
-				return `Instantaneous${d.condition ? ` (${d.condition})` : ""}`;
+				return `即效${d.condition ? ` (${d.condition})` : ""}`;
 			case "timed":
-				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : d.duration.upTo ? "U" : ""}${d.concentration || d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? d.duration.type : `${d.duration.type}s`}`;
+				return `${d.concentration ? "專注，" : ""}${d.concentration || d.duration.upTo ? "至多 " : ""}${d.duration.amount} ${Parser.TIME_UNIT_TARNSLATE[d.duration.type] || d.duration.type}`;
 			case "permanent": {
 				if (d.ends) {
 					const endsToJoin = d.ends.map(m => Parser.spEndTypeToFull(m));
 					hasSubOr = hasSubOr || endsToJoin.length > 1;
-					return `Until ${endsToJoin.joinConjunct(", ", " or ")}`;
+					return `直到${endsToJoin.joinConjunct(", ", " 或 ")}`;
 				} else {
-					return "Permanent";
+					return "永久";
 				}
 			}
 		}
@@ -1080,7 +1088,7 @@ Parser.spMainClassesToFull = function (fromClassList, textOnly = false) {
 		.map(c => ({hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c), c}))
 		.filter(it => !ExcludeUtil.isInitialised || !ExcludeUtil.isExcluded(it.hash, "class", it.c.source))
 		.sort((a, b) => SortUtil.ascSort(a.c.name, b.c.name))
-		.map(it => textOnly ? it.c.name : `<a title="Source: ${Parser.sourceJsonToFull(it.c.source)}" href="${UrlUtil.PG_CLASSES}#${it.hash}">${it.c.name}</a>`)
+		.map(it => textOnly ? it.c.name : `<a title="資源: ${Parser.sourceJsonToFull(it.c.source)}" href="${UrlUtil.PG_CLASSES}#${it.hash}">${Parser.translateMainClass(it.c.name)}</a>`)
 		.join(", ") || "";
 };
 
@@ -1108,14 +1116,14 @@ Parser.spSubclassesToFull = function (fromSubclassList, textOnly, subclassLookup
 };
 
 Parser._spSubclassItem = function (fromSubclass, textOnly, subclassLookup) {
-	const c = fromSubclass.class;
+	const c = fromSubclass.class; const c_name = Parser.translateMainClass(c.name);
 	const sc = fromSubclass.subclass;
 	const text = `${sc.name}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
 	if (textOnly) return text;
-	const classPart = `<a href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}" title="Source: ${Parser.sourceJsonToFull(c.source)}">${c.name}</a>`;
+	const classPart = `<a href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}" title="資源: ${Parser.sourceJsonToFull(c.source)}">${c.name}</a>`;
 	const fromLookup = subclassLookup ? MiscUtil.get(subclassLookup, c.source, c.name, sc.source, sc.name) : null;
-	if (fromLookup) return `<a class="italic" href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: {shortName: sc.name, source: sc.source}})}" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}</a> ${classPart}`;
-	else return `<span class="italic" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}</span> ${classPart}`;
+	if (fromLookup) return `<a href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: {shortName: sc.name, source: sc.source}})}" title="資源: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}-${c_name}</a>`;
+	else return `<span title="資源: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}-${c_name}</span>`;
 };
 
 Parser.SPELL_ATTACK_TYPE_TO_FULL = {};
@@ -1841,7 +1849,7 @@ Parser.SKL_ABVS = [
 	SKL_ABV_ILL,
 	SKL_ABV_NEC,
 	SKL_ABV_PSI,
-	SKL_ABV_TRA
+	SKL_ABV_TRA,
 ];
 
 Parser.SP_TM_ACTION = "action";
@@ -1882,15 +1890,15 @@ Parser.spTimeToShort = function (time, isHtml) {
 		: `${time.number} ${isHtml ? `<span class="ve-small">` : ""}${Parser.spTimeUnitToAbv(time.unit)}${isHtml ? `</span>` : ""}${time.condition ? "*" : ""}`;
 };
 
-SKL_ABJ = "Abjuration";
-SKL_EVO = "Evocation";
-SKL_ENC = "Enchantment";
-SKL_ILL = "Illusion";
-SKL_DIV = "Divination";
-SKL_NEC = "Necromancy";
-SKL_TRA = "Transmutation";
-SKL_CON = "Conjuration";
-SKL_PSI = "Psionic";
+SKL_ABJ = "防護";
+SKL_EVO = "塑能";
+SKL_ENC = "惑控";
+SKL_ILL = "幻術";
+SKL_DIV = "預言";
+SKL_NEC = "死靈";
+SKL_TRA = "變化";
+SKL_CON = "咒法";
+SKL_PSI = "靈能";
 
 Parser.SP_SCHOOL_ABV_TO_FULL = {};
 Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ABJ] = SKL_ABJ;
@@ -1903,8 +1911,8 @@ Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_TRA] = SKL_TRA;
 Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_CON] = SKL_CON;
 Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_PSI] = SKL_PSI;
 
-Parser.SP_SCHOOL_ABV_TO_SHORT = {};
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ABJ] = "Abj.";
+Parser.SP_SCHOOL_ABV_TO_SHORT = Parser.SP_SCHOOL_ABV_TO_FULL;
+/*Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ABJ] = "Abj.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_EVO] = "Evoc.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ENC] = "Ench.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ILL] = "Illu.";
@@ -1912,7 +1920,7 @@ Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_DIV] = "Divin.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_NEC] = "Necro.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_TRA] = "Trans.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_CON] = "Conj.";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_PSI] = "Psi.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_PSI] = "Psi.";*/
 
 Parser.ATB_ABV_TO_FULL = {
 	"str": "力量",
@@ -2260,9 +2268,9 @@ Parser.SOURCE_JSON_TO_FULL[SRC_WDH] = "Waterdeep: Dragon Heist";
 Parser.SOURCE_JSON_TO_FULL[SRC_WDMM] = "Waterdeep: Dungeon of the Mad Mage";
 Parser.SOURCE_JSON_TO_FULL[SRC_GGR] = "拉尼卡的公會長指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_KKW] = "Krenko's Way";
-Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "Lost Laboratory of Kwalish";
+Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "夸力許的失落實驗室";
 Parser.SOURCE_JSON_TO_FULL[SRC_GoS] = "鹽沼幽靈";
-Parser.SOURCE_JSON_TO_FULL[SRC_AI] = "Acquisitions Incorporated";
+Parser.SOURCE_JSON_TO_FULL[SRC_AI] = "艾奎茲玄股份有限公司";
 Parser.SOURCE_JSON_TO_FULL[SRC_OoW] = "The Orrery of the Wanderer";
 Parser.SOURCE_JSON_TO_FULL[SRC_ESK] = "Essentials Kit";
 Parser.SOURCE_JSON_TO_FULL[SRC_DIP] = "Dragon of Icespire Peak";
@@ -2274,7 +2282,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_BGDIA] = "Baldur's Gate: Descent Into Avernus";
 Parser.SOURCE_JSON_TO_FULL[SRC_LR] = "洛卡魚人的崛起";
 Parser.SOURCE_JSON_TO_FULL[SRC_AL] = "冒險者聯盟";
 Parser.SOURCE_JSON_TO_FULL[SRC_SAC] = "智者建言彙編";
-Parser.SOURCE_JSON_TO_FULL[SRC_ERLW] = "Eberron: Rising from the Last War";
+Parser.SOURCE_JSON_TO_FULL[SRC_ERLW] = "艾伯倫: Rising from the Last War";
 Parser.SOURCE_JSON_TO_FULL[SRC_EFR] = "Eberron: Forgotten Relics";
 Parser.SOURCE_JSON_TO_FULL[SRC_RMBRE] = "The Lost Dungeon of Rickedness: Big Rick Energy";
 Parser.SOURCE_JSON_TO_FULL[SRC_RMR] = "Dungeons & Dragons vs. Rick and Morty: Basic Rules";
@@ -2282,12 +2290,12 @@ Parser.SOURCE_JSON_TO_FULL[SRC_MFF] = "Mordenkainen's Fiendish Folio";
 Parser.SOURCE_JSON_TO_FULL[SRC_AWM] = "Adventure with Muk";
 Parser.SOURCE_JSON_TO_FULL[SRC_IMR] = "Infernal Machine Rebuild";
 Parser.SOURCE_JSON_TO_FULL[SRC_SADS] = "Sapphire Anniversary Dice Set";
-Parser.SOURCE_JSON_TO_FULL[SRC_EGW] = "Explorer's Guide to Wildemount";
+Parser.SOURCE_JSON_TO_FULL[SRC_EGW] = "荒洲探索指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_ToR] = "Tide of Retribution";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_DD] = "Dangerous Designs";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_FS] = "Frozen Sick";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_US] = "Unwelcome Spirits";
-Parser.SOURCE_JSON_TO_FULL[SRC_MOT] = "Mythic Odysseys of Theros";
+Parser.SOURCE_JSON_TO_FULL[SRC_MOT] = "塞洛斯的神話奧德賽";
 Parser.SOURCE_JSON_TO_FULL[SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[SRC_ALCoS] = `${AL_PREFIX}Curse of Strahd`;
 Parser.SOURCE_JSON_TO_FULL[SRC_ALEE] = `${AL_PREFIX}Elemental Evil`;
@@ -2846,7 +2854,7 @@ Parser.DMGTYPE_JSON_TO_FULL = {
 	"T": "thunder"
 };
 
-Parser.DMG_TYPES = ["acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder"];
+Parser.DMG_TYPES = ["bludgeoning", "piercing", "slashing", "acid", "cold", "fire", "force", "lightning", "necrotic", "poison", "psychic", "radiant", "thunder"];
 Parser.CONDITIONS = ["blinded", "charmed", "deafened", "exhaustion", "frightened", "grappled", "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned", "unconscious"];
 
 Parser.SKILL_JSON_TO_FULL = {
@@ -2916,19 +2924,85 @@ Parser.SKILL_JSON_TO_FULL = {
 
 Parser.SENSE_JSON_TO_FULL = {
 	"blindsight": [
-		"A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense."
+		"具有盲視的生物即使不依賴視覺也可以感知其周遭特定半徑範圍內的環境。沒有眼睛的生物（像是泥怪）、以及具有回聲定位或高敏感官的生物（像是蝙蝠和真龍）都具有這種感官。"
 	],
 	"darkvision": [
-		"Many creatures in fantasy gaming worlds, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in dim light as if it were bright light and in darkness as if it were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in that darkness, only shades of gray."
+		"奇幻遊戲世界中的許多生物，特別是那些居住於地底的生物，都具有黑暗視覺。在特定半徑範圍內，具有黑暗視覺的生物可以將微光光照視作明亮光照，並將黑暗環境視作微光光照，因此黑暗環境對於這些生物而言僅會被輕度遮蔽。然而，這些生物無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 	],
 	"tremorsense": [
-		"A creature with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the creature and the source of the vibrations are in contact with the same ground or substance. Tremorsense can't be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs and umber hulks, have this special sense."
+		"只要具有震顫感知的生物與震動來源都接觸著相同的地表或物質，該生物可以感知並精準定位其特定半徑範圍內的震動來源。震顫感知並不能被用以偵測飛行或虛體生物。許多掘穴生物，像是掘地蟲和土巨怪，都具有這種特殊的感官。"
 	],
 	"truesight": [
-		"A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane."
+		"具有真實視覺的生物在特定半徑範圍內，可以看透普通或魔法黑暗、看見隱形的生物和物體、自動偵測出視覺幻象並成功通過對抗它們的豁免檢定、並看穿變形者或被魔法變形的生物的原始型態。此外，這些生物也可以看見位於乙太位面的事物。"
 	]
 };
+alias(Parser.SENSE_JSON_TO_FULL, "blindsight", "盲視");
+alias(Parser.SENSE_JSON_TO_FULL, "darkvision", "黑暗視覺");
+alias(Parser.SENSE_JSON_TO_FULL, "tremorsense", "震顫感知");
+alias(Parser.SENSE_JSON_TO_FULL, "truesight", "真實視覺");
 
 Parser.NUMBERS_ONES = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 Parser.NUMBERS_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 Parser.NUMBERS_TEENS = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+
+Parser.translate = (dict, key) => { return dict[key.toLowerCase()]? dict[key.toLowerCase()]: key; };
+
+Parser.translateDmgType = it => Parser.translate(Parser.DMG_TYPE_TO_TRANS, it);
+Parser.DMG_TYPE_TO_TRANS = {
+	"acid": "酸蝕",
+	"bludgeoning": "鈍擊",
+	"cold": "寒冰",
+	"fire": "火焰",
+	"force": "力場",
+	"lightning": "閃電",
+	"necrotic": "死靈",
+	"piercing": "穿刺",
+	"poison": "毒素",
+	"psychic": "精神",
+	"radiant": "光耀",
+	"slashing": "劈砍",
+	"thunder": "雷鳴"
+};
+
+Parser.translateMainClass = function(it){
+	var text_arr = extractBrackets(it);
+	var className = Parser.translate(Parser.MAIN_CLASS_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join(""): "";
+	return className+appendix;
+}
+Parser.translateSubClass = function(it){
+	var text_arr = it.split(":").map(t=>t.trim());
+	var subtext_arr = extractBrackets(text_arr[1]); if(subtext_arr.length>1) console.log(text_arr[1], subtext_arr);
+	var mainClass = Parser.translateMainClass(text_arr[0]);
+	var subClass = Parser.translate(Parser.SUB_CLASS_TO_TRANS, subtext_arr[0]);
+	var subClass_append = (subtext_arr.length>1)? (subtext_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join("")): "";
+	if(!Parser.SUB_CLASS_TO_TRANS[subtext_arr[0].toLowerCase()]) console.log(mainClass+" -> "+subtext_arr[0].toLowerCase())
+	return `${mainClass}: ${subClass+subClass_append}`;
+}
+Parser.MAIN_CLASS_TO_TRANS = {
+	"artificer": "奇械師",
+	"barbarian": "野蠻人",
+	"bard": "吟遊詩人",
+	"cleric": "牧師",
+	"druid": "德魯伊",
+	"fighter": "戰士",
+	"paladin": "聖騎士",
+	"ranger": "遊俠",
+	"rogue": "盜賊",
+	"sorcerer": "術士",
+	"warlock": "契術師",
+	"wizard": "法師"
+};
+Parser.SUB_CLASS_TO_TRANS = {
+	"eldritch knight": "魔能騎士", "arcane archer": "魔射手",
+	"arcane trickster": "詭術師",
+	"ancestral guardian": "先祖守衛", "totem warrior": "圖騰勇士",
+	"divine soul": "神聖之魂", "favored soul v2": "恩惠之魂 v2", "favored soul v3": "恩惠之魂 v3", "giant soul": "巨人之魂",
+}
+
+Parser.MISC_TO_TRANS = {
+	"revisited": "再製", "revised": "修訂"
+}
+
+function extractBrackets(text){ return text.split(/[()]/).map(t=>t.trim()).filter(t=>!!t);}
+function alias(object, key, alias){ object[alias]=object[key]; }

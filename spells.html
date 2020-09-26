@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tw">
 
 <head>
 	<!--5ETOOLS_CMP-->
@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>Spells - 5etools</title>
+	<title>法術 - 5etools</title>
 
 	<link rel="manifest" href="manifest.webmanifest">
 
@@ -48,8 +48,8 @@
 
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container">
-			<h1 class="page__title">Spells</h1>
-			<p class="page__subtitle">Search by name on the left, click spell name to display on the right.</p>
+			<h1 class="page__title">法術</h1>
+			<p class="page__subtitle">使用左側的名稱搜尋，點擊法術名稱以在右側顯示。</p>
 		</div>
 	</header>
 
@@ -65,16 +65,16 @@
 						<div id="lst__search-glass" class="lst__wrp-search-glass no-events flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>
 						<div class="lst__wrp-search-visible no-events flex-vh-center"></div>
 					</div>
-					<button class="btn btn-default" id="reset">Reset</button>
+					<button class="btn btn-default" id="reset">重置</button>
 				</div>
 				<div id="filtertools" class="sortlabel input-group input-group--bottom flex no-shrink">
-					<button class="col-2-9 sort btn btn-default btn-xs" data-sort="name">Name <span class="caret_wrp"></span></button>
-					<button class="col-1-5 sort btn btn-default btn-xs" data-sort="level">Level <span class="caret_wrp"></span></button>
-					<button class="col-1-7 sort btn btn-default btn-xs" data-sort="time">Time <span class="caret_wrp"></span></button>
-					<button class="col-1-2 sort btn btn-default btn-xs" data-sort="school">School <span class="caret_wrp"></span></button>
-					<button class="col-0-6 sort btn btn-default btn-xs" data-sort="concentration" title="Concentration">C. <span class="caret_wrp"></span></button>
-					<button class="col-2-4 sort btn btn-default btn-xs" data-sort="range">Range <span class="caret_wrp"></span></button>
-					<button class="sort btn btn-default btn-xs ve-grow" data-sort="source">Source <span class="caret_wrp"></span></button>
+					<button class="col-2-9 sort btn btn-default btn-xs" data-sort="name">名稱 <span class="caret_wrp"></span></button>
+					<button class="col-1-5 sort btn btn-default btn-xs" data-sort="level">環階 <span class="caret_wrp"></span></button>
+					<button class="col-1-7 sort btn btn-default btn-xs" data-sort="time">時間 <span class="caret_wrp"></span></button>
+					<button class="col-1-2 sort btn btn-default btn-xs" data-sort="school">學派 <span class="caret_wrp"></span></button>
+					<button class="col-0-6 sort btn btn-default btn-xs" data-sort="concentration" title="專注">專. <span class="caret_wrp"></span></button>
+					<button class="col-2-4 sort btn btn-default btn-xs" data-sort="range">射程 <span class="caret_wrp"></span></button>
+					<button class="sort btn btn-default btn-xs ve-grow" data-sort="source">資源 <span class="caret_wrp"></span></button>
 				</div>
 
 				<ul class="list list--stats spells">
@@ -85,12 +85,12 @@
 			<div id="contentwrapper" class="view-col" style="flex: 5">
 				<div id="sublistcontainer" class="sublist sublist--resizable">
 					<div id="sublistsort" class="sortlabel btn-group sublist__wrp-cols">
-						<button class="col-3-2 sort btn btn-default btn-xs" data-sort="name">Name <span class="caret_wrp"></span></button>
-						<button class="col-1-5 sort btn btn-default btn-xs" data-sort="level">Level <span class="caret_wrp"></span></button>
-						<button class="col-1-8 sort btn btn-default btn-xs" data-sort="time">Time <span class="caret_wrp"></span></button>
-						<button class="col-1-6 sort btn btn-default btn-xs" data-sort="school">School <span class="caret_wrp"></span></button>
-						<button class="col-0-7 sort btn btn-default btn-xs" data-sort="concentration" title="Concentration">C. <span class="caret_wrp"></span></button>
-						<button class="col-3-2 sort btn btn-default btn-xs" data-sort="range">Range <span class="caret_wrp"></span></button>
+						<button class="col-3-2 sort btn btn-default btn-xs" data-sort="name">名稱 <span class="caret_wrp"></span></button>
+						<button class="col-1-5 sort btn btn-default btn-xs" data-sort="level">環階 <span class="caret_wrp"></span></button>
+						<button class="col-1-8 sort btn btn-default btn-xs" data-sort="time">時間 <span class="caret_wrp"></span></button>
+						<button class="col-1-6 sort btn btn-default btn-xs" data-sort="school">學派 <span class="caret_wrp"></span></button>
+						<button class="col-0-7 sort btn btn-default btn-xs" data-sort="concentration" title="專注">專. <span class="caret_wrp"></span></button>
+						<button class="col-3-2 sort btn btn-default btn-xs" data-sort="range">射程 <span class="caret_wrp"></span></button>
 					</div>
 					<ul class="list subspells">
 						<!-- populate with JS -->
@@ -110,9 +110,9 @@
 				</div>
 
 				<div class="text-center wrp-footer-buttons">
-					<button class="btn btn-default btn-xs" id="btn-spellbook">Book View</button>
-					<button class="btn btn-default btn-xs" id="btn-show-table" title="View and Download Spells in Tabular Format">Table View</button>
-					<button class="btn btn-xs btn-info" id="manage-brew">Manage Homebrew</button>
+					<button class="btn btn-default btn-xs" id="btn-spellbook">書頁檢視</button>
+					<button class="btn btn-default btn-xs" id="btn-show-table" title="View and Download Spells in Tabular Format">表格檢視</button>
+					<button class="btn btn-xs btn-info" id="manage-brew">管理自製內容</button>
 				</div>
 			</div>
 		</div>

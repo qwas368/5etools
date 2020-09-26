@@ -2415,7 +2415,10 @@ Renderer.utils = {
 			<th class="rnd-name ${opts.extraThClasses ? opts.extraThClasses.join(" ") : ""}" colspan="6" ${dataPart}>
 				<div class="name-inner">
 					<div class="flex-v-center">
-						<span class="stats-name copyable" onmousedown="event.preventDefault()" onclick="Renderer.utils._pHandleNameClick(this)">${opts.prefix || ""}${it._displayName || it.translate_name || it.name}${opts.suffix || ""}</span>
+						<span class="stats-name">
+							<span class="copyable" onmousedown="event.preventDefault()" onclick="Renderer.utils._pHandleNameClick(this)">${opts.prefix || ""}${it._displayName || it.translate_name || it.name}${opts.suffix || ""}</span>
+							<span style='font-size:0.8em;'>${it.translate_name? it.name: ""}</span></span>
+						</span>
 						${opts.controlRhs || ""}
 						${ExtensionUtil.ACTIVE && opts.page ? `<button title="Send to Foundry (SHIFT for Temporary Import)" class="btn btn-xs btn-default btn-stats-name ml-2" onclick="ExtensionUtil.pDoSendStats(event, this)"><span class="glyphicon glyphicon-send"></span></button>` : ""}
 					</div>

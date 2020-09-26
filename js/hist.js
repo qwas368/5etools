@@ -32,8 +32,8 @@ class Hist {
 				if (toLoad === undefined) Hist._freshLoad();
 				else {
 					Hist.lastLoadedId = listItem.ix;
-					loadHash(listItem.ix);
-					document.title = `${listItem.name ? `${listItem.name} - ` : ""}5etools`;
+					loadHash(listItem.ix); console.log(listItem)
+					document.title = `${listItem.name ? `${listItem.translate_name || listItem.name} - ` : ""}5etools`;
 				}
 			}
 		}

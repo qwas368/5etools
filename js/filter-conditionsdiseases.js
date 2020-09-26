@@ -17,12 +17,17 @@ class PageFilterConditionsDiseases extends PageFilter {
 
 		this._sourceFilter = new SourceFilter();
 		this._typeFilter = new Filter({
-			header: "類型",
+			header: "Type",
+			displayHeader: "類型",
 			items: ["condition", "disease", "status"],
 			displayFn: PageFilterConditionsDiseases.getDisplayProp,
 			deselFn: (it) => it === "disease" || it === "status"
 		});
-		this._miscFilter = new Filter({header: "雜項", items: ["SRD"]});
+		this._miscFilter = new Filter({
+			header: "Miscellaneous",
+			displayHeader: "雜項",
+			items: ["SRD"]
+		});
 	}
 
 	mutateForFilters (it) {

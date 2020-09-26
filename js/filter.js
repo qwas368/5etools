@@ -486,7 +486,7 @@ class FilterBox extends ProxyBase {
 		UiUtil.addModalSep($modalInner);
 
 		UiUtil.$getAddModalRowHeader($modalInner, "在篩選器摘要上隱藏...", {helpText: "The summary is the small red and blue button panel which appear below the search bar."});
-		this._filters.forEach(f => UiUtil.$getAddModalRowCb($modalInner, f.header, this._minisHidden, f.header));
+		this._filters.forEach(f => UiUtil.$getAddModalRowCb($modalInner, (f.displayHeader||f.header), this._minisHidden, f.header));
 
 		UiUtil.addModalSep($modalInner);
 
@@ -811,7 +811,7 @@ class FilterBox extends ProxyBase {
 	}
 }
 FilterBox.EVNT_VALCHANGE = "valchange";
-FilterBox.SOURCE_HEADER = "資源";
+FilterBox.SOURCE_HEADER = "Source";
 FilterBox._PILL_STATES = ["ignore", "yes", "no"];
 FilterBox._COMBINE_MODES = ["and", "or", "custom"];
 FilterBox._STORAGE_KEY = "filterBoxState";
@@ -870,6 +870,7 @@ class FilterBase extends BaseComponent {
 		this._filterBox = null;
 
 		this.header = opts.header;
+		this.displayHeader = opts.displayHeader || null;
 		this._headerHelp = opts.headerHelp;
 
 		this.__meta = {...this.getDefaultMeta()};
@@ -877,7 +878,7 @@ class FilterBase extends BaseComponent {
 	}
 
 	_getRenderedHeader () {
-		return `<span ${this._headerHelp ? `title="${this._headerHelp.escapeQuotes()}" class="help--subtle"` : ""}>${this.header}</span>`;
+		return `<span ${this._headerHelp ? `title="${this._headerHelp.escapeQuotes()}" class="help--subtle"` : ""}>${this.displayHeader || this.header}</span>`;
 	}
 
 	set filterBox (it) { this._filterBox = it; }
@@ -1043,7 +1044,7 @@ class Filter extends FilterBase {
 		this._selFn = opts.selFn;
 		this._selFnCache = null;
 		this._deselFn = opts.deselFn;
-		this._itemSortFn = opts.itemSortFn === undefined ? SortUtil.ascSort : opts.itemSortFn;
+		this._itemSortFn = opts.itemSortFn === undefined ? null : opts.itemSortFn;
 		this._itemSortFnMini = opts.itemSortFnMini;
 		this._groupFn = opts.groupFn;
 		this._minimalUi = opts.minimalUi;
@@ -1545,13 +1546,15 @@ class Filter extends FilterBase {
 				if (nestMeta._$btnNest == null) {
 					// this can be restored from a saved state, otherwise, initialise it
 					if (this._nestsHidden[nestName] == null) this._nestsHidden[nestName] = !!nestMeta.isHidden;
+					//console.log(!!nestMeta.displayFn, nestName, nestMeta.displayFn(nestName));
+					const nestName_display = (nestMeta.displayFn)? nestMeta.displayFn(nestName): nestName;
 
 					const $btnText = $(`<span>${nestName} [${this._nestsHidden[nestName] ? "+" : "\u2212"}]</span>`);
 					nestMeta._$btnNest = $$`<div class="fltr__btn_nest">${$btnText}</div>`
 						.click(() => this._nestsHidden[nestName] = !this._nestsHidden[nestName]);
 
 					const hook = () => {
-						$btnText.text(`${nestName} [${this._nestsHidden[nestName] ? "+" : "\u2212"}]`);
+						$btnText.text(`${nestName_display} [${this._nestsHidden[nestName] ? "+" : "\u2212"}]`);
 
 						const stats = {high: 0, low: 0, total: 0};
 						this._items
@@ -1813,6 +1816,7 @@ class SourceFilter extends Filter {
 		opts = opts || {};
 
 		opts.header = opts.header === undefined ? FilterBox.SOURCE_HEADER : opts.header;
+		opts.displayHeader = opts.header === FilterBox.SOURCE_HEADER ? "資源" : opts.displayHeader? opts.displayHeader: opts.header;
 		opts.displayFn = opts.displayFn === undefined ? item => Parser.sourceJsonToFullCompactPrefix(item.item || item) : opts.displayFn;
 		opts.itemSortFn = opts.itemSortFn === undefined ? (a, b) => SortUtil.ascSortLower(Parser.sourceJsonToFull(a.item), Parser.sourceJsonToFull(b.item)) : opts.itemSortFn;
 		opts.groupFn = opts.groupFn === undefined ? SourceUtil.getFilterGroup : opts.groupFn;

@@ -224,7 +224,7 @@
 			]
 		},
 		{
-			"name": "Alarm", "translate_name": "",
+			"name": "Alarm", "translate_name": "警報術",
 			"source": "PHB",
 			"page": 211,
 			"srd": true,
@@ -246,7 +246,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a tiny bell and a piece of fine silver wire"
+				"m": "一個小鈴鐺和一小段銀線"
 			},
 			"duration": [
 				{
@@ -261,9 +261,9 @@
 				"ritual": true
 			},
 			"entries": [
-				"You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.",
-				"A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping.",
-				"An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet."
+				"你設置一個警報以對付不速之客。選擇射程內的一扇門、一扇窗、或是不超過20呎邊長立方體的區域。直到法術結束之前，每當體型為微型或更大的生物碰觸或進入被守護的區域，警報都會警告你。當你施放此法術時，你可以決定哪些生物不會觸發警報。你也決定該警報是精神警報的還是聲音警報。",
+				"精神警報會在你距離守護區域1哩內時藉著在你的意識中發出的尖銳聲響來警告你。若你正在沉睡，這個聲響將會把你叫醒。",
+				"聲音警報會在60呎範圍內製造出搖鈴的聲響，持續10秒鐘。"
 			],
 			"areaTags": [
 				"C"
@@ -324,7 +324,7 @@
 			]
 		},
 		{
-			"name": "Alter Self", "translate_name": "",
+			"name": "Alter Self", "translate_name": "變造自身",
 			"source": "PHB",
 			"page": 211,
 			"srd": true,
@@ -357,26 +357,26 @@
 				}
 			],
 			"entries": [
-				"You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.",
+				"你變換成一個不同的型態。當你施放此法術時，選擇以下其中一個選項，該效果將在法術持續期間持續存在。在此法術持續期間內，你可以使用一個動作結束該選項的效果，並得到另一個選項的好處。",
 				{
 					"type": "entries",
-					"name": "Aquatic Adaptation",
+					"name": "水中適應",
 					"entries": [
-						"You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed."
+						"你使你的身體適應水中環境，長出鰓以及手指間的蹼。你可以在水下呼吸，且獲得等同於你步行速度的游泳速度。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Change Appearance",
+					"name": "改變外貌",
 					"entries": [
-						"You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again."
+						"你改變了自己的外貌。你決定自己的外觀，包括你的身高、體重、面容細節、聲音、髮長、膚色、以及（可能有的）顯著特徵。你可以讓自己看起來像是其他種族的一員，但你的角色數值並不會因此改變。你也不能變成與你有著不同體型大小的生物，且你的基本身體輪廓保持原樣；舉例來說，如果你是兩足生物，則你不能使用此法術變為四足生物。在法術持續期間內的任何時候，你可以使用一個動作以這個方法再次改變外貌。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Natural Weapons",
+					"name": "天生武器",
 					"entries": [
-						"You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
+						"你長出利爪、獠牙、棘刺、角、或其他你所選擇的一種天生武器。你的徒手打擊將根據你所選的天生武器造成{@dice 1d6}鈍擊、穿刺、或劈砍傷害，且你熟練於你的徒手打擊。最後，該天生武器為魔法武器，且你在使用它進行攻擊時的攻擊檢定和傷害骰上具有+1加值。"
 					]
 				}
 			],
@@ -463,7 +463,7 @@
 			]
 		},
 		{
-			"name": "Animal Friendship", "translate_name": "",
+			"name": "Animal Friendship", "translate_name": "化獸為友",
 			"source": "PHB",
 			"page": 212,
 			"srd": true,
@@ -485,7 +485,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a morsel of food"
+				"m": "少量食物"
 			},
 			"duration": [
 				{
@@ -497,14 +497,14 @@
 				}
 			],
 			"entries": [
-				"This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be {@condition charmed} by you for the spell's duration. If you or one of your companions harms the target, the spell ends."
+				"此法術讓你使一頭野獸相信你無意傷害它。選擇射程內你所能看見的一頭野獸。牠必須要能看見和聽見你。如果該野獸的智力為4或更高，則此法術失敗。除此之外，該野獸必須成功通過一次睿知豁免，否則在法術持續時間內被你{@condition 魅惑}。如果你或你的其中一個同伴傷害該目標，則此法術結束。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
+						"當你使用2環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外影響一頭野獸作為目標。"
 					]
 				}
 			],
@@ -568,7 +568,7 @@
 			]
 		},
 		{
-			"name": "Animal Messenger", "translate_name": "",
+			"name": "Animal Messenger", "translate_name": "動物信使",
 			"source": "PHB",
 			"page": 212,
 			"srd": true,
@@ -590,7 +590,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a morsel of food"
+				"m": "少量食物"
 			},
 			"duration": [
 				{
@@ -605,15 +605,15 @@
 				"ritual": true
 			},
 			"entries": [
-				"By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.",
-				"When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell."
+				"透過此法術，你驅使一隻動物來為你傳遞訊息。選擇一個射程內你所能看見的微型野獸，像是松鼠、藍松鴉、或蝙蝠。你指定一個曾造訪過的地點以及一個符合籠統描述的接收者，像是「一個穿著城鎮守衛制服的男人或女人」或「一個帶著斑點帽的紅髮矮人」。你同時說出一句最多二十五個字的訊息。目標野獸將在法術持續期間前往指定的地點，會飛的信使將以每24小時50哩的速度前進、其他動物則為25哩。",
+				"當信使抵達目的地，牠將模仿你的聲音，把訊息傳遞給你所描述的生物。該信使只會對符合你所給描述的生物開口。若該信使在法術結束之前尚未抵達牠的目的地，則訊息將會遺失，且該野獸會回到你施放此法術的位置。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
+						"當你使用3環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，法術的持續時間就再增加48小時。"
 					]
 				}
 			],
@@ -655,7 +655,7 @@
 			]
 		},
 		{
-			"name": "Animal Shapes", "translate_name": "",
+			"name": "Animal Shapes", "translate_name": "動物化形",
 			"source": "PHB",
 			"page": 212,
 			"srd": true,
@@ -689,9 +689,9 @@
 				}
 			],
 			"entries": [
-				"Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.",
-				"The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target's game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked {@condition unconscious}. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak or cast spells.",
-				"The target's gear melds into the new form. The target can't activate, wield, or otherwise benefit from any of its equipment."
+				"你的魔法將其它生物轉變成野獸。選擇射程內任意個你所能看見的自願生物。你將每個目標轉變成挑戰等級為4或更低，體型為大型或更小的野獸。在後續的回合中，你可以使用你的動作以將受影響的生物變回它們原本的型態。",
+				"每個目標的轉變都將在法術持續期間內持續生效，或直到目標的生命值歸零或死亡。你可以為每個目標各自選擇不同的型態。目標的遊戲數據將被所選野獸的數據資料給取代，但目標保留它的陣營、智力、睿知、和魅力值。目標取用它新型態的生命值，且當它回復它原本的型態時，該生物將取回它轉變之前的生命值。若它是因為生命值歸零而回復，則任何溢出傷害都將被帶到它原本的型態，扣減它原本的生命值。只要這個溢出傷害沒有讓該生物原本型態的生命值歸零，它就不會因此被擊倒{@condition 昏迷}。該生物被限制只能進行它新型態天生所能進行的動作，且它無法說話、施放法術、或採取任何其他需要雙手或語言的動作。",
+				"目標的裝備將被融入新形態之中。目標無法啟動、使用、揮舞、或透過其他方式來從它的裝備獲得好處。"
 			],
 			"miscTags": [
 				"SGT"
@@ -709,7 +709,7 @@
 			}
 		},
 		{
-			"name": "Animate Dead", "translate_name": "",
+			"name": "Animate Dead", "translate_name": "活化死屍",
 			"source": "PHB",
 			"page": 212,
 			"srd": true,
@@ -731,7 +731,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a drop of blood, a piece of flesh, and a pinch of bone dust"
+				"m": "一滴血、一塊肉、以及一撮骨灰"
 			},
 			"duration": [
 				{
@@ -739,16 +739,16 @@
 				}
 			],
 			"entries": [
-				"This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a {@creature skeleton} if you chose bones or a {@creature zombie} if you chose a corpse (the DM has the creature's game statistics).",
-				"On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-				"The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
+				"此法術創造出一個不死生物僕從。選擇射程內一個中型或小型類人生物的骨骸或屍體。你的法術將汙穢的仿製生命能量注入目標，使它做為不死生物復活。若你選擇骨骸，則目標變成一個{@creature 骷髏}；若你選擇屍體，則目標變成一個{@creature 殭屍}（DM掌控這些生物的遊戲數據）。",
+				"在你的每個回合，你可以使用一個附贈動作以心靈命令任何你透過此法術創造，且距離你60呎內的生物（如果你控制了複數生物，你可以同時命令他們部分或全部，對它們下達相同的命令）。你決定該生物在它的下個回合間將採取的動作以及移動的位置，或者你可以下達一個籠統的命令，例如守衛一個特定的房間或走廊。若你沒有下達命令，則該生物只會在面對敵對生物時採取自我防衛。一旦接獲指令，該生物將會持續遵從該指令直到它的任務被完成。",
+				"該生物處於你的控制長達24小時，在這之後它將停止服從任何你給予的命令。若要再延續24小時對該生物的控制，則你必須在當前24小時的時段結束前再次對該生施放此法術。以這個用法使用此法術將會延續你對已經透過此法術喚起的最多四個生物的控制，而不會喚起新的生物。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
+						"當你使用4環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外喚起或延續控制二個不死生物。每個生物都必須來自不同的屍體或骨骸。"
 					]
 				}
 			],
@@ -824,7 +824,7 @@
 			]
 		},
 		{
-			"name": "Animate Objects", "translate_name": "",
+			"name": "Animate Objects", "translate_name": "活化物體",
 			"source": "PHB",
 			"page": 213,
 			"srd": true,
@@ -858,18 +858,18 @@
 				}
 			],
 			"entries": [
-				"Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can't animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.",
-				"As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+				"物體在你的命令之下活了過來。選擇射程內最多十個未被穿戴或攜帶的非魔法物體。中型的目標視作二個物體，大型的目標視作四個物體，巨型的目標視作八個物體。你不能活化任何體型超過巨型的物體。每個目標將活化並變成一個由你控制的生物，直到此法術結束或該生物的生命值歸零。",
+				"以一個附贈動作，若該生物距離你500呎內，則你可以用心靈命令它（如果你使用此法術控制了複數生物，你可以同時命令他們部分或全部，對它們下達相同的命令）。你決定該生物在它的下個回合間將採取的動作以及移動的位置，或者你可以下達一個籠統的命令，像是守衛一個特定的房間或走廊。若你沒有下達命令，則該生物只會在面對敵對生物時採取自我防衛，除此之外不採取其他動作。一旦接獲指令，該生物將會持續遵從該指令直到它的任務被完成。",
 				{
 					"type": "table",
 					"caption": "Animated Object Statistics",
 					"colLabels": [
-						"Size",
-						"HP",
+						"體型",
+						"生命值",
 						"AC",
-						"Attack",
-						"Str",
-						"Dex"
+						"攻擊",
+						"力量",
+						"敏捷"
 					],
 					"colStyles": [
 						"col-2",
@@ -881,56 +881,56 @@
 					],
 					"rows": [
 						[
-							"{@creature animated object (tiny)|phb|Tiny}",
+							"{@creature 活化物體(微型)|phb|微型}",
 							"20",
 							"18",
-							"{@hit +8} to hit, {@damage 1d4 + 4} damage",
-							"{@dice 1d20 - 3|4}",
-							"{@dice 1d20 + 4|18}"
+							"命中{@hit +8}，{@damage 1d4 + 4}傷害",
+							"{@dice 1d20-3|4}",
+							"{@dice 1d20+4|18}"
 						],
 						[
-							"{@creature animated object (small)|phb|Small}",
+							"{@creature 活化物體(小型)|phb|小型}",
 							"25",
 							"16",
-							"{@hit +6} to hit, {@damage 1d8 + 2} damage",
-							"{@dice 1d20 - 2|6}",
-							"{@dice 1d20 + 2|14}"
+							"命中{@hit +6}，{@damage 1d8 + 2}傷害",
+							"{@dice 1d20-2|6}",
+							"{@dice 1d20+2|14}"
 						],
 						[
-							"{@creature animated object (medium)|phb|Medium}",
+							"{@creature 活化物體(中型)|phb|中型}",
 							"40",
 							"13",
-							"{@hit +5} to hit, {@damage 2d6 + 1} damage",
+							"命中{@hit +5}，{@damage 2d6 + 1}傷害",
 							"{@dice 1d20|10}",
-							"{@dice 1d20 + 1|12}"
+							"{@dice 1d20+1|12}"
 						],
 						[
-							"{@creature animated object (large)|phb|Large}",
+							"{@creature 活化物體(大型)|phb|大型}",
 							"50",
 							"10",
-							"{@hit +6} to hit, {@damage 2d10 + 2} damage",
-							"{@dice 1d20 + 2|14}",
+							"命中{@hit +6}，{@damage 2d10 + 2}傷害",
+							"{@dice 1d20+2|14}",
 							"{@dice 1d20|10}"
 						],
 						[
-							"{@creature animated object (huge)|phb|Huge}",
+							"{@creature 活化物體(巨型)|phb|巨型}",
 							"80",
 							"10",
-							"{@hit +8} to hit, {@damage 2d12 + 4} damage",
-							"{@dice 1d20 + 4|18}",
-							"{@dice 1d20 - 3|6}"
+							"命中{@hit +8}，{@damage 2d12 + 4}傷害",
+							"{@dice 1d20+4|18}",
+							"{@dice 1d20-3|6}"
 						]
 					]
 				},
-				"An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
-				"If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form."
+				"一個活化物體是一個構裝體，且它的AC、生命值、攻擊、力量、和防禦根據它的體型決定。它的體質為10，智力和睿知為3，魅力為1。它的移動速度為30呎；若這個物體沒有腳或其他可用來移動的構造，則它將改為具有30呎的飛行速度並且可以浮空。若這個物體被牢牢固定再某個表面或更大的物體上，例如一條被栓在牆上的鎖鏈，則它的移動速度為0呎。它具有30呎半徑的盲視，且對超過這個範圍的情況視作目盲。當這個活化物體的生命值歸零，它將回復它原本的物體型態，且剩餘的傷害將被帶到它原本的型態。",
+				"若你命令活化物體進行攻擊，則它將對一個距離它5呎內的生物進行一次近戰攻擊。它將進行一次猛擊攻擊，根據它的體型決定它的攻擊加值和鈍擊傷害。根據物體的型態，DM可能會裁定某個特定物體的猛擊攻擊將造成劈砍或穿刺傷害。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+						"當你使用6環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外活化二個物體。"
 					]
 				}
 			],
@@ -1009,7 +1009,7 @@
 			]
 		},
 		{
-			"name": "Antilife Shell", "translate_name": "",
+			"name": "Antilife Shell", "translate_name": "反活物護罩",
 			"source": "PHB",
 			"page": 213,
 			"srd": true,
@@ -1043,9 +1043,9 @@
 				}
 			],
 			"entries": [
-				"A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.",
-				"The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.",
-				"If you move so that an affected creature is forced to pass through the barrier, the spell ends."
+				"一道閃爍的屏障延展環繞在你10呎半徑的區域，以你為中心並跟隨你移動，阻絕任何不死生物和構裝體以外的生物。這道屏障在法術持續期間持續存在。",
+				"這道屏障會防止受影響的生物穿越或通過。然而一個受影響的生物所施展的法術、或以遠程或觸及武器進行的攻擊將穿過這道屏障。",
+				"若你因為移動而導致一個受影響生物被強迫穿越這道屏障，則此法術結束。"
 			],
 			"areaTags": [
 				"S"
@@ -1110,7 +1110,7 @@
 			]
 		},
 		{
-			"name": "Antimagic Field", "translate_name": "",
+			"name": "Antimagic Field", "translate_name": "反魔法結界",
 			"source": "PHB",
 			"page": 213,
 			"srd": true,
@@ -1132,7 +1132,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of powdered iron or iron filings"
+				"m": "一撮鐵粉或鐵屑"
 			},
 			"duration": [
 				{
@@ -1145,56 +1145,56 @@
 				}
 			],
 			"entries": [
-				"A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
-				"Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
+				"一個10呎半徑的隱形反魔法球體環繞著你。這個區域將被從遍布魔法能量的多元宇宙中分離。在這個球體內，法術無法被施展、被召喚的生物將會消失、甚至連魔法物品也會變成凡物。直到此法術結束之前，這個球體會以你為中心跟隨著你移動。",
+				"除了那些由神器或神祇創造的之外，任何法術和其他魔法效果都將在處於球體內時被壓制，或者根本無法進入球體。一個用以施放被壓制法術的法術位仍會被消耗。當魔法效果被壓制時，它不會發揮作用，但它在被壓制的期間仍會被算在它的持續時間內。",
 				{
 					"type": "entries",
-					"name": "Targeted Effects",
+					"name": "指定目標的效果",
 					"entries": [
-						"Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target."
+						"以球體內一個生物或物體為目標的法術和其他魔法效果，像是{@spell 魔法飛彈}和{@spell 魅惑人類}，將不會對該目標產生任何效果。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Areas of Magic",
+					"name": "範圍魔法",
 					"entries": [
-						"The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
+						"其他法術或魔法效果的效果範圍，像是{@spell 火球術}，無法延伸進球體的範圍內。若這個球體與另一個魔法的範圍重疊，則被球體範圍覆蓋的一部分區域將被壓制。舉例來說，{@spell 火牆術}創造出來的火焰將在球體內被壓制，若重疊範圍夠大的話，甚至會在這面火牆上產生一道缺口。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spells",
+					"name": "法術",
 					"entries": [
-						"Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it."
+						"當一個生物或物體處於球體內，任何作用於該生物或物體的法術或其他魔法效果將被壓制。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magic Items",
+					"name": "魔法物品",
 					"entries": [
-						"The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.",
-						"A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits."
+						"在球體內，魔法物品的屬性和力量將被壓制。舉例來說，一把{@item 長劍+1}在球體範圍內將被視作等同於一把普通的非魔法{@item 長劍|phb}。",
+						"若一把魔法武器被用於對付球體內的一個目標、或被球體內的一個攻擊者所持用，則它的屬性和力量都將被壓制。若一把魔法武器或一發魔法彈藥完全脫離球體（舉例來說，若你像球體外的一個目標發射一發魔法箭矢或投擲一把魔法矛），則該物體上的魔法將在離開球體的瞬間不再被壓制。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magical Travel",
+					"name": "魔法旅行",
 					"entries": [
-						"Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere."
+						"在球體內，傳送和位面旅行將無法發揮作用，無論這個球體是這類魔法旅行的終點還是起點。一個通往另一個場所、世界、或存在位面的傳送門、以及像是藉由{@spell 通天繩}法術創造的通往異次元空間的入口，將在處於球體內時被暫時關閉。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Creatures and Objects",
+					"name": "生物和物體",
 					"entries": [
-						"A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere."
+						"一個被魔法召喚或創造的生物或物體將在處於球體內時暫時地消失不見。該生物會在它所佔據的空間不再處於球體內時立即重新出現。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Dispel Magic",
+					"name": "解除魔法",
 					"entries": [
-						"Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+						"在球體內，像是{@spell 解除魔法}的法術和魔法效果將不會產生任何效果。同樣的，由另一個{@spell 反魔法結界}法術創造出的球體不會彼此抵消。"
 					]
 				}
 			],
@@ -1215,7 +1215,7 @@
 			}
 		},
 		{
-			"name": "Antipathy/Sympathy",
+			"name": "Antipathy/Sympathy", "translate_name": "嫌惡/共感術",
 			"source": "PHB",
 			"page": 214,
 			"srd": true,
@@ -1237,7 +1237,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+				"m": "嫌惡效果需要一團浸醋的明礬，共感效果則需要一滴蜂蜜"
 			},
 			"duration": [
 				{
@@ -1249,30 +1249,30 @@
 				}
 			],
 			"entries": [
-				"This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.",
+				"此法術將吸引或驅趕你所選擇的生物。你選擇射程內一個巨型或更小的物體或生物、或一片不超過200呎邊長立方體的區域做為目標。接著指定一種智慧生物，像是紅龍、哥布林、或吸血鬼。你為目標注入能夠在法術持續期間吸引或驅散指定生物的靈光。選擇「厭惡」或「共感」做為這道靈光的效果。",
 				{
 					"type": "entries",
-					"name": "Antipathy",
+					"name": "嫌惡",
 					"entries": [
-						"The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become {@condition frightened}. The creature remains {@condition frightened} while it can see the target or is within 60 feet of it. While {@condition frightened} by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer {@condition frightened}, but the creature becomes {@condition frightened} again if it regains sight of the target or moves within 60 feet of it."
+						"這個魔法將使你指定的生物種類感受到一陣強烈的衝動以離開這個區域並避開目標。當這類生物能夠看見目標、或來到距離它60呎內的位置時，該生物必須成功通過一次睿知豁免，否則陷入{@condition 恐懼}。該生物將在它可以看見目標或距離目標60呎內時維持{@condition 恐懼}狀態。當{@condition 恐懼}於目標時，該生物必須使用它的移動以移動到最近一處它無法看見目標的位置。若該生物移動超過目標60呎距離且它無法看見目標時，該生物將不再{@condition 恐懼}，但若它再次看見目標或移動到目標60呎內，則該生物將再次陷入{@condition 恐懼}狀態。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Sympathy",
+					"name": "共感",
 					"entries": [
-						"The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target.",
-						"If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below."
+						"這個魔法將使指定的生物在能夠看見目標、或來到距離它60呎內的位置時感受到一陣強烈的衝動以接近目標。當這類生物能夠看見目標、或來到距離它60呎內的位置時，該生物必須成功通過一次睿知豁免，否則必須在它的每個回合使用它的移動以進入該區域或移動到可以觸及目標的範圍內。當該生物這麼做後，它將無法自願移動遠離目標。",
+						"若目標傷害或以其他方式危害一個受影響的生物，受影響的生物可以進行一次睿知豁免以結束此效果，見下文。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Ending the Effect",
+					"name": "終止這個效果",
 					"entries": [
-						"If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists."
+						"若一個受影響的生物在無法看見目標、或不在其60呎內的位置結束它的回合，該生物可以進行一次睿知豁免。若豁免成功，該生物將不再受到目標的影響，並意識到這陣厭惡感或吸引力是因為魔法而產生的。此外，在法術持續期間，一個受此法術影響的生物可以每24小時再進行一次睿知豁免。"
 					]
 				},
-				"A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
+				"一個成功通過對抗此效果的豁免檢定的生物將免疫於此效果長達1分鐘，在這段時間後，它仍會再次被此效果影響。"
 			],
 			"conditionInflict": [
 				"frightened"
@@ -1303,7 +1303,7 @@
 			}
 		},
 		{
-			"name": "Arcane Eye", "translate_name": "",
+			"name": "Arcane Eye", "translate_name": "祕法眼",
 			"source": "PHB",
 			"page": 214,
 			"srd": true,
@@ -1325,7 +1325,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a bit of bat fur"
+				"m": "少許蝙蝠皮毛"
 			},
 			"duration": [
 				{
@@ -1338,9 +1338,9 @@
 				}
 			],
 			"entries": [
-				"You create an invisible, magical eye within range that hovers in the air for the duration.",
-				"You mentally receive visual information from the eye, which has normal vision and {@sense darkvision} out to 30 feet. The eye can look in every direction.",
-				"As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+				"你在射程內創造出一個隱形的魔法眼睛，在法術持續期間飄浮於空中。",
+				"你透過心靈接收來自這個眼睛的視覺情報，它具有正常視覺和30呎的黑暗視覺。這個眼睛可以看向任何方向。",
+				"以一個動作，你可以使這個眼睛向任何方向移動最多30呎距離。眼睛與你之間的距離沒有限制，但它不能進入另一個存在位面。一道固體屏障可以阻擋眼睛的移動，但這個眼睛可以穿過直徑最少1吋的開口。"
 			],
 			"classes": {
 				"fromClassList": [
@@ -1442,7 +1442,7 @@
 			]
 		},
 		{
-			"name": "Arcane Gate", "translate_name": "",
+			"name": "Arcane Gate", "translate_name": "祕法之門",
 			"source": "PHB",
 			"page": 214,
 			"level": 6,
@@ -1475,9 +1475,9 @@
 				}
 			],
 			"entries": [
-				"You create linked teleportation portals that remain open for the duration. Choose two points on the ground that you can see, one point within 10 feet of you and one point within 500 feet of you. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.",
-				"The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.",
-				"Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other; passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a bonus action so that the active side faces in a different direction."
+				"你創造一對互相連結的傳送門，並在法術持續期間內持續開啟。在你所能看見的地面上選擇兩個點，一點距離你10呎內，另一點則需距離你500呎內。一個10呎半徑的圓形傳送門將在各點位置出現並開啟。若該傳送門會在一個已經被某個生物佔據的空間開啟，則此法術將失敗，且該次施法被浪費。",
+				"這對傳送門呈現一個二維的發光圓環，內部充滿迷霧，並垂直懸浮於你所選地面位置數吋上空。這個圓環只能從其中一側被看見（由你選擇），且只有該側具有傳送門的功能。",
+				"任何進入傳送門的生物或物體都將從另一個傳送門離開，就如同它們兩道傳送門彼此相鄰；穿過圓環非傳送門的那一側不會有任何效果。傳送門內充斥的迷霧不透光，且將阻擋視線穿透它。在你的回合，你能夠以一個附贈動作旋轉圓環，好讓其有效的那一側面向一個不同的方向。"
 			],
 			"miscTags": [
 				"SGT"
@@ -1500,7 +1500,7 @@
 			}
 		},
 		{
-			"name": "Arcane Lock", "translate_name": "",
+			"name": "Arcane Lock", "translate_name": "祕法鎖",
 			"source": "PHB",
 			"page": 215,
 			"srd": true,
@@ -1522,7 +1522,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "gold dust worth at least 25 gp, which the spell consumes",
+					"text": "價值至少25金幣的金粉，在施法時消耗",
 					"cost": 2500,
 					"consume": true
 				}
@@ -1536,8 +1536,8 @@
 				}
 			],
 			"entries": [
-				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting {@spell knock} on the object suppresses {@spell arcane lock} for 10 minutes.",
-				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
+				"你觸碰一個關上的門、窗戶、閘門、箱子，或其他通道，它將在法術持續期間被鎖住。你和你在施放此法術時所選的生物可以如常地開啟它。你也可以設定一個密碼，當有人在距離該物體5呎內的位置說出密碼，法術就會被壓制1 分鐘。除此之外，直到該物體被破壞、或者此法術被解消或壓制之前，它都無法被打開。對該物體施放{@spell 敲擊術}將會壓制祕法鎖長達10分鐘。",
+				"當受到此法術影響，該物體將會比原本更難以被破壞或強開；破壞它或撬開它上面的鎖的DC增加10。"
 			],
 			"classes": {
 				"fromClassList": [
@@ -1587,7 +1587,7 @@
 			]
 		},
 		{
-			"name": "Armor of Agathys", "translate_name": "",
+			"name": "Armor of Agathys", "translate_name": "艾嘉西斯之鎧",
 			"source": "PHB",
 			"page": 215,
 			"level": 1,
@@ -1607,7 +1607,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a cup of water"
+				"m": "一杯水"
 			},
 			"duration": [
 				{
@@ -1619,14 +1619,14 @@
 				}
 			],
 			"entries": [
-				"A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage."
+				"一個防護性的魔法立場環繞著你，呈現如鬼魅似的寒霜覆蓋著你和你的裝備。你在法術持續時間內獲得5點臨時生命值。如果一個生物在你擁有這些生命值時以近戰攻擊命中了你，該生物將受到5點寒冰傷害。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st."
+						"當你使用2環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，臨時生命值和寒冰傷害都會增加5點。"
 					]
 				}
 			],
@@ -1709,7 +1709,7 @@
 			]
 		},
 		{
-			"name": "Arms of Hadar", "translate_name": "",
+			"name": "Arms of Hadar", "translate_name": "哈達之臂",
 			"source": "PHB",
 			"page": 215,
 			"level": 1,
@@ -1737,14 +1737,14 @@
 				}
 			],
 			"entries": [
-				"You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
+				"你呼喚出黑暗飢渴者哈達的力量。黑暗能量形成的觸手從你身上湧出，並打擊距離你10呎內的所有生物。在該區域內的每個生物都必須進行一次力量豁免。 若豁免失敗，目標將受到{@dice 2d6}死靈傷害。且直到它的下個回合之前都無法採取反應。若豁免成功，該生物受到一半的傷害，但不受其它效果影響。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
+						"當你使用2環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，傷害便會再增加{@scaledice 2d6|1-9|1d6}。"
 					]
 				}
 			],
@@ -1789,7 +1789,7 @@
 			}
 		},
 		{
-			"name": "Astral Projection", "translate_name": "",
+			"name": "Astral Projection", "translate_name": "星界投影",
 			"source": "PHB",
 			"page": 215,
 			"srd": true,
@@ -1812,7 +1812,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "for each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes",
+					"text": "你必須為每個你使用此法術影響的生物各自提供一個價值至少1,000金幣的紅鋯石，以及一個價值至少100金幣的精雕銀條，皆會在施法時消耗",
 					"cost": 110000,
 					"consume": true
 				}
@@ -1823,12 +1823,12 @@
 				}
 			],
 			"entries": [
-				"You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is {@condition unconscious} and in a state of suspended animation, it doesn't need food or air and doesn't age.",
-				"Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut-something that can happen only when an effect specifically states that it does-your soul and body are separated, killing you instantly.",
-				"Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.",
-				"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.",
-				"The spell might also end early for you or one of your companions. A successful {@spell dispel magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.",
-				"If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
+				"你和最多八個射程內的自願生物把你們的星界靈體投影至星界（若你已經位於星界，則此法術將失敗且施法將被浪費）。你們遺留下來的物質軀體將陷入{@condition 昏迷}並進入假死狀態，它不再需要食物或空氣，也不會衰老。",
+				"你的星界靈體和你的物質軀體在幾乎各方面都極為相似，複製你的遊戲數據和所有物。其最主要的差異在於一條從你肩胛骨間延伸的銀色繫線，在向後約莫1呎處漸淡隱形。這條繫線是你與你物質軀體之間的栓繩。只要這條繫線保持連結，你就能找到你回程的去路。若這條繫線被切斷（只有特別註明能夠辦到這件事的效果能將它切斷），則你的靈魂與身體將被分離，立即將你殺死。",
+				"你的星界靈體可以自由穿梭星界，並可以穿過通往任何其他位面的傳送門。若你進入一個新的位面、或返回你施放此法術時所在的位面，你的身體和所有物將跟著銀色繫線被傳送，讓你得以在進入新的位面時重新進入你的身軀。你的星界靈體是一個與你物質軀體獨立的化身，任何施加於它的傷害和效果都不會影響到你的物質軀體，也不會在你返回軀體時存留。",
+				"此法術對你和你同伴們的效果會在你使用你的動作解消它時結束。當此法術結束時，受影響的生物將會返回它的物質軀體並甦醒。",
+				"此法術對你或你其中一個同伴的效果也可能會提前結束。一個成功施放於星界靈體或物質軀體的{@spell 解除魔法}法術將會結束此法術對該生物的效果。若此法術結束且銀質繫線仍完好無缺，則繫線將把該生物的星界靈體拉回它的物質身軀，結束它的假死狀態。",
+				"若你提早返回你的物質身軀，你的同伴們將維持星界靈體的型態，且必須自己找尋返回它們物質身軀的途徑（通常是透過把生命值歸零）。"
 			],
 			"conditionInflict": [
 				"unconscious"
@@ -1854,7 +1854,7 @@
 			}
 		},
 		{
-			"name": "Augury", "translate_name": "",
+			"name": "Augury", "translate_name": "卜筮",
 			"source": "PHB",
 			"page": 215,
 			"srd": true,
@@ -1876,7 +1876,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "specially marked sticks, bones, or similar tokens worth at least 25 gp",
+					"text": "價值至少25金幣，有著特殊記號的細棍、骨頭、或類似的標記物",
 					"cost": 2500
 				}
 			},
@@ -1889,18 +1889,18 @@
 				"ritual": true
 			},
 			"entries": [
-				"By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
+				"藉由倒出嵌有寶石的細棍、晃搖龍骨、鋪開華麗的卡牌、或利用其他占卜工具，你從另一個世界的存在接受到一個預兆，揭露關於你在接下來30分鐘內預計去做的一件具體行動的結果。DM將從以下可能的預兆中選擇：",
 				{
 					"type": "list",
 					"items": [
-						"Weal, for good results",
-						"Woe, for bad results",
-						"Weal and woe, for both good and bad results",
-						"Nothing, for results that aren't especially good or bad"
+						"福，代表好結果",
+						"禍，代表壞結果",
+						"禍福相依，代表有好有壞的結果",
+						"什麼也沒有，代表不特別好或壞的結果"
 					]
 				},
-				"The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
-				"If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+				"此法術並不會將任何可能改變結果的潛在環境因素納入考量，像是施展額外的法術或者同伴的加入或離去。",
+				"若你在完成下一次長休之前施放此法術兩次或以上，則第一次之後的每次施放都會有累積25%的機率導致隨機的結果。DM將暗自擲骰決定。"
 			],
 			"classes": {
 				"fromClassList": [
@@ -1974,7 +1974,7 @@
 			}
 		},
 		{
-			"name": "Aura of Life", "translate_name": "",
+			"name": "Aura of Life", "translate_name": "生命靈光",
 			"source": "PHB",
 			"page": 216,
 			"level": 4,
@@ -2006,7 +2006,7 @@
 				}
 			],
 			"entries": [
-				"Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
+				"維持生命的能量從你身上散發形成一個30呎半徑的靈光。直到此法術結束前，該靈光將會跟隨你移動，並以你為中心。每一個區域內的非敵對生物（包括你）將獲得對死靈傷害的抗性，且生命值最大值不會被減少。此外，一個生命值為0但仍活著的非敵對生物，會在該靈光內開始它的回合時回復1點生命值。"
 			],
 			"damageResist": [
 				"necrotic"
@@ -2105,7 +2105,7 @@
 			]
 		},
 		{
-			"name": "Aura of Purity", "translate_name": "",
+			"name": "Aura of Purity", "translate_name": "淨化靈光",
 			"source": "PHB",
 			"page": 216,
 			"level": 4,
@@ -2137,7 +2137,7 @@
 				}
 			],
 			"entries": [
-				"Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, and {@condition stunned}."
+				"淨化能量從你身上散發形成一個30呎半徑的靈光。直到此法術結束前，該靈光將會跟隨你移動，並以你為中心。每一個靈光內的非敵對生物（包括你）將不會感染任何疾病，它們也將獲得對毒素傷害的抗性，且在對抗會導致以下狀態的效果的豁免檢定中具有優勢：{@condition 目盲}、{@condition 魅惑}、{@condition 耳聾}、{@condition 恐懼}、{@condition 麻痺}、{@condition 中毒}、和{@condition 震懾}。"
 			],
 			"damageResist": [
 				"poison"
@@ -2227,7 +2227,7 @@
 			]
 		},
 		{
-			"name": "Aura of Vitality", "translate_name": "",
+			"name": "Aura of Vitality", "translate_name": "活力靈光",
 			"source": "PHB",
 			"page": 216,
 			"level": 3,
@@ -2259,7 +2259,7 @@
 				}
 			],
 			"entries": [
-				"Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain {@dice 2d6} hit points."
+				"治癒能量從你身上散發形成一個30呎半徑的靈光。直到此法術結束前，該靈光將會跟隨你移動，並以你為中心。你可以使用一個附贈動作以使靈光內的一個生物（包括你）回復{@dice 2d6}點生命值。"
 			],
 			"miscTags": [
 				"HL"
@@ -2337,7 +2337,7 @@
 			]
 		},
 		{
-			"name": "Awaken", "translate_name": "",
+			"name": "Awaken", "translate_name": "啟蒙術",
 			"source": "PHB",
 			"page": 216,
 			"srd": true,
@@ -2359,7 +2359,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "an agate worth at least 1,000 gp, which the spell consumes",
+					"text": "一個價值至少1,000金幣的瑪瑙，在施法時消耗",
 					"cost": 100000,
 					"consume": true
 				}
@@ -2370,8 +2370,8 @@
 				}
 			],
 			"entries": [
-				"After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the {@creature awakened shrub} or the {@creature awakened tree}.",
-				"The awakened beast or plant is {@condition charmed} by you for 30 days or until you or your companions do anything harmful to it. When the {@condition charmed} condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was {@condition charmed}."
+				"在施法過程中花費時間描摹昂貴寶石內部的魔法脈絡之後，你觸碰一個體型為巨型或更小的野獸或植物。目標必須沒有智力屬性，或智力值僅為3或更低。目標的智力值將變為10。目標同時學會說一種你所知曉語言的能力。若目標為一株植物，則它將獲得移動它枝體、根、藤、蔓等部位的能力，並獲得類似於人類的感官。你的DM將為這株啟蒙植物選擇適合的遊戲數據，像是做為{@creature 啟蒙灌木}或{@creature 啟蒙樹木}。",
+				"這個啟蒙野獸或植物將被你{@condition 魅惑}長達30天，或直到你或你的同伴做出任何危害它的行動。當{@condition 魅惑}狀態結束，這個啟蒙生物會根據你在它被{@condition 魅惑}時對待它的方式，決定是否對你保持友善。"
 			],
 			"conditionInflict": [
 				"charmed"
@@ -2416,7 +2416,7 @@
 			]
 		},
 		{
-			"name": "Bane", "translate_name": "",
+			"name": "Bane", "translate_name": "災禍術",
 			"source": "PHB",
 			"page": 216,
 			"srd": true,
@@ -2438,7 +2438,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a drop of blood"
+				"m": "一滴血"
 			},
 			"duration": [
 				{
@@ -2451,14 +2451,14 @@
 				}
 			],
 			"entries": [
-				"Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a {@dice d4} and subtract the number rolled from the attack roll or saving throw."
+				"最多三個射程內你所選擇且你能看見的生物，必須進行一次魅力豁免。若目標在該豁免檢定中失敗，則直到此法術結束前，每當該目標要進行一次攻擊檢定或豁免檢定，目標都必須擲一顆{@dice d4}，並將骰出來的數字減掉該攻擊檢定或豁免檢定的結果。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+						"當你使用2環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外選擇一個生物作為目標。"
 					]
 				}
 			],
@@ -2553,7 +2553,7 @@
 			]
 		},
 		{
-			"name": "Banishing Smite", "translate_name": "",
+			"name": "Banishing Smite", "translate_name": "放逐斬",
 			"source": "PHB",
 			"page": 216,
 			"level": 5,
@@ -2584,7 +2584,7 @@
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition incapacitated}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+				"在此法術結束前，下一次你以武器攻擊命中一個生物時，你的武器將爆發出強大力場，該攻擊對目標造成額外{@dice 5d10}力場傷害。此外，若這次攻擊將目標的生命值減少至50或以下，則你把它從這個位面放逐。若目標原生於與你們所處位面不同的另一個存在位面，則目標將消失，並回到它的原生位面。若目標原生於你們所處的存在位面，則該生物將會消失至一個無害的位面。當處於該位面，目標陷入{@condition 無力}狀態。它將維持在該處直到此法術結束。在此法術結束時，目標將重新出現在它離開時所在的空間，或若該空間已被佔據則出現在最近一處未被占據空間。"
 			],
 			"damageInflict": [
 				"force"
@@ -2634,7 +2634,7 @@
 			}
 		},
 		{
-			"name": "Banishment", "translate_name": "",
+			"name": "Banishment", "translate_name": "放逐術",
 			"source": "PHB",
 			"page": 217,
 			"srd": true,
@@ -2656,7 +2656,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "an item distasteful to the target"
+				"m": "一個令目標厭惡的物品"
 			},
 			"duration": [
 				{
@@ -2669,16 +2669,16 @@
 				}
 			],
 			"entries": [
-				"You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.",
-				"If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition incapacitated}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
-				"If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
+				"你嘗試將射程內你所能看見的一個生物送到另一個存在位面。目標必須成功通過一次魅力豁免，否則將被放逐。",
+				"若目標原生於你們所處的存在位面，則你將目標放逐到一個無害的半位面。當處於該位面時，目標陷入{@condition 無力}狀態。目標將維持在該處直到此法術結束。在此法術結束時，目標將重新出現在它離開時所在的空間，或若該空間已被佔據則出現在最近一處未被占據空間。",
+				"若目標原生於與你們所處位面不同的另一個存在位面，則目標伴隨著一陣微弱的爆破聲被放逐，回到它的原生位面。若此法術在1分鐘過去之前結束，則目標將重新出現在它離開時所在的空間，或若該空間已被佔據則出現在最近一處未被占據空間。反之，目標不會回到原處。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
+						"當你使用5環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外選擇一個生物作為目標。"
 					]
 				}
 			],
@@ -2852,7 +2852,7 @@
 			}
 		},
 		{
-			"name": "Barkskin", "translate_name": "",
+			"name": "Barkskin", "translate_name": "樹膚術",
 			"source": "PHB",
 			"page": 217,
 			"srd": true,
@@ -2873,7 +2873,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a handful of oak bark"
+				"m": "一把橡樹樹皮"
 			},
 			"duration": [
 				{
@@ -2886,7 +2886,7 @@
 				}
 			],
 			"entries": [
-				"You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."
+				"你碰觸一個自願生物。直到法術結束前，目標的肌膚將呈現粗糙、樹皮狀的外表，且無論目標穿著什麼樣的護甲，它的AC都不會低於16。"
 			],
 			"areaTags": [
 				"ST"
@@ -2928,7 +2928,7 @@
 			}
 		},
 		{
-			"name": "Beacon of Hope", "translate_name": "",
+			"name": "Beacon of Hope", "translate_name": "希望信標",
 			"source": "PHB",
 			"page": 217,
 			"srd": true,
@@ -2962,7 +2962,7 @@
 				}
 			],
 			"entries": [
-				"This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
+				"此法術將賦予希望和活力。選擇射程內任意數量的生物。在法術持續期間，每個目標在睿知豁免和死亡豁免中具有優勢，且在受到任何治療時會回復最大可能數值的生命值。"
 			],
 			"miscTags": [
 				"HL"
@@ -3056,7 +3056,7 @@
 			]
 		},
 		{
-			"name": "Beast Sense", "translate_name": "",
+			"name": "Beast Sense", "translate_name": "野獸知覺",
 			"source": "PHB",
 			"page": 217,
 			"level": 2,
@@ -3090,7 +3090,7 @@
 				"ritual": true
 			},
 			"entries": [
-				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are {@condition blinded} and {@condition deafened} to your own surroundings."
+				"你觸碰一個自願野獸。在此法術的持續期間，你可以使用你的動作以透過該野獸的眼睛視物並聽到它所聽見的聲音，且持續直到你使用你的動作以返回你原本的知覺。當透過野獸的知覺感知時，你獲得任何該生物所擁有的特殊感知的好處，儘管你對你自己的感官而言視作{@condition 耳聾}和{@condition 目盲}。"
 			],
 			"areaTags": [
 				"ST"
@@ -3135,7 +3135,7 @@
 			]
 		},
 		{
-			"name": "Bestow Curse", "translate_name": "",
+			"name": "Bestow Curse", "translate_name": "降咒",
 			"source": "PHB",
 			"page": 218,
 			"srd": true,
@@ -3168,24 +3168,24 @@
 				}
 			],
 			"entries": [
-				"You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
+				"你觸碰一個生物，且該生物必須成功通過一次睿知豁免，否則在此法術持續期間受到詛咒。當你施放此法術時，從以下選項中選擇一個詛咒的性質：",
 				{
 					"type": "list",
 					"items": [
-						"Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
-						"While cursed, the target has disadvantage on attack rolls against you.",
-						"While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
-						"While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target."
+						"選擇一個屬性。當受到詛咒時，目標在以該屬性進行的屬性檢定和豁免檢定中具有劣勢。",
+						"當受到詛咒時，目標在對你進行的攻擊檢定中具有劣勢。",
+						"當受到詛咒時，目標必須在每次它的回合開始時進行一次睿知豁免。若豁免失敗，則它將浪費它這回合的動作什麼事都不做。",
+						"當目標受到詛咒時，你對該目標進行攻擊和法術將造成額外的{@dice 1d8}死靈傷害。"
 					]
 				},
-				"A {@spell remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
+				"一個{@spell 移除詛咒}將會結束這個效果。根據DM的決定，你可能可以選擇一個其他的詛咒效果，但它不能比上述的效果更強大。DM擁有這類詛咒效果的最終決定權。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration."
+						"當你使用4環或更高的法術位施放此法術時，你可以維持你在此法術的專注最多10分鐘。當你使用5環或更高的法術位施放此法術時，持續時間為8小時。當你使用7環或更高的法術位施放此法術時，持續時間為24小時。當你使用9環法術位施放此法術時，此法術將持續直到被解消。使用5環或更高的法術位施放此法術將會讓它的持續時間不再需要專注。"
 					]
 				}
 			],
@@ -3280,7 +3280,7 @@
 			]
 		},
 		{
-			"name": "Bigby's Hand",
+			"name": "Bigby's Hand", "translate_name": "畢格比之掌",
 			"source": "PHB",
 			"page": 218,
 			"srd": "Arcane Hand",
@@ -3302,7 +3302,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "an eggshell and a snakeskin glove"
+				"m": "一個蛋殼和一隻蛇皮手套"
 			},
 			"duration": [
 				{
@@ -3315,35 +3315,35 @@
 				}
 			],
 			"entries": [
-				"You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.",
-				"The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesn't fill its space.",
-				"When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.",
+				"你在射程內你所能看見的一處未被佔據空間創造出一個大型，閃爍半透明的力場手掌。這隻手掌將在法術持續期間內持續存在，且會依據你的命令移動，模仿你手掌的動作。.",
+				"這隻手掌是一個具有AC 20，且生命值等同於你生命值最大值的物體。若它的生命值歸零，則此法術結束。它的力量屬性為26 (+8)且敏捷屬性為10 (+0)。這隻手並不會佔據它的所在空間。",
+				"當你施放此法術時，或在你後續的回合以一個附贈動作，你可以移動這隻手掌最多60呎距離，並讓它製造出以下其中一種效果。",
 				{
 					"type": "entries",
-					"name": "Clenched Fist",
+					"name": "金剛拳",
 					"entries": [
-						"The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes {@damage 4d8} force damage."
+						"這隻手掌襲向距離它5呎內的一個生物或物體。使用你的遊戲數據進行一次近戰法術攻擊。若命中，目標將受到{@dice 4d8}力場傷害。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Forceful Hand",
+					"name": "飛擊掌",
 					"entries": [
-						"The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength ({@skill Athletics}) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
+						"這隻手掌嘗試推撞距離它5呎內的一個生物到你所選擇的一個方向。使用這隻手掌的力量值進行一次檢定以對抗目標的力量（{@skill 運動}）檢定。若目標的體型為中型或更小，則你在該檢定中具有優勢。若你成功，則這隻手掌將把目標推動最多5呎加上等同你施法屬性調整值五倍呎的距離。這隻手掌會跟隨目標移動以維持與它距離5呎內。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Grasping Hand",
+					"name": "擒拿掌",
 					"entries": [
-						"The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 2d6} + your spellcasting ability modifier."
+						"這隻手掌嘗試擒抱距離它5呎內的一個體型為巨型或更小的生物。你使用這隻手掌的力量值以處理擒抱。若目標的體型為中型或更小，則你在該檢定中具有優勢。當這隻手掌擒抱住目標時，你可以使用一個附贈動作以讓手掌擠壓它。當你這麼做時，目標將受到等同於{@dice 2d6} + 你的施法屬性調整值的鈍擊傷害。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Interposing Hand",
+					"name": "護身掌",
 					"entries": [
-						"The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target."
+						"這隻手掌阻擋在你和一個你所選擇的生物之間，直到你給這隻手一個不同的命令。這隻手將移動以維持在你和目標之間，使你對目標具有半掩護。若目標的力量值低於或等於這隻手掌的力量值，則它將無法移動穿過這隻手掌所在的空間。若目標的力量值超過這隻手的力量值，則目標可以向著你移動穿過這隻手掌所在的空間，但該空間對目標視作困難地形。"
 					]
 				}
 			],
@@ -3352,7 +3352,7 @@
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by {@scaledamage 4d8|5-9|2d8} and the damage from the grasping hand increases by {@scaledamage 2d6|5-9|2d6} for each slot level above 5th."
+						"當你使用6環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，金剛拳選項造成的傷害便會再增加{@scaledice 4d8|5-9|2d8}，且擒拿掌所造成的傷害也會再增加{@scaledice 2d6|5-9|2d6}。"
 					]
 				}
 			],
@@ -3407,7 +3407,7 @@
 			]
 		},
 		{
-			"name": "Blade Barrier", "translate_name": "",
+			"name": "Blade Barrier", "translate_name": "劍刃障壁",
 			"source": "PHB",
 			"page": 218,
 			"srd": true,
@@ -3441,8 +3441,8 @@
 				}
 			],
 			"entries": [
-				"You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.",
-				"When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes {@damage 6d10} slashing damage. On a successful save, the creature takes half as much damage."
+				"你創造出一道由魔法能量構成，垂直的飛舞、鋒利劍刃之牆。這道牆將出現在射程內，且持續直到法術持續時間結束。你可以創造出一道最多100呎長、20呎高、以及5呎厚的筆直牆壁，或一道有著直徑最多60呎長、20呎高、以及5呎厚的環型牆。這道牆會為它後面的生物提供四分之三掩護，且它所在的空間為困難地形。",
+				"當一個生物在一個回合中第一次進入這道牆的區域，或在該處開始它回合，則該生物必須進行一次敏捷豁免。若豁免失敗，該生物將受到{@dice 6d10}劈砍傷害。若豁免成功，則只受到一半的傷害。"
 			],
 			"damageInflict": [
 				"slashing"
@@ -3463,7 +3463,7 @@
 			}
 		},
 		{
-			"name": "Blade Ward", "translate_name": "",
+			"name": "Blade Ward", "translate_name": "劍刃防護",
 			"source": "PHB",
 			"page": 218,
 			"level": 0,
@@ -3494,7 +3494,7 @@
 				}
 			],
 			"entries": [
-				"You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks."
+				"你伸出手並循著空中防護的印記而行動。直到你的下個回合結束前，你獲得對武器攻擊所造成的鈍擊、穿刺、和劈砍傷害的抗力。"
 			],
 			"damageResist": [
 				"bludgeoning",
@@ -3523,7 +3523,7 @@
 			}
 		},
 		{
-			"name": "Bless", "translate_name": "",
+			"name": "Bless", "translate_name": "祝福術",
 			"source": "PHB",
 			"page": 219,
 			"srd": true,
@@ -3545,7 +3545,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a sprinkling of holy water"
+				"m": "一點聖水"
 			},
 			"duration": [
 				{
@@ -3558,14 +3558,14 @@
 				}
 			],
 			"entries": [
-				"You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a {@dice d4} and add the number rolled to the attack roll or saving throw."
+				"你祝福最多三個射程內你所選擇的的生物。在此法術結束前，每當目標要進行一次攻擊檢定或豁免檢定，目標可以擲一顆{@dice d4}，並將骰出來的數字加到該攻擊檢定或豁免檢定中。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+						"當你使用2環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外選擇一個生物作為目標。"
 					]
 				}
 			],
@@ -3628,7 +3628,7 @@
 			}
 		},
 		{
-			"name": "Blight", "translate_name": "",
+			"name": "Blight", "translate_name": "枯萎術",
 			"source": "PHB",
 			"page": 219,
 			"srd": true,
@@ -3657,16 +3657,16 @@
 				}
 			],
 			"entries": [
-				"Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
-				"If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
-				"If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies."
+				"死靈能量沖向射程內你所選且你能看見的一個生物，吸乾它體內的水分和生命力。目標必須進行一次體質豁免。若豁免失敗，目標將受到{@dice 8d8}的死靈傷害，豁免成功則只受到一半的傷害。此法術對不死生物和構裝體沒有任何效果。",
+				"若你以一個植物生物或魔法植物為目標，則它在進行此豁免檢定時具有劣勢，且此法術會對它造成最大傷害。",
+				"若你選擇一個不是生物的非魔法植物為目標，例如樹木和灌木，將它不進行豁免檢定，而直接凋零並死亡。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 8d8|4-9|1d8} for each slot level above 4th."
+						"當你使用5環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，傷害便會再增加{@scaledice 8d8|4-9|1d8}。"
 					]
 				}
 			],
@@ -3823,7 +3823,7 @@
 			]
 		},
 		{
-			"name": "Blinding Smite", "translate_name": "",
+			"name": "Blinding Smite", "translate_name": "致盲斬",
 			"source": "PHB",
 			"page": 219,
 			"level": 3,
@@ -3854,8 +3854,8 @@
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra {@damage 3d8} radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be {@condition blinded} until the spell ends.",
-				"A creature {@condition blinded} by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}."
+				"在法術持續期間，下一次你以近戰武器攻擊命中一個生物時，你的武器將會閃耀出明亮的光芒，且該攻擊將對目標造成額外{@dice 3d8}光耀傷害。此外，目標必須成功通過一次體質豁免，否則直到法術結束前陷入{@condition 目盲}。",
+				"一個被此法術{@condition 目盲}的生物可以在它的每個回合結束時進行一次體質豁免。若豁免成功，則它將不再{@condition 目盲}。"
 			],
 			"damageInflict": [
 				"radiant"
@@ -3910,7 +3910,7 @@
 			]
 		},
 		{
-			"name": "Blindness/Deafness",
+			"name": "Blindness/Deafness", "translate_name": "目盲/耳聾術",
 			"source": "PHB",
 			"page": 219,
 			"srd": true,
@@ -3942,14 +3942,14 @@
 				}
 			],
 			"entries": [
-				"You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either {@condition blinded} or {@condition deafened} (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends."
+				"你可以使一個敵人目盲或耳聾。選擇射程內你所能看見的一個生物以讓它進行一次體質豁免。若它失敗，則目標將在法術持續期間{@condition 目盲}或{@condition 耳聾}（由你選擇）。在它的每個回合結束時，目標可以進行一次體質豁免，若豁免成功，則此法術結束。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+						"當你使用3環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，你就可以再額外選擇一個生物作為目標。"
 					]
 				}
 			],
@@ -4060,7 +4060,7 @@
 			}
 		},
 		{
-			"name": "Blink", "translate_name": "",
+			"name": "Blink", "translate_name": "閃現術",
 			"source": "PHB",
 			"page": 219,
 			"srd": true,
@@ -4092,8 +4092,8 @@
 				}
 			],
 			"entries": [
-				"Roll a {@dice d20} at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.",
-				"While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
+				"在法術持續期間，每次你的回合結束時骰{@dice d20}。若骰出來的數字為11或更高，則你從你當下所在的位面消失，並在乙太位面出現（若你已經在該位面，則此法術失敗且本次施放被浪費）。在你的下個回合開始時，以及當此法術在你位於乙太位面時結束的時候，你回到距離你消失處10呎以內一處未被佔據，你所選擇的可見空間。若範圍內沒有任何未被佔據的可用空間，則你出現在最近一處未被佔據的空間（若有多於一個一樣近的空間，則隨機選擇）。你能夠以一個動作解消此法術。",
+				"當處於乙太位面時，你可以看見並聽見你原本所在的位面，但你不能看見任何距離60呎外的事物，且該位面呈現灰階。你只能影響或被其他處於乙太位面的生物影響。不處於該處的生物無法察覺你或與你互動，除非他們具備這麼做的能力。"
 			],
 			"miscTags": [
 				"SGT"
@@ -4174,7 +4174,7 @@
 			]
 		},
 		{
-			"name": "Blur", "translate_name": "",
+			"name": "Blur", "translate_name": "朦朧術",
 			"source": "PHB",
 			"page": 219,
 			"srd": true,
@@ -4206,7 +4206,7 @@
 				}
 			],
 			"entries": [
-				"Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with {@sense truesight}."
+				"你的身體輪廓對所有能看見你的人來說變得模糊、變幻、搖曳在法術持續期間，任何生物在對你進行攻擊檢定中具有劣勢。一個不依賴視覺的攻擊者（例如透過盲視）、或者能看透幻象的攻擊者（例如透過真實視覺），將免疫此效果。"
 			],
 			"classes": {
 				"fromClassList": [
@@ -4268,7 +4268,7 @@
 			}
 		},
 		{
-			"name": "Branding Smite", "translate_name": "",
+			"name": "Branding Smite", "translate_name": "烙印斬",
 			"source": "PHB",
 			"page": 219,
 			"srd": true,
@@ -4300,14 +4300,14 @@
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra {@damage 2d6} radiant damage to the target, which becomes visible if it's {@condition invisible}, and the target sheds dim light in a 5-foot radius and can't become {@condition invisible} until the spell ends."
+				"在此法術結束前，下一次你以武器攻擊命中一個生物時，武器將會在你擊中時閃爍著星輝光芒。該攻擊對目標造成額外{@dice 2d6}光耀傷害，使{@condition 隱形}的目標變得可見，且直到法術結束前，目標將散發5呎半徑的微光光照並因此無法{@condition 隱形}。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by {@scaledamage 2d6|2-9|1d6} for each slot level above 2nd."
+						"當你使用3環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，額外傷害便會再增加{@scaledice 2d6|2-9|1d6}。"
 					]
 				}
 			],
@@ -4396,7 +4396,7 @@
 			]
 		},
 		{
-			"name": "Burning Hands", "translate_name": "",
+			"name": "Burning Hands", "translate_name": "燃燒之手",
 			"source": "PHB",
 			"page": 220,
 			"srd": true,
@@ -4425,15 +4425,15 @@
 				}
 			],
 			"entries": [
-				"As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes {@damage 3d6} fire damage on a failed save, or half as much damage on a successful one.",
-				"The fire ignites any flammable objects in the area that aren't being worn or carried."
+				"隨著你雙手拇指交觸，手指張開，一片稀薄的火焰將從你伸展的指尖向前射出。每個處於15呎錐形內的生物都必須進行一次敏捷豁免。豁免失敗的生物將受到{@dice 3d6}火焰傷害，豁免成功則只受到一半的傷害。",
+				"這片火焰將會點燃範圍內所有未被穿戴或攜帶的可燃物體。"
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "升環效果",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d6|1-9|1d6} for each slot level above 1st."
+						"當你使用2環或更高的法術位施放此法術時，你使用的法術位每比原本高一環，傷害便會再增加{@scaledice 3d6|1-9|1d6}。"
 					]
 				}
 			],
