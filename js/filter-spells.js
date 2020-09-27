@@ -239,7 +239,8 @@ class PageFilterSpells extends PageFilter {
 		const subclassFilter = new Filter({
 			header: "Subclass", displayHeader: "子職業", displayFn: Parser.translateSubClass,
 			nests: {},
-			groupFn: (it) => SourceUtil.isSubclassReprinted(it.userData.class.name, it.userData.class.source, it.userData.subClass.name, it.userData.subClass.source) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(PS_PREFIX)
+			groupFn: (it) => SourceUtil.isSubclassReprinted(it.userData.class.name, it.userData.class.source, it.userData.subClass.name, it.userData.subClass.source) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(PS_PREFIX),
+			itemSortFn: (a, b)=>SortUtil.ascSortLower(a.item, b.item)
 		});
 		const variantClassFilter = new Filter({header: "Variant Class", displayHeader: "變體職業", displayFn: Parser.translateMainClass, headerHelp: `Source: ${Parser.sourceJsonToFull(SRC_UACFV)}`});
 		const classAndSubclassFilter = new MultiFilter({header: "Classes", displayHeader: "職業", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});

@@ -1117,8 +1117,8 @@ Parser.spSubclassesToFull = function (fromSubclassList, textOnly, subclassLookup
 
 Parser._spSubclassItem = function (fromSubclass, textOnly, subclassLookup) {
 	const c = fromSubclass.class; const c_name = Parser.translateMainClass(c.name);
-	const sc = fromSubclass.subclass;
-	const text = `${sc.name}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
+	const sc = fromSubclass.subclass; const sc_name = Parser.translateSubClassOnly(sc.name);
+	const text = `${sc_name}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
 	if (textOnly) return text;
 	const classPart = `<a href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}" title="資源: ${Parser.sourceJsonToFull(c.source)}">${c.name}</a>`;
 	const fromLookup = subclassLookup ? MiscUtil.get(subclassLookup, c.source, c.name, sc.source, sc.name) : null;
@@ -2970,14 +2970,24 @@ Parser.translateMainClass = function(it){
 	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join(""): "";
 	return className+appendix;
 }
+Parser.translateSubClassOnly = function(it){
+	var text_arr = extractBrackets(it);
+	var className = Parser.translate(Parser.SUB_CLASS_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join(""): "";
+	return className+appendix;
+}
 Parser.translateSubClass = function(it){
-	var text_arr = it.split(":").map(t=>t.trim());
-	var subtext_arr = extractBrackets(text_arr[1]); if(subtext_arr.length>1) console.log(text_arr[1], subtext_arr);
-	var mainClass = Parser.translateMainClass(text_arr[0]);
-	var subClass = Parser.translate(Parser.SUB_CLASS_TO_TRANS, subtext_arr[0]);
-	var subClass_append = (subtext_arr.length>1)? (subtext_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join("")): "";
-	if(!Parser.SUB_CLASS_TO_TRANS[subtext_arr[0].toLowerCase()]) console.log(mainClass+" -> "+subtext_arr[0].toLowerCase())
-	return `${mainClass}: ${subClass+subClass_append}`;
+	var text_arr = it.split(":");
+	var mainClass = Parser.translateMainClass(text_arr[0].trim());
+	
+	var subtext_arr = text_arr[1].split(",").map(t=>t.trim());
+	var subClass_arr = extractBrackets(subtext_arr[0]);
+	var subClass = Parser.translate(Parser.SUB_CLASS_TO_TRANS, subClass_arr[0]);
+	var subClass_append = (subClass_arr.length>1)? (subClass_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join("")): "";
+	var subsubClass = (subtext_arr.length>1)? Parser.translate(Parser.SUB_CLASS_TO_TRANS, subtext_arr[1]): null;
+	
+	if(!Parser.SUB_CLASS_TO_TRANS[subClass_arr[0].toLowerCase()]) console.log(mainClass+" -> "+subClass_arr[0].toLowerCase())
+	return `${mainClass}: ${subClass+subClass_append+(subsubClass? (", "+subsubClass): "")}`;
 }
 Parser.MAIN_CLASS_TO_TRANS = {
 	"artificer": "奇械師",
@@ -2996,9 +3006,15 @@ Parser.MAIN_CLASS_TO_TRANS = {
 Parser.SUB_CLASS_TO_TRANS = {
 	"eldritch knight": "魔能騎士", "arcane archer": "魔射手",
 	"arcane trickster": "詭術師",
+	"alchemist": "煉金師", "artillerist": "魔炮師", "battle smith": "戰地匠師", "archivist": "卷冊師", "armorer": "魔甲師",
 	"ancestral guardian": "先祖守衛", "totem warrior": "圖騰勇士",
-	"divine soul": "神聖之魂", "favored soul v2": "恩惠之魂 v2", "favored soul v3": "恩惠之魂 v3", "giant soul": "巨人之魂",
+	"divine soul": "神聖之魂", "favored soul v2": "神恩眷魂 v2", "favored soul v3": "神恩眷魂 v3", "giant soul": "巨人之魂", "clockwork soul": "時械之魂",
+	"forge": "鍛造", "grave": "墳墓", "knowledge": "知識", "nature": "自然", "death": "死亡", "arcana": "奧秘", "life": "生命", "trickery": "詭術", "war": "戰爭", "order": "秩序", "tempest": "暴風", "light": "光明", "love": "博愛", "city": "城市", "twilight": "暮光",
+	"archfey": "至高妖精", "fiend": "邪魔宗主", "great old one": "舊日支配者", "celestial": "天界宗主", "hexblade": "咒劍士", "undying": "不朽者",
+	"land": "大地", "spores": "孢子", "wildfire": "野火",
+	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者",
 }
+
 
 Parser.MISC_TO_TRANS = {
 	"revisited": "再製", "revised": "修訂"
