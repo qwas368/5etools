@@ -54,7 +54,7 @@ class RenderSpells {
 
 		if (sp.backgrounds) {
 			sp.backgrounds.sort((a, b) => SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source));
-			renderStack.push(`<tr class="text"><td colspan="6"><span class="bold">背景: </span>${sp.backgrounds.map(r => `${SourceUtil.isNonstandardSource(r.source) ? `<span class="text-muted">` : ``}${renderer.render(`{@background ${r.name}|${r.source}}`)}${SourceUtil.isNonstandardSource(r.source) ? `</span>` : ``}`).join(", ")}</td></tr>`);
+			renderStack.push(`<tr class="text"><td colspan="6"><span class="bold">背景: </span>${sp.backgrounds.map(r => `${SourceUtil.isNonstandardSource(r.source) ? `<span class="text-muted">` : ``}${renderer.render(`{@background ${r.name}|${r.source}|${Parser.translateSpBackground(r.name)}}`)}${SourceUtil.isNonstandardSource(r.source) ? `</span>` : ``}`).join(", ")}</td></tr>`);
 		}
 
 		if (sp.eldritchInvocations) {

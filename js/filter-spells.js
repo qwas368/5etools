@@ -249,11 +249,12 @@ class PageFilterSpells extends PageFilter {
 			nests: {},
 			groupFn: it => it.userData
 		});
-		const backgroundFilter = new Filter({header: "Background", displayHeader: "背景"});
+		const backgroundFilter = new Filter({header: "Background", displayHeader: "背景", displayFn: Parser.translateSpBackground });
 		const metaFilter = new Filter({
 			header: "Components & Miscellaneous", displayHeader: "構材 & 雜項",
 			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "Technomagic", "SRD"],
-			itemSortFn: PageFilterSpells.sortMetaFilter
+			itemSortFn: PageFilterSpells.sortMetaFilter,
+			displayFn: (it)=>Parser.translate(PageFilterSpells.COMPONENT_TO_TRANS, it)
 		});
 		const schoolFilter = new Filter({
 			header: "School", displayHeader: "學派",
@@ -274,7 +275,7 @@ class PageFilterSpells extends PageFilter {
 		const conditionFilter = new Filter({
 			header: "Conditions Inflicted", displayHeader: "造成狀態",
 			items: MiscUtil.copy(Parser.CONDITIONS),
-			displayFn: StrUtil.uppercaseFirst
+			displayFn: Parser.translateCondition
 		});
 		const spellAttackFilter = new Filter({
 			header: "Spell Attack", displayHeader: "法術攻擊",
@@ -311,7 +312,8 @@ class PageFilterSpells extends PageFilter {
 			header: "Duration", displayHeader: "持續時間",
 			isLabelled: true,
 			labelSortFn: null,
-			labels: ["Instant", "1 Round", "1 Minute", "10 Minutes", "1 Hour", "8 Hours", "24+ Hours", "Permanent", "Special"]
+			labels: ["Instant", "1 Round", "1 Minute", "10 Minutes", "1 Hour", "8 Hours", "24+ Hours", "Permanent", "Special"],
+			labelDisplayFn: Parser.translateSpDuration
 		});
 		const rangeFilter = new Filter({
 			header: "Range", displayHeader: "射程",
@@ -322,13 +324,17 @@ class PageFilterSpells extends PageFilter {
 				PageFilterSpells.F_RNG_SELF_AREA,
 				PageFilterSpells.F_RNG_SPECIAL
 			],
-			itemSortFn: null
+			displayFn: (it)=>Parser.translate(PageFilterSpells.RANGE_TO_TRANS, it),
+			itemSortFn: null,
 		});
 		const areaTypeFilter = new Filter({
 			header: "Area Style", displayHeader: "範圍類型",
 			items: ["ST", "MT", "R", "N", "C", "Y", "H", "L", "S", "Q", "W"],
 			displayFn: Parser.spAreaTypeToFull,
 			itemSortFn: null
+		});
+		const eldritchInvocationFilter = new Filter({
+			header: "Eldritch Invocation", displayHeader: "魔能祈喚"
 		});
 
 		this._classFilter = classFilter;
@@ -338,7 +344,7 @@ class PageFilterSpells extends PageFilter {
 		this._classAndSubclassFilter = classAndSubclassFilter;
 		this._raceFilter = raceFilter;
 		this._backgroundFilter = backgroundFilter;
-		this._eldritchInvocationFilter = new Filter({header: "Eldritch Invocation"});
+		this._eldritchInvocationFilter = eldritchInvocationFilter;
 		this._metaFilter = metaFilter;
 		this._schoolFilter = schoolFilter;
 		this._subSchoolFilter = subSchoolFilter;
@@ -485,6 +491,17 @@ PageFilterSpells._META_FILTER_BASE_ITEMS = [PageFilterSpells._META_ADD_CONC, Pag
 PageFilterSpells.INCHES_PER_FOOT = 12;
 PageFilterSpells.FEET_PER_MILE = 5280;
 
+PageFilterSpells.COMPONENT_TO_TRANS = {
+	"concentration": "專注", "verbal": "聲音", "somatic": "姿勢", "material": "材料", "royalty": "專利稅",
+	"material with cost": "價值材料", "material is consumed": "消耗材料",
+	"healing": "治療", "grants temporary hit points": "賦予臨時生命值", "requires sight": "要求視野可見", "permanent effects": "永久效果",
+	"scaling effects": "升級效果", "summons creature": "召喚生物",
+	"ritual": "儀式", "technomagic": "科技魔法"
+};
+PageFilterSpells.RANGE_TO_TRANS = {
+	"self": "自身", "touch": "觸碰", "point": "點", "self (area)": "自身（區域）", "special": "特殊"
+};
+
 class ModalFilterSpells extends ModalFilter {
 	constructor (namespace) {
 		super({
@@ -570,3 +587,6 @@ class ModalFilterSpells extends ModalFilter {
 if (typeof module !== "undefined") {
 	module.exports = PageFilterSpells;
 }
+
+
+

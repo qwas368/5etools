@@ -2187,17 +2187,17 @@ class RangeFilter extends FilterBase {
 			this,
 			"isUseDropdowns",
 			{
-				$ele: $(`<button class="btn btn-default btn-xs mr-2">Show as Dropdowns</button>`),
+				$ele: $(`<button class="btn btn-default btn-xs mr-2">以下拉式清單顯示</button>`),
 				stateName: "meta",
 				stateProp: "_meta"
 			}
 		);
-		const $btnReset = $(`<button class="btn btn-default btn-xs">Reset</button>`).click(() => this.reset());
+		const $btnReset = $(`<button class="btn btn-default btn-xs">重置</button>`).click(() => this.reset());
 		const $wrpBtns = $$`<div>${$btnForceMobile}${$btnReset}</div>`;
 
 		const $wrpSummary = $(`<div class="flex-v-center fltr__summary_item fltr__summary_item--include"></div>`).hideVe();
 
-		const $btnShowHide = $(`<button class="btn btn-default btn-xs ml-2 ${this._meta.isHidden ? "active" : ""}">Hide</button>`)
+		const $btnShowHide = $(`<button class="btn btn-default btn-xs ml-2 ${this._meta.isHidden ? "active" : ""}">隱藏</button>`)
 			.click(() => this._meta.isHidden = !this._meta.isHidden);
 		const hkIsHidden = () => {
 			$btnShowHide.toggleClass("active", this._meta.isHidden);
@@ -2209,6 +2209,7 @@ class RangeFilter extends FilterBase {
 
 			const isRange = !cur.isMinVal && !cur.isMaxVal;
 			const isCapped = !cur.isMinVal || !cur.isMaxVal;
+
 			$wrpSummary
 				.title(isRange ? `Hidden range` : isCapped ? `Hidden limit` : "")
 				.text(isRange ? `${cur.min}-${cur.max}` : !cur.isMinVal ? `≥ ${cur.min}` : !cur.isMaxVal ? `≤ ${cur.max}` : "")
@@ -2333,20 +2334,21 @@ class RangeFilter extends FilterBase {
 		hideHook();
 
 		const handleMiniUpdate = () => {
+			const headerText = this.displayHeader || this.header;
 			if (this._state.curMin === this._state.curMax) {
 				$btnMiniGt.attr("state", FilterBox._PILL_STATES[0]);
 				$btnMiniLt.attr("state", FilterBox._PILL_STATES[0]);
 				$btnMiniEq.attr("state", FilterBox._PILL_STATES[1])
-					.text(`${this.header} = ${this._labels ? this._labels[this._state.curMin] : this._state.curMin}`);
+					.text(`${headerText} = ${this._labelDisplayFn(this._labels ? this._labels[this._state.curMin] : this._state.curMin)}`);
 			} else {
 				if (this._state.min !== this._state.curMin) {
 					$btnMiniGt.attr("state", FilterBox._PILL_STATES[1])
-						.text(`${this.header} ≥ ${this._labels ? this._labels[this._state.curMin] : this._state.curMin}`);
+						.text(`${headerText} ≥ ${this._labelDisplayFn(this._labels ? this._labels[this._state.curMin] : this._state.curMin)}`);
 				} else $btnMiniGt.attr("state", FilterBox._PILL_STATES[0]);
 
 				if (this._state.max !== this._state.curMax) {
 					$btnMiniLt.attr("state", FilterBox._PILL_STATES[1])
-						.text(`${this.header} ≤ ${this._labels ? this._labels[this._state.curMax] : this._state.curMax}`);
+						.text(`${headerText} ≤ ${this._labelDisplayFn(this._labels ? this._labels[this._state.curMax] : this._state.curMax)}`);
 				} else $btnMiniLt.attr("state", FilterBox._PILL_STATES[0]);
 
 				$btnMiniEq.attr("state", FilterBox._PILL_STATES[0]);
@@ -2360,7 +2362,7 @@ class RangeFilter extends FilterBase {
 			[...new Array(this._state.max - this._state.min + 1)].forEach((_, i) => {
 				const val = i + this._state.min;
 				const label = this._labels ? this._labels[i] : null;
-				$(`<option/>`, {value: val, text: label || val}).appendTo($sel);
+				$(`<option/>`, {value: val, text: this._labelDisplayFn(label || val)}).appendTo($sel);
 			});
 
 			return $sel;

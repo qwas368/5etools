@@ -51,11 +51,11 @@ class NavBar {
 		addLi(ulBooks, "book.html", "姍納薩的萬事指南", {aHash: "XGE", date: "2017"});
 		addLi(ulBooks, "book.html", "魔鄧肯的眾敵卷冊", {aHash: "MTF", date: "2018"});
 		addLi(ulBooks, "book.html", "拉尼卡的公會長指南", {aHash: "GGR", date: null});
-		addLi(ulBooks, "book.html", "Acquisitions Incorporated", {aHash: "AI", date: "2019"});
-		addLi(ulBooks, "book.html", "Eberron: Rising from the Last War", {aHash: "ERLW", date: null});
-		addLi(ulBooks, "book.html", "Dungeons & Dragons vs. Rick and Morty: Basic Rules", {aHash: "RMR", date: null});
-		addLi(ulBooks, "book.html", "Explorer's Guide to Wildemount", {aHash: "EGW", date: "2020"});
-		addLi(ulBooks, "book.html", "Mythic Odysseys of Theros", {aHash: "MOT", date: null});
+		addLi(ulBooks, "book.html", "艾奎茲玄股份有限公司", {aHash: "AI", date: "2019"});
+		addLi(ulBooks, "book.html", "艾伯倫：從終末戰爭復甦", {aHash: "ERLW", date: null});
+		addLi(ulBooks, "book.html", "龍與地下城 vs. 瑞克和莫蒂：基本規則", {aHash: "RMR", date: null});
+		addLi(ulBooks, "book.html", "荒洲探索指南", {aHash: "EGW", date: "2020"});
+		addLi(ulBooks, "book.html", "塞洛斯的神話奧德賽", {aHash: "MOT", date: null});
 		addDivider(ulBooks);
 		addLi(ulBooks, "book.html", "冒險者聯盟", {aHash: "AL", date: "2016"});
 		addLi(ulBooks, "book.html", "智者建言彙編", {aHash: "SAC", date: "2019"});

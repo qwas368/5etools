@@ -21,6 +21,7 @@ class SpellsPage {
 
 	getListItem (spell, spI) {
 		const hash = UrlUtil.autoEncodeHash(spell);
+		const althash = spell.translate_name? UrlUtil.encodeForHash([spell.translate_name, spell.source]): null;
 		if (!spell.uniqueId && _addedHashes.has(hash)) return null;
 		_addedHashes.add(hash);
 		const isExcluded = ExcludeUtil.isExcluded(spell.name, "spell", spell.source);
@@ -52,6 +53,7 @@ class SpellsPage {
 			spell.name,
 			{
 				hash,
+				althash,
 				source,
 				level: spell.level,
 				time,
@@ -64,6 +66,9 @@ class SpellsPage {
 			{
 				uniqueId: spell.uniqueId ? spell.uniqueId : spI,
 				isExcluded
+			},
+			{
+				translate_name: spell.translate_name
 			}
 		);
 

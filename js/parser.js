@@ -817,7 +817,7 @@ Parser.getTimeToFull = function (time) {
 	return `${time.number} ${Parser.SP_TIME_SINGLETONS.includes(time.unit) && time.unit!=Parser.SP_TM_ROUND ? "個" : ""}${Parser.TIME_UNIT_TARNSLATE[time.unit] || time.unit}`;
 };
 Parser.TIME_UNIT_TARNSLATE = {
-	"bonus": "附贈動作", "action": "動作", "reaction": "反應", "round": "輪", "minute": "分鐘", "hour": "小時"
+	"bonus": "附贈動作", "bonus action": "附贈動作", "action": "動作", "reaction": "反應", "round": "輪", "minute": "分鐘", "hour": "小時", "rounds": "輪", "minutes": "分鐘", "hours": "小時"
 }
 
 RNG_SPECIAL = "special";
@@ -1022,7 +1022,7 @@ Parser.spComponentsToFull = function (comp, level) {
 	if (comp.v) out.push("聲音");
 	if (comp.s) out.push("姿勢");
 	if (comp.m != null) out.push(`材料 ${comp.m !== true ? ` (${comp.m.text != null ? comp.m.text : comp.m})` : ""}`);
-	if (comp.r) out.push(`R (${level} 金幣)`);
+	if (comp.r) out.push(`專利稅 (${level} 金幣)`);
 	return out.join(", ") || "無";
 };
 
@@ -1127,26 +1127,26 @@ Parser._spSubclassItem = function (fromSubclass, textOnly, subclassLookup) {
 };
 
 Parser.SPELL_ATTACK_TYPE_TO_FULL = {};
-Parser.SPELL_ATTACK_TYPE_TO_FULL["M"] = "Melee";
-Parser.SPELL_ATTACK_TYPE_TO_FULL["R"] = "Ranged";
-Parser.SPELL_ATTACK_TYPE_TO_FULL["O"] = "Other/Unknown";
+Parser.SPELL_ATTACK_TYPE_TO_FULL["M"] = "近戰";
+Parser.SPELL_ATTACK_TYPE_TO_FULL["R"] = "遠程";
+Parser.SPELL_ATTACK_TYPE_TO_FULL["O"] = "其他/不明";
 
 Parser.spAttackTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SPELL_ATTACK_TYPE_TO_FULL, type);
 };
 
 Parser.SPELL_AREA_TYPE_TO_FULL = {
-	ST: "Single Target",
-	MT: "Multiple Targets",
-	C: "Cube",
-	N: "Cone",
-	Y: "Cylinder",
-	S: "Sphere",
-	R: "Circle",
-	Q: "Square",
-	L: "Line",
-	H: "Hemisphere",
-	W: "Wall"
+	ST: "單一目標",
+	MT: "複數目標",
+	C: "立方",
+	N: "錐形",
+	Y: "圓柱",
+	S: "球體",
+	R: "圓形",
+	Q: "方形",
+	L: "直線",
+	H: "半球",
+	W: "牆"
 };
 Parser.spAreaTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SPELL_AREA_TYPE_TO_FULL, type);
@@ -1860,12 +1860,12 @@ Parser.SP_TM_MINS = "minute";
 Parser.SP_TM_HRS = "hour";
 Parser.SP_TIME_SINGLETONS = [Parser.SP_TM_ACTION, Parser.SP_TM_B_ACTION, Parser.SP_TM_REACTION, Parser.SP_TM_ROUND];
 Parser.SP_TIME_TO_FULL = {
-	[Parser.SP_TM_ACTION]: "Action",
-	[Parser.SP_TM_B_ACTION]: "Bonus Action",
-	[Parser.SP_TM_REACTION]: "Reaction",
-	[Parser.SP_TM_ROUND]: "Rounds",
-	[Parser.SP_TM_MINS]: "Minutes",
-	[Parser.SP_TM_HRS]: "Hours"
+	[Parser.SP_TM_ACTION]: "動作",
+	[Parser.SP_TM_B_ACTION]: "附贈動作",
+	[Parser.SP_TM_REACTION]: "反應",
+	[Parser.SP_TM_ROUND]: "輪",
+	[Parser.SP_TM_MINS]: "分鐘",
+	[Parser.SP_TM_HRS]: "小時"
 };
 Parser.spTimeUnitToFull = function (timeUnit) {
 	return Parser._parse_aToB(Parser.SP_TIME_TO_FULL, timeUnit);
@@ -2947,6 +2947,22 @@ Parser.NUMBERS_TEENS = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fift
 
 Parser.translate = (dict, key) => { return dict[key.toLowerCase()]? dict[key.toLowerCase()]: key; };
 
+Parser.translateCondition = it => Parser.translate(Parser.COND_TO_TRANS, it);
+Parser.COND_TO_TRANS = {
+	"blinded": "目盲", "charmed": "魅惑", "deafened": "耳聾", "exhaustion": "力竭",
+	"frightened": "恐懼",
+	"grappled": "被擒",
+	"incapacitated": "無力",
+	"invisible": "隱形",
+	"paralyzed": "麻痺",
+	"petrified": "石化",
+	"poisoned": "中毒",
+	"prone": "伏地",
+	"restrained": "束縛",
+	"stunned": "震懾",
+	"unconscious": "昏迷",
+};
+
 Parser.translateDmgType = it => Parser.translate(Parser.DMG_TYPE_TO_TRANS, it);
 Parser.DMG_TYPE_TO_TRANS = {
 	"acid": "酸蝕",
@@ -3012,12 +3028,29 @@ Parser.SUB_CLASS_TO_TRANS = {
 	"forge": "鍛造", "grave": "墳墓", "knowledge": "知識", "nature": "自然", "death": "死亡", "arcana": "奧秘", "life": "生命", "trickery": "詭術", "war": "戰爭", "order": "秩序", "tempest": "暴風", "light": "光明", "love": "博愛", "city": "城市", "twilight": "暮光",
 	"archfey": "至高妖精", "fiend": "邪魔宗主", "great old one": "舊日支配者", "celestial": "天界宗主", "hexblade": "咒劍士", "undying": "不朽者",
 	"land": "大地", "spores": "孢子", "wildfire": "野火",
-	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者", "treachery": "背信",
+	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者", "treachery": "背信", "glory": "榮譽",
 }
-
-
 Parser.MISC_TO_TRANS = {
 	"revisited": "再製", "revised": "修訂"
+}
+
+Parser.translateSpDuration = it => Parser.translate(Parser.SPELL_DUR_TO_TRANS, it);
+Parser.SPELL_DUR_TO_TRANS = {
+	"instant": "即效", "1 round":"1輪", "1 minute":"1分鐘", "10 minutes":"10分鐘",
+	"1 hour":"1小時", "8 hours":"8小時", "24+ hours":"24+ 小時", "permanent":"永久", "special":"特殊"
+}
+Parser.translateSpBackground = it => Parser.translate(Parser.SP_BACKGROUND_TO_TRANS, it);
+Parser.SP_BACKGROUND_TO_TRANS = {
+	"dimir operative": "底密爾特務",
+	"simic scientist": "析米克科學家",
+	"boros legionnaire": "波洛斯軍團兵",
+	"selesnya initiate": "瑟雷尼亞祀徒",
+	"golgari agent": "葛加理密探",
+	"izzet engineer": "伊捷工程師",
+	"azorius functionary": "俄佐立官員",
+	"gruul anarch": "古魯反抗者",
+	"orzhov representative": "歐佐夫議員",
+	"rakdos cultist": "拉鐸司邪教徒",
 }
 
 function extractBrackets(text){ return text.split(/[()]/).map(t=>t.trim()).filter(t=>!!t);}
