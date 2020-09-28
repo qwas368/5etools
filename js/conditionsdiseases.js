@@ -26,6 +26,7 @@ class ConditionsDiseasesPage extends ListPage {
 
 		const source = Parser.sourceJsonToAbv(it.source);
 		const hash = UrlUtil.autoEncodeHash(it);
+		const althash = it.translate_name? UrlUtil.encodeForHash([it.translate_name, it.source]): null;
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border">
 			<span class="col-3 text-center pl-0">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
@@ -39,12 +40,16 @@ class ConditionsDiseasesPage extends ListPage {
 			(it.translate_name || it.name),
 			{
 				hash,
+				althash,
 				source,
 				type: it.__prop
 			},
 			{
 				uniqueId: it.uniqueId ? it.uniqueId : cdI,
 				isExcluded
+			},
+			{
+				translate_name: it.translate_name
 			}
 		);
 

@@ -2264,8 +2264,8 @@ Parser.SOURCE_JSON_TO_FULL[SRC_VGM] = "瓦羅的怪物指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_XGE] = "姍納薩的萬事指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_OGA] = "One Grung Above";
 Parser.SOURCE_JSON_TO_FULL[SRC_MTF] = "魔鄧肯的眾敵卷冊";
-Parser.SOURCE_JSON_TO_FULL[SRC_WDH] = "Waterdeep: Dragon Heist";
-Parser.SOURCE_JSON_TO_FULL[SRC_WDMM] = "Waterdeep: Dungeon of the Mad Mage";
+Parser.SOURCE_JSON_TO_FULL[SRC_WDH] = "深水城：龍金飛劫";
+Parser.SOURCE_JSON_TO_FULL[SRC_WDMM] = "深水城：瘋狂法師的地下城";
 Parser.SOURCE_JSON_TO_FULL[SRC_GGR] = "拉尼卡的公會長指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_KKW] = "Krenko's Way";
 Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "夸力許的失落實驗室";
@@ -2273,7 +2273,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_GoS] = "鹽沼幽靈";
 Parser.SOURCE_JSON_TO_FULL[SRC_AI] = "艾奎茲玄股份有限公司";
 Parser.SOURCE_JSON_TO_FULL[SRC_OoW] = "The Orrery of the Wanderer";
 Parser.SOURCE_JSON_TO_FULL[SRC_ESK] = "Essentials Kit";
-Parser.SOURCE_JSON_TO_FULL[SRC_DIP] = "Dragon of Icespire Peak";
+Parser.SOURCE_JSON_TO_FULL[SRC_DIP] = "冰霜頂尖的巨龍";
 Parser.SOURCE_JSON_TO_FULL[SRC_HftT] = "Hunt for the Thessalhydra";
 Parser.SOURCE_JSON_TO_FULL[SRC_DC] = "Divine Contention";
 Parser.SOURCE_JSON_TO_FULL[SRC_SLW] = "Storm Lord's Wrath";
@@ -2282,7 +2282,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_BGDIA] = "Baldur's Gate: Descent Into Avernus";
 Parser.SOURCE_JSON_TO_FULL[SRC_LR] = "洛卡魚人的崛起";
 Parser.SOURCE_JSON_TO_FULL[SRC_AL] = "冒險者聯盟";
 Parser.SOURCE_JSON_TO_FULL[SRC_SAC] = "智者建言彙編";
-Parser.SOURCE_JSON_TO_FULL[SRC_ERLW] = "艾伯倫: Rising from the Last War";
+Parser.SOURCE_JSON_TO_FULL[SRC_ERLW] = "艾伯倫：從終末戰爭復甦";
 Parser.SOURCE_JSON_TO_FULL[SRC_EFR] = "Eberron: Forgotten Relics";
 Parser.SOURCE_JSON_TO_FULL[SRC_RMBRE] = "The Lost Dungeon of Rickedness: Big Rick Energy";
 Parser.SOURCE_JSON_TO_FULL[SRC_RMR] = "Dungeons & Dragons vs. Rick and Morty: Basic Rules";
@@ -3012,7 +3012,7 @@ Parser.SUB_CLASS_TO_TRANS = {
 	"forge": "鍛造", "grave": "墳墓", "knowledge": "知識", "nature": "自然", "death": "死亡", "arcana": "奧秘", "life": "生命", "trickery": "詭術", "war": "戰爭", "order": "秩序", "tempest": "暴風", "light": "光明", "love": "博愛", "city": "城市", "twilight": "暮光",
 	"archfey": "至高妖精", "fiend": "邪魔宗主", "great old one": "舊日支配者", "celestial": "天界宗主", "hexblade": "咒劍士", "undying": "不朽者",
 	"land": "大地", "spores": "孢子", "wildfire": "野火",
-	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者",
+	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者", "treachery": "背信",
 }
 
 
