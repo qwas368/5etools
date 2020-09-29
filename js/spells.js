@@ -404,3 +404,4 @@ async function pHandleUnknownHash (link, sub) {
 
 const spellsPage = new SpellsPage();
 window.addEventListener("load", () => spellsPage.pOnLoad());
+window.onload = Parser.initInvocationDict;

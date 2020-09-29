@@ -139,13 +139,13 @@
 			]
 		},
 		{
-			"name": "Armor of Shadows",
+			"name": "Armor of Shadows", "translate_name": "暗影護甲",
 			"source": "PHB",
 			"page": 110,
 			"srd": true,
 			"featureType": "EI",
 			"entries": [
-				"You can cast {@spell mage armor} on yourself at will, without expending a spell slot or material components."
+				"你可以對你自己隨意施放{@spell 法師護甲}，無需消耗法術位或材料構材。"
 			]
 		},
 		{
@@ -2267,7 +2267,7 @@
 			]
 		},
 		{
-			"name": "Master of Myriad Forms",
+			"name": "Master of Myriad Forms", "translate_name": "萬形之主",
 			"source": "PHB",
 			"page": 111,
 			"srd": true,
@@ -2283,7 +2283,7 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell alter self} at will, without expending a spell slot."
+				"你可以隨意施放{@spell 變造自身}，無需消耗法術位。"
 			]
 		},
 		{
@@ -4359,7 +4359,7 @@
 			]
 		},
 		{
-			"name": "Visions of Distant Realms",
+			"name": "Visions of Distant Realms", "translate_name": "穹宇盡視",
 			"source": "PHB",
 			"page": 111,
 			"srd": true,
@@ -4375,7 +4375,7 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell arcane eye} at will, without expending a spell slot."
+				"你可以隨意施放{@spell 祕法眼}，無需消耗法術位。"
 			]
 		},
 		{

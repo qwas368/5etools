@@ -642,7 +642,7 @@ function Renderer () {
 
 	this._renderEntriesSubtypes_renderPreReqText = function (entry, textStack, meta) {
 		if (entry.prerequisite) {
-			textStack[0] += `<span class="rd__prerequisite">Prerequisite: `;
+			textStack[0] += `<span class="rd__prerequisite">先決條件：`;
 			this._recursiveRender({type: "inline", entries: [entry.prerequisite]}, textStack, meta);
 			textStack[0] += `</span>`;
 		}
@@ -2697,10 +2697,10 @@ Renderer.utils = {
 							// a generic level requirement (as of 2020-03-11, homebrew only)
 							if (typeof v === "number") {
 								if (isListMode) return `Lvl ${v}`
-								else return `${Parser.getOrdinalForm(v)} level`
+								else return `${Parser.getOrdinalForm(v)}級`
 							} else if (!v.class && !v.subclass) {
 								if (isListMode) return `Lvl ${v.level}`
-								else return `${Parser.getOrdinalForm(v.level)} level`
+								else return `${v.level}級`
 							}
 
 							const isSubclassVisible = v.subclass && v.subclass.visible;
@@ -2713,7 +2713,7 @@ Renderer.utils = {
 								if (isClassVisible && isSubclassVisible) classPart = ` ${v.class.name} (${v.subclass.name})`;
 								else if (isClassVisible) classPart = ` ${v.class.name}`;
 								else if (isSubclassVisible) classPart = ` &lt;remember to insert class name here&gt; (${v.subclass.name})`; // :^)
-								return `${Parser.getOrdinalForm(v.level)} level${isClassVisible ? ` ${classPart}` : ""}`
+								return `${v.level}級${isClassVisible ? ` ${classPart}` : ""}`
 							}
 						}
 						case "pact": return Parser.prereqPactToFull(v);
@@ -2721,14 +2721,14 @@ Renderer.utils = {
 						case "spell":
 							return isListMode
 								? v.map(x => x.split("#")[0].split("|")[0].toTitleCase()).join("/")
-								: v.map(sp => Parser.prereqSpellToFull(sp)).joinConjunct(", ", " or ");
+								: v.map(sp => Parser.prereqSpellToFull(sp)).joinConjunct(", ", " 或 ");
 						case "feature":
-							return isListMode ? v.map(x => x.toTitleCase()).join("/") : v.joinConjunct(", ", " or ");
+							return isListMode ? v.map(x => x.toTitleCase()).join("/") : v.joinConjunct(", ", " 或 ");
 						case "item":
-							return isListMode ? v.map(x => x.toTitleCase()).join("/") : v.joinConjunct(", ", " or ");
+							return isListMode ? v.map(x => x.toTitleCase()).join("/") : v.joinConjunct(", ", " 或 ");
 						case "otherSummary":
 							return isListMode ? (v.entrySummary || Renderer.stripTags(v.entry)) : Renderer.get().render(v.entry);
-						case "other": return isListMode ? "Special" : Renderer.get().render(v);
+						case "other": return isListMode ? "特殊" : Renderer.get().render(v);
 						case "race": {
 							const parts = v.map((it, i) => {
 								if (isListMode) {
@@ -2738,7 +2738,7 @@ Renderer.utils = {
 									return `${raceName}${it.subrace != null ? ` (${it.subrace})` : ""}`;
 								}
 							});
-							return isListMode ? parts.join("/") : parts.joinConjunct(", ", " or ");
+							return isListMode ? parts.join("/") : parts.joinConjunct(", ", " 或 ");
 						}
 						case "ability": {
 							// `v` is an array or objects with str/dex/... properties; array is "OR"'d togther, object is "AND"'d together
@@ -2797,9 +2797,9 @@ Renderer.utils = {
 								const isComplex = hadMultiMultipleInner || hadMultipleInner || allValuesEqual == null;
 								const joined = abilityOptions.joinConjunct(
 									hadMultiMultipleInner ? " - " : hadMultipleInner ? "; " : ", ",
-									isComplex ? ` <i>or</i> ` : " or "
+									isComplex ? ` <i>或</i> ` : " 或 "
 								);
-								return `${joined}${allValuesEqual != null ? ` 13 or higher` : ""}`
+								return `${joined}${allValuesEqual != null ? ` 13或更高` : ""}`
 							}
 						}
 						case "proficiency": {
@@ -2818,9 +2818,9 @@ Renderer.utils = {
 							});
 							return isListMode ? parts.join("/") : parts.joinConjunct(", ", " or ");
 						}
-						case "spellcasting": return isListMode ? "Spellcasting" : "The ability to cast at least one spell";
-						case "spellcasting2020": return isListMode ? "Spellcasting" : "Spellcasting or Pact Magic feature";
-						case "psionics": return isListMode ? "Psionics" : Renderer.get().render("Psionic Talent feature or {@feat Wild Talent|UA2020PsionicOptionsRevisited} feat");
+						case "spellcasting": return isListMode ? "施法能力" : "具有施展至少一種法術的能力";
+						case "spellcasting2020": return isListMode ? "施法能力" : "具有施法或契約魔法的能力";
+						case "psionics": return isListMode ? "靈能" : Renderer.get().render("Psionic Talent feature or {@feat Wild Talent|UA2020PsionicOptionsRevisited} feat");
 						default: throw new Error(`Unhandled key: ${k}`);
 					}
 				})
@@ -2829,7 +2829,7 @@ Renderer.utils = {
 		}).filter(Boolean);
 
 		if (!listOfChoices.length) return isListMode ? "\u2014" : "";
-		return isListMode ? listOfChoices.join("/") : `Prerequisites: ${listOfChoices.joinConjunct("; ", " or ")}`;
+		return isListMode ? listOfChoices.join("/") : `先決條件： ${listOfChoices.joinConjunct("; ", " 或 ")}`;
 	},
 
 	getMediaUrl (entry, prop, mediaDir) {
@@ -2926,10 +2926,10 @@ Renderer.spell = {
 			<tr><td colspan="6">
 				<table class="summary stripe-even">
 					<tr>
-						<th colspan="1">Level</th>
-						<th colspan="1">School</th>
-						<th colspan="2">Casting Time</th>
-						<th colspan="2">Range</th>
+						<th colspan="1">環階</th>
+						<th colspan="1">學派</th>
+						<th colspan="2">施法時間</th>
+						<th colspan="2">射程</th>
 					</tr>
 					<tr>
 						<td colspan="1">${Parser.spLevelToFull(spell.level)}${Parser.spMetaToFull(spell.meta)}</td>
@@ -2938,8 +2938,8 @@ Renderer.spell = {
 						<td colspan="2">${Parser.spRangeToFull(spell.range)}</td>
 					</tr>
 					<tr>
-						<th colspan="4">Components</th>
-						<th colspan="2">Duration</th>
+						<th colspan="4">構材</th>
+						<th colspan="2">持續時間</th>
 					</tr>
 					<tr>
 						<td colspan="4">${Parser.spComponentsToFull(spell.components, spell.level)}</td>
@@ -2959,7 +2959,7 @@ Renderer.spell = {
 		const fromClassList = Renderer.spell.getCombinedClasses(spell, "fromClassList");
 		if (fromClassList.length) {
 			const [current] = Parser.spClassesToCurrentAndLegacy(fromClassList);
-			renderStack.push(`<div><span class="bold">Classes: </span>${Parser.spMainClassesToFull(current)}</div>`);
+			renderStack.push(`<div><span class="bold">職業: </span>${Parser.spMainClassesToFull(current)}</div>`);
 		}
 		renderStack.push(`</td></tr>`);
 

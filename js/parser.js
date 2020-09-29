@@ -3002,7 +3002,7 @@ Parser.translateSubClass = function(it){
 	var subClass_append = (subClass_arr.length>1)? (subClass_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join("")): "";
 	var subsubClass = (subtext_arr.length>1)? Parser.translate(Parser.SUB_CLASS_TO_TRANS, subtext_arr[1]): null;
 	
-	if(!Parser.SUB_CLASS_TO_TRANS[subClass_arr[0].toLowerCase()]) console.log(mainClass+" -> "+subClass_arr[0].toLowerCase())
+	//if(!Parser.SUB_CLASS_TO_TRANS[subClass_arr[0].toLowerCase()]) console.log(mainClass+" -> "+subClass_arr[0].toLowerCase())
 	return `${mainClass}: ${subClass+subClass_append+(subsubClass? (", "+subsubClass): "")}`;
 }
 Parser.MAIN_CLASS_TO_TRANS = {
@@ -3031,9 +3031,51 @@ Parser.SUB_CLASS_TO_TRANS = {
 	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者", "treachery": "背信", "glory": "榮譽",
 }
 Parser.MISC_TO_TRANS = {
-	"revisited": "再製", "revised": "修訂"
+	"revisited": "再製", "revised": "修訂",
 }
+Parser.translateMainRace = function(it){
+	var text_arr = extractBrackets(it);
+	var RaceName = Parser.translate(Parser.MAIN_RACE_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.SUB_RACE_TO_TRANS, i)})`).join(""): "";
+	return RaceName+appendix;
+}
+Parser.translateSubRace = function(it){
+	var text_arr = extractBrackets(it);
+	var RaceName = Parser.translate(Parser.MAIN_RACE_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.SUB_RACE_TO_TRANS, i)})`).join(""): "";
 
+	return RaceName+appendix;
+}
+Parser.MAIN_RACE_TO_TRANS = {
+	"no subraces": "沒有亞種的種族",
+	"aasimar": "阿斯莫",
+	"dwarf": "矮人",
+	"elf": "精靈",
+	"genasi": "元素裔",
+	"gith": "吉斯人",
+	"gnome": "地侏",
+	"half-elf": "半精靈",
+	"half-orc": "半獸人",
+	"halfling": "半身人",
+	"human": "人類",
+	"tiefling": "提夫林",
+	"firbolg": "費爾伯格",
+	"triton": "梭羅魚人",
+	"yuan-ti pureblood": "純血蛇人",
+	"siren": "塞壬"
+};
+Parser.SUB_RACE_TO_TRANS = {
+	"zendikar": "贊迪卡",
+	"fallen": "墮落", "protector": "守護者", "scourge": "天譴",
+	"duergar": "灰",
+	"drow": "卓爾", "eladrin": "雅靈", "high": "高等", "shadar-kai": "影靈", "mul daya nation": "慕達雅族",
+	"air": "氣", "earth": "土", "fire": "火", "water": "水",
+	"githyanki": "吉斯洋基", "githzerai": "吉斯澤萊", "forest": "林",
+	"drow descent": "卓爾血統",
+	"mark of warding": "守護龍紋", "mark of shadow": "陰影龍紋", "mark of scribing": "抄錄龍紋", "mark of detection": "偵測龍紋", "mark of storm": "暴風龍紋",  "mark of finding": "探尋龍紋", "mark of healing": "醫療龍紋", "mark of hospitality": "招待龍紋", "mark of handling": "畜牧龍紋", "mark of making": "創造龍紋", "mark of passage": "通行龍紋", "mark of sentinel": "警戒龍紋",
+	"asmodeus": "阿斯莫德", "baalzebul": "巴力西卜", "dispater": "狄斯帕特", "fierna": "菲爾娜", "glasya": "格萊希亞", "levistus": "萊維斯圖斯", "mammon": "瑪門", "mephistopheles": "梅菲斯托費勒斯", "variant": "變體", "zariel": "扎瑞爾", "abyssal": "深淵"
+};
+	
 Parser.translateSpDuration = it => Parser.translate(Parser.SPELL_DUR_TO_TRANS, it);
 Parser.SPELL_DUR_TO_TRANS = {
 	"instant": "即效", "1 round":"1輪", "1 minute":"1分鐘", "10 minutes":"10分鐘",
@@ -3052,6 +3094,13 @@ Parser.SP_BACKGROUND_TO_TRANS = {
 	"orzhov representative": "歐佐夫議員",
 	"rakdos cultist": "拉鐸司邪教徒",
 }
+Parser.INVOCATION_TO_TRANS = {};
+Parser.initInvocationDict = async function(){
+	const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/optionalfeatures.json`);
+	data["optionalfeature"].filter(it=>it.translate_name).map(it=>{ Parser.INVOCATION_TO_TRANS[it.name.toLowerCase()]=it.translate_name; });
+};
+Parser.translateInvocation = it => Parser.translate(Parser.INVOCATION_TO_TRANS, it);
 
-function extractBrackets(text){ return text.split(/[()]/).map(t=>t.trim()).filter(t=>!!t);}
+
+function extractBrackets(text){ return text.split(/[();]/).map(t=>t.trim()).filter(t=>!!t);}
 function alias(object, key, alias){ object[alias]=object[key]; }

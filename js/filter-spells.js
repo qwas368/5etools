@@ -245,9 +245,10 @@ class PageFilterSpells extends PageFilter {
 		const variantClassFilter = new Filter({header: "Variant Class", displayHeader: "變體職業", displayFn: Parser.translateMainClass, headerHelp: `Source: ${Parser.sourceJsonToFull(SRC_UACFV)}`});
 		const classAndSubclassFilter = new MultiFilter({header: "Classes", displayHeader: "職業", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});
 		const raceFilter = new Filter({
-			header: "Race", displayHeader: "種族",
+			header: "Race", displayHeader: "種族", displayFn: Parser.translateSubRace,
 			nests: {},
-			groupFn: it => it.userData
+			groupFn: it => it.userData,
+			itemSortFn: (a, b)=>SortUtil.ascSortLower(a.item, b.item)
 		});
 		const backgroundFilter = new Filter({header: "Background", displayHeader: "背景", displayFn: Parser.translateSpBackground });
 		const metaFilter = new Filter({
@@ -334,7 +335,7 @@ class PageFilterSpells extends PageFilter {
 			itemSortFn: null
 		});
 		const eldritchInvocationFilter = new Filter({
-			header: "Eldritch Invocation", displayHeader: "魔能祈喚"
+			header: "Eldritch Invocation", displayHeader: "魔能祈喚", displayFn: Parser.translateInvocation
 		});
 
 		this._classFilter = classFilter;
@@ -415,7 +416,7 @@ class PageFilterSpells extends PageFilter {
 			this._subclassFilter.addItem(sc);
 		});
 		spell._fRaces.forEach(r => {
-			if (r.nest) this._raceFilter.addNest(r.nest, {isHidden: true});
+			if (r.nest) this._raceFilter.addNest(r.nest, {isHidden: true, displayFn: Parser.translateMainRace});
 			this._raceFilter.addItem(r);
 		});
 		spell._fVariantClasses.forEach(c => this._variantClassFilter.addItem(c));

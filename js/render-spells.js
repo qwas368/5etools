@@ -49,7 +49,7 @@ class RenderSpells {
 
 		if (sp.races) {
 			sp.races.sort((a, b) => SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source));
-			renderStack.push(`<tr class="text"><td colspan="6"><span class="bold">種族: </span>${sp.races.map(r => `${SourceUtil.isNonstandardSource(r.source) ? `<span class="text-muted">` : ``}${renderer.render(`{@race ${r.name}|${r.source}}`)}${SourceUtil.isNonstandardSource(r.source) ? `</span>` : ``}`).join(", ")}</td></tr>`);
+			renderStack.push(`<tr class="text"><td colspan="6"><span class="bold">種族: </span>${sp.races.map(r => `${SourceUtil.isNonstandardSource(r.source) ? `<span class="text-muted">` : ``}${renderer.render(`{@race ${r.name}|${r.source}|${Parser.translateSubRace(r.name)}}`)}${SourceUtil.isNonstandardSource(r.source) ? `</span>` : ``}`).join(", ")}</td></tr>`);
 		}
 
 		if (sp.backgrounds) {
@@ -59,7 +59,7 @@ class RenderSpells {
 
 		if (sp.eldritchInvocations) {
 			sp.eldritchInvocations.sort((a, b) => SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source));
-			renderStack.push(`<tr class="text"><td colspan="6"><span class="bold">魔能祈喚: </span>${sp.eldritchInvocations.map(r => `${SourceUtil.isNonstandardSource(r.source) ? `<span class="text-muted">` : ``}${renderer.render(`{@optfeature ${r.name}|${r.source}}`)}${SourceUtil.isNonstandardSource(r.source) ? `</span>` : ``}`).join(", ")}</td></tr>`);
+			renderStack.push(`<tr class="text"><td colspan="6"><span class="bold">魔能祈喚: </span>${sp.eldritchInvocations.map(r => `${SourceUtil.isNonstandardSource(r.source) ? `<span class="text-muted">` : ``}${renderer.render(`{@optfeature ${r.name}|${r.source}|${Parser.translateInvocation(r.name)}}`)}${SourceUtil.isNonstandardSource(r.source) ? `</span>` : ``}`).join(", ")}</td></tr>`);
 		}
 
 		if (sp._scrollNote) {

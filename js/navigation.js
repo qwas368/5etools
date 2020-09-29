@@ -128,7 +128,7 @@ class NavBar {
 		addLi(ulReferences, "deities.html", "神祇");
 		addLi(ulReferences, "items.html", "物品");
 		addLi(ulReferences, "languages.html", "語言");
-		addLi(ulReferences, "optionalfeatures.html", "可選職業能力和選項");
+		addLi(ulReferences, "optionalfeatures.html", "職業能力選項");
 		addLi(ulReferences, "rewards.html", "超自然賜福 & 獎勵");
 		addLi(ulReferences, "psionics.html", "靈能");
 		addLi(ulReferences, "spells.html", "法術");

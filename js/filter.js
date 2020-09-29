@@ -556,10 +556,10 @@ class FilterBox extends ProxyBase {
 
 			if (hasChanges) {
 				const isSave = await InputUiUtil.pGetUserBoolean({
-					title: "Unsaved Changes",
-					textYesRemember: "Always Save",
-					textYes: "Save",
-					textNo: "Discard",
+					title: "尚未儲存的變更",
+					textYesRemember: "永遠幫我儲存",
+					textYes: "儲存",
+					textNo: "捨棄",
 					storageKey: FilterBox._STORAGE_KEY_ALWAYS_SAVE_UNCHANGED,
 					isGlobal: true
 				});
