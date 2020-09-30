@@ -25,10 +25,11 @@ class ConditionsDiseasesPage extends ListPage {
 
 		const source = Parser.sourceJsonToAbv(it.source);
 		const hash = UrlUtil.autoEncodeHash(it);
+		const althash = it.translate_name? UrlUtil.encodeForHash([it.translate_name, it.source]): null;
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border">
 			<span class="col-3 text-center pl-0">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
-			<span class="bold col-7">${it.name}</span>
+			<span class="bold col-7">${it.translate_name || it.name}</span>
 			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${BrewUtil.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
@@ -38,13 +39,15 @@ class ConditionsDiseasesPage extends ListPage {
 			it.name,
 			{
 				hash,
+				althash,
 				source,
 				type: it.__prop
 			},
 			{
 				uniqueId: it.uniqueId ? it.uniqueId : cdI,
 				isExcluded
-			}
+			},
+			{ translate_name: it.translate_name }
 		);
 
 		eleLi.addEventListener("click", (evt) => this._list.doSelect(listItem, evt));
@@ -65,7 +68,7 @@ class ConditionsDiseasesPage extends ListPage {
 		const $ele = $(`<li class="row">
 			<a href="#${hash}" class="lst--border">
 				<span class="col-2 pl-0 text-center">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
-				<span class="bold col-10 pr-0">${it.name}</span>
+				<span class="bold col-10 pr-0">${it.translate_name || it.name}</span>
 			</a>
 		</li>`)
 			.contextmenu(evt => ListUtil.openSubContextMenu(evt, listItem));
@@ -100,12 +103,12 @@ class ConditionsDiseasesPage extends ListPage {
 		}
 
 		const statTab = Renderer.utils.tabButton(
-			"Traits",
+			"效果",
 			() => {},
 			buildStatsTab
 		);
 		const picTab = Renderer.utils.tabButton(
-			"Images",
+			"插圖",
 			() => {},
 			buildFluffTab.bind(null, true)
 		);

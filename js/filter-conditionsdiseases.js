@@ -3,7 +3,8 @@
 class PageFilterConditionsDiseases extends PageFilter {
 	// region static
 	static getDisplayProp (prop) {
-		return prop === "status" ? "Other" : prop.uppercaseFirst();
+		const customDict = {"condition":"狀態", "disease":"疾病", "status":"其他"};
+		return customDict[prop] || prop.uppercaseFirst();
 	}
 	// endregion
 
@@ -12,12 +13,12 @@ class PageFilterConditionsDiseases extends PageFilter {
 
 		this._sourceFilter = new SourceFilter();
 		this._typeFilter = new Filter({
-			header: "Type",
+			header: "Type", displayHeader: "類型",
 			items: ["condition", "disease", "status"],
 			displayFn: PageFilterConditionsDiseases.getDisplayProp,
 			deselFn: (it) => it === "disease" || it === "status"
 		});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["SRD"]});
+		this._miscFilter = new Filter({header: "Miscellaneous", displayHeader: "雜項", items: ["SRD"]});
 	}
 
 	mutateForFilters (it) {

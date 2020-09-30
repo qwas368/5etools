@@ -1,7 +1,7 @@
 {
 	"condition": [
 		{
-			"name": "Blinded",
+			"name": "Blinded", "translate_name": "目盲",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -9,14 +9,14 @@
 				{
 					"type": "list",
 					"items": [
-						"A blinded creature can't see and automatically fails any ability check that requires sight.",
-						"Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage."
+						"陷入目盲狀態的生物無法視物，且在任何需要視覺的屬性檢定中自動失敗。",
+						"對目盲生物進行的攻擊檢定具有優勢，且目盲生物進行的攻擊檢定具有劣勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Charmed",
+			"name": "Charmed", "translate_name": "魅惑",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -24,14 +24,14 @@
 				{
 					"type": "list",
 					"items": [
-						"A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.",
-						"The charmer has advantage on any ability check to interact socially with the creature."
+						"被魅惑的生物不能攻擊其魅惑者、或把魅惑者當做任何有害能力或魔法效果的目標。",
+						"魅惑者在和被魅惑的生物社交互動時所進行的所有屬性檢定都具有優勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Deafened",
+			"name": "Deafened", "translate_name": "耳聾",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -39,23 +39,23 @@
 				{
 					"type": "list",
 					"items": [
-						"A deafened creature can't hear and automatically fails any ability check that requires hearing."
+						"陷入耳聾狀態的生物無法聽見聲音，且在任何需要聽力的屬性檢定中自動失敗。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Exhaustion",
+			"name": "Exhaustion", "translate_name": "力竭",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
 			"entries": [
-				"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.",
+				"某些特殊能力和險酷環境，例如飢餓或長時間處於寒冷或炎熱的溫度下，將會導致角色陷入一個被稱為力竭的特殊狀態。力竭分成六個等級。一個效果可能會使生物陷入一級或以上的力竭等級。",
 				{
 					"type": "table",
 					"colLabels": [
-						"Level",
-						"Effect"
+						"等級",
+						"效果"
 					],
 					"colStyles": [
 						"col-1 text-center",
@@ -64,38 +64,38 @@
 					"rows": [
 						[
 							"1",
-							"Disadvantage on ability checks"
+							"所有屬性檢定具有劣勢"
 						],
 						[
 							"2",
-							"Speed halved"
+							"移動速度減半"
 						],
 						[
 							"3",
-							"Disadvantage on attack rolls and saving throws"
+							"所有攻擊檢定和豁免檢定具有劣勢"
 						],
 						[
 							"4",
-							"Hit point maximum halved"
+							"最大生命值減半"
 						],
 						[
 							"5",
-							"Speed reduced to 0"
+							"移動速度歸零"
 						],
 						[
 							"6",
-							"Death"
+							"死亡"
 						]
 					]
 				},
-				"If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.",
-				"A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks.",
-				"An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.",
-				"Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
+				"如果一個已經陷入力竭的生物再次受到會導致力竭的效果影響，它當下所承受的力竭等級將會再疊加上該效果敘述中所記載的力竭等級。",
+				"一個生物會承受它當前和以下力竭等級的所有力竭效果影響。例如：一個陷入2級力竭的生物會同時承受速度減半以及屬性檢定劣勢的效果影響。",
+				"一個能夠移除力竭狀態的能力會依照該能力的敘述來降低對應程度的力竭等級。當一個生物身上的力竭等級被降低到低於1，則所有的力竭效果都將就此結束。",
+				"當一個生物完成一次長休時，只要它有正常進食和飲水，它就可以降低1級力竭等級。此外，被從死裡復活也會使生物的力竭等級降低1級。"
 			]
 		},
 		{
-			"name": "Frightened",
+			"name": "Frightened", "translate_name": "恐懼",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -103,14 +103,14 @@
 				{
 					"type": "list",
 					"items": [
-						"A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.",
-						"The creature can't willingly move closer to the source of its fear."
+						"當恐懼的來源在視線可及的範圍時，陷入恐懼的生物在屬性檢定和攻擊檢定上具有劣勢。",
+						"生物不能自願地移近它恐懼的來源。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Grappled",
+			"name": "Grappled", "translate_name": "被擒",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -118,15 +118,15 @@
 				{
 					"type": "list",
 					"items": [
-						"A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.",
-						"The condition ends if the grappler is {@condition incapacitated}.",
-						"The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the {@spell thunderwave} spell."
+						"被擒生物的移動速度歸0，且不能受益於任何對它移動速度的加值。",
+						"如果擒抱者陷入{@condition 無力}，則被擒狀態將就此結束。",
+						"如果被擒生物被移出擒抱者或是其他造成擒抱效果的來源的觸及範圍，則被擒狀態將就此結束。像是被{@spell 雷鳴波|phb}給擊飛。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Incapacitated",
+			"name": "Incapacitated", "translate_name": "無力",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -134,13 +134,13 @@
 				{
 					"type": "list",
 					"items": [
-						"An incapacitated creature can't take actions or reactions."
+						"陷入無力狀態的生物不能採取任何動作或反應。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Invisible",
+			"name": "Invisible", "translate_name": "隱形",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -148,14 +148,14 @@
 				{
 					"type": "list",
 					"items": [
-						"An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
-						"Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage."
+						"一個處於隱形狀態的生物不可能在不藉助魔法或特殊感官的幫助下被看見。當要進行躲藏時，該生物將被視作處於重度遮蔽。然而，該生物的所在位置仍然可以透過任何它發出的噪音或留下的蹤跡被偵測到。",
+						"對隱形生物進行的攻擊檢定具有劣勢，且隱形生物進行的攻擊檢定具有優勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Paralyzed",
+			"name": "Paralyzed", "translate_name": "麻痺",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -163,16 +163,16 @@
 				{
 					"type": "list",
 					"items": [
-						"A paralyzed creature is {@condition incapacitated} and can't move or speak.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"Attack rolls against the creature have advantage.",
-						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+						"陷入麻痺狀態的生物同時被視作處於{@condition 無力}狀態，且不能移動或說話。",
+						"該生物的力量和敏捷豁免自動失敗。",
+						"對該生物進行的攻擊檢定具有優勢。",
+						"若攻擊者距離該生物5呎以內，則它對該生物進行的任何攻擊都將在命中時被視為重擊。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Petrified",
+			"name": "Petrified", "translate_name": "石化",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -180,18 +180,18 @@
 				{
 					"type": "list",
 					"items": [
-						"A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.",
-						"The creature is {@condition incapacitated}, can't move or speak, and is unaware of its surroundings.",
-						"Attack rolls against the creature have advantage.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"The creature has resistance to all damage.",
-						"The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
+						"被石化的生物和它身上穿戴或攜帶的任何非魔法物品都會一起被變形成無生命的固體材質（通常是石頭）。它的重量將增加至十倍，並且停止老化。",
+						"該生物陷入{@condition 無力}，不能移動或說話、且無法感知其周遭的環境。",
+						"對該生物進行的攻擊檢定具有優勢。",
+						"該生物的力量和敏捷豁免自動失敗。",
+						"該生物對所有的傷害具有抗力。",
+						"該生物免疫毒素和疾病，已存在於該生物體內的毒素或疾病將會停止運作，而非被解除。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Poisoned",
+			"name": "Poisoned", "translate_name": "中毒",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -199,13 +199,13 @@
 				{
 					"type": "list",
 					"items": [
-						"A poisoned creature has disadvantage on attack rolls and ability checks."
+						"一個中毒的生物在攻擊檢定與屬性檢定上具有劣勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Prone",
+			"name": "Prone", "translate_name": "伏地",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -213,15 +213,15 @@
 				{
 					"type": "list",
 					"items": [
-						"A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.",
-						"The creature has disadvantage on attack rolls.",
-						"An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage."
+						"處於伏地狀態的生物的唯一移動方式是爬行，除非它選擇站起來並因此結束此狀態。",
+						"該生物在攻擊檢定上具有劣勢。",
+						"若攻擊者距離該生物5呎以內，則它對該生物進行的攻擊檢定都具有優勢。除此之外的況狀，對該生物的攻擊檢定具有劣勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Restrained",
+			"name": "Restrained", "translate_name": "束縛",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -229,15 +229,15 @@
 				{
 					"type": "list",
 					"items": [
-						"A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.",
-						"Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
-						"The creature has disadvantage on Dexterity saving throws."
+						"被束縛生物的移動速度歸0，且不能受益於任何對它移動速度的加值。",
+						"對該生物進行的攻擊檢定具有優勢，且該生物進行的攻擊檢定具有劣勢。",
+						"該生物在敏捷豁免上具有劣勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Stunned",
+			"name": "Stunned", "translate_name": "震懾",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -245,15 +245,15 @@
 				{
 					"type": "list",
 					"items": [
-						"A stunned creature is {@condition incapacitated}, can't move, and can speak only falteringly.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"Attack rolls against the creature have advantage."
+						"陷入震懾狀態的生物同時被視作處於{@condition 無力}狀態，不能移動．且只能有氣無力地說話。",
+						"該生物的力量和敏捷豁免自動失敗。",
+						"對該生物進行的攻擊檢定具有優勢。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Unconscious",
+			"name": "Unconscious", "translate_name": "昏迷",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -261,11 +261,11 @@
 				{
 					"type": "list",
 					"items": [
-						"An unconscious creature is {@condition incapacitated}, can't move or speak, and is unaware of its surroundings.",
-						"The creature drops whatever it's holding and falls {@condition prone}.",
-						"The creature automatically fails Strength and Dexterity saving throws.",
-						"Attack rolls against the creature have advantage.",
-						"Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+						"陷入昏迷狀態的生物同時被視作處於{@condition 無力}，不能移動或說話．且無法感知其周遭的環境。",
+						"該生物持握的所有東西都會脫手，並且陷入{@condition 伏地}狀態。",
+						"該生物的力量和敏捷豁免自動失敗。",
+						"對該生物進行的攻擊檢定具有優勢。",
+						"若攻擊者距離該生物5呎以內，則它對該生物進行的任何攻擊都將在命中時被視為重擊。"
 					]
 				}
 			]
