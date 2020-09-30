@@ -32,50 +32,50 @@ class NavBar {
 		};
 		document.getElementById("navigation").prepend(btnShowHide);
 
-		addLi(navBar, "5etools.html", "Home", {isRoot: true});
+		addLi(navBar, "5etools.html", "首頁", {isRoot: true});
 
-		const ulRules = addDropdown(navBar, "Rules");
-		addLi(ulRules, "quickreference.html", "Quick Reference");
-		addLi(ulRules, "variantrules.html", "Optional, Variant, and Expanded Rules");
-		addLi(ulRules, "tables.html", "Tables");
+		const ulRules = addDropdown(navBar, "規則");
+		addLi(ulRules, "quickreference.html", "快速參照");
+		addLi(ulRules, "variantrules.html", "變體/選用/擴展規則");
+		addLi(ulRules, "tables.html", "表格");
 		addDivider(ulRules);
-		const ulBooks = addDropdown(ulRules, "Books", true);
-		addLi(ulBooks, "books.html", "View All/Homebrew");
+		const ulBooks = addDropdown(ulRules, "出版書籍", true);
+		addLi(ulBooks, "books.html", "查看全部/自製內容");
 		addDivider(ulBooks);
-		addLi(ulBooks, "book.html", "Player's Handbook", {aHash: "PHB", date: "2014"});
-		addLi(ulBooks, "book.html", "Monster Manual", {aHash: "MM", date: null});
-		addLi(ulBooks, "book.html", "Dungeon Master's Guide", {aHash: "DMG", date: null});
+		addLi(ulBooks, "book.html", "玩家手冊", {aHash: "PHB", date: "2014"});
+		addLi(ulBooks, "book.html", "怪物圖鑑", {aHash: "MM", date: null});
+		addLi(ulBooks, "book.html", "地下城主指南", {aHash: "DMG", date: null});
 		addDivider(ulBooks);
-		addLi(ulBooks, "book.html", "Sword Coast Adventurer's Guide", {aHash: "SCAG", date: "2015"});
-		addLi(ulBooks, "book.html", "Volo's Guide to Monsters", {aHash: "VGM", date: "2016"});
-		addLi(ulBooks, "book.html", "Xanathar's Guide to Everything", {aHash: "XGE", date: "2017"});
-		addLi(ulBooks, "book.html", "Mordenkainen's Tome of Foes", {aHash: "MTF", date: "2018"});
-		addLi(ulBooks, "book.html", "Guildmasters' Guide to Ravnica", {aHash: "GGR", date: null});
-		addLi(ulBooks, "book.html", "Acquisitions Incorporated", {aHash: "AI", date: "2019"});
-		addLi(ulBooks, "book.html", "Eberron: Rising from the Last War", {aHash: "ERLW", date: null});
-		addLi(ulBooks, "book.html", "Dungeons & Dragons vs. Rick and Morty: Basic Rules", {aHash: "RMR", date: null});
-		addLi(ulBooks, "book.html", "Explorer's Guide to Wildemount", {aHash: "EGW", date: "2020"});
-		addLi(ulBooks, "book.html", "Mythic Odysseys of Theros", {aHash: "MOT", date: null});
+		addLi(ulBooks, "book.html", "劍灣冒險指南", {aHash: "SCAG", date: "2015"});
+		addLi(ulBooks, "book.html", "瓦羅的怪物指南", {aHash: "VGM", date: "2016"});
+		addLi(ulBooks, "book.html", "姍納薩的萬事指南", {aHash: "XGE", date: "2017"});
+		addLi(ulBooks, "book.html", "魔鄧肯的眾敵卷冊", {aHash: "MTF", date: "2018"});
+		addLi(ulBooks, "book.html", "拉尼卡的公會長指南", {aHash: "GGR", date: null});
+		addLi(ulBooks, "book.html", "艾奎茲玄股份有限公司", {aHash: "AI", date: "2019"});
+		addLi(ulBooks, "book.html", "艾伯倫：從終末戰爭復甦", {aHash: "ERLW", date: null});
+		addLi(ulBooks, "book.html", "龍與地下城 vs. 瑞克和莫蒂：基本規則", {aHash: "RMR", date: null});
+		addLi(ulBooks, "book.html", "荒洲探索指南", {aHash: "EGW", date: "2020"});
+		addLi(ulBooks, "book.html", "塞洛斯的神話奧德賽", {aHash: "MOT", date: null});
 		addDivider(ulBooks);
-		addLi(ulBooks, "book.html", "Adventurers League", {aHash: "AL", date: "2016"});
-		addLi(ulBooks, "book.html", "Sage Advice Compendium", {aHash: "SAC", date: "2019"});
+		addLi(ulBooks, "book.html", "冒險者聯盟", {aHash: "AL", date: "2016"});
+		addLi(ulBooks, "book.html", "智者建言彙編", {aHash: "SAC", date: "2019"});
 
-		const ulPlayers = addDropdown(navBar, "Player");
-		addLi(ulPlayers, "classes.html", "Classes");
-		addLi(ulPlayers, "backgrounds.html", "Backgrounds");
-		addLi(ulPlayers, "feats.html", "Feats");
-		addLi(ulPlayers, "races.html", "Races");
+		const ulPlayers = addDropdown(navBar, "玩家選項");
+		addLi(ulPlayers, "races.html", "種族");
+		addLi(ulPlayers, "classes.html", "職業");
+		addLi(ulPlayers, "backgrounds.html", "背景");
+		addLi(ulPlayers, "feats.html", "專長");
 		addDivider(ulPlayers);
-		addLi(ulPlayers, "statgen.html", "Stat Generator");
+		addLi(ulPlayers, "statgen.html", "屬性產生器");
 		addDivider(ulPlayers);
-		addLi(ulPlayers, "lifegen.html", "This Is Your Life");
-		addLi(ulPlayers, "names.html", "Names");
+		addLi(ulPlayers, "lifegen.html", "這是你的人生");
+		addLi(ulPlayers, "names.html", "姓名產生器");
 
-		const ulDms = addDropdown(navBar, "Dungeon Master");
-		addLi(ulDms, "dmscreen.html", "DM Screen");
+		const ulDms = addDropdown(navBar, "地下城主專區");
+		addLi(ulDms, "dmscreen.html", "DM屏幕");
 		addDivider(ulDms);
-		const ulAdventures = addDropdown(ulDms, "Adventures", true);
-		addLi(ulAdventures, "adventures.html", "View All/Homebrew");
+		const ulAdventures = addDropdown(ulDms, "冒險模組", true);
+		addLi(ulAdventures, "adventures.html", "查看全部/自製內容");
 		addDivider(ulAdventures);
 		addLi(ulAdventures, "adventure.html", "Lost Mine of Phandelver", {isSide: true, aHash: "LMoP", date: "2014"});
 		addLi(ulAdventures, "adventure.html", "Hoard of the Dragon Queen", {isSide: true, aHash: "HotDQ", date: null});
@@ -114,28 +114,28 @@ class NavBar {
 		addLi(ulAdventures, "adventure.html", "Wildemount: Frozen Sick", {isSide: true, aHash: "FS", date: null});
 		addLi(ulAdventures, "adventure.html", "Wildemount: Unwelcome Spirits", {isSide: true, aHash: "US", date: null});
 		addLi(ulAdventures, "adventure.html", "Icewind Dale: Rime of the Frostmaiden", {isSide: true, aHash: "IDRotF", date: null});
-		addLi(ulDms, "cultsboons.html", "Cults & Supernatural Boons");
-		addLi(ulDms, "objects.html", "Objects");
-		addLi(ulDms, "trapshazards.html", "Traps & Hazards");
+		addLi(ulDms, "cultsboons.html", "異教 & 超自然恩惠");
+		addLi(ulDms, "objects.html", "物體");
+		addLi(ulDms, "trapshazards.html", "陷阱 & 危害");
 		addDivider(ulDms);
-		addLi(ulDms, "crcalculator.html", "CR Calculator");
-		addLi(ulDms, "encountergen.html", "Encounter Generator");
-		addLi(ulDms, "lootgen.html", "Loot Generator");
+		addLi(ulDms, "crcalculator.html", "CR計算機");
+		addLi(ulDms, "encountergen.html", "遭遇產生器");
+		addLi(ulDms, "lootgen.html", "戰利品產生器");
 
-		const ulReferences = addDropdown(navBar, "References");
-		addLi(ulReferences, "actions.html", "Actions");
-		addLi(ulReferences, "bestiary.html", "Bestiary");
-		addLi(ulReferences, "conditionsdiseases.html", "Conditions & Diseases");
-		addLi(ulReferences, "deities.html", "Deities");
-		addLi(ulReferences, "items.html", "Items");
-		addLi(ulReferences, "languages.html", "Languages");
-		addLi(ulReferences, "optionalfeatures.html", "Other Options & Features");
-		addLi(ulReferences, "rewards.html", "Supernatural Gifts & Rewards");
-		addLi(ulReferences, "psionics.html", "Psionics");
-		addLi(ulReferences, "spells.html", "Spells");
-		addLi(ulReferences, "vehicles.html", "Vehicles");
+		const ulReferences = addDropdown(navBar, "參照資料");
+		addLi(ulReferences, "actions.html", "動作");
+		addLi(ulReferences, "bestiary.html", "生物百科");
+		addLi(ulReferences, "conditionsdiseases.html", "狀態＆疾病");
+		addLi(ulReferences, "deities.html", "神祇");
+		addLi(ulReferences, "items.html", "物品");
+		addLi(ulReferences, "languages.html", "語言");
+		addLi(ulReferences, "optionalfeatures.html", "職業能力選項");
+		addLi(ulReferences, "rewards.html", "超自然賜福 & 獎勵");
+		addLi(ulReferences, "psionics.html", "靈能");
+		addLi(ulReferences, "spells.html", "法術");
+		addLi(ulReferences, "vehicles.html", "載具");
 
-		const ulUtils = addDropdown(navBar, "Utilities");
+		const ulUtils = addDropdown(navBar, "其他功能");
 		addLi(ulUtils, "search.html", "Search");
 		addDivider(ulUtils);
 		addLi(ulUtils, "blacklist.html", "Content Blacklist");
@@ -152,18 +152,18 @@ class NavBar {
 		addDivider(ulUtils);
 		addLi(ulUtils, "roll20.html", "Roll20 Script Help");
 		addDivider(ulUtils);
-		addLi(ulUtils, "changelog.html", "Changelog");
-		addLi(ulUtils, `https://wiki.5e.tools/index.php/Page:_${NavBar.getCurrentPage().replace(/.html$/i, "")}`, "Help", {isExternal: true});
+		addLi(ulUtils, "changelog.html", "更新日誌");
+		addLi(ulUtils, `https://wiki.5e.tools/index.php/Page:_${NavBar.getCurrentPage().replace(/.html$/i, "")}`, "幫助", {isExternal: true});
 		addDivider(ulUtils);
-		addLi(ulUtils, "privacy-policy.html", "Privacy Policy");
+		addLi(ulUtils, "privacy-policy.html", "隱私權條款");
 
-		addLi(navBar, "donate.html", "Donate", {isRoot: true});
+		//addLi(navBar, "donate.html", "Donate", {isRoot: true});
 
-		const ulSettings = addDropdown(navBar, "Settings");
+		const ulSettings = addDropdown(navBar, "設置");
 		addButton(
 			ulSettings,
 			{
-				html: styleSwitcher.getActiveDayNight() === StyleSwitcher.STYLE_NIGHT ? "Day Mode" : "Night Mode",
+				html: styleSwitcher.getActiveDayNight() === StyleSwitcher.STYLE_NIGHT ? "白晝模式" : "夜晚模式",
 				click: (evt) => {
 					evt.preventDefault();
 					styleSwitcher.toggleDayNight();
@@ -174,7 +174,7 @@ class NavBar {
 		addButton(
 			ulSettings,
 			{
-				html: styleSwitcher.getActiveWide() === true ? "Disable Wide Mode" : "Enable Wide Mode (Experimental)",
+				html: styleSwitcher.getActiveWide() === true ? "關閉寬版模式" : "啟用寬版模式(測試中)",
 				click: (evt) => {
 					evt.preventDefault();
 					styleSwitcher.toggleWide();

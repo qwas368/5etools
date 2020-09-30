@@ -14,7 +14,7 @@ class SearchPage {
 
 		Omnisearch.initState();
 
-		const $iptSearch = $(`<input class="form-control pg-search__ipt" placeholder="Search everywhere..." title="Disclaimer: unlikely to search everywhere. Use with caution.">`)
+		const $iptSearch = $(`<input class="form-control pg-search__ipt" placeholder="全域搜尋..." title="Disclaimer: unlikely to search everywhere. Use with caution.">`)
 			.keydown(evt => {
 				if (evt.key !== "Enter") return;
 				$btnSearch.click();
@@ -65,7 +65,7 @@ class SearchPage {
 		const $btnExpandAll = $(`<button class="btn btn-default" title="Expand All Results"><span class="glyphicon glyphicon-plus"></span></button>`)
 			.click(() => handleMassExpandCollapse(true));
 
-		SearchPage._$wrpResults = $(`<div class="flex-col w-100">${this._getWrpResult_message("Loading...")}</div>`);
+		SearchPage._$wrpResults = $(`<div class="flex-col w-100">${this._getWrpResult_message("讀取中...")}</div>`);
 
 		$$(SearchPage._$wrp)`<div class="flex-col w-100 pg-search__wrp">
 			<div class="flex-v-center mb-2 mobile__flex-col">

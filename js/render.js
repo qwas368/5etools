@@ -2512,16 +2512,16 @@ Renderer.utils = {
 			return `${introText} ${it[prop].map(as => {
 				if (as.entry) return Renderer.get().render(as.entry);
 				else {
-					return `<i title="${Parser.sourceJsonToFull(as.source)}">${Parser.sourceJsonToAbv(as.source)}</i>${Renderer.utils.isDisplayPage(as.page) ? `, page ${as.page}` : ""}`;
+					return `<i title="${Parser.sourceJsonToFull(as.source)}">${Parser.sourceJsonToAbv(as.source)}</i>${Renderer.utils.isDisplayPage(as.page) ? `, 第${as.page}頁` : ""}`;
 				}
 			}).join("; ")}`
 		}
 
 		const sourceSub = Renderer.utils.getSourceSubText(it);
-		const baseText = Renderer.utils.isDisplayPage(it.page) ? `<b>Source:</b> <i title="${Parser.sourceJsonToFull(it.source)}${sourceSub}">${Parser.sourceJsonToAbv(it.source)}${sourceSub}</i>, page ${it.page}` : "";
-		const addSourceText = getAltSourceText("additionalSources", "Additional information from");
-		const otherSourceText = getAltSourceText("otherSources", "Also found in");
-		const srdText = it.srd ? `Available in the <span title="Systems Reference Document">SRD</span>${typeof it.srd === "string" ? ` (as &quot;${it.srd}&quot;)` : ""}` : "";
+		const baseText = Renderer.utils.isDisplayPage(it.page) ? `<b>資源:</b> <i title="${Parser.sourceJsonToFull(it.source)}${sourceSub}">${Parser.sourceJsonToAbv(it.source)}${sourceSub}</i>, 第${it.page}頁` : "";
+		const addSourceText = getAltSourceText("additionalSources", "額外資訊記載於");
+		const otherSourceText = getAltSourceText("otherSources", "同時記載於");
+		const srdText = it.srd ? `可見於<span title="Systems Reference Document">SRD</span>${typeof it.srd === "string" ? ` (as &quot;${it.srd}&quot;)` : ""}` : "";
 		const externalSourceText = getAltSourceText("externalSources", "External sources:");
 
 		return `${[baseText, addSourceText, otherSourceText, srdText, externalSourceText].filter(it => it).join(". ")}${baseText && (addSourceText || otherSourceText || srdText || externalSourceText) ? "." : ""}`;
@@ -7330,7 +7330,7 @@ Renderer.hover = {
 	bindPopoutButton ($btnPop, toList, handlerGenerator, title) {
 		$btnPop
 			.off("click")
-			.title(title || "Popout Window (SHIFT for Source Data)");
+			.title(title || "彈出視窗 (按住SHIFT以呈現原始資料格式)");
 
 		$btnPop.on(
 			"click",

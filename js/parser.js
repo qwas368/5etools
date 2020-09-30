@@ -1929,12 +1929,12 @@ Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_CON] = "Conj.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_PSI] = "Psi.";
 
 Parser.ATB_ABV_TO_FULL = {
-	"str": "Strength",
-	"dex": "Dexterity",
-	"con": "Constitution",
-	"int": "Intelligence",
-	"wis": "Wisdom",
-	"cha": "Charisma"
+	"str": "力量",
+	"dex": "敏捷",
+	"con": "體質",
+	"int": "智力",
+	"wis": "睿知",
+	"cha": "魅力"
 };
 
 TP_ABERRATION = "aberration";
@@ -2232,33 +2232,33 @@ SRC_3PP_SUFFIX = " 3pp";
 SRC_STREAM = "Stream";
 SRC_TWITTER = "Twitter";
 
-AL_PREFIX = "Adventurers League: ";
+AL_PREFIX = "冒險者聯盟: ";
 AL_PREFIX_SHORT = "AL: ";
 PS_PREFIX = "Plane Shift: ";
 PS_PREFIX_SHORT = "PS: ";
 UA_PREFIX = "Unearthed Arcana: ";
 UA_PREFIX_SHORT = "UA: ";
-TftYP_NAME = "Tales from the Yawning Portal";
+TftYP_NAME = "大口亭奇譚";
 
 Parser.SOURCE_JSON_TO_FULL = {};
-Parser.SOURCE_JSON_TO_FULL[SRC_CoS] = "Curse of Strahd";
-Parser.SOURCE_JSON_TO_FULL[SRC_DMG] = "Dungeon Master's Guide";
-Parser.SOURCE_JSON_TO_FULL[SRC_EEPC] = "Elemental Evil Player's Companion";
-Parser.SOURCE_JSON_TO_FULL[SRC_EET] = "Elemental Evil: Trinkets";
-Parser.SOURCE_JSON_TO_FULL[SRC_HotDQ] = "Hoard of the Dragon Queen";
-Parser.SOURCE_JSON_TO_FULL[SRC_LMoP] = "Lost Mine of Phandelver";
-Parser.SOURCE_JSON_TO_FULL[SRC_Mag] = "Dragon Magazine";
-Parser.SOURCE_JSON_TO_FULL[SRC_MM] = "Monster Manual";
-Parser.SOURCE_JSON_TO_FULL[SRC_OotA] = "Out of the Abyss";
-Parser.SOURCE_JSON_TO_FULL[SRC_PHB] = "Player's Handbook";
-Parser.SOURCE_JSON_TO_FULL[SRC_PotA] = "Princes of the Apocalypse";
-Parser.SOURCE_JSON_TO_FULL[SRC_RoT] = "The Rise of Tiamat";
-Parser.SOURCE_JSON_TO_FULL[SRC_RoTOS] = "The Rise of Tiamat Online Supplement";
-Parser.SOURCE_JSON_TO_FULL[SRC_SCAG] = "Sword Coast Adventurer's Guide";
-Parser.SOURCE_JSON_TO_FULL[SRC_SKT] = "Storm King's Thunder";
-Parser.SOURCE_JSON_TO_FULL[SRC_ToA] = "Tomb of Annihilation";
-Parser.SOURCE_JSON_TO_FULL[SRC_ToD] = "Tyranny of Dragons";
-Parser.SOURCE_JSON_TO_FULL[SRC_TTP] = "The Tortle Package";
+Parser.SOURCE_JSON_TO_FULL[SRC_CoS] = "斯特拉德的詛咒";
+Parser.SOURCE_JSON_TO_FULL[SRC_DMG] = "地下城主指南";
+Parser.SOURCE_JSON_TO_FULL[SRC_EEPC] = "邪惡元素: 玩家手冊";
+Parser.SOURCE_JSON_TO_FULL[SRC_EET] = "邪惡元素: 飾品";
+Parser.SOURCE_JSON_TO_FULL[SRC_HotDQ] = "龍后的寶藏";
+Parser.SOURCE_JSON_TO_FULL[SRC_LMoP] = "凡戴爾的失落礦坑";
+Parser.SOURCE_JSON_TO_FULL[SRC_Mag] = "龍雜誌";
+Parser.SOURCE_JSON_TO_FULL[SRC_MM] = "怪物圖鑑";
+Parser.SOURCE_JSON_TO_FULL[SRC_OotA] = "逃離深淵";
+Parser.SOURCE_JSON_TO_FULL[SRC_PHB] = "玩家手冊";
+Parser.SOURCE_JSON_TO_FULL[SRC_PotA] = "毀滅親王";
+Parser.SOURCE_JSON_TO_FULL[SRC_RoT] = "提亞瑪特的崛起";
+Parser.SOURCE_JSON_TO_FULL[SRC_RoTOS] = "提亞瑪特的崛起:線上增刊";
+Parser.SOURCE_JSON_TO_FULL[SRC_SCAG] = "劍灣冒險指南";
+Parser.SOURCE_JSON_TO_FULL[SRC_SKT] = "風暴王之雷霆";
+Parser.SOURCE_JSON_TO_FULL[SRC_ToA] = "湮滅之墓";
+Parser.SOURCE_JSON_TO_FULL[SRC_ToD] = "巨龍僭政";
+Parser.SOURCE_JSON_TO_FULL[SRC_TTP] = "龜人擴充包";
 Parser.SOURCE_JSON_TO_FULL[SRC_TYP] = TftYP_NAME;
 Parser.SOURCE_JSON_TO_FULL[SRC_TYP_AtG] = `${TftYP_NAME}: Against the Giants`;
 Parser.SOURCE_JSON_TO_FULL[SRC_TYP_DiT] = `${TftYP_NAME}: Dead in Thay`;
@@ -2267,29 +2267,29 @@ Parser.SOURCE_JSON_TO_FULL[SRC_TYP_THSoT] = `${TftYP_NAME}: The Hidden Shrine of
 Parser.SOURCE_JSON_TO_FULL[SRC_TYP_TSC] = `${TftYP_NAME}: The Sunless Citadel`;
 Parser.SOURCE_JSON_TO_FULL[SRC_TYP_ToH] = `${TftYP_NAME}: Tomb of Horrors`;
 Parser.SOURCE_JSON_TO_FULL[SRC_TYP_WPM] = `${TftYP_NAME}: White Plume Mountain`;
-Parser.SOURCE_JSON_TO_FULL[SRC_VGM] = "Volo's Guide to Monsters";
-Parser.SOURCE_JSON_TO_FULL[SRC_XGE] = "Xanathar's Guide to Everything";
+Parser.SOURCE_JSON_TO_FULL[SRC_VGM] = "瓦羅的怪物指南";
+Parser.SOURCE_JSON_TO_FULL[SRC_XGE] = "姍納薩的萬事指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_OGA] = "One Grung Above";
-Parser.SOURCE_JSON_TO_FULL[SRC_MTF] = "Mordenkainen's Tome of Foes";
-Parser.SOURCE_JSON_TO_FULL[SRC_WDH] = "Waterdeep: Dragon Heist";
-Parser.SOURCE_JSON_TO_FULL[SRC_WDMM] = "Waterdeep: Dungeon of the Mad Mage";
-Parser.SOURCE_JSON_TO_FULL[SRC_GGR] = "Guildmasters' Guide to Ravnica";
+Parser.SOURCE_JSON_TO_FULL[SRC_MTF] = "魔鄧肯的眾敵卷冊";
+Parser.SOURCE_JSON_TO_FULL[SRC_WDH] = "深水城：龍金飛劫";
+Parser.SOURCE_JSON_TO_FULL[SRC_WDMM] = "深水城：瘋狂法師的地下城";
+Parser.SOURCE_JSON_TO_FULL[SRC_GGR] = "拉尼卡的公會長指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_KKW] = "Krenko's Way";
-Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "Lost Laboratory of Kwalish";
-Parser.SOURCE_JSON_TO_FULL[SRC_GoS] = "Ghosts of Saltmarsh";
+Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "夸力許的失落實驗室";
+Parser.SOURCE_JSON_TO_FULL[SRC_GoS] = "鹽沼幽靈";
 Parser.SOURCE_JSON_TO_FULL[SRC_AI] = "Acquisitions Incorporated";
 Parser.SOURCE_JSON_TO_FULL[SRC_OoW] = "The Orrery of the Wanderer";
 Parser.SOURCE_JSON_TO_FULL[SRC_ESK] = "Essentials Kit";
-Parser.SOURCE_JSON_TO_FULL[SRC_DIP] = "Dragon of Icespire Peak";
+Parser.SOURCE_JSON_TO_FULL[SRC_DIP] = "冰霜頂尖的巨龍";
 Parser.SOURCE_JSON_TO_FULL[SRC_HftT] = "Hunt for the Thessalhydra";
 Parser.SOURCE_JSON_TO_FULL[SRC_DC] = "Divine Contention";
 Parser.SOURCE_JSON_TO_FULL[SRC_SLW] = "Storm Lord's Wrath";
 Parser.SOURCE_JSON_TO_FULL[SRC_SDW] = "Sleeping Dragon's Wake";
 Parser.SOURCE_JSON_TO_FULL[SRC_BGDIA] = "Baldur's Gate: Descent Into Avernus";
-Parser.SOURCE_JSON_TO_FULL[SRC_LR] = "Locathah Rising";
-Parser.SOURCE_JSON_TO_FULL[SRC_AL] = "Adventurers' League";
-Parser.SOURCE_JSON_TO_FULL[SRC_SAC] = "Sage Advice Compendium";
-Parser.SOURCE_JSON_TO_FULL[SRC_ERLW] = "Eberron: Rising from the Last War";
+Parser.SOURCE_JSON_TO_FULL[SRC_LR] = "洛卡魚人的崛起";
+Parser.SOURCE_JSON_TO_FULL[SRC_AL] = "冒險者聯盟";
+Parser.SOURCE_JSON_TO_FULL[SRC_SAC] = "智者建言彙編";
+Parser.SOURCE_JSON_TO_FULL[SRC_ERLW] = "艾伯倫：從終末戰爭復甦";
 Parser.SOURCE_JSON_TO_FULL[SRC_EFR] = "Eberron: Forgotten Relics";
 Parser.SOURCE_JSON_TO_FULL[SRC_RMBRE] = "The Lost Dungeon of Rickedness: Big Rick Energy";
 Parser.SOURCE_JSON_TO_FULL[SRC_RMR] = "Dungeons & Dragons vs. Rick and Morty: Basic Rules";
@@ -2297,12 +2297,12 @@ Parser.SOURCE_JSON_TO_FULL[SRC_MFF] = "Mordenkainen's Fiendish Folio";
 Parser.SOURCE_JSON_TO_FULL[SRC_AWM] = "Adventure with Muk";
 Parser.SOURCE_JSON_TO_FULL[SRC_IMR] = "Infernal Machine Rebuild";
 Parser.SOURCE_JSON_TO_FULL[SRC_SADS] = "Sapphire Anniversary Dice Set";
-Parser.SOURCE_JSON_TO_FULL[SRC_EGW] = "Explorer's Guide to Wildemount";
+Parser.SOURCE_JSON_TO_FULL[SRC_EGW] = "荒洲探索指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_ToR] = "Tide of Retribution";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_DD] = "Dangerous Designs";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_FS] = "Frozen Sick";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_US] = "Unwelcome Spirits";
-Parser.SOURCE_JSON_TO_FULL[SRC_MOT] = "Mythic Odysseys of Theros";
+Parser.SOURCE_JSON_TO_FULL[SRC_MOT] = "塞洛斯的神話奧德賽";
 Parser.SOURCE_JSON_TO_FULL[SRC_IDRotF] = "Icewind Dale: Rime of the Frostmaiden";
 Parser.SOURCE_JSON_TO_FULL[SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[SRC_ALCoS] = `${AL_PREFIX}Curse of Strahd`;

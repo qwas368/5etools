@@ -241,7 +241,7 @@ const ListUtil = {
 				if (!ListUtil.isSublisted(Hist.lastLoadedId)) ListUtil.pDoSublistAdd(Hist.lastLoadedId, true);
 				else ListUtil.pDoSublistRemove(Hist.lastLoadedId);
 			})
-			.title("Pin (Toggle)");
+			.title("釘選(開/關)");
 	},
 
 	genericAddButtonHandler (evt, options = {}) {
@@ -535,14 +535,14 @@ const ListUtil = {
 
 		ListUtil.contextMenuPinnableList = ContextUtil.getMenu([
 			new ContextUtil.Action(
-				"Popout",
+				"彈出視窗",
 				(evt, userData) => {
 					const {ele, selection} = userData;
 					ListUtil._handleGenericContextMenuClick_pDoMassPopout(evt, ele, selection);
 				}
 			),
 			new ContextUtil.Action(
-				"Pin",
+				"釘選",
 				async () => {
 					await Promise.all(
 						ListUtil._primaryLists.map(l => Promise.all(ListUtil.mapSelectedWithDeslect(l, (it) => ListUtil.isSublisted(it) ? Promise.resolve() : ListUtil.pDoSublistAdd(it))))
@@ -554,26 +554,26 @@ const ListUtil = {
 
 		const subActions = [
 			new ContextUtil.Action(
-				"Popout",
+				"彈出視窗",
 				(evt, userData) => {
 					const {ele, selection} = userData;
 					ListUtil._handleGenericContextMenuClick_pDoMassPopout(evt, ele, selection);
 				}
 			),
 			new ContextUtil.Action(
-				"Unpin",
+				"解除釘選",
 				(evt, userData) => {
 					const {selection} = userData;
 					selection.forEach(item => ListUtil.pDoSublistRemove(item.ix));
 				}
 			),
 			new ContextUtil.Action(
-				"Clear Pins",
+				"清除所有釘選",
 				() => ListUtil.pDoSublistRemoveAll()
 			),
 			null,
 			new ContextUtil.Action(
-				"Roll on List",
+				"從釘選列表中隨機選擇",
 				() => ListUtil._rollSubListed()
 			),
 			null,
@@ -886,13 +886,13 @@ const ListUtil = {
 	},
 
 	addListShowHide () {
-		$(`#filter-search-group`).find(`#reset`).before(`<button class="btn btn-default" id="hidesearch">Hide</button>`);
-		$(`#contentwrapper`).prepend(`<div class="col-12" id="showsearch"><button class="btn btn-block btn-default btn-xs" type="button">Show Filter</button><br></div>`);
+		$(`#filter-search-group`).find(`#reset`).before(`<button class="btn btn-default" id="hidesearch">隱藏</button>`);
+		$(`#contentwrapper`).prepend(`<div class="col-12" id="showsearch"><button class="btn btn-block btn-default btn-xs" type="button">顯示篩選器</button><br></div>`);
 
 		const $wrpList = $(`#listcontainer`);
 		const $wrpBtnShowSearch = $("div#showsearch");
 		const $btnHideSearch = $("button#hidesearch");
-		$btnHideSearch.title("Hide Search Bar and Entry List");
+		$btnHideSearch.title("隱藏搜尋欄跟列表");
 		// collapse/expand search button
 		$btnHideSearch.click(function () {
 			$wrpList.hide();

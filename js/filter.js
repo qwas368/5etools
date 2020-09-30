@@ -371,7 +371,7 @@ class FilterBox extends ProxyBase {
 		const $btnHideAllFilters = $(`<button class="btn btn-xs btn-default">隱藏全部</button>`)
 			.click(() => this.hideAllFilters());
 
-		const $btnReset = $(`<button class="btn btn-xs btn-default mr-3" title="Reset filters. SHIFT to reset everything.">重置</button>`)
+		const $btnReset = $(`<button class="btn btn-xs btn-default mr-3" title="重置篩選器。 按住SHIFT以將所有設定重置。">重置</button>`)
 			.click(evt => this.reset(evt.shiftKey));
 
 		const $btnSettings = $(`<button class="btn btn-xs btn-default mr-3"><span class="glyphicon glyphicon-cog"></span></button>`)
