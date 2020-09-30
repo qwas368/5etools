@@ -30,7 +30,7 @@ const ListUtil = {
 		if (ListUtil._firstInit) {
 			ListUtil._firstInit = false;
 			const $headDesc = $(`.page__subtitle`);
-			$headDesc.html(`${$headDesc.html()} Press J/K to navigate rows.`);
+			$headDesc.html(`${$headDesc.html()} 按下J/K以巡覽列。`);
 			ListUtil._initList_bindWindowHandlers();
 		}
 
@@ -876,6 +876,7 @@ const ListUtil = {
 			stack += `<tr class="data-row">`;
 			stack += Object.keys(colTransforms).map((k, i) => {
 				const c = colTransforms[k];
+				if(k==="name" && it["translate_name"]) k="translate_name";
 				return `<td class="col_${i} px-2" colspan="${c.flex || 1}">${c.transform === true ? it[k] : c.transform(k[0] === "_" ? it : it[k])}</td>`;
 			}).join("");
 			stack += `</tr>`;

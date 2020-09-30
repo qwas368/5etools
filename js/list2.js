@@ -6,14 +6,15 @@ class ListItem {
 	 * @param values A dictionary of indexed values for this item.
 	 * @param [data] An optional dictionary of additional data to store with the item (not indexed).
 	 */
-	constructor (ix, ele, name, values, data) {
+	constructor (ix, ele, name, values, data, append) {
 		this.ix = ix;
 		this.ele = ele;
 		this.name = name;
+		this.translate_name = (append)? (append.translate_name || null): null;
 		this.values = values || {};
 		this.data = data || {};
 
-		let searchText = `${this.name} - `;
+		let searchText = `${this.name} - `+(this.translate_name? `${this.translate_name} - `: "");
 		for (const k in this.values) {
 			const v = this.values[k]; // unsafe for performance
 			if (!v) continue;
