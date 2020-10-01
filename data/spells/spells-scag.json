@@ -1,7 +1,7 @@
 {
 	"spell": [
 		{
-			"name": "Booming Blade",
+			"name": "Booming Blade", "translate_name": "轟雷劍",
 			"source": "SCAG",
 			"page": 142,
 			"level": 0,
@@ -21,7 +21,7 @@
 			},
 			"components": {
 				"v": true,
-				"m": "a weapon"
+				"m": "一把武器"
 			},
 			"duration": [
 				{
@@ -33,8 +33,8 @@
 				}
 			],
 			"entries": [
-				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes {@damage 1d8} thunder damage, and the spell ends.",
-				"This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d8} thunder damage to the target, and the damage the target takes for moving increases to {@damage 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level and 17th level."
+				"作為用來施展此法術動作的一部分，你必須使用一把武器對法術射程內的一名生物進行一次近戰攻擊，否則法術失敗。若命中，目標受到該攻擊的正常影響，且目標將被包覆在一團爆發性的能量之中，持續直到你的下個回合開始。如果目標在這之前自願進行了一次移動，他將立即受到{@damage 1d8}雷鳴傷害，並結束法術效果。",
+				"此法術的傷害將隨著你的等級越高而增加。在5級的時候，近戰攻擊將對目標造成額外的{@damage 1d8}雷鳴傷害，且目標移動時所受到的傷害將提升至{@damage 2d8}。這兩個傷害骰都將在11級和17級時各增加{@dice 1d8}。"
 			],
 			"scalingLevelDice": [
 				{
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"name": "Green-Flame Blade",
+			"name": "Green-Flame Blade", "translate_name": "翠炎劍",
 			"source": "SCAG",
 			"page": 143,
 			"level": 0,
@@ -105,7 +105,7 @@
 			},
 			"components": {
 				"v": true,
-				"m": "a weapon"
+				"m": "一把武器"
 			},
 			"duration": [
 				{
@@ -113,8 +113,8 @@
 				}
 			],
 			"entries": [
-				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.",
-				"This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra {@damage 1d8} fire damage to the target, and the fire damage to the second creature increases to {@damage 1d8} + your spellcasting ability modifier. Both damage rolls increase by {@dice 1d8} at 11th level and 17th level."
+				"作為用來施展此法術動作的一部分，你必須使用一把武器對法術射程內的一名生物進行一次近戰攻擊，否則法術失敗。若命中，目標受到該攻擊的正常影響，且翠綠色的火焰將從目標身上跳到另一個你所選擇的，位於5呎內你所能看見的生物。第二個生物將受到等同你施法屬性調整值的火焰傷害。",
+				"此法術的傷害將隨著你的等級越高而增加。在5級的時候，近戰攻擊將對目標造成額外的{@damage 1d8}火焰傷害，且對第二個生物造成的傷害將提升至{@damage 1d8}+你的施法屬性調整值。這兩個傷害骰都將在11級和17級時各增加{@dice 1d8}。"
 			],
 			"scalingLevelDice": [
 				{
@@ -167,7 +167,7 @@
 			}
 		},
 		{
-			"name": "Lightning Lure",
+			"name": "Lightning Lure", "translate_name": "閃電牽引",
 			"source": "SCAG",
 			"page": 143,
 			"level": 0,
@@ -194,8 +194,8 @@
 				}
 			],
 			"entries": [
-				"You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take {@damage 1d8} lightning damage if it is within 5 feet of you.",
-				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+				"你創造出一道鞭狀的閃電能量，擊向射程內你所能看見的一個生物。目標必須成功通過一次力量豁免，否則將被以直線向你拉近最多10尺，如果目標被拉近以後位於你周遭5呎內，那麽他將受到{@damage 1d8}閃電傷害。",
+				"此法術的傷害將在你的等級升至5級時增加至{@dice 2d8}，11級時{@damage 3d8}，17級時{@damage 4d8}。"
 			],
 			"scalingLevelDice": {
 				"label": "lightning damage",
@@ -237,7 +237,7 @@
 			}
 		},
 		{
-			"name": "Sword Burst",
+			"name": "Sword Burst", "translate_name": "劍刃爆發",
 			"source": "SCAG",
 			"page": 143,
 			"level": 0,
@@ -264,8 +264,8 @@
 				}
 			],
 			"entries": [
-				"You create a momentary circle of spectral blades that sweep around you. Each creature within range, other than you, must succeed on a Dexterity saving throw or take {@damage 1d6} force damage.",
-				"This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+				"你瞬間制造出一圈幽靈似的利刃清掃你的周圍。法術範圍內除你以外的每一個生物都必須成功通過一次敏捷豁免，否則將受到{@damage 1d6}的力場傷害。",
+				"此法術的傷害將在你的等級升至5級時增加至{@dice 2d8}，11級時{@damage 3d8}，17級時{@damage 4d8}。"
 			],
 			"scalingLevelDice": {
 				"label": "force damage",
