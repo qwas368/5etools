@@ -398,7 +398,7 @@
 			]
 		},
 		{
-			"name": "Aetherborn", "translate_name": "",
+			"name": "Aetherborn", "_translate_name": "乙太裔",
 			"source": "PSK",
 			"page": 17,
 			"size": "M",
@@ -676,7 +676,7 @@
 			]
 		},
 		{
-			"name": "Bugbear", "translate_name": "",
+			"name": "Bugbear", "_translate_name": "熊地精",
 			"source": "ERLW",
 			"page": 25,
 			"size": "M",
@@ -735,7 +735,7 @@
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
@@ -770,7 +770,7 @@
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Goblin."
+						"你可以說、讀、寫通用語和哥布林語。"
 					],
 					"type": "entries"
 				}
@@ -1055,7 +1055,7 @@
 			]
 		},
 		{
-			"name": "Centaur", "translate_name": "半人馬",
+			"name": "Centaur", "_translate_name": "半人馬",
 			"source": "MOT",
 			"page": 18,
 			"_copy": {
@@ -1101,7 +1101,7 @@
 			}
 		},
 		{
-			"name": "Centaur", "translate_name": "",
+			"name": "Centaur", "_translate_name": "半人馬",
 			"source": "UACentaursMinotaurs",
 			"page": 1,
 			"size": "M",
@@ -1626,7 +1626,7 @@
 							"type": "entries",
 							"name": "Darkvision", "translate_name": "黑暗視覺",
 							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+								"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 							]
 						},
 						{
@@ -1738,7 +1738,7 @@
 							"type": "entries",
 							"name": "Darkvision", "translate_name": "黑暗視覺",
 							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+								"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 							]
 						},
 						{
@@ -2119,7 +2119,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Warding Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -2728,7 +2728,7 @@
 					]
 				},
 				{
-					"name": "High; Aereni",
+					"name": "High; Aereni", "translate_name": "高等; 艾瑞尼",
 					"source": "UAWGE",
 					"page": 73,
 					"speed": 30,
@@ -2744,30 +2744,30 @@
 					],
 					"entries": [
 						{
-							"name": "Aereni Training", "translate_name": "",
+							"name": "Aereni Training", "translate_name": "艾瑞尼訓練",
 							"entries": [
-								"Choose one skill or {@book tool|phb|5|tools} proficiency. Your proficiency bonus is doubled for any ability check you make that uses this chosen proficiency."
+								"選擇一個技能或{@book 工具|phb|5|tools}熟練。當你使用所選熟練進行的任何屬性檢定時，你的熟練加值視作兩倍。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Cantrip", "translate_name": "",
+							"name": "Cantrip", "translate_name": "戲法",
 							"entries": [
-								"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence is your spellcasting ability for it."
+								"你知曉一個{@filter 從法師法術列表中自選的戲法|spells|level=0|class=Wizard}。你施展該法術的施法屬性為智力。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Extra Language", "translate_name": "",
+							"name": "Extra Language", "translate_name": "額外語言",
 							"entries": [
-								"You can speak, read, and write one extra language of your choosing."
+								"你可以額外說、讀、寫一種你選擇的語言。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "High; Valenar",
+					"name": "High; Valenar", "translate_name": "高等; 維歐諾爾",
 					"source": "UAWGE",
 					"page": 73,
 					"speed": 30,
@@ -2782,30 +2782,30 @@
 					],
 					"entries": [
 						{
-							"name": "Valenar Weapon Training", "translate_name": "",
+							"name": "Valenar Weapon Training", "translate_name": "維歐諾爾武器訓練",
 							"entries": [
-								"A Valenar elf gains proficiency with the {@item scimitar|phb}, {@item Double-Bladed Scimitar|erlw|double scimitar}, {@item longbow|phb}, and {@item shortbow|phb}."
+								"維歐諾爾精靈熟練於{@item 彎刀|phb}、{@item 雙刃彎刀|uawge|雙刃彎刀}、{@item 長弓|phb}、和{@item 短弓|phb}。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Cantrip", "translate_name": "",
+							"name": "Cantrip", "translate_name": "戲法",
 							"entries": [
-								"You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence is your spellcasting ability for it."
+								"你知曉一個{@filter 從法師法術列表中自選的戲法|spells|level=0|class=Wizard}。你施展該法術的施法屬性為智力。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Extra Language", "translate_name": "",
+							"name": "Extra Language", "translate_name": "額外語言",
 							"entries": [
-								"You can speak, read, and write one extra language of your choosing."
+								"你可以額外說、讀、寫一種你選擇的語言。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Mark of Shadow", "translate_name": "陰影龍紋",
+					"name": "Mark of Shadow", "_translate_name": "陰影龍紋",
 					"source": "ERLW",
 					"page": 49,
 					"otherSources": [
@@ -2874,7 +2874,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Shadow Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -3229,7 +3229,7 @@
 					]
 				},
 				{
-					"name": "Wood; Aereni",
+					"name": "Wood; Aereni", "translate_name": "木; 艾瑞尼",
 					"source": "UAWGE",
 					"page": 73,
 					"speed": 35,
@@ -3243,30 +3243,30 @@
 					],
 					"entries": [
 						{
-							"name": "Aereni Training", "translate_name": "",
+							"name": "Aereni Training", "translate_name": "艾瑞尼訓練",
 							"entries": [
-								"Choose one skill or {@book tool|phb|5|tools} proficiency. Your proficiency bonus is doubled for any ability check you make that uses this chosen proficiency."
+								"選擇一個技能或{@book 工具|phb|5|tools}熟練。當你使用所選熟練進行的任何屬性檢定時，你的熟練加值視作兩倍。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Fleet of Foot", "translate_name": "",
+							"name": "Fleet of Foot", "translate_name": "輕捷步伐",
 							"entries": [
-								"Your base walking speed increases to 35 feet."
+								"你的基礎步行速度提升到35呎。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Mask of the Wild", "translate_name": "",
+							"name": "Mask of the Wild", "translate_name": "荒野隱蔽",
 							"entries": [
-								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+								"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Wood; Valenar",
+					"name": "Wood; Valenar", "translate_name": "木; 維歐諾爾",
 					"source": "UAWGE",
 					"page": 73,
 					"speed": 35,
@@ -3280,23 +3280,23 @@
 					],
 					"entries": [
 						{
-							"name": "Valenar Weapon Training", "translate_name": "",
+							"name": "Valenar Weapon Training", "translate_name": "維歐諾爾武器訓練",
 							"entries": [
-								"A Valenar elf gains proficiency with the {@item scimitar|phb}, {@item Double-Bladed Scimitar|erlw|double scimitar}, {@item longbow|phb}, and {@item shortbow|phb}."
+								"維歐諾爾精靈熟練於{@item 彎刀|phb}、{@item 雙刃彎刀|uawge|雙刃彎刀}、{@item 長弓|phb}、和{@item 短弓|phb}。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Fleet of Foot", "translate_name": "",
+							"name": "Fleet of Foot", "translate_name": "輕捷步伐",
 							"entries": [
-								"Your base walking speed increases to 35 feet."
+								"你的基礎步行速度提升到35呎。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Mask of the Wild", "translate_name": "",
+							"name": "Mask of the Wild", "translate_name": "荒野隱蔽",
 							"entries": [
-								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+								"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
 							],
 							"type": "entries"
 						}
@@ -3305,7 +3305,7 @@
 			]
 		},
 		{
-			"name": "Elf (Kaladesh)",
+			"name": "Elf (Kaladesh)", "translate_name": "精靈 (卡拉德許)",
 			"source": "PSK",
 			"page": 20,
 			"size": "M",
@@ -3338,107 +3338,107 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+						"儘管精靈和人類會在差不多的年齡達到生理成熟，但精靈對成年的見解並不只是生理成熟，還包括世俗的經驗。精靈通常在100歲前後宣告成年並得到成年名稱，且其壽命可達750歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not."
+						"精靈熱愛自由、多元、和自我表現，因此他們強烈傾向於較溫和的混亂。他們將他人的自由當作自己的來重視與保護。他們通常都是善良的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+						"精靈的身高範圍從不到五呎到超過六呎，且有著苗條的體格。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"習慣了微光森林與夜空，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。 你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Keen Senses", "translate_name": "",
+					"name": "Keen Senses", "translate_name": "敏銳感官",
 					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
+						"你熟練於{@skill 感知}技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Elf Weapon Training", "translate_name": "",
+					"name": "Elf Weapon Training", "translate_name": "精靈武器訓練",
 					"entries": [
-						"You have proficiency with the longsword, shortsword, shortbow, and longbow."
+						"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Fey Ancestry", "translate_name": "",
+					"name": "Fey Ancestry", "translate_name": "精類血統",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+						"你在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法讓你入睡。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Trance", "translate_name": "",
+					"name": "Trance", "translate_name": "傳思",
 					"entries": [
-						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+						"精靈並不需要睡眠。取而代之，他們一天會進行4小時保留潛意識的深度冥想。（通用語將這種冥想稱為「傳思」）在冥想時，你勉強算是會作夢；這些夢境實際上是在多年訓練下產生的反射性心靈鍛鍊。在以這種方式休息後，你得到與人類8小時睡眠後相同的益處。",
+						"{@note 如果你在長休期間冥想，你可以在花費4小時完成冥想後，在剩下的4小時中保持清醒，並進行輕省活動。你仍然需要花費8小時來完成長休。}"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+						"你能夠說、讀、寫通用語和精靈語。精靈語如流體般流暢，有著精妙的語調變化和複雜的語法結構。精靈文學豐富而多元，他們的詩歌在其他種族之間也很受歡迎。許多吟遊詩人都會學習精靈語，並將其韻律運用在他們自己的詩作中。"
 					],
 					"type": "entries"
 				}
 			],
 			"subraces": [
 				{
-					"name": "Bishatar and Tirahar", "translate_name": "",
+					"name": "Bishatar and Tirahar", "translate_name": "畢莎塔爾 與 塔拉哈爾",
 					"page": 21,
 					"speed": 35,
 					"entries": [
 						{
-							"name": "Fleet of Foot", "translate_name": "",
+							"name": "Fleet of Foot", "translate_name": "輕捷步伐",
 							"entries": [
-								"Your ground speed increases to 35 feet."
+								"你的基礎步行速度提升到35呎。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Mask of the Wild", "translate_name": "",
+							"name": "Mask of the Wild", "translate_name": "荒野隱蔽",
 							"entries": [
-								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+								"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Vadahar", "translate_name": "",
+					"name": "Vadahar", "translate_name": "法達拉爾",
 					"page": 21,
 					"traitTags": [
 						"Spellcasting"
 					],
 					"entries": [
 						{
-							"name": "Cantrip", "translate_name": "",
+							"name": "Cantrip", "translate_name": "戲法",
 							"entries": [
-								"You know one cantrip of your choice from the druid spell list. Wisdom is your spellcasting ability for it."
+								"你知曉一個{@filter 從德魯伊法術列表中自選的戲法|spells|level=0|class=Druid}。你施展該法術的施法屬性為睿知。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Extra Language", "translate_name": "",
+							"name": "Extra Language", "translate_name": "額外語言",
 							"entries": [
-								"You can speak, read, and write one extra language of your choosing."
+								"你可以額外說、讀、寫一種你選擇的語言。"
 							],
 							"type": "entries"
 						}
@@ -3447,7 +3447,7 @@
 			]
 		},
 		{
-			"name": "Elf (Zendikar)",
+			"name": "Elf (Zendikar)", "translate_name": "精靈 (贊迪卡)",
 			"source": "PSZ",
 			"page": 18,
 			"size": "M",
@@ -3477,55 +3477,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+						"儘管精靈和人類會在差不多的年齡達到生理成熟，但精靈對成年的見解並不只是生理成熟，還包括世俗的經驗。精靈通常在100歲前後宣告成年並得到成年名稱，且其壽命可達750歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not."
+						"精靈熱愛自由、多元、和自我表現，因此他們強烈傾向於較溫和的混亂。他們將他人的自由當作自己的來重視與保護。他們通常都是善良的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+						"精靈的身高範圍從不到五呎到超過六呎，且有著苗條的體格。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"習慣了微光森林與夜空，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。 你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Keen Senses", "translate_name": "",
+					"name": "Keen Senses", "translate_name": "敏銳感官",
 					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
+						"你熟練於{@skill 感知}技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Fey Ancestry", "translate_name": "",
+					"name": "Fey Ancestry", "translate_name": "精類血統",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+						"你在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法讓你入睡。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+						"你能夠說、讀、寫通用語和精靈語。精靈語如流體般流暢，有著精妙的語調變化和複雜的語法結構。精靈文學豐富而多元，他們的詩歌在其他種族之間也很受歡迎。許多吟遊詩人都會學習精靈語，並將其韻律運用在他們自己的詩作中。"
 					],
 					"type": "entries"
 				}
 			],
 			"subraces": [
 				{
-					"name": "Joraga Nation", "translate_name": "",
+					"name": "Joraga Nation", "translate_name": "玖瑞加族",
 					"page": 19,
 					"speed": 35,
 					"ability": [
@@ -3538,30 +3538,30 @@
 					],
 					"entries": [
 						{
-							"name": "Mask of the Wild", "translate_name": "",
+							"name": "Mask of the Wild", "translate_name": "荒野隱蔽",
 							"entries": [
-								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+								"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Elf Weapon Training", "translate_name": "",
+							"name": "Elf Weapon Training", "translate_name": "精靈武器訓練",
 							"entries": [
-								"You have proficiency with the longsword, shortsword, shortbow, and longbow."
+								"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Fleet of Foot", "translate_name": "",
+							"name": "Fleet of Foot", "translate_name": "輕捷步伐",
 							"entries": [
-								"Your ground speed increases to 35 feet."
+								"你的基礎步行速度提升到35呎。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Mul Daya Nation", "translate_name": "",
+					"name": "Mul Daya Nation", "translate_name": "慕達雅族",
 					"page": 19,
 					"ability": [
 						{
@@ -3591,16 +3591,16 @@
 					],
 					"entries": [
 						{
-							"name": "Mul Daya Magic", "translate_name": "",
+							"name": "Mul Daya Magic", "translate_name": "慕達雅魔法",
 							"entries": [
-								"You know the {@spell chill touch} cantrip. When you reach 3rd level, you can cast the {@spell hex} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells."
+								"你知曉{@spell 寒顫之觸}戲法。當你升至3級，你可以使用此特性施放一次{@spell 脆弱詛咒}並在完成一次長休之後重新獲得這麼做的能力。當你升至5級，你可以使用此特性施放一次{@spell 黑暗術}並在完成一次長休之後重新獲得這麼做的能力。你施展該法術的施法屬性為睿知。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Superior Darkvision", "translate_name": "",
+							"name": "Superior Darkvision", "translate_name": "高級黑暗視覺",
 							"entries": [
-								"Your Darkvision has a radius of 120 feet."
+								"你具有120呎半徑範圍的黑暗視覺。"
 							],
 							"data": {
 								"overwrite": "Darkvision"
@@ -3608,23 +3608,23 @@
 							"type": "entries"
 						},
 						{
-							"name": "Sunlight Sensitivity", "translate_name": "",
+							"name": "Sunlight Sensitivity", "translate_name": "日光敏感",
 							"entries": [
-								"You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+								"當你、你的攻擊目標、或你嘗試感知的東西直接暴露在陽光下，則你依賴於視覺的攻擊檢定以及睿知（{@skill 感知}）檢定具有劣勢。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Elf Weapon Training", "translate_name": "",
+							"name": "Elf Weapon Training", "translate_name": "精靈武器訓練",
 							"entries": [
-								"You have proficiency with the longsword, shortsword, shortbow, and longbow."
+								"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Tajuru Nation", "translate_name": "",
+					"name": "Tajuru Nation", "translate_name": "特裘如族",
 					"page": 18,
 					"ability": [
 						{
@@ -3667,9 +3667,9 @@
 					],
 					"entries": [
 						{
-							"name": "Skill Versatility", "translate_name": "",
+							"name": "Skill Versatility", "translate_name": "多才多藝",
 							"entries": [
-								"You have proficiency with any combination of two other skills or {@book tools|phb|5|tools} of your choice."
+								"你熟練於總共二種的自選技能或{@book 工具|phb|5|tools}。"
 							],
 							"type": "entries"
 						}
@@ -4821,7 +4821,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Scribing Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -5050,11 +5050,11 @@
 			]
 		},
 		{
-			"name": "Goblin", "translate_name": "",
+			"name": "Goblin", "translate_name": "哥布林",
 			"source": "ERLW",
 			"page": 26,
 			"_copy": {
-				"name": "Goblin", "translate_name": "",
+				"name": "Goblin",
 				"source": "VGM",
 				"_mod": {
 					"entries": [
@@ -5065,7 +5065,7 @@
 								"name": "Alignment", "translate_name": "陣營",
 								"type": "entries",
 								"entries": [
-									"In Eberron, goblins are usually neutral. They tend to look out for themselves, preferably without drawing unwanted attention from any larger, more powerful people."
+									"在艾伯倫，哥布林通常是中立的。他們傾向為自己著想，且最好不要引起那些更大更強的生物的不必要關注。"
 								]
 							}
 						},
@@ -5076,7 +5076,7 @@
 								"name": "Size", "translate_name": "體型",
 								"type": "entries",
 								"entries": [
-									"Your size is Small."
+									"你的體型為小型。"
 								]
 							}
 						}
@@ -5313,7 +5313,7 @@
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
@@ -5387,7 +5387,7 @@
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Goblin."
+						"你可以說、讀、寫通用語和哥布林語。"
 					],
 					"type": "entries"
 				}
@@ -5446,7 +5446,7 @@
 			]
 		},
 		{
-			"name": "Goliath", "translate_name": "",
+			"name": "Goliath", "translate_name": "歌利亞",
 			"source": "IDRotF",
 			"_copy": {
 				"name": "Goliath",
@@ -5547,7 +5547,7 @@
 					]
 				},
 				{
-					"name": "Natural Athlete", "translate_name": "天生運動員",
+					"name": "Natural Athlete", "translate_name": "天生健將",
 					"entries": [
 						"你熟練於{@skill 運動}技能。"
 					],
@@ -5636,7 +5636,7 @@
 			]
 		},
 		{
-			"name": "Grung", "translate_name": "",
+			"name": "Grung", "translate_name": "格龍蛙人",
 			"source": "OGA",
 			"page": 4,
 			"size": "S",
@@ -5670,77 +5670,77 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Grungs mature to adulthood in a single year, but have been known to live up to 50 years."
+						"格龍蛙人在一歲時成年，且已知可以活到最多50歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most grungs are lawful, having been raised in a strict caste system. They tend toward evil as well, coming from a culture where social advancement occurs rarely, and most often because another member of your army has died and there is no one else of that caste to fill the vacancy."
+						"大部分的格龍蛙人都是守序陣營，並在嚴格的種姓制度下長大。而由於他們那鮮少發生社會階級流動的文化，他們也通常是邪惡的。他們的社會階級流動大部分會發生在軍隊中，當某個種姓的成員死亡，且沒有其他成員能夠填補該空缺的時候。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Grungs stand between 2½ and 3½ feet tall and average about 30 pounds. Your size is Small."
+						"格龍蛙人的身高介於2.5呎到3.5呎之間，且平均約30磅重。你的體型為小型。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arboreal Alertness", "translate_name": "",
+					"name": "Arboreal Alertness", "translate_name": "樹棲警覺",
 					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
+						"你熟練於{@skill 感知}技能。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Amphibious", "translate_name": "",
+					"name": "Amphibious", "translate_name": "兩棲",
 					"entries": [
 						"你可以在空氣和水中呼吸。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Poison Immunity", "translate_name": "",
+					"name": "Poison Immunity", "translate_name": "毒素免疫",
 					"entries": [
-						"You're immune to poison damage and the {@condition poisoned} condition."
+						"你免疫於毒素傷害和{@condition 中毒}狀態。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Poisonous Skin", "translate_name": "",
+					"name": "Poisonous Skin", "translate_name": "劇毒皮膚",
 					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-						"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a DC 12 Constitution saving throw or take {@dice 2d4} poison damage."
+						"任何擒抱你、或透過任何其他方式直接碰觸到你皮膚的生物都必須成功通過一次DC 12的體質豁免，否則將陷入{@condition 中毒}狀態長達1分鐘。不再直接碰觸你皮膚的{@condition 中毒}生物可以在它的每個回合結束時重複進行這個豁免檢定，豁免成功則結束這個效果對它的影響。",
+						"你也可以在使用任何穿刺武器進行攻擊時，做為其攻擊的一部份使用這個毒素，但這個毒素的效果將會因此產生變化。目標必須成功通過一次DC 12的體質豁免，否則將受到{@dice 2d4}的毒素傷害。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Standing Leap", "translate_name": "",
+					"name": "Standing Leap", "translate_name": "立定跳躍",
 					"entries": [
-						"Your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
+						"你的跳遠距離最多25呎、且跳高距離最多15呎，無論有沒有助跑都一樣。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Water Dependency", "translate_name": "",
+					"name": "Water Dependency", "translate_name": "依賴水源",
 					"entries": [
-						"If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of {@condition exhaustion} at the end of that day. You can only recover from this {@condition exhaustion} through magic or by immersing yourself in water for at least 1 hour."
+						"若你在一天內沒有將自己浸泡在水中至少1小時，你將在該日結束時承受一級{@condition 力竭}。你只能透過魔法或將你自己浸泡在水中至少1小時的方式來解除這個{@condition 力竭}狀態。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Grung."
+						"你可以說、讀、寫格龍蛙人語。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Half-Elf", "translate_name": "",
+			"name": "Half-Elf", "translate_name": "半精靈",
 			"source": "PHB",
 			"page": 38,
 			"srd": true,
@@ -5815,55 +5815,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+						"半精靈的成熟速度和人類相同，並在20歲左右成年。然而，他們的壽命遠長於人類，經常能活超過180歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable."
+						"半精靈分享了來自他們精靈血統的混亂天性。他們重視個人自由和創造性表達，既不展現出對領導者的喜愛、也不渴望受人追隨。他們厭惡規則、討厭被別人命令、且有時會顯得不太可靠——或至少難以預測。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+						"半精靈有著和人類相近的體型，身高介於5呎至6呎之間。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"多虧於你的精靈血統，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Fey Ancestry", "translate_name": "",
+					"name": "Fey Ancestry", "translate_name": "精類血統",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+						"你在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法讓你入睡。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Skill Versatility", "translate_name": "",
+					"name": "Skill Versatility", "translate_name": "多才多藝",
 					"entries": [
-						"You gain proficiency in two skills of your choice."
+						"你熟練於二個你所選擇的技能。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common, Elvish, and one extra language of your choice."
+						"你能夠說、讀、寫通用語、精靈語、和另一種你所選擇的語言。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Half-Elf (Variant)",
+			"name": "Half-Elf (Variant)", "translate_name": "半精靈 (變體)",
 			"source": "PHB",
 			"page": 38,
 			"size": "M",
@@ -5937,55 +5937,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+						"半精靈的成熟速度和人類相同，並在20歲左右成年。然而，他們的壽命遠長於人類，經常能活超過180歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable."
+						"半精靈分享了來自他們精靈血統的混亂天性。他們重視個人自由和創造性表達，既不展現出對領導者的喜愛、也不渴望受人追隨。他們厭惡規則、討厭被別人命令、且有時會顯得不太可靠——或至少難以預測。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+						"半精靈有著和人類相近的體型，身高介於5呎至6呎之間。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"多虧於你的精靈血統，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Fey Ancestry", "translate_name": "",
+					"name": "Fey Ancestry", "translate_name": "精類血統",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+						"你在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法讓你入睡。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Skill Versatility", "translate_name": "",
+					"name": "Skill Versatility", "translate_name": "多才多藝",
 					"entries": [
-						"You gain proficiency in two skills of your choice."
+						"你熟練於二個你所選擇的技能。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common, Elvish, and one extra language of your choice."
+						"你能夠說、讀、寫通用語、精靈語、和另一種你所選擇的語言。"
 					],
 					"type": "entries"
 				}
 			],
 			"subraces": [
 				{
-					"name": "Aquatic Elf Descent", "translate_name": "",
+					"name": "Aquatic Elf Descent", "translate_name": "水生精靈血統",
 					"source": "SCAG",
 					"page": 116,
 					"speed": {
@@ -6025,26 +6025,26 @@
 					"entries": [
 						{
 							"type": "inset",
-							"name": "Variant Feature (Choose 1)",
+							"name": "變體特性 (選擇1種)",
 							"entries": [
 								{
-									"name": "Skill Versatility", "translate_name": "",
+									"name": "Skill Versatility", "translate_name": "多才多藝",
 									"entries": [
-										"You gain proficiency in two skills of your choice."
+										"你熟練於二個你所選擇的技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Keen Senses", "translate_name": "",
+									"name": "Keen Senses", "translate_name": "敏銳感官",
 									"entries": [
-										"You have proficiency in the {@skill Perception} skill."
+										"你熟練於{@skill 感知}技能。"
 									],
 									"type": "entries"
 								},
 								{
 									"name": "Swim", "translate_name": "游泳",
 									"entries": [
-										"You gain a swimming speed of 30 ft."
+										"你獲得30呎的游泳速度。"
 									],
 									"type": "entries"
 								}
@@ -6059,7 +6059,7 @@
 					}
 				},
 				{
-					"name": "Drow Descent", "translate_name": "",
+					"name": "Drow Descent", "translate_name": "卓爾血統",
 					"source": "SCAG",
 					"page": 116,
 					"traitTags": [
@@ -6112,26 +6112,26 @@
 					"entries": [
 						{
 							"type": "inset",
-							"name": "Variant Feature (Choose 1)",
+							"name": "變體特性 (選擇1種)",
 							"entries": [
 								{
-									"name": "Skill Versatility", "translate_name": "",
+									"name": "Skill Versatility", "translate_name": "多才多藝",
 									"entries": [
-										"You gain proficiency in two skills of your choice."
+										"你熟練於二個你所選擇的技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Keen Senses", "translate_name": "",
+									"name": "Keen Senses", "translate_name": "敏銳感官",
 									"entries": [
-										"You have proficiency in the {@skill Perception} skill."
+										"你熟練於{@skill 感知}技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Drow Magic", "translate_name": "",
+									"name": "Drow Magic", "translate_name": "卓爾魔法",
 									"entries": [
-										"You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+										"你知曉{@spell 舞光術}戲法。當你升至3級，你每天可以施放一次{@spell 妖火術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你每天可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 									],
 									"type": "entries"
 								}
@@ -6146,7 +6146,7 @@
 					}
 				},
 				{
-					"name": "Mark of Detection", "translate_name": "",
+					"name": "Mark of Detection", "translate_name": "偵測龍紋",
 					"source": "ERLW",
 					"page": 40,
 					"otherSources": [
@@ -6212,9 +6212,9 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Deductive Intuition", "translate_name": "",
+							"name": "Deductive Intuition", "translate_name": "演繹直覺",
 							"entries": [
-								"When you make an Intelligence ({@skill Investigation}) or a Wisdom ({@skill Insight}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行智力（{@skill 調查}）檢定或睿知（{@skill 察言觀色}）檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							],
 							"data": {
 								"overwrite": "Skill Versatility"
@@ -6222,22 +6222,22 @@
 						},
 						{
 							"type": "entries",
-							"name": "Magical Detection", "translate_name": "",
+							"name": "Magical Detection", "translate_name": "魔法偵測",
 							"entries": [
-								"You can cast the {@spell detect magic} and {@spell detect poison and disease} spells with this trait. Starting at 3rd level, you can also cast the {@spell see invisibility} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't require material components for them."
+								"你可以使用這個特性施放{@spell 偵測魔法}和{@spell 偵測毒素或疾病}法術。從3級開始，你也可以使用這個特性施放{@spell 識破隱形}法術。一旦你使用這個特性施放任意法術，則直到你完成一次長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為智力，且當你使用此特性施放它們時，它們並不需要材料構材。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Detection Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列偵測龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Detection Spells",
+									"caption": "偵測龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -6245,24 +6245,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell detect evil and good}, {@spell detect poison and disease}"
+											"1環",
+											"{@spell 偵測善惡}, {@spell 偵測毒素或疾病}"
 										],
 										[
-											"2nd",
-											"{@spell detect thoughts}, {@spell find traps}"
+											"2環",
+											"{@spell 偵測思想}, {@spell 尋找陷阱}"
 										],
 										[
-											"3rd",
-											"{@spell clairvoyance}, {@spell nondetection}"
+											"3環",
+											"{@spell 銳眼術}, {@spell 迴避偵測}"
 										],
 										[
-											"4th",
-											"{@spell arcane eye}, {@spell divination}"
+											"4環",
+											"{@spell 祕法眼}, {@spell 預言術}"
 										],
 										[
-											"5th",
-											"{@spell legend lore}"
+											"5環",
+											"{@spell 通曉傳奇}"
 										]
 									]
 								}
@@ -6274,7 +6274,7 @@
 					}
 				},
 				{
-					"name": "Mark of Storm", "translate_name": "",
+					"name": "Mark of Storm", "translate_name": "暴風龍紋",
 					"source": "ERLW",
 					"page": 50,
 					"otherSources": [
@@ -6328,9 +6328,9 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Windwright's Intuition", "translate_name": "",
+							"name": "Windwright's Intuition", "translate_name": "領風直覺",
 							"entries": [
-								"When you make a Dexterity ({@skill Acrobatics}) check or any ability check involving {@item navigator's tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行敏捷（{@skill 特技}）檢定或任何涉及{@item 領航員工具|PHB}的屬性檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							],
 							"data": {
 								"overwrite": "Skill Versatility"
@@ -6338,29 +6338,29 @@
 						},
 						{
 							"type": "entries",
-							"name": "Storm's Boon", "translate_name": "",
+							"name": "Storm's Boon", "translate_name": "暴風祝福",
 							"entries": [
-								"You have resistance to lightning damage."
+								"你具有對閃電傷害的抗性。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Headwinds", "translate_name": "",
+							"name": "Headwinds", "translate_name": "迎風之手",
 							"entries": [
-								"You know the {@spell gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell gust of wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 舞風|XGE}戲法。從3級開始，你也可以使用這個特性施放一次{@spell 造風術}法術，且你在完成一次長休後恢復再次施放該法術的能力。你施展這些法術的施法屬性為魅力。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Storm Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列暴風龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Storm Spells",
+									"caption": "暴風龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -6368,24 +6368,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell feather fall}, {@spell fog cloud}"
+											"1環",
+											"{@spell 羽落術}, {@spell 雲霧術}"
 										],
 										[
-											"2nd",
-											"{@spell gust of wind}, {@spell levitate}"
+											"2環",
+											"{@spell 造風術}, {@spell 浮空術}"
 										],
 										[
-											"3rd",
-											"{@spell sleet storm}, {@spell wind wall}"
+											"3環",
+											"{@spell 雪雨暴}, {@spell 風牆術}"
 										],
 										[
-											"4th",
-											"{@spell conjure minor elementals}, {@spell control water}"
+											"4環",
+											"{@spell 召喚次級元素生物}, {@spell 操控水體}"
 										],
 										[
-											"5th",
-											"{@spell conjure elemental}"
+											"5環",
+											"{@spell 召喚元素生物}"
 										]
 									]
 								}
@@ -6397,7 +6397,7 @@
 					}
 				},
 				{
-					"name": "Moon Elf or Sun Elf Descent", "translate_name": "",
+					"name": "Moon Elf or Sun Elf Descent", "translate_name": "月精靈或日精靈血統",
 					"source": "SCAG",
 					"page": 116,
 					"traitTags": [
@@ -6435,33 +6435,33 @@
 					"entries": [
 						{
 							"type": "inset",
-							"name": "Variant Feature (Choose 1)",
+							"name": "變體特性 (選擇1種)",
 							"entries": [
 								{
-									"name": "Skill Versatility", "translate_name": "",
+									"name": "Skill Versatility", "translate_name": "多才多藝",
 									"entries": [
-										"You gain proficiency in two skills of your choice."
+										"你熟練於二個你所選擇的技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Keen Senses", "translate_name": "",
+									"name": "Keen Senses", "translate_name": "敏銳感官",
 									"entries": [
-										"You have proficiency in the {@skill Perception} skill."
+										"你熟練於{@skill 感知}技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Elf Weapon Training", "translate_name": "",
+									"name": "Elf Weapon Training", "translate_name": "精靈武器訓練",
 									"entries": [
-										"You have proficiency with the longsword, shortsword, shortbow, and longbow."
+										"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Cantrip", "translate_name": "",
+									"name": "Cantrip", "translate_name": "戲法",
 									"entries": [
-										"You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+										"你知曉一個{@filter 從法師法術列表中自選的戲法|spells|level=0|class=Wizard}。你施展該法術的施法屬性為智力。"
 									],
 									"type": "entries"
 								}
@@ -6476,7 +6476,7 @@
 					}
 				},
 				{
-					"name": "Wood Elf Descent", "translate_name": "",
+					"name": "Wood Elf Descent", "translate_name": "木精靈血統",
 					"source": "SCAG",
 					"page": 116,
 					"traitTags": [
@@ -6513,40 +6513,40 @@
 					"entries": [
 						{
 							"type": "inset",
-							"name": "Variant Feature (Choose 1)",
+							"name": "變體特性 (選擇1種)",
 							"entries": [
 								{
-									"name": "Skill Versatility", "translate_name": "",
+									"name": "Skill Versatility", "translate_name": "多才多藝",
 									"entries": [
-										"You gain proficiency in two skills of your choice."
+										"你熟練於二個你所選擇的技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Keen Senses", "translate_name": "",
+									"name": "Keen Senses", "translate_name": "敏銳感官",
 									"entries": [
-										"You have proficiency in the {@skill Perception} skill."
+										"你熟練於{@skill 感知}技能。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Elf Weapon Training", "translate_name": "",
+									"name": "Elf Weapon Training", "translate_name": "精靈武器訓練",
 									"entries": [
-										"You have proficiency with the longsword, shortsword, shortbow, and longbow."
+										"你熟練於{@item 長劍|phb}、{@item 短劍|phb}、{@item 短弓|phb}、和{@item 長弓|phb}。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Fleet of Foot", "translate_name": "",
+									"name": "Fleet of Foot", "translate_name": "輕捷步伐",
 									"entries": [
-										"Your base walking speed increases to 35 feet."
+										"你的基礎步行速度提升到35呎。"
 									],
 									"type": "entries"
 								},
 								{
-									"name": "Mask of the Wild", "translate_name": "",
+									"name": "Mask of the Wild", "translate_name": "荒野隱蔽",
 									"entries": [
-										"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+										"當你處於樹叢、大雨、落雪、霧氣或其他自然現象所造成的輕度遮蔽時，你可以嘗試進行躲藏。"
 									],
 									"type": "entries"
 								}
@@ -6563,7 +6563,7 @@
 			]
 		},
 		{
-			"name": "Half-Orc", "translate_name": "",
+			"name": "Half-Orc", "translate_name": "半獸人",
 			"source": "PHB",
 			"page": 40,
 			"srd": true,
@@ -6606,62 +6606,62 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
+						"半獸人的成熟速度比人類略快一些，並在14歲左右便成年。他們的衰老速度明顯更快，且很少能活超過75歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil."
+						"半獸人從他們的獸人親代繼承了容易傾向於混亂的血統，且因此不會有善良陣營的強烈傾向。在獸人中成長並願意在其中生活的半獸人通常是邪惡的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
+						"半獸人比人類更大而魁梧，他們的身高範圍從不到5呎到遠超過6呎都有。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"多虧於你的獸人血統，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Menacing", "translate_name": "",
+					"name": "Menacing", "translate_name": "兇惡",
 					"entries": [
-						"You gain proficiency in the {@skill Intimidation} skill."
+						"你熟練於{@skill 威嚇}技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Relentless Endurance", "translate_name": "",
+					"name": "Relentless Endurance", "translate_name": "頑強耐性",
 					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+						"當你的生命值被歸零但沒有當場被殺死時，你可以改為使生命值減少至1。直到完成一次長休之前，你都不能再使用這個特性。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Savage Attacks", "translate_name": "",
+					"name": "Savage Attacks", "translate_name": "野蠻攻擊",
 					"entries": [
-						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+						"當你以一次近戰武器攻擊造成重擊時，你可以額外骰一次該武器的其中一顆傷害骰，並將之加入重擊的額外傷害中。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script."
+						"你可以說、讀、寫通用語和獸人語。獸人語是一種使用硬輔音的粗糙、刺耳的語言。它沒有自己的文字，而是使用矮人文字進行書寫。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Half-Orc (Mark of Finding)",
+			"name": "Half-Orc (Mark of Finding)", "translate_name": "半獸人 (探尋龍紋)",
 			"source": "ERLW",
 			"page": 41,
 			"otherSources": [
@@ -6738,62 +6738,62 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
+						"半獸人的成熟速度比人類略快一些，並在14歲左右便成年。他們的衰老速度明顯更快，且很少能活超過75歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil."
+						"半獸人從他們的獸人親代繼承了容易傾向於混亂的血統，且因此不會有善良陣營的強烈傾向。在獸人中成長並願意在其中生活的半獸人通常是邪惡的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
+						"半獸人比人類更大而魁梧，他們的身高範圍從不到5呎到遠超過6呎都有。你的體型為中型。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"多虧於你的獸人血統，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hunter's Intuition", "translate_name": "",
+					"name": "Hunter's Intuition", "translate_name": "獵人直覺",
 					"entries": [
-						"When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+						"當你進行一次睿知（{@skill 感知}）或睿知（{@skill 求生}）檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Finder's Magic", "translate_name": "",
+					"name": "Finder's Magic", "translate_name": "探尋者魔法",
 					"entries": [
-						"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"你可以使用這個特性施放{@spell 獵人印記}法術。從3級開始，你也可以使用這個特性施放{@spell 物品定位術}法術。一旦你使用這個特性施放任意法術，則直到你完成一次長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為睿知。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Goblin."
+						"你可以說、讀、寫通用語和哥布林語。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spells of the Mark", "translate_name": "",
+					"name": "Spells of the Mark", "translate_name": "龍紋法術",
 					"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your spellcasting class.",
+						"若你擁有施法或契約魔法的職業能力，則下列探尋龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 						{
 							"type": "table",
-							"caption": "Mark of Finding Spells",
+							"caption": "探尋龍紋法術",
 							"colLabels": [
-								"Spell Level",
-								"Spells"
+								"法術環階",
+								"法術"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -6801,24 +6801,24 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell faerie fire}, {@spell longstrider}"
+									"1環",
+									"{@spell 妖火術}, {@spell 大步奔行}"
 								],
 								[
-									"2nd",
-									"{@spell locate animals or plants}, {@spell locate object}"
+									"2環",
+									"{@spell 動植物定位術}, {@spell 物品定位術}"
 								],
 								[
-									"3rd",
-									"{@spell clairvoyance}, {@spell speak with plants}"
+									"3環",
+									"{@spell 銳眼術}, {@spell 植物交談術}"
 								],
 								[
-									"4th",
-									"{@spell divination}, {@spell locate creature}"
+									"4環",
+									"{@spell 預言術}, {@spell 生物定位術}"
 								],
 								[
-									"5th",
-									"{@spell commune with nature}"
+									"5環",
+									"{@spell 問道自然}"
 								]
 							]
 						}
@@ -6827,7 +6827,7 @@
 			]
 		},
 		{
-			"name": "Halfling", "translate_name": "",
+			"name": "Halfling", "translate_name": "半身人",
 			"source": "PHB",
 			"page": 26,
 			"size": "S",
@@ -6857,55 +6857,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+						"半身人在20歲時成年，且通常可以活到150歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways."
+						"大部分的半身人都是守序善良。一般來說，他們心地善良、和藹可親，厭惡看見他人受苦，且完全不能容忍壓迫。他們也很守秩序、助重傳統、無比倚重他們社群的支持以及老套生活所帶來的舒適。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+						"半身人平均大約3呎高，且體重約莫40磅。你的體型為小型。"
 					]
 				},
 				{
-					"name": "Lucky", "translate_name": "",
+					"name": "Lucky", "translate_name": "幸運",
 					"entries": [
-						"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+						"當你在攻擊檢定、屬性檢定、或豁免檢定中骰出了1，你可以重骰該檢定且必須使用新的擲骰結果。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Brave", "translate_name": "",
+					"name": "Brave", "translate_name": "勇敢",
 					"entries": [
-						"You have advantage on saving throws against being {@condition frightened}."
+						"你在對抗{@condition 恐懼}的豁免檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Halfling Nimbleness", "translate_name": "",
+					"name": "Halfling Nimbleness", "translate_name": "半身人靈巧",
 					"entries": [
-						"You can move through the space of any creature that is of a size larger than yours."
+						"你可以移動穿過任何體型大於你的生物所在的空間。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+						"你能夠說、讀、寫通用語和半身人語。半身人的語言並不是秘密，但他們並不怎麼情願與他人分享它。他們很少書寫，因此並沒有豐富的文學作品。然而，他們的口說傳統相當強勢。幾乎所有半身人都會說通用語，用以跟他所居住或旅經地區的人們交談。"
 					],
 					"type": "entries"
 				}
 			],
 			"subraces": [
 				{
-					"name": "Ghostwise", "translate_name": "",
+					"name": "Ghostwise", "translate_name": "鬼智",
 					"source": "SCAG",
 					"page": 110,
 					"ability": [
@@ -6915,16 +6915,16 @@
 					],
 					"entries": [
 						{
-							"name": "Silent Speech", "translate_name": "",
+							"name": "Silent Speech", "translate_name": "無聲傳話",
 							"entries": [
-								"You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time."
+								"你可以透過心靈感應向任何一個距離你30呎內的生物說話。該生物必須和你之間有共通語言才能理解你的意思。你同時只能以這個方式對一個生物透過心靈感應傳話。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Lightfoot", "translate_name": "",
+					"name": "Lightfoot", "translate_name": "輕足",
 					"page": 28,
 					"srd": true,
 					"ability": [
@@ -6934,9 +6934,9 @@
 					],
 					"entries": [
 						{
-							"name": "Naturally Stealthy", "translate_name": "",
+							"name": "Naturally Stealthy", "translate_name": "天生善匿",
 							"entries": [
-								"You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+								"即使當你只處於體型至少大你一級的生物所造成的遮蔽後，你也可以嘗試進行躲藏。"
 							],
 							"type": "entries"
 						}
@@ -6988,7 +6988,7 @@
 					]
 				},
 				{
-					"name": "Mark of Healing", "translate_name": "",
+					"name": "Mark of Healing", "translate_name": "醫療龍紋",
 					"source": "ERLW",
 					"page": 43,
 					"otherSources": [
@@ -7043,29 +7043,29 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Medical Intuition", "translate_name": "",
+							"name": "Medical Intuition", "translate_name": "醫藥直覺",
 							"entries": [
-								"When you make a Wisdom ({@skill Medicine}) check or an ability check using an {@item herbalism kit|phb}, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行睿知（{@skill 醫藥}）檢定或使用{@item 藥草師工具組|phb}的檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Healing Touch", "translate_name": "",
+							"name": "Healing Touch", "translate_name": "治療之觸",
 							"entries": [
-								"You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+								"你可以使用這個特性施放{@spell 治療傷勢}法術。從3級開始，你也可以使用這個特性施放{@spell 次級復原術}法術。一旦你使用這個特性施放任意法術，則直到你完成一次長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為睿知。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Healing Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列醫療龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Healing Spells",
+									"caption": "醫療龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -7073,24 +7073,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell cure wounds}, {@spell healing word}"
+											"1環",
+											"{@spell 治療傷勢}, {@spell 治癒真言}"
 										],
 										[
-											"2nd",
-											"{@spell lesser restoration}, {@spell prayer of healing}"
+											"2環",
+											"{@spell 次級復原術}, {@spell 治癒祈禱}"
 										],
 										[
-											"3rd",
-											"{@spell aura of vitality}, {@spell mass healing word}"
+											"3環",
+											"{@spell 活力靈光}, {@spell 群體治癒真言}"
 										],
 										[
-											"4th",
-											"{@spell aura of purity}, {@spell aura of life}"
+											"4環",
+											"{@spell 淨化靈光}, {@spell 生命靈光}"
 										],
 										[
-											"5th",
-											"{@spell greater restoration}"
+											"5環",
+											"{@spell 高等復原術}"
 										]
 									]
 								}
@@ -7099,7 +7099,7 @@
 					]
 				},
 				{
-					"name": "Mark of Hospitality", "translate_name": "",
+					"name": "Mark of Hospitality", "translate_name": "招待龍紋",
 					"source": "ERLW",
 					"page": 44,
 					"otherSources": [
@@ -7153,29 +7153,29 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Ever Hospitable", "translate_name": "",
+							"name": "Ever Hospitable", "translate_name": "常保好客",
 							"entries": [
-								"When you make a Charisma ({@skill Persuasion}) check or an ability check involving {@item brewer's supplies|PHB} or {@item cook's utensils|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行魅力（{@skill 說服}）檢定或任何涉及{@item 釀酒師設備|phb}或{@item 廚師炊具|phb}的屬性檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Innkeeper's Magic", "translate_name": "",
+							"name": "Innkeeper's Magic", "translate_name": "客棧老闆的魔法",
 							"entries": [
-								"You know the {@spell prestidigitation} cantrip. You can also cast the {@spell purify food and drink} and {@spell unseen servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 魔法技倆}戲法。你也可以使用這個特性施放{@spell 淨化飲食}和{@spell 隱形僕役}法術。一旦你使用這個特性施放任意法術，則直到你完成一次長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為魅力。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Hospitality Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列招待龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Hospitality Spells",
+									"caption": "招待龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -7183,24 +7183,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell goodberry}, {@spell sleep}"
+											"1環",
+											"{@spell 神莓術}, {@spell 睡眠術}"
 										],
 										[
-											"2nd",
-											"{@spell aid}, {@spell calm emotions}"
+											"2環",
+											"{@spell 援助術}, {@spell 安定心神}"
 										],
 										[
-											"3rd",
-											"{@spell create food and water}, {@spell Leomund's tiny hut}"
+											"3環",
+											"{@spell 創造飲食}, {@spell 李歐蒙小屋}"
 										],
 										[
-											"4th",
-											"{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
+											"4環",
+											"{@spell 淨化靈光}, {@spell 魔鄧肯私人密室}"
 										],
 										[
-											"5th",
-											"{@spell hallow}"
+											"5環",
+											"{@spell 聖居}"
 										]
 									]
 								}
@@ -7209,7 +7209,7 @@
 					]
 				},
 				{
-					"name": "Stout", "translate_name": "",
+					"name": "Stout", "translate_name": "強魄",
 					"page": 28,
 					"ability": [
 						{
@@ -7221,9 +7221,9 @@
 					],
 					"entries": [
 						{
-							"name": "Stout Resilience", "translate_name": "",
+							"name": "Stout Resilience", "translate_name": "強魄韌性",
 							"entries": [
-								"You have advantage on saving throws against poison, and you have resistance against poison damage."
+								"你在對抗毒素的豁免檢定中具有優勢，且你對毒素傷害具有抗性。"
 							],
 							"type": "entries"
 						}
@@ -7232,7 +7232,7 @@
 			]
 		},
 		{
-			"name": "Hobgoblin", "translate_name": "",
+			"name": "Hobgoblin", "translate_name": "大哥布林",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -7250,33 +7250,33 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Martial Advantage", "translate_name": "",
+					"name": "Martial Advantage", "translate_name": "成軍優勢",
 					"entries": [
-						"Once per turn, you can deal an extra {@dice 2d6} damage to a creature you hit with a weapon attack if that creature is within 5 ft. of an ally of yours that isn't {@condition incapacitated}."
+						"每回合一次，當你以一次武器攻擊命中一個生物時，若你有一個盟友距離該生物5呎內且該盟友並未{@condition 無力}，則你可以對它造成額外的{@dice 2d6}傷害。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Goblin."
+						"你可以說、讀、寫通用語和哥布林語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Hobgoblin", "translate_name": "",
+			"name": "Hobgoblin", "_translate_name": "大哥布林",
 			"source": "ERLW",
 			"page": 26,
 			"_copy": {
-				"name": "Hobgoblin", "translate_name": "",
+				"name": "Hobgoblin",
 				"source": "VGM",
 				"_mod": {
 					"entries": [
@@ -7297,7 +7297,7 @@
 							"items": {
 								"name": "Size", "translate_name": "體型",
 								"entries": [
-									"Your size is Medium."
+									"你的體型為中型。"
 								],
 								"type": "entries"
 							}
@@ -7311,7 +7311,7 @@
 			]
 		},
 		{
-			"name": "Hobgoblin", "translate_name": "",
+			"name": "Hobgoblin", "translate_name": "大哥布林",
 			"source": "VGM",
 			"page": 119,
 			"otherSources": [
@@ -7351,55 +7351,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Hobgoblins mature at the same rate as humans and have lifespans similar in length to theirs."
+						"大哥布林的成熟速度和人類相同，且有著與他們相似的壽命長度。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Hobgoblin society is built on fidelity to a rigid, unforgiving code of conduct. As such, they tend toward lawful evil."
+						"大哥布林的社會是建立在對嚴格無情的行為準則的忠誠之上。也如此，他們往往傾向於守序邪惡。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Hobgoblins are between 5 and 6 feet tall and weigh between 150 and 200 pounds. Your size is Medium."
+						"大哥布林的身高介於5到6呎之間，且體重介於150到200磅。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Martial Training", "translate_name": "",
+					"name": "Martial Training", "translate_name": "軍事訓練",
 					"entries": [
-						"You are proficient with two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon} of your choice and with light armor."
+						"你熟練於二種你所選擇的{@filter 軍用武器|items|source=phb|category=basic|type=martial weapon}和輕甲。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Saving Face", "translate_name": "",
+					"name": "Saving Face", "translate_name": "挽回顏面",
 					"entries": [
-						"Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest."
+						"大哥布林由於懼怕失去地位，因此他們相當謹慎於不在盟友面前暴露軟弱。若你在一次攻擊檢定中失手，或在一次屬性檢定或豁免檢定中失敗，你可以讓該檢定獲得等同於距離你30呎內盟友數量的加值（最大加值+5）。一旦你使用此特性，直到你完成一次短休或長休之前你都不能再使用它。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Goblin."
+						"你可以說、讀、寫通用語和哥布林語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Human", "translate_name": "",
+			"name": "Human", "translate_name": "人類",
 			"source": "PHB",
 			"page": 29,
 			"size": "M",
@@ -7425,27 +7425,27 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Humans reach adulthood in their late teens and live less than a century."
+						"人類在近二十歲時成年，且可活不到一世紀。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Humans tend toward no particular alignment. The best and the worst are found among them."
+						"人類並不傾向特定陣營。你可以在他們之中找到最好以及最壞的個體。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+						"人類身高體格之間的差距很大，從勉強5呎高到遠超過6呎都有。不論你在這範圍內的位置為何，你的體型為中型。"
 					]
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+						"你可以說、讀、寫通用語和另一種你所選擇的語言。人類通常會學習那些與他們打交道的其他族類的語言，包括那些晦澀難解的方言。他們喜歡借用來自其他方言的字詞去點綴他們的言詞，像是獸人的咒罵、精靈音樂般的措辭、矮人的軍事片語、諸如此類。"
 					],
 					"type": "entries"
 				}
@@ -7465,7 +7465,7 @@
 					]
 				},
 				{
-					"name": "Keldon", "translate_name": "",
+					"name": "Keldon", "translate_name": "凱爾頓",
 					"source": "PSD",
 					"page": 19,
 					"ability": [
@@ -7493,7 +7493,7 @@
 							"name": "Age", "translate_name": "年齡",
 							"type": "entries",
 							"entries": [
-								"Keldons reach adulthood in their late teens and live less than a century."
+								"凱爾頓人在近二十歲時成年，且可活不到一世紀。"
 							],
 							"data": {
 								"overwrite": "Age"
@@ -7503,7 +7503,7 @@
 							"name": "Alignment", "translate_name": "陣營",
 							"type": "entries",
 							"entries": [
-								"Keldons tend toward chaotic alignments, and many walk a fine line between good and evil."
+								"凱爾頓人傾向混亂陣營，且他們許多徘徊於善與惡之間。"
 							],
 							"data": {
 								"overwrite": "Alignment"
@@ -7513,7 +7513,7 @@
 							"type": "entries",
 							"name": "Size", "translate_name": "體型",
 							"entries": [
-								"Keldons are taller and heavier than the human norms of other cultures, standing almost universally above 6 feet tall and reaching heights above 7 feet. Your size is Medium."
+								"凱爾頓人比其他文化的人類要來得更高更重，他們在身高幾乎都高於6呎，且甚至會達到7呎以上的高度。你的體型為中型。"
 							],
 							"data": {
 								"overwrite": "Size"
@@ -7522,7 +7522,7 @@
 						{
 							"name": "Languages", "translate_name": "語言",
 							"entries": [
-								"You can speak, read, and write Common and Keldon."
+								"你能夠說、讀、寫通用語和凱爾頓語。"
 							],
 							"type": "entries",
 							"data": {
@@ -7531,23 +7531,23 @@
 						},
 						{
 							"type": "entries",
-							"name": "Natural Athlete", "translate_name": "",
+							"name": "Natural Athlete", "translate_name": "天生健將",
 							"entries": [
-								"You have proficiency in the {@skill Athletics} skill."
+								"你熟練於{@skill 運動}技能。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Keldon Resilience", "translate_name": "",
+							"name": "Keldon Resilience", "translate_name": "凱爾頓韌性",
 							"entries": [
-								"You have proficiency in Strength saving throws."
+								"你熟練於力量豁免。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Icehaven Born", "translate_name": "",
+							"name": "Icehaven Born", "translate_name": "冰庇島之子",
 							"entries": [
-								"You are naturally adapted to cold climates, as described in chapter 5 of the {@i Dungeon Master's Guide}."
+								"你天生適應於寒冷的溫度，參見{@i 《地下城主指南》}第五章的敘述。"
 							]
 						}
 					],
@@ -7556,7 +7556,7 @@
 					}
 				},
 				{
-					"name": "Mark of Finding", "translate_name": "",
+					"name": "Mark of Finding", "translate_name": "探尋龍紋",
 					"source": "ERLW",
 					"page": 41,
 					"ability": [
@@ -7615,28 +7615,28 @@
 							"type": "entries",
 							"name": "Darkvision", "translate_name": "黑暗視覺",
 							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+								"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Hunter's Intuition", "translate_name": "",
+							"name": "Hunter's Intuition", "translate_name": "獵人直覺",
 							"entries": [
-								"When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行一次睿知（{@skill 感知}）或睿知（{@skill 求生}）檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Finder's Magic", "translate_name": "",
+							"name": "Finder's Magic", "translate_name": "探尋者魔法",
 							"entries": [
-								"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+								"你可以使用這個特性施放{@spell 獵人印記}法術。從3級開始，你也可以使用這個特性施放{@spell 物品定位術}法術。一旦你使用這個特性施放任意法術，則直到你完成一次長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為睿知。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Languages", "translate_name": "語言",
 							"entries": [
-								"You can speak, read, and write Common and Goblin."
+								"你可以說、讀、寫通用語和哥布林語。"
 							],
 							"data": {
 								"overwrite": "Languages"
@@ -7644,15 +7644,15 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列探尋龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Finding Spells",
+									"caption": "探尋龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -7660,24 +7660,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell faerie fire}, {@spell longstrider}"
+											"1環",
+											"{@spell 妖火術}, {@spell 大步奔行}"
 										],
 										[
-											"2nd",
-											"{@spell locate animals or plants}, {@spell locate object}"
+											"2環",
+											"{@spell 動植物定位術}, {@spell 物品定位術}"
 										],
 										[
-											"3rd",
-											"{@spell clairvoyance}, {@spell speak with plants}"
+											"3環",
+											"{@spell 銳眼術}, {@spell 植物交談術}"
 										],
 										[
-											"4th",
-											"{@spell divination}, {@spell locate creature}"
+											"4環",
+											"{@spell 預言術}, {@spell 生物定位術}"
 										],
 										[
-											"5th",
-											"{@spell commune with nature}"
+											"5環",
+											"{@spell 問道自然}"
 										]
 									]
 								}
@@ -7768,7 +7768,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Handling Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -7899,7 +7899,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Making Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -8025,7 +8025,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Passage Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -8141,7 +8141,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spells of the Mark", "translate_name": "",
+							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
 								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Sentinel Spells table are added to the spell list of your spellcasting class.",
 								{
@@ -8183,7 +8183,7 @@
 					]
 				},
 				{
-					"name": "Variant", "translate_name": "",
+					"name": "Variant", "translate_name": "變體",
 					"page": 31,
 					"srd": true,
 					"ability": [
@@ -8232,16 +8232,16 @@
 					],
 					"entries": [
 						{
-							"name": "Skills", "translate_name": "",
+							"name": "Skills", "translate_name": "技能",
 							"entries": [
-								"You gain proficiency in one skill of your choice."
+								"你熟練於一個你所選擇的技能。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Feat", "translate_name": "",
+							"name": "Feat", "translate_name": "專長",
 							"entries": [
-								"You gain one {@5etools feat|feats.html} of your choice."
+								"你獲得一個你所選擇的{@5etools 專長|feats.html}。"
 							],
 							"type": "entries"
 						}
@@ -8250,7 +8250,7 @@
 			]
 		},
 		{
-			"name": "Human (Amonkhet)",
+			"name": "Human (Amonkhet)", "translate_name": "人類 (阿芒凱)",
 			"source": "PSA",
 			"page": 14,
 			"size": "M",
@@ -8310,55 +8310,48 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Humans reach adulthood in their late teens. Most human initiates have completed the trials and found a glorious or inglorious death before they turn 30. Viziers can enjoy longer service to their gods, in theory living up to a century."
+						"人類在近二十歲時成年。大部分的人類祀徒會在他們30歲之前完成祀煉，並在那之前迎接光榮或不光彩的死亡。首席大臣可以享有更多的時間以服侍他們的神明，且理論上可以活到最多一個世紀。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Humans tend toward no particular alignment. The best and the worst are found among them."
+						"人類並不傾向特定陣營。你可以在他們之中找到最好以及最壞的個體。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium"
+						"人類身高體格之間的差距很大，從勉強5呎高到遠超過6呎都有。不論你在這範圍內的位置為何，你的體型為中型。"
 					]
 				},
 				{
-					"name": "Ability Score Increase", "translate_name": "",
+					"name": "Skills", "translate_name": "技能",
 					"entries": [
-						"Two different ability scores of your choice increase by 1."
+						"你熟練於一個你所選擇的技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Skills", "translate_name": "",
+					"name": "Feat", "translate_name": "專長",
 					"entries": [
-						"You gain proficiency in one skill of your choice."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Feat", "translate_name": "",
-					"entries": [
-						"You gain one feat of your choice."
+						"你獲得一個你所選擇的專長。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice."
+						"你可以說、讀、寫通用語和另一種你所選擇的語言。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Human (Innistrad)",
+			"name": "Human (Innistrad)", "translate_name": "人類 (依尼翠)",
 			"source": "PSI",
 			"page": 8,
 			"size": "M",
@@ -8374,34 +8367,34 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Humans reach adulthood in their late teens and live less than a century."
+						"人類在近二十歲時成年，且可活不到一世紀。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Humans tend toward no particular alignment."
+						"人類並不傾向特定陣營。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+						"人類身高體格之間的差距很大，從勉強5呎高到遠超過6呎都有。不論你在這範圍內的位置為何，你的體型為中型。"
 					]
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice."
+						"你可以說、讀、寫通用語和另一種你所選擇的語言。"
 					],
 					"type": "entries"
 				}
 			],
 			"subraces": [
 				{
-					"name": "Gavony", "translate_name": "",
+					"name": "Gavony", "translate_name": "加渥尼",
 					"page": 8,
 					"ability": [
 						{
@@ -8414,17 +8407,11 @@
 						}
 					],
 					"entries": [
-						{
-							"name": "Ability Score Increase", "translate_name": "",
-							"entries": [
-								"Your ability scores each increase by 1."
-							],
-							"type": "entries"
-						}
+						{}
 					]
 				},
 				{
-					"name": "Kessig", "translate_name": "",
+					"name": "Kessig", "translate_name": "凱錫革",
 					"page": 8,
 					"speed": 40,
 					"ability": [
@@ -8443,37 +8430,37 @@
 					],
 					"entries": [
 						{
-							"name": "Forest Folk", "translate_name": "",
+							"name": "Forest Folk", "translate_name": "森林民族",
 							"entries": [
-								"You have proficiency in the {@skill Survival} skill."
+								"你熟練於{@skill 求生}技能。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Fleet of Foot", "translate_name": "",
+							"name": "Fleet of Foot", "translate_name": "輕捷步伐",
 							"entries": [
-								"Your base walking speed is 40 feet."
+								"你的基礎步行速度提升到40呎。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Sure-footed", "translate_name": "",
+							"name": "Sure-footed", "translate_name": "穩妥步伐",
 							"entries": [
-								"When you use the {@action Dash} action, difficult terrain doesn't cost you extra movement on that turn."
+								"當你採取{@action 疾走}動作時，你在該回合並不會因為困難地形而消耗額外的移動力。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Spring Attack", "translate_name": "",
+							"name": "Spring Attack", "translate_name": "穿行攻擊",
 							"entries": [
-								"When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of your turn, whether you hit or not."
+								"當你對一個生物進行了一次近戰攻擊，無論你命中與否，你在該回合都不會再引發該生物的藉機攻擊。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Nephalia", "translate_name": "",
+					"name": "Nephalia", "translate_name": "涅非利亞",
 					"page": 8,
 					"ability": [
 						{
@@ -8517,16 +8504,16 @@
 					],
 					"entries": [
 						{
-							"name": "Breadth of Knowledge", "translate_name": "",
+							"name": "Breadth of Knowledge", "translate_name": "淵博知識",
 							"entries": [
-								"You gain proficiency in any combination of four skills or with four {@book tools|phb|5|tools} of your choice."
+								"你熟練於你所選擇的任意四個技能或{@book 工具|phb|5|tools}。"
 							],
 							"type": "entries"
 						}
 					]
 				},
 				{
-					"name": "Stensia", "translate_name": "",
+					"name": "Stensia", "translate_name": "史頓襄",
 					"page": 8,
 					"ability": [
 						{
@@ -8544,16 +8531,16 @@
 					],
 					"entries": [
 						{
-							"name": "Daunting", "translate_name": "",
+							"name": "Daunting", "translate_name": "望而生畏",
 							"entries": [
-								"You have proficiency in the {@skill Intimidation} skill."
+								"你熟練於{@skill 威嚇}技能。"
 							],
 							"type": "entries"
 						},
 						{
-							"name": "Tough", "translate_name": "",
+							"name": "Tough", "translate_name": "健壯",
 							"entries": [
-								"Your hit point maximum increases by 2, and it increases by 2 every time you gain a level."
+								"你的生命值最大值增加2點，且每當你升級時，你的生命值最大值都會再額外增加2點。"
 							],
 							"type": "entries"
 						}
@@ -8846,7 +8833,7 @@
 			]
 		},
 		{
-			"name": "Kenku", "translate_name": "",
+			"name": "Kenku", "translate_name": "天狗",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -8868,30 +8855,30 @@
 			],
 			"entries": [
 				{
-					"name": "Ambusher", "translate_name": "",
+					"name": "Ambusher", "translate_name": "伏擊者",
 					"entries": [
-						"In the first round of a combat, you have advantage on attack rolls against any creature who is surprised."
+						"在戰鬥的第一輪中，你對任何被突襲的生物所進行的攻擊檢定具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Mimicry", "translate_name": "",
+					"name": "Mimicry", "translate_name": "擬聲",
 					"entries": [
-						"You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom ({@skill Insight}) check."
+						"你可以模仿任何你曾聽過的聲音，包括人的嗓音。一個聽到這類聲音的生物可以透過成功通過一次DC 14的睿知（{@skill 察言觀色}）檢定才能辨別出它是被模仿發出的。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can read and write Common and Auran, but you can only speak using your Mimicry trait."
+						"你可以說、讀、寫通用語和氣族語，但你只能使用你的擬聲特性來說話。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Kenku", "translate_name": "",
+			"name": "Kenku", "translate_name": "天狗",
 			"source": "VGM",
 			"page": 109,
 			"otherSources": [
@@ -8945,55 +8932,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Kenku have shorter lifespans than humans. They reach maturity at about 12 years old and can live to 60."
+						"天狗有著比人類更短的壽命。他們在12歲左右成年，且可以活到60歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Kenku are chaotic creatures, rarely making enduring commitments, and they care mostly for preserving their own hides. They are generally chaotic neutral in outlook."
+						"天狗是混亂的生物，他們很少做出長久的承諾，且他們最關心的是保護自己的藏身處。他們的觀點通常會是混亂中立。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Kenku are around 5 feet tall and weigh between 90 and 120 pounds. Your size is Medium."
+						"天狗的身高大約為5呎高，且體重介於90到120磅之間。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Expert Forgery", "translate_name": "",
+					"name": "Expert Forgery", "translate_name": "專業偽造",
 					"entries": [
-						"You can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects."
+						"你可以複製其他生物的筆跡和手藝。你在用於偽造文書或複製既存物體所進行的所有檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Kenku Training", "translate_name": "",
+					"name": "Kenku Training", "translate_name": "天狗訓練",
 					"entries": [
-						"You are proficient in your choice of two of the following skills: {@skill Acrobatics}, {@skill Deception}, {@skill Stealth}, and {@skill Sleight of Hand}."
+						"你熟練於下列二個你所選擇的技能：{@skill 特技}、{@skill 欺瞞}、{@skill 隱匿}、和{@skill 手上把戲}。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Mimicry", "translate_name": "",
+					"name": "Mimicry", "translate_name": "擬聲",
 					"entries": [
-						"You can mimic sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom ({@skill Insight}) check opposed by your Charisma ({@skill Deception}) check."
+						"你可以模仿任何你曾聽過的聲音，包括人的嗓音。一個聽到這類聲音的生物可以透過成功通過一次睿知（{@skill 察言觀色}）檢定來對抗你的魅力（{@skill 欺瞞}）檢定以辨別出它是被模仿發出的。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can read and write Common and Auran, but you can only speak using your Mimicry trait."
+						"你可以說、讀、寫通用語和氣族語，但你只能使用你的擬聲特性來說話。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Khenra", "translate_name": "",
+			"name": "Khenra", "translate_name": "胡狼人",
 			"source": "PSA",
 			"page": 17,
 			"size": "M",
@@ -9018,48 +9005,48 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Khenra mature quickly, reaching adulthood in their early teens. Khenra initiates are usually the youngest in a crop, completing the trials by their late teens. Even without a violent death, they rarely live past 60."
+						"胡狼人成熟速度很快，在十幾歲便成年。胡狼人祀徒通常會是同輩中最年輕的一群，並會在他們近二十歲時完成祀煉。即使沒有因暴力而死亡，他們也很少活過60歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most khenra lean toward chaotic alignments. They have no particular inclination toward good or evil."
+						"大部分的胡狼人傾向混亂陣營。他們並不特別傾向善良或邪惡。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Khenra have similar builds to humans. Your size is Medium."
+						"胡狼人有著和人類相似的身形。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Khenra Weapon Training", "translate_name": "",
+					"name": "Khenra Weapon Training", "translate_name": "胡狼人武器訓練",
 					"entries": [
-						"You have proficiency with the khopesh (longsword), spear, and javelin."
+						"你熟練於埃及鐮狀劍({@item 長劍|phb})、{@item 矛|phb}、和{@item 標槍|phb}。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Khenra Twins", "translate_name": "",
+					"name": "Khenra Twins", "translate_name": "胡狼人雙子",
 					"entries": [
-						"If your twin is alive and you can see your twin, whenever you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If your twin is dead (or if you were born without a twin), you can't be {@condition frightened}."
+						"若你的雙胞胎仍活著，且你可以看見你的雙胞胎，則每當你在一次攻擊檢定、屬性檢定、或豁免檢定中骰出1時，你都可以重擲該骰且必須使用新的擲骰結果。若你的雙胞胎已經死亡（或若你出生時並沒有雙胞胎），則你將不會被{@condition 恐懼}。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Khenra."
+						"你可以說、讀、寫通用語和胡狼人語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Kobold", "translate_name": "",
+			"name": "Kobold", "translate_name": "狗頭人",
 			"source": "DMG",
 			"page": 282,
 			"size": "S",
@@ -9082,37 +9069,37 @@
 			],
 			"entries": [
 				{
-					"name": "Pack Tactics", "translate_name": "",
+					"name": "Pack Tactics", "translate_name": "群體戰術",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"若你有至少一個盟友距離目標生物5呎內且該盟友並未{@condition 無力}，則你在對該生物進行的攻擊檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Sunlight Sensitivity", "translate_name": "",
+					"name": "Sunlight Sensitivity", "translate_name": "日光敏感",
 					"entries": [
-						"You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+						"當你、你的攻擊目標、或你嘗試感知的東西直接暴露在陽光下，則你依賴於視覺的攻擊檢定以及睿知（{@skill 感知}）檢定具有劣勢。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"習慣了地底的生活，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。 你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Draconic."
+						"你可以說、讀、寫通用語和龍語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Kobold", "translate_name": "",
+			"name": "Kobold", "translate_name": "狗頭人",
 			"source": "VGM",
 			"page": 119,
 			"size": "S",
@@ -9143,55 +9130,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Kobolds reach adulthood at age 6 and can live up to 120 years but rarely do so."
+						"狗頭人在6歲時成年，並可以活到最多120歲，但這相當罕見。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Kobolds are fundamentally selfish, making them evil, but their reliance on the strength of their group makes them trend toward law."
+						"狗頭人本質上是自私的，這也使他們偏向邪惡，但他們對於團體力量的依賴則使他們偏向守序。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small."
+						"狗頭人的身高介於2到3呎，且體重介於25到35磅。你的體型為小型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Grovel, Cower, and Beg",
+					"name": "Grovel, Cower, and Beg", "translate_name": "搖尾乞憐",
 					"entries": [
-						"As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that you can see. Once you use this trait, you can't use it again until you finish a short or long rest."
+						"在你的回合以一個動作，你可以可憐兮兮地蜷縮以分散附近敵人的注意。直到你下個回合結束前，你的盟友在對距離你10呎內且你能看見的敵人所進行的攻擊檢定中具有優勢。一旦你使用這個特性，直到你完成一次短休或長休之前你都無法再使用它。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Pack Tactics", "translate_name": "",
+					"name": "Pack Tactics", "translate_name": "群體戰術",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"若你有至少一個盟友距離目標生物5呎內且該盟友並未{@condition 無力}，則你在對該生物進行的攻擊檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Sunlight Sensitivity", "translate_name": "",
+					"name": "Sunlight Sensitivity", "translate_name": "日光敏感",
 					"entries": [
-						"You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+						"當你、你的攻擊目標、或你嘗試感知的東西直接暴露在陽光下，則你依賴於視覺的攻擊檢定以及睿知（{@skill 感知}）檢定具有劣勢。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Draconic."
+						"你可以說、讀、寫通用語和龍語。"
 					],
 					"type": "entries"
 				}
@@ -9287,7 +9274,7 @@
 			]
 		},
 		{
-			"name": "Kuo-Toa", "translate_name": "",
+			"name": "Kuo-Toa", "translate_name": "寇濤魚人",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -9307,44 +9294,44 @@
 			],
 			"entries": [
 				{
-					"name": "Amphibious", "translate_name": "",
+					"name": "Amphibious", "translate_name": "兩棲",
 					"type": "entries",
 					"entries": [
 						"你可以在空氣和水中呼吸。"
 					]
 				},
 				{
-					"name": "Otherworldly Perception", "translate_name": "",
+					"name": "Otherworldly Perception", "translate_name": "異界感知",
 					"type": "entries",
 					"entries": [
-						"You can sense the presence of any creature within 30 feet of you that is {@condition invisible} or on the Ethereal Plane. You can pinpoint such a creature that is moving."
+						"你可以感知到任何距離你30呎內處於{@condition 隱形}狀態或在乙太位面的生物。你可以準確知道這類生物在移動時的確切位置。"
 					]
 				},
 				{
-					"name": "Slippery", "translate_name": "",
+					"name": "Slippery", "translate_name": "滑溜",
 					"type": "entries",
 					"entries": [
-						"You have advantage on ability checks and saving throws made to escape a grapple."
+						"你在為逃離擒抱所進行的屬性檢定和豁免檢定中具有優勢。"
 					]
 				},
 				{
-					"name": "Sunlight Sensitivity", "translate_name": "",
+					"name": "Sunlight Sensitivity", "translate_name": "日光敏感",
 					"type": "entries",
 					"entries": [
-						"While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+						"當處於日光照耀下時，你在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
 				},
 				{
-					"name": "Superior Darkvision", "translate_name": "",
+					"name": "Superior Darkvision", "translate_name": "高級黑暗視覺",
 					"entries": [
-						"You have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你120呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Undercommon."
+						"你可以說、讀、寫地底通用語。"
 					],
 					"type": "entries"
 				}
@@ -9451,7 +9438,7 @@
 			]
 		},
 		{
-			"name": "Lizardfolk", "translate_name": "",
+			"name": "Lizardfolk", "translate_name": "蜥蜴人",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -9476,30 +9463,30 @@
 			],
 			"entries": [
 				{
-					"name": "Hold Breath", "translate_name": "",
+					"name": "Hold Breath", "translate_name": "屏息",
 					"entries": [
-						"You can hold your breath for up to 15 minutes at a time."
+						"你可以屏住你的呼吸長達15分鐘。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Natural Armor", "translate_name": "",
+					"name": "Natural Armor", "translate_name": "天生護甲",
 					"entries": [
-						"Your scales function as natural armor, granting you a +3 bonus to Armor Class."
+						"你的鱗片做為天生護甲發揮作用，讓你的護甲等級獲得+3加值。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Draconic."
+						"你可以說、讀、寫龍語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Lizardfolk", "translate_name": "",
+			"name": "Lizardfolk", "translate_name": "蜥蜴人",
 			"source": "VGM",
 			"page": 111,
 			"size": "M",
@@ -9549,76 +9536,76 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Lizardfolk reach maturity around age 14 and rarely live longer than 60 years."
+						"蜥蜴人在大約14歲時成年，且很少活超過60年。"
 					]
 				},
 				{
 					"name": "Size", "translate_name": "體型",
 					"type": "entries",
 					"entries": [
-						"Lizardfolk are a little bulkier and taller than humans, and their colorful frills make them appear even larger. Your size is Medium."
+						"蜥蜴人比人類略為魁梧而高大，且他們身上色彩繽紛的裝飾會讓他們顯得更大一些。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most lizardfolk are neutral. They see the world as a place of predators and prey, where life and death are natural processes. They wish only to survive, and prefer to leave other creatures to their own devices."
+						"大部分蜥蜴人是中立的。他們認為這世界上只存在狩獵者和獵物，在這裡生與死都只不過是自然的過程。他們的願望只有生存，和偏好讓其他的生物自生自滅。"
 					]
 				},
 				{
-					"name": "Swim Speed", "translate_name": "",
+					"name": "Swim Speed", "translate_name": "游泳速度",
 					"entries": [
-						"You have a swimming speed of 30 feet."
+						"你擁有30呎的游泳速度。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Bite", "translate_name": "",
+					"name": "Bite", "translate_name": "啃咬",
 					"entries": [
-						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+						"你長滿獠牙的血盆大口是一種天生武器，且你可以用它來進行徒手打擊。如果你以它命中目標，則你造成等同{@dice 1d6}+你的力量調整值的穿刺傷害，而非一般徒手打擊的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Cunning Artisan", "translate_name": "",
+					"name": "Cunning Artisan", "translate_name": "能巧工匠",
 					"entries": [
-						"As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size small or larger to create one of the following items: a {@item shield|phb}, a {@item club|phb}, a {@item javelin|phb}, or {@dice 1d4} {@item dart|phb|darts} or {@item blowgun needle|phb|blowgun needles}. To use this trait, you need a blade, such as a {@item dagger|phb}, or appropriate {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, such as {@item leatherworker's tools|phb}."
+						"做為短休的一部分，你可以利用從被殺死的小型或更大的野獸、構裝體、龍、怪獸，或植物身上採集下來的骨頭和獸皮製作下列其中一個物品：一面{@item 盾牌|phb}、一根{@item 棍棒|phb}、一把{@item 標槍|phb}、或{@dice 1d4}個{@item 飛鏢|phb}或{@item 吹箭|phb}。若要使用這個特性，你將需要一把刀刃，像是一把{@item 匕首|phb}、或是其他適合的{@filter 工匠工具|items|source=phb|miscellaneous=mundane|type=artisan's tools}，例如{@item 皮匠工具|phb}。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hold Breath", "translate_name": "",
+					"name": "Hold Breath", "translate_name": "屏息",
 					"entries": [
-						"You can hold your breath for up to 15 minutes at a time."
+						"你可以屏住你的呼吸長達15分鐘。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hunter's Lore", "translate_name": "",
+					"name": "Hunter's Lore", "translate_name": "獵人學識",
 					"entries": [
-						"You gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, and {@skill Survival}."
+						"你熟練於下列其中二種你所選擇的技能：{@skill 動物馴養}、{@skill 自然}、{@skill 感知}、{@skill 隱匿}、和{@skill 求生}。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Natural Armor", "translate_name": "",
+					"name": "Natural Armor", "translate_name": "天生護甲",
 					"entries": [
-						"You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+						"你擁有堅硬、帶鱗的皮膚。當你未穿戴護甲時，你的AC為13+你的敏捷調整值。如果你穿著的護甲會讓你有較低的AC，則你可以使用你的天生護甲來計算你的AC。當你使用天生護甲時，盾牌的加值仍會如常作用。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hungry Jaws", "translate_name": "",
+					"name": "Hungry Jaws", "translate_name": "饑渴之顎",
 					"entries": [
-						"In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your Constitution modifier (minimum of 1), and you can't use this trait again until you finish a short or long rest."
+						"在戰鬥中，你可以讓你自己陷入一種兇猛的暴食狂熱。以一個附贈動作，你可以使用你的啃咬進行一次特殊攻擊。若該攻擊命中，則它將造成它原本的傷害，且你獲得等同於你體質調整值（最低為1）的臨時生命值，且直到你完成一次短休或長休之前你都不能再使用此特性。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Draconic."
+						"你可以說、讀、寫通用語和龍語。"
 					],
 					"type": "entries"
 				}
@@ -9716,7 +9703,7 @@
 			]
 		},
 		{
-			"name": "Loxodon", "translate_name": "",
+			"name": "Loxodon", "translate_name": "象族",
 			"source": "GGR",
 			"page": 17,
 			"size": "M",
@@ -9748,71 +9735,71 @@
 					"type": "entries",
 					"name": "Age", "translate_name": "年齡",
 					"entries": [
-						"Loxodons physically mature at the same rate as humans, but they live about 450 years. They highly value the weight of wisdom and experience and are considered young until they reach the age of 60."
+						"象族生理成年的速度與人類相同，但他們的壽命可達大約450歲。他們非常重視智慧與經驗的重要性，且在達到60歲之前都被視為年輕人。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Alignment", "translate_name": "陣營",
 					"entries": [
-						"Most loxodons are lawful, believing in the value of a peaceful, ordered life. They also tend toward good."
+						"大多數的象族都是守序的，相信著和平與秩序生活的價值。他們也傾向善良。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium."
+						"象族的身高介於7呎至8呎之間。他們龐大身軀的重量則介於300至400磅之間。你的體型為中型。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Powerful Build", "translate_name": "",
+					"name": "Powerful Build", "translate_name": "強健體格",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"象族的身高介於7呎至8呎之間。他們龐大身軀的重量則介於300至400磅之間。你的體型為中型。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Loxodon Serenity", "translate_name": "",
+					"name": "Loxodon Serenity", "translate_name": "象族沉著",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+						"你在對抗{@condition 魅惑}或{@condition 恐懼}的豁免檢定中具有優勢。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Natural Armor", "translate_name": "",
+					"name": "Natural Armor", "translate_name": "天生護甲",
 					"entries": [
-						"You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.",
+						"你有著厚實、皮革般的肌膚。當你未穿著護甲的時候，你的AC為12+你的體質調整值。如果你穿著的護甲會讓你有較低的AC，則你可以使用你的天生護甲來計算你的AC。當你使用天生護甲時，盾牌的加值仍會如常作用。",
 						{
 							"type": "inset",
-							"name": "Tip: AC Calculations Don't Stack",
+							"name": "提醒：AC的計算方法並不會累積",
 							"entries": [
-								"When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the loxodon's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
+								"當遊戲機制給了你多於一種計算護甲等級的方式，你只能使用其中一種方式。由你選擇要使用哪一種。舉例來說，如果你同時擁有象族的天生護甲和武僧的無甲防禦，你不能把它們混在一起使用。你只能選擇其中一種方式來計算你的AC。"
 							]
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Trunk", "translate_name": "",
+					"name": "Trunk", "translate_name": "象鼻",
 					"entries": [
-						"You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options.",
-						"Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell."
+						"你可以用你的象鼻抓取物品，你也可以把它作為呼吸管使用。它有著5呎觸及範圍，且它可以抬起等同你力量屬性值五倍的磅數。你可以用它做出以下的簡單作業：抬起、丟下、持握、推動或是拖動一個物體或生物；打開或關上一扇門或容器；擒抱某人；或進行一次徒手打擊。你的DM可能會允許你將其他的簡單作業加到上面的選項列表中。",
+						"你的象鼻不能使用武器、盾牌、或其他需要精細操作的東西，像是使用工具或魔法物品、或執行一個法術的姿勢構材。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Keen Smell", "translate_name": "",
+					"name": "Keen Smell", "translate_name": "敏銳嗅覺",
 					"entries": [
-						"Thanks to your sensitive trunk, you have advantage on Wisdom ({@skill Perception}), Wisdom ({@skill Survival}), and Intelligence ({@skill Investigation}) checks that involve smell."
+						"多虧了你那敏銳的象鼻，你在牽涉到嗅覺的睿知({@skill 感知})、睿知({@skill 求生})、和智力({@skill 調查})檢定上具有優勢。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Loxodon."
+						"你可以說、讀、寫通用語和象族語。"
 					]
 				}
 			]
@@ -9919,7 +9906,7 @@
 			]
 		},
 		{
-			"name": "Merfolk", "translate_name": "",
+			"name": "Merfolk", "translate_name": "人魚",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -9939,7 +9926,7 @@
 			],
 			"entries": [
 				{
-					"name": "Amphibious", "translate_name": "",
+					"name": "Amphibious", "translate_name": "兩棲",
 					"entries": [
 						"你可以在空氣和水中呼吸。"
 					],
@@ -9948,7 +9935,7 @@
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Aquan."
+						"你可以說、讀、寫通用語和水族語。"
 					],
 					"type": "entries"
 				}
@@ -10265,7 +10252,7 @@
 			]
 		},
 		{
-			"name": "Minotaur", "translate_name": "",
+			"name": "Minotaur", "translate_name": "米諾陶",
 			"source": "GGR",
 			"page": 18,
 			"size": "M",
@@ -10306,62 +10293,63 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@note These traits are also suitable for minotaurs in other D&D worlds where these people have avoided the demonic influence of Baphomet.}"
+						"{@note 這些特性也同樣適用於其他D&D世界中那些沒有受到巴風特惡魔力量影響的米諾陶們。}",
+						"{@note 由於魔法風雲會的官方譯名將Minotaur譯為牛頭怪，因此以下內容都將以牛頭怪稱呼之。}"
 					]
 				},
 				{
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Minotaurs enter adulthood at around the age of 17 and can live up to 150 years."
+						"牛頭怪在17歲左右成年，且有最多150年的壽命。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most minotaurs who join the Boros Legion lean toward lawful alignments, while those associated with the Cult of Rakdos or the Gruul Clans tend toward chaotic alignments."
+						"大部分加入波洛斯的牛頭怪傾向守序陣營，而那些與拉鐸司和古魯有關的牛頭怪則傾向混亂陣營。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Minotaurs average over 6 feet in height, and they have stocky builds. Your size is Medium."
+						"牛頭怪的平均身高超過6呎，且他們有著健壯的身材。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Horns", "translate_name": "",
+					"name": "Horns", "translate_name": "牛角",
 					"entries": [
-						"Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+						"你的牛角是天生近戰武器，你可以使用它們來進行徒手打擊。如果你以它們命中目標，則你造成等同{@dice 1d6}+你的力量調整值的穿刺傷害，而不是一般徒手打擊的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Goring Rush", "translate_name": "",
+					"name": "Goring Rush", "translate_name": "牛角衝刺",
 					"entries": [
-						"Immediately after you use the {@action Dash} action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action."
+						"緊接在你於你的回合使用{@action 疾走}動作並移動至少20呎後，你可以立刻以一個附贈動作使用你的牛角進行一次近戰攻擊。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hammering Horns", "translate_name": "",
+					"name": "Hammering Horns", "translate_name": "猛捶角擊",
 					"entries": [
-						"Immediately after you hit a creature with a melee attack as part of the {@action Attack} action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be no more than one size larger than you and within 5 feet of you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 10 feet away from you."
+						"緊接在你於你的回合以{@action 攻擊}動作的一部分，透過一次近戰攻擊命中一個生物後，你可以立刻以一個附贈動作嘗試使用你的牛角去推撞該目標。目標的體型不能比你大超過一級，且必須距離你5呎以內。除非它成功通過DC等同於8+你的熟練加值+你的力量調整值的力量豁免，否則你將把它推離你最多10呎。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Imposing Presence", "translate_name": "",
+					"name": "Imposing Presence", "translate_name": "威風凜凜",
 					"entries": [
-						"You have proficiency in one of the following skills of your choice: {@skill Intimidation} or {@skill Persuasion}."
+						"你熟練於以下其中一個你所選擇的技能：{@skill 威嚇}或{@skill 說服}。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Minotaur."
+						"你可以說、讀、寫通用語和牛頭語。"
 					],
 					"type": "entries"
 				}
@@ -10372,7 +10360,7 @@
 			"source": "MOT",
 			"page": 22,
 			"_copy": {
-				"name": "Minotaur", "translate_name": "",
+				"name": "Minotaur",
 				"source": "GGR",
 				"_mod": {
 					"entries": [
@@ -10502,7 +10490,7 @@
 			]
 		},
 		{
-			"name": "Minotaur (Amonkhet)",
+			"name": "Minotaur (Amonkhet)", "translate_name": "米諾陶 (阿芒凱)",
 			"source": "PSA",
 			"page": 19,
 			"size": "M",
@@ -10534,55 +10522,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Minotaurs develop more slowly than humans, reaching full maturity around the age of 20. They typically become acolytes at around 8 or 9 years old, making them among the older members of their crops. Once they reach maturity, though, minotaurs age quickly, rushing headlong through the trials (as they do all aspects of life) to complete them before they pass their peak. A minotaur allowed to die of old age would rarely live beyond 40."
+						"米諾陶的發育比人類緩慢，在20歲左右才會完全成熟。他們通常會在8到9歲時做為侍僧，加入他們同儕間較年長的成員。然而，一旦他們成年，米諾陶將會迅速的衰老。他們也會因此積極投入祀煉之旅（他們在生命中其他方面的表現也是如此），以在他們從巔峰衰弱之前完成祀煉。能夠死於高齡的米諾陶也鮮少活超過40歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most minotaurs lean toward chaotic alignments, and they have a slight inclination toward evil."
+						"大部分的米諾陶傾向混亂陣營，且他們有著些微朝向邪惡的傾向。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Minotaurs average over 6 feet in height, and they have strong, stocky builds. Your size is Medium."
+						"米諾陶的平均身高超過6呎，且他們有著健壯的身材。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Natural Weapon", "translate_name": "",
+					"name": "Natural Weapon", "translate_name": "天生武器",
 					"entries": [
-						"You can use your horns as a natural weapon to make unarmed strikes. If you hit with your horns, you deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier."
+						"你可以使用你的雙角做為天生武器來進行徒手打擊。如果你以它們命中目標，則你造成等同{@dice 1d6}+你的力量調整值的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Menacing", "translate_name": "",
+					"name": "Menacing", "translate_name": "兇惡",
 					"entries": [
-						"You gain proficiency in the {@skill Intimidation} skill."
+						"你熟練於{@skill 威嚇}技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Relentless Endurance", "translate_name": "",
+					"name": "Relentless Endurance", "translate_name": "頑強耐性",
 					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+						"當你的生命值被歸零但沒有當場被殺死時，你可以改為使生命值減少至1。直到完成一次長休之前，你都不能再使用這個特性。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Savage Attacks", "translate_name": "",
+					"name": "Savage Attacks", "translate_name": "野蠻攻擊",
 					"entries": [
-						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+						"當你以一次近戰武器攻擊造成重擊時，你可以額外骰一次該武器的其中一顆傷害骰，並將之加入重擊的額外傷害中。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Minotaur."
+						"你可以說、讀、寫通用語和米諾陶語。"
 					],
 					"type": "entries"
 				}
@@ -10691,7 +10679,7 @@
 			]
 		},
 		{
-			"name": "Naga", "translate_name": "",
+			"name": "Naga", "translate_name": "納迦",
 			"source": "PSA",
 			"page": 21,
 			"size": "M",
@@ -10718,64 +10706,64 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Like humans, naga reach adulthood in their late teens. They show no signs of aging beyond that point except for growing larger, so in theory, a naga could live well over a century."
+						"與人類相似，納迦在近二十歲時成年。他們在長到一定年紀後，除了越長越大之外便不會再有其他衰老的跡象，因此理論上，一名納迦可以活到超過一個世紀。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most naga are either neutral or neutral evil in alignment."
+						"大部分納迦的陣營屬於絕對中立或中立邪惡。"
 					]
 				},
 				{
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Naga stand about 5 feet tall when upright, but the total length of their bodies, head to tail, ranges from 10 to as much as 20 feet. Your size is Medium."
+						"納迦在直立時約莫5呎高，但他們身體從頭到尾的總長可以從10呎到20呎不等。你的體型為中型。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Speed Burst", "translate_name": "",
+					"name": "Speed Burst", "translate_name": "瞬間加速",
 					"entries": [
-						"By lowering your body to the ground and propelling yourself with your arms, you can move more quickly for a time. As a bonus action on your turn, if you have both hands free, you can increase your walking speed by 5 feet until the end of your turn."
+						"透過將你的身體壓低在地，並用雙手推動自己，你可以在一段時間內移動得比平常更快。在你的回合以一個附贈動作，若你有兩隻空手，則你可以使你的步行速度增加5呎，持續直到你的回合結束。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Natural Weapons", "translate_name": "",
+					"name": "Natural Weapons", "translate_name": "天生武器",
 					"entries": [
-						"Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes.",
-						"If you hit with your bite, you deal piercing damage equal to {@dice 1d4} + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes {@dice 1d4} poison damage.",
-						"If you hit with your constrict attack, you deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier, and the target is {@condition grappled} (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is {@condition restrained}, and you can't constrict another target."
+						"你的尖牙和絞纏的蛇形身體都是天生武器，且你可以用它們來進行徒手打擊。",
+						"如果你使用啃咬攻擊並命中目標，則你造成等同{@dice 1d4}+你的力量調整值的穿刺傷害，且你的目標必須進行一次體質豁免（DC 8+你的熟練加值+你的體質調整值）。若豁免失敗，目標將受到{@dice 1d4}毒素傷害。",
+						"如果你使用絞纏攻擊並命中目標，則你造成等同{@dice 1d6}+你的力量調整值的鈍擊傷害，且目標{@condition 被擒}（逃脫DC 8+你的熟練加值+你的力量調整值）。直到擒抱結束前，目標被{@condition 束縛}，且你不能絞纏另一個目標。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Poison Immunity", "translate_name": "",
+					"name": "Poison Immunity", "translate_name": "毒素免疫",
 					"entries": [
-						"You are immune to poison damage and can't be {@condition poisoned}."
+						"你免疫於毒素傷害和{@condition 中毒}狀態。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Poison Affinity", "translate_name": "",
+					"name": "Poison Affinity", "translate_name": "毒素親合",
 					"entries": [
-						"You gain proficiency with the {@item poisoner's kit|phb}."
+						"你熟練於{@item 製毒工具組|phb}。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Naga."
+						"你可以說、讀、寫通用語和納迦語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Orc", "translate_name": "",
+			"name": "Orc", "translate_name": "獸人",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -10798,23 +10786,23 @@
 			],
 			"entries": [
 				{
-					"name": "Aggressive", "translate_name": "",
+					"name": "Aggressive", "translate_name": "侵略性",
 					"entries": [
-						"As a bonus action, you can move up to your speed toward a hostile creature that you can see."
+						"以一個附贈動作，你可以向一個你所能看見的敵意生物移動最多等同你移動速度的距離。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"習慣了地底的生活，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。 你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Orc."
+						"你可以說、讀、寫通用語和獸人語。"
 					],
 					"type": "entries"
 				}
@@ -10963,7 +10951,7 @@
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
@@ -10998,7 +10986,7 @@
 			]
 		},
 		{
-			"name": "Orc", "translate_name": "",
+			"name": "Orc", "translate_name": "獸人",
 			"source": "VGM",
 			"page": 120,
 			"size": "M",
@@ -11038,55 +11026,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Orcs reach adulthood at age 12 and live up to 50 years."
+						"獸人在12歲時成年，並可以活到最多50歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Orcs are vicious raiders, who believe that the world should be theirs. They also respect strength above all else and believe the strong must bully the weak to ensure that weakness does not spread like a disease. They are usually chaotic evil."
+						"獸人是惡毒的掠奪者，他們相信這個世界應該屬於他們。他們崇敬力量高於一切，並相信強者必須欺凌弱者以確保軟弱不會像疾病一樣傳播。他們通常是混亂邪惡。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Orcs are usually over 6 feet tall and weigh between 230 and 280 pounds. Your size is Medium."
+						"獸人通常超過6呎高，且體重介於230到280磅之間。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Aggressive", "translate_name": "",
+					"name": "Aggressive", "translate_name": "侵略性",
 					"entries": [
-						"As a bonus action, you can move up to your movement speed toward a hostile creature you can see or hear. You must end this move closer to the enemy than you started."
+						"以一個附贈動作，你可以向一個你所能看見或聽見的敵意生物移動最多等同你移動速度的距離。你必須在比你開始移動時距離該敵人更近的位置結束此移動。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Menacing", "translate_name": "",
+					"name": "Menacing", "translate_name": "兇惡",
 					"entries": [
-						"You are trained in the {@skill Intimidation} skill."
+						"你熟練於{@skill 威嚇}技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Powerful Build", "translate_name": "",
+					"name": "Powerful Build", "translate_name": "強健體格",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"當決定你的負重以及你可以拖曳、推動、或提舉的重量時，你將你的體型視作比原本大一級。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Orc."
+						"你可以說、讀、寫通用語和獸人語。"
 					],
 					"type": "entries"
 				}
@@ -11145,7 +11133,7 @@
 					"type": "entries",
 					"name": "Menacing", "translate_name": "",
 					"entries": [
-						"You gain proficiency in the {@skill Intimidation} skill."
+						"你熟練於{@skill 威嚇}技能。"
 					]
 				},
 				{
@@ -11165,7 +11153,7 @@
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
@@ -11807,7 +11795,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses", "translate_name": "",
+					"name": "Keen Senses", "translate_name": "敏銳感官",
 					"entries": [
 						"You have proficiency with the {@skill Perception} skill."
 					]
@@ -11982,7 +11970,7 @@
 			]
 		},
 		{
-			"name": "Simic Hybrid", "translate_name": "",
+			"name": "Simic Hybrid", "translate_name": "析米克混合體",
 			"source": "GGR",
 			"page": 20,
 			"size": "M",
@@ -12027,83 +12015,83 @@
 					"type": "entries",
 					"name": "Age", "translate_name": "年齡",
 					"entries": [
-						"Hybrids begin their lives as adult humans, elves, or vedalken. They age at a slightly accelerated rate, so their maximum life spans are probably reduced somewhat. The Guardian Project has not been operating long enough to observe the full effect of this phenomenon."
+						"混合體一出生就是個成年的人類、精靈、或維多肯。他們以稍快的速度老化，因此他們的最大壽命可能會有所減少。守護者計畫執行的時間長度尚不足以觀察這個現象對混合體的整體影響。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Alignment", "translate_name": "陣營",
 					"entries": [
-						"Most hybrids share the generally neutral outlook of the Simic Combine. They are more interested in scientific research and the standing of their guild than in moral or ethical questions. Those who leave the Combine, however, often do so because their philosophical outlook and alignment are more in line with a different guild's."
+						"大部分的混合體都跟析米克聯合有著相同的中立觀點。他們對科學研究和公會地位的興致遠高於道德倫理問題。然而，那些離開聯合的混合體通常是因為他們的哲學觀與其他公會更為一致。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Your size is Medium, within the normal range of your humanoid base race."
+						"你的體型為中型，你的身高體重都落在作為你基底的類人種族的正常範圍內。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and your choice of Elvish or Vedalken."
+						"你可以說、讀、寫通用語和精靈語或維多肯語。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Animal Enhancement", "translate_name": "",
 					"entries": [
-						"Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level.",
-						"At 1st level, choose one of the following options:",
+						"你的身體已經被改造成包含某些動物的特徵。你在現在選擇一項動物改造，並在到達5級時選擇第二項。",
+						"在1級時，從下列選項中選擇一項：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Manta Glide", "translate_name": "",
-									"entry": "You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren't {@condition incapacitated}, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend."
+									"name": "Manta Glide", "translate_name": "蝠鱝滑翼",
+									"entry": "你擁有如鰩類般的魚鰭，讓你可以將它們作為翅膀以減緩墜落速度或讓你得以滑翔。當你墜落且並未{@condition 無力}時，你可以在計算墜落傷害時減去100呎的墜落高度，且每下降1呎，都可以讓你水平移動最多2呎。"
 								},
 								{
 									"type": "item",
-									"name": "Nimble Climber", "translate_name": "",
-									"entry": "You have a climbing speed equal to your walking speed."
+									"name": "Nimble Climber", "translate_name": "靈敏攀爬者",
+									"entry": "你擁有等同於你步行速度的攀爬速度。"
 								},
 								{
 									"type": "item",
-									"name": "Underwater Adaptation", "translate_name": "",
-									"entry": "You can breathe air and water, and you have a swimming speed equal to your walking speed."
+									"name": "Underwater Adaptation", "translate_name": "水中適應",
+									"entry": "你可以在水下呼吸，且你擁有等同於你步行速度的游泳速度。"
 								}
 							]
 						},
-						"At 5th level, your body evolves further, developing new characteristics. Choose one of the options you didn't take at 1st level, or one of the following options:",
+						"在5級時，你的身體進一步進化，發展出新的特徵。選擇一項你在1級時沒有選擇的選項，或從下列選項中選擇一項：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Grappling Appendage", "translate_name": "",
-									"entry": "You have two special appendages growing alongside your arms. Choose whether they're both claws or tentacles. As an action, you can use one of them to try to grapple a creature. Each one is also a natural weapon, which you can use to make an unarmed strike. If you hit with it, the target takes bludgeoning damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Immediately after hitting, you can try to grapple the target as a bonus action. These appendages can't precisely manipulate anything and can't wield weapons, magic items, or other specialized equipment."
+									"name": "Grappling Appendage", "translate_name": "格鬥附肢",
+									"entry": "在你的雙臂旁長出了兩個特殊的附肢。決定它們是爪子還是觸手。以一個動作，你可以使用它們其中之一去嘗試擒抱一個生物。它們兩個都是天生武器，你可以使用它們來進行徒手打擊。如果你以它命中目標，目標將受到等同1d6+你的力量調整值的鈍擊傷害，而不是一般徒手打擊的鈍擊傷害。緊接在命中之後，你可以嘗試以一個附贈動作對目標進行擒抱。這些附肢不能精準的操作任何東西，也不能使用武器、魔法物品、或其它專門的裝備。"
 								},
 								{
 									"type": "item",
-									"name": "Carapace", "translate_name": "",
-									"entry": "Your skin in places is covered by a thick shell. You gain a +1 bonus to AC when you're not wearing heavy armor."
+									"name": "Carapace", "translate_name": "甲殼",
+									"entry": "你的肌膚各處覆蓋著厚重的甲殼。當你沒有穿著重甲時，你的AC獲得+1加值。"
 								},
 								{
 									"type": "item",
-									"name": "Acid Spit", "translate_name": "",
-									"entry": "As an action, you can spray acid from glands in your mouth, targeting one creature or object you can see within 30 feet of you. The target takes {@dice 2d10} acid damage unless it succeeds on a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. This damage increases by {@dice 1d10} when you reach 11th level ({@dice 3d10}) and 17th level ({@dice 4d10}). You can use this trait a number of times equal to your Consitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+									"name": "Acid Spit", "translate_name": "酸液噴射",
+									"entry": "以一個動作，你可以從你嘴裡的腺體對一個距離你30呎內且你所能看見的生物或物體噴出酸液。除非目標成功通過一次DC等同於8+你的體質調整值+你的熟練加值的敏捷豁免，否則它將受到{@dice 2d10}酸蝕傷害。這個傷害將在你的等級升至11級時增加至{@dice 3d10}，17級時{@dice 4d10}。你可以使用這項特性的次數等同於你的體質調整值(最少一次)，且你在完成一次長休後恢復所有已使用的次數。"
 								}
 							]
 						}
@@ -12172,7 +12160,7 @@
 					"type": "entries",
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					]
 				},
 				{
@@ -12236,7 +12224,7 @@
 			]
 		},
 		{
-			"name": "Siren", "translate_name": "",
+			"name": "Siren", "translate_name": "賽壬",
 			"source": "PSX",
 			"page": 17,
 			"size": "M",
@@ -12272,41 +12260,41 @@
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most sirens lean toward chaotic alignment, cherishing the freedom and independence that comes from joining a pirate crew."
+						"大部分的賽壬傾向混亂陣營，珍惜著因加入海盜團而帶來的自由與獨立。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Sirens stand about 5 to 6 feet tall, but their bodies are slender and their bones partially hollow to facilitate their flight. Your size is Medium."
+						"賽壬的身高約為5到6呎，但他們的身軀相當纖細，骨頭部分中空以利飛行。你的體型為中型。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Siren's Song", "translate_name": "",
+					"name": "Siren's Song", "translate_name": "賽壬之歌",
 					"entries": [
-						"You know the {@spell friends} cantrip and can cast it without material components."
+						"你知曉{@spell 交友術}戲法，且施放時無需任何材料構材。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Flight", "translate_name": "飛行",
 					"entries": [
-						"You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for encumbrance, you can't use your flying speed if you are encumbered.)"
+						"你擁有30呎的飛行速度。你不能在穿著中甲或重甲時使用你的飛行速度。（如果你的戰役使用了負重的變體規則，則你不能在你陷入負載時使用你的飛行速度。）"
 					]
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common (if it exists in your campaign) and Siren."
+						"你可以說、讀、寫通用語（若它存在於你的戰役）和賽壬語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Skeleton", "translate_name": "",
+			"name": "Skeleton", "translate_name": "骷髏",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -12327,36 +12315,36 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Brittle Bones", "translate_name": "",
+					"name": "Brittle Bones", "translate_name": "易碎骸骨",
 					"entries": [
-						"You are vulnerable to bludgeoning damage."
+						"你具有對鈍擊傷害的易傷。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Undead Nature", "translate_name": "",
+					"name": "Undead Nature", "translate_name": "不死本質",
 					"entries": [
-						"You are immune to poison damage and {@condition exhaustion}, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
+						"你免疫於毒素傷害和{@condition 力竭}狀態，且你不會陷入{@condition 中毒}狀態。你不再需要呼吸、進食、飲水、或睡眠。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can't speak, but you can understand the languages you knew in life."
+						"你無法說話，但你可以理解任何你生前所知的語言。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Tabaxi", "translate_name": "",
+			"name": "Tabaxi", "translate_name": "斑貓人",
 			"source": "VGM",
 			"page": 113,
 			"otherSources": [
@@ -12408,62 +12396,62 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Tabaxi have lifespans equivalent to humans."
+						"斑貓人有著與人類相同的壽命。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Tabaxi tend toward chaotic alignments, as they let impulse and fancy guide their decisions. They are rarely evil, with most of them driven by curiosity rather than greed or other dark impulses."
+						"由於他們放任衝動和幻想引導他們的方向，斑貓人傾向混亂陣營。他們很少是邪惡的，他們大部分是被好奇心所驅使，而非貪婪或者其他黑暗的衝動。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Tabaxi are taller on average than humans and relatively slender. Your size is Medium."
+						"斑貓人的身高平均比人類更高且相對更纖細。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你擁有貓的敏銳感官，特別是在黑暗中。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Feline Agility", "translate_name": "",
+					"name": "Feline Agility", "translate_name": "貓科迅捷",
 					"entries": [
-						"Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+						"你的反射神經和敏捷性讓你能夠以爆發性的速度移動。當你在戰鬥中於你的回合移動時，你可以將你的移動速度變為二倍，持續直到該回合結束。一旦你使用此特性，直到你在你的其中一個回合移動0呎之前，你都不能再使用它。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Cat's Claws", "translate_name": "",
+					"name": "Cat's Claws", "translate_name": "貓之利爪",
 					"entries": [
-						"Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+						"由於你的利爪，你擁有20呎的攀爬速度。此外，你的利爪是一種天生武器，且你可以用它來進行徒手打擊。如果你以它們命中目標，則你造成等同{@dice 1d4}+你的力量調整值的劈砍傷害，而非一般徒手打擊的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Cat's Talents", "translate_name": "",
+					"name": "Cat's Talents", "translate_name": "貓之天賦",
 					"entries": [
-						"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
+						"你熟練於{@skill 感知}和{@skill 隱匿}技能。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and one other language of your choice."
+						"你可以說、讀、寫通用語和另一種你所選擇的語言。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Tiefling", "translate_name": "",
+			"name": "Tiefling", "translate_name": "提夫林",
 			"source": "PHB",
 			"page": 42,
 			"size": "M",
@@ -12517,48 +12505,48 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
+						"提夫林的成熟速度和人類相同，但可以比人類多活個幾年。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment."
+						"提夫林也許並沒有傾向邪惡的天性，但他們之中許多最終都步向邪惡。無論邪惡與否，他們獨立的天性使許多提夫林都偏向了混亂陣營。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Tieflings are about the same size and build as humans. Your size is Medium."
+						"提夫林的身材和體型與人類大致相同。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"多虧於你的煉獄血脈，你在黑暗與微光環境下仍能保持卓越視覺。你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hellish Resistance", "translate_name": "",
+					"name": "Hellish Resistance", "translate_name": "煉獄抗性",
 					"entries": [
-						"You have resistance to fire damage."
+						"你具有對火焰傷害的抗性。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Infernal Legacy", "translate_name": "",
+					"name": "Infernal Legacy", "translate_name": "煉獄傳承",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+						"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 煉獄叱喝}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Infernal."
+						"你可以說、讀、寫通用語和煉獄語。"
 					],
 					"type": "entries"
 				}
@@ -12710,17 +12698,17 @@
 					}
 				},
 				{
-					"name": "Asmodeus", "translate_name": "",
+					"name": "Asmodeus", "translate_name": "阿斯莫德",
 					"source": "MTF",
 					"page": 21
 				},
 				{
-					"name": "Asmodeus", "translate_name": "",
+					"name": "Asmodeus", "translate_name": "阿斯莫德",
 					"source": "UAFiendishOptions",
 					"page": 1
 				},
 				{
-					"name": "Baalzebul", "translate_name": "",
+					"name": "Baalzebul", "translate_name": "巴力西卜",
 					"source": "MTF",
 					"page": 21,
 					"additionalSpells": [
@@ -12741,9 +12729,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Maladomini", "translate_name": "",
+							"name": "Legacy of Maladomini", "translate_name": "馬拉多米尼之遺贈",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 致病射線}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 瘋狂冠冕}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12753,7 +12741,7 @@
 					]
 				},
 				{
-					"name": "Baalzebul", "translate_name": "",
+					"name": "Baalzebul", "translate_name": "巴力西卜",
 					"source": "UAFiendishOptions",
 					"page": 1,
 					"additionalSpells": [
@@ -12774,9 +12762,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Maladomini", "translate_name": "",
+							"name": "Legacy of Maladomini", "translate_name": "馬拉多米尼之遺贈",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 致病射線}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 瘋狂冠冕}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12786,7 +12774,7 @@
 					]
 				},
 				{
-					"name": "Dispater", "translate_name": "",
+					"name": "Dispater", "translate_name": "狄斯帕特",
 					"source": "MTF",
 					"page": 21,
 					"ability": [
@@ -12813,9 +12801,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Dis", "translate_name": "",
+							"name": "Legacy of Dis", "translate_name": "迪斯之遺贈",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你可以施放一次{@spell 易容術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 偵測思想}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12828,7 +12816,7 @@
 					}
 				},
 				{
-					"name": "Dispater", "translate_name": "",
+					"name": "Dispater", "translate_name": "狄斯帕特",
 					"source": "UAFiendishOptions",
 					"page": 1,
 					"ability": [
@@ -12855,9 +12843,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Dis", "translate_name": "",
+							"name": "Legacy of Dis", "translate_name": "迪斯之遺贈",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你可以施放一次{@spell 易容術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 隱形術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12870,7 +12858,7 @@
 					}
 				},
 				{
-					"name": "Fierna", "translate_name": "",
+					"name": "Fierna", "translate_name": "菲爾娜",
 					"source": "MTF",
 					"page": 21,
 					"ability": [
@@ -12897,9 +12885,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Phlegethos", "translate_name": "",
+							"name": "Legacy of Phlegethos", "translate_name": "福萊格索斯之遺贈",
 							"entries": [
-								"You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 交友術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 魅惑人類}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 暗示術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12912,7 +12900,7 @@
 					}
 				},
 				{
-					"name": "Fierna", "translate_name": "",
+					"name": "Fierna", "translate_name": "菲爾娜",
 					"source": "UAFiendishOptions",
 					"page": 1,
 					"ability": [
@@ -12939,9 +12927,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Phlegethos", "translate_name": "",
+							"name": "Legacy of Phlegethos", "translate_name": "福萊格索斯之遺贈",
 							"entries": [
-								"You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 交友術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 魅惑人類}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 暗示術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12954,7 +12942,7 @@
 					}
 				},
 				{
-					"name": "Glasya", "translate_name": "",
+					"name": "Glasya", "translate_name": "格萊希亞",
 					"source": "MTF",
 					"page": 22,
 					"ability": [
@@ -12981,9 +12969,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Malbolge", "translate_name": "",
+							"name": "Legacy of Malbolge", "translate_name": "馬爾伯吉之遺贈",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 次級幻象}戲法。當你升至3級，你可以施放一次{@spell 易容術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 隱形術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -12996,7 +12984,7 @@
 					}
 				},
 				{
-					"name": "Glasya", "translate_name": "",
+					"name": "Glasya", "translate_name": "格萊希亞",
 					"source": "UAFiendishOptions",
 					"page": 2,
 					"ability": [
@@ -13023,9 +13011,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Malbolge", "translate_name": "",
+							"name": "Legacy of Malbolge", "translate_name": "馬爾伯吉之遺贈",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 次級幻象}戲法。當你升至3級，你可以施放一次{@spell 易容術}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 隱形術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13038,7 +13026,7 @@
 					}
 				},
 				{
-					"name": "Levistus", "translate_name": "",
+					"name": "Levistus", "translate_name": "萊維斯圖斯",
 					"source": "MTF",
 					"page": 22,
 					"ability": [
@@ -13065,9 +13053,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Stygia", "translate_name": "",
+							"name": "Legacy of Stygia", "translate_name": "斯泰吉亞之遺贈",
 							"entries": [
-								"You know the {@spell ray of frost} cantrip. When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 冷凍射線}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 艾嘉西斯之鎧}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13080,7 +13068,7 @@
 					}
 				},
 				{
-					"name": "Levistus", "translate_name": "",
+					"name": "Levistus", "translate_name": "萊維斯圖斯",
 					"source": "UAFiendishOptions",
 					"page": 2,
 					"ability": [
@@ -13110,9 +13098,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Stygia", "translate_name": "",
+							"name": "Legacy of Stygia", "translate_name": "斯泰吉亞之遺贈",
 							"entries": [
-								"You know the {@spell ray of frost} cantrip. When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 冷凍射線}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 艾嘉西斯之鎧}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13125,7 +13113,7 @@
 					}
 				},
 				{
-					"name": "Mammon", "translate_name": "",
+					"name": "Mammon", "translate_name": "瑪門",
 					"source": "MTF",
 					"page": 22,
 					"additionalSpells": [
@@ -13146,9 +13134,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Minauros", "translate_name": "",
+							"name": "Legacy of Minauros", "translate_name": "彌瑙洛斯之遺贈",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 法師之手}戲法。當你升至3級，你可以施放一次{@spell 譚森浮碟術}；你必須完成一次短休或長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 祕法鎖}，無須材料構材；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13158,7 +13146,7 @@
 					]
 				},
 				{
-					"name": "Mammon", "translate_name": "",
+					"name": "Mammon", "translate_name": "瑪門",
 					"source": "UAFiendishOptions",
 					"page": 2,
 					"additionalSpells": [
@@ -13179,9 +13167,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Minauros", "translate_name": "",
+							"name": "Legacy of Minauros", "translate_name": "彌瑙洛斯之遺贈",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 法師之手}戲法。當你升至3級，你可以施放一次{@spell 譚森浮碟術}；你必須完成一次短休或長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 祕法鎖}，無須材料構材；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13191,7 +13179,7 @@
 					]
 				},
 				{
-					"name": "Mephistopheles", "translate_name": "",
+					"name": "Mephistopheles", "translate_name": "梅菲斯托費勒斯",
 					"source": "MTF",
 					"page": 23,
 					"additionalSpells": [
@@ -13212,9 +13200,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Cania", "translate_name": "",
+							"name": "Legacy of Cania", "translate_name": "卡尼亞之遺贈",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell burning hands} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell flame blade} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 法師之手}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 燃燒之手}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 火焰刀}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13224,7 +13212,7 @@
 					]
 				},
 				{
-					"name": "Mephistopheles", "translate_name": "",
+					"name": "Mephistopheles", "translate_name": "梅菲斯托費勒斯",
 					"source": "UAFiendishOptions",
 					"page": 2,
 					"additionalSpells": [
@@ -13245,9 +13233,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Cania", "translate_name": "",
+							"name": "Legacy of Cania", "translate_name": "卡尼亞之遺贈",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell magic missile} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell web} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 法師之手}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 魔法飛彈}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 蛛網術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13257,7 +13245,7 @@
 					]
 				},
 				{
-					"name": "Variant; Devil's Tongue",
+					"name": "Variant; Devil's Tongue", "translate_name": "變體; 魔鬼之舌",
 					"source": "SCAG",
 					"page": 118,
 					"ability": [
@@ -13291,17 +13279,17 @@
 					],
 					"entries": [
 						{
-							"name": "Appearance", "translate_name": "",
+							"name": "Appearance", "translate_name": "外貌",
 							"entries": [
-								"Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+								"你的提夫林看起來或許和其他提夫林不太一樣。取代《玩家手冊》中描述的身體特徵，你從下列選項中選擇{@dice 1d4+1}項特徵：小型犄角、獠牙或尖銳的牙齒、分叉的舌頭、貓瞳、每隻手有六根手指、山羊腿、偶蹄、分叉的尾巴、革質或帶鱗的皮膚、紅色或深藍色的皮膚、不會產生影子或映像、發散出硫磺般的氣味。"
 							],
 							"type": "entries"
 						},
 						{
 							"type": "entries",
-							"name": "Devil's Tongue", "translate_name": "",
+							"name": "Devil's Tongue", "translate_name": "魔鬼之舌",
 							"entries": [
-								"You know the {@spell vicious mockery} cantrip. When your reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell enthrall} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
+								"你知曉{@spell 惡毒嘲笑}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 魅惑人類}。當你升至5級，你可以施放一次{@spell 注目術}；你必須完成一次長休才能再次使用此特性施放這些法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"data": {
 								"overwrite": "Infernal Legacy"
@@ -13313,7 +13301,7 @@
 					}
 				},
 				{
-					"name": "Variant; Hellfire",
+					"name": "Variant; Hellfire", "translate_name": "變體; 地獄之火",
 					"source": "SCAG",
 					"page": 118,
 					"ability": [
@@ -13347,17 +13335,17 @@
 					],
 					"entries": [
 						{
-							"name": "Appearance", "translate_name": "",
+							"name": "Appearance", "translate_name": "外貌",
 							"entries": [
-								"Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+								"你的提夫林看起來或許和其他提夫林不太一樣。取代《玩家手冊》中描述的身體特徵，你從下列選項中選擇{@dice 1d4+1}項特徵：小型犄角、獠牙或尖銳的牙齒、分叉的舌頭、貓瞳、每隻手有六根手指、山羊腿、偶蹄、分叉的尾巴、革質或帶鱗的皮膚、紅色或深藍色的皮膚、不會產生影子或映像、發散出硫磺般的氣味。"
 							],
 							"type": "entries"
 						},
 						{
 							"type": "entries",
-							"name": "Hellfire", "translate_name": "",
+							"name": "Hellfire", "translate_name": "地獄之火",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你每天能夠以2環法術施放一次{@spell 燃燒之手}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 黑暗術}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"data": {
 								"overwrite": "Infernal Legacy"
@@ -13369,7 +13357,7 @@
 					}
 				},
 				{
-					"name": "Variant; Infernal Legacy",
+					"name": "Variant; Infernal Legacy", "translate_name": "變體; 煉獄傳承",
 					"source": "SCAG",
 					"page": 118,
 					"ability": [
@@ -13403,9 +13391,9 @@
 					],
 					"entries": [
 						{
-							"name": "Appearance", "translate_name": "",
+							"name": "Appearance", "translate_name": "外貌",
 							"entries": [
-								"Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+								"你的提夫林看起來或許和其他提夫林不太一樣。取代《玩家手冊》中描述的身體特徵，你從下列選項中選擇{@dice 1d4+1}項特徵：小型犄角、獠牙或尖銳的牙齒、分叉的舌頭、貓瞳、每隻手有六根手指、山羊腿、偶蹄、分叉的尾巴、革質或帶鱗的皮膚、紅色或深藍色的皮膚、不會產生影子或映像、發散出硫磺般的氣味。"
 							],
 							"type": "entries"
 						}
@@ -13415,7 +13403,7 @@
 					}
 				},
 				{
-					"name": "Variant; Winged",
+					"name": "Variant; Winged", "translate_name": "變體; 飛翼",
 					"source": "SCAG",
 					"page": 118,
 					"speed": {
@@ -13442,17 +13430,17 @@
 					"additionalSpells": null,
 					"entries": [
 						{
-							"name": "Appearance", "translate_name": "",
+							"name": "Appearance", "translate_name": "外貌",
 							"entries": [
-								"Your tiefling might not look like other tieflings. Rather than having the physical characteristics described in the Player's Handbook, choose {@dice 1d4+1} of the following features: small horns; fangs or sharp teeth; a forked tongue; catlike eyes; six fingers on each hand; goatlike legs; cloven hoofs; a forked tail; leathery or scaly skin; red or dark blue skin; cast no shadow or reflection; exude a smell of brimstone."
+								"你的提夫林看起來或許和其他提夫林不太一樣。取代《玩家手冊》中描述的身體特徵，你從下列選項中選擇{@dice 1d4+1}項特徵：小型犄角、獠牙或尖銳的牙齒、分叉的舌頭、貓瞳、每隻手有六根手指、山羊腿、偶蹄、分叉的尾巴、革質或帶鱗的皮膚、紅色或深藍色的皮膚、不會產生影子或映像、發散出硫磺般的氣味。"
 							],
 							"type": "entries"
 						},
 						{
 							"type": "entries",
-							"name": "Winged", "translate_name": "",
+							"name": "Winged", "translate_name": "飛翼",
 							"entries": [
-								"You have bat-like wings sprouting from your shoulder blades. You have a flying speed of 30 feet while you aren't wearing heavy armor."
+								"你擁有一對從肩胛骨長出的蝙蝠翅膀。當你未穿戴重甲時，你擁有30呎的飛行速度。"
 							],
 							"data": {
 								"overwrite": "Infernal Legacy"
@@ -13465,7 +13453,7 @@
 					}
 				},
 				{
-					"name": "Zariel", "translate_name": "",
+					"name": "Zariel", "translate_name": "扎瑞爾",
 					"source": "MTF",
 					"page": 23,
 					"ability": [
@@ -13492,9 +13480,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Avernus", "translate_name": "",
+							"name": "Legacy of Avernus", "translate_name": "阿弗納斯之遺贈",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 熾炎斬}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 烙印斬}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13507,7 +13495,7 @@
 					}
 				},
 				{
-					"name": "Zariel", "translate_name": "",
+					"name": "Zariel", "translate_name": "扎瑞爾",
 					"source": "UAFiendishOptions",
 					"page": 2,
 					"ability": [
@@ -13534,9 +13522,9 @@
 					],
 					"entries": [
 						{
-							"name": "Legacy of Avernus", "translate_name": "",
+							"name": "Legacy of Avernus", "translate_name": "阿弗納斯之遺贈",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 奇術}戲法。當你升至3級，你能夠以2環法術施放一次{@spell 熾炎斬}；你必須完成一次長休才能再次使用此特性施放該法術。當你升至5級，你可以施放一次{@spell 烙印斬}；你必須完成一次長休才能再次使用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 							],
 							"type": "entries",
 							"data": {
@@ -13551,7 +13539,7 @@
 			]
 		},
 		{
-			"name": "Tortle", "translate_name": "",
+			"name": "Tortle", "translate_name": "龜人",
 			"source": "TTP",
 			"page": 3,
 			"otherSources": [
@@ -13588,80 +13576,80 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@note The Tortle Package is considered part of Xanathar's Guide to Everything for Adventurers League character creation.}"
+						"{@note 對於《冒險者聯盟》的角色創建而言，《龜人擴充包》被視作屬於《姍納薩的萬事指南》擴充的一部份。}"
 					]
 				},
 				{
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Young tortles crawl for a few weeks after birth before learning to walk on two legs. They reach adulthood by the age of 15 and live an average of 50 years."
+						"年輕的龜人在出生後學會雙腳行走前，會爬行移動持續數週的時間。他們會在15歲成年，且平均可以活50年。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Tortles tend to lead orderly, ritualistic lives. They develop customs and routines, becoming more set in their ways as they age. Most are lawful good. A few can be selfish and greedy, tending more toward evil, but it's unusual for a tortle to shuck off order in favor of chaos."
+						"龜人傾向過著有序、儀式化的生活。他們發展許多風俗和慣例，並且隨著年歲增長變得因循守舊。他們大部分是守序善良。少部分會自私貪婪，並更傾向邪惡陣營，但擺脫守序而偏愛混亂對於龜人而言相當不尋常。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Tortle adults stand 5 to 6 feet tall and average 450 pounds. Their shells account for roughly one-third of their weight. Your size is Medium"
+						"成年龜人的身高為5到6呎高且平均450磅重。他們龜殼的重量大概佔了他們體重的三分之一。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Claws", "translate_name": "",
+					"name": "Claws", "translate_name": "爪抓",
 					"entries": [
-						"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of bludgeoning damage normal for an unarmed strike."
+						"你的利爪是一種天生武器，且你可以用它來進行徒手打擊。如果你以它們命中目標，則你造成等同{@dice 1d4}+你的力量調整值的劈砍傷害，而非一般徒手打擊的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hold Breath", "translate_name": "",
+					"name": "Hold Breath", "translate_name": "屏息",
 					"entries": [
-						"You can hold your breath for up to 1 hour at a time. Tortles aren't natural swimmers, but they can remain underwater for some time before needing to come up for air."
+						"你可以屏住你的呼吸長達1小時。龜人並非天生的游泳健將，但他們在需要浮出水面呼吸空氣之前，可以待在水中好一段時間。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Natural Armor", "translate_name": "",
+					"name": "Natural Armor", "translate_name": "天生護甲",
 					"entries": [
-						"Due to your shell and the shape of your body, you are ill-suited to wearing armor. Your shell provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal."
+						"由於你的龜殼和你身體的形狀，你並不適合穿戴護甲。然而，你的龜殼將提供充足的防護；它使你的基礎AC變為17（你的敏捷調整值並不會影響這個數字）。你無法獲得穿戴護甲的好處，但若你使用盾牌，你仍然可以正常應用盾牌的加值。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Shell Defense", "translate_name": "",
+					"name": "Shell Defense", "translate_name": "龜殼防禦",
 					"entries": [
-						"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+						"你能夠以一個動作縮回殼內。直到你出殼，你的AC將獲得+4加值，且你在力量和體質豁免中具有優勢。當你躲在龜殼內時，你處於{@condition 伏地}狀態，你的移動速度歸零且無法被提升，你在敏捷豁免中具有劣勢，你無法採取反應，且你唯一能做的動作是以一個附贈動作從龜殼裡出來。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Survival Instinct", "translate_name": "",
+					"name": "Survival Instinct", "translate_name": "生存本能",
 					"entries": [
-						"You gain proficiency in the {@skill Survival} skill. Tortles have finely honed survival instincts."
+						"你熟練於{@skill 求生}技能。龜人磨練出了優秀的求生本能。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Aquan and Common."
+						"你能夠說、讀、寫通用語和水族語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Triton", "translate_name": "",
+			"name": "Triton", "translate_name": "梭螺魚人",
 			"source": "MOT",
 			"page": 26,
 			"_copy": {
-				"name": "Triton", "translate_name": "",
+				"name": "Triton",
 				"source": "VGM",
 				"_mod": {
 					"entries": [
@@ -13672,7 +13660,7 @@
 								"name": "Alignment", "translate_name": "陣營",
 								"type": "entries",
 								"entries": [
-									"Tritons tend toward neutrality. Their culture encourages them to be mindful of life's currents, knowing when to harness fate's tides and when to flow along with them."
+									"梭螺魚人傾向中立陣營。他們的文化鼓勵他們留意生命的潮流，知曉該在何時駕馭命運之潮，又該在何時任其放流。"
 								]
 							}
 						},
@@ -13682,7 +13670,7 @@
 								"name": "Darkvision", "translate_name": "黑暗視覺",
 								"type": "entries",
 								"entries": [
-									"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+									"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 								]
 							}
 						}
@@ -13692,7 +13680,7 @@
 			"darkvision": 60
 		},
 		{
-			"name": "Triton", "translate_name": "",
+			"name": "Triton", "translate_name": "梭螺魚人",
 			"source": "VGM",
 			"page": 115,
 			"size": "M",
@@ -13749,69 +13737,69 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Tritons reach maturity around age 15 and can live up to 200 years."
+						"梭螺魚人在大約15歲時成年，且可以活到最多200年。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Tritons tend toward lawful good. As guardians of the darkest reaches of the sea, their culture pushes them toward order and benevolence."
+						"梭螺魚人傾向守序善良。身為海洋中最黑暗邊疆的守護者，他們的文化推動他們走向秩序和仁慈。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Tritons are slightly shorter than humans, averaging about 5 feet tall. Your size is Medium."
+						"梭螺魚人比人類稍微矮一些，身高平均為5呎高。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Swim Speed", "translate_name": "",
+					"name": "Swim Speed", "translate_name": "游泳速度",
 					"entries": [
-						"You have a swimming speed of 30 feet."
+						"你擁有30呎的游泳速度。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Amphibious", "translate_name": "",
+					"name": "Amphibious", "translate_name": "兩棲",
 					"entries": [
 						"你可以在空氣和水中呼吸。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Control Air and Water", "translate_name": "",
+					"name": "Control Air and Water", "translate_name": "控風操水",
 					"entries": [
-						"A child of the sea, you can call on the magic of elemental air and water. You can cast {@spell fog cloud} with this trait. Starting at 3rd level, you can cast {@spell gust of wind} with it, and starting at 5th level, you can also cast {@spell wall of water|xge} with it. Once you cast a spell with this trait, you can't cast that spell with it again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"身為海洋之子，你可以呼喚氣和水元素的魔法。你可以使用此特性施放{@spell 雲霧術}。從3級開始，你可以使用此特性施放{@spell 造風術}，且從5級開始，你也可以使用此特性施放{@spell 水牆術|xge}。一旦你使用此特性施放一個法術，則直到你完成一次長休之前你都不能再用此特性施放該法術。你施展這些法術的施法屬性為魅力。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Emissary of the Sea", "translate_name": "",
+					"name": "Emissary of the Sea", "translate_name": "海之使者",
 					"entries": [
-						"Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though you have no special ability to understand them in return."
+						"水生野獸與你的族人之間有著非凡的親和力。你可以與能在水中呼吸的野獸進行簡單概念的溝通。牠們可以理解你話語的意思，然而你並沒有特殊能力以理解牠們的回覆。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Guardians of the Depths", "translate_name": "",
+					"name": "Guardians of the Depths", "translate_name": "深海守護者",
 					"entries": [
-						"Adapted to even the most extreme ocean depths, you have resistance to cold damage, and you ignore any of the drawbacks caused by a deep, underwater environment."
+						"適應了最極端的深海環境，你具有對寒冰傷害的抗性，且你忽視任何因深水環境所造成的負面影響。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Primordial."
+						"你可以說、讀、寫通用語以及原初語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Troglodyte", "translate_name": "",
+			"name": "Troglodyte", "translate_name": "戰蜥人",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -13836,44 +13824,44 @@
 			],
 			"entries": [
 				{
-					"name": "Chameleon Skin", "translate_name": "",
+					"name": "Chameleon Skin", "translate_name": "變色皮膚",
 					"type": "entries",
 					"entries": [
-						"You have advantage on Dexterity ({@skill Stealth}) checks made to hide."
+						"你在為躲藏所進行的敏捷（{@skill 隱匿}）檢定中具有優勢。"
 					]
 				},
 				{
-					"name": "Stench", "translate_name": "",
+					"name": "Stench", "translate_name": "惡臭",
 					"type": "entries",
 					"entries": [
-						"Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a DC 12 Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+						"任何除了戰蜥人以外在距離你5呎內開始它的回合的生物都必須成功通過一次DC 12的體質豁免，否則陷入{@condition 中毒}狀態直到該生物的下個回合開始。若此豁免成功，該生物將免疫於所有戰蜥人的惡臭長達1小時。"
 					]
 				},
 				{
-					"name": "Sunlight Sensitivity", "translate_name": "",
+					"name": "Sunlight Sensitivity", "translate_name": "日光敏感",
 					"type": "entries",
 					"entries": [
-						"While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+						"當處於日光照耀下時，你在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
 				},
 				{
-					"name": "Natural Armor", "translate_name": "",
+					"name": "Natural Armor", "translate_name": "天生護甲",
 					"entries": [
-						"Your thick hide grants you a +1 bonus to Armor Class."
+						"你的厚皮讓你的護甲等級獲得+1加值。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Troglodyte."
+						"你可以說、讀、寫戰蜥人語。"
 					],
 					"type": "entries"
 				}
@@ -13947,7 +13935,7 @@
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
@@ -14035,7 +14023,7 @@
 			]
 		},
 		{
-			"name": "Vedalken", "translate_name": "",
+			"name": "Vedalken", "translate_name": "維多肯",
 			"source": "GGR",
 			"page": 21,
 			"size": "M",
@@ -14079,56 +14067,56 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Vedalken mature slower than humans do, reaching maturity around age 40. Their life span is typically 350 years, with some living to the age of 500."
+						"維多肯的成長比人類來的緩慢，大約在40歲左右成年。他們的壽命通常是350歲，但有些人可以活到500歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Vedalken are usually lawful and non-evil."
+						"維多肯通常是守序且非邪惡的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Tall and slender, Vedalken stand 6 to 6½ feet tall on average and usually weigh less than 200 pounds. Your size is Medium."
+						"高且纖瘦，維多肯的身高平均介於6至6又1/2呎之間，且體重通常少於200磅。你的體型為中型。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Vedalken Dispassion", "translate_name": "",
+					"name": "Vedalken Dispassion", "translate_name": "維多肯式沉著",
 					"entries": [
-						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws."
+						"你在所有智力、睿知、和魅力的豁免檢定上具有優勢。"
 					]
 				},
 				{
-					"name": "Tireless Precision", "translate_name": "",
+					"name": "Tireless Precision", "translate_name": "孜孜不倦的專家",
 					"entries": [
-						"You are proficient in one of the following skills of your choice: {@skill Arcana}, {@skill History}, {@skill Investigation}, {@skill Medicine}, {@skill Performance}, or {@skill Sleight of Hand}.  You are also proficient with one {@book tool|phb|5|tools} of your choice.",
-						"Whenever you make an ability check with the chosen skill or tool, roll a {@dice d4} and add the number rolled to the check's total."
+						"你熟練於以下其中一個你所選擇的技能：{@skill 奧秘}、{@skill 歷史}、{@skill 調查}、{@skill 醫藥}、{@skill 表演}、或{@skill 手上把戲}。你也熟練於一個你所選擇的工具。",
+						"每當你進行一次使用所選的工具或技能的屬性檢定時，骰一顆{@dice d4}，並將骰出來的數字加到該檢定的總和中。"
 					],
 					"type": "entries"
 				},
 				{
 					"type": "entries",
-					"name": "Partially Amphibious", "translate_name": "",
+					"name": "Partially Amphibious", "translate_name": "部分兩棲",
 					"entries": [
-						"By absorbing oxygen through your skin, you can breathe underwater for up to 1 hour. Once you've reached that limit, you can't use this trait again until you finish a long rest."
+						"藉由透過你的肌膚吸收氧氣，你可以在水下呼吸長達1小時。一旦你到達這個極限，直到你完成一次長休之前都不能再使用這個能力。"
 					]
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common, Vedalken, and one other language of your choice."
+						"你可以說、讀、寫通用語、維多肯語、和另一種你所選擇的語言。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Vedalken", "translate_name": "",
+			"name": "Vedalken", "translate_name": "維多肯",
 			"source": "PSK",
 			"page": 23,
 			"size": "M",
@@ -14150,48 +14138,48 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Vedalken mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+						"維多肯的成熟速度與人類相同，且大多被期許在40歲左右時進入成年生活。他們的壽命可達350歲到甚至500歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Vedalken are most often lawful and rarely evil."
+						"維多肯通常是守序陣營，且很少是邪惡的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Vedalken are taller than humans but more slender. They average 6 to 6½ feet tall, but usually weigh less than 200 pounds. Your size is Medium."
+						"維多肯比人類更高而纖瘦。他們的身高平均介於6至6又1/2呎之間，且體重通常少於200磅。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Vedalken. The Vedalken language is renowned for its technical treatises and its catalogs of knowledge about the natural world and the aether that pervades it."
+						"你可以說、讀、寫通用語和維多肯語。維多肯語以其技術論文、以及對自然世界和漫布其中的乙太的分類學識而聞名。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Vedalken Cunning", "translate_name": "",
+					"name": "Vedalken Cunning", "translate_name": "維多肯式狡詐",
 					"entries": [
-						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+						"你在所有對抗魔法所進行的智力、睿知、和魅力豁免檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Aether Lore", "translate_name": "",
+					"name": "Aether Lore", "translate_name": "乙太學識",
 					"entries": [
-						"Whenever you make an Intelligence ({@skill History}) check related to magic items or aether-powered technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+						"每當你進行一次與魔法物品或乙太能量科技裝置有關的智力（{@skill 歷史}）檢定時，你可以將你的熟練加值變為兩倍。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Vedalken", "translate_name": "",
+			"name": "Vedalken", "translate_name": "維多肯",
 			"source": "UARacesOfRavnica",
 			"page": 4,
 			"size": "M",
@@ -14212,42 +14200,42 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Vedalken mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+						"維多肯的成熟速度與人類相同，且大多被期許在40歲左右時進入成年生活。他們的壽命可達350歲到甚至500歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Vedalken are most often lawful and rarely evil."
+						"維多肯通常是守序陣營，且很少是邪惡的。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Vedalken are taller than humans but more slender. They average 6 to 6½ feet tall, but usually weigh less than 200 pounds. Your size is Medium."
+						"維多肯比人類更高而纖瘦。他們的身高平均介於6至6又1/2呎之間，且體重通常少於200磅。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common."
+						"你可以說、讀、寫通用語。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Vedalken Dispassion", "translate_name": "",
+					"name": "Vedalken Dispassion", "translate_name": "維多肯式沉著",
 					"entries": [
-						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws."
+						"你在所有智力、睿知、和魅力的豁免檢定上具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Tireless Precision", "translate_name": "",
+					"name": "Tireless Precision", "translate_name": "孜孜不倦的專家",
 					"entries": [
-						"You are proficient in one of the following skills of your choice: {@skill Arcana}, {@skill History}, {@skill Investigation}, {@skill Medicine}, {@skill Performance}, or {@skill Sleight of Hand}. You are also proficient with one {@book tool|phb|5|tools} of your choice.",
-						"Whenever you make an ability check with the chosen skill or tool, roll a {@dice d4}, and add the number rolled to the check's total."
+						"你熟練於以下其中一個你所選擇的技能：{@skill 奧秘}、{@skill 歷史}、{@skill 調查}、{@skill 醫藥}、{@skill 表演}、或{@skill 手上把戲}。你也熟練於一個你所選擇的工具。",
+						"每當你進行一次使用所選的工具或技能的屬性檢定時，骰一顆{@dice d4}，並將骰出來的數字加到該檢定的總和中。"
 					],
 					"type": "entries"
 				}
@@ -14877,7 +14865,7 @@
 			]
 		},
 		{
-			"name": "Yuan-ti Pureblood", "translate_name": "",
+			"name": "Yuan-ti Pureblood", "translate_name": "純血蛇人",
 			"source": "VGM",
 			"page": 120,
 			"size": "M",
@@ -14927,62 +14915,62 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Purebloods mature at the same rate as humans and have lifespans similar in length to theirs."
+						"純血蛇人的成熟速度和人類相同，且有著與他們相似的壽命長度。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Purebloods are devoid of emotion and see others as tools to manipulate. They care little for law or chaos and are typically neutral evil."
+						"純血蛇人缺乏感情，並將他人視為工具來操弄。他們很少關心守序或混亂，且通常是中立邪惡。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Purebloods match humans in average size and weight. Your size is Medium."
+						"純血蛇人的平均身高體重與人類相同。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Innate Spellcasting", "translate_name": "",
+					"name": "Innate Spellcasting", "translate_name": "天生施法",
 					"entries": [
-						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"你知曉{@spell 毒氣噴灑}戲法。你能夠使用此特性無限次的施放{@spell 化獸為友}，但你只能指定蛇類做為它的目標。從3級開始，你也可以使用此特性施放{@spell 暗示術}。一旦你施放它，直到你完成一次長休之前你都不能再這麼做。你施展這些法術的施法屬性為魅力。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Magic Resistance", "translate_name": "",
+					"name": "Magic Resistance", "translate_name": "魔法抗性",
 					"entries": [
-						"You have advantage on saving throws against spells and other magical effects."
+						"你在對抗法術和其他魔法效果的豁免檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Poison Immunity", "translate_name": "",
+					"name": "Poison Immunity", "translate_name": "毒素免疫",
 					"entries": [
-						"You are immune to poison damage and the {@condition poisoned} condition."
+						"你免疫於毒素傷害和{@condition 中毒}狀態。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common, Abyssal, and Draconic."
+						"你可以說、讀、寫通用語、深淵語、和龍語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Zombie", "translate_name": "",
+			"name": "Zombie", "translate_name": "殭屍",
 			"source": "DMG",
 			"page": 282,
 			"size": "M",
@@ -15005,29 +14993,29 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Undead Fortitude", "translate_name": "",
+					"name": "Undead Fortitude", "translate_name": "不死韌性",
 					"entries": [
-						"If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead."
+						"若傷害將你的生命值歸零，除非該傷害為光耀傷害或來自重擊，否則你必須進行一次DC 5+所受傷害值的體質豁免。若豁免成功，則你改為將生命值減少至1。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Undead Nature", "translate_name": "",
+					"name": "Undead Nature", "translate_name": "不死本質",
 					"entries": [
-						"You are immune to poison damage and {@condition exhaustion}, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
+						"你免疫於毒素傷害和{@condition 力竭}狀態，且你不會陷入{@condition 中毒}狀態。你不再需要呼吸、進食、飲水、或睡眠。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can't speak, but you can understand the languages you knew in life."
+						"你無法說話，但你可以理解任何你生前所知的語言。"
 					],
 					"type": "entries"
 				}
