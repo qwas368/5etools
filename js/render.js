@@ -623,7 +623,7 @@ function Renderer () {
 		const cachedLastDepthTrackerSource = this._lastDepthTrackerSource;
 		this._handleTrackDepth(entry, meta.depth);
 
-		const headerSpan = entry.name ? `<span class="rd__h ${headerClass}" data-title-index="${this._headerIndex++}" ${this._getEnumeratedTitleRel(entry.name)}> <span class="entry-title-inner"${!pagePart && entry.source ? ` title="Source: ${Parser.sourceJsonToFull(entry.source)}${entry.page ? `, p${entry.page}` : ""}"` : ""}>${this.render({type: "inline", entries: [entry.name]})}${isAddPeriod ? "." : ""}</span>${pagePart}</span> ` : "";
+		const headerSpan = entry.name ? `<span class="rd__h ${headerClass}" data-title-index="${this._headerIndex++}" ${this._getEnumeratedTitleRel(entry.name)}> <span class="entry-title-inner"${!pagePart && entry.source ? ` title="資源: ${Parser.sourceJsonToFull(entry.source)}${entry.page ? `, p${entry.page}` : ""}"` : ""}>${this.render({type: "inline", entries: [entry.translate_name||entry.name]})}${isAddPeriod ? "." : ""}</span>${pagePart}</span> ` : "";
 
 		if (meta.depth === -1) {
 			if (!this._firstSection) textStack[0] += `<hr class="rd__hr rd__hr--section">`;
@@ -729,7 +729,7 @@ function Renderer () {
 
 		if (entry.name != null) {
 			this._handleTrackTitles(entry.name);
-			textStack[0] += `<span class="rd__h rd__h--2-inset" data-title-index="${this._headerIndex++}" ${this._getEnumeratedTitleRel(entry.name)}><span class="entry-title-inner">${entry.name}</span>${this._getPagePart(entry, true)}</span>`;
+			textStack[0] += `<span class="rd__h rd__h--2-inset" data-title-index="${this._headerIndex++}" ${this._getEnumeratedTitleRel(entry.name)}><span class="entry-title-inner">${entry.translate_name||entry.name}</span>${this._getPagePart(entry, true)}</span>`;
 		}
 		if (entry.entries) {
 			const len = entry.entries.length;
@@ -2313,7 +2313,7 @@ Renderer.getAbilityData = function (abArr) {
 		function handleAbility (abObj, shortLabel, optToConvertToTextStorage) {
 			if (abObj[shortLabel] != null) {
 				const isNegMod = abObj[shortLabel] < 0;
-				const toAdd = `${shortLabel.uppercaseFirst()} ${(isNegMod ? "" : "+")}${abObj[shortLabel]}`;
+				const toAdd = `${Parser.translateAbility(shortLabel)} ${(isNegMod ? "" : "+")}${abObj[shortLabel]}`;
 
 				if (optToConvertToTextStorage) {
 					optToConvertToTextStorage.push(toAdd);
@@ -2346,9 +2346,9 @@ Renderer.getAbilityData = function (abArr) {
 					});
 					const froms = w.from.map(it => it.uppercaseFirst());
 					const startText = froms.length === 6
-						? `Choose `
-						: `From ${froms.joinConjunct(", ", " and ")} choose `;
-					toConvertToText.push(`${startText}${areIncrease.concat(areReduce).joinConjunct(", ", " and ")}`);
+						? `選擇`
+						: `從 ${froms.joinConjunct(", ", " 和 ")} 中選擇`;
+					toConvertToText.push(`${startText}${areIncrease.concat(areReduce).joinConjunct(", ", " 和 ")}`);
 					toConvertToShortText.push(`${froms.length === 6 ? "Any combination " : ""}${areIncreaseShort.concat(areReduceShort).join("/")}${froms.length === 6 ? "" : ` from ${froms.join("/")}`}`);
 				} else {
 					const allAbilities = ch.from.length === 6;
@@ -2356,21 +2356,21 @@ Renderer.getAbilityData = function (abArr) {
 					let amount = ch.amount === undefined ? 1 : ch.amount;
 					amount = (amount < 0 ? "" : "+") + amount;
 					if (allAbilities) {
-						outStack += "any ";
+						outStack += "任意 ";
 					} else if (allAbilitiesWithParent) {
-						outStack += "any other ";
+						outStack += "任意其他";
 					}
 					if (ch.count != null && ch.count > 1) {
-						outStack += `${Parser.numberToText(ch.count)} `;
+						outStack += `${Parser.numberToText(ch.count)}`;
 					}
 					if (allAbilities || allAbilitiesWithParent) {
-						outStack += `${ch.count > 1 ? "unique " : ""}${amount}`;
+						outStack += `${ch.count > 1 ? "項 " : ""}${amount}`;
 					} else {
 						for (let j = 0; j < ch.from.length; ++j) {
 							let suffix = "";
 							if (ch.from.length > 1) {
 								if (j === ch.from.length - 2) {
-									suffix = " or ";
+									suffix = " 或 ";
 								} else if (j < ch.from.length - 2) {
 									suffix = ", ";
 								}
@@ -2381,13 +2381,13 @@ Renderer.getAbilityData = function (abArr) {
 									thsAmount = "";
 								}
 							}
-							outStack += ch.from[j].uppercaseFirst() + thsAmount + suffix;
+							outStack += Parser.translateAbility(ch.from[j]) + thsAmount + suffix;
 						}
 					}
 				}
 
 				if (outStack.trim()) {
-					toConvertToText.push(`Choose ${outStack}`);
+					toConvertToText.push(`選擇 ${outStack}`);
 					toConvertToShortText.push(outStack.uppercaseFirst());
 				}
 			}
@@ -3472,7 +3472,8 @@ Renderer.race = {
 					items: r.subraces.map(sr => {
 						const count = nameCounts[(sr.name || "_").toLowerCase()];
 						const idName = Renderer.race._getSubraceName(r.name, sr.name);
-						return `{@race ${idName}|${sr.source}${count > 1 ? `|${idName} (<span title="${Parser.sourceJsonToFull(sr.source).escapeQuotes()}">${Parser.sourceJsonToAbv(sr.source)}</span>)` : ""}}`;
+						const displayName = Renderer.race._getSubraceName(r.translate_name||r.name, sr.translate_name||sr.name);
+						return `{@race ${idName}|${sr.source}${count > 1 ? `|${idName} (<span title="${Parser.sourceJsonToFull(sr.source).escapeQuotes()}">${Parser.sourceJsonToAbv(sr.source)}</span>)` : ""}|${displayName}}`;
 					})
 				};
 
@@ -3480,7 +3481,7 @@ Renderer.race = {
 					{
 						type: "section",
 						entries: [
-							"This race has multiple subraces, as listed below:",
+							"這個種族有多個亞種，如列表所示：",
 							lst
 						]
 					},
@@ -3547,6 +3548,8 @@ Renderer.race = {
 						}
 
 						cpy.name = Renderer.race._getSubraceName(cpy.name, s.name);
+						cpy.translate_name = Renderer.race._getSubraceName(cpy.translate_name||cpy.name, s.translate_name||s.name);
+						delete s.translate_name;
 						delete s.name;
 					}
 					if (s.ability) {

@@ -35,17 +35,17 @@ Parser.numberToText = function (number) {
 	function getAsText (num) {
 		const abs = Math.abs(num);
 		switch (abs) {
-			case 0: return "zero";
-			case 1: return "one";
-			case 2: return "two";
-			case 3: return "three";
-			case 4: return "four";
-			case 5: return "five";
-			case 6: return "six";
-			case 7: return "seven";
-			case 8: return "eight";
-			case 9: return "nine";
-			case 10: return "ten";
+			case 0: return "零";
+			case 1: return "一";
+			case 2: return "二";
+			case 3: return "三";
+			case 4: return "四";
+			case 5: return "五";
+			case 6: return "六";
+			case 7: return "七";
+			case 8: return "八";
+			case 9: return "九";
+			case 10: return "十";
 			case 11: return "eleven";
 			case 12: return "twelve";
 			case 13: return "thirteen";
@@ -161,7 +161,7 @@ Parser.getSpeedString = (it) => {
 
 	function procSpeed (propName) {
 		function addSpeed (s) {
-			stack.push(`${propName === "walk" ? "" : `${propName} `}${getVal(s)} ft.${getCond(s)}`);
+			stack.push(`${propName === "walk" ? "" : `${Parser.translateSpeedType(propName)}`}${getVal(s)}呎${getCond(s)}`);
 		}
 
 		if (it.speed[propName] || propName === "walk") addSpeed(it.speed[propName] || 0);
@@ -186,11 +186,11 @@ Parser.getSpeedString = (it) => {
 		procSpeed("swim");
 		if (it.speed.choose) {
 			joiner = "; ";
-			stack.push(`${it.speed.choose.from.sort().joinConjunct(", ", " or ")} ${it.speed.choose.amount} ft.${it.speed.choose.note ? ` ${it.speed.choose.note}` : ""}`);
+			stack.push(`${it.speed.choose.from.sort().joinConjunct(", ", " 或 ")} ${it.speed.choose.amount} ft.${it.speed.choose.note ? ` ${it.speed.choose.note}` : ""}`);
 		}
 		return stack.join(joiner);
 	} else {
-		return it.speed + (it.speed === "Varies" ? "" : " ft. ");
+		return it.speed + (it.speed === "Varies" ? "" : "呎 ");
 	}
 };
 
@@ -1929,12 +1929,12 @@ Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_CON] = "Conj.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_PSI] = "Psi.";
 
 Parser.ATB_ABV_TO_FULL = {
-	"str": "力量",
-	"dex": "敏捷",
-	"con": "體質",
-	"int": "智力",
-	"wis": "睿知",
-	"cha": "魅力"
+	"str": "Strength",
+	"dex": "Dexterity",
+	"con": "Constitution",
+	"int": "Intelligence",
+	"wis": "Wisdom",
+	"cha": "Charisma"
 };
 
 TP_ABERRATION = "aberration";
@@ -1981,15 +1981,15 @@ SZ_VARIES = "V";
 Parser.SIZE_ABVS = [SZ_TINY, SZ_SMALL, SZ_MEDIUM, SZ_LARGE, SZ_HUGE, SZ_GARGANTUAN, SZ_VARIES];
 Parser.SIZE_ABV_TO_FULL = {};
 Parser.SIZE_ABV_TO_FULL[SZ_FINE] = "Fine";
-Parser.SIZE_ABV_TO_FULL[SZ_DIMINUTIVE] = "Diminutive";
-Parser.SIZE_ABV_TO_FULL[SZ_TINY] = "Tiny";
-Parser.SIZE_ABV_TO_FULL[SZ_SMALL] = "Small";
-Parser.SIZE_ABV_TO_FULL[SZ_MEDIUM] = "Medium";
-Parser.SIZE_ABV_TO_FULL[SZ_LARGE] = "Large";
-Parser.SIZE_ABV_TO_FULL[SZ_HUGE] = "Huge";
-Parser.SIZE_ABV_TO_FULL[SZ_GARGANTUAN] = "Gargantuan";
+Parser.SIZE_ABV_TO_FULL[SZ_DIMINUTIVE] = "超微型";
+Parser.SIZE_ABV_TO_FULL[SZ_TINY] = "微型";
+Parser.SIZE_ABV_TO_FULL[SZ_SMALL] = "小型";
+Parser.SIZE_ABV_TO_FULL[SZ_MEDIUM] = "中型";
+Parser.SIZE_ABV_TO_FULL[SZ_LARGE] = "大型";
+Parser.SIZE_ABV_TO_FULL[SZ_HUGE] = "巨型";
+Parser.SIZE_ABV_TO_FULL[SZ_GARGANTUAN] = "超巨型";
 Parser.SIZE_ABV_TO_FULL[SZ_COLOSSAL] = "Colossal";
-Parser.SIZE_ABV_TO_FULL[SZ_VARIES] = "Varies";
+Parser.SIZE_ABV_TO_FULL[SZ_VARIES] = "可變";
 
 Parser.XP_CHART_ALT = {
 	"0": 10,
@@ -2277,7 +2277,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_GGR] = "拉尼卡的公會長指南";
 Parser.SOURCE_JSON_TO_FULL[SRC_KKW] = "Krenko's Way";
 Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "夸力許的失落實驗室";
 Parser.SOURCE_JSON_TO_FULL[SRC_GoS] = "鹽沼幽靈";
-Parser.SOURCE_JSON_TO_FULL[SRC_AI] = "Acquisitions Incorporated";
+Parser.SOURCE_JSON_TO_FULL[SRC_AI] = "艾奎玄茲股份有限公司";
 Parser.SOURCE_JSON_TO_FULL[SRC_OoW] = "The Orrery of the Wanderer";
 Parser.SOURCE_JSON_TO_FULL[SRC_ESK] = "Essentials Kit";
 Parser.SOURCE_JSON_TO_FULL[SRC_DIP] = "冰霜頂尖的巨龍";
@@ -2303,7 +2303,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_EGW_DD] = "Dangerous Designs";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_FS] = "Frozen Sick";
 Parser.SOURCE_JSON_TO_FULL[SRC_EGW_US] = "Unwelcome Spirits";
 Parser.SOURCE_JSON_TO_FULL[SRC_MOT] = "塞洛斯的神話奧德賽";
-Parser.SOURCE_JSON_TO_FULL[SRC_IDRotF] = "Icewind Dale: Rime of the Frostmaiden";
+Parser.SOURCE_JSON_TO_FULL[SRC_IDRotF] = "冰風谷：冰霜少女的寒霜";
 Parser.SOURCE_JSON_TO_FULL[SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[SRC_ALCoS] = `${AL_PREFIX}Curse of Strahd`;
 Parser.SOURCE_JSON_TO_FULL[SRC_ALEE] = `${AL_PREFIX}Elemental Evil`;
@@ -2952,3 +2952,78 @@ Parser.SENSE_JSON_TO_FULL = {
 Parser.NUMBERS_ONES = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 Parser.NUMBERS_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 Parser.NUMBERS_TEENS = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+
+Parser.translate = function(DICT, key){ return DICT[key.toLowerCase()] || key; }
+Parser.translateSpeedType = (k)=>Parser.translate(Parser.SPEED_TYPE_DICT,k);
+Parser.SPEED_TYPE_DICT = {
+	"walk": "步行", "swim": "游泳", "fly": "飛行", "burrow": "掘地", "climb": "攀爬"
+};
+Parser.translateMovement = function(movement){
+	var text_arr = extractBrackets(movement);
+	var moveName = Parser.translate(Parser.SPEED_TYPE_DICT, text_arr[0]);
+	var misc = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate({"fast": "快", "slow": "慢"}, i)})`).join(""): "";
+	return moveName+misc;
+}
+Parser.translateAbility = (k)=>Parser.translate(Parser.ABILITY_DICT,k);
+Parser.ABILITY_DICT = {
+	"str": "力量", "dex": "敏捷", "con": "體質", "int": "智力", "wis": "睿知", "cha": "魅力",
+	"strength": "力量", "dexterity": "敏捷", "constitution": "體質", "intelligence": "智力", "wisdom": "睿知", "charisma": "魅力"
+};
+Parser.translateLanguage = (k)=>Parser.translate(Parser.LANGUAGE_DICT,k);
+Parser.LANGUAGE_DICT = {
+	"abyssal": "深淵語", "celestial": "天界語", "common": "通用語", "draconic": "龍語", "dwarvish": "矮人語", "elvish": "精靈語", "giant": "巨人語",
+	"gnomish": "地侏語", "goblin": "歌布林語", "halfling": "半身人語", "infernal": "煉獄語", "orc": "獸人語", "other": "其他", "choose": "自選",
+	"primordial": "原初語", "sylvan": "木族語", "undercommon": "地下通用語"
+};
+
+function extractBrackets(text){ return text.split(/[();]/).map(t=>t.trim()).filter(t=>!!t);}
+function alias(object, key, alias){ object[alias]=object[key]; }
+
+Parser.translateMainRace = function(it){
+	var text_arr = extractBrackets(it);
+	var RaceName = Parser.translate(Parser.MAIN_RACE_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.SUB_RACE_TO_TRANS, i)})`).join(""): "";
+	return RaceName+appendix;
+}
+Parser.translateSubRace = function(it){
+	var text_arr = extractBrackets(it);
+	var RaceName = Parser.translate(Parser.MAIN_RACE_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.SUB_RACE_TO_TRANS, i)})`).join(""): "";
+
+	return RaceName+appendix;
+}
+Parser.MAIN_RACE_TO_TRANS = {
+	"no subraces": "沒有亞種的種族",
+	"aven": "艾文",
+	"aasimar": "阿斯莫",
+	"dwarf": "矮人",
+	"dragonborn": "龍裔",
+	"elf": "精靈",
+	"genasi": "元素裔",
+	"gith": "吉斯人",
+	"gnome": "地侏",
+	"goblin": "哥布林",
+	"half-elf": "半精靈",
+	"half-orc": "半獸人",
+	"halfling": "半身人",
+	"human": "人類",
+	"merfolk": "人魚",
+	"tiefling": "提夫林",
+	"firbolg": "費爾伯格",
+	"triton": "梭羅魚人",
+	"yuan-ti pureblood": "純血蛇人",
+	"warforged": "戰俑",
+	"siren": "塞壬",
+	"shifter": "化獸者"
+};
+Parser.SUB_RACE_TO_TRANS = {
+	"zendikar": "贊迪卡", "kaladesh": "卡拉德許", "innistrad": "依尼翠", "ixalan": "依夏蘭",
+	"fallen": "墮落", "protector": "守護者", "scourge": "天譴",
+	"duergar": "灰",
+	"drow": "卓爾", "eladrin": "雅靈", "high": "高等", "shadar-kai": "影靈", "mul daya nation": "慕達雅族",
+	"air": "氣", "earth": "土", "fire": "火", "water": "水",
+	"githyanki": "吉斯洋基", "githzerai": "吉斯澤萊", "forest": "林",
+	"drow descent": "卓爾血統",
+	"mark of warding": "守護龍紋", "mark of shadow": "陰影龍紋", "mark of scribing": "抄錄龍紋", "mark of detection": "偵測龍紋", "mark of storm": "暴風龍紋",  "mark of finding": "探尋龍紋", "mark of healing": "醫療龍紋", "mark of hospitality": "招待龍紋", "mark of handling": "畜牧龍紋", "mark of making": "創造龍紋", "mark of passage": "通行龍紋", "mark of sentinel": "警戒龍紋",
+	"asmodeus": "阿斯莫德", "baalzebul": "巴力西卜", "dispater": "狄斯帕特", "fierna": "菲爾娜", "glasya": "格萊希亞", "levistus": "萊維斯圖斯", "mammon": "瑪門", "mephistopheles": "梅菲斯托費勒斯", "variant": "變體", "zariel": "扎瑞爾", "abyssal": "深淵"
+};

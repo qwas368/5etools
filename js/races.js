@@ -61,17 +61,18 @@ class RacesPage extends ListPage {
 	getListItem (race, rcI, isExcluded) {
 		this._pageFilter.mutateAndAddToFilters(race, isExcluded);
 
-		const ability = race.ability ? Renderer.getAbilityData(race.ability) : {asTextShort: "None"};
+		const ability = race.ability ? Renderer.getAbilityData(race.ability) : {asTextShort: "無"};
 
 		const eleLi = document.createElement("li");
 		eleLi.className = `row ${isExcluded ? "row--blacklisted" : ""}`;
 
 		const hash = UrlUtil.autoEncodeHash(race);
+		const althash = race.translate_name? UrlUtil.encodeForHash([race.translate_name, race.source]): null;
 		const size = Parser.sizeAbvToFull(race.size || SZ_VARIES);
 		const source = Parser.sourceJsonToAbv(race.source);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border">
-			<span class="bold col-4 pl-0">${race.name}</span>
+			<span class="bold col-4 pl-0">${race.translate_name || race.name}</span>
 			<span class="col-4">${ability.asTextShort}</span>
 			<span class="col-2">${size}</span>
 			<span class="col-2 text-center ${Parser.sourceJsonToColor(race.source)} pr-0" title="${Parser.sourceJsonToFull(race.source)}" ${BrewUtil.sourceJsonToStyle(race.source)}>${source}</span>
@@ -83,6 +84,7 @@ class RacesPage extends ListPage {
 			race.name,
 			{
 				hash,
+				althash,
 				ability: ability.asTextShort,
 				size,
 				source,
@@ -98,6 +100,9 @@ class RacesPage extends ListPage {
 			{
 				uniqueId: race.uniqueId ? race.uniqueId : rcI,
 				isExcluded
+			},
+			{
+				translate_name: race.translate_name
 			}
 		);
 

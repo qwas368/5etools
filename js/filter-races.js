@@ -92,9 +92,9 @@ class PageFilterRaces extends PageFilter {
 	constructor () {
 		super();
 
-		const sizeFilter = new Filter({header: "Size", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
+		const sizeFilter = new Filter({header: "Size", displayHeader: "體型", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
 		const asiFilter = new Filter({
-			header: "Ability Bonus (Including Subrace)",
+			header: "Ability Bonus (Including Subrace)", displayHeader: "屬性值加值 (包含亞種)",
 			items: [
 				"Player Choice",
 				"Any Strength Increase",
@@ -116,43 +116,50 @@ class PageFilterRaces extends PageFilter {
 				"Charisma +2",
 				"Charisma +1"
 			],
-			itemSortFn: PageFilterRaces.filterAscSortAsi
+			itemSortFn: PageFilterRaces.filterAscSortAsi,
+			displayFn: PageFilterRaces.translateAbilityBonus
 		});
-		const baseRaceFilter = new Filter({header: "Base Race"});
-		const speedFilter = new Filter({header: "Speed", items: ["Climb", "Fly", "Swim", "Walk (Fast)", "Walk", "Walk (Slow)"]});
+		const baseRaceFilter = new Filter({header: "Base Race", displayHeader: "基準種族", displayFn: Parser.translateMainRace});
+		const speedFilter = new Filter({
+			header: "Speed", displayHeader: "移動速度",
+			items: ["Climb", "Fly", "Swim", "Walk (Fast)", "Walk", "Walk (Slow)"],
+			displayFn: Parser.translateMovement
+		});
 		const traitFilter = new Filter({
-			header: "Traits",
+			header: "Traits", displayHeader: "特性",
 			items: [
-				"Amphibious",
-				"Armor Proficiency",
+				"Darkvision", "Superior Darkvision",
 				"Blindsight",
+				"Natural Armor",
+				"Unarmed Strike",
+				"Armor Proficiency",
+				"Weapon Proficiency",
+				"Skill Proficiency",
+				"Tool Proficiency",
+				"Magic Resistance",
+				"Spellcasting",
 				"Damage Immunity",
 				"Damage Resistance",
-				"Darkvision", "Superior Darkvision",
+				"Amphibious",
 				"Dragonmark",
 				"Improved Resting",
-				"Monstrous Race",
-				"Natural Armor",
-				"NPC Race",
 				"Powerful Build",
-				"Skill Proficiency",
-				"Spellcasting",
-				"Tool Proficiency",
-				"Unarmed Strike",
 				"Uncommon Race",
-				"Weapon Proficiency"
+				"Monstrous Race",
+				"NPC Race",				
 			],
 			deselFn: (it) => {
 				return it === "NPC Race";
-			}
+			},
+			displayFn: (it) => Parser.translate(PageFilterRaces.RACE_TRAIT_DICT, it)
 		});
 		const languageFilter = new Filter({
-			header: "Languages",
+			header: "Languages", displayHeader: "語言",
 			items: [
-				"Abyssal",
-				"Celestial",
 				"Choose",
 				"Common",
+				"Abyssal",
+				"Celestial",
 				"Draconic",
 				"Dwarvish",
 				"Elvish",
@@ -162,14 +169,18 @@ class PageFilterRaces extends PageFilter {
 				"Halfling",
 				"Infernal",
 				"Orc",
-				"Other",
 				"Primordial",
 				"Sylvan",
-				"Undercommon"
+				"Undercommon",
+				"Other"
 			],
-			umbrellaItems: ["Choose"]
+			umbrellaItems: ["Choose"],
+			displayFn: Parser.translateLanguage
 		});
-		const miscFilter = new Filter({header: "Miscellaneous", items: ["Base Race", "Key Race", "Modified Copy", "SRD"]});
+		const miscFilter = new Filter({
+			header: "Miscellaneous", displayHeader: "雜項", items: ["Base Race", "Key Race", "Modified Copy", "SRD"],
+			displayFn: (it)=>Parser.translate({"base race": "基準種族", "key race": "核心種族", "modified copy": "修改後的版本"}, it) 
+		});
 
 		this._sizeFilter = sizeFilter;
 		this._asiFilter = asiFilter;
@@ -251,3 +262,32 @@ PageFilterRaces.ASI_SORT_POS = {
 	Wisdom: 4,
 	Charisma: 5
 };
+
+PageFilterRaces.translateAbilityBonus = function(label){
+	if(label.match(/Any (\w+) Increase/)!=null) return `任意${Parser.translateAbility(label.match(/Any (\w+) Increase/)[1])}增加`;
+	else if(label.match(/Player Choice/)!=null) return "玩家選擇";
+	else if(label.match(/(\w+) [+-]\d/)!=null) return label.replace(/(\w+) ([+-]\d)/, `${Parser.translateAbility(label.match(/(\w+) [+-]\d/)[1])}$2`);
+	else return label;
+}
+PageFilterRaces.RACE_TRAIT_DICT = {
+	"amphibious": "兩棲",
+	"armor proficiency": "護甲熟練",
+	"blindsight": "盲視",
+	"damage immunity": "傷害免疫",
+	"damage resistance": "傷害抗性",
+	"darkvision": "黑暗視覺",
+	"superior darkvision": "高級黑暗視覺",
+	"dragonmark": "龍紋",
+	"improved resting": "修整強化",
+	"monstrous race": "怪物種族",
+	"natural armor": "天生護甲",
+	"npc race": "NPC種族",
+	"powerful build": "強健體格",
+	"skill proficiency": "技能熟練",
+	"spellcasting": "施法能力",
+	"tool proficiency": "工具熟練",
+	"unarmed strike": "徒手打擊",
+	"uncommon race": "非常見種族",
+	"weapon proficiency": "武器熟練",
+	"magic resistance": "魔法抗性",
+}
