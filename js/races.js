@@ -163,17 +163,17 @@ class RacesPage extends ListPage {
 		}
 
 		const traitTab = Renderer.utils.tabButton(
-			"Traits",
+			"特性",
 			() => {},
 			buildStatsTab
 		);
 		const infoTab = Renderer.utils.tabButton(
-			"Info",
+			"資訊",
 			() => {},
 			buildFluffTab
 		);
 		const picTab = Renderer.utils.tabButton(
-			"Images",
+			"插圖",
 			() => {},
 			buildFluffTab.bind(null, true)
 		);

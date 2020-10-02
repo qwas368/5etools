@@ -40,7 +40,7 @@ class SpellsPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border">
 			<span class="bold col-2-9 pl-0">${name}</span>
-			<span class="col-1-5 text-center">${Parser.spLevelToFull(spell.level)}${spell.meta && spell.meta.ritual ? " (rit.)" : ""}${spell.meta && spell.meta.technomagic ? " (tec.)" : ""}</span>
+			<span class="col-1-5 text-center">${Parser.spLevelToFull(spell.level)}${spell.meta && spell.meta.ritual ? " (儀式)" : ""}${spell.meta && spell.meta.technomagic ? " (科技)" : ""}</span>
 			<span class="col-1-7 text-center">${time}</span>
 			<span class="col-1-2 school_${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
 			<span class="col-0-6 text-center" title="Concentration">${concentration}</span>
@@ -142,17 +142,17 @@ class SpellsPage {
 		}
 
 		const statTab = Renderer.utils.tabButton(
-			"Spell",
+			"法術",
 			() => {},
 			buildStatsTab
 		);
 		const infoTab = Renderer.utils.tabButton(
-			"Info",
+			"資訊",
 			() => {},
 			buildFluffTab
 		);
 		const picTab = Renderer.utils.tabButton(
-			"Images",
+			"插圖",
 			() => {},
 			buildFluffTab.bind(null, true)
 		);

@@ -739,7 +739,7 @@ Parser.spSchoolAndSubschoolsAbvsToFull = function (school, subschools) {
 
 Parser.spSchoolAbvToFull = function (schoolOrSubschool) {
 	const out = Parser._parse_aToB(Parser.SP_SCHOOL_ABV_TO_FULL, schoolOrSubschool);
-	if (Parser.SP_SCHOOL_ABV_TO_FULL[schoolOrSubschool]) return out;
+	if (Parser.SP_SCHOOL_ABV_TO_FULL[schoolOrSubschool]) return out + (schoolOrSubschool!=SKL_ABV_PSI? "系": "");
 	if (BrewUtil.homebrewMeta && BrewUtil.homebrewMeta.spellSchools && BrewUtil.homebrewMeta.spellSchools[schoolOrSubschool]) return BrewUtil.homebrewMeta.spellSchools[schoolOrSubschool].full;
 	return out;
 };
@@ -775,8 +775,8 @@ Parser.getOrdinalForm = function (i) {
 };
 
 Parser.spLevelToFull = function (level) {
-	if (level === 0) return "Cantrip";
-	else return Parser.getOrdinalForm(level);
+	if (level === 0) return "戲法";
+	else return `${level}環`;
 };
 
 Parser.getArticle = function (str) {
@@ -805,7 +805,7 @@ Parser.spMetaToFull = function (meta) {
 };
 
 Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools) {
-	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : `${Parser.spLevelToFull(level)}-level`;
+	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : `${Parser.spLevelToFull(level)}`;
 	const levelSchoolStr = level === 0 ? `${Parser.spSchoolAbvToFull(school)} ${levelPart}` : `${levelPart} ${Parser.spSchoolAbvToFull(school).toLowerCase()}`;
 
 	const metaArr = Parser.spMetaToArr(meta);
@@ -1091,7 +1091,7 @@ Parser.spMainClassesToFull = function (fromClassList, textOnly = false) {
 		.map(c => ({hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c), c}))
 		.filter(it => !ExcludeUtil.isInitialised || !ExcludeUtil.isExcluded(it.hash, "class", it.c.source))
 		.sort((a, b) => SortUtil.ascSort(a.c.name, b.c.name))
-		.map(it => textOnly ? it.c.name : `<a title="Source: ${Parser.sourceJsonToFull(it.c.source)}" href="${UrlUtil.PG_CLASSES}#${it.hash}">${it.c.name}</a>`)
+		.map(it => textOnly ? it.c.name : `<a title="資源: ${Parser.sourceJsonToFull(it.c.source)}" href="${UrlUtil.PG_CLASSES}#${it.hash}">${Parser.translateMainClass(it.c.name)}</a>`)
 		.join(", ") || "";
 };
 
@@ -1119,37 +1119,37 @@ Parser.spSubclassesToFull = function (fromSubclassList, textOnly, subclassLookup
 };
 
 Parser._spSubclassItem = function (fromSubclass, textOnly, subclassLookup) {
-	const c = fromSubclass.class;
-	const sc = fromSubclass.subclass;
-	const text = `${sc.name}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
+	const c = fromSubclass.class; const c_name = Parser.translateMainClass(c.name);
+	const sc = fromSubclass.subclass; const sc_name = Parser.translateSubClassOnly(sc.name);
+	const text = `${sc_name}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
 	if (textOnly) return text;
 	const classPart = `<a href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}" title="Source: ${Parser.sourceJsonToFull(c.source)}">${c.name}</a>`;
 	const fromLookup = subclassLookup ? MiscUtil.get(subclassLookup, c.source, c.name, sc.source, sc.name) : null;
-	if (fromLookup) return `<a class="italic" href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: {shortName: sc.name, source: sc.source}})}" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}</a> ${classPart}`;
-	else return `<span class="italic" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}</span> ${classPart}`;
+	if (fromLookup) return `<a href="${UrlUtil.PG_CLASSES}#${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](c)}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: {shortName: sc.name, source: sc.source}})}" title="資源: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}-${c_name}</a>`;
+	else return `<span title="資源: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${text}-${c_name}</span>`;
 };
 
 Parser.SPELL_ATTACK_TYPE_TO_FULL = {};
-Parser.SPELL_ATTACK_TYPE_TO_FULL["M"] = "Melee";
-Parser.SPELL_ATTACK_TYPE_TO_FULL["R"] = "Ranged";
-Parser.SPELL_ATTACK_TYPE_TO_FULL["O"] = "Other/Unknown";
+Parser.SPELL_ATTACK_TYPE_TO_FULL["M"] = "近戰";
+Parser.SPELL_ATTACK_TYPE_TO_FULL["R"] = "遠程";
+Parser.SPELL_ATTACK_TYPE_TO_FULL["O"] = "其他/不明";
 
 Parser.spAttackTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SPELL_ATTACK_TYPE_TO_FULL, type);
 };
 
 Parser.SPELL_AREA_TYPE_TO_FULL = {
-	ST: "Single Target",
-	MT: "Multiple Targets",
-	C: "Cube",
-	N: "Cone",
-	Y: "Cylinder",
-	S: "Sphere",
-	R: "Circle",
-	Q: "Square",
-	L: "Line",
-	H: "Hemisphere",
-	W: "Wall"
+	ST: "單一目標",
+	MT: "複數目標",
+	C: "立方",
+	N: "錐形",
+	Y: "圓柱",
+	S: "球體",
+	R: "圓形",
+	Q: "方形",
+	L: "直線",
+	H: "半球",
+	W: "牆"
 };
 Parser.spAreaTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SPELL_AREA_TYPE_TO_FULL, type);
@@ -1854,8 +1854,8 @@ Parser.SKL_ABVS = [
 	SKL_ABV_EVO,
 	SKL_ABV_ILL,
 	SKL_ABV_NEC,
-	SKL_ABV_PSI,
-	SKL_ABV_TRA
+	SKL_ABV_TRA,
+	SKL_ABV_PSI
 ];
 
 Parser.SP_TM_ACTION = "action";
@@ -1866,12 +1866,12 @@ Parser.SP_TM_MINS = "minute";
 Parser.SP_TM_HRS = "hour";
 Parser.SP_TIME_SINGLETONS = [Parser.SP_TM_ACTION, Parser.SP_TM_B_ACTION, Parser.SP_TM_REACTION, Parser.SP_TM_ROUND];
 Parser.SP_TIME_TO_FULL = {
-	[Parser.SP_TM_ACTION]: "Action",
-	[Parser.SP_TM_B_ACTION]: "Bonus Action",
-	[Parser.SP_TM_REACTION]: "Reaction",
-	[Parser.SP_TM_ROUND]: "Rounds",
-	[Parser.SP_TM_MINS]: "Minutes",
-	[Parser.SP_TM_HRS]: "Hours"
+	[Parser.SP_TM_ACTION]: "動作",
+	[Parser.SP_TM_B_ACTION]: "附贈動作",
+	[Parser.SP_TM_REACTION]: "反應",
+	[Parser.SP_TM_ROUND]: "輪",
+	[Parser.SP_TM_MINS]: "分鐘",
+	[Parser.SP_TM_HRS]: "小時"
 };
 Parser.spTimeUnitToFull = function (timeUnit) {
 	return Parser._parse_aToB(Parser.SP_TIME_TO_FULL, timeUnit);
@@ -1896,15 +1896,15 @@ Parser.spTimeToShort = function (time, isHtml) {
 		: `${time.number} ${isHtml ? `<span class="ve-small">` : ""}${Parser.spTimeUnitToAbv(time.unit)}${isHtml ? `</span>` : ""}${time.condition ? "*" : ""}`;
 };
 
-SKL_ABJ = "Abjuration";
-SKL_EVO = "Evocation";
-SKL_ENC = "Enchantment";
-SKL_ILL = "Illusion";
-SKL_DIV = "Divination";
-SKL_NEC = "Necromancy";
-SKL_TRA = "Transmutation";
-SKL_CON = "Conjuration";
-SKL_PSI = "Psionic";
+SKL_ABJ = "防護";
+SKL_EVO = "塑能";
+SKL_ENC = "惑控";
+SKL_ILL = "幻術";
+SKL_DIV = "預言";
+SKL_NEC = "死靈";
+SKL_TRA = "變化";
+SKL_CON = "咒法";
+SKL_PSI = "靈能";
 
 Parser.SP_SCHOOL_ABV_TO_FULL = {};
 Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ABJ] = SKL_ABJ;
@@ -2953,31 +2953,34 @@ Parser.NUMBERS_ONES = ["", "one", "two", "three", "four", "five", "six", "seven"
 Parser.NUMBERS_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 Parser.NUMBERS_TEENS = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
 
+//========================
+function extractBrackets(text){ return text.split(/[();]/).map(t=>t.trim()).filter(t=>!!t);}
+function alias(object, key, alias){ object[alias]=object[key]; }
+
 Parser.translate = function(DICT, key){ return DICT[key.toLowerCase()] || key; }
 Parser.translateSpeedType = (k)=>Parser.translate(Parser.SPEED_TYPE_DICT,k);
-Parser.SPEED_TYPE_DICT = {
-	"walk": "步行", "swim": "游泳", "fly": "飛行", "burrow": "掘地", "climb": "攀爬"
-};
 Parser.translateMovement = function(movement){
 	var text_arr = extractBrackets(movement);
 	var moveName = Parser.translate(Parser.SPEED_TYPE_DICT, text_arr[0]);
 	var misc = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate({"fast": "快", "slow": "慢"}, i)})`).join(""): "";
 	return moveName+misc;
 }
+Parser.SPEED_TYPE_DICT = {
+	"walk": "步行", "swim": "游泳", "fly": "飛行", "burrow": "掘地", "climb": "攀爬"
+};
+
 Parser.translateAbility = (k)=>Parser.translate(Parser.ABILITY_DICT,k);
 Parser.ABILITY_DICT = {
 	"str": "力量", "dex": "敏捷", "con": "體質", "int": "智力", "wis": "睿知", "cha": "魅力",
 	"strength": "力量", "dexterity": "敏捷", "constitution": "體質", "intelligence": "智力", "wisdom": "睿知", "charisma": "魅力"
 };
+
 Parser.translateLanguage = (k)=>Parser.translate(Parser.LANGUAGE_DICT,k);
 Parser.LANGUAGE_DICT = {
 	"abyssal": "深淵語", "celestial": "天界語", "common": "通用語", "draconic": "龍語", "dwarvish": "矮人語", "elvish": "精靈語", "giant": "巨人語",
 	"gnomish": "地侏語", "goblin": "歌布林語", "halfling": "半身人語", "infernal": "煉獄語", "orc": "獸人語", "other": "其他", "choose": "自選",
 	"primordial": "原初語", "sylvan": "木族語", "undercommon": "地下通用語"
 };
-
-function extractBrackets(text){ return text.split(/[();]/).map(t=>t.trim()).filter(t=>!!t);}
-function alias(object, key, alias){ object[alias]=object[key]; }
 
 Parser.translateMainRace = function(it){
 	var text_arr = extractBrackets(it);
@@ -2994,7 +2997,7 @@ Parser.translateSubRace = function(it){
 }
 Parser.MAIN_RACE_TO_TRANS = {
 	"no subraces": "沒有亞種的種族",
-	"aven": "艾文",
+	"aven": "艾文鳥人",
 	"aasimar": "阿斯莫",
 	"dwarf": "矮人",
 	"dragonborn": "龍裔",
@@ -3027,3 +3030,98 @@ Parser.SUB_RACE_TO_TRANS = {
 	"mark of warding": "守護龍紋", "mark of shadow": "陰影龍紋", "mark of scribing": "抄錄龍紋", "mark of detection": "偵測龍紋", "mark of storm": "暴風龍紋",  "mark of finding": "探尋龍紋", "mark of healing": "醫療龍紋", "mark of hospitality": "招待龍紋", "mark of handling": "畜牧龍紋", "mark of making": "創造龍紋", "mark of passage": "通行龍紋", "mark of sentinel": "警戒龍紋",
 	"asmodeus": "阿斯莫德", "baalzebul": "巴力西卜", "dispater": "狄斯帕特", "fierna": "菲爾娜", "glasya": "格萊希亞", "levistus": "萊維斯圖斯", "mammon": "瑪門", "mephistopheles": "梅菲斯托費勒斯", "variant": "變體", "zariel": "扎瑞爾", "abyssal": "深淵"
 };
+
+Parser.translateCondition = it => Parser.translate(Parser.COND_TO_TRANS, it);
+Parser.COND_TO_TRANS = {
+	"blinded": "目盲", "charmed": "魅惑", "deafened": "耳聾", "exhaustion": "力竭",
+	"frightened": "恐懼",
+	"grappled": "被擒",
+	"incapacitated": "無力",
+	"invisible": "隱形",
+	"paralyzed": "麻痺",
+	"petrified": "石化",
+	"poisoned": "中毒",
+	"prone": "伏地",
+	"restrained": "束縛",
+	"stunned": "震懾",
+	"unconscious": "昏迷",
+};
+
+Parser.translateDmgType = it => Parser.translate(Parser.DMG_TYPE_TO_TRANS, it);
+Parser.DMG_TYPE_TO_TRANS = {
+	"acid": "酸蝕",
+	"bludgeoning": "鈍擊",
+	"cold": "寒冰",
+	"fire": "火焰",
+	"force": "力場",
+	"lightning": "閃電",
+	"necrotic": "死靈",
+	"piercing": "穿刺",
+	"poison": "毒素",
+	"psychic": "精神",
+	"radiant": "光耀",
+	"slashing": "劈砍",
+	"thunder": "雷鳴"
+};
+
+Parser.translateSpDuration = it => Parser.translate(Parser.SPELL_DUR_TO_TRANS, it);
+Parser.SPELL_DUR_TO_TRANS = {
+	"instant": "即效", "1 round":"1輪", "1 minute":"1分鐘", "10 minutes":"10分鐘",
+	"1 hour":"1小時", "8 hours":"8小時", "24+ hours":"24+ 小時", "permanent":"永久", "special":"特殊"
+}
+
+Parser.translateMainClass = function(it){
+	var text_arr = extractBrackets(it);
+	var className = Parser.translate(Parser.MAIN_CLASS_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join(""): "";
+	return className+appendix;
+}
+Parser.translateSubClassOnly = function(it){
+	var text_arr = extractBrackets(it);
+	var className = Parser.translate(Parser.SUB_CLASS_TO_TRANS, text_arr[0]);
+	var appendix = (text_arr.length>1)? text_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join(""): "";
+	return className+appendix;
+}
+Parser.translateSubClass = function(it){
+	var text_arr = it.split(":");
+	var mainClass = Parser.translateMainClass(text_arr[0].trim());
+	
+	var subtext_arr = text_arr[1].split(",").map(t=>t.trim());
+	var subClass_arr = extractBrackets(subtext_arr[0]);
+	var subClass = Parser.translate(Parser.SUB_CLASS_TO_TRANS, subClass_arr[0]);
+	var subClass_append = (subClass_arr.length>1)? (subClass_arr.slice(1).map(i=>` (${Parser.translate(Parser.MISC_TO_TRANS, i)})`).join("")): "";
+	var subsubClass = (subtext_arr.length>1)? Parser.translate(Parser.SUB_CLASS_TO_TRANS, subtext_arr[1]): null;
+	
+	//if(!Parser.SUB_CLASS_TO_TRANS[subClass_arr[0].toLowerCase()]) console.log(mainClass+" -> "+subClass_arr[0].toLowerCase())
+	return `${mainClass}: ${subClass+subClass_append+(subsubClass? (", "+subsubClass): "")}`;
+}
+Parser.MAIN_CLASS_TO_TRANS = {
+	"artificer": "奇械師",
+	"barbarian": "野蠻人",
+	"bard": "吟遊詩人",
+	"cleric": "牧師",
+	"druid": "德魯伊",
+	"fighter": "戰士",
+	"paladin": "聖騎士",
+	"ranger": "遊俠",
+	"rogue": "盜賊",
+	"sorcerer": "術士",
+	"warlock": "契術師",
+	"wizard": "法師"
+};
+Parser.SUB_CLASS_TO_TRANS = {
+	"eldritch knight": "魔能騎士", "arcane archer": "魔射手",
+	"arcane trickster": "詭術師",
+	"alchemist": "煉金師", "artillerist": "魔炮師", "battle smith": "戰地匠師", "archivist": "卷冊師", "armorer": "魔甲師",
+	"ancestral guardian": "先祖守衛", "totem warrior": "圖騰勇士",
+	"divine soul": "神聖之魂", "favored soul v2": "神恩眷魂 v2", "favored soul v3": "神恩眷魂 v3", "giant soul": "巨人之魂", "clockwork soul": "時械之魂",
+	"forge": "鍛造", "grave": "墳墓", "knowledge": "知識", "nature": "自然", "death": "死亡", "arcana": "奧秘", "life": "生命", "trickery": "詭術", "war": "戰爭", "order": "秩序", "tempest": "暴風", "light": "光明", "love": "博愛", "city": "城市", "twilight": "暮光",
+	"archfey": "至高妖精", "fiend": "邪魔宗主", "great old one": "舊日支配者", "celestial": "天界宗主", "hexblade": "咒劍士", "undying": "不朽者",
+	"land": "大地", "spores": "孢子", "wildfire": "野火",
+	"ancients": "遠古", "devotion": "奉獻", "vengeance": "復仇", "crown": "王冠", "conquest": "征服", "conquest v2": "征服 v2", "redemption": "救贖", "watchers": "守望", "oathbreaker": "破誓者", "treachery": "背信", "glory": "榮譽",
+}
+Parser.MISC_TO_TRANS = {
+	"revisited": "再製", "revised": "修訂",
+}
+
+

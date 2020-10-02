@@ -2361,7 +2361,7 @@ class RangeFilter extends FilterBase {
 			[...new Array(this._state.max - this._state.min + 1)].forEach((_, i) => {
 				const val = i + this._state.min;
 				const label = this._labels ? this._labels[i] : null;
-				$(`<option/>`, {value: val, text: this._labelDisplayFn(this.label || val)}).appendTo($sel);
+				$(`<option/>`, {value: val, text: this._labelDisplayFn(label || val)}).appendTo($sel);
 			});
 
 			return $sel;

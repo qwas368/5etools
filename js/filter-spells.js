@@ -32,11 +32,11 @@ class PageFilterSpells extends PageFilter {
 	}
 
 	static getFilterAbilitySave (ability) {
-		return `${ability.uppercaseFirst().substring(0, 3)}. Save`;
+		return `${Parser.translateAbility(ability)}豁免`;
 	}
 
 	static getFilterAbilityCheck (ability) {
-		return `${ability.uppercaseFirst().substring(0, 3)}. Check`;
+		return `${Parser.translateAbility(ability)}檢定`;
 	}
 
 	static getMetaFilterObj (s) {
@@ -226,75 +226,78 @@ class PageFilterSpells extends PageFilter {
 		super();
 
 		const levelFilter = new Filter({
-			header: "Level",
+			header: "Level", displayHeader: "環階",
 			items: [
 				0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 			],
-			displayFn: PageFilterSpells.getFltrSpellLevelStr
+			displayFn: Parser.spLevelToFull
 		});
 		const classFilter = new Filter({
-			header: "Class",
+			header: "Class", displayHeader: "職業", displayFn: Parser.translateMainClass,
 			groupFn: it => it.userData
 		});
 		const subclassFilter = new Filter({
-			header: "Subclass",
+			header: "Subclass", displayHeader: "子職業", displayFn: Parser.translateSubClass,
 			nests: {},
-			groupFn: (it) => SourceUtil.isSubclassReprinted(it.userData.class.name, it.userData.class.source, it.userData.subClass.name, it.userData.subClass.source) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(PS_PREFIX)
+			groupFn: (it) => SourceUtil.isSubclassReprinted(it.userData.class.name, it.userData.class.source, it.userData.subClass.name, it.userData.subClass.source) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(PS_PREFIX),
+			itemSortFn: (a, b)=>SortUtil.ascSortLower(a.item, b.item)
 		});
-		const variantClassFilter = new Filter({header: "Variant Class", headerHelp: `Source: ${Parser.sourceJsonToFull(SRC_UACFV)}`});
-		const classAndSubclassFilter = new MultiFilter({header: "Classes", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});
+		const variantClassFilter = new Filter({header: "Variant Class", displayHeader: "變體職業", displayFn: Parser.translateMainClass, headerHelp: `資源: ${Parser.sourceJsonToFull(SRC_UACFV)}`});
+		const classAndSubclassFilter = new MultiFilter({header: "Classes", displayHeader: "職業", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});
 		const raceFilter = new Filter({
-			header: "Race",
+			header: "Race", displayHeader: "種族", displayFn: Parser.translateSubRace,
 			nests: {},
-			groupFn: it => it.userData
+			groupFn: it => it.userData,
+			itemSortFn: (a, b)=>SortUtil.ascSortLower(a.item, b.item)
 		});
-		const backgroundFilter = new Filter({header: "Background"});
+		const backgroundFilter = new Filter({header: "Background", displayHeader: "背景", displayFn: it=>Parser.translate(PageFilterSpells.SP_BACKGROUND_TO_TRANS, it)});
 		const metaFilter = new Filter({
-			header: "Components & Miscellaneous",
+			header: "Components & Miscellaneous", displayHeader: "構材 & 雜項",
 			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "Technomagic", "SRD"],
-			itemSortFn: PageFilterSpells.sortMetaFilter
+			itemSortFn: PageFilterSpells.sortMetaFilter,
+			displayFn: (it)=>Parser.translate(PageFilterSpells.COMPONENT_TO_TRANS, it)
 		});
 		const schoolFilter = new Filter({
-			header: "School",
+			header: "School", displayHeader: "學派",
 			items: [...Parser.SKL_ABVS],
 			displayFn: Parser.spSchoolAbvToFull,
 			itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.spSchoolAbvToFull(a.item), Parser.spSchoolAbvToFull(b.item))
 		});
 		const subSchoolFilter = new Filter({
-			header: "Subschool",
+			header: "Subschool", displayHeader: "子學派",
 			items: [],
 			displayFn: Parser.spSchoolAbvToFull
 		});
 		const damageFilter = new Filter({
-			header: "Damage Type",
+			header: "Damage Type", displayHeader: "傷害類型",
 			items: MiscUtil.copy(Parser.DMG_TYPES),
-			displayFn: StrUtil.uppercaseFirst
+			displayFn: Parser.translateDmgType
 		});
 		const conditionFilter = new Filter({
-			header: "Conditions Inflicted",
+			header: "Conditions Inflicted", displayHeader: "造成狀態",
 			items: MiscUtil.copy(Parser.CONDITIONS),
-			displayFn: StrUtil.uppercaseFirst
+			displayFn: Parser.translateCondition
 		});
 		const spellAttackFilter = new Filter({
-			header: "Spell Attack",
+			header: "Spell Attack", displayHeader: "法術攻擊",
 			items: ["M", "R", "O"],
 			displayFn: Parser.spAttackTypeToFull,
 			itemSortFn: null
 		});
 		const saveFilter = new Filter({
-			header: "Saving Throw",
+			header: "Saving Throw", displayHeader: "豁免檢定",
 			items: ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
 			displayFn: PageFilterSpells.getFilterAbilitySave,
 			itemSortFn: null
 		});
 		const checkFilter = new Filter({
-			header: "Ability Check",
+			header: "Ability Check", displayHeader: "屬性檢定",
 			items: ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
 			displayFn: PageFilterSpells.getFilterAbilityCheck,
 			itemSortFn: null
 		});
 		const timeFilter = new Filter({
-			header: "Cast Time",
+			header: "Cast Time", displayHeader: "施法時間",
 			items: [
 				Parser.SP_TM_ACTION,
 				Parser.SP_TM_B_ACTION,
@@ -307,13 +310,14 @@ class PageFilterSpells extends PageFilter {
 			itemSortFn: null
 		});
 		const durationFilter = new RangeFilter({
-			header: "Duration",
+			header: "Duration", displayHeader: "持續時間",
 			isLabelled: true,
 			labelSortFn: null,
-			labels: ["Instant", "1 Round", "1 Minute", "10 Minutes", "1 Hour", "8 Hours", "24+ Hours", "Permanent", "Special"]
+			labels: ["Instant", "1 Round", "1 Minute", "10 Minutes", "1 Hour", "8 Hours", "24+ Hours", "Permanent", "Special"],
+			labelDisplayFn: Parser.translateSpDuration
 		});
 		const rangeFilter = new Filter({
-			header: "Range",
+			header: "Range", displayHeader: "射程",
 			items: [
 				PageFilterSpells.F_RNG_SELF,
 				PageFilterSpells.F_RNG_TOUCH,
@@ -321,10 +325,11 @@ class PageFilterSpells extends PageFilter {
 				PageFilterSpells.F_RNG_SELF_AREA,
 				PageFilterSpells.F_RNG_SPECIAL
 			],
+			displayFn: (it)=>Parser.translate(PageFilterSpells.RANGE_TO_TRANS, it),
 			itemSortFn: null
 		});
 		const areaTypeFilter = new Filter({
-			header: "Area Style",
+			header: "Area Style", displayHeader: "範圍類型",
 			items: ["ST", "MT", "R", "N", "C", "Y", "H", "L", "S", "Q", "W"],
 			displayFn: Parser.spAreaTypeToFull,
 			itemSortFn: null
@@ -337,7 +342,7 @@ class PageFilterSpells extends PageFilter {
 		this._classAndSubclassFilter = classAndSubclassFilter;
 		this._raceFilter = raceFilter;
 		this._backgroundFilter = backgroundFilter;
-		this._eldritchInvocationFilter = new Filter({header: "Eldritch Invocation"});
+		this._eldritchInvocationFilter = new Filter({header: "Eldritch Invocation", displayHeader: "魔能祈喚"});
 		this._metaFilter = metaFilter;
 		this._schoolFilter = schoolFilter;
 		this._subSchoolFilter = subSchoolFilter;
@@ -404,11 +409,11 @@ class PageFilterSpells extends PageFilter {
 		this._eldritchInvocationFilter.addItem(spell._fEldritchInvocations);
 		spell._fClasses.forEach(c => this._classFilter.addItem(c));
 		spell._fSubclasses.forEach(sc => {
-			this._subclassFilter.addNest(sc.nest, {isHidden: true});
+			this._subclassFilter.addNest(sc.nest, {isHidden: true, displayFn: Parser.translateMainClass});
 			this._subclassFilter.addItem(sc);
 		});
 		spell._fRaces.forEach(r => {
-			if (r.nest) this._raceFilter.addNest(r.nest, {isHidden: true});
+			if (r.nest) this._raceFilter.addNest(r.nest, {isHidden: true, displayFn: Parser.translateMainRace});
 			this._raceFilter.addItem(r);
 		});
 		spell._fVariantClasses.forEach(c => this._variantClassFilter.addItem(c));
@@ -483,6 +488,29 @@ PageFilterSpells._META_FILTER_BASE_ITEMS = [PageFilterSpells._META_ADD_CONC, Pag
 
 PageFilterSpells.INCHES_PER_FOOT = 12;
 PageFilterSpells.FEET_PER_MILE = 5280;
+
+PageFilterSpells.COMPONENT_TO_TRANS = {
+	"concentration": "專注", "verbal": "聲音", "somatic": "姿勢", "material": "材料", "royalty": "專利稅",
+	"material with cost": "價值材料", "material is consumed": "消耗材料",
+	"healing": "治療", "grants temporary hit points": "賦予臨時生命值", "requires sight": "要求視野可見", "permanent effects": "永久效果",
+	"scaling effects": "升級效果", "summons creature": "召喚生物",
+	"ritual": "儀式", "technomagic": "科技魔法"
+};
+PageFilterSpells.RANGE_TO_TRANS = {
+	"self": "自身", "touch": "觸碰", "point": "點", "self (area)": "自身（區域）", "special": "特殊"
+};
+PageFilterSpells.SP_BACKGROUND_TO_TRANS = {
+	"dimir operative": "底密爾特務",
+	"simic scientist": "析米克科學家",
+	"boros legionnaire": "波洛斯軍團兵",
+	"selesnya initiate": "瑟雷尼亞祀徒",
+	"golgari agent": "葛加理密探",
+	"izzet engineer": "伊捷工程師",
+	"azorius functionary": "俄佐立官員",
+	"gruul anarch": "古魯反抗者",
+	"orzhov representative": "歐佐夫議員",
+	"rakdos cultist": "拉鐸司邪教徒",
+}
 
 class ModalFilterSpells extends ModalFilter {
 	constructor (namespace) {
