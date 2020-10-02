@@ -498,7 +498,7 @@
 			]
 		},
 		{
-			"name": "Aven", "translate_name": "艾文",
+			"name": "Aven", "translate_name": "艾文鳥人",
 			"source": "PSA",
 			"page": 15,
 			"size": "M",
@@ -522,21 +522,21 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"與人類相似，艾文在近二十歲時成年，且理論上可以活到80歲。當然，他們大部分在那之前便會光榮（或不光彩的）戰死。"
+						"與人類相似，艾文鳥人在近二十歲時成年，且理論上可以活到80歲。當然，他們大部分在那之前便會光榮（或不光彩的）戰死。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"大部分的艾文傾向屬於中立陣營。朱鷺首艾文更崇尚知識勝過其他美德，且通常為絕對中立。鷹首艾文則較為偏向守序中立。"
+						"大部分的艾文鳥人傾向屬於中立陣營。朱鷺首艾文鳥人更崇尚知識勝過其他美德，且通常為絕對中立。鷹首艾文鳥人則較為偏向守序中立。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"艾文的身高約為5到6呎，但他們的身軀相當纖細，骨頭部分中空以利飛行。你的體型為中型。"
+						"艾文鳥人的身高約為5到6呎，但他們的身軀相當纖細，骨頭部分中空以利飛行。你的體型為中型。"
 					]
 				},
 				{
@@ -549,7 +549,7 @@
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"你可以說、讀、寫通用語和艾文語。"
+						"你可以說、讀、寫通用語和艾文鳥人語。"
 					],
 					"type": "entries"
 				}
@@ -602,7 +602,7 @@
 			]
 		},
 		{
-			"name": "Aven", "translate_name": "艾文",
+			"name": "Aven", "translate_name": "艾文鳥人",
 			"source": "PSD",
 			"page": 6,
 			"size": "M",
@@ -635,21 +635,21 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"與人類相似，艾文在近二十歲時成年，且理論上可以活到80歲。"
+						"與人類相似，艾文鳥人在近二十歲時成年，且理論上可以活到80歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"艾文傾向於撒拉教會所代表的守序善良陣營。"
+						"艾文鳥人傾向於撒拉教會所代表的守序善良陣營。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"艾文的身高約為5到6呎，但他們的身軀相當纖細，骨頭部分中空以利飛行。你的體型為中型。"
+						"艾文鳥人的身高約為5到6呎，但他們的身軀相當纖細，骨頭部分中空以利飛行。你的體型為中型。"
 					]
 				},
 				{
@@ -662,7 +662,7 @@
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Aven."
+						"你可以說、讀、寫通用語和艾文鳥人語。"
 					],
 					"type": "entries"
 				},
@@ -676,7 +676,7 @@
 			]
 		},
 		{
-			"name": "Bugbear", "_translate_name": "熊地精",
+			"name": "Bugbear", "translate_name": "熊地精",
 			"source": "ERLW",
 			"page": 25,
 			"size": "M",
@@ -715,21 +715,21 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Bugbears reach adulthood at age 16 and live up to 80 years."
+						"熊地精在16歲時成年，且可以活最多80年。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Bugbears live on the fringes of society even in Darguun, where they value self-sufficiency and violence. They are generally chaotic, organizing in loose tribes under charismatic and powerful leaders."
+						"即使是在達坤，熊地精仍然居住在蠻荒之地，在這樣的環境下，他們崇尚自給自足和暴力。他們通常屬於混亂陣營，在強大且有魅力的領到下組織起鬆散的部落。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Your size is Medium."
+						"你的體型為中型。"
 					]
 				},
 				{
@@ -740,30 +740,30 @@
 					"type": "entries"
 				},
 				{
-					"name": "Long-Limbed", "translate_name": "",
+					"name": "Long-Limbed", "translate_name": "長肢",
 					"entries": [
-						"When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+						"當你在你的回合進行一次近戰攻擊時，你的觸及範圍對該攻擊而言視作比原本長5呎。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Powerful Build", "translate_name": "",
+					"name": "Powerful Build", "translate_name": "強健體格",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"當決定你的負重以及你可以拖曳、推動、或提舉的重量時，你將你的體型視作比原本大一級。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Sneaky", "translate_name": "",
+					"name": "Sneaky", "translate_name": "鬼祟",
 					"entries": [
-						"You are proficient in the {@skill Stealth} skill."
+						"你熟練於{@skill 隱匿}技能。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Surprise Attack", "translate_name": "",
+					"name": "Surprise Attack", "translate_name": "突襲攻擊",
 					"entries": [
-						"If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra {@dice 2d6} damage to it. You can use this trait only once per combat."
+						"若你突襲一個生物並在你戰鬥中的第一個回合以一次攻擊命中它，則該攻擊將對它造成額外的{@dice 2d6}傷害。你每場戰鬥只能使用此特性一次。"
 					],
 					"type": "entries"
 				},
@@ -870,7 +870,7 @@
 				{
 					"name": "Surprise Attack", "translate_name": "突襲攻擊",
 					"entries": [
-						"若你突襲一個生物並在你戰鬥中的第一個回合以一次攻擊命中它，則該攻擊將對它造成額外的2d6傷害。你每場戰鬥只能使用此特性一次。"
+						"若你突襲一個生物並在你戰鬥中的第一個回合以一次攻擊命中它，則該攻擊將對它造成額外的{@dice 2d6}傷害。你每場戰鬥只能使用此特性一次。"
 					],
 					"type": "entries"
 				},
@@ -7286,7 +7286,7 @@
 							"items": {
 								"name": "Alignment", "translate_name": "陣營",
 								"entries": [
-									"Hobgoblin society in Eberron is shaped by the ideal of a strict code of honor and rigid martial discipline. Most hobgoblins are lawful, tending toward harsh enforcement of their laws."
+									"艾伯倫的大哥布林社會是由嚴格的榮譽準則和嚴格的軍事紀律所塑造的。大多數的大哥布林都是守序的，傾向於嚴酷地執行他們的法律。"
 								],
 								"type": "entries"
 							}
