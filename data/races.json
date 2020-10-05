@@ -1070,7 +1070,7 @@
 								"name": "Alignment", "translate_name": "陣營",
 								"type": "entries",
 								"entries": [
-									"Centaurs are inclined toward neutrality. Lagonna centaurs tend to be more lawful, while Pheres centaurs are more often chaotic."
+									"半人馬傾向中立陣營。拉苟那族的半人馬通常更加偏向守序，而斐力茲族的半人馬則經常為混亂陣營。"
 								]
 							}
 						},
@@ -1081,7 +1081,7 @@
 								"name": "Size", "translate_name": "體型",
 								"type": "entries",
 								"entries": [
-									"Centaurs stand between 6 and 7 feet tall, with their equine bodies reaching about 4 feet at the withers. Pheres centaurs tend to be slightly larger than Lagonna centaurs. Your size is Medium."
+									"半人馬站立的高度介於6呎到7呎之間，他們馬身的高度則約為4呎。斐力茲族的半人馬通常會比拉苟那族的半人馬還要再稍微魁梧一些。你的體型為中型。"
 								]
 							}
 						},
@@ -1092,7 +1092,7 @@
 								"name": "Languages", "translate_name": "語言",
 								"type": "entries",
 								"entries": [
-									"You can speak, read, and write Common and Sylvan."
+									"你可以說、讀、寫通用語和木族語。"
 								]
 							}
 						}
@@ -1195,7 +1195,7 @@
 			]
 		},
 		{
-			"name": "Changeling", "translate_name": "",
+			"name": "Changeling", "_translate_name": "幻身靈",
 			"source": "ERLW",
 			"page": 17,
 			"otherSources": [
@@ -1513,7 +1513,7 @@
 				{
 					"name": "Draconic Ancestry", "translate_name": "龍族血統",
 					"entries": [
-						"你擁有龍族的血統。從龍族血統表中選擇一個龍種。你的噴吐武器和傷害抗性將會由你所選的龍種而決定，如表所示。",
+						"你擁有龍族的血統。從龍族血統表中選擇一個龍種。你的噴吐武器和傷害抗性將會依照你所選的龍種而決定，如表所示。",
 						{
 							"type": "table",
 							"caption": "龍族血統",
@@ -1610,7 +1610,7 @@
 			"subraces": [
 				{},
 				{
-					"name": "Draconblood", "translate_name": "",
+					"name": "Draconblood", "translate_name": "龍國血脈",
 					"source": "EGW",
 					"page": 168,
 					"ability": [
@@ -1631,25 +1631,25 @@
 						},
 						{
 							"type": "entries",
-							"name": "Forceful Presence", "translate_name": "",
+							"name": "Forceful Presence", "translate_name": "盛氣凌人",
 							"entries": [
-								"You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor. When you make a Charisma ({@skill Intimidation} or {@skill Persuasion}) check, you can do so with advantage. Once you use this trait, you can't do so again until you finish a short or long rest."
+								"你可以利用你對創造性社交或威嚇的理解來引導對話朝向你有利的方向發展。當你進行魅力({@skill 威嚇}或{@skill 說服})檢定時，你可以選擇在該檢定中具有優勢。一旦你使用這個特性，直到你完成一次短休或長休之前都不能再這麼做。"
 							],
 							"data": {
 								"overwrite": "Damage Resistance"
 							}
 						},
 						{
-							"name": "Draconic Ancestry", "translate_name": "",
+							"name": "Draconic Ancestry", "translate_name": "龍族血統.",
 							"entries": [
-								"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon is determined by the dragon type, as shown in the table.",
+								"你擁有龍族的血統。從龍族血統表中選擇一個龍種。你的噴吐武器將會依照你所選的龍種而決定，如表所示。",
 								{
 									"type": "table",
-									"caption": "Draconic Ancestry",
+									"caption": "龍族血統",
 									"colLabels": [
-										"Dragon",
-										"Damage Type",
-										"Breath Weapon"
+										"龍種",
+										"傷害類型",
+										"噴吐武器"
 									],
 									"colStyles": [
 										"col-3 text-center",
@@ -1658,54 +1658,54 @@
 									],
 									"rows": [
 										[
-											"Black",
-											"Acid",
-											"5 by 30 ft. line (Dex. save)"
+											"黑龍",
+											"酸蝕",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Blue",
-											"Lightning",
-											"5 by 30 ft. line (Dex. save)"
+											"藍龍",
+											"閃電",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Brass",
-											"Fire",
-											"5 by 30 ft. line (Dex. save)"
+											"黃銅龍",
+											"火焰",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Bronze",
-											"Lightning",
-											"5 by 30 ft. line (Dex. save)"
+											"青銅龍",
+											"閃電",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Copper",
-											"Acid",
-											"5 by 30 ft. line (Dex. save)"
+											"赤銅龍",
+											"酸蝕",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Gold",
-											"Fire",
-											"15 ft. cone (Dex. save)"
+											"金龍",
+											"火焰",
+											"15呎錐形 (敏捷豁免)"
 										],
 										[
-											"Green",
-											"Poison",
-											"15 ft. cone (Con. save)"
+											"綠龍",
+											"毒素",
+											"15呎錐形 (體質豁免)"
 										],
 										[
-											"Red",
-											"Fire",
-											"15 ft. cone (Dex. save)"
+											"紅龍",
+											"火焰",
+											"15呎錐形 (敏捷豁免)"
 										],
 										[
-											"Silver",
-											"Cold",
-											"15 ft. cone (Con. save)"
+											"銀龍",
+											"寒冰",
+											"15呎錐形 (體質豁免)"
 										],
 										[
-											"White",
-											"Cold",
-											"15 ft. cone (Con. save)"
+											"白龍",
+											"寒冰",
+											"15呎錐形 (體質豁免)"
 										]
 									]
 								}
@@ -1722,7 +1722,7 @@
 					}
 				},
 				{
-					"name": "Ravenite", "translate_name": "",
+					"name": "Ravenite", "translate_name": "拾荒種",
 					"source": "EGW",
 					"page": 168,
 					"ability": [
@@ -1743,25 +1743,25 @@
 						},
 						{
 							"type": "entries",
-							"name": "Vengeful Assault", "translate_name": "",
+							"name": "Vengeful Assault", "translate_name": "復仇突擊",
 							"entries": [
-								"When you take damage from a creature in range of a weapon you are wielding, you can use your reaction to make an attack with the weapon against that creature. Once you use this trait, you can't do so again until you finish a short or long rest."
+								"當你受到某個生物的傷害，且該生物位於你所持武器的攻擊範圍內時，你可以使用你的反應以該武器對該生物進行一次攻擊。一旦你使用這個特性，直到你完成一次短休或長休之前都不能再這麼做。"
 							],
 							"data": {
 								"overwrite": "Damage Resistance"
 							}
 						},
 						{
-							"name": "Draconic Ancestry", "translate_name": "",
+							"name": "Draconic Ancestry", "translate_name": "龍族血統",
 							"entries": [
-								"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon is determined by the dragon type, as shown in the table.",
+								"你擁有龍族的血統。從龍族血統表中選擇一個龍種。你的噴吐武器將會依照你所選的龍種而決定，如表所示。",
 								{
 									"type": "table",
-									"caption": "Draconic Ancestry",
+									"caption": "龍族血統",
 									"colLabels": [
-										"Dragon",
-										"Damage Type",
-										"Breath Weapon"
+										"龍種",
+										"傷害類型",
+										"噴吐武器"
 									],
 									"colStyles": [
 										"col-3 text-center",
@@ -1770,54 +1770,54 @@
 									],
 									"rows": [
 										[
-											"Black",
-											"Acid",
-											"5 by 30 ft. line (Dex. save)"
+											"黑龍",
+											"酸蝕",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Blue",
-											"Lightning",
-											"5 by 30 ft. line (Dex. save)"
+											"藍龍",
+											"閃電",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Brass",
-											"Fire",
-											"5 by 30 ft. line (Dex. save)"
+											"黃銅龍",
+											"火焰",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Bronze",
-											"Lightning",
-											"5 by 30 ft. line (Dex. save)"
+											"青銅龍",
+											"閃電",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Copper",
-											"Acid",
-											"5 by 30 ft. line (Dex. save)"
+											"赤銅龍",
+											"酸蝕",
+											"5呎x30呎直線 (敏捷豁免)"
 										],
 										[
-											"Gold",
-											"Fire",
-											"15 ft. cone (Dex. save)"
+											"金龍",
+											"火焰",
+											"15呎錐形 (敏捷豁免)"
 										],
 										[
-											"Green",
-											"Poison",
-											"15 ft. cone (Con. save)"
+											"綠龍",
+											"毒素",
+											"15呎錐形 (體質豁免)"
 										],
 										[
-											"Red",
-											"Fire",
-											"15 ft. cone (Dex. save)"
+											"紅龍",
+											"火焰",
+											"15呎錐形 (敏捷豁免)"
 										],
 										[
-											"Silver",
-											"Cold",
-											"15 ft. cone (Con. save)"
+											"銀龍",
+											"寒冰",
+											"15呎錐形 (體質豁免)"
 										],
 										[
-											"White",
-											"Cold",
-											"15 ft. cone (Con. save)"
+											"白龍",
+											"寒冰",
+											"15呎錐形 (體質豁免)"
 										]
 									]
 								}
@@ -2530,22 +2530,22 @@
 									"items": [
 										{
 											"type": "item",
-											"name": "Spring", "translate_name": "春",
+											"name": "春",
 											"entry": "當你使用妖精步時，你可以觸碰一個距離你5呎內的自願生物。該生物將代替你被傳送，並出現在距離你30呎內的一處未被佔據的可見空間。"
 										},
 										{
 											"type": "item",
-											"name": "Summer", "translate_name": "夏",
+											"name": "夏",
 											"entry": "緊接在你使用妖精步後，距離你5呎內每個你所選擇的生物將受到等同於你魅力調整值的火焰傷害（最少1點）。"
 										},
 										{
 											"type": "item",
-											"name": "Autumn", "translate_name": "秋",
+											"name": "秋",
 											"entry": "用妖精步後，距離你10呎內最多二個你所選擇的生物必須成功通過一次睿知豁免，否則被你{@condition 魅惑}，這個狀態會持續1分鐘，或直到你或你的同伴對它造成傷害。"
 										},
 										{
 											"type": "item",
-											"name": "Winter", "translate_name": "冬",
+											"name": "冬",
 											"entry": "當你使用妖精步時，一個你所選擇在你傳送前距離你5呎內的可見生物必須成功通過一次睿知豁免，否則對你感到{@condition 恐懼}直到你的下個回合結束。"
 										}
 									]
@@ -2916,7 +2916,7 @@
 					]
 				},
 				{
-					"name": "Pallid", "translate_name": "",
+					"name": "Pallid", "translate_name": "蒼白",
 					"source": "EGW",
 					"page": 21,
 					"ability": [
@@ -2951,17 +2951,17 @@
 					],
 					"entries": [
 						{
-							"name": "Incisive Sense", "translate_name": "",
+							"name": "Incisive Sense", "translate_name": "機敏感官",
 							"entries": [
-								"You have advantage on Intelligence ({@skill Investigation}) and Wisdom ({@skill Insight}) checks."
+								"你在智力({@skill 調查})和睿知({@skill 察言觀色})檢定中具有優勢。"
 							],
 							"type": "entries"
 						},
 						{
 							"type": "entries",
-							"name": "Blessing of the Moon Weaver", "translate_name": "",
+							"name": "Blessing of the Moon Weaver", "translate_name": "月織者的祝福",
 							"entries": [
-								"You know the {@spell light} cantrip. When you reach 3rd level, you can cast the {@spell sleep} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+								"你知曉{@spell 光亮術}戲法。當你升至3級，你可以使用這個特性施放一次{@spell 睡眠術}，並在你完成一次長休之後重新獲得這麼做的能力。當你升至5級，你可以使用這個特性施放一次{@spell 隱形術}（只能以自己為目標），並在你完成一次長休之後重新獲得這麼做的能力。你使用此特性施放這些法術時並不需要材料構材。你施展這些法術的施法屬性為睿知。"
 							]
 						}
 					]
@@ -6943,7 +6943,7 @@
 					]
 				},
 				{
-					"name": "Lotusden", "translate_name": "",
+					"name": "Lotusden", "translate_name": "蓮源",
 					"source": "EGW",
 					"page": 164,
 					"ability": [
@@ -6973,16 +6973,16 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Child of the Wood", "translate_name": "",
+							"name": "Child of the Wood", "translate_name": "樹林之子",
 							"entries": [
-								"You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+								"你知曉{@spell 德魯伊伎倆}戲法。當你升至3級，你可以使用這個特性施放一次{@spell 糾纏術}，並在你完成一次長休之後重新獲得這麼做的能力。當你升至5級，你可以使用這個特性施放一次{@spell 荊棘叢生}，並在你完成一次長休之後重新獲得這麼做的能力。你使用此特性施放這些法術時並不需要材料構材。你施展這些法術的施法屬性為睿知。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Timberwalk", "translate_name": "",
+							"name": "Timberwalk", "translate_name": "林行者",
 							"entries": [
-								"Ability checks made to track you have disadvantage, and you can move across difficult terrain made of nonmagical plants and undergrowth without expending extra movement."
+								"為了追蹤你而進行的屬性檢定將承受劣勢，且你可以移動穿越非魔法植物和灌木叢構成的困難地形而不用消耗額外的移動力。"
 							]
 						}
 					]
@@ -8639,7 +8639,7 @@
 			]
 		},
 		{
-			"name": "Kalashtar", "translate_name": "",
+			"name": "Kalashtar", "_translate_name": "半夢靈",
 			"source": "ERLW",
 			"page": 29,
 			"otherSources": [
@@ -9338,7 +9338,7 @@
 			]
 		},
 		{
-			"name": "Leonin", "translate_name": "",
+			"name": "Leonin", "translate_name": "獅族",
 			"source": "MOT",
 			"page": 20,
 			"size": "M",
@@ -9383,55 +9383,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Leonin mature and age at about the same rate as humans."
+						"獅族以和人類相同的速度成年和老化。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Leonin tend toward good alignments. Leonin who are focused on the pride lean toward lawful good."
+						"獅族傾向於善良陣營。那些注重驕傲自尊的獅族則更傾向於守序善良。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Leonin are typically over 6 feet tall, with some standing over 7 feet. Your size is Medium."
+						"獅族的身高通常會超過6呎，有些甚至會超過7呎。你的體型為中型。"
 					]
 				},
 				{
 					"name": "Darkvision", "translate_name": "黑暗視覺",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"你在看距離你60呎範圍內的事物時，微光的照明程度對你而言視作明亮，黑暗則視作微光。你無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Claws", "translate_name": "",
+					"name": "Claws", "translate_name": "爪抓",
 					"entries": [
-						"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+						"你的利爪是一種天生武器，且你可以用它來進行徒手打擊。如果你以它們命中目標，則你造成等同{@dice 1d4}+你的力量調整值的劈砍傷害，而非一般徒手打擊的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hunter's Instincts", "translate_name": "",
+					"name": "Hunter's Instincts", "translate_name": "獵人直覺",
 					"entries": [
-						"You have proficiency in one of the following skills of your choice: {@skill Athletics}, {@skill Intimidation}, {@skill Perception}, or {@skill Survival}."
+						"你熟練於下列其中一種你所選擇的技能：{@skill 運動}、{@skill 威嚇}、{@skill 感知}、或{@skill 求生}。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Daunting Roar", "translate_name": "",
+					"name": "Daunting Roar", "translate_name": "駭人咆哮",
 					"entries": [
-						"As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become {@condition frightened} of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
+						"以一個附贈動作，你可以釋放出一陣特別兇惡的獅吼。每個距離你10呎內，可以聽見你，且你所選擇的生物必須成功通過一次睿知豁免，否則將因你而陷入{@condition 恐懼}狀態持續直到你的下個回合結束。這個豁免檢定的DC等同於8+你的體質調整值+你的熟練加值。一旦你使用這個特性，直到你完成一次短休或長休之前都不能再使用它。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Leonin."
+						"你可以說、讀、寫通用語和獅族語。"
 					],
 					"type": "entries"
 				}
@@ -10356,7 +10356,7 @@
 			]
 		},
 		{
-			"name": "Minotaur", "translate_name": "",
+			"name": "Minotaur", "translate_name": "米諾陶",
 			"source": "MOT",
 			"page": 22,
 			"_copy": {
@@ -10371,7 +10371,7 @@
 								"name": "Age", "translate_name": "年齡",
 								"type": "entries",
 								"entries": [
-									"Minotaurs mature and age at about the same rate as humans."
+									"牛頭怪成年跟老化的速度都和人類差不多。"
 								]
 							}
 						},
@@ -10382,7 +10382,7 @@
 								"name": "Alignment", "translate_name": "陣營",
 								"type": "entries",
 								"entries": [
-									"Minotaurs who leave the walls of Skophos have the opportunity to be free of its culture and pursue chaotic alignments, while those who remain within the polis and its tyrannical regime tend toward lawful alignments."
+									"離開斯科福司之牆的牛頭怪比較有機會擺脫他們文化的束縛並朝向混亂陣營發展，而那些留在城邦以及其專制政權的牛頭怪則傾向守序。"
 								]
 							}
 						}
@@ -10809,11 +10809,11 @@
 			]
 		},
 		{
-			"name": "Orc", "translate_name": "",
+			"name": "Orc", "translate_name": "獸人",
 			"source": "EGW",
 			"page": 178,
 			"_copy": {
-				"name": "Orc", "translate_name": "",
+				"name": "Orc",
 				"source": "ERLW",
 				"_mod": {
 					"entries": [
@@ -10824,7 +10824,7 @@
 								"name": "Age", "translate_name": "年齡",
 								"type": "entries",
 								"entries": [
-									"Orcs reach adulthood at age 16, and live up to 80 years."
+									"獸人在16歲時成年，並可以活到最多80歲。"
 								]
 							}
 						},
@@ -10835,7 +10835,7 @@
 								"name": "Alignment", "translate_name": "陣營",
 								"type": "entries",
 								"entries": [
-									"Orcs fear the curse of ruin that is said to plague their race, and tend strongly toward either chaos (accepting their fate), or toward law (rejecting it)."
+									"獸人們畏懼著那據說要折磨他們種族的毀滅詛咒，並且強烈地傾向於混亂（接受了他們的命運）或者守序陣營（拒絕他們的命運）。"
 								]
 							}
 						},
@@ -10846,7 +10846,7 @@
 								"name": "Size", "translate_name": "體型",
 								"type": "entries",
 								"entries": [
-									"Orcs stand easily 8 feet tall and corded with powerful muscles, weighing up to 280 pounds. Your size is Medium."
+									"獸人輕易就能達到8呎高，且渾身都是強而有力的肌肉，體重最高可達280磅。你的體型為中型。"
 								]
 							}
 						},
@@ -10855,9 +10855,9 @@
 							"replace": "Primal Intuition",
 							"items": {
 								"type": "entries",
-								"name": "Primal Intuition", "translate_name": "",
+								"name": "Primal Intuition", "translate_name": "原始直覺",
 								"entries": [
-									"You have proficiency in two of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, {@skill Medicine}, {@skill Perception}, and {@skill Survival}."
+									"你熟練於下列其中二種你所選擇的技能：{@skill 動物馴養}、{@skill 察言觀色}、{@skill 威嚇}、{@skill 醫藥}、{@skill 感知}、和{@skill 求生}。"
 								]
 							}
 						}
@@ -10882,7 +10882,7 @@
 			]
 		},
 		{
-			"name": "Orc", "translate_name": "",
+			"name": "Orc", "translate_name": "獸人",
 			"source": "ERLW",
 			"page": 31,
 			"size": "M",
@@ -10931,21 +10931,21 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Orcs reach adulthood at age 12 and live up to 50 years."
+						"獸人在12歲時成年，並可以活到最多50歲。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Alignment", "translate_name": "陣營",
 					"entries": [
-						"The orcs of Eberron are a passionate people, given to powerful emotion and deep faith. They are generally chaotic, but can be any alignment."
+						"艾伯倫的獸人是一個充滿激情的種族，有著強烈的情感與深厚的信仰。他們一般是混亂陣營，但也可以是任何其他陣營。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Your size is Medium."
+						"你的體型為中型。"
 					]
 				},
 				{
@@ -10956,30 +10956,30 @@
 					"type": "entries"
 				},
 				{
-					"name": "Aggressive", "translate_name": "",
+					"name": "Aggressive", "translate_name": "侵略性",
 					"entries": [
-						"As a bonus action, you can move up to your movement speed toward a hostile creature you can see or hear. You must end this move closer to the enemy than you started."
+						"以一個附贈動作，你可以向一個你所能看見或聽見的敵意生物移動最多等同你移動速度的距離。你必須在比你開始移動時距離該敵人更近的位置結束此移動。"
 					],
 					"type": "entries"
 				},
 				{
 					"type": "entries",
-					"name": "Primal Intuition", "translate_name": "",
+					"name": "Primal Intuition", "translate_name": "原始直覺",
 					"entries": [
-						"You have proficiency in two of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, and {@skill Survival}."
+						"你熟練於下列其中二種你所選擇的技能：{@skill 動物馴養}、{@skill 察言觀色}、{@skill 威嚇}、{@skill 醫藥}、{@skill 自然}、{@skill 感知}、和{@skill 求生}."
 					]
 				},
 				{
-					"name": "Powerful Build", "translate_name": "",
+					"name": "Powerful Build", "translate_name": "強健體格",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"當決定你的負重以及你可以拖曳、推動、或提舉的重量時，你將你的體型視作比原本大一級。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Orc."
+						"你可以說、讀、寫通用語和獸人語。"
 					],
 					"type": "entries"
 				}
@@ -11253,7 +11253,7 @@
 			]
 		},
 		{
-			"name": "Satyr", "translate_name": "",
+			"name": "Satyr", "translate_name": "薩特羊人",
 			"source": "MOT",
 			"page": 24,
 			"size": "M",
@@ -11294,69 +11294,69 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Satyrs mature and age at about the same rate as humans."
+						"薩特羊人以和人類相同的速度成年和老化。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Satyrs delight in living a life free of the mantle of law. They gravitate toward being good, but some have devious streaks and enjoy causing dismay."
+						"薩特羊人樂於過著不受律法束縛的生活。他們趨向於成為善良陣營，但其中也有一些以著狡詐的傾向，享受於引發他人驚慌沮喪的情緒。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Satyrs range from just under 5 feet to about 6 feet in height, with generally slender builds. Your size is Medium."
+						"薩特羊人的身高介於剛好不足5呎到大約6呎，且通常有著苗條的身形。你的體型為中型。"
 					]
 				},
 				{
-					"name": "Fey", "translate_name": "",
+					"name": "Fey", "translate_name": "精類生物",
 					"entries": [
-						"Your creature type is fey, rather than humanoid."
+						"你的生物類型是精類生物，而非類人生物。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Ram", "translate_name": "",
+					"name": "Ram", "translate_name": "羊角衝撞",
 					"entries": [
-						"You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to {@dice 1d4} + your Strength modifier."
+						"你可以使用你頭上的羊角進行徒手打擊。如果你以它們命中目標，則你造成等同{@dice 1d4}+你的力量調整值的鈍擊傷害。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Magic Resistance", "translate_name": "",
+					"name": "Magic Resistance", "translate_name": "魔法抗性",
 					"entries": [
-						"You have advantage on saving throws against spells and other magical effects."
+						"你在對抗法術和其他魔法效果的豁免檢定中具有優勢。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Mirthful Leaps", "translate_name": "",
+					"name": "Mirthful Leaps", "translate_name": "歡欣長躍",
 					"entries": [
-						"Whenever you make a long or high jump, you can roll a {@dice d8} and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal."
+						"每當你進行跳高或跳遠時，你可以擲一顆{@dice d8}並將擲骰結果加入你跳躍的距離中（單位為呎），即使你沒有助跑也一樣。這個額外的跳躍距離仍然會如常消耗你的移動力。"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Reveler", "translate_name": "",
+					"name": "Reveler", "translate_name": "歡宴者",
 					"entries": [
-						"You have proficiency in the {@skill Performance} and {@skill Persuasion} skills, and you have proficiency with one musical instrument of your choice."
+						"你熟練於{@skill 表演}和{@skill 說服}既能，且你熟練於一種你所選擇的樂器。"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Common and Sylvan."
+						"你可以說、讀、寫通用語和木族語。"
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Shifter", "translate_name": "",
+			"name": "Shifter", "_translate_name": "化獸者",
 			"source": "ERLW",
 			"page": 33,
 			"otherSources": [
@@ -12048,7 +12048,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Animal Enhancement", "translate_name": "",
+					"name": "Animal Enhancement", "translate_name": "動物改造",
 					"entries": [
 						"你的身體已經被改造成包含某些動物的特徵。你在現在選擇一項動物改造，並在到達5級時選擇第二項。",
 						"在1級時，從下列選項中選擇一項：",
@@ -14412,7 +14412,7 @@
 			]
 		},
 		{
-			"name": "Warforged", "translate_name": "",
+			"name": "Warforged", "_translate_name": "戰俑",
 			"source": "ERLW",
 			"page": 35,
 			"otherSources": [
