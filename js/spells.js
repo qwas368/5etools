@@ -43,7 +43,7 @@ class SpellsPage {
 			<span class="col-1-5 text-center">${Parser.spLevelToFull(spell.level)}${spell.meta && spell.meta.ritual ? " (儀式)" : ""}${spell.meta && spell.meta.technomagic ? " (科技)" : ""}</span>
 			<span class="col-1-7 text-center">${time}</span>
 			<span class="col-1-2 school_${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
-			<span class="col-0-6 text-center" title="Concentration">${concentration}</span>
+			<span class="col-0-6 text-center" title="專注">${concentration}</span>
 			<span class="col-2-4 text-right">${range}</span>
 			<span class="col-1-7 text-center ${Parser.sourceJsonToColor(spell.source)} pr-0" title="${Parser.sourceJsonToFull(spell.source)}" ${BrewUtil.sourceJsonToStyle(spell.source)}>${source}</span>
 		</a>`;
@@ -100,7 +100,7 @@ class SpellsPage {
 				<span class="capitalise col-1-5 text-center">${Parser.spLevelToFull(spell.level)}</span>
 				<span class="col-1-8 text-center">${time}</span>
 				<span class="capitalise col-1-6 school_${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
-				<span class="concentration--sublist col-0-7 text-center" title="Concentration">${concentration}</span>
+				<span class="concentration--sublist col-0-7 text-center" title="專注">${concentration}</span>
 				<span class="range col-3-2 pr-0 text-right">${range}</span>
 			</a>
 		</li>`).contextmenu(evt => ListUtil.openSubContextMenu(evt, listItem));

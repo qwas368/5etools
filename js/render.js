@@ -696,7 +696,7 @@ function Renderer () {
 
 	this._renderList = function (entry, textStack, meta, options) {
 		if (entry.items) {
-			if (entry.name) textStack[0] += `<div class="rd__list-name">${entry.name}</div>`;
+			if (entry.name) textStack[0] += `<div class="rd__list-name">${entry.translate_name||entry.name}</div>`;
 			const cssClasses = this._renderList_getListCssClasses(entry, textStack, meta, options);
 			textStack[0] += `<ul ${cssClasses ? `class="${cssClasses}"` : ""}>`;
 			const isListHang = entry.style && entry.style.split(" ").includes("list-hang");
@@ -994,7 +994,7 @@ function Renderer () {
 
 	this._renderItem = function (entry, textStack, meta, options) {
 		this._renderPrefix(entry, textStack, meta, options);
-		textStack[0] += `<p><span class="bold list-item-title">${this.render(entry.name)}</span> `;
+		textStack[0] += `<p><span class="bold list-item-title">${this.render(entry.translate_name||entry.name)}</span> `;
 		if (entry.entry) this._recursiveRender(entry.entry, textStack, meta);
 		else if (entry.entries) {
 			const len = entry.entries.length;
@@ -2981,10 +2981,10 @@ Renderer.spell = {
 			<tr><td colspan="6">
 				<table class="summary stripe-even-table">
 					<tr>
-						<th colspan="1">Level</th>
-						<th colspan="1">School</th>
-						<th colspan="2">Casting Time</th>
-						<th colspan="2">Range</th>
+						<th colspan="1">環階</th>
+						<th colspan="1">學派</th>
+						<th colspan="2">施法時間</th>
+						<th colspan="2">射程</th>
 					</tr>
 					<tr>
 						<td colspan="1">${Parser.spLevelToFull(spell.level)}${Parser.spMetaToFull(spell.meta)}</td>
@@ -2993,8 +2993,8 @@ Renderer.spell = {
 						<td colspan="2">${Parser.spRangeToFull(spell.range)}</td>
 					</tr>
 					<tr>
-						<th colspan="4">Components</th>
-						<th colspan="2">Duration</th>
+						<th colspan="4">構材</th>
+						<th colspan="2">持續時間</th>
 					</tr>
 					<tr>
 						<td colspan="4">${Parser.spComponentsToFull(spell.components, spell.level)}</td>
@@ -3014,7 +3014,7 @@ Renderer.spell = {
 		const fromClassList = Renderer.spell.getCombinedClasses(spell, "fromClassList");
 		if (fromClassList.length) {
 			const [current] = Parser.spClassesToCurrentAndLegacy(fromClassList);
-			renderStack.push(`<div><span class="bold">Classes: </span>${Parser.spMainClassesToFull(current)}</div>`);
+			renderStack.push(`<div><span class="bold">職業: </span>${Parser.spMainClassesToFull(current)}</div>`);
 		}
 		renderStack.push(`</td></tr>`);
 
@@ -3410,9 +3410,9 @@ Renderer.race = {
 			<tr><td colspan="6">
 				<table class="summary stripe-even-table">
 					<tr>
-						<th class="col-4 text-center">Ability Scores</th>
-						<th class="col-4 text-center">Size</th>
-						<th class="col-4 text-center">Speed</th>
+						<th class="col-4 text-center">屬性值</th>
+						<th class="col-4 text-center">體型</th>
+						<th class="col-4 text-center">速度</th>
 					</tr>
 					<tr>
 						<td class="text-center">${ability.asText}</td>
@@ -3461,6 +3461,7 @@ Renderer.race = {
 				if (isAnyNoName) {
 					baseRace._rawName = baseRace.name;
 					baseRace.name = `${baseRace.name} (Base)`;
+					baseRace.translate_name = `${baseRace.translate_name} (基準)`;
 				}
 
 				const nameCounts = {};
@@ -3473,7 +3474,7 @@ Renderer.race = {
 						const count = nameCounts[(sr.name || "_").toLowerCase()];
 						const idName = Renderer.race._getSubraceName(r.name, sr.name);
 						const displayName = Renderer.race._getSubraceName(r.translate_name||r.name, sr.translate_name||sr.name);
-						return `{@race ${idName}|${sr.source}${count > 1 ? `|${idName} (<span title="${Parser.sourceJsonToFull(sr.source).escapeQuotes()}">${Parser.sourceJsonToAbv(sr.source)}</span>)` : ""}|${displayName}}`;
+						return `{@race ${idName}|${sr.source}${count > 1 ? `|${displayName} (<span title="${Parser.sourceJsonToFull(sr.source).escapeQuotes()}">${Parser.sourceJsonToAbv(sr.source)}</span>)` : `|${displayName}`}}`;
 					})
 				};
 

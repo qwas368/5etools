@@ -808,11 +808,12 @@ Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools) {
 	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : `${Parser.spLevelToFull(level)}`;
 	const levelSchoolStr = level === 0 ? `${Parser.spSchoolAbvToFull(school)} ${levelPart}` : `${levelPart} ${Parser.spSchoolAbvToFull(school).toLowerCase()}`;
 
+	const meta_tagName = {"ritual":"儀式", "technomagic": "科技魔法"};
 	const metaArr = Parser.spMetaToArr(meta);
 	if (metaArr.length || (subschools && subschools.length)) {
 		const metaAndSubschoolPart = [
 			(subschools || []).map(sub => Parser.spSchoolAbvToFull(sub)).join(", "),
-			metaArr.join(", ")
+			metaArr.map(tag=>meta_tagName[tag]||tag).join(", ")
 		].filter(Boolean).join("; ").toLowerCase();
 		return `${levelSchoolStr} (${metaAndSubschoolPart})`;
 	}
@@ -824,8 +825,11 @@ Parser.spTimeListToFull = function (times, isStripTags) {
 };
 
 Parser.getTimeToFull = function (time) {
-	return `${time.number} ${time.unit === "bonus" ? "bonus action" : time.unit}${time.number > 1 ? "s" : ""}`;
+	return `${time.number} ${Parser.SP_TIME_SINGLETONS.includes(time.unit) && time.unit!=Parser.SP_TM_ROUND ? "個" : ""}${Parser.TIME_UNIT_TARNSLATE[time.unit] || time.unit}`;
 };
+Parser.TIME_UNIT_TARNSLATE = {
+	"bonus": "附贈動作", "bonus action": "附贈動作", "action": "動作", "reaction": "反應", "round": "輪", "minute": "分鐘", "hour": "小時", "rounds": "輪", "minutes": "分鐘", "hours": "小時"
+}
 
 RNG_SPECIAL = "special";
 RNG_POINT = "point";
@@ -842,7 +846,7 @@ RNG_UNLIMITED = "unlimited";
 RNG_UNLIMITED_SAME_PLANE = "plane";
 RNG_TOUCH = "touch";
 Parser.SP_RANGE_TYPE_TO_FULL = {
-	[RNG_SPECIAL]: "Special",
+	[RNG_SPECIAL]: "特殊",
 	[RNG_POINT]: "Point",
 	[RNG_LINE]: "Line",
 	[RNG_CUBE]: "Cube",
@@ -851,11 +855,11 @@ Parser.SP_RANGE_TYPE_TO_FULL = {
 	[RNG_SPHERE]: "Sphere",
 	[RNG_HEMISPHERE]: "Hemisphere",
 	[RNG_CYLINDER]: "Cylinder",
-	[RNG_SELF]: "Self",
-	[RNG_SIGHT]: "Sight",
-	[RNG_UNLIMITED]: "Unlimited",
+	[RNG_SELF]: "自身",
+	[RNG_SIGHT]: "視線",
+	[RNG_UNLIMITED]: "無限",
 	[RNG_UNLIMITED_SAME_PLANE]: "Unlimited on the same plane",
-	[RNG_TOUCH]: "Touch"
+	[RNG_TOUCH]: "觸碰"
 };
 
 Parser.spRangeTypeToFull = function (range) {
@@ -962,18 +966,22 @@ Parser.spRangeToFull._renderPoint = function (range) {
 		case UNT_FEET:
 		case UNT_MILES:
 		default:
-			return `${dist.amount} ${dist.amount === 1 ? Parser.getSingletonUnit(dist.type) : dist.type}`;
+			return `${dist.amount} ${Parser.getSingletonUnit(dist.type)}`;
 	}
 };
 Parser.spRangeToFull._renderArea = function (range) {
 	const size = range.distance;
-	return `Self (${size.amount}-${Parser.getSingletonUnit(size.type)}${Parser.spRangeToFull._getAreaStyleString(range)}${range.type === RNG_CYLINDER ? `${size.amountSecondary != null && size.typeSecondary != null ? `, ${size.amountSecondary}-${Parser.getSingletonUnit(size.typeSecondary)}-high` : ""} cylinder` : ""})`;
+	return `自身 (${size.amount}${Parser.getSingletonUnit(size.type)}${Parser.spRangeToFull._getAreaStyleString(range)}${range.type === RNG_CYLINDER ? `${size.amountSecondary != null && size.typeSecondary != null ? `, ${size.amountSecondary}-${Parser.getSingletonUnit(size.typeSecondary)}-high` : ""} cylinder` : ""})`;
 };
 Parser.spRangeToFull._getAreaStyleString = function (range) {
 	switch (range.type) {
-		case RNG_SPHERE: return " radius";
-		case RNG_HEMISPHERE: return `-radius ${range.type}`;
-		case RNG_CYLINDER: return "-radius";
+		case RNG_RADIUS:
+		case RNG_CYLINDER:
+		case RNG_SPHERE: return "半徑";
+		case RNG_HEMISPHERE: return `半徑半球`;
+		case RNG_CONE: return `錐形`;
+		case RNG_LINE: return `直線`;
+		case RNG_CUBE: return `立方`;
 		default: return ` ${range.type}`;
 	}
 };
@@ -981,9 +989,9 @@ Parser.spRangeToFull._getAreaStyleString = function (range) {
 Parser.getSingletonUnit = function (unit, isShort) {
 	switch (unit) {
 		case UNT_FEET:
-			return isShort ? "ft." : "foot";
+			return "呎";
 		case UNT_MILES:
-			return isShort ? "mi." : "mile";
+			return "哩";
 		default: {
 			const fromBrew = MiscUtil.get(BrewUtil.homebrewMeta, "spellDistanceUnits", unit, "singular");
 			if (fromBrew) return fromBrew;
@@ -1022,17 +1030,17 @@ Parser.DIST_TYPES = [
 Parser.spComponentsToFull = function (comp, level) {
 	if (!comp) return "None";
 	const out = [];
-	if (comp.v) out.push("V");
-	if (comp.s) out.push("S");
-	if (comp.m != null) out.push(`M${comp.m !== true ? ` (${comp.m.text != null ? comp.m.text : comp.m})` : ""}`);
-	if (comp.r) out.push(`R (${level} gp)`);
-	return out.join(", ") || "None";
+	if (comp.v) out.push("聲音");
+	if (comp.s) out.push("姿勢");
+	if (comp.m != null) out.push(`材料${comp.m !== true ? `（${comp.m.text != null ? comp.m.text : comp.m}）` : ""}`);
+	if (comp.r) out.push(`專利稅 (${level} 金幣)`);
+	return out.join("、") || "無";
 };
 
 Parser.SP_END_TYPE_TO_FULL = {
-	"dispel": "dispelled",
-	"trigger": "triggered",
-	"discharge": "discharged"
+	"dispel": "被解消",
+	"trigger": "被觸發",
+	"discharge": "被解除"
 };
 Parser.spEndTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_END_TYPE_TO_FULL, type);
@@ -1043,18 +1051,18 @@ Parser.spDurationToFull = function (dur) {
 	const outParts = dur.map(d => {
 		switch (d.type) {
 			case "special":
-				return "Special";
+				return "特殊";
 			case "instant":
-				return `Instantaneous${d.condition ? ` (${d.condition})` : ""}`;
+				return `即效${d.condition ? ` (${d.condition})` : ""}`;
 			case "timed":
-				return `${d.concentration ? "Concentration, " : ""}${d.concentration ? "u" : d.duration.upTo ? "U" : ""}${d.concentration || d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? d.duration.type : `${d.duration.type}s`}`;
+				return `${d.concentration ? "專注，" : ""}${d.concentration || d.duration.upTo ? "至多 " : ""}${d.duration.amount} ${Parser.translateSpDuration(d.duration.type)}`;
 			case "permanent": {
 				if (d.ends) {
 					const endsToJoin = d.ends.map(m => Parser.spEndTypeToFull(m));
 					hasSubOr = hasSubOr || endsToJoin.length > 1;
-					return `Until ${endsToJoin.joinConjunct(", ", " or ")}`;
+					return `直到${endsToJoin.joinConjunct(", ", " 或 ")}`;
 				} else {
-					return "Permanent";
+					return "永久";
 				}
 			}
 		}
@@ -3066,8 +3074,8 @@ Parser.DMG_TYPE_TO_TRANS = {
 
 Parser.translateSpDuration = it => Parser.translate(Parser.SPELL_DUR_TO_TRANS, it);
 Parser.SPELL_DUR_TO_TRANS = {
-	"instant": "即效", "1 round":"1輪", "1 minute":"1分鐘", "10 minutes":"10分鐘",
-	"1 hour":"1小時", "8 hours":"8小時", "24+ hours":"24+ 小時", "permanent":"永久", "special":"特殊"
+	"instant": "即效", "round":"輪", "1 round":"1輪", "minute":"分鐘", "1 minute":"1分鐘", "10 minutes":"10分鐘",
+	"hour":"小時", "1 hour":"1小時", "8 hours":"8小時", "24+ hours":"24+ 小時", "day":"天", "permanent":"永久", "special":"特殊"
 }
 
 Parser.translateMainClass = function(it){
