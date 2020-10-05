@@ -6928,6 +6928,7 @@ Renderer.hover = {
 			const itHash = (opts.fnGetHash || UrlUtil.URL_TO_HASH_BUILDER[page])(it);
 			if (opts.fnMutateItem) opts.fnMutateItem(listProp, it);
 			Renderer.hover._addToCache(page, it.source, itHash, it);
+			if (it.translate_name) Renderer.hover._addToCache(page, it.source, UrlUtil.encodeForHash([it.translate_name, it.source]), it);
 		});
 	},
 
