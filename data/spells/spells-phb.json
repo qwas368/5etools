@@ -13474,9 +13474,9 @@
 				}
 			],
 			"entries": [
-				"You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool.",
-				"Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the spell is commensurate with the quality of the raw materials.",
-				"Creatures or magic items can't be created or transmuted by this spell. You also can't use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan's tools used to craft such objects."
+				"你將未加工材料轉變成以相同材料製成的成品。例如，你可以將一叢樹木製造成一座木橋、將一把大麻變為繩子、或使亞麻或羊毛變為衣服。",
+				"選擇射程內你所能看見的未加工材料。只要有足夠數量的未加工材料，你就可以製造一個尺寸為大型或更小的物體（可被容納於10呎邊長的立方體，或八個相互連接的5呎邊長立方體空間）。然而，如果你加工的對象是金屬、石頭、或其他礦物材質，則你製造物體的尺寸將不能超過中型（可被容納於一個5呎邊長的立方體空間）。此法術製造出來物體的品質將與未加工材料的品質相稱。",
+				"生物或魔法物品不能被此法術創造或轉變。你也無法使用此法術創造一個通常需要高度技藝以製造的物品，像是珠寶、武器、玻璃、或護甲，除非你熟練於用來製造這些物品的工匠工具。"
 			],
 			"miscTags": [
 				"PRM",

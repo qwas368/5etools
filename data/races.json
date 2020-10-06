@@ -2052,7 +2052,7 @@
 					]
 				},
 				{
-					"name": "Mark of Warding", "_translate_name": "守護龍紋",
+					"name": "Mark of Warding", "translate_name": "守護龍紋",
 					"source": "ERLW",
 					"page": 51,
 					"otherSources": [
@@ -2105,29 +2105,29 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Warder's Intuition", "translate_name": "",
+							"name": "Warder's Intuition", "translate_name": "守衛者直覺",
 							"entries": [
-								"When you make an Intelligence ({@skill Investigation}) check or an ability check using {@item thieves' tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行智力（{@skill 調查}）檢定或使用{@item 盜賊|PHB}的檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Wards and Seals", "translate_name": "",
+							"name": "Wards and Seals", "translate_name": "保護與封鎖",
 							"entries": [
-								"You can cast the {@spell alarm} and {@spell mage armor} spells with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+								"你可以使用這個特性施放{@spell 警報術}和{@spell 法師護甲}法術。從3級開始，你也可以使用這個特性施放{@spell 祕法鎖}法術。一旦你使用這個特性施放任意法術，則直到你完成一次長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為智力，且當你使用此特性施放它們時，它們並不需要材料構材。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Warding Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列守護龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Warding Spells",
+									"caption": "守護龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -2135,24 +2135,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell alarm}, {@spell armor of Agathys}"
+											"1環",
+											"{@spell 警報術}, {@spell 艾嘉西斯之鎧}"
 										],
 										[
-											"2nd",
-											"{@spell arcane lock}, {@spell knock}"
+											"2環",
+											"{@spell 祕法鎖}, {@spell 敲擊術}"
 										],
 										[
-											"3rd",
-											"{@spell glyph of warding}, {@spell magic circle}"
+											"3環",
+											"{@spell 守衛銘文}, {@spell 防護法陣}"
 										],
 										[
-											"4th",
-											"{@spell Leomund's secret chest}, {@spell Mordenkainen's faithful hound}"
+											"4環",
+											"{@spell 李歐蒙秘藏箱}, {@spell 魔鄧肯忠犬}"
 										],
 										[
-											"5th",
-											"{@spell antilife shell}"
+											"5環",
+											"{@spell 反活物護罩}"
 										]
 									]
 								}
@@ -2805,7 +2805,7 @@
 					]
 				},
 				{
-					"name": "Mark of Shadow", "_translate_name": "陰影龍紋",
+					"name": "Mark of Shadow", "translate_name": "陰影龍紋",
 					"source": "ERLW",
 					"page": 49,
 					"otherSources": [
@@ -2860,29 +2860,29 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Cunning Intuition", "translate_name": "",
+							"name": "Cunning Intuition", "translate_name": "狡詐直覺",
 							"entries": [
-								"When you make a Charisma ({@skill Performance}) or Dexterity ({@skill Stealth}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行魅力（{@skill 表演}）檢定或敏捷（{@skill 隱匿}）檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Shape Shadows", "translate_name": "",
+							"name": "Shape Shadows", "translate_name": "形塑陰影",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. Starting at 3rd level, you can cast the {@spell invisibility} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"你知曉{@spell 次級幻象}戲法。從3級開始，你也可以使用這個特性施放一次{@spell 隱形術}法術，且你在完成一次長休後恢復再次施放該法術的能力。你施展這些法術的施法屬性為魅力。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Shadow Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列陰影龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Shadow Spells",
+									"caption": "陰影龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -2891,23 +2891,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell disguise self}, {@spell silent image}"
+											"{@spell 易容術}, {@spell 無聲幻影}"
 										],
 										[
 											"2nd",
-											"{@spell darkness}, {@spell pass without trace}"
+											"{@spell 黑暗術}, {@spell 行蹤無跡}"
 										],
 										[
 											"3rd",
-											"{@spell clairvoyance}, {@spell major image}"
+											"{@spell 銳眼術}, {@spell 強效幻影}"
 										],
 										[
 											"4th",
-											"{@spell greater invisibility}, {@spell hallucinatory terrain}"
+											"{@spell 高等隱形術}, {@spell 幻景}"
 										],
 										[
 											"5th",
-											"{@spell mislead}"
+											"{@spell 假象術}"
 										]
 									]
 								}
@@ -4751,7 +4751,7 @@
 					]
 				},
 				{
-					"name": "Mark of Scribing", "_translate_name": "抄錄龍紋",
+					"name": "Mark of Scribing", "translate_name": "抄錄龍紋",
 					"source": "ERLW",
 					"page": 47,
 					"otherSources": [
@@ -4807,29 +4807,29 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Gifted Scribe", "translate_name": "",
+							"name": "Gifted Scribe", "translate_name": "天才抄寫員",
 							"entries": [
-								"When you make an Intelligence ({@skill History}) check or an ability check using {@item calligrapher's supplies|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行智力（{@skill 歷史}）檢定或使用{@item 書法家設備|PHB}的屬性檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Scribe's Insight", "translate_name": "",
+							"name": "Scribe's Insight", "translate_name": "抄寫員的領悟",
 							"entries": [
-								"You know the {@spell message} cantrip. You can also cast {@spell comprehend languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell magic mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+								"你知曉{@spell 傳訊術}戲法。你也可以使用這個特性施放一次{@spell 通曉語言}法術，且你在完成一次短休或長休後恢復再次施放該法術的能力。從3級開始，你也可以使用這個特性施放{@spell 魔嘴術}法術，且你在完成一次長休後恢復再次施放該法術的能力。你施展這些法術的施法屬性為智力。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Scribing Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列抄錄龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Scribing Spells",
+									"caption": "抄錄龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -4837,24 +4837,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell comprehend languages}, {@spell illusory script}"
+											"1環",
+											"{@spell 通曉語言}, {@spell 迷幻手稿}"
 										],
 										[
-											"2nd",
-											"{@spell animal messenger}, {@spell silence}"
+											"2環",
+											"{@spell 動物信使}, {@spell 沉默術}"
 										],
 										[
-											"3rd",
-											"{@spell sending}, {@spell tongues}"
+											"3環",
+											"{@spell 短訊術}, {@spell 巧舌術}"
 										],
 										[
-											"4th",
-											"{@spell arcane eye}, {@spell confusion}"
+											"4環",
+											"{@spell 祕法眼}, {@spell 困惑術}"
 										],
 										[
-											"5th",
-											"{@spell dream}"
+											"5環",
+											"{@spell 託夢術}"
 										]
 									]
 								}
@@ -6214,7 +6214,7 @@
 							"type": "entries",
 							"name": "Deductive Intuition", "translate_name": "演繹直覺",
 							"entries": [
-								"當你進行智力（{@skill 調查}）檢定或睿知（{@skill 察言觀色}）檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+								"當你進行智力（{@skill 調查}）檢定或睿知（{@skill 察言觀色}）檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							],
 							"data": {
 								"overwrite": "Skill Versatility"
@@ -6330,7 +6330,7 @@
 							"type": "entries",
 							"name": "Windwright's Intuition", "translate_name": "領風直覺",
 							"entries": [
-								"當你進行敏捷（{@skill 特技}）檢定或任何涉及{@item 領航員工具|PHB}的屬性檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中。"
+								"當你進行敏捷（{@skill 特技}）檢定或任何涉及{@item 領航員工具|PHB}的屬性檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							],
 							"data": {
 								"overwrite": "Skill Versatility"
@@ -7045,7 +7045,7 @@
 							"type": "entries",
 							"name": "Medical Intuition", "translate_name": "醫藥直覺",
 							"entries": [
-								"當你進行睿知（{@skill 醫藥}）檢定或使用{@item 藥草師工具組|phb}的檢定時，你可以骰一顆d4的直覺骰，並將骰出來的數字加入該屬性檢定中"
+								"當你進行睿知（{@skill 醫藥}）檢定或使用{@item 藥草師工具組|phb}的檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
@@ -7690,7 +7690,7 @@
 					}
 				},
 				{
-					"name": "Mark of Handling", "translate_name": "",
+					"name": "Mark of Handling", "translate_name": "畜牧龍紋",
 					"source": "ERLW",
 					"page": 42,
 					"otherSources": [
@@ -7747,36 +7747,36 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Wild Intuition", "translate_name": "",
+							"name": "Wild Intuition", "translate_name": "野性直覺",
 							"entries": [
-								"When you make a Wisdom ({@skill Animal Handling}) or Intelligence ({@skill Nature}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行睿知（{@skill 動物馴養}）或智力（{@skill 自然}）檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Primal Connection", "translate_name": "",
+							"name": "Primal Connection", "translate_name": "原始連結",
 							"entries": [
-								"You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+								"你可以使用這個特性施放{@spell 化獸為友}和{@spell 動物交談術}法術，且無須任何材料構材。一旦你使用這個特性施放任意法術，則直到你完成一次短休或長休之前都不能再使用這個特性施放法術。你施展這些法術的施法屬性為睿知。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "The Bigger They Are", "translate_name": "",
+							"name": "The Bigger They Are", "translate_name": "牠們不過是大了點",
 							"entries": [
-								"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
+								"從3級開始，當你施放{@spell 化獸為友}或{@spell 動物交談術}法術時，你可以指定一個野獸或怪獸類型的生物做為目標，只要該生物的智力值為3或更低。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Handling Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列畜牧龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Handling Spells",
+									"caption": "畜牧龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -7784,24 +7784,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell animal friendship}, {@spell speak with animals}"
+											"1環",
+											"{@spell 化獸為友}, {@spell 動物交談術}"
 										],
 										[
-											"2nd",
-											"{@spell beast sense}, {@spell calm emotions}"
+											"2環",
+											"{@spell 野獸知覺}, {@spell 安定心神}"
 										],
 										[
-											"3rd",
-											"{@spell beacon of hope}, {@spell conjure animals}"
+											"3環",
+											"{@spell 希望信標}, {@spell 召喚動物}"
 										],
 										[
-											"4th",
-											"{@spell aura of life}, {@spell dominate beast}"
+											"4環",
+											"{@spell 生命靈光}, {@spell 支配野獸}"
 										],
 										[
-											"5th",
-											"{@spell awaken}"
+											"5環",
+											"{@spell 啟蒙術}"
 										]
 									]
 								}
@@ -7810,7 +7810,7 @@
 					]
 				},
 				{
-					"name": "Mark of Making", "translate_name": "",
+					"name": "Mark of Making", "translate_name": "創造龍紋",
 					"source": "ERLW",
 					"page": 45,
 					"otherSources": [
@@ -7878,36 +7878,36 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Artisan's Intuition", "translate_name": "",
+							"name": "Artisan's Intuition", "translate_name": "工匠直覺",
 							"entries": [
-								"When you make an {@skill Arcana} check or an ability check involving artisan's tools, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行智力({@skill 奧秘})檢定或涉及工匠工具的屬性檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Maker's Gift", "translate_name": "",
+							"name": "Maker's Gift", "translate_name": "匠師天賦",
 							"entries": [
-								"You gain proficiency with one type of artisan's tools of your choice."
+								"你熟練於一種你所選擇的工匠工具。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spellsmith", "translate_name": "",
+							"name": "Spellsmith", "translate_name": "秘法鍛造",
 							"entries": [
-								"You know the {@spell mending} cantrip. You can also cast the {@spell magic weapon} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require concentration. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
+								"你知曉{@spell 修復術}戲法。你也可以使用這個特性施放{@spell 魔化武器}法術。當你這麼做時，該法術將會持續1小時且不需要你維持專注。一旦你使用這個特性施放該法術，則直到你完成一次長休之前都不能再這麼做。你施展這些法術的施法屬性為智力。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Making Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列創造龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Making Spells",
+									"caption": "創造龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -7915,24 +7915,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell identify}, {@spell Tenser's floating disk}"
+											"1環",
+											"{@spell 鑑定術}, {@spell 譚森浮碟術}"
 										],
 										[
-											"2nd",
-											"{@spell continual flame}, {@spell magic weapon}"
+											"2環",
+											"{@spell 不滅明焰}, {@spell 魔化武器}"
 										],
 										[
-											"3rd",
-											"{@spell conjure barrage}, {@spell elemental weapon}"
+											"3環",
+											"{@spell 召喚箭幕}, {@spell 元素武器}"
 										],
 										[
-											"4th",
-											"{@spell fabricate}, {@spell stone shape}"
+											"4環",
+											"{@spell 鬼斧神工}, {@spell 塑石術}"
 										],
 										[
-											"5th",
-											"{@spell creation}"
+											"5環",
+											"{@spell 造物術}"
 										]
 									]
 								}
@@ -7941,7 +7941,7 @@
 					]
 				},
 				{
-					"name": "Mark of Passage", "translate_name": "",
+					"name": "Mark of Passage", "translate_name": "通行龍紋",
 					"source": "ERLW",
 					"page": 46,
 					"otherSources": [
@@ -8004,36 +8004,36 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Courier's Speed", "translate_name": "",
+							"name": "Courier's Speed", "translate_name": "信差之速",
 							"entries": [
-								"Your base walking speed increases to 35 feet."
+								"你的基礎步行速度提升到35呎。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Intuitive Motion", "translate_name": "",
+							"name": "Intuitive Motion", "translate_name": "運動直覺",
 							"entries": [
-								"When you make a Dexterity ({@skill Acrobatics}) check or any ability check to operate or maintain a land vehicle, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行敏捷（{@skill 特技}）檢定或任何涉及操作或維護陸地載具的屬性檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Magical Passage", "translate_name": "",
+							"name": "Magical Passage", "translate_name": "魔法通道",
 							"entries": [
-								"You can cast the {@spell misty step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
+								"你可以使用這個特性施放一次{@spell 迷蹤步}法術，且你在完成一次長休後恢復再次施放該法術的能力。你施展這些法術的施法屬性為敏捷。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Passage Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列通行龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Passage Spells",
+									"caption": "通行龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -8041,24 +8041,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell expeditious retreat}, {@spell jump}"
+											"1環",
+											"{@spell 腳底抹油}, {@spell 跳躍術}"
 										],
 										[
-											"2nd",
-											"{@spell misty step}, {@spell pass without trace}"
+											"2環",
+											"{@spell 迷蹤步}, {@spell 行蹤無跡}"
 										],
 										[
-											"3rd",
-											"{@spell blink}, {@spell phantom steed}"
+											"3環",
+											"{@spell 閃現術}, {@spell 魅影駒}"
 										],
 										[
-											"4th",
-											"{@spell dimension door}, {@spell freedom of movement}"
+											"4環",
+											"{@spell 次元門}, {@spell 行動自如術}"
 										],
 										[
-											"5th",
-											"{@spell teleportation circle}"
+											"5環",
+											"{@spell 傳送法陣}"
 										]
 									]
 								}
@@ -8067,7 +8067,7 @@
 					]
 				},
 				{
-					"name": "Mark of Sentinel", "translate_name": "",
+					"name": "Mark of Sentinel", "translate_name": "警戒龍紋",
 					"source": "ERLW",
 					"page": 48,
 					"otherSources": [
@@ -8120,36 +8120,36 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Sentinel's Intuition", "translate_name": "",
+							"name": "Sentinel's Intuition", "translate_name": "哨兵直覺",
 							"entries": [
-								"When you make a Wisdom ({@skill Insight}) or Wisdom ({@skill Perception}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
+								"當你進行睿知（{@skill 察言觀色}）檢定或睿知（{@skill 感知}）檢定時，你可以骰一顆{@dice d4}的直覺骰，並將骰出來的數字加入該屬性檢定中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Guardian's Shield", "translate_name": "",
+							"name": "Guardian's Shield", "translate_name": "守護者之盾",
 							"entries": [
-								"You can cast the {@spell shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
+								"你可以使用這個特性施放一次{@spell 護盾術}法術，且你在完成一次長休後恢復再次施放該法術的能力。你施展這些法術的施法屬性為睿知。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Vigilant Guardian", "translate_name": "",
+							"name": "Vigilant Guardian", "translate_name": "警覺守衛",
 							"entries": [
-								"When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead. Once you use this trait, you can't do so again until you finish a long rest."
+								"當一個距離你5呎內且你所能看見的生物因為一次攻擊檢定而被命中時，你可以使用你的反應來跟該生物交換位置，且你將代為被該攻擊命中。一旦你使用這個特性，則直到你完成一次長休之前都不能再這麼做。"
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Spells of the Mark", "translate_name": "龍紋法術",
 							"entries": [
-								"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Sentinel Spells table are added to the spell list of your spellcasting class.",
+								"若你擁有施法或契約魔法的職業能力，則下列警戒龍紋法術表的法術將會被加入你施法職業的法術列表中。",
 								{
 									"type": "table",
-									"caption": "Mark of Sentinel Spells",
+									"caption": "警戒龍紋法術",
 									"colLabels": [
-										"Spell Level",
-										"Spells"
+										"法術環階",
+										"法術"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -8157,24 +8157,24 @@
 									],
 									"rows": [
 										[
-											"1st",
-											"{@spell compelled duel}, {@spell shield of faith}"
+											"1環",
+											"{@spell 強迫決鬥}, {@spell 虔誠護盾}"
 										],
 										[
-											"2nd",
-											"{@spell warding bond}, {@spell zone of truth}"
+											"2環",
+											"{@spell 守護聯結}, {@spell 誠實之域}"
 										],
 										[
-											"3rd",
-											"{@spell counterspell}, {@spell protection from energy}"
+											"3環",
+											"{@spell 反制法術}, {@spell 防護能量}"
 										],
 										[
-											"4th",
-											"{@spell death ward}, {@spell guardian of faith}"
+											"4環",
+											"{@spell 防死護咒}, {@spell 虔誠守衛}"
 										],
 										[
-											"5th",
-											"{@spell Bigby's hand}"
+											"5環",
+											"{@spell 畢格比之掌}"
 										]
 									]
 								}
@@ -9612,7 +9612,7 @@
 			]
 		},
 		{
-			"name": "Locathah", "translate_name": "",
+			"name": "Locathah", "translate_name": "洛卡魚人",
 			"source": "LR",
 			"page": 24,
 			"size": "M",
@@ -9648,55 +9648,55 @@
 					"name": "Age", "translate_name": "年齡",
 					"type": "entries",
 					"entries": [
-						"Locathah mature to adulthood by the age of 10 but have been known to live up to 80 years."
+						"洛卡魚人在10歲時成年，但已知最多可以活到80歲。"
 					]
 				},
 				{
 					"name": "Alignment", "translate_name": "陣營",
 					"type": "entries",
 					"entries": [
-						"Most locathah are true neutral or have some aspect of neutrality in their alignment. They tend toward good, coming from a culture where compassion for the downtrodden is a commonality."
+						"大部分的洛卡魚人都是絕對中立，或者其陣營會呈現某些中立的面向。他們往往是善良的，因為他們來自於一個會對受壓迫者普遍展現同情的文化背景。"
 					]
-				},
-				{
-					"name": "Natural Armor", "translate_name": "",
-					"entries": [
-						"You have tough, scaly skin. When you aren't wearing armor, your AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Observant & Athletic",
-					"entries": [
-						"You have proficiency in the {@skill Athletics} and {@skill Perception} skills."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Leviathan Will", "translate_name": "",
-					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, or put to sleep."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Limited Amphibiousness", "translate_name": "",
-					"entries": [
-						"You can breathe air and water, but you need to be submerged at least once every 4 hours to avoid suffocating."
-					],
-					"type": "entries"
 				},
 				{
 					"type": "entries",
 					"name": "Size", "translate_name": "體型",
 					"entries": [
-						"Locathah stand between 5 and 6 feet tall and average about 150 pounds. Your size is Medium."
+						"洛卡魚人的身高介於5到6呎，且平均約150磅重。你的體型為中型。"
 					]
+				},
+				{
+					"name": "Natural Armor", "translate_name": "天生護甲",
+					"entries": [
+						"你擁有堅硬、帶鱗的皮膚。當你未穿戴護甲時，你的AC為12+你的敏捷調整值。如果你穿著的護甲會讓你有較低的AC，則你可以使用你的天生護甲來計算你的AC。當你使用天生護甲時，盾牌的加值仍會如常作用。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Observant & Athletic", "translate_name": "細心而健壯",
+					"entries": [
+						"你熟練於{@skill 運動}和{@skill 感知}技能。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Leviathan Will", "translate_name": "利維坦的意志",
+					"entries": [
+						"你在對抗{@condition 魅惑}、{@condition 恐懼}、{@condition 麻痺}、{@condition 中毒}、{@condition 震懾}、和讓你入睡的豁免檢定中具有優勢。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Limited Amphibiousness", "translate_name": "有限兩棲",
+					"entries": [
+						"你可以在空氣和水中呼吸，但為了避免窒息，你至少需要每4小時將自己浸泡在水中一次。"
+					],
+					"type": "entries"
 				},
 				{
 					"name": "Language", "translate_name": "語言",
 					"entries": [
-						"You can speak, read, and write Aquan and Common."
+						"你可以說、讀、寫水族語和通用語。"
 					],
 					"type": "entries"
 				}
