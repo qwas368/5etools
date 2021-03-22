@@ -7,6 +7,7 @@
 				"本章節在戰鬥中提供新的動作選擇，它們可以一起或單獨加入你的遊戲中。",
 				{
 					"name": "爬上更巨大的生物",
+			        "ENG_name": "Climb onto a Bigger Creature",
 					"type": "entries",
 					"entries": [
 						"If one creature wants to jump onto another creature, it can do so by grappling. A small or Medium creature has little chance of making a successful grapple against a Huge or Gargantuan creature, however, unless magic has granted the grappler supernatural might.",
