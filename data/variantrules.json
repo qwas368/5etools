@@ -10,21 +10,23 @@
 			        "ENG_name": "Climb onto a Bigger Creature",
 					"type": "entries",
 					"entries": [
-						"If one creature wants to jump onto another creature, it can do so by grappling. A small or Medium creature has little chance of making a successful grapple against a Huge or Gargantuan creature, however, unless magic has granted the grappler supernatural might.",
-						"As an alternative, a suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb. After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by the target's Dexterity (Acrobatics) check. If it wins the contest, the smaller creature successfully moves into the target creature's space, the smaller creature moves with the target and has advantage on attack rolls against it.",
-						"The smaller creature can move around within the larger creature's space, treating the space as difficult terrain. The larger creature's ability to attack the smaller creature depends on the smaller creature's location, and is left to your discretion. The larger creature can dislodge the smaller creature as an action\u2014knocking it off, scraping it against a wall, or grabbing and throwing it\u2014by making a Strength (Athletics) check contested by the smaller creature's Strength (Athletics) or Dexterity (Acrobatics) check. The smaller creature chooses which ability to use."
+						"如果一個生物想跳到另一個生物身上，它可以透過擒抱來實現。然而，一個小型或中型生物幾乎沒有機會對一個巨大或巨型生物進行成功的擒抱，除非魔法賦予擒抱者超自然的力量。",
+						"作為另一種選擇，可以把一個適當大小的敵人當作地形，以便跳到它的背上或緊緊抓住肢體。在進行任何必要的能力檢查後以移動到較大的生物位置的上，較小的生物使用行動進行力量（運動）或敏捷（特技）檢定，與目標的敏捷（特技）檢定對抗。如果贏了，較小的生物就會成功進入目標生物的空間，較小的生物就會和目標一起移動，並且在對它的攻擊中擁有優勢。",
+						"小型生物可以在大型生物的空間內移動，將空間視為困難地形。大型生物攻擊小型生物的能力取決於小型生物的位置，由你來決定。較大的生物可以將較小的生物驅離，作為一個動作把它踢開，把它刮到牆上，或者抓住它並把它扔出去，方法是進行力量（運動）檢查，與較小生物的力量（運動）或靈巧（特技）檢查對抗。取決於較小的生物選擇使用哪種能力。"
 					]
 				},
 				{
-					"name": "Disarm",
+					"name": "繳械",
+					"ENG_name": "Disarm",
 					"type": "entries",
 					"entries": [
-						"A creature can use a weapon attack to knock a weapon or another item from a target's grasp. The attacker makes an attack roll contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check. If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
+						"生物可以使用武器攻擊將武器或其他物品從目沖手中擊落。攻擊者擲攻擊骰對抗目沖的力量（運動）或敏捷（特技）。如果攻擊者贏得比賽，則攻擊不會造成傷害或其他不良效果，但防守者會掉落該物品。",
 						"The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands. The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
 					]
 				},
 				{
 					"name": "Mark",
+					"ENG_name": "Mark",
 					"type": "entries",
 					"entries": [
 						"This option makes it easier for melee combatants to harry each other with opportunity attacks.",
@@ -33,6 +35,7 @@
 				},
 				{
 					"name": "Overrun",
+					"ENG_name": "Overrun",
 					"type": "entries",
 					"entries": [
 						"When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature. As an action or a bonus action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check. The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller. If the mover wins the contest, it can move through the hostile creature's space once this turn."
@@ -40,6 +43,7 @@
 				},
 				{
 					"name": "Shove Aside",
+					"ENG_name": "Shove Aside",
 					"type": "entries",
 					"entries": [
 						"With this option, a creature uses the special shove attack from the Player's Handbook to force a target to the side, rather than away. The attacker has disadvantage on its Strength (Athletics) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
@@ -47,6 +51,7 @@
 				},
 				{
 					"name": "Tumble",
+					"ENG_name": "Tumble",
 					"type": "entries",
 					"entries": [
 						"A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent. As an action or a bonus action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check. If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
