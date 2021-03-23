@@ -21,40 +21,40 @@
 					"type": "entries",
 					"entries": [
 						"生物可以使用武器攻擊將武器或其他物品從目沖手中擊落。攻擊者擲攻擊骰對抗目沖的力量（運動）或敏捷（特技）。如果攻擊者贏得比賽，則攻擊不會造成傷害或其他不良效果，但防守者會掉落該物品。",
-						"The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands. The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
+						"如果目標用兩隻手或更多的手拿著該物品，則攻擊者的攻擊骰劣勢。如果目標比攻擊生物大，則其能力檢查有優勢，如果目標小，則有劣勢。"
 					]
 				},
 				{
-					"name": "Mark",
+					"name": "標記",
 					"ENG_name": "Mark",
 					"type": "entries",
 					"entries": [
-						"This option makes it easier for melee combatants to harry each other with opportunity attacks.",
-						"When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage. The opportunity attack doesn't expend the attacker's reaction, but the attacker can't make the attack if anything, such as the {@condition incapacitated} condition or the shocking grasp spell, is preventing it from taking reactions. The attacker is limited to one opportunity attack per turn."
+						"这个選擇让近战者更容易用藉機攻击骚扰对方。",
+						"当一个生物进行近战攻击时，它可以标记它的目标。直到攻击者下一回合结束，它对被标记的目标进行的任何藉機攻击都有优势。此藉機攻击不消耗攻击者的反应，但如果有任何东西，例如{@condition incapacitated} 条件或震慑性抓取法術，阻止它使用反应，則攻击者就不能进行攻击。攻击者每回合只能进行一次藉機攻击。"
 					]
 				},
 				{
-					"name": "Overrun",
+					"name": "強行",
 					"ENG_name": "Overrun",
 					"type": "entries",
 					"entries": [
-						"When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature. As an action or a bonus action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check. The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller. If the mover wins the contest, it can move through the hostile creature's space once this turn."
+						"当一个生物试图穿过敌对生物的空间时，移动者可以试图衝出敌对生物来强行穿越。作为動作或附贈動作，移动者进行力量（运动）檢定，与敌方生物的力量（运动）檢定對抗。试图衝出的生物如果體型比敌对生物大，则在这次檢定中占优势，如果比敌对生物小，则占劣势。如果移动者對抗獲勝，它可以在这个回合穿过敌方生物的空间一次。"
 					]
 				},
 				{
-					"name": "Shove Aside",
+					"name": "推開",
 					"ENG_name": "Shove Aside",
 					"type": "entries",
 					"entries": [
-						"With this option, a creature uses the special shove attack from the Player's Handbook to force a target to the side, rather than away. The attacker has disadvantage on its Strength (Athletics) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
+						"有了这个選擇，生物使用玩家手册中的特殊推挤攻击時，能将目标逼向一边，而不是推离。当攻击者这样做时，它的力量（運動）檢定有劣势。如果该檢定成功，攻击者会将目标移动到它所能觸及的5英尺不同位置。"
 					]
 				},
 				{
-					"name": "Tumble",
+					"name": "翻滾",
 					"ENG_name": "Tumble",
 					"type": "entries",
 					"entries": [
-						"A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent. As an action or a bonus action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check. If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
+						"一个生物可以尝试在敌对生物的空间里翻滚，躲避并穿过敵人。作为行动或奖励行动，翻滚者进行敏捷（特技）進行，与敌方生物的敏捷（特技）檢定對抗。如果翻滚者在對抗中獲勝，則这个回合可以穿过敌方生物的空间一次。"
 					]
 				}
 			],
