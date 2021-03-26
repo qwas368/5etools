@@ -145,7 +145,7 @@
 					"max": 15,
 					"coins": {
 						"ep": "2d6*1000",
-						"pp": "8d6*100"
+						"gp": "8d6*100"
 					}
 				},
 				{
@@ -188,7 +188,7 @@
 					"min": 7,
 					"max": 16,
 					"gems": {
-						"type": "10",
+						"type": 10,
 						"amount": "2d6"
 					}
 				},
@@ -196,7 +196,7 @@
 					"min": 17,
 					"max": 26,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					}
 				},
@@ -204,7 +204,7 @@
 					"min": 27,
 					"max": 36,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "2d6"
 					}
 				},
@@ -212,7 +212,7 @@
 					"min": 37,
 					"max": 44,
 					"gems": {
-						"type": "10",
+						"type": 10,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -224,7 +224,7 @@
 					"min": 45,
 					"max": 52,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -236,7 +236,7 @@
 					"min": 53,
 					"max": 60,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -248,7 +248,7 @@
 					"min": 61,
 					"max": 65,
 					"gems": {
-						"type": "10",
+						"type": 10,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -260,7 +260,7 @@
 					"min": 66,
 					"max": 70,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -272,7 +272,7 @@
 					"min": 71,
 					"max": 75,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -284,7 +284,7 @@
 					"min": 76,
 					"max": 78,
 					"gems": {
-						"type": "10",
+						"type": 10,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -296,7 +296,7 @@
 					"min": 79,
 					"max": 80,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -308,7 +308,7 @@
 					"min": 81,
 					"max": 85,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -320,7 +320,7 @@
 					"min": 86,
 					"max": 92,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -332,7 +332,7 @@
 					"min": 93,
 					"max": 97,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -344,7 +344,7 @@
 					"min": 98,
 					"max": 99,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -356,7 +356,7 @@
 					"min": 100,
 					"max": 100,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "2d6"
 					},
 					"magicitems": {
@@ -387,7 +387,7 @@
 					"min": 5,
 					"max": 10,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					}
 				},
@@ -395,7 +395,7 @@
 					"min": 11,
 					"max": 16,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "3d6"
 					}
 				},
@@ -403,7 +403,7 @@
 					"min": 17,
 					"max": 22,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					}
 				},
@@ -411,7 +411,7 @@
 					"min": 23,
 					"max": 28,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					}
 				},
@@ -419,7 +419,7 @@
 					"min": 29,
 					"max": 32,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -431,7 +431,7 @@
 					"min": 33,
 					"max": 36,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -443,7 +443,7 @@
 					"min": 37,
 					"max": 40,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -455,7 +455,7 @@
 					"min": 41,
 					"max": 44,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -467,7 +467,7 @@
 					"min": 45,
 					"max": 49,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -479,7 +479,7 @@
 					"min": 50,
 					"max": 54,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -491,7 +491,7 @@
 					"min": 55,
 					"max": 59,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -503,7 +503,7 @@
 					"min": 60,
 					"max": 63,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -515,7 +515,7 @@
 					"min": 64,
 					"max": 66,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -527,7 +527,7 @@
 					"min": 67,
 					"max": 69,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -539,7 +539,7 @@
 					"min": 70,
 					"max": 72,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -551,7 +551,7 @@
 					"min": 73,
 					"max": 74,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -563,7 +563,7 @@
 					"min": 75,
 					"max": 76,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -575,7 +575,7 @@
 					"min": 77,
 					"max": 78,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -587,7 +587,7 @@
 					"min": 79,
 					"max": 79,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -599,7 +599,7 @@
 					"min": 80,
 					"max": 80,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -611,7 +611,7 @@
 					"min": 81,
 					"max": 84,
 					"artobjects": {
-						"type": "25",
+						"type": 25,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -623,7 +623,7 @@
 					"min": 85,
 					"max": 88,
 					"gems": {
-						"type": "50",
+						"type": 50,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -635,7 +635,7 @@
 					"min": 89,
 					"max": 91,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -647,7 +647,7 @@
 					"min": 92,
 					"max": 94,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -659,7 +659,7 @@
 					"min": 95,
 					"max": 96,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -671,7 +671,7 @@
 					"min": 97,
 					"max": 98,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -683,7 +683,7 @@
 					"min": 99,
 					"max": 99,
 					"gems": {
-						"type": "100",
+						"type": 100,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -695,7 +695,7 @@
 					"min": 100,
 					"max": 100,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -724,7 +724,7 @@
 					"min": 4,
 					"max": 6,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					}
 				},
@@ -732,7 +732,7 @@
 					"min": 7,
 					"max": 9,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					}
 				},
@@ -740,7 +740,7 @@
 					"min": 10,
 					"max": 12,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					}
 				},
@@ -748,7 +748,7 @@
 					"min": 13,
 					"max": 15,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					}
 				},
@@ -756,7 +756,7 @@
 					"min": 16,
 					"max": 19,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -768,7 +768,7 @@
 					"min": 20,
 					"max": 23,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -780,7 +780,7 @@
 					"min": 24,
 					"max": 26,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -792,7 +792,7 @@
 					"min": 27,
 					"max": 29,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -804,7 +804,7 @@
 					"min": 30,
 					"max": 35,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -816,7 +816,7 @@
 					"min": 36,
 					"max": 40,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -828,7 +828,7 @@
 					"min": 41,
 					"max": 45,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -840,7 +840,7 @@
 					"min": 46,
 					"max": 50,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -852,7 +852,7 @@
 					"min": 51,
 					"max": 54,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -864,7 +864,7 @@
 					"min": 55,
 					"max": 58,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -876,7 +876,7 @@
 					"min": 59,
 					"max": 62,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -888,7 +888,7 @@
 					"min": 63,
 					"max": 66,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -900,7 +900,7 @@
 					"min": 67,
 					"max": 68,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -912,7 +912,7 @@
 					"min": 69,
 					"max": 70,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -924,7 +924,7 @@
 					"min": 71,
 					"max": 72,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -936,7 +936,7 @@
 					"min": 73,
 					"max": 74,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -948,7 +948,7 @@
 					"min": 75,
 					"max": 76,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -960,7 +960,7 @@
 					"min": 77,
 					"max": 78,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -972,7 +972,7 @@
 					"min": 79,
 					"max": 80,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -984,7 +984,7 @@
 					"min": 81,
 					"max": 82,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -996,7 +996,7 @@
 					"min": 83,
 					"max": 85,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -1008,7 +1008,7 @@
 					"min": 86,
 					"max": 88,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -1020,7 +1020,7 @@
 					"min": 89,
 					"max": 90,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1032,7 +1032,7 @@
 					"min": 91,
 					"max": 92,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1044,7 +1044,7 @@
 					"min": 93,
 					"max": 94,
 					"artobjects": {
-						"type": "250",
+						"type": 250,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -1056,7 +1056,7 @@
 					"min": 95,
 					"max": 96,
 					"artobjects": {
-						"type": "750",
+						"type": 750,
 						"amount": "2d4"
 					},
 					"magicitems": {
@@ -1068,7 +1068,7 @@
 					"min": 97,
 					"max": 98,
 					"gems": {
-						"type": "500",
+						"type": 500,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1080,7 +1080,7 @@
 					"min": 99,
 					"max": 100,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1109,7 +1109,7 @@
 					"min": 3,
 					"max": 5,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1121,7 +1121,7 @@
 					"min": 6,
 					"max": 8,
 					"artobjects": {
-						"type": "2500",
+						"type": 2500,
 						"amount": "1d10"
 					},
 					"magicitems": {
@@ -1133,7 +1133,7 @@
 					"min": 9,
 					"max": 11,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d4"
 					},
 					"magicitems": {
@@ -1145,7 +1145,7 @@
 					"min": 12,
 					"max": 14,
 					"gems": {
-						"type": "5000",
+						"type": 5000,
 						"amount": "1d8"
 					},
 					"magicitems": {
@@ -1157,7 +1157,7 @@
 					"min": 15,
 					"max": 22,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1169,7 +1169,7 @@
 					"min": 23,
 					"max": 30,
 					"artobjects": {
-						"type": "2500",
+						"type": 2500,
 						"amount": "1d10"
 					},
 					"magicitems": {
@@ -1181,7 +1181,7 @@
 					"min": 31,
 					"max": 38,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d4"
 					},
 					"magicitems": {
@@ -1193,7 +1193,7 @@
 					"min": 39,
 					"max": 46,
 					"gems": {
-						"type": "5000",
+						"type": 5000,
 						"amount": "1d8"
 					},
 					"magicitems": {
@@ -1205,7 +1205,7 @@
 					"min": 47,
 					"max": 52,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1217,7 +1217,7 @@
 					"min": 53,
 					"max": 58,
 					"artobjects": {
-						"type": "2500",
+						"type": 2500,
 						"amount": "1d10"
 					},
 					"magicitems": {
@@ -1229,7 +1229,7 @@
 					"min": 59,
 					"max": 63,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d4"
 					},
 					"magicitems": {
@@ -1241,7 +1241,7 @@
 					"min": 64,
 					"max": 68,
 					"gems": {
-						"type": "5000",
+						"type": 5000,
 						"amount": "1d8"
 					},
 					"magicitems": {
@@ -1253,7 +1253,7 @@
 					"min": 69,
 					"max": 69,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1265,7 +1265,7 @@
 					"min": 70,
 					"max": 70,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d10"
 					},
 					"magicitems": {
@@ -1277,7 +1277,7 @@
 					"min": 71,
 					"max": 71,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d4"
 					},
 					"magicitems": {
@@ -1289,7 +1289,7 @@
 					"min": 72,
 					"max": 72,
 					"gems": {
-						"type": "5000",
+						"type": 5000,
 						"amount": "1d8"
 					},
 					"magicitems": {
@@ -1301,7 +1301,7 @@
 					"min": 73,
 					"max": 74,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1313,7 +1313,7 @@
 					"min": 75,
 					"max": 76,
 					"artobjects": {
-						"type": "2500",
+						"type": 2500,
 						"amount": "1d10"
 					},
 					"magicitems": {
@@ -1325,7 +1325,7 @@
 					"min": 77,
 					"max": 78,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d4"
 					},
 					"magicitems": {
@@ -1337,7 +1337,7 @@
 					"min": 79,
 					"max": 80,
 					"gems": {
-						"type": "5000",
+						"type": 5000,
 						"amount": "1d8"
 					},
 					"magicitems": {
@@ -1349,7 +1349,7 @@
 					"min": 81,
 					"max": 85,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1361,7 +1361,7 @@
 					"min": 86,
 					"max": 90,
 					"artobjects": {
-						"type": "2500",
+						"type": 2500,
 						"amount": "1d10"
 					},
 					"magicitems": {
@@ -1373,7 +1373,7 @@
 					"min": 91,
 					"max": 95,
 					"artobjects": {
-						"type": "7500",
+						"type": 7500,
 						"amount": "1d4"
 					},
 					"magicitems": {
@@ -1385,7 +1385,7 @@
 					"min": 96,
 					"max": 100,
 					"gems": {
-						"type": "1000",
+						"type": 1000,
 						"amount": "3d6"
 					},
 					"magicitems": {
@@ -1401,7 +1401,7 @@
 			"name": "價值 10金幣 的寶石", "ENG_name": "10 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
-			"type": "10",
+			"type": 10,
 			"table": [
 				"藍銅礦 (不透光 深藍色斑駁紋理)",
 				"條紋瑪瑙 (透光 棕、藍、白、或紅色條紋)",
@@ -1421,7 +1421,7 @@
 			"name": "價值 50金幣 的寶石", "ENG_name": "50 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
-			"type": "50",
+			"type": 50,
 			"table": [
 				"血石 (不透光 帶紅斑的深灰色)",
 				"紅玉髓 (不透光 橙色到紅棕色)",
@@ -1441,7 +1441,7 @@
 			"name": "價值 100金幣 的寶石", "ENG_name": "100 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
-			"type": "100",
+			"type": 100,
 			"table": [
 				"琥珀 (透光 水金色到貴金色)",
 				"紫晶 (透光 深紫色)",
@@ -1459,7 +1459,7 @@
 			"name": "價值 500金幣 的寶石", "ENG_name": "500 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
-			"type": "500",
+			"type": 500,
 			"table": [
 				"亞歷山大變石 (透光 深綠色)",
 				"海藍寶石 (透光 淡青綠色)",
@@ -1473,7 +1473,7 @@
 			"name": "價值 1,000金幣 的寶石", "ENG_name": "1,000 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
-			"type": "1000",
+			"type": 1000,
 			"table": [
 				"黑蛋白石 (透光 帶有黑色和金色斑紋的暗綠色)",
 				"青藍寶石 (透光 藍白色至中等藍色)",
@@ -1489,7 +1489,7 @@
 			"name": "價值 5,000金幣 的寶石", "ENG_name": "5,000 gp Gemstones",
 			"source": "DMG",
 			"page": 134,
-			"type": "5000",
+			"type": 5000,
 			"table": [
 				"黑藍寶石 (半透光 閃耀著高亮光澤的黑色)",
 				"鑽石 (透光 藍白色、鮮黃色、粉紅色、棕色、或藍色)",
@@ -1503,7 +1503,7 @@
 			"name": "25 gp Art Objects",
 			"source": "DMG",
 			"page": 134,
-			"type": "25",
+			"type": 25,
 			"table": [
 				"銀質水壺",
 				"骨製雕像",
@@ -1521,7 +1521,7 @@
 			"name": "250 gp Art Objects",
 			"source": "DMG",
 			"page": 135,
-			"type": "250",
+			"type": 250,
 			"table": [
 				"鑲有血石的黃金戒指",
 				"象牙雕像",
@@ -1539,7 +1539,7 @@
 			"name": "750 gp Art Objects",
 			"source": "DMG",
 			"page": 135,
-			"type": "750",
+			"type": 750,
 			"table": [
 				"鑲有月長石的銀質酒杯",
 				"劍柄鑲有煤玉的鋼質鍍銀長劍",
@@ -1557,7 +1557,7 @@
 			"name": "2,500 gp Art Objects",
 			"source": "DMG",
 			"page": 135,
-			"type": "2500",
+			"type": 2500,
 			"table": [
 				"鑲有火蛋白石的純金鍊條",
 				"古老的名畫",
@@ -1575,7 +1575,7 @@
 			"name": "7,500 gp Art Objects",
 			"source": "DMG",
 			"page": 135,
-			"type": "7500",
+			"type": 7500,
 			"table": [
 				"鑲有珠寶的黃金王冠",
 				"鑲有珠寶的鉑金戒指",
@@ -1670,7 +1670,7 @@
 					"max": 34,
 					"choose": {
 						"fromGeneric": [
-							"彈藥+1"
+							"+1 彈藥"
 						]
 					}
 				},
@@ -1863,7 +1863,7 @@
 					"max": 27,
 					"choose": {
 						"fromGeneric": [
-							"彈藥+2"
+							"+2 彈藥"
 						]
 					}
 				},
@@ -2033,7 +2033,7 @@
 					"max": 62,
 					"choose": {
 						"fromGeneric": [
-							"彈藥+3"
+							"+3 彈藥"
 						]
 					}
 				},
@@ -2146,14 +2146,14 @@
 					"max": 15,
 					"choose": {
 						"fromGeneric": [
-							"武器+1"
+							"+1 武器"
 						]
 					}
 				},
 				{
 					"min": 16,
 					"max": 18,
-					"item": "{@item 盾牌+1}"
+					"item": "{@item +1 盾牌}"
 				},
 				{
 					"min": 19,
@@ -2223,7 +2223,7 @@
 				{
 					"min": 46,
 					"max": 47,
-					"item": "{@item 掌契者權杖+1}"
+					"item": "{@item +1 掌契者權杖}"
 				},
 				{
 					"min": 48,
@@ -2262,7 +2262,7 @@
 				{
 					"min": 60,
 					"max": 61,
-					"item": "{@item 戰法師魔杖+1}"
+					"item": "{@item +1 戰法師魔杖}"
 				},
 				{
 					"min": 62,
@@ -2466,7 +2466,7 @@
 					"max": 11,
 					"choose": {
 						"fromGeneric": [
-							"武器+2"
+							"+2 武器"
 						]
 					}
 				},
@@ -2592,7 +2592,7 @@
 				{
 					"min": 30,
 					"max": 30,
-					"item": "{@item 鎖子甲+1}"
+					"item": "{@item +1 鎖子甲}"
 				},
 				{
 					"min": 31,
@@ -2616,7 +2616,7 @@
 				{
 					"min": 32,
 					"max": 32,
-					"item": "{@item 鏈甲衫+1}"
+					"item": "{@item +1 鏈甲衫}"
 				},
 				{
 					"min": 33,
@@ -2762,7 +2762,7 @@
 				{
 					"min": 56,
 					"max": 56,
-					"item": "{@item 皮甲+1}"
+					"item": "{@item +1 皮甲}"
 				},
 				{
 					"min": 57,
@@ -2875,7 +2875,7 @@
 				{
 					"min": 75,
 					"max": 75,
-					"item": "{@item 掌契者權杖+2}"
+					"item": "{@item +2 掌契者權杖}"
 				},
 				{
 					"min": 76,
@@ -2885,7 +2885,7 @@
 				{
 					"min": 77,
 					"max": 77,
-					"item": "{@item 鱗甲+1}"
+					"item": "{@item +1 鱗甲}"
 				},
 				{
 					"min": 78,
@@ -2909,7 +2909,7 @@
 				{
 					"min": 79,
 					"max": 79,
-					"item": "{@item 盾牌+2}"
+					"item": "{@item +2 盾牌}"
 				},
 				{
 					"min": 80,
@@ -3016,7 +3016,7 @@
 				{
 					"min": 98,
 					"max": 98,
-					"item": "{@item 戰法師魔杖+2}"
+					"item": "{@item +2 戰法師魔杖}"
 				},
 				{
 					"min": 99,
@@ -3041,7 +3041,7 @@
 					"max": 10,
 					"choose": {
 						"fromGeneric": [
-							"武器+3"
+							"+3 武器"
 						]
 					}
 				},
@@ -3107,7 +3107,7 @@
 				{
 					"min": 33,
 					"max": 34,
-					"item": "{@item 掌契者權杖+3}"
+					"item": "{@item +3 掌契者權杖}"
 				},
 				{
 					"min": 35,
@@ -3117,7 +3117,7 @@
 				{
 					"min": 37,
 					"max": 38,
-					"item": "{@item 盾牌+3}"
+					"item": "{@item +3 盾牌}"
 				},
 				{
 					"min": 39,
@@ -3161,7 +3161,7 @@
 				{
 					"min": 53,
 					"max": 54,
-					"item": "{@item 戰法師魔杖+3}"
+					"item": "{@item +3 戰法師魔杖}"
 				},
 				{
 					"min": 55,
@@ -3197,7 +3197,7 @@
 				{
 					"min": 60,
 					"max": 60,
-					"item": "{@item 護胸甲+1}"
+					"item": "{@item +1 護胸甲}"
 				},
 				{
 					"min": 61,
@@ -3226,12 +3226,12 @@
 				{
 					"min": 63,
 					"max": 63,
-					"item": "{@item 鎖子甲+2}"
+					"item": "{@item +2 鎖子甲}"
 				},
 				{
 					"min": 64,
 					"max": 64,
-					"item": "{@item 鏈甲衫+2}"
+					"item": "{@item +2 鏈甲衫}"
 				},
 				{
 					"min": 65,
@@ -3344,7 +3344,7 @@
 				{
 					"min": 84,
 					"max": 84,
-					"item": "{@item 皮甲+2}"
+					"item": "{@item +2 皮甲}"
 				},
 				{
 					"min": 85,
@@ -3388,7 +3388,7 @@
 				{
 					"min": 92,
 					"max": 92,
-					"item": "{@item 鱗甲+2}"
+					"item": "{@item +2 鱗甲}"
 				},
 				{
 					"min": 93,
@@ -3398,7 +3398,7 @@
 				{
 					"min": 94,
 					"max": 94,
-					"item": "{@item 條板甲+1}"
+					"item": "{@item +1 條板甲}"
 				},
 				{
 					"min": 95,
@@ -3422,7 +3422,7 @@
 				{
 					"min": 96,
 					"max": 96,
-					"item": "{@item 鑲釘皮甲+1}"
+					"item": "{@item +1 鑲釘皮甲}"
 				},
 				{
 					"min": 97,
@@ -3545,17 +3545,17 @@
 				{
 					"min": 44,
 					"max": 45,
-					"item": "{@item 護胸甲+2}"
+					"item": "{@item +2 護胸甲}"
 				},
 				{
 					"min": 46,
 					"max": 47,
-					"item": "{@item 鎖子甲+3}"
+					"item": "{@item +3 鎖子甲}"
 				},
 				{
 					"min": 48,
 					"max": 49,
-					"item": "{@item 鏈甲衫+3}"
+					"item": "{@item +3 鏈甲衫}"
 				},
 				{
 					"min": 50,
@@ -3577,7 +3577,7 @@
 				{
 					"min": 54,
 					"max": 55,
-					"item": "{@item 半身板甲+1}"
+					"item": "{@item +1 半身板甲}"
 				},
 				{
 					"min": 56,
@@ -3587,12 +3587,12 @@
 				{
 					"min": 58,
 					"max": 59,
-					"item": "{@item 皮甲+3}"
+					"item": "{@item +3 皮甲}"
 				},
 				{
 					"min": 60,
 					"max": 61,
-					"item": "{@item 全身板甲+1}"
+					"item": "{@item +1 全身板甲}"
 				},
 				{
 					"min": 62,
@@ -3607,7 +3607,7 @@
 				{
 					"min": 66,
 					"max": 67,
-					"item": "{@item 鱗甲+1}"
+					"item": "{@item +1 鱗甲}"
 				},
 				{
 					"min": 68,
@@ -3617,12 +3617,12 @@
 				{
 					"min": 70,
 					"max": 71,
-					"item": "{@item 條板甲+2}"
+					"item": "{@item +2 條板甲}"
 				},
 				{
 					"min": 72,
 					"max": 73,
-					"item": "{@item 鑲釘皮甲+2}"
+					"item": "{@item +2 鑲釘皮甲}"
 				},
 				{
 					"min": 74,
@@ -3637,37 +3637,37 @@
 						{
 							"min": 1,
 							"max": 2,
-							"item": "{@item 半身板甲+2}"
+							"item": "{@item +2 半身板甲}"
 						},
 						{
 							"min": 3,
 							"max": 4,
-							"item": "{@item 全身板甲+2}"
+							"item": "{@item +2 全身板甲}"
 						},
 						{
 							"min": 5,
 							"max": 6,
-							"item": "{@item 鑲釘皮甲+3}"
+							"item": "{@item +3 鑲釘皮甲}"
 						},
 						{
 							"min": 7,
 							"max": 8,
-							"item": "{@item 護胸甲+3}"
+							"item": "{@item +3 護胸甲}"
 						},
 						{
 							"min": 9,
 							"max": 10,
-							"item": "{@item 條板甲+3}"
+							"item": "{@item +3 條板甲}"
 						},
 						{
 							"min": 11,
 							"max": 11,
-							"item": "{@item 半身板甲+3}"
+							"item": "{@item +3 半身板甲}"
 						},
 						{
 							"min": 12,
 							"max": 12,
-							"item": "{@item 全身板甲+3}"
+							"item": "{@item +3 全身板甲}"
 						}
 					]
 				},

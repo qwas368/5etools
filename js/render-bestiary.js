@@ -2,7 +2,9 @@ class RenderBestiary {
 	static _getRenderedSection (sectionTrClass, sectionEntries, sectionLevel) {
 		const renderer = Renderer.get();
 		const renderStack = [];
-		if (sectionTrClass === "legendary") {
+		if (sectionTrClass === "lairaction" || sectionTrClass === "regionaleffect") {
+			renderer.recursiveRender({entries: sectionEntries}, renderStack, {depth: sectionLevel + 2});
+		} else if (sectionTrClass === "legendary" || sectionTrClass === "mythic") {
 			const cpy = MiscUtil.copy(sectionEntries).map(it => {
 				if (it.name && it.entries) {
 					it.name = `${it.name}.`;
@@ -18,46 +20,31 @@ class RenderBestiary {
 				else renderer.recursiveRender(e, renderStack, {depth: sectionLevel + 1});
 			});
 		}
-		return `<tr class='${sectionTrClass}'><td colspan='6' class="mon__sect-row-inner">${renderStack.join("")}</td></tr>`;
+		return `<tr class="${sectionTrClass}"><td colspan="6" class="mon__sect-row-inner">${renderStack.join("")}</td></tr>`;
 	}
 
 	static _getPronunciationButton (mon) {
-		const basename = mon.soundClip.substr(mon.soundClip.lastIndexOf("/") + 1);
-
-		return `<button class="btn btn-xs btn-default btn-name-pronounce">
+		return `<button class="btn btn-xs btn-default btn-name-pronounce ml-2">
 			<span class="glyphicon glyphicon-volume-up name-pronounce-icon"></span>
 			<audio class="name-pronounce">
-			   <source src="${mon.soundClip}" type="audio/mpeg">
-			   <source src="audio/bestiary/${basename}" type="audio/mpeg">
+			   <source src="${Renderer.utils.getMediaUrl(mon, "soundClip", "audio")}" type="audio/mpeg">
 			</audio>
 		</button>`;
 	}
 
-	static updateParsed (mon) {
-		delete mon._pTypes;
-		delete mon._pCr;
-		RenderBestiary.initParsed(mon);
-	}
-
-	static initParsed (mon) {
-		mon._pTypes = mon._pTypes || Parser.monTypeToFullObj(mon.type); // store the parsed type
-		mon._pCr = mon._pCr || (mon.cr === undefined || mon.cr === "Unknown" ? "不明" : (mon.cr.cr || mon.cr));
-	}
-
 	/**
 	 * @param {Object} mon Creature data.
-	 * @param {Object} meta Legendary metadata.
 	 * @param {Object} options
 	 * @param {jQuery} options.$btnScaleCr CR scaler button.
 	 * @param {jQuery} options.$btnResetScaleCr CR scaler reset button.
 	 */
-	static $getRenderedCreature (mon, meta, options) {
+	static $getRenderedCreature (mon, options) {
 		options = options || {};
 		const renderer = Renderer.get();
-		RenderBestiary.initParsed(mon);
+		Renderer.monster.initParsed(mon);
 
-		const trait = Renderer.monster.getOrderedTraits(mon, renderer);
-		const legGroup = mon.legendaryGroup ? (meta[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name] : null;
+		const allTraits = Renderer.monster.getOrderedTraits(mon, renderer);
+		const legGroup = DataUtil.monster.getMetaGroup(mon);
 
 		const renderedVariants = (() => {
 			const dragonVariant = Renderer.monster.getDragonCasterVariant(renderer, mon);
@@ -71,99 +58,116 @@ class RenderBestiary {
 			}
 		})();
 
-		const renderedSources = (() => {
+		const htmlSourceAndEnvironment = (() => {
 			const srcCpy = {
 				source: mon.source,
-				sourceSub: mon.sourceSub,
 				page: mon.page,
+				srd: mon.srd,
+				sourceSub: mon.sourceSub,
 				otherSources: mon.otherSources,
 				additionalSources: mon.additionalSources,
-				externalSources: mon.externalSources
+				externalSources: mon.externalSources,
 			};
-			const additional = mon.additionalSources ? JSON.parse(JSON.stringify(mon.additionalSources)) : [];
+			const additional = mon.additionalSources ? MiscUtil.copy(mon.additionalSources) : [];
 			if (mon.variant && mon.variant.length > 1) {
 				mon.variant.forEach(v => {
 					if (v.variantSource) {
 						additional.push({
 							source: v.variantSource.source,
-							page: v.variantSource.page
+							page: v.variantSource.page,
 						})
 					}
 				})
 			}
 			srcCpy.additionalSources = additional;
 
-			const pageTrInner = Renderer.utils._getPageTrText(srcCpy);
+			const pageTrInner = Renderer.utils.getSourceAndPageTrHtml(srcCpy);
 			if (mon.environment && mon.environment.length) {
-				return [pageTrInner, `<i>環境： ${mon.environment.sort(SortUtil.ascSortLower).map(it => Parser.EnvironmentToDisplay(it)).join(", ")}</i>`];
+				return [pageTrInner, `<div class="mb-1 mt-2"><b>環境：</b> ${mon.environment.sort(SortUtil.ascSortLower).map(it => it.toTitleCase()).join(", ")}</div>`];
 			} else {
 				return [pageTrInner];
 			}
 		})();
 
+		const hasToken = (mon.tokenUrl && mon.uniqueId) || mon.hasToken;
+		const extraThClasses = hasToken ? ["mon__name--token"] : null;
+
 		return $$`
 		${Renderer.utils.getBorderTr()}
-		<tr><th class="name mon__name--token" colspan="6">
-			<span><b class="stats-name copyable" onclick="Renderer.utils._pHandleNameClick(this, '${mon.source.escapeQuotes()}')">${mon._displayName || mon.name}</b>${mon.ENG_name ? (" <st style='font-size:80%;'>"+mon.ENG_name+"<st>") : ""}</span>
-			${mon.soundClip ? RenderBestiary._getPronunciationButton(mon) : ""}
-			<span class="stats-source ${Parser.sourceJsonToColor(mon.source)}" title="${Parser.sourceJsonToFull(mon.source)}${Renderer.utils.getSourceSubText(mon)}">${Parser.sourceJsonToAbv(mon.source)}</span>
-		</th></tr>
+		${Renderer.utils.getExcludedTr(mon, "monster", UrlUtil.PG_BESTIARY)}
+		${Renderer.utils.getNameTr(mon, {controlRhs: mon.soundClip ? RenderBestiary._getPronunciationButton(mon) : "", extraThClasses, page: UrlUtil.PG_BESTIARY, extensionData: mon._isScaledCr})}
 		<tr><td colspan="6">
-			<div class="mon__wrp-size-type-align"><i>${Parser.sizeAbvToFull(mon.size)} ${mon._pTypes.asText}, ${Parser.alignmentListToFull(mon.alignment).toLowerCase()}</i></div>
+			<div ${hasToken ? `class="mon__wrp-size-type-align--token"` : ""}><i>${Renderer.monster.getTypeAlignmentPart(mon)}</i></div>
 		</td></tr>
 		<tr><td class="divider" colspan="6"><div></div></td></tr>
-		
-		<tr><td colspan="6"><strong>護甲等級：</strong> ${Parser.acToFull(mon.ac)}</td></tr>
-		<tr><td colspan="6"><div class="mon__wrp-hp"><strong>生命值：</strong> ${Renderer.monster.getRenderedHp(mon.hp)}</div></td></tr>
+
+		<tr><td colspan="6"><div ${hasToken ? `class="mon__wrp-avoid-token"` : ""}><strong>護甲等級：</strong> ${Parser.acToFull(mon.ac)}</div></td></tr>
+		<tr><td colspan="6"><div ${hasToken ? `class="mon__wrp-avoid-token"` : ""}><strong>生命值：</strong> ${Renderer.monster.getRenderedHp(mon.hp)}</div></td></tr>
 		<tr><td colspan="6"><strong>速度：</strong> ${Parser.getSpeedString(mon)}</td></tr>
 		<tr><td class="divider" colspan="6"><div></div></td></tr>
-		
+
 		<tr class="mon__ability-names">
 			<th>力量</th><th>敏捷</th><th>體質</th><th>智力</th><th>睿知</th><th>魅力</th>
 		</tr>
 		<tr class="mon__ability-scores">
-			<td>${Renderer.get().render(`{@d20 ${Parser.getAbilityModifier(mon.str)}|${mon.str} (${Parser.getAbilityModifier(mon.str)})|力量}`)}</td>
-			<td>${Renderer.get().render(`{@d20 ${Parser.getAbilityModifier(mon.dex)}|${mon.dex} (${Parser.getAbilityModifier(mon.dex)})|敏捷}`)}</td>
-			<td>${Renderer.get().render(`{@d20 ${Parser.getAbilityModifier(mon.con)}|${mon.con} (${Parser.getAbilityModifier(mon.con)})|體質}`)}</td>
-			<td>${Renderer.get().render(`{@d20 ${Parser.getAbilityModifier(mon.int)}|${mon.int} (${Parser.getAbilityModifier(mon.int)})|智力}`)}</td>
-			<td>${Renderer.get().render(`{@d20 ${Parser.getAbilityModifier(mon.wis)}|${mon.wis} (${Parser.getAbilityModifier(mon.wis)})|睿知}`)}</td>
-			<td>${Renderer.get().render(`{@d20 ${Parser.getAbilityModifier(mon.cha)}|${mon.cha} (${Parser.getAbilityModifier(mon.cha)})|魅力}`)}</td>
+			${Parser.ABIL_ABVS.map(ab => `<td>${Renderer.utils.getAbilityRoller(mon, ab)}</td>`).join("")}
 		</tr>
 		<tr><td class="divider" colspan="6"><div></div></td></tr>
-		
-		${mon.save ? `<tr><td colspan="6"><strong>豁免：</strong> ${Object.keys(mon.save).map(it => Renderer.monster.getSave(renderer, it, mon.save[it])).join(", ")}</td></tr>` : ""}
+
+		${mon.save ? `<tr><td colspan="6"><strong>豁免：</strong> ${Renderer.monster.getSavesPart(mon)}</td></tr>` : ""}
 		${mon.skill ? `<tr><td colspan="6"><strong>技能：</strong> ${Renderer.monster.getSkillsString(renderer, mon)}</td></tr>` : ""}
-		${mon.vulnerable ? `<tr><td colspan="6"><strong>傷害易傷：</strong> ${Parser.monImmResToFull(mon.vulnerable)}</td></tr>` : ""}
-		${mon.resist ? `<tr><td colspan="6"><strong>傷害抗性：</strong> ${Parser.monImmResToFull(mon.resist)}</td></tr>` : ""}
-		${mon.immune ? `<tr><td colspan="6"><strong>傷害免疫：</strong> ${Parser.monImmResToFull(mon.immune)}</td></tr>` : ""}
-		${mon.conditionImmune ? `<tr><td colspan="6"><strong>狀態免疫：</strong> ${Parser.monCondImmToFull(mon.conditionImmune)}</td></tr>` : ""}
-		<tr><td colspan="6"><strong>感官：</strong> ${mon.senses ? `${Renderer.monster.getRenderedSenses(mon.senses)},` : ""} 被動感知 ${mon.passive || "\u2014"}</td></tr>
-		<tr><td colspan="6"><strong>語言：</strong> ${mon.languages || "\u2014"}</td></tr>
-		
-		<tr><td colspan="6" style="position: relative;"><strong>挑戰等級：</strong>
-			<span>${Parser.monCrToFull(mon.cr)}</span>
+		${mon.vulnerable ? `<tr><td colspan="6"><strong>傷害易傷：</strong> ${Parser.getFullImmRes(mon.vulnerable)}</td></tr>` : ""}
+		${mon.resist ? `<tr><td colspan="6"><strong>傷害抗性：</strong> ${Parser.getFullImmRes(mon.resist)}</td></tr>` : ""}
+		${mon.immune ? `<tr><td colspan="6"><strong傷害免疫：</strong> ${Parser.getFullImmRes(mon.immune)}</td></tr>` : ""}
+		${mon.conditionImmune ? `<tr><td colspan="6"><strong>狀態免疫：</strong> ${Parser.getFullCondImm(mon.conditionImmune)}</td></tr>` : ""}
+		<tr><td colspan="6"><strong>感官：</strong> ${Renderer.monster.getSensesPart(mon)}</td></tr>
+		<tr><td colspan="6"><strong>語言：</strong> ${Renderer.monster.getRenderedLanguages(mon.languages)}</td></tr>
+
+		<tr>${Parser.crToNumber(mon.cr) < VeCt.CR_UNKNOWN ? $$`
+		<td colspan="6" style="position: relative;"><strong>挑戰等級：</strong>
+			<span>${Parser.monCrToFull(mon.cr, {isMythic: !!mon.mythic})}</span>
 			${options.$btnScaleCr || ""}
 			${options.$btnResetScaleCr || ""}
-		</td></tr>
-		
-		${trait ? `<tr><td class="divider" colspan="6"><div></div></td></tr>${RenderBestiary._getRenderedSection("trait", trait, 1)}` : ""}
-		${mon.action ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">動作</span></td></tr>
+		</td>
+		` : ""}</tr>
+
+		${mon.pbNote ? `<tr><td colspan="6"><strong>Proficiency Bonus (PB)</strong> ${mon.pbNote}</td></tr>` : ""}
+
+		${allTraits ? `<tr><td class="divider" colspan="6"><div></div></td></tr>${RenderBestiary._getRenderedSection("trait", allTraits, 1)}` : ""}
+		${mon.action ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">Actions${mon.actionNote ? ` (<span class="small">${mon.actionNote}</span>)` : ""}</span></td></tr>
 		${RenderBestiary._getRenderedSection("action", mon.action, 1)}` : ""}
+		${mon.bonus ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">動作</span></td></tr>
+		${RenderBestiary._getRenderedSection("bonus", mon.bonus, 1)}` : ""}
 		${mon.reaction ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">反應</span></td></tr>
 		${RenderBestiary._getRenderedSection("reaction", mon.reaction, 1)}` : ""}
 		${mon.legendary ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">傳奇動作</span></td></tr>
-		<tr class='legendary'><td colspan='6'><span class='name'></span> <span>${Renderer.monster.getLegendaryActionIntro(mon)}</span></td></tr>
+		<tr class="legendary"><td colspan="6"><span class="name"></span> <span>${Renderer.monster.getLegendaryActionIntro(mon)}</span></td></tr>
 		${RenderBestiary._getRenderedSection("legendary", mon.legendary, 1)}` : ""}
-		
-		${legGroup && legGroup.lairActions ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">巢穴動作</span></td></tr>
+		${mon.mythic ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">Mythic Actions</span></td></tr>
+		<tr class="mythic"><td colspan="6"><span class="name"></span> <span>${Renderer.monster.getMythicActionIntro(mon)}</span></td></tr>
+		${RenderBestiary._getRenderedSection("mythic", mon.mythic, 1)}` : ""}
+
+		${legGroup && legGroup.lairActions ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">Lair Actions</span></td></tr>
 		${RenderBestiary._getRenderedSection("lairaction", legGroup.lairActions, -1)}` : ""}
 		${legGroup && legGroup.regionalEffects ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">區域效應</span></td></tr>
 		${RenderBestiary._getRenderedSection("regionaleffect", legGroup.regionalEffects, -1)}` : ""}
-		
+
 		${renderedVariants ? `<tr>${renderedVariants}</tr>` : ""}
-		${renderedSources.length === 2
-		? `<tr><td colspan="4">${renderedSources[0]}</td><td colspan="2" class="text-align-right mr-2">${renderedSources[1]}</td></tr>`
-		: `<tr><td colspan="6">${renderedSources[0]}</td></tr>`}
+		${mon.footer ? `<tr><td colspan=6 class="mon__sect-row-inner">${renderer.render({entries: mon.footer})}</td></tr>` : ""}
+		${htmlSourceAndEnvironment.length === 2 ? `<tr><td colspan="6">${htmlSourceAndEnvironment[1]}</td></tr>` : ""}
+		<tr><td colspan="6">${htmlSourceAndEnvironment[0]}</td></tr>
+		${Renderer.utils.getBorderTr()}`;
+	}
+
+	static $getRenderedLegendaryGroup (legGroup) {
+		return $$`
+		${Renderer.utils.getBorderTr()}
+		${Renderer.utils.getNameTr(legGroup)}
+		<tr class="text"><td colspan="6" class="text">
+			${legGroup.lairActions && legGroup.lairActions.length ? Renderer.get().render({type: "entries", entries: [{type: "entries", name: "Lair Actions", entries: legGroup.lairActions}]}) : ""}
+			${legGroup.regionalEffects && legGroup.regionalEffects.length ? Renderer.get().render({type: "entries", entries: [{type: "entries", name: "Regional Effects", entries: legGroup.regionalEffects}]}) : ""}
+			${legGroup.mythicEncounter && legGroup.mythicEncounter.length ? Renderer.get().render({type: "entries", entries: [{type: "entries", name: `<i title="This will display the creature's name when this legendary group is referenced from a creature statblock." class="help--subtle">&lt;Creature Name&gt;</i> as a Mythic Encounter`, entries: legGroup.mythicEncounter}]}) : ""}
+		</td></tr>
 		${Renderer.utils.getBorderTr()}`;
 	}
 }

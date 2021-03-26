@@ -14,4 +14,4 @@ async function main () {
 	fs.writeFileSync(path.join("../search/", "index-alt-spell.json"), JSON.stringify(indexAltSpells), "utf8");
 }
 
-return main();
+module.exports = main();

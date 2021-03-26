@@ -2,288 +2,234 @@
 // Strict mode should not be used, as the roll20 script depends on this file //
 // Do not use classes                                                        //
 // ************************************************************************* //
+IS_NODE = typeof module !== "undefined";
+if (IS_NODE) require("./parser.js");
 
-// in deployment, `_IS_DEPLOYED = "<version number>";` should be prepended here
-IS_DEPLOYED = typeof _IS_DEPLOYED !== "undefined" && _IS_DEPLOYED;
-VERSION_NUMBER = IS_DEPLOYED ? _IS_DEPLOYED : "-1";
+// in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
+IS_DEPLOYED = undefined;
+VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.122.8"/* 5ETOOLS_VERSION__CLOSE */;
 DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 // for the roll20 script to set
-IS_ROLL20 = false;
+IS_VTT = false;
 
 IMGUR_CLIENT_ID = `abdea4de492d3b0`;
 
+// TODO refactor into VeCt
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
 HASH_SUB_LIST_SEP = "~";
 HASH_SUB_KV_SEP = ":";
-HASH_START = "#";
-HASH_SUBCLASS = "sub:";
 HASH_BLANK = "blankhash";
 HASH_SUB_NONE = "null";
 
-STR_EMPTY = "";
-STR_VOID_LINK = "javascript:void(0)";
-STR_SLUG_DASH = "-";
-STR_APOSTROPHE = "\u2019";
+VeCt = {
+	STR_NONE: "無",
+	STR_SEE_CONSOLE: "See the console (CTRL+SHIFT+J) for details.",
 
-HTML_NO_INFO = "<i>沒有可用的資訊。</i>";
-HTML_NO_IMAGES = "<i>沒有可用的圖片。</i>";
+	HASH_SCALED: "scaled",
 
-ID_SEARCH_BAR = "filter-search-input-group";
-ID_RESET_BUTTON = "reset";
+	FILTER_BOX_SUB_HASH_SEARCH_PREFIX: "fbsr",
 
-ELE_SPAN = "span";
-ELE_UL = "ul";
-ELE_LI = "li";
-ELE_A = "a";
-ELE_P = "p";
-ELE_DIV = "div";
-ELE_BUTTON = "button";
-ELE_INPUT = "input";
+	JSON_HOMEBREW_INDEX: `homebrew/index.json`,
 
-EVNT_MOUSEOVER = "mouseover";
-EVNT_MOUSEOUT = "mouseout";
-EVNT_MOUSELEAVE = "mouseleave";
-EVNT_MOUSEENTER = "mouseenter";
+	STORAGE_HOMEBREW: "HOMEBREW_STORAGE",
+	STORAGE_HOMEBREW_META: "HOMEBREW_META_STORAGE",
+	STORAGE_EXCLUDES: "EXCLUDES_STORAGE",
+	STORAGE_DMSCREEN: "DMSCREEN_STORAGE",
+	STORAGE_DMSCREEN_TEMP_SUBLIST: "DMSCREEN_TEMP_SUBLIST",
+	STORAGE_ROLLER_MACRO: "ROLLER_MACRO_STORAGE",
+	STORAGE_ENCOUNTER: "ENCOUNTER_STORAGE",
+	STORAGE_POINTBUY: "POINTBUY_STORAGE",
 
-ATB_ID = "id";
-ATB_CLASS = "class";
-ATB_TITLE = "title";
-ATB_VALUE = "value";
-ATB_HREF = "href";
-ATB_STYLE = "style";
-ATB_CHECKED = "checked";
-ATB_TYPE = "type";
-ATB_ONCLICK = "onclick";
+	DUR_INLINE_NOTIFY: 500,
 
-STL_DISPLAY_INITIAL = "display: initial";
-STL_DISPLAY_NONE = "display: none";
+	PG_NONE: "NO_PAGE",
 
-FLTR_ID = "filterId";
+	SYM_UI_SKIP: Symbol("uiSkip"),
 
-CLSS_NON_STANDARD_SOURCE = "spicy-sauce";
-CLSS_HOMEBREW_SOURCE = "refreshing-brew";
-CLSS_SUBCLASS_FEATURE = "subclass-feature";
-CLSS_HASH_FEATURE_KEY = "f";
-CLSS_HASH_FEATURE = `${CLSS_HASH_FEATURE_KEY}:`;
+	LOC_ORIGIN_CANCER: "https://5e.tools",
 
-MON_HASH_SCALED = "scaled";
+	STR_NO_ATTUNEMENT: "No Attunement Required",
 
-ATB_DATA_LIST_SEP = "||";
-ATB_DATA_PART_SEP = "::";
-ATB_DATA_SC = "data-subclass";
-ATB_DATA_SRC = "data-source";
-
-STR_CANTRIP = "戲法";
-STR_NONE = "無";
-STR_ANY = "任意";
-STR_SPECIAL = "特殊";
-
-RNG_SPECIAL = "special";
-RNG_POINT = "point";
-RNG_LINE = "line";
-RNG_CUBE = "cube";
-RNG_CONE = "cone";
-RNG_RADIUS = "radius";
-RNG_SPHERE = "sphere";
-RNG_HEMISPHERE = "hemisphere";
-RNG_CYLINDER = "cylinder"; // homebrew only
-RNG_SELF = "self";
-RNG_SIGHT = "sight";
-RNG_UNLIMITED = "unlimited";
-RNG_UNLIMITED_SAME_PLANE = "plane";
-RNG_TOUCH = "touch";
-
-UNT_FEET = "feet";
-UNT_MILES = "miles";
-
-ABIL_STR = "力量";
-ABIL_DEX = "敏捷";
-ABIL_CON = "體質";
-ABIL_INT = "智力";
-ABIL_WIS = "睿知";
-ABIL_CHA = "魅力";
-ABIL_CH_ANY = "選擇任意";
-
-HOMEBREW_STORAGE = "HOMEBREW_STORAGE";
-HOMEBREW_META_STORAGE = "HOMEBREW_META_STORAGE";
-EXCLUDES_STORAGE = "EXCLUDES_STORAGE";
-DMSCREEN_STORAGE = "DMSCREEN_STORAGE";
-ROLLER_MACRO_STORAGE = "ROLLER_MACRO_STORAGE";
-ENCOUNTER_STORAGE = "ENCOUNTER_STORAGE";
-POINTBUY_STORAGE = "POINTBUY_STORAGE";
-
-JSON_HOMEBREW_INDEX = `homebrew/index.json`;
+	CR_UNKNOWN: 100,
+	CR_CUSTOM: 99,
+};
 
 // STRING ==============================================================================================================
-String.prototype.uppercaseFirst = String.prototype.uppercaseFirst ||
-	function () {
-		const str = this.toString();
-		if (str.length === 0) return str;
-		if (str.length === 1) return str.charAt(0).toUpperCase();
-		return str.charAt(0).toUpperCase() + str.slice(1);
-	};
+String.prototype.uppercaseFirst = String.prototype.uppercaseFirst || function () {
+	const str = this.toString();
+	if (str.length === 0) return str;
+	if (str.length === 1) return str.charAt(0).toUpperCase();
+	return str.charAt(0).toUpperCase() + str.slice(1);
+};
 
-String.prototype.lowercaseFirst = String.prototype.lowercaseFirst ||
-	function () {
-		const str = this.toString();
-		if (str.length === 0) return str;
-		if (str.length === 1) return str.charAt(0).toLowerCase();
-		return str.charAt(0).toLowerCase() + str.slice(1);
-	};
+String.prototype.lowercaseFirst = String.prototype.lowercaseFirst || function () {
+	const str = this.toString();
+	if (str.length === 0) return str;
+	if (str.length === 1) return str.charAt(0).toLowerCase();
+	return str.charAt(0).toLowerCase() + str.slice(1);
+};
 
-String.prototype.toTitleCase = String.prototype.toTitleCase ||
-	function () {
-		let str;
-		str = this.replace(/([^\W_]+[^\s-/]*) */g, function (txt) {
-			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-		});
+String.prototype.toTitleCase = String.prototype.toTitleCase || function () {
+	let str = this.replace(/([^\W_]+[^\s-/]*) */g, m0 => m0.charAt(0).toUpperCase() + m0.substr(1).toLowerCase());
 
-		if (!StrUtil._TITLE_LOWER_WORDS_RE) {
-			StrUtil._TITLE_LOWER_WORDS_RE = StrUtil.TITLE_LOWER_WORDS.map(it => new RegExp(`\\s${it}\\s`, 'g'));
+	// Require space surrounded, as title-case requires a full word on either side
+	StrUtil._TITLE_LOWER_WORDS_RE = StrUtil._TITLE_LOWER_WORDS_RE = StrUtil.TITLE_LOWER_WORDS.map(it => new RegExp(`\\s${it}\\s`, "gi"));
+	StrUtil._TITLE_UPPER_WORDS_RE = StrUtil._TITLE_UPPER_WORDS_RE = StrUtil.TITLE_UPPER_WORDS.map(it => new RegExp(`\\b${it}\\b`, "g"));
+
+	const len = StrUtil.TITLE_LOWER_WORDS.length;
+	for (let i = 0; i < len; i++) {
+		str = str.replace(
+			StrUtil._TITLE_LOWER_WORDS_RE[i],
+			txt => txt.toLowerCase(),
+		);
+	}
+
+	const len1 = StrUtil.TITLE_UPPER_WORDS.length;
+	for (let i = 0; i < len1; i++) {
+		str = str.replace(
+			StrUtil._TITLE_UPPER_WORDS_RE[i],
+			StrUtil.TITLE_UPPER_WORDS[i].toUpperCase(),
+		);
+	}
+
+	return str;
+};
+
+String.prototype.toSentenceCase = String.prototype.toSentenceCase || function () {
+	const out = [];
+	const re = /([^.!?]+)([.!?]\s*|$)/gi;
+	let m;
+	do {
+		m = re.exec(this);
+		if (m) {
+			out.push(m[0].toLowerCase().uppercaseFirst());
 		}
+	} while (m);
+	return out.join("");
+};
 
-		for (let i = 0; i < StrUtil.TITLE_LOWER_WORDS.length; i++) {
-			str = str.replace(
-				StrUtil._TITLE_LOWER_WORDS_RE[i],
-				(txt) => {
-					return txt.toLowerCase();
-				});
-		}
+String.prototype.toSpellCase = String.prototype.toSpellCase || function () {
+	return this.toLowerCase().replace(/(^|of )(bigby|otiluke|mordenkainen|evard|hadar|agathys|abi-dalzim|aganazzar|drawmij|leomund|maximilian|melf|nystul|otto|rary|snilloc|tasha|tenser|jim)('s|$| )/g, (...m) => `${m[1]}${m[2].toTitleCase()}${m[3]}`);
+};
 
-		if (!StrUtil._TITLE_UPPER_WORDS_RE) {
-			StrUtil._TITLE_UPPER_WORDS_RE = StrUtil.TITLE_UPPER_WORDS.map(it => new RegExp(`\\b${it}\\b`, 'g'));
-		}
+String.prototype.toCamelCase = String.prototype.toCamelCase || function () {
+	return this.split(" ").map((word, index) => {
+		if (index === 0) return word.toLowerCase();
+		return `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`;
+	}).join("");
+};
 
-		for (let i = 0; i < StrUtil.TITLE_UPPER_WORDS.length; i++) {
-			str = str.replace(
-				StrUtil._TITLE_UPPER_WORDS_RE[i],
-				StrUtil.TITLE_UPPER_WORDS[i].toUpperCase()
-			);
-		}
+String.prototype.escapeQuotes = String.prototype.escapeQuotes || function () {
+	return this.replace(/'/g, `&apos;`).replace(/"/g, `&quot;`);
+};
 
-		return str;
-	};
+String.prototype.qq = String.prototype.qq || function () {
+	return this.escapeQuotes();
+};
 
-String.prototype.toSentenceCase = String.prototype.toSentenceCase ||
-	function () {
-		const out = [];
-		const re = /([^.!?]+)([.!?]\s*|$)/gi;
-		let m;
-		do {
-			m = re.exec(this);
-			if (m) {
-				out.push(m[0].toLowerCase().uppercaseFirst());
-			}
-		} while (m);
-		return out.join("");
-	};
+String.prototype.unescapeQuotes = String.prototype.unescapeQuotes || function () {
+	return this.replace(/&apos;/g, `'`).replace(/&quot;/g, `"`);
+};
 
-String.prototype.toSpellCase = String.prototype.toSpellCase ||
-	function () {
-		return this.toLowerCase().replace(/(^|of )(bigby|otiluke|mordenkainen|evard|hadar|agatys|abi-dalzim|aganazzar|drawmij|leomund|maximilian|melf|nystul|otto|rary|snilloc|tasha|tenser)('s|$| )/g, (...m) => `${m[1]}${m[2].toTitleCase()}${m[3]}`);
-	};
+String.prototype.uq = String.prototype.uq || function () {
+	return this.unescapeQuotes();
+};
 
-String.prototype.toCamelCase = String.prototype.toCamelCase ||
-	function () {
-		return this.split(" ").map((word, index) => {
-			if (index === 0) return word.toLowerCase();
-			return `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`;
-		}).join("");
-	};
-
-String.prototype.escapeQuotes = String.prototype.escapeQuotes ||
-	function () {
-		return this.replace(/'/g, `&singlequot;`).replace(/"/g, `&quot;`);
-	};
-
-String.prototype.unescapeQuotes = String.prototype.unescapeQuotes ||
-	function () {
-		return this.replace(/&singlequot;/g, `'`).replace(/&quot;/g, `"`);
-	};
+String.prototype.encodeApos = String.prototype.encodeApos || function () {
+	return this.replace(/'/g, `%27`);
+};
 
 /**
  * Calculates the Damerau-Levenshtein distance between two strings.
  * https://gist.github.com/IceCreamYou/8396172
  */
-String.prototype.distance = String.prototype.distance ||
-	function (target) {
-		let source = this; let i; let j;
-		if (!source) return target ? target.length : 0;
-		else if (!target) return source.length;
+String.prototype.distance = String.prototype.distance || function (target) {
+	let source = this; let i; let j;
+	if (!source) return target ? target.length : 0;
+	else if (!target) return source.length;
 
-		const m = source.length; const n = target.length; const INF = m + n; const score = new Array(m + 2); const sd = {};
-		for (i = 0; i < m + 2; i++) score[i] = new Array(n + 2);
-		score[0][0] = INF;
-		for (i = 0; i <= m; i++) {
-			score[i + 1][1] = i;
-			score[i + 1][0] = INF;
-			sd[source[i]] = 0;
-		}
-		for (j = 0; j <= n; j++) {
-			score[1][j + 1] = j;
-			score[0][j + 1] = INF;
-			sd[target[j]] = 0;
-		}
+	const m = source.length; const n = target.length; const INF = m + n; const score = new Array(m + 2); const sd = {};
+	for (i = 0; i < m + 2; i++) score[i] = new Array(n + 2);
+	score[0][0] = INF;
+	for (i = 0; i <= m; i++) {
+		score[i + 1][1] = i;
+		score[i + 1][0] = INF;
+		sd[source[i]] = 0;
+	}
+	for (j = 0; j <= n; j++) {
+		score[1][j + 1] = j;
+		score[0][j + 1] = INF;
+		sd[target[j]] = 0;
+	}
 
-		for (i = 1; i <= m; i++) {
-			let DB = 0;
-			for (j = 1; j <= n; j++) {
-				const i1 = sd[target[j - 1]]; const j1 = DB;
-				if (source[i - 1] === target[j - 1]) {
-					score[i + 1][j + 1] = score[i][j];
-					DB = j;
-				} else {
-					score[i + 1][j + 1] = Math.min(score[i][j], Math.min(score[i + 1][j], score[i][j + 1])) + 1;
-				}
-				score[i + 1][j + 1] = Math.min(score[i + 1][j + 1], score[i1] ? score[i1][j1] + (i - i1 - 1) + 1 + (j - j1 - 1) : Infinity);
+	for (i = 1; i <= m; i++) {
+		let DB = 0;
+		for (j = 1; j <= n; j++) {
+			const i1 = sd[target[j - 1]]; const j1 = DB;
+			if (source[i - 1] === target[j - 1]) {
+				score[i + 1][j + 1] = score[i][j];
+				DB = j;
+			} else {
+				score[i + 1][j + 1] = Math.min(score[i][j], Math.min(score[i + 1][j], score[i][j + 1])) + 1;
 			}
-			sd[source[i - 1]] = i;
+			score[i + 1][j + 1] = Math.min(score[i + 1][j + 1], score[i1] ? score[i1][j1] + (i - i1 - 1) + 1 + (j - j1 - 1) : Infinity);
 		}
-		return score[m + 1][n + 1];
-	};
+		sd[source[i - 1]] = i;
+	}
+	return score[m + 1][n + 1];
+};
 
-String.prototype.isNumeric = String.prototype.isNumeric ||
-	function () {
-		return !isNaN(parseFloat(this)) && isFinite(this);
-	};
+String.prototype.isNumeric = String.prototype.isNumeric || function () {
+	return !isNaN(parseFloat(this)) && isFinite(this);
+};
 
-String.prototype.last = String.prototype.last ||
-	function () {
-		return this[this.length - 1];
-	};
+String.prototype.last = String.prototype.last || function () {
+	return this[this.length - 1];
+};
 
-Array.prototype.joinConjunct = Array.prototype.joinConjunct ||
-	function (joiner, lastJoiner, nonOxford) {
-		if (this.length === 0) return "";
-		if (this.length === 1) return this[0];
-		if (this.length === 2) return this.join(lastJoiner);
-		else {
-			let outStr = "";
-			for (let i = 0; i < this.length; ++i) {
-				outStr += this[i];
-				if (i < this.length - 2) outStr += joiner;
-				else if (i === this.length - 2) outStr += `${(!nonOxford && this.length > 2 ? joiner.trim() : "")}${lastJoiner}`;
-			}
-			return outStr;
+String.prototype.escapeRegexp = String.prototype.escapeRegexp || function () {
+	return this.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&");
+};
+
+String.prototype.toUrlified = String.prototype.toUrlified || function () {
+	return encodeURIComponent(this.toLowerCase()).toLowerCase();
+};
+
+String.prototype.toChunks = String.prototype.toChunks || function (size) {
+	// https://stackoverflow.com/a/29202760/5987433
+	const numChunks = Math.ceil(this.length / size)
+	const chunks = new Array(numChunks)
+	for (let i = 0, o = 0; i < numChunks; ++i, o += size) chunks[i] = this.substr(o, size);
+	return chunks
+};
+
+Array.prototype.joinConjunct = Array.prototype.joinConjunct || function (joiner, lastJoiner, nonOxford) {
+	if (this.length === 0) return "";
+	if (this.length === 1) return this[0];
+	if (this.length === 2) return this.join(lastJoiner);
+	else {
+		let outStr = "";
+		for (let i = 0; i < this.length; ++i) {
+			outStr += this[i];
+			if (i < this.length - 2) outStr += joiner;
+			else if (i === this.length - 2) outStr += `${(!nonOxford && this.length > 2 ? joiner.trim() : "")}${lastJoiner}`;
 		}
-	};
-
-Array.prototype.peek = Array.prototype.peek ||
-	function () {
-		return this.slice(-1)[0];
-	};
+		return outStr;
+	}
+};
 
 StrUtil = {
 	COMMAS_NOT_IN_PARENTHESES_REGEX: /,\s?(?![^(]*\))/g,
+	COMMA_SPACE_NOT_IN_PARENTHESES_REGEX: /, (?![^(]*\))/g,
 
 	uppercaseFirst: function (string) {
 		return string.uppercaseFirst();
 	},
 	// Certain minor words should be left lowercase unless they are the first or last words in the string
-	TITLE_LOWER_WORDS: ["A", "An", "The", "And", "But", "Or", "For", "Nor", "As", "At", "By", "For", "From", "In", "Into", "Near", "Of", "On", "Onto", "To", "With"],
+	TITLE_LOWER_WORDS: ["a", "an", "the", "and", "but", "or", "for", "nor", "as", "at", "by", "for", "from", "in", "into", "near", "of", "on", "onto", "to", "with", "over"],
 	// Certain words such as initialisms or acronyms should be left uppercase
-	TITLE_UPPER_WORDS: ["Id", "Tv"],
+	TITLE_UPPER_WORDS: ["Id", "Tv", "Dm", "Ok"],
 
 	padNumber: (n, len, padder) => {
 		return String(n).padStart(len, padder);
@@ -307,2177 +253,389 @@ StrUtil = {
 
 	toTitleCase (str) {
 		return str.toTitleCase();
-	}
+	},
 };
 
-RegExp.escape = function (string) {
-	return string.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
-};
-
-// TEXT COMBINING ======================================================================================================
-class AbilityData {
-	constructor (asText, asTextShort, asCollection, areNegative) {
-		this.asText = asText;
-		this.asTextShort = asTextShort;
-		this.asCollection = asCollection;
-		this.areNegative = areNegative;
-	}
-}
-
-function utils_getAbilityData (abObj) {
-	const ABILITIES = Parser.ABIL_ABVS.map(it => it.uppercaseFirst());
-	const mainAbs = [];
-	const asCollection = [];
-	const areNegative = [];
-	const toConvertToText = [];
-	const toConvertToShortText = [];
-	if (abObj !== undefined) {
-		handleAllAbilities(abObj);
-		handleAbilitiesChoose();
-		return new AbilityData(toConvertToText.join("; "), toConvertToShortText.join("; "), asCollection, areNegative);
-	}
-	return new AbilityData("", "", [], []);
-
-	function handleAllAbilities (abilityList, targetList) {
-		for (let a = 0; a < ABILITIES.length; ++a) {
-			handleAbility(abilityList, ABILITIES[a], targetList);
-		}
-	}
-
-	function handleAbility (parent, ab, optToConvertToTextStorage) {
-		if (parent[ab.toLowerCase()] !== undefined) {
-			const isNegMod = parent[ab.toLowerCase()] < 0;
-			const toAdd = `${Parser.AtrAbvToDisplay(ab)}${(isNegMod ? "" : "+")}${parent[ab.toLowerCase()]}`;
-			
-			if (optToConvertToTextStorage) {
-				optToConvertToTextStorage.push(toAdd);
-			} else {
-				toConvertToText.push(toAdd);
-				toConvertToShortText.push(toAdd);
-			}
-
-			mainAbs.push(ab);
-			asCollection.push(ab.toLowerCase());
-			if (isNegMod) areNegative.push(ab.toLowerCase());
-		}
-	}
-
-	function handleAbilitiesChoose () {
-		if (abObj.choose !== undefined) {
-			for (let i = 0; i < abObj.choose.length; ++i) {
-				const item = abObj.choose[i];
-				let outStack = "";
-				if (item.predefined !== undefined) {
-					for (let j = 0; j < item.predefined.length; ++j) {
-						const subAbs = [];
-						handleAllAbilities(item.predefined[j], subAbs);
-						outStack += subAbs.join(", ") + (j === item.predefined.length - 1 ? "" : " 或 ");
-					}
-				} else if (item.weighted) {
-					const w = item.weighted;
-					const areIncreaseShort = [];
-					const areIncrease = w.weights.filter(it => it >= 0).sort(SortUtil.ascSort).reverse().map(it => {
-						areIncreaseShort.push(`+${it}`);
-						return `one ability to increase by ${it}`;
-					});
-					const areReduceShort = [];
-					const areReduce = w.weights.filter(it => it < 0).map(it => -it).sort(SortUtil.ascSort).map(it => {
-						areReduceShort.push(`-${it}`);
-						return `one ability to decrease by ${it}`;
-					});
-					const froms = w.from.map(it => it.uppercaseFirst());
-					toConvertToText.push(`From ${froms.joinConjunct(", ", " 和 ")} choose ${areIncrease.concat(areReduce).joinConjunct(", ", " 和 ")}`);
-					toConvertToShortText.push(`${areIncreaseShort.concat(areReduceShort).join("/")} from ${froms.join("/")}`);
-					continue;
-				} else {
-					const allAbilities = item.from.length === 6;
-					const allAbilitiesWithParent = isAllAbilitiesWithParent(item);
-					let amount = item.amount === undefined ? 1 : item.amount;
-					amount = (amount < 0 ? "" : "+") + amount;
-					if (allAbilities) {
-						outStack += "任意";
-					} else if (allAbilitiesWithParent) {
-						outStack += "任意其他";
-					}
-					if (item.count !== undefined && item.count > 1) {
-						outStack += Parser.numberToText(item.count) + "項";
-					}
-					if (allAbilities || allAbilitiesWithParent) {
-						outStack += amount;
-					} else {
-						for (let j = 0; j < item.from.length; ++j) {
-							let suffix = "";
-							if (item.from.length > 1) {
-								if (j === item.from.length - 2) {
-									suffix = " 或 ";
-								} else if (j < item.from.length - 2) {
-									suffix = ", ";
-								}
-							}
-							let thsAmount = "" + amount;
-							if (item.from.length > 1) {
-								if (j !== item.from.length - 1) {
-									thsAmount = "";
-								}
-							}
-							outStack += Parser.AtrAbvToDisplay(item.from[j].uppercaseFirst()) + thsAmount + suffix;
-						}
-					}
-				}
-				toConvertToText.push("選擇 " + outStack);
-				toConvertToShortText.push(outStack.uppercaseFirst());
-			}
-		}
-	}
-
-	function isAllAbilitiesWithParent (chooseAbs) {
-		const tempAbilities = [];
-		for (let i = 0; i < mainAbs.length; ++i) {
-			tempAbilities.push(mainAbs[i].toLowerCase());
-		}
-		for (let i = 0; i < chooseAbs.from.length; ++i) {
-			const ab = chooseAbs.from[i].toLowerCase();
-			if (!tempAbilities.includes(ab)) tempAbilities.push(ab);
-			if (!asCollection.includes(ab.toLowerCase)) asCollection.push(ab.toLowerCase());
-		}
-		return tempAbilities.length === 6;
-	}
-}
-
-// PARSING =============================================================================================================
-Parser = {};
-Parser._parse_aToB = function (abMap, a, fallback) {
-	if (a === undefined || a === null) throw new Error("undefined or null object passed to parser");
-	if (typeof a === "string") a = a.trim();
-	if (abMap[a] !== undefined) return abMap[a];
-	return fallback || a;
-};
-
-Parser._parse_bToA = function (abMap, b) {
-	if (b === undefined || b === null) throw new Error("undefined or null object passed to parser");
-	if (typeof b === "string") b = b.trim();
-	for (const v in abMap) {
-		if (!abMap.hasOwnProperty(v)) continue;
-		if (abMap[v] === b) return v;
-	}
-	return b;
-};
-
-Parser.attrChooseToFull = function (attList) {
-	if (attList.length === 1) return `${Parser.attAbvToFull(attList[0])}調整值`;
-	else {
-		const attsTemp = [];
-		for (let i = 0; i < attList.length; ++i) {
-			attsTemp.push(Parser.attAbvToFull(attList[i]));
-		}
-		return `${attsTemp.join(" 或 ")}調整值（由你決定）`;
-	}
-};
-
-Parser.numberToText = function (number) {
-	if (Math.abs(number) >= 100) return number;
-
-	function getAsText (num) {
-		const abs = Math.abs(num);
-		switch (abs) {
-			case 0: return "零";
-			case 1: return "一";
-			case 2: return "二";
-			case 3: return "三";
-			case 4: return "四";
-			case 5: return "五";
-			case 6: return "六";
-			case 7: return "七";
-			case 8: return "八";
-			case 9: return "九";
-			case 10: return "十";
-			case 11: return "十一";
-			case 12: return "十二";
-			case 13: return "十三";
-			case 14: return "十四";
-			case 15: return "十五";
-			case 16: return "十六";
-			case 17: return "十七";
-			case 18: return "十八";
-			case 19: return "十九";
-			case 20: return "二十";
-			case 30: return "三十";
-			case 40: return "四十";
-			case 50: return "五十"; // :^)
-			case 60: return "六十";
-			case 70: return "七十";
-			case 80: return "八十";
-			case 90: return "九十";
-			default: {
-				const str = String(abs);
-				return `${getAsText(Number(`${str[0]}0`))}-${getAsText(Number(str[1]))}`;
-			}
-		}
-	}
-	return `${number < 0 ? "negative " : ""}${getAsText(number)}`;
-};
-
-Parser.attAbvToFull = function (abv) {
-	return Parser._parse_aToB(Parser.ATB_ABV_TO_FULL, abv);
-};
-
-Parser.attFullToAbv = function (full) {
-	return Parser._parse_bToA(Parser.ATB_ABV_TO_FULL, full);
-};
-
-Parser.sizeAbvToFull = function (abv) {
-	return Parser._parse_aToB(Parser.SIZE_ABV_TO_FULL, abv);
-};
-
-Parser.getAbilityModNumber = function (abilityScore) {
-	return Math.floor((abilityScore - 10) / 2);
-};
-
-Parser.getAbilityModifier = function (abilityScore) {
-	let modifier = Parser.getAbilityModNumber(abilityScore);
-	if (modifier >= 0) modifier = "+" + modifier;
-	return modifier;
-};
-
-Parser.getSpeedString = (it) => {
-	function procSpeed (propName) {
-		function addSpeed (s) {
-			stack.push(`${propName === "walk" ? "" : `${Parser.SpeedToDisplay(propName)}`}${getVal(s)}呎${getCond(s)}`);
-		}
-
-		if (it.speed[propName] || propName === "walk") addSpeed(it.speed[propName] || 0);
-		if (it.speed.alternate && it.speed.alternate[propName]) it.speed.alternate[propName].forEach(addSpeed);
-	}
-
-	function getVal (speedProp) {
-		return speedProp.number || speedProp;
-	}
-
-	function getCond (speedProp) {
-		return speedProp.condition ? ` ${Renderer.get().render(speedProp.condition)}` : "";
-	}
-
-	const stack = [];
-	if (typeof it.speed === "object") {
-		let joiner = ", ";
-		procSpeed("walk");
-		procSpeed("burrow");
-		procSpeed("climb");
-		procSpeed("fly");
-		procSpeed("swim");
-		if (it.speed.choose) {
-			joiner = "; ";
-			stack.push(`${it.speed.choose.from.sort().joinConjunct(", ", " or ")} ${it.speed.choose.amount}呎. ${it.speed.choose.note ? ` ${it.speed.choose.note}` : ""}`);
-		}
-		return stack.join(joiner);
-	} else {
-		return it.speed + (it.speed === "Varies" ? "" : "呎. ");
-	}
-};
-
-Parser._addCommas = function (intNum) {
-	return (intNum + "").replace(/(\d)(?=(\d{3})+$)/g, "$1,");
-};
-
-Parser.crToXp = function (cr) {
-	if (cr === "Unknown" || cr === undefined) return "不明";
-	if (cr === "0") return "0 或 10";
-	if (cr === "1/8") return "25";
-	if (cr === "1/4") return "50";
-	if (cr === "1/2") return "100";
-	return Parser._addCommas(Parser.XP_CHART[parseInt(cr) - 1]);
-};
-
-Parser.crToXpNumber = function (cr) {
-	if (cr === "Unknown" || cr === undefined) return null;
-	return Parser.XP_CHART_ALT[cr];
-};
-
-LEVEL_TO_XP_EASY = [0, 25, 50, 75, 125, 250, 300, 350, 450, 550, 600, 800, 1000, 1100, 1250, 1400, 1600, 2000, 2100, 2400, 2800];
-LEVEL_TO_XP_MEDIUM = [0, 50, 100, 150, 250, 500, 600, 750, 900, 1100, 1200, 1600, 2000, 2200, 2500, 2800, 3200, 3900, 4100, 4900, 5700];
-LEVEL_TO_XP_HARD = [0, 75, 150, 225, 375, 750, 900, 1100, 1400, 1600, 1900, 2400, 3000, 3400, 3800, 4300, 4800, 5900, 6300, 7300, 8500];
-LEVEL_TO_XP_DEADLY = [0, 100, 200, 400, 500, 1100, 1400, 1700, 2100, 2400, 2800, 3600, 4500, 5100, 5700, 6400, 7200, 8800, 9500, 10900, 12700];
-LEVEL_TO_XP_DAILY = [0, 300, 600, 1200, 1700, 3500, 4000, 5000, 6000, 7500, 9000, 10500, 11500, 13500, 15000, 18000, 20000, 25000, 27000, 30000, 40000];
-
-Parser.CRS = ["0", "1/8", "1/4", "1/2", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"];
-
-Parser.levelToXpThreshold = function (level) {
-	return [LEVEL_TO_XP_EASY[level], LEVEL_TO_XP_MEDIUM[level], LEVEL_TO_XP_HARD[level], LEVEL_TO_XP_DEADLY[level]];
-};
-
-Parser.isValidCr = function (cr) {
-	return Parser.CRS.includes(cr);
-};
-
-Parser.crToNumber = function (cr) {
-	if (cr === "Unknown" || cr == null) return 100;
-	if (cr.cr) return Parser.crToNumber(cr.cr);
-	const parts = cr.trim().split("/");
-	if (parts.length === 1) return Number(parts[0]);
-	else if (parts.length === 2) return Number(parts[0]) / Number(parts[1]);
-	else return 0;
-};
-
-Parser._greatestCommonDivisor = function (a, b) {
-	if (b < Number.EPSILON) return a;
-	return Parser._greatestCommonDivisor(b, Math.floor(a % b));
-};
-Parser.numberToCr = function (number, safe) {
-	// avoid dying if already-converted number is passed in
-	if (safe && typeof number === "string" && Parser.CRS.includes(number)) return number;
-	if (isNaN(number)) return 0;
-
-	const len = number.toString().length - 2;
-	let denominator = Math.pow(10, len);
-	let numerator = number * denominator;
-	const divisor = Parser._greatestCommonDivisor(numerator, denominator);
-	numerator = Math.floor(numerator / divisor);
-	denominator = Math.floor(denominator / divisor);
-
-	return denominator === 1 ? String(numerator) : `${Math.floor(numerator)}/${Math.floor(denominator)}`;
-};
-
-Parser.crToPb = function (cr) {
-	if (cr === "Unknown" || cr == null) return 0;
-	cr = cr.cr || cr;
-	if (Parser.crToNumber(cr) < 5) return 2;
-	return Math.ceil(cr / 4) + 1;
-};
-
-Parser.SKILL_TO_ATB_ABV = {
-	"athletics": "str",
-	"acrobatics": "dex",
-	"sleight of hand": "dex",
-	"stealth": "dex",
-	"arcana": "int",
-	"history": "int",
-	"investigation": "int",
-	"nature": "int",
-	"religion": "int",
-	"animal handling": "wis",
-	"insight": "wis",
-	"medicine": "wis",
-	"perception": "wis",
-	"survival": "wis",
-	"deception": "cha",
-	"intimidation": "cha",
-	"performance": "cha",
-	"persuasion": "cha"
-};
-
-Parser.skillToAbilityAbv = function (skill) {
-	return Parser._parse_aToB(Parser.SKILL_TO_ATB_ABV, skill);
-};
-
-Parser.SKILL_TO_SHORT = {
-	"athletics": "ath",
-	"acrobatics": "acro",
-	"sleight of hand": "soh",
-	"stealth": "slth",
-	"arcana": "arc",
-	"history": "hist",
-	"investigation": "invn",
-	"nature": "natr",
-	"religion": "reli",
-	"animal handling": "hndl",
-	"insight": "ins",
-	"medicine": "med",
-	"perception": "perp",
-	"survival": "surv",
-	"deception": "decp",
-	"intimidation": "intm",
-	"performance": "perf",
-	"persuasion": "pers"
-};
-
-Parser.skillToShort = function (skill) {
-	return Parser._parse_aToB(Parser.SKILL_TO_SHORT, skill);
-};
-
-Parser.dragonColorToFull = function (c) {
-	return Parser._parse_aToB(Parser.DRAGON_COLOR_TO_FULL, c);
-};
-
-Parser.DRAGON_COLOR_TO_FULL = {
-	B: "black",
-	U: "blue",
-	G: "green",
-	R: "red",
-	W: "white",
-	A: "brass",
-	Z: "bronze",
-	C: "copper",
-	O: "gold",
-	S: "silver"
-};
-
-Parser.acToFull = function (ac) {
-	if (typeof ac === "string") return ac; // handle classic format
-
-	const renderer = Renderer.get();
-	let stack = "";
-	for (let i = 0; i < ac.length; ++i) {
-		const cur = ac[i];
-		const nxt = ac[i + 1];
-
-		if (cur.ac) {
-			if (i === 0 && cur.braces) stack += "(";
-			stack += cur.ac;
-			if (cur.from) stack += ` (${cur.from.map(it => renderer.render(it)).join(", ")})`;
-			if (cur.condition) stack += ` ${renderer.render(cur.condition)}`;
-			if (cur.braces) stack += ")";
-		} else {
-			stack += cur;
-		}
-
-		if (nxt) {
-			if (nxt.braces) stack += " (";
-			else stack += ", ";
-		}
-	}
-
-	return stack.trim();
-};
-
-MONSTER_COUNT_TO_XP_MULTIPLIER = [1, 1.5, 2, 2, 2, 2, 2.5, 2.5, 2.5, 2.5, 3, 3, 3, 3, 4];
-Parser.numMonstersToXpMult = function (num, playerCount = 3) {
-	const baseVal = (() => {
-		if (num >= MONSTER_COUNT_TO_XP_MULTIPLIER.length) return 4;
-		return MONSTER_COUNT_TO_XP_MULTIPLIER[num - 1];
-	})();
-
-	if (playerCount < 3) return baseVal >= 3 ? baseVal + 1 : baseVal + 0.5;
-	else if (playerCount > 5) {
-		return baseVal === 4 ? 3 : baseVal - 0.5;
-	} else return baseVal;
-};
-
-Parser.armorFullToAbv = function (armor) {
-	return Parser._parse_bToA(Parser.ARMOR_ABV_TO_FULL, armor);
-};
-
-Parser._getSourceStringFromSource = function (source) {
-	if (source && source.source) return source.source;
-	return source;
-};
-Parser.hasSourceFull = function (source) {
-	return !!Parser.SOURCE_JSON_TO_FULL[source];
-};
-Parser.hasSourceAbv = function (source) {
-	return !!Parser.SOURCE_JSON_TO_ABV[source];
-};
-Parser.sourceJsonToFull = function (source) {
-	source = Parser._getSourceStringFromSource(source);
-	if (Parser.hasSourceFull(source)) return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source).replace(/'/g, STR_APOSTROPHE);
-	if (BrewUtil.hasSourceJson(source)) return BrewUtil.sourceJsonToFull(source).replace(/'/g, STR_APOSTROPHE);
-	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source).replace(/'/g, STR_APOSTROPHE);
-};
-Parser.sourceJsonToFullCompactPrefix = function (source) {
-	return Parser.sourceJsonToFull(source)
-		.replace(UA_PREFIX, UA_PREFIX_SHORT)
-		.replace(AL_PREFIX, AL_PREFIX_SHORT)
-		.replace(PS_PREFIX, PS_PREFIX_SHORT);
-};
-Parser.sourceJsonToAbv = function (source) {
-	source = Parser._getSourceStringFromSource(source);
-	if (Parser.hasSourceAbv(source)) return Parser._parse_aToB(Parser.SOURCE_JSON_TO_ABV, source);
-	if (BrewUtil.hasSourceJson(source)) return BrewUtil.sourceJsonToAbv(source);
-	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_ABV, source);
-};
-
-Parser.sourceJsonToColor = function (source) {
-	return `source${Parser.sourceJsonToAbv(source)}`;
-};
-
-Parser.stringToSlug = function (str) {
-	return str.trim().toLowerCase().replace(/[^\w ]+/g, STR_EMPTY).replace(/ +/g, STR_SLUG_DASH);
-};
-
-Parser.stringToCasedSlug = function (str) {
-	return str.replace(/[^\w ]+/g, STR_EMPTY).replace(/ +/g, STR_SLUG_DASH);
-};
-
-Parser.itemTypeToAbv = function (type) {
-	return Parser._parse_aToB(Parser.ITEM_TYPE_JSON_TO_ABV, type);
-};
-
-Parser.itemWeightToFull = function (item) {
-	return item.weight ? item.weight + (Number(item.weight) === 1 ? "磅" : "磅") + (item.weightNote ? ` ${item.weightNote}` : "") : "";
-};
-
-Parser._coinValueToNumberMultipliers = {
-	"cp": 0.01,
-	"sp": 0.1,
-	"ep": 0.5,
-	"gp": 1,
-	"pp": 10
-};
-
-Parser._decimalSeparator = (0.1).toLocaleString().substring(1, 2);
-Parser._numberCleanRegexp = Parser._decimalSeparator === "." ? new RegExp(/[\s,]*/g, "g") : new RegExp(/[\s.]*/g, "g");
-Parser._costSplitRegexp = Parser._decimalSeparator === "." ? new RegExp(/(\d+(\.\d+)?)([csegp]p)/) : new RegExp(/(\d+(,\d+)?)([csegp]p)/);
-Parser.coinValueToNumber = function (value) {
-	if (!value) return 0;
-	// handle oddities
-	if (value === "x4" || value === "Varies") return 0;
-
-	// input e.g. "25gp", "1,000pp"
-	value = value.replace(Parser._numberCleanRegexp, "").toLowerCase();
-	const m = Parser._costSplitRegexp.exec(value);
-	if (!m) throw new Error(`Badly formatted value ${value}`);
-	return Number(m[1]) * Parser._coinValueToNumberMultipliers[m[3]];
-};
-
-Parser.weightValueToNumber = function (value) {
-	if (!value) return 0;
-	// handle oddities
-	if (/[x×]\s*\d+/i.test(value.trim())) return 0;
-
-	if (Number(value)) return Number(value);
-	else throw new Error(`Badly formatted value ${value}`);
-};
-
-Parser.dmgTypeToFull = function (dmgType) {
-	return Parser._parse_aToB(Parser.DMGTYPE_JSON_TO_FULL, dmgType);
-};
-
-Parser.skillToExplanation = function (skillType) {
-	const fromBrew = MiscUtil.getProperty(BrewUtil.homebrewMeta, "skills", skillType);
-	if (fromBrew) return fromBrew;
-	return Parser._parse_aToB(Parser.SKILL_JSON_TO_FULL, skillType);
-};
-
-Parser.actionToExplanation = function (actionType) {
-	const fromBrew = MiscUtil.getProperty(BrewUtil.homebrewMeta, "actions", actionType);
-	if (fromBrew) return fromBrew;
-	return Parser._parse_aToB(Parser.ACTION_JSON_TO_FULL, actionType, ["No explanation available."]);
-};
-
-Parser.senseToExplanation = function (senseType) {
-	senseType = senseType.toLowerCase();
-	const fromBrew = MiscUtil.getProperty(BrewUtil.homebrewMeta, "senses", senseType);
-	if (fromBrew) return fromBrew;
-	return Parser._parse_aToB(Parser.SENSE_JSON_TO_FULL, senseType, ["No explanation available."]);
-};
-
-Parser.numberToString = function (num) {
-	if (num === 0) return "零";
-	else return parse_hundreds(num);
-
-	function parse_hundreds (num) {
-		if (num > 99) {
-			return Parser.NUMBERS_ONES[Math.floor(num / 100)] + "百" + parse_tens(num % 100);
-		} else {
-			return parse_tens(num);
-		}
-	}
-
-	function parse_tens (num) {
-		if (num < 10) return Parser.NUMBERS_ONES[num];
-		else if (num >= 10 && num < 20) return Parser.NUMBERS_TEENS[num - 10];
-		else {
-			return Parser.NUMBERS_TENS[Math.floor(num / 10)] + "" + Parser.NUMBERS_ONES[num % 10];
-		}
-	}
-};
-
-// sp-prefix functions are for parsing spell data, and shared with the roll20 script
-Parser.spSchoolAndSubschoolsAbvsToFull = function (school, subschools) {
-	if (!subschools || !subschools.length) return Parser.spSchoolAbvToFull(school);
-	else return `${Parser.spSchoolAbvToFull(school)} (${subschools.map(sub => Parser.spSchoolAbvToFull(sub)).join(", ")})`;
-};
-
-Parser.spSchoolAbvToFull = function (schoolOrSubschool) {
-	const out = Parser._parse_aToB(Parser.SP_SCHOOL_ABV_TO_FULL, schoolOrSubschool);
-	if (Parser.SP_SCHOOL_ABV_TO_FULL[schoolOrSubschool]) return out;
-	if (BrewUtil.homebrewMeta && BrewUtil.homebrewMeta.spellSchools && BrewUtil.homebrewMeta.spellSchools[schoolOrSubschool]) return BrewUtil.homebrewMeta.spellSchools[schoolOrSubschool].full;
-	return out;
-};
-
-Parser.spSchoolAndSubschoolsAbvsShort = function (school, subschools) {
-	if (!subschools || !subschools.length) return Parser.spSchoolAbvToShort(school);
-	else return `${Parser.spSchoolAbvToShort(school)} (${subschools.map(sub => Parser.spSchoolAbvToShort(sub)).join(", ")})`;
-};
-
-Parser.spSchoolAbvToShort = function (school) {
-	const out = Parser._parse_aToB(Parser.SP_SCHOOL_ABV_TO_SHORT, school);
-	if (Parser.SP_SCHOOL_ABV_TO_SHORT[school]) return out;
-	if (BrewUtil.homebrewMeta && BrewUtil.homebrewMeta.spellSchools && BrewUtil.homebrewMeta.spellSchools[school]) return BrewUtil.homebrewMeta.spellSchools[school].short;
-	return out;
-};
-
-Parser.getOrdinalForm = function (i) {
-	const j = i % 10; const k = i % 100;
-	if (j === 1 && k !== 11) return `${i}st`;
-	if (j === 2 && k !== 12) return `${i}nd`;
-	if (j === 3 && k !== 13) return `${i}rd`;
-	return `${i}th`;
-};
-
-Parser.spLevelToFull = function (level) {
-	switch (level) {
-		case 0: return STR_CANTRIP;
-		default: return `${level}環`;
-	}
-};
-
-Parser.spellLevelToArticle = function (level) {
-	return level === 8 || level === 11 || level === 18 ? "an" : "a";
-};
-
-Parser.spLevelToFullLevelText = function (level, dash) {
-	return `${Parser.spLevelToFull(level)}`;
-};
-
-Parser.spMetaToFull = function (meta) {
-	// these tags are (so far) mutually independent, so we don't need to combine the text
-	if (meta && meta.ritual) return " (儀式)";
-	if (meta && meta.technomagic) return " (科技魔法)";
-	return "";
-};
-
-Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools) {
-	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : Parser.spLevelToFull(level);
-	let levelSchoolStr = level === 0 ? `${Parser.spSchoolAndSubschoolsAbvsToFull(school, subschools)}系 ${levelPart}` : `${levelPart} ${Parser.spSchoolAndSubschoolsAbvsToFull(school, subschools).toLowerCase()}系`;
-	return levelSchoolStr + Parser.spMetaToFull(meta);
-};
-
-Parser.spTimeListToFull = function (times) {
-	return times.map(t => `${Parser.getTimeToFull(t)}${t.condition ? `, ${Renderer.get().render(t.condition)}` : ""}`).join(" 或 ");
-};
-
-Parser.getTimeToFull = function (time) {
-	let unit = (time.unit=="action"||time.unit=="bonus"||time.unit=="reaction")? "個" : "";
-	return `${time.number}${unit}${time.unit === "bonus" ? "附贈動作" : Parser.translateKeyToDisplay(time.unit)}${time.number > 1 ? "" : ""}`;
-};
-
-Parser.spRangeToFull = function (range) {
-	switch (range.type) {
-		case RNG_SPECIAL:
-			return "特殊";
-		case RNG_POINT:
-			return renderPoint();
-		case RNG_LINE:
-		case RNG_CUBE:
-		case RNG_CONE:
-		case RNG_RADIUS:
-		case RNG_SPHERE:
-		case RNG_HEMISPHERE:
-		case RNG_CYLINDER:
-			return renderArea();
-	}
-
-	function renderPoint () {
-		const dist = range.distance;
-		switch (dist.type) {
-			case RNG_SELF:
-				return "自身";
-			case RNG_SIGHT:
-				return "視線";
-			case RNG_UNLIMITED:
-				return "無限";
-			case RNG_UNLIMITED_SAME_PLANE:
-				return "Unlimited on the same plane";
-			case RNG_TOUCH:
-				return "觸碰";
-			case UNT_FEET:
-			case UNT_MILES:
-			default:
-				return `${dist.amount}${dist.amount === 1 ? Parser.getSingletonUnit(dist.type) : Parser.getSingletonUnit(dist.type)}`;
-		}
-	}
-
-	function renderArea () {
-		const size = range.distance;
-		return `自身(${size.amount}${Parser.getSingletonUnit(size.type)}${getAreaStyleStr()}${range.type === RNG_CYLINDER ? `, ${size.amountSecondary}-${Parser.getSingletonUnit(size.typeSecondary)}-high cylinder` : ""})`;
-
-		function getAreaStyleStr () {
-			switch (range.type) {
-				case RNG_SPHERE:
-					return "半徑";
-				case RNG_HEMISPHERE:
-					return "半徑半球";
-				case RNG_CYLINDER:
-					return "半徑";
-				default:
-					return `${Parser.translateKeyToDisplay(range.type)}`;
-			}
-		}
-	}
-};
-
-Parser.getSingletonUnit = function (unit) {
-	switch (unit) {
-		case UNT_FEET:
-			return "呎";
-		case UNT_MILES:
-			return "哩";
-		default: {
-			const fromBrew = MiscUtil.getProperty(BrewUtil.homebrewMeta, "spellDistanceUnits", unit, "singular");
-			if (fromBrew) return fromBrew;
-			if (unit.charAt(unit.length - 1) === "s") return unit.slice(0, -1);
-			return unit;
-		}
-	}
-};
-
-Parser.spComponentsToFull = function (comp) {
-	if (!comp) return "無";
-	const out = [];
-	if (comp.v) out.push("聲音");
-	if (comp.s) out.push("姿勢");
-	if (comp.m) out.push("材料" + (comp.m !== true ? `（${comp.m.text || comp.m}）` : ""));
-	return out.join("、");
-};
-
-Parser.spDurationToFull = function (dur) {
-	return dur.map(d => {
-		switch (d.type) {
-			case "special":
-				return "特殊";
-			case "instant":
-				return `即效${d.condition ? ` (${d.condition})` : ""}`;
-			case "timed":
-				return `${d.concentration ? "專注，" : ""}${d.concentration ? "" : d.duration.upTo ? "" : ""}${d.concentration || d.duration.upTo ? "至多" : ""}${d.duration.amount}${d.duration.amount === 1 ? Parser.translateKeyToDisplay(d.duration.type) : `${Parser.translateKeyToDisplay(d.duration.type)}`}`;
-			case "permanent":
-				if (d.ends) {
-					return `直到${d.ends.map(m => m === "dispel" ? "被解消" : m === "trigger" ? "被觸發" : m === "discharge" ? "discharged" : undefined).join(" 或 ")}`;
-				} else {
-					return "永久";
-				}
-		}
-	}).join(" 或 ") + (dur.length > 1 ? "（見下文）" : "");
-};
-
-Parser.spClassesToFull = function (classes, textOnly) {
-	const fromSubclasses = Parser.spSubclassesToFull(classes, textOnly);
-	return Parser.spMainClassesToFull(classes, textOnly) + (fromSubclasses ? "、" + fromSubclasses : "");
-};
-
-Parser.spMainClassesToFull = function (classes, textOnly) {
-	return (classes.fromClassList || [])
-		.sort((a, b) => SortUtil.ascSort(a.name, b.name))
-		.map(c => textOnly ? Parser.ClassToDisplay(c.name) : `<span title="資源：${Parser.sourceJsonToFull(c.source)}">${Parser.ClassToDisplay(c.name)}</span>`)
-		.join("、");
-};
-
-Parser.spSubclassesToFull = function (classes, textOnly) {
-	if (!classes.fromSubclass) return "";
-	return classes.fromSubclass
-		.sort((a, b) => {
-			const byName = SortUtil.ascSort(a.class.name, b.class.name);
-			return byName || SortUtil.ascSort(a.subclass.name, b.subclass.name);
-		})
-		.map(c => Parser._spSubclassItem(c, textOnly))
-		.join("、");
-};
-
-Parser._spSubclassItem = function (fromSubclass, textOnly) {
-	const text = `${fromSubclass.subclass.name}${fromSubclass.subclass.subSubclass ? ` (${fromSubclass.subclass.subSubclass})` : ""}`;
-	if (textOnly) return Parser.SubclassToDisplay(text);
-	return `<span class="italic" title="資源：${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${Parser.SubclassToDisplay(text)}</span>-<span title="資源：${Parser.sourceJsonToFull(fromSubclass.class.source)}">${Parser.ClassToDisplay(fromSubclass.class.name)}</span>`;
-};
-
-Parser.SPELL_ATTACK_TYPE_TO_FULL = {};
-Parser.SPELL_ATTACK_TYPE_TO_FULL["M"] = "近戰";
-Parser.SPELL_ATTACK_TYPE_TO_FULL["R"] = "遠程";
-Parser.SPELL_ATTACK_TYPE_TO_FULL["O"] = "其他/不明";
-
-Parser.spAttackTypeToFull = function (type) {
-	return Parser._parse_aToB(Parser.SPELL_ATTACK_TYPE_TO_FULL, type);
-};
-
-Parser.SPELL_AREA_TYPE_TO_FULL = {
-	ST: "Single Target",
-	MT: "Multiple Targets",
-	C: "Cube",
-	N: "Cone",
-	Y: "Cylinder",
-	S: "Sphere",
-	R: "Circle",
-	Q: "Square",
-	L: "Line",
-	H: "Hemisphere",
-	W: "Wall"
-};
-Parser.spAreaTypeToFull = function (type) {
-	return Parser._parse_aToB(Parser.SPELL_AREA_TYPE_TO_FULL, type);
-};
-
-// mon-prefix functions are for parsing monster data, and shared with the roll20 script
-Parser.monTypeToFullObj = function (type) {
-	const out = {type: "", tags: [], asText: ""};
-
-	if (typeof type === "string") {
-		// handles e.g. "fey"
-		out.type = type;
-		out.asText = Parser.monTypeToPlural(type);
-		return out;
-	}
-
-	const tempTags = [];
-	if (type.tags) {
-		for (const tag of type.tags) {
-			if (typeof tag === "string") {
-				// handles e.g. "fiend (devil)"
-				out.tags.push(tag);
-				tempTags.push(Parser.MonsterTagToDisplay(tag));
-			} else {
-				// handles e.g. "humanoid (Chondathan human)"
-				out.tags.push(tag.tag);
-				tempTags.push(`${tag.prefix} ${tag.tag}`);
-			}
-		}
-	}
-	out.type = type.type;
-	if (type.swarmSize) {
-		out.tags.push("swarm");
-		out.asText = `${Parser.sizeAbvToFull(type.swarmSize).toLowerCase()}${Parser.monTypeToPlural(type.type)}集群`;
-	} else {
-		out.asText = `${Parser.monTypeToPlural(type.type)}`;
-	}
-	if (tempTags.length) out.asText += ` (${tempTags.join(", ")})`;
-	return out;
-};
-
-Parser.monTypeToPlural = function (type) {
-	return Parser._parse_aToB(Parser.MON_TYPE_TO_PLURAL, type);
-};
-
-Parser.monCrToFull = function (cr) {
-	if (typeof cr === "string" || !cr){
-		if(cr === "Unknown") return `不明`;
-		else 			     return `${cr || "不明"} (${Parser.crToXp(cr)} XP)`;
-	}
-	else {
-		const stack = [Parser.monCrToFull(cr.cr)];
-		if (cr.lair) stack.push(`當遭遇於巢穴時 ${Parser.monCrToFull(cr.lair)}`);
-		if (cr.coven) stack.push(`當做為鬼婆集會一員時 ${Parser.monCrToFull(cr.coven)}`);
-		return stack.join(" 或 ");
-	}
-};
-
-Parser.monImmResToFull = function (toParse) {
-	const outerLen = toParse.length;
-	let maxDepth = 0;
-	if (outerLen === 1 && (toParse[0].immune || toParse[0].resist)) {
-		return toParse.map(it => toString(it, -1)).join(maxDepth ? "; " : ", ");
-	}
-
-	function toString (it, depth = 0) {
-		maxDepth = Math.max(maxDepth, depth);
-		if (typeof it === "string") {
-			return Parser.DamageToDisplay(it);
-		} else if (it.special) {
-			return it.special;
-		} else {
-			let stack = it.preNote ? `${it.preNote} ` : "";
-			const prop = it.immune ? "immune" : it.resist ? "resist" : it.vulnerable ? "vulnerable" : null;
-			if (prop) {
-				const toJoin = it[prop].map(nxt => toString(nxt, depth + 1));
-				stack += depth ? toJoin.join(maxDepth ? "；" : ", ") : toJoin.joinConjunct(", ", " 和 ");
-			}
-			if (it.note) stack += ` ${it.note}`;
-			return stack;
-		}
-	}
-
-	function serialJoin (arr) {
-		if (arr.length <= 1) return arr.join("");
-
-		let out = "";
-		for (let i = 0; i < arr.length - 1; ++i) {
-			const it = arr[i];
-			const nxt = arr[i + 1]
-			out += it;
-			out += (it.includes(",") || nxt.includes(",")) ? "；" : ", ";
-		}
-		out += arr.last();
-		return out;
-	}
-
-	return serialJoin(toParse.map(it => toString(it)));
-};
-
-Parser.monCondImmToFull = function (condImm) {
-	function render (condition) {
-		return Renderer.get().render(`{@condition ${Parser.ConditionToDisplay(condition)}}`);
-	}
-	return condImm.map(it => {
-		if (it.special) return it.special;
-		if (it.conditionImmune) return `${it.preNote ? `${it.preNote} ` : ""}${it.conditionImmune.map(render).join(", ")}${it.note ? ` ${it.note}` : ""}`;
-		return render(it);
-	}).join(", ");
-};
-
-Parser.MON_SENSE_TAG_TO_FULL = {
-	"B": "盲視",
-	"D": "黑暗視覺",
-	"SD": "高級黑暗視覺",
-	"T": "震顫感知",
-	"U": "真實視覺"
-};
-Parser.monSenseTagToFull = function (tag) {
-	return Parser._parse_aToB(Parser.MON_SENSE_TAG_TO_FULL, tag);
-};
-
-Parser.MON_SPELLCASTING_TAG_TO_FULL = {
-	"P": "靈能",
-	"I": "天生",
-	"F": "限定型態",
-	"S": "共享",
-	"CB": "職業, 吟遊詩人",
-	"CC": "職業, 牧師",
-	"CD": "職業, 德魯伊",
-	"CP": "職業, 聖騎士",
-	"CR": "職業, 遊俠",
-	"CS": "職業, 術士",
-	"CL": "職業, 契術師",
-	"CW": "職業, 法師"
-};
-Parser.monSpellcastingTagToFull = function (tag) {
-	return Parser._parse_aToB(Parser.MON_SPELLCASTING_TAG_TO_FULL, tag);
-};
-
-Parser.ENVIRONMENTS = ["arctic", "coastal", "desert", "forest", "grassland", "hill", "mountain", "swamp", "underdark", "underwater", "urban"];
-
-// psi-prefix functions are for parsing psionic data, and shared with the roll20 script
-Parser.PSI_ABV_TYPE_TALENT = "T";
-Parser.PSI_ABV_TYPE_DISCIPLINE = "D";
-Parser.PSI_ORDER_NONE = "None";
-Parser.psiTypeToFull = (type) => {
-	if (type === Parser.PSI_ABV_TYPE_TALENT) return "Talent";
-	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) return "Discipline";
-	else return type;
-};
-
-Parser.psiOrderToFull = (order) => {
-	return order === undefined ? Parser.PSI_ORDER_NONE : order;
-};
-
-Parser.levelToFull = function (level) {
-	if (isNaN(level)) return "";
-	if (level === "2") return level + "nd";
-	if (level === "3") return level + "rd";
-	if (level === "1") return level + "st";
-	return level + "th";
-};
-
-Parser.prereqSpellToFull = function (spell) {
-	if (spell === "eldritch blast") return Renderer.get().render("{@spell 魔能爆}戲法");
-	else if (spell === "hex/curse") return Renderer.get().render("{@spell 脆弱詛咒}法術 或 能施加詛咒的契術師能力");
-	else if (spell) return Renderer.get().render(`{@spell ${spell}}`);
-	return STR_NONE;
-};
-
-Parser.prereqPactToFull = function (pact) {
-	if (pact === "Chain") return "鎖鏈魔契";
-	if (pact === "Tome") return "書卷魔契";
-	if (pact === "Blade") return "鋒刃魔契";
-	return pact;
-};
-
-Parser.prereqPatronToShort = function (patron) {
-	if (patron === STR_ANY) return STR_ANY;
-	const mThe = /^The (.*?)$/.exec(patron);
-	if (mThe) return Parser.SubclassToDisplay(mThe[1]);
-	return patron;
-};
-
-// NOTE: These need to be reflected in omnidexer.js to be indexed
-Parser.OPT_FEATURE_TYPE_TO_FULL = {
-	AI: "奇械師注法",
-	ED: "四象法門",
-	EI: "魔能祈喚",
-	MM: "超魔法",
-	"MV:B": "戰技, 戰鬥大師",
-	"MV:C2-UA": "戰技, 騎兵 V2 (UA)",
-	"AS:V1-UA": "祕法射擊, V1 (UA)",
-	"AS:V2-UA": "祕法射擊, V2 (UA)",
-	"AS": "祕法射擊",
-	OTH: "其他",
-	"FS:F": "戰鬥風格; 戰士",
-	"FS:B": "戰鬥風格; 吟遊詩人",
-	"FS:P": "戰鬥風格; 聖騎士",
-	"FS:R": "戰鬥風格; 遊俠",
-	"PB": "契約恩賜"
-};
-
-Parser.optFeatureTypeToFull = function (type) {
-	if (Parser.OPT_FEATURE_TYPE_TO_FULL[type]) return Parser.OPT_FEATURE_TYPE_TO_FULL[type];
-	if (BrewUtil.homebrewMeta && BrewUtil.homebrewMeta.optionalFeatureTypes && BrewUtil.homebrewMeta.optionalFeatureTypes[type]) return BrewUtil.homebrewMeta.optionalFeatureTypes[type];
-	return type;
-};
-
-Parser.alignmentAbvToFull = function (alignment) {
-	if (typeof alignment === "object") {
-		if (alignment.special != null) {
-			// use in MTF Sacred Statue
-			return alignment.special;
-		} else {
-			// e.g. `{alignment: ["N", "G"], chance: 50}` or `{alignment: ["N", "G"]}`
-			return `${alignment.alignment.map(a => Parser.alignmentAbvToFull(a)).join("")}${alignment.chance ? ` (${alignment.chance}%)` : ""}`;
-		}
-	} else {
-		alignment = alignment.toUpperCase();
-		switch (alignment) {
-			case "L":
-				return "守序";
-			case "N":
-				return "中立";
-			case "NX":
-				return "中立(守序/混亂軸)";
-			case "NY":
-				return "中立(善良/邪惡軸)";
-			case "C":
-				return "混亂";
-			case "G":
-				return "善良";
-			case "E":
-				return "邪惡";
-			// "special" values
-			case "U":
-				return "無陣營";
-			case "A":
-				return "任意陣營";
-		}
-		return alignment;
-	}
-};
-
-Parser.alignmentListToFull = function (alignList) {
-	if (alignList.some(it => typeof it !== "string")) {
-		if (alignList.some(it => typeof it === "string")) throw new Error(`Mixed alignment types: ${JSON.stringify(alignList)}`);
-		return alignList.map(it => it.special != null || it.chance != null ? Parser.alignmentAbvToFull(it) : Parser.alignmentListToFull(it.alignment)).join(" 或 ");
-	} else {
-		// assume all single-length arrays can be simply parsed
-		if (alignList.length === 1) return Parser.alignmentAbvToFull(alignList[0]);
-		// a pair of abv's, e.g. "L" "G"
-		if (alignList.length === 2) {
-			return alignList.map(a => Parser.alignmentAbvToFull(a)).join("");
-		}
-		if (alignList.length === 3) {
-			if (alignList.includes("NX") && alignList.includes("NY") && alignList.includes("N")) return "任意中立陣營";
-		}
-		// longer arrays should have a custom mapping
-		if (alignList.length === 5) {
-			if (!alignList.includes("G")) return "任意非善良陣營";
-			if (!alignList.includes("E")) return "任意非邪惡陣營";
-			if (!alignList.includes("L")) return "任意非守序陣營";
-			if (!alignList.includes("C")) return "任意非混亂陣營";
-		}
-		if (alignList.length === 4) {
-			if (!alignList.includes("L") && !alignList.includes("NX")) return "任意混亂陣營";
-			if (!alignList.includes("G") && !alignList.includes("NY")) return "任意邪惡陣營";
-			if (!alignList.includes("C") && !alignList.includes("NX")) return "任意守序陣營";
-			if (!alignList.includes("E") && !alignList.includes("NY")) return "任意善良陣營";
-		}
-		throw new Error(`Unmapped alignment: ${JSON.stringify(alignList)}`);
-	}
-};
-
-
-
-Parser.CAT_ID_CREATURE = 1;
-Parser.CAT_ID_SPELL = 2;
-Parser.CAT_ID_BACKGROUND = 3;
-Parser.CAT_ID_ITEM = 4;
-Parser.CAT_ID_CLASS = 5;
-Parser.CAT_ID_CONDITION = 6;
-Parser.CAT_ID_FEAT = 7;
-Parser.CAT_ID_ELDRITCH_INVOCATION = 8;
-Parser.CAT_ID_PSIONIC = 9;
-Parser.CAT_ID_RACE = 10;
-Parser.CAT_ID_OTHER_REWARD = 11;
-Parser.CAT_ID_VARIANT_OPTIONAL_RULE = 12;
-Parser.CAT_ID_ADVENTURE = 13;
-Parser.CAT_ID_DEITY = 14;
-Parser.CAT_ID_OBJECT = 15;
-Parser.CAT_ID_TRAP = 16;
-Parser.CAT_ID_HAZARD = 17;
-Parser.CAT_ID_QUICKREF = 18;
-Parser.CAT_ID_CULT = 19;
-Parser.CAT_ID_BOON = 20;
-Parser.CAT_ID_DISEASE = 21;
-Parser.CAT_ID_METAMAGIC = 22;
-Parser.CAT_ID_MANEUVER_BATTLEMASTER = 23;
-Parser.CAT_ID_TABLE = 24;
-Parser.CAT_ID_TABLE_GROUP = 25;
-Parser.CAT_ID_MANEUVER_CAVALIER = 26;
-Parser.CAT_ID_ARCANE_SHOT = 27;
-Parser.CAT_ID_OPTIONAL_FEATURE_OTHER = 28;
-Parser.CAT_ID_FIGHTING_STYLE = 29;
-Parser.CAT_ID_CLASS_FEATURE = 30;
-Parser.CAT_ID_SHIP = 31;
-Parser.CAT_ID_PACT_BOON = 32;
-Parser.CAT_ID_ELEMENTAL_DISCIPLINE = 33;
-Parser.CAT_ID_ARTIFICER_INFUSION = 34;
-
-Parser.CAT_ID_TO_FULL = {};
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CREATURE] = "Bestiary";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_SPELL] = "法術(Spell)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_BACKGROUND] = "背景(Background)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ITEM] = "物品(Item)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CLASS] = "Class";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CONDITION] = "狀態(Condition)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_FEAT] = "專長(Feat)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ELDRITCH_INVOCATION] = "魔能祈喚(Eldritch Invocation)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_PSIONIC] = "Psionic";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_RACE] = "種族(Race)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_OTHER_REWARD] = "其他獎勵(Other Reward)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_VARIANT_OPTIONAL_RULE] = "Variant/Optional Rule";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ADVENTURE] = "Adventure";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_DEITY] = "Deity";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_OBJECT] = "Object";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_TRAP] = "Trap";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_HAZARD] = "Hazard";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_QUICKREF] = "Quick Reference";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CULT] = "Cult";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_BOON] = "Boon";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_DISEASE] = "疾病(Disease)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_METAMAGIC] = "超魔法(Metamagic)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_MANEUVER_BATTLEMASTER] = "Maneuver; Battlemaster";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_TABLE] = "Table";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_TABLE_GROUP] = "Table";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_MANEUVER_CAVALIER] = "Maneuver; Cavalier";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ARCANE_SHOT] = "祕法射擊(Arcane Shot)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_OPTIONAL_FEATURE_OTHER] = "Optional Feature";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_FIGHTING_STYLE] = "戰鬥風格(Fighting Style)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CLASS_FEATURE] = "Class Feature";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_SHIP] = "Ship";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_PACT_BOON] = "契約恩賜(Pact Boon)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ELEMENTAL_DISCIPLINE] = "四象法門(Elemental Discipline)";
-Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ARTIFICER_INFUSION] = "Infusion";
-
-Parser.pageCategoryToFull = function (catId) {
-	return Parser._parse_aToB(Parser.CAT_ID_TO_FULL, catId);
-};
-
-Parser.CAT_ID_TO_PROP = {};
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_CREATURE] = "monster";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_SPELL] = "spell";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_BACKGROUND] = "background";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ITEM] = "item";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_CLASS] = "class";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_CONDITION] = "condition";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_FEAT] = "feat";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_PSIONIC] = "psionic";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_RACE] = "race";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_OTHER_REWARD] = "reward";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_VARIANT_OPTIONAL_RULE] = "variantrule";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ADVENTURE] = "adventure";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_DEITY] = "deity";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_OBJECT] = "object";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_TRAP] = "trap";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_HAZARD] = "hazard";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_CULT] = "cult";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_BOON] = "boon";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_DISEASE] = "condition";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_TABLE] = "table";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_TABLE_GROUP] = "tableGroup";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ELDRITCH_INVOCATION] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_MANEUVER_CAVALIER] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ARCANE_SHOT] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_OPTIONAL_FEATURE_OTHER] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_FIGHTING_STYLE] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_METAMAGIC] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_MANEUVER_BATTLEMASTER] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_PACT_BOON] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ELEMENTAL_DISCIPLINE] = "optionalfeature";
-Parser.CAT_ID_TO_PROP[Parser.CAT_ID_ARTIFICER_INFUSION] = "optionalfeature";
-
-Parser.pageCategoryToProp = function (catId) {
-	return Parser._parse_aToB(Parser.CAT_ID_TO_PROP, catId);
-};
-
-Parser.ABIL_ABVS = ["str", "dex", "con", "int", "wis", "cha"];
-
-/**
- * Build a pair of strings; one with all current subclasses, one with all legacy subclasses
- *
- * @param classes a spell.classes JSON item
- * @returns {*[]} A two-element array. First item is a string of all the current subclasses, second item a string of
- * all the legacy/superceded subclasses
- */
-Parser.spSubclassesToCurrentAndLegacyFull = function (classes) {
-	const out = [[], []];
-	if (!classes.fromSubclass) return out;
-	const curNames = new Set();
-	const toCheck = [];
-	classes.fromSubclass
-		.sort((a, b) => {
-			const byName = SortUtil.ascSort(a.subclass.name, b.subclass.name);
-			return byName || SortUtil.ascSort(a.class.name, b.class.name);
-		})
-		.forEach(c => {
-			const nm = c.subclass.name;
-			const src = c.subclass.source;
-			const toAdd = Parser._spSubclassItem(c);
-			if (SourceUtil.hasBeenReprinted(nm, src)) {
-				out[1].push(toAdd);
-			} else if (Parser.sourceJsonToFull(src).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(src).startsWith(PS_PREFIX)  || Parser.sourceJsonToFull(src).startsWith("Twitter")) {
-				const cleanName = mapClassShortNameToMostRecent(nm.split("(")[0].trim().split(/v\d+/)[0].trim());
-				toCheck.push({"name": cleanName, "ele": toAdd});
-			} else {
-				out[0].push(toAdd);
-				curNames.add(nm);
-			}
-		});
-	toCheck.forEach(n => {
-		if (curNames.has(n.name)) {
-			out[1].push(n.ele);
-		} else {
-			out[0].push(n.ele);
-		}
-	});
-	return [out[0].join(", "), out[1].join(", ")];
+CleanUtil = {
+	getCleanJson (data, minify = false) {
+		let str = minify ? JSON.stringify(data) : `${JSON.stringify(data, null, "\t")}\n`;
+		return CleanUtil.getCleanString(str);
+	},
 
 	/**
-	 * Get the most recent iteration of a subclass name
+	 * @param str
+	 * @param isJsonDump If the string is intended to be re-parsed by `JSON.parse`
 	 */
-	function mapClassShortNameToMostRecent (shortName) {
-		switch (shortName) {
-			case "Favored Soul":
-				return "Divine Soul";
-			case "Undying Light":
-				return "Celestial";
-			case "Deep Stalker":
-				return "Gloom Stalker";
+	getCleanString (str, isJsonDump = true) {
+		str = str
+			.replace(CleanUtil.SHARED_REPLACEMENTS_REGEX, (match) => CleanUtil.SHARED_REPLACEMENTS[match])
+			.replace(/\u00AD/g, "") // soft hyphens
+			.replace(/\s*(\.\s*\.\s*\.)/g, "$1");
+
+		if (isJsonDump) {
+			return str
+				.replace(CleanUtil.STR_REPLACEMENTS_REGEX, (match) => CleanUtil.STR_REPLACEMENTS[match])
+				.replace(/\s*(\\u2014|\\u2013)\s*/g, "$1");
+		} else {
+			return str
+				.replace(CleanUtil.JSON_REPLACEMENTS_REGEX, (match) => CleanUtil.JSON_REPLACEMENTS[match])
+				.replace(/[ ]*([\u2014\u2013])[ ]*/g, "$1");
 		}
-		return shortName;
-	}
+	},
 };
-
-Parser.attackTypeToFull = function (attackType) {
-	return Parser._parse_aToB(Parser.ATK_TYPE_TO_FULL, attackType);
+CleanUtil.SHARED_REPLACEMENTS = {
+	"’": "'",
+	"…": "...",
+	" ": " ", // non-breaking space
+	"ﬀ": "ff",
+	"ﬃ": "ffi",
+	"ﬄ": "ffl",
+	"ﬁ": "fi",
+	"ﬂ": "fl",
+	"Ĳ": "IJ",
+	"ĳ": "ij",
+	"Ǉ": "LJ",
+	"ǈ": "Lj",
+	"ǉ": "lj",
+	"Ǌ": "NJ",
+	"ǋ": "Nj",
+	"ǌ": "nj",
+	"ﬅ": "ft",
 };
-
-Parser.trapHazTypeToFull = function (type) {
-	return Parser._parse_aToB(Parser.TRAP_HAZARD_TYPE_TO_FULL, type);
+CleanUtil.STR_REPLACEMENTS = {
+	"—": "\\u2014",
+	"–": "\\u2013",
+	"−": "\\u2212",
+	"“": `\\"`,
+	"”": `\\"`,
 };
-
-Parser.TRAP_HAZARD_TYPE_TO_FULL = {
-	MECH: "機械陷阱",
-	MAG: "魔法陷阱",
-	SMPL: "簡易陷阱",
-	CMPX: "複雜陷阱",
-	HAZ: "危害物",
-	WTH: "天氣",
-	ENV: "環境危害",
-	WLD: "野外危害",
-	GEN: "通用"
+CleanUtil.JSON_REPLACEMENTS = {
+	"“": `"`,
+	"”": `"`,
 };
-
-Parser.tierToFullLevel = function (tier) {
-	return Parser._parse_aToB(Parser.TIER_TO_FULL_LEVEL, tier);
-};
-
-Parser.TIER_TO_FULL_LEVEL = {};
-Parser.TIER_TO_FULL_LEVEL[1] = "1\u20144級";
-Parser.TIER_TO_FULL_LEVEL[2] = "5\u201410級";
-Parser.TIER_TO_FULL_LEVEL[3] = "11\u201416級";
-Parser.TIER_TO_FULL_LEVEL[4] = "17\u201420級";
-
-Parser.threatToFull = function (threat) {
-	return Parser._parse_aToB(Parser.THREAT_TO_FULL, threat);
-};
-
-Parser.THREAT_TO_FULL = {};
-Parser.THREAT_TO_FULL[1] = "中等";
-Parser.THREAT_TO_FULL[2] = "危險";
-Parser.THREAT_TO_FULL[3] = "致命";
-
-Parser.trapInitToFull = function (init) {
-	return Parser._parse_aToB(Parser.TRAP_INIT_TO_FULL, init);
-};
-
-Parser.TRAP_INIT_TO_FULL = {};
-Parser.TRAP_INIT_TO_FULL[1] = "先攻順序10";
-Parser.TRAP_INIT_TO_FULL[2] = "先攻順序20";
-Parser.TRAP_INIT_TO_FULL[3] = "先攻順序20 和 先攻順序10";
-
-Parser.ATK_TYPE_TO_FULL = {};
-Parser.ATK_TYPE_TO_FULL["MW"] = "近戰武器攻擊";
-Parser.ATK_TYPE_TO_FULL["RW"] = "遠程武器攻擊";
-
-Parser.bookOrdinalToAbv = (ordinal, preNoSuff) => {
-	if (ordinal === undefined) return "";
-	switch (ordinal.type) {
-		case "part": return `${preNoSuff ? " " : ""}Part ${ordinal.identifier}${preNoSuff ? "" : " \u2014 "}`;
-		case "chapter": return `${preNoSuff ? " " : ""}Ch. ${ordinal.identifier}${preNoSuff ? "" : ": "}`;
-		case "episode": return `${preNoSuff ? " " : ""}Ep. ${ordinal.identifier}${preNoSuff ? "" : ": "}`;
-		case "appendix": return `${preNoSuff ? " " : ""}App. ${ordinal.identifier}${preNoSuff ? "" : ": "}`;
-		case "level": return `${preNoSuff ? " " : ""}Level ${ordinal.identifier}${preNoSuff ? "" : ": "}`;
-		default: throw new Error(`Unhandled ordinal type "${ordinal.type}"`);
-	}
-};
-
-SKL_ABV_ABJ = "A";
-SKL_ABV_EVO = "V";
-SKL_ABV_ENC = "E";
-SKL_ABV_ILL = "I";
-SKL_ABV_DIV = "D";
-SKL_ABV_NEC = "N";
-SKL_ABV_TRA = "T";
-SKL_ABV_CON = "C";
-SKL_ABV_PSI = "P";
-
-SKL_ABJ = "防護";
-SKL_EVO = "塑能";
-SKL_ENC = "惑控";
-SKL_ILL = "幻術";
-SKL_DIV = "預言";
-SKL_NEC = "死靈";
-SKL_TRA = "變化";
-SKL_CON = "咒法";
-SKL_PSI = "靈能";
-
-Parser.SP_SCHOOL_ABV_TO_FULL = {};
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ABJ] = SKL_ABJ;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_EVO] = SKL_EVO;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ENC] = SKL_ENC;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ILL] = SKL_ILL;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_DIV] = SKL_DIV;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_NEC] = SKL_NEC;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_TRA] = SKL_TRA;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_CON] = SKL_CON;
-Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_PSI] = SKL_PSI;
-
-Parser.SP_SCHOOL_ABV_TO_SHORT = {};
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ABJ] = "防護";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_EVO] = "塑能";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ENC] = "惑控";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ILL] = "幻術";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_DIV] = "預言";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_NEC] = "死靈";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_TRA] = "變化";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_CON] = "咒法";
-Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_PSI] = "靈能";
-
-Parser.ATB_ABV_TO_FULL = {
-	"str": "力量",
-	"dex": "敏捷",
-	"con": "體質",
-	"int": "智力",
-	"wis": "睿知",
-	"cha": "魅力"
-};
-
-TP_ABERRATION = "aberration";
-TP_BEAST = "beast";
-TP_CELESTIAL = "celestial";
-TP_CONSTRUCT = "construct";
-TP_DRAGON = "dragon";
-TP_ELEMENTAL = "elemental";
-TP_FEY = "fey";
-TP_FIEND = "fiend";
-TP_GIANT = "giant";
-TP_HUMANOID = "humanoid";
-TP_MONSTROSITY = "monstrosity";
-TP_OOZE = "ooze";
-TP_PLANT = "plant";
-TP_UNDEAD = "undead";
-Parser.MON_TYPES = [TP_ABERRATION, TP_BEAST, TP_CELESTIAL, TP_CONSTRUCT, TP_DRAGON, TP_ELEMENTAL, TP_FEY, TP_FIEND, TP_GIANT, TP_HUMANOID, TP_MONSTROSITY, TP_OOZE, TP_PLANT, TP_UNDEAD];
-Parser.MON_TYPE_TO_PLURAL = {};
-Parser.MON_TYPE_TO_PLURAL[TP_ABERRATION] = "異怪";
-Parser.MON_TYPE_TO_PLURAL[TP_BEAST] = "野獸";
-Parser.MON_TYPE_TO_PLURAL[TP_CELESTIAL] = "天界生物";
-Parser.MON_TYPE_TO_PLURAL[TP_CONSTRUCT] = "構裝體";
-Parser.MON_TYPE_TO_PLURAL[TP_DRAGON] = "龍";
-Parser.MON_TYPE_TO_PLURAL[TP_ELEMENTAL] = "元素";
-Parser.MON_TYPE_TO_PLURAL[TP_FEY] = "精類";
-Parser.MON_TYPE_TO_PLURAL[TP_FIEND] = "邪魔";
-Parser.MON_TYPE_TO_PLURAL[TP_GIANT] = "巨人";
-Parser.MON_TYPE_TO_PLURAL[TP_HUMANOID] = "類人生物";
-Parser.MON_TYPE_TO_PLURAL[TP_MONSTROSITY] = "怪獸";
-Parser.MON_TYPE_TO_PLURAL[TP_OOZE] = "泥怪";
-Parser.MON_TYPE_TO_PLURAL[TP_PLANT] = "植物";
-Parser.MON_TYPE_TO_PLURAL[TP_UNDEAD] = "不死生物";
-
-SZ_FINE = "F";
-SZ_DIMINUTIVE = "D";
-SZ_TINY = "T";
-SZ_SMALL = "S";
-SZ_MEDIUM = "M";
-SZ_LARGE = "L";
-SZ_HUGE = "H";
-SZ_GARGANTUAN = "G";
-SZ_COLOSSAL = "C";
-SZ_VARIES = "V";
-Parser.SIZE_ABVS = [SZ_TINY, SZ_SMALL, SZ_MEDIUM, SZ_LARGE, SZ_HUGE, SZ_GARGANTUAN, SZ_VARIES];
-Parser.SIZE_ABV_TO_FULL = {};
-Parser.SIZE_ABV_TO_FULL[SZ_FINE] = "Fine";
-Parser.SIZE_ABV_TO_FULL[SZ_DIMINUTIVE] = "Diminutive";
-Parser.SIZE_ABV_TO_FULL[SZ_TINY] = "微型";
-Parser.SIZE_ABV_TO_FULL[SZ_SMALL] = "小型";
-Parser.SIZE_ABV_TO_FULL[SZ_MEDIUM] = "中型";
-Parser.SIZE_ABV_TO_FULL[SZ_LARGE] = "大型";
-Parser.SIZE_ABV_TO_FULL[SZ_HUGE] = "巨型";
-Parser.SIZE_ABV_TO_FULL[SZ_GARGANTUAN] = "超巨型";
-Parser.SIZE_ABV_TO_FULL[SZ_COLOSSAL] = "Colossal";
-Parser.SIZE_ABV_TO_FULL[SZ_VARIES] = "不定";
-
-Parser.XP_CHART = [200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000, 20000, 22000, 25000, 30000, 41000, 50000, 62000, 75000, 90000, 105000, 120000, 135000, 155000];
-
-Parser.XP_CHART_ALT = {
-	"0": 10,
-	"1/8": 25,
-	"1/4": 50,
-	"1/2": 100,
-	"1": 200,
-	"2": 450,
-	"3": 700,
-	"4": 1100,
-	"5": 1800,
-	"6": 2300,
-	"7": 2900,
-	"8": 3900,
-	"9": 5000,
-	"10": 5900,
-	"11": 7200,
-	"12": 8400,
-	"13": 10000,
-	"14": 11500,
-	"15": 13000,
-	"16": 15000,
-	"17": 18000,
-	"18": 20000,
-	"19": 22000,
-	"20": 25000,
-	"21": 30000,
-	"22": 41000,
-	"23": 50000,
-	"24": 62000,
-	"25": 75000,
-	"26": 90000,
-	"27": 105000,
-	"28": 120000,
-	"29": 135000,
-	"30": 155000
-};
-
-Parser.ARMOR_ABV_TO_FULL = {
-	"l.": "light",
-	"m.": "medium",
-	"h.": "heavy"
-};
-
-SRC_CoS = "CoS";
-SRC_DMG = "DMG";
-SRC_EEPC = "EEPC";
-SRC_EET = "EET";
-SRC_HotDQ = "HotDQ";
-SRC_LMoP = "LMoP";
-SRC_Mag = "Mag";
-SRC_MM = "MM";
-SRC_OotA = "OotA";
-SRC_PHB = "PHB";
-SRC_PotA = "PotA";
-SRC_RoT = "RoT";
-SRC_RoTOS = "RoTOS";
-SRC_SCAG = "SCAG";
-SRC_SKT = "SKT";
-SRC_ToA = "ToA";
-SRC_ToD = "ToD";
-SRC_TTP = "TTP";
-SRC_TYP = "TftYP";
-SRC_TYP_AtG = "TftYP-AtG";
-SRC_TYP_DiT = "TftYP-DiT";
-SRC_TYP_TFoF = "TftYP-TFoF";
-SRC_TYP_THSoT = "TftYP-THSoT";
-SRC_TYP_TSC = "TftYP-TSC";
-SRC_TYP_ToH = "TftYP-ToH";
-SRC_TYP_WPM = "TftYP-WPM";
-SRC_VGM = "VGM";
-SRC_XGE = "XGE";
-SRC_OGA = "OGA";
-SRC_MTF = "MTF";
-SRC_WDH = "WDH";
-SRC_WDMM = "WDMM";
-SRC_GGR = "GGR";
-SRC_KKW = "KKW";
-SRC_LLK = "LLK";
-SRC_AL = "AL";
-SRC_SCREEN = "Screen";
-
-SRC_ALCoS = "ALCurseOfStrahd";
-SRC_ALEE = "ALElementalEvil";
-SRC_ALRoD = "ALRageOfDemons";
-
-SRC_PS_PREFIX = "PS";
-
-SRC_PSA = SRC_PS_PREFIX + "A";
-SRC_PSI = SRC_PS_PREFIX + "I";
-SRC_PSK = SRC_PS_PREFIX + "K";
-SRC_PSZ = SRC_PS_PREFIX + "Z";
-SRC_PSX = SRC_PS_PREFIX + "X";
-SRC_PSD = SRC_PS_PREFIX + "D";
-
-SRC_UA_PREFIX = "UA";
-
-SRC_UAA = SRC_UA_PREFIX + "Artificer";
-SRC_UAEAG = SRC_UA_PREFIX + "EladrinAndGith";
-SRC_UAEBB = SRC_UA_PREFIX + "Eberron";
-SRC_UAFFR = SRC_UA_PREFIX + "FeatsForRaces";
-SRC_UAFFS = SRC_UA_PREFIX + "FeatsForSkills";
-SRC_UAFO = SRC_UA_PREFIX + "FiendishOptions";
-SRC_UAFT = SRC_UA_PREFIX + "Feats";
-SRC_UAGH = SRC_UA_PREFIX + "GothicHeroes";
-SRC_UAMDM = SRC_UA_PREFIX + "ModernMagic";
-SRC_UASSP = SRC_UA_PREFIX + "StarterSpells";
-SRC_UATMC = SRC_UA_PREFIX + "TheMysticClass";
-SRC_UATOBM = SRC_UA_PREFIX + "ThatOldBlackMagic";
-SRC_UATRR = SRC_UA_PREFIX + "TheRangerRevised";
-SRC_UAWA = SRC_UA_PREFIX + "WaterborneAdventures";
-SRC_UAVR = SRC_UA_PREFIX + "VariantRules";
-SRC_UALDR = SRC_UA_PREFIX + "LightDarkUnderdark";
-SRC_UARAR = SRC_UA_PREFIX + "RangerAndRogue";
-SRC_UAATOSC = SRC_UA_PREFIX + "ATrioOfSubclasses";
-SRC_UABPP = SRC_UA_PREFIX + "BarbarianPrimalPaths";
-SRC_UARSC = SRC_UA_PREFIX + "RevisedSubclasses";
-SRC_UAKOO = SRC_UA_PREFIX + "KitsOfOld";
-SRC_UABBC = SRC_UA_PREFIX + "BardBardColleges";
-SRC_UACDD = SRC_UA_PREFIX + "ClericDivineDomains";
-SRC_UAD = SRC_UA_PREFIX + "Druid";
-SRC_UARCO = SRC_UA_PREFIX + "RevisedClassOptions";
-SRC_UAF = SRC_UA_PREFIX + "Fighter";
-SRC_UAM = SRC_UA_PREFIX + "Monk";
-SRC_UAP = SRC_UA_PREFIX + "Paladin";
-SRC_UAMC = SRC_UA_PREFIX + "ModifyingClasses";
-SRC_UAS = SRC_UA_PREFIX + "Sorcerer";
-SRC_UAWAW = SRC_UA_PREFIX + "WarlockAndWizard";
-SRC_UATF = SRC_UA_PREFIX + "TheFaithful";
-SRC_UAWR = SRC_UA_PREFIX + "WizardRevisited";
-SRC_UAESR = SRC_UA_PREFIX + "ElfSubraces";
-SRC_UAMAC = SRC_UA_PREFIX + "MassCombat";
-SRC_UA3PE = SRC_UA_PREFIX + "ThreePillarExperience";
-SRC_UAGHI = SRC_UA_PREFIX + "GreyhawkInitiative";
-SRC_UATSC = SRC_UA_PREFIX + "ThreeSubclasses";
-SRC_UAOD = SRC_UA_PREFIX + "OrderDomain";
-SRC_UACAM = SRC_UA_PREFIX + "CentaursMinotaurs";
-SRC_UAGSS = SRC_UA_PREFIX + "GiantSoulSorcerer";
-SRC_UARoE = SRC_UA_PREFIX + "RacesOfEberron";
-SRC_UARoR = SRC_UA_PREFIX + "RacesOfRavnica";
-SRC_UAWGE = SRC_UA_PREFIX + "WGE";
-SRC_UAOSS = SRC_UA_PREFIX + "OfShipsAndSea";
-SRC_UASIK = SRC_UA_PREFIX + "Sidekicks";
-SRC_UAAR = SRC_UA_PREFIX + "ArtificerRevisited";
-
-SRC_3PP_SUFFIX = " 3pp";
-SRC_STREAM = "Stream";
-SRC_TWITTER = "Twitter";
-
-AL_PREFIX = "冒險者聯盟：";
-AL_PREFIX_SHORT = "AL: ";
-PS_PREFIX = "Plane Shift: ";
-PS_PREFIX_SHORT = "PS: ";
-UA_PREFIX = "Unearthed Arcana: ";
-UA_PREFIX_SHORT = "UA: ";
-TftYP_NAME = "大口亭奇譚";
-
-Parser.SOURCE_JSON_TO_FULL = {};
-Parser.SOURCE_JSON_TO_FULL[SRC_CoS] = "斯特拉德的詛咒";
-Parser.SOURCE_JSON_TO_FULL[SRC_DMG] = "地下城主指南";
-Parser.SOURCE_JSON_TO_FULL[SRC_EEPC] = "邪惡元素玩家指南";
-Parser.SOURCE_JSON_TO_FULL[SRC_EET] = "邪惡元素：飾品";
-Parser.SOURCE_JSON_TO_FULL[SRC_HotDQ] = "龍后的寶藏";
-Parser.SOURCE_JSON_TO_FULL[SRC_LMoP] = "凡戴爾的失落礦坑";
-Parser.SOURCE_JSON_TO_FULL[SRC_Mag] = "龍雜誌";
-Parser.SOURCE_JSON_TO_FULL[SRC_MM] = "怪物圖鑑";
-Parser.SOURCE_JSON_TO_FULL[SRC_OotA] = "逃離深淵";
-Parser.SOURCE_JSON_TO_FULL[SRC_PHB] = "玩家手冊";
-Parser.SOURCE_JSON_TO_FULL[SRC_PotA] = "毀滅親王";
-Parser.SOURCE_JSON_TO_FULL[SRC_RoT] = "提亞瑪特的崛起";
-Parser.SOURCE_JSON_TO_FULL[SRC_RoTOS] = "提亞瑪特的崛起 線上增刊";
-Parser.SOURCE_JSON_TO_FULL[SRC_SCAG] = "劍灣冒險指南";
-Parser.SOURCE_JSON_TO_FULL[SRC_SKT] = "風暴王之雷霆";
-Parser.SOURCE_JSON_TO_FULL[SRC_ToA] = "湮滅之墓";
-Parser.SOURCE_JSON_TO_FULL[SRC_ToD] = "龍族暴政";
-Parser.SOURCE_JSON_TO_FULL[SRC_TTP] = "龜人擴充包";
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_AtG] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_DiT] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_TFoF] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_THSoT] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_TSC] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_ToH] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP_WPM] = TftYP_NAME;
-Parser.SOURCE_JSON_TO_FULL[SRC_VGM] = "瓦羅的怪物指南";
-Parser.SOURCE_JSON_TO_FULL[SRC_XGE] = "姍納薩的萬事指南";
-Parser.SOURCE_JSON_TO_FULL[SRC_OGA] = "一蛙之上";
-Parser.SOURCE_JSON_TO_FULL[SRC_MTF] = "魔鄧肯的眾敵卷冊";
-Parser.SOURCE_JSON_TO_FULL[SRC_WDH] = "深水城：龍金飛劫";
-Parser.SOURCE_JSON_TO_FULL[SRC_WDMM] = "深水城：瘋法師的地下城";
-Parser.SOURCE_JSON_TO_FULL[SRC_GGR] = "拉尼卡的公會長指南";
-Parser.SOURCE_JSON_TO_FULL[SRC_KKW] = "Krenko's Way";
-Parser.SOURCE_JSON_TO_FULL[SRC_LLK] = "夸力許的失落實驗室";
-Parser.SOURCE_JSON_TO_FULL[SRC_AL] = "冒險者聯盟";
-Parser.SOURCE_JSON_TO_FULL[SRC_SCREEN] = "地下城主屏幕";
-Parser.SOURCE_JSON_TO_FULL[SRC_ALCoS] = AL_PREFIX + "斯特拉德的詛咒";
-Parser.SOURCE_JSON_TO_FULL[SRC_ALEE] = AL_PREFIX + "邪惡元素";
-Parser.SOURCE_JSON_TO_FULL[SRC_ALRoD] = AL_PREFIX + "惡魔狂怒";
-Parser.SOURCE_JSON_TO_FULL[SRC_PSA] = PS_PREFIX + "阿芒凱";
-Parser.SOURCE_JSON_TO_FULL[SRC_PSI] = PS_PREFIX + "依尼翠";
-Parser.SOURCE_JSON_TO_FULL[SRC_PSK] = PS_PREFIX + "卡拉德許";
-Parser.SOURCE_JSON_TO_FULL[SRC_PSZ] = PS_PREFIX + "贊迪卡";
-Parser.SOURCE_JSON_TO_FULL[SRC_PSX] = PS_PREFIX + "依夏蘭";
-Parser.SOURCE_JSON_TO_FULL[SRC_PSD] = PS_PREFIX + "多明納里亞";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAA] = UA_PREFIX + "奇械師";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAEAG] = UA_PREFIX + "Eladrin and Gith";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAEBB] = UA_PREFIX + "Eberron";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAFFR] = UA_PREFIX + "Feats for Races";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAFFS] = UA_PREFIX + "Feats for Skills";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAFO] = UA_PREFIX + "Fiendish Options";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAFT] = UA_PREFIX + "Feats";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAGH] = UA_PREFIX + "Gothic Heroes";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAMDM] = UA_PREFIX + "Modern Magic";
-Parser.SOURCE_JSON_TO_FULL[SRC_UASSP] = UA_PREFIX + "Starter Spells";
-Parser.SOURCE_JSON_TO_FULL[SRC_UATMC] = UA_PREFIX + "The Mystic Class";
-Parser.SOURCE_JSON_TO_FULL[SRC_UATOBM] = UA_PREFIX + "That Old Black Magic";
-Parser.SOURCE_JSON_TO_FULL[SRC_UATRR] = UA_PREFIX + "The Ranger, Revised";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAWA] = UA_PREFIX + "Waterborne Adventures";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAVR] = UA_PREFIX + "Variant Rules";
-Parser.SOURCE_JSON_TO_FULL[SRC_UALDR] = UA_PREFIX + "Light, Dark, Underdark!";
-Parser.SOURCE_JSON_TO_FULL[SRC_UARAR] = UA_PREFIX + "Ranger and Rogue";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAATOSC] = UA_PREFIX + "A Trio of Subclasses";
-Parser.SOURCE_JSON_TO_FULL[SRC_UABPP] = UA_PREFIX + "Barbarian Primal Paths";
-Parser.SOURCE_JSON_TO_FULL[SRC_UARSC] = UA_PREFIX + "Revised Subclasses";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAKOO] = UA_PREFIX + "Kits of Old";
-Parser.SOURCE_JSON_TO_FULL[SRC_UABBC] = UA_PREFIX + "Bard: Bard Colleges";
-Parser.SOURCE_JSON_TO_FULL[SRC_UACDD] = UA_PREFIX + "Cleric: Divine Domains";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAD] = UA_PREFIX + "Druid";
-Parser.SOURCE_JSON_TO_FULL[SRC_UARCO] = UA_PREFIX + "Revised Class Options";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAF] = UA_PREFIX + "Fighter";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAM] = UA_PREFIX + "Monk";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAP] = UA_PREFIX + "Paladin";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAMC] = UA_PREFIX + "Modifying Classes";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAS] = UA_PREFIX + "Sorcerer";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAWAW] = UA_PREFIX + "Warlock and Wizard";
-Parser.SOURCE_JSON_TO_FULL[SRC_UATF] = UA_PREFIX + "The Faithful";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAWR] = UA_PREFIX + "Wizard Revisited";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAESR] = UA_PREFIX + "Elf Subraces";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAMAC] = UA_PREFIX + "Mass Combat";
-Parser.SOURCE_JSON_TO_FULL[SRC_UA3PE] = UA_PREFIX + "Three-Pillar Experience";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAGHI] = UA_PREFIX + "Greyhawk Initiative";
-Parser.SOURCE_JSON_TO_FULL[SRC_UATSC] = UA_PREFIX + "Three Subclasses";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAOD] = UA_PREFIX + "Order Domain";
-Parser.SOURCE_JSON_TO_FULL[SRC_UACAM] = UA_PREFIX + "Centaurs and Minotaurs";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAGSS] = UA_PREFIX + "Giant Soul Sorcerer";
-Parser.SOURCE_JSON_TO_FULL[SRC_UARoE] = UA_PREFIX + "Races of Eberron";
-Parser.SOURCE_JSON_TO_FULL[SRC_UARoR] = UA_PREFIX + "Races of Ravnica";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAWGE] = "Wayfinder's Guide to Eberron";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAOSS] = UA_PREFIX + "Of Ships and the Sea";
-Parser.SOURCE_JSON_TO_FULL[SRC_UASIK] = UA_PREFIX + "Sidekicks";
-Parser.SOURCE_JSON_TO_FULL[SRC_UAAR] = UA_PREFIX + "奇械師再製";
-Parser.SOURCE_JSON_TO_FULL[SRC_STREAM] = "Livestream";
-Parser.SOURCE_JSON_TO_FULL[SRC_TWITTER] = "Twitter";
-
-Parser.SOURCE_JSON_TO_ABV = {};
-Parser.SOURCE_JSON_TO_ABV[SRC_CoS] = "CoS";
-Parser.SOURCE_JSON_TO_ABV[SRC_DMG] = "DMG";
-Parser.SOURCE_JSON_TO_ABV[SRC_EEPC] = "EEPC";
-Parser.SOURCE_JSON_TO_ABV[SRC_EET] = "EET";
-Parser.SOURCE_JSON_TO_ABV[SRC_HotDQ] = "HotDQ";
-Parser.SOURCE_JSON_TO_ABV[SRC_LMoP] = "LMoP";
-Parser.SOURCE_JSON_TO_ABV[SRC_Mag] = "Mag";
-Parser.SOURCE_JSON_TO_ABV[SRC_MM] = "MM";
-Parser.SOURCE_JSON_TO_ABV[SRC_OotA] = "OotA";
-Parser.SOURCE_JSON_TO_ABV[SRC_PHB] = "PHB";
-Parser.SOURCE_JSON_TO_ABV[SRC_PotA] = "PotA";
-Parser.SOURCE_JSON_TO_ABV[SRC_RoT] = "RoT";
-Parser.SOURCE_JSON_TO_ABV[SRC_RoTOS] = "RoTOS";
-Parser.SOURCE_JSON_TO_ABV[SRC_SCAG] = "SCAG";
-Parser.SOURCE_JSON_TO_ABV[SRC_SKT] = "SKT";
-Parser.SOURCE_JSON_TO_ABV[SRC_ToA] = "ToA";
-Parser.SOURCE_JSON_TO_ABV[SRC_ToD] = "ToD";
-Parser.SOURCE_JSON_TO_ABV[SRC_TTP] = "TTP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_AtG] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_DiT] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_TFoF] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_THSoT] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_TSC] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_ToH] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_TYP_WPM] = "TftYP";
-Parser.SOURCE_JSON_TO_ABV[SRC_VGM] = "VGM";
-Parser.SOURCE_JSON_TO_ABV[SRC_XGE] = "XGE";
-Parser.SOURCE_JSON_TO_ABV[SRC_OGA] = "OGA";
-Parser.SOURCE_JSON_TO_ABV[SRC_MTF] = "MTF";
-Parser.SOURCE_JSON_TO_ABV[SRC_WDH] = "WDH";
-Parser.SOURCE_JSON_TO_ABV[SRC_WDMM] = "WDMM";
-Parser.SOURCE_JSON_TO_ABV[SRC_GGR] = "GGR";
-Parser.SOURCE_JSON_TO_ABV[SRC_KKW] = "KKW";
-Parser.SOURCE_JSON_TO_ABV[SRC_LLK] = "LLK";
-Parser.SOURCE_JSON_TO_ABV[SRC_AL] = "AL";
-Parser.SOURCE_JSON_TO_ABV[SRC_SCREEN] = "Screen";
-Parser.SOURCE_JSON_TO_ABV[SRC_ALCoS] = "ALCoS";
-Parser.SOURCE_JSON_TO_ABV[SRC_ALEE] = "ALEE";
-Parser.SOURCE_JSON_TO_ABV[SRC_ALRoD] = "ALRoD";
-Parser.SOURCE_JSON_TO_ABV[SRC_PSA] = "PSA";
-Parser.SOURCE_JSON_TO_ABV[SRC_PSI] = "PSI";
-Parser.SOURCE_JSON_TO_ABV[SRC_PSK] = "PSK";
-Parser.SOURCE_JSON_TO_ABV[SRC_PSZ] = "PSZ";
-Parser.SOURCE_JSON_TO_ABV[SRC_PSX] = "PSX";
-Parser.SOURCE_JSON_TO_ABV[SRC_PSD] = "PSD";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAA] = "UAA";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAEAG] = "UAEaG";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAEBB] = "UAEB";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAFFR] = "UAFFR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAFFS] = "UAFFS";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAFO] = "UAFO";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAFT] = "UAFT";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAGH] = "UAGH";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAMDM] = "UAMM";
-Parser.SOURCE_JSON_TO_ABV[SRC_UASSP] = "UASS";
-Parser.SOURCE_JSON_TO_ABV[SRC_UATMC] = "UAM";
-Parser.SOURCE_JSON_TO_ABV[SRC_UATOBM] = "UAOBM";
-Parser.SOURCE_JSON_TO_ABV[SRC_UATRR] = "UATRR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAWA] = "UAWA";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAVR] = "UAVR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UALDR] = "UALDU";
-Parser.SOURCE_JSON_TO_ABV[SRC_UARAR] = "UARAR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAATOSC] = "UAATOSC";
-Parser.SOURCE_JSON_TO_ABV[SRC_UABPP] = "UABPP";
-Parser.SOURCE_JSON_TO_ABV[SRC_UARSC] = "UARSC";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAKOO] = "UAKoO";
-Parser.SOURCE_JSON_TO_ABV[SRC_UABBC] = "UABBC";
-Parser.SOURCE_JSON_TO_ABV[SRC_UACDD] = "UACDD";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAD] = "UAD";
-Parser.SOURCE_JSON_TO_ABV[SRC_UARCO] = "UARCO";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAF] = "UAF";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAM] = "UAM";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAP] = "UAP";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAMC] = "UAMC";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAS] = "UAS";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAWAW] = "UAWAW";
-Parser.SOURCE_JSON_TO_ABV[SRC_UATF] = "UATF";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAWR] = "UAWR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAESR] = "UAESR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAMAC] = "UAMAC";
-Parser.SOURCE_JSON_TO_ABV[SRC_UA3PE] = "UA3PE";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAGHI] = "UAGHI";
-Parser.SOURCE_JSON_TO_ABV[SRC_UATSC] = "UATSC";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAOD] = "UAOD";
-Parser.SOURCE_JSON_TO_ABV[SRC_UACAM] = "UACAM";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAGSS] = "UAGSS";
-Parser.SOURCE_JSON_TO_ABV[SRC_UARoE] = "UARoE";
-Parser.SOURCE_JSON_TO_ABV[SRC_UARoR] = "UARoR";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAWGE] = "WGE";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAOSS] = "UAOSS";
-Parser.SOURCE_JSON_TO_ABV[SRC_UASIK] = "UASIK";
-Parser.SOURCE_JSON_TO_ABV[SRC_UAAR] = "UAAR";
-Parser.SOURCE_JSON_TO_ABV[SRC_STREAM] = "Stream";
-Parser.SOURCE_JSON_TO_ABV[SRC_TWITTER] = "Twitter";
-
-Parser.ITEM_TYPE_JSON_TO_ABV = {
-	"A": "Ammunition",
-	"AF": "Ammunition",
-	"AT": "Artisan Tool",
-	"EM": "Eldritch Machine",
-	"EXP": "Explosive",
-	"G": "Adventuring Gear",
-	"GS": "Gaming Set",
-	"HA": "Heavy Armor",
-	"INS": "Instrument",
-	"LA": "Light Armor",
-	"M": "Melee Weapon",
-	"MA": "Medium Armor",
-	"MNT": "Mount",
-	"GV": "Generic Variant",
-	"P": "Potion",
-	"R": "Ranged Weapon",
-	"RD": "Rod",
-	"RG": "Ring",
-	"S": "Shield",
-	"SC": "Scroll",
-	"SCF": "Spellcasting Focus",
-	"OTH": "Other",
-	"T": "Tool",
-	"TAH": "Tack and Harness",
-	"TG": "Trade Good",
-	"VEH": "Vehicle",
-	"SHP": "Vehicle",
-	"WD": "Wand"
-};
-
-Parser.DMGTYPE_JSON_TO_FULL = {
-	"A": "酸蝕",
-	"B": "鈍擊",
-	"C": "寒冰",
-	"F": "火焰",
-	"O": "力場",
-	"L": "閃電",
-	"N": "死靈",
-	"P": "穿刺",
-	"I": "毒素",
-	"Y": "精神",
-	"R": "光耀",
-	"S": "劈砍",
-	"T": "雷鳴"
-};
-
-Parser.DMG_TYPES = ["acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder"];
-Parser.CONDITIONS = ["blinded", "charmed", "deafened", "exhaustion", "frightened", "grappled", "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned", "unconscious"];
-
-Parser.SKILL_JSON_TO_FULL = {
-	"特技": [
-		"你的敏捷（特技）檢定涵蓋了你在各種棘手情況下站穩的企圖，例如在冰面上奔跑、在拉緊的繩索上保持平衡、或在劇烈搖晃的甲板上維持直立。DM也可能會要求一次敏捷（特技）檢定以決定你能否做出體操特技，包括前翻、側翻、空翻、後翻等等。"
-	],
-	"動物馴養": [
-		"每當不確定你是否能夠安撫家畜、使坐騎不受驚嚇、或推斷出動物的意圖時，DM可能會要求一次睿知（動物馴養）檢定。當你嘗試控制你的坐騎進行一些危險動作時，你也需要進行一次睿知（動物馴養）檢定。"
-	],
-	"奧秘": [
-		"你的智力（奧秘）檢定被用以衡量你回憶關於法術、魔法物品、奧秘符文、魔法傳統、位面存在、以及位面居民等相關知識的能力。"
-	],
-	"運動": [
-		"你的力量（運動）檢定涵蓋了各種當你在攀爬、跳躍、或游泳時會遭遇的困難情況。例子包括以下行動：",
-		{
-			"type": "list",
-			"items": [
-				"你嘗試攀爬一座陡峭或光滑的峭壁、在攀登牆壁時避開危險、或在有東西想把你擊落的情況下抓緊壁面。",
-				"你嘗試跳出一段超遠的距離、或在跳躍途中展現一段特技動作。",
-				"你拼命嘗試在凶險激流、風暴浪濤、或長滿層層海草的水域中游泳或維持漂浮。或者另一個生物試著將你推或拉入水中、或做出其他任何影響你游泳的行動。"
-			]
-		}
-	],
-	"欺瞞": [
-		"你的魅力（欺瞞）檢定決定你是否能可信地隱瞞真相、無論是透過口頭言語或你的行動。從模稜兩可地誤導某人到撒下彌天大謊，欺瞞可以涵蓋幾乎所有行為。典型的情況包括嘗試用話術影響守衛、欺騙商人、從賭局贏取金錢、透過易容冒充某人、用虛妄的保證緩和某人的懷疑、或者在撒大謊時維持撲克臉等等。"
-	],
-	"歷史": [
-		"你的智力（歷史）檢定被用以衡量你回憶關於歷史事件、傳奇人物、古老王國、昔日糾紛、近代戰爭、以及失落文明等相關知識的能力。"
-	],
-	"察言觀色": [
-		"你的睿知（察言觀色）檢定決定你是否能辦別另一個生物真正的意圖，例如辨別謊言或是預測某人的下一步。這樣做涉及了從對方的身體語言、說話習慣、以及態度轉變等行為中蒐集線索。"
-	],
-	"威嚇": [
-		"當你嘗試透過威脅、敵意行為、肉體暴力來影響他人時，DM可能會要求你進行一次魅力（威嚇）檢定。例子包括從囚犯口中逼供情報、迫使街頭混混從衝突中退讓、或者使用破瓶的利口讓某個正輕蔑冷笑著的大臣相信自己該重新考慮一下。"
-	],
-	"調查": [
-		"當你四處查探線索並基於這些線索進行推理時，你進行一次智力（調查）檢定。你可能會因此推斷出某個隱藏物體的位置、從傷口的外觀判斷它是什麼武器造成的、或找出某個隧道中可能導致坍方的結構性弱點。為了尋找隱藏的知識片段而鑽研古卷也可能會需要一次智力（調查）檢定。"
-	],
-	"醫藥": [
-		"一次睿知（醫藥）檢定能讓你嘗試穩定一個瀕死同伴的傷勢或者診斷疾病。"
-	],
-	"自然": [
-		"你的智力（自然）檢定被用以衡量你回憶關於地勢、動植物、氣候、以及自然週期等相關知識的能力。"
-	],
-	"感知": [
-		"你的睿知（感知）檢定讓你能夠透過看、聽、或其他方式來發現某些東西的存在。它代表著你對周圍環境的總體意識以及你感官的敏銳度。", "舉例來說，你可以會嘗試聆聽門後的對話、在敞開的窗戶下竊聽、或聽見在森林中悄聲移動的怪物。或者，你可能會試著看見被遮蔽或容易看走眼的東西，無論它們是在前路埋伏的獸人、躲在暗巷裡的混混、還是從緊閉的暗門門鏠中透出的燭光。"
-	],
-	"表演": [
-		"你的魅力（表演）檢定決定你能多好地用音樂、舞蹈、演劇、說書、或其他方式來娛樂觀眾。"
-	],
-	"說服": [
-		"當你嘗試圓滑地、優雅地、或善意地影響某人或某群人時，DM可能會要求你進行一次魅力（說服）檢定。通常來說，你會在真誠地行事時使用說服以培養友誼，做出真摯的請求，或展示恰當的禮儀。說服他人的例子包括說服宮廷大臣讓你的隊伍晉見國王、協談敵對部族之間的和平、或者鼓舞激勵村民群眾。"
-	],
-	"宗教": [
-		"你的智力（宗教）檢定被用以衡量你回憶關於神祇、儀式和祈禱、宗教階級、聖徽、以及秘密異教的慣例等相關知識的能力。"
-	],
-	"手上把戲": [
-		"每當你嘗試表演晃眼花招或手上把戲，像是把某個東西放在他人身上或將一件東西藏在自已身上，進行一次敏捷（手上把戲）檢定。DM可能也會要求你進行敏捷（手上把戲）檢定以決定你是否能從他人的錢包中偷出錢幣、或從他人的口袋摸出某個東西。"
-	],
-	"隱匿": [
-		"當你嘗試隱藏自己以躲避敵人、從守衛身邊溜過去、不被注意的潛逃、或無聲無息地偷偷接近某人時，進行一次敏捷（隱匿）檢定。"
-	],
-	"求生": [
-		"DM可能會要求你進行一次睿知（求生）檢定以追尋蹤跡、狩獵野味、帶領你的隊伍穿越冰原、辨識梟頭熊生活於附近的徵兆、預測天氣、或者避開流沙以及其他自然危險。"
-	]
-};
-
-Parser.ACTION_JSON_TO_FULL = {
-	"攻擊": [
-		"攻擊動作是戰鬥中最常被採取的動作，包括了揮劍劈砍、彎弓射箭、或徒手揮拳等行動。",
-		"透過這個動作，你進行一次近戰或遠程攻擊。參見「{@book Making an Attack|phb|9|發動攻擊}」章節以查閱關於攻擊規則的詳細描述。",
-		"某些能力，例如戰士的額外攻擊能力，能讓你透過這個動作進行超過一次的攻擊。"
-	],
-	"疾走": [
-		"當你採取疾走動作時，你在當回合獲得額外的移動力。其增加的移動力等同於你應用任何適用加值後的移動速度。舉例來說，若你的移動速度為30呎，則當你採取疾走動作後，你可以在你的回合移動最多60呎距離。",
-		"任何對你移動速度的增減都會使這個額外的移動力改變相同的數值。舉例來說，若你的30呎移動速度被減少至15呎，則當你採取疾走動作後，你在該回合就只能移動最多30呎距離。"
-	],
-	"撤離": [
-		"若你採取撤離動作，則你在該回合內接下來進行的移動將不會引發藉機攻擊。"
-	],
-	"閃避": [
-		"當你採取閃避動作，你將全神專注於閃躲攻擊。直到你的下個回合開始前，若你可以看見攻擊者，則任何對你所進行的攻擊檢定都將具有劣勢，且你在敏捷豁免檢定中具有優勢。若你陷入無力狀態（見附錄說明）、或若你的移動速度歸零，則你將失去這些好處。"
-	],
-	"協助": [
-		"你可以伸出援手以協助另一個生物達成其行動。當你採取協助動作，你所協助的生物將在下一次它為了執行你所幫助事項而進行的屬性檢定中具有優勢，但該檢定必須在你的下個回合開始前進行才能獲得這個好處。",
-		"或者，你可以協助一個友善生物攻擊一個距離你5呎內的生物。你做出佯攻、使目標分心、或用其他某些方式合作已使你盟友的攻擊更有效果。若你的盟友在你的下個回合前攻擊該目標，則其進行的第一次攻擊檢定將具有優勢。"
-	],
-	"躲藏": [
-		"當你採取躲藏動作，你進行一次敏捷（隱匿）檢定以嘗試躲藏，遵循第七章關於躲藏的規則。若你檢定成功，則你將獲得某些好處，詳情參照《玩家手冊》中的「{@book 看不見的攻擊者和目標|PHB|9|看不見的攻擊者和目標}」章節中的描述。"
-	],
-	"預備": [
-		"有時候你想要搶在敵人之前、或者等到特定情況發生後立即行動。若要這麼做，你可以在你的回合採取預備動作，好讓你可以在該輪稍後的時機使用你的反應以採取行動。",
-		"首先，你決定什麼樣的情況將會觸發你的反應，這個情況必須是可以被觀測的。接著，你選擇你在回應其觸發時所要採取的動作，或者你選擇移動最多等同於你移動速度的距離以回應其觸發。一些例子包括「如果那名邪教徒踩上陷阱門，我就要拉下拉桿以打開它」、和「如果那隻哥不林走到我面前，我就立刻移開。」",
-		"當觸發事件發生時，你可以選擇在觸發事件結束後緊接著採取你的反應，或者選擇忽略該觸發事件。記住，你在每輪中只能採取一個反應。",
-		"當你預備一個法術時，你仍如常施放它但扣住其能量，好讓你在觸發事件發生時能夠以你的反應釋放它。一個法術必須具有1個動作的施法時間才能被預備，且扣住該法術的魔法需要專注（參見第十章的說明）。若你的專注被打斷，則該法術將消散且不會發揮任何效果。舉例來說，若你正專注於蛛網術法術，並預備施放了魔法飛彈，則你的蛛網術法術將結束，且若你在以你的反應釋放魔法飛彈之前承受傷害，則你的專注可能會因此被打斷。",
-		"你預備好的動作只能在你的下個回合開始之前被使用。"
-	],
-	"搜尋": [
-		"當你採取搜尋動作，你將全神投入於找尋某個事物。根據你搜尋方式的性質，DM可能會要求你進行一次睿知（感知）檢定或一次智力（調查）檢定。"
-	],
-	"使用物件": [
-		"你通常會在做其他事的同時與一個物體互動，例如在攻擊的同時抽出長劍。當某個物體要求你使用你的動作以使用它時，你採取使用物件的動作。這個動作在你想要於你的回合中與超過一個物體互動時也能派上用場。"
-	]
-};
-
-Parser.SENSE_JSON_TO_FULL = {
-	"盲視": [
-		"具有盲視的生物即使不依賴視覺也可以感知其周遭特定半徑範圍內的環境。沒有眼睛的生物（像是泥怪）、以及具有回聲定位或高敏感官的生物（像是蝙蝠和真龍）都具有這種感官。"
-	],
-	"黑暗視覺": [
-		"奇幻遊戲世界中的許多生物，特別是那些居住於地底的生物，都具有黑暗視覺。在特定半徑範圍內，具有黑暗視覺的生物可以將微光光照視作明亮光照，並將黑暗環境視作微光光照，因此黑暗環境對於這些生物而言僅會被輕度遮蔽。然而，這些生物無法辨別黑暗中的顏色，而只能看到灰黑的輪廓。"
-	],
-	"震顫感知": [
-		"只要具有震顫感知的生物與震動來源都接觸著相同的地表或物質，該生物可以感知並精準定位其特定半徑範圍內的震動來源。震顫感知並不能被用以偵測飛行或虛體生物。許多掘穴生物，像是掘地蟲和土巨怪，都具有這種特殊的感官。"
-	],
-	"真實視覺": [
-		"具有真實視覺的生物在特定半徑範圍內，可以看透普通或魔法黑暗、看見隱形的生物和物體、自動偵測出視覺幻象並成功通過對抗它們的豁免檢定、並看穿變形者或被魔法變形的生物的原始型態。此外，這些生物也可以看見位於乙太位面的事物。"
-	]
-};
-
-Parser.NUMBERS_ONES = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
-Parser.NUMBERS_TENS = ['', '', '二十', '三十', '四十', '五十', '六十', '七十', '八十', '九十'];
-Parser.NUMBERS_TEENS = ['十', '十一', '十二', '十三', '十四', '十五', '十六', '十七', '十八', '十九'];
+CleanUtil.SHARED_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.SHARED_REPLACEMENTS).join("|"), "g");
+CleanUtil.STR_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.STR_REPLACEMENTS).join("|"), "g");
+CleanUtil.JSON_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.JSON_REPLACEMENTS).join("|"), "g");
 
 // SOURCES =============================================================================================================
 SourceUtil = {
-	hasBeenReprinted (shortName, source) {
-		/* can accept sources of the form:
-		{
-			"source": "UAExample",
-			"forceStandard": true
-		}
-		 */
-		if (source && source.source) source = source.source;
-		return (shortName !== undefined && shortName !== null && source !== undefined && source !== null) &&
-			(
-				(shortName === "Sun Soul" && source === SRC_SCAG) ||
-				(shortName === "Mastermind" && source === SRC_SCAG) ||
-				(shortName === "Swashbuckler" && source === SRC_SCAG) ||
-				(shortName === "Storm" && source === SRC_SCAG)
-			);
+	_subclassReprintLookup: {},
+	async pInitSubclassReprintLookup () {
+		SourceUtil._subclassReprintLookup = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-subclass-lookup.json`);
+	},
+
+	isSubclassReprinted (className, classSource, subclassShortName, subclassSource) {
+		const fromLookup = MiscUtil.get(SourceUtil._subclassReprintLookup, classSource, className, subclassSource, subclassShortName);
+		return fromLookup ? fromLookup.isReprinted : false;
+	},
+
+	isAdventure (source) {
+		if (source instanceof FilterItem) source = source.item;
+		return Parser.SOURCES_ADVENTURES.has(source);
+	},
+
+	isCoreOrSupplement (source) {
+		if (source instanceof FilterItem) source = source.item;
+		return Parser.SOURCES_CORE_SUPPLEMENTS.has(source);
 	},
 
 	isNonstandardSource (source) {
-		/* can accept sources of the form:
-		{
-			"source": "UAExample",
-			"forceStandard": true
-		}
-		 */
-		if (source && source.forceStandard !== undefined) {
-			return !source.forceStandard;
-		}
-		if (source && source.source) source = source.source;
-		return (source !== undefined && source !== null) && !BrewUtil.hasSourceJson(source) && (SourceUtil._isNonstandardSourceWiz(source) || SourceUtil._isNonstandardSource3pp(source));
+		return source != null && !BrewUtil.hasSourceJson(source) && SourceUtil._isNonstandardSourceWiz(source);
 	},
 
 	_isNonstandardSourceWiz (source) {
-		return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA || source === SRC_Mag || source === SRC_STREAM || source === SRC_TWITTER;
-	},
-
-	_isNonstandardSource3pp (source) {
-		return source.endsWith(SRC_3PP_SUFFIX);
+		return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source.startsWith(SRC_AL_PREFIX) || Parser.SOURCES_NON_STANDARD_WOTC.has(source);
 	},
 
 	getFilterGroup (source) {
+		if (source instanceof FilterItem) source = source.item;
 		if (BrewUtil.hasSourceJson(source)) return 2;
 		return Number(SourceUtil.isNonstandardSource(source));
-	}
+	},
+
+	getAdventureBookSourceHref (source, page) {
+		if (!source) return null;
+		source = source.toLowerCase();
+
+		// TODO this could be made to work with homebrew
+		let docPage;
+		if (Parser.SOURCES_AVAILABLE_DOCS_BOOK[source]) docPage = UrlUtil.PG_BOOK;
+		else if (Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[source]) docPage = UrlUtil.PG_ADVENTURE;
+		if (!docPage) return null;
+
+		return `${docPage}#${[source, page ? `page:${page}` : null].filter(Boolean).join(HASH_PART_SEP)}`;
+	},
+};
+
+// CURRENCY ============================================================================================================
+CurrencyUtil = {
+	/**
+	 * Convert 10 gold -> 1 platinum, etc.
+	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
+	 * @param [opts]
+	 * @param [opts.currencyConversionId] Currency conversion table ID.
+	 * @param [opts.currencyConversionTable] Currency conversion table.
+	 * @param [opts.originalCurrency] Original currency object, if the current currency object is after spending coin.
+	 * @param [opts.isPopulateAllValues] If all currency properties should be be populated, even if no currency of that
+	 * type is being returned (i.e. zero out unused coins).
+	 */
+	doSimplifyCoins (obj, opts) {
+		opts = opts || {};
+
+		const conversionTable = opts.currencyConversionTable || Parser.getCurrencyConversionTable(opts.currencyConversionId);
+		if (!conversionTable.length) return obj;
+
+		const normalized = conversionTable
+			.map(it => {
+				return {
+					...it,
+					normalizedMult: 1 / it.mult,
+				}
+			})
+			.sort((a, b) => SortUtil.ascSort(a.normalizedMult, b.normalizedMult));
+
+		// Simplify currencies
+		for (let i = 0; i < normalized.length - 1; ++i) {
+			const coinCur = normalized[i].coin;
+			const coinNxt = normalized[i + 1].coin;
+			const coinRatio = normalized[i + 1].normalizedMult / normalized[i].normalizedMult;
+
+			if (obj[coinCur] && Math.abs(obj[coinCur]) >= coinRatio) {
+				const nxtVal = obj[coinCur] >= 0 ? Math.floor(obj[coinCur] / coinRatio) : Math.ceil(obj[coinCur] / coinRatio);
+				obj[coinCur] = obj[coinCur] % coinRatio;
+				obj[coinNxt] = (obj[coinNxt] || 0) + nxtVal;
+			}
+		}
+
+		// Note: this assumes that we, overall, lost money.
+		if (opts.originalCurrency) {
+			const normalizedHighToLow = MiscUtil.copy(normalized).reverse();
+
+			// For each currency, look at the previous coin's diff. Say, for gp, that it is -1pp. That means we could have
+			//   gained up to 10gp as change. So we can have <original gold or 0> + <10gp> max gold; the rest is converted
+			//   to sp. Repeat to the end.
+			// Never allow more highest-value currency (i.e. pp) than we originally had.
+			normalizedHighToLow
+				.forEach((coinMeta, i) => {
+					const valOld = opts.originalCurrency[coinMeta.coin] || 0;
+					const valNew = obj[coinMeta.coin] || 0;
+
+					const prevCoinMeta = normalizedHighToLow[i - 1];
+					const nxtCoinMeta = normalizedHighToLow[i + 1];
+
+					if (!prevCoinMeta) { // Handle the biggest currency, e.g. platinum--never allow it to increase
+						if (nxtCoinMeta) {
+							const diff = valNew - valOld;
+							if (diff > 0) {
+								obj[coinMeta.coin] = valOld;
+								const coinRatio = coinMeta.normalizedMult / nxtCoinMeta.normalizedMult;
+								obj[nxtCoinMeta.coin] = (obj[nxtCoinMeta.coin] || 0) + (diff * coinRatio);
+							}
+						}
+					} else {
+						if (nxtCoinMeta) {
+							const diffPrevCoin = (opts.originalCurrency[prevCoinMeta.coin] || 0) - (obj[prevCoinMeta.coin] || 0);
+							const coinRatio = prevCoinMeta.normalizedMult / coinMeta.normalizedMult;
+							const capFromOld = valOld + (diffPrevCoin > 0 ? diffPrevCoin * coinRatio : 0);
+							const diff = valNew - capFromOld;
+							if (diff > 0) {
+								obj[coinMeta.coin] = capFromOld;
+								const coinRatio = coinMeta.normalizedMult / nxtCoinMeta.normalizedMult;
+								obj[nxtCoinMeta.coin] = (obj[nxtCoinMeta.coin] || 0) + (diff * coinRatio);
+							}
+						}
+					}
+				});
+		}
+
+		normalized
+			.filter(coinMeta => obj[coinMeta.coin] === 0 || obj[coinMeta.coin] == null)
+			.forEach(coinMeta => {
+				// First set the value to null, in case we're dealing with a class instance that has setters
+				obj[coinMeta.coin] = null;
+				delete obj[coinMeta.coin];
+			});
+
+		if (opts.isPopulateAllValues) normalized.forEach(coinMeta => obj[coinMeta.coin] = obj[coinMeta.coin] || 0);
+
+		return obj;
+	},
+
+	/**
+	 * Convert a collection of coins into an equivalent value in copper.
+	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
+	 */
+	getAsCopper (obj) {
+		return Parser.FULL_CURRENCY_CONVERSION_TABLE
+			.map(currencyMeta => (obj[currencyMeta.coin] || 0) * (1 / currencyMeta.mult))
+			.reduce((a, b) => a + b, 0);
+	},
 };
 
 // CONVENIENCE/ELEMENTS ================================================================================================
-Math.sum = Math.sum ||
-	function (...values) {
-		return values.reduce((a, b) => a + b, 0);
+Math.seed = Math.seed || function (s) {
+	return function () {
+		s = Math.sin(s) * 10000;
+		return s - Math.floor(s);
 	};
-
-Math.mean = Math.mean ||
-	function (...values) {
-		return Math.sum(...values) / values.length;
-	};
-
-Math.meanAbsoluteDeviation = Math.meanAbsoluteDeviation ||
-	function (...values) {
-		const mean = Math.mean(...values);
-		return Math.mean(...(values.map(num => Math.abs(num - mean))));
-	};
-
-Math.seed = Math.seed ||
-	function (s) {
-		return function () {
-			s = Math.sin(s) * 10000;
-			return s - Math.floor(s);
-		};
-	};
-
-function xor (a, b) {
-	return !a !== !b;
-}
-
-/**
- * > implying
- */
-function implies (a, b) {
-	return (!a) || b;
-}
-
-function noModifierKeys (e) {
-	return !e.ctrlKey && !e.altKey && !e.metaKey;
-}
-
-function isObject (obj) {
-	const type = typeof obj;
-	return (type === 'function' || type === 'object') && !!obj;
-}
-
-function isString (str) {
-	return typeof str === 'string';
-}
-
-function isNumber (obj) {
-	return toString.call(obj) === '[object Number]';
-}
-
-function isEmpty (obj) {
-	if (obj == null) {
-		return true;
-	}
-	if (Array.isArray(obj) || isString(obj)) {
-		return obj.length === 0;
-	}
-	return Object.keys(obj).length === 0;
-}
+};
 
 JqueryUtil = {
+	_isEnhancementsInit: false,
 	initEnhancements () {
+		if (JqueryUtil._isEnhancementsInit) return;
+		JqueryUtil._isEnhancementsInit = true;
+
 		JqueryUtil.addSelectors();
 
 		/**
 		 * Template strings which can contain jQuery objects.
 		 * Usage: $$`<div>Press this button: ${$btn}</div>`
+		 * @return JQuery
 		 */
-		window.$$ = function (parts, ...args) { // TODO use this instead of .swap()
-			const $eles = [];
-			let ixArg = 0;
+		window.$$ = function (parts, ...args) {
+			if (parts instanceof jQuery) {
+				return (...passed) => {
+					const parts2 = [...passed[0]];
+					const args2 = passed.slice(1);
+					parts2[0] = `<div>${parts2[0]}`;
+					parts2.last(`${parts2.last()}</div>`);
 
-			const handleArg = (arg) => {
-				if (arg instanceof $) {
-					// TODO inject appropriate elements for the parent and remove "slot" specifier on replace selector
-					// the places where these would be inserted usually can't support <slot>
-					// TODO also doesn't work inside <select>
-					if (arg.is("tr") || arg.is("td") || arg.is("th")) throw new Error(`Unsupported element type "${arg[0].tagName}"!`);
-					$eles.push(arg);
-					return `<slot data-r=true></slot>`;
-				} else if (arg instanceof HTMLElement) {
-					return handleArg($(arg));
-				} else return arg
-			};
+					const $temp = $$(parts2, ...args2);
+					$temp.children().each((i, e) => $(e).appendTo(parts));
+					return parts;
+				};
+			} else {
+				const $eles = [];
+				let ixArg = 0;
 
-			const raw = parts.reduce((html, p) => {
-				const myIxArg = ixArg++;
-				if (args[myIxArg] == null) return `${html}${p}`;
-				if (args[myIxArg] instanceof Array) return `${html}${args[myIxArg].map(arg => handleArg(arg)).join("")}${p}`;
-				else return `${html}${handleArg(args[myIxArg])}${p}`;
-			});
-			const $res = $(raw);
-			$res.find(`slot[data-r=true]`).replaceWith(i => $eles[i]);
-			return $res;
+				const handleArg = (arg) => {
+					if (arg instanceof $) {
+						$eles.push(arg);
+						return `<${arg.tag()} data-r="true"></${arg.tag()}>`;
+					} else if (arg instanceof HTMLElement) {
+						return handleArg($(arg));
+					} else return arg
+				};
+
+				const raw = parts.reduce((html, p) => {
+					const myIxArg = ixArg++;
+					if (args[myIxArg] == null) return `${html}${p}`;
+					if (args[myIxArg] instanceof Array) return `${html}${args[myIxArg].map(arg => handleArg(arg)).join("")}${p}`;
+					else return `${html}${handleArg(args[myIxArg])}${p}`;
+				});
+				const $res = $(raw);
+
+				if ($res.length === 1) {
+					if ($res.attr("data-r") === "true") return $eles[0];
+					else $res.find(`[data-r=true]`).replaceWith(i => $eles[i]);
+				} else {
+					// Handle case where user has passed in a bunch of elements with no outer wrapper
+					const $tmp = $(`<div></div>`);
+					$tmp.append($res);
+					$tmp.find(`[data-r=true]`).replaceWith(i => $eles[i]);
+					return $tmp.children();
+				}
+
+				return $res;
+			}
 		};
 
 		$.fn.extend({
-			/**
-			 * Has two modes; either:
-			 * Takes a jQuery object and replaces elements with `data-r-<n>` with the nth position arg, e.g.
-			 * $(`<div><div>my <span>initial</span> html <div data-r="0"/> <div data-r="1"/></div>`)
-			 *
-			 * or:
-			 * Takes a jQuery object and replaces elements with `data-r-<id>` with the element at key id
-			 * $(`<div><div>my <span>initial</span> html <div data-r="foo"/> <div data-r="bar"/></div>`)
-			 */
-			swap: function (...$toSwap) {
-				if ($toSwap.length === 1 && !($toSwap[0] instanceof jQuery)) {
-					Object.entries($toSwap[0]).forEach(([k, $v]) => {
-						this.find(`[data-r="${k}"]`).replaceWith($v);
-					});
-				} else {
-					$toSwap.forEach(ts => {
-						this.find(`[data-r]`).first().replaceWith(ts);
-					});
-				}
+			// avoid setting input type to "search" as it visually offsets the contents of the input
+			disableSpellcheck: function () { return this.attr("autocomplete", "new-password").attr("autocapitalize", "off").attr("spellcheck", "false"); },
+			tag: function () { return this.prop("tagName").toLowerCase(); },
+			title: function (...args) { return this.attr("title", ...args); },
+			placeholder: function (...args) { return this.attr("placeholder", ...args); },
+			disable: function () { return this.attr("disabled", true); },
 
+			/**
+			 * Quickly set the innerHTML of the innermost element, without parsing the whole thing with jQuery.
+			 * Useful for populating e.g. a table row.
+			 */
+			fastSetHtml: function (html) {
+				if (!this.length) return this;
+				let tgt = this[0];
+				while (tgt.children.length) {
+					tgt = tgt.children[0];
+				}
+				tgt.innerHTML = html;
 				return this;
 			},
 
-			disableSpellcheck: function () {
-				this.attr("autocomplete", "off").attr("autocapitalize", "off").attr("spellcheck", "false");
-				return this;
-			}
+			blurOnEsc: function () {
+				return this.keydown(evt => {
+					if (evt.which === 27) this.blur(); // escape
+				});
+			},
+
+			hideVe: function () { return this.addClass("ve-hidden"); },
+			showVe: function () { return this.removeClass("ve-hidden"); },
+			toggleVe: function (val) {
+				if (val === undefined) return this.toggleClass("ve-hidden", !this.hasClass("ve-hidden"));
+				else return this.toggleClass("ve-hidden", !val);
+			},
 		});
 
 		$.event.special.destroyed = {
 			remove: function (o) {
 				if (o.handler) o.handler();
-			}
+			},
 		}
 	},
 
 	addSelectors () {
 		// Add a selector to match exact text (case insensitive) to jQuery's arsenal
-		$.expr[':'].textEquals = (el, i, m) => {
-			const searchText = m[3];
-			const match = $(el).text().toLowerCase().trim().match(`^${RegExp.escape(searchText.toLowerCase().trim())}( [a-z0-9, ]+$)?$`);
-			return match && match.length > 0;
-		};
+		//   Note that the search text should be `trim().toLowerCase()`'d before being passed in
+		$.expr[":"].textEquals = (el, i, m) => $(el).text().toLowerCase().trim() === m[3].unescapeQuotes();
 
 		// Add a selector to match contained text (case insensitive)
-		$.expr[':'].containsInsensitive = (el, i, m) => {
+		$.expr[":"].containsInsensitive = (el, i, m) => {
 			const searchText = m[3];
-			const textNode = $(el).contents().filter((i, e) => {
-				return e.nodeType === 3;
-			})[0];
+			const textNode = $(el).contents().filter((i, e) => e.nodeType === 3)[0];
 			if (!textNode) return false;
-			const match = textNode.nodeValue.toLowerCase().trim().match(`${RegExp.escape(searchText.toLowerCase().trim())}`);
+			const match = textNode.nodeValue.toLowerCase().trim().match(`${searchText.toLowerCase().trim().escapeRegexp()}`);
 			return match && match.length > 0;
 		};
 	},
 
 	showCopiedEffect ($ele, text = "Copied!", bubble) {
-		const $temp = $(`<div class="copied-tip"><span>${text}</span></div>`).appendTo($(`body`));
-		const offset = $temp.width() / 2;
 		const top = $(window).scrollTop();
 		const pos = $ele.offset();
 
 		const animationOptions = {
 			top: "-=8",
-			opacity: 0
+			opacity: 0,
 		};
 		if (bubble) {
 			animationOptions.left = `${Math.random() > 0.5 ? "-" : "+"}=${~~(Math.random() * 17)}`;
 		}
 		const seed = Math.random();
 		const duration = bubble ? 250 + seed * 200 : 250;
+		const offsetY = bubble ? 16 : 0;
 
-		$temp.css({
-			top: bubble ? (pos.top - 5) - top : (pos.top - 17) - top,
-			left: pos.left - offset + ($ele.width() / 2)
-		}).animate(
-			animationOptions,
-			{
-				easing: "linear",
-				duration,
-				complete: () => $temp.remove(),
-				progress: (_, progress) => { // progress is 0..1
-					if (bubble) {
-						const diffProgress = 0.5 - progress;
-						animationOptions.top = `${diffProgress > 0 ? "-" : "+"}=40`;
-						$temp.css("transform", `rotate(${seed > 0.5 ? "-" : ""}${seed * 500 * progress}deg)`);
-					}
-				}
-			}
-		);
+		const $dispCopied = $(`<div class="clp__disp-copied"></div>`);
+		$dispCopied
+			.html(text)
+			.css({
+				top: (pos.top - 24) + offsetY - top,
+				left: pos.left + ($ele.width() / 2),
+			})
+			.appendTo(document.body)
+			.animate(
+				animationOptions,
+				{
+					duration,
+					complete: () => $dispCopied.remove(),
+					progress: (_, progress) => { // progress is 0..1
+						if (bubble) {
+							const diffProgress = 0.5 - progress;
+							animationOptions.top = `${diffProgress > 0 ? "-" : "+"}=40`;
+							$dispCopied.css("transform", `rotate(${seed > 0.5 ? "-" : ""}${seed * 500 * progress}deg)`);
+						}
+					},
+				},
+			);
 	},
 
 	_dropdownInit: false,
@@ -2489,17 +647,19 @@ JqueryUtil = {
 		$ele.click(() => setTimeout(() => $ele.parent().addClass("open"), 1)); // defer to allow the above to complete
 	},
 
-	_activeToast: [],
+	_ACTIVE_TOAST: [],
 	/**
-	 * @param {Object} options
-	 * @param {(jQuery|string)} options.content Toast contents. Support jQuery objects.
-	 * @param {string} options.type Toast type. Can be any Bootstrap alert type ("success", "info", "warning", or "danger")
+	 * @param {Object|string} options
+	 * @param {(jQuery|string)} options.content Toast contents. Supports jQuery objects.
+	 * @param {string} options.type Toast type. Can be any Bootstrap alert type ("success", "info", "warning", or "danger").
 	 */
 	doToast (options) {
+		if (typeof window === "undefined") return;
+
 		if (typeof options === "string") {
 			options = {
 				content: options,
-				type: "info"
+				type: "info",
 			};
 		}
 		options.type = options.type || "info";
@@ -2507,38 +667,180 @@ JqueryUtil = {
 		const doCleanup = ($toast) => {
 			$toast.removeClass("toast--animate");
 			setTimeout(() => $toast.remove(), 85);
-			JqueryUtil._activeToast.splice(JqueryUtil._activeToast.indexOf($toast), 1);
+			JqueryUtil._ACTIVE_TOAST.splice(JqueryUtil._ACTIVE_TOAST.indexOf($toast), 1);
 		};
 
-		const $btnToastDismiss = $(`<button class="btn toast__btn-close"><span class="glyphicon glyphicon-remove"/></button>`)
+		const $btnToastDismiss = $(`<button class="btn toast__btn-close"><span class="glyphicon glyphicon-remove"></span></button>`)
 			.click(() => doCleanup($toast));
 
-		const $toast = $(`
-				<div class="toast alert-${options.type}">
-					<div class="toast__wrp-content"><div data-r="$content"/></div>
-					<div class="toast__wrp-control"><div data-r="$btnToastDismiss"/></div>
-				</div>
-			`)
-			.swap({$content: options.content, $btnToastDismiss})
-			.prependTo($(`body`))
-			.data("pos", 0);
+		const $toast = $$`
+		<div class="toast toast--type-${options.type}">
+			<div class="toast__wrp-content">${options.content}</div>
+			<div class="toast__wrp-control">${$btnToastDismiss}</div>
+		</div>`.prependTo($(`body`)).data("pos", 0);
 
 		setTimeout(() => $toast.addClass(`toast--animate`), 5);
 		setTimeout(() => doCleanup($toast), 5000);
 
-		if (JqueryUtil._activeToast.length) {
-			JqueryUtil._activeToast.forEach($oldToast => {
+		if (JqueryUtil._ACTIVE_TOAST.length) {
+			JqueryUtil._ACTIVE_TOAST.forEach($oldToast => {
 				const pos = $oldToast.data("pos");
 				$oldToast.data("pos", pos + 1);
 				if (pos === 2) doCleanup($oldToast);
 			});
 		}
 
-		JqueryUtil._activeToast.push($toast);
-	}
+		JqueryUtil._ACTIVE_TOAST.push($toast);
+	},
 };
 
 if (typeof window !== "undefined") window.addEventListener("load", JqueryUtil.initEnhancements);
+
+ElementUtil = {
+	getOrModify ({
+		tag,
+		clazz,
+		style,
+		click,
+		contextmenu,
+		change,
+		mousedown,
+		mouseup,
+		mousemove,
+		html,
+		text,
+		ele,
+		title,
+		children,
+	}) {
+		ele = ele || document.createElement(tag);
+
+		if (clazz) ele.className = clazz;
+		if (style) ele.setAttribute("style", style);
+		if (click) ele.addEventListener("click", click);
+		if (contextmenu) ele.addEventListener("contextmenu", contextmenu);
+		if (change) ele.addEventListener("change", change);
+		if (mousedown) ele.addEventListener("mousedown", mousedown);
+		if (mouseup) ele.addEventListener("mouseup", mouseup);
+		if (mousemove) ele.addEventListener("mousemove", mousemove);
+		if (html) ele.innerHTML = html;
+		if (text) ele.innerHTML = `${text}`.qq();
+		if (title) ele.setAttribute("title", title);
+		if (children) for (let i = 0, len = children.length; i < len; ++i) ele.append(children[i]);
+
+		ele.appends = ele.appends || ElementUtil._appends.bind(ele);
+		ele.appendTo = ele.appendTo || ElementUtil._appendTo.bind(ele);
+		ele.prependTo = ele.prependTo || ElementUtil._prependTo.bind(ele);
+		ele.addClass = ele.addClass || ElementUtil._addClass.bind(ele);
+		ele.removeClass = ele.removeClass || ElementUtil._removeClass.bind(ele);
+		ele.toggleClass = ele.toggleClass || ElementUtil._toggleClass.bind(ele);
+		ele.showVe = ele.showVe || ElementUtil._showVe.bind(ele);
+		ele.hideVe = ele.hideVe || ElementUtil._hideVe.bind(ele);
+		ele.toggleVe = ele.toggleVe || ElementUtil._toggleVe.bind(ele);
+		ele.empty = ele.empty || ElementUtil._empty.bind(ele);
+		ele.detach = ele.detach || ElementUtil._detach.bind(ele);
+		ele.attr = ele.attr || ElementUtil._attr.bind(ele);
+		ele.val = ele.val || ElementUtil._val.bind(ele);
+		ele.html = ele.html || ElementUtil._html.bind(ele);
+
+		return ele;
+	},
+
+	_appends (child) {
+		this.appendChild(child);
+		return this;
+	},
+
+	_appendTo (parent) {
+		parent.appendChild(this);
+		return this;
+	},
+
+	_prependTo (parent) {
+		parent.prepend(this);
+		return this;
+	},
+
+	_addClass (clazz) {
+		this.classList.add(clazz);
+		return this;
+	},
+
+	_removeClass (clazz) {
+		this.classList.remove(clazz);
+		return this;
+	},
+
+	_toggleClass (clazz, isActive) {
+		if (isActive == null) this.classList.toggle(clazz);
+		else if (isActive) this.classList.add(clazz);
+		else this.classList.remove(clazz);
+		return this;
+	},
+
+	_showVe () {
+		this.classList.remove("ve-hidden");
+		return this;
+	},
+
+	_hideVe () {
+		this.classList.add("ve-hidden");
+		return this;
+	},
+
+	_toggleVe (isActive) {
+		this.toggleClass("ve-hidden", isActive == null ? isActive : !isActive);
+		return this;
+	},
+
+	_empty () {
+		this.innerHTML = "";
+		return this;
+	},
+
+	_detach () {
+		if (this.parentElement) this.parentElement.removeChild(this);
+		return this;
+	},
+
+	_attr (name, value) {
+		this.setAttribute(name, value);
+		return this;
+	},
+
+	_html (html) {
+		this.innerHTML = html;
+		return this;
+	},
+
+	_val (val) {
+		if (val !== undefined) {
+			switch (this.tagName) {
+				case "SELECT": {
+					let selectedIndexNxt = -1;
+					for (let i = 0, len = this.options.length; i < len; ++i) {
+						if (this.options[i]?.value === val) { selectedIndexNxt = i; break; }
+					}
+					this.selectedIndex = selectedIndexNxt;
+					return this;
+				}
+
+				default: {
+					this.value = val;
+					return this;
+				}
+			}
+		}
+
+		switch (this.tagName) {
+			case "SELECT": return this.options[this.selectedIndex]?.value;
+
+			default: return this.value;
+		}
+	},
+}
+
+if (typeof window !== "undefined") window.e_ = ElementUtil.getOrModify;
 
 ObjUtil = {
 	mergeWith (source, target, fnMerge, options = {depth: 1}) {
@@ -2569,22 +871,28 @@ ObjUtil = {
 			path.pop();
 		};
 		await pDiveDeep(source, path);
-	}
+	},
 };
 
 // TODO refactor other misc utils into this
 MiscUtil = {
+	COLOR_HEALTHY: "#00bb20",
+	COLOR_HURT: "#c5ca00",
+	COLOR_BLOODIED: "#f7a100",
+	COLOR_DEFEATED: "#cc0000",
+
 	copy (obj) {
 		return JSON.parse(JSON.stringify(obj));
 	},
 
 	async pCopyTextToClipboard (text) {
-		function doCompatabilityCopy () {
-			const $temp = $(`<textarea id="copy-temp" style="position: fixed; top: -1000px; left: -1000px; width: 1px; height: 1px;">${text}</textarea>`);
-			$(`body`).append($temp);
-			$temp.select();
+		function doCompatibilityCopy () {
+			const $iptTemp = $(`<textarea class="clp__wrp-temp"></textarea>`)
+				.appendTo(document.body)
+				.val(text)
+				.select();
 			document.execCommand("Copy");
-			$temp.remove();
+			$iptTemp.remove();
 		}
 
 		if (navigator && navigator.permissions) {
@@ -2592,17 +900,66 @@ MiscUtil = {
 				const access = await navigator.permissions.query({name: "clipboard-write"});
 				if (access.state === "granted" || access.state === "prompt") {
 					await navigator.clipboard.writeText(text);
-				} else doCompatabilityCopy();
-			} catch (e) { doCompatabilityCopy(); }
-		} else doCompatabilityCopy();
+				} else doCompatibilityCopy();
+			} catch (e) { doCompatibilityCopy(); }
+		} else doCompatibilityCopy();
 	},
 
-	getProperty (object, ...path) {
+	checkProperty (object, ...path) {
+		for (let i = 0; i < path.length; ++i) {
+			object = object[path[i]];
+			if (object == null) return false;
+		}
+		return true;
+	},
+
+	get (object, ...path) {
+		if (object == null) return null;
 		for (let i = 0; i < path.length; ++i) {
 			object = object[path[i]];
 			if (object == null) return object;
 		}
 		return object;
+	},
+
+	set (object, ...pathAndVal) {
+		if (object == null) return null;
+
+		const val = pathAndVal.pop();
+		if (!pathAndVal.length) return null;
+
+		const len = pathAndVal.length;
+		for (let i = 0; i < len; ++i) {
+			const pathPart = pathAndVal[i];
+			if (i === len - 1) object[pathPart] = val;
+			else object = (object[pathPart] = object[pathPart] || {});
+		}
+
+		return val;
+	},
+
+	getOrSet (object, ...pathAndVal) {
+		if (pathAndVal.length < 2) return null;
+		const existing = MiscUtil.get(object, ...pathAndVal.slice(0, -1));
+		return existing || MiscUtil.set(object, ...pathAndVal);
+	},
+
+	delete (object, ...path) {
+		if (object == null) return null;
+		for (let i = 0; i < path.length - 1; ++i) {
+			object = object[path[i]];
+			if (object == null) return object;
+		}
+		return delete object[path.last()];
+	},
+
+	mix: (superclass) => new MiscUtil._MixinBuilder(superclass),
+	_MixinBuilder: function (superclass) {
+		this.superclass = superclass;
+
+		this.with = function (...mixins) {
+			return mixins.reduce((c, mixin) => mixin(c), this.superclass);
+		};
 	},
 
 	clearSelection () {
@@ -2635,15 +992,36 @@ MiscUtil = {
 			case 4: r = f; g = 0; b = 1; break;
 			case 5: r = 1; g = 0; b = q; break;
 		}
-		return `#${("00" + (~~(r * 255)).toString(16)).slice(-2)}${("00" + (~~(g * 255)).toString(16)).slice(-2)}${("00" + (~~(b * 255)).toString(16)).slice(-2)}`;
+		return `#${`00${(~~(r * 255)).toString(16)}`.slice(-2)}${`00${(~~(g * 255)).toString(16)}`.slice(-2)}${`00${(~~(b * 255)).toString(16)}`.slice(-2)}`;
+	},
+
+	/**
+	 * @param hex Original hex color.
+	 * @param [opts] Options object.
+	 * @param [opts.bw] True if the color should be returnes as black/white depending on contrast ratio.
+	 * @param [opts.dark] Color to return if a "dark" color would contrast best.
+	 * @param [opts.light] Color to return if a "light" color would contrast best.
+	 */
+	invertColor (hex, opts) {
+		opts = opts || {};
+
+		hex = hex.slice(1); // remove #
+
+		let r = parseInt(hex.slice(0, 2), 16);
+		let g = parseInt(hex.slice(2, 4), 16);
+		let b = parseInt(hex.slice(4, 6), 16);
+
+		// http://stackoverflow.com/a/3943023/112731
+		const isDark = (r * 0.299 + g * 0.587 + b * 0.114) > 186;
+		if (opts.dark && opts.light) return isDark ? opts.dark : opts.light;
+		else if (opts.bw) return isDark ? "#000000" : "#FFFFFF";
+
+		r = (255 - r).toString(16); g = (255 - g).toString(16); b = (255 - b).toString(16);
+		return `#${[r, g, b].map(it => it.padStart(2, "0")).join("")}`;
 	},
 
 	scrollPageTop () {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
-	},
-
-	isInInput (event) {
-		return event.target.nodeName === "INPUT" || event.target.nodeName === "TEXTAREA";
 	},
 
 	expEval (str) {
@@ -2709,11 +1087,11 @@ MiscUtil = {
 
 	MONTH_NAMES: [
 		"January", "February", "March", "April", "May", "June",
-		"July", "August", "September", "October", "November", "December"
+		"July", "August", "September", "October", "November", "December",
 	],
 	dateToStr (date, short) {
 		const month = MiscUtil.MONTH_NAMES[date.getMonth()];
-		return `${short ? month.substring(0, 3) : month} ${date.getDate()}, ${date.getFullYear()}`;
+		return `${short ? month.substring(0, 3) : month} ${Parser.getOrdinalForm(date.getDate())}, ${date.getFullYear()}`;
 	},
 
 	findCommonPrefix (strArr) {
@@ -2748,118 +1126,417 @@ MiscUtil = {
 	},
 
 	/**
+	 * Borrowed from lodash.
+	 *
 	 * @param func The function to debounce.
-	 * @param waitTime Minimum duration between calls.
-	 * @param immediate Trigger on leading edge, as opposed to trailing.
+	 * @param wait Minimum duration between calls.
+	 * @param options Options object.
 	 * @return {Function} The debounced function.
 	 */
-	debounce (func, waitTime, immediate) {
-		let timeout;
-		return function () {
-			const context = this;
-			const args = arguments;
+	debounce (func, wait, options) {
+		let lastArgs; let lastThis; let maxWait; let result; let timerId; let lastCallTime; let lastInvokeTime = 0; let leading = false; let maxing = false; let trailing = true;
 
-			const later = function () {
-				timeout = null;
-				if (!immediate) func.apply(context, args);
-			};
+		wait = Number(wait) || 0;
+		if (typeof options === "object") {
+			leading = !!options.leading;
+			maxing = "maxWait" in options;
+			maxWait = maxing ? Math.max(Number(options.maxWait) || 0, wait) : maxWait;
+			trailing = "trailing" in options ? !!options.trailing : trailing;
+		}
 
-			const callNow = immediate && !timeout;
-			clearTimeout(timeout);
-			timeout = setTimeout(later, waitTime);
-			if (callNow) func.apply(context, args);
-		};
+		function invokeFunc (time) {
+			let args = lastArgs; let thisArg = lastThis;
+			lastArgs = lastThis = undefined;
+			lastInvokeTime = time;
+			result = func.apply(thisArg, args);
+			return result;
+		}
+
+		function leadingEdge (time) {
+			lastInvokeTime = time;
+			timerId = setTimeout(timerExpired, wait);
+			return leading ? invokeFunc(time) : result;
+		}
+
+		function remainingWait (time) {
+			let timeSinceLastCall = time - lastCallTime; let timeSinceLastInvoke = time - lastInvokeTime; let result = wait - timeSinceLastCall;
+			return maxing ? Math.min(result, maxWait - timeSinceLastInvoke) : result;
+		}
+
+		function shouldInvoke (time) {
+			let timeSinceLastCall = time - lastCallTime; let timeSinceLastInvoke = time - lastInvokeTime;
+			return (lastCallTime === undefined || (timeSinceLastCall >= wait) || (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
+		}
+
+		function timerExpired () {
+			const time = Date.now();
+			if (shouldInvoke(time)) {
+				return trailingEdge(time);
+			}
+			// Restart the timer.
+			timerId = setTimeout(timerExpired, remainingWait(time));
+		}
+
+		function trailingEdge (time) {
+			timerId = undefined;
+
+			if (trailing && lastArgs) return invokeFunc(time);
+			lastArgs = lastThis = undefined;
+			return result;
+		}
+
+		function cancel () {
+			if (timerId !== undefined) clearTimeout(timerId);
+			lastInvokeTime = 0;
+			lastArgs = lastCallTime = lastThis = timerId = undefined;
+		}
+
+		function flush () {
+			return timerId === undefined ? result : trailingEdge(Date.now());
+		}
+
+		function debounced () {
+			let time = Date.now(); let isInvoking = shouldInvoke(time);
+			lastArgs = arguments;
+			lastThis = this;
+			lastCallTime = time;
+
+			if (isInvoking) {
+				if (timerId === undefined) return leadingEdge(lastCallTime);
+				if (maxing) {
+					// Handle invocations in a tight loop.
+					timerId = setTimeout(timerExpired, wait);
+					return invokeFunc(lastCallTime);
+				}
+			}
+			if (timerId === undefined) timerId = setTimeout(timerExpired, wait);
+			return result;
+		}
+
+		debounced.cancel = cancel;
+		debounced.flush = flush;
+		return debounced;
 	},
 
-	pDelay (msecs) {
-		return new Promise(resolve => setTimeout(() => resolve(), msecs));
-	}
+	// from lodash
+	throttle (func, wait, options) {
+		let leading = true; let trailing = true;
+
+		if (typeof options === "object") {
+			leading = "leading" in options ? !!options.leading : leading;
+			trailing = "trailing" in options ? !!options.trailing : trailing;
+		}
+
+		return this.debounce(func, wait, {leading, maxWait: wait, trailing});
+	},
+
+	pDelay (msecs, resolveAs) {
+		return new Promise(resolve => setTimeout(() => resolve(resolveAs), msecs));
+	},
+
+	GENERIC_WALKER_ENTRIES_KEY_BLACKLIST: new Set(["caption", "type", "colLabels", "name", "colStyles", "style", "shortName", "subclassShortName"]),
+
+	/**
+	 * @param [opts]
+	 * @param [opts.keyBlacklist]
+	 * @param [opts.isAllowDeleteObjects] If returning `undefined` from an object handler should be treated as a delete.
+	 * @param [opts.isAllowDeleteArrays] (Unimplemented) // TODO
+	 * @param [opts.isAllowDeleteBooleans] (Unimplemented) // TODO
+	 * @param [opts.isAllowDeleteNumbers] (Unimplemented) // TODO
+	 * @param [opts.isAllowDeleteStrings] (Unimplemented) // TODO
+	 * @param [opts.isDepthFirst] If array/object recursion should occur before array/object primitive handling.
+	 * @param [opts.isNoModification] If the walker should not attempt to modify the data.
+	 */
+	getWalker (opts) {
+		opts = opts || {};
+		const keyBlacklist = opts.keyBlacklist || new Set();
+
+		function applyHandlers (handlers, obj, lastKey, stack) {
+			if (!(handlers instanceof Array)) handlers = [handlers];
+			handlers.forEach(h => {
+				const out = h(obj, lastKey, stack);
+				if (!opts.isNoModification) obj = out;
+			});
+			return obj;
+		}
+
+		function runHandlers (handlers, obj, lastKey, stack) {
+			if (!(handlers instanceof Array)) handlers = [handlers];
+			handlers.forEach(h => h(obj, lastKey, stack));
+		}
+
+		const fn = (obj, primitiveHandlers, lastKey, stack) => {
+			if (obj == null) {
+				if (primitiveHandlers.null) return applyHandlers(primitiveHandlers.null, obj, lastKey, stack);
+				return obj;
+			}
+
+			const doObjectRecurse = () => {
+				Object.keys(obj).forEach(k => {
+					const v = obj[k];
+					if (!keyBlacklist.has(k)) {
+						const out = fn(v, primitiveHandlers, k, stack);
+						if (!opts.isNoModification) obj[k] = out;
+					}
+				});
+			};
+
+			const to = typeof obj;
+			switch (to) {
+				case undefined:
+					if (primitiveHandlers.preUndefined) runHandlers(primitiveHandlers.preUndefined, obj, lastKey, stack);
+					if (primitiveHandlers.undefined) {
+						const out = applyHandlers(primitiveHandlers.undefined, obj, lastKey, stack);
+						if (!opts.isNoModification) obj = out;
+					}
+					if (primitiveHandlers.postUndefined) runHandlers(primitiveHandlers.postUndefined, obj, lastKey, stack);
+					return obj;
+				case "boolean":
+					if (primitiveHandlers.preBoolean) runHandlers(primitiveHandlers.preBoolean, obj, lastKey, stack);
+					if (primitiveHandlers.boolean) {
+						const out = applyHandlers(primitiveHandlers.boolean, obj, lastKey, stack);
+						if (!opts.isNoModification) obj = out;
+					}
+					if (primitiveHandlers.postBoolean) runHandlers(primitiveHandlers.postBoolean, obj, lastKey, stack);
+					return obj;
+				case "number":
+					if (primitiveHandlers.preNumber) runHandlers(primitiveHandlers.preNumber, obj, lastKey, stack);
+					if (primitiveHandlers.number) {
+						const out = applyHandlers(primitiveHandlers.number, obj, lastKey, stack);
+						if (!opts.isNoModification) obj = out;
+					}
+					if (primitiveHandlers.postNumber) runHandlers(primitiveHandlers.postNumber, obj, lastKey, stack);
+					return obj;
+				case "string":
+					if (primitiveHandlers.preString) runHandlers(primitiveHandlers.preString, obj, lastKey, stack);
+					if (primitiveHandlers.string) {
+						const out = applyHandlers(primitiveHandlers.string, obj, lastKey, stack);
+						if (!opts.isNoModification) obj = out;
+					}
+					if (primitiveHandlers.postString) runHandlers(primitiveHandlers.postString, obj, lastKey, stack);
+					return obj;
+				case "object": {
+					if (obj instanceof Array) {
+						if (primitiveHandlers.preArray) runHandlers(primitiveHandlers.preArray, obj, lastKey, stack);
+						if (opts.isDepthFirst) {
+							if (stack) stack.push(obj);
+							const out = obj.map(it => fn(it, primitiveHandlers, lastKey, stack));
+							if (!opts.isNoModification) obj = out;
+							if (stack) stack.pop();
+
+							if (primitiveHandlers.array) {
+								const out = applyHandlers(primitiveHandlers.array, obj, lastKey, stack);
+								if (!opts.isNoModification) obj = out;
+							}
+						} else {
+							if (primitiveHandlers.array) {
+								const out = applyHandlers(primitiveHandlers.array, obj, lastKey, stack);
+								if (!opts.isNoModification) obj = out;
+							}
+							const out = obj.map(it => fn(it, primitiveHandlers, lastKey, stack));
+							if (!opts.isNoModification) obj = out;
+						}
+						if (primitiveHandlers.postArray) runHandlers(primitiveHandlers.postArray, obj, lastKey, stack);
+						return obj;
+					} else {
+						if (primitiveHandlers.preObject) runHandlers(primitiveHandlers.preObject, obj, lastKey, stack);
+						if (opts.isDepthFirst) {
+							if (stack) stack.push(obj);
+							doObjectRecurse();
+							if (stack) stack.pop();
+
+							if (primitiveHandlers.object) {
+								const out = applyHandlers(primitiveHandlers.object, obj, lastKey, stack);
+								if (!opts.isNoModification) obj = out;
+							}
+							if (obj == null) {
+								if (!opts.isAllowDeleteObjects) throw new Error(`Object handler(s) returned null!`);
+							}
+						} else {
+							if (primitiveHandlers.object) {
+								const out = applyHandlers(primitiveHandlers.object, obj, lastKey, stack);
+								if (!opts.isNoModification) obj = out;
+							}
+							if (obj == null) {
+								if (!opts.isAllowDeleteObjects) throw new Error(`Object handler(s) returned null!`);
+							} else {
+								doObjectRecurse();
+							}
+						}
+						if (primitiveHandlers.postObject) runHandlers(primitiveHandlers.postObject, obj, lastKey, stack);
+						return obj;
+					}
+				}
+				default: throw new Error(`Unhandled type "${to}"`);
+			}
+		};
+
+		return {walk: fn};
+	},
+
+	pDefer (fn) {
+		return (async () => fn())();
+	},
 };
+
+// EVENT HANDLERS ======================================================================================================
+EventUtil = {
+	_mouseX: 0,
+	_mouseY: 0,
+
+	init () {
+		document.addEventListener("mousemove", evt => {
+			EventUtil._mouseX = evt.clientX;
+			EventUtil._mouseY = evt.clientY;
+		});
+	},
+
+	getClientX (evt) { return evt.touches && evt.touches.length ? evt.touches[0].clientX : evt.clientX; },
+	getClientY (evt) { return evt.touches && evt.touches.length ? evt.touches[0].clientY : evt.clientY; },
+
+	isInInput (evt) {
+		return evt.target.nodeName === "INPUT" || evt.target.nodeName === "TEXTAREA"
+			|| evt.target.getAttribute("contenteditable") === "true";
+	},
+
+	noModifierKeys (evt) { return !evt.ctrlKey && !evt.altKey && !evt.metaKey; },
+};
+
+if (typeof window !== "undefined") window.addEventListener("load", EventUtil.init);
 
 // CONTEXT MENUS =======================================================================================================
 ContextUtil = {
-	_ctxInit: {},
-	_ctxClick: {},
-	_ctxOpenRefsNextId: 1,
-	_ctxOpenRefs: {},
-	_handlePreInitContextMenu: (menuId) => {
-		if (ContextUtil._ctxInit[menuId]) return;
-		ContextUtil._ctxInit[menuId] = true;
-		const clickId = `click.${menuId}`;
-		$("body").off(clickId).on(clickId, (evt) => {
-			if ($(evt.target).data("ctx-id") != null) return; // ignore clicks on context menus
+	_isInit: false,
+	_menus: [],
 
-			Object.entries(ContextUtil._ctxOpenRefs[menuId] || {}).forEach(([k, v]) => {
-				v(false);
-				delete ContextUtil._ctxOpenRefs[menuId][k];
-			});
-			$(`#${menuId}`).hide();
-		});
+	_init () {
+		if (ContextUtil._isInit) return;
+		ContextUtil._isInit = true;
+
+		$(document.body).click(() => ContextUtil._menus.forEach(menu => menu.close()));
 	},
 
-	_getMenuPosition: (menuId, mouse, direction, scrollDir) => {
-		const win = $(window)[direction]();
-		const scroll = $(window)[scrollDir]();
-		const menu = $(`#${menuId}`)[direction]();
-		let position = mouse + scroll;
-		// opening menu would pass the side of the page
-		if (mouse + menu > win && menu < mouse) position -= menu;
-		return position;
+	getMenu (actions) {
+		ContextUtil._init();
+
+		const menu = new ContextUtil.Menu(actions);
+		ContextUtil._menus.push(menu);
+		return menu;
 	},
 
-	_lastMenuId: 1,
-	getNextGenericMenuId () { return `contextMenu_${ContextUtil._lastMenuId++}`; },
-
-	doInitContextMenu: (menuId, clickFn, labels) => {
-		ContextUtil._ctxClick[menuId] = clickFn;
-		ContextUtil._handlePreInitContextMenu(menuId);
-		let tempString = `<ul id="${menuId}" class="dropdown-menu" role="menu">`;
-		let i = 0;
-		labels.forEach(it => {
-			if (it === null) tempString += `<li class="divider"/>`;
-			else if (it.disabled) {
-				tempString += `<li class="disabled"><a href="${STR_VOID_LINK}">${it.text}</a></li>`;
-			} else {
-				tempString += `<li><a data-ctx-id="${i}" href="${STR_VOID_LINK}">${it}</a></li>`;
-				i++;
-			}
-		});
-		tempString += `</ul>`;
-		$(`#${menuId}`).remove();
-		$("body").append(tempString);
+	deleteMenu (menu) {
+		menu.remove();
+		const ix = ContextUtil._menus.findIndex(it => it === menu);
+		if (~ix) ContextUtil._menus.splice(ix, 1);
 	},
 
-	doTeardownContextMenu (menuId) {
-		delete ContextUtil._ctxInit[menuId];
-		delete ContextUtil._ctxClick[menuId];
-		delete ContextUtil._ctxOpenRefs[menuId];
-		$(`#${menuId}`).remove();
-	},
-
-	handleOpenContextMenu: (evt, ele, menuId, closeHandler) => {
-		if (evt.ctrlKey) return;
+	pOpenMenu (evt, menu, userData) {
 		evt.preventDefault();
 		evt.stopPropagation();
-		const thisId = ContextUtil._ctxOpenRefsNextId++;
-		(ContextUtil._ctxOpenRefs[menuId] = ContextUtil._ctxOpenRefs[menuId] || {})[thisId] = closeHandler || (() => {});
-		const $menu = $(`#${menuId}`)
-			.show()
-			.css({
-				position: "absolute",
-				left: ContextUtil._getMenuPosition(menuId, evt.clientX, "width", "scrollLeft"),
-				top: ContextUtil._getMenuPosition(menuId, evt.clientY, "height", "scrollTop")
-			})
-			.off("click")
-			.on("click", "a", function (e) {
-				$menu.hide();
-				if (ContextUtil._ctxOpenRefs[menuId][thisId]) ContextUtil._ctxOpenRefs[menuId][thisId](true);
-				delete ContextUtil._ctxOpenRefs[menuId][thisId];
-				const $invokedOn = $(evt.target).closest(`li.row`);
-				const $selectedMenu = $(e.target);
-				const invokedOnId = Number($selectedMenu.data("ctx-id"));
-				ContextUtil._ctxClick[menuId](e, ele, $invokedOn, $selectedMenu, isNaN(invokedOnId) ? null : invokedOnId);
+
+		ContextUtil._init();
+
+		// Close any other open menus
+		ContextUtil._menus.filter(it => it !== menu).forEach(it => it.close());
+
+		return menu.pOpen(evt, userData);
+	},
+
+	Menu: function (actions) {
+		this._actions = actions;
+		this._pResult = null;
+		this._resolveResult = null;
+
+		this._userData = null;
+
+		this.remove = function () { if (this._$ele) this._$ele.remove(); }
+
+		this.width = function () { return this._$ele ? this._$ele.width() : undefined; }
+		this.height = function () { return this._$ele ? this._$ele.height() : undefined; }
+
+		this.pOpen = function (evt, userData) {
+			this._initLazy();
+
+			if (this._resolveResult) this._resolveResult(null);
+			this._pResult = new Promise(resolve => {
+				this._resolveResult = resolve;
 			});
-	}
+			this._userData = userData;
+
+			this._$ele
+				.css({
+					position: "absolute",
+					left: this._getMenuPosition(evt, "x"),
+					top: this._getMenuPosition(evt, "y"),
+				})
+				.showVe();
+
+			return this._pResult;
+		}
+		this.close = function () { if (this._$ele) this._$ele.hideVe(); }
+
+		this._initLazy = function () {
+			if (this._$ele) return;
+
+			const $elesAction = this._actions.map(it => {
+				if (it == null) return $(`<div class="my-1 w-100 ui-ctx__divider"></div>`);
+
+				const $row = $$`<div class="py-1 px-5 ui-ctx__row ${it.isDisabled ? "disabled" : ""} ${it.style || ""}">${it.text}</div>`
+					.click(async evt => {
+						if (it.isDisabled) return;
+
+						evt.preventDefault();
+						evt.stopPropagation();
+
+						this.close();
+
+						const result = await it.fnAction(evt, this._userData);
+						if (this._resolveResult) this._resolveResult(result);
+					});
+				if (it.title) $row.title(it.title);
+
+				return $row;
+			});
+
+			this._$ele = $$`<div class="flex-col ui-ctx__wrp py-2">${$elesAction}</div>`
+				.hideVe()
+				.appendTo(document.body);
+		};
+
+		this._getMenuPosition = function (evt, axis) {
+			const {fnMenuSize, propMousePos, fnWindowSize, fnScrollDir} = axis === "x"
+				? {fnMenuSize: "width", propMousePos: "clientX", fnWindowSize: "width", fnScrollDir: "scrollLeft"}
+				: {fnMenuSize: "height", propMousePos: "clientY", fnWindowSize: "height", fnScrollDir: "scrollTop"};
+
+			const posMouse = evt[propMousePos];
+			const szWin = $(window)[fnWindowSize]();
+			const posScroll = $(window)[fnScrollDir]();
+			let position = posMouse + posScroll;
+			const szMenu = this[fnMenuSize]();
+			// opening menu would pass the side of the page
+			if (posMouse + szMenu > szWin && szMenu < posMouse) position -= szMenu;
+			return position;
+		}
+	},
+
+	/**
+	 * @param text
+	 * @param fnAction Action, which is passed its triggering click event as an argument.
+	 * @param [opts] Options object.
+	 * @param [opts.isDisabled] If this action is disabled.
+	 * @param [opts.title] Help (title) text.
+	 * @param [opts.style] Additional CSS classes to add (e.g. `ctx-danger`).
+	 */
+	Action: function (text, fnAction, opts) {
+		opts = opts || {};
+
+		this.text = text;
+		this.fnAction = fnAction;
+
+		this.isDisabled = opts.isDisabled;
+		this.title = opts.title;
+		this.style = opts.style;
+	},
 };
 
 // LIST AND SEARCH =====================================================================================================
@@ -2867,981 +1544,14 @@ SearchUtil = {
 	removeStemmer (elasticSearch) {
 		const stemmer = elasticlunr.Pipeline.getRegisteredFunction("stemmer");
 		elasticSearch.pipeline.remove(stemmer);
-	}
+	},
 };
-
-ListUtil = {
-	SUB_HASH_PREFIX: "sublistselected",
-
-	_first: true,
-
-	bindEscapeKey (list, $iptSearch, forceRebind) {
-		if (!list._isBoundEscape || forceRebind) {
-			if (forceRebind) $iptSearch.off("keydown.search5e");
-			list._isBoundEscape = true;
-			$iptSearch.on("keydown.search5e", (e) => {
-				if (e.which === 27) {
-					setTimeout(() => {
-						$iptSearch.blur();
-						list.search();
-					}, 0);
-				}
-			});
-		}
-	},
-
-	search: (options) => {
-		if (!options.sortFunction && options.valueNames && options.valueNames.includes("name")) options.sortFunction = SortUtil.listSort;
-
-		const list = new List("listcontainer", options);
-		list.sort("name");
-		const $iptSearch = $("#search");
-		$("#reset").click(function () {
-			$("#filtertools").find("select").val("All");
-			$iptSearch.val("");
-			list.search();
-			list.sort("name");
-			list.filter();
-		});
-
-		ListUtil.bindEscapeKey(list, $iptSearch);
-
-		const listWrapper = $("#listcontainer");
-		if (listWrapper.data("lists")) {
-			listWrapper.data("lists").push(list);
-		} else {
-			listWrapper.data("lists", [list]);
-		}
-		if (ListUtil._first) {
-			ListUtil._first = false;
-			const $headDesc = $(`header div p`);
-			$headDesc.html(`${$headDesc.html()} 按下J/K以巡覽列。`);
-
-			const scrollTo = () => {
-				const toShow = History.getSelectedListElementWithIndex();
-				if (toShow && toShow.$el && toShow.$el.length) {
-					const $wrp = toShow.$el.parent();
-					const $parent = toShow.$el.parent().parent();
-					const parentScroll = $parent.scrollTop();
-					const parentHeight = $parent.height();
-					const posInParent = $wrp.position().top;
-					const height = $wrp.height();
-
-					if (posInParent < 0) {
-						$wrp[0].scrollIntoView();
-					} else if (posInParent + height > parentHeight) {
-						$parent.scrollTop(parentScroll + (posInParent - parentHeight + height));
-					}
-				}
-			};
-
-			$(window).on("keypress", (e) => {
-				// K up; J down
-				if (noModifierKeys(e)) {
-					if (e.key === "k" || e.key === "j") {
-						// don't switch if the user is typing somewhere else
-						if (MiscUtil.isInInput(e)) return;
-						const it = History.getSelectedListElementWithIndex();
-
-						if (it) {
-							if (e.key === "k") {
-								const prevLink = it.$el.parent().prev().find("a").attr("href");
-								if (prevLink !== undefined) {
-									window.location.hash = prevLink;
-									scrollTo();
-								} else {
-									const lists = listWrapper.data("lists");
-									let x = it.x;
-									while (--x >= 0) {
-										const l = lists[x];
-										if (l.visibleItems.length) {
-											const goTo = $(l.visibleItems[l.visibleItems.length - 1].elm).find("a").attr("href");
-											if (goTo) {
-												window.location.hash = goTo;
-												scrollTo();
-											}
-											return;
-										}
-									}
-								}
-								const fromPrevSibling = it.$el.closest(`ul`).parent().prev(`li`).find(`ul li`).last().find("a").attr("href");
-								if (fromPrevSibling) {
-									window.location.hash = fromPrevSibling;
-								}
-							} else if (e.key === "j") {
-								const nextLink = it.$el.parent().next().find("a").attr("href");
-								if (nextLink !== undefined) {
-									window.location.hash = nextLink;
-									scrollTo();
-								} else {
-									const lists = listWrapper.data("lists");
-									let x = it.x;
-									while (++x < lists.length) {
-										const l = lists[x];
-										if (l.visibleItems.length) {
-											const goTo = $(l.visibleItems[0].elm).find("a").attr("href");
-											if (goTo) {
-												window.location.hash = goTo;
-												scrollTo();
-											}
-											return;
-										}
-									}
-								}
-								const fromNxtSibling = it.$el.closest(`ul`).parent().next(`li`).find(`ul li`).first().find("a").attr("href");
-								if (fromNxtSibling) {
-									window.location.hash = fromNxtSibling;
-								}
-							}
-						}
-					}
-				}
-			});
-		}
-		return list;
-	},
-
-	_lastSelected: null,
-	toggleSelected: (evt, ele) => {
-		function doSingle () {
-			ListUtil._primaryLists.forEach(l => ListUtil.deslectAll(l));
-			$(ele).addClass("list-multi-selected");
-		}
-
-		function getListPos (selected) {
-			let i, j, list, listItem;
-			outer: for (i = 0; i < ListUtil._primaryLists.length; ++i) {
-				const l = ListUtil._primaryLists[i];
-				for (j = 0; j < l.visibleItems.length; ++j) {
-					const it = l.visibleItems[j];
-					if (selected === it.elm.getAttribute("filterid")) {
-						list = l;
-						listItem = it;
-						break outer;
-					}
-				}
-			}
-			return list && listItem ? {ixList: i, list, ixItem: j, listItem} : null;
-		}
-
-		const nextSelected = $(ele).attr("filterid");
-
-		if (evt.shiftKey && ListUtil._lastSelected) {
-			evt.preventDefault();
-			const lastItem = getListPos(ListUtil._lastSelected);
-			if (!lastItem) {
-				doSingle();
-				ListUtil._lastSelected = nextSelected;
-			} else {
-				ListUtil._primaryLists.forEach(l => ListUtil.deslectAll(l));
-
-				const nextItem = getListPos(nextSelected);
-
-				const [min, max] = [lastItem, nextItem].sort((a, b) => {
-					if (a.ixList < b.ixList) return -1;
-					else if (a.ixList > b.ixList) return 1;
-					else if (a.ixItem < b.ixItem) return -1;
-					else if (a.ixItem > b.ixItem) return 1;
-					else return 0;
-				});
-
-				for (let i = min.ixList; i <= max.ixList; ++i) {
-					const l = ListUtil._primaryLists[i];
-					const rangeStart = i < max.ixList && i > min.ixList ? 0 : max.ixList === i && min.ixList < max.ixList ? 0 : min.ixItem;
-					const rangeEnd = max.ixList > i ? l.visibleItems.length - 1 : max.ixItem;
-
-					for (let j = rangeStart; j <= rangeEnd; ++j) {
-						$(l.visibleItems[j].elm).addClass("list-multi-selected");
-					}
-				}
-			}
-		} else {
-			doSingle();
-			ListUtil._lastSelected = nextSelected;
-		}
-	},
-
-	updateSelected: () => {
-		ListUtil.toggleSelected({}, History.getSelectedListElement().parent());
-	},
-
-	initContextMenu: (clickFn, ...labels) => {
-		ContextUtil.doInitContextMenu("list", clickFn, labels);
-	},
-
-	initSubContextMenu: (clickFn, ...labels) => {
-		ContextUtil.doInitContextMenu("listSub", clickFn, labels);
-	},
-
-	openContextMenu: (evt, ele) => {
-		const selCount = ListUtil._primaryLists.map(l => ListUtil.getSelectedCount(l)).reduce((a, b) => a + b, 0);
-		if (selCount === 1) ListUtil._primaryLists.forEach(l => ListUtil.deslectAll(l));
-		if (selCount === 0 || selCount === 1) $(ele).addClass("list-multi-selected");
-		ContextUtil.handleOpenContextMenu(evt, ele, "list");
-	},
-
-	openSubContextMenu: (evt, ele) => {
-		ContextUtil.handleOpenContextMenu(evt, ele, "listSub");
-	},
-
-	$sublistContainer: null,
-	sublist: null,
-	$sublist: null,
-	_sublistChangeFn: null,
-	_pUidHandler: null,
-	_allItems: null,
-	_primaryLists: [],
-	_pinned: {},
-	initSublist: (options) => {
-		ListUtil._allItems = options.itemList;
-		ListUtil._getSublistRow = options.getSublistRow;
-		ListUtil._sublistChangeFn = options.onUpdate;
-		ListUtil._primaryLists = options.primaryLists;
-		ListUtil._pUidHandler = options.uidHandler;
-		ListUtil._uidUnpackFn = options.uidUnpacker;
-		delete options.itemList;
-		delete options.getSublistRow;
-		delete options.onUpdate;
-		delete options.primaryLists;
-		delete options.uidHandler;
-
-		ListUtil.$sublistContainer = $("#sublistcontainer");
-		const sublist = new List("sublistcontainer", options);
-		ListUtil.sublist = sublist;
-		ListUtil.$sublist = $(`ul.${options.listClass}`);
-
-		if (ListUtil.$sublistContainer.hasClass(`sublist--resizable`)) ListUtil._pBindSublistResizeHandlers(ListUtil.$sublistContainer);
-
-		return sublist;
-	},
-
-	__mouseMoveId: 1,
-	async _pBindSublistResizeHandlers ($ele) {
-		const STORAGE_KEY = "SUBLIST_RESIZE";
-		const BORDER_SIZE = 3;
-		const MOUSE_MOVE_ID = ListUtil.__mouseMoveId++;
-		const $doc = $(document);
-
-		let mousePos;
-		function resize (evt) {
-			const dx = evt.clientY - mousePos;
-			mousePos = evt.clientY;
-			$ele.css("height", parseInt($ele.css("height")) + dx);
-		}
-
-		$ele.on("mousedown", (evt) => {
-			if (evt.which === 1 && evt.target === $ele[0]) {
-				evt.preventDefault();
-				if (evt.offsetY > $ele.height() - BORDER_SIZE) {
-					mousePos = evt.clientY;
-					$doc.on(`mousemove.sublist_resize-${MOUSE_MOVE_ID}`, resize);
-				}
-			}
-		});
-
-		$doc.on("mouseup", (evt) => {
-			if (evt.which === 1) {
-				$(document).off(`mousemove.sublist_resize-${MOUSE_MOVE_ID}`);
-				StorageUtil.pSetForPage(STORAGE_KEY, $ele.css("height"));
-			}
-		});
-
-		const storedHeight = await StorageUtil.pGetForPage(STORAGE_KEY);
-		if (storedHeight) $ele.css("height", storedHeight);
-	},
-
-	setOptions: (options) => {
-		if (options.itemList !== undefined) ListUtil._allItems = options.itemList;
-		if (options.getSublistRow !== undefined) ListUtil._getSublistRow = options.getSublistRow;
-		if (options.onUpdate !== undefined) ListUtil._sublistChangeFn = options.onUpdate;
-		if (options.primaryLists !== undefined) ListUtil._primaryLists = options.primaryLists;
-		if (options.uidHandler !== undefined) ListUtil._pUidHandler = options.uidHandler;
-		if (options.uidUnpacker !== undefined) ListUtil._uidUnpackFn = options.uidUnpacker;
-	},
-
-	getOrTabRightButton: (id, icon) => {
-		let $btn = $(`#${id}`);
-		if (!$btn.length) {
-			$btn = $(`<button class="stat-tab btn btn-default" id="${id}"><span class="glyphicon glyphicon-${icon}"></span></button>`).appendTo($(`#tabs-right`));
-		}
-		return $btn;
-	},
-
-	bindPinButton: () => {
-		ListUtil.getOrTabRightButton(`btn-pin`, `pushpin`)
-			.off("click")
-			.on("click", () => {
-				if (!ListUtil.isSublisted(History.lastLoadedId)) ListUtil.pDoSublistAdd(History.lastLoadedId, true);
-				else ListUtil.pDoSublistRemove(History.lastLoadedId);
-			})
-			.attr("title", "釘選(開/關)");
-	},
-
-	genericAddButtonHandler (evt, options = {}) {
-		if (evt.shiftKey) ListUtil.pDoSublistAdd(History.lastLoadedId, true, options.shiftCount || 20);
-		else ListUtil.pDoSublistAdd(History.lastLoadedId, true);
-	},
-	bindAddButton: (handlerGenerator, options = {}) => {
-		ListUtil.getOrTabRightButton(`btn-sublist-add`, `plus`)
-			.off("click")
-			.attr("title", `Add (SHIFT for ${options.shiftCount || 20})`)
-			.on("click", handlerGenerator ? handlerGenerator() : ListUtil.genericAddButtonHandler);
-	},
-
-	genericSubtractButtonHandler (evt, options = {}) {
-		if (evt.shiftKey) ListUtil.pDoSublistSubtract(History.lastLoadedId, options.shiftCount || 20);
-		else ListUtil.pDoSublistSubtract(History.lastLoadedId);
-	},
-	bindSubtractButton: (handlerGenerator, options = {}) => {
-		ListUtil.getOrTabRightButton(`btn-sublist-subtract`, `minus`)
-			.off("click")
-			.attr("title", `Subtract (SHIFT for ${options.shiftCount || 20})`)
-			.on("click", handlerGenerator ? handlerGenerator() : ListUtil.genericSubtractButtonHandler);
-	},
-
-	bindDownloadButton: () => {
-		const $btn = ListUtil.getOrTabRightButton(`btn-sublist-download`, `download`);
-		$btn.off("click")
-			.on("click", async evt => {
-				if (evt.shiftKey) {
-					const toEncode = JSON.stringify(ListUtil.getExportableSublist());
-					const parts = [window.location.href, (UrlUtil.packSubHash(ListUtil.SUB_HASH_PREFIX, [toEncode], true))];
-					await MiscUtil.pCopyTextToClipboard(parts.join(HASH_PART_SEP));
-					JqueryUtil.showCopiedEffect($btn);
-				} else {
-					DataUtil.userDownload(ListUtil._getDownloadName(), JSON.stringify(ListUtil.getExportableSublist(), null, "\t"));
-				}
-			})
-			.attr("title", "下載列表（SHIFT for Link）");
-	},
-
-	doJsonLoad (json, additive, funcPreload) {
-		const funcOnload = () => {
-			ListUtil._pLoadSavedSublist(json.items, additive).then(() => {
-				ListUtil._pFinaliseSublist();
-			});
-		};
-		if (funcPreload) funcPreload(json, funcOnload);
-		else funcOnload();
-	},
-
-	bindUploadButton: (funcPreload) => {
-		const $btn = ListUtil.getOrTabRightButton(`btn-sublist-upload`, `upload`);
-		$btn.off("click")
-			.on("click", (evt) => {
-				function loadSaved (event, additive) {
-					const input = event.target;
-
-					const reader = new FileReader();
-					reader.onload = () => {
-						const text = reader.result;
-						const json = JSON.parse(text);
-						$iptAdd.remove();
-						ListUtil.doJsonLoad(json, additive, funcPreload);
-					};
-					reader.readAsText(input.files[0]);
-				}
-
-				const additive = evt.shiftKey;
-				const $iptAdd = $(`<input type="file" accept=".json" style="position: fixed; top: -100px; left: -100px; display: none;">`).on("change", (evt) => {
-					loadSaved(evt, additive);
-				}).appendTo($(`body`));
-				$iptAdd.click();
-			})
-			.attr("title", "上傳列表(SHIFT for Add Only)");
-	},
-
-	setFromSubHashes: (subHashes, funcPreload) => {
-		function funcOnload (json) {
-			ListUtil._pLoadSavedSublist(json.items, false).then(async () => {
-				await ListUtil._pFinaliseSublist();
-
-				const [link, ...sub] = History._getHashParts();
-				const outSub = [];
-				Object.keys(unpacked)
-					.filter(k => k !== ListUtil.SUB_HASH_PREFIX)
-					.forEach(k => {
-						outSub.push(`${k}${HASH_SUB_KV_SEP}${unpacked[k].join(HASH_SUB_LIST_SEP)}`);
-					});
-				History.setSuppressHistory(true);
-				window.location.hash = `#${link}${outSub.length ? `${HASH_PART_SEP}${outSub.join(HASH_PART_SEP)}` : ""}`;
-			});
-		}
-
-		const unpacked = {};
-		subHashes.forEach(s => Object.assign(unpacked, UrlUtil.unpackSubHash(s, true)));
-		const setFrom = unpacked[ListUtil.SUB_HASH_PREFIX];
-		if (setFrom) {
-			const json = JSON.parse(setFrom);
-
-			if (funcPreload) funcPreload(json, () => funcOnload(json));
-			else funcOnload(json);
-		}
-	},
-
-	_getPinnedCount (index, data) {
-		const base = ListUtil._pinned[index];
-		if (!base) return null;
-		if (data && data.uid) return base[data.uid];
-		return base._;
-	},
-
-	_setPinnedCount (index, count, data) {
-		const base = ListUtil._pinned[index];
-		const key = data && data.uid ? data.uid : "_";
-		if (base) base[key] = count;
-		else (ListUtil._pinned[index] = {})[key] = count;
-	},
-
-	_deletePinnedCount (index, data) {
-		const base = ListUtil._pinned[index];
-		if (base) {
-			if (data && data.uid) delete base[data.uid];
-			else delete base._;
-		}
-	},
-
-	async pDoSublistAdd (index, doFinalise, addCount, data) {
-		if (index == null) {
-			return JqueryUtil.doToast({
-				content: "Please first view something from the list.",
-				type: "danger"
-			});
-		}
-
-		const count = ListUtil._getPinnedCount(index, data) || 0;
-		addCount = addCount || 1;
-		ListUtil._setPinnedCount(index, count + addCount, data);
-
-		if (count !== 0) {
-			ListUtil._setViewCount(index, count + addCount, data);
-			if (doFinalise) await ListUtil._pFinaliseSublist();
-		} else {
-			const sl = ListUtil._getSublistRow(ListUtil._allItems[index], index, addCount, data);
-			if (sl instanceof Promise) {
-				return sl.then(async (r) => {
-					ListUtil.$sublist.append(r);
-					if (doFinalise) await ListUtil._pFinaliseSublist();
-				});
-			} else {
-				ListUtil.$sublist.append(sl);
-				if (doFinalise) await ListUtil._pFinaliseSublist();
-			}
-		}
-	},
-
-	async pDoSublistSubtract (index, subtractCount, data) {
-		const count = ListUtil._getPinnedCount(index, data);
-		subtractCount = subtractCount || 1;
-		if (count > subtractCount) {
-			ListUtil._setPinnedCount(index, count - subtractCount, data);
-			ListUtil._setViewCount(index, count - subtractCount, data);
-			ListUtil.sublist.reIndex();
-			await ListUtil._pSaveSublist();
-			ListUtil._handleCallUpdateFn();
-		} else if (count) await ListUtil.pDoSublistRemove(index, data);
-	},
-
-	getSublisted () {
-		return MiscUtil.copy(ListUtil._pinned);
-	},
-
-	getSublistedIds () {
-		return Object.keys(ListUtil._pinned).map(it => Number(it));
-	},
-
-	_setViewCount: (index, newCount, data) => {
-		const $cnt = $(ListUtil.sublist.get(data && data.uid ? "uid" : "id", data && data.uid ? data.uid : index)[0].elm).find(".count");
-		if ($cnt.find("input").length) $cnt.find("input").val(newCount);
-		else $cnt.text(newCount);
-	},
-
-	async _pFinaliseSublist (noSave) {
-		ListUtil.sublist.reIndex();
-		ListUtil._updateSublistVisibility();
-		if (!noSave) await ListUtil._pSaveSublist();
-		ListUtil._handleCallUpdateFn();
-	},
-
-	getExportableSublist: () => {
-		const sources = new Set();
-		const toSave = ListUtil.sublist.items
-			.map(it => {
-				const $elm = $(it.elm);
-				sources.add(ListUtil._allItems[Number($elm.attr(FLTR_ID))].source);
-				return {h: $elm.find(`a`).prop("hash").slice(1).split(HASH_PART_SEP)[0], c: $elm.find(".count").first().text() || undefined, uid: $elm.find(`.uid`).text() || undefined};
-			});
-		return {items: toSave, sources: Array.from(sources)};
-	},
-
-	async _pSaveSublist () {
-		await StorageUtil.pSetForPage("sublist", ListUtil.getExportableSublist());
-	},
-
-	_updateSublistVisibility: () => {
-		if (ListUtil.sublist.items.length) ListUtil.$sublistContainer.addClass("sublist--visible");
-		else ListUtil.$sublistContainer.removeClass("sublist--visible");
-	},
-
-	async pDoSublistRemove (index, data) {
-		ListUtil._deletePinnedCount(index, data);
-		if (data && data.uid) ListUtil.sublist.remove("uid", data.uid);
-		else ListUtil.sublist.remove("id", index);
-		ListUtil._updateSublistVisibility();
-		await ListUtil._pSaveSublist();
-		ListUtil._handleCallUpdateFn();
-	},
-
-	async pDoSublistRemoveAll (noSave) {
-		ListUtil._pinned = {};
-		ListUtil.sublist.clear();
-		ListUtil._updateSublistVisibility();
-		if (!noSave) await ListUtil._pSaveSublist();
-		ListUtil._handleCallUpdateFn();
-	},
-
-	isSublisted: (index, data) => {
-		return ListUtil._getPinnedCount(index, data);
-	},
-
-	deslectAll: (list) => {
-		list.items.forEach(it => it.elm.className = it.elm.className.replace(/list-multi-selected/g, ""));
-	},
-
-	forEachSelected: (list, forEachFunc) => {
-		list.items
-			.filter(it => it.elm.className.includes("list-multi-selected"))
-			.map(it => {
-				it.elm.className = it.elm.className.replace(/list-multi-selected/g, "");
-				return it.elm.getAttribute(FLTR_ID);
-			})
-			.forEach(it => forEachFunc(it));
-	},
-
-	mapSelected (list, mapFunc) {
-		return list.items
-			.filter(it => it.elm.className.includes("list-multi-selected"))
-			.map(it => {
-				it.elm.className = it.elm.className.replace(/list-multi-selected/g, "");
-				return it.elm.getAttribute(FLTR_ID);
-			})
-			.map(it => mapFunc(it));
-	},
-
-	getSelectedCount: (list) => {
-		return list.items.filter(it => it.elm.className.includes("list-multi-selected")).length;
-	},
-
-	isAnySelected: (list) => {
-		return !!list.items.find(it => it.elm.className.includes("list-multi-selected"));
-	},
-
-	_handleCallUpdateFn: () => {
-		if (ListUtil._sublistChangeFn) ListUtil._sublistChangeFn();
-	},
-
-	_hasLoadedState: false,
-	async pLoadState () {
-		if (ListUtil._hasLoadedState) return;
-		ListUtil._hasLoadedState = true;
-		try {
-			const store = await StorageUtil.pGetForPage("sublist");
-			if (store && store.items) {
-				ListUtil._pLoadSavedSublist(store.items);
-			}
-		} catch (e) {
-			setTimeout(() => { throw e });
-			await StorageUtil.pRemoveForPage("sublist");
-		}
-	},
-
-	async _pLoadSavedSublist (items, additive) {
-		if (!additive) await ListUtil.pDoSublistRemoveAll(true);
-
-		const toLoad = items.map(it => {
-			const $ele = History._getListElem(it.h);
-			const itId = $ele ? $ele.attr("id") : null;
-			if (itId != null) {
-				const out = {index: itId, addCount: Number(it.c)};
-				if (ListUtil._uidUnpackFn && it.uid) out.data = ListUtil._uidUnpackFn(it.uid);
-				return out;
-			}
-			return null;
-		}).filter(it => it);
-
-		const promises = toLoad.map(it => ListUtil.pDoSublistAdd(it.index, false, it.addCount, it.data));
-		return Promise.all(promises).then(async () => {
-			await ListUtil._pFinaliseSublist(true);
-		});
-	},
-
-	async pGetSelectedSources () {
-		let store;
-		try {
-			store = await StorageUtil.pGetForPage("sublist");
-		} catch (e) {
-			setTimeout(() => { throw e });
-		}
-		if (store && store.sources) return store.sources;
-	},
-
-	initGenericPinnable: () => {
-		ListUtil.initContextMenu(ListUtil.handleGenericContextMenuClick, "彈出視窗", "釘選");
-		ListUtil.initSubContextMenu(ListUtil.handleGenericSubContextMenuClick, "彈出視窗", "解除釘選", "清除釘選", null, "試試手氣？", null, "Download JSON");
-	},
-
-	handleGenericContextMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
-		const itId = Number($invokedOn.attr(FLTR_ID));
-		switch (Number($selectedMenu.data("ctx-id"))) {
-			case 0:
-				Renderer.hover.doPopout($invokedOn, ListUtil._allItems, itId, evt.clientX);
-				break;
-			case 1:
-				Promise.all(ListUtil._primaryLists.map(l => Promise.all(ListUtil.mapSelected(l, (it) => ListUtil.isSublisted(it) ? Promise.resolve() : ListUtil.pDoSublistAdd(it)))))
-					.then(async () => ListUtil._pFinaliseSublist());
-				break;
-		}
-	},
-
-	_isRolling: false,
-	_rollSubListed () {
-		const timerMult = RollerUtil.randomise(125, 75);
-		const timers = [0, 1, 1, 1, 1, 1, 1.5, 1.5, 1.5, 2, 2, 2, 2.5, 3, 4, -1] // last element is always sliced off
-			.map(it => it * timerMult)
-			.slice(0, -RollerUtil.randomise(4, 1));
-
-		function generateSequence (array, length) {
-			const out = [RollerUtil.rollOnArray(array)];
-			for (let i = 0; i < length; ++i) {
-				let next = RollerUtil.rollOnArray(array);
-				while (next === out.last()) {
-					next = RollerUtil.rollOnArray(array);
-				}
-				out.push(next);
-			}
-			return out;
-		}
-
-		if (!ListUtil._isRolling) {
-			ListUtil._isRolling = true;
-			const $eles = ListUtil.sublist.items
-				.map(it => $(it.elm).find(`a`));
-
-			if ($eles.length <= 1) {
-				JqueryUtil.doToast({
-					content: "Not enough entries to roll!",
-					type: "danger"
-				});
-				return ListUtil._isRolling = false;
-			}
-
-			const $sequence = generateSequence($eles, timers.length);
-
-			let total = 0;
-			timers.map((it, i) => {
-				total += it;
-				setTimeout(() => {
-					$sequence[i][0].click();
-					if (i === timers.length - 1) ListUtil._isRolling = false;
-				}, total);
-			});
-		}
-	},
-
-	handleGenericSubContextMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
-		const itId = Number($invokedOn.attr(FLTR_ID));
-		switch (Number($selectedMenu.data("ctx-id"))) {
-			case 0:
-				Renderer.hover.doPopout($invokedOn, ListUtil._allItems, itId, evt.clientX);
-				break;
-			case 1:
-				ListUtil.pDoSublistRemove(itId);
-				break;
-			case 2:
-				ListUtil.pDoSublistRemoveAll();
-				break;
-			case 3:
-				ListUtil._rollSubListed();
-				break;
-			case 4:
-				ListUtil._handleJsonDownload();
-				break;
-		}
-	},
-
-	initGenericAddable: () => {
-		ListUtil.initContextMenu(ListUtil.handleGenericMultiContextMenuClick, "彈出視窗", "加入");
-		ListUtil.initSubContextMenu(ListUtil.handleGenericMultiSubContextMenuClick, "彈出視窗", "移除", "清除列表", null, "試試手氣？", null, "下載JSON");
-	},
-
-	handleGenericMultiContextMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
-		const itId = Number($invokedOn.attr(FLTR_ID));
-		switch (Number($selectedMenu.data("ctx-id"))) {
-			case 0:
-				Renderer.hover.doPopout($invokedOn, ListUtil._allItems, itId, evt.clientX);
-				break;
-			case 1:
-				Promise.all(ListUtil._primaryLists.map(l => Promise.all(ListUtil.mapSelected(l, (it) => ListUtil.pDoSublistAdd(it)))))
-					.then(async () => {
-						await ListUtil._pFinaliseSublist();
-						ListUtil.updateSelected();
-					});
-				break;
-		}
-	},
-
-	handleGenericMultiSubContextMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
-		const itId = Number($invokedOn.attr(FLTR_ID));
-		const uid = $invokedOn.find(`.uid`).text();
-		switch (Number($selectedMenu.data("ctx-id"))) {
-			case 0:
-				Renderer.hover.doPopout($invokedOn, ListUtil._allItems, itId, evt.clientX);
-				break;
-			case 1:
-				if (uid) ListUtil.pDoSublistRemove(itId, {uid: uid});
-				else ListUtil.pDoSublistRemove(itId);
-				break;
-			case 2:
-				ListUtil.pDoSublistRemoveAll();
-				break;
-			case 3:
-				ListUtil._rollSubListed();
-				break;
-			case 4:
-				ListUtil._handleJsonDownload();
-				break;
-		}
-	},
-
-	_getDownloadName () {
-		return `${UrlUtil.getCurrentPage().replace(".html", "")}-sublist`;
-	},
-
-	genericPinKeyMapper (pMapUid = ListUtil._pUidHandler) {
-		return Object.entries(ListUtil.getSublisted()).map(([id, it]) => {
-			return Object.keys(it).map(k => {
-				const it = ListUtil._allItems[id];
-				return k === "_" ? Promise.resolve(MiscUtil.copy(it)) : pMapUid(it, k);
-			}).reduce((a, b) => a.concat(b), []);
-		}).reduce((a, b) => a.concat(b), []);
-	},
-
-	_handleJsonDownload () {
-		if (ListUtil._pUidHandler) {
-			const promises = ListUtil.genericPinKeyMapper();
-
-			Promise.all(promises).then(data => {
-				data.forEach(cpy => DataUtil.cleanJson(cpy));
-				DataUtil.userDownload(`${ListUtil._getDownloadName()}-data`, data);
-			});
-		} else {
-			const out = ListUtil.getSublistedIds().map(id => {
-				const cpy = JSON.parse(JSON.stringify(ListUtil._allItems[id]));
-				DataUtil.cleanJson(cpy);
-				return cpy;
-			});
-			DataUtil.userDownload(`${ListUtil._getDownloadName()}-data`, out);
-		}
-	},
-
-	/**
-	 * Assumes any other lists have been searched using the same term
-	 */
-	getSearchTermAndReset: (list, ...otherLists) => {
-		let lastSearch = null;
-		if (list.searched) {
-			lastSearch = $(`#search`).val();
-			list.search();
-			otherLists.forEach(l => l.search());
-		}
-		list.filter();
-		otherLists.forEach(l => l.filter());
-		return lastSearch;
-	},
-
-	toggleCheckbox (evt, ele) {
-		const $ipt = $(ele).find(`input`);
-		$ipt.prop("checked", !$ipt.prop("checked"));
-	},
-
-	getCompleteSources (it) {
-		return it.otherSources ? [it.source].concat(it.otherSources.map(src => src.source)) : it.source;
-	},
-
-	bindShowTableButton (id, title, dataList, colTransforms, filter, sorter) {
-		$(`#${id}`).click("click", () => ListUtil.showTable(title, dataList, colTransforms, filter, sorter));
-	},
-
-	basicFilterGenerator () {
-		const slIds = ListUtil.getSublistedIds();
-		if (slIds.length) {
-			const slIdSet = new Set(slIds);
-			return slIdSet.has.bind(slIdSet);
-		} else {
-			const visibleIds = new Set(ListUtil.getVisibleIds());
-			return visibleIds.has.bind(visibleIds);
-		}
-	},
-
-	getVisibleIds () {
-		return BrewUtil._lists.map(l => l.visibleItems.map(it => Number(it.elm.getAttribute(FLTR_ID)))).reduce((la, lb) => la.concat(lb), []);
-	},
-
-	showTable (title, dataList, colTransforms, filter, sorter) {
-		const $modal = $(`<div class="modal__outer dropdown-menu"/>`);
-		const $wrpModal = $(`<div class="modal__wrp">`).appendTo($(`body`)).click(() => $wrpModal.remove());
-		$modal.appendTo($wrpModal);
-		const $modalInner = $(`<div class="modal__inner"/>`).appendTo($modal).click((evt) => evt.stopPropagation());
-
-		const $pnlControl = $(`<div class="split my-3"/>`).appendTo($modalInner);
-		const $pnlCols = $(`<div class="flex" style="align-items: center;"/>`).appendTo($pnlControl);
-		Object.values(colTransforms).forEach((c, i) => {
-			const $wrpCb = $(`<label class="flex-${c.flex || 1} px-2 mr-2 no-wrap inline-flex">${c.name} </label>`).appendTo($pnlCols);
-			const $cbToggle = $(`<input type="checkbox" class="ml-1" data-name="${c.name}" checked>`)
-				.click(() => {
-					const toToggle = $modalInner.find(`.col_${i}`);
-					if ($cbToggle.prop("checked")) {
-						toToggle.show();
-					} else {
-						toToggle.hide();
-					}
-				})
-				.appendTo($wrpCb);
-		});
-		const $pnlBtns = $(`<div/>`).appendTo($pnlControl);
-		function getAsCsv () {
-			const headers = $pnlCols.find(`input:checked`).map((i, e) => $(e).data("name")).get();
-			const rows = $modalInner.find(`.data-row`).map((i, e) => $(e)).get().map($e => {
-				return $e.find(`td:visible`).map((j, d) => $(d).text()).get();
-			});
-			return DataUtil.getCsv(headers, rows);
-		}
-		const $btnCsv = $(`<button class="btn btn-primary mr-3">Download CSV</button>`).click(() => {
-			DataUtil.userDownloadText(`${title}.csv`, getAsCsv());
-		}).appendTo($pnlBtns);
-		const $btnCopy = $(`<button class="btn btn-primary">Copy CSV to Clipboard</button>`).click(async () => {
-			await MiscUtil.pCopyTextToClipboard(getAsCsv());
-			JqueryUtil.showCopiedEffect($btnCopy);
-		}).appendTo($pnlBtns);
-		$modalInner.append(`<hr>`);
-
-		if (typeof filter === "object" && filter.generator) filter = filter.generator();
-
-		let temp = `<table class="table-striped stats stats-book" style="width: 100%;"><thead><tr>${Object.values(colTransforms).map((c, i) => `<th class="col_${i} px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr></thead><tbody>`;
-		const listCopy = JSON.parse(JSON.stringify(dataList)).filter((it, i) => filter ? filter(i) : it);
-		if (sorter) listCopy.sort(sorter);
-		listCopy.forEach(it => {
-			temp += `<tr class="data-row">`;
-			temp += Object.keys(colTransforms).map((k, i) => {
-				const c = colTransforms[k];
-				return `<td class="col_${i} px-2" colspan="${c.flex || 1}">${c.transform === true ? it[k] : c.transform(k[0] === "_" ? it : it[k])}</td>`;
-			}).join("");
-			temp += `</tr>`;
-		});
-		temp += `</tbody></table>`;
-		$modalInner.append(temp);
-	},
-
-	addListShowHide () {
-		const toInjectShow = `
-			<div class="col-12" id="showsearch">
-				<button class="btn btn-block btn-default btn-xs" type="button">顯示搜尋</button>
-				<br>
-			</div>
-		`;
-
-		const toInjectHide = `
-			<button class="btn btn-default" id="hidesearch">隱藏</button>
-		`;
-
-		$(`#filter-search-input-group`).find(`#reset`).before(toInjectHide);
-		$(`#contentwrapper`).prepend(toInjectShow);
-
-		const listContainer = $(`#listcontainer`);
-		const showSearchWrpr = $("div#showsearch");
-		const hideSearchBtn = $("button#hidesearch");
-		// collapse/expand search button
-		hideSearchBtn.click(function () {
-			listContainer.hide();
-			showSearchWrpr.show();
-			hideSearchBtn.hide();
-		});
-		showSearchWrpr.find("button").click(function () {
-			listContainer.show();
-			showSearchWrpr.hide();
-			hideSearchBtn.show();
-		});
-	}
-};
-
-/**
- * Generic source filter
- * deselected. If there are more items to be deselected than selected, it is advisable to set this to "true"
- * @param options overrides for the default filter options
- * @returns {*} a `Filter`
- */
-function getSourceFilter (options = {}) {
-	const baseOptions = {
-		header: FilterBox.SOURCE_HEADER,
-		headerName: FilterBox.SOURCE_HEADER_NAME,
-		displayFn: (item) => Parser.sourceJsonToFullCompactPrefix(item.item || item),
-		selFn: defaultSourceSelFn,
-		groupFn: SourceUtil.getFilterGroup
-	};
-	Object.assign(baseOptions, options);
-	return new GroupedFilter(baseOptions);
-}
-
-function defaultSourceDeselFn (val) {
-	return SourceUtil.isNonstandardSource(val);
-}
-
-function defaultSourceSelFn (val) {
-	var standard = ["PHB", "DMG", "MM", "SCAG", "VGM", "XGE", "MTF", "EEPC", "TTP"];
-	return standard.includes(val);
-	// Haz Edit
-	return !defaultSourceDeselFn(val);
-}
-
-function getAsiFilter (options) {
-	const baseOptions = {
-		header: "屬性加值",
-		items: [
-			"str",
-			"dex",
-			"con",
-			"int",
-			"wis",
-			"cha"
-		],
-		displayFn: Parser.attAbvToFull
-	};
-	return getFilterWithMergedOptions(baseOptions, options);
-}
-
-function getFilterWithMergedOptions (baseOptions, addOptions) {
-	if (addOptions) Object.assign(baseOptions, addOptions); // merge in anything we get passed
-	return new Filter(baseOptions);
-}
-
-async function pInitFilterBox (...filterList) {
-	const filterBox = new FilterBox(document.getElementById(ID_SEARCH_BAR), document.getElementById(ID_RESET_BUTTON), filterList);
-	await filterBox.pDoLoadState();
-	return filterBox;
-}
 
 // ENCODING/DECODING ===================================================================================================
 UrlUtil = {
 	encodeForHash (toEncode) {
-		if (toEncode instanceof Array) {
-			return toEncode.map(i => encodeForHashHelper(i)).join(HASH_LIST_SEP);
-		} else {
-			return encodeForHashHelper(toEncode);
-		}
-
-		function encodeForHashHelper (part) {
-			return encodeURIComponent(part).toLowerCase();
-		}
+		if (toEncode instanceof Array) return toEncode.map(it => `${it}`.toUrlified()).join(HASH_LIST_SEP);
+		else return `${toEncode}`.toUrlified();
 	},
 
 	autoEncodeHash (obj) {
@@ -3852,6 +1562,7 @@ UrlUtil = {
 	},
 
 	getCurrentPage () {
+		if (typeof window === "undefined") return VeCt.PG_NONE;
 		const pSplit = window.location.pathname.split("/");
 		let out = pSplit[pSplit.length - 1];
 		if (!out.toLowerCase().endsWith(".html")) out += ".html";
@@ -3865,11 +1576,11 @@ UrlUtil = {
 	 */
 	link (href) {
 		function addGetParam (curr) {
-			if (href.includes("?")) return `${curr}&ver=${VERSION_NUMBER}`;
-			else return `${curr}?ver=${VERSION_NUMBER}`;
+			if (href.includes("?")) return `${curr}&v=${VERSION_NUMBER}`;
+			else return `${curr}?v=${VERSION_NUMBER}`;
 		}
 
-		if (!IS_ROLL20 && IS_DEPLOYED) return addGetParam(`${DEPLOYED_STATIC_ROOT}${href}`);
+		if (!IS_VTT && IS_DEPLOYED) return addGetParam(`${DEPLOYED_STATIC_ROOT}${href}`);
 		else if (IS_DEPLOYED) return addGetParam(href);
 		return href;
 	},
@@ -3887,46 +1598,170 @@ UrlUtil = {
 			if (out[k].length === 1 && out[k] === HASH_SUB_NONE) out[k] = [];
 			return out;
 		} else {
-			throw new Error(`Baldy formatted subhash ${subHash}`)
+			throw new Error(`Badly formatted subhash ${subHash}`)
 		}
 	},
 
-	packSubHash (key, values, encode) {
-		if (encode) {
-			key = encodeURIComponent(key.toLowerCase());
-			values = values.map(it => encodeURIComponent(it.toLowerCase()));
-		}
+	/**
+	 * @param key The subhash key.
+	 * @param values The subhash values.
+	 * @param [opts] Options object.
+	 * @param [opts.isEncodeBoth] If both the key and values should be URl encoded.
+	 * @param [opts.isEncodeKey] If the key should be URL encoded.
+	 * @param [opts.isEncodeValues] If the values should be URL encoded.
+	 * @returns {string}
+	 */
+	packSubHash (key, values, opts) {
+		opts = opts || {};
+		if (opts.isEncodeBoth || opts.isEncodeKey) key = key.toUrlified();
+		if (opts.isEncodeBoth || opts.isEncodeValues) values = values.map(it => it.toUrlified());
 		return `${key}${HASH_SUB_KV_SEP}${values.join(HASH_SUB_LIST_SEP)}`;
 	},
 
-	categoryToPage (category) {
-		return UrlUtil.CAT_TO_PAGE[category];
-	},
+	categoryToPage (category) { return UrlUtil.CAT_TO_PAGE[category]; },
+	categoryToHoverPage (category) { return UrlUtil.CAT_TO_HOVER_PAGE[category] || UrlUtil.categoryToPage(category); },
 
-	bindLinkExportButton (filterBox) {
-		const $btn = ListUtil.getOrTabRightButton(`btn-link-export`, `magnet`);
+	bindLinkExportButton (filterBox, $btn) {
+		$btn = $btn || ListUtil.getOrTabRightButton(`btn-link-export`, `magnet`);
 		$btn.addClass("btn-copy-effect")
 			.off("click")
 			.on("click", async evt => {
 				let url = window.location.href;
 
-				const toHash = filterBox.getAsSubHashes();
-				let parts = Object.keys(toHash).map(hK => {
-					const hV = toHash[hK];
-					return UrlUtil.packSubHash(hK, hV, true);
-				});
-				if (evt.shiftKey) {
-					const toEncode = JSON.stringify(ListUtil.getExportableSublist());
-					const part2 = UrlUtil.packSubHash(ListUtil.SUB_HASH_PREFIX, [toEncode], true);
-					parts = parts.concat(part2);
-				}
+				const parts = filterBox.getSubHashes({isAddSearchTerm: true});
 				parts.unshift(url);
+
+				if (evt.shiftKey && ListUtil.sublist) {
+					const toEncode = JSON.stringify(ListUtil.getExportableSublist());
+					const part2 = UrlUtil.packSubHash(ListUtil.SUB_HASH_PREFIX, [toEncode], {isEncodeBoth: true});
+					parts.push(part2);
+				}
 
 				await MiscUtil.pCopyTextToClipboard(parts.join(HASH_PART_SEP));
 				JqueryUtil.showCopiedEffect($btn);
 			})
-			.attr("title", "複製篩選器連結（SHIFT以加入列表）")
-	}
+			.title("Get Link to Filters (SHIFT adds List)")
+	},
+
+	mini: {
+		compress (primitive) {
+			const type = typeof primitive;
+			if (primitive == null) return `x`;
+			switch (type) {
+				case "boolean": return `b${Number(primitive)}`;
+				case "number": return `n${primitive}`;
+				case "string": return `s${primitive.toUrlified()}`;
+				default: throw new Error(`Unhandled type "${type}"`);
+			}
+		},
+
+		decompress (raw) {
+			const [type, data] = [raw.slice(0, 1), raw.slice(1)];
+			switch (type) {
+				case "x": return null;
+				case "b": return !!Number(data);
+				case "n": return Number(data);
+				case "s": return String(data);
+				default: throw new Error(`Unhandled type "${type}"`);
+			}
+		},
+	},
+
+	class: {
+		getIndexedEntries (cls) {
+			const out = [];
+			let scFeatureI = 0;
+			(cls.classFeatures || []).forEach((lvlFeatureList, ixLvl) => {
+				// class features
+				lvlFeatureList
+					// don't add "you gain a subclass feature" or ASI's
+					.filter(feature => !feature.gainSubclassFeature
+						&& feature.name !== "Ability Score Improvement"
+						&& feature.name !== "Proficiency Versatility")
+					.forEach((feature, ixFeature) => {
+						const name = Renderer.findName(feature);
+						if (!name) { // tolerate missing names in homebrew
+							if (BrewUtil.hasSourceJson(cls.source)) return;
+							else throw new Error("Class feature had no name!");
+						}
+						out.push({
+							_type: "classFeature",
+							source: cls.source.source || cls.source,
+							name,
+							hash: `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](cls)}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({feature: {ixLevel: ixLvl, ixFeature: ixFeature}})}`,
+							entry: feature,
+							level: ixLvl + 1,
+						})
+					});
+
+				// subclass features
+				const ixGainSubclassFeatures = lvlFeatureList.findIndex(feature => feature.gainSubclassFeature);
+				if (~ixGainSubclassFeatures) {
+					cls.subclasses.forEach(sc => {
+						const features = ((sc.subclassFeatures || [])[scFeatureI] || []);
+						sc.source = sc.source || cls.source; // default to class source if required
+						const tempStack = [];
+						features.forEach(feature => {
+							const subclassFeatureHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](cls)}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: sc, feature: {ixLevel: ixLvl, ixFeature: ixGainSubclassFeatures}})}`;
+							const name = Renderer.findName(feature);
+							if (!name) { // tolerate missing names in homebrew
+								if (BrewUtil.hasSourceJson(sc.source)) return;
+								else throw new Error("Subclass feature had no name!");
+							}
+							tempStack.push({
+								_type: "subclassFeature",
+								name,
+								subclassName: sc.name,
+								subclassShortName: sc.shortName,
+								source: sc.source.source || sc.source,
+								hash: subclassFeatureHash,
+								entry: feature,
+								level: ixLvl + 1,
+							});
+
+							if (feature.entries) {
+								const namedFeatureParts = feature.entries.filter(it => it.name);
+								namedFeatureParts.forEach(it => {
+									const lvl = ixLvl + 1;
+									if (tempStack.find(existing => it.name === existing.name && lvl === existing.level)) return;
+									tempStack.push({
+										_type: "subclassFeaturePart",
+										name: it.name,
+										subclassName: sc.name,
+										subclassShortName: sc.shortName,
+										source: sc.source.source || sc.source,
+										hash: subclassFeatureHash,
+										entry: feature,
+										level: lvl,
+									});
+								});
+							}
+						});
+						out.push(...tempStack);
+					});
+					scFeatureI++;
+				} else if (ixGainSubclassFeatures.length > 1) {
+					setTimeout(() => { throw new Error(`Multiple subclass features gained at level ${ixLvl + 1} for class "${cls.name}" from source "${cls.source}"!`) });
+				}
+			});
+			return out;
+		},
+	},
+
+	getStateKeySubclass (sc) { return Parser.stringToSlug(`sub ${sc.ENG_shortName || sc.ENG_name || sc.shortName || sc.name} ${Parser.sourceJsonToAbv(sc.source)}`); },
+
+	/**
+	 * @param opts Options object.
+	 * @param [opts.subclass] Subclass (or object of the form `{shortName: "str", source: "str"}`)
+	 * @param [opts.feature] Object of the form `{ixLevel: 0, ixFeature: 0}`
+	 */
+	getClassesPageStatePart (opts) {
+		const stateParts = [
+			opts.subclass ? `${UrlUtil.getStateKeySubclass(opts.subclass)}=${UrlUtil.mini.compress(true)}` : null,
+			opts.feature ? `feature=${UrlUtil.mini.compress(`${opts.feature.ixLevel}-${opts.feature.ixFeature}`)}` : "",
+		].filter(Boolean);
+		return stateParts.length ? UrlUtil.packSubHash("state", stateParts) : "";
+	},
 };
 
 UrlUtil.PG_BESTIARY = "bestiary.html";
@@ -3940,7 +1775,7 @@ UrlUtil.PG_OPT_FEATURES = "optionalfeatures.html";
 UrlUtil.PG_PSIONICS = "psionics.html";
 UrlUtil.PG_RACES = "races.html";
 UrlUtil.PG_REWARDS = "rewards.html";
-UrlUtil.PG_VARIATNRULES = "variantrules.html";
+UrlUtil.PG_VARIANTRULES = "variantrules.html";
 UrlUtil.PG_ADVENTURE = "adventure.html";
 UrlUtil.PG_ADVENTURES = "adventures.html";
 UrlUtil.PG_BOOK = "book.html";
@@ -3950,15 +1785,30 @@ UrlUtil.PG_CULTS_BOONS = "cultsboons.html";
 UrlUtil.PG_OBJECTS = "objects.html";
 UrlUtil.PG_TRAPS_HAZARDS = "trapshazards.html";
 UrlUtil.PG_QUICKREF = "quickreference.html";
-UrlUtil.PG_MAKE_SHAPED = "makeshaped.html";
 UrlUtil.PG_MANAGE_BREW = "managebrew.html";
+UrlUtil.PG_MAKE_BREW = "makebrew.html";
+UrlUtil.PG_DEMO_RENDER = "renderdemo.html";
 UrlUtil.PG_TABLES = "tables.html";
-UrlUtil.PG_SHIPS = "ships.html";
+UrlUtil.PG_VEHICLES = "vehicles.html";
+UrlUtil.PG_CHARACTERS = "characters.html";
+UrlUtil.PG_ACTIONS = "actions.html";
+UrlUtil.PG_LANGUAGES = "languages.html";
+UrlUtil.PG_STATGEN = "statgen.html";
+UrlUtil.PG_LIFEGEN = "lifegen.html";
+UrlUtil.PG_NAMES = "names.html";
+UrlUtil.PG_DM_SCREEN = "dmscreen.html";
+UrlUtil.PG_CR_CALCULATOR = "crcalculator.html";
+UrlUtil.PG_ENCOUNTERGEN = "encountergen.html";
+UrlUtil.PG_LOOTGEN = "lootgen.html";
+UrlUtil.PG_TEXT_CONVERTER = "converter.html";
+UrlUtil.PG_CHANGELOG = "changelog.html";
+UrlUtil.PG_CHAR_CREATION_OPTIONS = "charcreationoptions.html";
+UrlUtil.PG_RECIPES = "recipes.html";
 
 UrlUtil.URL_TO_HASH_BUILDER = {};
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = (it) => UrlUtil.encodeForHash([it.name, Parser.sourceJsonToAbv(it.source)]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
@@ -3967,7 +1817,7 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OPT_FEATURES] = (it) => UrlUtil.encodeFor
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PSIONICS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_REWARDS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VARIATNRULES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VARIANTRULES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ADVENTURE] = (it) => UrlUtil.encodeForHash(it.id);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BOOK] = (it) => UrlUtil.encodeForHash(it.id);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_DEITIES] = (it) => UrlUtil.encodeForHash([it.name, it.pantheon, it.source]);
@@ -3975,7 +1825,66 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CULTS_BOONS] = (it) => UrlUtil.encodeForH
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OBJECTS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TRAPS_HAZARDS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TABLES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SHIPS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VEHICLES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ACTIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_LANGUAGES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CHAR_CREATION_OPTIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RECIPES] = (it) => `${UrlUtil.encodeForHash([it.name, it.source])}${it._scaleFactor ? `${HASH_PART_SEP}${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}${it._scaleFactor}` : ""}`;
+// region Fake pages (props)
+UrlUtil.URL_TO_HASH_BUILDER["subclass"] = it => {
+	const hashParts = [
+		UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource}),
+		UrlUtil.packSubHash("state", [`${UrlUtil.getStateKeySubclass(it)}=${UrlUtil.mini.compress(true)}`]),
+	].filter(Boolean);
+	return Hist.util.getCleanHash(hashParts.join(HASH_PART_SEP));
+};
+UrlUtil.URL_TO_HASH_BUILDER["classFeature"] = (it) => UrlUtil.encodeForHash([it.name, it.className, it.classSource, it.level, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"] = (it) => UrlUtil.encodeForHash([it.name, it.className, it.classSource, it.subclassShortName, it.subclassSource, it.level, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER["legendarygroup"] = UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"];
+UrlUtil.URL_TO_HASH_BUILDER["itemEntry"] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER["itementry"] = UrlUtil.URL_TO_HASH_BUILDER["itemEntry"];
+// endregion
+
+UrlUtil.PG_TO_NAME = {};
+UrlUtil.PG_TO_NAME[UrlUtil.PG_BESTIARY] = "Bestiary";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_SPELLS] = "Spells";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_BACKGROUNDS] = "Backgrounds";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_ITEMS] = "Items";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CLASSES] = "Classes";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CONDITIONS_DISEASES] = "Conditions & Diseases";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_FEATS] = "Feats";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_OPT_FEATURES] = "Other Options and Features";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_PSIONICS] = "Psionics";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_RACES] = "Races";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_REWARDS] = "Supernatural Gifts & Rewards";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_VARIANTRULES] = "Optional, Variant, and Expanded Rules";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_ADVENTURES] = "Adventures";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_BOOKS] = "Books";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_DEITIES] = "Deities";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CULTS_BOONS] = "Cults & Supernatural Boons";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_OBJECTS] = "Objects";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_TRAPS_HAZARDS] = "Traps & Hazards";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_QUICKREF] = "Quick Reference";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_BREW] = "Homebrew Manager";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_MAKE_BREW] = "Homebrew Builder";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_DEMO_RENDER] = "Renderer Demo";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_TABLES] = "Tables";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_VEHICLES] = "Vehicles";
+// UrlUtil.PG_TO_NAME[UrlUtil.PG_CHARACTERS] = "";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_ACTIONS] = "Actions";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_LANGUAGES] = "Languages";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_STATGEN] = "Stat Generator";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_LIFEGEN] = "This Is Your Life";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_NAMES] = "Names";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_DM_SCREEN] = "DM Screen";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CR_CALCULATOR] = "CR Calculator";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_ENCOUNTERGEN] = "Encounter Generator";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_LOOTGEN] = "Loot Generator";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_TEXT_CONVERTER] = "Text Converter";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CHANGELOG] = "Changelog";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CHAR_CREATION_OPTIONS] = "Other Character Creation Options";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_RECIPES] = "Recipes";
 
 UrlUtil.CAT_TO_PAGE = {};
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CREATURE] = UrlUtil.PG_BESTIARY;
@@ -3984,6 +1893,8 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_BACKGROUND] = UrlUtil.PG_BACKGROUNDS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ITEM] = UrlUtil.PG_ITEMS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_CLASSES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS_FEATURE] = UrlUtil.PG_CLASSES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SUBCLASS] = UrlUtil.PG_CLASSES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SUBCLASS_FEATURE] = UrlUtil.PG_CLASSES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CONDITION] = UrlUtil.PG_CONDITIONS_DISEASES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_FEAT] = UrlUtil.PG_FEATS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ELDRITCH_INVOCATION] = UrlUtil.PG_OPT_FEATURES;
@@ -3996,7 +1907,7 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_FIGHTING_STYLE] = UrlUtil.PG_OPT_FEATURES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_PSIONIC] = UrlUtil.PG_PSIONICS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_RACE] = UrlUtil.PG_RACES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_OTHER_REWARD] = UrlUtil.PG_REWARDS;
-UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_VARIANT_OPTIONAL_RULE] = UrlUtil.PG_VARIATNRULES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_VARIANT_OPTIONAL_RULE] = UrlUtil.PG_VARIANTRULES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ADVENTURE] = UrlUtil.PG_ADVENTURE;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_DEITY] = UrlUtil.PG_DEITIES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_OBJECT] = UrlUtil.PG_OBJECTS;
@@ -4008,18 +1919,35 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_BOON] = UrlUtil.PG_CULTS_BOONS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_DISEASE] = UrlUtil.PG_CONDITIONS_DISEASES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_TABLE] = UrlUtil.PG_TABLES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_TABLE_GROUP] = UrlUtil.PG_TABLES;
-UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SHIP] = UrlUtil.PG_SHIPS;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_VEHICLE] = UrlUtil.PG_VEHICLES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_PACT_BOON] = UrlUtil.PG_OPT_FEATURES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ELEMENTAL_DISCIPLINE] = UrlUtil.PG_OPT_FEATURES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ARTIFICER_INFUSION] = UrlUtil.PG_OPT_FEATURES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SHIP_UPGRADE] = UrlUtil.PG_VEHICLES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_INFERNAL_WAR_MACHINE_UPGRADE] = UrlUtil.PG_VEHICLES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ONOMANCY_RESONANT] = UrlUtil.PG_OPT_FEATURES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_RUNE_KNIGHT_RUNE] = UrlUtil.PG_OPT_FEATURES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ALCHEMICAL_FORMULA] = UrlUtil.PG_OPT_FEATURES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_MANEUVER] = UrlUtil.PG_OPT_FEATURES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ACTION] = UrlUtil.PG_ACTIONS;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_LANGUAGE] = UrlUtil.PG_LANGUAGES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_BOOK] = UrlUtil.PG_BOOK;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_PAGE] = null;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_LEGENDARY_GROUP] = null;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CHAR_CREATION_OPTIONS] = UrlUtil.PG_CHAR_CREATION_OPTIONS;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_RECIPES] = UrlUtil.PG_RECIPES;
 
-if (!IS_DEPLOYED && !IS_ROLL20 && typeof window !== "undefined") {
+UrlUtil.CAT_TO_HOVER_PAGE = {};
+UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_CLASS_FEATURE] = "classfeature";
+UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SUBCLASS_FEATURE] = "subclassfeature";
+
+if (!IS_DEPLOYED && !IS_VTT && typeof window !== "undefined") {
 	// for local testing, hotkey to get a link to the current page on the main site
 	window.addEventListener("keypress", (e) => {
-		if (noModifierKeys(e) && typeof d20 === "undefined") {
+		if (EventUtil.noModifierKeys(e) && typeof d20 === "undefined") {
 			if (e.key === "#") {
 				const spl = window.location.href.split("/");
-				window.prompt("Copy to clipboard: Ctrl+C, Enter", `https://5e.tools/${spl[spl.length - 1]}`);
+				window.prompt("Copy to clipboard: Ctrl+C, Enter", `https://noads.5e.tools/${spl[spl.length - 1]}`);
 			}
 		}
 	});
@@ -4028,19 +1956,37 @@ if (!IS_DEPLOYED && !IS_ROLL20 && typeof window !== "undefined") {
 // SORTING =============================================================================================================
 SortUtil = {
 	ascSort: (a, b) => {
-		// to handle `FilterItem`s
-		if (a.hasOwnProperty("item") && b.hasOwnProperty("item")) {
-			return SortUtil._ascSort(a.item, b.item);
+		if (typeof FilterItem !== "undefined") {
+			if (a instanceof FilterItem) a = a.item;
+			if (b instanceof FilterItem) b = b.item;
 		}
+
 		return SortUtil._ascSort(a, b);
 	},
 
+	ascSortProp: (prop, a, b) => { return SortUtil.ascSort(a[prop], b[prop]); },
+
 	ascSortLower: (a, b) => {
-		return SortUtil._ascSort(a.toLowerCase(), b.toLowerCase());
+		if (typeof FilterItem !== "undefined") {
+			if (a instanceof FilterItem) a = a.item;
+			if (b instanceof FilterItem) b = b.item;
+		}
+
+		a = a ? a.toLowerCase() : a;
+		b = b ? b.toLowerCase() : b;
+
+		return SortUtil._ascSort(a, b);
 	},
+
+	ascSortLowerProp: (prop, a, b) => { return SortUtil.ascSortLower(a[prop], b[prop]); },
 
 	// warning: slow
 	ascSortNumericalSuffix (a, b) {
+		if (typeof FilterItem !== "undefined") {
+			if (a instanceof FilterItem) a = a.item;
+			if (b instanceof FilterItem) b = b.item;
+		}
+
 		function popEndNumber (str) {
 			const spl = str.split(" ");
 			return spl.last().isNumeric() ? [spl.slice(0, -1).join(" "), Number(spl.last().replace(Parser._numberCleanRegexp, ""))] : [spl.join(" "), 0];
@@ -4058,39 +2004,60 @@ SortUtil = {
 		return b < a ? 1 : -1;
 	},
 
-	compareNames: (a, b) => {
-		if (b._values.name.toLowerCase() === a._values.name.toLowerCase()) return 0;
-		else if (b._values.name.toLowerCase() > a._values.name.toLowerCase()) return 1;
-		else if (b._values.name.toLowerCase() < a._values.name.toLowerCase()) return -1;
+	ascSortDate (a, b) {
+		return b.getTime() - a.getTime();
 	},
 
-	listSort: (itemA, itemB, options) => {
-		if (options.valueName === "name") return compareBy("name");
-		else return compareByOrDefault(options.valueName, "name");
+	ascSortDateString (a, b) {
+		return SortUtil.ascSortDate(new Date(a || "1970-01-0"), new Date(b || "1970-01-0"));
+	},
 
-		function compareBy (valueName) {
-			const aValue = itemA.values()[valueName].toLowerCase();
-			const bValue = itemB.values()[valueName].toLowerCase();
-			if (aValue === bValue) return 0;
-			return (aValue > bValue) ? 1 : -1;
-		}
+	compareListNames (a, b) { return SortUtil._ascSort(a.name.toLowerCase(), b.name.toLowerCase()); },
 
-		function compareByOrDefault (valueName, defaultValueName) {
-			const initialCompare = compareBy(valueName);
-			return initialCompare === 0 ? compareBy(defaultValueName) : initialCompare;
-		}
+	listSort (a, b, opts) {
+		opts = opts || {sortBy: "name"};
+		if (opts.sortBy === "name") return SortUtil.compareListNames(a, b);
+		else return SortUtil._compareByOrDefault_compareByOrDefault(a, b, opts.sortBy);
+	},
+
+	_listSort_compareBy (a, b, sortBy) {
+		const aValue = typeof a.values[sortBy] === "string" ? a.values[sortBy].toLowerCase() : a.values[sortBy];
+		const bValue = typeof b.values[sortBy] === "string" ? b.values[sortBy].toLowerCase() : b.values[sortBy];
+
+		return SortUtil._ascSort(aValue, bValue);
+	},
+
+	_compareByOrDefault_compareByOrDefault (a, b, sortBy) {
+		return SortUtil._listSort_compareBy(a, b, sortBy) || SortUtil.compareListNames(a, b);
 	},
 
 	/**
 	 * "Special Equipment" first, then alphabetical
 	 */
+	_MON_TRAIT_ORDER: [
+		"special equipment",
+		"shapechanger",
+	],
 	monTraitSort: (a, b) => {
-		if (!a && !b) return 0;
-		if (!a) return -1;
-		if (!b) return 1;
-		if (a.toLowerCase().trim() === "special equipment") return -1;
-		if (b.toLowerCase().trim() === "special equipment") return 1;
-		return 0;//SortUtil.ascSortLower(a, b);
+		if (a.sort != null && b.sort != null) return a.sort - b.sort;
+		if (a.sort != null && b.sort == null) return -1;
+		if (a.sort == null && b.sort != null) return 1;
+
+		if (!a.name && !b.name) return 0;
+		const aClean = a.name.toLowerCase().trim();
+		const bClean = b.name.toLowerCase().trim();
+
+		const isOnlyA = a.name.endsWith(" Only)");
+		const isOnlyB = b.name.endsWith(" Only)");
+		if (!isOnlyA && isOnlyB) return -1;
+		if (isOnlyA && !isOnlyB) return 1;
+
+		const ixA = SortUtil._MON_TRAIT_ORDER.indexOf(aClean);
+		const ixB = SortUtil._MON_TRAIT_ORDER.indexOf(bClean);
+		if (~ixA && ~ixB) return ixA - ixB;
+		else if (~ixA) return -1;
+		else if (~ixB) return 1;
+		else return SortUtil.ascSort(aClean, bClean);
 	},
 
 	_alignFirst: ["L", "C"],
@@ -4105,171 +2072,164 @@ SortUtil = {
 	},
 
 	ascSortCr (a, b) {
+		if (typeof FilterItem !== "undefined") {
+			if (a instanceof FilterItem) a = a.item;
+			if (b instanceof FilterItem) b = b.item;
+		}
 		// always put unknown values last
-		if (a === "Unknown" || a === undefined) a = "999";
-		if (b === "Unknown" || b === undefined) b = "999";
+		if (a === "Unknown") a = "998";
+		if (b === "Unknown") b = "998";
+		if (a === "\u2014" || a == null) a = "999";
+		if (b === "\u2014" || b == null) b = "999";
 		return SortUtil.ascSort(Parser.crToNumber(a), Parser.crToNumber(b));
 	},
 
 	ascSortAtts (a, b) {
-		return Parser.ABIL_ABVS.indexOf(b) - Parser.ABIL_ABVS.indexOf(a);
+		const aSpecial = a === "special";
+		const bSpecial = b === "special";
+		return aSpecial && bSpecial ? 0 : aSpecial ? 1 : bSpecial ? -1 : Parser.ABIL_ABVS.indexOf(a) - Parser.ABIL_ABVS.indexOf(b);
 	},
 
-	ascSort$Options ($select) {
-		$select.append($select.find("option").remove().sort((a, b) => {
-			const at = $(a).text();
-			const bt = $(b).text();
-			return (at > bt) ? 1 : ((at < bt) ? -1 : 0);
-		}));
-	},
+	initBtnSortHandlers ($wrpBtnsSort, list) {
+		function addCaret ($btnSort, direction) {
+			$wrpBtnsSort.find(".caret").removeClass("caret");
+			$btnSort.find(".caret_wrp").addClass("caret").toggleClass("caret--reverse", direction === "asc");
+		}
 
-	initHandleFilterButtonClicks (target = "#filtertools") {
-		$("#filtertools").find("button.sort").click(function () {
-			setTimeout(() => { // defer to allow button to update
-				SortUtil.handleFilterButtonClick.call(this, target);
-			}, 1);
+		const $btnSort = $wrpBtnsSort.find(`.sort[data-sort="${list.sortBy}"]`);
+		addCaret($btnSort, list.sortDir);
+
+		$wrpBtnsSort.find(".sort").each((i, e) => {
+			const $btnSort = $(e);
+			$btnSort.click(evt => {
+				evt.stopPropagation();
+				const direction = list.sortDir === "asc" ? "desc" : "asc";
+				addCaret($btnSort, direction);
+				list.sort($btnSort.data("sort"), direction);
+			});
 		});
 	},
-
-	handleFilterButtonClick (target, $this = $(this), direction) {
-		if (!direction) direction = $this.hasClass("asc") || $this.attr("data-sortby") === "asc" ? "asc" : "desc";
-
-		$(target).find(".caret").removeClass("caret");
-		$this.find(".caret_wrp").addClass("caret").toggleClass("caret--reverse", direction === "asc");
-	},
-
-	srcSort_ch (a,b){
-		if (a.hasOwnProperty("item") && b.hasOwnProperty("item")) {
-			return SortUtil._srcSort_ch(a.item, b.item);
-		}
-		return SortUtil._srcSort_ch(a, b);
-	},
-
-	_srcSort_ch (a,b){
-		let weight_cmp = SortUtil._getSourceWeight(a) - SortUtil._getSourceWeight(b);
-		if (weight_cmp != 0) return weight_cmp;
-		return SortUtil._ascSort(a, b);
-	},
-	_getSourceWeight(src){
-		switch(src){
-			case SRC_PHB: return 0;
-			case SRC_DMG: return 1;
-			case SRC_MM: return 2;
-			case SRC_EEPC: return 10;
-			case SRC_SCAG: return 11;
-			case SRC_VGM: return 12;
-			case SRC_TTP: return 13;
-			case SRC_XGE: return 14;
-			case SRC_MTF: return 15;
-			case SRC_GGR: return 16;
-			default:
-				return 100;
-		}
-	}
 };
 
 // JSON LOADING ========================================================================================================
 DataUtil = {
+	_loading: {},
 	_loaded: {},
+	_merging: {},
+	_merged: {},
 
-	async loadJSON (url, ...otherData) { // FIXME otherData doesn't get returned, as resolve() can only return a single value
-		const procUrl = UrlUtil.link(url);
-
-		if (DataUtil._loaded[url]) {
-			return DataUtil._loaded[url] // , otherData
+	async _pLoad (url) {
+		if (DataUtil._loading[url]) {
+			await DataUtil._loading[url];
+			return DataUtil._loaded[url];
 		}
 
-		const data = await new Promise((resolve, reject) => {
-			function getRequest (toUrl) {
-				const request = new XMLHttpRequest();
-				request.open("GET", toUrl, true);
-				request.overrideMimeType("application/json");
-				request.onload = function () {
-					try {
-						const data = JSON.parse(this.response);
-						DataUtil._loaded[toUrl] = data;
-						resolve(data, otherData);
-					} catch (e) {
-						reject(new Error(`Could not parse JSON from ${toUrl}: ${e.message}`));
-					}
-				};
-				request.onerror = (e) => reject(new Error(`Error during JSON request: ${e.target.status}`));
-				return request;
-			}
-
-			const request = getRequest(procUrl);
-			if (procUrl !== url) {
-				request.onerror = function () {
-					const fallbackRequest = getRequest(url);
-					fallbackRequest.send();
-				};
-			}
+		DataUtil._loading[url] = new Promise((resolve, reject) => {
+			const request = new XMLHttpRequest();
+			request.open("GET", url, true);
+			request.overrideMimeType("application/json");
+			request.onload = function () {
+				try {
+					DataUtil._loaded[url] = JSON.parse(this.response);
+					resolve();
+				} catch (e) {
+					console.log(url);
+					reject(new Error(`Could not parse JSON from ${url}: ${e.message}`));
+				}
+			};
+			request.onerror = (e) => reject(new Error(`Error during JSON request: ${e.target.status}`));
 			request.send();
 		});
 
-		await DataUtil.pDoMetaMerge(data);
+		await DataUtil._loading[url];
+		return DataUtil._loaded[url];
+	},
+
+	async loadJSON (url, ...otherData) {
+		const procUrl = UrlUtil.link(url);
+
+		let ident = procUrl;
+		let data;
+		try {
+			data = await DataUtil._pLoad(procUrl);
+		} catch (e) {
+			setTimeout(() => { throw e; })
+		}
+
+		// Fallback to the un-processed URL
+		if (!data) {
+			ident = url;
+			data = await DataUtil._pLoad(url);
+		}
+
+		await DataUtil.pDoMetaMerge(ident, data);
 
 		return data;
 	},
 
-	async pDoMetaMerge (data, options) {
-		if (data._meta && data._meta.dependencies) {
-			await Promise.all(Object.entries(data._meta.dependencies).map(async ([prop, sources]) => {
-				if (!data[prop]) return; // if e.g. monster dependencies are declared, but there are no monsters to merge with, bail out
+	async pDoMetaMerge (ident, data, options) {
+		DataUtil._merging[ident] = DataUtil._merging[ident] || DataUtil._pDoMetaMerge(ident, data, options);
+		await DataUtil._merging[ident];
+		return DataUtil._merged[ident];
+	},
 
-				const toLoads = await Promise.all(sources.map(async source => DataUtil.pGetLoadableByMeta(prop, source)));
-				const dependencyData = await Promise.all(toLoads.map(toLoad => DataUtil.loadJSON(toLoad)));
-				const flatDependencyData = dependencyData.map(dd => dd[prop]).flat();
-				await Promise.all(data[prop].map(async entry => {
-					if (entry._copy) {
-						switch (prop) {
-							case "monster": {
-								return Renderer.monster.pMergeCopy(flatDependencyData, entry, options);
-							}
-							default: throw new Error(`No _copy merge strategy specified for property "${prop}"`);
-						}
-					}
+	_pDoMetaMerge_handleCopyProp (prop, arr, entry, options) {
+		if (entry._copy) {
+			switch (prop) {
+				case "monster": return DataUtil.monster.pMergeCopy(arr, entry, options);
+				case "monsterFluff": return DataUtil.monsterFluff.pMergeCopy(arr, entry, options);
+				case "spell": return DataUtil.spell.pMergeCopy(arr, entry, options);
+				case "spellFluff": return DataUtil.spellFluff.pMergeCopy(arr, entry, options);
+				case "item": return DataUtil.item.pMergeCopy(arr, entry, options);
+				case "itemFluff": return DataUtil.itemFluff.pMergeCopy(arr, entry, options);
+				case "background": return DataUtil.background.pMergeCopy(arr, entry, options);
+				case "race": return DataUtil.race.pMergeCopy(arr, entry, options);
+				case "raceFluff": return DataUtil.raceFluff.pMergeCopy(arr, entry, options);
+				case "deity": return DataUtil.deity.pMergeCopy(arr, entry, options);
+				default: throw new Error(`No dependency _copy merge strategy specified for property "${prop}"`);
+			}
+		}
+	},
+
+	async _pDoMetaMerge (ident, data, options) {
+		if (data._meta) {
+			if (data._meta.dependencies) {
+				await Promise.all(Object.entries(data._meta.dependencies).map(async ([dataProp, sourceIds]) => {
+					if (!data[dataProp]) return; // if e.g. monster dependencies are declared, but there are no monsters to merge with, bail out
+
+					const dependencyData = await Promise.all(sourceIds.map(sourceId => DataUtil.pLoadByMeta(dataProp, sourceId)));
+					const flatDependencyData = dependencyData.map(dd => dd[dataProp]).flat();
+					await Promise.all(data[dataProp].map(entry => DataUtil._pDoMetaMerge_handleCopyProp(dataProp, flatDependencyData, entry, options)));
 				}));
-			}));
-			delete data._meta.dependencies;
+				delete data._meta.dependencies;
+			}
+
+			if (data._meta.internalCopies) {
+				for (const prop of data._meta.internalCopies) {
+					if (!data[prop]) continue;
+					for (const entry of data[prop]) {
+						await DataUtil._pDoMetaMerge_handleCopyProp(prop, data[prop], entry, options);
+					}
+				}
+				delete data._meta.internalCopies;
+			}
 		}
 
 		if (data._meta && data._meta.otherSources) {
-			await Promise.all(Object.entries(data._meta.otherSources).map(async ([prop, sources]) => {
-				const toLoads = await Promise.all(Object.entries(sources).map(async ([source, findWith]) => ({
+			await Promise.all(Object.entries(data._meta.otherSources).map(async ([dataProp, sourceIds]) => {
+				const additionalData = await Promise.all(Object.entries(sourceIds).map(async ([sourceId, findWith]) => ({
 					findWith,
-					url: await DataUtil.pGetLoadableByMeta(prop, source)
+					dataOther: await DataUtil.pLoadByMeta(dataProp, sourceId),
 				})));
 
-				const additionalData = await Promise.all(toLoads.map(async ({findWith, url}) => ({findWith, sourceData: await DataUtil.loadJSON(url)})));
-
-				additionalData.forEach(dataAndSource => {
-					const findWith = dataAndSource.findWith;
-					const ad = dataAndSource.sourceData;
-					const toAppend = ad[prop].filter(it => it.otherSources && it.otherSources.find(os => os.source === findWith));
-					if (toAppend.length) data[prop] = (data[prop] || []).concat(toAppend);
+				additionalData.forEach(({findWith, dataOther}) => {
+					const toAppend = dataOther[dataProp].filter(it => it.otherSources && it.otherSources.find(os => os.source === findWith));
+					if (toAppend.length) data[dataProp] = (data[dataProp] || []).concat(toAppend);
 				});
 			}));
 			delete data._meta.otherSources;
 		}
-	},
-
-	async multiLoadJSON (toLoads, onEachLoadFunction, onFinalLoadFunction) {
-		if (!toLoads.length) onFinalLoadFunction([]);
-
-		const datas = await Promise.all(toLoads.map(tl => DataUtil.loadJSON(tl.url)));
-		if (onEachLoadFunction) {
-			datas.forEach((data, i) => onEachLoadFunction(toLoads[i], data));
-		}
-		return onFinalLoadFunction(datas);
-	},
-
-	userDownload: function (filename, data) {
-		if (typeof data !== "string") data = JSON.stringify(data, null, "\t");
-		const $a = $(`<a href="data:text/json;charset=utf-8,${encodeURIComponent(data)}" download="${filename}.json" style="display: none;">DL</a>`);
-		$(`body`).append($a);
-		$a[0].click();
-		$a.remove();
+		DataUtil._merged[ident] = data;
 	},
 
 	getCleanFilename (filename) {
@@ -4288,11 +2248,25 @@ DataUtil = {
 		return `${toCsv(headers)}\n${rows.map(r => toCsv(r)).join("\n")}`;
 	},
 
+	userDownload (filename, data) {
+		if (typeof data !== "string") data = JSON.stringify(data, null, "\t");
+		return DataUtil._userDownload(`${filename}.json`, data, "text/json");
+	},
+
 	userDownloadText (filename, string) {
-		const $a = $(`<a href="data:text/plain;charset=utf-8,${encodeURIComponent(string)}" download="${filename}" style="display: none;">DL</a>`);
-		$(`body`).append($a);
-		$a[0].click();
-		$a.remove();
+		return DataUtil._userDownload(filename, string, "text/plain");
+	},
+
+	_userDownload (filename, data, mimeType) {
+		const a = document.createElement("a");
+		const t = new Blob([data], {type: mimeType});
+		a.href = URL.createObjectURL(t);
+		a.download = filename;
+		a.target = "_blank";
+		a.style.display = "none";
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
 	},
 
 	pUserUpload () {
@@ -4315,54 +2289,1012 @@ DataUtil = {
 
 	cleanJson (cpy) {
 		cpy.name = cpy._displayName || cpy.name;
+		delete cpy.uniqueId;
 		DataUtil.__cleanJsonObject(cpy);
 		return cpy;
 	},
 
 	__cleanJsonObject (obj) {
+		if (obj == null) return obj;
 		if (typeof obj === "object") {
 			if (obj instanceof Array) {
 				obj.forEach(it => DataUtil.__cleanJsonObject(it));
 			} else {
 				Object.entries(obj).forEach(([k, v]) => {
-					if (k.startsWith("_") || k === "uniqueId") delete obj[k];
+					if ((k.startsWith("_") && k !== "_") || k === "customHashId") delete obj[k];
 					else DataUtil.__cleanJsonObject(v);
 				});
 			}
 		}
 	},
 
-	async pGetLoadableByMeta (key, value) {
-		// TODO in future, allow value to be e.g. a string (assumed to be an official data's source); an object e.g. `{type: external, url: <>}`,...
+	async pLoadByMeta (key, value) {
+		// TODO(future) allow value to be e.g. a string (assumed to be an official data's source); an object e.g. `{type: external, url: <>}`,...
+		// TODO(future) expand support
+
 		switch (key) {
-			case "monster": {
-				const index = await DataUtil.loadJSON(`data/bestiary/index.json`);
-				if (!index[value]) throw new Error(`Bestiary index did not contain source "${value}"`);
-				return `data/bestiary/${index[value]}`;
+			// region Multi-source
+			case "monster":
+			case "spell":
+			case "monsterFluff":
+			case "spellFluff": {
+				const baseUrlPart = `${Renderer.get().baseUrl}data/${(key === "monster" || key === "monsterFluff") ? "bestiary" : "spells"}`;
+				const index = await DataUtil.loadJSON(`${baseUrlPart}/${key === "monster" || key === "spell" ? "index.json" : "fluff-index.json"}`);
+				if (index[value]) return DataUtil.loadJSON(`${baseUrlPart}/${index[value]}`);
+
+				return DataUtil._pLoadByMeta_pGetFromBrew(key, value);
 			}
+			// endregion
+
+			// region Standard
+			// case "itemFluff":
+			// case "deity":
+			case "background":
+			case "raceFluff": {
+				let url;
+				switch (key) {
+					case "background": url = `${Renderer.get().baseUrl}data/backgrounds.json`; break;
+					case "raceFluff": url = `${Renderer.get().baseUrl}data/fluff-races.json`; break;
+				}
+
+				const data = await DataUtil.loadJSON(url);
+				if (data[key] && data[key].some(it => it.source === value)) return data;
+
+				return DataUtil._pLoadByMeta_pGetFromBrew(key, value);
+			}
+			// endregion
+
+			// region Special
+			// case "item":
+			case "race": {
+				const data = await DataUtil.race.loadJSON({isAddBaseRaces: true});
+				if (data[key] && data[key].some(it => it.source === value)) return data;
+				return DataUtil._pLoadByMeta_pGetFromBrew(key, value);
+			}
+			// endregion
+
 			default: throw new Error(`Could not get loadable URL for \`${JSON.stringify({key, value})}\``);
 		}
 	},
 
-	class: {
-		loadJSON: function (baseUrl = "") {
-			return new Promise((resolve) => {
-				DataUtil.loadJSON(`${baseUrl}data/class/index.json`).then((index) => {
-					Promise.all(Object.values(index).map(it => DataUtil.loadJSON(`${baseUrl}data/class/${it}`))).then((all) => {
-						resolve(all.reduce((a, b) => ({class: a.class.concat(b.class)}), {class: []}));
-					});
-				});
+	async _pLoadByMeta_pGetFromBrew (key, value) {
+		const brewIndex = await DataUtil.brew.pLoadSourceIndex();
+		if (!brewIndex[value]) throw new Error(`Neither base nor brew index contained source "${value}"`);
+		const urlRoot = await StorageUtil.pGet(`HOMEBREW_CUSTOM_REPO_URL`);
+		const brewUrl = DataUtil.brew.getFileUrl(brewIndex[value], urlRoot);
+		await BrewUtil.pDoHandleBrewJson((await DataUtil.loadJSON(brewUrl)), UrlUtil.getCurrentPage());
+		return DataUtil.loadJSON(brewUrl);
+	},
+
+	// region Dbg
+	dbg: {
+		isTrackCopied: false,
+	},
+	// endregion
+
+	generic: {
+		_walker_replaceTxt: null,
+
+		/**
+		 * @param uid
+		 * @param tag
+		 * @param [opts]
+		 * @param [opts.isLower] If the returned values should be lowercase.
+		 */
+		unpackUid (uid, tag, opts) {
+			opts = opts || {};
+			if (opts.isLower) uid = uid.toLowerCase();
+			let [name, source, displayText, ...others] = uid.split("|").map(it => it.trim());
+
+			source = Parser.getTagSource(tag, source);
+			if (opts.isLower) source = source.toLowerCase();
+
+			return {
+				name,
+				source,
+				displayText,
+				others,
+			};
+		},
+
+		async _pMergeCopy (impl, page, entryList, entry, options) {
+			if (entry._copy) {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](entry._copy);
+				const it = impl._mergeCache[hash] || DataUtil.generic._pMergeCopy_search(impl, page, entryList, entry, options);
+				if (!it) return;
+				if (DataUtil.dbg.isTrackCopied) it.dbg_isCopied = true;
+				// Handle recursive copy
+				if (it._copy) await DataUtil.generic._pMergeCopy(impl, page, entryList, it, options);
+				return DataUtil.generic._pApplyCopy(impl, MiscUtil.copy(it), entry, options);
+			}
+		},
+
+		_pMergeCopy_search (impl, page, entryList, entry, options) {
+			const entryHash = UrlUtil.URL_TO_HASH_BUILDER[page](entry._copy);
+			return entryList.find(it => {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
+				impl._mergeCache[hash] = it;
+				if (hash === entryHash)
+				{
+					return true;
+				}
+				else if (it.ENG_name != undefined) // rugini code for ENG_name
+				{
+					var it2 = Object.assign({}, it);
+					it2.name = it.ENG_name;
+					const eng_hash = UrlUtil.URL_TO_HASH_BUILDER[page](it2);
+					impl._mergeCache[eng_hash] = it;
+					return eng_hash === entryHash;
+				}
+				else
+				{
+					return false;
+				}
 			});
-		}
+		},
+
+		async _pApplyCopy (impl, copyFrom, copyTo, options = {}) {
+			if (options.doKeepCopy) copyTo.__copy = MiscUtil.copy(copyFrom);
+
+			// convert everything to arrays
+			function normaliseMods (obj) {
+				Object.entries(obj._mod).forEach(([k, v]) => {
+					if (!(v instanceof Array)) obj._mod[k] = [v];
+				});
+			}
+
+			const copyMeta = copyTo._copy || {};
+
+			if (copyMeta._mod) normaliseMods(copyMeta);
+
+			// fetch and apply any external traits -- append them to existing copy mods where available
+			let racials = null;
+			if (copyMeta._trait) {
+				const traitData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/traits.json`);
+				racials = traitData.trait.find(t => t.name.toLowerCase() === copyMeta._trait.name.toLowerCase() && t.source.toLowerCase() === copyMeta._trait.source.toLowerCase());
+				if (!racials) throw new Error(`Could not find traits to apply with name "${copyMeta._trait.name}" and source "${copyMeta._trait.source}"`);
+				racials = MiscUtil.copy(racials);
+
+				if (racials.apply._mod) {
+					normaliseMods(racials.apply);
+
+					if (copyMeta._mod) {
+						Object.entries(racials.apply._mod).forEach(([k, v]) => {
+							if (copyMeta._mod[k]) copyMeta._mod[k] = copyMeta._mod[k].concat(v);
+							else copyMeta._mod[k] = v;
+						});
+					} else copyMeta._mod = racials.apply._mod;
+				}
+
+				delete copyMeta._trait;
+			}
+
+			const copyToRootProps = new Set(Object.keys(copyTo));
+
+			if(!copyFrom){
+				console.warn("not found", copyTo._copy);
+				return ;
+			}
+			// copy over required values
+			Object.keys(copyFrom).forEach(k => {
+				if (copyTo[k] === null) return delete copyTo[k];
+				if (copyTo[k] == null) {
+					if (impl._MERGE_REQUIRES_PRESERVE[k]) {
+						if (copyTo._copy._preserve && copyTo._copy._preserve[k]) copyTo[k] = copyFrom[k];
+					} else copyTo[k] = copyFrom[k];
+				}
+			});
+
+			// apply any root racial properties after doing base copy
+			if (racials && racials.apply._root) {
+				Object.entries(racials.apply._root)
+					.filter(([k, v]) => !copyToRootProps.has(k)) // avoid overwriting any real root properties
+					.forEach(([k, v]) => copyTo[k] = v);
+			}
+
+			// mod helpers /////////////////
+			function doEnsureArray (obj, prop) {
+				if (!(obj[prop] instanceof Array)) obj[prop] = [obj[prop]];
+			}
+
+			function doMod_appendStr (modInfo, prop) {
+				if (copyTo[prop]) copyTo[prop] = `${copyTo[prop]}${modInfo.joiner || ""}${modInfo.str}`;
+				else copyTo[prop] = modInfo.str;
+			}
+
+			function doMod_replaceTxt (modInfo, prop) {
+				if (!copyTo[prop]) return;
+
+				DataUtil.generic._walker_replaceTxt = DataUtil.generic._walker_replaceTxt || MiscUtil.getWalker();
+				const re = new RegExp(modInfo.replace, `g${modInfo.flags || ""}`);
+				const handlers = {
+					// TODO(Future) may need to have this handle replaces inside _some_ tags
+					string: (str) => {
+						const split = Renderer.splitByTags(str);
+						const len = split.length;
+						for (let i = 0; i < len; ++i) {
+							if (split[i].startsWith("{@")) continue;
+							split[i] = split[i].replace(re, modInfo.with);
+						}
+						return split.join("");
+					},
+				};
+
+				// Handle any pure strings, e.g. `"legendaryHeader"`
+				copyTo[prop] = copyTo[prop].map(it => {
+					if (typeof it !== "string") return it;
+					return DataUtil.generic._walker_replaceTxt.walk(it, handlers);
+				});
+
+				copyTo[prop].forEach(it => {
+					if (it.entries) it.entries = DataUtil.generic._walker_replaceTxt.walk(it.entries, handlers);
+					if (it.headerEntries) it.headerEntries = DataUtil.generic._walker_replaceTxt.walk(it.headerEntries, handlers);
+					if (it.footerEntries) it.footerEntries = DataUtil.generic._walker_replaceTxt.walk(it.footerEntries, handlers);
+				});
+			}
+
+			function doMod_prependArr (modInfo, prop) {
+				doEnsureArray(modInfo, "items");
+				copyTo[prop] = copyTo[prop] ? modInfo.items.concat(copyTo[prop]) : modInfo.items
+			}
+
+			function doMod_appendArr (modInfo, prop) {
+				doEnsureArray(modInfo, "items");
+				copyTo[prop] = copyTo[prop] ? copyTo[prop].concat(modInfo.items) : modInfo.items
+			}
+
+			function doMod_appendIfNotExistsArr (modInfo, prop) {
+				doEnsureArray(modInfo, "items");
+				if (!copyTo[prop]) return copyTo[prop] = modInfo.items;
+				copyTo[prop] = copyTo[prop].concat(modInfo.items.filter(it => !copyTo[prop].some(x => CollectionUtil.deepEquals(it, x))));
+			}
+
+			function doMod_replaceArr (modInfo, prop, isThrow = true) {
+				doEnsureArray(modInfo, "items");
+
+				if (!copyTo[prop]) {
+					if (isThrow) throw new Error(`Could not find "${prop}" array`);
+					return false;
+				}
+
+				let ixOld;
+				if (modInfo.replace.regex) {
+					const re = new RegExp(modInfo.replace.regex, modInfo.replace.flags || "");
+					ixOld = copyTo[prop].findIndex(it => it.name ? re.test(it.name) : typeof it === "string" ? re.test(it) : false);
+				} else if (modInfo.replace.index != null) {
+					ixOld = modInfo.replace.index;
+				} else {
+					ixOld = copyTo[prop].findIndex(it => it.name ? (it.name === modInfo.replace || it.ENG_name === modInfo.replace) : it === modInfo.replace);
+				}
+
+				if (~ixOld) {
+					copyTo[prop].splice(ixOld, 1, ...modInfo.items);
+					return true;
+				} else if (isThrow) {
+					console.warn("cannot find "+prop+" item with name "+modInfo.replace+" to replace");
+					//throw new Error(`Could not find "${prop}" item with name "${modInfo.replace}" to replace`);
+				}
+				return false;
+			}
+
+			function doMod_replaceOrAppendArr (modInfo, prop) {
+				const didReplace = doMod_replaceArr(modInfo, prop, false);
+				if (!didReplace) doMod_appendArr(modInfo, prop);
+			}
+
+			function doMod_insertArr (modInfo, prop) {
+				doEnsureArray(modInfo, "items");
+				if (!copyTo[prop]) throw new Error(`Could not find "${prop}" array`);
+				copyTo[prop].splice(modInfo.index, 0, ...modInfo.items);
+			}
+
+			function doMod_removeArr (modInfo, prop) {
+				if (modInfo.names) {
+					doEnsureArray(modInfo, "names");
+					modInfo.names.forEach(nameToRemove => {
+						const ixOld = copyTo[prop].findIndex(it => it.name === nameToRemove || it.ENG_name === nameToRemove);
+						if (~ixOld) copyTo[prop].splice(ixOld, 1);
+						else {
+							if (!modInfo.force)
+							{
+								throw new Error(`Could not find "${prop}" item with name "${nameToRemove}" to remove`);
+							}
+						}
+					});
+				} else if (modInfo.items) {
+					doEnsureArray(modInfo, "items");
+					modInfo.items.forEach(itemToRemove => {
+						const ixOld = copyTo[prop].findIndex(it => it === itemToRemove);
+						if (~ixOld) copyTo[prop].splice(ixOld, 1);
+						else throw new Error(`Could not find "${prop}" item "${itemToRemove}" to remove`);
+					});
+				} else throw new Error(`One of "names" or "items" must be provided!`)
+			}
+
+			function doMod_calculateProp (modInfo, prop) {
+				copyTo[prop] = copyTo[prop] || {};
+				const toExec = modInfo.formula.replace(/<\$([^$]+)\$>/g, (...m) => {
+					switch (m[1]) {
+						case "prof_bonus": return Parser.crToPb(copyTo.cr);
+						case "dex_mod": return Parser.getAbilityModNumber(copyTo.dex);
+						default: throw new Error(`Unknown variable "${m[1]}"`);
+					}
+				});
+				// eslint-disable-next-line no-eval
+				copyTo[prop][modInfo.prop] = eval(toExec);
+			}
+
+			function doMod_scalarAddProp (modInfo, prop) {
+				function applyTo (k) {
+					const out = Number(copyTo[prop][k]) + modInfo.scalar;
+					const isString = typeof copyTo[prop][k] === "string";
+					copyTo[prop][k] = isString ? `${out >= 0 ? "+" : ""}${out}` : out;
+				}
+
+				if (!copyTo[prop]) return;
+				if (modInfo.prop === "*") Object.keys(copyTo[prop]).forEach(k => applyTo(k));
+				else applyTo(modInfo.prop);
+			}
+
+			function doMod_scalarMultProp (modInfo, prop) {
+				function applyTo (k) {
+					let out = Number(copyTo[prop][k]) * modInfo.scalar;
+					if (modInfo.floor) out = Math.floor(out);
+					const isString = typeof copyTo[prop][k] === "string";
+					copyTo[prop][k] = isString ? `${out >= 0 ? "+" : ""}${out}` : out;
+				}
+
+				if (!copyTo[prop]) return;
+				if (modInfo.prop === "*") Object.keys(copyTo[prop]).forEach(k => applyTo(k));
+				else applyTo(modInfo.prop);
+			}
+
+			function doMod_addSenses (modInfo) {
+				doEnsureArray(modInfo, "senses");
+				copyTo.senses = copyTo.senses || [];
+				modInfo.senses.forEach(sense => {
+					let found = false;
+					for (let i = 0; i < copyTo.senses.length; ++i) {
+						const m = new RegExp(`${sense.type} (\\d+)`, "i").exec(copyTo.senses[i]);
+						if (m) {
+							found = true;
+							// if the creature already has a greater sense of this type, do nothing
+							if (Number(m[1]) < sense.type) {
+								copyTo.senses[i] = `${sense.type} ${sense.range} ft.`;
+							}
+							break;
+						}
+					}
+
+					if (!found) copyTo.senses.push(`${sense.type} ${sense.range} ft.`);
+				});
+			}
+
+			function doMod_addSkills (modInfo) {
+				copyTo.skill = copyTo.skill || [];
+				Object.entries(modInfo.skills).forEach(([skill, mode]) => {
+					// mode: 1 = proficient; 2 = expert
+					const total = mode * Parser.crToPb(copyTo.cr) + Parser.getAbilityModNumber(copyTo[Parser.skillToAbilityAbv(skill)]);
+					const asText = total >= 0 ? `+${total}` : `-${total}`;
+					if (copyTo.skill && copyTo.skill[skill]) {
+						// update only if ours is larger (prevent reduction in skill score)
+						if (Number(copyTo.skill[skill]) < total) copyTo.skill[skill] = asText;
+					} else copyTo.skill[skill] = asText;
+				});
+			}
+
+			function doMod_addSpells (modInfo) {
+				if (!copyTo.spellcasting) throw new Error(`Creature did not have a spellcasting property!`);
+
+				// TODO could accept a "position" or "name" parameter should spells need to be added to other spellcasting traits
+				const spellcasting = copyTo.spellcasting[0];
+
+				if (modInfo.spells) {
+					const spells = spellcasting.spells;
+
+					Object.keys(modInfo.spells).forEach(k => {
+						if (!spells[k]) spells[k] = modInfo.spells[k];
+						else {
+							// merge the objects
+							const spellCategoryNu = modInfo.spells[k];
+							const spellCategoryOld = spells[k];
+							Object.keys(spellCategoryNu).forEach(kk => {
+								if (!spellCategoryOld[kk]) spellCategoryOld[kk] = spellCategoryNu[kk];
+								else {
+									if (typeof spellCategoryOld[kk] === "object") {
+										if (spellCategoryOld[kk] instanceof Array) spellCategoryOld[kk] = spellCategoryOld[kk].concat(spellCategoryNu[kk]).sort(SortUtil.ascSortLower);
+										else throw new Error(`Object at key ${kk} not an array!`);
+									} else spellCategoryOld[kk] = spellCategoryNu[kk];
+								}
+							});
+						}
+					});
+				}
+
+				if (modInfo.will) {
+					modInfo.will.forEach(sp => (modInfo.will = modInfo.will || []).push(sp));
+				}
+
+				if (modInfo.daily) {
+					for (let i = 1; i <= 9; ++i) {
+						const e = `${i}e`;
+
+						spellcasting.daily = spellcasting.daily || {};
+
+						if (modInfo.daily[i]) {
+							modInfo.daily[i].forEach(sp => (spellcasting.daily[i] = spellcasting.daily[i] || []).push(sp));
+						}
+
+						if (modInfo.daily[e]) {
+							modInfo.daily[e].forEach(sp => (spellcasting.daily[e] = spellcasting.daily[e] || []).push(sp));
+						}
+					}
+				}
+			}
+
+			function doMod_replaceSpells (modInfo) {
+				if (!copyTo.spellcasting) throw new Error(`Creature did not have a spellcasting property!`);
+
+				// TODO could accept a "position" or "name" parameter should spells need to be added to other spellcasting traits
+				const spellcasting = copyTo.spellcasting[0];
+
+				const handleReplace = (curSpells, replaceMeta, k) => {
+					doEnsureArray(replaceMeta, "with");
+
+					const ix = curSpells[k].indexOf(replaceMeta.replace);
+					if (~ix) {
+						curSpells[k].splice(ix, 1, ...replaceMeta.with);
+						curSpells[k].sort(SortUtil.ascSortLower);
+					} else throw new Error(`Could not find spell "${replaceMeta.replace}" to replace`);
+				};
+
+				if (modInfo.spells) {
+					const trait0 = spellcasting.spells;
+					Object.keys(modInfo.spells).forEach(k => { // k is e.g. "4"
+						if (trait0[k]) {
+							const replaceMetas = modInfo.spells[k];
+							const curSpells = trait0[k];
+							replaceMetas.forEach(replaceMeta => handleReplace(curSpells, replaceMeta, "spells"));
+						}
+					});
+				}
+
+				// TODO should be extended  to handle all non-slot-based spellcasters
+				if (modInfo.daily) {
+					for (let i = 1; i <= 9; ++i) {
+						const e = `${i}e`;
+
+						if (modInfo.daily[i]) {
+							modInfo.daily[i].forEach(replaceMeta => handleReplace(spellcasting.daily, replaceMeta, i));
+						}
+
+						if (modInfo.daily[e]) {
+							modInfo.daily[e].forEach(replaceMeta => handleReplace(spellcasting.daily, replaceMeta, e));
+						}
+					}
+				}
+			}
+
+			function doMod_scalarAddHit (modInfo, prop) {
+				if (!copyTo[prop]) return;
+				copyTo[prop] = JSON.parse(JSON.stringify(copyTo[prop]).replace(/{@hit ([-+]?\d+)}/g, (m0, m1) => `{@hit ${Number(m1) + modInfo.scalar}}`))
+			}
+
+			function doMod_scalarAddDc (modInfo, prop) {
+				if (!copyTo[prop]) return;
+				copyTo[prop] = JSON.parse(JSON.stringify(copyTo[prop]).replace(/{@dc (\d+)}/g, (m0, m1) => `{@dc ${Number(m1) + modInfo.scalar}}`));
+			}
+
+			function doMod_maxSize (modInfo) {
+				const ixCur = Parser.SIZE_ABVS.indexOf(copyTo.size);
+				const ixMax = Parser.SIZE_ABVS.indexOf(modInfo.max);
+				if (ixCur < 0 || ixMax < 0) throw new Error(`Unhandled size!`);
+				copyTo.size = Parser.SIZE_ABVS[Math.min(ixCur, ixMax)]
+			}
+
+			function doMod_scalarMultXp (modInfo) {
+				function getOutput (input) {
+					let out = input * modInfo.scalar;
+					if (modInfo.floor) out = Math.floor(out);
+					return out;
+				}
+
+				if (copyTo.cr.xp) copyTo.cr.xp = getOutput(copyTo.cr.xp);
+				else {
+					const curXp = Parser.crToXpNumber(copyTo.cr);
+					if (!copyTo.cr.cr) copyTo.cr = {cr: copyTo.cr};
+					copyTo.cr.xp = getOutput(curXp);
+				}
+			}
+
+			function doMod (modInfos, ...properties) {
+				function handleProp (prop) {
+					modInfos.forEach(modInfo => {
+						if (typeof modInfo === "string") {
+							switch (modInfo) {
+								case "remove": return delete copyTo[prop];
+								default: throw new Error(`Unhandled mode: ${modInfo}`);
+							}
+						} else {
+							switch (modInfo.mode) {
+								case "appendStr": return doMod_appendStr(modInfo, prop);
+								case "replaceTxt": return doMod_replaceTxt(modInfo, prop);
+								case "prependArr": return doMod_prependArr(modInfo, prop);
+								case "appendArr": return doMod_appendArr(modInfo, prop);
+								case "replaceArr": return doMod_replaceArr(modInfo, prop);
+								case "replaceOrAppendArr": return doMod_replaceOrAppendArr(modInfo, prop);
+								case "appendIfNotExistsArr": return doMod_appendIfNotExistsArr(modInfo, prop);
+								case "insertArr": return doMod_insertArr(modInfo, prop);
+								case "removeArr": return doMod_removeArr(modInfo, prop);
+								case "calculateProp": return doMod_calculateProp(modInfo, prop);
+								case "scalarAddProp": return doMod_scalarAddProp(modInfo, prop);
+								case "scalarMultProp": return doMod_scalarMultProp(modInfo, prop);
+								// bestiary specific
+								case "addSenses": return doMod_addSenses(modInfo);
+								case "addSkills": return doMod_addSkills(modInfo);
+								case "addSpells": return doMod_addSpells(modInfo);
+								case "replaceSpells": return doMod_replaceSpells(modInfo);
+								case "scalarAddHit": return doMod_scalarAddHit(modInfo, prop);
+								case "scalarAddDc": return doMod_scalarAddDc(modInfo, prop);
+								case "maxSize": return doMod_maxSize(modInfo);
+								case "scalarMultXp": return doMod_scalarMultXp(modInfo);
+								default: throw new Error(`Unhandled mode: ${modInfo.mode}`);
+							}
+						}
+					});
+				}
+
+				properties.forEach(prop => handleProp(prop));
+				// special case for "no property" modifications, i.e. underscore-key'd
+				if (!properties.length) handleProp();
+			}
+
+			// apply mods
+			if (copyMeta._mod) {
+				// pre-convert any dynamic text
+				Object.entries(copyMeta._mod).forEach(([k, v]) => {
+					copyMeta._mod[k] = JSON.parse(
+						JSON.stringify(v)
+							.replace(/<\$([^$]+)\$>/g, (...m) => {
+								const parts = m[1].split("__");
+
+								switch (parts[0]) {
+									case "name": return copyTo.name;
+									case "short_name":
+									case "title_short_name": {
+										return Renderer.monster.getShortName(copyTo, parts[0] === "title_short_name");
+									}
+									case "spell_dc": {
+										if (!Parser.ABIL_ABVS.includes(parts[1])) throw new Error(`Unknown ability score "${parts[1]}"`);
+										return 8 + Parser.getAbilityModNumber(Number(copyTo[parts[1]])) + Parser.crToPb(copyTo.cr);
+									}
+									case "to_hit": {
+										if (!Parser.ABIL_ABVS.includes(parts[1])) throw new Error(`Unknown ability score "${parts[1]}"`);
+										const total = Parser.crToPb(copyTo.cr) + Parser.getAbilityModNumber(Number(copyTo[parts[1]]));
+										return total >= 0 ? `+${total}` : total;
+									}
+									case "damage_mod": {
+										if (!Parser.ABIL_ABVS.includes(parts[1])) throw new Error(`Unknown ability score "${parts[1]}"`);
+										const total = Parser.getAbilityModNumber(Number(copyTo[parts[1]]));
+										return total === 0 ? "" : total > 0 ? ` +${total}` : ` ${total}`;
+									}
+									case "damage_avg": {
+										const replaced = parts[1].replace(/(str|dex|con|int|wis|cha)/gi, (...m2) => Parser.getAbilityModNumber(Number(copyTo[m2[0]])));
+										const clean = replaced.replace(/[^-+/*0-9.,]+/g, "");
+										// eslint-disable-next-line no-eval
+										return Math.floor(eval(clean));
+									}
+									default: return m[0];
+								}
+							}),
+					);
+				});
+
+				Object.entries(copyMeta._mod).forEach(([prop, modInfos]) => {
+					if (prop === "*") doMod(modInfos, "action", "bonus", "reaction", "trait", "legendary", "mythic", "variant", "spellcasting", "legendaryHeader");
+					else if (prop === "_") doMod(modInfos);
+					else doMod(modInfos, prop);
+				});
+			}
+
+			// add filter tag
+			copyTo._isCopy = true;
+
+			// cleanup
+			delete copyTo._copy;
+		},
+	},
+
+	monster: {
+		_MERGE_REQUIRES_PRESERVE: {
+			legendaryGroup: true,
+			environment: true,
+			soundClip: true,
+			page: true,
+			altArt: true,
+			otherSources: true,
+			variant: true,
+			dragonCastingColor: true,
+			srd: true,
+			hasToken: true,
+			hasFluff: true,
+			hasFluffImages: true,
+		},
+		_mergeCache: {},
+		async pMergeCopy (monList, mon, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.monster, UrlUtil.PG_BESTIARY, monList, mon, options);
+		},
+
+		async pPreloadMeta () {
+			DataUtil.monster._pLoadMeta = DataUtil.monster._pLoadMeta || ((async () => {
+				const legendaryGroups = await DataUtil.legendaryGroup.pLoadAll();
+				DataUtil.monster.populateMetaReference({legendaryGroup: legendaryGroups});
+			})());
+			await DataUtil.monster._pLoadMeta;
+		},
+
+		async pLoadAll () {
+			const [index] = await Promise.all([
+				DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/index.json`),
+				DataUtil.monster.pPreloadMeta(),
+			]);
+
+			const allData = await Promise.all(Object.entries(index).map(async ([source, file]) => {
+				const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/${file}`);
+				return data.monster.filter(it => it.source === source);
+			}));
+			return allData.flat();
+		},
+
+		_pLoadMeta: null,
+		metaGroupMap: {},
+		getMetaGroup (mon) {
+			if (!mon.legendaryGroup || !mon.legendaryGroup.source || !mon.legendaryGroup.name) return null;
+			return (DataUtil.monster.metaGroupMap[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name];
+		},
+		populateMetaReference (data) {
+			(data.legendaryGroup || []).forEach(it => {
+				(DataUtil.monster.metaGroupMap[it.source] =
+					DataUtil.monster.metaGroupMap[it.source] || {})[it.name] =
+					DataUtil.monster.metaGroupMap[it.source][it.name] || it;
+			});
+		},
+	},
+
+	monsterFluff: {
+		_MERGE_REQUIRES_PRESERVE: {},
+		_mergeCache: {},
+		async pMergeCopy (monFlfList, monFlf, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.monsterFluff, UrlUtil.PG_BESTIARY, monFlfList, monFlf, options);
+		},
+	},
+
+	spell: {
+		_MERGE_REQUIRES_PRESERVE: {
+			page: true,
+			otherSources: true,
+			srd: true,
+			hasFluff: true,
+			hasFluffImages: true,
+		},
+		_mergeCache: {},
+		async pMergeCopy (spellList, spell, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.spell, UrlUtil.PG_SPELLS, spellList, spell, options);
+		},
+
+		async pLoadAll () {
+			const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/spells/index.json`);
+			const allData = await Promise.all(Object.entries(index).map(async ([source, file]) => {
+				const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/spells/${file}`);
+				return data.spell.filter(it => it.source === source);
+			}));
+			return allData.flat();
+		},
+	},
+
+	spellFluff: {
+		_MERGE_REQUIRES_PRESERVE: {},
+		_mergeCache: {},
+		async pMergeCopy (spellFlfList, spellFlf, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.spellFluff, UrlUtil.PG_SPELLS, spellFlfList, spellFlf, options);
+		},
+	},
+
+	item: {
+		_MERGE_REQUIRES_PRESERVE: {
+			lootTables: true,
+			tier: true,
+			page: true,
+			otherSources: true,
+			srd: true,
+			hasFluff: true,
+			hasFluffImages: true,
+		},
+		_mergeCache: {},
+		async pMergeCopy (itemList, item, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.item, UrlUtil.PG_ITEMS, itemList, item, options);
+		},
+	},
+
+	itemFluff: {
+		_MERGE_REQUIRES_PRESERVE: {},
+		_mergeCache: {},
+		async pMergeCopy (itemFlfList, itemFlf, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.itemFluff, UrlUtil.PG_ITEMS, itemFlfList, itemFlf, options);
+		},
+	},
+
+	background: {
+		_MERGE_REQUIRES_PRESERVE: {
+			page: true,
+			otherSources: true,
+			srd: true,
+			hasFluff: true,
+			hasFluffImages: true,
+		},
+		_mergeCache: {},
+		async pMergeCopy (bgList, bg, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.background, UrlUtil.PG_BACKGROUNDS, bgList, bg, options);
+		},
+	},
+
+	race: {
+		_MERGE_REQUIRES_PRESERVE: {
+			subraces: true,
+			page: true,
+			otherSources: true,
+			srd: true,
+			hasFluff: true,
+			hasFluffImages: true,
+		},
+		_mergeCache: {},
+		async pMergeCopy (raceList, race, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.race, UrlUtil.PG_RACES, raceList, race, options);
+		},
+
+		_loadCache: {},
+		_pIsLoadings: {},
+		async loadJSON ({isAddBaseRaces = false} = {}) {
+			if (!DataUtil.race._pIsLoadings[isAddBaseRaces]) {
+				DataUtil.race._pIsLoadings[isAddBaseRaces] = (async () => {
+					const rawRaceData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/races.json`);
+					const raceData = Renderer.race.mergeSubraces(rawRaceData.race, {isAddBaseRaces});
+					DataUtil.race._loadCache[isAddBaseRaces] = {race: raceData};
+				})();
+			}
+			await DataUtil.race._pIsLoadings[isAddBaseRaces];
+			return DataUtil.race._loadCache[isAddBaseRaces];
+		},
+
+		async loadBrew ({isAddBaseRaces = false} = {}) {
+			const brew = await BrewUtil.pAddBrewData();
+			let fromBrew = MiscUtil.copy(brew.race || []);
+			fromBrew = Renderer.race.mergeSubraces(fromBrew, {isAddBaseRaces});
+			return {race: fromBrew};
+		},
+	},
+
+	raceFluff: {
+		_MERGE_REQUIRES_PRESERVE: {},
+		_mergeCache: {},
+		async pMergeCopy (raceFlfList, raceFlf, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.raceFluff, UrlUtil.PG_RACES, raceFlfList, raceFlf, options);
+		},
+	},
+
+	class: {
+		_pLoadingJson: null,
+		_pLoadingRawJson: null,
+		_loadedJson: null,
+		_loadedRawJson: null,
+		async loadJSON () {
+			if (DataUtil.class._loadedJson) return DataUtil.class._loadedJson;
+
+			DataUtil.class._pLoadingJson = (async () => {
+				const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/index.json`);
+				const allData = await Promise.all(Object.values(index).map(it => DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/${it}`)));
+
+				const allDereferencedData = await Promise.all(allData.map(json => Promise.all((json.class || []).map(cls => DataUtil.class.pGetDereferencedClassData(cls)))));
+				DataUtil.class._loadedJson = {class: allDereferencedData.flat()};
+			})();
+			await DataUtil.class._pLoadingJson;
+
+			return DataUtil.class._loadedJson;
+		},
+
+		async loadRawJSON () {
+			if (DataUtil.class._loadedRawJson) return DataUtil.class._loadedRawJson;
+
+			DataUtil.class._pLoadingRawJson = (async () => {
+				const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/index.json`);
+				const allData = await Promise.all(Object.values(index).map(it => DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/${it}`)));
+
+				DataUtil.class._loadedRawJson = {
+					class: allData.map(it => it.class || []).flat(),
+					classFeature: allData.map(it => it.classFeature || []).flat(),
+					subclassFeature: allData.map(it => it.subclassFeature || []).flat(),
+				};
+			})();
+			await DataUtil.class._pLoadingRawJson;
+
+			return DataUtil.class._loadedRawJson;
+		},
+
+		/**
+		 * @param uid
+		 * @param [opts]
+		 * @param [opts.isLower] If the returned values should be lowercase.
+		 */
+		unpackUidClassFeature (uid, opts) {
+			opts = opts || {};
+			if (opts.isLower) uid = uid.toLowerCase();
+			let [name, className, classSource, level, source, displayText] = uid.split("|").map(it => it.trim());
+			classSource = classSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			source = source || classSource;
+			level = Number(level)
+			return {
+				name,
+				className,
+				classSource,
+				level,
+				source,
+				displayText,
+			};
+		},
+
+		/**
+		 * @param uid
+		 * @param [opts]
+		 * @param [opts.isLower] If the returned values should be lowercase.
+		 */
+		unpackUidSubclassFeature (uid, opts) {
+			opts = opts || {};
+			if (opts.isLower) uid = uid.toLowerCase();
+			let [name, className, classSource, subclassShortName, subclassSource, level, source, displayText] = uid.split("|").map(it => it.trim());
+			classSource = classSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			subclassSource = subclassSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			source = source || subclassSource;
+			level = Number(level)
+			return {
+				name,
+				className,
+				classSource,
+				subclassShortName,
+				subclassSource,
+				level,
+				source,
+				displayText,
+			};
+		},
+
+		_mutEntryNestLevel (feature) {
+			const depth = (feature.header == null ? 1 : feature.header) - 1;
+			for (let i = 0; i < depth; ++i) {
+				const nxt = MiscUtil.copy(feature);
+				feature.entries = [nxt];
+				delete feature.name;
+				delete feature.page;
+				delete feature.source;
+			}
+		},
+
+		async pGetDereferencedClassData (cls) {
+			// Gracefully handle legacy class data
+			if (cls.classFeatures && cls.classFeatures.every(it => typeof it !== "string" && !it.classFeature)) return cls;
+
+			cls = MiscUtil.copy(cls);
+
+			const byLevel = {}; // Build a map of `level: [classFeature]`
+			for (const classFeatureRef of (cls.classFeatures || [])) {
+				const uid = classFeatureRef.classFeature ? classFeatureRef.classFeature : classFeatureRef;
+				const {name, className, classSource, level, source} = DataUtil.class.unpackUidClassFeature(uid);
+				if (!name || !className || !level || isNaN(level)) continue; // skip over broken links
+
+				if (source === SRC_5ETOOLS_TMP) continue; // Skip over temp/nonexistent links
+
+				const hash = UrlUtil.URL_TO_HASH_BUILDER["classFeature"]({name, className, classSource, level, source});
+
+				// Skip blacklisted
+				if (ExcludeUtil.isInitialised && ExcludeUtil.isExcluded(hash, "classFeature", source, {isNoCount: true})) continue;
+
+				const classFeature = await Renderer.hover.pCacheAndGet("classFeature", source, hash, {isCopy: true});
+				// skip over missing links
+				if (!classFeature) {
+					JqueryUtil.doToast({type: "danger", content: `Failed to find <code>classFeature</code> <code>${uid}</code>`});
+					continue;
+				}
+
+				if (classFeatureRef.gainSubclassFeature) classFeature.gainSubclassFeature = true;
+				// Remove sources to avoid colouring e.g. entire UA classes with the "spicy green" styling
+				if (classFeature.source === cls.source && SourceUtil.isNonstandardSource(classFeature.source)) delete classFeature.source;
+
+				DataUtil.class._mutEntryNestLevel(classFeature);
+
+				const key = `${classFeature.level || 1}`;
+				(byLevel[key] = byLevel[key] || []).push(classFeature);
+			}
+
+			const outClassFeatures = [];
+			const maxLevel = Math.max(...Object.keys(byLevel).map(it => Number(it)));
+			for (let i = 1; i <= maxLevel; ++i) {
+				outClassFeatures[i - 1] = byLevel[i] || [];
+			}
+			cls.classFeatures = outClassFeatures;
+
+			if (cls.subclasses) {
+				const outSubclasses = [];
+				for (const sc of cls.subclasses) {
+					outSubclasses.push(await DataUtil.class.pGetDereferencedSubclassData(sc));
+				}
+				cls.subclasses = outSubclasses;
+			}
+
+			return cls;
+		},
+
+		async pGetDereferencedSubclassData (sc) {
+			// Gracefully handle legacy class data
+			if (sc.subclassFeatures && sc.subclassFeatures.every(it => typeof it !== "string" && !it.subclassFeature)) return sc;
+
+			sc = MiscUtil.copy(sc);
+
+			const byLevel = {}; // Build a map of `level: [subclassFeature]`
+
+			for (const subclassFeatureRef of (sc.subclassFeatures || [])) {
+				const uid = subclassFeatureRef.subclassFeature ? subclassFeatureRef.subclassFeature : subclassFeatureRef;
+				const {name, className, classSource, subclassShortName, subclassSource, level, source} = DataUtil.class.unpackUidSubclassFeature(uid);
+				if (!name || !className || !subclassShortName || !level || isNaN(level)) continue; // skip over broken links
+				const hash = UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"]({name, className, classSource, subclassShortName, subclassSource, level, source});
+
+				// Skip blacklisted
+				if (ExcludeUtil.isInitialised && ExcludeUtil.isExcluded(hash, "subclassFeature", source, {isNoCount: true})) continue;
+
+				const subclassFeature = await Renderer.hover.pCacheAndGet("subclassFeature", source, hash, {isCopy: true});
+				// skip over missing links
+				if (!subclassFeature) {
+					JqueryUtil.doToast({type: "danger", content: `Failed to find <code>subclassFeature</code> <code>${uid}</code>`});
+					continue;
+				}
+
+				// Remove sources to avoid colouring e.g. entire UA classes with the "spicy green" styling
+				if (subclassFeature.source === sc.source && SourceUtil.isNonstandardSource(subclassFeature.source)) delete subclassFeature.source;
+
+				DataUtil.class._mutEntryNestLevel(subclassFeature);
+
+				const key = `${subclassFeature.level || 1}`;
+				(byLevel[key] = byLevel[key] || []).push(subclassFeature);
+			}
+
+			sc.subclassFeatures = Object.keys(byLevel)
+				.map(it => Number(it))
+				.sort(SortUtil.ascSort)
+				.map(k => byLevel[k]);
+
+			return sc;
+		},
 	},
 
 	deity: {
+		_MERGE_REQUIRES_PRESERVE: {
+			page: true,
+			otherSources: true,
+			srd: true,
+			hasFluff: true,
+			hasFluffImages: true,
+		},
+		_mergeCache: {},
+		async pMergeCopy (deityList, deity, options) {
+			return DataUtil.generic._pMergeCopy(DataUtil.deity, UrlUtil.PG_DEITIES, deityList, deity, options);
+		},
+
 		doPostLoad: function (data) {
 			const PRINT_ORDER = [
 				SRC_PHB,
 				SRC_DMG,
 				SRC_SCAG,
-				SRC_MTF
+				SRC_VGM,
+				SRC_MTF,
+				SRC_ERLW,
 			];
 
 			const inSource = {};
@@ -4392,35 +3324,200 @@ DataUtil = {
 			data.deity.forEach(g => g._isEnhanced = true);
 		},
 
-		loadJSON: async function (baseUrl = "") {
-			const data = await DataUtil.loadJSON(`${baseUrl}data/deities.json`);
+		loadJSON: async function () {
+			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/deities.json`);
 			DataUtil.deity.doPostLoad(data);
 			return data;
-		}
+		},
+	},
+
+	table: {
+		async loadJSON () {
+			const [dataEncounters, dataNames, ...datas] = await Promise.all([
+				`${Renderer.get().baseUrl}data/encounters.json`,
+				`${Renderer.get().baseUrl}data/names.json`,
+				`${Renderer.get().baseUrl}data/generated/gendata-tables.json`,
+				`${Renderer.get().baseUrl}data/tables.json`,
+			].map(url => DataUtil.loadJSON(url)));
+			const combined = {};
+			datas.forEach(data => {
+				Object.entries(data).forEach(([k, v]) => {
+					if (combined[k] && combined[k] instanceof Array && v instanceof Array) combined[k] = combined[k].concat(v);
+					else if (combined[k] == null) combined[k] = v;
+					else throw new Error(`Could not merge keys for key "${k}"`);
+				});
+			});
+
+			dataEncounters.encounter.forEach(group => {
+				group.tables.forEach(tableRaw => {
+					combined.table.push(DataUtil.table._getConvertedEncounterOrNamesTable({
+						group,
+						tableRaw,
+						fnGetNameCaption: DataUtil.table._getConvertedEncounterTableName,
+						colLabel1: "Encounter",
+					}));
+				});
+			});
+
+			dataNames.name.forEach(group => {
+				group.tables.forEach(tableRaw => {
+					combined.table.push(DataUtil.table._getConvertedEncounterOrNamesTable({
+						group,
+						tableRaw,
+						fnGetNameCaption: DataUtil.table._getConvertedNameTableName,
+						colLabel1: "Name",
+					}));
+				});
+			});
+
+			return combined;
+		},
+
+		_getConvertedEncounterTableName (group, tableRaw) { return `${group.name} Encounters (Levels ${tableRaw.minlvl}\u2014${tableRaw.maxlvl})`; },
+		_getConvertedNameTableName (group, tableRaw) { return `${group.name} Names - ${tableRaw.option}`; },
+
+		_getConvertedEncounterOrNamesTable ({group, tableRaw, fnGetNameCaption, colLabel1}) {
+			const nameCaption = fnGetNameCaption(group, tableRaw);
+			return {
+				name: nameCaption,
+				source: group.source,
+				page: group.page,
+				caption: nameCaption,
+				colLabels: [
+					`d${tableRaw.diceType}`,
+					colLabel1,
+				],
+				colStyles: [
+					"col-2 text-center",
+					"col-10",
+				],
+				rows: tableRaw.table.map(it => [`${it.min}${it.max && it.max !== it.min ? `-${it.max}` : ""}`, it.result]),
+			};
+		},
+	},
+
+	legendaryGroup: {
+		async pLoadAll () {
+			return (await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/legendarygroups.json`)).legendaryGroup;
+		},
+	},
+
+	language: {
+		async loadJSON () {
+			const rawData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/languages.json`);
+
+			// region Populate fonts, based on script
+			const scriptLookup = {};
+			(rawData.languageScript || []).forEach(script => scriptLookup[script.name] = script);
+
+			const out = {language: MiscUtil.copy(rawData.language)};
+			out.language.forEach(lang => {
+				if (!lang.script || lang.fonts === false) return;
+
+				const script = scriptLookup[lang.script];
+				if (!script) return;
+
+				lang._fonts = [...script.fonts];
+			});
+			// endregion
+
+			return out;
+		},
+	},
+
+	recipe: {
+		async loadJSON () {
+			const out = [];
+
+			const rawData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/recipes.json`);
+
+			DataUtil.recipe.postProcessData(rawData);
+
+			// region Merge together main data and fluff, as we render the fluff in the main tab
+			for (const r of rawData.recipe) {
+				const fluff = await Renderer.utils.pGetFluff({
+					entity: r,
+					fluffUrl: `data/fluff-recipes.json`,
+					fluffProp: "recipeFluff",
+				});
+
+				if (!fluff) {
+					out.push(r);
+					continue;
+				}
+
+				const cpyR = MiscUtil.copy(r);
+				cpyR.fluff = MiscUtil.copy(fluff);
+				delete cpyR.fluff.name;
+				delete cpyR.fluff.source;
+				out.push(cpyR);
+			}
+			// endregion
+
+			return {recipe: out};
+		},
+
+		postProcessData (data) {
+			if (!data.recipe || !data.recipe.length) return;
+
+			// Apply ingredient properties
+			data.recipe.forEach(r => Renderer.recipe.populateFullIngredients(r));
+		},
+
+		async loadBrew () {
+			const brew = await BrewUtil.pAddBrewData();
+			DataUtil.recipe.postProcessData(brew);
+			return brew;
+		},
+	},
+
+	variantrule: {
+		async loadJSON () {
+			const rawData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/variantrules.json`);
+			const rawDataGenerated = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-variantrules.json`);
+
+			return {variantrule: [...rawData.variantrule, ...rawDataGenerated.variantrule]};
+		},
 	},
 
 	brew: {
-		async pLoadTimestamps () {
-			return DataUtil.loadJSON(`https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_generated/index-timestamps.json`);
+		_getCleanUrlRoot (urlRoot) {
+			if (urlRoot && urlRoot.trim()) {
+				urlRoot = urlRoot.trim();
+				if (!urlRoot.endsWith("/")) urlRoot = `${urlRoot}/`;
+			} else urlRoot = `https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/`;
+			return urlRoot;
 		},
 
-		async pLoadCollectionIndex () {
-			return DataUtil.loadJSON(`https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/collection/index.json`);
+		async pLoadTimestamps (urlRoot) {
+			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
+			return DataUtil.loadJSON(`${urlRoot}_generated/index-timestamps.json`);
 		},
 
-		getDirUrl (dir) {
-			return `https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_generated/index-dir-${dir}.json?t=${(new Date()).getTime()}`;
-		}
-	}
+		async pLoadPropIndex (urlRoot) {
+			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
+			return DataUtil.loadJSON(`${urlRoot}_generated/index-props.json`);
+		},
+
+		async pLoadSourceIndex (urlRoot) {
+			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
+			return DataUtil.loadJSON(`${urlRoot}_generated/index-sources.json`);
+		},
+
+		getFileUrl (path, urlRoot) {
+			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
+			return `${urlRoot}${path}`;
+		},
+	},
 };
 
 // ROLLING =============================================================================================================
 RollerUtil = {
-	isCrypto: () => {
+	isCrypto () {
 		return typeof window !== "undefined" && typeof window.crypto !== "undefined";
 	},
 
-	randomise: (max, min = 1) => {
+	randomise (max, min = 1) {
 		if (min > max) return 0;
 		if (max === min) return max;
 		if (RollerUtil.isCrypto()) {
@@ -4441,7 +3538,7 @@ RollerUtil = {
 		const range = max - min;
 		const bytesNeeded = Math.ceil(Math.log2(range) / 8);
 		const randomBytes = new Uint8Array(bytesNeeded);
-		const maximumRange = Math.pow(Math.pow(2, 8), bytesNeeded);
+		const maximumRange = (2 ** 8) ** bytesNeeded;
 		const extendedRange = Math.floor(maximumRange / range) * range;
 		let i;
 		let randomInteger;
@@ -4466,40 +3563,63 @@ RollerUtil = {
 	 * @param fn funciton to call to generate random numbers
 	 * @returns {number} rolled
 	 */
-	roll: (max, fn = Math.random) => {
+	roll (max, fn = Math.random) {
 		return Math.floor(fn() * max);
 	},
 
-	addListRollButton: () => {
-		const listWrapper = $("#listcontainer");
-
-		const $btnRoll = $(`<button class="btn btn-default" id="feelinglucky" title="試試手氣？"><span class="glyphicon glyphicon-random"></span></button>`);
+	addListRollButton (isCompact) {
+		const $btnRoll = $(`<button class="btn btn-default ${isCompact ? "px-2" : ""}" id="feelinglucky" title="試試手氣？"><span class="glyphicon glyphicon-random"></span></button>`);
 		$btnRoll.on("click", () => {
-			if (listWrapper.data("lists")) {
-				const allLists = listWrapper.data("lists").filter(l => l.visibleItems.length);
+			const primaryLists = ListUtil.getPrimaryLists();
+			if (primaryLists && primaryLists.length) {
+				const allLists = primaryLists.filter(l => l.visibleItems.length);
 				if (allLists.length) {
 					const rollX = RollerUtil.roll(allLists.length);
 					const list = allLists[rollX];
 					const rollY = RollerUtil.roll(list.visibleItems.length);
-					window.location.hash = $(list.visibleItems[rollY].elm).find(`a`).prop("hash");
+					window.location.hash = $(list.visibleItems[rollY].ele).find(`a`).prop("hash");
 				}
 			}
 		});
 
-		$(`#filter-search-input-group`).find(`#reset`).before($btnRoll);
+		$(`#filter-search-group`).find(`#reset`).before($btnRoll);
 	},
 
-	isRollCol (colLabel) {
+	getColRollType (colLabel) {
 		if (typeof colLabel !== "string") return false;
 		if (/^{@dice [^}]+}$/.test(colLabel.trim())) return true;
-		return !!Renderer.dice.parseToTree(colLabel);
+		colLabel = Renderer.stripTags(colLabel);
+
+		if (Renderer.dice.lang.getTree3(colLabel)) return RollerUtil.ROLL_COL_STANDARD;
+
+		// Remove trailing variables, if they exist
+		colLabel = colLabel.replace(RollerUtil._REGEX_ROLLABLE_COL_LABEL, "$1");
+		if (Renderer.dice.lang.getTree3(colLabel)) return RollerUtil.ROLL_COL_VARIABLE;
+
+		return 0;
 	},
 
-	_DICE_REGEX_STR: "((([1-9]\\d*)?d([1-9]\\d*)(\\s*?[-+×x*]\\s*?(\\d,\\d|\\d)+)?))+?"
+	getFullRollCol (lbl) {
+		if (lbl.includes("@dice")) return lbl;
+
+		if (Renderer.dice.lang.getTree3(lbl)) return `{@dice ${lbl}}`;
+
+		// Try to split off any trailing variables, e.g. `d100 + Level` -> `d100`, `Level`
+		const m = RollerUtil._REGEX_ROLLABLE_COL_LABEL.exec(lbl);
+		if (!m) return lbl;
+
+		return `{@dice ${m[1]}${m[2]}#$prompt_number:title=Enter a ${m[3].trim()}$#|${lbl}}`;
+	},
+
+	_DICE_REGEX_STR: "((([1-9]\\d*)?d([1-9]\\d*)(\\s*?[-+×x*÷/]\\s*?(\\d,\\d|\\d)+(\\.\\d+)?)?))+?",
 };
 RollerUtil.DICE_REGEX = new RegExp(RollerUtil._DICE_REGEX_STR, "g");
-RollerUtil.REGEX_DAMAGE_DICE = /(\d+)( \((?:{@dice |{@damage ))([-+0-9d ]*)(}\) [a-z]+( \([-a-zA-Z0-9 ]+\))?( or [a-z]+( \([-a-zA-Z0-9 ]+\))?)? damage)/gi;
+RollerUtil.REGEX_DAMAGE_DICE = /(\d+)( \((?:{@dice |{@damage ))([-+0-9d ]*)(}\)(?:\s*\+\s*the spell's level)? [a-z]+( \([-a-zA-Z0-9 ]+\))?( or [a-z]+( \([-a-zA-Z0-9 ]+\))?)? damage)/gi;
 RollerUtil.REGEX_DAMAGE_FLAT = /(Hit: |{@h})([0-9]+)( [a-z]+( \([-a-zA-Z0-9 ]+\))?( or [a-z]+( \([-a-zA-Z0-9 ]+\))?)? damage)/gi;
+RollerUtil._REGEX_ROLLABLE_COL_LABEL = /^(.*?\d)(\s*[-+/*^×÷]\s*)([a-zA-Z0-9 ]+)$/;
+RollerUtil.ROLL_COL_NONE = 0;
+RollerUtil.ROLL_COL_STANDARD = 1;
+RollerUtil.ROLL_COL_VARIABLE = 2;
 
 // STORAGE =============================================================================================================
 // Dependency: localforage
@@ -4509,99 +3629,93 @@ StorageUtil = {
 	_fakeStorage: {},
 	_fakeStorageAsync: {},
 
-	getSyncStorage: () => {
+	_getSyncStorage () {
 		if (StorageUtil._init) {
 			if (StorageUtil.__fakeStorage) return StorageUtil._fakeStorage;
 			else return window.localStorage;
 		}
 
 		StorageUtil._init = true;
-
 		try {
+			window.localStorage.setItem("_test_storage", true);
 			return window.localStorage;
 		} catch (e) {
 			// if the user has disabled cookies, build a fake version
 			StorageUtil.__fakeStorage = true;
 			StorageUtil._fakeStorage = {
 				isSyncFake: true,
-				getItem: (k) => {
-					return StorageUtil.__fakeStorage[k];
-				},
-				removeItem: (k) => {
-					delete StorageUtil.__fakeStorage[k];
-				},
-				setItem: (k, v) => {
-					StorageUtil.__fakeStorage[k] = v;
-				}
+				getItem: k => StorageUtil.__fakeStorage[k],
+				removeItem: k => delete StorageUtil.__fakeStorage[k],
+				setItem: (k, v) => StorageUtil.__fakeStorage[k] = v,
 			};
 			return StorageUtil._fakeStorage;
 		}
 	},
 
-	async getAsyncStorage () {
+	async _getAsyncStorage () {
 		if (StorageUtil._initAsync) {
 			if (StorageUtil.__fakeStorageAsync) return StorageUtil._fakeStorageAsync;
 			else return localforage;
 		}
 
-		StorageUtil._initAsync = true;
-
-		try {
-			await localforage.setItem("_storage_check", true);
-			return localforage;
-		} catch (e) {
-			StorageUtil.__fakeStorageAsync = true;
+		const getInitFakeStorage = () => {
+			StorageUtil.__fakeStorageAsync = {};
 			StorageUtil._fakeStorageAsync = {
 				pIsAsyncFake: true,
-				async setItem (k, v) {
-					StorageUtil.__fakeStorageAsync[k] = v;
-				},
-				async getItem (k) {
-					return StorageUtil.__fakeStorageAsync[k];
-				},
-				async remove (k) {
-					delete StorageUtil.__fakeStorageAsync[k];
-				}
+				async setItem (k, v) { StorageUtil.__fakeStorageAsync[k] = v; },
+				async getItem (k) { return StorageUtil.__fakeStorageAsync[k]; },
+				async removeItem (k) { delete StorageUtil.__fakeStorageAsync[k]; },
 			};
 			return StorageUtil._fakeStorageAsync;
-		}
+		};
+
+		if (typeof window !== "undefined") {
+			try {
+				// check if IndexedDB is available (i.e. not in Firefox private browsing)
+				await new Promise((resolve, reject) => {
+					const request = window.indexedDB.open("_test_db", 1);
+					request.onerror = reject;
+					request.onsuccess = resolve;
+				});
+				await localforage.setItem("_storage_check", true);
+				return localforage;
+			} catch (e) {
+				return getInitFakeStorage();
+			} finally {
+				StorageUtil._initAsync = true;
+			}
+		} else return getInitFakeStorage();
 	},
 
-	// SYNC METHODS ////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Synchronous localStorage access, which should only be used for small amounts of data (metadata, config, etc)
+	// region Synchronous
 	syncGet (key) {
-		const rawOut = StorageUtil.getSyncStorage().getItem(key);
+		const rawOut = StorageUtil._getSyncStorage().getItem(key);
 		if (rawOut && rawOut !== "undefined" && rawOut !== "null") return JSON.parse(rawOut);
 		return null;
 	},
 
-	syncGetForPage (key) {
-		return StorageUtil.syncGet(`${key}_${UrlUtil.getCurrentPage()}`);
-	},
-
 	syncSet (key, value) {
-		StorageUtil.getSyncStorage().setItem(key, JSON.stringify(value));
+		StorageUtil._getSyncStorage().setItem(key, JSON.stringify(value));
 		StorageUtil._syncTrackKey(key)
 	},
 
-	syncSetForPage (key, value) {
-		StorageUtil.syncSet(`${key}_${UrlUtil.getCurrentPage()}`, value);
-	},
-
 	syncRemove (key) {
-		StorageUtil.getSyncStorage().removeItem(key);
+		StorageUtil._getSyncStorage().removeItem(key);
 		StorageUtil._syncTrackKey(key, true);
 	},
 
+	syncGetForPage (key) { return StorageUtil.syncGet(`${key}_${UrlUtil.getCurrentPage()}`); },
+	syncSetForPage (key, value) { StorageUtil.syncSet(`${key}_${UrlUtil.getCurrentPage()}`, value); },
+
 	isSyncFake () {
-		return !!StorageUtil.getSyncStorage().isSyncFake
+		return !!StorageUtil._getSyncStorage().isSyncFake
 	},
 
 	_syncTrackKey (key, isRemove) {
 		const meta = StorageUtil.syncGet(StorageUtil._META_KEY) || {};
 		if (isRemove) delete meta[key];
 		else meta[key] = 1;
-		StorageUtil.getSyncStorage().setItem(StorageUtil._META_KEY, JSON.stringify(meta));
+		StorageUtil._getSyncStorage().setItem(StorageUtil._META_KEY, JSON.stringify(meta));
 	},
 
 	syncGetDump () {
@@ -4614,51 +3728,42 @@ StorageUtil = {
 	syncSetFromDump (dump) {
 		Object.entries(dump).forEach(([k, v]) => StorageUtil.syncSet(k, v));
 	},
-	// END SYNC METHODS ////////////////////////////////////////////////////////////////////////////////////////////////
+	// endregion
 
+	// region Asynchronous
 	async pIsAsyncFake () {
-		const storage = await StorageUtil.getAsyncStorage();
+		const storage = await StorageUtil._getAsyncStorage();
 		return !!storage.pIsAsyncFake;
-	},
-
-	async pSetForPage (key, value) {
-		const storage = await StorageUtil.getAsyncStorage();
-		return storage.setItem(`${key}_${UrlUtil.getCurrentPage()}`, value);
 	},
 
 	async pSet (key, value) {
 		StorageUtil._pTrackKey(key);
-		const storage = await StorageUtil.getAsyncStorage();
+		const storage = await StorageUtil._getAsyncStorage();
 		return storage.setItem(key, value);
 	},
 
-	async pGetForPage (key) {
-		const storage = await StorageUtil.getAsyncStorage();
-		return storage.getItem(`${key}_${UrlUtil.getCurrentPage()}`);
-	},
-
 	async pGet (key) {
-		const storage = await StorageUtil.getAsyncStorage();
+		const storage = await StorageUtil._getAsyncStorage();
 		return storage.getItem(key);
-	},
-
-	async pRemoveForPage (key) {
-		const storage = await StorageUtil.getAsyncStorage();
-		return storage.removeItem(`${key}_${UrlUtil.getCurrentPage()}`);
 	},
 
 	async pRemove (key) {
 		StorageUtil._pTrackKey(key, true);
-		const storage = await StorageUtil.getAsyncStorage();
+		const storage = await StorageUtil._getAsyncStorage();
 		return storage.removeItem(key);
 	},
 
+	getPageKey (key, page) { return `${key}_${page || UrlUtil.getCurrentPage()}`; },
+	async pGetForPage (key) { return StorageUtil.pGet(StorageUtil.getPageKey(key)); },
+	async pSetForPage (key, value) { return StorageUtil.pSet(StorageUtil.getPageKey(key), value); },
+	async pRemoveForPage (key) { return StorageUtil.pRemove(StorageUtil.getPageKey(key)); },
+
 	async _pTrackKey (key, isRemove) {
-		const storage = await StorageUtil.getAsyncStorage();
+		const storage = await StorageUtil._getAsyncStorage();
 		const meta = (await StorageUtil.pGet(StorageUtil._META_KEY)) || {};
 		if (isRemove) delete meta[key];
 		else meta[key] = 1;
-		storage.setItem(StorageUtil._META_KEY, meta);
+		return storage.setItem(StorageUtil._META_KEY, meta);
 	},
 
 	async pGetDump () {
@@ -4670,7 +3775,8 @@ StorageUtil = {
 
 	async pSetFromDump (dump) {
 		return Promise.all(Object.entries(dump).map(([k, v]) => StorageUtil.pSet(k, v)));
-	}
+	},
+	// endregion
 };
 StorageUtil._META_KEY = "_STORAGE_META_STORAGE";
 
@@ -4695,7 +3801,7 @@ SessionStorageUtil = {
 					},
 					setItem: (k, v) => {
 						SessionStorageUtil._fakeStorage[k] = v;
-					}
+					},
 				};
 			}
 		}
@@ -4729,18 +3835,30 @@ SessionStorageUtil = {
 
 	remove (key) {
 		SessionStorageUtil.getStorage().removeItem(key);
-	}
+	},
 };
 
 // HOMEBREW ============================================================================================================
 BrewUtil = {
+	_PAGE: null, // Allow the current page to be forcibly specified externally
+
 	homebrew: null,
 	homebrewMeta: null,
 	_lists: null,
 	_sourceCache: null,
 	_filterBox: null,
 	_sourceFilter: null,
+	_pHandleBrew: null,
+	_lockHandleBrewJson: null,
 
+	/**
+	 * @param options Options object.
+	 * @param [options.list] List.
+	 * @param [options.lists] Lists.
+	 * @param [options.filterBox] Filter box.
+	 * @param [options.sourceFilter] Source filter.
+	 * @param [options.pHandleBrew] Brew handling function.
+	 */
 	bind (options) {
 		// provide ref to List.js instance
 		if (options.list) BrewUtil._lists = [options.list];
@@ -4748,55 +3866,688 @@ BrewUtil = {
 		// provide ref to FilterBox and Filter instance
 		if (options.filterBox) BrewUtil._filterBox = options.filterBox;
 		if (options.sourceFilter) BrewUtil._sourceFilter = options.sourceFilter;
+		// allow external source for handleBrew
+		if (options.pHandleBrew !== undefined) this._pHandleBrew = options.pHandleBrew;
 	},
 
 	async pAddBrewData () {
 		if (BrewUtil.homebrew) {
 			return BrewUtil.homebrew;
 		} else {
-			const homebrew = await StorageUtil.pGet(HOMEBREW_STORAGE) || {};
-			BrewUtil.homebrewMeta = StorageUtil.syncGet(HOMEBREW_META_STORAGE) || {sources: []};
-			BrewUtil.homebrewMeta.sources = BrewUtil.homebrewMeta.sources || [];
+			try {
+				const homebrew = await StorageUtil.pGet(VeCt.STORAGE_HOMEBREW) || {};
+				BrewUtil.homebrewMeta = StorageUtil.syncGet(VeCt.STORAGE_HOMEBREW_META) || {sources: []};
+				BrewUtil.homebrewMeta.sources = BrewUtil.homebrewMeta.sources || [];
 
-			BrewUtil.homebrew = homebrew;
+				BrewUtil.homebrew = homebrew;
 
-			BrewUtil._resetSourceCache();
+				BrewUtil._resetSourceCache();
 
-			return BrewUtil.homebrew;
+				return BrewUtil.homebrew;
+			} catch (e) {
+				BrewUtil.pPurgeBrew(e);
+			}
 		}
 	},
 
 	async pPurgeBrew (error) {
 		JqueryUtil.doToast({
 			content: "Error when loading homebrew! Purged homebrew data. (See the log for more information.)",
-			type: "danger"
+			type: "danger",
 		});
-		await StorageUtil.pRemove(HOMEBREW_STORAGE);
-		StorageUtil.syncRemove(HOMEBREW_META_STORAGE);
+		await StorageUtil.pRemove(VeCt.STORAGE_HOMEBREW);
+		StorageUtil.syncRemove(VeCt.STORAGE_HOMEBREW_META);
 		BrewUtil.homebrew = null;
 		window.location.hash = "";
-		if (error) {
-			setTimeout(() => { throw error; });
+		BrewUtil.homebrew = {};
+		BrewUtil.homebrewMeta = {sources: []};
+		if (error) setTimeout(() => { throw error; });
+	},
+
+	async pAddLocalBrewData () {
+		if (!IS_VTT && !IS_DEPLOYED) {
+			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}${VeCt.JSON_HOMEBREW_INDEX}`);
+			// auto-load from `homebrew/`, for custom versions of the site
+			if (data.toImport.length) {
+				const page = BrewUtil._PAGE || UrlUtil.getCurrentPage();
+				const allData = await Promise.all(data.toImport.map(it => DataUtil.loadJSON(`homebrew/${it}`)));
+				for (const d of allData) await BrewUtil.pDoHandleBrewJson(d, page, null);
+			}
 		}
 	},
 
-	async pAddLocalBrewData (callbackFn = async (d, page) => BrewUtil.pDoHandleBrewJson(d, page, null)) {
-		if (!IS_ROLL20 && !IS_DEPLOYED) {
-			return DataUtil.loadJSON(`${Renderer.get().baseUrl}${JSON_HOMEBREW_INDEX}`).then(async (data) => {
-				// auto-load from `homebrew/`, for custom versions of the site
-				if (data.toImport.length) {
-					const page = UrlUtil.getCurrentPage();
-					const allData = await Promise.all(data.toImport.map(it => DataUtil.loadJSON(`homebrew/${it}`)));
-					return Promise.all(allData.map(d => callbackFn(d, page)));
-				} else {
-					return Promise.resolve();
+	/**
+	 * @param $appendTo Parent element
+	 * @param [opts] Options object
+	 * @param [opts.isModal]
+	 * @param [opts.isShowAll]
+	 */
+	async _pRenderBrewScreen ($appendTo, opts) {
+		opts = opts || {};
+
+		const page = BrewUtil._PAGE || UrlUtil.getCurrentPage();
+
+		const $brewList = $(`<div class="manbrew__current_brew flex-col h-100 mt-1"></div>`);
+
+		await BrewUtil._pRenderBrewScreen_pRefreshBrewList($brewList);
+
+		const $iptAdd = $(`<input multiple type="file" accept=".json" style="display: none;">`)
+			.change(evt => {
+				const input = evt.target;
+
+				let readIndex = 0;
+				const reader = new FileReader();
+				reader.onload = async () => {
+					const json = JSON.parse(reader.result);
+
+					await DataUtil.pDoMetaMerge(CryptUtil.uid(), json);
+
+					await BrewUtil.pDoHandleBrewJson(json, page, BrewUtil._pRenderBrewScreen_pRefreshBrewList.bind(this, $brewList));
+
+					if (input.files[readIndex]) reader.readAsText(input.files[readIndex++]);
+					else $(evt.target).val(""); // reset the input
+				};
+				reader.readAsText(input.files[readIndex++]);
+			});
+
+		const $btnLoadFromUrl = $(`<button class="btn btn-default btn-sm mr-2">Load from URL</button>`)
+			.click(async () => {
+				const enteredUrl = await InputUiUtil.pGetUserString({title: "Homebrew URL"});
+				if (!enteredUrl || !enteredUrl.trim()) return;
+
+				let parsedUrl;
+				try {
+					parsedUrl = new URL(enteredUrl);
+				} catch (e) {
+					JqueryUtil.doToast({
+						content: `The provided URL does not appear to be valid.`,
+						type: "danger",
+					});
+					return;
+				}
+				BrewUtil.addBrewRemote(null, parsedUrl.href).catch(err => {
+					JqueryUtil.doToast({
+						content: "Could not load homebrew from the provided URL.",
+						type: "danger",
+					});
+					setTimeout(() => { throw err; });
+				});
+			});
+
+		const $btnGet = $(`<button class="btn btn-info btn-sm">Get Homebrew</button>`)
+			.click(() => BrewUtil._pHandleClickBtnGet(opts));
+
+		const $btnCustomUrl = $(`<button class="btn btn-info btn-sm px-2" title="Set Custom Repository URL"><span class="glyphicon glyphicon-cog"></span></button>`)
+			.click(async () => {
+				const customBrewUtl = await StorageUtil.pGet(`HOMEBREW_CUSTOM_REPO_URL`);
+
+				const nxtUrl = await InputUiUtil.pGetUserString({
+					title: "Homebrew Repository URL (Blank for Default)",
+					default: customBrewUtl,
+				});
+
+				if (nxtUrl == null) await StorageUtil.pRemove(`HOMEBREW_CUSTOM_REPO_URL`);
+				else await StorageUtil.pSet(`HOMEBREW_CUSTOM_REPO_URL`, nxtUrl);
+			});
+
+		const $btnDelAll = opts.isModal ? null : BrewUtil._$getBtnDeleteAll();
+
+		const $wrpBtns = $$`<div class="flex-vh-center no-shrink mobile__flex-col">
+			<div class="flex-v-center mobile__mb-2">
+				<div class="flex-v-center btn-group mr-2">
+					${$btnGet}
+					${$btnCustomUrl}
+				</div>
+				<label role="button" class="btn btn-default btn-sm mr-2">Upload File${$iptAdd}</label>
+				${$btnLoadFromUrl}
+			</div>
+			<div class="flex-v-center">
+				<a href="https://github.com/TheGiddyLimit/homebrew" class="flex-v-center" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-sm">Browse Source Repository</button></a>
+				${$btnDelAll}
+			</div>
+		</div>`;
+
+		if (opts.isModal) {
+			$$($appendTo)`
+			${$brewList}
+			${$wrpBtns.addClass("mb-2")}`
+		} else {
+			$$($appendTo)`
+			${$wrpBtns.addClass("mb-3")}
+			${$brewList}`
+		}
+
+		BrewUtil.addBrewRemote = async ($ele, jsonUrl, doUnescape) => {
+			let cached;
+			if ($ele) {
+				cached = $ele.html();
+				$ele.text("Loading...");
+			}
+			if (doUnescape) jsonUrl = jsonUrl.unescapeQuotes();
+			const data = await DataUtil.loadJSON(`${jsonUrl}?${(new Date()).getTime()}`);
+			await BrewUtil.pDoHandleBrewJson(data, page, BrewUtil._pRenderBrewScreen_pRefreshBrewList.bind(this, $brewList));
+			if ($ele) {
+				$ele.text("Done!");
+				setTimeout(() => $ele.html(cached), VeCt.DUR_INLINE_NOTIFY);
+			}
+		};
+	},
+
+	async _pHandleClickBtnGet (opts) {
+		const $btnToggleDisplayNonPageBrews = opts.isModal ? $(`<button class="btn btn-default btn-xs mr-2 ${opts.isShowAll ? "" : "active"}" disabled title="Hides homebrews which do not contain content relevant to this page.">Hide Unrelated</button>`) : null;
+
+		const $btnAll = $(`<button class="btn btn-default btn-xs" disabled title="(Excluding samples)">Add All</button>`);
+
+		const $wrpRows = $$`<div class="list"><div class="lst__row flex-col"><div class="lst__wrp-cells lst--border lst__row-inner flex w-100"><span style="font-style: italic;">Loading...</span></div></div></div>`;
+
+		const $iptSearch = $(`<input type="search" class="search manbrew__search form-control w-100" placeholder="Find homebrew...">`)
+			.keydown(evt => {
+				switch (evt.which) {
+					case 13: { // enter
+						return $wrpRows.find(`.lst__row`).first().find(`.manbrew__load_from_url`).click()
+					}
+					case 40: { // down
+						const firstItem = list.visibleItems[0];
+						if (firstItem) firstItem.ele.focus();
+					}
 				}
 			});
+
+		const {$modalInner, doClose} = UiUtil.getShowModal({
+			isHeight100: true,
+			title: `Get Homebrew`,
+			isUncappedHeight: true,
+			isWidth100: true,
+			overlayColor: "transparent",
+			isHeaderBorder: true,
+		});
+
+		$$($modalInner)`
+		<div class="mt-1"><i>A list of homebrew available in the public repository. Click a name to load the homebrew, or view the source directly.<br>
+		Contributions are welcome; see the <a href="https://github.com/TheGiddyLimit/homebrew/blob/master/README.md" target="_blank" rel="noopener noreferrer">README</a>, or stop by our <a href="https://discord.gg/nGvRCDs" target="_blank" rel="noopener noreferrer">Discord</a>.</i></div>
+		<hr class="hr-1">
+		<div class="flex-h-right mb-1">${$btnToggleDisplayNonPageBrews}${$btnAll}</div>
+		${$iptSearch}
+		<div class="filtertools manbrew__filtertools btn-group input-group input-group--bottom flex no-shrink">
+			<button class="col-4 sort btn btn-default btn-xs" data-sort="name">Name</button>
+			<button class="col-3 sort btn btn-default btn-xs" data-sort="author">Author</button>
+			<button class="col-1-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
+			<button class="col-1-4 sort btn btn-default btn-xs" data-sort="modified">Modified</button>
+			<button class="col-1-4 sort btn btn-default btn-xs" data-sort="added">Added</button>
+			<button class="sort btn btn-default btn-xs ve-grow" disabled>Source</button>
+		</div>
+		${$wrpRows}`;
+
+		// populate list
+		let dataList;
+		function fnSort (a, b, o) {
+			a = dataList[a.ix];
+			b = dataList[b.ix];
+
+			if (o.sortBy === "name") return byName();
+			if (o.sortBy === "author") return orFallback(SortUtil.ascSortLower, "_brewAuthor");
+			if (o.sortBy === "category") return orFallback(SortUtil.ascSortLower, "_brewCat");
+			if (o.sortBy === "added") return orFallback(SortUtil.ascSort, "_brewAdded");
+			if (o.sortBy === "modified") return orFallback(SortUtil.ascSort, "_brewModified");
+
+			function byName () { return SortUtil.ascSortLower(a._brewName, b._brewName); }
+			function orFallback (func, prop) { return func(a[prop], b[prop]) || byName(); }
 		}
-		return Promise.resolve();
+
+		const urlRoot = await StorageUtil.pGet(`HOMEBREW_CUSTOM_REPO_URL`);
+		const [timestamps, propIndex] = await Promise.all([
+			DataUtil.brew.pLoadTimestamps(urlRoot),
+			DataUtil.brew.pLoadPropIndex(urlRoot),
+		]);
+		const props = opts.isShowAll ? BrewUtil.getPageProps(UrlUtil.PG_MANAGE_BREW) : BrewUtil.getPageProps();
+
+		const seenPaths = new Set();
+
+		dataList = [];
+		props.forEach(prop => {
+			Object.entries(propIndex[prop] || {})
+				.forEach(([path, dir]) => {
+					if (seenPaths.has(path)) return;
+					seenPaths.add(path);
+					dataList.push({
+						download_url: DataUtil.brew.getFileUrl(path, urlRoot),
+						path,
+						name: path.slice(path.indexOf("/") + 1),
+						_cat: BrewUtil.dirToProp(dir),
+					})
+				})
+		});
+
+		dataList.forEach(it => {
+			const cleanFilename = it.name.trim().replace(/\.json$/, "");
+			const spl = cleanFilename.split(";").map(it => it.trim());
+			if (spl.length > 1) {
+				it._brewName = spl[1];
+				it._brewAuthor = spl[0];
+			} else {
+				it._brewName = cleanFilename;
+				it._brewAuthor = "";
+			}
+		});
+		dataList.sort((a, b) => SortUtil.ascSortLower(a._brewName, b._brewName));
+
+		const list = new List({
+			$iptSearch,
+			$wrpList: $wrpRows,
+			fnSort,
+			isUseJquery: true,
+		});
+		SortUtil.initBtnSortHandlers($modalInner.find(".manbrew__filtertools"), list);
+
+		dataList.forEach((it, i) => {
+			it._brewAdded = (timestamps[it.path] || {}).a || 0;
+			it._brewModified = (timestamps[it.path] || {}).m || 0;
+			it._brewCat = BrewUtil._pRenderBrewScreen_getDisplayCat(BrewUtil.dirToProp(it._cat));
+
+			const timestampAdded = it._brewAdded ? MiscUtil.dateToStr(new Date(it._brewAdded * 1000), true) : "";
+			const timestampModified = it._brewModified ? MiscUtil.dateToStr(new Date(it._brewModified * 1000), true) : "";
+
+			const $btnAdd = $(`<span class="col-4 bold manbrew__load_from_url pl-0 clickable"></span>`)
+				.text(it._brewName)
+				.click(() => BrewUtil.addBrewRemote($btnAdd, it.download_url || "", true));
+
+			const $row = $$`<div class="lst__row lst__row-inner not-clickable lst--border lst__row--focusable" tabindex="1">
+				<div class="lst__wrp-cells flex w-100">
+					${$btnAdd}
+					<span class="col-3">${it._brewAuthor}</span>
+					<span class="col-1-2 text-center">${it._brewCat}</span>
+					<span class="col-1-4 text-center">${timestampModified}</span>
+					<span class="col-1-4 text-center">${timestampAdded}</span>
+					<span class="col-1 manbrew__source text-center pr-0"><a href="${it.download_url}" target="_blank" rel="noopener noreferrer">View Raw</a></span>
+				</div>
+			</div>`;
+
+			$row.keydown(evt => {
+				switch (evt.which) {
+					case 13: { // enter
+						return $btnAdd.click()
+					}
+					case 38: { // up
+						const ixCur = list.visibleItems.indexOf(listItem);
+						if (~ixCur) {
+							const prevItem = list.visibleItems[ixCur - 1];
+							if (prevItem) prevItem.ele.focus();
+						} else {
+							const firstItem = list.visibleItems[0];
+							if (firstItem) firstItem.ele.focus();
+						}
+						return;
+					}
+					case 40: { // down
+						const ixCur = list.visibleItems.indexOf(listItem);
+						if (~ixCur) {
+							const nxtItem = list.visibleItems[ixCur + 1];
+							if (nxtItem) nxtItem.ele.focus();
+						} else {
+							const lastItem = list.visibleItems.last();
+							if (lastItem) lastItem.ele.focus();
+						}
+					}
+				}
+			});
+
+			const listItem = new ListItem(
+				i,
+				$row,
+				it._brewName,
+				{
+					author: it._brewAuthor,
+					category: it._brewCat,
+					added: timestampAdded,
+					modified: timestampAdded,
+				},
+				{
+					$btnAdd,
+					isSample: it._brewAuthor.toLowerCase().startsWith("sample -"),
+				},
+			);
+			list.addItem(listItem);
+		});
+
+		list.init();
+
+		$btnAll.prop("disabled", false).click(() => list.visibleItems.filter(it => !it.data.isSample).forEach(it => it.data.$btnAdd.click()));
+
+		if ($btnToggleDisplayNonPageBrews) {
+			$btnToggleDisplayNonPageBrews
+				.prop("disabled", false)
+				.click(() => {
+					$btnToggleDisplayNonPageBrews.toggleClass("active");
+					doClose();
+					BrewUtil._pHandleClickBtnGet({
+						...opts,
+						isShowAll: !$btnToggleDisplayNonPageBrews.hasClass("active"),
+					});
+				});
+		}
+
+		$iptSearch.focus();
 	},
 
-	_dirToCat (dir) {
+	_$getBtnDeleteAll (isModal) {
+		return $(`<button class="btn ${isModal ? "btn-xs" : "btn-sm ml-2"} btn-danger">Delete All</button>`)
+			.click(async () => {
+				if (!window.confirm("Are you sure?")) return;
+				await StorageUtil.pSet(VeCt.STORAGE_HOMEBREW, {});
+				StorageUtil.syncSet(VeCt.STORAGE_HOMEBREW_META, {});
+				window.location.hash = "";
+				location.reload();
+			});
+	},
+
+	async _pCleanSaveBrew () {
+		const cpy = MiscUtil.copy(BrewUtil.homebrew);
+		BrewUtil._STORABLE.forEach(prop => {
+			(cpy[prop] || []).forEach(ent => {
+				Object.keys(ent).filter(k => k.startsWith("_")).forEach(k => delete ent[k]);
+			});
+		});
+		await StorageUtil.pSet(VeCt.STORAGE_HOMEBREW, cpy);
+	},
+
+	async _pRenderBrewScreen_pDeleteSource ($brewList, source, doConfirm, isAllSources) {
+		if (doConfirm && !window.confirm(`Are you sure you want to remove all homebrew${!isAllSources ? ` with${source ? ` source "${Parser.sourceJsonToFull(source)}"` : `out a source`}` : ""}?`)) return;
+
+		const vetoolsSourceSet = new Set(BrewUtil._getActiveVetoolsSources().map(it => it.json));
+		const isMatchingSource = (itSrc) => isAllSources || (itSrc === source || (source === undefined && !vetoolsSourceSet.has(itSrc) && !BrewUtil.hasSourceJson(itSrc)));
+
+		await Promise.all(BrewUtil._getBrewCategories().map(async k => {
+			const cat = BrewUtil.homebrew[k];
+			const pDeleteFn = BrewUtil._getPDeleteFunction(k);
+			const toDel = [];
+			cat.filter(it => isMatchingSource(it.source)).forEach(it => toDel.push(it.uniqueId));
+			await Promise.all(toDel.map(async uId => pDeleteFn(uId)));
+		}));
+		if (BrewUtil._lists) BrewUtil._lists.forEach(l => l.update());
+		BrewUtil._persistHomebrewDebounced();
+		BrewUtil.removeJsonSource(source);
+		// remove the source from the filters and re-render the filter box
+		if (BrewUtil._sourceFilter) BrewUtil._sourceFilter.removeItem(source);
+		if (BrewUtil._filterBox) BrewUtil._filterBox.render();
+		await BrewUtil._pRenderBrewScreen_pRefreshBrewList($brewList);
+		window.location.hash = "";
+		if (BrewUtil._filterBox) BrewUtil._filterBox.fireChangeEvent();
+	},
+
+	async _pRenderBrewScreen_pRefreshBrewList ($brewList) {
+		function showSourceManager (source, showAll) {
+			const $wrpBtnDel = $(`<div class="flex-v-center"></div>`);
+
+			const {$modalInner, doClose} = UiUtil.getShowModal({
+				isHeight100: true,
+				title: `View/Manage ${source ? `Source Contents: ${Parser.sourceJsonToFull(source)}` : showAll ? "Entries from All Sources" : `Entries with No Source`}`,
+				isUncappedHeight: true,
+				isWidth100: true,
+				overlayColor: "transparent",
+				$titleSplit: $wrpBtnDel,
+				isHeaderBorder: true,
+			});
+
+			const $cbAll = $(`<input type="checkbox">`);
+			const $wrpRows = $$`<div class="list flex-col w-100"></div>`;
+			const $iptSearch = $(`<input type="search" class="search manbrew__search form-control w-100 mt-1" placeholder="Search entries...">`);
+			const $wrpBtnsSort = $$`<div class="filtertools manbrew__filtertools btn-group">
+				<button class="col-6 sort btn btn-default btn-xs" data-sort="name">Name</button>
+				<button class="col-5 sort btn btn-default btn-xs" data-sort="category">Category</button>
+				<label class="wrp-cb-all pr-0 flex-vh-center mb-0 h-100">${$cbAll}</label>
+			</div>`;
+			$$($modalInner)`
+				${$iptSearch}
+				${$wrpBtnsSort}
+				${$wrpRows}`;
+
+			let list;
+
+			// populate list
+			function populateList () {
+				$wrpRows.empty();
+
+				list = new List({
+					$iptSearch,
+					$wrpList: $wrpRows,
+					fnSort: SortUtil.listSort,
+				});
+
+				ListUiUtil.bindSelectAllCheckbox($cbAll.off("change"), list);
+
+				function mapCategoryEntry (cat, bru) {
+					const out = {};
+					out.name = bru.name;
+					out.uniqueId = bru.uniqueId;
+					out.extraInfo = "";
+					switch (cat) {
+						case "subclass":
+							out.extraInfo = ` (${bru.class})`;
+							break;
+						case "subrace":
+							out.extraInfo = ` (${(bru.race || {}).name})`;
+							break;
+						case "psionic":
+							out.extraInfo = ` (${Parser.psiTypeToMeta(bru.type).short})`;
+							break;
+						case "itemProperty": {
+							if (bru.entries) out.name = Renderer.findName(bru.entries);
+							if (!out.name) out.name = bru.abbreviation;
+							break;
+						}
+						case "adventureData":
+						case "bookData": {
+							const assocData = {
+								"adventureData": "adventure",
+								"bookData": "book",
+							};
+							out.name = (((BrewUtil.homebrew[assocData[cat]] || []).find(a => a.id === bru.id) || {}).name || bru.id);
+						}
+					}
+					out.name = out.name || `(Unknown)`;
+					return out;
+				}
+
+				const vetoolsSourceSet = new Set(BrewUtil._getActiveVetoolsSources().map(it => it.json));
+
+				const isMatchingSource = (itSrc) => showAll || (itSrc === source || (source === undefined && !vetoolsSourceSet.has(itSrc) && !BrewUtil.hasSourceJson(itSrc)));
+				BrewUtil._getBrewCategories().forEach(cat => {
+					BrewUtil.homebrew[cat]
+						.filter(it => isMatchingSource(it.source))
+						.map(it => mapCategoryEntry(cat, it))
+						.sort((a, b) => SortUtil.ascSort(a.name, b.name))
+						.forEach((it, i) => {
+							const dispCat = BrewUtil._pRenderBrewScreen_getDisplayCat(cat, true);
+
+							const eleLi = document.createElement("div");
+							eleLi.className = "lst__row flex-col px-0";
+
+							eleLi.innerHTML = `<label class="lst--border lst__row-inner no-select mb-0 flex-v-center">
+								<div class="col-6 bold">${it.name}</div>
+								<div class="col-5 flex-vh-center">${dispCat}${it.extraInfo}</div>
+								<div class="pr-0 col-1 flex-vh-center"><input type="checkbox" class="no-events"></div>
+							</label>`;
+
+							const listItem = new ListItem(
+								i,
+								eleLi,
+								it.name,
+								{
+									category: dispCat,
+									category_raw: cat,
+								},
+								{
+									uniqueId: it.uniqueId,
+									cbSel: eleLi.firstElementChild.children[2].firstElementChild,
+								},
+							);
+							list.addItem(listItem);
+
+							eleLi.addEventListener("click", evt => ListUiUtil.handleSelectClick(list, listItem, evt));
+						});
+				});
+				$wrpRows.empty();
+
+				list.init();
+				if (!list.items.length) $wrpRows.append(`<h5 class="text-center">No results found.</h5>`);
+				SortUtil.initBtnSortHandlers($wrpBtnsSort, list);
+			}
+			populateList();
+
+			$(`<button class="btn btn-danger btn-xs">Delete Selected</button>`).on("click", async () => {
+				const toDel = list.items.filter(it => $(it.ele).find(`input`).prop("checked")).map(it => ({...it.values, ...it.data}));
+
+				if (!toDel.length) return;
+				if (!window.confirm(`Are you sure you want to delete the ${toDel.length} selected item${toDel.length === 1 ? "" : "s"}?`)) return;
+
+				if (toDel.length === list.items.length) {
+					await BrewUtil._pRenderBrewScreen_pDeleteSource($brewList, source, false, false);
+					doClose();
+				} else {
+					await Promise.all(toDel.map(async it => {
+						const pDeleteFn = BrewUtil._getPDeleteFunction(it.category_raw);
+						await pDeleteFn(it.uniqueId);
+					}));
+					if (BrewUtil._lists) BrewUtil._lists.forEach(l => l.update());
+					BrewUtil._persistHomebrewDebounced();
+					populateList();
+					await BrewUtil._pRenderBrewScreen_pRefreshBrewList($brewList);
+					window.location.hash = "";
+				}
+			}).appendTo($wrpBtnDel);
+
+			$iptSearch.focus();
+		}
+
+		$brewList.empty();
+		if (!BrewUtil.homebrew) return;
+
+		const $iptSearch = $(`<input type="search" class="search manbrew__search form-control" placeholder="Search active homebrew...">`);
+		const $wrpList = $(`<div class="list-display-only brew-list brew-list--target manbrew__list flex-col w-100 mb-3"></div>`);
+		const $wrpListGroup = $(`<div class="list-display-only brew-list brew-list--groups no-shrink flex-col w-100" style="height: initial;"></div>`);
+
+		const list = new List({$iptSearch, $wrpList, isUseJquery: true});
+
+		const $lst = $$`
+			<div class="flex-col h-100">
+				${$iptSearch}
+				<div class="filtertools manbrew__filtertools btn-group input-group input-group--bottom flex no-shrink">
+					<button class="col-5 sort btn btn-default btn-xs ve-grow" data-sort="source">Source</button>
+					<button class="col-4 sort btn btn-default btn-xs" data-sort="authors">Authors</button>
+					<button class="col-1 btn btn-default btn-xs" disabled>Origin</button>
+					<button class="col-2 ve-grow btn btn-default btn-xs" disabled>&nbsp;</button>
+				</div>
+				<div class="flex w-100 h-100 overflow-y-auto relative">${$wrpList}</div>
+			</div>
+		`.appendTo($brewList);
+		$wrpListGroup.appendTo($brewList);
+		SortUtil.initBtnSortHandlers($lst.find(".manbrew__filtertools"), list);
+
+		const createButtons = (src, $row, isFooterGroup) => {
+			const $btnViewManage = $(`<button class="btn btn-sm btn-default">View/Manage</button>`)
+				.on("click", () => {
+					showSourceManager(src.json, src._all);
+				});
+
+			const $btnDeleteAll = $(`<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>`)
+				.on("click", () => BrewUtil._pRenderBrewScreen_pDeleteSource($brewList, src.json, true, src._all));
+
+			$$`<div class="${isFooterGroup ? `flex-v-center flex-h-right` : `flex-vh-center ve-grow`} btn-group">
+				${$btnViewManage}
+				${$btnDeleteAll}
+			</div>`.appendTo($row);
+		};
+
+		const brewSources = MiscUtil.copy(BrewUtil.getJsonSources())
+			.filter(src => BrewUtil._isSourceRelevantForCurrentPage(src.json));
+		brewSources.sort((a, b) => SortUtil.ascSort(a.full, b.full));
+
+		brewSources.forEach((src, i) => {
+			const validAuthors = (!src.authors ? [] : !(src.authors instanceof Array) ? [] : src.authors).join(", ");
+			const isGroup = src._unknown || src._all;
+
+			const $row = $(`<div class="manbrew__row flex-v-center lst__row lst--border lst__row-inner no-shrink">
+				<span class="col-5 source manbrew__source">${isGroup ? "<i>" : ""}${src.full}${isGroup ? "</i>" : ""}</span>
+				<span class="col-4 authors">${validAuthors}</span>
+				<${src.url ? "a" : "span"} class="col-1 text-center" ${src.url ? `href="${src.url}" target="_blank" rel="noopener noreferrer"` : ""}>${src.url ? "View Source" : ""}</${src.url ? "a" : "span"}>
+				<span class="hidden">${src.abbreviation}</span>
+			</div>`);
+			createButtons(src, $row);
+
+			const listItem = new ListItem(
+				i,
+				$row,
+				src.full,
+				{
+					authors: validAuthors,
+					abbreviation: src.abbreviation,
+				},
+			);
+			list.addItem(listItem);
+		});
+
+		const createGroupRow = (fullText, modeProp) => {
+			const $row = $(`<div class="manbrew__row flex-h-right flex-v-center">
+				<div class="source manbrew__source text-right"><i class="mr-3">${fullText}</i></div>
+			</div>`);
+			createButtons({[modeProp]: true}, $row, true);
+			$wrpListGroup.append($row);
+		};
+		createGroupRow("Entries From All Sources", "_all");
+		createGroupRow("Entries Without Sources", "_unknown");
+
+		list.init();
+		$iptSearch.focus();
+	},
+
+	_isSourceRelevantForCurrentPage (source) {
+		const cats = BrewUtil.getPageProps();
+		return !!cats.find(cat => !!(BrewUtil.homebrew[cat] || []).some(entry => (entry.inherits ? entry.inherits.source : entry.source) === source));
+	},
+
+	getPageProps (page) {
+		page = BrewUtil._PAGE || page || UrlUtil.getCurrentPage();
+
+		const _PG_SPELLS = ["spell", "spellFluff"];
+		const _PG_BESTIARY = ["monster", "legendaryGroup", "monsterFluff"];
+
+		switch (page) {
+			case UrlUtil.PG_SPELLS: return _PG_SPELLS;
+			case UrlUtil.PG_CLASSES: return ["class", "subclass", "classFeature", "subclassFeature"];
+			case UrlUtil.PG_BESTIARY: return _PG_BESTIARY;
+			case UrlUtil.PG_BACKGROUNDS: return ["background"];
+			case UrlUtil.PG_FEATS: return ["feat"];
+			case UrlUtil.PG_OPT_FEATURES: return ["optionalfeature"];
+			case UrlUtil.PG_RACES: return ["race", "raceFluff", "subrace"];
+			case UrlUtil.PG_OBJECTS: return ["object"];
+			case UrlUtil.PG_TRAPS_HAZARDS: return ["trap", "hazard"];
+			case UrlUtil.PG_DEITIES: return ["deity"];
+			case UrlUtil.PG_ITEMS: return ["item", "baseitem", "variant", "itemProperty", "itemType", "itemFluff", "itemGroup", "itemEntry"];
+			case UrlUtil.PG_REWARDS: return ["reward"];
+			case UrlUtil.PG_PSIONICS: return ["psionic"];
+			case UrlUtil.PG_VARIANTRULES: return ["variantrule"];
+			case UrlUtil.PG_CONDITIONS_DISEASES: return ["condition", "disease", "status"];
+			case UrlUtil.PG_ADVENTURES: return ["adventure", "adventureData"];
+			case UrlUtil.PG_BOOKS: return ["book", "bookData"];
+			case UrlUtil.PG_TABLES: return ["table", "tableGroup"];
+			case UrlUtil.PG_MAKE_BREW: return [
+				..._PG_SPELLS,
+				..._PG_BESTIARY,
+				"makebrewCreatureTrait",
+			];
+			case UrlUtil.PG_MANAGE_BREW:
+			case UrlUtil.PG_DEMO_RENDER: return BrewUtil._STORABLE;
+			case UrlUtil.PG_VEHICLES: return ["vehicle", "vehicleUpgrade"];
+			case UrlUtil.PG_ACTIONS: return ["action"];
+			case UrlUtil.PG_CULTS_BOONS: return ["cult", "boon"];
+			case UrlUtil.PG_LANGUAGES: return ["language", "languageScript"];
+			case UrlUtil.PG_CHAR_CREATION_OPTIONS: return ["charoption"];
+			case UrlUtil.PG_RECIPES: return ["recipe"];
+			default: throw new Error(`No homebrew properties defined for category ${page}`);
+		}
+	},
+
+	dirToProp (dir) {
 		if (!dir) return "";
 		else if (BrewUtil._STORABLE.includes(dir)) return dir;
 		else {
@@ -4804,11 +4555,13 @@ BrewUtil = {
 				case "creature": return "monster";
 				case "collection": return dir;
 				case "magicvariant": return "variant";
+				case "makebrew": return "makebrewCreatureTrait";
 			}
 			throw new Error(`Directory was not mapped to a category: "${dir}"`);
 		}
 	},
-	_getDisplayCat (cat, isManager) {
+
+	_pRenderBrewScreen_getDisplayCat (cat, isManager) {
 		if (cat === "variantrule") return "Variant Rule";
 		if (cat === "legendaryGroup") return "Legendary Group";
 		if (cat === "optionalfeature") return "Optional Feature";
@@ -4817,509 +4570,31 @@ BrewUtil = {
 		if (cat === "book") return isManager ? "Book Contents/Info" : "Book";
 		if (cat === "bookData") return "Book Text";
 		if (cat === "itemProperty") return "Item Property";
+		if (cat === "itemEntry") return "Item Entry";
+		if (cat === "baseitem") return "Base Item";
 		if (cat === "variant") return "Magic Item Variant";
+		if (cat === "itemGroup") return "Item Group";
 		if (cat === "monsterFluff") return "Monster Fluff";
+		if (cat === "itemFluff") return "Item Fluff";
+		if (cat === "makebrewCreatureTrait") return "Homebrew Builder Creature Trait";
+		if (cat === "classFeature") return "Class Feature";
+		if (cat === "subclassFeature") return "Subclass Feature";
+		if (cat === "charoption") return "Other Character Creation Option";
 		return cat.uppercaseFirst();
 	},
-	async _pRenderBrewScreen ($appendTo, $overlay, $window, isModal, getBrewOnClose) {
-		const page = UrlUtil.getCurrentPage();
 
-		function makeNextOverlay (onClose) {
-			$overlay.css("background", "transparent");
-			const $overlay2 = $(`<div class="homebrew-overlay"/>`);
-			$overlay2.on("click", () => {
-				$overlay2.remove();
-				$overlay.css("background", "");
-				if (onClose) onClose();
-			});
-			$appendTo.append($overlay2);
-			return $overlay2;
-		}
-
-		const $topBar = isModal
-			? $(`<h4 class="split"><span>Manage Homebrew</span></h4>`).appendTo($window)
-			: $(`<div class="mb-3 text-align-center"/>`).appendTo($window);
-		$window.append(`<hr class="manbrew__hr">`);
-
-		const $btnDelAll = $(`<button class="btn ${isModal ? "btn-xs" : "btn-sm"} btn-danger">Delete All</button>`).appendTo($topBar);
-
-		const $brewList = $(`<div class="manbrew__current_brew"/>`);
-		$window.append($brewList);
-
-		await pRefreshBrewList();
-
-		const $iptAdd = $(`<input multiple type="file" accept=".json" style="display: none;">`).change((evt) => {
-			addBrewLocal(evt);
-		});
-
-		const $btnLoadFromUrl = $(`<button class="btn btn-default btn-sm">Load from URL</button>`);
-		$btnLoadFromUrl.click(() => {
-			const enteredUrl = window.prompt('Please enter the URL of the homebrew:');
-			if (!enteredUrl) return;
-
-			let parsedUrl;
-			try {
-				parsedUrl = new URL(enteredUrl);
-			} catch (e) {
-				JqueryUtil.doToast({
-					content: `The provided URL does not appear to be valid.`,
-					type: "danger"
-				});
-				return;
-			}
-			BrewUtil.addBrewRemote(null, parsedUrl.href).catch(() => {
-				JqueryUtil.doToast({
-					content: "Could not load homebrew from the provided URL.",
-					type: "danger"
-				});
-			});
-		});
-
-		const $btnGet = $(`<button class="btn btn-info btn-sm">Get Homebrew</button>`);
-		$btnGet.click(async () => {
-			const $lst = $(`
-				<div id="brewlistcontainer" class="listcontainer homebrew-window dropdown-menu">
-					<h4><span>Get Homebrew</span></h4>
-					<p><i>A list of homebrew available in the public repository. Click a name to load the homebrew, or view the source directly.<br>
-					Contributions are welcome; see the <a href="https://github.com/TheGiddyLimit/homebrew/blob/master/README.md" target="_blank" rel="noopener">README</a>, or stop by our <a href="https://discord.gg/WH6kdUn" target="_blank" rel="noopener">Discord</a>.</i></p>
-					<hr class="manbrew__hr">
-					<div class="manbrew__load_all_wrp">
-						<button class="btn btn-default btn-xs manbrew__load_all" disabled title="(Excluding samples)">Add All</button>
-					</div>
-					<input type="search" class="search manbrew__search form-control" placeholder="Find homebrew..." style="width: 100%">
-					<div class="filtertools manbrew__filtertools sortlabel btn-group">
-						<button class="col-4 sort btn btn-default btn-xs" data-sort="name">Name</button>
-						<button class="col-3 sort btn btn-default btn-xs" data-sort="author">Author</button>
-						<button class="col-2 sort btn btn-default btn-xs" data-sort="category">Category</button>
-						<button class="col-2 sort btn btn-default btn-xs" data-sort="timestamp">Added</button>
-						<button class="col-1 sort btn btn-default btn-xs" disabled>Source</button>
-					</div>
-					<ul class="list brew-list">
-						<li><section><span style="font-style: italic;">Loading...</span></section></li>
-					</ul>
-				</div>
-			`);
-			const $nxt = makeNextOverlay(getBrewOnClose);
-			$nxt.append($lst);
-			$lst.on("click", (evt) => {
-				evt.stopPropagation();
-			});
-
-			const $btnAll = $lst.find(`.manbrew__load_all`);
-
-			// populate list
-			const $ul = $lst.find(`ul`);
-			function getBrewDirs () {
-				switch (page) {
-					case UrlUtil.PG_SPELLS: return ["spell"];
-					case UrlUtil.PG_CLASSES: return ["class", "subclass"];
-					case UrlUtil.PG_BESTIARY: return ["creature"];
-					case UrlUtil.PG_BACKGROUNDS: return ["background"];
-					case UrlUtil.PG_FEATS: return ["feat"];
-					case UrlUtil.PG_OPT_FEATURES: return ["optionalfeature"];
-					case UrlUtil.PG_RACES: return ["race"];
-					case UrlUtil.PG_OBJECTS: return ["object"];
-					case UrlUtil.PG_TRAPS_HAZARDS: return ["trap", "hazard"];
-					case UrlUtil.PG_DEITIES: return ["deity"];
-					case UrlUtil.PG_ITEMS: return ["item", "magicvariant"];
-					case UrlUtil.PG_REWARDS: return ["reward"];
-					case UrlUtil.PG_PSIONICS: return ["psionic"];
-					case UrlUtil.PG_VARIATNRULES: return ["variantrule"];
-					case UrlUtil.PG_CONDITIONS_DISEASES: return ["condition", "disease"];
-					case UrlUtil.PG_ADVENTURES: return ["adventure"];
-					case UrlUtil.PG_BOOKS: return ["book"];
-					case UrlUtil.PG_TABLES: return ["table"];
-					case UrlUtil.PG_MAKE_SHAPED: return ["spell", "creature"];
-					case UrlUtil.PG_MANAGE_BREW: return BrewUtil._DIRS;
-					case UrlUtil.PG_SHIPS: return ["ship"];
-					default: throw new Error(`No homebrew directories defined for category ${page}`);
-				}
-			}
-
-			let dataList;
-			function sortFunction (a, b, o) {
-				a = dataList[a.elm.getAttribute(FLTR_ID)];
-				b = dataList[b.elm.getAttribute(FLTR_ID)];
-
-				if (o.valueName === "name") return byName();
-				if (o.valueName === "author") return orFallback(SortUtil.ascSortLower, "_brewAuthor");
-				if (o.valueName === "category") return orFallback(SortUtil.ascSortLower, "_brewCat");
-				if (o.valueName === "timestamp") return orFallback(SortUtil.ascSort, "_brewAdded");
-
-				function byName () {
-					return SortUtil.ascSortLower(a._brewName, b._brewName);
-				}
-
-				function orFallback (func, prop) {
-					const initial = func(a[prop], b[prop]);
-					return initial || byName();
-				}
-			}
-
-			const timestamps = await DataUtil.brew.pLoadTimestamps();
-			const collectionIndex = await DataUtil.brew.pLoadCollectionIndex();
-			const collectionFiles = (() => {
-				const dirs = new Set(getBrewDirs().map(dir => BrewUtil._dirToCat(dir)));
-				return Object.keys(collectionIndex).filter(k => collectionIndex[k].find(it => dirs.has(it)));
-			})();
-
-			(() => {
-				const urls = getBrewDirs().map(it => ({url: DataUtil.brew.getDirUrl(it), _cat: BrewUtil._dirToCat(it)}));
-				if (collectionFiles.length) urls.push({url: DataUtil.brew.getDirUrl("collection"), _collection: true, _cat: "collection"});
-
-				DataUtil.multiLoadJSON(
-					urls,
-					(url, json) => {
-						if (url._collection) json.filter(it => it.name === "index.json" || !collectionFiles.includes(it.name)).forEach(it => it._brewSkip = true);
-						json.forEach(it => it._cat = url._cat);
-					},
-					(json) => {
-						let stack = "";
-						const all = [].concat.apply([], json);
-						all.forEach(it => {
-							const cleanFilename = it.name.trim().replace(/\.json$/, "");
-							const spl = cleanFilename.split(";").map(it => it.trim());
-							if (spl.length > 1) {
-								it._brewName = spl[1];
-								it._brewAuthor = spl[0];
-							} else {
-								it._brewName = cleanFilename;
-								it._brewAuthor = "";
-							}
-						});
-						all.sort((a, b) => SortUtil.ascSortLower(a._brewName, b._brewName));
-						dataList = all.filter(it => !it._brewSkip);
-						dataList.forEach((it, i) => {
-							it._brewAdded = timestamps[it.path] || 0;
-							it._brewCat = BrewUtil._getDisplayCat(BrewUtil._dirToCat(it._cat));
-							stack += `
-								<li ${FLTR_ID}="${i}">
-									<section>
-										<span class="col-4 name manbrew__load_from_url" onclick="BrewUtil.addBrewRemote(this, '${(it.download_url || "").escapeQuotes()}', true)">${it._brewName}</span>
-										<span class="col-3 author">${it._brewAuthor}</span>
-										<span class="col-2 category text-align-center">${it._brewCat}</span>
-										<span class="col-2 timestamp text-align-center">${it._brewAdded ? MiscUtil.dateToStr(new Date(it._brewAdded * 1000), true) : ""}</span>
-										<span class="col-1 source manbrew__source"><a href="${it.download_url}" target="_blank" rel="noopener">View Raw</a></span>
-									</section>
-								</li>`;
-						});
-
-						$ul.empty();
-						$ul.append(stack);
-
-						const list = new List("brewlistcontainer", {
-							valueNames: ["name", "author", "category", "timestamp"],
-							listClass: "brew-list",
-							sortFunction
-						});
-						ListUtil.bindEscapeKey(list, $lst.find(`.search`), true);
-
-						$btnAll.prop("disabled", false).click(() => $lst.find(`.manbrew__load_from_url`).filter((i, e) => !$(e).siblings(`.author`).text().toLowerCase().trim().startsWith("sample -")).click());
-					}
-				);
-			})();
-		});
-
-		const $btnWrp = isModal ? $(`<div class="text-align-center"/>`).appendTo($window) : $topBar;
-		$btnWrp
-			.append($btnGet)
-			.append(" ")
-			.append($(`<label role="button" class="btn btn-default btn-sm btn-file">上傳檔案</label>`).append($iptAdd))
-			.append(" ")
-			.append($btnLoadFromUrl)
-			.append(" ")
-			.append(`<a href="https://github.com/TheGiddyLimit/homebrew" target="_blank" rel="noopener"><button class="btn btn-default btn-sm btn-file">Browse Source Repository</button></a>`);
-		if (!isModal) $btnWrp.append(" ").append($btnDelAll);
-
-		$overlay.append($window);
-		$appendTo.append($overlay);
-
-		async function pRefreshBrewList () {
-			function showSourceManager (source, $overlay2, showAll) {
-				const $wrpBtnDel = $(`<h4 class="split"><span>View/Manage ${source ? `Source Contents: ${Parser.sourceJsonToFull(source)}` : showAll ? "Entries from All Sources" : `Entries with No Source`}</span></h4>`);
-				const $lst = $(`
-					<div id="brewlistcontainer" class="listcontainer homebrew-window dropdown-menu">
-						<input type="search" class="search manbrew__search form-control" placeholder="Search entries..." style="width: 100%">
-						<div class="filtertools manbrew__filtertools sortlabel btn-group">
-							<button class="col-6 sort btn btn-default btn-xs" data-sort="name">Name</button>
-							<button class="col-5 sort btn btn-default btn-xs" data-sort="category">Category</button>
-							<label class="col-1 wrp-cb-all"><input type="checkbox"></label>
-						</div>
-						<ul class="list brew-list"></ul>
-					</div>
-				`);
-				$lst.prepend($wrpBtnDel);
-				$overlay2.append($lst);
-				$lst.on("click", (evt) => {
-					evt.stopPropagation();
-				});
-
-				const $cbAll = $lst.find(`.wrp-cb-all input`);
-
-				// populate list
-				function populateList () {
-					function mapCategoryEntry (cat, bru) {
-						const out = {};
-						out.name = bru.name;
-						out.uniqueId = bru.uniqueId;
-						out.extraInfo = "";
-						switch (cat) {
-							case "subclass":
-								out.extraInfo = ` (${bru.class})`;
-								break;
-							case "psionic":
-								out.extraInfo = ` (${Parser.psiTypeToFull(bru.type)})`;
-								break;
-							case "itemProperty": {
-								if (bru.entries) out.name = Renderer.findName(bru.entries);
-								if (!out.name) out.name = bru.abbreviation;
-								break;
-							}
-							case "adventureData":
-							case "bookData": {
-								const assocData = {
-									"adventureData": "adventure",
-									"bookData": "book"
-								};
-								out.name = (((BrewUtil.homebrew[assocData[cat]] || []).find(a => a.id === bru.id) || {}).name || bru.id);
-							}
-						}
-						out.name = out.name || `(Unknown)`;
-						return out;
-					}
-
-					const $ul = $lst.find(`ul`);
-					let stack = "";
-					const isMatchingSource = (itSrc) => showAll || (itSrc === source || (source === undefined && !BrewUtil.hasSourceJson(itSrc)));
-					BrewUtil._getBrewCategories().forEach(cat => {
-						BrewUtil.homebrew[cat]
-							.filter(it => isMatchingSource(it.source))
-							.map(it => mapCategoryEntry(cat, it))
-							.sort((a, b) => SortUtil.ascSort(a.name, b.name))
-							.forEach(it => {
-								stack += `
-									<li><section onclick="ListUtil.toggleCheckbox(event, this)">
-										<span class="col-6 name">${it.name}</span>
-										<span class="col-5 category text-align-center">${BrewUtil._getDisplayCat(cat, true)}${it.extraInfo}</span>
-										<span class="col-1 text-align-center"><input type="checkbox" onclick="event.stopPropagation()"></span>
-										<span class="hidden uid">${it.uniqueId}</span>
-										<span class="category_raw hidden">${cat}</span>
-									</section></li>
-								`;
-							});
-					});
-					$ul.empty();
-					if (stack) $ul.append(stack);
-					else $ul.append(`<h5 class="text-align-center">No results found.</h5>`);
-				}
-				populateList();
-
-				const list = new List("brewlistcontainer", {
-					valueNames: ["name", "category", "category_raw", "uid"],
-					listClass: "brew-list",
-					sortFunction: SortUtil.listSort
-				});
-				ListUtil.bindEscapeKey(list, $lst.find(`.search`), true);
-
-				$cbAll.change(function () {
-					const val = this.checked;
-					list.items.forEach(it => $(it.elm).find(`input`).prop("checked", val));
-				});
-				$(`<button class="btn btn-danger btn-xs">Delete Selected</button>`).on("click", async () => {
-					const toDel = list.items.filter(it => $(it.elm).find(`input`).prop("checked")).map(it => it.values());
-
-					if (!toDel.length) return;
-					if (!window.confirm("Are you sure?")) return;
-
-					if (toDel.length === list.items.length) {
-						await pDeleteSource(source, false);
-						$overlay2.click();
-					} else {
-						await Promise.all(toDel.map(async it => {
-							const pDeleteFn = BrewUtil._getPDeleteFunction(it.category_raw);
-							await pDeleteFn(it.uid);
-						}));
-						await StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
-						populateList();
-						await pRefreshBrewList();
-						window.location.hash = "";
-					}
-				}).appendTo($wrpBtnDel);
-			}
-
-			$brewList.empty();
-			if (BrewUtil.homebrew) {
-				const $lst = $(`
-					<div id="outerbrewlistcontainer" class="listcontainer">
-						<input type="search" class="search manbrew__search form-control" placeholder="Search homebrew..." style="width: calc(100% - 3px)">
-						<div class="filtertools manbrew__filtertools sortlabel btn-group">
-							<button class="col-5 sort btn btn-default btn-xs" data-sort="source">Source</button>
-							<button class="col-4 sort btn btn-default btn-xs" data-sort="authors">Authors</button>
-							<button class="col-1 btn btn-default btn-xs" disabled>Origin</button>
-							<button class="col-2 btn btn-default btn-xs" disabled>&nbsp;</button>
-						</div>
-						<ul class="list-display-only brew-list brew-list--target"></ul>
-						<ul class="list-display-only brew-list brew-list--groups"></ul>
-					</div>
-				`).appendTo($brewList);
-
-				// populate list
-				const $ul = $lst.find(`ul.brew-list--target`).empty();
-				const $ulGroup = $lst.find(`ul.brew-list--groups`).empty();
-
-				const createButtons = (src, $row) => {
-					const $btns = $(`<span class="col-2 text-align-right"/>`).appendTo($row);
-					$(`<button class="btn btn-sm btn-default">View/Manage</button>`)
-						.on("click", () => {
-							const $nxt = makeNextOverlay();
-							showSourceManager(src.json, $nxt, src._all);
-						})
-						.appendTo($btns);
-					$btns.append(" ");
-					$(`<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></button>`)
-						.on("click", () => pDeleteSource(src.json, true))
-						.appendTo($btns);
-				};
-
-				const isSourceRelevantForCurrentPage = (source) => {
-					const getPageCats = () => {
-						switch (page) {
-							case UrlUtil.PG_SPELLS: return ["spell"];
-							case UrlUtil.PG_CLASSES: return ["class", "subclass"];
-							case UrlUtil.PG_BESTIARY: return ["monster", "legendaryGroup", "monsterFluff"];
-							case UrlUtil.PG_BACKGROUNDS: return ["background"];
-							case UrlUtil.PG_FEATS: return ["feat"];
-							case UrlUtil.PG_OPT_FEATURES: return ["optionalfeature"];
-							case UrlUtil.PG_RACES: return ["race"];
-							case UrlUtil.PG_OBJECTS: return ["object"];
-							case UrlUtil.PG_TRAPS_HAZARDS: return ["trap", "hazard"];
-							case UrlUtil.PG_DEITIES: return ["deity"];
-							case UrlUtil.PG_ITEMS: return ["item", "variant", "itemProperty", "itemType"];
-							case UrlUtil.PG_REWARDS: return ["reward"];
-							case UrlUtil.PG_PSIONICS: return ["psionic"];
-							case UrlUtil.PG_VARIATNRULES: return ["variantrule"];
-							case UrlUtil.PG_CONDITIONS_DISEASES: return ["condition", "disease"];
-							case UrlUtil.PG_ADVENTURES: return ["adventure", "adventureData"];
-							case UrlUtil.PG_BOOKS: return ["book", "bookData"];
-							case UrlUtil.PG_TABLES: return ["table", "tableGroup"];
-							case UrlUtil.PG_MAKE_SHAPED: return ["spell", "creature"];
-							case UrlUtil.PG_MANAGE_BREW: return BrewUtil._STORABLE;
-							case UrlUtil.PG_SHIPS: return ["ship"];
-							default: throw new Error(`No homebrew properties defined for category ${page}`);
-						}
-					};
-
-					const cats = getPageCats();
-					return !!cats.find(cat => !!(BrewUtil.homebrew[cat] || []).some(entry => entry.source === source));
-				};
-
-				const allSources = MiscUtil.copy(BrewUtil.getJsonSources()).filter(src => isSourceRelevantForCurrentPage(src.json));
-				allSources.sort((a, b) => SortUtil.ascSort(a.full, b.full));
-
-				allSources.forEach(src => {
-					const validAuthors = (!src.authors ? [] : !(src.authors instanceof Array) ? [] : src.authors).join(", ");
-					const isGroup = src._unknown || src._all;
-					const $row = $(`<li class="row manbrew__row">
-						<span class="col-5 manbrew__col--tall source manbrew__source">${isGroup ? "<i>" : ""}${src.full}${isGroup ? "</i>" : ""}</span>
-						<span class="col-4 manbrew__col--tall authors">${validAuthors}</span>
-						<${src.url ? "a" : "span"} class="col-1 manbrew__col--tall text-align-center" ${src.url ? `href="${src.url}" target="_blank" rel="noopener"` : ""}>${src.url ? "View Source" : ""}</${src.url ? "a" : "span"}>
-					</li>`);
-					createButtons(src, $row);
-					$ul.append($row);
-				});
-
-				const createGroupRow = (fullText, modeProp) => {
-					const $row = $(`<li class="row manbrew__row" style="border-bottom: 0">
-						<span class="col-10 manbrew__col--tall source manbrew__source text-align-right"><i>${fullText}</i></span>
-					</li>`);
-					createButtons({[modeProp]: true}, $row);
-					$ulGroup.append($row);
-				};
-				createGroupRow("Entries From All Sources", "_all");
-				createGroupRow("Entries Without Sources", "_unknown");
-
-				// hack to delay list indexing, otherwise it seems to fail
-				setTimeout(() => {
-					const list = new List("outerbrewlistcontainer", {
-						valueNames: ["source", "authors"],
-						listClass: "brew-list--target"
-					});
-					ListUtil.bindEscapeKey(list, $lst.find(`.search`), true);
-				}, 5);
-			}
-		}
-
-		$btnDelAll.on("click", async () => {
-			if (!window.confirm("Are you sure?")) return;
-			await StorageUtil.pSet(HOMEBREW_STORAGE, {});
-			StorageUtil.syncSet(HOMEBREW_META_STORAGE, {});
-			window.location.hash = "";
-			location.reload();
-		});
-
-		BrewUtil.addBrewRemote = async (ele, jsonUrl, doUnescape) => {
-			const $ele = $(ele);
-			const cached = $ele.html();
-			$ele.text("Loading...");
-			if (doUnescape) jsonUrl = jsonUrl.unescapeQuotes();
-			const data = await DataUtil.loadJSON(`${jsonUrl}?${(new Date()).getTime()}`);
-			await BrewUtil.pDoHandleBrewJson(data, page, pRefreshBrewList);
-			$ele.text("Done!");
-			setInterval(() => {
-				$ele.html(cached);
-			}, 500);
-		};
-
-		function addBrewLocal (event) {
-			const input = event.target;
-
-			let readIndex = 0;
-			const reader = new FileReader();
-			reader.onload = async () => {
-				const text = reader.result;
-				const json = JSON.parse(text);
-
-				await DataUtil.pDoMetaMerge(json);
-
-				await BrewUtil.pDoHandleBrewJson(json, page, pRefreshBrewList);
-				await ExcludeUtil.pSetList(json.blacklist || []);
-
-				if (input.files[readIndex]) {
-					reader.readAsText(input.files[readIndex++]);
-				} else {
-					// reset the input
-					$(event.target).val("");
-				}
-			};
-			reader.readAsText(input.files[readIndex++]);
-		}
-
-		async function pDeleteSource (source, doConfirm) {
-			if (doConfirm && !window.confirm(`Are you sure you want to remove all homebrew with${source ? ` source "${Parser.sourceJsonToFull(source)}"` : `out a source`}?`)) return;
-
-			await Promise.all(BrewUtil._getBrewCategories().map(async k => {
-				const cat = BrewUtil.homebrew[k];
-				const pDeleteFn = BrewUtil._getPDeleteFunction(k);
-				const toDel = [];
-				cat.forEach(it => {
-					if (it.source === source) {
-						toDel.push(it.uniqueId);
-					}
-				});
-				await Promise.all(toDel.map(async uId => pDeleteFn(uId)));
-			}));
-			await StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
-			BrewUtil.removeJsonSource(source);
-			if (page === UrlUtil.PG_MAKE_SHAPED) {
-				removeBrewSource(source);
-			}
-			// remove the source from the filters and re-render the filter box
-			if (BrewUtil._sourceFilter) BrewUtil._sourceFilter.removeIfExists(source);
-			if (BrewUtil._filterBox) BrewUtil._filterBox.render();
-			await pRefreshBrewList();
-			window.location.hash = "";
-			if (BrewUtil._filterBox) BrewUtil._filterBox._fireValChangeEvent();
-		}
+	handleLoadbrewClick: async (ele, jsonUrl, name) => {
+		const $ele = $(ele);
+		if (!$ele.hasClass("rd__wrp-loadbrew--ready")) return; // an existing click is being handled
+		const cached = $ele.html();
+		const cachedTitle = $ele.title();
+		$ele.title("");
+		$ele.removeClass("rd__wrp-loadbrew--ready").html(`${name}<span class="glyphicon glyphicon-refresh rd__loadbrew-icon rd__loadbrew-icon--active"></span>`);
+		jsonUrl = jsonUrl.unescapeQuotes();
+		const data = await DataUtil.loadJSON(`${jsonUrl}?${(new Date()).getTime()}`);
+		await BrewUtil.pDoHandleBrewJson(data, BrewUtil._PAGE || UrlUtil.getCurrentPage());
+		$ele.html(`${name}<span class="glyphicon glyphicon-saved rd__loadbrew-icon"></span>`);
+		setTimeout(() => $ele.html(cached).addClass("rd__wrp-loadbrew--ready").title(cachedTitle), 500);
 	},
 
 	async _pDoRemove (arrName, uniqueId, isChild) {
@@ -5329,41 +4604,64 @@ BrewUtil = {
 
 		const index = getIndex(arrName, uniqueId, isChild);
 		if (~index) {
+			const toRemove = BrewUtil.homebrew[arrName][index];
 			BrewUtil.homebrew[arrName].splice(index, 1);
 			if (BrewUtil._lists) {
-				BrewUtil._lists.forEach(l => l.remove(isChild ? "parentuniqueid" : "uniqueid", uniqueId));
+				BrewUtil._lists.forEach(l => l.removeItemByData(isChild ? "parentuniqueId" : "uniqueId", uniqueId));
 			}
+			return toRemove;
 		}
 	},
 
 	_getPDeleteFunction (category) {
 		switch (category) {
 			case "spell":
+			case "spellFluff":
 			case "monster":
 			case "monsterFluff":
 			case "background":
 			case "feat":
 			case "optionalfeature":
-			case "race":
+			case "raceFluff":
+			case "subrace":
 			case "object":
 			case "trap":
 			case "hazard":
 			case "deity":
 			case "item":
+			case "baseitem":
 			case "variant":
 			case "itemType":
 			case "itemProperty":
+			case "itemFluff":
+			case "itemGroup":
+			case "itemEntry":
 			case "reward":
 			case "psionic":
 			case "variantrule":
 			case "legendaryGroup":
 			case "condition":
 			case "disease":
+			case "status":
 			case "table":
 			case "tableGroup":
-			case "ship": return BrewUtil._genPDeleteGenericBrew(category);
+			case "vehicle":
+			case "vehicleUpgrade":
+			case "action":
+			case "cult":
+			case "boon":
+			case "language":
+			case "languageScript":
+			case "class":
+			case "makebrewCreatureTrait":
+			case "classFeature":
+			case "subclassFeature":
+			case "charoption":
+			case "charoptionFluff":
+			case "recipe":
+				return BrewUtil._genPDeleteGenericBrew(category);
+			case "race": return BrewUtil._pDeleteRaceBrew;
 			case "subclass": return BrewUtil._pDeleteSubclassBrew;
-			case "class": return BrewUtil._pDeleteClassBrew;
 			case "adventure":
 			case "book": return BrewUtil._genPDeleteGenericBookBrew(category);
 			case "adventureData":
@@ -5372,34 +4670,45 @@ BrewUtil = {
 		}
 	},
 
-	async _pDeleteClassBrew (uniqueId) {
-		await BrewUtil._pDoRemove("class", uniqueId);
-	},
-
 	async _pDeleteSubclassBrew (uniqueId) {
-		let subClass;
+		let sc;
 		let index = 0;
 		for (; index < BrewUtil.homebrew.subclass.length; ++index) {
 			if (BrewUtil.homebrew.subclass[index].uniqueId === uniqueId) {
-				subClass = BrewUtil.homebrew.subclass[index];
+				sc = BrewUtil.homebrew.subclass[index];
 				break;
 			}
 		}
-		if (subClass) {
-			const forClass = subClass.class;
+
+		if (sc) {
+			const forClass = sc.class;
 			BrewUtil.homebrew.subclass.splice(index, 1);
-			await StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
+			BrewUtil._persistHomebrewDebounced();
 
-			if (typeof ClassData !== "undefined") {
-				const c = ClassData.classes.find(c => c.name.toLowerCase() === forClass.toLowerCase());
-
-				const indexInClass = c.subclasses.findIndex(it => it.uniqueId === uniqueId);
-				if (~indexInClass) {
-					c.subclasses.splice(indexInClass, 1);
-					c.subclasses = c.subclasses.sort((a, b) => SortUtil.ascSort(a.name, b.name));
-				}
-			}
+			if (typeof ClassesPage === "undefined") return;
+			await classesPage.pDeleteSubclassBrew(uniqueId, sc);
 		}
+	},
+
+	async _pDeleteRaceBrew (uniqueId) {
+		const removedRace = await BrewUtil._pDoRemove("race", uniqueId);
+		if (!removedRace || !removedRace.subraces) return;
+		if (typeof racesPage === "undefined" || !BrewUtil._lists) return;
+
+		const subraceMetas = removedRace.subraces
+			.map(it => ({name: it.name, source: it.source || removedRace.source}))
+			.filter(it => it.name);
+		if (!subraceMetas.length) return;
+
+		const allAttachedRaces = racesPage.getMergedSubraces(uniqueId)
+			.filter(it => subraceMetas.some(meta => meta.name === it._subraceName && meta.source === it.source))
+			.filter(it => it.uniqueId);
+
+		if (!allAttachedRaces) return;
+
+		allAttachedRaces.forEach(attachedRace => {
+			BrewUtil._lists.forEach(l => l.removeItemByData("uniqueId", attachedRace.uniqueId));
+		});
 	},
 
 	_genPDeleteGenericBrew (category) {
@@ -5416,24 +4725,22 @@ BrewUtil = {
 	},
 
 	manageBrew: () => {
-		const $body = $(`body`);
-		$body.css("overflow", "hidden");
-		const $overlay = $(`<div class="homebrew-overlay"/>`);
-		$overlay.on("click", () => {
-			$body.css("overflow", "");
-			$overlay.remove();
+		const {$modalInner} = UiUtil.getShowModal({
+			isHeight100: true,
+			isWidth100: true,
+			title: `Manage Homebrew`,
+			isUncappedHeight: true,
+			$titleSplit: BrewUtil._$getBtnDeleteAll(true),
+			isHeaderBorder: true,
 		});
 
-		const $window = $(`<div class="homebrew-window dropdown-menu"/>`);
-		$window.on("click", (evt) => evt.stopPropagation());
-
-		BrewUtil._pRenderBrewScreen($body, $overlay, $window, true);
+		BrewUtil._pRenderBrewScreen($modalInner, {isModal: true});
 	},
 
 	async pAddEntry (prop, obj) {
 		BrewUtil._mutUniqueId(obj);
 		(BrewUtil.homebrew[prop] = BrewUtil.homebrew[prop] || []).push(obj);
-		await StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
+		BrewUtil._persistHomebrewDebounced();
 		return BrewUtil.homebrew[prop].length - 1;
 	},
 
@@ -5441,19 +4748,23 @@ BrewUtil = {
 		const ix = (BrewUtil.homebrew[prop] = BrewUtil.homebrew[prop] || []).findIndex(it => it.uniqueId === obj.uniqueId);
 		if (~ix) {
 			BrewUtil.homebrew[prop].splice(ix, 1);
-			return StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
+			BrewUtil._persistHomebrewDebounced();
 		} else throw new Error(`Could not find object with ID "${obj.uniqueId}" in "${prop}" list`);
 	},
 
-	getEntryIxByName (prop, obj) {
+	getEntryIxByEntry (prop, obj) {
 		return (BrewUtil.homebrew[prop] = BrewUtil.homebrew[prop] || []).findIndex(it => it.name === obj.name && it.source === obj.source);
+	},
+
+	getEntryByEntryIx (prop, ix) {
+		return (BrewUtil.homebrew[prop] = BrewUtil.homebrew[prop] || [])[ix];
 	},
 
 	async pUpdateEntryByIx (prop, ix, obj) {
 		if (~ix && ix < BrewUtil.homebrew[prop].length) {
 			BrewUtil._mutUniqueId(obj);
 			BrewUtil.homebrew[prop].splice(ix, 1, obj);
-			return StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
+			BrewUtil._persistHomebrewDebounced();
 		} else throw new Error(`Index "${ix}" was not valid!`);
 	},
 
@@ -5462,29 +4773,46 @@ BrewUtil = {
 		obj.uniqueId = CryptUtil.md5(JSON.stringify(obj));
 	},
 
-	_DIRS: ["spell", "class", "subclass", "creature", "background", "feat", "optionalfeature", "race", "object", "trap", "hazard", "deity", "item", "reward", "psionic", "variantrule", "condition", "disease", "adventure", "book", "ship", "magicvariant"],
-	_STORABLE: ["class", "subclass", "spell", "monster", "legendaryGroup", "monsterFluff", "background", "feat", "optionalfeature", "race", "deity", "item", "variant", "itemProperty", "itemType", "psionic", "reward", "object", "trap", "hazard", "variantrule", "condition", "disease", "adventure", "adventureData", "book", "bookData", "table", "tableGroup", "ship"],
+	_DIRS: ["action", "adventure", "background", "book", "boon", "charoption", "class", "condition", "creature", "cult", "deity", "disease", "feat", "hazard", "item", "language", "magicvariant", "makebrew", "object", "optionalfeature", "psionic", "race", "recipe", "reward", "spell", "spellFluff", /* "status", */ "subclass", "subrace", "table", "trap", "variantrule", "vehicle", "classFeature", "subclassFeature"],
+	_STORABLE: ["class", "subclass", "classFeature", "subclassFeature", "spell", "spellFluff", "monster", "legendaryGroup", "monsterFluff", "background", "feat", "optionalfeature", "race", "raceFluff", "subrace", "deity", "item", "baseitem", "variant", "itemProperty", "itemType", "itemFluff", "itemGroup", "itemEntry", "psionic", "reward", "object", "trap", "hazard", "variantrule", "condition", "disease", "status", "adventure", "adventureData", "book", "bookData", "table", "tableGroup", "vehicle", "vehicleUpgrade", "action", "cult", "boon", "language", "languageScript", "makebrewCreatureTrait", "charoption", "charoptionFluff", "recipe"],
 	async pDoHandleBrewJson (json, page, pFuncRefresh) {
+		page = BrewUtil._PAGE || page;
+		await BrewUtil._lockHandleBrewJson.pLock();
+		try {
+			await BrewUtil._pDoHandleBrewJson(json, page, pFuncRefresh);
+
+			// Allow blacklists to be loaded alongside homebrew
+			if (json.blacklist && ExcludeUtil.isInitialised) {
+				await ExcludeUtil.pSetList(ExcludeUtil.getList().concat(json.blacklist || []));
+			}
+		} finally {
+			BrewUtil._lockHandleBrewJson.unlock();
+		}
+	},
+
+	async _pDoHandleBrewJson (json, page, pFuncRefresh) {
+		page = BrewUtil._PAGE || page;
+
 		function storePrep (arrName) {
+			if (json[arrName] != null && !(json[arrName] instanceof Array)) return;
 			if (json[arrName]) {
 				json[arrName].forEach(it => BrewUtil._mutUniqueId(it));
 			} else json[arrName] = [];
 		}
 
 		// prepare for storage
-		if (json.race && json.race.length) json.race = Renderer.race.mergeSubraces(json.race);
 		BrewUtil._STORABLE.forEach(storePrep);
 
 		const bookPairs = [
 			["adventure", "adventureData"],
-			["book", "bookData"]
+			["book", "bookData"],
 		];
-		bookPairs.forEach(bp => {
-			if (json[bp[0]] && json[bp[1]]) {
-				json[bp[0]].forEach(adv => {
-					const data = json[bp[1]].find(it => it.id === adv.id);
+		bookPairs.forEach(([bookMetaKey, bookDataKey]) => {
+			if (json[bookMetaKey] && json[bookDataKey]) {
+				json[bookMetaKey].forEach(book => {
+					const data = json[bookDataKey].find(it => it.id === book.id);
 					if (data) {
-						data.parentUniqueId = adv.uniqueId;
+						data.parentUniqueId = book.uniqueId;
 					}
 				});
 			}
@@ -5493,7 +4821,8 @@ BrewUtil = {
 		// store
 		async function pCheckAndAdd (prop) {
 			if (!BrewUtil.homebrew[prop]) BrewUtil.homebrew[prop] = [];
-			if (IS_DEPLOYED) {
+			if (!(json[prop] instanceof Array)) return [];
+			if (IS_DEPLOYED || IS_VTT || IS_NODE) {
 				// in production mode, skip any existing brew
 				const areNew = [];
 				const existingIds = BrewUtil.homebrew[prop].map(it => it.uniqueId);
@@ -5508,13 +4837,14 @@ BrewUtil = {
 				// in development mode, replace any existing brew
 				const existing = {};
 				BrewUtil.homebrew[prop].forEach(it => {
-					existing[it.source] = (existing[it.source] || {});
-					existing[it.source][it.name] = it.uniqueId;
+					const brewHash = BrewUtil._getDevBrewHash(page, prop, it);
+					existing[brewHash] = it.uniqueId;
 				});
 				const pDeleteFn = BrewUtil._getPDeleteFunction(prop);
 				await Promise.all(json[prop].map(async it => {
-					if (existing[it.source] && existing[it.source][it.name]) {
-						await pDeleteFn(existing[it.source][it.name]);
+					const brewHash = BrewUtil._getDevBrewHash(page, prop, it);
+					if (existing[brewHash]) {
+						await pDeleteFn(existing[brewHash]);
 					}
 					BrewUtil.homebrew[prop].push(it);
 				}));
@@ -5529,6 +4859,9 @@ BrewUtil = {
 
 				Object.keys(json._meta).forEach(k => {
 					switch (k) {
+						case "dateAdded":
+						case "dateLastModified":
+							break;
 						case "sources": {
 							const existing = BrewUtil.homebrewMeta.sources.map(src => src.json);
 							json._meta.sources.forEach(src => {
@@ -5552,15 +4885,12 @@ BrewUtil = {
 
 		let sourcesToAdd = json._meta ? json._meta.sources : [];
 		const toAdd = {};
-		BrewUtil._STORABLE.forEach(k => toAdd[k] = json[k]);
-		if (!BrewUtil.homebrew) {
-			BrewUtil.homebrew = json;
-		} else {
-			sourcesToAdd = checkAndAddMetaGetNewSources(); // adding source(s) to Filter should happen in per-page addX functions
-			await Promise.all(BrewUtil._STORABLE.map(async k => toAdd[k] = await pCheckAndAdd(k))); // only add if unique ID not already present
-		}
-		await StorageUtil.pSet(HOMEBREW_STORAGE, BrewUtil.homebrew);
-		StorageUtil.syncSet(HOMEBREW_META_STORAGE, BrewUtil.homebrewMeta);
+		BrewUtil._STORABLE.filter(k => json[k] instanceof Array).forEach(k => toAdd[k] = json[k]);
+		BrewUtil.homebrew = BrewUtil.homebrew || {};
+		sourcesToAdd = checkAndAddMetaGetNewSources(); // adding source(s) to Filter should happen in per-page addX functions
+		await Promise.all(BrewUtil._STORABLE.map(async k => toAdd[k] = await pCheckAndAdd(k))); // only add if unique ID not already present
+		BrewUtil._persistHomebrewDebounced(); // Debounce this for mass adds, e.g. "Add All"
+		StorageUtil.syncSet(VeCt.STORAGE_HOMEBREW_META, BrewUtil.homebrewMeta);
 
 		// wipe old cache
 		BrewUtil._resetSourceCache();
@@ -5580,19 +4910,28 @@ BrewUtil = {
 			case UrlUtil.PG_ITEMS:
 			case UrlUtil.PG_REWARDS:
 			case UrlUtil.PG_PSIONICS:
-			case UrlUtil.PG_VARIATNRULES:
+			case UrlUtil.PG_VARIANTRULES:
 			case UrlUtil.PG_CONDITIONS_DISEASES:
 			case UrlUtil.PG_ADVENTURE:
 			case UrlUtil.PG_ADVENTURES:
 			case UrlUtil.PG_BOOK:
 			case UrlUtil.PG_BOOKS:
-			case UrlUtil.PG_MAKE_SHAPED:
 			case UrlUtil.PG_TABLES:
-			case UrlUtil.PG_SHIPS:
-				handleBrew(toAdd);
+			case UrlUtil.PG_VEHICLES:
+			case UrlUtil.PG_ACTIONS:
+			case UrlUtil.PG_CULTS_BOONS:
+			case UrlUtil.PG_LANGUAGES:
+			case UrlUtil.PG_CHAR_CREATION_OPTIONS:
+			case UrlUtil.PG_RECIPES:
+				await (BrewUtil._pHandleBrew || handleBrew)(MiscUtil.copy(toAdd));
+				break;
+			case UrlUtil.PG_MAKE_BREW:
+				if (BrewUtil._pHandleBrew) await BrewUtil._pHandleBrew(MiscUtil.copy(toAdd));
 				break;
 			case UrlUtil.PG_MANAGE_BREW:
-			case "NO_PAGE":
+			case UrlUtil.PG_DEMO_RENDER:
+			case VeCt.PG_NONE:
+				// No-op
 				break;
 			default:
 				throw new Error(`No homebrew add function defined for category ${page}`);
@@ -5608,13 +4947,20 @@ BrewUtil = {
 				if (toSet._totals.yes || toSet._totals.no) {
 					if (page === UrlUtil.PG_CLASSES) toSet["Core"] = 1;
 					else sourcesToAdd.forEach(src => toSet[src.json] = 1);
-
-					const toSetValues = Object.keys(toSet).filter(k => !k.startsWith("_")).filter(k => toSet[k]).map(k => `${!~toSet[k] ? "!" : ""}${k}`.toLowerCase());
-					BrewUtil._filterBox.setFromValues({Source: toSetValues});
+					BrewUtil._filterBox.setFromValues({Source: toSet});
 				}
 			}
-			BrewUtil._filterBox._fireValChangeEvent();
+			if (BrewUtil._filterBox) BrewUtil._filterBox.fireChangeEvent();
 		}
+	},
+
+	_getDevBrewHash (page, prop, it) {
+		return UrlUtil.URL_TO_HASH_BUILDER[page]
+			? UrlUtil.URL_TO_HASH_BUILDER[page](it)
+			: UrlUtil.URL_TO_HASH_BUILDER[prop]
+				? UrlUtil.URL_TO_HASH_BUILDER[prop](it)
+				// Handle magic variants
+				: `${it.inherits && it.inherits.source ? it.inherits.source : it.source}__${it.name}`;
 	},
 
 	makeBrewButton: (id) => {
@@ -5625,10 +4971,11 @@ BrewUtil = {
 		return Object.keys(BrewUtil.homebrew).filter(it => !it.startsWith("_"));
 	},
 
+	// region sources
 	_buildSourceCache () {
 		function doBuild () {
 			if (BrewUtil.homebrewMeta && BrewUtil.homebrewMeta.sources) {
-				BrewUtil.homebrewMeta.sources.forEach(src => BrewUtil._sourceCache[src.json] = ({...src}));
+				BrewUtil.homebrewMeta.sources.forEach(src => BrewUtil._sourceCache[src.json.toLowerCase()] = ({...src}));
 			}
 		}
 
@@ -5636,7 +4983,7 @@ BrewUtil = {
 			BrewUtil._sourceCache = {};
 
 			if (!BrewUtil.homebrewMeta) {
-				const temp = StorageUtil.syncGet(HOMEBREW_META_STORAGE) || {};
+				const temp = StorageUtil.syncGet(VeCt.STORAGE_HOMEBREW_META) || {};
 				temp.sources = temp.sources || [];
 				BrewUtil.homebrewMeta = temp;
 				doBuild();
@@ -5651,10 +4998,12 @@ BrewUtil = {
 	},
 
 	removeJsonSource (source) {
+		if (!source) return;
+		source = source.toLowerCase();
 		BrewUtil._resetSourceCache();
-		const ix = BrewUtil.homebrewMeta.sources.findIndex(it => it.json === source);
+		const ix = BrewUtil.homebrewMeta.sources.findIndex(it => it.json.toLowerCase() === source);
 		if (~ix) BrewUtil.homebrewMeta.sources.splice(ix, 1);
-		StorageUtil.syncSet(HOMEBREW_META_STORAGE, BrewUtil.homebrewMeta);
+		StorageUtil.syncSet(VeCt.STORAGE_HOMEBREW_META, BrewUtil.homebrewMeta);
 	},
 
 	getJsonSources () {
@@ -5663,44 +5012,97 @@ BrewUtil = {
 	},
 
 	hasSourceJson (source) {
+		if (!source) return false;
+		source = source.toLowerCase();
 		BrewUtil._buildSourceCache();
 		return !!BrewUtil._sourceCache[source];
 	},
 
 	sourceJsonToFull (source) {
+		if (!source) return "";
+		source = source.toLowerCase();
 		BrewUtil._buildSourceCache();
 		return BrewUtil._sourceCache[source] ? BrewUtil._sourceCache[source].full || source : source;
 	},
 
 	sourceJsonToAbv (source) {
+		if (!source) return "";
+		source = source.toLowerCase();
 		BrewUtil._buildSourceCache();
 		return BrewUtil._sourceCache[source] ? BrewUtil._sourceCache[source].abbreviation || source : source;
 	},
 
+	sourceJsonToDate (source) {
+		if (!source) return "";
+		source = source.toLowerCase();
+		BrewUtil._buildSourceCache();
+		return BrewUtil._sourceCache[source] ? BrewUtil._sourceCache[source].dateReleased || source : source;
+	},
+
 	sourceJsonToSource (source) {
+		if (!source) return null;
+		source = source.toLowerCase();
 		BrewUtil._buildSourceCache();
 		return BrewUtil._sourceCache[source] ? BrewUtil._sourceCache[source] : null;
 	},
 
-	addSource (source) {
-		BrewUtil._resetSourceCache();
-		const exists = BrewUtil.homebrewMeta.sources.some(it => it.json === source.json);
-		if (exists) throw new Error(`Source "${source.json}" already exists!`);
-		(BrewUtil.homebrewMeta.sources = BrewUtil.homebrewMeta.sources || []).push(source);
-		StorageUtil.syncSet(HOMEBREW_META_STORAGE, BrewUtil.homebrewMeta);
+	sourceJsonToStyle (source) {
+		if (!source) return "";
+		source = source.toLowerCase();
+		const color = BrewUtil.sourceJsonToColor(source);
+		if (color) return `style="color: #${color}; border-color: #${color}; text-decoration-color: #${color};"`;
+		return "";
 	},
 
-	updateSource (source) {
+	sourceJsonToColor (source) {
+		if (!source) return "";
+		source = source.toLowerCase();
+		BrewUtil._buildSourceCache();
+		if (BrewUtil._sourceCache[source] && BrewUtil._sourceCache[source].color) {
+			const validColor = BrewUtil.getValidColor(BrewUtil._sourceCache[source].color);
+			if (validColor.length) return validColor;
+			return "";
+		} else return "";
+	},
+
+	getValidColor (color) {
+		// Prevent any injection shenanigans
+		return color.replace(/[^a-fA-F0-9]/g, "").slice(0, 8);
+	},
+
+	addSource (sourceObj) {
 		BrewUtil._resetSourceCache();
-		const ix = BrewUtil.homebrewMeta.sources.findIndex(it => it.json === source.json);
-		if (!~ix) throw new Error(`Source "${source.json}" does not exist!`);
+		const exists = BrewUtil.homebrewMeta.sources.some(it => it.json === sourceObj.json);
+		if (exists) throw new Error(`Source "${sourceObj.json}" already exists!`);
+		(BrewUtil.homebrewMeta.sources = BrewUtil.homebrewMeta.sources || []).push(sourceObj);
+		StorageUtil.syncSet(VeCt.STORAGE_HOMEBREW_META, BrewUtil.homebrewMeta);
+	},
+
+	updateSource (sourceObj) {
+		BrewUtil._resetSourceCache();
+		const ix = BrewUtil.homebrewMeta.sources.findIndex(it => it.json === sourceObj.json);
+		if (!~ix) throw new Error(`Source "${sourceObj.json}" does not exist!`);
 		const json = BrewUtil.homebrewMeta.sources[ix].json;
 		BrewUtil.homebrewMeta.sources[ix] = {
-			...source,
-			json
+			...sourceObj,
+			json,
 		};
-		StorageUtil.syncSet(HOMEBREW_META_STORAGE, BrewUtil.homebrewMeta);
+		StorageUtil.syncSet(VeCt.STORAGE_HOMEBREW_META, BrewUtil.homebrewMeta);
 	},
+
+	_getActiveVetoolsSources () {
+		if (BrewUtil.homebrew === null) throw new Error(`Homebrew was not initialized!`);
+
+		const allActiveSources = new Set();
+		Object.keys(BrewUtil.homebrew).forEach(k => BrewUtil.homebrew[k].forEach(it => it.source && allActiveSources.add(it.source)));
+		return Object.keys(Parser.SOURCE_JSON_TO_FULL).map(k => ({
+			json: k,
+			full: Parser.SOURCE_JSON_TO_FULL[k],
+			abbreviation: Parser.SOURCE_JSON_TO_ABV[k],
+			dateReleased: Parser.SOURCE_JSON_TO_DATE[k],
+		})).sort((a, b) => SortUtil.ascSort(a.full, b.full)).filter(it => allActiveSources.has(it.json));
+	},
+	// endregion
 
 	/**
 	 * Get data in a format similar to the main search index
@@ -5711,15 +5113,85 @@ BrewUtil = {
 
 		await BrewUtil.pAddBrewData();
 		if (BrewUtil.homebrew) {
-			Omnidexer.TO_INDEX__FROM_INDEX_JSON.filter(ti => BrewUtil.homebrew[ti.listProp]).forEach(ti => indexer.addToIndex(ti, BrewUtil.homebrew));
-			Omnidexer.TO_INDEX.filter(ti => BrewUtil.homebrew[ti.listProp]).forEach(ti => indexer.addToIndex(ti, BrewUtil.homebrew));
+			const INDEX_DEFINITIONS = [Omnidexer.TO_INDEX__FROM_INDEX_JSON, Omnidexer.TO_INDEX];
+
+			// Run these in serial, to prevent any ID race condition antics
+			for (const IX_DEF of INDEX_DEFINITIONS) {
+				for (const arbiter of IX_DEF) {
+					if (!(BrewUtil.homebrew[arbiter.brewProp || arbiter.listProp] || []).length) continue;
+
+					if (arbiter.pFnPreProcBrew) {
+						const toProc = await arbiter.pFnPreProcBrew.bind(arbiter)(BrewUtil.homebrew);
+						await indexer.pAddToIndex(arbiter, toProc)
+					} else {
+						await indexer.pAddToIndex(arbiter, BrewUtil.homebrew)
+					}
+				}
+			}
 		}
-		return indexer.getIndex();
-	}
+
+		return Omnidexer.decompressIndex(indexer.getIndex());
+	},
+
+	async pGetAdditionalSearchIndices (highestId, addiProp) {
+		BrewUtil._buildSourceCache();
+		const indexer = new Omnidexer(highestId + 1);
+
+		await BrewUtil.pAddBrewData();
+		if (BrewUtil.homebrew) {
+			const INDEX_DEFINITIONS = [Omnidexer.TO_INDEX__FROM_INDEX_JSON, Omnidexer.TO_INDEX];
+
+			await Promise.all(INDEX_DEFINITIONS.map(IXDEF => {
+				return Promise.all(IXDEF
+					.filter(ti => ti.additionalIndexes && (BrewUtil.homebrew[ti.listProp] || []).length)
+					.map(ti => {
+						return Promise.all(Object.entries(ti.additionalIndexes).filter(([prop]) => prop === addiProp).map(async ([prop, pGetIndex]) => {
+							const toIndex = await pGetIndex(indexer, {[ti.listProp]: BrewUtil.homebrew[ti.listProp]});
+							toIndex.forEach(add => indexer.pushToIndex(add));
+						}));
+					}));
+			}));
+		}
+		return Omnidexer.decompressIndex(indexer.getIndex());
+	},
+
+	async pGetAlternateSearchIndices (highestId, altProp) {
+		BrewUtil._buildSourceCache();
+		const indexer = new Omnidexer(highestId + 1);
+
+		await BrewUtil.pAddBrewData();
+		if (BrewUtil.homebrew) {
+			const INDEX_DEFINITIONS = [Omnidexer.TO_INDEX__FROM_INDEX_JSON, Omnidexer.TO_INDEX];
+
+			for (const IXDEF of INDEX_DEFINITIONS) {
+				const filteredIxDef = IXDEF.filter(ti => ti.alternateIndexes && (BrewUtil.homebrew[ti.listProp] || []).length);
+
+				for (const ti of filteredIxDef) {
+					const filteredAltIndexes = Object.entries(ti.alternateIndexes)
+						.filter(([prop]) => prop === altProp);
+					for (const tuple of filteredAltIndexes) {
+						const [prop, pGetIndex] = tuple;
+						await indexer.pAddToIndex(ti, BrewUtil.homebrew, {alt: ti.alternateIndexes[prop]})
+					}
+				}
+			}
+		}
+
+		return Omnidexer.decompressIndex(indexer.getIndex());
+	},
+
+	__pPersistHomebrewDebounced: null,
+	_persistHomebrewDebounced () {
+		if (BrewUtil.__pPersistHomebrewDebounced == null) {
+			BrewUtil.__pPersistHomebrewDebounced = MiscUtil.debounce(() => BrewUtil._pCleanSaveBrew(), 125);
+		}
+		BrewUtil.__pPersistHomebrewDebounced();
+	},
 };
 
 // ID GENERATION =======================================================================================================
 CryptUtil = {
+	// region md5 internals
 	// stolen from http://www.myersdaily.org/joseph/javascript/md5.js
 	_md5cycle: (x, k) => {
 		let a = x[0];
@@ -5850,21 +5322,26 @@ CryptUtil = {
 		return md5blks;
 	},
 
-	_hex_chr: '0123456789abcdef'.split(''),
+	_hex_chr: "0123456789abcdef".split(""),
 
 	_rhex: (n) => {
-		let s = '';
+		let s = "";
 		for (let j = 0; j < 4; j++) {
 			s += CryptUtil._hex_chr[(n >> (j * 8 + 4)) & 0x0F] + CryptUtil._hex_chr[(n >> (j * 8)) & 0x0F];
 		}
 		return s;
 	},
 
+	_add32: (a, b) => {
+		return (a + b) & 0xFFFFFFFF;
+	},
+	// endregion
+
 	hex: (x) => {
 		for (let i = 0; i < x.length; i++) {
 			x[i] = CryptUtil._rhex(x[i]);
 		}
-		return x.join('');
+		return x.join("");
 	},
 
 	hex2Dec (hex) {
@@ -5873,10 +5350,6 @@ CryptUtil = {
 
 	md5: (s) => {
 		return CryptUtil.hex(CryptUtil._md51(s));
-	},
-
-	_add32: (a, b) => {
-		return (a + b) & 0xFFFFFFFF;
 	},
 
 	/**
@@ -5905,10 +5378,10 @@ CryptUtil = {
 			return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
 				const r = (d + Math.random() * 16) % 16 | 0;
 				d = Math.floor(d / 16);
-				return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+				return (c === "x" ? r : (r & 0x3 | 0x8)).toString(16);
 			});
 		}
-	}
+	},
 };
 
 // COLLECTIONS =========================================================================================================
@@ -5929,164 +5402,375 @@ CollectionUtil = {
 		}
 	},
 
-	setEq (set1, set2) {
-		if (set1.size !== set2.size) return false;
-		for (const a of set1) if (!set2.has(a)) return false;
+	setEq (a, b) {
+		if (a.size !== b.size) return false;
+		for (const it of a) if (!b.has(it)) return false;
 		return true;
 	},
 
 	setDiff (set1, set2) {
 		return new Set([...set1].filter(it => !set2.has(it)));
-	}
-};
+	},
 
-Array.prototype.last = Array.prototype.last ||
-	function () {
-		return this[this.length - 1];
-	};
+	deepEquals (a, b) {
+		if (CollectionUtil._eq_sameValueZeroEqual(a, b)) return true;
+		if (a && b && typeof a === "object" && typeof b === "object") {
+			if (CollectionUtil._eq_isPlainObject(a) && CollectionUtil._eq_isPlainObject(b)) return CollectionUtil._eq_areObjectsEqual(a, b);
+			const arrayA = Array.isArray(a);
+			const arrayB = Array.isArray(b);
+			if (arrayA || arrayB) return arrayA === arrayB && CollectionUtil._eq_areArraysEqual(a, b);
+			const setA = a instanceof Set;
+			const setB = b instanceof Set;
+			if (setA || setB) return setA === setB && CollectionUtil.setEq(a, b);
+			return CollectionUtil._eq_areObjectsEqual(a, b);
+		}
+		return false;
+	},
 
-Array.prototype.filterIndex = Array.prototype.filterIndex ||
-	function (fnCheck) {
-		const out = [];
-		this.forEach((it, i) => {
-			if (fnCheck(it)) out.push(i);
-		});
-		return out;
-	};
-
-Array.prototype.equals = Array.prototype.equals ||
-	function (that) {
-		if (!that) return false;
-		const len = this.length;
-		if (len !== that.length) return false;
-		for (let i = 0; i < len; ++i) {
-			if (this[i] !== that[i]) return false;
+	// This handles the NaN != NaN case; ignore linter complaints
+	// eslint-disable-next-line no-self-compare
+	_eq_sameValueZeroEqual: (a, b) => a === b || (a !== a && b !== b),
+	_eq_isPlainObject: (value) => value.constructor === Object || value.constructor == null,
+	_eq_areObjectsEqual (a, b) {
+		const keysA = Object.keys(a);
+		const {length} = keysA;
+		if (Object.keys(b).length !== length) return false;
+		for (let i = 0; i < length; i++) {
+			if (!b.hasOwnProperty(keysA[i])) return false;
+			if (!CollectionUtil.deepEquals(a[keysA[i]], b[keysA[i]])) return false;
 		}
 		return true;
-	};
+	},
+	_eq_areArraysEqual (a, b) {
+		const {length} = a;
+		if (b.length !== length) return false;
+		for (let i = 0; i < length; i++) if (!CollectionUtil.deepEquals(a[i], b[i])) return false;
+		return true;
+	},
+};
 
-Array.prototype.partition = Array.prototype.partition ||
-	function (fnIsValid) {
-		return this.reduce(([pass, fail], elem) => fnIsValid(elem) ? [[...pass, elem], fail] : [pass, [...fail, elem]], [[], []]);
-	};
+Array.prototype.last = Array.prototype.last || function (arg) {
+	if (arg !== undefined) this[this.length - 1] = arg;
+	else return this[this.length - 1];
+};
 
-// FIXME remove polyfill after ~March 2019
-Array.prototype.flat = Array.prototype.flat ||
-	function () {
-		function flattenDeep (arr) {
-			return arr.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenDeep(val)) : acc.concat(val), []);
-		}
-		return flattenDeep(this);
-	};
+Array.prototype.filterIndex = Array.prototype.filterIndex || function (fnCheck) {
+	const out = [];
+	this.forEach((it, i) => {
+		if (fnCheck(it)) out.push(i);
+	});
+	return out;
+};
+
+Array.prototype.equals = Array.prototype.equals || function (array2) {
+	const array1 = this;
+	if (!array1 && !array2) return true;
+	else if ((!array1 && array2) || (array1 && !array2)) return false;
+
+	let temp = [];
+	if ((!array1[0]) || (!array2[0])) return false;
+	if (array1.length !== array2.length) return false;
+	let key;
+	// Put all the elements from array1 into a "tagged" array
+	for (let i = 0; i < array1.length; i++) {
+		key = `${(typeof array1[i])}~${array1[i]}`; // Use "typeof" so a number 1 isn't equal to a string "1".
+		if (temp[key]) temp[key]++;
+		else temp[key] = 1;
+	}
+	// Go through array2 - if same tag missing in "tagged" array, not equal
+	for (let i = 0; i < array2.length; i++) {
+		key = `${(typeof array2[i])}~${array2[i]}`;
+		if (temp[key]) {
+			if (temp[key] === 0) return false;
+			else temp[key]--;
+		} else return false;
+	}
+	return true;
+};
+
+// Alternate name due to clash with Foundry VTT
+Array.prototype.segregate = Array.prototype.segregate || function (fnIsValid) {
+	return this.reduce(([pass, fail], elem) => fnIsValid(elem) ? [[...pass, elem], fail] : [pass, [...fail, elem]], [[], []]);
+};
+Array.prototype.partition = Array.prototype.partition || Array.prototype.segregate;
+
+Array.prototype.getNext = Array.prototype.getNext || function (curVal) {
+	let ix = this.indexOf(curVal);
+	if (!~ix) throw new Error("Value was not in array!");
+	if (++ix >= this.length) ix = 0;
+	return this[ix];
+};
+
+Array.prototype.shuffle = Array.prototype.shuffle || function () {
+	for (let i = 0; i < 10000; ++i) this.sort(() => Math.random() - 0.5);
+	return this;
+};
+
+/** Map each array item to a k:v pair, then flatten them into one object. */
+Array.prototype.mergeMap = Array.prototype.mergeMap || function (fnMap) {
+	return this.map((...args) => fnMap(...args)).reduce((a, b) => Object.assign(a, b), {});
+};
+
+/** Map each item via an async function, awaiting for each to complete before starting the next. */
+Array.prototype.pSerialAwaitMap = Array.prototype.pSerialAwaitMap || async function (fnMap) {
+	const out = [];
+	const len = this.length;
+	for (let i = 0; i < len; ++i) out.push(await fnMap(this[i], i));
+	return out;
+};
+
+Array.prototype.unique = Array.prototype.unique || function (fnGetProp) {
+	const seen = new Set();
+	return this.filter((...args) => {
+		const val = fnGetProp ? fnGetProp(...args) : args[0];
+		if (seen.has(val)) return false;
+		seen.add(val);
+		return true;
+	});
+};
+
+Array.prototype.zip = Array.prototype.zip || function (otherArray) {
+	const out = [];
+	const len = Math.max(this.length, otherArray.length);
+	for (let i = 0; i < len; ++i) {
+		out.push([this[i], otherArray[i]]);
+	}
+	return out;
+};
+
+Array.prototype.nextWrap = Array.prototype.nextWrap || function (item) {
+	const ix = this.indexOf(item);
+	if (~ix) {
+		if (ix + 1 < this.length) return this[ix + 1];
+		else return this[0];
+	} else return this.last();
+};
+
+Array.prototype.prevWrap = Array.prototype.prevWrap || function (item) {
+	const ix = this.indexOf(item);
+	if (~ix) {
+		if (ix - 1 >= 0) return this[ix - 1];
+		else return this.last();
+	} else return this[0];
+};
+
+Array.prototype.findLast = Array.prototype.findLast || function (fn) {
+	for (let i = this.length - 1; i >= 0; --i) if (fn(this[i])) return this[i];
+};
+
+Array.prototype.findLastIndex = Array.prototype.findLastIndex || function (fn) {
+	for (let i = this.length - 1; i >= 0; --i) if (fn(this[i])) return i;
+	return -1;
+};
+
+Array.prototype.sum = Array.prototype.sum || function () {
+	let tmp = 0;
+	const len = this.length;
+	for (let i = 0; i < len; ++i) tmp += this[i];
+	return tmp;
+};
+
+Array.prototype.mean = Array.prototype.mean || function () {
+	return this.sum() / this.length;
+};
+
+Array.prototype.meanAbsoluteDeviation = Array.prototype.meanAbsoluteDeviation || function () {
+	const mean = this.mean();
+	return (this.map(num => Math.abs(num - mean)) || []).mean();
+};
 
 // OVERLAY VIEW ========================================================================================================
 /**
  * Relies on:
- * - page implementing HashUtil's `loadsub` with handling to show/hide the book view based on hashKey changes
- * - page running no-argument `loadsub` when `hashchange` occurs
+ * - page implementing HashUtil's `loadSubHash` with handling to show/hide the book view based on hashKey changes
+ * - page running no-argument `loadSubHash` when `hashchange` occurs
  *
- * @param hashKey to use in the URL so that forward/back can open/close the view
- * @param $openBtn jQuery-selected button to bind click open/close
- * @param noneVisibleMsg "error" message to display if user has not selected any viewable content
- * @param popTblGetNumShown function which should populate the view with HTML content and return the number of items displayed
- * @param doShowEmpty whether or not the empty table should be visible (useful if the population function is guaranteed to display something)
+ * @param opts Options object.
+ * @param opts.hashKey to use in the URL so that forward/back can open/close the view
+ * @param opts.$openBtn jQuery-selected button to bind click open/close
+ * @param opts.$eleNoneVisible "error" message to display if user has not selected any viewable content
+ * @param opts.pageTitle Title.
+ * @param opts.state State to modify when opening/closing.
+ * @param opts.stateKey Key in state to set true/false when opening/closing.
+ * @param opts.popTblGetNumShown function which should populate the view with HTML content and return the number of items displayed
+ * @param [opts.hasPrintColumns] True if the overlay should contain a dropdown for adjusting print columns.
+ * @param [opts.isHideContentOnNoneShown]
+ * @param [opts.isHideButtonCloseNone]
  * @constructor
  */
-function BookModeView (hashKey, $openBtn, noneVisibleMsg, popTblGetNumShown, doShowEmpty) {
+function BookModeView (opts) {
+	opts = opts || {};
+	const {hashKey, $openBtn, $eleNoneVisible, pageTitle, popTblGetNumShown, isFlex, state, stateKey, isHideContentOnNoneShown, isHideButtonCloseNone} = opts;
+
+	if (hashKey && stateKey) throw new Error();
+
 	this.hashKey = hashKey;
+	this.stateKey = stateKey;
+	this.state = state;
 	this.$openBtn = $openBtn;
-	this.noneVisibleMsg = noneVisibleMsg;
+	this.$eleNoneVisible = $eleNoneVisible;
 	this.popTblGetNumShown = popTblGetNumShown;
+	this.isHideContentOnNoneShown = isHideContentOnNoneShown;
+	this.isHideButtonCloseNone = isHideButtonCloseNone;
 
 	this.active = false;
 	this._$body = null;
 	this._$wrpBook = null;
 
-	const self = this;
+	this._$wrpRenderedContent = null;
+	this._$wrpNoneShown = null;
+	this._doRenderContent = null; // N.B. currently unused, but can be used to refresh the contents of the view
 
-	self.$openBtn.on("click", () => {
-		History.cleanSetHash(`${window.location.hash}${HASH_PART_SEP}${self.hashKey}${HASH_SUB_KV_SEP}true`);
+	this.$openBtn.off("click").on("click", () => {
+		if (this.stateKey) {
+			this.state[this.stateKey] = true;
+		} else {
+			Hist.cleanSetHash(`${window.location.hash}${HASH_PART_SEP}${this.hashKey}${HASH_SUB_KV_SEP}true`);
+		}
 	});
 
-	this.open = () => {
-		function hashTeardown () {
-			History.cleanSetHash(window.location.hash.replace(`${self.hashKey}${HASH_SUB_KV_SEP}true`, ""));
+	this.close = () => { return this._doHashTeardown(); };
+
+	this._doHashTeardown = () => {
+		if (this.stateKey) {
+			this.state[this.stateKey] = false;
+		} else {
+			Hist.cleanSetHash(window.location.hash.replace(`${this.hashKey}${HASH_SUB_KV_SEP}true`, ""));
 		}
+	};
 
-		if (self.active) return;
-		self.active = true;
+	this._renderContent = async ($wrpContent, $dispName, $wrpControlsToPass) => {
+		this._$wrpRenderedContent = this._$wrpRenderedContent
+			? this._$wrpRenderedContent.empty()
+			: $$`<div class="bkmv__scroller h-100 overflow-y-auto ${isFlex ? "flex" : ""}">${this.isHideContentOnNoneShown ? null : $wrpContent}</div>`;
+		this._$wrpRenderedContent.appendTo(this._$wrpBook);
 
-		const $body = $(`body`);
-		const $wrpBook = $(`<div class="book-mode"/>`).click((evt) => {
-			if ($wrpBook[0] !== evt.target) return;
-			hashTeardown();
-		});
-		self._$body = $body;
-		self._$wrpBook = $wrpBook;
-		$body.css("overflow", "hidden");
-		$body.addClass("book-mode-active");
+		const numShown = await this.popTblGetNumShown($wrpContent, $dispName, $wrpControlsToPass);
 
-		const $bkTbl = $(`<table class="stats stats-book" style="font-size: 1.0em; font-family: inherit;"/>`);
-		const $brdTop = $(`<tr><th class="border close-border" style="width: 100%;"><div/></th></tr>`);
-		const $hdTxt = $(`<span class="spacer-name"/>`); // pass this to the content function to allow it to set a main header
+		if (numShown) {
+			if (this.isHideContentOnNoneShown) this._$wrpRenderedContent.append($wrpContent);
+			if (this._$wrpNoneShown) {
+				this._$wrpNoneShown.detach();
+			}
+		} else {
+			if (this.isHideContentOnNoneShown) $wrpContent.detach();
+			if (!this._$wrpNoneShown) {
+				const $btnClose = $(`<button class="btn btn-default">Close</button>`)
+					.click(() => this.close());
+
+				this._$wrpNoneShown = $$`<div class="w-100 flex-col flex-h-center no-shrink bkmv__footer mb-3">
+					<div class="mb-2 flex-vh-center min-h-0">${this.$eleNoneVisible}</div>
+					${this.isHideButtonCloseNone ? null : $$`<div class="flex-vh-center">${$btnClose}</div>`}
+				</div>`;
+			}
+			this._$wrpNoneShown.appendTo(this.isHideContentOnNoneShown ? this._$wrpRenderedContent : this._$wrpBook);
+		}
+	};
+
+	// NOTE: Avoid using `flex` css, as it doesn't play nice with printing
+	this.pOpen = async () => {
+		if (this.active) return;
+		this.active = true;
+		document.title = `${pageTitle} - 5etools`;
+
+		this._$body = $(`body`);
+		this._$wrpBook = $(`<div class="bkmv"></div>`);
+
+		this._$body.css("overflow", "hidden");
+		this._$body.addClass("bkmv-active");
+
 		const $btnClose = $(`<span class="delete-icon glyphicon glyphicon-remove"></span>`)
-			.on("click", () => {
-				hashTeardown();
-			});
-		$brdTop.find(`div`).append($hdTxt).append($btnClose);
-		$bkTbl.append($brdTop);
+			.click(() => this._doHashTeardown());
+		const $dispName = $(`<div></div>`); // pass this to the content function to allow it to set a main header
+		$$`<div class="bkmv__spacer-name split-v-center no-shrink">${$dispName}${$btnClose}</div>`.appendTo(this._$wrpBook);
 
-		const $tbl = $(`<table class="stats stats-book" style="width: auto; margin: 0 auto; font-family: inherit;"/>`);
+		// region controls
+		// Optionally usable "controls" section at the top of the pane
+		const $wrpControls = $(`<div class="w-100 flex-col bkmv__wrp-controls"></div>`)
+			.appendTo(this._$wrpBook);
 
-		const numShownWrp = self.popTblGetNumShown($tbl, $hdTxt);
+		let $wrpControlsToPass = $wrpControls;
+		if (opts.hasPrintColumns) {
+			$wrpControls.addClass("px-2 mt-2");
 
-		const handleNumShown = (numShown) => {
-			const $tblRow = $(`<tr/>`);
-			$tblRow.append($(`<div class="wrp-content" style="${!numShown && !doShowEmpty ? "display: none;" : ""}"/>`).append($tbl));
-			const $msgRow = $(`<tr class="noprint" ${numShown ? `style="display: none;"` : ""}><td class="text-align-center"><span class="initial-message">${self.noneVisibleMsg}</span><br></td></tr>`);
-			$msgRow.find(`td`).append($(`<button class="btn btn-default">Close</button>`).on("click", () => {
-				hashTeardown();
-			}));
-			$bkTbl.append($tblRow).append($msgRow).append(Renderer.utils.getBorderTr());
+			const injectPrintCss = (cols) => {
+				$(`#bkmv__print-style`).remove();
+				$(`<style media="print" id="bkmv__print-style">.bkmv__wrp { column-count: ${cols}; }</style>`)
+					.appendTo($(document.body))
+			};
 
-			$wrpBook.append($bkTbl);
-			$body.append($wrpBook);
-		};
+			const lastColumns = StorageUtil.syncGetForPage(BookModeView._BOOK_VIEW_COLUMNS_K);
 
-		if (numShownWrp instanceof Promise) numShownWrp.then(numShown => handleNumShown(numShown));
-		else handleNumShown(numShownWrp);
+			const $selColumns = $(`<select class="form-control input-sm">
+				<option value="0">Two (book style)</option>
+				<option value="1">One</option>
+			</select>`)
+				.change(() => {
+					const val = Number($selColumns.val());
+					if (val === 0) injectPrintCss(2);
+					else injectPrintCss(1);
+
+					StorageUtil.syncSetForPage(BookModeView._BOOK_VIEW_COLUMNS_K, val);
+				});
+			if (lastColumns != null) $selColumns.val(lastColumns);
+			$selColumns.change();
+
+			$wrpControlsToPass = $$`<div class="w-100 flex">
+				<div class="flex-vh-center"><div class="mr-2 no-wrap help--subtle" title="Applied when printing the page.">Print columns:</div>${$selColumns}</div>
+			</div>`.appendTo($wrpControls);
+		}
+		// endregion
+
+		const $wrpContent = $(`<div class="bkmv__wrp p-2"></div>`);
+
+		await this._renderContent($wrpContent, $dispName, $wrpControlsToPass);
+
+		this._pRenderContent = () => this._renderContent($wrpContent, $dispName, $wrpControlsToPass);
+
+		this._$body.append(this._$wrpBook);
 	};
 
 	this.teardown = () => {
-		if (self.active) {
-			self._$body.css("overflow", "");
-			self._$body.removeClass("book-mode-active");
-			self._$wrpBook.remove();
-			self.active = false;
+		if (this.active) {
+			if (this._$wrpRenderedContent) this._$wrpRenderedContent.detach();
+			if (this._$wrpNoneShown) this._$wrpNoneShown.detach();
+
+			this._$body.css("overflow", "");
+			this._$body.removeClass("bkmv-active");
+			this._$wrpBook.remove();
+			this.active = false;
+
+			this._pRenderContent = null;
 		}
 	};
 
-	this.handleSub = (sub) => {
+	this.pHandleSub = (sub) => {
+		if (this.stateKey) return; // Assume anything with state will handle this itself.
+
 		const bookViewHash = sub.find(it => it.startsWith(this.hashKey));
-		if (bookViewHash && UrlUtil.unpackSubHash(bookViewHash)[this.hashKey][0] === "true") this.open();
+		if (bookViewHash && UrlUtil.unpackSubHash(bookViewHash)[this.hashKey][0] === "true") return this.pOpen();
 		else this.teardown();
 	};
 }
+BookModeView._BOOK_VIEW_COLUMNS_K = "bookViewColumns";
 
 // CONTENT EXCLUSION ===================================================================================================
 ExcludeUtil = {
+	isInitialised: false,
 	_excludes: null,
 
 	async pInitialise () {
+		ExcludeUtil.pSave = MiscUtil.throttle(ExcludeUtil._pSave, 50);
 		try {
-			ExcludeUtil._excludes = await StorageUtil.pGet(EXCLUDES_STORAGE) || [];
+			ExcludeUtil._excludes = await StorageUtil.pGet(VeCt.STORAGE_EXCLUDES) || [];
+			ExcludeUtil._excludes = ExcludeUtil._excludes.filter(it => it.hash); // remove legacy rows
 		} catch (e) {
 			JqueryUtil.doToast({
 				content: "Error when loading content blacklist! Purged blacklist data. (See the log for more information.)",
-				type: "danger"
+				type: "danger",
 			});
 			try {
-				await StorageUtil.pRemove(EXCLUDES_STORAGE);
+				await StorageUtil.pRemove(VeCt.STORAGE_EXCLUDES);
 			} catch (e) {
 				setTimeout(() => { throw e });
 			}
@@ -6094,6 +5778,7 @@ ExcludeUtil = {
 			window.location.hash = "";
 			setTimeout(() => { throw e });
 		}
+		ExcludeUtil.isInitialised = true;
 	},
 
 	getList () {
@@ -6102,15 +5787,25 @@ ExcludeUtil = {
 
 	async pSetList (toSet) {
 		ExcludeUtil._excludes = toSet;
-		await ExcludeUtil._pSave();
+		await ExcludeUtil.pSave();
 	},
 
 	_excludeCount: 0,
-	isExcluded (name, category, source) {
-		if (!ExcludeUtil._excludes) return false;
+	/**
+	 * @param hash
+	 * @param category
+	 * @param source
+	 * @param [opts]
+	 * @param [opts.isNoCount]
+	 */
+	isExcluded (hash, category, source, opts) {
+		if (!ExcludeUtil._excludes || !ExcludeUtil._excludes.length) return false;
+		if (!source) throw new Error(`Entity had no source!`);
+		opts = opts || {};
+
 		source = source.source || source;
-		const out = !!ExcludeUtil._excludes.find(row => (row.source === "*" || row.source === source) && (row.category === "*" || row.category === category) && (row.name === "*" || row.name === name));
-		if (out) ++ExcludeUtil._excludeCount;
+		const out = !!ExcludeUtil._excludes.find(row => (row.source === "*" || row.source === source) && (row.category === "*" || row.category === category) && (row.hash === "*" || row.hash === hash));
+		if (out && !opts.isNoCount) ++ExcludeUtil._excludeCount;
 		return out;
 	},
 
@@ -6124,153 +5819,236 @@ ExcludeUtil = {
 		}
 	},
 
-	async pAddExclude (name, category, source) {
-		if (!ExcludeUtil._excludes.find(row => row.source === source && row.category === category && row.name === name)) {
-			ExcludeUtil._excludes.push({name, category, source});
-			await ExcludeUtil._pSave();
+	addExclude (displayName, hash, category, source) {
+		if (!ExcludeUtil._excludes.find(row => row.source === source && row.category === category && row.hash === hash)) {
+			ExcludeUtil._excludes.push({displayName, hash, category, source});
+			ExcludeUtil.pSave();
 			return true;
 		}
 		return false;
 	},
 
-	async pRemoveExclude (name, category, source) {
-		const ix = ExcludeUtil._excludes.findIndex(row => row.source === source && row.category === category && row.name === name);
+	removeExclude (hash, category, source) {
+		const ix = ExcludeUtil._excludes.findIndex(row => row.source === source && row.category === category && row.hash === hash);
 		if (~ix) {
 			ExcludeUtil._excludes.splice(ix, 1);
-			await ExcludeUtil._pSave();
+			ExcludeUtil.pSave();
 		}
 	},
 
 	async _pSave () {
-		StorageUtil.pSet(EXCLUDES_STORAGE, ExcludeUtil._excludes);
+		return StorageUtil.pSet(VeCt.STORAGE_EXCLUDES, ExcludeUtil._excludes);
 	},
 
-	async pResetExcludes () {
+	// The throttled version, available post-initialisation
+	async pSave () { /* no-op */ },
+
+	resetExcludes () {
 		ExcludeUtil._excludes = [];
-		await ExcludeUtil._pSave();
-	}
+		ExcludeUtil.pSave();
+	},
 };
 
 // ENCOUNTERS ==========================================================================================================
 EncounterUtil = {
-	async pGetSavedState () {
+	async pGetInitialState () {
 		if (await EncounterUtil._pHasSavedStateLocal()) {
 			if (await EncounterUtil._hasSavedStateUrl()) {
 				return {
 					type: "url",
-					data: EncounterUtil._getSavedStateUrl()
+					data: EncounterUtil._getSavedStateUrl(),
 				};
 			} else {
 				return {
 					type: "local",
-					data: await EncounterUtil._pGetSavedStateLocal()
+					data: await EncounterUtil._pGetSavedStateLocal(),
 				};
 			}
 		} else return null;
 	},
 
 	_hasSavedStateUrl () {
-		return window.location.hash.length && History.getSubHash(EncounterUtil.SUB_HASH_PREFIX) != null;
+		return window.location.hash.length && Hist.getSubHash(EncounterUtil.SUB_HASH_PREFIX) != null;
 	},
 
 	_getSavedStateUrl () {
 		let out = null;
 		try {
-			out = JSON.parse(decodeURIComponent(History.getSubHash(EncounterUtil.SUB_HASH_PREFIX)));
+			out = JSON.parse(decodeURIComponent(Hist.getSubHash(EncounterUtil.SUB_HASH_PREFIX)));
 		} catch (e) {
 			setTimeout(() => {
 				throw e;
 			});
 		}
-		History.setSubhash(EncounterUtil.SUB_HASH_PREFIX, null);
+		Hist.setSubhash(EncounterUtil.SUB_HASH_PREFIX, null);
 		return out;
 	},
 
 	async _pHasSavedStateLocal () {
-		return !!StorageUtil.pGet(ENCOUNTER_STORAGE);
+		return !!StorageUtil.pGet(VeCt.STORAGE_ENCOUNTER);
 	},
 
 	async _pGetSavedStateLocal () {
 		try {
-			return await StorageUtil.pGet(ENCOUNTER_STORAGE);
+			return await StorageUtil.pGet(VeCt.STORAGE_ENCOUNTER);
 		} catch (e) {
 			JqueryUtil.doToast({
 				content: "Error when loading encounters! Purged encounter data. (See the log for more information.)",
-				type: "danger"
+				type: "danger",
 			});
-			await StorageUtil.pRemove(ENCOUNTER_STORAGE);
+			await StorageUtil.pRemove(VeCt.STORAGE_ENCOUNTER);
 			setTimeout(() => { throw e; });
 		}
 	},
 
 	async pDoSaveState (toSave) {
-		StorageUtil.pSet(ENCOUNTER_STORAGE, toSave);
+		StorageUtil.pSet(VeCt.STORAGE_ENCOUNTER, toSave);
 	},
 
-	async pGetAllSaves () {
+	async pGetSavedState () {
 		const saved = await StorageUtil.pGet(EncounterUtil.SAVED_ENCOUNTER_SAVE_LOCATION);
 		return saved || {};
-	}
+	},
+
+	getEncounterName (encounter) {
+		if (encounter.l && encounter.l.items && encounter.l.items.length) {
+			const largestCount = encounter.l.items.sort((a, b) => SortUtil.ascSort(Number(b.c), Number(a.c)))[0];
+			const name = decodeURIComponent(largestCount.h.split(HASH_LIST_SEP)[0]).toTitleCase();
+			return `Encounter with ${name} ×${largestCount.c}`;
+		} else return "(Unnamed Encounter)"
+	},
 };
 EncounterUtil.SUB_HASH_PREFIX = "encounter";
 EncounterUtil.SAVED_ENCOUNTER_SAVE_LOCATION = "ENCOUNTER_SAVED_STORAGE";
 
-// REACTOR =============================================================================================================
-class Reactor {
-	constructor () {
-		this.rvents = {};
-	}
+// EXTENSIONS ==========================================================================================================
+ExtensionUtil = {
+	ACTIVE: false,
 
-	_registerEvent (eventName) {
-		this.rvents[eventName] = new ReactorEvent(eventName);
-	}
+	_doSend (type, data) {
+		const detail = MiscUtil.copy({type, data});
+		window.dispatchEvent(new CustomEvent("rivet.send", {detail}));
+	},
 
-	fire (eventName, eventArgs) {
-		if (this.rvents[eventName]) this.rvents[eventName].callbacks.forEach(callback => callback(eventArgs));
-	}
+	async pDoSendStats (evt, ele) {
+		const $parent = $(ele).closest(`th.rnd-name`);
+		const page = $parent.attr("data-page");
+		const source = $parent.attr("data-source");
+		const hash = $parent.attr("data-hash");
+		const extensionData = $parent.attr("data-extension");
 
-	on (eventName, callback) {
-		if (!this.rvents[eventName]) this._registerEvent(eventName);
-		this.rvents[eventName]._registerCallback(callback);
-	}
+		if (page && source && hash) {
+			let toSend = await Renderer.hover.pCacheAndGet(page, source, hash);
 
-	off (eventName, callback) {
-		if (!this.rvents[eventName]) return;
-		this.rvents[eventName]._unregisterCallback(callback);
-	}
+			if (extensionData) {
+				switch (page) {
+					case UrlUtil.PG_BESTIARY: {
+						toSend = await ScaleCreature.scale(toSend, Number(extensionData));
+					}
+				}
+			}
+
+			ExtensionUtil._doSend("entity", {page, entity: toSend, isTemp: !!evt.shiftKey});
+		}
+	},
+
+	doSendRoll (data) { ExtensionUtil._doSend("roll", data); },
+};
+if (typeof window !== "undefined") window.addEventListener("rivet.active", () => ExtensionUtil.ACTIVE = true);
+
+// TOKENS ==============================================================================================================
+TokenUtil = {
+	handleStatblockScroll (event, ele) {
+		$(`#token_image`)
+			.toggle(ele.scrollTop < 32)
+			.css({
+				opacity: (32 - ele.scrollTop) / 32,
+				top: -ele.scrollTop,
+			})
+	},
 }
 
-class ReactorEvent {
-	constructor (name) {
-		this.name = name;
-		this.callbacks = [];
-	}
+// LOCKS ===============================================================================================================
+VeLock = function () {
+	this._lockMeta = null;
 
-	_registerCallback (callback) {
-		this.callbacks.push(callback);
-	}
+	this.pLock = async () => {
+		while (this._lockMeta) await this._lockMeta.lock;
+		let unlock = null;
+		const lock = new Promise(resolve => unlock = resolve);
+		this._lockMeta = {
+			lock,
+			unlock,
+		}
+	};
 
-	_unregisterCallback (callback) {
-		const ix = this.callbacks.indexOf(callback);
-		this.callbacks.splice(ix, 1);
-	}
+	this.unlock = () => {
+		const lockMeta = this._lockMeta;
+		if (lockMeta) {
+			this._lockMeta = null;
+			lockMeta.unlock();
+		}
+	};
 }
+BrewUtil._lockHandleBrewJson = new VeLock();
 
-// LEGAL NOTICE ========================================================================================================
-if (!IS_ROLL20 && typeof window !== "undefined") {
-	// add an obnoxious banner
-	// FIXME is this something we want? If so, uncomment
-	/*
-	window.addEventListener("load", async () => {
-		if (!StorageUtil.isSyncFake() && await StorageUtil.pGet("seenLegal")) return;
-		const $wrpBanner = $(`<div id="legal-notice"><span>不要把這東西貼到Reddit！</span></div>`);
-		$(`<button class="btn btn-sm btn-default">Whatever, kid</button>`).on("click", () => {
-			StorageUtil.pSet("seenLegal", true);
-			$wrpBanner.remove();
-		}).appendTo($wrpBanner);
-		$(`body`).append($wrpBanner);
-	});
-	*/
+// MISC WEBPAGE ONLOADS ================================================================================================
+if (!IS_VTT && typeof window !== "undefined") {
+	if (location.origin === VeCt.LOC_ORIGIN_CANCER) {
+		const ivsCancer = [];
+
+		window.addEventListener("load", () => {
+			let isPadded = false;
+			let anyFound = false;
+			[
+				"div-gpt-ad-5etools35927", // main banner
+				"div-gpt-ad-5etools35930", // side banner
+				"div-gpt-ad-5etools35928", // sidebar top
+				"div-gpt-ad-5etools35929", // sidebar bottom
+				"div-gpt-ad-5etools36159", // bottom floater
+				"div-gpt-ad-5etools36834", // mobile middle
+			].forEach(id => {
+				const iv = setInterval(() => {
+					const $wrp = $(`#${id}`);
+					if (!$wrp.length) return;
+					if (!$wrp.children().length) return;
+					if ($wrp.children()[0].tagName === "SCRIPT") return;
+					const $tgt = $wrp.closest(".cancer__anchor").find(".cancer__disp-cancer");
+					if ($tgt.length) {
+						anyFound = true;
+						$tgt.css({display: "flex"}).text("Advertisements");
+						clearInterval(iv);
+					}
+				}, 250);
+
+				ivsCancer.push(iv);
+			});
+
+			const ivPad = setInterval(() => {
+				if (!anyFound) return;
+				if (isPadded) return;
+				isPadded = true;
+				// Pad the bottom of the page so the adhesive unit doesn't overlap the content
+				$(`.view-col-group--cancer`).append(`<div class="w-100 no-shrink" style="height: 110px;"></div>`)
+			}, 300);
+			ivsCancer.push(ivPad);
+		});
+
+		// Hack to lock the ad space at original size--prevents the screen from shifting around once loaded
+		setTimeout(() => {
+			const $wrp = $(`.cancer__wrp-leaderboard-inner`);
+			const h = $wrp.outerHeight();
+			$wrp.css({height: h});
+			ivsCancer.forEach(iv => clearInterval(iv));
+		}, 5000);
+	} else {
+		window.addEventListener("load", () => $(`.cancer__anchor`).remove());
+	}
+
+	// window.addEventListener("load", () => {
+	// 	$(`.cancer__sidebar-rhs-inner--top`).append(`<div class="TEST_RHS_TOP"></div>`)
+	// 	$(`.cancer__sidebar-rhs-inner--bottom`).append(`<div class="TEST_RHS_BOTTOM"></div>`)
+	// });
 }
 
 _Donate = {
@@ -6320,7 +6098,7 @@ _Donate = {
 		$e.css(mode);
 		$e.text(`${mode.width}*${mode.height}`);
 		$e.data("pos", (pos + 1) % modes.length)
-	}
+	},
 	// endregion
 };
 
@@ -6373,6 +6151,7 @@ Parser.raceKeyToDisplay["tiefling"]  	= "提夫林";
 Parser.raceKeyToDisplay["gith"]  		= "吉斯人";
 Parser.raceKeyToDisplay["orc"] 			= "獸人";
 Parser.raceKeyToDisplay["kobold"] 		= "狗頭人";
+Parser.raceKeyToDisplay["a small race"]  	= "小體型種族";
 Parser.raceKeyToDisplay["small race"]  	= "小體型種族";
 Parser.raceKeyToDisplay["yuan-ti pureblood"]= "純血蛇人";
 Parser.raceKeyToDisplay["vampire (ixalan)"] = "吸血鬼(依夏蘭)";
@@ -6657,8 +6436,8 @@ Parser.itemKeyToDisplay["varies"] 	= "可變";
 //Item Type
 Parser.itemTypeKeyToDisplay = {};
 Parser.itemTypeKeyToDisplay["adventuring gear"] = "冒險裝備";
-Parser.itemTypeKeyToDisplay["tool"] = "工具";
-Parser.itemTypeKeyToDisplay["artisan tool"] = "工匠工具";
+Parser.itemTypeKeyToDisplay["tools"] = "工具";
+Parser.itemTypeKeyToDisplay["artisan's tools"] = "工匠工具";
 Parser.itemTypeKeyToDisplay["gaming set"] = "遊戲套組";
 Parser.itemTypeKeyToDisplay["instrument"] = "樂器";
 Parser.itemTypeKeyToDisplay["heavy armor"] = "重甲";
@@ -6677,6 +6456,8 @@ Parser.itemTypeKeyToDisplay["rod"] = "權杖";
 Parser.itemTypeKeyToDisplay["wand"] = "魔杖";
 Parser.itemTypeKeyToDisplay["ring"] = "戒指";
 Parser.itemTypeKeyToDisplay["wondrous item"] = "奇物";
+Parser.itemTypeKeyToDisplay["wondrous item (tattoo)"] = "奇物(刺青)";
+Parser.itemTypeKeyToDisplay["tattoo"] = "刺青";
 Parser.itemTypeKeyToDisplay["scroll"] = "卷軸";
 Parser.itemTypeKeyToDisplay["potion"] = "藥水";
 Parser.itemTypeKeyToDisplay["vehicle"] = "載具";
@@ -6685,6 +6466,8 @@ Parser.itemTypeKeyToDisplay["trade good"] = "貿易商品";
 Parser.itemTypeKeyToDisplay["generic variant"] = "通用變體";
 Parser.itemTypeKeyToDisplay["other"] = "其他";
 Parser.itemTypeKeyToDisplay["poison"] = "毒藥";
+Parser.itemTypeKeyToDisplay["treasure"] = "$";
+Parser.itemTypeKeyToDisplay["food and drink"] = "食物和水";
 //Age
 Parser.itemTypeKeyToDisplay["renaissance"]= "文藝復興";
 Parser.itemTypeKeyToDisplay["modern"] 	  = "現代";

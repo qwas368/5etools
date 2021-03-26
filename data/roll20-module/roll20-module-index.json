@@ -1,11 +1,46 @@
 {
 	"map": [
 		{
+			"id": "BGDIA",
+			"name": "Baldur's Gate Descent Into Avernus",
+			"size": 17900563,
+			"version": "1.0",
+			"dateLastModified": 1568753729
+		},
+		{
 			"id": "CoS",
 			"name": "Curse of Strahd",
-			"size": 19681623,
-			"version": "1.4",
-			"dateLastModified": 1543605262
+			"size": 19892865,
+			"version": "1.5",
+			"dateLastModified": 1555103370
+		},
+		{
+			"id": "DIP",
+			"name": "Dragon of Icespire Peak",
+			"size": 16746559,
+			"version": "1.0",
+			"dateLastModified": 1567862109
+		},
+		{
+			"id": "EGW",
+			"name": "Explorer's Guide to Wildemount",
+			"size": 14806900,
+			"version": "1.0",
+			"dateLastModified": 1585160628
+		},
+        {
+			"id": "ERLW",
+			"name": "Eberron: Rising from the Last War",
+			"size": 9404607,
+			"version": "1.0",
+			"dateLastModified": 1574367201
+		},
+		{
+			"id": "GoS",
+			"name": "Ghosts of Saltmarsh",
+			"size": 20815115,
+			"version": "1.0",
+			"dateLastModified": 1558461575
 		},
 		{
 			"id": "HotDQ",
@@ -22,6 +57,34 @@
 			"dateLastModified": 1543605262
 		},
 		{
+			"id": "IDRotF",
+			"name": "Icewind Dale: Rime of the Frostmaiden",
+			"size": 23813901,
+			"version": "1.0",
+			"dateLastModified": 1600193295
+		},
+		{
+			"id": "MOT",
+			"name": "Mythic Odysseys of Theros",
+			"size": 12978753,
+			"version": "1.0",
+			"dateLastModified": 1591307071
+		},
+		{
+			"id": "OotA",
+			"name": "Out of the Abyss",
+			"size": 20717393,
+			"version": "1.0",
+			"dateLastModified": 1589562120
+		},
+		{
+			"id": "OotW",
+			"name": "The Orrery of the Wanderer",
+			"size": 10075254,
+			"version": "",
+			"dateLastModified": 1567710260
+		},
+		{
 			"id": "PotA",
 			"name": "Princes of the Apocalypse",
 			"size": 20393290,
@@ -36,6 +99,13 @@
 			"dateLastModified": 1536926400
 		},
 		{
+			"id": "RMBRE",
+			"name": "Rick and Morty: Big Rick Energy",
+			"size": 2441565,
+			"version": "1.0",
+			"dateLastModified": 1575323250
+		},
+		{
 			"id": "RoT",
 			"name": "The Rise of Tiamat",
 			"size": 10607141,
@@ -45,9 +115,16 @@
 		{
 			"id": "SKT",
 			"name": "Storm King's Thunder",
-			"size": 21138832,
-			"version": "2.0",
-			"dateLastModified": 1543605262
+			"size": 21299679,
+			"version": "2.1",
+			"dateLastModified": 1555103370
+		},
+		{
+			"id": "STSS",
+			"name": "Stranger Things Starter Set",
+			"size": 2207762,
+			"version": "1.0",
+			"dateLastModified": 1563228537
 		},
 		{
 			"id": "TftYP-AtG",
@@ -104,6 +181,13 @@
 			"size": 26807323,
 			"version": "",
 			"dateLastModified": 1536926400
+		},
+		{
+			"id": "ToD",
+			"name": "Tyranny of Dragons",
+			"size": 19377282,
+			"version": "1",
+			"dateLastModified": 1571941394
 		},
 		{
 			"id": "WDMM",

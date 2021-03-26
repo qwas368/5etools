@@ -11,7 +11,7 @@ const CHALLENGE_RATING_RANGE = {
 	1: "1\u20144",
 	5: "5\u201410",
 	11: "11\u201416",
-	17: "17\u201420"
+	17: "17\u201420",
 };
 
 const STORAGE_BASIC_CR = "lootgen-basic-cr";
@@ -31,7 +31,7 @@ class LootGen {
 			const $selViewTable = $("#table-sel");
 			const val = $selViewTable.val();
 
-			$selViewTable.toggleClass("error-background", val === "");
+			$selViewTable.toggleClass("form-control--error", val === "");
 			if (val === "") return;
 
 			lootGen.pRollAgainstTable(val);
@@ -67,8 +67,9 @@ class LootGen {
 			$selTables.append(`<option value="${i}">${t.name}</option>`);
 		});
 		$selTables.on("change", () => {
+			if ($(`#container-dmg-loot-table`).hasClass("hidden")) return;
 			const v = $selTables.val();
-			if (v) $("#table-sel").removeClass("error-background");
+			if (v) $("#table-sel").removeClass("form-control--error");
 			this.pDisplayTable(v, !$(`#container-loot-table`).hasClass("hidden") && $(".id-showLootTable").prop("checked"));
 		});
 	}
@@ -84,11 +85,11 @@ class LootGen {
 		else {
 			const $table = $(`
 				<hr/>
-				<table id="stats">
+				<table id="stats" class="w-100 stripe-odd-table">
 					<caption>${itemsTable.name}</caption>
 					<tbody>
 					<tr>
-						<th class="col-2 text-align-center"><span class="roller" onclick="lootGen.pRollAgainstTable(${arrayEntry});">d100</span></th>
+						<th class="col-2 text-center"><span class="roller" onclick="lootGen.pRollAgainstTable(${arrayEntry});">d100</span></th>
 						<th class="col-10">魔法物品</th>
 					</tr>
 					</tbody>
@@ -102,22 +103,22 @@ class LootGen {
 
 				const primaryLink = await LootGen.p$ParseLink(it);
 				const range = it.min === it.max ? it.min : `${it.min}-${it.max}`;
-				const primary$Element = $(`<tr>
-					<td class="text-align-center">${range}</td>
-					<td><div data-r/>${it.table ? ` (骰 <span class="roller" onclick="lootGen.pRollAgainstTable(${arrayEntry}, ${it.min})">d${LootGen.getMaxRoll(it.table)}</span>)` : ""}</td>
-				</tr>`).swap(primaryLink);
+				const primary$Element = $$`<tr>
+					<td class="text-center">${range}</td>
+					<td>${primaryLink}${it.table ? ` (骰 <span class="roller" onclick="lootGen.pRollAgainstTable(${arrayEntry}, ${it.min})">d${LootGen.getMaxRoll(it.table)}</span>)` : ""}</td>
+				</tr>`;
 				$out.push(primary$Element);
 
 				if (it.table) {
 					const subPromises = it.table.map(async r => {
 						const subLink = await LootGen.p$ParseLink(r);
-						return $(`<tr>
+						return $$`<tr>
 							<td/>
 							<td>
 								<span style="display: inline-block; min-width: 40px;">${r.min}${r.max ? `\u2212${r.max}` : ""}</span>
-								<div data-r/>
+								${subLink}
 							</td>
-						</tr>`).swap(subLink);
+						</tr>`;
 					});
 					const sub$Elements = await Promise.all(subPromises);
 					sub$Elements.forEach($e => $out.push($e));
@@ -140,10 +141,10 @@ class LootGen {
 
 		async function p$GetMessage () {
 			const $item = await LootGen.p$ParseLink(row, {rollSpellScroll: true, rollChoices: true});
-			return $(`<ul><li class="split">
-				<span><div data-r/> (骰出 ${rowRoll})</span>
+			return $$`<ul><li class="split">
+				<span>${$item} (骰出 ${rowRoll})</span>
 				<span class="roller" onclick="lootGen.pRerollItem(this, ${ixTable})">[重骰]</span>
-			</li></ul>`).swap($item);
+			</li></ul>`;
 		}
 
 		async function p$GetMessageSub () {
@@ -152,10 +153,10 @@ class LootGen {
 			const rolled = GenUtil.getFromTable(row.table, roll);
 			const $item = await LootGen.p$ParseLink(rolled, {rollSpellScroll: true, rollChoices: true});
 
-			return $(`<ul><li class="split">
-				<span><div data-r/> (骰出 ${roll})</span>
+			return $$`<ul><li class="split">
+				<span>${$item} (骰出 ${roll})</span>
 				<span class="roller" onclick="lootGen.pRerollItem(this, ${ixTable})">[重骰]</span>
-			</li></ul>`).swap($item);
+			</li></ul>`;
 		}
 
 		return row.table ? p$GetMessageSub() : p$GetMessage();
@@ -198,7 +199,10 @@ class LootGen {
 
 		if (hoard) {
 			const treasure = [];
-			treasure.push(lootGen.getFormattedCoinsForDisplay(curTable.coins));
+			const formattedCoinMeta = lootGen.getFormattedCoinsMeta(curTable.coins);
+			treasure.push(formattedCoinMeta.html);
+
+			let worthOfArtAndGems = 0;
 			const artAndGems = loot.gems ? loot.gems : (loot.artobjects ? loot.artobjects : null);
 			if (artAndGems) {
 				let artAndGemsTable = loot.artobjects ? lootList.artobjects : lootList.gemstones;
@@ -206,12 +210,21 @@ class LootGen {
 				const roll = Renderer.dice.parseRandomise2(artAndGems.amount);
 				const gems = [];
 				for (let i = 0; i < roll; i++) gems.push(artAndGemsTable.table[LootGen.randomNumber(0, artAndGemsTable.table.length - 1)]);
-				$(`
-					<li>${Parser._addCommas(artAndGems.type)} 金幣 ${loot.artobjects ? "藝術品" : "寶石"}${roll > 1 ? "" : ""}${roll > 1 ? ` (${MULT_SIGN}${roll})` : ""}:
-					<ul data-r/>
+				$$`
+					<li>${Parser._addCommas(artAndGems.type)} 金幣 ${loot.artobjects ? "藝術品" : "寶石"}${roll > 1 ? "s" : ""}${roll > 1 ? ` (${MULT_SIGN}${roll})` : ""}:
+					${lootGen.$getSortedDeduplicatedList(gems)}
 					</li>
-				`).swap(lootGen.$getSortedDeduplicatedList(gems)).appendTo($el);
+				`.appendTo($el);
+
+				worthOfArtAndGems = (artAndGems.type * roll);
 			}
+
+			// region Add a display for coinage + art/gem objects, combined
+			const totalCoinValue = formattedCoinMeta.gpTotal + worthOfArtAndGems;
+			if (totalCoinValue) {
+				treasure.push(`<i class="ve-muted">${totalCoinValue} gp of coins, art objects, and/or gems, divided as follows:</i>`)
+			}
+			// endregion
 
 			if (loot.magicitems) {
 				const magicItemTableType = [];
@@ -242,24 +255,25 @@ class LootGen {
 							rolled: rolled,
 							$render: LootGen.p$ParseLink(rolled, {rollSpellScroll: true, rollChoices: true}),
 							roll: itemRoll,
-							table: magicItemsTable
+							table: magicItemsTable,
 						});
 					}
 					const magicItemResults = await Promise.all(magicItems.map(it => it.$render));
 					magicItems.forEach((it, i) => it.$render = magicItemResults[i]);
-					$(`
+					$$`
 						<li>
 							魔法物品
 							(<span class="roller" onclick="MiscUtil.scrollPageTop() || lootGen.pDisplayTable(${tableArrayEntry}, true);">表${curType}</span>)
 							${magicItems.length > 1 ? ` (${MULT_SIGN}${magicItems.length})` : ""}:
-							<ul data-r/>
+							${lootGen.$getSortedItemList(magicItems)}
 						</li>
-					`).swap(lootGen.$getSortedItemList(magicItems)).appendTo($el)
+					`.appendTo($el)
 				}
 			}
 			for (let i = 0; i < treasure.length; i++) $el.prepend(`<li>${treasure[i]}</li>`);
 		} else {
-			$el.prepend(`<li>${lootGen.getFormattedCoinsForDisplay(loot.coins)}</li>`);
+			const formattedCoinMeta = lootGen.getFormattedCoinsMeta(loot.coins)
+			$el.prepend(`<li>${formattedCoinMeta.html}</li>`);
 		}
 		let title = hoard
 			? `<strong>積藏寶藏</strong> - 挑戰等級：<strong>${CHALLENGE_RATING_RANGE[cr]}</strong>`
@@ -314,15 +328,10 @@ class LootGen {
 				current.$render = new$Render;
 			});
 
-			$(`<li class="split">
-					<span><span data-r="$render"/> <span data-r="$rollPart"/></span>
-					<span data-r="$reroll"/>
-			</li>`)
-				.swap({
-					$render: current.$render,
-					$rollPart,
-					$reroll
-				})
+			$$`<li class="split">
+					<span>${current.$render} ${$rollPart}</span>
+					${$reroll}
+			</li>`
 				.appendTo($ulOut)
 		});
 
@@ -340,27 +349,29 @@ class LootGen {
 		return {itemRoll, rolled};
 	}
 
-	getFormattedCoinsForDisplay (loot) {
+	getFormattedCoinsMeta (loot) {
 		const generatedCoins = LootGen.generateCoinsFromLoot(loot);
 		const individuallyFormattedCoins = [];
 		generatedCoins.forEach((coin) => {
 			individuallyFormattedCoins.unshift(`<li>${Parser._addCommas(coin.value)} ${Parser.itemValueToDisplay(coin.denomination)}</li>`);
 		});
-		const totalValueGP = Parser._addCommas(LootGen.getGPValueFromCoins(generatedCoins));
+		const totalValueGp = LootGen.getGPValueFromCoins(generatedCoins);
 		const combinedFormattedCoins = individuallyFormattedCoins.reduce((total, formattedCoin) => total + formattedCoin, "");
-		return `總計${totalValueGP} 金幣:<ul> ${combinedFormattedCoins}</ul>`;
+		return {
+			html: `總計${Parser._addCommas(totalValueGp)} 金幣:<ul> ${combinedFormattedCoins}</ul>`,
+			gpTotal: totalValueGp,
+		};
 	}
 
 	static generateCoinsFromLoot (loot) {
 		const retVal = [];
-		const coins = [loot.cp, loot.sp, loot.ep, loot.gp, loot.pp];
-		const coinnames = ["cp", "sp", "ep", "gp", "pp"];
+		const coins = Parser.COIN_ABVS.map(coin => loot[coin]);
 		for (let i = coins.length - 1; i >= 0; i--) {
 			if (!coins[i]) continue;
 			const multiplier = coins[i].split("*")[1];
 			let rolledValue = Renderer.dice.parseRandomise2(coins[i].split("*")[0]);
 			if (multiplier) rolledValue *= parseInt(multiplier);
-			const coin = {"denomination": coinnames[i], "value": rolledValue};
+			const coin = {"denomination": Parser.COIN_ABVS[i], "value": rolledValue};
 			retVal.push(coin);
 		}
 		return retVal;
@@ -455,24 +466,20 @@ class LootGen {
 	loadSpells (then) {
 		if (!this._loadingSpells) {
 			this._loadingSpells = true;
-			DataUtil.loadJSON(`data/spells/index.json`)
-				.then(index => Promise.all(Object.values(index).map(f => DataUtil.loadJSON(`data/spells/${f}`))))
+			DataUtil.spell.pLoadAll()
 				.then(spellData => {
 					this._spells = {};
 					const addSpell = (sp) => {
 						this._spells[sp.level] = this._spells[sp.level] || [];
 						this._spells[sp.level].push(`{@spell ${sp.name}|${sp.source}}`);
 					};
-					spellData.forEach(d => {
-						d.spell.filter(it => !SourceUtil.isNonstandardSource(it.source)).forEach(sp => addSpell(sp));
-					});
+					spellData.filter(sp => !SourceUtil.isNonstandardSource(sp.source)).forEach(sp => addSpell(sp));
 					BrewUtil.pAddBrewData()
 						.then((brew) => {
 							if (brew && brew.spell) brew.spell.forEach(sp => addSpell(sp));
 							this._loadingSpells = false;
 							then();
 						})
-						.catch(BrewUtil.pPurgeBrew);
 				});
 		}
 	}
@@ -488,20 +495,16 @@ class LootGen {
 		const $roll = $(`<span class="roller" onmousedown="event.preventDefault()">[重骰]</span>`).click(() => handleReroll());
 		const $wrpItem = $(`<span/>`).append(renderer.render(getRandomItem()));
 
-		return $(`<em>(<span><span data-r="$wrpItem"/> <span data-r="$roll"/></span>)</em>`)
-			.swap({
-				$wrpItem,
-				$roll
-			});
+		return $$`<em>(<span>${$roll} ${$wrpItem}</span>)</em>`;
 	}
 
 	getSpell$ele (level) {
 		if (this.hasLoadedSpells()) {
 			const $roll = $(`<span class="roller" onmousedown="event.preventDefault()">[重骰]</span>`).click(() => this.loadRollSpell($roll.parent(), level));
-			return $(`<em>(<span>${renderer.render(this.getRandomSpell(level))} <div data-r/></span> 或 ${LootGen._getOrViewSpellsPart(level)})</em>`).swap($roll);
+			return $$`<em>(<span>${$roll} ${renderer.render(this.getRandomSpell(level))}</span> or ${LootGen._getOrViewSpellsPart(level)})</em>`;
 		}
 		const $spnRoll = $(`<span class="roller">擲骰</span>`).click(() => this.loadRollSpell($spnRoll.parent(), level));
-		return $(`<em>(<div data-r/> 或 ${LootGen._getOrViewSpellsPart(level)})</em>`).swap($spnRoll);
+		return $$`<em>(${$spnRoll} or ${LootGen._getOrViewSpellsPart(level)})</em>`;
 	}
 
 	loadRollSpell ($ele, level) {
@@ -510,8 +513,8 @@ class LootGen {
 				.click(() => this.loadRollSpell($roll.parent(), level));
 			$ele
 				.removeClass("roller").attr("onclick", "")
-				.html(`${renderer.render(this.getRandomSpell(level))} `)
-				.append($roll);
+				.html(` ${renderer.render(this.getRandomSpell(level))}`)
+				.prepend($roll);
 		};
 
 		if (!this.hasLoadedSpells()) {
@@ -533,97 +536,93 @@ const randomLootTables = {
 	_items: {
 		Major: {},
 		Minor: {},
-		Other: {}
+		Other: {},
 	},
-	_rarityOrder: ["Common", "Uncommon", "Rare", "Very Rare", "Legendary"],
+	_rarityOrder: ["common", "uncommon", "rare", "very rare", "legendary"],
 	_tableItemCountPerLevelTier: {
 		1: {
-			"Major": {
-				"Uncommon": 0,
-				"Rare": 0,
-				"Very Rare": 0,
-				"Legendary": 0
+			"major": {
+				"uncommon": 0,
+				"rare": 0,
+				"very rare": 0,
+				"legendary": 0,
 			},
-			"Minor": {
-				"Common": 0,
-				"Uncommon": 0,
-				"Rare": 0,
-				"Very Rare": 0,
-				"Legendary": 0
-			}
+			"minor": {
+				"common": 0,
+				"uncommon": 0,
+				"rare": 0,
+				"very rare": 0,
+				"legendary": 0,
+			},
 		},
 		4: {
-			"Major": {
-				"Uncommon": 2,
-				"Rare": 0,
-				"Very Rare": 0,
-				"Legendary": 0
+			"major": {
+				"uncommon": 2,
+				"rare": 0,
+				"very rare": 0,
+				"legendary": 0,
 			},
-			"Minor": {
-				"Common": 6,
-				"Uncommon": 2,
-				"Rare": 1,
-				"Very Rare": 0,
-				"Legendary": 0
-			}
+			"minor": {
+				"common": 6,
+				"uncommon": 2,
+				"rare": 1,
+				"very rare": 0,
+				"legendary": 0,
+			},
 		},
 		10: {
-			"Major": {
-				"Uncommon": 5,
-				"Rare": 1,
-				"Very Rare": 0,
-				"Legendary": 0
+			"major": {
+				"uncommon": 5,
+				"rare": 1,
+				"very rare": 0,
+				"legendary": 0,
 			},
-			"Minor": {
-				"Common": 10,
-				"Uncommon": 12,
-				"Rare": 5,
-				"Very Rare": 1,
-				"Legendary": 0
-			}
+			"minor": {
+				"common": 10,
+				"uncommon": 12,
+				"rare": 5,
+				"very rare": 1,
+				"legendary": 0,
+			},
 		},
 		16: {
-			"Major": {
-				"Uncommon": 1,
-				"Rare": 2,
-				"Very Rare": 2,
-				"Legendary": 1
+			"major": {
+				"uncommon": 1,
+				"rare": 2,
+				"very rare": 2,
+				"legendary": 1,
 			},
-			"Minor": {
-				"Common": 3,
-				"Uncommon": 6,
-				"Rare": 9,
-				"Very Rare": 5,
-				"Legendary": 1
-			}
+			"minor": {
+				"common": 3,
+				"uncommon": 6,
+				"rare": 9,
+				"very rare": 5,
+				"legendary": 1,
+			},
 		},
 		20: {
-			"Major": {
-				"Uncommon": 0,
-				"Rare": 1,
-				"Very Rare": 2,
-				"Legendary": 3
+			"major": {
+				"uncommon": 0,
+				"rare": 1,
+				"very rare": 2,
+				"legendary": 3,
 			},
-			"Minor": {
-				"Common": 0,
-				"Uncommon": 0,
-				"Rare": 4,
-				"Very Rare": 9,
-				"Legendary": 6
-			}
-		}
+			"minor": {
+				"common": 0,
+				"uncommon": 0,
+				"rare": 4,
+				"very rare": 9,
+				"legendary": 6,
+			},
+		},
 	},
 
 	async init () {
-		const stockItems = await Renderer.item.buildList();
-		let brewItems = [];
-		try {
-			const homebrew = await BrewUtil.pAddBrewData();
-			brewItems = await Renderer.item.getItemsFromHomebrew(homebrew);
-		} catch (e) {
-			BrewUtil.pPurgeBrew();
-			setTimeout(() => { throw e });
-		}
+		const stockItems = await Renderer.item.pBuildList({
+			isBlacklistVariants: true,
+		});
+		const homebrew = await BrewUtil.pAddBrewData();
+		const brewItems = await Renderer.item.getItemsFromHomebrew(homebrew);
 		const allItems = stockItems.concat(brewItems);
 
 		for (const item of allItems) {
@@ -647,7 +646,7 @@ const randomLootTables = {
 			let keys = Object.keys(itemList[nameTier]).sort((a, b) => randomLootTables._rarityOrder.findIndex(val => val === a) - randomLootTables._rarityOrder.findIndex((val) => val === b));
 			for (let nameRarity of keys) {
 				if (nameRarity !== undefined && nameRarity !== "None" && nameTier && nameTier !== "undefined") {
-					$selector.append(`<option value="${nameTier}-${nameRarity}">${Parser.ItemTierToDisplay(nameTier)} ${Parser.translateItemKeyToDisplay(nameRarity)}</option>`);
+					$selector.append(`<option value="${nameTier}-${nameRarity}">Tier: ${Parser.ItemTierToDisplay(nameTier)}, Rarity: ${Parser.translateItemKeyToDisplay(nameRarity)}</option>`);
 				}
 			}
 		}
@@ -668,8 +667,8 @@ const randomLootTables = {
 		$(".slider")
 			.toggle($closestTier.prop("checked"))
 			.slider({min: 1, max: 20})
-			.slider('pips', {rest: "label"})
-			.slider('float');
+			.slider("pips", {rest: "label"})
+			.slider("float");
 
 		$cumulative.change((evt) => {
 			const toggled = evt.currentTarget.checked;
@@ -689,12 +688,12 @@ const randomLootTables = {
 			if (isBase) {
 				$charLevel.css({
 					borderTopRightRadius: 3,
-					borderBottomRightRadius: 3
+					borderBottomRightRadius: 3,
 				});
 			} else {
 				$charLevel.css({
 					borderTopRightRadius: "",
-					borderBottomRightRadius: ""
+					borderBottomRightRadius: "",
 				});
 			}
 		});
@@ -710,7 +709,7 @@ const randomLootTables = {
 			if (val !== "") {
 				const [tier, rarity] = val.split("-");
 				randomLootTables.displayTable(randomLootTables._items[tier][rarity], tier, rarity);
-				$("#random-from-loot-table").removeClass("error-background");
+				$("#random-from-loot-table").removeClass("form-control--error");
 			} else {
 				randomLootTables.displayTable("");
 			}
@@ -719,7 +718,7 @@ const randomLootTables = {
 
 		$("#get-random-item-from-table").click(async () => {
 			let [tier, rarity] = $randomFromLootTable.val().split("-");
-			$("#random-from-loot-table").toggleClass("error-background", !tier && !rarity);
+			$("#random-from-loot-table").toggleClass("form-control--error", !tier && !rarity);
 			if (tier && rarity) {
 				const $ul = $(`<ul data-rarity="${rarity}" data-tier="${tier}"></ul>`).append(await randomLootTables.p$GetRandomItemHtml(tier, rarity));
 				lootOutput.add($ul, `從<strong>${Parser.ItemTierToDisplay(tier)} ${Parser.translateItemKeyToDisplay(rarity)}</strong>物品表中擲骰`);
@@ -744,11 +743,11 @@ const randomLootTables = {
 				itemsNeeded,
 				async function (rarityValues, path) {
 					let tier = path[0];
-					let $tier = $(`<ul data-tier="${tier}"><li>${Parser.ItemTierToDisplay(tier)}物品</li></ul>`);
+					let $tier = $(`<ul data-tier="${tier}"><li>${tier.toTitleCase()} 物品</li></ul>`);
 
 					await Promise.all(Object.keys(rarityValues).map(async rarity => {
 						let count = rarityValues[rarity];
-						let $rarity = $(`<ul data-rarity="${rarity}"><li>${Parser.translateItemKeyToDisplay(rarity)}物品(${count})</li></ul>`);
+						let $rarity = $(`<ul data-rarity="${rarity}"><li>${Parser.translateItemKeyToDisplay(rarity)} 物品 (${count})</li></ul>`);
 						let $items = $(`<ul data-tier="${tier}"></ul>`);
 						itemCount[tier] = (itemCount[tier] || 0) + count;
 						const $toAppend = await Promise.all([...new Array(count)].map(async () => randomLootTables.p$GetRandomItemHtml(tier, rarity)));
@@ -761,7 +760,7 @@ const randomLootTables = {
 					}));
 					if (itemCount[tier]) $el.append($tier);
 				},
-				{depth: 1}
+				{depth: 1},
 			);
 			if (!Object.values(itemCount).reduce((a, b) => a + b, 0)) $el.append(`<i>無道具。</i>`);
 			lootOutput.add($el, title);
@@ -770,19 +769,19 @@ const randomLootTables = {
 
 	getNumberOfItemsNeeded (charLevel, estimateBetweenLevels = false, accumulateTiers = true) {
 		const count = {
-			"Major": {
-				"Uncommon": 0,
-				"Rare": 0,
-				"Very Rare": 0,
-				"Legendary": 0
+			"major": {
+				"uncommon": 0,
+				"rare": 0,
+				"very rare": 0,
+				"legendary": 0,
 			},
-			"Minor": {
-				"Common": 0,
-				"Uncommon": 0,
-				"Rare": 0,
-				"Very Rare": 0,
-				"Legendary": 0
-			}
+			"minor": {
+				"common": 0,
+				"uncommon": 0,
+				"rare": 0,
+				"very rare": 0,
+				"legendary": 0,
+			},
 		};
 
 		if (!estimateBetweenLevels && !accumulateTiers) {
@@ -818,12 +817,12 @@ const randomLootTables = {
 				return {
 					item: `{@item ${item.name}|${item.source}}`,
 					choose: {
-						fromLoaded: item.variants
-					}
+						fromLoaded: item.variants,
+					},
 				}
 			} else {
 				return {
-					item: `{@item ${item.name}|${item.source}}`
+					item: `{@item ${item.name}|${item.source}}`,
 				};
 			}
 		})();
@@ -838,12 +837,12 @@ const randomLootTables = {
 	async p$GetRandomItemHtml (tier, rarity) {
 		const {roll, item} = randomLootTables.getRandomItem(tier, rarity);
 		const $link = await randomLootTables.p$CreateLink(item);
-		return $(`
+		return $$`
 			<li class="split">
-				<span><span data-r/> <span class="text-muted">(骰出 ${roll + 1})</span></span>
+				<span>${$link} <span class="text-muted">(骰出 ${roll + 1})</span></span>
 				<span class="roller" onclick="randomLootTables.pRerollItem(this)">[重骰]</span>
 			</li>
-		`).swap($link);
+		`;
 	},
 
 	async pRerollItem (ele) {
@@ -854,26 +853,43 @@ const randomLootTables = {
 	},
 
 	displayTable (itemsArray, tier, rarity) {
+		const $tblType = $("div#classtable");
+
 		if (itemsArray === "") {
-			$("div#classtable").hide();
-		} else {
-			let html = $(`
+			$tblType.hide();
+			return;
+		}
+
+		let dispItemType = "Magic";
+		let dispRarity = "";
+		switch (rarity) {
+			case "none": dispRarity = ""; dispItemType = "Mundane"; break;
+			case "varies": dispRarity = `of Varying rarity`; break;
+			case "unknown (magic)": dispRarity = `of Unknown rarity`; break;
+			case "unknown": dispRarity = `of Unknown rarity`; dispItemType = "Mundane"; break;
+			case "artifact": dispRarity = `that are Artifacts`; break;
+			default: dispRarity = `that are ${rarity.toTitleCase()}`
+		}
+		const tierLower = tier.toLowerCase();
+
+		const $html = $(`
 			<hr/>
-			<table id="stats">
-				<caption>稀有度為${Parser.translateItemKeyToDisplay(rarity)}的${Parser.ItemTierToDisplay(tier)}魔法物品表</caption>
+			<table id="stats" class="w-100 stripe-odd-table">
+				<caption>Table for ${tierLower === "other" ? `${dispItemType} items with no defined tier` : `${tierLower}-tier ${dispItemType} items`} ${dispRarity}</caption>
 				<tbody>
 				<tr>
-					<th class="col-2 text-align-center"><span class="roller" onclick="randomLootTables.getRandomItem('${tier}', '${rarity}');">d${itemsArray.length}</span></th>
-					<th class="col-10">${Parser.ItemTierToDisplay(tier)} ${Parser.translateItemKeyToDisplay(rarity)} 魔法物品</th>
+					<th class="col-2 text-center"><span class="roller" onclick="randomLootTables.getRandomItem('${tier}', '${rarity}');">d${itemsArray.length}</span></th>
+					<th class="col-10">Item</th>
 				</tr>
 				</tbody>
 			</table>`);
-			itemsArray.forEach((item, index) => {
-				html.find("tbody").append(`<tr><td class="text-align-center">${index + 1}</td><td>${Renderer.get().render(`{@item ${item.name}|${item.source}}`)}`);
-			});
-			$("div#classtable").html(html);
-		}
-	}
+
+		itemsArray.forEach((item, index) => {
+			$html.find("tbody").append(`<tr><td class="text-center">${index + 1}</td><td>${Renderer.get().render(`{@item ${item.name}|${item.source}}`)}`);
+		});
+
+		$tblType.html($html);
+	},
 };
 
 const lootOutput = (function lootOutput () {
@@ -907,7 +923,7 @@ const lootOutput = (function lootOutput () {
 	};
 	return {
 		add,
-		clear
+		clear,
 	};
 })();
 
@@ -929,7 +945,7 @@ const ViewManipulation = class ViewManipulation {
 			const buttons = {};
 			names.forEach(name => {
 				let button = ViewManipulation.getButtonName(name);
-				buttons[name] = $("#" + button);
+				buttons[name] = $(`#${button}`);
 			});
 			return buttons;
 		}(viewNames));
@@ -1016,5 +1032,7 @@ window.addEventListener("load", function load () {
 
 	randomLootTables.init();
 
-	$("select").on("change", (evt) => $(evt.currentTarget).val() === "" && $(evt.currentTarget).removeClass("error-background"));
+	$("select").on("change", (evt) => $(evt.currentTarget).val() === "" && $(evt.currentTarget).removeClass("form-control--error"));
+
+	window.dispatchEvent(new Event("toolsLoaded"));
 });

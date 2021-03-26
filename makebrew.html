@@ -2,22 +2,57 @@
 <html lang="en">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>Homebrew Builder - 5etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.115">
+	<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<!-- Chrome Web App Icons -->
+	<link rel="manifest" href="manifest.webmanifest">
+	<meta name="application-name" content="5etools">
+	<meta name="theme-color" content="#006bc4">
+
+	<!-- Windows Start Menu tiles -->
+	<meta name="msapplication-config" content="browserconfig.xml"/>
+	<meta name="msapplication-TileColor" content="#006bc4">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<meta name="apple-mobile-web-app-title" content="5etools">
+
+	<!-- macOS Safari Pinned Tab and Touch Bar -->
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		/* GENERAL/PAGE STYLES */
@@ -27,6 +62,7 @@
 			padding-right: 3px;
 			display: flex;
 			flex-direction: column;
+			min-height: 0;
 		}
 
 		#content_input::-webkit-scrollbar {
@@ -36,6 +72,10 @@
 		#content_input_controls {
 			padding: 3px 15px 0;
 			border-top: 1px solid #ccc;
+		}
+
+		.night-mode #content_input_controls {
+			border-color: #555;
 		}
 
 		#content_output {
@@ -61,30 +101,8 @@
 			border-bottom: 1px solid #ccc;
 		}
 
-		.mkbru__wrp-tab-body {
-			width: 100%;
-			height: 100%;
-			overflow-y: auto;
-			overflow-x: hidden;
-			display: none;
-		}
-
-		.mkbru__wrp-tab-body--border {
-			padding: 3px 0;
-		}
-
-		.hr--sm {
-			margin-top: 10px;
-			margin-bottom: 10px;
-			width: 100%;
-			flex-shrink: 0;
-		}
-
-		.btn-xxs {
-			padding: 0 2px;
-			font-size: 12px;
-			line-height: 1.5;
-			border-radius: 3px;
+		.night-mode .mkbru__wrp-tab-heads--border {
+			border-color: #555;
 		}
 
 		/* Loading overlay */
@@ -99,18 +117,25 @@
 		}
 
 		/* Sidebar */
-		.mkbru__sidebar-entry:nth-child(odd) {
-			background: #bbbbbb18;
+		.mkbru__sidebar-entry {
+			border-bottom: 1px solid #bbbbbb18;
+		}
+
+		/* Output UI */
+		.mkbru__wrp-output-tab-data {
+			box-shadow: none;
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+
+		.night-mode .mkbru__wrp-output-tab-data {
+			border-color: transparent;
 		}
 
 		/* Maker UI */
 		.mkbru__row {
 			padding: 2px;
 			border-radius: 5px;
-		}
-
-		.mkbru__row:nth-child(even) {
-			background: #88888818;
 		}
 
 		.mkbru__wrp-row {
@@ -146,8 +171,8 @@
 			margin-bottom: 4px;
 		}
 
-		.mkbru__multi-cb-row:nth-child(odd) {
-			background: #bbbbbb18;
+		.night-mode .mkbru__row-mark {
+			background: #555;
 		}
 
 		.mkbru__ipt-cb[type=checkbox] {
@@ -162,10 +187,6 @@
 
 		.mkbru__ipt-cb--plain[type=checkbox] {
 			margin-top: 0;
-		}
-
-		.mkbru__ipt-textarea {
-			resize: vertical;
 		}
 
 		.mkbru__sub-name--50 {
@@ -184,60 +205,30 @@
 			padding-right: 3px;
 		}
 
-		.mkbru__wrp-drag-block {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-
-		.mkbru__wrp-drag-dummy--highlight {
-			background: #cfe5ff78;
-		}
-
-		.mkbru__wrp-drag-dummy--lowlight {
-			background: #8882;
-		}
-
-		.mkbru__drag-patch {
-			cursor: move;
-			user-select: none;
-			display: flex;
-			flex-shrink: 0;
-			padding: 5px 3px;
-		}
-
-		.mkbru__drag-patch-col {
-			display: flex;
-			flex-direction: column;
-			flex-shrink: 0;
-		}
-
-		.mkbru__drag-patch-col > div {
-			line-height: 4px;
-			text-align: center;
-		}
-		/* *** */
-
-		/* CREATURE STYLES */
-		.mkbru_mon__wrp-rows {
+		/* Row (array) inputs */
+		.mkbru__wrp-rows {
 			border-bottom: 1px solid #cccccc80;
 			margin-bottom: 5px;
 		}
 
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru_mon__btn-rm-row,
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru__btn-up-row,
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru__btn-down-row,
-		.mkbru_mon__wrp-rows--removable:only-child .mkbru__btn-drag-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-rm-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-up-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-down-row,
+		.mkbru__wrp-rows--removable:only-child .mkbru__btn-drag-row,
 			/* CSS hacks to support nesting */
-		.mkbru_mon__wrp-rows--removable-nested-1:only-child .mkbru_mon__btn-rm-row--nested-1 {
+		.mkbru__wrp-rows--removable-nested-1:only-child .mkbru__btn-rm-row--nested-1 {
 			display: none;
 		}
 
-		.mkbru_mon__wrp-rows--removable:first-child .mkbru__btn-up-row,
-		.mkbru_mon__wrp-rows--removable:last-child .mkbru__btn-down-row {
+		.mkbru__wrp-rows--removable:first-child .mkbru__btn-up-row,
+		.mkbru__wrp-rows--removable:last-child .mkbru__btn-down-row {
 			display: none;
+		}
+		/* *** */
+
+		/* CREATURE STYLES */
+		tr th.mon__name--token {
+			padding-right: 0;
 		}
 
 		.mkbru_mon__ac-split {
@@ -259,7 +250,6 @@
 		}
 
 		.mkbru_mon__spell-header-wrp {
-			justify-content: space-between;
 			width: 100%;
 			align-items: center;
 		}
@@ -275,6 +265,10 @@
 			background: #ccc;
 		}
 
+		.night-mode .mkbru_mon__spell-header-divider {
+			background: #555;
+		}
+
 		.mkbru_mon__cb-environment[type=checkbox] {
 			margin: 0 2px 0 0;
 		}
@@ -284,22 +278,18 @@
 			flex-shrink: 0;
 			text-align: center;
 		}
-		/* *** */
 
-		/* STATBLOCK OUTPUT STYLES */
-		tr th.mon__name--token {
-			padding: 1px 0.3em;
-		}
-
-		.mon__wrp-size-type-align,
-		.mon__wrp-hp {
-			max-width: none;
+		.mkbru_mon__ipt-attack-dice {
+			max-width: 40px;
+			text-align: center;
 		}
 		/* *** */
 	</style>
 </head>
 
 <body>
+<div class="cancer__wrp-sidebar-rhs cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
+
 <div class="viewport-wrapper">
 	<div class="sidemenu__toggle" style="display: none;">
 		<div class="sidemenu__hotzone"></div>
@@ -309,6 +299,8 @@
 		<div class="sidemenu"></div>
 	</div>
 
+	<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container">
 
@@ -317,13 +309,10 @@
 		</div>
 	</header>
 
-	<nav class="container page__nav" id="navigation"><ul class="nav nav-pills" id="navbar"></ul></nav>
-
-	<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-	<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--single"><!--5ETOOLS_AD_RIGHT_1--></div>
+	<nav class="container page__nav" id="navigation"><ul class="nav page__nav-inner" id="navbar"></ul></nav>
 
 	<div id="page_loading" class="container view-col-wrapper">
-		<div class="full-height full-width flex-vh-center"><span class="initial-message">Loading...</span></div>
+		<div class="h-100 w-100 flex-vh-center"><span class="initial-message">Loading...</span></div>
 	</div>
 
 	<div id="page_source" class="container view-col-wrapper" style="display: none"></div>
@@ -331,7 +320,7 @@
 	<div id="page_main" class="container view-col-wrapper" style="display: none">
 		<div class="view-col">
 			<div id="content_input"></div>
-			<div id="content_input_controls" class="text-align-center"></div>
+			<div id="content_input_controls" class="text-center"></div>
 		</div>
 
 		<div class="view-col" id="content_output"></div>
@@ -339,18 +328,28 @@
 </div>
 
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
+<script type="text/javascript" src="js/utils-proporder.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
+<script type="text/javascript" src="js/render-markdown.js"></script>
 <script type="text/javascript" src="js/render-bestiary.js"></script>
+<script type="text/javascript" src="js/render-spells.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/converterutils.js"></script>
+<script type="text/javascript" src="js/converterutils-creature.js"></script>
 <script type="text/javascript" src="js/makebrew.js"></script>
 <script type="text/javascript" src="js/makebrew-creature.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/makebrew-legendarygroup.js"></script>
+<script type="text/javascript" src="js/makebrew-spell.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>

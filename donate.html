@@ -2,25 +2,62 @@
 <html lang="en">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>Donate - 5etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.115">
+	<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<!-- Chrome Web App Icons -->
+	<link rel="manifest" href="manifest.webmanifest">
+	<meta name="application-name" content="5etools">
+	<meta name="theme-color" content="#006bc4">
+
+	<!-- Windows Start Menu tiles -->
+	<meta name="msapplication-config" content="browserconfig.xml"/>
+	<meta name="msapplication-TileColor" content="#006bc4">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<meta name="apple-mobile-web-app-title" content="5etools">
+
+	<!-- macOS Safari Pinned Tab and Touch Bar -->
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 </head>
 
 <body>
+<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container">
 
@@ -28,84 +65,47 @@
 		<p class="page__subtitle">Please?</p>
 	</div>
 </header>
-<nav class="container page__nav" id="navigation"><ul class="nav nav-pills" id="navbar"></ul></nav>
 
-<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><!--5ETOOLS_AD_RIGHT_2--></div>
+<nav class="container page__nav" id="navigation"><ul class="nav page__nav-inner" id="navbar"></ul></nav>
+
+<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <main class="container">
 	<div class="row">
 		<div class="col-12">
-			<h4 class="text-align-center">5etools, LLC. gratefully accepts donations.</h4>
 			<p>
-				Any monies raised are used to help cover the costs associated with running the site. These costs come from renting servers, and the bandwidth they consume every month. Any donation, no matter the size, is greatly appreciated.
-			</p>
-			<p>
-				Server upkeep donation addresses (note that the development team <b>does not</b> receive any payments made to these addresses; donations go directly to the host responsible for keeping the site online):
+				The cost of running the 5etools server is covered by the advertisements run on <a href="https://5e.tools">5e.tools</a>, but if you wish to toss some spare gold at the development team (of one), you are welcome to do so. Direct donations are done through cryptocurrency for the safety of both parties; <a href="https://www.coinbase.com/">Coinbase</a> is a reputable site where you can exchange money for crypto and carry out transactions.
 			</p>
 			<p class="code">
-				BTC: <a href="bitcoin:1Dxu1fCs37dJQH3mGudQdCkWhhUXyhrpPC">1Dxu1fCs37dJQH3mGudQdCkWhhUXyhrpPC</a>
+				BTC: <a href="bitcoin:35kpgQDUaZWy4p6Q1VhQ6D25aZePf7JRQW">35kpgQDUaZWy4p6Q1VhQ6D25aZePf7JRQW</a>
 				<br>
-				BCH: <a href="bitcoincash:1MwxNNTcGsGe3jtttZs5y17xG5xg8x2WDk">1MwxNNTcGsGe3jtttZs5y17xG5xg8x2WDk</a>
+				ETH: <a href="ethereum:0x8247D70C092C9834790E580655Ab1FdEe26bdeee">0x8247D70C092C9834790E580655Ab1FdEe26bdeee</a>
 				<br>
-				ETH: <a href="ethereum:0x26873a33EACA07dc2C3173576353b7F9800a3B5e">0x26873a33EACA07dc2C3173576353b7F9800a3B5e</a>
-				<br>
-				LTC: <a href="litecoin:LbZXdmw5HGUQe6KuDD3B5Htd61M7FPP9Gx">LbZXdmw5HGUQe6KuDD3B5Htd61M7FPP9Gx</a>
+				LTC: <a href="litecoin:MSUXsUS1DwejDvovb1NDtDsdErPF2d7Txb">MSUXsUS1DwejDvovb1NDtDsdErPF2d7Txb</a>
 			</p>
-		</div>
-	</div>
-	<hr>
-	<div class="row" id="don-wrapper">
-		<div class="col-12">
-			<p>
-				Below is the current amount donated versus the total cost for this quarter:
-			</p>
-			<div class="don__bar">
-				<div class="don__bar_inner"></div>
-			</div>
-			<div class="split">
-				<span>€0.00</span>
-				<span id="don-total">Loading...</span>
-			</div>
-			<p>
-				<br>
-				<i>Please note that all values here are estimations, and, due to the nature of our donation &quot;system,&quot; are not updated automatically.</i>
-			</p>
+			<p class="flex-v-center"><span class="mr-2">Alternatively,</span><a href="https://www.patreon.com/bePatron?u=22018559"><img src="img/patreon.png" alt="Become a Patron" style="width: 217px;"></a></p>
 		</div>
 	</div>
 </main>
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
-<script type="text/javascript" src="js/genutils.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
-<script type="text/javascript" src="js/lifegen.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
 <script>
 	ExcludeUtil.pInitialise(); // don't await, as this is only used for search
-	DataUtil.loadJSON(`https://get.5etools.com/money.php`).then(dosh => {
-		const pct = Number(dosh.donated) / Number(dosh.Goal);
-		$(`#don-total`).text(`€${dosh.Goal}`);
-		if (isNaN(pct)) {
-			throw new Error(`Was not a number! Values were ${dosh.donated} and ${dosh.Goal}`);
-		} else {
-			const $bar = $(`.don__bar_inner`);
-			$bar.css("width", `${Math.min(Math.ceil(100 * pct), 100)}%`).html(pct !== 0 ? `€${dosh.donated}&nbsp;` : "");
-			if (pct >= 1) $bar.css("background-color", "lightgreen");
-		}
-	}).catch(noDosh => {
-		$(`#don-wrapper`).remove();
-		throw noDosh;
-	})
 </script>
-
 </body>
 </html>

@@ -3,6 +3,7 @@
 		{
 			"source": "PHB",
 			"name": "活化物體(巨型)", "ENG_name": "Animated Object (Huge)",
+			"page": 213,
 			"size": "H",
 			"type": "construct",
 			"alignment": [
@@ -29,9 +30,10 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
 					"name": "活化",
@@ -50,17 +52,21 @@
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
 			"source": "PHB",
 			"name": "活化物體(大型)", "ENG_name": "Animated Object (Large)",
+			"page": 213,
 			"size": "L",
 			"type": "construct",
 			"alignment": [
@@ -87,9 +93,10 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
 					"name": "活化",
@@ -108,17 +115,21 @@
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
 			"source": "PHB",
 			"name": "活化物體(中型)", "ENG_name": "Animated Object (Medium)",
+			"page": 213,
 			"size": "M",
 			"type": "construct",
 			"alignment": [
@@ -145,9 +156,10 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"盲視30呎（超過半徑範圍則視作目盲）"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
 					"name": "活化",
@@ -166,17 +178,21 @@
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
 			"source": "PHB",
 			"name": "活化物體(小型)", "ENG_name": "Animated Object (Small)",
+			"page": 213,
 			"size": "S",
 			"type": "construct",
 			"alignment": [
@@ -203,9 +219,10 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"盲視30呎（超過半徑範圍則視作目盲）"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
 					"name": "活化",
@@ -224,17 +241,21 @@
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		},
 		{
 			"source": "PHB",
 			"name": "活化物體(微型)", "ENG_name": "Animated Object (Tiny)",
+			"page": 213,
 			"size": "T",
 			"type": "construct",
 			"alignment": [
@@ -261,9 +282,10 @@
 			"int": 3,
 			"wis": 3,
 			"cha": 1,
+			"senses": [
+				"盲視30呎（超過半徑範圍則視作目盲）"
+			],
 			"passive": 6,
-			"cr": "Unknown",
-			"senses": "盲視30呎（超過半徑範圍則視作目盲）",
 			"trait": [
 				{
 					"name": "活化",
@@ -282,12 +304,15 @@
 					]
 				}
 			],
-			"page": 213,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]

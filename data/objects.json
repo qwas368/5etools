@@ -5,10 +5,13 @@
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
-			"type": "SW",
+			"objectType": "SW",
 			"ac": "15",
 			"hp": "50",
-			"immune": "poison, psychic",
+			"immune": [
+				"poison",
+				"psychic"
+			],
 			"entries": [
 				"弩砲是一副發射重型弩矢的巨型十字弩。其攻擊發射前必須先進行裝填和瞄準作業。使用該武器時，進行裝填、瞄準以及攻擊發射三項作業需要分別花費一個動作。"
 			],
@@ -29,21 +32,25 @@
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "火砲","ENG_name": "Cannon",
-			"size": "L",
-			"type": "SW",
 			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
 			"ac": "19",
 			"hp": "75",
-			"immune": "poison, psychic",
+			"immune": [
+				"poison",
+				"psychic"
+			],
 			"entries": [
 				"火砲使用火藥推動重型鐵球，使其以毀滅性的速度從空中劃過進行政擊。在沒有火藥設定的戰役中，火砲可以設定為由聰明的侏儒或是工程法師所設計的奧法驅動設備。",
 				"火砲通常安裝在帶輪的木質砲台上。其攻擊發射前必須先進行裝填和瞄準作業。使用該武器時，進行裝填、瞄準以及攻擊發射三項作業需要分別花費一個動作。"
 			],
-			"page": 255,
 			"actionEntries": [
 				{
 					"type": "actions",
@@ -61,48 +68,35 @@
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
-			"name": "吊掛大鍋","ENG_name": "Cauldron, Suspended",
+			"name": "Captain A-Hole",
+			"isNpc": true,
+			"source": "RMBRE",
+			"page": 21,
 			"size": "L",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "19",
-			"hp": "20",
-			"immune": "poison, psychic",
-			"entries": [
-				"大鍋的主體是一口吊掛起來的鋼鐵鍋，以方便使之側翻並倒出內裡所裝載物質。大鍋一日倒空，則必須重新裝填物質進鍋內，通常還需要對新加入物質進行加熱才可再次使用。裝填大鍋需要花費三個動作，傾倒大鍋需要花費一個動作。",
-				"大鍋可以裝填其他液體，比如強酸或者綠軟泥，並依不同物質具有不同效應。"
+			"objectType": "U",
+			"ac": "17",
+			"hp": "50",
+			"speed": 0,
+			"str": 14,
+			"dex": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
 			],
-			"page": 255,
-			"actionEntries": [
-				{
-					"type": "entries",
-					"name": "滾油",
-					"entries": [
-						"大鍋向其正下方10尺方形區域倒出滾油。在區域內的生物必須進行一次DC15的敏捷豁免，豁免失敗者將受到10({@dice 3d6})的火焰傷害，豁免成功則傷害減半。"
-					]
-				}
-			]
-		},
-		{
-			"name": "彈射投石機","ENG_name": "Mangonel",
-			"size": "L",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "100",
-			"immune": "poison, psychic",
-			"entries": [
-				"彈射投石機是一種以弧線拋射重型投石的彈道武器，其投出的石彈可以擊中身處掩護的目標。彈射投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
-				"彈射投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥並依不同種類而產生不同的效果。"
+			"immune": [
+				"poison",
+				"psychic"
 			],
-			"page": 255,
 			"actionEntries": [
 				{
 					"type": "actions",
-					"name": "彈射投石",
+					"name": "Cannon",
 					"entries": [
 						{
 							"type": "attack",
@@ -116,94 +110,49 @@
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
-			"name": "攻城槌","ENG_name": "Ram",
-			"size": "L",
-			"type": "SW",
+			"name": "吊掛大鍋","ENG_name": "Cauldron, Suspended",
 			"source": "DMG",
-			"ac": "15",
-			"hp": "100",
-			"immune": "poison, psychic",
-			"entries": [
-				"攻城槌的底座是一個可移動的框架，一根粗圓木作為其主體，用鐵鍊裝架在兩個帶蓋頂的橫樑上。圓木前端鑲裱著鐵皮外殼，用以擊穿大門與路障。",
-				"攻城槌需要至少四名中型體型的生物進行操作。由於兩邊的橫梁帶有蓋頂，操作者對來自前方的攻擊處於全身掩護。"
-			],
 			"page": 255,
-			"actionEntries": [
-				{
-					"type": "actions",
-					"name": "攻城槌",
-					"entries": [
-						{
-							"type": "attack",
-							"attackType": "MW",
-							"attackEntries": [
-								"命中 {@hit +8} , 觸及 5 呎., 單一目標。"
-							],
-							"hitEntries": [
-								"16 ({@dice 3d10}) 鈍擊傷害。"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "攻城塔","ENG_name": "Siege Tower",
-			"size": "G",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "200",
-			"immune": "poison, psychic",
-			"entries": [
-				"攻城塔是一個可移動的木質建築，其主體由框架結構組成牆身上設置著百葉窗孔。塔底設置了大型的木輪或滾軸，讓其可被士兵或負重牲畜進行推拉進而進行移動。中型或更小體型的生物可以使用攻城塔直接到達40尺高的城墻上。攻城塔內的生物對來自塔外的攻擊處於全身掩護。"
+			"size": "L",
+			"objectType": "SW",
+			"ac": "19",
+			"hp": "20",
+			"immune": [
+				"poison",
+				"psychic"
 			],
-			"page": 256
-		},
-		{
-			"name": "配重投石機","ENG_name": "Trebuchet",
-			"size": "H",
-			"type": "SW",
-			"source": "DMG",
-			"ac": "15",
-			"hp": "150",
-			"immune": "poison, psychic",
-			"page": 256,
 			"entries": [
-				"配重投石機是一種以弧線投擲重載石彈的彈道武器，其投出的石彈可以擊中身處掩護的目標。配重投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
-				"配重投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥，比如油桶或者污物，並依不同彈藥而產生不同的效果。"
+				"大鍋的主體是一口吊掛起來的鋼鐵鍋，以方便使之側翻並倒出內裡所裝載物質。大鍋一日倒空，則必須重新裝填物質進鍋內，通常還需要對新加入物質進行加熱才可再次使用。裝填大鍋需要花費三個動作，傾倒大鍋需要花費一個動作。",
+				"大鍋可以裝填其他液體，比如強酸或者{@hazard 綠軟泥}，並依不同物質具有不同效應。"
 			],
 			"actionEntries": [
 				{
-					"type": "actions",
-					"name": "配重投石",
+					"type": "entries",
+					"name": "滾油",
 					"entries": [
-						{
-							"type": "attack",
-							"attackType": "RW",
-							"attackEntries": [
-								"命中 {@hit +5} , 射程 300/1,200 呎. (無法命中 60 呎內目標), 單一目標。"
-							],
-							"hitEntries": [
-								"44 ({@dice 8d10}) 鈍擊傷害。"
-							]
-						}
+						"大鍋向其正下方10尺方形區域倒出滾油。在區域內的生物必須進行一次DC15的敏捷豁免，豁免失敗者將受到10({@dice 3d6})的火焰傷害，豁免成功則傷害減半。"
 					]
 				}
 			]
 		},
 		{
 			"name": "Generic Object","ENG_name": "Generic Object",
-			"size": "V",
-			"type": "GEN",
 			"source": "DMG",
 			"page": 246,
+			"srd": true,
+			"size": "V",
+			"objectType": "GEN",
 			"ac": "Varies (see below)",
 			"hp": "Varies (see below)",
-			"immune": "Varies (see below)",
+			"immune": [
+				{
+					"special": "Varies (see below)"
+				}
+			],
 			"entries": [
 				"When characters need to saw through ropes, shatter a window, or smash a vampire's coffin, the only hard and fast rule is this: given enough time and the right tools, characters can destroy any destructible object. Use common sense when determining a character's success at damaging an object. Can a fighter cut through a section of a stone wall with a sword? No, the sword is likely to break before the wall does.",
 				"For the purpose of these rules, an object is a discrete, inanimate item like a window, door, sword, book, table, chair, or stone, not a building or a vehicle that is composed of many other objects.",
@@ -326,26 +275,35 @@
 						}
 					]
 				}
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Gulthias Tree",
 			"source": "TftYP",
 			"page": 31,
 			"size": "G",
+			"objectType": "U",
 			"ac": "10",
 			"hp": "35",
-			"type": "U",
-			"immune": "necrotic, poison, psychic",
-			"resist": "piercing",
-			"vulnerable": "fire",
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"resist": [
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"entries": [
 				{
 					"type": "entries",
 					"name": "Fruit",
 					"entries": [
 						"Two magical fruits (evocation school) ripen on the tree each year. Each fruit resembles an apple, but it slowly extrudes from the tree like a cyst.",
-						"Up to a week before the summer solstice, a ruby red fruit grows. Someone other than a construct who eats a quarter or more of it regains 70 hit points. In addition, any {@condition blinded|phb|blindness}, {@condition deafened|phb|deafness}, and diseases affecting the eater end.",
+						"Up to a week before the summer solstice, a ruby red fruit grows. Someone other than a construct who eats a quarter or more of it regains 70 hit points. In addition, any {@condition blinded||blindness}, {@condition deafened||deafness}, and diseases affecting the eater end.",
 						"Up to a week before the winter solstice, a sickly white fruit grows. Someone who eats a quarter or more of it takes 70 necrotic damage. Each fruit has {@dice 1d4} seeds that, if planted, grow leafless woody shrubs that animate as twig blights after one year."
 					]
 				},
@@ -370,7 +328,175 @@
 						}
 					]
 				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "Ice Troll Heart",
+			"source": "IDRotF",
+			"page": 294,
+			"size": "T",
+			"objectType": "U",
+			"ac": "13",
+			"hp": "4",
+			"immune": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Heart Effects",
+					"entries": [
+						"An ice troll's heart remains cold even after the troll's destruction. As long as the troll can't regenerate, its heart can be safely removed from its remains, handled, and kept. An ice troll's heart, once removed, becomes a harmless Tiny object. For the next 24 hours, the heart has the following magical properties:",
+						{
+							"type": "list",
+							"items": [
+								"A creature that eats the heart gains the ability to regenerate for the next 24 hours, regaining 5 hit points at the start of each of its turns. If the creature takes acid or fire damage, this trait doesn't function at the start of its next turn. The creature dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+								"If buried in the ground under a foot or more of earth, the heart melts away and summons a blizzard like that created by the {@spell control weather} spell. It takes 10 minutes for the heart to melt and the blizzard to form. The blizzard lasts for 8 hours.",
+								"A hag or similar creature can perform a ritual that turns the heart into a magical talisman that acts like a patch of brown mold (see \"{@hazard Brown Mold}\" in the {@book Dungeon Master's Guide|DMG}). This effect lasts until the heart is destroyed.",
+								"A creature proficient with alchemist's supplies can squeeze enough residual fluid out of the heart to mix with other alchemical ingredients, creating one {@item Potion of Cold Resistance||potion of resistance (cold)}. It takes 1 hour to create this potion. "
+							]
+						}
+					]
+				}
 			]
+		},
+		{
+			"name": "彈射投石機","ENG_name": "Mangonel",
+			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "100",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"彈射投石機是一種以弧線拋射重型投石的彈道武器，其投出的石彈可以擊中身處掩護的目標。彈射投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
+				"彈射投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥並依不同種類而產生不同的效果。"
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "彈射投石", "ENG_name": "Mangonel Stone",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"命中 {@hit +5} , 射程 200/800 呎. (無法命中 60 呎內目標), 單一目標。"
+							],
+							"hitEntries": [
+								"27 ({@dice 5d10}) 鈍擊傷害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "攻城槌","ENG_name": "Ram",
+			"source": "DMG",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "100",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"攻城槌的底座是一個可移動的框架，一根粗圓木作為其主體，用鐵鍊裝架在兩個帶蓋頂的橫樑上。圓木前端鑲裱著鐵皮外殼，用以擊穿大門與路障。",
+				"攻城槌需要至少四名中型體型的生物進行操作。由於兩邊的橫梁帶有蓋頂，操作者對來自前方的攻擊處於全身掩護。"
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "攻城槌",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "MW",
+							"attackEntries": [
+								"命中 {@hit +8} , 觸及 5 呎., 單一目標。"
+							],
+							"hitEntries": [
+								"16 ({@dice 3d10}) 鈍擊傷害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"name": "攻城塔","ENG_name": "Siege Tower",
+			"source": "DMG",
+			"page": 256,
+			"size": "G",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "200",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"攻城塔是一個可移動的木質建築，其主體由框架結構組成牆身上設置著百葉窗孔。塔底設置了大型的木輪或滾軸，讓其可被士兵或負重牲畜進行推拉進而進行移動。中型或更小體型的生物可以使用攻城塔直接到達40尺高的城墻上。攻城塔內的生物對來自塔外的攻擊處於全身掩護。"
+			],
+			"hasToken": true
+		},
+		{
+			"name": "配重投石機","ENG_name": "Trebuchet",
+			"source": "DMG",
+			"page": 256,
+			"size": "H",
+			"objectType": "SW",
+			"ac": "15",
+			"hp": "150",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"配重投石機是一種以弧線投擲重載石彈的彈道武器，其投出的石彈可以擊中身處掩護的目標。配重投石機進行攻擊前必須先進行裝填和瞄準作業。裝填該武器需要花費兩個動作，瞄準需要花費兩個動作，而發射則需要花費一個動作。",
+				"配重投石機可以投擲標準的重型石彈，它也可以投擲其他彈藥，比如油桶或者污物，並依不同彈藥而產生不同的效果。"
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"ENG_name": "Trebuchet Stone",
+					"name": "配重投石",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"命中 {@hit +5} , 射程 300/1,200 呎. (無法命中 60 呎內目標), 單一目標。"
+							],
+							"hitEntries": [
+								"44 ({@dice 8d10}) 鈍擊傷害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true
 		}
 	]
 }

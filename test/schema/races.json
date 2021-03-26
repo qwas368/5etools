@@ -1,39 +1,378 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.1.1",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "races.json",
+	"version": "1.4.10",
 	"type": "object",
 
 	"definitions": {
-		"speed": {
-			"oneOf": [
-				{
-					"type": "object",
-					"properties": {
-						"walk": {
-							"type": "integer"
-						},
-						"climb": {
-							"type": "integer"
-						},
-						"fly": {
-							"type": "integer"
-						},
-						"swim": {
-							"type": "integer"
-						}
+		"resist": {
+			"type": "array",
+			"items": {
+				"oneOf": [
+					{
+						"$ref": "util.json#/definitions/dataDamageType"
 					},
-					"required": ["walk"],
-					"additionalProperties": false
+					{
+						"type": "object",
+						"properties": {
+							"choose": {
+								"type": "object",
+								"properties": {
+									"from": {
+										"$ref": "#/definitions/resist"
+									}
+								},
+								"additionalProperties": false,
+								"required": ["from"]
+							}
+						}
+					}
+				]
+			}
+		},
+		"immune": {
+			"type": "array",
+			"items": {
+				"oneOf": [
+					{
+						"$ref": "util.json#/definitions/dataDamageType"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"choose": {
+								"type": "object",
+								"properties": {
+									"from": {
+										"$ref": "#/definitions/immune"
+									}
+								},
+								"additionalProperties": false,
+								"required": ["from"]
+							}
+						}
+					}
+				]
+			}
+		},
+		"conditionImmune": {
+			"type": "array",
+			"items": {
+				"oneOf": [
+					{
+						"$ref": "util.json#/definitions/dataCondition"
+					},
+					{
+						"type": "object",
+						"properties": {
+							"choose": {
+								"type": "object",
+								"properties": {
+									"from": {
+										"$ref": "#/definitions/conditionImmune"
+									}
+								},
+								"additionalProperties": false,
+								"required": ["from"]
+							}
+						}
+					}
+				]
+			}
+		},
+
+		"subraceData": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
 				},
-				{
+				"alias": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"source": {
+					"type": "string"
+				},
+				"page": {
 					"type": "integer"
 				},
-				{
-					"type": {
-						"const": "Varies"
+				"otherSources": {
+					"$ref": "util.json#/definitions/otherSources"
+				},
+				"ability": {
+					"$ref": "#/definitions/abilityScores"
+				},
+				"speed": {
+					"$ref": "util.json#/definitions/speed"
+				},
+				"entries": {
+					"type": "array",
+					"items": {
+						"$ref": "entry.json"
 					}
-				}
-			]
+				},
+				"darkvision": {
+					"type": "integer"
+				},
+				"feats": {
+					"type": "integer"
+				},
+				"traitTags": {
+					"oneOf": [
+						{
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/traitTag"
+							}
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"languageProficiencies": {
+					"$ref": "util.json#/definitions/languageProficiencies"
+				},
+				"skillProficiencies": {
+					"type": "array",
+					"items": {
+						"$ref": "util.json#/definitions/skillProficiencies"
+					}
+				},
+				"overwrite": {
+					"description": "Map of 'property' -> true where 'property' is a property on the base race which should be overwritten by that of the subrace",
+					"type": "object"
+				},
+				"srd": {
+					"$ref": "util.json#/definitions/srd"
+				},
+				"heightAndWeight": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/heightAndWeight"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"additionalSpells": {
+					"oneOf": [
+						{
+							"type": "null"
+						},
+						{
+							"$ref": "util.json#/definitions/additionalSpellsArray"
+						}
+					]
+				},
+				"resist": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/resist"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"immune": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/immune"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"conditionImmune": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/conditionImmune"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"hasFluff": {"type": "boolean"},
+				"hasFluffImages": {"type": "boolean"}
+			},
+			"additionalProperties": false
+		},
+
+		"raceData": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"alias": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"source": {
+					"type": "string"
+				},
+				"page": {
+					"type": "integer"
+				},
+				"otherSources": {
+					"$ref": "util.json#/definitions/otherSources"
+				},
+				"additionalSources": {
+					"$ref": "util.json#/definitions/additionalSources"
+				},
+				"ability": {
+					"$ref": "#/definitions/abilityScores"
+				},
+				"speed": {
+					"$ref": "util.json#/definitions/speed"
+				},
+				"size": {
+					"type": "string",
+					"enum": ["M", "S", "V"]
+				},
+				"entries": {
+					"type": "array",
+					"items": {
+						"$ref": "entry.json"
+					}
+				},
+				"soundClip": {
+					"$ref": "entry.json#/definitions/mediaHref"
+				},
+				"subraces": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/subraceData"
+					}
+				},
+				"darkvision": {
+					"type": "integer"
+				},
+				"feats": {
+					"type": "integer"
+				},
+				"traitTags": {
+					"oneOf": [
+						{
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/traitTag"
+							}
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"languageProficiencies": {
+					"$ref": "util.json#/definitions/languageProficiencies"
+				},
+				"skillProficiencies": {
+					"type": "array",
+					"items": {
+						"$ref": "util.json#/definitions/skillProficiencies"
+					}
+				},
+				"fluff": {
+					"description": "Homebrew use only.",
+					"oneOf": [
+						{
+							"$ref": "util.json#/definitions/fluffObject"
+						},
+						{
+							"description": "References \"raceFluff\" array items",
+							"type": "object",
+							"properties": {
+								"_raceFluff": {
+									"type": "object",
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"source": {
+											"type": "string"
+										}
+									}
+								},
+								"_appendRaceFluff": {
+									"type": "object",
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"source": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					]
+				},
+				"srd": {
+					"$ref": "util.json#/definitions/srd"
+				},
+				"heightAndWeight": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/heightAndWeight"
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"additionalSpells": {
+					"$ref": "util.json#/definitions/additionalSpellsArray"
+				},
+				"resist": {
+					"$ref": "#/definitions/resist"
+				},
+				"immune": {
+					"$ref": "#/definitions/immune"
+				},
+				"conditionImmune": {
+					"$ref": "#/definitions/conditionImmune"
+				},
+				"lineage": {
+					"type": "boolean"
+				},
+				"creatureTypes": {
+					"type": "array",
+					"items": {
+						"oneOf": [
+							{
+								"type": "object",
+								"properties": {
+									"choose": {
+										"type": "array",
+										"items": {
+											"$ref": "util.json#/definitions/creatureType"
+										}
+									}
+								},
+								"required": ["choose"],
+								"additionalProperties": false
+							},
+							{
+								"$ref": "util.json#/definitions/creatureType"
+							}
+						]
+					}
+				},
+				"hasFluff": {"type": "boolean"},
+				"hasFluffImages": {"type": "boolean"}
+			},
+			"additionalProperties": false
 		},
 
 		"traitTag": {
@@ -41,9 +380,11 @@
 			"enum": [
 				"Amphibious",
 				"Armor Proficiency",
-				"Damage Resistance",
+				"Blindsight",
 				"Dragonmark",
+				"Feat",
 				"Improved Resting",
+				"Magic Resistance",
 				"Monstrous Race",
 				"Natural Armor",
 				"NPC Race",
@@ -52,60 +393,35 @@
 				"Spellcasting",
 				"Tool Proficiency",
 				"Unarmed Strike",
+				"Uncommon Race",
 				"Weapon Proficiency"
 			]
 		},
 
-		"languageTag": {
-			"type": "string",
-			"enum": [
-				"Abyssal",
-				"Aquan",
-				"Auran",
-				"Celestial",
-				"Choose",
-				"Common",
-				"Draconic",
-				"Dwarvish",
-				"Elvish",
-				"Giant",
-				"Gnomish",
-				"Goblin",
-				"Halfling",
-				"Infernal",
-				"Orc",
-				"Other",
-				"Primordial",
-				"Sylvan",
-				"Terran",
-				"Undercommon"
-			]
-		},
-
 		"abilityScores": {
-			"type": "object",
-			"properties": {
-				"str": {
-					"type": "integer"
-				},
-				"dex": {
-					"type": "integer"
-				},
-				"con": {
-					"type": "integer"
-				},
-				"int": {
-					"type": "integer"
-				},
-				"wis": {
-					"type": "integer"
-				},
-				"cha": {
-					"type": "integer"
-				},
-				"choose": {
-					"type": "array",
-					"items": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"str": {
+						"type": "integer"
+					},
+					"dex": {
+						"type": "integer"
+					},
+					"con": {
+						"type": "integer"
+					},
+					"int": {
+						"type": "integer"
+					},
+					"wis": {
+						"type": "integer"
+					},
+					"cha": {
+						"type": "integer"
+					},
+					"choose": {
 						"type": "object",
 						"properties": {
 							"from": {
@@ -120,32 +436,6 @@
 							},
 							"amount": {
 								"type": "integer"
-							},
-							"predefined": {
-								"type": "object",
-								"items": {
-									"type": "object",
-									"properties": {
-										"str": {
-											"type": "integer"
-										},
-										"dex": {
-											"type": "integer"
-										},
-										"con": {
-											"type": "integer"
-										},
-										"int": {
-											"type": "integer"
-										},
-										"wis": {
-											"type": "integer"
-										},
-										"cha": {
-											"type": "integer"
-										}
-									}
-								}
 							},
 							"weighted": {
 								"type": "object",
@@ -169,6 +459,52 @@
 					}
 				}
 			}
+		},
+
+		"heightAndWeight": {
+			"type": "object",
+			"properties": {
+				"baseHeight":  {"type": "integer"},
+				"heightMod": {"type": "string"},
+				"baseWeight":  {"type": "integer"},
+				"weightMod": {"type": "string"}
+			},
+			"required": [
+				"baseHeight",
+				"heightMod",
+				"baseWeight"
+			],
+			"additionalProperties": false
+		},
+
+		"race": {
+			"anyOf": [
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/raceData"
+						},
+						{
+							"required": [
+								"name",
+								"source"
+							]
+						}
+					]
+				},
+				{
+					"type": "object",
+					"$$merge": [
+						{
+							"$ref": "#/definitions/raceData"
+						},
+						{
+							"$ref": "util.json#/definitions/copyBlock"
+						}
+					]
+				}
+			]
 		}
 	},
 
@@ -176,141 +512,11 @@
 		"race": {
 			"type": "array",
 			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"type": "string"
-					},
-					"source": {
-						"type": "string"
-					},
-					"page": {
-						"type": "integer"
-					},
-					"otherSources": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"source": {
-									"type": "string"
-								},
-								"page": {
-									"type": "integer"
-								}
-							},
-							"required": [
-								"source",
-								"page"
-							],
-							"additionalProperties": false
-						}
-					},
-					"ability": {
-						"$ref": "#/definitions/abilityScores"
-					},
-					"speed": {
-						"$ref": "#/definitions/speed"
-					},
-					"size": {
-						"type": "string",
-						"enum": ["M", "S", "V"]
-					},
-					"entries": {
-						"type": "array",
-						"items": {
-							"$ref": "/Entry"
-						}
-					},
-					"soundClip": {
-						"type": "string"
-					},
-					"subraces": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"source": {
-									"type": "string"
-								},
-								"page": {
-									"type": "integer"
-								},
-								"otherSources": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"source": {
-												"type": "string"
-											},
-											"page": {
-												"type": "integer"
-											}
-										},
-										"required": [
-											"source",
-											"page"
-										],
-										"additionalProperties": false
-									}
-								},
-								"ability": {
-									"$ref": "#/definitions/abilityScores"
-								},
-								"speed": {
-									"$ref": "#/definitions/speed"
-								},
-								"entries": {
-									"type": "array",
-									"items": {
-										"$ref": "/Entry"
-									}
-								},
-								"darkvision": {
-									"type": "integer"
-								},
-								"traitTags": {
-									"type": "array",
-									"items": {
-										"$ref": "#/definitions/traitTag"
-									}
-								},
-								"languageTags": {
-									"type": "array",
-									"items": {
-										"$ref": "#/definitions/languageTag"
-									}
-								}
-							},
-							"additionalProperties": false
-						}
-					},
-					"darkvision": {
-						"type": "integer"
-					},
-					"traitTags": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/traitTag"
-						}
-					},
-					"languageTags": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/languageTag"
-						}
-					}
-				},
-				"required": [
-					"name",
-					"source"
-				],
-				"additionalProperties": false
+				"$ref": "#/definitions/race"
 			}
+		},
+		"_meta": {
+			"$ref": "util.json#/definitions/metaBlock"
 		}
 	},
 	"additionalProperties": false

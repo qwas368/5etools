@@ -1,54 +1,16 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.0.1",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "fluff-bestiary.json",
+	"version": "2.0.0",
 	"type": "object",
+
 	"properties": {
-		"monster": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"type": "string"
-					},
-					"source": {
-						"type": "string"
-					},
-					"type": {
-						"type": "string"
-					},
-					"images": {
-						"type": "array",
-						"items": {
-							"$ref": "/Entry#/definitions/entryImage"
-						}
-					},
-					"entries": {
-						"type": "array",
-						"items": {
-							"$ref": "/Entry"
-						}
-					},
-					"_copy": {
-						"name": {
-							"type": "string"
-						},
-						"source": {
-							"type": "string"
-						}
-					},
-					"_appendCopy": {
-						"name": {
-							"type": "string"
-						},
-						"source": {
-							"type": "string"
-						}
-					}
-				},
-				"required": ["name", "source"],
-				"additionalProperties": false
-			}
+		"monsterFluff": {
+			"$ref": "util.json#/definitions/genericFluffArray"
+		},
+		"_meta": {
+			"$ref": "util.json#/definitions/metaBlock"
 		}
-	}
+	},
+	"additionalProperties": false
 }

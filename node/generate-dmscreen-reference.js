@@ -6,13 +6,13 @@ const index = utB.UtilBookReference.getIndex(
 	{
 		name: "快速參照",
 		id: "bookref-quick",
-		tag: "quickref"
+		tag: "quickref",
 	},
 	{
 		name: "DM參照",
 		id: "bookref-dmscreen",
-		tag: "dmref"
-	}
+		tag: "dmref",
+	},
 );
 
 fs.writeFileSync(path.join("../data/generated", "bookref-dmscreen.json") , JSON.stringify(index).replace(/\s+\u2014\s+?/g, "\\u2014"), "utf8");
@@ -21,13 +21,13 @@ function flattenReferenceIndex (ref, skipHeaders) {
 	const outMeta = {
 		name: {},
 		id: {},
-		section: {}
+		section: {},
 	};
 
 	const meta = {
 		name: {},
 		id: {},
-		section: {}
+		section: {},
 	};
 
 	const out = [];
@@ -62,7 +62,7 @@ function flattenReferenceIndex (ref, skipHeaders) {
 					b: meta.id[book.id], // book
 					s: meta.section[c.name], // section name
 					p: i, // section index
-					h // header name
+					h, // header name
 				})
 			});
 		});
@@ -70,7 +70,7 @@ function flattenReferenceIndex (ref, skipHeaders) {
 
 	return {
 		_meta: outMeta,
-		data: out
+		data: out,
 	};
 }
 

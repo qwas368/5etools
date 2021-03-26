@@ -1,6 +1,7 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.0.0",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "psionics.json",
+	"version": "1.1.0",
 	"type": "object",
 	"properties": {
 		"psionic": {
@@ -19,9 +20,6 @@
 						"type": "integer"
 					},
 					"type": {
-						"type": "string"
-					},
-					"description": {
 						"type": "string"
 					},
 					"focus": {
@@ -74,7 +72,7 @@
 								"entries": {
 									"type": "array",
 									"items": {
-										"$ref": "/Entry"
+										"$ref": "entry.json"
 									}
 								},
 								"submodes": {
@@ -106,7 +104,7 @@
 												"type": "array",
 												"uniqueItems": true,
 												"items": {
-													"$ref": "/Entry"
+													"$ref": "entry.json"
 												}
 											}
 										},
@@ -130,7 +128,7 @@
 						"type": "array",
 						"uniqueItems": true,
 						"items": {
-							"$ref": "/Entry"
+							"$ref": "entry.json"
 						}
 					}
 				},

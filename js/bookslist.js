@@ -1,98 +1,156 @@
 "use strict";
 
 class BooksList {
+	static getDateStr (it) {
+		if (!it.published) return "\u2014";
+		const date = new Date(it.published);
+		return MiscUtil.dateToStr(date);
+	}
+
 	constructor (options) {
-		this.contentsUrl = options.contentsUrl;
-		this.sortFn = options.sortFn;
-		this.dataProp = options.dataProp;
-		this.enhanceRowDataFn = options.enhanceRowDataFn;
-		this.rootPage = options.rootPage;
-		this.rowBuilderFn = options.rowBuilderFn;
+		this._contentsUrl = options.contentsUrl;
+		this._fnSort = options.fnSort;
+		this._sortByInitial = options.sortByInitial;
+		this._sortDirInitial = options.sortDirInitial;
+		this._dataProp = options.dataProp;
+		this._enhanceRowDataFn = options.enhanceRowDataFn;
+		this._rootPage = options.rootPage;
+		this._rowBuilderFn = options.rowBuilderFn;
 
-		this.list = null;
-		this.dataIx = 0;
-		this.dataList = [];
+		this._list = null;
+		this._listAlt = null;
+		this._dataIx = 0;
+		this._dataList = [];
 	}
 
-	onPageLoad () {
+	async pOnPageLoad () {
 		ExcludeUtil.pInitialise(); // don't await, as this is only used for search
-		SortUtil.initHandleFilterButtonClicks();
-		DataUtil.loadJSON(this.contentsUrl).then(this.onJsonLoad.bind(this));
-	}
+		const data = await DataUtil.loadJSON(this._contentsUrl);
 
-	onJsonLoad (data) {
-		const sortFunction = (a, b, o) => self.sortFn(self.dataList, a, b, o);
-		this.list = new List("listcontainer", {
-			valueNames: ["name"],
-			listClass: "books",
-			sortFunction
+		const $iptSearch = $(`#search`);
+
+		const fnSort = (a, b, o) => this._fnSort(this._dataList, a, b, o);
+		this._list = new List({
+			$wrpList: $(".books"),
+			$iptSearch,
+			fnSort,
+			sortByInitial: this._sortByInitial,
+			sortDirInitial: this._sortDirInitial,
+			isUseJquery: true,
+		});
+		SortUtil.initBtnSortHandlers($(`#filtertools`), this._list);
+
+		this._listAlt = new List({
+			$wrpList: $(".books--alt"),
+			$iptSearch,
+			fnSort,
+			sortByInitial: this._sortByInitial,
+			sortDirInitial: this._sortDirInitial,
 		});
 
-		const self = this;
-		$("#filtertools").find("button.sort").click(function () {
-			const $this = $(this);
-			$('#filtertools').find('.caret').removeClass('caret--reverse caret');
+		$("#reset").click(() => {
+			this._list.reset();
+			this._listAlt.reset();
 
-			if ($this.attr("sortby") === "asc") {
-				$this.find("span").addClass("caret caret--reverse");
-				$this.attr("sortby", "desc");
-			} else {
-				$this.attr("sortby", "asc");
-				$this.find("span").addClass("caret")
-			}
-			self.list.sort($this.data("sort"), {order: $this.attr("sortby"), sortFunction});
-		});
-
-		this.list.sort("name");
-		$("#reset").click(function () {
-			$("#search").val("");
-			self.list.search();
-			self.list.sort("name");
-			self.list.filter();
-			$(`.showhide`).each((i, ele) => {
-				const $ele = $(ele);
-				if (!$ele.data("hidden")) {
-					BookUtil.indexListToggle(null, ele);
-				}
+			this._list.items.forEach(li => {
+				if (li.data.$btnToggleExpand.text() === "[\u2012]") li.data.$btnToggleExpand.click();
 			});
 		});
 
 		this.addData(data);
-		BrewUtil.pAddBrewData()
-			.then(handleBrew)
-			.then(() => BrewUtil.pAddLocalBrewData())
-			.catch(BrewUtil.pPurgeBrew)
-			.then(() => BrewUtil.makeBrewButton("manage-brew"));
+		const brewData = await BrewUtil.pAddBrewData();
+		await handleBrew(brewData);
+		BrewUtil.bind({lists: [this._list, this._listAlt]});
+		await BrewUtil.pAddLocalBrewData();
+		BrewUtil.makeBrewButton("manage-brew");
+		this._list.init();
+		this._listAlt.init();
+
+		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
 	addData (data) {
-		if (!data[this.dataProp] || !data[this.dataProp].length) return;
+		if (!data[this._dataProp] || !data[this._dataProp].length) return;
 
-		this.dataList = this.dataList.concat(data[this.dataProp]);
+		this._dataList.push(...data[this._dataProp]);
 
-		const $list = $("ul.books");
-		let tempString = "";
-		for (; this.dataIx < this.dataList.length; this.dataIx++) {
-			const it = this.dataList[this.dataIx];
-			if (this.enhanceRowDataFn) this.enhanceRowDataFn(it);
+		for (; this._dataIx < this._dataList.length; this._dataIx++) {
+			const it = this._dataList[this._dataIx];
+			if (this._enhanceRowDataFn) this._enhanceRowDataFn(it);
 
-			tempString +=
-				`<li ${FLTR_ID}="${this.dataIx}">
-				<a href="${this.rootPage}#${UrlUtil.encodeForHash(it.id)}" title="${it.name}" class="book-name">
-					<span class="full-width">
-						${this.rowBuilderFn(it)}
-					</span>
-					<span class="showhide" onclick="BookUtil.indexListToggle(event, this)" data-hidden="true">[+]</span>
-					<span class="source" style="display: none">${it.id}</span>
+			const $elesContents = [];
+			it.contents.map((chapter, ixChapter) => {
+				const $lnkChapter = $$`<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)},${ixChapter}" class="flex w-100 bklist__row-chapter lst--border lst__row-inner lst__row lst__wrp-cells bold">
+					${Parser.bookOrdinalToAbv(chapter.ordinal)}${chapter.name}
+				</a>`;
+				$elesContents.push($lnkChapter);
+
+				if (!chapter.headers) return;
+
+				const headerCounts = {};
+
+				chapter.headers.forEach(header => {
+					const headerText = BookUtil.getHeaderText(header);
+
+					const headerTextClean = headerText.toLowerCase().trim();
+					const headerPos = headerCounts[headerTextClean] || 0;
+					headerCounts[headerTextClean] = (headerCounts[headerTextClean] || 0) + 1;
+
+					const $lnk = $$`<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)},${ixChapter},${UrlUtil.encodeForHash(headerText)}${headerPos > 0 ? `,${headerPos}` : ""}" class="lst__row lst--border lst__row-inner lst__wrp-cells bklist__row-section flex w-100">
+						${BookUtil.getContentsSectionHeader(header)}
+					</a>`;
+					$elesContents.push($lnk);
+				});
+			});
+
+			const $wrpContents = $$`<div class="flex w-100 relative">
+				<div class="vr-0 absolute bklist__vr-contents"></div>
+				<div class="flex-col w-100 bklist__wrp-rows-inner">${$elesContents}</div>
+			</div>`.hideVe();
+
+			const $btnToggleExpand = $(`<span class="px-2 py-1px bold">[+]</span>`)
+				.click(evt => {
+					evt.stopPropagation();
+					evt.preventDefault();
+					$btnToggleExpand.text($btnToggleExpand.text() === "[+]" ? "[\u2012]" : "[+]");
+					$wrpContents.toggleVe();
+				});
+
+			const $eleLi = $$`<div class="flex-col w-100">
+				<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)}" class="split-v-center lst--border lst__row-inner lst__row">
+					<span class="w-100">${this._rowBuilderFn(it)}</span>
+					${$btnToggleExpand}
 				</a>
-				${BookUtil.makeContentsBlock({book: it, addPrefix: this.rootPage, defaultHidden: true})}
-			</li>`;
-		}
-		const lastSearch = ListUtil.getSearchTermAndReset(this.list);
-		$list.append(tempString);
+				${$wrpContents}
+			</div>`;
 
-		this.list.reIndex();
-		if (lastSearch) this.list.search(lastSearch);
-		this.list.sort("name");
+			const listItem = new ListItem(
+				this._dataIx,
+				$eleLi,
+				it.name,
+				{source: it.id},
+				{uniqueId: it.uniqueId, $btnToggleExpand},
+			);
+
+			this._list.addItem(listItem);
+
+			// region Alt list (covers/thumbnails)
+			const eleLiAlt = $(`<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)}" class="flex-col flex-v-center m-3 bks__wrp-bookshelf-item py-3 px-2 ${Parser.sourceJsonToColor(it.source)}" ${BrewUtil.sourceJsonToStyle(it.source)}>
+				<img src="${it.coverUrl || `${Renderer.get().baseMediaUrls["img"] || Renderer.get().baseUrl}img/covers/blank.png`}" class="mb-2 bks__bookshelf-image">
+				<div class="bks__bookshelf-item-name flex-vh-center text-center">${it.name}</div>
+			</a>`)[0];
+			const listItemAlt = new ListItem(
+				this._dataIx,
+				eleLiAlt,
+				it.name,
+				{source: it.id},
+				{uniqueId: it.uniqueId},
+			);
+			this._listAlt.addItem(listItemAlt);
+			// endregion
+		}
+
+		this._list.update();
+		this._listAlt.update();
 	}
 }

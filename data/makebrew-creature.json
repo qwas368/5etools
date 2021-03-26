@@ -1,6 +1,6 @@
 {
-	"#trait": "Shoutouts to CritterDB: https://github.com/haswellr/CritterDB/blob/master/server/public/data/creatureAbilities.json",
-	"trait": [
+	"#makebrewCreatureTrait": "Shoutouts to CritterDB: https://github.com/haswellr/CritterDB/blob/master/server/public/data/creatureAbilities.json",
+	"makebrewCreatureTrait": [
 		{
 			"name": "Aberrant Ground",
 			"entries": [
@@ -584,7 +584,7 @@
 		{
 			"name": "Ice Walk",
 			"entries": [
-				"The <$name$> can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+				"The <$name$> can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
 			]
 		},
 		{
@@ -674,7 +674,7 @@
 		{
 			"name": "Keen Sight",
 			"entries": [
-				"The <$name$> has advantage on Wisdom (perception) checks that rely on sight."
+				"The <$name$> has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
 			]
 		},
 		{
@@ -686,7 +686,7 @@
 		{
 			"name": "Keen Smell",
 			"entries": [
-				"The <$name$> has advantage on Wisdom (perception) checks that rely on smell."
+				"The <$name$> has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
 			]
 		},
 		{
@@ -812,7 +812,7 @@
 		{
 			"name": "Pack Tactics",
 			"entries": [
-				"The <$name$> has advantage on an attack roll against a creature if at least one of the <$name$>'s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated} ."
+				"The <$name$> has advantage on an attack roll against a creature if at least one of the <$name$>'s allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 			]
 		},
 		{
@@ -892,7 +892,7 @@
 		{
 			"name": "Reflective Carapace (Tarrasque)",
 			"entries": [
-				"Any time the <$name$> is targeted by a {@i magic missile}spell, a line spell, or a spell that requires a ranged attack roll, roll a {@dice d6}. On a 1 to 5, the <$name$> is unaffected. On a 6, the <$name$> is unaffected, and the effect is reflected back at the caster as though it originated from the <$name$>, turning the caster into the target."
+				"Any time the <$name$> is targeted by a {@spell magic missile} spell, a line spell, or a spell that requires a ranged attack roll, roll a {@dice d6}. On a 1 to 5, the <$name$> is unaffected. On a 6, the <$name$> is unaffected, and the effect is reflected back at the caster as though it originated from the <$name$>, turning the caster into the target."
 			]
 		},
 		{
@@ -928,7 +928,7 @@
 		{
 			"name": "Rejuvenation (Guardian Naga)",
 			"entries": [
-				"If it dies, the <$name$> returns to life in {@dice 1d6} days and regains all its hit points. Only a {@i wish}spell can prevent this trait from functioning."
+				"If it dies, the <$name$> returns to life in {@dice 1d6} days and regains all its hit points. Only a {@spell wish} spell can prevent this trait from functioning."
 			]
 		},
 		{
@@ -946,7 +946,7 @@
 		{
 			"name": "Rejuvenation (Spirit Naga)",
 			"entries": [
-				"If it dies, the <$name$> returns to life in {@dice 1d6} days and regains all its hit points. Only a {@i wish}spell can prevent this trait from functioning."
+				"If it dies, the <$name$> returns to life in {@dice 1d6} days and regains all its hit points. Only a {@spell wish} spell can prevent this trait from functioning."
 			]
 		},
 		{
@@ -1235,6 +1235,12 @@
 			"name": "Swarm (Swarm of Ravens)",
 			"entries": [
 				"The <$name$> can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points."
+			]
+		},
+		{
+			"name": "Tactical Discipline",
+			"entries": [
+				"The <$name$> has advantage on all ability checks and saving throws made during combat."
 			]
 		},
 		{

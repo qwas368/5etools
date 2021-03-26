@@ -2,22 +2,57 @@
 <html lang="tw">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>CR計算機 - 5etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.115">
+	<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<!-- Chrome Web App Icons -->
+	<link rel="manifest" href="manifest.webmanifest">
+	<meta name="application-name" content="5etools">
+	<meta name="theme-color" content="#006bc4">
+
+	<!-- Windows Start Menu tiles -->
+	<meta name="msapplication-config" content="browserconfig.xml"/>
+	<meta name="msapplication-TileColor" content="#006bc4">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<meta name="apple-mobile-web-app-title" content="5etools">
+
+	<!-- macOS Safari Pinned Tab and Touch Bar -->
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		.crc__reset {
@@ -83,6 +118,8 @@
 </head>
 
 <body>
+<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container">
 
@@ -91,12 +128,10 @@
 	</div>
 </header>
 <nav class="container page__nav" id="navigation">
-	<ul class="nav nav-pills" id="navbar">
-	</ul>
+	<ul class="nav page__nav-inner" id="navbar"></ul>
 </nav>
 
-<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-<div class="cancer__wrp-sidebar-rhs"><!--5ETOOLS_AD_RIGHT_1--><!--5ETOOLS_AD_RIGHT_2--></div>
+<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
 
 <main class="container">
 
@@ -119,9 +154,9 @@
 				</p>
 				<hr>
 				<div class="crc__row">
-					<label for="expectedcr" class="help--subtle" style="font-size: 1em;">
+					<label for="expectedcr" class="ui-tip__parent" style="font-size: 1em;">
 						預期CR：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							要進行CR計算，首先你必須決定這個怪物最終的CR是多少。
 						</span>
 					</label>
@@ -130,7 +165,8 @@
 					</span>
 				</div>
 			</div>
-			<div class="col-sm-6 text-align-center">
+
+			<div class="col-sm-6 text-center">
 				<h4>各挑戰等級的怪物數據</h4>
 				<table id="msbcr">
 					<tr>
@@ -152,9 +188,9 @@
 				<h4>防禦屬性</h4>
 
 				<div class="crc__row">
-					<label for="hp" class="help--subtle">
+					<label for="hp" class="ui-tip__parent">
 						生命值：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							生物的生命值會決定其根據AC調整前的防禦性CR。
 						</span>
 					</label>
@@ -162,9 +198,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="ac" class="help--subtle">
+					<label for="ac" class="ui-tip__parent">
 						護甲等級：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							生物的AC會調整其防禦性CR。
 						</span>
 					</label>
@@ -176,9 +212,9 @@
 				<h4>攻擊屬性</h4>
 
 				<div class="crc__row">
-					<label for="dpr" class="help--subtle">
+					<label for="dpr" class="ui-tip__parent">
 						每輪平均傷害：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							生物的每輪平均傷害(DPR)決定了它的攻擊性CR，且其攻擊性CR會再根據其攻擊加值或豁免DC進行調整。DPR是以它在三輪內最大傷害輸出的平均值決定（擲骰取平均值，忽視暴擊和命中準確）。區域效應將被視為它命中了兩個生物，且目標被視作在任何豁免檢定中失敗。
 						</span>
 					</label>
@@ -186,9 +222,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="attackbonus" class="help--subtle">
+					<label for="attackbonus" class="ui-tip__parent">
 						攻擊加值/豁免DC：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							生物的攻擊加值或豁免DC會調整其攻擊性CR。
 						</span>
 					</label>
@@ -196,9 +232,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="saveinstead" class="help--subtle">
+					<label for="saveinstead" class="ui-tip__parent">
 						使用豁免？
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							若一個生物的傷害輸出比起攻擊更依賴涉及豁免的能力，則它的豁免DC將被用於調整它的攻擊性CR，而非使用它的攻擊加值。
 						</span>
 					</label>
@@ -211,9 +247,9 @@
 			<div class="col-sm-6">
 
 				<div class="crc__row">
-					<label for="size" class="help--subtle">
+					<label for="size" class="ui-tip__parent">
 						體型：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							生物的體型將決定它每顆生命骰的大小。
 						</span>
 					</label>
@@ -230,9 +266,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="hd" class="help--subtle">
+					<label for="hd" class="ui-tip__parent">
 						生命骰：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							與玩家角色不同，NPC所得到的生命骰數量完全是任意決定的。隨你喜好調整這個數量。
 						</span>
 					</label>
@@ -243,9 +279,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="con" class="help--subtle">
+					<label for="con" class="ui-tip__parent">
 						體質值：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							生物的HP會因為它每一顆擁有的生命骰得到其體質調整值的加值。
 						</span>
 					</label>
@@ -257,9 +293,9 @@
 			<div class="col-sm-6">
 
 				<div class="crc__row">
-					<label for="vulnerabilities" class="help--subtle">
+					<label for="vulnerabilities" class="ui-tip__parent">
 						易傷：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							若生物具有某個常見傷害類型的易傷（特別是鈍擊、穿刺、劈砍傷害），則它的有效生命值將被視為原本的一半。
 						</span>
 					</label>
@@ -267,9 +303,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="resistances" class="help--subtle">
+					<label for="resistances" class="ui-tip__parent">
 						抗性/免疫：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							怪物的HP會根據它對於常見傷害類型（其中最主要為非魔法的鈍擊、穿刺、和劈砍傷害）而乘上倍率。
 						</span>
 					</label>
@@ -283,9 +319,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="flying" class="help--subtle">
+					<label for="flying" class="ui-tip__parent">
 						飛行且可以在遠距離造成傷害(限定CR 0~9)：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							若怪物可以飛行且能在遠距離造成傷害，則它的有效AC將增加2點。但這個加成只會發生在其預期挑戰等級為10或更低。
 						</span>
 					</label>
@@ -293,9 +329,9 @@
 				</div>
 
 				<div class="crc__row">
-					<label for="saveprofs" class="help--subtle">
+					<label for="saveprofs" class="ui-tip__parent">
 						豁免熟練：
-						<span class="explanation">
+						<span class="explanation ui-tip__child">
 							若生物具有3或4個豁免熟練項，則它的有效AC增加2點。若有5或6個豁免熟練項，則有效AC增加4點。
 						</span>
 					</label>
@@ -330,16 +366,19 @@
 	</div>
 </main>
 <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
-<script type="text/javascript" src="js/history.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/crcalculator.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>

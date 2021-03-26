@@ -1,899 +1,508 @@
 "use strict";
 
 const JSON_DIR = "data/spells/";
-const JSON_LIST_NAME = "spell";
 
-// toss these into the "Tags" section to save screen space
-const META_ADD_CONC = "Concentration";
-const META_ADD_V = "Verbal";
-const META_ADD_S = "Somatic";
-const META_ADD_M = "Material";
-const META_ADD_M_COST = "Material with Cost";
-const META_ADD_M_CONSUMED = "Material is Consumed";
-const META_ADD_MB_PERMANENT = "Permanent Effects";
-const META_ADD_MB_SCALING = "Scaling Effects";
-const META_ADD_MB_SUMMONS = "Summons Creature";
-const META_ADD_MB_HEAL = "Healing";
-const META_RITUAL = "Ritual";
-const META_TECHNOMAGIC = "Technomagic";
-const META_ADD_TO_FULL = {};
-META_ADD_TO_FULL[META_ADD_CONC] = "專注";
-META_ADD_TO_FULL[META_ADD_V] 	= "聲音";
-META_ADD_TO_FULL[META_ADD_S] 	= "姿勢";
-META_ADD_TO_FULL[META_ADD_M] 	= "材料";
-META_ADD_TO_FULL[META_ADD_M_COST] = "價值材料";
-META_ADD_TO_FULL[META_ADD_M_CONSUMED] = "消耗材料";
-META_ADD_TO_FULL[META_ADD_MB_PERMANENT] = "永久效果";
-META_ADD_TO_FULL[META_ADD_MB_SCALING] = "升級效果";
-META_ADD_TO_FULL[META_ADD_MB_SUMMONS] = "召喚生物";
-META_ADD_TO_FULL[META_ADD_MB_HEAL] = "治療";
-META_ADD_TO_FULL[META_RITUAL] = "儀式";
-META_ADD_TO_FULL[META_TECHNOMAGIC] = "科技魔法";
-
-const STR_WIZARD = "Wizard";
-const STR_FIGHTER = "Fighter";
-const STR_ROGUE = "Rogue";
-const STR_CLERIC = "Cleric";
-const STR_SORCERER = "Sorcerer";
-const STR_ELD_KNIGHT = "Eldritch Knight";
-const STR_ARC_TCKER = "Arcane Trickster";
-const STR_DIV_SOUL = "Divine Soul";
-const STR_FAV_SOUL_V2 = "Favored Soul v2 (UA)";
-const STR_FAV_SOUL_V3 = "Favored Soul v3 (UA)";
-
-const TM_ACTION = "action";
-const TM_B_ACTION = "bonus";
-const TM_REACTION = "reaction";
-const TM_ROUND = "round";
-const TM_MINS = "minute";
-const TM_HRS = "hour";
-const TO_HIDE_SINGLETON_TIMES = [TM_ACTION, TM_B_ACTION, TM_REACTION, TM_ROUND];
-const TIME_UNITS_TO_FULL = {};
-TIME_UNITS_TO_FULL[TM_ACTION] = "動作";
-TIME_UNITS_TO_FULL[TM_B_ACTION] = "附贈動作";
-TIME_UNITS_TO_FULL[TM_REACTION] = "反應";
-TIME_UNITS_TO_FULL[TM_ROUND] = "輪";
-TIME_UNITS_TO_FULL[TM_MINS] = "分鐘";
-TIME_UNITS_TO_FULL[TM_HRS] = "小時";
-
-const F_RNG_POINT = "Point";
-const F_RNG_SELF_AREA = "Self (Area)";
-const F_RNG_SELF = "Self";
-const F_RNG_TOUCH = "Touch";
-const F_RNG_SPECIAL = "Special";
-const F_RNG_TO_FULL = {};
-F_RNG_TO_FULL[F_RNG_POINT] 		= "點";
-F_RNG_TO_FULL[F_RNG_SELF_AREA] 	= "自身(區域)";
-F_RNG_TO_FULL[F_RNG_SELF] 		= "自身";
-F_RNG_TO_FULL[F_RNG_TOUCH] 		= "觸碰";
-F_RNG_TO_FULL[F_RNG_SPECIAL] 	= "特殊";
-
-let tableDefault;
-
-function getFltrSpellLevelStr (level) {
-	return level === 0 ? Parser.spLevelToFull(level) : (level) + "環";
-}
-
-function getNormalisedTime (time) {
-	const firstTime = time[0];
-	let multiplier = 1;
-	let offset = 0;
-	switch (firstTime.unit) {
-		case TM_B_ACTION:
-			offset = 1;
-			break;
-		case TM_REACTION:
-			offset = 2;
-			break;
-		case TM_ROUND:
-			multiplier = 6;
-			break;
-		case TM_MINS:
-			multiplier = 60;
-			break;
-		case TM_HRS:
-			multiplier = 3600;
-			break;
-	}
-	if (time.length > 1) offset += 0.5;
-	return (multiplier * firstTime.number) + offset;
-}
-
-const INCHES_PER_FOOT = 12;
-const FEET_PER_MILE = 5280;
-
-function getNormalisedRange (range) {
-	let multiplier = 1;
-	let distance = 0;
-	let offset = 0;
-
-	switch (range.type) {
-		case RNG_SPECIAL:
-			return 1000000000;
-		case RNG_POINT:
-			adjustForDistance();
-			break;
-		case RNG_LINE:
-			offset = 1;
-			adjustForDistance();
-			break;
-		case RNG_CONE:
-			offset = 2;
-			adjustForDistance();
-			break;
-		case RNG_RADIUS:
-			offset = 3;
-			adjustForDistance();
-			break;
-		case RNG_HEMISPHERE:
-			offset = 4;
-			adjustForDistance();
-			break;
-		case RNG_SPHERE:
-			offset = 5;
-			adjustForDistance();
-			break;
-		case RNG_CYLINDER:
-			offset = 6;
-			adjustForDistance();
-			break;
-		case RNG_CUBE:
-			offset = 7;
-			adjustForDistance();
-			break;
-	}
-
-	// value in inches, to allow greater granularity
-	return (multiplier * distance) + offset;
-
-	function adjustForDistance () {
-		const dist = range.distance;
-		switch (dist.type) {
-			case UNT_FEET:
-				multiplier = INCHES_PER_FOOT;
-				distance = dist.amount;
-				break;
-			case UNT_MILES:
-				multiplier = INCHES_PER_FOOT * FEET_PER_MILE;
-				distance = dist.amount;
-				break;
-			case RNG_SELF:
-				distance = 0;
-				break;
-			case RNG_TOUCH:
-				distance = 1;
-				break;
-			case RNG_SIGHT:
-				multiplier = INCHES_PER_FOOT * FEET_PER_MILE;
-				distance = 12; // assume sight range of person ~100 ft. above the ground
-				break;
-			case RNG_UNLIMITED_SAME_PLANE: // from BolS, if/when it gets restored
-				distance = 900000000;
-				break;
-			case RNG_UNLIMITED:
-				distance = 900000001;
-				break;
-			default: {
-				// it's homebrew?
-				const fromBrew = MiscUtil.getProperty(BrewUtil.homebrewMeta, "spellDistanceUnits", dist.type);
-				if (fromBrew) {
-					const ftPerUnit = fromBrew.feetPerUnit;
-					if (ftPerUnit != null) {
-						multiplier = INCHES_PER_FOOT * ftPerUnit;
-						distance = dist.amount;
-					} else {
-						distance = 910000000; // default to max distance, to have them displayed at the bottom
-					}
-				}
-				break;
-			}
-		}
-	}
-}
-
-function getRangeType (range) {
-	switch (range.type) {
-		case RNG_SPECIAL:
-			return F_RNG_SPECIAL;
-		case RNG_POINT:
-			switch (range.distance.type) {
-				case RNG_SELF:
-					return F_RNG_SELF;
-				case RNG_TOUCH:
-					return F_RNG_TOUCH;
-				default:
-					return F_RNG_POINT;
-			}
-		case RNG_LINE:
-		case RNG_CONE:
-		case RNG_RADIUS:
-		case RNG_HEMISPHERE:
-		case RNG_SPHERE:
-		case RNG_CYLINDER:
-		case RNG_CUBE:
-			return F_RNG_SELF_AREA
-	}
-}
-
-function getTblTimeStr (time) {
-	return (time.number === 1 && TO_HIDE_SINGLETON_TIMES.includes(time.unit))
-		? `${TIME_UNITS_TO_FULL[time.unit]}`
-		: `${time.number}${time.unit === TM_B_ACTION ? "附贈動作" : TIME_UNITS_TO_FULL[time.unit]}`;
-}
-
-function getTimeDisplay (timeUnit) {
-	return TIME_UNITS_TO_FULL[timeUnit];
-}
-
-function getClassFilterStr (c) {
-	const nm = c.name.split("(")[0].trim();
-	return `${nm}${c.source !== SRC_PHB ? ` (${Parser.sourceJsonToAbv(c.source)})` : ""}`;
-}
-
-function getMetaFilterObj (s) {
-	const out = [];
-	if (s.meta && s.meta.ritual) out.push(META_RITUAL);
-	if (s.meta && s.meta.technomagic) out.push(META_TECHNOMAGIC);
-	if (s.duration.filter(d => d.concentration).length) {
-		out.push(META_ADD_CONC);
-		s._isConc = true;
-	} else s._isConc = false;
-	if (s.components && s.components.v) out.push(META_ADD_V);
-	if (s.components && s.components.s) out.push(META_ADD_S);
-	if (s.components && s.components.m) out.push(META_ADD_M);
-	if (s.components && s.components.m && s.components.m.cost) out.push(META_ADD_M_COST);
-	if (s.components && s.components.m && s.components.m.consume) out.push(META_ADD_M_CONSUMED);
-	if (s.permanentEffects || s.duration.filter(it => it.type === "permanent").length) out.push(META_ADD_MB_PERMANENT);
-	if (s.scalingEffects || s.entriesHigherLevel) out.push(META_ADD_MB_SCALING);
-	if (s.isHeal) out.push(META_ADD_MB_HEAL);
-	if (s.isSummon) out.push(META_ADD_MB_SUMMONS);
-	return out;
-}
-
-function getFilterAbilitySave (ability) {
-	return `${Parser.translateKeyToDisplay(ability.uppercaseFirst().substring(0, 3))}豁免`;
-}
-
-function getFilterAbilityCheck (ability) {
-	return `${Parser.translateKeyToDisplay(ability.uppercaseFirst().substring(0, 3))}檢定`;
-}
+const SUBCLASS_LOOKUP = {};
 
 function handleBrew (homebrew) {
+	RenderSpells.mergeHomebrewSubclassLookup(SUBCLASS_LOOKUP, homebrew);
 	addSpells(homebrew.spell);
 	return Promise.resolve();
 }
 
-function pPostLoad () {
-	return new Promise(resolve => {
-		BrewUtil.pAddBrewData()
-			.then(handleBrew)
-			.then(() => BrewUtil.bind({list}))
-			.then(() => BrewUtil.pAddLocalBrewData())
-			.catch(BrewUtil.pPurgeBrew)
-			.then(async () => {
-				BrewUtil.makeBrewButton("manage-brew");
-				BrewUtil.bind({filterBox, sourceFilter});
-				await ListUtil.pLoadState();
+class SpellsPage {
+	constructor () {
+		this._pageFilter = new PageFilterSpells();
+		this._multiSource = new MultiSource({
+			fnHandleData: addSpells,
+			prop: "spell",
+		});
+	}
 
-				ListUtil.bindShowTableButton(
-					"btn-show-table",
-					"Spells",
-					spellList,
-					{
-						name: {name: "Name", transform: true},
-						source: {name: "Source", transform: (it) => `<span class="${Parser.sourceJsonToColor(it)}" title="${Parser.sourceJsonToFull(it)}">${Parser.sourceJsonToAbv(it)}</span>`},
-						level: {name: "Level", transform: (it) => Parser.spLevelToFull(it)},
-						time: {name: "Casting Time", transform: (it) => getTblTimeStr(it[0])},
-						_school: {name: "School", transform: (sp) => `<span class="school_${sp.school}">${Parser.spSchoolAndSubschoolsAbvsToFull(sp.school, sp.subschools)}</span>`},
-						range: {name: "Range", transform: (it) => Parser.spRangeToFull(it)},
-						components: {name: "Components", transform: (it) => Parser.spComponentsToFull(it)},
-						classes: {name: "Classes", transform: (it) => Parser.spMainClassesToFull(it)},
-						entries: {name: "Text", transform: (it) => Renderer.get().render({type: "entries", entries: it}, 1), flex: 3},
-						entriesHigherLevel: {name: "At Higher Levels", transform: (it) => Renderer.get().render({type: "entries", entries: (it || [])}, 1), flex: 2}
-					},
-					{generator: ListUtil.basicFilterGenerator},
-					(a, b) => SortUtil.ascSort(a.level, b.level) || SortUtil.ascSort(a.name, b.name) || SortUtil.ascSort(a.source, b.source)
-				);
+	getListItem (spell, spI) {
+		const hash = UrlUtil.autoEncodeHash(spell);
+		if (!spell.uniqueId && _addedHashes.has(hash)) return null;
+		_addedHashes.add(hash);
+		const isExcluded = ExcludeUtil.isExcluded(hash, "spell", spell.source);
 
-				resolve();
+		this._pageFilter.mutateAndAddToFilters(spell, isExcluded);
+
+		const eleLi = document.createElement("div");
+		eleLi.className = `lst__row flex-col ${isExcluded ? "lst__row--blacklisted" : ""}`;
+
+		const source = Parser.sourceJsonToAbv(spell.source);
+		const time = PageFilterSpells.getTblTimeStr(spell.time[0]);
+		const school = Parser.spSchoolAndSubschoolsAbvsShort(spell.school, spell.subschools);
+		const concentration = spell._isConc ? "×" : "";
+		const range = Parser.spRangeToFull(spell.range);
+
+		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
+			<span class="bold col-2-9 pl-0">${spell.name}</span>
+			<span class="col-1-5 text-center">${PageFilterSpells.getTblLevelStr(spell)}</span>
+			<span class="col-1-7 text-center">${time}</span>
+			<span class="col-1-2 sp__school-${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
+			<span class="col-0-6 text-center" title="Concentration">${concentration}</span>
+			<span class="col-2-4 text-right">${range}</span>
+			<span class="col-1-7 text-center ${Parser.sourceJsonToColor(spell.source)} pr-0" title="${Parser.sourceJsonToFull(spell.source)}" ${BrewUtil.sourceJsonToStyle(spell.source)}>${source}</span>
+		</a>`;
+
+		const listItem = new ListItem(
+			spI,
+			eleLi,
+			spell.name,
+			{
+				hash,
+				source,
+				level: spell.level,
+				time,
+				school: Parser.spSchoolAbvToFull(spell.school),
+				classes: Parser.spClassesToFull(spell, true, SUBCLASS_LOOKUP),
+				concentration,
+				normalisedTime: spell._normalisedTime,
+				normalisedRange: spell._normalisedRange,
+			},
+			{
+				uniqueId: spell.uniqueId ? spell.uniqueId : spI,
+				isExcluded,
+			},
+		);
+
+		eleLi.addEventListener("click", (evt) => list.doSelect(listItem, evt));
+		eleLi.addEventListener("contextmenu", (evt) => ListUtil.openContextMenu(evt, list, listItem));
+
+		return listItem;
+	}
+
+	handleFilterChange () {
+		const f = this._pageFilter.filterBox.getValues();
+		list.filter(li => {
+			const s = spellList[li.ix];
+			return this._pageFilter.toDisplay(f, s);
+		});
+		MultiSource.onFilterChangeMulti(spellList);
+	}
+
+	getSublistItem (spell, pinId) {
+		const hash = UrlUtil.autoEncodeHash(spell);
+		const school = Parser.spSchoolAndSubschoolsAbvsShort(spell.school, spell.subschools);
+		const time = PageFilterSpells.getTblTimeStr(spell.time[0]);
+		const concentration = spell._isConc ? "×" : "";
+		const range = Parser.spRangeToFull(spell.range);
+
+		const $ele = $(`<div class="lst__row lst__row--sublist flex-col">
+			<a href="#${UrlUtil.autoEncodeHash(spell)}" title="${spell.name}" class="lst--border lst__row-inner">
+				<span class="bold col-3-2 pl-0">${spell.name}</span>
+				<span class="capitalise col-1-5 text-center">${PageFilterSpells.getTblLevelStr(spell)}</span>
+				<span class="col-1-8 text-center">${time}</span>
+				<span class="capitalise col-1-6 sp__school-${spell.school} text-center" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}" ${Parser.spSchoolAbvToStyle(spell.school)}>${school}</span>
+				<span class="concentration--sublist col-0-7 text-center" title="Concentration">${concentration}</span>
+				<span class="range col-3-2 pr-0 text-right">${range}</span>
+			</a>
+		</div>`)
+			.contextmenu(evt => ListUtil.openSubContextMenu(evt, listItem))
+			.click(evt => ListUtil.sublist.doSelect(listItem, evt));
+
+		const listItem = new ListItem(
+			pinId,
+			$ele,
+			spell.name,
+			{
+				hash,
+				school,
+				level: spell.level,
+				time,
+				concentration,
+				range,
+				normalisedTime: spell._normalisedTime,
+				normalisedRange: spell._normalisedRange
+			}
+		);
+		return listItem;
+	}
+
+	doLoadHash (id) {
+		Renderer.get().setFirstSection(true);
+		const $content = $("#pagecontent").empty();
+		const spell = spellList[id];
+
+		function buildStatsTab () {
+			$content.append(RenderSpells.$getRenderedSpell(spell, SUBCLASS_LOOKUP));
+		}
+
+		function buildFluffTab (isImageTab) {
+			return Renderer.utils.pBuildFluffTab({
+				isImageTab,
+				$content,
+				entity: spell,
+				pFnGetFluff: Renderer.spell.pGetFluff,
 			});
-	})
+		}
+
+		const tabMetas = [
+			new Renderer.utils.TabButton({
+				label: "Spell",
+				fnPopulate: buildStatsTab,
+				isVisible: true,
+			}),
+			new Renderer.utils.TabButton({
+				label: "Info",
+				fnPopulate: buildFluffTab,
+				isVisible: Renderer.utils.hasFluffText(spell),
+			}),
+			new Renderer.utils.TabButton({
+				label: "Images",
+				fnPopulate: buildFluffTab.bind(null, true),
+				isVisible: Renderer.utils.hasFluffImages(spell),
+			}),
+		];
+
+		Renderer.utils.bindTabButtons({
+			tabButtons: tabMetas.filter(it => it.isVisible),
+			tabLabelReference: tabMetas.map(it => it.label),
+		});
+
+		ListUtil.updateSelected();
+	}
+
+	async pDoLoadSubHash (sub) {
+		sub = this._pageFilter.filterBox.setFromSubHashes(sub);
+		await ListUtil.pSetFromSubHashes(sub, pPreloadSublistSources);
+
+		await spellBookView.pHandleSub(sub);
+	}
+
+	async pOnLoad () {
+		window.loadHash = this.doLoadHash.bind(this);
+		window.loadSubHash = this.pDoLoadSubHash.bind(this);
+
+		await this._pageFilter.pInitFilterBox({
+			$iptSearch: $(`#lst__search`),
+			$wrpFormTop: $(`#filter-search-group`).title("Hotkey: f"),
+			$btnReset: $(`#reset`),
+		});
+
+		const [subclassLookup] = await Promise.all([
+			RenderSpells.pGetSubclassLookup(),
+			ExcludeUtil.pInitialise(),
+		]);
+		Object.assign(SUBCLASS_LOOKUP, subclassLookup);
+		await spellsPage._multiSource.pMultisourceLoad(JSON_DIR, this._pageFilter.filterBox, pPageInit, addSpells, pPostLoad);
+		if (Hist.lastLoadedId == null) Hist._freshLoad();
+		ExcludeUtil.checkShowAllExcluded(spellList, $(`#pagecontent`));
+
+		window.dispatchEvent(new Event("toolsLoaded"));
+	}
+
+	// TODO refactor this and bestiary markdown section
+	static popoutHandlerGenerator (toList) {
+		return (evt) => {
+			if (Hist.lastLoadedId !== null) {
+				const toRender = toList[Hist.lastLoadedId];
+
+				if (evt.shiftKey) {
+					const $content = Renderer.hover.$getHoverContent_statsCode(toRender);
+					Renderer.hover.getShowWindow(
+						$content,
+						Renderer.hover.getWindowPositionFromEvent(evt),
+						{
+							title: `${toRender.name} \u2014 Source Data`,
+							isPermanent: true,
+							isBookContent: true,
+						},
+					);
+				} else if (evt.ctrlKey || evt.metaKey) {
+					const name = `${toRender._displayName || toRender.name} \u2014 Markdown`;
+					const mdText = RendererMarkdown.get().render({entries: [{type: "dataSpell", dataSpell: toRender}]});
+					const $content = Renderer.hover.$getHoverContent_miscCode(name, mdText);
+
+					Renderer.hover.getShowWindow(
+						$content,
+						Renderer.hover.getWindowPositionFromEvent(evt),
+						{
+							title: name,
+							isPermanent: true,
+							isBookContent: true,
+						},
+					);
+				} else {
+					Renderer.hover.doPopoutCurPage(evt, toList[Hist.lastLoadedId]);
+				}
+			}
+		}
+	}
+}
+SpellsPage._BOOK_VIEW_MODE_K = "bookViewMode";
+
+async function pPostLoad () {
+	const homebrew = await BrewUtil.pAddBrewData();
+	await handleBrew(homebrew);
+	BrewUtil.bind({list});
+	BrewUtil.makeBrewButton("manage-brew");
+	BrewUtil.bind({filterBox: spellsPage._pageFilter.filterBox, sourceFilter: spellsPage._pageFilter.sourceFilter});
+	await ListUtil.pLoadState();
+
+	ListUtil.bindShowTableButton(
+		"btn-show-table",
+		"Spells",
+		spellList,
+		{
+			name: {name: "Name", transform: true},
+			source: {name: "Source", transform: (it) => `<span class="${Parser.sourceJsonToColor(it)}" title="${Parser.sourceJsonToFull(it)}" ${BrewUtil.sourceJsonToStyle(it.source)}>${Parser.sourceJsonToAbv(it)}</span>`},
+			level: {name: "Level", transform: (it) => Parser.spLevelToFull(it)},
+			time: {name: "Casting Time", transform: (it) => PageFilterSpells.getTblTimeStr(it[0])},
+			duration: {name: "Duration", transform: (it) => Parser.spDurationToFull(it)},
+			_school: {name: "School", transform: (sp) => `<span class="sp__school-${sp.school}" ${Parser.spSchoolAbvToStyle(sp.school)}>${Parser.spSchoolAndSubschoolsAbvsToFull(sp.school, sp.subschools)}</span>`},
+			range: {name: "Range", transform: (it) => Parser.spRangeToFull(it)},
+			_components: {name: "Components", transform: (sp) => Parser.spComponentsToFull(sp.components, sp.level)},
+			_classes: {
+				name: "Classes",
+				transform: (sp) => {
+					const fromClassList = Renderer.spell.getCombinedClasses(sp, "fromClassList");
+					return Parser.spMainClassesToFull(fromClassList);
+				},
+			},
+			entries: {name: "Text", transform: (it) => Renderer.get().render({type: "entries", entries: it}, 1), flex: 3},
+			entriesHigherLevel: {name: "At Higher Levels", transform: (it) => Renderer.get().render({type: "entries", entries: (it || [])}, 1), flex: 2},
+		},
+		{generator: ListUtil.basicFilterGenerator},
+		(a, b) => SortUtil.ascSort(a.name, b.name) || SortUtil.ascSort(a.source, b.source),
+	);
 }
 
-window.onload = async function load () {
-	filterBox = await pInitFilterBox(
-		sourceFilter,
-		levelFilter,
-		classAndSubclassFilter,
-		raceFilter,
-		metaFilter,
-		schoolFilter,
-		subSchoolFilter,
-		damageFilter,
-		conditionFilter,
-		spellAttackFilter,
-		saveFilter,
-		checkFilter,
-		timeFilter,
-		durationFilter,
-		rangeFilter,
-		areaTypeFilter
-	);
-	await ExcludeUtil.pInitialise();
-	SortUtil.initHandleFilterButtonClicks();
-	multisourceLoad(JSON_DIR, JSON_LIST_NAME, pPageInit, addSpells, pPostLoad)
-		.then(() => {
-			if (History.lastLoadedId == null) History._freshLoad();
-			ExcludeUtil.checkShowAllExcluded(spellList, $(`#pagecontent`));
-		});
-};
-
 let list;
+let subList;
 let spellBookView;
-let brewSpellClasses;
-const sourceFilter = getSourceFilter();
-const levelFilter = new Filter({
-	header: "Level",
-	headerName: "環階",
-	items: [
-		0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-	],
-	displayFn: getFltrSpellLevelStr
-});
-const classFilter = new Filter({header: "Class", headerName: "職業",displayFn:Parser.ClassToDisplay});
-const subclassFilter = new GroupedFilter({
-	header: "Subclass", headerName: "子職業",
-	numGroups: 2,
-	displayNestFn: Parser.ClassToDisplay,
-	displayFn: (item) => `${Parser.ClassToDisplay(item.nest)}：${Parser.SubclassToDisplay(item.item)}`
-});
-const classAndSubclassFilter = new MultiFilter({name: "職業"}, classFilter, subclassFilter);
-const raceFilter = new Filter({header: "Race", headerName: "種族", displayFn: Parser.RaceToDisplay});
-const metaFilter = new Filter({
-	header: "Components & Miscellaneous", headerName: "構材＆雜項",
-	items: [META_ADD_CONC, META_ADD_V, META_ADD_S, META_ADD_M, META_ADD_M_COST, META_ADD_M_CONSUMED, META_ADD_MB_HEAL, META_ADD_MB_PERMANENT, META_ADD_MB_SCALING, META_ADD_MB_SUMMONS, META_RITUAL, META_TECHNOMAGIC],
-	displayFn: function(misc){
-		return (META_ADD_TO_FULL[misc])? META_ADD_TO_FULL[misc]: misc;
-	}
-});
-const schoolFilter = new Filter({
-	header: "School", headerName: "學派",
-	items: [
-		SKL_ABV_ABJ,
-		SKL_ABV_CON,
-		SKL_ABV_DIV,
-		SKL_ABV_ENC,
-		SKL_ABV_EVO,
-		SKL_ABV_ILL,
-		SKL_ABV_NEC,
-		SKL_ABV_TRA
-	],
-	displayFn: Parser.spSchoolAbvToFull
-});
-const subSchoolFilter = new Filter({
-	header: "Subschool",
-	items: [],
-	displayFn: Parser.spSchoolAbvToFull
-});
-const damageFilter = new Filter({
-	header: "Damage Type", headerName: "傷害類型",
-	items: [
-		"bludgeoning", "piercing", "slashing", "acid", "cold", "fire", "lightning", "thunder", "poison", "radiant", "necrotic", "force", "psychic"
-	],
-	displayFn: Parser.DamageToDisplay
-});
-const conditionFilter = new Filter({
-	header: "Conditions Inflicted", headerName: "造成狀態",
-	items: ["blinded", "charmed", "deafened", "exhaustion", "frightened", "grappled", "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned", "unconscious"],
-	displayFn: Parser.ConditionToDisplay
-});
-const spellAttackFilter = new Filter({
-	header: "Spell Attack", headerName: "法術攻擊",
-	items: ["M", "R", "O"],
-	displayFn: Parser.spAttackTypeToFull
-});
-const saveFilter = new Filter({
-	header: "Saving Throw", headerName: "豁免",
-	items: ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
-	displayFn: getFilterAbilitySave
-});
-const checkFilter = new Filter({
-	header: "Opposed Ability Check", headerName: "能力檢定對抗",
-	items: ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
-	displayFn: getFilterAbilityCheck
-});
-const timeFilter = new Filter({
-	header: "Cast Time", headerName: "施法時間",
-	items: [
-		TM_ACTION,
-		TM_B_ACTION,
-		TM_REACTION,
-		TM_ROUND,
-		TM_MINS,
-		TM_HRS
-	],
-	displayFn: getTimeDisplay
-});
-const durationFilter = new Filter({
-	header: "Duration", headerName: "持續時間",
-	items: [
-		"instant",
-		"timed",
-		"permanent",
-		"special"
-	],
-	displayFn: function(r){switch(r){
-		case "instant":  return "即效";
-		case "timed": 	 return "定時";
-		case "permanent":return "永久";
-		case "special":  return "特殊";
-		default: return r;
-	}}
-});
-const rangeFilter = new Filter({
-	header: "Range", headerName: "射程",
-	items: [
-		F_RNG_SELF,
-		F_RNG_TOUCH,
-		F_RNG_POINT,
-		F_RNG_SELF_AREA,
-		F_RNG_SPECIAL
-	],
-	displayFn: function(r){
-		return (F_RNG_TO_FULL[r])? F_RNG_TO_FULL[r]: r;
-	}
-});
-const areaTypeFilter = new Filter({
-	header: "Area Style",
-	items: ["ST", "MT", "R", "N", "C", "Y", "H", "L", "S", "Q", "W"],
-	displayFn: Parser.spAreaTypeToFull
-});
-let filterBox;
 
-function pPageInit (loadedSources) {
-	tableDefault = $("#pagecontent").html();
+async function pPageInit (loadedSources) {
+	Object.keys(loadedSources)
+		.map(src => new FilterItem({item: src, pFnChange: spellsPage._multiSource.pLoadSource.bind(spellsPage._multiSource)}))
+		.forEach(fi => spellsPage._pageFilter.sourceFilter.addItem(fi));
 
-	sourceFilter.items = Object.keys(loadedSources).map(src => new FilterItem({item: src, changeFn: loadSource(JSON_LIST_NAME, addSpells)}));
-	sourceFilter.items.sort(SortUtil.srcSort_ch);
-
-	list = ListUtil.search({
-		valueNames: ["name", "source", "level", "time", "school", "range", "concentration", "classes", "uniqueid", "eng_name"],
+	list = ListUtil.initList({
 		listClass: "spells",
-		sortFunction: sortSpells
+		fnSort: PageFilterSpells.sortSpells,
 	});
+	ListUtil.setOptions({primaryLists: [list]});
+	SortUtil.initBtnSortHandlers($(`#filtertools`), list);
+
+	const $outVisibleResults = $(`.lst__wrp-search-visible`);
 	list.on("updated", () => {
-		filterBox.setCount(list.visibleItems.length, list.items.length);
+		$outVisibleResults.html(`${list.visibleItems.length}/${list.items.length}`);
 	});
 
 	// filtering function
-	$(filterBox).on(
+	spellsPage._pageFilter.filterBox.on(
 		FilterBox.EVNT_VALCHANGE,
-		handleFilterChange
+		spellsPage.handleFilterChange.bind(spellsPage),
 	);
 
-	$("#filtertools").find("button.sort").click(function () {
-		const $this = $(this);
-		if ($this.attr("sortby") === "asc") {
-			$this.attr("sortby", "desc");
-		} else $this.attr("sortby", "asc");
-		list.sort($this.data("sort"), {order: $this.attr("sortby"), sortFunction: sortSpells});
-	});
-
-	const subList = ListUtil.initSublist({
-		valueNames: ["name", "level", "time", "school", "concentration", "range", "id"],
+	subList = ListUtil.initSublist({
 		listClass: "subspells",
-		sortFunction: sortSpells
+		fnSort: PageFilterSpells.sortSpells,
 	});
+	SortUtil.initBtnSortHandlers($("#sublistsort"), subList);
 	ListUtil.initGenericPinnable();
 
-	spellBookView = new BookModeView("bookview", $(`#btn-spellbook`), "如果你想要一次檢視多個法術，請先創造一份清單",
-		($tbl) => {
-			const toShow = ListUtil.getSublistedIds().map(id => spellList[id]);
-			let numShown = 0;
+	spellBookView = new BookModeView({
+		hashKey: "bookview",
+		$openBtn: $(`#btn-spellbook`),
+		$eleNoneVisible: $(`<span class="initial-message">如果你想要一次檢視多個法術，請先創造一份清單</span>`),
+		pageTitle: "Spells Book View",
+		popTblGetNumShown: ($wrpContent, $dispName, $wrpControls) => {
+			const toShow = ListUtil.getSublistedIds().map(id => spellList[id])
+				.sort((a, b) => SortUtil.ascSortLower(a.name, b.name));
 
-			const stack = [];
-			const renderSpell = (sp) => {
-				stack.push(`<table class="spellbook-entry"><tbody>`);
+			const renderSpell = (stack, sp) => {
+				stack.push(`<div class="bkmv__wrp-item"><table class="stats stats--book stats--bkmv"><tbody>`);
 				stack.push(Renderer.spell.getCompactRenderedString(sp));
-				stack.push(`</tbody></table>`);
+				stack.push(`</tbody></table></div>`);
 			};
 
-			for (let i = 0; i < 10; ++i) {
-				const atLvl = toShow.filter(sp => sp.level === i);
-				if (atLvl.length) {
-					const levelText = i === 0 ? `${Parser.spLevelToFull(i)}` : `${Parser.spLevelToFull(i)}法術`;
-					stack.push(Renderer.utils.getBorderTr(`<span class="spacer-name">${levelText}</span>`));
+			let lastOrder = StorageUtil.syncGetForPage(SpellsPage._BOOK_VIEW_MODE_K);
+			if (lastOrder != null) lastOrder = `${lastOrder}`;
 
-					stack.push(`<tr class="spellbook-level"><td>`);
-					atLvl.forEach(sp => renderSpell(sp));
-					stack.push(`</td></tr>`);
-				}
-				numShown += atLvl.length;
-			}
+			const $selSortMode = $(`<select class="form-control input-sm">
+				<option value="0">Spell Level</option>
+				<option value="1">Alphabetical</option>
+			</select>`)
+				.change(() => {
+					if (!toShow.length && Hist.lastLoadedId != null) return;
 
-			if (!toShow.length && History.lastLoadedId != null) {
-				stack.push(`<tr class="spellbook-level"><td>`);
-				renderSpell(spellList[History.lastLoadedId]);
-				stack.push(`</td></tr>`);
-			}
+					const val = Number($selSortMode.val());
+					if (val === 0) renderByLevel();
+					else renderByAlpha();
 
-			$tbl.append(stack.join(""));
-			return numShown;
-		}, true
-	);
+					StorageUtil.syncSetForPage(SpellsPage._BOOK_VIEW_MODE_K, val);
+				});
+			if (lastOrder != null) $selSortMode.val(lastOrder);
 
-	// load homebrew class spell list addons
-	brewSpellClasses = {PHB: {}};
-	return BrewUtil.pAddBrewData()
-		.then((homebrew) => {
-			function handleSubclass (className, classSource = SRC_PHB, sc) {
-				const genSubclassSpell = (it, subSubclass) => {
-					const name = typeof it === "string" ? it : it.name;
-					const source = typeof it === "string" ? "PHB" : it.source;
-					brewSpellClasses[source] = brewSpellClasses[source] || {fromClassList: [], fromSubclass: []};
-					brewSpellClasses[source][name] = brewSpellClasses[source][name] || {fromClassList: [], fromSubclass: []};
-					const toAdd = {
-						class: {
-							name: className,
-							source: classSource
-						},
-						subclass: {
-							name: sc.shortName,
-							source: sc.source
+			$$`<div class="flex-vh-center ml-3"><div class="mr-2 no-wrap">Sort order:</div>${$selSortMode}</div>`.appendTo($wrpControls);
+
+			// region Markdown
+			// TODO refactor this and bestiary markdown section
+			const getAsMarkdown = () => {
+				const toRender = toShow.length ? toShow : [spellList[Hist.lastLoadedId]];
+				const parts = [...toRender]
+					.sort((a, b) => lastOrder === "0" ? SortUtil.ascSort(a.level, b.level) : SortUtil.ascSortLower(a.name, b.name))
+					.map(sp => RendererMarkdown.get().render({type: "dataSpell", dataSpell: sp}).trim());
+
+				const out = [];
+				let charLimit = RendererMarkdown._PAGE_CHARS;
+				for (let i = 0; i < parts.length; ++i) {
+					const part = parts[i];
+					out.push(part);
+
+					if (i < parts.length - 1) {
+						if ((charLimit -= part.length) < 0) {
+							if (RendererMarkdown._isAddPageBreaks) out.push("", "\\pagebreak", "");
+							charLimit = RendererMarkdown._PAGE_CHARS;
 						}
-					};
-					if (subSubclass) toAdd.subclass.subSubclass = subSubclass;
-					brewSpellClasses[source][name].fromSubclass.push(toAdd);
-				};
-
-				if (sc.subclassSpells) sc.subclassSpells.forEach(it => genSubclassSpell(it));
-				if (sc.subSubclassSpells) $.each(sc.subSubclassSpells, (ssC, arr) => arr.forEach(it => genSubclassSpell(it, ssC)));
-			}
-
-			if (homebrew.class) {
-				homebrew.class.forEach(c => {
-					if (c.classSpells) {
-						c.classSpells.forEach(it => {
-							const name = typeof it === "string" ? it : it.name;
-							const source = typeof it === "string" ? "PHB" : it.source;
-							brewSpellClasses[source] = brewSpellClasses[source] || {};
-							brewSpellClasses[source][name] = brewSpellClasses[source][name] || {fromClassList: [], fromSubclass: []};
-							brewSpellClasses[source][name].fromClassList.push({name: c.name, source: c.source});
-						});
 					}
-					if (c.subclasses) c.subclasses.forEach(sc => handleSubclass(c.name, c.source, sc));
-				})
-			}
-			if (homebrew.subclass) homebrew.subclass.forEach(sc => handleSubclass(sc.class, sc.classSource, sc));
-		})
-		.catch(BrewUtil.pPurgeBrew);
-}
+				}
 
-function getSublistItem (spell, pinId) {
-	return `
-		<li class="row" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
-			<a href="#${UrlUtil.autoEncodeHash(spell)}" title="${spell.name}">
-				<span class="name col-3-2">${spell.name}</span>
-				<span class="level col-1-5">${Parser.spLevelToFull(spell.level)}</span>
-				<span class="time col-1-8">${getTblTimeStr(spell.time[0])}</span>
-				<span class="school col-1-6 school_${spell.school}" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}">${Parser.spSchoolAndSubschoolsAbvsShort(spell.school, spell.subschools)}</span>
-				<span class="concentration concentration--sublist col-0-7" title="Concentration">${spell._isConc ? "×" : ""}</span>
-				<span class="range col-3-2">${Parser.spRangeToFull(spell.range)}</span>
-				<span class="id hidden">${pinId}</span>
-			</a>
-		</li>
-	`;
-}
+				return out.join("\n\n");
+			};
 
-function handleFilterChange () {
-	const f = filterBox.getValues();
-	list.filter(item => {
-		const s = spellList[$(item.elm).attr(FLTR_ID)];
-		return filterBox.toDisplay(
-			f,
-			s._fSources,
-			s.level,
-			[s._fClasses, s._fSubclasses],
-			s._fRaces,
-			s._fMeta,
-			s.school,
-			s.subschools,
-			s.damageInflict,
-			s.conditionInflict,
-			s.spellAttack,
-			s.savingThrow,
-			s.opposedCheck,
-			s._fTimeType,
-			s._fDurationType,
-			s._fRangeType,
-			s.areaTags
-		);
+			const $btnDownloadMarkdown = $(`<button class="btn btn-default btn-sm">Download as Markdown</button>`)
+				.click(() => DataUtil.userDownloadText("spells.md", getAsMarkdown()));
+
+			const $btnCopyMarkdown = $(`<button class="btn btn-default btn-sm px-2" title="Copy Markdown to Clipboard"><span class="glyphicon glyphicon-copy"/></button>`)
+				.click(async () => {
+					await MiscUtil.pCopyTextToClipboard(await getAsMarkdown());
+					JqueryUtil.showCopiedEffect($btnCopyMarkdown);
+				});
+
+			const $btnDownloadMarkdownSettings = $(`<button class="btn btn-default btn-sm px-2" title="Markdown Settings"><span class="glyphicon glyphicon-cog"/></button>`)
+				.click(async () => RendererMarkdown.pShowSettingsModal());
+
+			$$`<div class="flex-v-center btn-group ml-3">
+				${$btnDownloadMarkdown}
+				${$btnCopyMarkdown}
+				${$btnDownloadMarkdownSettings}
+			</div>`.appendTo($wrpControls);
+			// endregion
+
+			const renderByLevel = () => {
+				const stack = [];
+				for (let i = 0; i < 10; ++i) {
+					const atLvl = toShow.filter(sp => sp.level === i);
+					if (atLvl.length) {
+						stack.push(`<div class="w-100 h-100 bkmv__no-breaks">`);
+						stack.push(`<div class="bkmv__spacer-name flex-v-center no-shrink">${Parser.spLevelToFullLevelText(i)}</div>`);
+						atLvl.forEach(sp => renderSpell(stack, sp));
+						stack.push(`</div>`);
+					}
+				}
+				$wrpContent.empty().append(stack.join(""));
+				lastOrder = "0";
+			};
+
+			const renderByAlpha = () => {
+				const stack = [];
+				toShow.forEach(sp => renderSpell(stack, sp));
+				$wrpContent.empty().append(stack.join(""));
+				lastOrder = "1";
+			};
+
+			const renderNoneSelected = () => {
+				const stack = [];
+				stack.push(`<div class="w-100 h-100 no-breaks">`);
+				const sp = spellList[Hist.lastLoadedId];
+				renderSpell(stack, sp);
+				$dispName.text(Parser.spLevelToFullLevelText(sp.level));
+				stack.push(`</div>`);
+				$wrpContent.empty().append(stack.join(""));
+			};
+
+			if (!toShow.length && Hist.lastLoadedId != null) renderNoneSelected();
+			else if (lastOrder === 1) renderByAlpha();
+			else renderByLevel();
+
+			return toShow.length;
+		},
+		hasPrintColumns: true,
 	});
-	onFilterChangeMulti(spellList);
+
+	const homebrew = await BrewUtil.pAddBrewData();
+	BrewUtil.bind({pHandleBrew: () => {}}); // temporarily bind "do nothing" brew handler
+	await BrewUtil.pAddLocalBrewData(); // load local homebrew, so we can add any local spell classes
+	BrewUtil.bind({pHandleBrew: null}); // unbind temporary handler
+	Renderer.spell.populateHomebrewClassLookup(homebrew);
 }
 
 let spellList = [];
 let spI = 0;
 
+const _addedHashes = new Set();
 function addSpells (data) {
 	if (!data || !data.length) return;
 
-	spellList = spellList.concat(data);
+	spellList.push(...data);
 
-	const spellTable = $("ul.spells");
-	let tempString = "";
 	for (; spI < spellList.length; spI++) {
 		const spell = spellList[spI];
-		if (ExcludeUtil.isExcluded(spell.name, "spell", spell.source)) continue;
-
-		let levelText = Parser.spLevelToFull(spell.level);
-		if (spell.meta && spell.meta.ritual) levelText += " (儀.)";
-		if (spell.meta && spell.meta.technomagic) levelText += " (科.)";
-
-		// add eldritch knight and arcane trickster
-		if (spell.classes.fromClassList && spell.classes.fromClassList.filter(c => c.name === STR_WIZARD && c.source === SRC_PHB).length) {
-			if (!spell.classes.fromSubclass) spell.classes.fromSubclass = [];
-			spell.classes.fromSubclass.push({
-				class: {name: STR_FIGHTER, source: SRC_PHB},
-				subclass: {name: STR_ELD_KNIGHT, source: SRC_PHB}
-			});
-			spell.classes.fromSubclass.push({
-				class: {name: STR_ROGUE, source: SRC_PHB},
-				subclass: {name: STR_ARC_TCKER, source: SRC_PHB}
-			});
-			if (spell.level > 4) {
-				spell._scrollNote = true;
-			}
-		}
-
-		// add divine soul, favored soul v2, favored soul v3
-		if (spell.classes.fromClassList && spell.classes.fromClassList.filter(c => c.name === STR_CLERIC && c.source === SRC_PHB).length) {
-			if (!spell.classes.fromSubclass) {
-				spell.classes.fromSubclass = [];
-				spell.classes.fromSubclass.push({
-					class: {name: STR_SORCERER, source: SRC_PHB},
-					subclass: {name: STR_DIV_SOUL, source: SRC_XGE}
-				});
-			} else {
-				if (!spell.classes.fromSubclass.find(it => it.class.name === STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === STR_DIV_SOUL && it.subclass.source === SRC_XGE)) {
-					spell.classes.fromSubclass.push({
-						class: {name: STR_SORCERER, source: SRC_PHB},
-						subclass: {name: STR_DIV_SOUL, source: SRC_XGE}
-					});
-				}
-			}
-			spell.classes.fromSubclass.push({
-				class: {name: STR_SORCERER, source: SRC_PHB},
-				subclass: {name: STR_FAV_SOUL_V2, source: SRC_UAS}
-			});
-			spell.classes.fromSubclass.push({
-				class: {name: STR_SORCERER, source: SRC_PHB},
-				subclass: {name: STR_FAV_SOUL_V3, source: SRC_UARSC}
-			});
-		}
-
-		if (spell.classes.fromClassList && spell.classes.fromClassList.find(it => it.name === "Wizard")) {
-			if (spell.level === 0) {
-				// add high elf
-				(spell.races || (spell.races = [])).push({
-					name: "Elf (High)",
-					source: SRC_PHB,
-					baseName: "Elf",
-					baseSource: SRC_PHB
-				});
-				// add arcana cleric
-				(spell.classes.fromSubclass = spell.classes.fromSubclass || []).push({
-					class: {name: STR_CLERIC, source: SRC_PHB},
-					subclass: {name: "Arcana", source: SRC_SCAG}
-				});
-			}
-
-			// add arcana cleric
-			if (spell.level >= 6) {
-				(spell.classes.fromSubclass = spell.classes.fromSubclass || []).push({
-					class: {name: STR_CLERIC, source: SRC_PHB},
-					subclass: {name: "Arcana", source: SRC_SCAG}
-				});
-			}
-		}
-
-		if (spell.classes.fromClassList && spell.classes.fromClassList.find(it => it.name === "Druid")) {
-			if (spell.level === 0) {
-				// add nature cleric
-				(spell.classes.fromSubclass = spell.classes.fromSubclass || []).push({
-					class: {name: STR_CLERIC, source: SRC_PHB},
-					subclass: {name: "Nature", source: SRC_PHB}
-				});
-			}
-		}
-
-		// add homebrew class/subclass
-		if (brewSpellClasses[spell.source] && brewSpellClasses[spell.source][spell.name]) {
-			spell.classes = spell.classes || {};
-			if (brewSpellClasses[spell.source][spell.name].fromClassList.length) {
-				spell.classes.fromClassList = spell.classes.fromClassList || [];
-				spell.classes.fromClassList = spell.classes.fromClassList.concat(brewSpellClasses[spell.source][spell.name].fromClassList);
-			}
-			if (brewSpellClasses[spell.source][spell.name].fromSubclass.length) {
-				spell.classes.fromSubclass = spell.classes.fromSubclass || [];
-				spell.classes.fromSubclass = spell.classes.fromSubclass.concat(brewSpellClasses[spell.source][spell.name].fromSubclass);
-			}
-		}
-
-		// used for sorting
-		spell._normalisedTime = getNormalisedTime(spell.time);
-		spell._normalisedRange = getNormalisedRange(spell.range);
-
-		// used for filtering
-		spell._fSources = ListUtil.getCompleteSources(spell);
-		spell._fMeta = getMetaFilterObj(spell);
-		spell._fClasses = spell.classes.fromClassList ? spell.classes.fromClassList.map(c => getClassFilterStr(c)) : [];
-		spell._fSubclasses = spell.classes.fromSubclass
-			? spell.classes.fromSubclass.map(c => new FilterItem({
-				item: getClassFilterStr(c.subclass),
-				group: SourceUtil.hasBeenReprinted(c.subclass.name, c.subclass.source) || Parser.sourceJsonToFull(c.subclass.source).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(c.subclass.source).startsWith(PS_PREFIX),
-				nest: c.class.name,
-				nestHidden: true
-			}))
-			: [];
-		spell._fRaces = spell.races ? spell.races.map(r => r.baseName || r.name) : [];
-		spell._fTimeType = spell.time.map(t => t.unit);
-		spell._fDurationType = spell.duration.map(t => t.type);
-		spell._fRangeType = getRangeType(spell.range);
-
-		// populate table
-		tempString += `
-			<li class="row" ${FLTR_ID}="${spI}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
-				<a id="${spI}" href="#${UrlUtil.autoEncodeHash(spell)}" title="${spell.name}">
-					<span class="name col-2-9">${spell.name}</span>
-					<span class="level col-1-5">${levelText}</span>
-					<span class="time col-1-7">${getTblTimeStr(spell.time[0])}</span>
-					<span class="school col-1-2 school_${spell.school}" title="${Parser.spSchoolAndSubschoolsAbvsToFull(spell.school, spell.subschools)}">${Parser.spSchoolAndSubschoolsAbvsShort(spell.school, spell.subschools)}</span>
-					<span class="concentration col-0-6" title="Concentration">${spell._isConc ? "×" : ""}</span>
-					<span class="range col-2-4">${Parser.spRangeToFull(spell.range)}</span>
-					<span class="source col-1-7 text-align-center ${Parser.sourceJsonToColor(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}">${Parser.sourceJsonToAbv(spell.source)}</span>
-
-					<span class="classes" style="display: none">${Parser.spClassesToFull(spell.classes, true)}</span>
-					<span class="uniqueid hidden">${spell.uniqueId ? spell.uniqueId : spI}</span>
-					<span class="eng_name hidden">${spell.ENG_name ? spell.ENG_name : spell.name}</span>
-				</a>
-			</li>`;
-
-		// populate filters
-		if (spell.level > 9) levelFilter.addIfAbsent(spell.level);
-		sourceFilter.addIfAbsent(spell._fSources);
-		raceFilter.addIfAbsent(spell._fRaces);
-		spell._fClasses.forEach(c => classFilter.addIfAbsent(c));
-		spell._fSubclasses.forEach(sc => subclassFilter.addIfAbsent(sc));
-		subSchoolFilter.addIfAbsent(spell.subschools);
+		const listItem = spellsPage.getListItem(spell, spI);
+		if (!listItem) continue;
+		list.addItem(listItem);
 	}
-	const lastSearch = ListUtil.getSearchTermAndReset(list);
-	spellTable.append(tempString);
+	list.update();
 
-	// sort filters
-	sourceFilter.items.sort(SortUtil.srcSort_ch);
-	classFilter.items.sort(SortUtil.ascSort);
-	subclassFilter.items.sort(SortUtil.ascSort);
-	raceFilter.items.sort(SortUtil.ascSort);
-
-	list.reIndex();
-	if (lastSearch) list.search(lastSearch);
-	list.sort("level");
-	filterBox.render();
-	handleFilterChange();
+	spellsPage._pageFilter.filterBox.render();
+	spellsPage.handleFilterChange();
 
 	ListUtil.setOptions({
 		itemList: spellList,
-		getSublistRow: getSublistItem,
-		primaryLists: [list]
+		getSublistRow: spellsPage.getSublistItem.bind(spellsPage),
+		primaryLists: [list],
 	});
 	ListUtil.bindPinButton();
-	Renderer.hover.bindPopoutButton(spellList);
-	UrlUtil.bindLinkExportButton(filterBox);
-	ListUtil.bindDownloadButton();
-	ListUtil.bindUploadButton(sublistFuncPreload);
+	const $btnPop = ListUtil.getOrTabRightButton(`btn-popout`, `new-window`);
+	Renderer.hover.bindPopoutButton(
+		$btnPop,
+		spellList,
+		{
+			handlerGenerator: SpellsPage.popoutHandlerGenerator.bind(SpellsPage),
+			title: "Popout Window (SHIFT for Source Data; CTRL for Markdown Render)",
+		},
+	);
+	UrlUtil.bindLinkExportButton(spellsPage._pageFilter.filterBox);
+	ListUtil.bindOtherButtons({
+		download: true,
+		upload: {
+			pFnPreLoad: pPreloadSublistSources,
+		},
+		sendToBrew: {
+			mode: "spellBuilder",
+			fnGetMeta: () => ({
+				page: UrlUtil.getCurrentPage(),
+				source: Hist.getHashSource(),
+				hash: Hist.getHashParts()[0],
+			}),
+		},
+	});
 }
 
-function sublistFuncPreload (json, funcOnload) {
-	const loaded = Object.keys(loadedSources).filter(it => loadedSources[it].loaded);
+async function pPreloadSublistSources (json) {
+	const loaded = Object.keys(spellsPage._multiSource.loadedSources)
+		.filter(it => spellsPage._multiSource.loadedSources[it].loaded);
 	const lowerSources = json.sources.map(it => it.toLowerCase());
-	const toLoad = Object.keys(loadedSources).filter(it => !loaded.includes(it)).filter(it => lowerSources.includes(it.toLowerCase()));
+	const toLoad = Object.keys(spellsPage._multiSource.loadedSources)
+		.filter(it => !loaded.includes(it))
+		.filter(it => lowerSources.includes(it.toLowerCase()));
 	const loadTotal = toLoad.length;
 	if (loadTotal) {
-		let loadCount = 0;
-		toLoad.forEach(src => {
-			loadSource(JSON_LIST_NAME, (spells) => {
-				addSpells(spells);
-				if (++loadCount === loadTotal) {
-					funcOnload();
-				}
-			})(src, "yes");
-		});
-	} else {
-		funcOnload();
+		await Promise.all(toLoad.map(src => spellsPage._multiSource.pLoadSource(src, "yes")));
 	}
 }
 
-function sortSpells (a, b, o) {
-	a = spellList[a.elm.getAttribute(FLTR_ID)];
-	b = spellList[b.elm.getAttribute(FLTR_ID)];
-
-	if (o.valueName === "name") {
-		return fallback();
-	}
-
-	if (o.valueName === "source") {
-		const bySrc = SortUtil.ascSort(a.source, b.source);
-		return bySrc !== 0 ? bySrc : SortUtil.ascSort(a.name, b.name);
-	}
-
-	if (o.valueName === "level") {
-		return orFallback(SortUtil.ascSort, "level");
-	}
-
-	if (o.valueName === "time") {
-		return orFallback(SortUtil.ascSort, "_normalisedTime");
-	}
-
-	if (o.valueName === "school") {
-		return orFallback(SortUtil.ascSort, "school");
-	}
-
-	if (o.valueName === "range") {
-		return orFallback(SortUtil.ascSort, "_normalisedRange");
-	}
-
-	if (o.valueName === "concentration") {
-		return orFallback(SortUtil.ascSort, "_isConc");
-	}
-
-	return 0;
-
-	function byName () {
-		return SortUtil.ascSort(a.name, b.name);
-	}
-
-	function bySource () {
-		return SortUtil.ascSort(a.source, b.source);
-	}
-
-	function fallback () {
-		const onName = byName();
-		return onName !== 0 ? onName : bySource();
-	}
-
-	function orFallback (func, prop) {
-		const initial = func(a[prop], b[prop]);
-		return initial || fallback();
-	}
-}
-
-const renderer = Renderer.get();
-function loadhash (id) {
-	renderer.setFirstSection(true);
-	const $pageContent = $("#pagecontent").empty();
-	const spell = spellList[id];
-	$pageContent.append(Renderer.spell.getRenderedString(spell, renderer));
-	loadsub([]);
-
-	ListUtil.updateSelected();
-}
-
-function handleUnknownHash (link, sub) {
-	const src = Object.keys(loadedSources).find(src => src.toLowerCase() === decodeURIComponent(link.split(HASH_LIST_SEP)[1]).toLowerCase());
+async function pHandleUnknownHash (link, sub) {
+	const src = Object.keys(spellsPage._multiSource.loadedSources)
+		.find(src => src.toLowerCase() === decodeURIComponent(link.split(HASH_LIST_SEP)[1]).toLowerCase());
 	if (src) {
-		loadSource(JSON_LIST_NAME, (spells) => {
-			addSpells(spells);
-			History.hashChange();
-		})(src, "yes");
-	} else {
-		History._freshLoad();
+		await spellsPage._multiSource.pLoadSource(src, "yes");
+		Hist.hashChange();
 	}
 }
 
-function loadsub (sub) {
-	filterBox.setFromSubHashes(sub);
-	ListUtil.setFromSubHashes(sub, sublistFuncPreload);
-
-	spellBookView.handleSub(sub);
-}
+const spellsPage = new SpellsPage();
+window.addEventListener("load", () => spellsPage.pOnLoad());

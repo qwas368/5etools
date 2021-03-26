@@ -1,14 +1,28 @@
 "use strict";
 
-window.onload = () => {
-	doPageInit().catch(e => { throw e })
-};
+class SidemenuRenderCache {
+	constructor ({$lastStageSaved, $lastWrpBtnLoadExisting}) {
+		this.$lastStageSaved = $lastStageSaved;
+		this.$lastWrpBtnLoadExisting = $lastWrpBtnLoadExisting;
+	}
+}
+
+class SideMenuListRenderCache {
+	constructor () {
+		this._metas = [];
+	}
+
+	getIxMaxRendered () { return this._metas.length; }
+	getMeta (ix) { return this._metas[ix]; }
+	setMeta (ix, meta) { this._metas[ix] = meta; }
+}
 
 class PageUi {
 	constructor () {
 		this._builders = {};
 
 		this._$menuInner = null;
+		this._$selBuilderMode = null;
 		this._$wrpSource = null;
 		this._$wrpMain = null;
 		this._$wrpInput = null;
@@ -23,9 +37,20 @@ class PageUi {
 
 		this._settings = {};
 		this._saveSettingsDebounced = MiscUtil.debounce(() => this._doSaveSettings(), 50);
+
+		this._isLastRenderInputFail = false;
+
+		this._sidemenuRenderCache = null;
+		this._sidemenuListRenderCache = null;
 	}
 
 	set creatureBuilder (creatureBuilder) { this._builders.creatureBuilder = creatureBuilder; }
+	set legendaryGroupBuilder (legendaryGroupBuilder) { this._builders.legendaryGroupBuilder = legendaryGroupBuilder; }
+	set spellBuilder (spellBuilder) { this._builders.spellBuilder = spellBuilder; }
+
+	get creatureBuilder () { return this._builders.creatureBuilder; }
+
+	get activeBuilder () { return this._settings.activeBuilder || PageUi._DEFAULT_ACTIVE_BUILDER; }
 
 	get $wrpInput () { return this._$wrpInput; }
 
@@ -40,10 +65,17 @@ class PageUi {
 	get allSources () { return this._allSources; }
 
 	set source (json) {
+		const prevSource = this._settings.activeSource;
+
 		this._$selSource.val(json);
 		this._settings.activeSource = json;
 		this._doHandleUpdateSource();
+
+		if (!prevSource && json) this.__setStageMain();
 	}
+
+	get sidemenuRenderCache () { return this._sidemenuRenderCache; }
+	set sidemenuRenderCache (val) { this._sidemenuRenderCache = val; }
 
 	_doSave () {
 		this.__saveableStates = this.__saveableStates || {builders: {}};
@@ -66,7 +98,7 @@ class PageUi {
 		this._$wrpSource = $(`#page_source`);
 		this._$wrpMain = $(`#page_main`);
 
-		this._settings.activeBuilder = this._settings.activeBuilder || "creatureBuilder";
+		this._settings.activeBuilder = this._settings.activeBuilder || PageUi._DEFAULT_ACTIVE_BUILDER;
 
 		this._initLhs();
 		this._initRhs();
@@ -82,12 +114,15 @@ class PageUi {
 		this._doRenderActiveBuilder();
 		this._doInitNavHandler();
 
-		if (!this._settings.activeSource || !BrewUtil.homebrewMeta.sources.some(it => it.json === this._settings.activeSource)) {
-			this._doRebuildStageSource({mode: "add"});
-			this.__setStageSource();
-		} else {
+		if (this._settings.activeSource && BrewUtil.homebrewMeta.sources.some(it => it.json === this._settings.activeSource)) {
 			this.__setStageMain();
 			this._sideMenuEnabled = true;
+		} else if (BrewUtil.homebrewMeta.sources.length) {
+			this._doRebuildStageSource({mode: "select", isRequired: true});
+			this.__setStageSource();
+		} else {
+			this._doRebuildStageSource({mode: "add", isRequired: true});
+			this.__setStageSource();
 		}
 	}
 
@@ -107,9 +142,7 @@ class PageUi {
 		SourceUiUtil.render({
 			...options,
 			$parent: this._$wrpSource,
-			cbConfirm: (source) => {
-				const isNewSource = options.mode !== "edit";
-
+			cbConfirm: (source, isNewSource) => {
 				if (isNewSource) BrewUtil.addSource(source);
 				else BrewUtil.updateSource(source);
 
@@ -129,7 +162,7 @@ class PageUi {
 			cbCancel: () => {
 				this._sideMenuEnabled = true;
 				this.__setStageMain();
-			}
+			},
 		});
 	}
 
@@ -142,21 +175,50 @@ class PageUi {
 		this._$wrpOutput = $(`#content_output`);
 	}
 
+	getBuilderById (id) {
+		id = id.toLowerCase().trim();
+		const key = Object.keys(this._builders).find(k => k.toLowerCase().trim() === id);
+		if (key) return this._builders[key];
+	}
+
+	setActiveBuilderById (id) {
+		id = id.toLowerCase().trim();
+		const key = Object.keys(this._builders).find(k => k.toLowerCase().trim() === id);
+		this._setActiveBuilder(key);
+	}
+
+	_setActiveBuilder (nxtActiveBuilder) {
+		if (!this._builders[nxtActiveBuilder]) throw new Error(`Builder "${nxtActiveBuilder}" does not exist!`);
+
+		this._$selBuilderMode.val(nxtActiveBuilder);
+		this._settings.activeBuilder = nxtActiveBuilder;
+		if (!Hist.initialLoad) Hist.replaceHistoryHash(UrlUtil.encodeForHash(this._settings.activeBuilder));
+		const builder = this._builders[this._settings.activeBuilder];
+		builder.renderInput();
+		builder.renderOutput();
+		builder.renderSideMenu();
+		this._saveSettingsDebounced();
+	}
+
 	_initSideMenu () {
 		const $mnu = $(`.sidemenu`);
 
 		const prevMode = this._settings.activeBuilder;
 
 		const $wrpMode = $(`<div class="sidemenu__row split-v-center"><div class="sidemenu__row__label mr-2">Mode</div></div>`).appendTo($mnu);
-		const $selMode = $(`
+		this._$selBuilderMode = $(`
 			<select class="form-control input-xs">
 				<option value="creatureBuilder">Creature</option>
+				<option value="legendaryGroupBuilder">Legendary Group</option>
+				<option value="spellBuilder">Spell</option>
 			</select>
 		`).appendTo($wrpMode).change(() => {
-			this._settings.activeBuilder = $selMode.val();
-			this._builders[this._settings.activeBuilder].renderSideMenu();
-			this._saveSettingsDebounced();
+			this._setActiveBuilder(this._$selBuilderMode.val());
 		});
+
+		const $btnManageHomebrew = $(`<button class="btn btn-xs btn-info">Manage Homebrew</button>`)
+			.click(() => BrewUtil.manageBrew());
+		$$`<div class="sidemenu__row">${$btnManageHomebrew}</div>`.appendTo($mnu)
 
 		$mnu.append(PageUi.__$getSideMenuDivider(true));
 
@@ -195,7 +257,7 @@ class PageUi {
 		$mnu.append(PageUi.__$getSideMenuDivider(true));
 		this._$menuInner = $(`<div/>`).appendTo($mnu);
 
-		if (prevMode) $selMode.val(prevMode).change();
+		if (prevMode) this._setActiveBuilder(prevMode);
 	}
 
 	set _sideMenuEnabled (val) { $(`.sidemenu__toggle`).toggle(!!val); }
@@ -237,24 +299,71 @@ class PageUi {
 	}
 
 	_getJsonOutputTemplate () {
-		return {_meta: {sources: [MiscUtil.copy(BrewUtil.sourceJsonToSource(this._settings.activeSource))]}};
+		const timestamp = Math.round(Date.now() / 1000);
+		return {
+			_meta: {
+				sources: [MiscUtil.copy(BrewUtil.sourceJsonToSource(this._settings.activeSource))],
+				dateAdded: timestamp,
+				dateLastModified: timestamp,
+			},
+		};
 	}
 }
 PageUi.STORAGE_STATE = "brewbuilderState";
 PageUi.STORAGE_SETTINGS = "brewbuilderSettings";
+PageUi._DEFAULT_ACTIVE_BUILDER = "creatureBuilder";
 
-class Builder {
+class Builder extends ProxyBase {
 	static async pInitAll () {
 		return Promise.all(Builder._BUILDERS.map(b => b.pInit()))
 	}
 
-	constructor () {
-		this._ui = null;
-		this._isStateDirty = false;
-
-		this._isEntrySaved = true;
+	/**
+	 * @param opts Options object.
+	 * @param opts.titleSidebarLoadExisting Text for "Load Existing" sidebar button.
+	 * @param opts.titleSidebarDownloadJson Text for "Download JSON" sidebar button.
+	 * @param opts.metaSidebarDownloadMarkdown Meta for a "Download Markdown" sidebar button.
+	 * @param opts.prop Homebrew prop.
+	 * @param opts.typeRenderData Renderer "dataX" entry type.
+	 */
+	constructor (opts) {
+		super();
+		opts = opts || {};
+		this._titleSidebarLoadExisting = opts.titleSidebarLoadExisting;
+		this._titleSidebarDownloadJson = opts.titleSidebarDownloadJson;
+		this._metaSidebarDownloadMarkdown = opts.metaSidebarDownloadMarkdown;
+		this._prop = opts.prop;
+		this._typeRenderData = opts.typeRenderData;
 
 		Builder._BUILDERS.push(this);
+		TabUiUtil.decorate(this);
+
+		this._ui = null;
+		this._isStateDirty = false;
+		this._isEntrySaved = true;
+
+		this._sourcesCache = []; // the JSON sources from the main UI
+		this._$selSource = null;
+		this._cbCache = null;
+
+		this.__state = this._getInitialState();
+		this._state = null; // proxy used to access state
+		this.__meta = this.getInitialMetaState(); // meta state
+		this._meta = null; // proxy used to access meta state
+		this.doCreateProxies(); // init proxies
+
+		this._$btnSave = null;
+		this._$wrpBtnLoadExisting = null;
+		this._$sideMenuStageSaved = null;
+		this._$sideMenuWrpList = null;
+		this._$eles = {}; // Generic internal element storage
+	}
+
+	doCreateProxies () {
+		this._resetHooks("state");
+		this._resetHooks("meta");
+		this._state = this._getProxy("state", this.__state);
+		this._meta = this._getProxy("meta", this.__meta);
 	}
 
 	set ui (ui) { this._ui = ui; }
@@ -265,15 +374,460 @@ class Builder {
 	get isEntrySaved () { return this._isEntrySaved; }
 	set isEntrySaved (val) { this._isEntrySaved = val; }
 
-	getSaveableState () { throw new TypeError(`Unimplemented method!`); }
+	getSaveableState () {
+		return {
+			s: this.__state,
+			m: this.__meta,
+			// parent/other meta-state
+			_m: {
+				isEntrySaved: this.isEntrySaved,
+			},
+		}
+	}
+
 	setStateFromLoaded () { throw new TypeError(`Unimplemented method!`); }
-	doHandleSourceUpdate () { throw new TypeError(`Unimplemented method!`); }
+
+	getIxBrew (entity) {
+		return (BrewUtil.homebrew[this._prop] || []).findIndex(it => it.source === entity.source && it.name === entity.name);
+	}
+
+	doHandleSourceUpdate () {
+		const nuSource = this._ui.source;
+
+		// if the source we were using is gone, update
+		if (!this._sourcesCache.includes(nuSource)) {
+			this._state.source = nuSource;
+			this._sourcesCache = MiscUtil.copy(this._ui.allSources);
+
+			const $cache = this._$selSource;
+			this._$selSource = this.$getSourceInput(this._cbCache);
+			$cache.replaceWith(this._$selSource);
+		}
+
+		this.renderInput();
+		this.renderOutput();
+		this.renderSideMenu();
+		this.doUiSave();
+	}
+
+	$getSourceInput (cb) {
+		return BuilderUi.$getStateIptEnum(
+			"Source",
+			cb,
+			this._state,
+			{
+				vals: this._sourcesCache, fnDisplay: Parser.sourceJsonToFull, type: "string", nullable: false,
+			},
+			"source",
+		);
+	}
+
+	doUiSave () {
+		// set our state to dirty, and trigger a save at a higher level
+		this._isStateDirty = true;
+		this._ui.doSaveDebounced();
+	}
+
+	renderSideMenu () {
+		// region Detach any sidemenu renders from other builders
+		if (this._ui.sidemenuRenderCache) {
+			if (this._ui.sidemenuRenderCache.$lastStageSaved !== this._$sideMenuStageSaved) this._ui.sidemenuRenderCache.$lastStageSaved.detach();
+
+			if (this._ui.sidemenuRenderCache.$lastWrpBtnLoadExisting !== this._$wrpBtnLoadExisting) this._ui.sidemenuRenderCache.$lastWrpBtnLoadExisting.detach();
+		}
+		// endregion
+
+		// region If this is our first sidemenu render, create elements
+		if (!this._$sideMenuStageSaved) {
+			const $btnLoadExisting = $(`<button class="btn btn-xs btn-default">${this._titleSidebarLoadExisting}</button>`)
+				.click(() => this.pHandleSidebarLoadExistingClick());
+			this._$wrpBtnLoadExisting = $$`<div class="sidemenu__row">${$btnLoadExisting}</div>`;
+
+			const $btnDownloadJson = $(`<button class="btn btn-default btn-xs mb-2">${this._titleSidebarDownloadJson}</button>`)
+				.click(() => this.handleSidebarDownloadJsonClick());
+
+			const $wrpDownloadMarkdown = (() => {
+				if (!this._metaSidebarDownloadMarkdown) return null;
+
+				const $btnDownload = $(`<button class="btn btn-default btn-xs mb-2">${this._metaSidebarDownloadMarkdown.title}</button>`)
+					.click(async () => {
+						const entities = this._getSidebarVisibleEntities();
+						const mdOut = await this._metaSidebarDownloadMarkdown.pFnGetText(entities);
+						DataUtil.userDownloadText(`${DataUtil.getCleanFilename(BrewUtil.sourceJsonToFull(this._ui.source))}.md`, mdOut);
+					});
+
+				const $btnSettings = $(`<button class="btn btn-default btn-xs mb-2"><span class="glyphicon glyphicon-cog"/></button>`)
+					.click(() => RendererMarkdown.pShowSettingsModal());
+
+				return $$`<div class="flex-v-center btn-group">${$btnDownload}${$btnSettings}</div>`
+			})();
+
+			this._$sideMenuWrpList = this._$sideMenuWrpList || $(`<div class="sidemenu__row flex-col">`);
+			this._$sideMenuStageSaved = $$`<div>
+			${PageUi.__$getSideMenuDivider().hide()}
+			<div class="flex-v-center">${$btnDownloadJson}</div>
+			${$wrpDownloadMarkdown}
+			${this._$sideMenuWrpList}
+			</div>`;
+		}
+		// endregion
+
+		// Make our sidemenu internal wrapper visible
+		this._$wrpBtnLoadExisting.appendTo(this._ui.$wrpSideMenu)
+		this._$sideMenuStageSaved.appendTo(this._ui.$wrpSideMenu);
+
+		this._ui.sidemenuRenderCache = new SidemenuRenderCache({
+			$lastWrpBtnLoadExisting: this._$wrpBtnLoadExisting,
+			$lastStageSaved: this._$sideMenuStageSaved,
+		});
+
+		this.doUpdateSidemenu();
+	}
+
+	get ixBrew () { return this._meta.ixBrew; }
+	set ixBrew (val) { this._meta.ixBrew = val; }
+
+	getOnNavMessage () {
+		if (!this.isEntrySaved && ~this.ixBrew) return "You have unsaved changes! Are you sure you want to leave?";
+		else return null;
+	}
+
+	getSideMenuItems () {
+		return MiscUtil.copy((BrewUtil.homebrew[this._prop] || []).filter(entry => entry.source === this._ui.source))
+			.sort((a, b) => SortUtil.ascSort(a.name, b.name));
+	}
+
+	doUpdateSidemenu () {
+		this._sidemenuListRenderCache = this._sidemenuListRenderCache || new SideMenuListRenderCache();
+
+		const toList = this.getSideMenuItems();
+		this._$sideMenuStageSaved.toggleVe(!!toList.length);
+
+		// region Create a sparse array, of brew index -> entry
+		const toListSparse = [];
+		toList.forEach((entry, i) => {
+			const ix = BrewUtil.getEntryIxByEntry(this._prop, entry);
+			toListSparse[ix] = {
+				entry,
+				position: i,
+			};
+		});
+		// endregion
+
+		const ixs = toList.map(entry => BrewUtil.getEntryIxByEntry(this._prop, entry));
+		const ixCap = Math.max(...ixs) + 1; // +1 so our "<" loop functions
+
+		for (let ix = 0, len = Math.max(ixCap, this._sidemenuListRenderCache.getIxMaxRendered()); ix < len; ++ix) {
+			const {entry, position} = toListSparse[ix] ?? {};
+			const meta = this._sidemenuListRenderCache.getMeta(ix);
+
+			if (meta) {
+				if (entry) {
+					meta.$row.showVe();
+
+					if (meta.name !== entry.name) {
+						meta.$dispName.text(entry.name);
+						meta.name = entry.name;
+					}
+
+					if (meta.position !== position) {
+						meta.$row.css("order", position);
+						meta.position = position;
+					}
+				} else {
+					meta.$row.hideVe();
+				}
+				continue;
+			}
+
+			if (!entry) continue;
+
+			const $btnEdit = $(`<button class="btn btn-xs btn-default mr-2" title="Edit"><span class="glyphicon glyphicon-pencil"/></button>`)
+				.click(() => {
+					if (this.getOnNavMessage() && !confirm("You have unsaved changes. Are you sure?")) return;
+					this.setStateFromLoaded({s: MiscUtil.copy(BrewUtil.getEntryByEntryIx(this._prop, ix)), m: {...this.getInitialMetaState(), ixBrew: ix}});
+					this.renderInput();
+					this.renderOutput();
+					this.doUiSave();
+				});
+
+			const menu = ContextUtil.getMenu([
+				new ContextUtil.Action(
+					"Duplicate",
+					async () => {
+						const copy = MiscUtil.copy(BrewUtil.getEntryByEntryIx(this._prop, ix));
+
+						// Get the root name without trailing numbers, e.g. "Goblin (2)" -> "Goblin"
+						const m = /^(.*?) \((\d+)\)$/.exec(copy.name.trim());
+						if (m) copy.name = `${m[1]} (${Number(m[2]) + 1})`;
+						else copy.name = `${copy.name} (1)`;
+						await BrewUtil.pAddEntry(this._prop, copy);
+						this.doUpdateSidemenu();
+					},
+				),
+				new ContextUtil.Action(
+					"View JSON",
+					(evt) => {
+						const out = this._ui._getJsonOutputTemplate();
+						out[this._prop] = [PropOrder.getOrdered(DataUtil.cleanJson(MiscUtil.copy(BrewUtil.getEntryByEntryIx(this._prop, ix))), this._prop)];
+
+						const $content = Renderer.hover.$getHoverContent_statsCode(this._state);
+
+						Renderer.hover.getShowWindow(
+							$content,
+							Renderer.hover.getWindowPositionFromEvent(evt),
+							{
+								title: `${this._state.name} \u2014 Source Data`,
+								isPermanent: true,
+								isBookContent: true,
+							},
+						);
+					},
+				),
+				new ContextUtil.Action(
+					"Download JSON",
+					() => {
+						const out = this._ui._getJsonOutputTemplate();
+						const cpy = MiscUtil.copy(BrewUtil.getEntryByEntryIx(this._prop, ix));
+						out[this._prop] = [DataUtil.cleanJson(cpy)];
+						DataUtil.userDownload(DataUtil.getCleanFilename(cpy.name), out);
+					},
+				),
+				new ContextUtil.Action(
+					"View Markdown",
+					(evt) => {
+						const entry = MiscUtil.copy(BrewUtil.getEntryByEntryIx(this._prop, ix));
+						const name = `${entry._displayName || entry.name} \u2014 Markdown`;
+						const mdText = RendererMarkdown.get().render({entries: [{type: this._typeRenderData, [this._typeRenderData]: entry}]});
+						const $content = Renderer.hover.$getHoverContent_miscCode(name, mdText);
+
+						Renderer.hover.getShowWindow(
+							$content,
+							Renderer.hover.getWindowPositionFromEvent(evt),
+							{
+								title: name,
+								isPermanent: true,
+								isBookContent: true,
+							},
+						);
+					},
+				),
+				new ContextUtil.Action(
+					"Download Markdown",
+					() => {
+						const entry = MiscUtil.copy(BrewUtil.getEntryByEntryIx(this._prop, ix));
+						const mdText = CreatureBuilder._getAsMarkdown(entry).trim();
+						DataUtil.userDownloadText(`${DataUtil.getCleanFilename(entry.name)}.md`, mdText);
+					},
+				),
+			]);
+
+			const $btnBurger = $(`<button class="btn btn-xs btn-default mr-2" title="More Options"><span class="glyphicon glyphicon-option-vertical"/></button>`)
+				.click(evt => ContextUtil.pOpenMenu(evt, menu));
+
+			const $btnDelete = $(`<button class="btn btn-xs btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"/></button>`)
+				.click(async () => {
+					if (confirm("Are you sure?")) {
+						if (this.ixBrew === ix) {
+							this.isEntrySaved = false;
+							this.ixBrew = null;
+							this.mutSavedButtonText();
+						} else if (this.ixBrew > ix) {
+							this.ixBrew--; // handle the splice -- our index is now one lower
+						}
+						await BrewUtil.pRemoveEntry(this._prop, entry);
+						this.doUpdateSidemenu();
+						await this.pDoPostDelete();
+					}
+				});
+
+			const $dispName = $$`<span class="py-1">${entry.name}</span>`;
+
+			const $row = $$`<div class="mkbru__sidebar-entry flex-v-center split px-2" style="order: ${position}">
+			${$dispName}
+			<div class="py-1 no-shrink">${$btnEdit}${$btnBurger}${$btnDelete}</div>
+			</div>`.appendTo(this._$sideMenuWrpList);
+
+			const nuMeta = {
+				$dispName,
+				$row,
+				name: entry.name,
+				position,
+			};
+			this._sidemenuListRenderCache.setMeta(ix, nuMeta);
+		}
+	}
+
+	_getSidebarVisibleEntities () {
+		return (BrewUtil.homebrew[this._prop] || []).filter(entry => entry.source === this._ui.source);
+	}
+
+	handleSidebarDownloadJsonClick () {
+		const out = this._ui._getJsonOutputTemplate();
+		out[this._prop] = this._getSidebarVisibleEntities().map(entry => PropOrder.getOrdered(DataUtil.cleanJson(MiscUtil.copy(entry)), this._prop));
+		DataUtil.userDownload(DataUtil.getCleanFilename(BrewUtil.sourceJsonToFull(this._ui.source)), out);
+	}
+
+	renderInputControls () {
+		const $wrpControls = this._ui.$wrpInputControls.empty();
+
+		this._$btnSave = BuilderUi.$getSaveButton().click(async () => {
+			await this._renderInputControls_pSaveBrew();
+			this.doUpdateSidemenu();
+		}).appendTo($wrpControls);
+
+		BuilderUi.$getResetButton().click(() => {
+			if (!confirm("Are you sure?")) return;
+			this.reset();
+		}).appendTo($wrpControls);
+	}
+
+	reset () {
+		this.setStateFromLoaded({s: this._getInitialState(), m: this.getInitialMetaState()});
+		this.renderInput();
+		this.renderOutput();
+		this.isEntrySaved = true;
+		this.mutSavedButtonText();
+		this.doUiSave();
+	}
+
+	async _renderInputControls_pSaveBrew () {
+		if (this.ixBrew != null) {
+			await BrewUtil.pUpdateEntryByIx(this._prop, this.ixBrew, MiscUtil.copy(this.__state));
+			this.renderSideMenu();
+		} else {
+			const cpy = MiscUtil.copy(this.__state);
+			this.ixBrew = await BrewUtil.pAddEntry(this._prop, cpy);
+			await Omnisearch.pAddToIndex(this._prop, cpy);
+			await SearchWidget.P_LOADING_CONTENT;
+			await SearchWidget.pAddToIndexes(this._prop, cpy);
+		}
+		this.isEntrySaved = true;
+		this.mutSavedButtonText();
+		this.doUiSave();
+		await this.pDoPostSave();
+	}
+
+	mutSavedButtonText () {
+		if (this._$btnSave) this._$btnSave.text(this.isEntrySaved ? "Saved" : "Save *");
+	}
+
+	// TODO use this in creature builder
+	/**
+	 * @param doUpdateState
+	 * @param rowArr
+	 * @param row
+	 * @param $wrpRow
+	 * @param title
+	 * @param [opts] Options object.
+	 * @param [opts.isProtectLast]
+	 * @param [opts.isExtraSmall]
+	 * @return {JQuery}
+	 */
+	static $getBtnRemoveRow (doUpdateState, rowArr, row, $wrpRow, title, opts) {
+		opts = opts || {};
+
+		return $(`<button class="btn ${opts.isExtraSmall ? "btn-xxs" : "btn-xs"} btn-danger ${opts.isProtectLast ? "mkbru__btn-rm-row" : ""}" title="Remove ${title}"><span class="glyphicon glyphicon-trash"/></button>`)
+			.click(() => {
+				rowArr.splice(rowArr.indexOf(row), 1);
+				$wrpRow.empty().remove();
+				doUpdateState();
+			});
+	}
+
+	$getFluffInput (cb) {
+		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple("Flavor Info");
+
+		const imageRows = [];
+
+		const doUpdateState = () => {
+			const out = {};
+
+			const entries = UiUtil.getTextAsEntries($iptEntries.val());
+			if (entries && entries.length) out.entries = entries;
+
+			const images = imageRows.map(it => it.getState()).filter(Boolean);
+
+			if (images.length) out.images = images;
+
+			if (out.entries || out.images) this._state.fluff = out;
+			else delete this._state.fluff;
+
+			cb();
+		};
+
+		const doUpdateOrder = () => {
+			imageRows.forEach(it => it.$ele.detach().appendTo($wrpRows));
+			doUpdateState();
+		};
+
+		const $wrpRowsOuter = $(`<div class="relative"/>`);
+		const $wrpRows = $(`<div class="flex-col"/>`).appendTo($wrpRowsOuter);
+
+		const rowOptions = {$wrpRowsOuter};
+
+		const $iptEntries = $(`<textarea class="form-control form-control--minimal resize-vertical mb-2"/>`)
+			.change(() => doUpdateState());
+
+		const $btnAddImage = $(`<button class="btn btn-xs btn-default">Add Image</button>`)
+			.click(async () => {
+				const url = await InputUiUtil.pGetUserString({title: "Enter a URL"});
+				if (!url) return;
+				CreatureBuilder.__$getFluffInput__getImageRow(doUpdateState, doUpdateOrder, rowOptions, imageRows, {href: {url: url}}).$ele.appendTo($wrpRows);
+				doUpdateState();
+			});
+
+		$$`<div class="flex-col">
+		${$iptEntries}
+		${$wrpRowsOuter}
+		<div>${$btnAddImage}</div>
+		</div>`.appendTo($rowInner);
+
+		if (this._state.fluff) {
+			if (this._state.fluff.entries) $iptEntries.val(UiUtil.getEntriesAsText(this._state.fluff.entries));
+			if (this._state.fluff.images) this._state.fluff.images.forEach(img => CreatureBuilder.__$getFluffInput__getImageRow(doUpdateState, doUpdateOrder, rowOptions, imageRows, img).$ele.appendTo($wrpRows));
+		}
+
+		return $row;
+	}
+
+	_getRenderedMarkdownCode () {
+		const mdText = this.constructor._getAsMarkdown(this._state);
+		return Renderer.get().render({
+			type: "entries",
+			entries: [
+				{
+					type: "code",
+					name: `Markdown`,
+					preformatted: mdText,
+				},
+			],
+		});
+	}
+
 	doHandleSourcesAdd () { throw new TypeError(`Unimplemented method!`); }
-	renderInput () { throw new TypeError(`Unimplemented method!`); }
+	renderInput () {
+		try {
+			this._renderInputImpl();
+			this._isLastRenderInputFail = false;
+		} catch (e) {
+			if (!this._isLastRenderInputFail) {
+				JqueryUtil.doToast({type: "danger", content: `Could not load homebrew, it contained errors! ${VeCt.STR_SEE_CONSOLE}`});
+				setTimeout(() => { throw e; });
+			}
+			const tmp = this._isLastRenderInputFail;
+			this._isLastRenderInputFail = true;
+			if (!tmp) this.reset();
+		}
+	}
+	_renderInputImpl () { throw new TypeError(`Unimplemented method!`); }
 	renderOutput () { throw new TypeError(`Unimplemented method!`); }
-	renderSideMenu () { throw new TypeError(`Unimplemented method!`); }
-	getOnNavMessage () { throw new TypeError(`Unimplemented method!`); }
+	async pHandleSidebarLoadExistingClick () { throw new TypeError(`Unimplemented method!`); }
+	async pHandleSidebarLoadExistingData (entity, opts) { throw new TypeError(`Unimplemented method!`); }
+	getInitialMetaState () { return {}; }
 	async pInit () {}
+	async pDoPostSave () {}
+	async pDoPostDelete () {}
 }
 Builder._BUILDERS = [];
 
@@ -303,21 +857,24 @@ class BuilderUi {
 		}
 	}
 
+	static fnPostProcessDice (ents) { return ents.map(ent => DiceConvert.getTaggedEntry(ent)); }
+
 	/**
 	 *
 	 * @param name Row name.
-	 * @param options Options object.
-	 * @param options.eleType HTML element to use.
-	 * @param options.isMarked If a "group" vertical marker should be displayed between the name and the row body.
-	 * @param options.isRow If the row body should use flex row (instead of flex col).
+	 * @param [options] Options object.
+	 * @param [options.eleType] HTML element to use.
+	 * @param [options.isMarked] If a "group" vertical marker should be displayed between the name and the row body.
+	 * @param [options.isRow] If the row body should use flex row (instead of flex col).
+	 * @param [options.title] Tooltip text.
 	 */
 	static getLabelledRowTuple (name, options) {
 		options = options || {};
 
 		const eleType = options.eleType || "div";
 
-		const $rowInner = $(`<div class="${options.isRow ? "flex" : "flex-col"} full-width"/>`);
-		const $row = $$`<div class="mb-2 mkbru__row"><${eleType} class="mkbru__wrp-row flex-v-center"><span class="mr-2 mkbru__row-name ${options.isMarked ? `mkbru__row-name--marked` : ""}">${name}</span>${options.isMarked ? `<div class="mkbru__row-mark mr-2"/>` : ""}${$rowInner}</${eleType}></div>`;
+		const $rowInner = $(`<div class="${options.isRow ? "flex" : "flex-col"} w-100"/>`);
+		const $row = $$`<div class="mb-2 mkbru__row stripe-even"><${eleType} class="mkbru__wrp-row flex-v-center"><span class="mr-2 mkbru__row-name ${options.isMarked ? `mkbru__row-name--marked` : ""} ${options.title ? "help" : ""}" ${options.title ? `title="${options.title}"` : ""}>${name}</span>${options.isMarked ? `<div class="mkbru__row-mark mr-2"/>` : ""}${$rowInner}</${eleType}></div>`;
 		return [$row, $rowInner];
 	}
 
@@ -326,7 +883,7 @@ class BuilderUi {
 
 		const eleType = options.eleType || "div";
 
-		return $$`<div class="mb-2 mkbru__row"><${eleType} class="mkbru__wrp-row flex-v-center">
+		return $$`<div class="mb-2 mkbru__row stripe-even"><${eleType} class="mkbru__wrp-row flex-v-center">
 		<span class="mr-2 mkbru__row-name ${options.title ? "help" : ""}" ${options.title ? `title="${options.title}"` : ""}>${name}</span>
 		${$ipt}
 		<${eleType}/></div>`
@@ -335,7 +892,7 @@ class BuilderUi {
 	static $getStateIptString (name, fnRender, state, options, ...path) {
 		if (options.nullable == null) options.nullable = true;
 
-		const initialState = MiscUtil.getProperty(state, ...path);
+		const initialState = MiscUtil.get(state, ...path);
 		const $ipt = $(`<input class="form-control input-xs form-control--minimal ${options.type ? `type="${options.type}"` : ""}">`)
 			.val(initialState)
 			.change(() => {
@@ -347,15 +904,45 @@ class BuilderUi {
 		return BuilderUi.__$getRow(name, $ipt, options);
 	}
 
+	/**
+	 * @param name
+	 * @param fnRender
+	 * @param state
+	 * @param options
+	 * @param [options.nullable]
+	 * @param [options.placeholder]
+	 * @param [options.withHeader]
+	 * @param [options.fnPostProcess]
+	 * @param path
+	 * @return {*}
+	 */
 	static $getStateIptEntries (name, fnRender, state, options, ...path) {
 		if (options.nullable == null) options.nullable = true;
 
-		const initialState = MiscUtil.getProperty(state, ...path);
-		const $ipt = $(`<textarea class="form-control form-control--minimal mkbru__ipt-textarea" ${options.placeholder ? `placeholder="${options.placeholder}"` : ""}/>`)
-			.val(BuilderUi.getEntriesAsText(initialState))
+		let initialState = MiscUtil.get(state, ...path);
+		if (options.withHeader && initialState) initialState = initialState[0].entries;
+
+		const $ipt = $(`<textarea class="form-control form-control--minimal resize-vertical" ${options.placeholder ? `placeholder="${options.placeholder}"` : ""}/>`)
+			.val(UiUtil.getEntriesAsText(initialState))
 			.change(() => {
 				const raw = $ipt.val().trim();
-				BuilderUi.__setProp(raw || !options.nullable ? BuilderUi.getTextAsEntries(raw) : null, options, state, ...path);
+				let out = raw || !options.nullable ? UiUtil.getTextAsEntries(raw) : null;
+
+				if (out && options.fnPostProcess) {
+					out = options.fnPostProcess(out);
+					$ipt.val(UiUtil.getEntriesAsText(out));
+				}
+
+				if (options.withHeader && out) {
+					out = [
+						{
+							name: options.withHeader,
+							entries: out,
+						},
+					];
+				}
+
+				BuilderUi.__setProp(out, options, state, ...path);
 				fnRender();
 			});
 		return BuilderUi.__$getRow(name, $ipt, options);
@@ -365,7 +952,7 @@ class BuilderUi {
 		if (options.nullable == null) options.nullable = true;
 
 		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple(name, {isMarked: true});
-		const initialState = MiscUtil.getProperty(state, ...path) || [];
+		const initialState = MiscUtil.get(state, ...path) || [];
 		const stringRows = [];
 
 		const doUpdateState = () => {
@@ -375,20 +962,20 @@ class BuilderUi {
 		};
 
 		const $wrpRows = $(`<div/>`).appendTo($rowInner);
-		initialState.forEach(string => BuilderUi.$getStateIptStringArray__getRow(doUpdateState, stringRows, string).$wrp.appendTo($wrpRows));
+		initialState.forEach(string => BuilderUi._$getStateIptStringArray_getRow(doUpdateState, stringRows, string).$wrp.appendTo($wrpRows));
 
 		const $wrpBtnAdd = $(`<div/>`).appendTo($rowInner);
 		$(`<button class="btn btn-xs btn-default">Add ${options.shortName}</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
-				BuilderUi.$getStateIptStringArray__getRow(doUpdateState, stringRows).$wrp.appendTo($wrpRows);
+				BuilderUi._$getStateIptStringArray_getRow(doUpdateState, stringRows).$wrp.appendTo($wrpRows);
 				doUpdateState();
 			});
 
 		return $row;
 	}
 
-	static $getStateIptStringArray__getRow (doUpdateState, stringRows, initialString) {
+	static _$getStateIptStringArray_getRow (doUpdateState, stringRows, initialString) {
 		const getState = () => $iptString.val().trim();
 
 		const $iptString = $(`<input class="form-control form-control--minimal input-xs mr-2">`)
@@ -411,21 +998,33 @@ class BuilderUi {
 	static $getStateIptNumber (name, fnRender, state, options, ...path) {
 		if (options.nullable == null) options.nullable = true;
 
-		const initialState = MiscUtil.getProperty(state, ...path);
-		const $ipt = $(`<input class="form-control input-xs form-control--minimal" type="number" ${options.placeholder ? `placeholder="${options.placeholder}"` : ""}>`)
+		const initialState = MiscUtil.get(state, ...path);
+		const $ipt = $(`<input class="form-control input-xs form-control--minimal" ${options.placeholder ? `placeholder="${options.placeholder}"` : ""}>`)
 			.val(initialState)
 			.change(() => {
-				const raw = $ipt.val().trim();
-				BuilderUi.__setProp(raw || !options.nullable ? Number(raw) : null, options, state, ...path);
+				const defaultVal = options.nullable ? null : 0;
+				const val = UiUtil.strToInt($ipt.val(), defaultVal, {fallbackOnNaN: defaultVal});
+				BuilderUi.__setProp(val, options, state, ...path);
+				$ipt.val(val);
 				fnRender();
 			});
 		return BuilderUi.__$getRow(name, $ipt, options);
 	}
 
+	/**
+	 * @param name
+	 * @param fnRender
+	 * @param state
+	 * @param options Options object.
+	 * @param options.nullable
+	 * @param options.fnDisplay
+	 * @param options.vals
+	 * @param path
+	 */
 	static $getStateIptEnum (name, fnRender, state, options, ...path) {
 		if (options.nullable == null) options.nullable = true;
 
-		const initialState = MiscUtil.getProperty(state, ...path);
+		const initialState = MiscUtil.get(state, ...path);
 		const $sel = $(`<select class="form-control input-xs form-control--minimal">`);
 		if (options.nullable) $sel.append(`<option value="-1">(None)</option>`);
 		options.vals.forEach((v, i) => $(`<option>`).val(i).text(options.fnDisplay ? options.fnDisplay(v) : v).appendTo($sel));
@@ -443,7 +1042,7 @@ class BuilderUi {
 	static $getStateIptBoolean (name, fnRender, state, options, ...path) {
 		if (options.nullable == null) options.nullable = true;
 
-		const initialState = MiscUtil.getProperty(state, ...path);
+		const initialState = MiscUtil.get(state, ...path);
 		const $ipt = $(`<input class="mkbru__ipt-cb" type="checkbox">`)
 			.prop("checked", initialState)
 			.change(() => {
@@ -452,15 +1051,26 @@ class BuilderUi {
 				BuilderUi.__setProp(raw || !options.nullable ? raw : null, options, state, ...path);
 				fnRender();
 			});
-		return BuilderUi.__$getRow(name, $$`<div class="full-width flex-v-center">${$ipt}</div>`, {...options, eleType: "label"});
+		return BuilderUi.__$getRow(name, $$`<div class="w-100 flex-v-center">${$ipt}</div>`, {...options, eleType: "label"});
 	}
 
+	/**
+	 * @param name
+	 * @param fnRender
+	 * @param state
+	 * @param options
+	 * @param options.vals
+	 * @param [options.nullable]
+	 * @param [options.fnDisplay]
+	 * @param path
+	 * @return {*}
+	 */
 	static $getStateIptBooleanArray (name, fnRender, state, options, ...path) {
 		if (options.nullable == null) options.nullable = true;
 		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple(name, {isMarked: true});
 
-		const initialState = MiscUtil.getProperty(state, ...path) || [];
-		const $wrpIpts = $(`<div class="flex-col full-width mr-2"/>`).appendTo($rowInner);
+		const initialState = MiscUtil.get(state, ...path) || [];
+		const $wrpIpts = $(`<div class="flex-col w-100 mr-2"/>`).appendTo($rowInner);
 		const inputs = [];
 		options.vals.forEach(val => {
 			const $cb = $(`<input class="mkbru__ipt-cb" type="checkbox">`)
@@ -470,7 +1080,7 @@ class BuilderUi {
 					fnRender();
 				});
 			inputs.push({$ipt: $cb, val});
-			$$`<label class="flex-v-center split mkbru__multi-cb-row"><span>${options.fnDisplay ? options.fnDisplay(val) : val}</span>${$cb}</label>`.appendTo($wrpIpts);
+			$$`<label class="flex-v-center split stripe-odd--faint"><span>${options.fnDisplay ? options.fnDisplay(val) : val}</span>${$cb}</label>`.appendTo($wrpIpts);
 		});
 
 		const getState = () => {
@@ -479,68 +1089,6 @@ class BuilderUi {
 		};
 
 		return $row;
-	}
-
-	static getEntriesAsText (entryArray) {
-		if (!entryArray || !entryArray.length) return "";
-		return JSON.stringify(entryArray, null, 2)
-			.replace(/^\s*\[/, "").replace(/]\s*$/, "")
-			.split("\n")
-			.filter(it => it.trim())
-			.map(it => {
-				const trim = it.replace(/^\s\s/, "");
-				const mQuotes = /^"(.*?)"$/.exec(trim);
-				if (mQuotes) return mQuotes[1]; // if string, strip quotes
-				else return `  ${trim}`; // if object, indent
-			})
-			.join("\n")
-	}
-
-	static getTextAsEntries (text) {
-		try {
-			const lines = [];
-			text.split("\n").filter(it => it.trim()).forEach(it => {
-				if (/^\s/.exec(it)) lines.push(it); // keep indented lines as-is
-				else lines.push(`"${it.replace(/"/g, `\\"`)}",`); // wrap strings
-			});
-			if (lines.length) lines[lines.length - 1] = lines.last().replace(/^(.*?),?$/, "$1"); // remove trailing comma
-			return JSON.parse(`[${lines.join("")}]`);
-		} catch (e) {
-			const lines = text.split("\n").filter(it => it.trim());
-			const slice = lines.join(" \\ ").substring(0, 30);
-			JqueryUtil.doToast({
-				content: `Could not parse entries! Error was: ${e.message}<br>Text was: ${slice}${slice.length === 30 ? "..." : ""}`,
-				type: "danger"
-			});
-			return lines;
-		}
-	}
-
-	static pGetUserSpellSearch (options) {
-		options = options || {};
-		return new Promise(resolve => {
-			const searchOpts = {defaultCategory: "alt_Spell"};
-			if (options.level != null) searchOpts.resultFilter = (result) => result.lvl === options.level;
-
-			const searchWidget = new SearchWidget(
-				{alt_Spell: SearchWidget.CONTENT_INDICES.alt_Spell},
-				(page, source, hash) => {
-					const [encName, encSource] = hash.split(HASH_LIST_SEP);
-					$modalInner.data("close")(false); // "cancel" close
-					resolve(`{@spell ${decodeURIComponent(encName)}${encSource !== UrlUtil.encodeForHash(SRC_PHB) ? `|${decodeURIComponent(encSource)}` : ""}}`)
-				},
-				searchOpts
-			);
-			const $modalInner = UiUtil.getShow$Modal(
-				"Select Spell",
-				(doResolve) => {
-					searchWidget.$wrpSearch.detach();
-					if (doResolve) resolve(null); // ensure resolution
-				}
-			);
-			$modalInner.append(searchWidget.$wrpSearch);
-			searchWidget.doFocus();
-		});
 	}
 
 	/**
@@ -599,26 +1147,32 @@ class BuilderUi {
 			})
 	}
 
+	// FIXME refactor this to use one of the variant in utils-ui
 	static $getDragPad (cbUpdate, rows, myRow, options) {
 		const dragMeta = {};
 		const doDragCleanup = () => {
 			dragMeta.on = false;
 			dragMeta.$wrap.remove();
 			dragMeta.$dummies.forEach($d => $d.remove());
+			$(document.body).off(`mouseup.drag__stop`);
 		};
 
 		const doDragRender = () => {
 			if (dragMeta.on) doDragCleanup();
 
+			$(document.body).on(`mouseup.drag__stop`, () => {
+				if (dragMeta.on) doDragCleanup();
+			});
+
 			dragMeta.on = true;
-			dragMeta.$wrap = $(`<div class="flex-col mkbru__wrp-drag-block"/>`).appendTo(options.$wrpRowsOuter);
+			dragMeta.$wrap = $(`<div class="flex-col ui-drag__wrp-drag-block"/>`).appendTo(options.$wrpRowsOuter);
 			dragMeta.$dummies = [];
 
 			const ixRow = rows.indexOf(myRow);
 
 			rows.forEach((row, i) => {
 				const dimensions = {w: row.$ele.outerWidth(true), h: row.$ele.outerHeight(true)};
-				const $dummy = $(`<div class="mkbru__wrp-drag-dummy ${i === ixRow ? "mkbru__wrp-drag-dummy--highlight" : "mkbru__wrp-drag-dummy--lowlight"}"/>`)
+				const $dummy = $(`<div class="${i === ixRow ? "ui-drag__wrp-drag-dummy--highlight" : "ui-drag__wrp-drag-dummy--lowlight"}"/>`)
 					.width(dimensions.w).height(dimensions.h)
 					.mouseup(() => {
 						if (dragMeta.on) {
@@ -643,228 +1197,79 @@ class BuilderUi {
 			});
 		};
 
-		return $(`<div class="ml-2 mkbru__drag-patch" title="Drag to Reorder">
-		<div class="mkbru__drag-patch-col"><div>&#8729</div><div>&#8729</div><div>&#8729</div></div>
-		<div class="mkbru__drag-patch-col"><div>&#8729</div><div>&#8729</div><div>&#8729</div></div>
+		return $(`<div class="ml-2 ui-drag__patch" title="Drag to Reorder">
+		<div class="ui-drag__patch-col"><div>&#8729</div><div>&#8729</div><div>&#8729</div></div>
+		<div class="ui-drag__patch-col"><div>&#8729</div><div>&#8729</div><div>&#8729</div></div>
 		</div>`).mousedown(() => doDragRender());
 	}
 }
 
-// based on DM screen's AddMenuSearchTab
-class SearchWidget {
-	/**
-	 * @param indexes An object with index names (categories) as the keys, and indexes as the values.
-	 * @param cbSearch Callback to run on user clicking a search result.
-	 * @param options Options object.
-	 * @param options.defaultCategory Default search category.
-	 * @param options.resultFilter Function which takes a document and returns false if it is to be filtered out of the results.
-	 * @param options.searchOptions Override for default elasticlunr search options.
-	 * @param options.fnTransform Override for default document transformation before being passed to cbSearch.
-	 */
-	constructor (indexes, cbSearch, options) {
-		options = options || {};
+class Makebrew {
+	static async doPageInit () {
+		Makebrew._LOCK = new VeLock();
 
-		this._indexes = indexes;
-		this._cat = options.defaultCategory || "ALL";
-		this._cbSearch = cbSearch;
-		this._resultFilter = options.resultFilter || null;
-		this._searchOptions = options.searchOptions || null;
-		this._fnTransform = options.fnTransform || null;
-
-		this._flags = {
-			doClickFirst: false,
-			isWait: false
-		};
-
-		this._$selCat = null;
-		this._$iptSearch = null;
-		this._$wrpResults = null;
-
-		this._$rendered = null;
-	}
-
-	__getSearchOptions () {
-		return this._searchOptions || {
-			fields: {
-				n: {boost: 5, expand: true},
-				s: {expand: true}
-			},
-			bool: "AND",
-			expand: true
-		};
-	}
-
-	static __get$Row (r) {
-		return $(`<div class="ui-search__row">
-			<span>${r.doc.n}</span>
-			<span>${r.doc.s ? `<i title="${Parser.sourceJsonToFull(r.doc.s)}">${Parser.sourceJsonToAbv(r.doc.s)}${r.doc.p ? ` p${r.doc.p}` : ""}</i>` : ""}</span>
-		</div>`);
-	}
-
-	static __getAllTitle () {
-		return "All Categories";
-	}
-
-	static __getCatOptionText (it) {
-		return it;
-	}
-
-	get $wrpSearch () {
-		if (!this._$rendered) this._render();
-		return this._$rendered
-	}
-
-	__showMsgInputRequired () {
-		this._flags.isWait = true;
-		this._$wrpResults.empty().append(UiUtil.getSearchEnter());
-	}
-
-	__showMsgWait () {
-		this._$wrpResults.empty().append(UiUtil.getSearchLoading())
-	}
-
-	__showMsgNoResults () {
-		this._flags.isWait = true;
-		this._$wrpResults.empty().append(UiUtil.getSearchEnter());
-	}
-
-	__doSearch () {
-		const searchInput = this._$iptSearch.val().trim();
-
-		const index = this._indexes[this._cat];
-		const results = index.search(searchInput, this.__getSearchOptions());
-
-		const {toProcess, resultCount} = (() => {
-			if (results.length) {
-				if (this._resultFilter) {
-					const filtered = results.filter(it => this._resultFilter(it.doc));
-					return {
-						toProcess: filtered.slice(0, UiUtil.SEARCH_RESULTS_CAP),
-						resultCount: filtered.length
-					}
-				} else {
-					return {
-						toProcess: results.slice(0, UiUtil.SEARCH_RESULTS_CAP),
-						resultCount: results.length
-					}
-				}
-			} else {
-				if (this._resultFilter) {
-					const filtered = Object.values(index.documentStore.docs).filter(it => this._resultFilter(it)).map(it => ({doc: it}));
-					return {
-						toProcess: filtered.slice(0, UiUtil.SEARCH_RESULTS_CAP),
-						resultCount: filtered.length
-					}
-				} else {
-					return {
-						toProcess: Object.values(index.documentStore.docs).slice(0, UiUtil.SEARCH_RESULTS_CAP).map(it => ({doc: it})),
-						resultCount: Object.values(index.documentStore.docs).length
-					}
-				}
-			}
-		})();
-
-		this._$wrpResults.empty();
-		if (toProcess.length) {
-			const handleClick = (r) => {
-				if (this._fnTransform) this._cbSearch(this._fnTransform(r.doc));
-				else {
-					const page = UrlUtil.categoryToPage(r.doc.c);
-					const source = r.doc.s;
-					const hash = r.doc.u;
-
-					this._cbSearch(page, source, hash);
-				}
-			};
-
-			if (this._flags.doClickFirst) {
-				handleClick(toProcess[0]);
-				this._flags.doClickFirst = false;
-				return;
-			}
-
-			const res = toProcess.slice(0, UiUtil.SEARCH_RESULTS_CAP);
-
-			res.forEach(r => SearchWidget.__get$Row(r).on("click", () => handleClick(r)).appendTo(this._$wrpResults));
-
-			if (resultCount > UiUtil.SEARCH_RESULTS_CAP) {
-				const diff = resultCount - UiUtil.SEARCH_RESULTS_CAP;
-				this._$wrpResults.append(`<div class="ui-search__row ui-search__row--readonly">...${diff} more result${diff === 1 ? " was" : "s were"} hidden. Refine your search!</div>`);
-			}
-		} else {
-			if (!searchInput.trim()) this.__showMsgInputRequired();
-			else this.__showMsgNoResults();
-		}
-	}
-
-	_render () {
-		if (!this._$rendered) {
-			this._$rendered = $(`<div class="ui-search__wrp-output"/>`);
-			const $wrpControls = $(`<div class="ui-search__wrp-controls"/>`).appendTo(this._$rendered);
-
-			this._$selCat = $(`<select class="form-control ui-search__sel-category">
-				<option value="ALL">${SearchWidget.__getAllTitle()}</option>
-				${Object.keys(this._indexes).sort().filter(it => it !== "ALL").map(it => `<option value="${it}">${SearchWidget.__getCatOptionText(it)}</option>`).join("")}
-			</select>`)
-				.appendTo($wrpControls).toggle(Object.keys(this._indexes).length !== 1)
-				.on("change", () => {
-					this._cat = this._$selCat.val();
-					this.__doSearch();
-				});
-
-			this._$iptSearch = $(`<input class="ui-search__ipt-search search form-control" autocomplete="off" placeholder="Search...">`).appendTo($wrpControls);
-			this._$wrpResults = $(`<div class="ui-search__wrp-results"/>`).appendTo(this._$rendered);
-
-			UiUtil.bindAutoSearch(this._$iptSearch, {
-				flags: this._flags,
-				search: this.__doSearch.bind(this),
-				showWait: this.__showMsgWait
-			});
-
-			this.__doSearch();
-		}
-	}
-
-	doFocus () {
-		this._$iptSearch.focus();
-	}
-
-	static addToIndexes (prop, entry) {
-		const nextId = Object.values(SearchWidget.CONTENT_INDICES.ALL.documentStore.docs).length;
-
-		const indexer = new Omnidexer(nextId);
-
-		const toIndex = {[prop]: [entry]};
-
-		Omnidexer.TO_INDEX__FROM_INDEX_JSON.filter(it => it.listProp === prop)
-			.forEach(it => indexer.addToIndex(it, toIndex));
-		Omnidexer.TO_INDEX.filter(it => it.listProp === prop)
-			.forEach(it => indexer.addToIndex(it, toIndex));
-
-		const toAdd = indexer.getIndex();
-		toAdd.forEach(d => {
-			d.cf = d.c === Parser.CAT_ID_CREATURE ? "Creature" : Parser.pageCategoryToFull(d.c);
-			SearchWidget.CONTENT_INDICES.ALL.addDoc(d);
-			SearchWidget.CONTENT_INDICES[d.cf].addDoc(d);
-		});
-	}
-}
-SearchWidget.CONTENT_INDICES = {};
-
-async function doPageInit () {
-	ExcludeUtil.pInitialise(); // don't await, as this is only used for search
-	try {
+		// generic init
+		ExcludeUtil.pInitialise(); // don't await, as this is only used for search
 		await BrewUtil.pAddBrewData();
 		await BrewUtil.pAddLocalBrewData();
-	} catch (e) {
-		await BrewUtil.pPurgeBrew();
-		setTimeout(() => { throw e });
+		await SearchUiUtil.pDoGlobalInit();
+		// Do this asynchronously, to avoid blocking the load
+		SearchWidget.pDoGlobalInit();
+
+		// page-specific init
+		await Builder.pInitAll();
+		Renderer.utils.bindPronounceButtons();
+		await ui.init();
+
+		if (window.location.hash.length) await Makebrew.pHashChange();
+		window.addEventListener("hashchange", Makebrew.pHashChange.bind(Makebrew));
+
+		window.dispatchEvent(new Event("toolsLoaded"));
 	}
-	await SearchUiUtil.pDoGlobalInit();
-	SearchWidget.CONTENT_INDICES = await SearchUiUtil.pGetContentIndices({additionalIndices: ["item"], alternateIndices: ["spell"]});
-	await Builder.pInitAll();
-	Renderer.utils.bindPronounceButtons();
-	return ui.init();
+
+	static async pHashChange () {
+		try {
+			await Makebrew._LOCK.pLock();
+
+			const [builderMode, ...sub] = Hist.getHashParts();
+			Hist.initialLoad = false; // Once we've extracted the hash's parts, we no longer care about preserving it
+
+			if (!builderMode) return Hist.replaceHistoryHash(UrlUtil.encodeForHash(ui.activeBuilder));
+
+			const builder = ui.getBuilderById(builderMode);
+			if (!builder) return Hist.replaceHistoryHash(UrlUtil.encodeForHash(ui.activeBuilder));
+
+			ui.setActiveBuilderById(builderMode); // (This will update the hash to the active builder)
+
+			if (sub.length) {
+				const initialLoadMeta = UrlUtil.unpackSubHash(sub[0]);
+				if (!initialLoadMeta.statemeta) return;
+
+				const [page, source, hash] = initialLoadMeta.statemeta;
+				const toLoad = await Renderer.hover.pCacheAndGet(page, source, hash, {isCopy: true});
+
+				// Try to link up the ixBrew for homebrew entities, so that we can cleanly edit and save them without
+				//   creating duplicates.
+				const meta = {};
+				if (toLoad.uniqueId !== null) {
+					const ixBrew = builder.getIxBrew(toLoad);
+					if (~ixBrew) {
+						meta.ixBrew = ixBrew;
+
+						// If we're using an existing ixBrew, use its source, too
+						if (toLoad.source) ui.source = toLoad.source;
+					}
+				}
+
+				return builder.pHandleSidebarLoadExistingData(toLoad, {isForce: true, meta});
+			}
+		} finally { Makebrew._LOCK.unlock(); }
+	}
 }
+Makebrew._LOCK = null;
 
 const ui = new PageUi();
+
+window.addEventListener("load", async () => {
+	await Makebrew.doPageInit();
+});

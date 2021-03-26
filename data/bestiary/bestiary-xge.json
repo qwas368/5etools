@@ -1,8 +1,9 @@
 {
 	"monster": [
 		{
-			"source": "XGE",
 			"name": "微型僕役", "ENG_name": "Tiny Servant",
+			"source": "XGE",
+			"page": 169,
 			"size": "T",
 			"type": "construct",
 			"alignment": [
@@ -30,8 +31,10 @@
 			"int": 2,
 			"wis": 10,
 			"cha": 1,
+			"senses": [
+				"盲視60呎（超過半徑範圍則視作目盲）"
+			],
 			"passive": 10,
-			"cr": "Unknown",
 			"immune": [
 				"poison",
 				"psychic"
@@ -46,7 +49,6 @@
 				"petrified",
 				"poisoned"
 			],
-			"senses": "盲視60呎（超過半徑範圍則視作目盲）",
 			"action": [
 				{
 					"name": "猛擊",
@@ -55,12 +57,15 @@
 					]
 				}
 			],
-			"page": 169,
+			"hasToken": true,
 			"senseTags": [
 				"B"
 			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MW"
 			]
 		}
 	]

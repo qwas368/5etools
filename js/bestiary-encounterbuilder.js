@@ -1,25 +1,40 @@
 "use strict";
 
-class EncounterBuilder {
+/**
+ * TODO rework this to use doubled multipliers for XP, so we avoid the 0.5x issue for 6+ party sizes. Then scale
+ *   everything back down at the end.
+ */
+class EncounterBuilder extends ProxyBase {
 	constructor () {
+		super();
+
 		this.stateInit = false;
 		this._cache = null;
-		this._lastPlayerCount = null;
+		this._lastPartyMeta = null;
 		this._advanced = false;
+		this._lock = new VeLock();
 
 		this._cachedTitle = null;
 
-		this._savedEncounters = null;
-		this._savedName = null;
-		this._lastClickedSave = null;
-		this._selectedSavedEncounter = null;
+		// Encounter save/load
+		this.__state = {
+			savedEncounters: {},
+			activeKey: null,
+		};
+		this._state = this._getProxy("state", this.__state);
+		this._$iptName = null;
+		this._$btnSave = null;
+		this._$btnReload = null;
+		this._$btnLoad = null;
+		this.pSetSavedEncountersThrottled = MiscUtil.throttle(this._pSetSavedEncounters.bind(this), 50);
+		this._infoHoverId = null;
 
 		this.doSaveStateDebounced = MiscUtil.debounce(this.doSaveState, 50);
 	}
 
 	initUi () {
-		$(`#btn-encounterbuild`).click(() => History.setSubhash(EncounterBuilder.HASH_KEY, true));
-		$(`#btn-encounterstatblock`).click(() => History.setSubhash(EncounterBuilder.HASH_KEY, null));
+		$(`#btn-encounterbuild`).click(() => Hist.setSubhash(EncounterBuilder.HASH_KEY, true));
+		$(`#btn-encounterstatblock`).click(() => Hist.setSubhash(EncounterBuilder.HASH_KEY, null));
 
 		this._initRandomHandlers();
 		this._initAdjustHandlers();
@@ -30,11 +45,11 @@ class EncounterBuilder {
 		});
 
 		const $cbAdvanced = $(`.ecgen__players_advanced`).change(() => {
-			const party = this.getParty();
+			const party = this.getPartyMeta();
 			this._advanced = !!$cbAdvanced.prop("checked");
 			if (this._advanced) {
 				let first = true;
-				party.forEach(it => {
+				party.levelMetas.forEach(it => {
 					[...new Array(it.count)].forEach(() => {
 						this.addAdvancedPlayerRow(first, false, "", it.level);
 						first = false;
@@ -44,7 +59,7 @@ class EncounterBuilder {
 				this.updateDifficulty();
 			} else {
 				let first = true;
-				party.forEach(it => {
+				party.levelMetas.forEach(it => {
 					this.addPlayerRow(first, false, it.count, it.level);
 					first = false;
 				});
@@ -55,7 +70,7 @@ class EncounterBuilder {
 		});
 
 		const $btnSvUrl = $(`.ecgen__sv_url`).click(async () => {
-			const encounterPart = UrlUtil.packSubHash(EncounterUtil.SUB_HASH_PREFIX, [JSON.stringify(this.getSaveableState())], true);
+			const encounterPart = UrlUtil.packSubHash(EncounterUtil.SUB_HASH_PREFIX, [JSON.stringify(this.getSaveableState())], {isEncodeBoth: true});
 			const parts = [location.href, encounterPart];
 			await MiscUtil.pCopyTextToClipboard(parts.join(HASH_PART_SEP));
 			JqueryUtil.showCopiedEffect($btnSvUrl);
@@ -66,18 +81,26 @@ class EncounterBuilder {
 			if (json.items && json.sources) { // if it's a bestiary sublist
 				json.l = {
 					items: json.items,
-					sources: json.sources
+					sources: json.sources,
 				}
 			}
 			this.pDoLoadState(json);
 		});
-		$(`.ecgen__reset`).click(() => confirm("Are you sure?") && encounterBuilder.pReset());
+		$(`.ecgen__reset`).title(`SHIFT-click to reset players`).click(evt => confirm("Are you sure?") && encounterBuilder.pReset({isNotResetPlayers: !evt.shiftKey, isNotAddInitialPlayers: !evt.shiftKey}));
 
-		// local save browser
-		$('.ecgen__ld-browser').click(() => encounterBuilder.doToggleBrowserUi(true));
-		$('.ecgen__sv-cancel').click(() => encounterBuilder.doToggleBrowserUi(false));
-		$(".ecgen__sv-new-save-name").keydown(evt => { if (evt.which === 13) this.handleSaveClick(true); });
-		window.addEventListener("popstate", () => this.doToggleBrowserUi(false)); // exits load/save menu upon browser history change
+		const $btnSvTxt = $(`.ecgen__sv_text`).click(() => {
+			let xpTotal = 0;
+			const toCopyCreatures = ListUtil.sublist.items
+				.map(it => ({name: it.name, ...it.values}))
+				.sort((a, b) => SortUtil.ascSortLower(a.name, b.name))
+				.map(it => {
+					xpTotal += Parser.crToXpNumber(it.cr) * it.count;
+					return `${it.count}× ${it.name}`;
+				})
+				.join(", ");
+			MiscUtil.pCopyTextToClipboard(`${toCopyCreatures} (${xpTotal.toLocaleString()} XP)`);
+			JqueryUtil.showCopiedEffect($btnSvTxt);
+		});
 	}
 
 	_initRandomHandlers () {
@@ -91,22 +114,22 @@ class EncounterBuilder {
 		$(`.ecgen_rng_easy`).click((evt) => {
 			evt.preventDefault();
 			this.pDoGenerateEncounter("easy");
-			$btnGen.data("mode", "easy").text("Random Easy").attr("title", "Randomly generate an Easy encounter");
+			$btnGen.data("mode", "easy").text("Random Easy").title("Randomly generate an Easy encounter");
 		});
 		$(`.ecgen_rng_medium`).click((evt) => {
 			evt.preventDefault();
 			this.pDoGenerateEncounter("medium");
-			$btnGen.data("mode", "medium").text("Random Medium").attr("title", "Randomly generate a Medium encounter");
+			$btnGen.data("mode", "medium").text("Random Medium").title("Randomly generate a Medium encounter");
 		});
 		$(`.ecgen_rng_hard`).click((evt) => {
 			evt.preventDefault();
 			this.pDoGenerateEncounter("hard");
-			$btnGen.data("mode", "hard").text("Random Hard").attr("title", "Randomly generate a Hard encounter");
+			$btnGen.data("mode", "hard").text("Random Hard").title("Randomly generate a Hard encounter");
 		});
 		$(`.ecgen_rng_deadly`).click((evt) => {
 			evt.preventDefault();
 			this.pDoGenerateEncounter("deadly");
-			$btnGen.data("mode", "deadly").text("Random Deadly").attr("title", "Randomly generate a Deadly encounter");
+			$btnGen.data("mode", "deadly").text("Random Deadly").title("Randomly generate a Deadly encounter");
 		});
 	}
 
@@ -121,22 +144,22 @@ class EncounterBuilder {
 		$(`.ecgen_adj_easy`).click((evt) => {
 			evt.preventDefault();
 			this.pDoAdjustEncounter("easy");
-			$btnAdjust.data("mode", "easy").text("Adjust to Easy").attr("title", "Adjust the current encounter difficulty to Easy");
+			$btnAdjust.data("mode", "easy").text("Adjust to Easy").title("Adjust the current encounter difficulty to Easy");
 		});
 		$(`.ecgen_adj_medium`).click((evt) => {
 			evt.preventDefault();
 			this.pDoAdjustEncounter("medium");
-			$btnAdjust.data("mode", "medium").text("Adjust to Medium").attr("title", "Adjust the current encounter difficulty to Medium");
+			$btnAdjust.data("mode", "medium").text("Adjust to Medium").title("Adjust the current encounter difficulty to Medium");
 		});
 		$(`.ecgen_adj_hard`).click((evt) => {
 			evt.preventDefault();
 			this.pDoAdjustEncounter("hard");
-			$btnAdjust.data("mode", "hard").text("Adjust to Hard").attr("title", "Adjust the current encounter difficulty to Hard");
+			$btnAdjust.data("mode", "hard").text("Adjust to Hard").title("Adjust the current encounter difficulty to Hard");
 		});
 		$(`.ecgen_adj_deadly`).click((evt) => {
 			evt.preventDefault();
 			this.pDoAdjustEncounter("deadly");
-			$btnAdjust.data("mode", "deadly").text("Adjust to Deadly").attr("title", "Adjust the current encounter difficulty to Deadly");
+			$btnAdjust.data("mode", "deadly").text("Adjust to Deadly").title("Adjust the current encounter difficulty to Deadly");
 		});
 	}
 
@@ -156,11 +179,10 @@ class EncounterBuilder {
 	}
 
 	async initState () {
-		EncounterUtil.pGetSavedState().then(async savedState => {
-			if (savedState) await this.pDoLoadState(savedState.data, savedState.type === "local");
-			else this.addInitialPlayerRows();
-			this.stateInit = true;
-		});
+		const initialState = await EncounterUtil.pGetInitialState();
+		if (initialState && initialState.data) await this.pDoLoadState(initialState.data, initialState.type === "local");
+		else this.addInitialPlayerRows();
+		this.stateInit = true;
 		await this._initSavedEncounters();
 	}
 
@@ -169,15 +191,25 @@ class EncounterBuilder {
 		else this.addPlayerRow(first, true, ECGEN_BASE_PLAYERS);
 	}
 
-	async pReset (doAddRows = true, playersOnly) {
-		if (!playersOnly) ListUtil.pDoSublistRemoveAll();
+	/**
+	 * @param [opts] Options object
+	 * @param [opts.isNotRemoveCreatures] If creature rows should not be removed.
+	 * @param [opts.isNotResetPlayers] If player info should not be reset.
+	 * @param [opts.isNotAddInitialPlayers] If initial player info should not be added.
+	 */
+	async pReset (opts) {
+		opts = opts || {};
+		if (!opts.isNotRemoveCreatures) await ListUtil.pDoSublistRemoveAll();
+		if (!opts.isNotResetPlayers) this.removeAllPlayerRows();
+		if (!opts.isNotAddInitialPlayers) this.addInitialPlayerRows();
 
-		this.removeAllPlayerRows();
-		if (doAddRows) this.addInitialPlayerRows();
+		this._state.activeKey = null;
+		this.pSetSavedEncountersThrottled();
 	}
 
 	async pDoLoadState (savedState, playersOnly) {
-		await this.pReset(false, playersOnly);
+		await this.pReset({isNotAddInitialPlayers: true, isNotRemoveCreatures: playersOnly});
+		if (!savedState) return;
 		try {
 			if (savedState.a) {
 				this._advanced = true;
@@ -199,11 +231,8 @@ class EncounterBuilder {
 			}
 
 			if (savedState.l && !playersOnly) {
-				ListUtil.doJsonLoad(savedState.l, false, sublistFuncPreload);
-			}
-
-			if (savedState.name) {
-				this._savedName = savedState.name;
+				await pPreloadSublistSources(savedState.l);
+				await ListUtil.pDoJsonLoad(savedState.l, false);
 			}
 
 			this.updateDifficulty();
@@ -215,11 +244,10 @@ class EncounterBuilder {
 
 	getSaveableState () {
 		const out = {
-			p: this.getParty(),
+			p: this.getPartyMeta().levelMetas,
 			l: ListUtil.getExportableSublist(),
-			a: this._advanced
+			a: this._advanced,
 		};
-		if (this._savedName !== null) out.name = this._savedName;
 		if (this._advanced) {
 			out.c = $(`.ecgen__players_head_advanced`).find(`.ecgen__player_advanced_extra_head`).map((i, e) => $(e).val()).get();
 			out.d = $(`.ecgen__player_advanced`).map((i, e) => {
@@ -230,7 +258,7 @@ class EncounterBuilder {
 				return {
 					n: $e.find(`.ecgen__player_advanced__name`).val(),
 					l: Number($e.find(`.ecgen__player_advanced__level`).val()),
-					x: extras.slice(0, out.c.length) // cap at columns length
+					x: extras.slice(0, out.c.length), // cap at columns length
 				};
 			}).get();
 		}
@@ -246,8 +274,8 @@ class EncounterBuilder {
 		if (this._cache == null) {
 			this._cache = (() => {
 				const out = {};
-				list.visibleItems.map(it => monsters[Number(it.elm.getAttribute("filterid"))]).filter(m => !m.isNpc).forEach(m => {
-					const mXp = Parser.crToXpNumber(m.cr.cr || m.cr);
+				list.visibleItems.map(it => monsters[it.ix]).filter(m => !m.isNpc).forEach(m => {
+					const mXp = Parser.crToXpNumber(m.cr);
 					if (mXp) (out[mXp] = out[mXp] || []).push(m);
 				});
 				return out;
@@ -266,15 +294,15 @@ class EncounterBuilder {
 		}
 		currentEncounter.forEach(creatureType => creatureType.count = 1);
 
-		const xpThresholds = this.getPartyXpThresholds();
-		let encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, xpThresholds.count);
+		const partyMeta = this.getPartyMeta();
+		let encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, partyMeta.cntPlayers);
 
 		const ixLow = EncounterBuilder.TIERS.indexOf(difficulty);
 		if (!~ixLow) throw new Error(`Unhandled difficulty level: "${difficulty}"`);
 		// fudge min/max numbers slightly
 		const [targetMin, targetMax] = [
-			Math.floor(xpThresholds[EncounterBuilder.TIERS[ixLow]] * 0.9),
-			Math.ceil((xpThresholds[EncounterBuilder.TIERS[ixLow + 1]] - 1) * 1.1)
+			Math.floor(partyMeta[EncounterBuilder.TIERS[ixLow]] * 0.9),
+			Math.ceil((partyMeta[EncounterBuilder.TIERS[ixLow + 1]] - 1) * 1.1),
 		];
 
 		if (encounterXp.adjustedXp > targetMax) {
@@ -282,7 +310,7 @@ class EncounterBuilder {
 		} else {
 			// only calculate this once rather than during the loop, to ensure stable conditions
 			// less accurate in some cases, but should prevent infinite loops
-			const crCutoff = EncounterBuilderUtils.getCrCutoff(currentEncounter);
+			const crCutoff = EncounterBuilderUtils.getCrCutoff(currentEncounter, partyMeta);
 
 			// randomly choose creatures to skip
 			// generate array of [0, 1, ... n-1] where n = number of unique creatures
@@ -324,10 +352,10 @@ class EncounterBuilder {
 						const ix = RollerUtil.randomise(pickFrom.length) - 1;
 						const picked = pickFrom.splice(ix, 1)[0];
 						picked.count++;
-						encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, xpThresholds.count);
+						encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, partyMeta.cntPlayers);
 						if (encounterXp.adjustedXp > targetMax) {
 							picked.count--;
-							encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, xpThresholds.count);
+							encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, partyMeta.cntPlayers);
 						}
 					}
 				}
@@ -347,15 +375,15 @@ class EncounterBuilder {
 				currentEncounter = invalidSolutions.map(is => ({
 					encounter: is,
 					distance: (() => {
-						const xp = EncounterBuilderUtils.calculateEncounterXp(is, xpThresholds.count);
+						const xp = EncounterBuilderUtils.calculateEncounterXp(is, partyMeta.cntPlayers);
 						if (xp > targetMax) return xp - targetMax;
 						else if (xp < targetMin) return targetMin - xp;
 						else return 0;
-					})()
-				})).sort((a, b) => SortUtil.ascSort(a.distance, b.distance))[0];
+					})(),
+				})).sort((a, b) => SortUtil.ascSort(a.distance, b.distance))[0].encounter;
 			}
 
-			const belowCrCutoff = currentEncounter.filter(it => it.cr < crCutoff);
+			const belowCrCutoff = currentEncounter.filter(it => it.cr && it.cr < crCutoff);
 
 			if (belowCrCutoff.length) {
 				// do a post-step to randomly add "irrelevant" creatures, ensuring plenty of fireball fodder
@@ -365,9 +393,8 @@ class EncounterBuilder {
 					const usable = belowCrCutoff.filter(it => it._xp < budget);
 
 					if (usable.length) {
-						const party = this.getParty();
-						const totalPlayers = party.map(it => it.count).reduce((a, b) => a + b, 0);
-						const averagePlayerLevel = party.map(it => it.level * it.count).reduce((a, b) => a + b, 0) / totalPlayers;
+						const totalPlayers = partyMeta.levelMetas.map(it => it.count).reduce((a, b) => a + b, 0);
+						const averagePlayerLevel = partyMeta.levelMetas.map(it => it.level * it.count).reduce((a, b) => a + b, 0) / totalPlayers;
 
 						// try to avoid flooding low-level parties
 						const playerToCreatureRatio = (() => {
@@ -391,7 +418,7 @@ class EncounterBuilder {
 							const isAdd = RollerUtil.roll(100) < chanceToAdd;
 							if (isAdd) {
 								RollerUtil.rollOnArray(belowCrCutoff).count++;
-								encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, xpThresholds.count);
+								encounterXp = EncounterBuilderUtils.calculateEncounterXp(currentEncounter, partyMeta.cntPlayers);
 							} else break;
 						}
 					}
@@ -399,171 +426,196 @@ class EncounterBuilder {
 			}
 		}
 
-		this._loadSublist({
+		await this._pLoadSublist({
 			items: currentEncounter.map(creatureType => ({
 				h: creatureType.hash,
 				c: `${creatureType.count}`,
-				uid: creatureType.uid || undefined
+				customHashId: creatureType.customHashId || undefined,
 			})),
-			sources: ListUtil.getExportableSublist().sources
+			sources: ListUtil.getExportableSublist().sources,
 		});
 	}
 
 	async pDoGenerateEncounter (difficulty) {
-		const xp = this.calculateXp();
+		const {partyMeta} = this.calculateXp();
 
 		const ixLow = EncounterBuilder.TIERS.indexOf(difficulty);
 		if (!~ixLow) throw new Error(`Unhandled difficulty level: "${difficulty}"`);
-		const budget = xp.party[EncounterBuilder.TIERS[ixLow + 1]] - 1;
+		const budget = partyMeta[EncounterBuilder.TIERS[ixLow + 1]] - 1;
 
 		this.generateCache();
 
-		const generateClosestEncounter = () => {
-			const _xps = Object.keys(this._cache).map(it => Number(it)).sort(SortUtil.ascSort).reverse();
-			/*
-			Sorted array of:
-			{
-				cr: "1/2",
-				xp: 50,
-				crNum: 0.5
-			}
-			 */
-			const _meta = Object.entries(Parser.XP_CHART_ALT).map(([cr, xp]) => ({cr, xp, crNum: Parser.crToNumber(cr)}))
-				.sort((a, b) => SortUtil.ascSort(b.crNum, a.crNum));
-			const getXps = budget => _xps.filter(it => it <= budget);
-
-			const calcNextBudget = (encounter) => {
-				const data = encounter.map(it => ({cr: Parser.crToNumber(it.mon.cr.cr || it.mon.cr), count: it.count}));
-				if (!data.length) return budget;
-
-				const curr = EncounterBuilderUtils.calculateEncounterXp(data, xp.party.count);
-				const budgetRemaining = budget - curr.adjustedXp;
-
-				const meta = _meta.filter(it => it.xp <= budgetRemaining);
-				// if the highest CR creature has CR greater than the cutoff, adjust for next multiplier
-				if (meta.length && meta[0].crNum >= curr.meta.crCutoff) {
-					const nextMult = Parser.numMonstersToXpMult(curr.relevantCount + 1, xp.party.count);
-					return Math.floor((budget - (nextMult * curr.baseXp)) / nextMult);
-				}
-				// otherwise, no creature has CR greater than the cutoff, don't worry about multipliers
-				return budgetRemaining;
-			};
-
-			const addToEncounter = (encounter, xp) => {
-				const existing = encounter.filter(it => it.xp === xp);
-				if (existing.length && RollerUtil.roll(100) < 85) { // 85% chance to add another copy of an existing monster
-					RollerUtil.rollOnArray(existing).count++;
-				} else {
-					const rolled = RollerUtil.rollOnArray(this._cache[xp]);
-					// add to an existing group, if present
-					const existing = encounter.find(it => it.mon.source === rolled.source && it.mon.name === rolled.name);
-					if (existing) existing.count++;
-					else {
-						encounter.push({
-							xp: xp,
-							mon: rolled,
-							count: 1
-						});
-					}
-				}
-			};
-
-			let skipCount = 0;
-			const doSkip = (xps, encounter, xp) => {
-				// if there are existing entries at this XP, don't skip
-				const existing = encounter.filter(it => it.xp === xp);
-				if (existing.length) return false;
-
-				// skip 70% of the time by default, less 13% chance per item skipped
-				if (xps.length > 1) {
-					const isSkip = RollerUtil.roll(100) < (70 - (13 * skipCount));
-					if (isSkip) {
-						skipCount++;
-						const maxSkip = xps.length - 1;
-						// flip coins; so long as we get heads, keep skipping
-						for (let i = 0; i < maxSkip; ++i) {
-							if (RollerUtil.roll(2) === 0) {
-								return i;
-							}
-						}
-						return maxSkip - 1;
-					} else return 0;
-				} else return false;
-			};
-
-			const doInitialSkip = xps => {
-				// 50% of the time, skip the first 0-1/3rd of available CRs
-				if (xps.length > 4 && RollerUtil.roll(2) === 1) {
-					const skips = RollerUtil.roll(Math.ceil(xps.length / 3));
-					return xps.slice(skips);
-				} else return xps;
-			};
-
-			const doFind = (budget) => {
-				const enc = [];
-				const xps = doInitialSkip(getXps(budget));
-
-				let nextBudget = budget;
-				let skips = 0;
-				let steps = 0;
-				while (xps.length) {
-					if (steps++ > 100) break;
-
-					if (skips) {
-						skips--;
-						xps.shift();
-						continue;
-					}
-
-					const xp = xps[0];
-
-					if (xp > nextBudget) {
-						xps.shift();
-						continue;
-					}
-
-					skips = doSkip(xps, enc, xp);
-					if (skips) {
-						skips--;
-						xps.shift();
-						continue;
-					}
-
-					addToEncounter(enc, xp);
-
-					nextBudget = calcNextBudget(enc);
-				}
-
-				return enc;
-			};
-
-			return doFind(budget);
-		};
-
-		const closestSolution = generateClosestEncounter();
+		const closestSolution = (() => {
+			// If there are enough players that single-monster XP is halved, try generating a range of solutions.
+			if (partyMeta.cntPlayers > 5) {
+				const NUM_SAMPLES = 10; // should ideally be divisible by 2
+				const solutions = [...new Array(NUM_SAMPLES)]
+					.map((_, i) => this._pDoGenerateEncounter_generateClosestEncounter(partyMeta, budget * ((i >= Math.floor(NUM_SAMPLES / 2)) + 1), budget));
+				const validSolutions = solutions.filter(it => it.adjustedXp >= (budget * 0.6) && it.adjustedXp <= (budget * 1.1));
+				if (validSolutions.length) return RollerUtil.rollOnArray(validSolutions);
+				return null;
+			} else return this._pDoGenerateEncounter_generateClosestEncounter(partyMeta, budget, budget);
+		})();
 
 		if (closestSolution) {
 			const toLoad = {items: []};
 			const sources = new Set();
-			closestSolution.forEach(it => {
+			closestSolution.encounter.forEach(it => {
 				toLoad.items.push({h: UrlUtil.autoEncodeHash(it.mon), c: String(it.count)});
 				sources.add(it.mon.source);
 			});
 			toLoad.sources = [...sources];
-			this._loadSublist(toLoad);
+			await this._pLoadSublist(toLoad);
 		} else {
 			await ListUtil.pDoSublistRemoveAll();
 			this.updateDifficulty();
 		}
 	}
 
-	_loadSublist (toLoad) {
-		ListUtil.doJsonLoad(toLoad, false, (json, funcOnload) => {
-			sublistFuncPreload(json, () => {
-				funcOnload();
-				this.updateDifficulty();
-			});
+	_pDoGenerateEncounter_generateClosestEncounter (partyMeta, budget, rawBudget) {
+		const _xps = Object.keys(this._cache).map(it => Number(it)).sort(SortUtil.ascSort).reverse();
+		/*
+		Sorted array of:
+		{
+			cr: "1/2",
+			xp: 50,
+			crNum: 0.5
+		}
+		 */
+		const _meta = Object.entries(Parser.XP_CHART_ALT).map(([cr, xp]) => ({cr, xp, crNum: Parser.crToNumber(cr)}))
+			.sort((a, b) => SortUtil.ascSort(b.crNum, a.crNum));
+		const standardXpValues = new Set(Object.values(Parser.XP_CHART_ALT));
+		const getXps = budget => _xps.filter(it => {
+			// Make TftYP values (i.e. those that are not real XP thresholds) get skipped 9/10 times
+			if (!standardXpValues.has(it) && RollerUtil.randomise(10) !== 10) return false;
+			return it <= budget;
 		});
+
+		const getCurrentEncounterMeta = (encounter) => {
+			const data = encounter.map(it => ({cr: Parser.crToNumber(it.mon.cr), count: it.count}));
+			return EncounterBuilderUtils.calculateEncounterXp(data, partyMeta);
+		};
+
+		const calcNextBudget = (encounter) => {
+			if (!encounter.length) return budget;
+
+			const curr = getCurrentEncounterMeta(encounter);
+			const budgetRemaining = budget - curr.adjustedXp;
+
+			const meta = _meta.filter(it => it.xp <= budgetRemaining);
+
+			// If we're a large party and we're doing a "single creature worth less XP" generation, force the generation
+			//   to stop.
+			if (rawBudget !== budget && curr.count === 1 && (rawBudget - curr.baseXp) <= 0) {
+				return 0;
+			}
+
+			// if the highest CR creature has CR greater than the cutoff, adjust for next multiplier
+			if (meta.length && meta[0].crNum >= curr.meta.crCutoff) {
+				const nextMult = Parser.numMonstersToXpMult(curr.relevantCount + 1, partyMeta.cntPlayers);
+				return Math.floor((budget - (nextMult * curr.baseXp)) / nextMult);
+			}
+
+			// otherwise, no creature has CR greater than the cutoff, don't worry about multipliers
+			return budgetRemaining;
+		};
+
+		const addToEncounter = (encounter, xp) => {
+			const existing = encounter.filter(it => it.xp === xp);
+			if (existing.length && RollerUtil.roll(100) < 85) { // 85% chance to add another copy of an existing monster
+				RollerUtil.rollOnArray(existing).count++;
+			} else {
+				const rolled = RollerUtil.rollOnArray(this._cache[xp]);
+				// add to an existing group, if present
+				const existing = encounter.find(it => it.mon.source === rolled.source && it.mon.name === rolled.name);
+				if (existing) existing.count++;
+				else {
+					encounter.push({
+						xp: xp,
+						mon: rolled,
+						count: 1,
+					});
+				}
+			}
+		};
+
+		let skipCount = 0;
+		const doSkip = (xps, encounter, xp) => {
+			// if there are existing entries at this XP, don't skip
+			const existing = encounter.filter(it => it.xp === xp);
+			if (existing.length) return false;
+
+			// skip 70% of the time by default, less 13% chance per item skipped
+			if (xps.length > 1) {
+				const isSkip = RollerUtil.roll(100) < (70 - (13 * skipCount));
+				if (isSkip) {
+					skipCount++;
+					const maxSkip = xps.length - 1;
+					// flip coins; so long as we get heads, keep skipping
+					for (let i = 0; i < maxSkip; ++i) {
+						if (RollerUtil.roll(2) === 0) {
+							return i;
+						}
+					}
+					return maxSkip - 1;
+				} else return 0;
+			} else return false;
+		};
+
+		const doInitialSkip = xps => {
+			// 50% of the time, skip the first 0-1/3rd of available CRs
+			if (xps.length > 4 && RollerUtil.roll(2) === 1) {
+				const skips = RollerUtil.roll(Math.ceil(xps.length / 3));
+				return xps.slice(skips);
+			} else return xps;
+		};
+
+		const doFind = (budget) => {
+			const enc = [];
+			const xps = doInitialSkip(getXps(budget));
+
+			let nextBudget = budget;
+			let skips = 0;
+			let steps = 0;
+			while (xps.length) {
+				if (steps++ > 100) break;
+
+				if (skips) {
+					skips--;
+					xps.shift();
+					continue;
+				}
+
+				const xp = xps[0];
+
+				if (xp > nextBudget) {
+					xps.shift();
+					continue;
+				}
+
+				skips = doSkip(xps, enc, xp);
+				if (skips) {
+					skips--;
+					xps.shift();
+					continue;
+				}
+
+				addToEncounter(enc, xp);
+
+				nextBudget = calcNextBudget(enc);
+			}
+
+			return enc;
+		};
+
+		const encounter = doFind(budget);
+		return {encounter, adjustedXp: getCurrentEncounterMeta(encounter).adjustedXp};
+	}
+
+	async _pLoadSublist (toLoad) {
+		await pPreloadSublistSources(toLoad);
+		await ListUtil.pDoJsonLoad(toLoad, false);
+		this.updateDifficulty();
 	}
 
 	addAdvancedPlayerRow (first = true, doUpdate = true, name, level, extraCols) {
@@ -582,7 +634,7 @@ class EncounterBuilder {
 	}
 
 	isActive () {
-		return History.getSubHash(EncounterBuilder.HASH_KEY) === "true";
+		return Hist.getSubHash(EncounterBuilder.HASH_KEY) === "true";
 	}
 
 	show () {
@@ -590,6 +642,8 @@ class EncounterBuilder {
 		document.title = "Encounter Builder - 5etools";
 		$(`body`).addClass("ecgen_active");
 		this.updateDifficulty();
+		ListUtil.doDeselectAll();
+		ListUtil.doSublistDeselectAll();
 	}
 
 	hide () {
@@ -600,58 +654,64 @@ class EncounterBuilder {
 		$(`body`).removeClass("ecgen_active");
 	}
 
-	handleClick (evt, ix, add, ele) {
-		const data = ele ? {uid: $(ele).closest(`li.row`).find(`.uid`).text()} : undefined;
-		if (add) ListUtil.pDoSublistAdd(ix, true, evt.shiftKey ? 5 : 1, data);
+	handleClick (evt, ix, add, customHashId) {
+		const data = customHashId ? {customHashId} : undefined;
+		if (add) ListUtil.pDoSublistAdd(ix, {doFinalize: true, addCount: evt.shiftKey ? 5 : 1, data});
 		else ListUtil.pDoSublistSubtract(ix, evt.shiftKey ? 5 : 1, data);
 	}
 
-	handleShuffleClick (evt, ix) {
-		const mon = monsters[ix];
-		const xp = Parser.crToXpNumber(mon.cr.cr || mon.cr);
-		if (!xp) return; // if Unknown/etc
+	async pHandleShuffleClick (ix) {
+		await this._lock.pLock();
 
-		const curr = ListUtil.getExportableSublist();
-		const hash = UrlUtil.autoEncodeHash(mon);
-		const itemToSwitch = curr.items.find(it => it.h === hash);
+		try {
+			const mon = monsters[ix];
+			const xp = Parser.crToXpNumber(mon.cr);
+			if (!xp) return; // if Unknown/etc
 
-		this.generateCache();
-		const availMons = this._cache[xp];
-		if (availMons.length !== 1) {
-			// note that this process does not remove any old sources
+			const curr = ListUtil.getExportableSublist();
+			const hash = UrlUtil.autoEncodeHash(mon);
+			const itemToSwitch = curr.items.find(it => it.h === hash);
 
-			let reroll = mon;
-			let rolledHash = hash;
-			while (rolledHash === hash) {
-				reroll = RollerUtil.rollOnArray(availMons);
-				rolledHash = UrlUtil.autoEncodeHash(reroll);
-			}
-			itemToSwitch.h = rolledHash;
-			if (!curr.sources.includes(reroll.source)) {
-				curr.sources.push(reroll.source);
-			}
+			this.generateCache();
+			const availMons = this._cache[xp];
+			if (availMons.length !== 1) {
+				// note that this process does not remove any old sources
 
-			// do a pass to merge any duplicates
-			outer: for (let i = 0; i < curr.items.length; ++i) {
-				const item = curr.items[i];
-				for (let j = i - 1; j >= 0; --j) {
-					const prevItem = curr.items[j];
+				let reroll = mon;
+				let rolledHash = hash;
+				while (rolledHash === hash) {
+					reroll = RollerUtil.rollOnArray(availMons);
+					rolledHash = UrlUtil.autoEncodeHash(reroll);
+				}
+				itemToSwitch.h = rolledHash;
+				if (!curr.sources.includes(reroll.source)) {
+					curr.sources.push(reroll.source);
+				}
 
-					if (item.h === prevItem.h) {
-						prevItem.c = String(Number(prevItem.c) + Number(item.c));
-						curr.items.splice(i, 1);
-						continue outer;
+				// do a pass to merge any duplicates
+				outer: for (let i = 0; i < curr.items.length; ++i) {
+					const item = curr.items[i];
+					for (let j = i - 1; j >= 0; --j) {
+						const prevItem = curr.items[j];
+
+						if (item.h === prevItem.h) {
+							prevItem.c = String(Number(prevItem.c) + Number(item.c));
+							curr.items.splice(i, 1);
+							continue outer;
+						}
 					}
 				}
-			}
 
-			this._loadSublist(curr);
-		} // else can't reroll
+				await this._pLoadSublist(curr);
+			} // else can't reroll
+		} finally {
+			this._lock.unlock();
+		}
 	}
 
 	handleSubhash () {
-		// loading state from the URL is instead handled as part of EncounterUtil.pGetSavedState
-		if (History.getSubHash(EncounterBuilder.HASH_KEY) === "true") this.show();
+		// loading state from the URL is instead handled as part of EncounterUtil.pGetInitialState
+		if (Hist.getSubHash(EncounterBuilder.HASH_KEY) === "true") this.show();
 		else this.hide();
 	}
 
@@ -667,66 +727,158 @@ class EncounterBuilder {
 		this.updateDifficulty();
 	}
 
+	_getApproxTurnsToKill () {
+		const party = this.getPartyMeta().levelMetas;
+		const encounter = EncounterBuilderUtils.getSublistedEncounter();
+
+		const totalDpt = party
+			.map(it => this._getApproxDpt(it.level) * it.count)
+			.reduce((a, b) => a + b, 0);
+		const totalHp = encounter
+			.filter(it => it.approxHp != null && it.approxAc != null)
+			.map(it => (it.approxHp * it.approxAc / 10) * it.count)
+			.reduce((a, b) => a + b, 0);
+
+		return totalHp / totalDpt;
+	}
+
+	_getApproxDpt (pcLevel) {
+		const approxOutputFighterChampion = [
+			{hit: 0, dmg: 17.38}, {hit: 0, dmg: 17.38}, {hit: 0, dmg: 17.59}, {hit: 0, dmg: 33.34}, {hit: 1, dmg: 50.92}, {hit: 2, dmg: 53.92}, {hit: 2, dmg: 53.92}, {hit: 3, dmg: 56.92}, {hit: 4, dmg: 56.92}, {hit: 4, dmg: 56.92}, {hit: 4, dmg: 76.51}, {hit: 4, dmg: 76.51}, {hit: 5, dmg: 76.51}, {hit: 5, dmg: 76.51}, {hit: 5, dmg: 77.26}, {hit: 5, dmg: 77.26}, {hit: 6, dmg: 77.26}, {hit: 6, dmg: 77.26}, {hit: 6, dmg: 77.26}, {hit: 6, dmg: 97.06},
+		];
+		const approxOutputRogueTrickster = [
+			{hit: 5, dmg: 11.4}, {hit: 5, dmg: 11.4}, {hit: 10, dmg: 15.07}, {hit: 11, dmg: 16.07}, {hit: 12, dmg: 24.02}, {hit: 12, dmg: 24.02}, {hit: 12, dmg: 27.7}, {hit: 13, dmg: 28.7}, {hit: 14, dmg: 32.38}, {hit: 14, dmg: 32.38}, {hit: 14, dmg: 40.33}, {hit: 14, dmg: 40.33}, {hit: 15, dmg: 44}, {hit: 15, dmg: 44}, {hit: 15, dmg: 47.67}, {hit: 15, dmg: 47.67}, {hit: 16, dmg: 55.63}, {hit: 16, dmg: 55.63}, {hit: 16, dmg: 59.3}, {hit: 16, dmg: 59.3},
+		];
+		const approxOutputWizard = [
+			{hit: 5, dmg: 14.18}, {hit: 5, dmg: 14.18}, {hit: 5, dmg: 22.05}, {hit: 6, dmg: 22.05}, {hit: 2, dmg: 28}, {hit: 2, dmg: 28}, {hit: 2, dmg: 36}, {hit: 3, dmg: 36}, {hit: 6, dmg: 67.25}, {hit: 6, dmg: 67.25}, {hit: 4, dmg: 75}, {hit: 4, dmg: 75}, {hit: 5, dmg: 85.5}, {hit: 5, dmg: 85.5}, {hit: 5, dmg: 96}, {hit: 5, dmg: 96}, {hit: 6, dmg: 140}, {hit: 6, dmg: 140}, {hit: 6, dmg: 140}, {hit: 6, dmg: 140},
+		];
+		const approxOutputCleric = [
+			{hit: 5, dmg: 17.32}, {hit: 5, dmg: 17.32}, {hit: 5, dmg: 23.1}, {hit: 6, dmg: 23.1}, {hit: 7, dmg: 28.88}, {hit: 7, dmg: 28.88}, {hit: 7, dmg: 34.65}, {hit: 8, dmg: 34.65}, {hit: 9, dmg: 40.42}, {hit: 9, dmg: 40.42}, {hit: 9, dmg: 46.2}, {hit: 9, dmg: 46.2}, {hit: 10, dmg: 51.98}, {hit: 10, dmg: 51.98}, {hit: 11, dmg: 57.75}, {hit: 11, dmg: 57.75}, {hit: 11, dmg: 63.52}, {hit: 11, dmg: 63.52}, {hit: 11, dmg: 63.52}, {hit: 11, dmg: 63.52},
+		];
+
+		const approxOutputs = [approxOutputFighterChampion, approxOutputRogueTrickster, approxOutputWizard, approxOutputCleric];
+
+		const approxOutput = approxOutputs.map(it => it[pcLevel - 1]);
+		return approxOutput.map(it => it.dmg * ((it.hit + 10.5) / 20)).mean(); // 10.5 = average d20
+	}
+
 	updateDifficulty () {
-		const xp = this.calculateXp();
+		const {partyMeta, encounter} = this.calculateXp();
 
-		const $elEasy = $(`.ecgen__easy`).removeClass("bold").text(`Easy: ${xp.party.easy.toLocaleString()} XP`);
-		const $elmed = $(`.ecgen__medium`).removeClass("bold").text(`Medium: ${xp.party.medium.toLocaleString()} XP`);
-		const $elHard = $(`.ecgen__hard`).removeClass("bold").text(`Hard: ${xp.party.hard.toLocaleString()} XP`);
-		const $elDeadly = $(`.ecgen__deadly`).removeClass("bold").text(`Deadly: ${xp.party.deadly.toLocaleString()} XP`);
+		const $elEasy = $(`.ecgen__easy`).removeClass("bold").html(`<span class="help--subtle" title="${EncounterBuilder._TITLE_EASY}">Easy:</span> ${partyMeta.easy.toLocaleString()} XP`);
+		const $elmed = $(`.ecgen__medium`).removeClass("bold").html(`<span class="help--subtle" title="${EncounterBuilder._TITLE_MEDIUM}">Medium:</span> ${partyMeta.medium.toLocaleString()} XP`);
+		const $elHard = $(`.ecgen__hard`).removeClass("bold").html(`<span class="help--subtle" title="${EncounterBuilder._TITLE_HARD}">Hard:</span> ${partyMeta.hard.toLocaleString()} XP`);
+		const $elDeadly = $(`.ecgen__deadly`).removeClass("bold").html(`<span class="help--subtle" title="${EncounterBuilder._TITLE_DEADLY}">Deadly:</span> ${partyMeta.deadly.toLocaleString()} XP`);
+		const $elAbsurd = $(`.ecgen__absurd`).removeClass("bold").html(`<span class="help" title="${EncounterBuilder._TITLE_ABSURD}">Absurd:</span> ${partyMeta.absurd.toLocaleString()} XP`);
 
-		$(`.ecgen__daily_budget`).removeClass("bold").text(`Daily Budget: ${xp.party.daily.toLocaleString()} XP`);
+		$(`.ecgen__ttk`).html(`<span class="help" title="${EncounterBuilder._TITLE_TTK}">TTK:</span> ${this._getApproxTurnsToKill().toFixed(2)}`);
+
+		$(`.ecgen__daily_budget`).removeClass("bold").html(`<span class="help--subtle" title="${EncounterBuilder._TITLE_BUDGET_DAILY}">Daily Budget:</span> ${partyMeta.dailyBudget.toLocaleString()} XP`);
 
 		let difficulty = "Trivial";
-		if (xp.encounter.adjustedXp >= xp.party.deadly) {
+		if (encounter.adjustedXp >= partyMeta.absurd) {
+			difficulty = "Absurd";
+			$elAbsurd.addClass("bold");
+		} else if (encounter.adjustedXp >= partyMeta.deadly) {
 			difficulty = "Deadly";
 			$elDeadly.addClass("bold");
-		} else if (xp.encounter.adjustedXp >= xp.party.hard) {
+		} else if (encounter.adjustedXp >= partyMeta.hard) {
 			difficulty = "Hard";
 			$elHard.addClass("bold");
-		} else if (xp.encounter.adjustedXp >= xp.party.medium) {
+		} else if (encounter.adjustedXp >= partyMeta.medium) {
 			difficulty = "Medium";
 			$elmed.addClass("bold");
-		} else if (xp.encounter.adjustedXp >= xp.party.easy) {
+		} else if (encounter.adjustedXp >= partyMeta.easy) {
 			difficulty = "Easy";
 			$elEasy.addClass("bold");
 		}
 
-		if (xp.encounter.relevantCount) {
-			$(`.ecgen__req_creatures`).show();
+		if (encounter.relevantCount) {
+			$(`.ecgen__req_creatures`).showVe();
 			$(`.ecgen__rating`).text(`Difficulty: ${difficulty}`);
-			$(`.ecgen__raw_total`).text(`Total XP: ${xp.encounter.baseXp.toLocaleString()}`);
-			$(`.ecgen__raw_per_player`).text(`(${Math.floor(xp.encounter.baseXp / xp.party.count).toLocaleString()} per player)`);
-			const infoHover = Renderer.hover.bindOnMouseHoverEntry(
-				{
-					entries: [
-						`{@b Adjusted by a ${xp.encounter.meta.playerAdjustedXpMult}× multiplier, based on a minimum challenge rating threshold of approximately ${`${xp.encounter.meta.crCutoff.toFixed(2)}`.replace(/[,.]?0+$/, "")}*&dagger;, and a party size of ${xp.encounter.meta.playerCount} players.}`,
-						`{@note * Calculated as half of the maximum challenge rating, unless the highest challenge rating is two or less, in which case there is no threshold.}`,
-						`<hr>`,
-						{
-							type: "quote",
-							entries: [
-								`&dagger; [...] don't count any monsters whose challenge rating is significantly below the average challenge rating of the other monsters in the group [...]`
+			$(`.ecgen__raw_total`).text(`Total XP: ${encounter.baseXp.toLocaleString()}`);
+			$(`.ecgen__raw_per_player`).text(`(${Math.floor(encounter.baseXp / partyMeta.cntPlayers).toLocaleString()} per player)`);
+
+			// TODO(Future) update this based on the actual method being used
+			const infoEntry = {
+				type: "entries",
+				entries: [
+					`{@b Adjusted by a ${encounter.meta.playerAdjustedXpMult}× multiplier, based on a minimum challenge rating threshold of approximately ${`${encounter.meta.crCutoff.toFixed(2)}`.replace(/[,.]?0+$/, "")}*&dagger;, and a party size of ${encounter.meta.playerCount} players.}`,
+					// `{@note * If the maximum challenge rating is two or less, there is no minimum threshold. Similarly, if less than a third of the party are level 5 or higher, there is no minimum threshold. Otherwise, for each creature in the encounter, the average CR of the encounter is calculated while excluding that creature. The highest of these averages is then halved to produce a minimum CR threshold. CRs less than this minimum are ignored for the purposes of calculating the final CR multiplier.}`,
+					`{@note * If the maximum challenge rating is two or less, there is no minimum threshold. Similarly, if less than a third of the party are level 5 or higher, there is no minimum threshold. Otherwise, for each creature in the encounter in lowest-to-highest CR order, the average CR of the encounter is calculated while excluding that creature. Then, if the removed creature's CR is more than one deviation less than  this average, the process repeats. Once the process halts, this threshold value (average minus one deviation) becomes the final CR cutoff.}`,
+					`<hr>`,
+					{
+						type: "quote",
+						entries: [
+							`&dagger; [...] don't count any monsters whose challenge rating is significantly below the average challenge rating of the other monsters in the group [...]`,
+						],
+						"by": "{@book Dungeon Master's Guide, page 82|DMG|3|4 Modify Total XP for Multiple Monsters}",
+					},
+					`<hr>`,
+					{
+						"type": "table",
+						"caption": "Encounter Multipliers",
+						"colLabels": [
+							"Number of Monsters",
+							"Multiplier",
+						],
+						"colStyles": [
+							"col-6 text-center",
+							"col-6 text-center",
+						],
+						"rows": [
+							[
+								"1",
+								"×1",
 							],
-							"by": "{@book Dungeon Master's Guide, page 82|DMG|3|4 Modify Total XP for Multiple Monsters}"
-						}
-					]
-				},
-				true
-			);
-			$(`.ecgen__adjusted_total_info`).off("mouseover").on("mouseover", function (event) {
-				infoHover(event, this);
-			});
-			$(`.ecgen__adjusted_total`).text(`Adjusted XP: ${xp.encounter.adjustedXp.toLocaleString()}`);
-			$(`.ecgen__adjusted_per_player`).text(`(${Math.floor(xp.encounter.adjustedXp / xp.party.count).toLocaleString()} per player)`);
+							[
+								"2",
+								"×1.5",
+							],
+							[
+								"3-6",
+								"×2",
+							],
+							[
+								"7-10",
+								"×2.5",
+							],
+							[
+								"11-14",
+								"×3",
+							],
+							[
+								"15 or more",
+								"×4",
+							],
+						],
+					},
+				],
+			};
+
+			if (this._infoHoverId == null) {
+				const hoverMeta = Renderer.hover.getMakePredefinedHover(infoEntry, {isBookContent: true});
+				this._infoHoverId = hoverMeta.id;
+
+				const $hvInfo = $(`.ecgen__adjusted_total_info`);
+				$hvInfo.on("mouseover", function (event) { hoverMeta.mouseOver(event, this) });
+				$hvInfo.on("mousemove", function (event) { hoverMeta.mouseMove(event, this) });
+				$hvInfo.on("mouseleave", function (event) { hoverMeta.mouseLeave(event, this) });
+			} else {
+				Renderer.hover.updatePredefinedHover(this._infoHoverId, infoEntry);
+			}
+
+			$(`.ecgen__adjusted_total`).text(`Adjusted XP: ${encounter.adjustedXp.toLocaleString()}`);
+			$(`.ecgen__adjusted_per_player`).text(`(${Math.floor(encounter.adjustedXp / partyMeta.cntPlayers).toLocaleString()} per player)`);
 		} else {
-			$(`.ecgen__req_creatures`).hide();
+			$(`.ecgen__req_creatures`).hideVe();
 		}
 
 		this.doSaveState();
 	}
 
-	getParty () {
+	getPartyMeta () {
+		let rawPlayerArr;
 		if (this._advanced) {
 			const $players = $(`.ecgen__player_advanced`);
 			const countByLevel = {};
@@ -734,124 +886,158 @@ class EncounterBuilder {
 				const level = $(e).find(`.ecgen__player_advanced__level`).val();
 				countByLevel[level] = (countByLevel[level] || 0) + 1;
 			});
-			return Object.entries(countByLevel).map(([level, count]) => ({level, count}));
+			rawPlayerArr = Object.entries(countByLevel).map(([level, count]) => ({level: Number(level), count}));
 		} else {
-			return $(`.ecgen__player_group`).map((i, e) => {
+			rawPlayerArr = $(`.ecgen__player_group`).map((i, e) => {
 				const $e = $(e);
 				return {
 					count: Number($e.find(`.ecgen__player_group__count`).val()),
-					level: Number($e.find(`.ecgen__player_group__level`).val())
+					level: Number($e.find(`.ecgen__player_group__level`).val()),
 				}
 			}).get();
 		}
+
+		const out = new EncounterPartyMeta(rawPlayerArr);
+		this._lastPartyMeta = out;
+		return out;
 	}
 
-	get lastPlayerCount () {
-		return this._lastPlayerCount;
-	}
-
-	getPartyXpThresholds () {
-		const party = this.getParty();
-		party.forEach(group => {
-			group.easy = LEVEL_TO_XP_EASY[group.level] * group.count;
-			group.medium = LEVEL_TO_XP_MEDIUM[group.level] * group.count;
-			group.hard = LEVEL_TO_XP_HARD[group.level] * group.count;
-			group.deadly = LEVEL_TO_XP_DEADLY[group.level] * group.count;
-			group.daily = LEVEL_TO_XP_DAILY[group.level] * group.count;
-		});
-		const totals = party.reduce((a, b) => {
-			Object.keys(a).forEach(k => a[k] = a[k] + b[k]);
-			return a;
-		}, {
-			count: 0,
-			level: 0,
-			easy: 0,
-			medium: 0,
-			hard: 0,
-			deadly: 0,
-			daily: 0
-		});
-		totals.yikes = totals.deadly + (totals.deadly - totals.hard);
-		this._lastPlayerCount = totals.count;
-		return totals;
-	}
+	get lastPartyMeta () { return this._lastPartyMeta; }
 
 	calculateXp () {
-		const totals = this.getPartyXpThresholds();
-		const encounter = EncounterBuilderUtils.calculateListEncounterXp(totals.count);
-		return {party: totals, encounter: encounter};
+		const partyMeta = this.getPartyMeta();
+		const encounter = EncounterBuilderUtils.calculateListEncounterXp(partyMeta);
+		return {partyMeta: partyMeta, encounter: encounter};
 	}
 
 	static async doStatblockMouseOver (evt, ele, ixMon, scaledTo) {
 		const mon = monsters[ixMon];
-		if (scaledTo != null) {
-			const scaled = await ScaleCreature.scale(mon, scaledTo);
-			Renderer.hover.mouseOverPreloaded(evt, ele, scaled, UrlUtil.PG_BESTIARY, mon.source, UrlUtil.autoEncodeHash(mon));
-		} else {
-			Renderer.hover.mouseOver(evt, ele, UrlUtil.PG_BESTIARY, mon.source, UrlUtil.autoEncodeHash(mon));
-		}
+
+		const hash = UrlUtil.autoEncodeHash(mon);
+		const preloadId = scaledTo != null ? `${VeCt.HASH_SCALED}:${scaledTo}` : null;
+		return Renderer.hover.pHandleLinkMouseOver(evt, ele, UrlUtil.PG_BESTIARY, mon.source, hash, preloadId);
 	}
 
-	static getTokenMouseOver (mon) {
-		return Renderer.hover.createOnMouseHoverEntry(
+	static getTokenHoverMeta (mon) {
+		return Renderer.hover.getMakePredefinedHover(
 			{
-				name: `Token \u2014 ${mon.name}`,
 				type: "image",
 				href: {
 					type: "external",
-					url: Renderer.monster.getTokenUrl(mon)
-				}
+					url: Renderer.monster.getTokenUrl(mon),
+				},
+				data: {
+					hoverTitle: `Token \u2014 ${mon.name}`,
+				},
 			},
-			true
+			{isBookContent: true},
 		);
 	}
 
-	doCrChange (ele, ixMon, scaledTo) {
-		const $iptCr = $(ele);
+	static async handleImageMouseOver (evt, $ele, ixMon) {
+		// We'll rebuild the mouseover handler with whatever we load
+		$ele.off("mouseover");
+
 		const mon = monsters[ixMon];
-		const baseCr = mon.cr.cr || mon.cr;
-		const baseCrNum = Parser.crToNumber(baseCr);
-		const targetCr = $iptCr.val();
 
-		if (Parser.isValidCr(targetCr)) {
-			const targetCrNum = Parser.crToNumber(targetCr);
+		const handleNoImages = () => {
+			const hoverMeta = Renderer.hover.getMakePredefinedHover(
+				{
+					type: "entries",
+					entries: [
+						Renderer.utils.HTML_NO_IMAGES,
+					],
+					data: {
+						hoverTitle: `Image \u2014 ${mon.name}`,
+					},
+				},
+				{isBookContent: true},
+			);
+			$ele.mouseover(evt => hoverMeta.mouseOver(evt, $ele[0]))
+				.mousemove(evt => hoverMeta.mouseMove(evt, $ele[0]))
+				.mouseleave(evt => hoverMeta.mouseLeave(evt, $ele[0]));
+			$ele.mouseover();
+		};
 
-			if (targetCrNum === scaledTo) return;
+		const handleHasImages = () => {
+			if (fluff && fluff.images && fluff.images.length) {
+				const hoverMeta = Renderer.hover.getMakePredefinedHover(
+					{
+						type: "image",
+						href: fluff.images[0].href,
+						data: {
+							hoverTitle: `Image \u2014 ${mon.name}`,
+						},
+					},
+					{isBookContent: true},
+				);
+				$ele.mouseover(evt => hoverMeta.mouseOver(evt, $ele[0]))
+					.mousemove(evt => hoverMeta.mouseMove(evt, $ele[0]))
+					.mouseleave(evt => hoverMeta.mouseLeave(evt, $ele[0]));
+				$ele.mouseover();
+			} else return handleNoImages();
+		};
 
-			const state = ListUtil.getExportableSublist();
-			const toFindHash = UrlUtil.autoEncodeHash(mon);
+		const fluff = await Renderer.monster.pGetFluff(mon);
 
-			const toFindUid = !(scaledTo == null || baseCrNum === scaledTo) ? getUid(mon.name, mon.source, scaledTo) : null;
-			const ixCurrItem = state.items.findIndex(it => {
-				if (scaledTo == null || scaledTo === baseCrNum) return it.uid == null && it.h === toFindHash;
-				else return it.uid === toFindUid;
-			});
-			if (!~ixCurrItem) throw new Error(`Could not find previously sublisted item!`);
+		if (fluff) handleHasImages();
+		else handleNoImages();
+	}
 
-			const toFindNxtUid = baseCrNum !== targetCrNum ? getUid(mon.name, mon.source, targetCrNum) : null;
-			const nextItem = state.items.find(it => {
-				if (targetCrNum === baseCrNum) return it.uid == null && it.h === toFindHash;
-				else return it.uid === toFindNxtUid;
-			});
+	async pDoCrChange ($iptCr, ixMon, scaledTo) {
+		await this._lock.pLock();
 
-			// if there's an existing item with a matching UID (or lack of), merge into it
-			if (nextItem) {
-				const curr = state.items[ixCurrItem];
-				nextItem.c = `${Number(nextItem.c || 1) + Number(curr.c || 1)}`;
-				state.items.splice(ixCurrItem, 1);
+		if (!$iptCr) return; // Should never occur, but if the creature has a non-adjustable CR, this field will not exist
+
+		try {
+			const mon = monsters[ixMon];
+			const baseCr = mon.cr.cr || mon.cr;
+			if (baseCr == null) return;
+			const baseCrNum = Parser.crToNumber(baseCr);
+			const targetCr = $iptCr.val();
+
+			if (Parser.isValidCr(targetCr)) {
+				const targetCrNum = Parser.crToNumber(targetCr);
+
+				if (targetCrNum === scaledTo) return;
+
+				const state = ListUtil.getExportableSublist();
+				const toFindHash = UrlUtil.autoEncodeHash(mon);
+
+				const toFindUid = !(scaledTo == null || baseCrNum === scaledTo) ? getCustomHashId(mon.name, mon.source, scaledTo) : null;
+				const ixCurrItem = state.items.findIndex(it => {
+					if (scaledTo == null || scaledTo === baseCrNum) return !it.customHashId && it.h === toFindHash;
+					else return it.customHashId === toFindUid;
+				});
+				if (!~ixCurrItem) throw new Error(`Could not find previously sublisted item!`);
+
+				const toFindNxtUid = baseCrNum !== targetCrNum ? getCustomHashId(mon.name, mon.source, targetCrNum) : null;
+				const nextItem = state.items.find(it => {
+					if (targetCrNum === baseCrNum) return !it.customHashId && it.h === toFindHash;
+					else return it.customHashId === toFindNxtUid;
+				});
+
+				// if there's an existing item with a matching UID (or lack of), merge into it
+				if (nextItem) {
+					const curr = state.items[ixCurrItem];
+					nextItem.c = `${Number(nextItem.c || 1) + Number(curr.c || 1)}`;
+					state.items.splice(ixCurrItem, 1);
+				} else {
+					// if we're returning to the original CR, wipe the existing UID. Otherwise, adjust it
+					if (targetCrNum === baseCrNum) delete state.items[ixCurrItem].customHashId;
+					else state.items[ixCurrItem].customHashId = getCustomHashId(mon.name, mon.source, targetCrNum);
+				}
+
+				await this._pLoadSublist(state);
 			} else {
-				// if we're returning to the original CR, wipe the existing UID. Otherwise, adjust it
-				if (targetCrNum === baseCrNum) delete state.items[ixCurrItem].uid;
-				else state.items[ixCurrItem].uid = getUid(mon.name, mon.source, targetCrNum);
+				JqueryUtil.doToast({
+					content: `"${$iptCr.val()}" is not a valid Challenge Rating! Please enter a valid CR (0-30). For fractions, "1/X" should be used.`,
+					type: "danger",
+				});
+				$iptCr.val(Parser.numberToCr(scaledTo || baseCr));
 			}
-
-			this._loadSublist(state);
-		} else {
-			JqueryUtil.doToast({
-				content: `"${$iptCr.val()}" is not a valid Challenge Rating! Please enter a valid CR (0-30). For fractions, "1/X" should be used.`,
-				type: "danger"
-			});
-			$iptCr.val(Parser.numberToCr(scaledTo || baseCr));
+		} finally {
+			this._lock.unlock();
 		}
 	}
 
@@ -888,13 +1074,13 @@ class EncounterBuilder {
 
 	static getAdvancedPlayerDetailHeader (name) {
 		return `
-			<input class="ecgen__player_advanced_narrow ecgen__player_advanced_extra_head form-control form-control--minimal input-xs text-align-center mr-1" value="${(name || "").escapeQuotes()}" onchange="encounterBuilder.doSaveStateDebounced()">
+			<input class="ecgen__player_advanced_narrow ecgen__player_advanced_extra_head form-control form-control--minimal input-xs text-center mr-1" autocomplete="new-password" value="${(name || "").escapeQuotes()}" onchange="encounterBuilder.doSaveStateDebounced()">
 		`;
 	}
 
 	static getAdvancedPlayerDetailColumn (value) {
 		return `
-			<input class="ecgen__player_advanced_narrow ecgen__player_advanced_extra form-control form-control--minimal input-xs text-align-center mr-1" value="${(value || "").escapeQuotes()}" onchange="encounterBuilder.doSaveStateDebounced()">
+			<input class="ecgen__player_advanced_narrow ecgen__player_advanced_extra form-control form-control--minimal input-xs text-center mr-1" value="${(value || "").escapeQuotes()}" onchange="encounterBuilder.doSaveStateDebounced()">
 		`;
 	}
 
@@ -902,9 +1088,9 @@ class EncounterBuilder {
 		extraVals = extraVals || [...new Array($(`.ecgen__player_advanced_extra_head`).length)].map(() => "");
 		return `
 			<div class="row mb-2 ecgen__player_advanced">
-				<div class="col-12 flex ecgen__player_advanced_flex">
+				<div class="w-100 flex ecgen__player_advanced_flex">
 					<input class="ecgen__player_advanced__name form-control form-control--minimal input-xs mr-1" value="${(name || "").escapeQuotes()}" onchange="encounterBuilder.doSaveStateDebounced()">
-					<input value="${level || 1}" min="1" max="20" type="number" class="ecgen__player_advanced__level ecgen__player_advanced_narrow form-control form-control--minimal input-xs text-align-right mr-1" onchange="encounterBuilder.updateDifficulty()">
+					<input value="${level || 1}" min="1" max="20" type="number" class="ecgen__player_advanced__level ecgen__player_advanced_narrow form-control form-control--minimal input-xs text-right mr-1" onchange="encounterBuilder.updateDifficulty()">
 					${extraVals.map(it => EncounterBuilder.getAdvancedPlayerDetailColumn(it)).join("")}
 					${!isFirst ? `
 					<button class="btn btn-danger btn-xs ecgen__del_players" onclick="encounterBuilder.removeAdvancedPlayerRow(this)" title="Remove Player">
@@ -920,19 +1106,19 @@ class EncounterBuilder {
 		count = Number(count) || 1;
 		level = Number(level) || 1;
 		return `
-			<div class="row mb-2 ecgen__player_group">
-				<div class="col-2">
-					<select class="ecgen__player_group__count" onchange="encounterBuilder.updateDifficulty()">
+			<div class="flex-v-center mb-2 ecgen__player_group">
+				<div class="w-20">
+					<select class="ecgen__player_group__count form-control form-control--minimal input-xs" onchange="encounterBuilder.updateDifficulty()">
 					${[...new Array(12)].map((_, i) => `<option ${(count === i + 1) ? "selected" : ""}>${i + 1}</option>`).join("")}
 					</select>
 				</div>
-				<div class="col-2">
-					<select class="ecgen__player_group__level" onchange="encounterBuilder.updateDifficulty()" >
+				<div class="w-20">
+					<select class="ecgen__player_group__level form-control form-control--minimal input-xs" onchange="encounterBuilder.updateDifficulty()" >
 						${[...new Array(20)].map((_, i) => `<option ${(level === i + 1) ? "selected" : ""}>${i + 1}</option>`).join("")}
 					</select>
 				</div>
 				${!isFirst ? `
-				<div class="col-2 flex" style="margin-left: -20px; align-items: center; height: 20px;">
+				<div class="ml-2 flex-v-center" style="height: 20px;">
 					<button class="btn btn-danger btn-xs ecgen__del_players" onclick="encounterBuilder.removePlayerRow(this)" title="Remove Player Group">
 						<span class="glyphicon glyphicon-trash"></span>
 					</button>
@@ -942,133 +1128,269 @@ class EncounterBuilder {
 		`;
 	}
 
-	static getButtons (monId, isSublist) {
-		return `
-			<span class="ecgen__visible ${isSublist ? "col-1-5" : "col-1"} no-wrap" onclick="event.preventDefault()">
-				<button title="Add (SHIFT for 5)" class="btn btn-success btn-xs ecgen__btn_list" onclick="encounterBuilder.handleClick(event, ${monId}, 1${isSublist ? `, this` : ""})">
-					<span class="glyphicon glyphicon-plus"></span>
-				</button>
-				<button title="Subtract (SHIFT for 5)" class="btn btn-danger btn-xs ecgen__btn_list" onclick="encounterBuilder.handleClick(event, ${monId}, 0${isSublist ? `, this` : ""})">
-					<span class="glyphicon glyphicon-minus"></span>
-				</button>
-				${isSublist ? `
-				<button title="Randomize Monster" class="btn btn-default btn-xs ecgen__btn_list" onclick="encounterBuilder.handleShuffleClick(event, ${monId}, this)">
-					<span class="glyphicon glyphicon-random" style="right: 1px"></span>
-				</button>
-				` : ""}
-			</span>
-		`;
+	static getButtons (monId) {
+		return `<span class="ecgen__visible col-1 no-wrap pl-0" onclick="event.preventDefault(); event.stopPropagation()">
+			<button title="Add (SHIFT for 5)" class="btn btn-success btn-xs ecgen__btn_list" onclick="encounterBuilder.handleClick(event, ${monId}, 1)"><span class="glyphicon glyphicon-plus"></span></button>
+			<button title="Subtract (SHIFT for 5)" class="btn btn-danger btn-xs ecgen__btn_list" onclick="encounterBuilder.handleClick(event, ${monId}, 0)"><span class="glyphicon glyphicon-minus"></span></button>
+		</span>`;
 	}
 
-	async _initSavedEncounters () {
-		this._savedEncounters = await EncounterUtil.pGetAllSaves();
-	}
+	static $getSublistButtons (monId, customHashId) {
+		const $btnAdd = $(`<button title="Add (SHIFT for 5)" class="btn btn-success btn-xs ecgen__btn_list"><span class="glyphicon glyphicon-plus"/></button>`)
+			.click(evt => encounterBuilder.handleClick(evt, monId, true, customHashId));
 
-	pSetSavedEncounters () {
-		return StorageUtil.pSet(EncounterUtil.SAVED_ENCOUNTER_SAVE_LOCATION, this._savedEncounters);
-	}
+		const $btnSub = $(`<button title="Subtract (SHIFT for 5)" class="btn btn-danger btn-xs ecgen__btn_list"><span class="glyphicon glyphicon-minus"/></button>`)
+			.click(evt => encounterBuilder.handleClick(evt, monId, false, customHashId));
 
-	doToggleBrowserUi (state) {
-		$("#loadsaves").toggle(state);
-		$("#contentwrapper").toggle(!state);
-		if (state) this.renderBrowser();
-	}
+		const $btnRandomize = $(`<button title="Randomize Monster" class="btn btn-default btn-xs ecgen__btn_list"><span class="glyphicon glyphicon-random" style="right: 1px"/></button>`)
+			.click(() => encounterBuilder.pHandleShuffleClick(monId));
 
-	setBrowserButtonsState (isReload = false, isDisabled = true) {
-		if (isReload) {
-			$(".ecgen__sv-save").prop("disabled", isDisabled).text("Update Save");
-			$(".ecgen__sv-load").prop("disabled", isDisabled).text("Reload");
-		} else {
-			$(".ecgen__sv-save").prop("disabled", isDisabled).text("Save");
-			$(".ecgen__sv-load").prop("disabled", isDisabled).text("Load");
-		}
-	}
-
-	renderBrowser () {
-		const names = Object.keys(this._savedEncounters);
-		const anyName = !!names.length;
-
-		const $lstSaves = $("#listofsaves").empty();
-		if (names.length) {
-			names.forEach(name => {
-				const $btnDel = $(`<button class="btn btn-danger btn-xs ecgen__btn_list"><span class="glyphicon glyphicon-trash"/></button>`)
-					.click(() => this.handleDeleteClick(name));
-
-				const $li = $$`<li class="${name === this._savedName ? "list-multi-selected" : ""}">
-					<div class="row">
-						<span class="col-4 name">${name}</span>
-						<span class="col-7-4"></span>
-						<span class="no-wrap col-0-6" onclick="event.preventDefault()">${$btnDel}</span>
-					</div>
-				</li>`.click(() => this._handleSavedClick($li, name)).appendTo($lstSaves)
+		return $$`<span class="ecgen__visible col-1-5 no-wrap pl-0">
+			${$btnAdd}
+			${$btnSub}
+			${$btnRandomize}
+		</span>`
+			.click(evt => {
+				evt.preventDefault();
+				evt.stopPropagation()
 			});
-		} else {
-			$lstSaves.append(`<div class="px-2" style="font-size: 14px;"><i>No saved encounters found.</i></div>`);
-		}
-
-		this.setBrowserButtonsState(anyName, !anyName);
 	}
 
-	_handleSavedClick ($li, key) {
-		this._selectedSavedEncounter = this._savedEncounters[key];
-		this._lastClickedSave = key;
+	// region saved encounters
+	async _initSavedEncounters () {
+		const $wrpControls = $(`#ecgen__wrp-save-controls`).empty();
 
-		$("#listofsaves").children("li").removeClass("list-multi-selected");
-		$li.addClass("list-multi-selected");
+		const savedState = await EncounterUtil.pGetSavedState();
+		Object.assign(this._state, savedState);
 
-		if (this._savedName === this._lastClickedSave) this.setBrowserButtonsState(true, false);
-		else this.setBrowserButtonsState(false, false);
-	}
+		const pLoadActiveEncounter = async () => {
+			// save/restore the active key, to prevent it from being killed by the reset
+			const cached = this._state.activeKey;
+			const encounter = this._state.savedEncounters[this._state.activeKey];
+			await this.pDoLoadState(encounter.data);
+			this._state.activeKey = cached;
+			this.pSetSavedEncountersThrottled();
+		};
 
-	async handleSaveClick (isNew) {
-		const name = (() => {
-			if (isNew) {
-				const $iptName = $(".ecgen__sv-new-save-name");
-				const outName = $iptName.val().trim();
+		this._$iptName = $(`<input class="form-control form-control--minimal mb-3 mt-0 px-2 text-right bold" style="max-width: 330px;"/>`)
+			.change(() => {
+				const name = this._$iptName.val().trim() || "(Unnamed Encounter)";
+				this._$iptName.val(name);
+				const encounter = this._state.savedEncounters[this._state.activeKey];
+				encounter.name = name;
+				this._state.savedEncounters = {
+					...this._state.savedEncounters,
+					[this._state.activeKey]: encounter,
+				};
+				this.pSetSavedEncountersThrottled();
+			});
+		const hookName = () => {
+			if (this._state.activeKey) {
+				const encounter = this._state.savedEncounters[this._state.activeKey];
+				this._$iptName.val(encounter.name);
+			} else this._$iptName.val("");
+			this.pSetSavedEncountersThrottled();
+		};
+		this._addHook("state", "savedEncounters", hookName);
+		this._addHook("state", "activeKey", hookName);
+		hookName();
 
-				if (!outName) {
-					JqueryUtil.doToast({content: "Please enter an encounter name!", type: "warning"});
-					return null;
+		this._$btnNew = $(`<button class="btn btn-default btn-xs mr-2" title="New Encounter (SHIFT-click to reset players)"><span class="glyphicon glyphicon glyphicon-file"/></button>`)
+			.click(evt => {
+				this._state.activeKey = null;
+				encounterBuilder.pReset({isNotResetPlayers: !evt.shiftKey, isNotAddInitialPlayers: !evt.shiftKey});
+			});
+		const hookDisplayNew = () => this._$btnNew.toggleClass("hidden", !this._state.activeKey);
+		this._addHook("state", "activeKey", hookDisplayNew);
+		hookDisplayNew();
+
+		// TODO set window title to encounter name on save?
+		this._$btnSave = $(`<button class="btn btn-default btn-xs mr-2" title="Save Encounter"/>`)
+			.click(async () => {
+				if (this._state.activeKey) {
+					const encounter = this._state.savedEncounters[this._state.activeKey];
+					encounter.data = this.getSaveableState();
+
+					this._state.savedEncounters = {
+						...this._state.savedEncounters,
+						[this._state.activeKey]: encounter,
+					};
+					this.pSetSavedEncountersThrottled();
+					JqueryUtil.doToast({type: "success", content: "Saved!"});
+				} else {
+					const name = await InputUiUtil.pGetUserString({title: "Enter Encounter Name"});
+
+					if (name != null) {
+						const key = CryptUtil.uid();
+						this._state.savedEncounters = {
+							...this._state.savedEncounters,
+							[key]: {
+								name,
+								data: this.getSaveableState(),
+							},
+						};
+						this._state.activeKey = key;
+						this.pSetSavedEncountersThrottled();
+						JqueryUtil.doToast({type: "success", content: "Saved!"});
+					}
 				}
+			});
+		const hookButtonText = () => this._$btnSave.html(this._state.activeKey ? `<span class="glyphicon glyphicon-floppy-disk"/>` : "Save Encounter");
+		this._addHook("state", "activeKey", hookButtonText);
+		hookButtonText();
 
-				if (this._savedEncounters[outName] != null && !confirm(`Are you sure you want to overwrite the saved encounter "${name}"?`)) return null;
-				else {
-					$iptName.val("");
-					return outName;
-				}
-			} else if (this._savedName === this._lastClickedSave) return this._savedName;
-			else if (confirm(`Are you sure you want to overwrite the saved encounter "${this._lastClickedSave}"?`)) return this._savedName;
-		})();
+		const pDoReload = async () => {
+			const inStorage = await EncounterUtil.pGetSavedState();
+			const prev = inStorage.savedEncounters[this._state.activeKey];
+			if (!prev) {
+				return JqueryUtil.doToast({
+					content: `Could not find encounter in storage! Has it been deleted?`,
+					type: "danger",
+				});
+			} else {
+				this._state.savedEncounters = {
+					...this._state.savedEncounters,
+					[this._state.activeKey]: prev,
+				};
+				await pLoadActiveEncounter();
+			}
+		};
+		this._$btnReload = $(`<button class="btn btn-default btn-xs mr-2" title="Reload Current Encounter"><span class="glyphicon glyphicon-refresh"/></button>`)
+			.click(() => pDoReload());
 
-		if (!name) return;
+		this._$btnLoad = $(`<button class="btn btn-default btn-xs">Load Encounter</button>`)
+			.click(async () => {
+				const inStorage = await EncounterUtil.pGetSavedState();
+				const {$modalInner} = UiUtil.getShowModal({title: "Saved Encounters"});
+				const $wrpRows = $(`<div class="flex-col w-100 h-100"/>`).appendTo($modalInner);
 
-		this._savedName = name;
-		this._savedEncounters[name] = this.getSaveableState();
-		this.pSetSavedEncounters();
-		this.doSaveState();
-		this.renderBrowser();
+				const encounters = inStorage.savedEncounters;
+				if (Object.keys(encounters).length) {
+					let rendered = Object.keys(encounters).length;
+					Object.entries(encounters)
+						.sort((a, b) => SortUtil.ascSortLower(a[1].name || "", b[1].name || ""))
+						.forEach(([k, v]) => {
+							const $iptName = $(`<input class="input input-xs form-control form-control--minimal mr-2">`)
+								.val(v.name)
+								.change(() => {
+									const name = $iptName.val().trim() || "(Unnamed Encounter)";
+									$iptName.val(name);
+									const loaded = this._state.savedEncounters[k];
+									loaded.name = name;
+									this._state.savedEncounters = {...this._state.savedEncounters};
+									this.pSetSavedEncountersThrottled();
+								});
+
+							const $btnLoad = $(`<button class="btn btn-primary btn-xs mr-2">Load</button>`)
+								.click(async () => {
+									// if we've already got the correct encounter loaded, reload it
+									if (this._state.activeKey === k) await pDoReload();
+									else this._state.activeKey = k;
+
+									await pLoadActiveEncounter();
+								});
+
+							const $btnDelete = $(`<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"/></button>`)
+								.click(() => {
+									if (this._state.activeKey === k) this._state.activeKey = null;
+									this._state.savedEncounters = Object.keys(this._state.savedEncounters)
+										.filter(it => it !== k)
+										.mergeMap(it => ({[it]: this._state.savedEncounters[it]}));
+									$row.remove();
+									if (!--rendered) $$`<div class="w-100 flex-vh-center italic">No saved encounters</div>`.appendTo($wrpRows);
+									this.pSetSavedEncountersThrottled();
+								});
+
+							const $row = $$`<div class="flex-v-center w-100 mb-2">
+								${$iptName}
+								${$btnLoad}
+								${$btnDelete}
+							</div>`.appendTo($wrpRows);
+						});
+				} else $$`<div class="w-100 flex-vh-center italic">No saved encounters</div>`.appendTo($wrpRows)
+			});
+
+		const hookActiveKey = () => {
+			// show/hide controls
+			this._$iptName.toggle(!!this._state.activeKey);
+			this._$btnReload.toggle(!!this._state.activeKey);
+		};
+		this._addHook("state", "activeKey", hookActiveKey);
+		hookActiveKey();
+
+		$$`<div class="flex-col" style="align-items: flex-end;">
+			${this._$iptName}
+			<div class="flex-h-right">${this._$btnNew}${this._$btnSave}${this._$btnReload}${this._$btnLoad}</div>
+		</div>`.appendTo($wrpControls);
 	}
 
-	async handleLoadClick () {
-		await this.pDoLoadState(this._selectedSavedEncounter);
-		this.doToggleBrowserUi(false);
+	_pSetSavedEncounters () {
+		if (!this.stateInit) return;
+		return StorageUtil.pSet(EncounterUtil.SAVED_ENCOUNTER_SAVE_LOCATION, this.__state);
 	}
-
-	handleDeleteClick (name) {
-		delete this._savedEncounters[name];
-		if (name === this._savedName) this._savedName = null;
-		this.pSetSavedEncounters();
-		this.renderBrowser();
-	}
-
-	handleResetEncounterSavesClick () {
-		if (confirm("Are you sure?")) {
-			this._savedEncounters = {};
-			this.pSetSavedEncounters();
-			this._lastClickedSave = null;
-			this.renderBrowser();
-		}
-	}
+	// endregion
 }
 EncounterBuilder.HASH_KEY = "encounterbuilder";
-EncounterBuilder.TIERS = ["easy", "medium", "hard", "deadly", "yikes"];
+EncounterBuilder.TIERS = ["easy", "medium", "hard", "deadly", "absurd"];
+EncounterBuilder._TITLE_EASY = "An easy encounter doesn't tax the characters' resources or put them in serious peril. They might lose a few hit points, but victory is pretty much guaranteed.";
+EncounterBuilder._TITLE_MEDIUM = "A medium encounter usually has one or two scary moments for the players, but the characters should emerge victorious with no casualties. One or more of them might need to use healing resources.";
+EncounterBuilder._TITLE_HARD = "A hard encounter could go badly for the adventurers. Weaker characters might get taken out of the fight, and there's a slim chance that one or more characters might die.";
+EncounterBuilder._TITLE_DEADLY = "A deadly encounter could be lethal for one or more player characters. Survival often requires good tactics and quick thinking, and the party risks defeat";
+EncounterBuilder._TITLE_ABSURD = "An &quot;absurd&quot; encounter is a deadly encounter as per the rules, but is differentiated here to provide an additional tool for judging just how deadly a &quot;deadly&quot; encounter will be. It is calculated as: &quot;deadly + (deadly - hard)&quot;.";
+EncounterBuilder._TITLE_BUDGET_DAILY = "This provides a rough estimate of the adjusted XP value for encounters the party can handle before the characters will need to take a long rest.";
+EncounterBuilder._TITLE_TTK = "Time to Kill: The estimated number of turns the party will require to defeat the encounter. This assumes single-target damage only.";
+
+class EncounterPartyMeta {
+	constructor (arr) {
+		this.levelMetas = []; // Array of `{level: x, count: y}`
+
+		arr.forEach(it => {
+			const existingLvl = this.levelMetas.find(x => x.level === it.level);
+			if (existingLvl) existingLvl.count += it.count;
+			else this.levelMetas.push({count: it.count, level: it.level})
+		});
+
+		this.cntPlayers = 0;
+		this.avgPlayerLevel = 0;
+		this.maxPlayerLevel = 0;
+
+		this.threshEasy = 0;
+		this.threshMedium = 0;
+		this.threshHard = 0;
+		this.threshDeadly = 0;
+		this.threshAbsurd = 0;
+
+		this.dailyBudget = 0;
+
+		this.levelMetas.forEach(meta => {
+			this.cntPlayers += meta.count;
+			this.avgPlayerLevel += meta.level * meta.count;
+			this.maxPlayerLevel = Math.max(this.maxPlayerLevel, meta.level);
+
+			this.threshEasy += LEVEL_TO_XP_EASY[meta.level] * meta.count;
+			this.threshMedium += LEVEL_TO_XP_MEDIUM[meta.level] * meta.count;
+			this.threshHard += LEVEL_TO_XP_HARD[meta.level] * meta.count;
+			this.threshDeadly += LEVEL_TO_XP_DEADLY[meta.level] * meta.count;
+
+			this.dailyBudget += LEVEL_TO_XP_DAILY[meta.level] * meta.count;
+		});
+		if (this.avgPlayerLevel) this.avgPlayerLevel /= this.cntPlayers;
+
+		this.threshAbsurd = this.threshDeadly + (this.threshDeadly - this.threshHard);
+	}
+
+	/** Return true if at least a third of the party is level 5+. */
+	isPartyLevelFivePlus () {
+		const [levelMetasHigher, levelMetasLower] = this.levelMetas.partition(it => it.level >= 5);
+		const cntLower = levelMetasLower.map(it => it.count).reduce((a, b) => a + b, 0);
+		const cntHigher = levelMetasHigher.map(it => it.count).reduce((a, b) => a + b, 0);
+		return (cntHigher / (cntLower + cntHigher)) >= 0.333;
+	}
+
+	// Expose these as getters to ease factoring elsewhere
+	get easy () { return this.threshEasy; }
+	get medium () { return this.threshMedium; }
+	get hard () { return this.threshHard; }
+	get deadly () { return this.threshDeadly; }
+	get absurd () { return this.threshAbsurd; }
+}

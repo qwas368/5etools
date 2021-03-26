@@ -28,7 +28,7 @@ class InitiativeTrackerUtil {
 		const state = {
 			name: opts.name,
 			color: opts.color,
-			turns: opts.turns ? Number(opts.turns) : null
+			turns: opts.turns ? Number(opts.turns) : null,
 		};
 
 		const tickDown = (fromClick) => {
@@ -58,8 +58,8 @@ class InitiativeTrackerUtil {
 			const getBar = () => {
 				const styleStack = [
 					state.turns == null || state.turns > 3
-						? `background-image: linear-gradient(45deg, ${state.color} 41.67%, transparent 41.67%, transparent 50%, ${state.color} 50%, ${state.color} 91.67%, transparent 91.67%, transparent 100%); background-size: 8.49px 8.49px;`
-						: `background: ${state.color};`
+						? `background-image: linear-gradient(135deg, ${state.color} 41.67%, transparent 41.67%, transparent 50%, ${state.color} 50%, ${state.color} 91.67%, transparent 91.67%, transparent 100%); background-size: 8.49px 8.49px;`
+						: `background: ${state.color};`,
 				];
 				if (opts.width) styleStack.push(`width: ${opts.width}px;`);
 				return `<div class="init__cond_bar" style="${styleStack.join(" ")}"/>`
@@ -69,9 +69,9 @@ class InitiativeTrackerUtil {
 				? [...new Array(Math.min(state.turns, 3))].map(() => getBar()).join("")
 				: getBar();
 
-			$cond.attr("title", ttpText);
+			$cond.title(ttpText);
 
-			$cond.tooltip({trigger: "hover", placement: "left"});
+			$cond.tooltip({trigger: "hover", placement: "auto-x"});
 			if (ttpText) {
 				// update tooltips
 				$cond.tooltip("enable").tooltip("fixTitle");
@@ -88,24 +88,22 @@ class InitiativeTrackerUtil {
 		const $cond = $(`<div class="init__cond" ${styleStack.length ? `style="${styleStack.join(" ")}"` : ""}/>`)
 			.data("doTickDown", tickDown)
 			.data("getState", () => JSON.parse(JSON.stringify(state)))
-			.on("contextmenu", (e) => e.ctrlKey || (e.preventDefault() || tickDown(true)))
+			.on("contextmenu", (e) => e.preventDefault() || tickDown(true))
 			.click(() => tickUp(true));
 
 		if (opts.name) {
 			const cond = InitiativeTrackerUtil.CONDITIONS.find(it => it.condName !== null && it.name.toLowerCase() === opts.name.toLowerCase().trim());
 			if (cond) {
+				const ele = $cond[0];
 				$cond.on("mouseover", (evt) => {
 					if (evt.shiftKey) {
 						evt.shiftKey = false;
-						Renderer.hover.mouseOver(
-							evt,
-							$cond[0],
-							UrlUtil.PG_CONDITIONS_DISEASES,
-							SRC_PHB,
-							UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES]({name: cond.condName || cond.name, source: SRC_PHB})
-						);
+						const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES]({name: cond.condName || cond.name, source: SRC_PHB});
+						Renderer.hover.pHandleLinkMouseOver(evt, ele, UrlUtil.PG_CONDITIONS_DISEASES, SRC_PHB, hash);
 					}
-				})
+				});
+				$cond.on("mousemove", (evt) => Renderer.hover.handleLinkMouseMove(evt, ele));
+				$cond.on("mouseleave", (evt) => Renderer.hover.handleLinkMouseLeave(evt, ele));
 			}
 		}
 
@@ -117,181 +115,68 @@ class InitiativeTrackerUtil {
 InitiativeTrackerUtil._WOUND_META = {
 	[-1]: {
 		text: "Unknown",
-		color: "#a5a5a5"
+		color: "#a5a5a5",
 	},
 	0: {
 		text: "Healthy",
-		color: "#00bb20"
+		color: MiscUtil.COLOR_HEALTHY,
 	},
 	1: {
 		text: "Hurt",
-		color: "#c5ca00"
+		color: MiscUtil.COLOR_HURT,
 	},
 	2: {
 		text: "Bloodied",
-		color: "#f7a100"
+		color: MiscUtil.COLOR_BLOODIED,
 	},
 	3: {
 		text: "Defeated",
-		color: "#cc0000"
-	}
+		color: MiscUtil.COLOR_DEFEATED,
+	},
 };
+
 InitiativeTrackerUtil.CONDITIONS = [
-	{
-		name: "Blinded",
-		color: "#434343"
-	},
-	{
-		name: "Charmed",
-		color: "#f01789"
-	},
-	{
-		name: "Concentrating",
-		color: "#009f7a",
-		condName: null
-	},
-	{
-		name: "Deafened",
-		color: "#c7d0d3"
-	},
+	...Object.keys(Parser.CONDITION_TO_COLOR).map(k => ({
+		name: k,
+		color: Parser.CONDITION_TO_COLOR[k],
+	})),
 	{
 		name: "Drunk",
-		color: "#ffcc00"
-	},
-	{
-		name: "Exhausted",
-		color: "#947a47",
-		condName: "Exhaustion"
-	},
-	{
-		name: "Frightened",
-		color: "#c9ca18"
-	},
-	{
-		name: "Grappled",
-		color: "#8784a0"
-	},
-	{
-		name: "Incapacitated",
-		color: "#3165a0"
-	},
-	{
-		name: "Invisible",
-		color: "#7ad2d6"
+		color: "#ffcc00",
+		condName: null,
 	},
 	{
 		name: "!!On Fire!!",
 		color: "#ff6800",
-		condName: null
+		condName: null,
 	},
-	{
-		name: "Paralyzed",
-		color: "#c00900"
-	},
-	{
-		name: "Petrified",
-		color: "#a0a0a0"
-	},
-	{
-		name: "Poisoned",
-		color: "#4dc200"
-	},
-	{
-		name: "Prone",
-		color: "#5e60a0"
-	},
-	{
-		name: "Restrained",
-		color: "#d98000"
-	},
-	{
-		name: "Stunned",
-		color: "#a23bcb"
-	},
-	{
-		name: "Unconscious",
-		color: "#1c2383"
-	}
-];
+].sort((a, b) => SortUtil.ascSortLower(a.name.replace(/\W+/g, ""), b.name.replace(/\W+/g, "")));
 
 class InitiativeTrackerPlayerUi {
-	constructor (view, $iptServerToken, $btnGenClientToken, $iptClientToken, $cbShortToken) {
+	constructor (view, playerName, serverToken) {
 		this._view = view;
-		this._$iptServerToken = $iptServerToken;
-		this._$btnGenClientToken = $btnGenClientToken;
-		this._$iptClientToken = $iptClientToken;
-		this._$cbShortToken = $cbShortToken;
+		this._playerName = playerName;
+		this._serverToken = serverToken;
+		this._clientPeer = new PeerVeClient();
 	}
 
-	init () {
-		this._$iptServerToken.keydown(evt => {
-			this._$iptServerToken.removeClass("error-background");
-			if (evt.which === 13) this._$btnGenClientToken.click();
-		});
-
-		this._$btnGenClientToken.click(async () => {
-			this._$iptServerToken.removeClass("error-background");
-			const serverToken = this._$iptServerToken.val();
-
-			if (PeerUtil.isValidToken(serverToken)) {
-				try {
-					this._$iptServerToken.attr("disabled", true);
-					this._$btnGenClientToken.attr("disabled", true);
-					const clientData = await PeerUtil.pInitialiseClient(
-						serverToken,
-						msg => this._view.handleMessage(msg),
-						function (err) {
-							if (!this.isClosed) {
-								JqueryUtil.doToast({
-									content: `Server error:\n${err ? err.message || err : "(Unknown error)"}`,
-									type: "danger"
-								});
-							}
-						},
-						{
-							shortTokens: this._$cbShortToken.prop("checked")
-						}
-					);
-
-					if (!clientData) {
-						this._$iptServerToken.attr("disabled", false);
-						this._$btnGenClientToken.attr("disabled", false);
-						JqueryUtil.doToast({
-							content: `Failed to create client. Are you sure the token was valid?`,
-							type: "warning"
-						});
-					} else {
-						this._view.clientData = clientData;
-
-						// -- This has no effect; the client doesn't error on sending when there's no connection --
-						// const livenessCheck = setInterval(async () => {
-						// 	try {
-						// 		await clientData.client.sendMessage({})
-						// 	} catch (e) {
-						// 		JqueryUtil.doToast({
-						// 			content: `Could not reach server! You might need to reconnect.`,
-						// 			type: "danger"
-						// 		});
-						// 		clearInterval(livenessCheck);
-						// 	}
-						// }, 5000);
-
-						this._$iptClientToken.val(clientData.textifiedSdp).attr("disabled", false);
-					}
-				} catch (e) {
-					JqueryUtil.doToast({
-						content: `Failed to create client! Are you sure the token was valid? (See the log for more details.)`,
-						type: "danger"
-					});
-					setTimeout(() => { throw e; });
-				}
-			} else this._$iptServerToken.addClass("error-background");
-		});
-
-		this._$iptClientToken.click(async () => {
-			await MiscUtil.pCopyTextToClipboard(this._$iptClientToken.val());
-			JqueryUtil.showCopiedEffect(this._$iptClientToken);
-		});
+	async pInit () {
+		try {
+			await this._clientPeer.pConnectToServer(
+				this._serverToken,
+				data => this._view.handleMessage(data),
+				{
+					label: this._playerName,
+					serialization: "json",
+				},
+			);
+		} catch (e) {
+			JqueryUtil.doToast({
+				content: `Failed to create client! Are you sure the token was valid? (See the log for more details.)`,
+				type: "danger",
+			});
+			throw e;
+		}
 	}
 }
 
@@ -300,15 +185,12 @@ class InitiativeTrackerPlayerMessageHandler {
 		this._isCompact = isCompact;
 		this._isUiInit = false;
 
-		this._clientData = null;
 		this._$meta = null;
 		this._$head = null;
 		this._$rows = null;
 	}
 
 	get isActive () { return this._isUiInit; }
-
-	set clientData (clientData) { this._clientData = clientData; }
 
 	setElements ($meta, $head, $rows) {
 		this._$meta = $meta;
@@ -331,7 +213,7 @@ class InitiativeTrackerPlayerMessageHandler {
 				<div class="${this._isCompact ? "flex-vh-center" : "flex-v-center"}${this._isCompact ? " mb-3" : ""}">
 					<div class="mr-2">Round: </div>
 					<div class="bold">${data.n}</div>
-				</div>		
+				</div>
 			`);
 		}
 
@@ -352,7 +234,7 @@ class InitiativeTrackerPlayerMessageHandler {
 		(rowData.c || []).forEach(cond => {
 			const opts = {
 				...cond,
-				readonly: true
+				readonly: true,
 			};
 			if (!this._isCompact) {
 				opts.width = 24;
@@ -372,20 +254,22 @@ class InitiativeTrackerPlayerMessageHandler {
 		};
 		const {hpText, hpColor} = getHpContent();
 
-		return $(`
+		const $namePart = $(`<div/>`).text(`${(rowData.m || rowData.n || "")}${rowData.o != null ? ` (${rowData.o})` : ""}`);
+
+		return $$`
 			<div class="initp__r${rowData.a ? ` initp__r--active` : ""}">
 				<div class="initp__r_name">
-					<div>${(rowData.n || "").escapeQuotes()}${rowData.o != null ? ` (${rowData.o})` : ""}</div>
-					<div data-r="$conds"/>
+					${$namePart}
+					${$conds}
 				</div>
 				<div class="initp__r_hp">
 					<div class="initp__r_hp_pill" style="background: ${hpColor};">${hpText}</div>
 				</div>
 				${(rowData.k || []).map(statVal => `<div class="initp__r_stat flex-vh-center">
-					${statVal.v === true ? `<span class="text-success glyphicon glyphicon-ok"/>` : statVal.v === false ? `<span class="text-danger glyphicon glyphicon-remove"/>` : statVal.v}
+					${statVal.u ? "?" : statVal.v === true ? `<span class="text-success glyphicon glyphicon-ok"/>` : statVal.v === false ? `<span class="text-danger glyphicon glyphicon-remove"/>` : statVal.v}
 				</div>`).join("")}
 				<div class="initp__r_score${this._isCompact ? " initp__r_score--compact" : ""}">${rowData.i}</div>
 			</div>
-		`).swap({$conds});
+		`;
 	}
 }

@@ -17,7 +17,7 @@ class MoneyConverter {
 			new MoneyConverterUnit("Taol (WDH)", 200, "taol"),
 			new MoneyConverterUnit("Dragon (WDH)", 100, "dgn"),
 			new MoneyConverterUnit("Sun (WDH)", 1000, "sun"),
-			new MoneyConverterUnit("Harbor Moon (WDH)", 5000, "moon")
+			new MoneyConverterUnit("Harbor Moon (WDH)", 5000, "moon"),
 		];
 		const CURRENCY_INDEXED = [...CURRENCY].map((it, i) => {
 			it.ix = i;
@@ -25,7 +25,7 @@ class MoneyConverter {
 		}).reverse();
 		const DEFAULT_CURRENCY = 3;
 
-		const $wrpConverter = $(`<div class="dm_money split-column"/>`);
+		const $wrpConverter = $(`<div class="dm_money dm__panel-bg split-column"/>`);
 
 		const doUpdate = () => {
 			if (!$wrpRows.find(`.dm_money__row`).length) {
@@ -43,8 +43,8 @@ class MoneyConverter {
 			}
 
 			const $rows = $wrpRows.find(`.dm_money__row`)
-				.removeClass("error-background");
-			$iptSplit.removeClass("error-background");
+				.removeClass("form-control--error");
+			$iptSplit.removeClass("form-control--error");
 
 			const outCurrency = Number($selOut.val()) || 0;
 
@@ -55,7 +55,7 @@ class MoneyConverter {
 			let split = 1;
 			if (splitBetweenStr) {
 				const splitBetweenNum = Number(splitBetweenStr);
-				if (isNaN(splitBetweenNum)) $iptSplit.addClass("error-background");
+				if (isNaN(splitBetweenNum)) $iptSplit.addClass("form-control--error");
 				else split = splitBetweenNum;
 			}
 
@@ -69,7 +69,7 @@ class MoneyConverter {
 					const strVal = ($e.find(`input`).val() || "").trim();
 					if (strVal) {
 						const asNum = Number(strVal);
-						if (isNaN(asNum)) $e.addClass("error-background");
+						if (isNaN(asNum)) $e.addClass("form-control--error");
 						else {
 							const ix = Number($e.find(`select`).val());
 							totals[ix] = (totals[ix] || 0) + asNum;
@@ -116,7 +116,7 @@ class MoneyConverter {
 					const strVal = ($e.find(`input`).val() || "").trim();
 					if (strVal) {
 						const asNum = Number(strVal);
-						if (isNaN(asNum)) $e.addClass("error-background");
+						if (isNaN(asNum)) $e.addClass("form-control--error");
 						else {
 							total += asNum * (CURRENCY[$e.find(`select`).val()] || CURRENCY[0]).mult;
 						}
@@ -138,7 +138,7 @@ class MoneyConverter {
 				});
 			}
 
-			$iptOut.val(`${outParts.join("; ")}${totalWeight ? ` (${totalWeight.toLocaleString()} lbs.)` : ""}`);
+			$iptOut.val(`${outParts.join("; ")}${totalWeight ? ` (${totalWeight.toLocaleString()} lb.)` : ""}`);
 
 			board.doSaveStateDebounced();
 		};
@@ -171,12 +171,12 @@ class MoneyConverter {
 		const $btnSettings = $(`<button class="btn btn-default btn-sm" title="Settings"><span class="glyphicon glyphicon-cog"/></button>`)
 			.appendTo($wrpBtnAddSettings)
 			.click(() => {
-				const $modalInner = UiUtil.getShow$Modal(
-					"Settings",
-					() => doUpdate()
-				);
+				const {$modalInner} = UiUtil.getShowModal({
+					title: "Settings",
+					cbClose: () => doUpdate(),
+				});
 				[...CURRENCY_INDEXED].reverse().forEach(cx => {
-					UiUtil.getAddModal$RowCb($modalInner, `Disable ${cx.n}`, disabledCurrency, cx.ix);
+					UiUtil.$getAddModalRowCb($modalInner, `Disable ${cx.n} in Output`, disabledCurrency, cx.ix);
 				});
 			});
 		const $iptOut = $(`<input class="form-control input-sm dm_money__out" disabled/>`)
@@ -198,10 +198,10 @@ class MoneyConverter {
 					const $e = $(e);
 					return {
 						c: $e.find(`select`).val(),
-						n: $e.find(`input`).val()
+						n: $e.find(`input`).val(),
 					};
 				}).get(),
-				d: disabledCurrency
+				d: disabledCurrency,
 			};
 		});
 

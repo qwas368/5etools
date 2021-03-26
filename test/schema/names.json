@@ -1,11 +1,13 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.0.0",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "names.json",
+	"version": "1.2.0",
 	"title": "NameArray",
 	"type": "object",
 
 	"definitions": {
 		"nameTableRow": {
+			"type": "object",
 			"properties": {
 				"min": {
 					"type": "integer"
@@ -13,19 +15,20 @@
 				"max": {
 					"type": "integer"
 				},
-				"enc": {
+				"result": {
 					"type": "string"
 				}
 			},
 			"required": [
 				"min",
 				"max",
-				"enc"
+				"result"
 			],
 			"additionalProperties": false
 		},
 
 		"nameTable": {
+			"type": "object",
 			"properties": {
 				"option": {
 					"type": "string"
@@ -35,7 +38,9 @@
 				},
 				"table": {
 					"type": "array",
-					"items": "#/definitions/nameTableRow"
+					"items": {
+						"$ref": "#/definitions/nameTableRow"
+					}
 				}
 			},
 			"required": [
@@ -46,12 +51,16 @@
 		},
 
 		"name": {
+			"type": "object",
 			"properties": {
-				"race": {
+				"name": {
 					"type": "string"
 				},
 				"source": {
 					"type": "string"
+				},
+				"page": {
+					"type": "integer"
 				},
 				"tables": {
 					"type": "array",
@@ -61,7 +70,7 @@
 				}
 			},
 			"required": [
-				"race",
+				"name",
 				"source",
 				"tables"
 			],
@@ -78,6 +87,6 @@
 		}
 	},
 
-	"required": "name",
+	"required": ["name"],
 	"additionalProperties": false
 }

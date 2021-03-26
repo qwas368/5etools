@@ -2,22 +2,57 @@
 <html lang="tw">
 
 <head>
-	<!--5ETOOLS_VERSION-->
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ANALYTICS-->
+	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>怪物圖鑑 - 5etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.115">
+	<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<!-- Chrome Web App Icons -->
+	<link rel="manifest" href="manifest.webmanifest">
+	<meta name="application-name" content="5etools">
+	<meta name="theme-color" content="#006bc4">
+
+	<!-- Windows Start Menu tiles -->
+	<meta name="msapplication-config" content="browserconfig.xml"/>
+	<meta name="msapplication-TileColor" content="#006bc4">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<meta name="apple-mobile-web-app-title" content="5etools">
+
+	<!-- macOS Safari Pinned Tab and Touch Bar -->
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">
+
+	<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");</script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/browsercheck.js"></script>
 
 	<style>
 		img.token {
@@ -29,11 +64,11 @@
 			display: inline-block;
 		}
 
-		.ecgen_active .row--bestiary_sublist {
+		.ecgen_active .lst__row--bestiary-sublist {
 			cursor: default;
 		}
 
-		.ecgen_active .row--bestiary_sublist:hover {
+		.ecgen_active .lst__row--bestiary-sublist:hover {
 			background: initial;
 		}
 
@@ -46,12 +81,16 @@
 			font-variant: small-caps;
 		}
 
+		.night-mode .ecgen__players_head_advanced {
+			border-color: #555;
+		}
+
 		.ecgen__group_lhs--advanced {
 			overflow-x: auto;
 		}
 
 		.ecgen__group_lhs--advanced .ecgen__players_head_simple {
-			display: none;
+			display: none !important;
 		}
 
 		.ecgen__group_lhs--advanced .ecgen__players_head_advanced {
@@ -114,252 +153,234 @@
 </head>
 
 <body>
+<div class="cancer__wrp-sidebar-rhs cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--top"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-rhs-inner cancer__sidebar-rhs-inner--bottom"><!--5ETOOLS_AD_RIGHT_2--></div></div>
+
 <div class="viewport-wrapper">
+	<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container">
+
 			<h1 class="page__title">怪物圖鑑</h1>
 			<p class="page__subtitle">使用左側的名稱搜尋，點擊怪物名稱以在右側顯示。</p>
 		</div>
 	</header>
 	<nav class="container page__nav" id="navigation">
-		<ul class="nav nav-pills" id="navbar">
-		</ul>
+		<ul class="nav page__nav-inner" id="navbar"></ul>
 	</nav>
 
-	<div class="cancer__wrp-leaderboard"><!--5ETOOLS_AD_LEADERBOARD--></div>
-	<div class="cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--single"><!--5ETOOLS_AD_RIGHT_1--></div>
+	<div class="view-col-group--cancer h-100 mh-0">
+		<div class="container view-col-wrapper view-col-wrapper--cancer">
+			<div class="view-col" id="listcontainer">
+				<div class="lst__form-top" id="filter-search-group">
+					<div class="w-100 relative">
+						<input type="search" id="lst__search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control lst__search lst__search--no-border-h">
+						<div id="lst__search-glass" class="lst__wrp-search-glass no-events flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>
+						<div class="lst__wrp-search-visible no-events flex-vh-center"></div>
+					</div>
+					<button class="btn btn-default" id="reset">重置</button>
+				</div>
 
-	<div class="container view-col-wrapper">
-		<div class="view-col" id="listcontainer">
-			<div class="input-group" id="filter-search-input-group">
-				<input type="search" id="search" class="search form-control" placeholder="搜尋怪物...">
-				<span class="input-group-btn">
-						<button class="btn btn-default" id="reset">重置</button>
-					</span>
-			</div>
+				<div id="filtertools" class="input-group input-group--bottom flex no-shrink">
+					<button class="col-4-2 sort btn btn-default btn-xs" data-sort="name">名稱<span class="caret_wrp"></span></button>
+					<button class="col-4-1 sort btn btn-default btn-xs" data-sort="type">類型<span class="caret_wrp"></span></button>
+					<button class="col-1-7 sort btn btn-default btn-xs" data-sort="cr">CR<span class="caret_wrp"></span></button>
+					<button class="sort btn btn-default btn-xs ve-grow" data-sort="source">資源<span class="caret_wrp"></span></button>
+				</div>
 
-			<div id="filtertools" class="sortlabel btn-group">
-				<button class="col-4-2 sort btn btn-default btn-xs" data-sort="name">名稱<span class="caret_wrp"></span></button>
-				<button class="col-4-1 sort btn btn-default btn-xs" data-sort="type">類型<span class="caret_wrp"></span></button>
-				<button class="col-1-7 sort btn btn-default btn-xs" data-sort="cr">CR<span class="caret_wrp"></span></button>
-				<button class="col-2 sort btn btn-default btn-xs" data-sort="source">資源<span class="caret_wrp"></span></button>
-			</div>
-
-			<ul class="list monsters">
-				<!-- populate with JS -->
-			</ul>
-		</div>
-
-		<div id="loadsaves" style="display: none;" class="view-col">
-			<h3>Saved Encounters</h3>
-			<div class="mb-4">
-				<ul class="list" id="listofsaves">
+				<div class="list list--stats monsters">
 					<!-- populate with JS -->
-				</ul>
-				<hr>
-				<div class="row">
-					<div class="col-10-4">
-						<input class="ecgen__sv-new-save-name form-control input-xs" placeholder="Encounter Name">
-					</div>
-					<div class="col-1-6">
-						<button class="btn btn-primary mr-2 btn-xs" onclick="encounterBuilder.handleSaveClick(true)">Save</button>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-12 flex-vh-center">
-						<button class="btn btn-primary btn-xs mr-4 ecgen__sv-cancel">Back</button>
-						<button class="btn btn-primary btn-xs mr-2 ecgen__sv-load" onclick="encounterBuilder.handleLoadClick()" disabled>Load</button>
-						<button class="btn btn-primary btn-xs mr-4 ecgen__sv-save"  onclick="encounterBuilder.handleSaveClick()" disabled>Save</button>
-						<button class="btn btn-danger btn-xs mr-2" onclick="encounterBuilder.handleResetEncounterSavesClick()">Delete All</button>
-					</div>
 				</div>
 			</div>
-		</div>
 
-		<div id="contentwrapper" class="view-col">
-			<div class="ecgen__visible mb-4">
-				<div class="row">
-					<div class="col-12 text-align-right">
-						<div class="btn-group mr-3">
-							<button class="btn btn-primary ecgen_rng" data-mode="medium" style="min-width: 135px;" title="Randomly generate a Medium encounter">隨機中等難度</button>
-							<button class="btn btn-primary dropdown-toggle" id="ecgen_dropdown_rng">
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li class="ecgen_rng_easy" title="Randomly generate an Easy encounter"><a href="#">隨機容易難度</a></li>
-								<li class="ecgen_rng_medium" title="Randomly generate a Medium encounter"><a href="#">隨機中等難度</a></li>
-								<li class="ecgen_rng_hard" title="Randomly generate a Hard encounter"><a href="#">隨機困難難度</a></li>
-								<li class="ecgen_rng_deadly" title="Randomly generate a Deadly encounter"><a href="#">隨機致命難度</a></li>
-							</ul>
-						</div>
+			<div id="contentwrapper" class="view-col">
+				<div class="ecgen__visible mb-3">
+					<div class="row">
+						<div class="flex-h-right">
+							<div class="btn-group mr-3">
+								<button class="btn btn-primary ecgen_rng" data-mode="medium" style="min-width: 135px;" title="Randomly generate a Medium encounter">隨機中等難度</button>
+								<button class="btn btn-primary dropdown-toggle" id="ecgen_dropdown_rng">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="ecgen_rng_easy" title="Randomly generate an Easy encounter"><a href="#">隨機容易難度</a></li>
+									<li class="ecgen_rng_medium" title="Randomly generate a Medium encounter"><a href="#">隨機中等難度</a></li>
+									<li class="ecgen_rng_hard" title="Randomly generate a Hard encounter"><a href="#">隨機困難難度</a></li>
+									<li class="ecgen_rng_deadly" title="Randomly generate a Deadly encounter"><a href="#">隨機致命難度</a></li>
+								</ul>
+							</div>
 
-						<div class="btn-group">
-							<button class="btn btn-primary ecgen_adj" data-mode="medium" style="min-width: 135px;" title="Adjust the current encounter difficulty to Medium">調整至中等難度</button>
-							<button class="btn btn-primary dropdown-toggle" id="ecgen_dropdown_adj">
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li class="ecgen_adj_easy" title="Adjust the current encounter difficulty to Easy"><a href="#">調整至容易難度</a></li>
-								<li class="ecgen_adj_medium" title="Adjust the current encounter difficulty to Medium"><a href="#">調整至中等難度</a></li>
-								<li class="ecgen_adj_hard" title="Adjust the current encounter difficulty to Hard"><a href="#">調整至困難難度</a></li>
-								<li class="ecgen_adj_deadly" title="Adjust the current encounter difficulty to Deadly"><a href="#">調整至致命難度</a></li>
-							</ul>
+							<div class="btn-group">
+								<button class="btn btn-primary ecgen_adj" data-mode="medium" style="min-width: 135px;" title="Adjust the current encounter difficulty to Medium">調整至中等難度</button>
+								<button class="btn btn-primary dropdown-toggle" id="ecgen_dropdown_adj">
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="ecgen_adj_easy" title="Adjust the current encounter difficulty to Easy"><a href="#">調整至容易難度</a></li>
+									<li class="ecgen_adj_medium" title="Adjust the current encounter difficulty to Medium"><a href="#">調整至中等難度</a></li>
+									<li class="ecgen_adj_hard" title="Adjust the current encounter difficulty to Hard"><a href="#">調整至困難難度</a></li>
+									<li class="ecgen_adj_deadly" title="Adjust the current encounter difficulty to Deadly"><a href="#">調整至致命難度</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div id="sublistcontainer" class="sublist sublist--resizable">
-				<div id="sublistsort" class="sortlabel btn-group">
-					<button class="col-5 sort btn btn-default btn-xs" data-sort="name">名稱e</button>
-					<button class="col-3 sort btn btn-default btn-xs ecgen__hidden" data-sort="type">類型</button>
-					<button class="col-3 sort btn btn-default btn-xs ecgen__visible" disabled>&nbsp;</button>
-					<button class="col-2 sort btn btn-default btn-xs" data-sort="cr">CR</button>
-					<button class="col-2 sort btn btn-default btn-xs" data-sort="count">數量</button>
+				<div class="ecgen__visible mb-4" id="ecgen__wrp-save-controls"></div>
+
+				<div id="sublistcontainer" class="sublist sublist--resizable">
+					<div id="sublistsort" class="btn-group sublist__wrp-cols">
+						<button class="col-5 sort btn btn-default btn-xs" data-sort="name">名稱 <span class="caret_wrp"></span></button>
+						<button class="col-3-8 sort btn btn-default btn-xs ecgen__hidden" data-sort="type">類型 <span class="caret_wrp"></span></button>
+						<button class="col-3-8 sort btn btn-default btn-xs ecgen__visible" disabled>&nbsp;</button>
+						<button class="col-1-2 sort btn btn-default btn-xs" data-sort="cr">CR <span class="caret_wrp"></span></button>
+						<button class="col-2 sort btn btn-default btn-xs" data-sort="count">數量 <span class="caret_wrp"></span></button>
+					</div>
+					<div class="list submonsters">
+						<!-- populate with JS -->
+					</div>
+					<div class="row ecgen__hidden ve-small">
+						<span class="col-6 text-right pr-2">Total:</span>
+						<span class="col-6 no-wrap pl-0" id="totalcr"></span>
+					</div>
 				</div>
-				<ul class="list submonsters">
-					<!-- populate with JS -->
-				</ul>
-				<div class="row ecgen__hidden">
-					<span class="col-7 text-align-right">Total:</span>
-					<span class="col-5 no-wrap" id="totalcr" style="padding-left: 1px"></span>
+
+				<div id="stat-tabs" class="wrp-stat-tab ecgen__hidden">
+					<div id="tabs-right"></div>
 				</div>
-			</div>
 
-			<div id="stat-tabs" class="wrp-stat-tab ecgen__hidden">
-				<div id="tabs-right"></div>
-			</div>
+				<div id="float-token" class="ecgen__hidden relative"></div>
 
-			<div id="float-token" class="ecgen__hidden" style="position: relative;"></div>
-
-			<div id="wrp-pagecontent" class="wrp-stats-table ecgen__hidden" onscroll="handleStatblockScroll(event, this)">
-				<table id="pagecontent" class="stats monster">
-					<tr><th class="border" colspan="6"></th></tr>
-					<tr><td colspan="6" class="initial-message">讀取中...</td></tr>
-					<tr><th class="border" colspan="6"></th></tr>
-				</table>
-			</div>
-
-			<div class="text-align-center wrp-footer-buttons ecgen__hidden">
-				<button class="btn btn-default btn-success btn-xs" id="btn-encounterbuild">遭遇構築器</button>
-				<div id="wrp-profbonusdice" class=>
-					<button class="btn btn-default btn-xs" id="profbonusdice"
-							title="警告：高實驗性&mdash; 請謹慎使用">使用熟練骰
-					</button>
+				<div id="wrp-pagecontent" class="wrp-stats-table ecgen__hidden">
+					<table id="pagecontent" class="stats monster">
+						<tr><th class="border" colspan="6"></th></tr>
+						<tr><td colspan="6" class="initial-message">讀取中...</td></tr>
+						<tr><th class="border" colspan="6"></th></tr>
+					</table>
 				</div>
-				<button class="btn btn-default btn-xs" id="btn-printbook">印表機檢視</button>
-				<button class="btn btn-default btn-xs btn-file btn-info" id="manage-brew">管理自製內容</button>
-			</div>
 
-			<div class="ecgen__visible">
-				<h3>團隊資料</h3>
-				<div class="row">
-					<!-- LHS -->
-					<div class="col-8 ecgen__group_lhs">
-						<div class="row ecgen__players_head_simple">
-							<div class="col-2">玩家::</div>
-							<div class="col-2">等級:</div>
-						</div>
+				<div class="text-center mt-2 no-print ecgen__hidden">
+					<button class="btn btn-success btn-xs" id="btn-encounterbuild">遭遇構築器</button>
+					<div id="wrp-profbonusdice" class=>
+						<button class="btn btn-default btn-xs" id="profbonusdice"
+								title="警告：高實驗性&mdash; 請謹慎使用">使用熟練骰
+						</button>
+					</div>
+					<button class="btn btn-default btn-xs" id="btn-printbook">印表機檢視</button>
+					<button class="btn btn-xs btn-info" id="manage-brew">管理自製內容</button>
+				</div>
 
-						<div class="ecgen__players_head_advanced">
-							<div class="ecgen__player_advanced__name_head mr-1 ecgen__player_head_tall">Name</div>
-							<div class="ecgen__player_advanced_narrow text-align-center mr-1 ecgen__player_head_tall">Level</div>
-							<button class="btn btn-primary btn-xs ecgen__advanced_add_col" onclick="encounterBuilder.addAdvancedColumn()" title="Add Column">
-								<span class="glyphicon glyphicon-list-alt"></span>
-							</button>
-						</div>
+				<div class="ecgen__visible--flex-col ecgen__wrp pb-1 px-2">
+					<h3 class="mt-1 m-2">團隊資料</h3>
+					<div class="flex">
+						<!-- LHS -->
+						<div class="w-70 ecgen__group_lhs">
+							<div class="flex ecgen__players_head_simple">
+								<div class="w-20">玩家:</div>
+								<div class="w-20">等級:</div>
+							</div>
 
-						<div class="ecgen__wrp_add_players mb-1">
-							<div class="ecgen__wrp_add_players_btn_wrp">
-								<button class="btn btn-primary btn-xs ecgen__add_players">
-									<span class="glyphicon glyphicon-plus"></span> 加入其他等級
-
+							<div class="ecgen__players_head_advanced">
+								<div class="ecgen__player_advanced__name_head mr-1 ecgen__player_head_tall">Name</div>
+								<div class="ecgen__player_advanced_narrow text-center mr-1 ecgen__player_head_tall">Level</div>
+								<button class="btn btn-primary btn-xs ecgen__advanced_add_col" onclick="encounterBuilder.addAdvancedColumn()" title="Add Column">
+									<span class="glyphicon glyphicon-list-alt"></span>
 								</button>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="col-12">
-								<label class="inline-flex" style="font-weight: initial;">
-									<span style="margin-right: 5px;">Advanced Mode</span>
-									<input type="checkbox" class="ecgen__players_advanced">
-								</label>
+							<div class="ecgen__wrp_add_players mb-1">
+								<div class="ecgen__wrp_add_players_btn_wrp">
+									<button class="btn btn-primary btn-xs ecgen__add_players">
+										<span class="glyphicon glyphicon-plus"></span> 加入其他等級
+									</button>
+								</div>
+							</div>
+
+							<label class="flex-v-center">
+								<div class="mr-2">Advanced Mode</div>
+								<input type="checkbox" class="ecgen__players_advanced">
+							</label>
+
+							<div class="row ecgen__advanced_help">
+								<div class="w-100">
+									<i>Additional columns will be imported into the DM Screen.</i>
+								</div>
 							</div>
 						</div>
 
-						<div class="row ecgen__advanced_help">
-							<div class="col-12">
-								<i>Additional columns will be imported into the DM Screen.</i>
-							</div>
+						<!-- RHS -->
+						<div class="w-30 text-right">
+							<div class="ecgen__easy">容易: ? XP</div>
+							<div class="ecgen__medium">中等: ? XP</div>
+							<div class="ecgen__hard">困難: ? XP</div>
+							<div class="ecgen__deadly">致命: ? XP</div>
+							<div class="ecgen__absurd">Absurd: ? XP</div>
+							<br>
+							<div class="ecgen__ttk">TTK: ?</div>
+							<br>
+							<div class="ecgen__daily_budget">每日預算: ? XP</div>
 						</div>
 					</div>
 
-					<!-- RHS -->
-					<div class="col-4 text-align-right">
-						<div class="ecgen__easy">容易: ? XP</div>
-						<div class="ecgen__medium">中等: ? XP</div>
-						<div class="ecgen__hard">困難: ? XP</div>
-						<div class="ecgen__deadly">致命: ? XP</div>
-						<br>
-						<div class="ecgen__daily_budget">每日預算: ? XP</div>
-					</div>
-				</div>
+					<hr class="ecgen__req_creatures hr-1">
 
-				<hr class="ecgen__req_creatures">
-				<div class="row ecgen__req_creatures">
-					<!-- LHS -->
-					<div class="col-6">
-						<h3 class="ecgen__rating">難度: ?</h3>
+					<div class="flex ecgen__req_creatures">
+						<!-- LHS -->
+						<div class="w-50">
+							<h3 class="ecgen__rating">難度: ?</h3>
+						</div>
+
+						<!-- RHS -->
+						<div class="w-50 text-right">
+							<h4 class="ecgen__raw_total">總共XP: ?</h4>
+							<div><i class="ecgen__raw_per_player">(每名玩家 ?)</i></div>
+							<div><span class="glyphicon glyphicon-info-sign ecgen__adjusted_total_info"></span> <h4 class="inline-block ecgen__adjusted_total">調整XP: ?</h4></div>
+							<div><i class="ecgen__adjusted_per_player">(每名玩家 ?)</i></div>
+						</div>
 					</div>
 
-					<!-- RHS -->
-					<div class="col-6 text-align-right">
-						<h4 class="ecgen__raw_total">總共XP: ?</h4>
-						<div><i class="ecgen__raw_per_player">(每名玩家 ?)</i></div>
-						<div><span class="glyphicon glyphicon-info-sign ecgen__adjusted_total_info"></span> <h4 class="inline-block ecgen__adjusted_total">調整XP: ?</h4></div>
-						<div><i class="ecgen__adjusted_per_player">(每名玩家 ?)</i></div>
-					</div>
-				</div>
-
-				<hr>
-				<div class="row">
-					<div class="col-12 flex" style="justify-content: center">
-						<button class="btn btn-primary btn-xs mr-4 ecgen__ld-browser">管理遭遇</button>
-						<button class="btn btn-primary btn-xs mr-4 ecgen__sv_url">儲存至URL</button>
-						<button class="btn btn-primary btn-xs mr-2 ecgen__sv_file">儲存檔案</button>
-						<button class="btn btn-primary btn-xs mr-4 ecgen__ld_file">讀取檔案</button>
+					<hr class="hr-1">
+					<div class="flex-v-center mb-2">
+						<button class="btn btn-primary btn-xs mr-2 ecgen__sv_url">儲存至URL</button>
+						<div class="btn-group flex-v-center mr-2">
+							<button class="btn btn-primary btn-xs ecgen__sv_file">儲存檔案</button>
+							<button class="btn btn-primary btn-xs ecgen__ld_file">讀取檔案</button>
+						</div>
+						<button class="btn btn-primary btn-xs mr-2 ecgen__sv_text">Copy as Text</button>
 						<button class="btn btn-danger btn-xs ecgen__reset">重置</button>
 					</div>
-				</div>
 
-				<hr>
-				<div class="row">
-					<div class="col-12">
-						<button class="btn btn-default btn-xs ecgen__visible" style="margin: 0 auto;" id="btn-encounterstatblock">回到狀態欄</button>
+					<div class="flex">
+						<button class="btn btn-default btn-xs ecgen__visible" id="btn-encounterstatblock">回到狀態欄</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>    <!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/jquery-ui.js"></script>
 <script type="text/javascript" src="lib/jquery-ui-slider-pip.js"></script>
+<script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/utils-list.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
-<script type="text/javascript" src="js/history.js"></script>
 <script type="text/javascript" src="js/multisource.js"></script>
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/render-dice.js"></script>
+<script type="text/javascript" src="js/render-markdown.js"></script>
 <script type="text/javascript" src="js/render-bestiary.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
+<script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/filter-bestiary.js"></script>
 <script type="text/javascript" src="js/bestiary.js"></script>
 <script type="text/javascript" src="js/bestiary-encounterbuilder.js"></script>
-<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
 </body>
 </html>

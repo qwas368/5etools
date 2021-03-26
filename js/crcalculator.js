@@ -5,15 +5,14 @@ const MONSTER_FEATURES_JSON_URL = "data/monsterfeatures.json";
 let msbcr;
 let monsterFeatures;
 
-window.onload = function load () {
+window.addEventListener("load", async () => {
 	ExcludeUtil.pInitialise(); // don't await, as this is only used for search
-	DataUtil.loadJSON(MONSTER_STATS_BY_CR_JSON_URL).then(addMSBCR);
-};
+	msbcr = await DataUtil.loadJSON(MONSTER_STATS_BY_CR_JSON_URL);
+	const mfData = await DataUtil.loadJSON(MONSTER_FEATURES_JSON_URL);
+	addMonsterFeatures(mfData);
 
-function addMSBCR (crData) {
-	msbcr = crData;
-	DataUtil.loadJSON(MONSTER_FEATURES_JSON_URL).then(addMonsterFeatures);
-}
+	window.dispatchEvent(new Event("toolsLoaded"));
+});
 
 function addMonsterFeatures (mfData) {
 	monsterFeatures = mfData.monsterfeatures;
@@ -84,13 +83,13 @@ function addMonsterFeatures (mfData) {
 		const numBox = f.numbox ? `<input type="number" value="0" min="0" class="form-control form-control--minimal crc__mon_feature_num input-xs ml-2">` : "";
 
 		$wrpMonFeatures.append(`
-			<label class="row crc__mon_feature">
+			<label class="row crc__mon_feature ui-tip__parent">
 				<div class="col-1 crc__mon_feature_wrp_cb">
 					<input type="checkbox" id="mf-${Parser.stringToSlug(f.name)}" title="${f.name}" data-hp="${f.hp}" data-ac="${f.ac}" data-dpr="${f.dpr}" data-attackbonus="${f.attackbonus}" class="crc__mon_feature_cb">${numBox}
 				</div>
 				<div class="col-2">${f.name}</div>
 				<div class="col-2">${Renderer.get().render(`{@creature ${f.example}}`)}</div>
-				<div class="col-7"><span title="${effectOnCr.join(", ")}" class="explanation">${f.effect}</span></div>
+				<div class="col-7"><span title="${effectOnCr.join(", ")}">${f.effect}</span></div>
 			</label>
 		`);
 	});
@@ -115,7 +114,7 @@ function addMonsterFeatures (mfData) {
 			$(`.crc__mon_feature_cb`).each((i, e) => {
 				const $cb = $(e);
 				const idCb = $cb.attr("id");
-				const val = History.getSubHash(idCb);
+				const val = Hist.getSubHash(idCb);
 				if (val) {
 					$cb.prop("checked", true);
 					if (val !== "true") {
@@ -132,9 +131,9 @@ function addMonsterFeatures (mfData) {
 		const curFeature = $cbFeature.attr("id");
 
 		if ($cbFeature.prop("checked")) {
-			History.setSubhash(curFeature, $iptNum.length ? $iptNum.val() : true);
+			Hist.setSubhash(curFeature, $iptNum.length ? $iptNum.val() : true);
 		} else {
-			History.setSubhash(curFeature, null)
+			Hist.setSubhash(curFeature, null)
 		}
 	}
 
@@ -282,7 +281,7 @@ function calculateCr () {
 				const $iptNum = $cb.siblings("input[type=number]");
 				return `${$cb.attr("id")}:${$iptNum.length ? $iptNum.val() : true}`
 			} else return false;
-		}).get().filter(Boolean).join(",")
+		}).get().filter(Boolean).join(","),
 	];
 	window.location = `#${hashParts.join(",")}`;
 
@@ -310,9 +309,9 @@ function calculateHd () {
 function calculateHp () {
 	const avgHp = $("#hdval").html().split("d")[1] / 2 + 0.5;
 	const conMod = Math.floor(($("#con").val() - 10) / 2);
-	return Math.round((avgHp + conMod) * $("#hd").val());
+	return Math.floor((avgHp + conMod) * $("#hd").val());
 }
 
 function fractionStrToDecimal (str) {
-	return str === "0" ? 0 : parseFloat(str.split('/').reduce((numerator, denominator) => numerator / denominator));
+	return str === "0" ? 0 : parseFloat(str.split("/").reduce((numerator, denominator) => numerator / denominator));
 }

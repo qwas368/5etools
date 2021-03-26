@@ -1,104 +1,114 @@
-const ut = require('../js/utils.js');
-const er = require('../js/render.js');
-const od = require('../js/omnidexer.js');
+require("../js/utils.js");
+require("../js/render.js");
+const od = require("../js/omnidexer.js");
+const ut = require("./util.js");
 
-UtilSearchIndex = {};
-
-// store this here, as it should never be loaded by frontend code
-UtilSearchIndex._node_pGetBasicVariantItems = async function (rawVariants) {
-	if (!this.basicVariantItems) {
-		const rawBasics = require(`../data/basicitems.json`);
-
-		const basicItems = await Renderer.item._pGetAndProcBasicItems(rawBasics);
-		const [genericVariants, linkedLootTables] = await Renderer.item._pGetAndProcGenericVariants(rawVariants);
-		const genericAndSpecificVariants = Renderer.item._createSpecificVariants(basicItems, genericVariants, linkedLootTables);
-
-		const revNames = [];
-		genericAndSpecificVariants.forEach(item => {
-			const revName = Renderer.item.modifierPostToPre(MiscUtil.copy(item));
-			if (revName) revNames.push(revName);
-		});
-
-		genericAndSpecificVariants.push(...revNames);
-
-		this.basicVariantItems = genericAndSpecificVariants;
+class UtilSearchIndex {
+	/**
+	 * Prefer "core" sources, then official sources, then others.
+	 */
+	static _sortSources (a, b) {
+		const aCore = Number(UtilSearchIndex.CORE_SOURCES.has(a));
+		const bCore = Number(UtilSearchIndex.CORE_SOURCES.has(b));
+		if (aCore !== bCore) return bCore - aCore;
+		const aStandard = Number(!SourceUtil.isNonstandardSource(a));
+		const bStandard = Number(!SourceUtil.isNonstandardSource(b));
+		return aStandard !== bStandard ? bStandard - aStandard : SortUtil.ascSortLower(a, b);
 	}
-	return this.basicVariantItems;
-};
 
-UtilSearchIndex.pGetIndex = async function (doLogging = true, noFilter = false) {
-	return UtilSearchIndex._pGetIndex({}, doLogging, noFilter);
-};
+	static async pGetIndex (doLogging = true, noFilter = false) {
+		ut.patchLoadJson();
+		const out = await UtilSearchIndex._pGetIndex({}, doLogging, noFilter);
+		ut.unpatchLoadJson();
+		return out;
+	}
 
-UtilSearchIndex.pGetIndexAlternate = async function (forProp, doLogging = true, noFilter = false) {
-	const opts = {alternate: forProp};
-	return UtilSearchIndex._pGetIndex(opts, doLogging, noFilter);
-};
+	static async pGetIndexAlternate (forProp, doLogging = true, noFilter = false) {
+		ut.patchLoadJson();
+		const opts = {alternate: forProp};
+		const out = UtilSearchIndex._pGetIndex(opts, doLogging, noFilter);
+		ut.unpatchLoadJson();
+		return out;
+	}
 
-UtilSearchIndex._pGetIndex = async function (options, doLogging = true, noFilter = false) {
-	const indexer = new od.Omnidexer();
+	static async _pGetIndex (opts, doLogging = true, noFilter = false) {
+		const indexer = new od.Omnidexer();
 
-	od.Omnidexer.TO_INDEX__FROM_INDEX_JSON
-		.filter(it => options.alternate ? it.alternateIndexes && it.alternateIndexes[options.alternate] : true)
-		.forEach(ti => {
-			const index = require(`../data/${ti.dir}/index.json`);
-			Object.values(index).forEach(j => {
-				const absF = `../data/${ti.dir}/${j}`;
-				const contents = require(absF);
-				if (doLogging) console.log(`indexing ${absF}`);
-				const addOptions = {isNoFilter: noFilter};
-				if (options.alternate) addOptions.alt = ti.alternateIndexes[options.alternate];
-				indexer.addToIndex(ti, contents, addOptions);
-			})
-		});
+		// region Index entities from directories, e.g. creatures and spells
+		const toIndexMultiPart = od.Omnidexer.TO_INDEX__FROM_INDEX_JSON
+			.filter(indexMeta => opts.alternate ? indexMeta.alternateIndexes && indexMeta.alternateIndexes[opts.alternate] : true);
 
-	await Promise.all(
-		od.Omnidexer.TO_INDEX
-			.filter(it => options.alternate ? it.alternateIndexes && it.alternateIndexes[options.alternate] : true)
-			.map(async ti => {
-				const f = `../data/${ti.file}`;
-				const j = require(f);
+		for (const indexMeta of toIndexMultiPart) {
+			const dataIndex = require(`../data/${indexMeta.dir}/index.json`);
 
-				async function pAddData (j) {
-					if (doLogging) console.log(`indexing ${f}`);
-					const addOptions = {isNoFilter: noFilter};
-					if (options.alternate) addOptions.alt = ti.alternateIndexes[options.alternate];
-					indexer.addToIndex(ti, j, addOptions);
-				}
+			const loadedFiles = Object.entries(dataIndex)
+				.sort(([kA], [kB]) => UtilSearchIndex._sortSources(kA, kB))
+				.map(([_, filename]) => filename);
 
-				if (ti.postLoad) {
-					ti.postLoad(j);
-					await pAddData(j)
-				} else await pAddData(j);
-			})
-	);
-
-	return indexer.getIndex();
-};
-
-// this should be generalised if further specific indexes are required
-UtilSearchIndex.pGetIndexAdditionalItem = async function (baseIndex = 0, doLogging = true) {
-	const indexer = new od.Omnidexer(baseIndex);
-
-	await Promise.all(od.Omnidexer.TO_INDEX.filter(it => it.category === Parser.CAT_ID_ITEM).map(async ti => {
-		const f = `../data/${ti.file}`;
-		const j = require(f);
-
-		async function pAddData (j) {
-			if (ti.additionalIndexes && ti.additionalIndexes.item) {
-				if (doLogging) console.log(`indexing ${f}`);
-				const extra = await ti.additionalIndexes.item(j);
-				extra.forEach(add => indexer.pushToIndex(add));
+			for (const filename of loadedFiles) {
+				const filePath = `../data/${indexMeta.dir}/${filename}`;
+				const contents = require(filePath);
+				if (doLogging) console.log(`indexing ${filePath}`);
+				const optsNxt = {isNoFilter: noFilter};
+				if (opts.alternate) optsNxt.alt = indexMeta.alternateIndexes[opts.alternate];
+				await indexer.pAddToIndex(indexMeta, contents, optsNxt);
 			}
 		}
+		// endregion
 
-		if (ti.postLoad) {
-			ti.postLoad(j);
-			await pAddData(j)
-		} else await pAddData(j);
-	}));
+		// region Index entities from single files
+		const toIndexSingle = od.Omnidexer.TO_INDEX
+			.filter(indexMeta => opts.alternate ? indexMeta.alternateIndexes && indexMeta.alternateIndexes[opts.alternate] : true);
 
-	return indexer.getIndex();
-};
+		for (const indexMeta of toIndexSingle) {
+			const filePath = `../data/${indexMeta.file}`;
+			const data = require(filePath);
 
-module.exports.UtilSearchIndex = UtilSearchIndex;
+			if (indexMeta.postLoad) indexMeta.postLoad(data);
+
+			if (doLogging) console.log(`indexing ${filePath}`);
+			Object.values(data)
+				.filter(it => it instanceof Array)
+				.forEach(it => it.sort((a, b) => UtilSearchIndex._sortSources(a.source || MiscUtil.get(a, "inherits", "source"), b.source || MiscUtil.get(b, "inherits", "source")) || SortUtil.ascSortLower(a.name || MiscUtil.get(a, "inherits", "name") || "", b.name || MiscUtil.get(b, "inherits", "name") || "")));
+
+			const optsNxt = {isNoFilter: noFilter};
+			if (opts.alternate) optsNxt.alt = indexMeta.alternateIndexes[opts.alternate];
+			await indexer.pAddToIndex(indexMeta, data, optsNxt);
+		}
+		// endregion
+
+		// region Index special
+		if (!opts.alternate) {
+			for (const indexMeta of od.Omnidexer.TO_INDEX__SPECIAL) {
+				const toIndex = await indexMeta.pGetIndex();
+				toIndex.forEach(it => indexer.pushToIndex(it));
+			}
+		}
+		// endregion
+
+		return indexer.getIndex();
+	}
+
+	// this should be generalised if further specific indexes are required
+	static async pGetIndexAdditionalItem (baseIndex = 0, doLogging = true) {
+		const indexer = new od.Omnidexer(baseIndex);
+
+		await Promise.all(od.Omnidexer.TO_INDEX.filter(it => it.category === Parser.CAT_ID_ITEM).map(async ti => {
+			const filename = `../data/${ti.file}`;
+			const data = require(filename);
+
+			if (ti.postLoad) ti.postLoad(data);
+
+			if (ti.additionalIndexes && ti.additionalIndexes.item) {
+				if (doLogging) console.log(`indexing ${filename}`);
+				const extra = await ti.additionalIndexes.item(indexer, data);
+				extra.forEach(add => indexer.pushToIndex(add));
+			}
+		}));
+
+		return indexer.getIndex();
+	}
+}
+UtilSearchIndex.CORE_SOURCES = new Set([SRC_PHB, SRC_MM, SRC_DMG, SRC_VGM, SRC_MTF, SRC_XGE, SRC_SCAG]);
+
+module.exports = {UtilSearchIndex};
