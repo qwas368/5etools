@@ -100,9 +100,6 @@ class GenTables {
 			const {table: foundTables} = UtilGenTables.getGenericTables(it, "variantrule", "entries");
 			output.tables.push(...foundTables);
 		});
-
-		const toSave = JSON.stringify({table: tables, tableGroup: tableGroups});
-		fs.writeFileSync(`../data/generated/gendata-tables.json`, toSave, "utf-8");
 	}
 }
 GenTables.BOOK_BLACKLIST = {};
