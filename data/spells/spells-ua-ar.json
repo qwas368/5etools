@@ -1,7 +1,8 @@
 {
 	"spell": [
 		{
-			"name": "祕法武器", "ENG_name": "Arcane Weapon",
+			"name": "祕法武器",
+			"ENG_name": "Arcane Weapon",
 			"source": "UAArtificerRevisited",
 			"page": 10,
 			"level": 1,

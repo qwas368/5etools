@@ -121,7 +121,7 @@
 						"The wearer's walking speed increases by 5 feet.",
 						"The armor includes gauntlets, each of which is a magic melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals 1d8 force damage on a hit and has the thrown property, with a normal range of 20 feet and a long range of 60 feet. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.",
 						"The armor can't be removed against the wearer's will.",
-						"If the wearer is missing any limbs, the armor replaces those limbs—hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
+						"If the wearer is missing any limbs, the armor replaces those limbs\u2014hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
 					]
 				}
 			]
@@ -804,7 +804,7 @@
 				}
 			],
 			"entries": [
-				"你可以隨意施放{@spell 怪物定身術}—以一個天界生物、邪魔、或元素為目標—而無需消耗法術位或材料構材。你必須完成一次長休才能再對同一個生物使用此祈喚。"
+				"你可以隨意施放{@spell 怪物定身術}\u2014以一個天界生物、邪魔、或元素為目標\u2014而無需消耗法術位或材料構材。你必須完成一次長休才能再對同一個生物使用此祈喚。"
 			],
 			"ENG_name": "Chains of Carceri"
 		},
@@ -2714,7 +2714,7 @@
 						}
 					},
 					"item": [
-						"2–5 pouches"
+						"2\u20135 pouches"
 					]
 				}
 			],

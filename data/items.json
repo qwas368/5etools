@@ -118,7 +118,8 @@
 			]
 		},
 		{
-			"name": "+1 掌契者權杖", "ENG_name": "+1 Rod of the Pact Keeper",
+			"name": "+1 掌契者權杖",
+			"ENG_name": "+1 Rod of the Pact Keeper",
 			"source": "DMG",
 			"page": 197,
 			"type": "RD",
@@ -137,7 +138,8 @@
 			]
 		},
 		{
-			"name": "+1 戰法師魔杖", "ENG_name": "+1 Wand of the War Mage",
+			"name": "+1 戰法師魔杖",
+			"ENG_name": "+1 Wand of the War Mage",
 			"source": "DMG",
 			"page": 212,
 			"srd": true,
@@ -395,7 +397,8 @@
 			]
 		},
 		{
-			"name": "+3 掌契者權杖", "ENG_name": "+3 Rod of the Pact Keeper",
+			"name": "+3 掌契者權杖",
+			"ENG_name": "+3 Rod of the Pact Keeper",
 			"source": "DMG",
 			"page": 197,
 			"type": "RD",
@@ -414,7 +417,8 @@
 			]
 		},
 		{
-			"name": "+3 戰法師魔杖", "ENG_name": "+3 Wand of the War Mage",
+			"name": "+3 戰法師魔杖",
+			"ENG_name": "+3 Wand of the War Mage",
 			"source": "DMG",
 			"page": 212,
 			"srd": true,
@@ -2545,203 +2549,203 @@
 					],
 					"rows": [
 						[
-							"01–02",
+							"01\u201302",
 							"A handheld device containing a glowing green gem that darkens when no oxygen is present"
 						],
 						[
-							"03–04",
+							"03\u201304",
 							"A foot-long, egg-shaped object made from stitched leather"
 						],
 						[
-							"05–06",
+							"05\u201306",
 							"A black metal cylinder that dictates the history of an unknown plant or animal species when held"
 						],
 						[
-							"07–08",
+							"07\u201308",
 							"A cylindrical jar containing a pickled crustacean of unknown origin"
 						],
 						[
-							"09–10",
+							"09\u201310",
 							"A small thumb-button storage cylinder that releases a useless iron key when pressed"
 						],
 						[
-							"11–12",
+							"11\u201312",
 							"An unusual heraldic cloak pin that emits a short musical fanfare when tapped"
 						],
 						[
-							"13–14",
+							"13\u201314",
 							"A handheld tube that sucks in dust when squeezed and captures it in a detachable compartment"
 						],
 						[
-							"15–16",
+							"15\u201316",
 							"A scintillating disk of unknown material"
 						],
 						[
-							"17–18",
+							"17\u201318",
 							"A dial that can be twisted to slowly click back to its origin, whereupon it emits a loud ringing noise"
 						],
 						[
-							"19–20",
+							"19\u201320",
 							"A hovering, apple-sized orb of metal that follows you around"
 						],
 						[
-							"21–22",
+							"21\u201322",
 							"The {@condition petrified} cocoon of an unknown insect"
 						],
 						[
-							"23–24",
+							"23\u201324",
 							"A bronze gauntlet set with many slots, and which violently expels any object pressed into those slots"
 						],
 						[
-							"25–26",
+							"25\u201326",
 							"A box that plays an illusory message in an unknown language when opened"
 						],
 						[
-							"27–28",
+							"27\u201328",
 							"A rod that causes you to forget the last five minutes when you press a button near its tip"
 						],
 						[
-							"29–30",
+							"29\u201330",
 							"A palm-sized cylinder that emits a harmless ray of glowing blue light when squeezed"
 						],
 						[
-							"31–32",
+							"31\u201332",
 							"A bead that suppresses your hearing when secreted inside either ear, causing you to be {@condition deafened}"
 						],
 						[
-							"33–34",
+							"33\u201334",
 							"An amulet that displays your current health as a green bar above your head, with the bar retracting as your hit point total decreases"
 						],
 						[
-							"35–36",
+							"35\u201336",
 							"A casket containing one hundred tasteless blue pills that produce no discernible effect when swallowed"
 						],
 						[
-							"37–38",
+							"37\u201338",
 							"A metal mechanical puzzle with no apparent solution"
 						],
 						[
-							"39–40",
+							"39\u201340",
 							"A metal spinning top that never tips over when spun"
 						],
 						[
-							"41–42",
+							"41\u201342",
 							"Two strips of cloth-like material, each coated with a soft, hair-like fuzz on one side"
 						],
 						[
-							"43–44",
+							"43\u201344",
 							"A simple wire pyramid that preserves any foodstuffs it is placed over"
 						],
 						[
-							"45–46",
+							"45\u201346",
 							"A star chart labeled in an unknown script"
 						],
 						[
-							"47–48",
+							"47\u201348",
 							"A rectangle of black glass that displays indecipherable arcane runes when you swipe your finger across it"
 						],
 						[
-							"49–50",
+							"49\u201350",
 							"A schematic that shows the inner workings of an impossibly complex device"
 						],
 						[
-							"51–52",
+							"51\u201352",
 							"An odd pair of comfortable shoes made from supple, multicolored material"
 						],
 						[
-							"53–54",
+							"53\u201354",
 							"A mirror that makes you appear more beautiful when you tap your reflection"
 						],
 						[
-							"55–56",
+							"55\u201356",
 							"A mechanical metal puppy that playfully follows you around when activated"
 						],
 						[
-							"57–58",
+							"57\u201358",
 							"A talking bracelet that speaks only to correct your grammar"
 						],
 						[
-							"59–60",
+							"59\u201360",
 							"A bar of soap that can remove any stain"
 						],
 						[
-							"61–62",
+							"61\u201362",
 							"A journal in Common, written by someone in a world similar to but not quite the same as your own"
 						],
 						[
-							"63–64",
+							"63\u201364",
 							"A tub containing one serving of disgusting but nutritious goop that refills itself slowly over the course of one week"
 						],
 						[
-							"65–66",
+							"65\u201366",
 							"An instruction manual for activating a mysterious, world-destroying device"
 						],
 						[
-							"67–68",
+							"67\u201368",
 							"A small supple disk that displays weird moving symbols when placed over either eye"
 						],
 						[
-							"69–70",
+							"69\u201370",
 							"A tiny desk set with large, colorful buttons, each of which plays a discordant musical fanfare when pressed"
 						],
 						[
-							"71–72",
+							"71\u201372",
 							"A pair of tinted spectacles that reduce the glare of the sun when worn"
 						],
 						[
-							"73–74",
+							"73\u201374",
 							"An inflatable bedroll made from an unknown material, and which slowly deflates when used"
 						],
 						[
-							"75–76",
+							"75\u201376",
 							"A rod tipped with a blunt metal pincer whose grip can be adjusted by turning a screw"
 						],
 						[
-							"77–78",
+							"77\u201378",
 							"A battered helmet with a transparent orange visor that flips into place when donned"
 						],
 						[
-							"79–80",
+							"79\u201380",
 							"An animated map of a mysterious city that appears to be tracking the movements of five creatures"
 						],
 						[
-							"81–82",
+							"81\u201382",
 							"A cylinder of mist that holds your hair perfectly in shape when sprayed onto your head"
 						],
 						[
-							"83–84",
+							"83\u201384",
 							"A talking wand that tells you the name of any plant you point it at"
 						],
 						[
-							"85–86",
+							"85\u201386",
 							"A metal bracelet that displays the number of steps you've taken since your last long rest"
 						],
 						[
-							"87–88",
+							"87\u201388",
 							"A tiny handheld device that projects a glowing dot onto whatever you point it at"
 						],
 						[
-							"89–90",
+							"89\u201390",
 							"A rectangular piece of glass that displays a twelve-digit countdown on its surface"
 						],
 						[
-							"91–92",
+							"91\u201392",
 							"A wall chart of mysterious formulae arranged into a color-coded grid"
 						],
 						[
-							"93–94",
+							"93\u201394",
 							"A handheld device that solves any math problem you input using its buttons"
 						],
 						[
-							"95–96",
+							"95\u201396",
 							"A ball of speckled brown fur that appears to be alive"
 						],
 						[
-							"97–98",
+							"97\u201398",
 							"A complicated crystal board game that you don't know how to play"
 						],
 						[
-							"99–00",
+							"99\u201300",
 							"A large glass rectangle that displays a storm of black and white patterns when you press a button on its underside"
 						]
 					]
@@ -3438,7 +3442,7 @@
 			"value": 30000,
 			"entries": [
 				"This tarry substance harvested from the dark boughs of the death's head willow is a powerful intoxicant. It can be smoked as a concentrate or injected directly into the bloodstream. A creature subjected to a dose of black sap cannot be {@condition charmed} or {@condition frightened} for {@dice 1d6} hours.",
-				"For each dose of black sap consumed, a creature must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for {@dice 2d4} hours—an effect that is cumulative with multiple doses."
+				"For each dose of black sap consumed, a creature must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for {@dice 2d4} hours\u2014an effect that is cumulative with multiple doses."
 			]
 		},
 		{
@@ -3641,7 +3645,7 @@
 					"name": "Personality",
 					"entries": [
 						"The staff has the spirits of all previous Blackstaffs trapped within it. Its creator, Khelben Arunsun, is the dominant personality among them. Like Khelben, the staff is extremely devious and manipulative. It prefers to counsel its owner without exerting outright control. The staff's primary goal is to protect Waterdeep and its Open Lord, currently Laeral Silverhand. Its secondary goal is to help its wielder become more powerful.",
-						"In the event that the holder of the office of the Blackstaff no longer serves the staff's wishes, the staff ceases to function until it finds a worthy inheritor—someone whose loyalty to Waterdeep is beyond reproach."
+						"In the event that the holder of the office of the Blackstaff no longer serves the staff's wishes, the staff ceases to function until it finds a worthy inheritor\u2014someone whose loyalty to Waterdeep is beyond reproach."
 					]
 				},
 				{
@@ -3900,7 +3904,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"這顆鑽石含有一種生物的血液 —— 血液以血液符文的形式出現。 當物品在你身上時，你可以使用你的動作來判斷與物品中的血液有關的離你最近的生物的位置，但不能是亡靈。 你能感覺到生物相對於你的位置的距離和方向。 該生物要么是其物品中血液的本人， 要么是其血親。",
+				"這顆鑽石含有一種生物的血液\u2014\u2014血液以血液符文的形式出現。 當物品在你身上時，你可以使用你的動作來判斷與物品中的血液有關的離你最近的生物的位置，但不能是亡靈。 你能感覺到生物相對於你的位置的距離和方向。 該生物要么是其物品中血液的本人， 要么是其血親。",
 				"這件物品是由價值至少 5,000 gp 的大鑽石製成的。 當一個生物的血被侵染在它的創造過程中，血液滲透到寶石的心臟。 如果寶石被破壞，血就會蒸發，永遠消失。 一個複仇心重的生物可能會使用血石來獵殺整個血脈。 這些石頭有時作為禮物送給兄弟姐妹， 或由父母傳給孩子。"
 			],
 			"ENG_name": "Blod Stone"
@@ -6050,7 +6054,7 @@
 					"type": "entries",
 					"name": "Time Bandit",
 					"entries": [
-						"At the start of your turn, roll a d6 (no action required). On a 1–3, you slow down time, gaining an additional action on your turn and doubling your speed until the end of the turn. On a 4–6, you go forward in time to warn yourself of what is to come. The next time you fail a saving throw, attack roll, or ability check, you can reroll the check and take either result. Once you use this feature of the chronolometer, it cannot be used again until the next dawn."
+						"At the start of your turn, roll a d6 (no action required). On a 1\u20133, you slow down time, gaining an additional action on your turn and doubling your speed until the end of the turn. On a 4\u20136, you go forward in time to warn yourself of what is to come. The next time you fail a saving throw, attack roll, or ability check, you can reroll the check and take either result. Once you use this feature of the chronolometer, it cannot be used again until the next dawn."
 					]
 				},
 				{
@@ -8638,7 +8642,7 @@
 					"type": "entries",
 					"name": "Euryale",
 					"entries": [
-						"The card's medusa-like visage curses you. You take a −1 penalty on saving throws for the duration of the adventure."
+						"The card's medusa-like visage curses you. You take a \u22121 penalty on saving throws for the duration of the adventure."
 					]
 				},
 				{
@@ -8652,7 +8656,7 @@
 					"type": "entries",
 					"name": "Flames",
 					"entries": [
-						"The Grand Master of the Monastery of the Distressed Body becomes your enemy. The bone devil seeks your ruin, savoring your suffering before attempting to slay you. If the Grand Master has already been defeated, you gain the enmity of Garret Levistusson's patron—a similarly powerful devil."
+						"The Grand Master of the Monastery of the Distressed Body becomes your enemy. The bone devil seeks your ruin, savoring your suffering before attempting to slay you. If the Grand Master has already been defeated, you gain the enmity of Garret Levistusson's patron\u2014a similarly powerful devil."
 					]
 				},
 				{
@@ -8722,7 +8726,7 @@
 					"type": "entries",
 					"name": "Skull",
 					"entries": [
-						"You summon an avatar of death—a mechanical skeleton (use bone naga statistics) clad in a tattered black robe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life."
+						"You summon an avatar of death\u2014a mechanical skeleton (use bone naga statistics) clad in a tattered black robe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life."
 					]
 				},
 				{
@@ -9198,7 +9202,7 @@
 			"reqAttune": "by a member of the Dimir guild",
 			"wondrous": true,
 			"entries": [
-				"This keyrune, carved from black stone accented with steel, resembles a stylized horror. On command, it transforms into an {@creature intellect devourer} that resembles the Dimir guild symbol, with six bladelike legs. The creature exists for up to 24 hours. During that time, it pursues only a single mission you give it—usually an assignment to take over someone's body, either to impersonate that person for a brief time or to extract secrets from their mind. When the mission is complete, the creature returns to you, reports its success, and reverts to its keyrune form.",
+				"This keyrune, carved from black stone accented with steel, resembles a stylized horror. On command, it transforms into an {@creature intellect devourer} that resembles the Dimir guild symbol, with six bladelike legs. The creature exists for up to 24 hours. During that time, it pursues only a single mission you give it\u2014usually an assignment to take over someone's body, either to impersonate that person for a brief time or to extract secrets from their mind. When the mission is complete, the creature returns to you, reports its success, and reverts to its keyrune form.",
 				"When you use an action to speak the item's command word and place the keyrune on the ground in an unoccupied space within 5 feet of you, the keyrune transforms into a {@creature intellect devourer}. If there isn't enough space for the creature, the keyrune doesn't transform.",
 				"The creature is friendly to you, your companions, and other members of your guild (unless those guild members are hostile to you). It understands your languages and obeys your spoken commands. If you issue no commands, the creature takes the {@action Dodge} action and moves to avoid danger.",
 				"At the end of the duration, the creature reverts to its keyrune form. It reverts early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature reverts to its keyrune form, it can't transform again until 36 hours have passed."
@@ -9395,7 +9399,7 @@
 						"A docent has the following properties:",
 						"{@b Languages}. The docent knows Common, Giant, and {@dice 1d4} additional languages chosen by the DM. If a docent knows fewer than six languages, it can learn a new language after it hears or reads the language through your senses.",
 						"{@b Skills}. The docent has a +7 bonus to one of the following skills (roll a {@dice d4}): (1) {@skill Arcana}, (2) {@skill History}, (3) {@skill Investigation}, or (4) {@skill Nature}.",
-						"{@b Spells}. The docent knows one of the following spells and can cast it at will, requiring no components (roll a {@dice d6}): (1–2) {@spell detect evil and good} or (3–6) {@spell detect magic}. The docent decides when to cast the spell."
+						"{@b Spells}. The docent knows one of the following spells and can cast it at will, requiring no components (roll a {@dice d6}): (1\u20132) {@spell detect evil and good} or (3\u20136) {@spell detect magic}. The docent decides when to cast the spell."
 					]
 				},
 				{
@@ -9461,27 +9465,27 @@
 					],
 					"rows": [
 						[
-							"1–2",
+							"1\u20132",
 							"The dodecahedron explodes and is destroyed. Each creature within 20 feet of the exploding die must make a DC 13 Dexterity saving throw, taking 40 ({@dice 9d8}) force damage on a failed save, or half as much damage on a successful one."
 						],
 						[
-							"3–4",
+							"3\u20134",
 							"The dodecahedron casts {@spell light} on itself. The effect lasts until a creature touches the die."
 						],
 						[
-							"5–6",
+							"5\u20136",
 							"The dodecahedron casts {@spell ray of frost} (+5 to hit), targeting a random creature within 60 feet of it that doesn't have total cover against the attack."
 						],
 						[
-							"7–8",
+							"7\u20138",
 							"The dodecahedron casts {@spell shocking grasp} (+5 to hit) on the next creature that touches it."
 						],
 						[
-							"9–10",
+							"9\u201310",
 							"The dodecahedron casts {@spell darkness} on itself. The effect has a duration of 10 minutes."
 						],
 						[
-							"11–12",
+							"11\u201312",
 							"The next creature to touch the dodecahedron gains {@dice 1d10} temporary hit points that last for 1 hour."
 						]
 					]
@@ -9527,9 +9531,9 @@
 			"entries": [
 				"The Draakhorn was a gift from {@creature Tiamat|RoT} in the war between dragons and giants. It was once the horn of her {@creature ancient red dragon} consort, Ephelomon, that she gave to dragonkind to help them in their war against the giants. The Draakhorn is a signaling device, and it is so large that it requires two Medium creatures (or one Large or larger) to hold it while a third creature sounds it, making the earth resonate to its call. The horn has been blasted with fire into a dark ebony hue and is wrapped in bands of bronze with draconic runes that glow with purple eldritch fire.",
 				"The low, moaning drone of the Draakhorn discomfits normal animals within a few miles, and it alerts all dragons within two thousand miles to rise and be wary, for great danger is at hand. Coded blasts were once used to signal specific messages. Knowledge of those codes has been lost to the ages.",
-				"Those with knowledge of the Draakhorn's history know that it was first built to signal danger to chromatic dragons—a purpose the Cult of the Dragon has corrupted to call chromatic dragons to the Well of Dragons from across the North.",
+				"Those with knowledge of the Draakhorn's history know that it was first built to signal danger to chromatic dragons\u2014a purpose the Cult of the Dragon has corrupted to call chromatic dragons to the Well of Dragons from across the North.",
 				"Within 50 feet of any enclosed space where the horn is blown, the air begins to shimmer from the sound. Any character within 20 feet of the entry to the enclosed space must succeed on a DC 12 Strength check to continue pushing against the pressure of the sound. A failure indicates the character can advance no farther toward the entry.",
-				"For any character entering the enclosed space, the sound fades to silence—because any creature that enters the enclosed space is temporarily {@condition deafened} and must make a DC 12 Constitution saving throw. Success indicates the deafness ends 2 minutes after the Draakhorn ceases to sound. Failure indicates the character remains {@condition deafened} for 1 hour after the Draakhorn ceases to sound.",
+				"For any character entering the enclosed space, the sound fades to silence\u2014because any creature that enters the enclosed space is temporarily {@condition deafened} and must make a DC 12 Constitution saving throw. Success indicates the deafness ends 2 minutes after the Draakhorn ceases to sound. Failure indicates the character remains {@condition deafened} for 1 hour after the Draakhorn ceases to sound.",
 				"While the horn is sounding, a creature must make a DC 15 Constitution saving throw the first time on a turn the creature enters a 150-foot cone in front of the horn or starts its turn there. On a failed save, the creature takes 27 ({@dice 6d8}) thunder damage and is knocked {@condition prone}. On a successful save, the creature takes half damage and isn't knocked {@condition prone}."
 			],
 			"hasFluffImages": true
@@ -9827,7 +9831,7 @@
 			"grantsProficiency": true,
 			"bonusWeapon": "+1",
 			"entries": [
-				"這是一把鋼製三叉戟，在它柄的上部裝飾有青銅藤壺，柄的末端有一顆海綠色的寶石和一個銀色的貝殼。如果它掉到水面上，它會浮在水面上而非沉下去；如果它被留在水下，它會懸浮在原地。三叉戟的觸感總是冰涼的，且它不會因為暴露在水中而受到任何傷害。水溺內部蘊含著{@creature Olhydra|pota|奧莉德拉} ——邪惡的水元素女親王——的碎片。",
+				"這是一把鋼製三叉戟，在它柄的上部裝飾有青銅藤壺，柄的末端有一顆海綠色的寶石和一個銀色的貝殼。如果它掉到水面上，它會浮在水面上而非沉下去；如果它被留在水下，它會懸浮在原地。三叉戟的觸感總是冰涼的，且它不會因為暴露在水中而受到任何傷害。水溺內部蘊含著{@creature Olhydra|pota|奧莉德拉}\u2014\u2014邪惡的水元素女親王\u2014\u2014的碎片。",
 				"你在使用這把武器進行的攻擊檢定和傷害骰上具有+1加值。當你用它造成傷害時，目標將會額外受到{@dice 1d8}寒冰傷害。",
 				{
 					"name": "水元素掌控",
@@ -10767,7 +10771,7 @@
 				"_mod": {
 					"entries": {
 						"mode": "appendArr",
-						"items": "One card in this deck is enchanted to appear as whatever specific card its owner commands. This magic works only 25 percent of the time, but the deck is worth 500 gp to any serious gambler who doesn't mind the risk—or who isn't told about it."
+						"items": "One card in this deck is enchanted to appear as whatever specific card its owner commands. This magic works only 25 percent of the time, but the deck is worth 500 gp to any serious gambler who doesn't mind the risk\u2014or who isn't told about it."
 					}
 				}
 			}
@@ -10884,7 +10888,7 @@
 					"type": "entries",
 					"name": "Arrows of the Seasons",
 					"entries": [
-						"The four arrows—each associated with a season—that accompany this bow can be fired only from it. Each arrow disappears immediately after it's used, and it reappears in the quiver at the next dusk. The save DC against spells cast with the arrows is 18. Each arrow has a unique property:"
+						"The four arrows\u2014each associated with a season\u2014that accompany this bow can be fired only from it. Each arrow disappears immediately after it's used, and it reappears in the quiver at the next dusk. The save DC against spells cast with the arrows is 18. Each arrow has a unique property:"
 					]
 				},
 				{
@@ -13229,7 +13233,7 @@
 			"dmgType": "S",
 			"bonusWeapon": "+1",
 			"entries": [
-				"在冰斧之年(123 DR)，冰霜巨人領主 古爾特 在一場戰爭中敗給了 烏斯伽 加多夫松 —— 後來成為烏斯伽特野蠻人的領袖 —— 這場戰爭標誌著人類戰勝德薩林谷地的巨人統治。 古爾特的巨斧被埋在莫古之塚裡，直到被挖出並帶回深水城。 在這座城市的地下墓穴中躺了幾十年後， 冰霜巨人冒險家 哈什納格 得到了這把斧頭，以表彰他對深水城的貢獻。 烏斯伽特野蠻人一眼就能認出這種武器並攻擊任何使用它的巨人。",
+				"在冰斧之年(123 DR)，冰霜巨人領主 古爾特 在一場戰爭中敗給了 烏斯伽 加多夫松\u2014\u2014後來成為烏斯伽特野蠻人的領袖\u2014\u2014這場戰爭標誌著人類戰勝德薩林谷地的巨人統治。 古爾特的巨斧被埋在莫古之塚裡，直到被挖出並帶回深水城。 在這座城市的地下墓穴中躺了幾十年後， 冰霜巨人冒險家 哈什納格 得到了這把斧頭，以表彰他對深水城的貢獻。 烏斯伽特野蠻人一眼就能認出這種武器並攻擊任何使用它的巨人。",
 				"使用此魔法武器造成的攻擊和傷害骰將獲得 +1 加值。 它是給巨人體型使用的，重 325 磅，命中時造成 {@dice 3d12} 揮砍傷害，如果目標是人類，則額外造成 {@dice 2d12} 揮砍傷害。",
 				"當周圍的溫度降到 0 華氏度以下時，斧頭就會像火炬一樣發光。 在這種情況下不能關閉光源。",
 				"以一個動作，你可以施放一個製造寒冷傷害而不是火焰傷害的 {@spell 灼熱金屬} (DC 13 豁免)。一旦這個能力被使用，它就不能再使用，直到第二天黎明。"
@@ -14190,7 +14194,7 @@
 			"recharge": "dawn",
 			"charges": 10,
 			"entries": [
-				"The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a paladin named Lugdana by a giant raven—or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept and wore the holy symbol after Lugdana's passing.",
+				"The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a paladin named Lugdana by a giant raven\u2014or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept and wore the holy symbol after Lugdana's passing.",
 				"The holy symbol is a platinum amulet shaped like the sun, with a large crystal embedded in its center.",
 				"The holy symbol has 10 charges for the following properties. It regains {@dice 1d6 + 4} charges daily at dawn.",
 				{
@@ -14543,103 +14547,103 @@
 					],
 					"rows": [
 						[
-							"01–04",
+							"01\u201304",
 							"A small wooden figurine of a yawning walrus, painted in red and black"
 						],
 						[
-							"05–08",
+							"05\u201308",
 							"A pair of scrimshaw cufflinks with an image of a fisherman on a boat engraved on them"
 						],
 						[
-							"09–12",
+							"09\u201312",
 							"A small iron key with a frayed blue and gold cord tied to it"
 						],
 						[
-							"13–16",
+							"13\u201316",
 							"A small illustrated book of Northlander myths that has pages missing"
 						],
 						[
-							"17–20",
+							"17\u201320",
 							"A damaged scrimshaw cameo depicting a merfolk"
 						],
 						[
-							"21–24",
+							"21\u201324",
 							"A stone from a burial cairn with a tiny Dwarvish rune carved into it"
 						],
 						[
-							"25–28",
+							"25\u201328",
 							"A ripped cloth sail with a symbol you don't recognize"
 						],
 						[
-							"29–32",
+							"29\u201332",
 							"An Ulu knife with a scrimshaw handle"
 						],
 						[
-							"33–36",
+							"33\u201336",
 							"A jar containing an unidentifiable, sweet, sticky substance"
 						],
 						[
-							"37–40",
+							"37\u201340",
 							"A delicate glass ball painted with snowflakes, capped by a metal loop with a tiny hook attached to it"
 						],
 						[
-							"41–44",
+							"41\u201344",
 							"An expedition log with missing pages and a pressed flower used as a bookmark"
 						],
 						[
-							"45–48",
+							"45\u201348",
 							"An owl figurine carved from whalebone"
 						],
 						[
-							"49–52",
+							"49\u201352",
 							"A sewing box that smells of old wood and has three spools of blue thread inside"
 						],
 						[
-							"53–56",
+							"53\u201356",
 							"A scrimshaw-handled ink pen with black runic designs along its length"
 						],
 						[
-							"57–60",
+							"57\u201360",
 							"A brooch made from a small insect encased in amber"
 						],
 						[
-							"61–64",
+							"61\u201364",
 							"A scrimshaw pepper shaker etched with the letter W"
 						],
 						[
-							"65–68",
+							"65\u201368",
 							"An old, wooden-handled ice pick stained with blood that won't wash off"
 						],
 						[
-							"69–72",
+							"69\u201372",
 							"A fabric doll bearing an angry expression"
 						],
 						[
-							"73–76",
+							"73\u201376",
 							"A set of wind chimes made from seashells"
 						],
 						[
-							"77–80",
+							"77\u201380",
 							"A beautiful silver tin that, when opened, emits the smell of rotting fish"
 						],
 						[
-							"81–84",
+							"81\u201384",
 							"A bloodstained dreamcatcher made from fishing line, gold wire, and snowy owlbear feathers"
 						],
 						[
-							"85–88",
+							"85\u201388",
 							"A figurine of a polar bear made of ice that never melts"
 						],
 						[
-							"89–92",
+							"89\u201392",
 							"A snow globe that doesn't need to be shaken"
 						],
 						[
-							"93–96",
+							"93\u201396",
 							"A piece of sea glass shaped like a unicorn's horn"
 						],
 						[
-							"97–00",
+							"97\u201300",
 							"A dark blue scarf that gets lighter in shade the higher the altitude of the wearer"
 						]
 					]
@@ -14891,7 +14895,7 @@
 					"name": "Shield Ward",
 					"type": "entries",
 					"entries": [
-						"You can transfer the ingot's magic to a nonmagical item—a shield or a two-handed melee weapon-by tracing the skold rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the ingot is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the ingot's magic to a nonmagical item\u2014a shield or a two-handed melee weapon-by tracing the skold rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the ingot is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -15880,7 +15884,7 @@
 			"recharge": "dawn",
 			"charges": 3,
 			"entries": [
-				"這把{@item 戰鎬|phb}是用一整塊鐵鍛造而成，其尖牙狀的頭部刻有古代符文。儘管這把戰鎬在被持握時顯得沉重，但當持用者憤怒地揮舞它時，卻幾乎不會感覺到它的重量。該武器免疫任何形式的鏽蝕、強酸或腐蝕——似乎沒有任何東西能在它上面留下痕跡。鐵牙內部蘊含著邪惡土元素親王{@creature Ogrémoch|pota|歐格莫克}的碎片。",
+				"這把{@item 戰鎬|phb}是用一整塊鐵鍛造而成，其尖牙狀的頭部刻有古代符文。儘管這把戰鎬在被持握時顯得沉重，但當持用者憤怒地揮舞它時，卻幾乎不會感覺到它的重量。該武器免疫任何形式的鏽蝕、強酸或腐蝕\u2014\u2014似乎沒有任何東西能在它上面留下痕跡。鐵牙內部蘊含著邪惡土元素親王{@creature Ogrémoch|pota|歐格莫克}的碎片。",
 				"你在使用這把武器進行的攻擊檢定和傷害骰上具有+2加值。當你用它造成傷害時，目標將會額外受到{@dice 1d8}雷鳴傷害。",
 				{
 					"type": "entries",
@@ -17109,7 +17113,7 @@
 			"wondrous": true,
 			"grantsProficiency": true,
 			"entries": [
-				"These symbiotic gloves—made of thin chitin and sinew—pulse with a life of their own. To attune to them, you must wear them for the entire attunement period, during which the gloves bond with your skin.",
+				"These symbiotic gloves\u2014made of thin chitin and sinew\u2014pulse with a life of their own. To attune to them, you must wear them for the entire attunement period, during which the gloves bond with your skin.",
 				"While attuned to these gloves, you gain one of the following proficiencies (your choice when you attune to the gloves):",
 				{
 					"type": "list",
@@ -17201,7 +17205,7 @@
 					"type": "entries",
 					"name": "Secret Satchel",
 					"entries": [
-						"As a rank 3 hoardsperson, your living loot satchel gets an upgrade to function as the replica chest used for the {@spell Leomund's secret chest} spell, becoming a rare magic item. You can open the secret chest through your living loot satchel to deposit or withdraw items—even items that wouldn't normally fit in your satchel, but which fit within the chest. Thanks to Head Office striking deals you don't want to know about with extraplanar creatures you really don't want to know about, there is no chance for the spell to end."
+						"As a rank 3 hoardsperson, your living loot satchel gets an upgrade to function as the replica chest used for the {@spell Leomund's secret chest} spell, becoming a rare magic item. You can open the secret chest through your living loot satchel to deposit or withdraw items\u2014even items that wouldn't normally fit in your satchel, but which fit within the chest. Thanks to Head Office striking deals you don't want to know about with extraplanar creatures you really don't want to know about, there is no chance for the spell to end."
 					]
 				},
 				{
@@ -17215,7 +17219,7 @@
 					"type": "entries",
 					"name": "Portable Hole Satchel",
 					"entries": [
-						"At rank 4, your living loot satchel receives another upgrade, becoming a very rare magic item. The secret chest accessed by your satchel now has the storage capacity of a {@item portable hole}—6 feet in diameter and 10 feet deep. As before, you can place any appropriately sized object into the portable-hole-sized chest, even if it wouldn't normally fit into your satchel."
+						"At rank 4, your living loot satchel receives another upgrade, becoming a very rare magic item. The secret chest accessed by your satchel now has the storage capacity of a {@item portable hole}\u20146 feet in diameter and 10 feet deep. As before, you can place any appropriately sized object into the portable-hole-sized chest, even if it wouldn't normally fit into your satchel."
 					]
 				},
 				{
@@ -17319,7 +17323,7 @@
 			"reqAttune": "by a creature with a humanoid build",
 			"wondrous": true,
 			"entries": [
-				"The Masked Lords of Waterdeep don this ensemble when meeting with one another. This raiment renders each lord indistinguishable from the others. The ensemble consists of three pieces—a helm, an amulet, and a robe—that function as a single magic item when worn together, but only within the city of Waterdeep and its sewers. You become attuned to the ensemble as a single item.",
+				"The Masked Lords of Waterdeep don this ensemble when meeting with one another. This raiment renders each lord indistinguishable from the others. The ensemble consists of three pieces\u2014a helm, an amulet, and a robe\u2014that function as a single magic item when worn together, but only within the city of Waterdeep and its sewers. You become attuned to the ensemble as a single item.",
 				{
 					"type": "entries",
 					"name": "Lord's Helm",
@@ -17412,7 +17416,7 @@
 			"wondrous": true,
 			"entries": [
 				"Not all lingering spirits are tragic souls, lost on their way to the hereafter. Some languish as prisoners, souls so wicked mortals dare not free them upon an unsuspecting afterlife.",
-				"Created by a figure of Vistani legend, Luba's Tarokka of Souls shaped the destiny of countless heroes. The prophecies of this deck of cards also revealed great evils and guided its creator into the path of nefarious forces. Untold times the deck's creator, Mother Luba, narrowly escaped doom, spared only by her keen insights. But even for her, not all wickedness could be escaped. In the most dire cases, Mother Luba managed to ensnare beings of pure evil amid the strands of fate, imprisoning them within her tarroka deck. There these foul spirits dwell still, trapped within a nether-realm hidden amid shuffling cards, waiting for fate to turn foul—as it inevitably will.",
+				"Created by a figure of Vistani legend, Luba's Tarokka of Souls shaped the destiny of countless heroes. The prophecies of this deck of cards also revealed great evils and guided its creator into the path of nefarious forces. Untold times the deck's creator, Mother Luba, narrowly escaped doom, spared only by her keen insights. But even for her, not all wickedness could be escaped. In the most dire cases, Mother Luba managed to ensnare beings of pure evil amid the strands of fate, imprisoning them within her tarroka deck. There these foul spirits dwell still, trapped within a nether-realm hidden amid shuffling cards, waiting for fate to turn foul\u2014as it inevitably will.",
 				"Like all tarokka decks, the {@i Tarokka of Souls} is a lavishly illustrated collection of fifty-four cards, comprising the fourteen cards of the high deck and forty other cards divided into four suits: coins, glyphs, stars, and swords.",
 				{
 					"type": "entries",
@@ -17557,8 +17561,8 @@
 								],
 								[
 									"15-100",
-									"—",
-									"—"
+									"\u2014",
+									"\u2014"
 								]
 							]
 						},
@@ -18342,7 +18346,7 @@
 								{
 									"type": "item",
 									"name": "Piety 1+.",
-									"entry": "The whip has 1 randomly determined {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} property—a burden Erebos imposes to test his faithful."
+									"entry": "The whip has 1 randomly determined {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} property\u2014a burden Erebos imposes to test his faithful."
 								},
 								{
 									"type": "item",
@@ -18547,7 +18551,7 @@
 					"entries": [
 						"By inputting a specific series of lever pulls and button presses, the servant's two crew members can cause it to explode. The self-destruct code is not revealed to crew members when they attune to the artifact. If the code is discovered (the DM determines how), it requires two attuned crew members to be inside the servant and spend their actions on 3 consecutive rounds performing the command. Should the crew members begin the process of entering the code, though, the servant uses its Ghost in the Machine property and turns the crew members against each other.",
 						"If the crew members successfully implement the code, at the end of the third round, the servant explodes. Every creature in a 100-foot-radius sphere centered on the servant must make a DC 25 Dexterity saving throw. On a failed save, a creature takes 87 ({@damage 25d6}) force damage, 87 ({@damage 25d6}) lightning damage, and 87 ({@damage 25d6}) thunder damage. On a successful save, a creature takes half as much damage. Objects and structures in the area take triple damage. Creatures inside the servant are slain instantly and leave behind no remains.",
-						"This does not destroy the servant permanently. Rather, {@dice 2d6} days later, its parts—left arm, left leg, right arm, right leg, lower torso, and upper torso—drop from the sky in random places within 1,000 miles of the explosion. If brought within 5 feet of one another, the pieces reconnect and reform the servant."
+						"This does not destroy the servant permanently. Rather, {@dice 2d6} days later, its parts\u2014left arm, left leg, right arm, right leg, lower torso, and upper torso\u2014drop from the sky in random places within 1,000 miles of the explosion. If brought within 5 feet of one another, the pieces reconnect and reform the servant."
 					]
 				},
 				{
@@ -19793,7 +19797,8 @@
 			"ENG_name": "Oil of Slipperiness"
 		},
 		{
-			"name": "腐精油", "ENG_name": "Oil of Taggit",
+			"name": "腐精油",
+			"ENG_name": "Oil of Taggit",
 			"source": "DMG",
 			"page": 258,
 			"srd": true,
@@ -19889,7 +19894,7 @@
 					"name": "Gift of Flame",
 					"type": "entries",
 					"entries": [
-						"You can transfer the opal's magic to a nonmagical item—a weapon or a suit of armor—by tracing the ild rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the opal is destroyed, and the rune appears in red on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the opal's magic to a nonmagical item\u2014a weapon or a suit of armor\u2014by tracing the ild rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the opal is destroyed, and the rune appears in red on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -19921,7 +19926,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"entries": [
-				"This triangular fire opal measures about three inches on each side and is half an inch thick. The ild rune—the rune of fire—shimmers within its core. Grasping this object causes a split second of searing, fiery pain to pass through you. That pain quickly fades, giving way to a warming glow.",
+				"This triangular fire opal measures about three inches on each side and is half an inch thick. The ild rune\u2014the rune of fire\u2014shimmers within its core. Grasping this object causes a split second of searing, fiery pain to pass through you. That pain quickly fades, giving way to a warming glow.",
 				{
 					"type": "entries",
 					"name": "Ignite (Simple Property)",
@@ -20091,7 +20096,7 @@
 					"type": "entries",
 					"name": "Gift of Stone",
 					"entries": [
-						"You can transfer the orb's magic to a nonmagical item—a shield or a pair of boots—by tracing the stein rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the orb is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the orb's magic to a nonmagical item\u2014a shield or a pair of boots\u2014by tracing the stein rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the orb is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -20123,7 +20128,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"entries": [
-				"This spherical chunk of granite is about the size of a human fist. The stein rune—the rune of stone—appears on the orb as crystalline veins that play across its surface. When first grasped, the stone feels impossibly heavy, as if even a titan could not lift it. That feeling passes after a moment, allowing you to carry the stone with ease.",
+				"This spherical chunk of granite is about the size of a human fist. The stein rune\u2014the rune of stone\u2014appears on the orb as crystalline veins that play across its surface. When first grasped, the stone feels impossibly heavy, as if even a titan could not lift it. That feeling passes after a moment, allowing you to carry the stone with ease.",
 				{
 					"type": "entries",
 					"name": "Indomitable Stand (Simple Property)",
@@ -20270,7 +20275,7 @@
 					"ENG_name": "Personality",
 					"type": "entries",
 					"entries": [
-						"獸人肢解者冷酷、沉默、頑固。它只懷有一個小小的願望，就是在戰鬥中對付獸人，並服務於勇敢且正義的持用者。它蔑視懦夫，以及任何形式的口是心非、欺騙或不忠。該武器的目的是保護矮人，並作為矮人決心的象徵。它憎恨所有的矮人仇敵——巨人、哥布林、以及其中最重要的，獸人，並會在戰鬥中無聲地敦促它的主人與這些生物相遇。"
+						"獸人肢解者冷酷、沉默、頑固。它只懷有一個小小的願望，就是在戰鬥中對付獸人，並服務於勇敢且正義的持用者。它蔑視懦夫，以及任何形式的口是心非、欺騙或不忠。該武器的目的是保護矮人，並作為矮人決心的象徵。它憎恨所有的矮人仇敵\u2014\u2014巨人、哥布林、以及其中最重要的，獸人，並會在戰鬥中無聲地敦促它的主人與這些生物相遇。"
 					]
 				}
 			],
@@ -20305,7 +20310,7 @@
 			"entries": [
 				"This delicate and exquisitely crafted clockwork orrery features multiple geared components whose sweeping hands and dials represent the complex interplay of planar and magical realms. Standing two feet high, the orrery housing is a wondrous device imbued with magic of its own, but the power of its six clockwork components makes the artifact even more potent.",
 				"The Orrery of the Wanderer was created by a renowned clockwork mage known only as Lottie. She crafted the relic as a means of tapping into the power of the planes, and to channel the divination and foretelling powers of the stars. But Lottie soon realized that her creation was far more powerful than she had intended. As it tapped into planar magic, the orrery began to manifest the darkness and malevolence inherent to some of the planes. Eventually, it would impress upon its owner a desire to open portals into the most cursed and dangerous worlds, including the Far Realm.",
-				"To prevent the orrery from ever being so used, Lottie scattered the components that powered it, secreting them across the world. But the orrery's instinct for survival is strong, and its components have a way of inexorably coming together over decades or centuries, found by treasure hunters, stolen by monsters, found and stolen again—and moving closer to each other all the time.",
+				"To prevent the orrery from ever being so used, Lottie scattered the components that powered it, secreting them across the world. But the orrery's instinct for survival is strong, and its components have a way of inexorably coming together over decades or centuries, found by treasure hunters, stolen by monsters, found and stolen again\u2014and moving closer to each other all the time.",
 				"Random Properties. The orrery has the following randomly determined properties:",
 				{
 					"type": "list",
@@ -20693,7 +20698,8 @@
 			"value": 2500
 		},
 		{
-			"name": "蒼白酊劑", "ENG_name": "Pale Tincture",
+			"name": "蒼白酊劑",
+			"ENG_name": "Pale Tincture",
 			"source": "DMG",
 			"page": 258,
 			"srd": true,
@@ -20746,7 +20752,7 @@
 			"wondrous": true,
 			"entries": [
 				"After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magically folds into a Tiny paper bird and flies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.",
-				"The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (−5) in all other abilities, and it is immune to poison and psychic damage.",
+				"The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (\u22125) in all other abilities, and it is immune to poison and psychic damage.",
 				"It travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a nonmagical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.",
 				"Paper birds usually come in small, flat boxes containing {@dice 1d6 + 3} sheets of the parchment."
 			],
@@ -20883,7 +20889,7 @@
 					"type": "entries",
 					"name": "Gift of Wind",
 					"entries": [
-						"You can transfer the pennant's magic to a nonmagical item—a suit of armor, a pair of boots, or a cloak—by tracing the vind rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the pennant is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the pennant's magic to a nonmagical item\u2014a suit of armor, a pair of boots, or a cloak\u2014by tracing the vind rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the pennant is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -20916,7 +20922,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"entries": [
-				"This five-foot-long blue pennant is crafted from silk and whips about as if buffeted by a strong breeze. The vind rune—the rune of wind—flickers across its surface like a shimmering cloud. Grasping the pennant causes you to feel a powerful gust of wind wash over you, tearing at your clothes and gear. Anyone watching you sees nothing out of the ordinary, and the sensation passes after a moment.",
+				"This five-foot-long blue pennant is crafted from silk and whips about as if buffeted by a strong breeze. The vind rune\u2014the rune of wind\u2014flickers across its surface like a shimmering cloud. Grasping the pennant causes you to feel a powerful gust of wind wash over you, tearing at your clothes and gear. Anyone watching you sees nothing out of the ordinary, and the sensation passes after a moment.",
 				{
 					"type": "entries",
 					"name": "Comforting Wind (Simple Property)",
@@ -21027,7 +21033,8 @@
 			"ENG_name": "Periapt of Health"
 		},
 		{
-			"name": "辟毒護身符", "ENG_name": "Periapt of Proof Against Poison",
+			"name": "辟毒護身符",
+			"ENG_name": "Periapt of Proof Against Poison",
 			"source": "DMG",
 			"page": 184,
 			"srd": true,
@@ -22588,7 +22595,7 @@
 			},
 			"bonusAc": "+1",
 			"entries": [
-				"Powered armor resembles a suit of unusual plate armor, with finely articulated joints connected by an oily, black, leather-like material. The armor has been worked to create the appearance of a heavily muscled warrior, and its great helm is unusual in that it has no openings—only a broad glass plate in the front with a second piece of glass above it. Strange plates, tubing, and large metal bosses adorn the armor in seemingly random fashion. On the back of the armor's left gauntlet is a rectangular metal box, from which projects a short rod tipped with a cone-shaped red crystal.",
+				"Powered armor resembles a suit of unusual plate armor, with finely articulated joints connected by an oily, black, leather-like material. The armor has been worked to create the appearance of a heavily muscled warrior, and its great helm is unusual in that it has no openings\u2014only a broad glass plate in the front with a second piece of glass above it. Strange plates, tubing, and large metal bosses adorn the armor in seemingly random fashion. On the back of the armor's left gauntlet is a rectangular metal box, from which projects a short rod tipped with a cone-shaped red crystal.",
 				"While wearing this armor, you gain the following benefits:",
 				{
 					"type": "list",
@@ -22798,7 +22805,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This item replaces a lost limb—a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as an action, and it can't be removed against your will. It detaches if you die."
+				"This item replaces a lost limb\u2014a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as an action, and it can't be removed against your will. It detaches if you die."
 			],
 			"hasFluffImages": true
 		},
@@ -22916,7 +22923,8 @@
 			]
 		},
 		{
-			"name": "紫蟲毒液", "ENG_name": "Purple Worm Poison",
+			"name": "紫蟲毒液",
+			"ENG_name": "Purple Worm Poison",
 			"source": "DMG",
 			"page": 258,
 			"srd": true,
@@ -25718,7 +25726,8 @@
 			"ENG_name": "Sentinel Shield"
 		},
 		{
-			"name": "蛇毒", "ENG_name": "Serpent Venom",
+			"name": "蛇毒",
+			"ENG_name": "Serpent Venom",
 			"source": "DMG",
 			"page": 258,
 			"srd": true,
@@ -25866,7 +25875,7 @@
 					"name": "Gift of Frost",
 					"type": "entries",
 					"entries": [
-						"You can transfer the shard's magic to a nonmagical item—a cloak or a pair of boots-by tracing the ise rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the shard is destroyed, and the rune appears in blue on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the shard's magic to a nonmagical item\u2014a cloak or a pair of boots-by tracing the ise rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the shard is destroyed, and the rune appears in blue on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -25901,7 +25910,7 @@
 			"rarity": "rare",
 			"reqAttune": true,
 			"entries": [
-				"This long, slender shard of ice is roughly the size of a dagger. The kalt rune—the rune of ice—glows within the shard. When first grasped, the shard emits a painful cold that leaves your hand and arm numb. That feeling passes after a moment, allowing the shard to be handled normally.",
+				"This long, slender shard of ice is roughly the size of a dagger. The kalt rune\u2014the rune of ice\u2014glows within the shard. When first grasped, the shard emits a painful cold that leaves your hand and arm numb. That feeling passes after a moment, allowing the shard to be handled normally.",
 				{
 					"type": "entries",
 					"name": "Frigid Touch (Simple Property)",
@@ -26898,7 +26907,7 @@
 			"value": 15000,
 			"entries": [
 				"Soothsalts are derived from a naturally occurring crystalline substance discovered throughout the wilds of the Miskath Strand. The crimson crystals have been mined from cavernous veins like those in the mouth of the Miskath Pit and found within smaller geode formations near sites ravaged by the Calamity. Soothsalts are consumed orally in lozenge-sized doses, and frequent users can be identified by the telltale crimson stain around their mouths. A creature subjected to a dose of soothsalts gains advantage on all Intelligence checks for {@dice 1d4} hours.",
-				"For each dose of soothsalts consumed, the creature must succeed on a DC 15 Constitution saving throw or gain one level of {@condition exhaustion}—an effect which is cumulative with multiple doses."
+				"For each dose of soothsalts consumed, the creature must succeed on a DC 15 Constitution saving throw or gain one level of {@condition exhaustion}\u2014an effect which is cumulative with multiple doses."
 			]
 		},
 		{
@@ -26923,7 +26932,7 @@
 					"type": "entries",
 					"name": "Carrying Soul Coins",
 					"entries": [
-						"To hold a soul coin is to feel the soul bound within it—overcome with rage or fraught with despair.",
+						"To hold a soul coin is to feel the soul bound within it\u2014overcome with rage or fraught with despair.",
 						"An evil creature can carry as many soul coins as it wishes (up to its maximum weight allowance). A non-evil creature can carry a number of soul coins equal to or less than its Constitution modifier without penalty. A non-evil creature carrying a number of soul coins greater than its Constitution modifier has disadvantage on its attack rolls, ability checks, and saving throws."
 					]
 				},
@@ -30220,7 +30229,7 @@
 			"rarity": "unknown",
 			"weight": 3,
 			"entries": [
-				"The Incantations of Iriolarthas is a weighty spellbook. Its black leather covers have dead, toothy worms glued to them, sheathed in glossy varnish. Set into this morbid display on the front cover is a gold rune that resembles a stylized eye with a pupil shaped like a candle flame—the sigil of Iriolarthas, a Netherese lich.",
+				"The Incantations of Iriolarthas is a weighty spellbook. Its black leather covers have dead, toothy worms glued to them, sheathed in glossy varnish. Set into this morbid display on the front cover is a gold rune that resembles a stylized eye with a pupil shaped like a candle flame\u2014the sigil of Iriolarthas, a Netherese lich.",
 				"The book contains sixty pages of brittle yellow vellum. Written on these pages are the following wizard spells:",
 				{
 					"type": "list",
@@ -30257,7 +30266,7 @@
 					"name": "Silver Wire",
 					"entries": [
 						"The Infernal Machine's great size makes it largely immobile. To make ongoing use of the machine (such as while adventuring), it can be connected to its attuned user by a silver wire, a supply of which can always be produced from the machine's inner workings. This silver wire shares the same general nature as the silvery cord of an {@spell astral projection} spell, connecting to the body of the user and trailing behind them. When so attached, the wire becomes {@condition invisible}, astral, and extends to virtually infinite length.",
-						"As long as the wire remains intact, the attuned user can make full use of the Infernal Machine's powers, with their effects centered around the user. If the wire is cut—something that can happen only when an effect specifically states that it can cut an {@spell astral projection}'s silvery cord—the user suffers a sudden burst of feedback from the machine that kills them instantly.",
+						"As long as the wire remains intact, the attuned user can make full use of the Infernal Machine's powers, with their effects centered around the user. If the wire is cut\u2014something that can happen only when an effect specifically states that it can cut an {@spell astral projection}'s silvery cord\u2014the user suffers a sudden burst of feedback from the machine that kills them instantly.",
 						"Any effect of the Infernal Machine that requires concentration can be concentrated on by a remote user. The Infernal Machine's effects have a spell save DC of 14 or the attuned user's spell save DC, whichever is higher."
 					]
 				},
@@ -30288,7 +30297,7 @@
 					"type": "entries",
 					"name": "Random Properties",
 					"entries": [
-						"There are far more possible combinations for the Infernal Machine's controls than can ever be known or matrixed—especially as the controls shift position and reset themselves over time. At the end of each long rest of the user attuned to it, the Infernal Machine generates {@dice 1d4 + 1} random beneficial properties and {@dice 1d4 + 1} detrimental properties. Roll for each of these properties on the Infernal Machine Properties table. To keep things interesting, the DM might roll secretly for detrimental properties, revealing those properties only during the course of play.",
+						"There are far more possible combinations for the Infernal Machine's controls than can ever be known or matrixed\u2014especially as the controls shift position and reset themselves over time. At the end of each long rest of the user attuned to it, the Infernal Machine generates {@dice 1d4 + 1} random beneficial properties and {@dice 1d4 + 1} detrimental properties. Roll for each of these properties on the Infernal Machine Properties table. To keep things interesting, the DM might roll secretly for detrimental properties, revealing those properties only during the course of play.",
 						"Once set, these properties last until the end of the attuned user's next long rest.",
 						"(Our thanks to the D&D community for their suggestions for the properties of the Infernal Machine of Lum the Mad!)"
 					]
@@ -30297,7 +30306,7 @@
 					"type": "entries",
 					"name": "Destroying the Machine",
 					"entries": [
-						"The Infernal Machine of Lum the Mad is self-repairing of anything short of catastrophic damage, and how it was disabled in Lum's time remains a mystery. It is rumored that if one specific combination of controls is set, the Infernal Machine will enter a repair mode, allowing unfettered access to its inner workings—and preventing it from restoring itself if it is attacked. Alternatively, other combinations of controls might cause the Infernal Machine to teleport its most critical components to some hiding place deep in space and time, rendering it inoperable until those components are found again."
+						"The Infernal Machine of Lum the Mad is self-repairing of anything short of catastrophic damage, and how it was disabled in Lum's time remains a mystery. It is rumored that if one specific combination of controls is set, the Infernal Machine will enter a repair mode, allowing unfettered access to its inner workings\u2014and preventing it from restoring itself if it is attacked. Alternatively, other combinations of controls might cause the Infernal Machine to teleport its most critical components to some hiding place deep in space and time, rendering it inoperable until those components are found again."
 					]
 				},
 				{
@@ -30337,7 +30346,7 @@
 						[
 							"05",
 							"You emanate a weak magnetic aura. The first time during a combat that a creature attacks you with a metal weapon, that creature has disadvantage on the attack roll.",
-							"Metal rusts in response to your touch—including metal armor you wear and metal weapons you hold—reproducing the effect of the rust monster's Rust Metal trait."
+							"Metal rusts in response to your touch\u2014including metal armor you wear and metal weapons you hold\u2014reproducing the effect of the rust monster's Rust Metal trait."
 						],
 						[
 							"06",
@@ -30487,7 +30496,7 @@
 						[
 							"35",
 							"Your shadow becomes an undead {@creature shadow} that shares your alignment and is under your control.",
-							"Your shadow behaves disapprovingly whenever you're not looking—stealing things, mocking you behind your back, taunting opponents or friends, and so on."
+							"Your shadow behaves disapprovingly whenever you're not looking\u2014stealing things, mocking you behind your back, taunting opponents or friends, and so on."
 						],
 						[
 							"36",
@@ -30517,7 +30526,7 @@
 						[
 							"41",
 							"Your possessions change their state or appearance at the DM's determination, giving you hints of potential future events. For example, your sword might become suddenly bloodstained to warn of an upcoming combat encounter, your clothes might become damp to warn of a water-filled pit trap ahead, and so on.",
-							"You take a −5 penalty to initiative rolls."
+							"You take a \u22125 penalty to initiative rolls."
 						],
 						[
 							"42",
@@ -30873,7 +30882,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children—to the parents' delight or regret."
+				"Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children\u2014to the parents' delight or regret."
 			]
 		},
 		{
@@ -31406,7 +31415,7 @@
 			"wondrous": true,
 			"grantsProficiency": true,
 			"entries": [
-				"Also at rank 3, Head Office provides you with a travel alchemical kit—an uncommon magic item containing miniaturized versions of both {@item alchemist's supplies|phb} and a {@item poisoner's kit|phb} (glass vials, a mortar and pestle, chemicals, and a glass stirring rod). You gain proficiency with a {@item poisoner's kit|phb} as part of this upgrade.",
+				"Also at rank 3, Head Office provides you with a travel alchemical kit\u2014an uncommon magic item containing miniaturized versions of both {@item alchemist's supplies|phb} and a {@item poisoner's kit|phb} (glass vials, a mortar and pestle, chemicals, and a glass stirring rod). You gain proficiency with a {@item poisoner's kit|phb} as part of this upgrade.",
 				"You can use this magical kit as long as it is on your person, with no need to draw or stow it. If you are ever searched, finding your travel alchemical kit requires a successful DC 20 Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}) check."
 			],
 			"hasFluffImages": true
@@ -32983,7 +32992,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "吐真血清", "ENG_name": "Truth Serum",
+			"name": "吐真血清",
+			"ENG_name": "Truth Serum",
 			"source": "DMG",
 			"page": 258,
 			"srd": true,
@@ -33621,7 +33631,7 @@
 					"name": "Destroying the Wand",
 					"type": "entries",
 					"entries": [
-						"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life—no easy task, given the fact that {@creature Orcus|MTF} has imprisoned the hero's soul and keeps it hidden and well guarded.",
+						"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life\u2014no easy task, given the fact that {@creature Orcus|MTF} has imprisoned the hero's soul and keeps it hidden and well guarded.",
 						"Bathing the wand in positive energy causes it to crack and explode, but unless the above conditions are met, the wand instantly reforms on {@creature Orcus|MTF|Orcus's} layer of the Abyss."
 					]
 				}
@@ -34389,7 +34399,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Also at rank 1, you are the beneficiary of a whisper jar—a common magic item resembling an ether-filled jar with a long tap hose. The jar is used to record others' stories and your own observations, like a verbal notebook with unlimited space. The whisper jar records as fast as a creature can speak into it, and whispers back words at the same pace they were recorded. Activating the playback of a particular recording is an action.",
+				"Also at rank 1, you are the beneficiary of a whisper jar\u2014a common magic item resembling an ether-filled jar with a long tap hose. The jar is used to record others' stories and your own observations, like a verbal notebook with unlimited space. The whisper jar records as fast as a creature can speak into it, and whispers back words at the same pace they were recorded. Activating the playback of a particular recording is an action.",
 				{
 					"type": "table",
 					"caption": "Things Recorded in Your Whisper Jar",
@@ -34615,7 +34625,7 @@
 					"type": "entries",
 					"name": "Personality",
 					"entries": [
-						"A short-tempered {@creature bone devil} named Ashtyrlon lives within Will of the Talon. The weapon is greedy and values strong leadership. It demands that its wielder take decisive action to keep order in high-pressure situations—and to always take a fair share of treasure in return."
+						"A short-tempered {@creature bone devil} named Ashtyrlon lives within Will of the Talon. The weapon is greedy and values strong leadership. It demands that its wielder take decisive action to keep order in high-pressure situations\u2014and to always take a fair share of treasure in return."
 					]
 				},
 				{
@@ -35068,10 +35078,10 @@
 			"recharge": "dawn",
 			"charges": 9,
 			"entries": [
-				"Built by dwarven gods and entrusted to the rulers of Shanatar, an ancient dwarven empire. The Wyrmskull Throne was a symbol of dwarven power and pride for ages untold. The throne hovers a foot off the ground and is a massive thing made of polished obsidian with oversized feet—the impaled skulls of four ancient blue dragons. Runes glisten in the carved obsidian winking to life with blue energy when the throne's powers are activated.",
+				"Built by dwarven gods and entrusted to the rulers of Shanatar, an ancient dwarven empire. The Wyrmskull Throne was a symbol of dwarven power and pride for ages untold. The throne hovers a foot off the ground and is a massive thing made of polished obsidian with oversized feet\u2014the impaled skulls of four ancient blue dragons. Runes glisten in the carved obsidian winking to life with blue energy when the throne's powers are activated.",
 				"After the fall of Shanatar, the Wyrmskull Throne fell into the clutches of less honorable creatures. A band of adventurers wrested the throne from the aquatic elf tyrant Gantar Kraok and sold it to the {@creature storm giant} Neri for a considerable fortune. Neri had the throne magically enlarged and gave it to her husband, King Hekaton, as a gift, along with one of the Ruling Scepters of Shanatar, which she had found in a wreck at the bottom of the Trackless Sea. Only a creature attuned to a Ruling Scepter and in possession of it can harness the powers of the Wyrmskull Throne, which has become the centerpiece of King Hekaton's throne room in the undersea citadel of Maelstrom. Fear of the throne's power has helped prevent evil giants from challenging or threatening Hekaton's leadership.",
 				"Any creature not attuned to a Ruling Scepter who sits on the throne is {@condition paralyzed} and encased in a magical force field. While encased, the creature can't be touched or moved from the throne. Touching a Ruling Scepter to the force field dispels the field, though the creature remains {@condition paralyzed} until it is separated from the throne.",
-				"Any creature seated on the throne can hear faint Whispers in Draconic—the whisperings of four blue dragons whose skulls adorn the throne. Although powerless, these spirits try to influence the decisions of the throne's master",
+				"Any creature seated on the throne can hear faint Whispers in Draconic\u2014the whisperings of four blue dragons whose skulls adorn the throne. Although powerless, these spirits try to influence the decisions of the throne's master",
 				{
 					"name": "Properties of the Throne",
 					"type": "entries",
@@ -35099,7 +35109,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "飛龍毒液", "ENG_name": "Wyvern Poison",
+			"name": "飛龍毒液",
+			"ENG_name": "Wyvern Poison",
 			"source": "DMG",
 			"page": 258,
 			"srd": true,
@@ -35168,7 +35179,7 @@
 			"wondrous": true,
 			"entries": [
 				"A mythallar looks like an enormous crystal ball held in an ornate cradle. The globe sheds bright light in a 300-foot radius and dim light for an additional 300 feet. The globe draws magic from the Weave that can be harnessed for various purposes. For example, Netherese mages used mythallars to keep their cities aloft and empower their magic items. The bigger the mythallar, the more magic it can hold. The largest mythallars are 150 feet in diameter.",
-				"The Ythryn mythallar is a relatively small device—a mere 50 feet in diameter. To attune to this mythallar, a creature must finish a short rest within 30 feet of it, meditating on the mythallar. Up to eight creatures can be attuned to it at one time; otherwise, the Ythryn mythallar follows the attunement rules in the Dungeon Master's Guide. If a ninth creature tries to attune to the mythallar, nothing happens.",
+				"The Ythryn mythallar is a relatively small device\u2014a mere 50 feet in diameter. To attune to this mythallar, a creature must finish a short rest within 30 feet of it, meditating on the mythallar. Up to eight creatures can be attuned to it at one time; otherwise, the Ythryn mythallar follows the attunement rules in the Dungeon Master's Guide. If a ninth creature tries to attune to the mythallar, nothing happens.",
 				"All creatures attuned to the Ythryn mythallar can sense when the device is being used. A creature attuned to the device can use any of its properties, but only if all other creatures attuned to the device agree to allow it. The Ythryn mythallar's properties are as follows:",
 				{
 					"type": "list",

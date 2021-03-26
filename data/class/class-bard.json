@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "吟遊詩人", "ENG_name": "Bard",
+			"name": "吟遊詩人",
+			"ENG_name": "Bard",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -565,7 +566,8 @@
 			"subclassTitle": "Bard College",
 			"subclasses": [
 				{
-					"name": "知識學院", "ENG_name": "College of Lore",
+					"name": "知識學院",
+					"ENG_name": "College of Lore",
 					"shortName": "Lore",
 					"source": "PHB",
 					"page": 54,
@@ -577,7 +579,8 @@
 					]
 				},
 				{
-					"name": "勇氣學院", "ENG_name": "College of Valor",
+					"name": "勇氣學院",
+					"ENG_name": "College of Valor",
 					"shortName": "Valor",
 					"source": "PHB",
 					"page": 55,
@@ -647,7 +650,8 @@
 					]
 				},
 				{
-					"name": "迷惑學院", "ENG_name": "College of Glamour",
+					"name": "迷惑學院",
+					"ENG_name": "College of Glamour",
 					"shortName": "Glamour",
 					"source": "XGE",
 					"page": 14,
@@ -667,7 +671,8 @@
 					]
 				},
 				{
-					"name": "劍舞學院", "ENG_name": "College of Swords",
+					"name": "劍舞學院",
+					"ENG_name": "College of Swords",
 					"shortName": "Swords",
 					"source": "XGE",
 					"page": 15,
@@ -678,7 +683,8 @@
 					]
 				},
 				{
-					"name": "低語學院", "ENG_name": "College of Whispers",
+					"name": "低語學院",
+					"ENG_name": "College of Whispers",
 					"shortName": "Whispers",
 					"source": "XGE",
 					"page": 16,
@@ -1085,7 +1091,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "吟遊激勵", "ENG_name": "Bardic Inspiration",
+			"name": "吟遊激勵",
+			"ENG_name": "Bardic Inspiration",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1126,7 +1133,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1197,7 +1205,8 @@
 			]
 		},
 		{
-			"name": "全能高手", "ENG_name": "Jack of All Trades",
+			"name": "全能高手",
+			"ENG_name": "Jack of All Trades",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1222,7 +1231,8 @@
 			]
 		},
 		{
-			"name": "紓壓曲(d6)", "ENG_name": "Song of Rest",
+			"name": "紓壓曲(d6)",
+			"ENG_name": "Song of Rest",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1235,7 +1245,8 @@
 			]
 		},
 		{
-			"name": "吟遊學院", "ENG_name": "Bard College",
+			"name": "吟遊學院",
+			"ENG_name": "Bard College",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1247,7 +1258,8 @@
 			]
 		},
 		{
-			"name": "專精", "ENG_name": "Expertise",
+			"name": "專精",
+			"ENG_name": "Expertise",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1260,7 +1272,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1307,7 +1320,8 @@
 			]
 		},
 		{
-			"name": "吟遊激勵(d8)", "ENG_name": "Bardic Inspiration",
+			"name": "吟遊激勵(d8)",
+			"ENG_name": "Bardic Inspiration",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1319,7 +1333,8 @@
 			]
 		},
 		{
-			"name": "激勵湧泉", "ENG_name": "Font of Inspiration",
+			"name": "激勵湧泉",
+			"ENG_name": "Font of Inspiration",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1331,7 +1346,8 @@
 			]
 		},
 		{
-			"name": "吟遊學院能力", "ENG_name": "Bard College feature",
+			"name": "吟遊學院能力",
+			"ENG_name": "Bard College feature",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1343,7 +1359,8 @@
 			]
 		},
 		{
-			"name": "反制迷惑", "ENG_name": "Countercharm",
+			"name": "反制迷惑",
+			"ENG_name": "Countercharm",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1355,7 +1372,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1382,7 +1400,8 @@
 			]
 		},
 		{
-			"name": "紓壓曲(d8)", "ENG_name": "Song of Rest (d8)",
+			"name": "紓壓曲(d8)",
+			"ENG_name": "Song of Rest (d8)",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1394,7 +1413,8 @@
 			]
 		},
 		{
-			"name": "吟遊激勵(d10)", "ENG_name": "Bardic Inspiration (d10)",
+			"name": "吟遊激勵(d10)",
+			"ENG_name": "Bardic Inspiration (d10)",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1406,7 +1426,8 @@
 			]
 		},
 		{
-			"name": "專精", "ENG_name": "Expertise",
+			"name": "專精",
+			"ENG_name": "Expertise",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1418,7 +1439,8 @@
 			]
 		},
 		{
-			"name": "魔法秘密", "ENG_name": "Magical Secrets",
+			"name": "魔法秘密",
+			"ENG_name": "Magical Secrets",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1432,7 +1454,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1459,7 +1482,8 @@
 			]
 		},
 		{
-			"name": "紓壓曲(d10)", "ENG_name": "Song of Rest (d10)",
+			"name": "紓壓曲(d10)",
+			"ENG_name": "Song of Rest (d10)",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1471,7 +1495,8 @@
 			]
 		},
 		{
-			"name": "吟遊學院能力", "ENG_name": "Bard College feature",
+			"name": "吟遊學院能力",
+			"ENG_name": "Bard College feature",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1483,7 +1508,8 @@
 			]
 		},
 		{
-			"name": "魔法秘密", "ENG_name": "Magical Secrets",
+			"name": "魔法秘密",
+			"ENG_name": "Magical Secrets",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1496,7 +1522,8 @@
 			]
 		},
 		{
-			"name": "吟遊激勵(d12)", "ENG_name": "Bardic Inspiration (d12)",
+			"name": "吟遊激勵(d12)",
+			"ENG_name": "Bardic Inspiration (d12)",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1508,7 +1535,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1535,7 +1563,8 @@
 			]
 		},
 		{
-			"name": "紓壓曲(d12)", "ENG_name": "Song of Rest (d12)",
+			"name": "紓壓曲(d12)",
+			"ENG_name": "Song of Rest (d12)",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1547,7 +1576,8 @@
 			]
 		},
 		{
-			"name": "魔法秘密", "ENG_name": "Magical Secrets",
+			"name": "魔法秘密",
+			"ENG_name": "Magical Secrets",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1560,7 +1590,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1587,7 +1618,8 @@
 			]
 		},
 		{
-			"name": "卓越激勵", "ENG_name": "Superior Inspiration",
+			"name": "卓越激勵",
+			"ENG_name": "Superior Inspiration",
 			"source": "PHB",
 			"page": 51,
 			"srd": true,
@@ -1601,7 +1633,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "知識學院", "ENG_name": "College of Lore",
+			"name": "知識學院",
+			"ENG_name": "College of Lore",
 			"source": "PHB",
 			"page": 54,
 			"srd": true,
@@ -1625,7 +1658,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "PHB",
 			"page": 54,
 			"srd": true,
@@ -1640,7 +1674,8 @@
 			]
 		},
 		{
-			"name": "語出驚人", "ENG_name": "Cutting Words",
+			"name": "語出驚人",
+			"ENG_name": "Cutting Words",
 			"source": "PHB",
 			"page": 54,
 			"srd": true,
@@ -1655,7 +1690,8 @@
 			]
 		},
 		{
-			"name": "額外魔法秘密", "ENG_name": "Additional Magical Secrets",
+			"name": "額外魔法秘密",
+			"ENG_name": "Additional Magical Secrets",
 			"source": "PHB",
 			"page": 54,
 			"srd": true,
@@ -1670,7 +1706,8 @@
 			]
 		},
 		{
-			"name": "絕代技能", "ENG_name": "Peerless Skill",
+			"name": "絕代技能",
+			"ENG_name": "Peerless Skill",
 			"source": "PHB",
 			"page": 54,
 			"srd": true,
@@ -1685,7 +1722,8 @@
 			]
 		},
 		{
-			"name": "勇氣學院", "ENG_name": "College of Valor",
+			"name": "勇氣學院",
+			"ENG_name": "College of Valor",
 			"source": "PHB",
 			"page": 55,
 			"className": "Bard",
@@ -1706,7 +1744,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "PHB",
 			"page": 55,
 			"className": "Bard",
@@ -1720,7 +1759,8 @@
 			]
 		},
 		{
-			"name": "戰鬥激勵", "ENG_name": "Combat Inspiration",
+			"name": "戰鬥激勵",
+			"ENG_name": "Combat Inspiration",
 			"source": "PHB",
 			"page": 55,
 			"className": "Bard",
@@ -1734,7 +1774,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊", "ENG_name": "Extra Attack",
+			"name": "額外攻擊",
+			"ENG_name": "Extra Attack",
 			"source": "PHB",
 			"page": 55,
 			"className": "Bard",
@@ -1748,7 +1789,8 @@
 			]
 		},
 		{
-			"name": "戰鬥魔法", "ENG_name": "Battle Magic",
+			"name": "戰鬥魔法",
+			"ENG_name": "Battle Magic",
 			"source": "PHB",
 			"page": 55,
 			"className": "Bard",
@@ -2419,7 +2461,8 @@
 			]
 		},
 		{
-			"name": "低語學院", "ENG_name": "College of Whispers",
+			"name": "低語學院",
+			"ENG_name": "College of Whispers",
 			"source": "UABardBardColleges",
 			"page": 2,
 			"className": "Bard",
@@ -2602,7 +2645,8 @@
 			]
 		},
 		{
-			"name": "劍舞學院", "ENG_name": "College of Swords",
+			"name": "劍舞學院",
+			"ENG_name": "College of Swords",
 			"source": "UAKitsOfOld",
 			"page": 1,
 			"className": "Bard",
@@ -2740,7 +2784,8 @@
 			]
 		},
 		{
-			"name": "劍舞學院v2(UA)", "ENG_name": "College of Swords v2",
+			"name": "劍舞學院v2(UA)",
+			"ENG_name": "College of Swords v2",
 			"source": "UARevisedSubclasses",
 			"page": 1,
 			"className": "Bard",
@@ -2887,7 +2932,8 @@
 			]
 		},
 		{
-			"name": "迷惑學院", "ENG_name": "College of Glamour",
+			"name": "迷惑學院",
+			"ENG_name": "College of Glamour",
 			"source": "XGE",
 			"page": 14,
 			"className": "Bard",
@@ -2909,7 +2955,8 @@
 			]
 		},
 		{
-			"name": "醉人表演", "ENG_name": "Enthralling Performance",
+			"name": "醉人表演",
+			"ENG_name": "Enthralling Performance",
 			"source": "XGE",
 			"page": 14,
 			"className": "Bard",
@@ -2926,7 +2973,8 @@
 			]
 		},
 		{
-			"name": "激勵光環", "ENG_name": "Mantle of Inspiration",
+			"name": "激勵光環",
+			"ENG_name": "Mantle of Inspiration",
 			"source": "XGE",
 			"page": 14,
 			"className": "Bard",
@@ -2942,7 +2990,8 @@
 			]
 		},
 		{
-			"name": "威嚴光環", "ENG_name": "Mantle of Majesty",
+			"name": "威嚴光環",
+			"ENG_name": "Mantle of Majesty",
 			"source": "XGE",
 			"page": 14,
 			"className": "Bard",
@@ -2958,7 +3007,8 @@
 			]
 		},
 		{
-			"name": "無敵威嚴", "ENG_name": "Unbreakable Majesty",
+			"name": "無敵威嚴",
+			"ENG_name": "Unbreakable Majesty",
 			"source": "XGE",
 			"page": 14,
 			"className": "Bard",
@@ -2974,7 +3024,8 @@
 			]
 		},
 		{
-			"name": "劍舞學院", "ENG_name": "College of Swords",
+			"name": "劍舞學院",
+			"ENG_name": "College of Swords",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3001,7 +3052,8 @@
 			]
 		},
 		{
-			"name": "鋒刃劍舞", "ENG_name": "Blade Flourish",
+			"name": "鋒刃劍舞",
+			"ENG_name": "Blade Flourish",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3033,7 +3085,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3048,7 +3101,8 @@
 			]
 		},
 		{
-			"name": "戰鬥風格", "ENG_name": "Fighting Style",
+			"name": "戰鬥風格",
+			"ENG_name": "Fighting Style",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3076,7 +3130,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊", "ENG_name": "Extra Attack",
+			"name": "額外攻擊",
+			"ENG_name": "Extra Attack",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3090,7 +3145,8 @@
 			]
 		},
 		{
-			"name": "劍舞大師", "ENG_name": "Master's Flourish",
+			"name": "劍舞大師",
+			"ENG_name": "Master's Flourish",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3104,7 +3160,8 @@
 			]
 		},
 		{
-			"name": "低語學院", "ENG_name": "College of Whispers",
+			"name": "低語學院",
+			"ENG_name": "College of Whispers",
 			"source": "XGE",
 			"page": 16,
 			"className": "Bard",
@@ -3126,7 +3183,8 @@
 			]
 		},
 		{
-			"name": "精神之刃", "ENG_name": "Psychic Blades",
+			"name": "精神之刃",
+			"ENG_name": "Psychic Blades",
 			"source": "XGE",
 			"page": 16,
 			"className": "Bard",
@@ -3142,7 +3200,8 @@
 			]
 		},
 		{
-			"name": "駭人言詞", "ENG_name": "Words of Terror",
+			"name": "駭人言詞",
+			"ENG_name": "Words of Terror",
 			"source": "XGE",
 			"page": 16,
 			"className": "Bard",
@@ -3159,7 +3218,8 @@
 			]
 		},
 		{
-			"name": "低語斗篷", "ENG_name": "Mantle of Whispers",
+			"name": "低語斗篷",
+			"ENG_name": "Mantle of Whispers",
 			"source": "XGE",
 			"page": 16,
 			"className": "Bard",
@@ -3177,7 +3237,8 @@
 			]
 		},
 		{
-			"name": "陰影學識", "ENG_name": "Shadow Lore",
+			"name": "陰影學識",
+			"ENG_name": "Shadow Lore",
 			"source": "XGE",
 			"page": 16,
 			"className": "Bard",
@@ -3196,7 +3257,8 @@
 			]
 		},
 		{
-			"name": "防禦劍舞", "ENG_name": "Defensive Flourish",
+			"name": "防禦劍舞",
+			"ENG_name": "Defensive Flourish",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3209,7 +3271,8 @@
 			]
 		},
 		{
-			"name": "靈活劍舞", "ENG_name": "Mobile Flourish",
+			"name": "靈活劍舞",
+			"ENG_name": "Mobile Flourish",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",
@@ -3222,7 +3285,8 @@
 			]
 		},
 		{
-			"name": "順劈劍舞", "ENG_name": "Slashing Flourish",
+			"name": "順劈劍舞",
+			"ENG_name": "Slashing Flourish",
 			"source": "XGE",
 			"page": 15,
 			"className": "Bard",

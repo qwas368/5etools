@@ -1,7 +1,8 @@
 {
 	"condition": [
 		{
-			"name": "目盲", "ENG_name": "Blinded",
+			"name": "目盲",
+			"ENG_name": "Blinded",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -17,7 +18,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "魅惑", "ENG_name": "Charmed",
+			"name": "魅惑",
+			"ENG_name": "Charmed",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -33,7 +35,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "耳聾", "ENG_name": "Deafened",
+			"name": "耳聾",
+			"ENG_name": "Deafened",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -48,7 +51,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "力竭", "ENG_name": "Exhaustion",
+			"name": "力竭",
+			"ENG_name": "Exhaustion",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -98,7 +102,8 @@
 			]
 		},
 		{
-			"name": "恐懼", "ENG_name": "Frightened",
+			"name": "恐懼",
+			"ENG_name": "Frightened",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -114,7 +119,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "被擒", "ENG_name": "Grappled",
+			"name": "被擒",
+			"ENG_name": "Grappled",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -131,7 +137,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "無力", "ENG_name": "Incapacitated",
+			"name": "無力",
+			"ENG_name": "Incapacitated",
 			"source": "PHB",
 			"page": 290,
 			"srd": true,
@@ -145,7 +152,8 @@
 			]
 		},
 		{
-			"name": "隱形", "ENG_name": "Invisible",
+			"name": "隱形",
+			"ENG_name": "Invisible",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -161,7 +169,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "麻痺", "ENG_name": "Paralyzed",
+			"name": "麻痺",
+			"ENG_name": "Paralyzed",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -178,7 +187,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "石化", "ENG_name": "Petrified",
+			"name": "石化",
+			"ENG_name": "Petrified",
 			"source": "PHB",
 			"page": 291,
 			"srd": true,
@@ -198,7 +208,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "中毒", "ENG_name": "Poisoned",
+			"name": "中毒",
+			"ENG_name": "Poisoned",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -213,7 +224,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "伏地", "ENG_name": "Prone",
+			"name": "伏地",
+			"ENG_name": "Prone",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -230,7 +242,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "束縛", "ENG_name": "Restrained",
+			"name": "束縛",
+			"ENG_name": "Restrained",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -247,7 +260,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "震懾", "ENG_name": "Stunned",
+			"name": "震懾",
+			"ENG_name": "Stunned",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -264,7 +278,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "昏迷", "ENG_name": "Unconscious",
+			"name": "昏迷",
+			"ENG_name": "Unconscious",
 			"source": "PHB",
 			"page": 292,
 			"srd": true,
@@ -303,7 +318,8 @@
 			]
 		},
 		{
-			"name": "狂笑熱", "ENG_name": "Cackle Fever",
+			"name": "狂笑熱",
+			"ENG_name": "Cackle Fever",
 			"source": "DMG",
 			"page": 257,
 			"srd": true,
@@ -350,7 +366,8 @@
 			]
 		},
 		{
-			"name": "瘋猴熱", "ENG_name": "Mad Monkey Fever",
+			"name": "瘋猴熱",
+			"ENG_name": "Mad Monkey Fever",
 			"source": "ToA",
 			"page": 40,
 			"entries": [
@@ -377,7 +394,8 @@
 			]
 		},
 		{
-			"name": "下水道瘟疫", "ENG_name": "Sewer Plague",
+			"name": "下水道瘟疫",
+			"ENG_name": "Sewer Plague",
 			"source": "DMG",
 			"page": 257,
 			"srd": true,
@@ -390,7 +408,8 @@
 			]
 		},
 		{
-			"name": "震顫之疾", "ENG_name": "Shivering Sickness",
+			"name": "震顫之疾",
+			"ENG_name": "Shivering Sickness",
 			"source": "ToA",
 			"page": 40,
 			"entries": [
@@ -401,7 +420,8 @@
 			]
 		},
 		{
-			"name": "視力腐化", "ENG_name": "Sight Rot",
+			"name": "視力腐化",
+			"ENG_name": "Sight Rot",
 			"source": "DMG",
 			"page": 257,
 			"srd": true,

@@ -1594,7 +1594,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"Pharblex can breathe air and water."
 					]
@@ -1932,7 +1933,8 @@
 					]
 				},
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"Rezmir can breathe air and water."
 					]

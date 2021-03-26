@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "聖騎士", "ENG_name": "Paladin",
+			"name": "聖騎士",
+			"ENG_name": "Paladin",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1265,7 +1266,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "神聖感知", "ENG_name": "Divine Sense",
+			"name": "神聖感知",
+			"ENG_name": "Divine Sense",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1278,7 +1280,8 @@
 			]
 		},
 		{
-			"name": "聖療", "ENG_name": "Lay on Hands",
+			"name": "聖療",
+			"ENG_name": "Lay on Hands",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1293,7 +1296,8 @@
 			]
 		},
 		{
-			"name": "至聖斬", "ENG_name": "Divine Smite",
+			"name": "至聖斬",
+			"ENG_name": "Divine Smite",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1305,7 +1309,8 @@
 			]
 		},
 		{
-			"name": "戰鬥風格", "ENG_name": "Fighting Style",
+			"name": "戰鬥風格",
+			"ENG_name": "Fighting Style",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1396,7 +1401,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1472,7 +1478,8 @@
 			]
 		},
 		{
-			"name": "神性體魄", "ENG_name": "Divine Health",
+			"name": "神性體魄",
+			"ENG_name": "Divine Health",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1484,7 +1491,8 @@
 			]
 		},
 		{
-			"name": "神聖誓言", "ENG_name": "Sacred Oath",
+			"name": "神聖誓言",
+			"ENG_name": "Sacred Oath",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1495,7 +1503,8 @@
 				"當你升至3級時，你立下永遠做為聖騎士的神聖誓言。在此之前，你僅是處於準備階段，投身於這條道途，但尚未立誓遵從它。現在，你從可選的聖誓列表中選擇一個。",
 				"你的選擇將在3級、7級、15級、和20級時賦予你新的能力。這些能力包括了聖誓法術以及引導神力能力。",
 				{
-					"name": "聖誓法術", "ENG_name": "Oath Spells",
+					"name": "聖誓法術",
+					"ENG_name": "Oath Spells",
 					"type": "entries",
 					"entries": [
 						"每個聖誓都具有一張關聯法術列表。你將在升至各聖誓說明中指定的聖騎士等級時獲得這些法術。一旦你獲得聖誓法術，你將永遠視作已經準備了它，且它不會計入你每日可準備的法術數量中。",
@@ -1503,7 +1512,8 @@
 					]
 				},
 				{
-					"name": "引導神力", "ENG_name": "Channel Divinity",
+					"name": "引導神力",
+					"ENG_name": "Channel Divinity",
 					"type": "entries",
 					"entries": [
 						"你的聖誓允許你引導神聖能量以驅動魔法效果。每個由你的聖誓所提供的引導神力都會說明使用它的方式。",
@@ -1520,7 +1530,8 @@
 					"classFeature": "Channel Divinity: Harness Divine Power|Paladin||3|TCE"
 				},
 				{
-					"name": "背棄誓言", "ENG_name": "Breaking Your Oath",
+					"name": "背棄誓言",
+					"ENG_name": "Breaking Your Oath",
 					"type": "inset",
 					"entries": [
 						"聖騎士嘗試於使自己符合最高的道德標準，但即使是最具美德的聖騎士也會犯錯。有時是因為正確的道路太過高不可攀，有時當下的情境迫使你在兩害相權取其輕，而有時狂熱的激情則會讓聖騎士的違背了他或她的誓言。",
@@ -1531,7 +1542,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1571,7 +1583,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊", "ENG_name": "Extra Attack",
+			"name": "額外攻擊",
+			"ENG_name": "Extra Attack",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1583,7 +1596,8 @@
 			]
 		},
 		{
-			"name": "守護靈光", "ENG_name": "Aura of Protection",
+			"name": "守護靈光",
+			"ENG_name": "Aura of Protection",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1596,7 +1610,8 @@
 			]
 		},
 		{
-			"name": "神聖誓言能力", "ENG_name": "Sacred Oath feature",
+			"name": "神聖誓言能力",
+			"ENG_name": "Sacred Oath feature",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1608,7 +1623,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1635,7 +1651,8 @@
 			]
 		},
 		{
-			"name": "勇氣靈光", "ENG_name": "Aura of Courage",
+			"name": "勇氣靈光",
+			"ENG_name": "Aura of Courage",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1648,7 +1665,8 @@
 			]
 		},
 		{
-			"name": "強化至聖斬", "ENG_name": "Improved Divine Smite",
+			"name": "強化至聖斬",
+			"ENG_name": "Improved Divine Smite",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1660,7 +1678,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1687,7 +1706,8 @@
 			]
 		},
 		{
-			"name": "淨化之觸", "ENG_name": "Cleansing Touch",
+			"name": "淨化之觸",
+			"ENG_name": "Cleansing Touch",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1700,7 +1720,8 @@
 			]
 		},
 		{
-			"name": "神聖誓言能力", "ENG_name": "Sacred Oath feature",
+			"name": "神聖誓言能力",
+			"ENG_name": "Sacred Oath feature",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1712,7 +1733,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1739,7 +1761,8 @@
 			]
 		},
 		{
-			"name": "靈光強化", "ENG_name": "Aura improvements",
+			"name": "靈光強化",
+			"ENG_name": "Aura improvements",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1751,7 +1774,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1778,7 +1802,8 @@
 			]
 		},
 		{
-			"name": "神聖誓言能力", "ENG_name": "Sacred Oath feature",
+			"name": "神聖誓言能力",
+			"ENG_name": "Sacred Oath feature",
 			"source": "PHB",
 			"page": 82,
 			"srd": true,
@@ -1792,7 +1817,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "破誓者","ENG_name": "Oathbreaker",
+			"name": "破誓者",
+			"ENG_name": "Oathbreaker",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1818,7 +1844,8 @@
 			]
 		},
 		{
-			"name": "破誓者引導神力：控制亡靈","ENG_name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "破誓者引導神力：控制亡靈",
+			"ENG_name": "Oathbreaker Channel Divinity: Control Undead",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1832,7 +1859,8 @@
 			]
 		},
 		{
-			"name": "破誓者引導神力：恐怖顯現","ENG_name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "破誓者引導神力：恐怖顯現",
+			"ENG_name": "Oathbreaker Channel Divinity: Dreadful Aspect",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1846,7 +1874,8 @@
 			]
 		},
 		{
-			"name": "破誓者法術", "ENG_name": "Oathbreaker Spells",
+			"name": "破誓者法術",
+			"ENG_name": "Oathbreaker Spells",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1894,7 +1923,8 @@
 			]
 		},
 		{
-			"name": "憎恨靈光","ENG_name": "Aura of Hate",
+			"name": "憎恨靈光",
+			"ENG_name": "Aura of Hate",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1909,7 +1939,8 @@
 			]
 		},
 		{
-			"name": "超然抗性","ENG_name": "Supernatural Resistance",
+			"name": "超然抗性",
+			"ENG_name": "Supernatural Resistance",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1923,7 +1954,8 @@
 			]
 		},
 		{
-			"name": "恐懼之王","ENG_name": "Dread Lord",
+			"name": "恐懼之王",
+			"ENG_name": "Dread Lord",
 			"source": "DMG",
 			"page": 97,
 			"className": "Paladin",
@@ -1939,7 +1971,8 @@
 			]
 		},
 		{
-			"name": "遠古之誓", "ENG_name": "Oath of the Ancients",
+			"name": "遠古之誓",
+			"ENG_name": "Oath of the Ancients",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -1968,7 +2001,8 @@
 			]
 		},
 		{
-			"name": "引導神力：自然之怒", "ENG_name": "Channel Divinity: Nature's Wrath",
+			"name": "引導神力：自然之怒",
+			"ENG_name": "Channel Divinity: Nature's Wrath",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -1982,7 +2016,8 @@
 			]
 		},
 		{
-			"name": "引導神力：驅散無信者", "ENG_name": "Channel Divinity: Turn the Faithless",
+			"name": "引導神力：驅散無信者",
+			"ENG_name": "Channel Divinity: Turn the Faithless",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -1998,7 +2033,8 @@
 			]
 		},
 		{
-			"name": "聖誓法術", "ENG_name": "Oath Spells",
+			"name": "聖誓法術",
+			"ENG_name": "Oath Spells",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2046,7 +2082,8 @@
 			]
 		},
 		{
-			"name": "遠古之信條", "ENG_name": "Tenets of the Ancients",
+			"name": "遠古之信條",
+			"ENG_name": "Tenets of the Ancients",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2062,7 +2099,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "點燃光明", "ENG_name": "Kindle the Light",
+							"name": "點燃光明",
+							"ENG_name": "Kindle the Light",
 							"entries": [
 								"透過你慈憫、和善、和寬恕的行動，在世界中點燃希望之光，讓絕望在你面前退散。"
 							]
@@ -2074,7 +2112,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "守護明光", "ENG_name": "Shelter the Light",
+							"name": "守護明光",
+							"ENG_name": "Shelter the Light",
 							"entries": [
 								"世界上何處有善、美、愛、和歡笑，你就起身對抗那將吞噬它們的邪惡。何處有繁盛興旺的生命，你就起身對抗那將使之歸於貧瘠的力量。"
 							]
@@ -2086,7 +2125,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "維持己身光輝", "ENG_name": "Preserve Your Own Light",
+							"name": "維持己身光輝",
+							"ENG_name": "Preserve Your Own Light",
 							"entries": [
 								"欣喜於歌聲和歡笑，悅樂於美和藝術。若你讓自己心中的光明殞落，你就無法保護世上的光明。"
 							]
@@ -2098,7 +2138,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "成為真光", "ENG_name": "Be the Light",
+							"name": "成為真光",
+							"ENG_name": "Be the Light",
 							"entries": [
 								"成為絕望者眼中的輝煌明燈。在你的所有行為中都閃耀出樂觀和勇氣的光輝。"
 							]
@@ -2108,7 +2149,8 @@
 			]
 		},
 		{
-			"name": "防護靈光", "ENG_name": "Aura of Warding",
+			"name": "防護靈光",
+			"ENG_name": "Aura of Warding",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2123,7 +2165,8 @@
 			]
 		},
 		{
-			"name": "不朽衛士", "ENG_name": "Undying Sentinel",
+			"name": "不朽衛士",
+			"ENG_name": "Undying Sentinel",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2138,7 +2181,8 @@
 			]
 		},
 		{
-			"name": "遠古鬥士", "ENG_name": "Elder Champion",
+			"name": "遠古鬥士",
+			"ENG_name": "Elder Champion",
 			"source": "PHB",
 			"page": 86,
 			"className": "Paladin",
@@ -2162,7 +2206,8 @@
 			]
 		},
 		{
-			"name": "奉獻之誓", "ENG_name": "Oath of Devotion",
+			"name": "奉獻之誓",
+			"ENG_name": "Oath of Devotion",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2192,7 +2237,8 @@
 			]
 		},
 		{
-			"name": "引導神力：至聖武器", "ENG_name": "Channel Divinity: Sacred Weapon",
+			"name": "引導神力：至聖武器",
+			"ENG_name": "Channel Divinity: Sacred Weapon",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2208,7 +2254,8 @@
 			]
 		},
 		{
-			"name": "引導神力：驅散不潔者", "ENG_name": "Channel Divinity: Turn the Unholy",
+			"name": "引導神力：驅散不潔者",
+			"ENG_name": "Channel Divinity: Turn the Unholy",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2224,7 +2271,8 @@
 			]
 		},
 		{
-			"name": "聖誓法術", "ENG_name": "Oath Spells",
+			"name": "聖誓法術",
+			"ENG_name": "Oath Spells",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2273,7 +2321,8 @@
 			]
 		},
 		{
-			"name": "奉獻之信條", "ENG_name": "Tenets of Devotion",
+			"name": "奉獻之信條",
+			"ENG_name": "Tenets of Devotion",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2290,7 +2339,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "誠實", "ENG_name": "Honesty",
+							"name": "誠實",
+							"ENG_name": "Honesty",
 							"entries": [
 								"不要說謊或欺詐。你言出必行。"
 							]
@@ -2302,7 +2352,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "勇氣", "ENG_name": "Courage",
+							"name": "勇氣",
+							"ENG_name": "Courage",
 							"entries": [
 								"儘管謹慎是明智的，但絕不可畏懼行動。"
 							]
@@ -2314,7 +2365,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "憐憫", "ENG_name": "Compassion",
+							"name": "憐憫",
+							"ENG_name": "Compassion",
 							"entries": [
 								"援助他人，保護弱小，並懲罰恃強凌弱者。憐憫你的敵人，但要以智慧懲治他們。"
 							]
@@ -2326,7 +2378,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "榮譽", "ENG_name": "Honor",
+							"name": "榮譽",
+							"ENG_name": "Honor",
 							"entries": [
 								"以公平待人，讓你榮譽的行為成為他們的典範。盡力行善，避免造成不必要的傷害。"
 							]
@@ -2338,7 +2391,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "盡責", "ENG_name": "Duty",
+							"name": "盡責",
+							"ENG_name": "Duty",
 							"entries": [
 								"對你的行為和其後果負責，守護那些你負責照顧的人，並遵從你理應服從之人。"
 							]
@@ -2348,7 +2402,8 @@
 			]
 		},
 		{
-			"name": "奉獻靈光", "ENG_name": "Aura of Devotion",
+			"name": "奉獻靈光",
+			"ENG_name": "Aura of Devotion",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2364,7 +2419,8 @@
 			]
 		},
 		{
-			"name": "純淨之魂", "ENG_name": "Purity of Spirit",
+			"name": "純淨之魂",
+			"ENG_name": "Purity of Spirit",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2379,7 +2435,8 @@
 			]
 		},
 		{
-			"name": "神聖光輪", "ENG_name": "Holy Nimbus",
+			"name": "神聖光輪",
+			"ENG_name": "Holy Nimbus",
 			"source": "PHB",
 			"page": 85,
 			"srd": true,
@@ -2397,7 +2454,8 @@
 			]
 		},
 		{
-			"name": "復仇之誓", "ENG_name": "Oath of Vengeance",
+			"name": "復仇之誓",
+			"ENG_name": "Oath of Vengeance",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2426,7 +2484,8 @@
 			]
 		},
 		{
-			"name": "引導神力：誓絕仇敵", "ENG_name": "Channel Divinity: Abjure Enemy",
+			"name": "引導神力：誓絕仇敵",
+			"ENG_name": "Channel Divinity: Abjure Enemy",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2442,7 +2501,8 @@
 			]
 		},
 		{
-			"name": "引導神力：憎恨誓言", "ENG_name": "Channel Divinity: Vow of Enmity",
+			"name": "引導神力：憎恨誓言",
+			"ENG_name": "Channel Divinity: Vow of Enmity",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2456,7 +2516,8 @@
 			]
 		},
 		{
-			"name": "聖誓法術", "ENG_name": "Oath Spells",
+			"name": "聖誓法術",
+			"ENG_name": "Oath Spells",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2504,7 +2565,8 @@
 			]
 		},
 		{
-			"name": "復仇之信條", "ENG_name": "Tenets of Vengeance",
+			"name": "復仇之信條",
+			"ENG_name": "Tenets of Vengeance",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2520,7 +2582,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "追尋以迎戰大惡", "ENG_name": "Fight the Greater Evil",
+							"name": "追尋以迎戰大惡",
+							"ENG_name": "Fight the Greater Evil",
 							"entries": [
 								"是要追獵誓敵？抑或驅逐小惡？我選擇迎戰那更大的邪惡。"
 							]
@@ -2532,7 +2595,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "對惡徒不留慈悲", "ENG_name": "No Mercy for the Wicked",
+							"name": "對惡徒不留慈悲",
+							"ENG_name": "No Mercy for the Wicked",
 							"entries": [
 								"尋常敵人可能贏得我的慈悲，但我的誓敵無可憐憫。"
 							]
@@ -2544,7 +2608,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "為目的不擇手段", "ENG_name": "By Any Means Necessary",
+							"name": "為目的不擇手段",
+							"ENG_name": "By Any Means Necessary",
 							"entries": [
 								"我的擔憂疑慮永不會阻止我殲滅敵人。"
 							]
@@ -2556,7 +2621,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "為惡行盡力補償", "ENG_name": "Restitution",
+							"name": "為惡行盡力補償",
+							"ENG_name": "Restitution",
 							"entries": [
 								"若我的敵人在這世界上造成了破壞，那必是因我沒能成功阻止它。我必須幫助那些因其惡行而被傷害的人們。"
 							]
@@ -2566,7 +2632,8 @@
 			]
 		},
 		{
-			"name": "無盡復仇", "ENG_name": "Relentless Avenger",
+			"name": "無盡復仇",
+			"ENG_name": "Relentless Avenger",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2580,7 +2647,8 @@
 			]
 		},
 		{
-			"name": "報復之魂", "ENG_name": "Soul of Vengeance",
+			"name": "報復之魂",
+			"ENG_name": "Soul of Vengeance",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2594,7 +2662,8 @@
 			]
 		},
 		{
-			"name": "復仇天使", "ENG_name": "Avenging Angel",
+			"name": "復仇天使",
+			"ENG_name": "Avenging Angel",
 			"source": "PHB",
 			"page": 87,
 			"className": "Paladin",
@@ -2603,7 +2672,7 @@
 			"subclassSource": "PHB",
 			"level": 20,
 			"header": 2,
-			"entries":[
+			"entries": [
 				"在20級時，你可以變作天使般復仇者的型態。使用你的動作，你將經歷這個變化過程。在接下來1小時內，你將獲得下列好處：",
 				{
 					"type": "list",
@@ -2616,7 +2685,8 @@
 			]
 		},
 		{
-			"name": "王冠之誓", "ENG_name": "Oath of the Crown",
+			"name": "王冠之誓",
+			"ENG_name": "Oath of the Crown",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2645,7 +2715,8 @@
 			]
 		},
 		{
-			"name": "引導神力：捍衛挑戰", "ENG_name": "Channel Divinity: Champion Challenge",
+			"name": "引導神力：捍衛挑戰",
+			"ENG_name": "Channel Divinity: Champion Challenge",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2659,7 +2730,8 @@
 			]
 		},
 		{
-			"name": "引導神力：扭轉局勢", "ENG_name": "Channel Divinity: Turn the Tide",
+			"name": "引導神力：扭轉局勢",
+			"ENG_name": "Channel Divinity: Turn the Tide",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2673,7 +2745,8 @@
 			]
 		},
 		{
-			"name": "聖誓法術", "ENG_name": "Oath Spells",
+			"name": "聖誓法術",
+			"ENG_name": "Oath Spells",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2721,7 +2794,8 @@
 			]
 		},
 		{
-			"name": "王冠之信條", "ENG_name": "Tenets of the Crown",
+			"name": "王冠之信條",
+			"ENG_name": "Tenets of the Crown",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2730,14 +2804,15 @@
 			"subclassSource": "SCAG",
 			"level": 3,
 			"header": 1,
-			"entries":[
+			"entries": [
 				"王冠之誓的信條通常是由其宣誓效忠的君王所設立，但一般而言這些信條都會強調著下列幾項。",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "律法", "ENG_name": "Law",
+							"name": "律法",
+							"ENG_name": "Law",
 							"entries": [
 								"律法至上。它是文明的基石，且必須被敬重。"
 							]
@@ -2749,7 +2824,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "忠誠", "ENG_name": "Loyalty",
+							"name": "忠誠",
+							"ENG_name": "Loyalty",
 							"entries": [
 								"言出必行。失去了忠誠，誓言和律法將毫無意義。"
 							]
@@ -2761,7 +2837,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "勇氣", "ENG_name": "Courage",
+							"name": "勇氣",
+							"ENG_name": "Courage",
 							"entries": [
 								"無所畏懼。你必須自願為了秩序挺身而出，即使勝算渺茫。如果你不行動，又有誰會呢？"
 							]
@@ -2773,7 +2850,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "責任", "ENG_name": "Responsibility",
+							"name": "責任",
+							"ENG_name": "Responsibility",
 							"entries": [
 								"恪盡職守。你必須為你的行動承擔後果，且你有責任去實現你的使命和義務。"
 							]
@@ -2783,7 +2861,8 @@
 			]
 		},
 		{
-			"name": "神聖忠誠", "ENG_name": "Divine Allegiance",
+			"name": "神聖忠誠",
+			"ENG_name": "Divine Allegiance",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2797,7 +2876,8 @@
 			]
 		},
 		{
-			"name": "不屈之魂", "ENG_name": "Unyielding Spirit",
+			"name": "不屈之魂",
+			"ENG_name": "Unyielding Spirit",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2811,7 +2891,8 @@
 			]
 		},
 		{
-			"name": "崇高衛士", "ENG_name": "Exalted Champion",
+			"name": "崇高衛士",
+			"ENG_name": "Exalted Champion",
 			"source": "SCAG",
 			"page": 132,
 			"className": "Paladin",
@@ -2820,7 +2901,7 @@
 			"subclassSource": "SCAG",
 			"level": 20,
 			"header": 2,
-			"entries":[
+			"entries": [
 				"在20級時，你在戰場上的姿態對那些致力於你事業的人們而言是一種強大的鼓舞。你可以使用你的動作以獲得下列好處長達1小時：",
 				{
 					"type": "list",
@@ -4572,7 +4653,8 @@
 			]
 		},
 		{
-			"name": "征服之誓", "ENG_name": "Oath of Conquest",
+			"name": "征服之誓",
+			"ENG_name": "Oath of Conquest",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4602,7 +4684,8 @@
 			]
 		},
 		{
-			"name": "引導神力：征服威儀", "ENG_name": "Channel Divinity: Conquering Presence",
+			"name": "引導神力：征服威儀",
+			"ENG_name": "Channel Divinity: Conquering Presence",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4616,7 +4699,8 @@
 			]
 		},
 		{
-			"name": "引導神力：神導打擊", "ENG_name": "Channel Divinity: Guided Strike",
+			"name": "引導神力：神導打擊",
+			"ENG_name": "Channel Divinity: Guided Strike",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4630,7 +4714,8 @@
 			]
 		},
 		{
-			"name": "聖誓法術", "ENG_name": "Oath Spells",
+			"name": "聖誓法術",
+			"ENG_name": "Oath Spells",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4678,7 +4763,8 @@
 			]
 		},
 		{
-			"name": "征服之信條", "ENG_name": "Tenets of Conquest",
+			"name": "征服之信條",
+			"ENG_name": "Tenets of Conquest",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4694,21 +4780,24 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "熄滅希望之火", "ENG_name": "Douse the Flame of Hope",
+							"name": "熄滅希望之火",
+							"ENG_name": "Douse the Flame of Hope",
 							"entries": [
 								"僅僅在戰鬥中擊敗敵人是不夠的。你的壓倒性勝利必須顯著到足以永遠粉碎敵人的戰鬥意志。刀劍只能結束生命，恐懼卻能終結國家。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "以鐵腕統治", "ENG_name": "Rule with an Iron Fist",
+							"name": "以鐵腕統治",
+							"ENG_name": "Rule with an Iron Fist",
 							"entries": [
 								"一旦你完成征服，不要容忍任何異議。你的話語就是法律。那些遵循你的人將被優待，那些反抗你的人則會受到懲罰，以儆效尤。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "力量高於一切", "ENG_name": "Strength Above All",
+							"name": "力量高於一切",
+							"ENG_name": "Strength Above All",
 							"entries": [
 								"你將維持統治直到更強的勢力崛起。那時你必須變得更強大以迎接挑戰，否則就會自取滅亡。"
 							]
@@ -4718,7 +4807,8 @@
 			]
 		},
 		{
-			"name": "征服靈光", "ENG_name": "Aura of Conquest",
+			"name": "征服靈光",
+			"ENG_name": "Aura of Conquest",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4734,7 +4824,8 @@
 			]
 		},
 		{
-			"name": "輕蔑斥喝", "ENG_name": "Scornful Rebuke",
+			"name": "輕蔑斥喝",
+			"ENG_name": "Scornful Rebuke",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4748,7 +4839,8 @@
 			]
 		},
 		{
-			"name": "無敵征服者", "ENG_name": "Invincible Conqueror",
+			"name": "無敵征服者",
+			"ENG_name": "Invincible Conqueror",
 			"source": "XGE",
 			"page": 37,
 			"className": "Paladin",
@@ -4757,7 +4849,7 @@
 			"subclassSource": "XGE",
 			"level": 20,
 			"header": 2,
-			"entries":  [
+			"entries": [
 				"在20級時，你獲得駕馭卓越武藝的能力。以一個動作，你可以魔法性地變成征服的化身，在接下來1分鐘內獲得下列好處：",
 				{
 					"type": "list",
@@ -4771,7 +4863,8 @@
 			]
 		},
 		{
-			"name": "救贖之誓", "ENG_name": "Oath of Redemption",
+			"name": "救贖之誓",
+			"ENG_name": "Oath of Redemption",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4801,7 +4894,8 @@
 			]
 		},
 		{
-			"name": "引導神力：和平使者", "ENG_name": "Channel Divinity: Emissary of Peace",
+			"name": "引導神力：和平使者",
+			"ENG_name": "Channel Divinity: Emissary of Peace",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4815,7 +4909,8 @@
 			]
 		},
 		{
-			"name": "引導神力：斥喝暴力", "ENG_name": "Channel Divinity: Rebuke the Violent",
+			"name": "引導神力：斥喝暴力",
+			"ENG_name": "Channel Divinity: Rebuke the Violent",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4829,7 +4924,8 @@
 			]
 		},
 		{
-			"name": "聖誓法術", "ENG_name": "Oath Spells",
+			"name": "聖誓法術",
+			"ENG_name": "Oath Spells",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4877,7 +4973,8 @@
 			]
 		},
 		{
-			"name": "救贖之信條", "ENG_name": "Tenets of Redemption",
+			"name": "救贖之信條",
+			"ENG_name": "Tenets of Redemption",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4893,7 +4990,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "和平", "ENG_name": "Peace",
+							"name": "和平",
+							"ENG_name": "Peace",
 							"entries": [
 								"暴力是最後的手段。交流和理解才是實現長久和平的途徑。"
 							]
@@ -4905,7 +5003,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "無辜", "ENG_name": "Innocence",
+							"name": "無辜",
+							"ENG_name": "Innocence",
 							"entries": [
 								"所有人生來都是清白無罪的，而驅使他們走向邪惡的往往是他們周遭的環境或黑暗力量的影響。透過樹立正確的榜樣，並治癒這個殘缺世界的創傷，你可以令任何人走上正確的道路。"
 							]
@@ -4917,7 +5016,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "耐心", "ENG_name": "Patience",
+							"name": "耐心",
+							"ENG_name": "Patience",
 							"entries": [
 								"改變需要時間。那些犯下罪行的人必須被時刻提醒保持誠實與真誠。一旦你在生物心中種下正義的種子，你就必須日復一日地為其努力，以讓它得以開花結果。"
 							]
@@ -4929,7 +5029,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "睿智", "ENG_name": "Wisdom",
+							"name": "睿智",
+							"ENG_name": "Wisdom",
 							"entries": [
 								"你的心靈必須時刻保持清醒，理解你最終也許會被迫承認失敗。儘管所有生物都可以得到救贖，那有些人卻已在邪惡的路上行走的太遠，以至於你別無選擇，只能為了大義將其剿滅。任何這類行動都應當經過仔細權衡．並考慮清楚其後果，然而你一旦做出決定，就得堅持下去。"
 							]
@@ -4939,7 +5040,8 @@
 			]
 		},
 		{
-			"name": "護衛靈光", "ENG_name": "Aura of the Guardian",
+			"name": "護衛靈光",
+			"ENG_name": "Aura of the Guardian",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4954,7 +5056,8 @@
 			]
 		},
 		{
-			"name": "守護之魂", "ENG_name": "Protective Spirit",
+			"name": "守護之魂",
+			"ENG_name": "Protective Spirit",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4968,7 +5071,8 @@
 			]
 		},
 		{
-			"name": "救贖使者", "ENG_name": "Emissary of Redemption",
+			"name": "救贖使者",
+			"ENG_name": "Emissary of Redemption",
 			"source": "XGE",
 			"page": 38,
 			"className": "Paladin",
@@ -4977,7 +5081,7 @@
 			"subclassSource": "XGE",
 			"level": 20,
 			"header": 2,
-			"entries":[
+			"entries": [
 				"在20級時，你將成為和平的化身，並賦予你下列二個好處：",
 				{
 					"type": "list",

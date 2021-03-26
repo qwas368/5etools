@@ -367,7 +367,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "氣元素追隨者", "ENG_name": "Air Elemental Myrmidon",
+			"name": "氣元素追隨者",
+			"ENG_name": "Air Elemental Myrmidon",
 			"source": "MTF",
 			"page": 202,
 			"otherSources": [
@@ -449,7 +450,8 @@
 			"cr": "7",
 			"trait": [
 				{
-					"name": "魔法武器", "ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"ENG_name": "Magic Weapons",
 					"entries": [
 						"追隨者的武器攻擊視作魔法攻擊。"
 					]
@@ -463,13 +465,15 @@
 					]
 				},
 				{
-					"name": "連枷", "ENG_name": "Flail",
+					"name": "連枷",
+					"ENG_name": "Flail",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4}) 鈍擊傷害。"
 					]
 				},
 				{
-					"name": "閃電猛擊{@recharge}", "ENG_name": "Lightning Strike {@recharge}",
+					"name": "閃電猛擊{@recharge}",
+					"ENG_name": "Lightning Strike {@recharge}",
 					"entries": [
 						"追隨者進行一次連枷攻擊。若該攻擊命中，則它將額外造成 18 ({@damage 4d8})閃電傷害，且目標必須成功通過一次DC 14的體質豁免，否則將被{@condition 震懾}直到該追隨者的下個回合結束。"
 					]
@@ -7610,7 +7614,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "土元素追隨者", "ENG_name": "Earth Elemental Myrmidon",
+			"name": "土元素追隨者",
+			"ENG_name": "Earth Elemental Myrmidon",
 			"source": "MTF",
 			"page": 202,
 			"otherSources": [
@@ -7676,7 +7681,8 @@
 			"cr": "7",
 			"trait": [
 				{
-					"name": "魔法武器", "ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"ENG_name": "Magic Weapons",
 					"entries": [
 						"追隨者的武器攻擊視作魔法攻擊。"
 					]
@@ -7690,13 +7696,15 @@
 					]
 				},
 				{
-					"name": "巨鎚", "ENG_name": "Maul",
+					"name": "巨鎚",
+					"ENG_name": "Maul",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。 {@h}11 ({@damage 2d6 + 4}) 鈍擊傷害。"
 					]
 				},
 				{
-					"name": "雷霆猛擊{@recharge}", "ENG_name": "Thunderous Strike {@recharge}",
+					"name": "雷霆猛擊{@recharge}",
+					"ENG_name": "Thunderous Strike {@recharge}",
 					"entries": [
 						"追隨者進行一次巨鎚攻擊。若該攻擊命中，則它將額外造成 16 ({@damage 3d10})雷鳴傷害，且目標必須成功通過一次DC 14的力量豁免，否則將被擊倒{@condition 伏地}。"
 					]
@@ -8325,7 +8333,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "火元素追隨者", "ENG_name": "Fire Elemental Myrmidon",
+			"name": "火元素追隨者",
+			"ENG_name": "Fire Elemental Myrmidon",
 			"source": "MTF",
 			"page": 203,
 			"otherSources": [
@@ -8392,19 +8401,22 @@
 			"cr": "7",
 			"trait": [
 				{
-					"name": "照明", "ENG_name": "Illumination",
+					"name": "照明",
+					"ENG_name": "Illumination",
 					"entries": [
 						"追隨者會散發出20呎半徑的明亮光照和40呎的微光光照。"
 					]
 				},
 				{
-					"name": "魔法武器", "ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"ENG_name": "Magic Weapons",
 					"entries": [
 						"追隨者的武器攻擊視作魔法攻擊。"
 					]
 				},
 				{
-					"name": "水體敏感", "ENG_name": "Water Susceptibility",
+					"name": "水體敏感",
+					"ENG_name": "Water Susceptibility",
 					"entries": [
 						"追隨者每在水中移動5呎，它就會受到 2 ({@damage 1d4})寒冰傷害。"
 					]
@@ -8418,7 +8430,8 @@
 					]
 				},
 				{
-					"name": "烈焰猛擊{@recharge}", "ENG_name": "Fiery Strikes {@recharge}",
+					"name": "烈焰猛擊{@recharge}",
+					"ENG_name": "Fiery Strikes {@recharge}",
 					"entries": [
 						"追隨者使用多重攻擊。每次命中的攻擊都將額外造成 5 ({@damage 1d10})火焰傷害。"
 					]
@@ -20379,7 +20392,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "水元素追隨者", "ENG_name": "Water Elemental Myrmidon",
+			"name": "水元素追隨者",
+			"ENG_name": "Water Elemental Myrmidon",
 			"source": "MTF",
 			"page": 203,
 			"otherSources": [
@@ -20470,7 +20484,8 @@
 					]
 				},
 				{
-					"name": "寒凍猛擊{@recharge}", "ENG_name": "Freezing Strikes {@recharge}",
+					"name": "寒凍猛擊{@recharge}",
+					"ENG_name": "Freezing Strikes {@recharge}",
 					"entries": [
 						"追隨者使用多重攻擊。每次命中的攻擊都將額外造成 5 ({@damage 1d10})寒冰傷害，且目標的速度將被降低10呎，持續直到該追隨者的下個回合結束。"
 					]

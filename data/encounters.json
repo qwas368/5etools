@@ -1,7 +1,8 @@
 {
 	"encounter": [
 		{
-			"name": "極地", "ENG_name": "Arctic",
+			"name": "極地",
+			"ENG_name": "Arctic",
 			"source": "XGE",
 			"tables": [
 				{
@@ -551,7 +552,8 @@
 			"page": 92
 		},
 		{
-			"name": "海岸","ENG_name": "Coastal",
+			"name": "海岸",
+			"ENG_name": "Coastal",
 			"source": "XGE",
 			"tables": [
 				{
@@ -1156,7 +1158,8 @@
 			"page": 93
 		},
 		{
-			"name": "沙漠", "ENG_name": "Desert",
+			"name": "沙漠",
+			"ENG_name": "Desert",
 			"source": "XGE",
 			"tables": [
 				{
@@ -1981,7 +1984,8 @@
 			"page": 95
 		},
 		{
-			"name": "森林", "ENG_name": "Forest",
+			"name": "森林",
+			"ENG_name": "Forest",
 			"source": "XGE",
 			"tables": [
 				{
@@ -3036,7 +3040,8 @@
 			"page": 97
 		},
 		{
-			"name": "草地", "ENG_name": "Grassland",
+			"name": "草地",
+			"ENG_name": "Grassland",
 			"source": "XGE",
 			"tables": [
 				{
@@ -3641,7 +3646,8 @@
 			"page": 100
 		},
 		{
-			"name": "丘陵", "ENG_name": "Hill",
+			"name": "丘陵",
+			"ENG_name": "Hill",
 			"source": "XGE",
 			"tables": [
 				{
@@ -4471,7 +4477,8 @@
 			"page": 101
 		},
 		{
-			"name": "高山", "ENG_name": "Mountain",
+			"name": "高山",
+			"ENG_name": "Mountain",
 			"source": "XGE",
 			"tables": [
 				{
@@ -5131,7 +5138,8 @@
 			"page": 104
 		},
 		{
-			"name": "沼澤", "ENG_name": "Swamp",
+			"name": "沼澤",
+			"ENG_name": "Swamp",
 			"source": "XGE",
 			"tables": [
 				{
@@ -5664,7 +5672,8 @@
 			"page": 105
 		},
 		{
-			"name": "幽暗地域", "ENG_name": "Underdark",
+			"name": "幽暗地域",
+			"ENG_name": "Underdark",
 			"source": "XGE",
 			"tables": [
 				{
@@ -7024,7 +7033,8 @@
 			"page": 106
 		},
 		{
-			"name": "水下", "ENG_name": "Underwater",
+			"name": "水下",
+			"ENG_name": "Underwater",
 			"source": "XGE",
 			"tables": [
 				{
@@ -7337,7 +7347,8 @@
 			"page": 109
 		},
 		{
-			"name": "城鎮", "ENG_name": "Urban",
+			"name": "城鎮",
+			"ENG_name": "Urban",
 			"source": "XGE",
 			"tables": [
 				{

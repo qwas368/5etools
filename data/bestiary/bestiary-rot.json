@@ -646,7 +646,8 @@
 			"cr": "1",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The toad can breathe air or water."
 					]

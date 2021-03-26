@@ -1,7 +1,8 @@
 {
 	"variant": [
 		{
-			"name": "+1 彈藥", "ENG_name": "+1 Ammunition",
+			"name": "+1 彈藥",
+			"ENG_name": "+1 Ammunition",
 			"type": "GV",
 			"requires": [
 				{
@@ -29,7 +30,8 @@
 			}
 		},
 		{
-			"name": "+1 護甲", "ENG_name": "+1 Armor",
+			"name": "+1 護甲",
+			"ENG_name": "+1 Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -50,7 +52,8 @@
 			}
 		},
 		{
-			"name": "+1 盾牌 (*)", "ENG_name": "+1 Shield (*)",
+			"name": "+1 盾牌 (*)",
+			"ENG_name": "+1 Shield (*)",
 			"type": "GV",
 			"requires": [
 				{
@@ -75,7 +78,8 @@
 			}
 		},
 		{
-			"name": "+1 武器", "ENG_name": "+1 Weapon",
+			"name": "+1 武器",
+			"ENG_name": "+1 Weapon",
 			"type": "GV",
 			"requires": [
 				{
@@ -102,7 +106,8 @@
 			}
 		},
 		{
-			"name": "+1 武器 (無傷害)", "ENG_name": "+1 Weapon (no damage)",
+			"name": "+1 武器 (無傷害)",
+			"ENG_name": "+1 Weapon (no damage)",
 			"type": "GV",
 			"requires": [
 				{
@@ -122,7 +127,8 @@
 			}
 		},
 		{
-			"name": "+2 彈藥", "ENG_name": "+2 Ammunition",
+			"name": "+2 彈藥",
+			"ENG_name": "+2 Ammunition",
 			"type": "GV",
 			"requires": [
 				{
@@ -150,7 +156,8 @@
 			}
 		},
 		{
-			"name": "+2 護甲", "ENG_name": "+2 Armor",
+			"name": "+2 護甲",
+			"ENG_name": "+2 Armor",
 			"type": "GV",
 			"requires": [
 				{
@@ -171,7 +178,8 @@
 			}
 		},
 		{
-			"name": "+2 盾牌 (*)", "ENG_name": "+2 盾牌 (*)",
+			"name": "+2 盾牌 (*)",
+			"ENG_name": "+2 盾牌 (*)",
 			"type": "GV",
 			"requires": [
 				{
@@ -196,7 +204,8 @@
 			}
 		},
 		{
-			"name": "+2 武器", "ENG_name": "+2 Weapon",
+			"name": "+2 武器",
+			"ENG_name": "+2 Weapon",
 			"type": "GV",
 			"requires": [
 				{
@@ -223,7 +232,8 @@
 			}
 		},
 		{
-			"name": "+2 武器 (無傷害)", "ENG_name": "+2 Weapon (no damage)",
+			"name": "+2 武器 (無傷害)",
+			"ENG_name": "+2 Weapon (no damage)",
 			"type": "GV",
 			"requires": [
 				{
@@ -319,7 +329,8 @@
 			}
 		},
 		{
-			"name": "+3 武器", "ENG_name": "+3 Weapon",
+			"name": "+3 武器",
+			"ENG_name": "+3 Weapon",
 			"type": "GV",
 			"requires": [
 				{
@@ -346,7 +357,8 @@
 			}
 		},
 		{
-			"name": "+3 武器 (無傷害)", "ENG_name": "+3 Weapon (no damage)",
+			"name": "+3 武器 (無傷害)",
+			"ENG_name": "+3 Weapon (no damage)",
 			"type": "GV",
 			"requires": [
 				{
@@ -738,7 +750,8 @@
 			"ENG_name": "Armor of Thunder Resistance"
 		},
 		{
-			"name": "屠殺箭 (通用)", "ENG_name": "Arrow of Slaying (*)",
+			"name": "屠殺箭 (通用)",
+			"ENG_name": "Arrow of Slaying (*)",
 			"type": "GV",
 			"requires": [
 				{
@@ -1127,9 +1140,10 @@
 				"reqAttune": true,
 				"curse": true,
 				"entries": [
-					"Choose a magical bonus of +1 to +3. This sword gains that bonus to its attack and damage rolls. For each point of bonus you choose for the sword, you take a corresponding penalty (−1 to −3) to your death saving throws. You can change this magical bonus each day at dawn.",
+					"Choose a magical bonus of +1 to +3. This sword gains that bonus to its attack and damage rolls. For each point of bonus you choose for the sword, you take a corresponding penalty (\u22121 to \u22123) to your death saving throws. You can change this magical bonus each day at dawn.",
 					{
-						"name": "詛咒", "ENG_name": "Curse",
+						"name": "詛咒",
+						"ENG_name": "Curse",
 						"type": "entries",
 						"entries": [
 							"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with a {@spell remove curse} spell or similar magic, you are unwilling to part with the weapon."

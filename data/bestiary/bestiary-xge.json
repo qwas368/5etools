@@ -1,7 +1,8 @@
 {
 	"monster": [
 		{
-			"name": "微型僕役", "ENG_name": "Tiny Servant",
+			"name": "微型僕役",
+			"ENG_name": "Tiny Servant",
 			"source": "XGE",
 			"page": 169,
 			"size": "T",

@@ -1,7 +1,8 @@
 {
 	"spell": [
 		{
-			"name": "群聚魔寵", "ENG_name": "Flock of Familiars",
+			"name": "群聚魔寵",
+			"ENG_name": "Flock of Familiars",
 			"source": "LLK",
 			"page": 57,
 			"level": 2,
@@ -130,7 +131,8 @@
 			}
 		},
 		{
-			"name": "高德爾之塔", "ENG_name": "Galder's Tower",
+			"name": "高德爾之塔",
+			"ENG_name": "Galder's Tower",
 			"source": "LLK",
 			"page": 57,
 			"level": 3,

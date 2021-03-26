@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "牧師", "ENG_name": "Cleric",
+			"name": "牧師",
+			"ENG_name": "Cleric",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -1905,7 +1906,8 @@
 			]
 		},
 		{
-			"name": "神聖領域", "ENG_name": "Divine Domain",
+			"name": "神聖領域",
+			"ENG_name": "Divine Domain",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -1916,7 +1918,8 @@
 				"從可用領域列表中選擇一個你所信仰神祇的關聯領域。每個領域在它們的能力說明中被詳述，且各自提供了與其相關的範例神祇。你的選擇將在1級時賦予你領域法術以及其他能力。它也將在2級時賦予你另一種使用引導神力能力的方式，並在6級、8級、和17級時賦予你其他額外好處。",
 				{
 					"type": "entries",
-					"name": "領域法術", "ENG_name": "Domain Spells",
+					"name": "領域法術",
+					"ENG_name": "Domain Spells",
 					"entries": [
 						"每個領域都擁有一張法術列表\u2014亦即領域法術\u2014且你將在升至領域說明中指定的牧師等級時獲得這些法術。一旦你獲得領域法術，你將永遠視作已經準備了它，且它不會計入你每日可準備的法術數量中。",
 						"若你擁有一個不在牧師法術列表上的領域法術，則該法術對你而言仍然視作牧師法術。"
@@ -1925,7 +1928,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -1989,7 +1993,8 @@
 			]
 		},
 		{
-			"name": "引導神力(1/休息)", "ENG_name": "Channel Divinity (1/rest)",
+			"name": "引導神力(1/休息)",
+			"ENG_name": "Channel Divinity (1/rest)",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2034,7 +2039,8 @@
 			]
 		},
 		{
-			"name": "神聖領域能力", "ENG_name": "Divine Domain feature",
+			"name": "神聖領域能力",
+			"ENG_name": "Divine Domain feature",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2046,7 +2052,8 @@
 			]
 		},
 		{
-			"name": "驅散不死", "ENG_name": "Turn Undead",
+			"name": "驅散不死",
+			"ENG_name": "Turn Undead",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2060,7 +2067,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2100,7 +2108,8 @@
 			]
 		},
 		{
-			"name": "摧毀不死 (CR 1/2)", "ENG_name": "Destroy Undead",
+			"name": "摧毀不死 (CR 1/2)",
+			"ENG_name": "Destroy Undead",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2112,7 +2121,8 @@
 			]
 		},
 		{
-			"name": "引導神力(2/休息)", "ENG_name": "Channel Divinity (2/rest)",
+			"name": "引導神力(2/休息)",
+			"ENG_name": "Channel Divinity (2/rest)",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2124,7 +2134,8 @@
 			]
 		},
 		{
-			"name": "神聖領域能力", "ENG_name": "Divine Domain feature",
+			"name": "神聖領域能力",
+			"ENG_name": "Divine Domain feature",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2136,7 +2147,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2149,7 +2161,8 @@
 			]
 		},
 		{
-			"name": "摧毀不死 (CR 1)", "ENG_name": "Destroy Undead",
+			"name": "摧毀不死 (CR 1)",
+			"ENG_name": "Destroy Undead",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2161,7 +2174,8 @@
 			]
 		},
 		{
-			"name": "神聖領域能力", "ENG_name": "Divine Domain feature",
+			"name": "神聖領域能力",
+			"ENG_name": "Divine Domain feature",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2187,7 +2201,8 @@
 			]
 		},
 		{
-			"name": "神力干預", "ENG_name": "Divine Intervention",
+			"name": "神力干預",
+			"ENG_name": "Divine Intervention",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2201,7 +2216,8 @@
 			]
 		},
 		{
-			"name": "摧毀不死 (CR 2)", "ENG_name": "Destroy Undead (CR 2)",
+			"name": "摧毀不死 (CR 2)",
+			"ENG_name": "Destroy Undead (CR 2)",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2213,7 +2229,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2240,7 +2257,8 @@
 			]
 		},
 		{
-			"name": "摧毀不死 (CR 3)", "ENG_name": "Destroy Undead (CR 3)",
+			"name": "摧毀不死 (CR 3)",
+			"ENG_name": "Destroy Undead (CR 3)",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2252,7 +2270,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2279,7 +2298,8 @@
 			]
 		},
 		{
-			"name": "摧毀不死 (CR 4)", "ENG_name": "Destroy Undead (CR 4)",
+			"name": "摧毀不死 (CR 4)",
+			"ENG_name": "Destroy Undead (CR 4)",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2291,7 +2311,8 @@
 			]
 		},
 		{
-			"name": "神聖領域能力", "ENG_name": "Divine Domain feature",
+			"name": "神聖領域能力",
+			"ENG_name": "Divine Domain feature",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2303,7 +2324,8 @@
 			]
 		},
 		{
-			"name": "引導神力(3/休息)", "ENG_name": "Channel Divinity (3/rest)",
+			"name": "引導神力(3/休息)",
+			"ENG_name": "Channel Divinity (3/rest)",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2315,7 +2337,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2342,7 +2365,8 @@
 			]
 		},
 		{
-			"name": "神力干預強化", "ENG_name": "Divine Intervention Improvement",
+			"name": "神力干預強化",
+			"ENG_name": "Divine Intervention Improvement",
 			"source": "PHB",
 			"page": 36,
 			"srd": true,
@@ -2356,7 +2380,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "死亡領域", "ENG_name": "Death Domain",
+			"name": "死亡領域",
+			"ENG_name": "Death Domain",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2412,7 +2437,8 @@
 			]
 		},
 		{
-			"name": "額外熟練項","ENG_name": "Bonus Proficiency",
+			"name": "額外熟練項",
+			"ENG_name": "Bonus Proficiency",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2426,7 +2452,8 @@
 			]
 		},
 		{
-			"name": "收割者","ENG_name": "Reaper",
+			"name": "收割者",
+			"ENG_name": "Reaper",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2440,7 +2467,8 @@
 			]
 		},
 		{
-			"name": "引導神力:死亡之觸","ENG_name": "Channel Divinity: Touch of Death",
+			"name": "引導神力:死亡之觸",
+			"ENG_name": "Channel Divinity: Touch of Death",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2455,7 +2483,8 @@
 			]
 		},
 		{
-			"name": "命定毀傷","ENG_name": "Inescapable Destruction",
+			"name": "命定毀傷",
+			"ENG_name": "Inescapable Destruction",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2501,7 +2530,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊","ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2515,7 +2545,8 @@
 			]
 		},
 		{
-			"name": "精通收割者","ENG_name": "Improved Reaper",
+			"name": "精通收割者",
+			"ENG_name": "Improved Reaper",
 			"source": "DMG",
 			"page": 96,
 			"className": "Cleric",
@@ -2529,7 +2560,8 @@
 			]
 		},
 		{
-			"name": "知識領域", "ENG_name": "Knowledge Domain",
+			"name": "知識領域",
+			"ENG_name": "Knowledge Domain",
 			"source": "PHB",
 			"page": 59,
 			"className": "Cleric",
@@ -2581,7 +2613,8 @@
 			]
 		},
 		{
-			"name": "知識祝福", "ENG_name": "Blessings of Knowledge",
+			"name": "知識祝福",
+			"ENG_name": "Blessings of Knowledge",
 			"source": "PHB",
 			"page": 59,
 			"className": "Cleric",
@@ -2596,7 +2629,8 @@
 			]
 		},
 		{
-			"name": "引導神力：歲月知識", "ENG_name": "Channel Divinity: Knowledge of the Ages",
+			"name": "引導神力：歲月知識",
+			"ENG_name": "Channel Divinity: Knowledge of the Ages",
 			"source": "PHB",
 			"page": 59,
 			"className": "Cleric",
@@ -2610,7 +2644,8 @@
 			]
 		},
 		{
-			"name": "引導神力：閱讀思想", "ENG_name": "Channel Divinity: Read Thoughts",
+			"name": "引導神力：閱讀思想",
+			"ENG_name": "Channel Divinity: Read Thoughts",
 			"source": "PHB",
 			"page": 59,
 			"className": "Cleric",
@@ -2659,7 +2694,8 @@
 			]
 		},
 		{
-			"name": "強力施法", "ENG_name": "Potent Spellcasting",
+			"name": "強力施法",
+			"ENG_name": "Potent Spellcasting",
 			"source": "PHB",
 			"page": 59,
 			"className": "Cleric",
@@ -2673,7 +2709,8 @@
 			]
 		},
 		{
-			"name": "過去之景", "ENG_name": "Visions of the Past",
+			"name": "過去之景",
+			"ENG_name": "Visions of the Past",
 			"source": "PHB",
 			"page": 59,
 			"className": "Cleric",
@@ -2712,7 +2749,8 @@
 			]
 		},
 		{
-			"name": "生命領域", "ENG_name": "Life Domain",
+			"name": "生命領域",
+			"ENG_name": "Life Domain",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2769,7 +2807,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiency",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiency",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2784,7 +2823,8 @@
 			]
 		},
 		{
-			"name": "生命門徒", "ENG_name": "Disciple of Life",
+			"name": "生命門徒",
+			"ENG_name": "Disciple of Life",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2799,7 +2839,8 @@
 			]
 		},
 		{
-			"name": "引導神力：維繫生命", "ENG_name": "Channel Divinity: Preserve Life",
+			"name": "引導神力：維繫生命",
+			"ENG_name": "Channel Divinity: Preserve Life",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2815,7 +2856,8 @@
 			]
 		},
 		{
-			"name": "祝聖醫者", "ENG_name": "Blessed Healer",
+			"name": "祝聖醫者",
+			"ENG_name": "Blessed Healer",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2862,7 +2904,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2877,7 +2920,8 @@
 			]
 		},
 		{
-			"name": "極效治療", "ENG_name": "Supreme Healing",
+			"name": "極效治療",
+			"ENG_name": "Supreme Healing",
 			"source": "PHB",
 			"page": 60,
 			"srd": true,
@@ -2892,7 +2936,8 @@
 			]
 		},
 		{
-			"name": "光明領域", "ENG_name": "Light Domain",
+			"name": "光明領域",
+			"ENG_name": "Light Domain",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -2948,7 +2993,8 @@
 			]
 		},
 		{
-			"name": "額外戲法", "ENG_name": "Bonus Cantrip",
+			"name": "額外戲法",
+			"ENG_name": "Bonus Cantrip",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -2962,7 +3008,8 @@
 			]
 		},
 		{
-			"name": "閃耀防護", "ENG_name": "Warding Flare",
+			"name": "閃耀防護",
+			"ENG_name": "Warding Flare",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -2977,7 +3024,8 @@
 			]
 		},
 		{
-			"name": "引導神力：黎明曙光", "ENG_name": "Channel Divinity: Radiance of the Dawn",
+			"name": "引導神力：黎明曙光",
+			"ENG_name": "Channel Divinity: Radiance of the Dawn",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -2992,7 +3040,8 @@
 			]
 		},
 		{
-			"name": "強化閃耀", "ENG_name": "Improved Flare",
+			"name": "強化閃耀",
+			"ENG_name": "Improved Flare",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -3038,7 +3087,8 @@
 			]
 		},
 		{
-			"name": "強力施法", "ENG_name": "Potent Spellcasting",
+			"name": "強力施法",
+			"ENG_name": "Potent Spellcasting",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -3052,7 +3102,8 @@
 			]
 		},
 		{
-			"name": "日冕光輝", "ENG_name": "Corona of Light",
+			"name": "日冕光輝",
+			"ENG_name": "Corona of Light",
 			"source": "PHB",
 			"page": 60,
 			"className": "Cleric",
@@ -3066,7 +3117,8 @@
 			]
 		},
 		{
-			"name": "自然領域", "ENG_name": "Nature Domain",
+			"name": "自然領域",
+			"ENG_name": "Nature Domain",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3122,7 +3174,8 @@
 			]
 		},
 		{
-			"name": "自然侍祭", "ENG_name": "Acolyte of Nature",
+			"name": "自然侍祭",
+			"ENG_name": "Acolyte of Nature",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3136,7 +3189,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiency",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiency",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3150,7 +3204,8 @@
 			]
 		},
 		{
-			"name": "引導神力：魅惑動植物", "ENG_name": "Channel Divinity: Charm Animals and Plants",
+			"name": "引導神力：魅惑動植物",
+			"ENG_name": "Channel Divinity: Charm Animals and Plants",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3165,7 +3220,8 @@
 			]
 		},
 		{
-			"name": "抑制元素", "ENG_name": "Dampen Elements",
+			"name": "抑制元素",
+			"ENG_name": "Dampen Elements",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3211,7 +3267,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3225,7 +3282,8 @@
 			]
 		},
 		{
-			"name": "自然之主", "ENG_name": "Master of Nature",
+			"name": "自然之主",
+			"ENG_name": "Master of Nature",
 			"source": "PHB",
 			"page": 61,
 			"className": "Cleric",
@@ -3239,7 +3297,8 @@
 			]
 		},
 		{
-			"name": "暴風領域", "ENG_name": "Tempest Domain",
+			"name": "暴風領域",
+			"ENG_name": "Tempest Domain",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3295,7 +3354,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiency",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiency",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3309,7 +3369,8 @@
 			]
 		},
 		{
-			"name": "風暴狂怒", "ENG_name": "Wrath of the Storm",
+			"name": "風暴狂怒",
+			"ENG_name": "Wrath of the Storm",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3324,7 +3385,8 @@
 			]
 		},
 		{
-			"name": "引導神力：毀滅狂怒", "ENG_name": "Channel Divinity: Destructive Wrath",
+			"name": "引導神力：毀滅狂怒",
+			"ENG_name": "Channel Divinity: Destructive Wrath",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3339,7 +3401,8 @@
 			]
 		},
 		{
-			"name": "雷電猛擊", "ENG_name": "Thunderbolt Strike",
+			"name": "雷電猛擊",
+			"ENG_name": "Thunderbolt Strike",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3385,7 +3448,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3399,7 +3463,8 @@
 			]
 		},
 		{
-			"name": "風暴之子", "ENG_name": "Stormborn",
+			"name": "風暴之子",
+			"ENG_name": "Stormborn",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3413,7 +3478,8 @@
 			]
 		},
 		{
-			"name": "詭術領域", "ENG_name": "Trickery Domain",
+			"name": "詭術領域",
+			"ENG_name": "Trickery Domain",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3465,7 +3531,8 @@
 			]
 		},
 		{
-			"name": "詭術祝福", "ENG_name": "Blessing of the Trickster",
+			"name": "詭術祝福",
+			"ENG_name": "Blessing of the Trickster",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3496,7 +3563,8 @@
 			]
 		},
 		{
-			"name": "引導神力：陰影斗篷", "ENG_name": "Channel Divinity: Cloak of Shadows",
+			"name": "引導神力：陰影斗篷",
+			"ENG_name": "Channel Divinity: Cloak of Shadows",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3543,7 +3611,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3557,7 +3626,8 @@
 			]
 		},
 		{
-			"name": "強化假體", "ENG_name": "Improved Duplicity",
+			"name": "強化假體",
+			"ENG_name": "Improved Duplicity",
 			"source": "PHB",
 			"page": 62,
 			"className": "Cleric",
@@ -3571,7 +3641,8 @@
 			]
 		},
 		{
-			"name": "戰爭領域", "ENG_name": "War Domain",
+			"name": "戰爭領域",
+			"ENG_name": "War Domain",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3627,7 +3698,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3641,7 +3713,8 @@
 			]
 		},
 		{
-			"name": "戰爭祭司", "ENG_name": "War Priest",
+			"name": "戰爭祭司",
+			"ENG_name": "War Priest",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3655,7 +3728,8 @@
 			]
 		},
 		{
-			"name": "引導神力：神導打擊", "ENG_name": "Channel Divinity: Guided Strike",
+			"name": "引導神力：神導打擊",
+			"ENG_name": "Channel Divinity: Guided Strike",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3669,7 +3743,8 @@
 			]
 		},
 		{
-			"name": "引導神力：戰神祝福", "ENG_name": "Channel Divinity: War God's Blessing",
+			"name": "引導神力：戰神祝福",
+			"ENG_name": "Channel Divinity: War God's Blessing",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3715,7 +3790,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3729,7 +3805,8 @@
 			]
 		},
 		{
-			"name": "戰鬥化身", "ENG_name": "Avatar of Battle",
+			"name": "戰鬥化身",
+			"ENG_name": "Avatar of Battle",
 			"source": "PHB",
 			"page": 63,
 			"className": "Cleric",
@@ -3768,8 +3845,8 @@
 					],
 					"rows": [
 						[
-"1st",
-"{@spell 災禍術}, {@spell 易容術}"
+							"1st",
+							"{@spell 災禍術}, {@spell 易容術}"
 						],
 						[
 							"3rd",
@@ -3901,7 +3978,8 @@
 			]
 		},
 		{
-			"name": "知識領域(PSA)", "ENG_name": "Knowledge Domain (PSA)",
+			"name": "知識領域(PSA)",
+			"ENG_name": "Knowledge Domain (PSA)",
 			"source": "PSA",
 			"page": 25,
 			"className": "Cleric",
@@ -3916,7 +3994,8 @@
 			]
 		},
 		{
-			"name": "子職業能力", "ENG_name": "Subclass Feature",
+			"name": "子職業能力",
+			"ENG_name": "Subclass Feature",
 			"source": "PSA",
 			"page": 25,
 			"className": "Cleric",
@@ -3930,7 +4009,8 @@
 			]
 		},
 		{
-			"name": "子職業能力", "ENG_name": "Subclass Feature",
+			"name": "子職業能力",
+			"ENG_name": "Subclass Feature",
 			"source": "PSA",
 			"page": 25,
 			"className": "Cleric",
@@ -3944,7 +4024,8 @@
 			]
 		},
 		{
-			"name": "子職業能力", "ENG_name": "Subclass Feature",
+			"name": "子職業能力",
+			"ENG_name": "Subclass Feature",
 			"source": "PSA",
 			"page": 25,
 			"className": "Cleric",
@@ -3958,7 +4039,8 @@
 			]
 		},
 		{
-			"name": "子職業能力", "ENG_name": "Subclass Feature",
+			"name": "子職業能力",
+			"ENG_name": "Subclass Feature",
 			"source": "PSA",
 			"page": 25,
 			"className": "Cleric",
@@ -4336,7 +4418,7 @@
 					"caption": "Zeal Domain Spells",
 					"colLabels": [
 						"牧師等級",
-											"法術"
+						"法術"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -4344,8 +4426,8 @@
 					],
 					"rows": [
 						[
-"1st",
-"{@spell 熾炎斬}, {@spell 雷霆斬}"
+							"1st",
+							"{@spell 熾炎斬}, {@spell 雷霆斬}"
 						],
 						[
 							"3rd",
@@ -4496,7 +4578,8 @@
 			]
 		},
 		{
-			"name": "奧秘領域", "ENG_name": "Arcana Domain",
+			"name": "奧秘領域",
+			"ENG_name": "Arcana Domain",
 			"source": "SCAG",
 			"page": 125,
 			"className": "Cleric",
@@ -4549,7 +4632,8 @@
 			]
 		},
 		{
-			"name": "奧法學徒", "ENG_name": "Arcane Initiate",
+			"name": "奧法學徒",
+			"ENG_name": "Arcane Initiate",
 			"source": "SCAG",
 			"page": 125,
 			"className": "Cleric",
@@ -4563,7 +4647,8 @@
 			]
 		},
 		{
-			"name": "引導神力：奧秘阻絕", "ENG_name": "Channel Divinity: Arcane Abjuration",
+			"name": "引導神力：奧秘阻絕",
+			"ENG_name": "Channel Divinity: Arcane Abjuration",
 			"source": "SCAG",
 			"page": 125,
 			"className": "Cleric",
@@ -4614,7 +4699,8 @@
 			]
 		},
 		{
-			"name": "法術破壞者", "ENG_name": "Spell Breaker",
+			"name": "法術破壞者",
+			"ENG_name": "Spell Breaker",
 			"source": "SCAG",
 			"page": 125,
 			"className": "Cleric",
@@ -4660,7 +4746,8 @@
 			]
 		},
 		{
-			"name": "強力施法", "ENG_name": "Potent Spellcasting",
+			"name": "強力施法",
+			"ENG_name": "Potent Spellcasting",
 			"source": "SCAG",
 			"page": 125,
 			"className": "Cleric",
@@ -4674,7 +4761,8 @@
 			]
 		},
 		{
-			"name": "奧術宗師", "ENG_name": "Arcane Mastery",
+			"name": "奧術宗師",
+			"ENG_name": "Arcane Mastery",
 			"source": "SCAG",
 			"page": 125,
 			"className": "Cleric",
@@ -4688,7 +4776,8 @@
 			]
 		},
 		{
-			"name": "秩序領域", "ENG_name": "Order Domain",
+			"name": "秩序領域",
+			"ENG_name": "Order Domain",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -4752,7 +4841,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -4772,7 +4862,8 @@
 			]
 		},
 		{
-			"name": "權威之音", "ENG_name": "Voice of Authority",
+			"name": "權威之音",
+			"ENG_name": "Voice of Authority",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -4793,7 +4884,8 @@
 			]
 		},
 		{
-			"name": "引導神力：秩序之令", "ENG_name": "Channel Divinity: Order's Demand",
+			"name": "引導神力：秩序之令",
+			"ENG_name": "Channel Divinity: Order's Demand",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -4814,7 +4906,8 @@
 			]
 		},
 		{
-			"name": "律法化身", "ENG_name": "Embodiment of the Law",
+			"name": "律法化身",
+			"ENG_name": "Embodiment of the Law",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -4868,7 +4961,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -4888,7 +4982,8 @@
 			]
 		},
 		{
-			"name": "秩序之怒", "ENG_name": "Order's Wrath",
+			"name": "秩序之怒",
+			"ENG_name": "Order's Wrath",
 			"source": "TCE",
 			"page": 31,
 			"otherSources": [
@@ -6967,7 +7062,8 @@
 			]
 		},
 		{
-			"name": "鍛造領域", "ENG_name": "Forge Domain",
+			"name": "鍛造領域",
+			"ENG_name": "Forge Domain",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7023,7 +7119,8 @@
 			]
 		},
 		{
-			"name": "鍛造祝福", "ENG_name": "Blessing of the Forge",
+			"name": "鍛造祝福",
+			"ENG_name": "Blessing of the Forge",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7038,7 +7135,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiency",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiency",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7052,7 +7150,8 @@
 			]
 		},
 		{
-			"name": "引導神力：工匠祝福", "ENG_name": "Channel Divinity: Artisan's Blessing",
+			"name": "引導神力：工匠祝福",
+			"ENG_name": "Channel Divinity: Artisan's Blessing",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7068,7 +7167,8 @@
 			]
 		},
 		{
-			"name": "鍛造之魂", "ENG_name": "Soul of the Forge",
+			"name": "鍛造之魂",
+			"ENG_name": "Soul of the Forge",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7121,7 +7221,8 @@
 			]
 		},
 		{
-			"name": "神聖打擊", "ENG_name": "Divine Strike",
+			"name": "神聖打擊",
+			"ENG_name": "Divine Strike",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7135,7 +7236,8 @@
 			]
 		},
 		{
-			"name": "火與鋼的聖徒", "ENG_name": "Saint of Forge and Fire",
+			"name": "火與鋼的聖徒",
+			"ENG_name": "Saint of Forge and Fire",
 			"source": "XGE",
 			"page": 18,
 			"className": "Cleric",
@@ -7156,7 +7258,8 @@
 			]
 		},
 		{
-			"name": "墳墓領域", "ENG_name": "Grave Domain",
+			"name": "墳墓領域",
+			"ENG_name": "Grave Domain",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",
@@ -7211,7 +7314,8 @@
 			]
 		},
 		{
-			"name": "凡命循環", "ENG_name": "Circle of Mortality",
+			"name": "凡命循環",
+			"ENG_name": "Circle of Mortality",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",
@@ -7226,7 +7330,8 @@
 			]
 		},
 		{
-			"name": "墳墓之眼", "ENG_name": "Eyes of the Grave",
+			"name": "墳墓之眼",
+			"ENG_name": "Eyes of the Grave",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",
@@ -7241,7 +7346,8 @@
 			]
 		},
 		{
-			"name": "引導神力：歸墓之途", "ENG_name": "Channel Divinity: Path to the Grave",
+			"name": "引導神力：歸墓之途",
+			"ENG_name": "Channel Divinity: Path to the Grave",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",
@@ -7256,7 +7362,8 @@
 			]
 		},
 		{
-			"name": "死之門的哨衛", "ENG_name": "Sentinel at Death's Door",
+			"name": "死之門的哨衛",
+			"ENG_name": "Sentinel at Death's Door",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",
@@ -7303,7 +7410,8 @@
 			]
 		},
 		{
-			"name": "強力施法", "ENG_name": "Potent Spellcasting",
+			"name": "強力施法",
+			"ENG_name": "Potent Spellcasting",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",
@@ -7317,7 +7425,8 @@
 			]
 		},
 		{
-			"name": "守魂者", "ENG_name": "Keeper of Souls",
+			"name": "守魂者",
+			"ENG_name": "Keeper of Souls",
 			"source": "XGE",
 			"page": 19,
 			"className": "Cleric",

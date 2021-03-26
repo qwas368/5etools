@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "武僧", "ENG_name": "Monk",
+			"name": "武僧",
+			"ENG_name": "Monk",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -975,7 +976,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "武藝", "ENG_name": "Martial Arts",
+			"name": "武藝",
+			"ENG_name": "Martial Arts",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1019,7 +1021,8 @@
 			]
 		},
 		{
-			"name": "無甲防禦", "ENG_name": "Unarmored Defense",
+			"name": "無甲防禦",
+			"ENG_name": "Unarmored Defense",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1053,7 +1056,8 @@
 			]
 		},
 		{
-			"name": "氣", "ENG_name": "Ki",
+			"name": "氣",
+			"ENG_name": "Ki",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1074,21 +1078,24 @@
 				},
 				{
 					"type": "entries",
-					"name": "疾風連擊", "ENG_name": "Flurry of Blows",
+					"name": "疾風連擊",
+					"ENG_name": "Flurry of Blows",
 					"entries": [
 						"緊接在你於你的回合採取{@action 攻擊}動作之後，你可以消耗1點氣以使用一個附贈動作進行二次徒手打擊。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "堅強防禦", "ENG_name": "Patient Defense",
+					"name": "堅強防禦",
+					"ENG_name": "Patient Defense",
 					"entries": [
 						"你可以在你的回合消耗1點氣以使用一個附贈動作採取{@action 閃避}動作。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "飛簷走壁", "ENG_name": "Step of the Wind",
+					"name": "飛簷走壁",
+					"ENG_name": "Step of the Wind",
 					"entries": [
 						"你可以在你的回合消耗1點氣以使用一個附贈動作採取{@action 撤離}或{@action 疾走}動作，且你的跳躍距離在該回合變為二倍。"
 					]
@@ -1136,7 +1143,8 @@
 			]
 		},
 		{
-			"name": "無甲移動", "ENG_name": "Unarmored Movement",
+			"name": "無甲移動",
+			"ENG_name": "Unarmored Movement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1149,7 +1157,8 @@
 			]
 		},
 		{
-			"name": "撥擋飛彈", "ENG_name": "Deflect Missiles",
+			"name": "撥擋飛彈",
+			"ENG_name": "Deflect Missiles",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1175,7 +1184,8 @@
 			]
 		},
 		{
-			"name": "宗派傳承", "ENG_name": "Monastic Tradition",
+			"name": "宗派傳承",
+			"ENG_name": "Monastic Tradition",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1187,7 +1197,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1227,7 +1238,8 @@
 			]
 		},
 		{
-			"name": "輕身墜", "ENG_name": "Slow Fall",
+			"name": "輕身墜",
+			"ENG_name": "Slow Fall",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1239,7 +1251,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊", "ENG_name": "Extra Attack",
+			"name": "額外攻擊",
+			"ENG_name": "Extra Attack",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1264,7 +1277,8 @@
 			]
 		},
 		{
-			"name": "震懾拳", "ENG_name": "Stunning Strike",
+			"name": "震懾拳",
+			"ENG_name": "Stunning Strike",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1276,7 +1290,8 @@
 			]
 		},
 		{
-			"name": "真氣駐拳", "ENG_name": "Ki-Empowered Strikes",
+			"name": "真氣駐拳",
+			"ENG_name": "Ki-Empowered Strikes",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1288,7 +1303,8 @@
 			]
 		},
 		{
-			"name": "宗派傳承能力", "ENG_name": "Monastic Tradition feature",
+			"name": "宗派傳承能力",
+			"ENG_name": "Monastic Tradition feature",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1300,7 +1316,8 @@
 			]
 		},
 		{
-			"name": "反射閃避", "ENG_name": "Evasion",
+			"name": "反射閃避",
+			"ENG_name": "Evasion",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1312,7 +1329,8 @@
 			]
 		},
 		{
-			"name": "心頭滅卻", "ENG_name": "Stillness of Mind",
+			"name": "心頭滅卻",
+			"ENG_name": "Stillness of Mind",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1324,7 +1342,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1351,7 +1370,8 @@
 			]
 		},
 		{
-			"name": "無甲移動強化", "ENG_name": "Unarmored Movement improvement",
+			"name": "無甲移動強化",
+			"ENG_name": "Unarmored Movement improvement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1363,7 +1383,8 @@
 			]
 		},
 		{
-			"name": "百病不侵", "ENG_name": "Purity of Body",
+			"name": "百病不侵",
+			"ENG_name": "Purity of Body",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1375,7 +1396,8 @@
 			]
 		},
 		{
-			"name": "宗派傳承能力", "ENG_name": "Monastic Tradition feature",
+			"name": "宗派傳承能力",
+			"ENG_name": "Monastic Tradition feature",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1387,7 +1409,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1414,7 +1437,8 @@
 			]
 		},
 		{
-			"name": "天語通", "ENG_name": "Tongue of the Sun and Moon",
+			"name": "天語通",
+			"ENG_name": "Tongue of the Sun and Moon",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1426,7 +1450,8 @@
 			]
 		},
 		{
-			"name": "金剛魂", "ENG_name": "Diamond Soul",
+			"name": "金剛魂",
+			"ENG_name": "Diamond Soul",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1439,7 +1464,8 @@
 			]
 		},
 		{
-			"name": "不朽身軀", "ENG_name": "Timeless Body",
+			"name": "不朽身軀",
+			"ENG_name": "Timeless Body",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1451,7 +1477,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1478,7 +1505,8 @@
 			]
 		},
 		{
-			"name": "宗派傳承能力", "ENG_name": "Monastic Tradition feature",
+			"name": "宗派傳承能力",
+			"ENG_name": "Monastic Tradition feature",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1490,7 +1518,8 @@
 			]
 		},
 		{
-			"name": "空靈體", "ENG_name": "Empty Body",
+			"name": "空靈體",
+			"ENG_name": "Empty Body",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1503,7 +1532,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1530,7 +1560,8 @@
 			]
 		},
 		{
-			"name": "超凡魂", "ENG_name": "Perfect Soul",
+			"name": "超凡魂",
+			"ENG_name": "Perfect Soul",
 			"source": "PHB",
 			"page": 76,
 			"srd": true,
@@ -1545,7 +1576,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "四象宗", "ENG_name": "Way of the Four Elements",
+			"name": "四象宗",
+			"ENG_name": "Way of the Four Elements",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1567,7 +1599,8 @@
 			]
 		},
 		{
-			"name": "元素門徒", "ENG_name": "Disciple of the Elements",
+			"name": "元素門徒",
+			"ENG_name": "Disciple of the Elements",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1622,7 +1655,8 @@
 			]
 		},
 		{
-			"name": "四象法門", "ENG_name": "Elemental Disciplines",
+			"name": "四象法門",
+			"ENG_name": "Elemental Disciplines",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1722,7 +1756,8 @@
 			]
 		},
 		{
-			"name": "額外四象法門", "ENG_name": "Extra Elemental Discipline",
+			"name": "額外四象法門",
+			"ENG_name": "Extra Elemental Discipline",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1737,7 +1772,8 @@
 			]
 		},
 		{
-			"name": "額外四象法門", "ENG_name": "Extra Elemental Discipline",
+			"name": "額外四象法門",
+			"ENG_name": "Extra Elemental Discipline",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1752,7 +1788,8 @@
 			]
 		},
 		{
-			"name": "額外四象法門", "ENG_name": "Extra Elemental Discipline",
+			"name": "額外四象法門",
+			"ENG_name": "Extra Elemental Discipline",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1767,7 +1804,8 @@
 			]
 		},
 		{
-			"name": "散打宗", "ENG_name": "Way of the Open Hand",
+			"name": "散打宗",
+			"ENG_name": "Way of the Open Hand",
 			"source": "PHB",
 			"page": 79,
 			"srd": true,
@@ -1776,7 +1814,7 @@
 			"subclassShortName": "Open Hand",
 			"subclassSource": "PHB",
 			"level": 3,
-			"entries":  [
+			"entries": [
 				"散打宗的武僧都是武術格鬥的終極大師，無論是持武還是空手。他們學習推撞與絆摔對手的技巧、操作氣以治療他們身體所受的傷害、並施展能夠保護他們不受傷害的深度冥想。",
 				{
 					"type": "refSubclassFeature",
@@ -1785,7 +1823,8 @@
 			]
 		},
 		{
-			"name": "散打技巧", "ENG_name": "Open Hand Technique",
+			"name": "散打技巧",
+			"ENG_name": "Open Hand Technique",
 			"source": "PHB",
 			"page": 79,
 			"srd": true,
@@ -1808,7 +1847,8 @@
 			]
 		},
 		{
-			"name": "混元體", "ENG_name": "Wholeness of Body",
+			"name": "混元體",
+			"ENG_name": "Wholeness of Body",
 			"source": "PHB",
 			"page": 79,
 			"srd": true,
@@ -1823,7 +1863,8 @@
 			]
 		},
 		{
-			"name": "凝神境", "ENG_name": "Tranquility",
+			"name": "凝神境",
+			"ENG_name": "Tranquility",
 			"source": "PHB",
 			"page": 79,
 			"srd": true,
@@ -1840,7 +1881,8 @@
 			]
 		},
 		{
-			"name": "震顫掌", "ENG_name": "Quivering Palm",
+			"name": "震顫掌",
+			"ENG_name": "Quivering Palm",
 			"source": "PHB",
 			"page": 79,
 			"srd": true,
@@ -1856,7 +1898,8 @@
 			]
 		},
 		{
-			"name": "暗影宗", "ENG_name": "Way of Shadow",
+			"name": "暗影宗",
+			"ENG_name": "Way of Shadow",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1873,7 +1916,8 @@
 			]
 		},
 		{
-			"name": "影之技藝", "ENG_name": "Shadow Arts",
+			"name": "影之技藝",
+			"ENG_name": "Shadow Arts",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1887,7 +1931,8 @@
 			]
 		},
 		{
-			"name": "暗影步", "ENG_name": "Shadow Step",
+			"name": "暗影步",
+			"ENG_name": "Shadow Step",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1901,7 +1946,8 @@
 			]
 		},
 		{
-			"name": "暗影斗篷", "ENG_name": "Cloak of Shadows",
+			"name": "暗影斗篷",
+			"ENG_name": "Cloak of Shadows",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1915,7 +1961,8 @@
 			]
 		},
 		{
-			"name": "趁人之危", "ENG_name": "Opportunist",
+			"name": "趁人之危",
+			"ENG_name": "Opportunist",
 			"source": "PHB",
 			"page": 80,
 			"className": "Monk",
@@ -1929,7 +1976,8 @@
 			]
 		},
 		{
-			"name": "永亡宗", "ENG_name": "Way of the Long Death",
+			"name": "永亡宗",
+			"ENG_name": "Way of the Long Death",
 			"source": "SCAG",
 			"page": 130,
 			"className": "Monk",
@@ -1946,7 +1994,8 @@
 			]
 		},
 		{
-			"name": "死之觸", "ENG_name": "Touch of Death",
+			"name": "死之觸",
+			"ENG_name": "Touch of Death",
 			"source": "SCAG",
 			"page": 130,
 			"className": "Monk",
@@ -1960,7 +2009,8 @@
 			]
 		},
 		{
-			"name": "索命之時", "ENG_name": "Hour of Reaping",
+			"name": "索命之時",
+			"ENG_name": "Hour of Reaping",
 			"source": "SCAG",
 			"page": 130,
 			"className": "Monk",
@@ -1974,7 +2024,8 @@
 			]
 		},
 		{
-			"name": "掌握生死", "ENG_name": "Mastery of Death",
+			"name": "掌握生死",
+			"ENG_name": "Mastery of Death",
 			"source": "SCAG",
 			"page": 130,
 			"className": "Monk",
@@ -1988,7 +2039,8 @@
 			]
 		},
 		{
-			"name": "長眠觸", "ENG_name": "Touch of the Long Death",
+			"name": "長眠觸",
+			"ENG_name": "Touch of the Long Death",
 			"source": "SCAG",
 			"page": 130,
 			"className": "Monk",
@@ -3216,7 +3268,8 @@
 			]
 		},
 		{
-			"name": "醉拳宗", "ENG_name": "Way of the Drunken Master",
+			"name": "醉拳宗",
+			"ENG_name": "Way of the Drunken Master",
 			"source": "XGE",
 			"page": 33,
 			"className": "Monk",
@@ -3224,7 +3277,7 @@
 			"subclassShortName": "Drunken Master",
 			"subclassSource": "XGE",
 			"level": 3,
-			"entries":[
+			"entries": [
 				"醉拳宗教導其學徒以醉漢那愚蠢、不可預測的行動方式來進行移動。一個醉拳大師總是搖搖晃晃、蹣跚搖擺著他的雙腳，以呈現出一個不盡人意，看似無能的戰鬥者。 然而在他們飄忽不定的跌撞之下，實則隱藏著一段被精心執行的舞蹈，揉合了阻擋、招架、推進、攻擊、和撤退等動作。",
 				"醉拳大師常常喜歡裝瘋賣傻，為沮喪者帶來歡樂，或對傲慢者展現出謙卑。但當他們加入戰鬥時，醉拳大師將會是一名令人惱怒、無比狡詐的敵人。",
 				{
@@ -3238,7 +3291,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "XGE",
 			"page": 33,
 			"className": "Monk",
@@ -3252,7 +3306,8 @@
 			]
 		},
 		{
-			"name": "醉拳技巧", "ENG_name": "Drunken Technique",
+			"name": "醉拳技巧",
+			"ENG_name": "Drunken Technique",
 			"source": "XGE",
 			"page": 33,
 			"className": "Monk",
@@ -3266,7 +3321,8 @@
 			]
 		},
 		{
-			"name": "微醺搖擺", "ENG_name": "Tipsy Sway",
+			"name": "微醺搖擺",
+			"ENG_name": "Tipsy Sway",
 			"source": "XGE",
 			"page": 33,
 			"className": "Monk",
@@ -3293,7 +3349,8 @@
 			]
 		},
 		{
-			"name": "醉漢機運", "ENG_name": "Drunkard's Luck",
+			"name": "醉漢機運",
+			"ENG_name": "Drunkard's Luck",
 			"source": "XGE",
 			"page": 33,
 			"className": "Monk",
@@ -3307,7 +3364,8 @@
 			]
 		},
 		{
-			"name": "酒瘋狂醉", "ENG_name": "Intoxicated Frenzy",
+			"name": "酒瘋狂醉",
+			"ENG_name": "Intoxicated Frenzy",
 			"source": "XGE",
 			"page": 33,
 			"className": "Monk",
@@ -3321,7 +3379,8 @@
 			]
 		},
 		{
-			"name": "劍聖宗", "ENG_name": "Way of the Kensei",
+			"name": "劍聖宗",
+			"ENG_name": "Way of the Kensei",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3339,7 +3398,8 @@
 			]
 		},
 		{
-			"name": "劍聖之途", "ENG_name": "Path of the Kensei",
+			"name": "劍聖之途",
+			"ENG_name": "Path of the Kensei",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3352,7 +3412,8 @@
 				"當你在3級時選擇此宗派時，你特殊的武術訓練讓精通於你特定武器的使用。這條道途同時也包括了書畫技藝的指導。你獲得下列好處。",
 				{
 					"type": "entries",
-					"name": "劍聖武器", "ENG_name": "Kensei Weapons",
+					"name": "劍聖武器",
+					"ENG_name": "Kensei Weapons",
 					"entries": [
 						"選擇二種武器做為你的劍聖武器：一種近戰武器和一種遠程武器。這些武器可以是任何沒有重型或特殊屬性的簡易或軍用武器，包括長弓也是可選選項之一。若你尚未熟練於這些武器，則你獲得它們的熟練。所選的武器種類對你而言將被視為武僧武器。這個宗派的許多能力都只會作用於你的劍聖武器。當你在此職業升至6級、11級、和17級時，你可以遵循上述的條件，再選擇另一種武器種類\u2014近戰或遠程皆可\u2014做為你的劍聖武器。"
 					]
@@ -3380,7 +3441,8 @@
 			]
 		},
 		{
-			"name": "人劍合一", "ENG_name": "One with the Blade",
+			"name": "人劍合一",
+			"ENG_name": "One with the Blade",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3393,14 +3455,16 @@
 				"在6級時，你將你的氣延展至你的劍聖武器中，賦予你下列好處。",
 				{
 					"type": "entries",
-					"name": "魔法劍聖武器", "ENG_name": "Magic Kensei Weapons",
+					"name": "魔法劍聖武器",
+					"ENG_name": "Magic Kensei Weapons",
 					"entries": [
 						"在克服對非魔法攻擊和傷害的抗性和免疫能力時，你以劍聖武器所進行的攻擊被視作魔法攻擊。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "機敏打擊", "ENG_name": "Deft Strike",
+					"name": "機敏打擊",
+					"ENG_name": "Deft Strike",
 					"entries": [
 						"當你以劍聖武器命中一個目標時，你可以消耗1點氣以讓該武器對目標造成等同於你武藝骰的額外傷害。你只能在你的每個回合使用這個能力一次。"
 					]
@@ -3408,7 +3472,8 @@
 			]
 		},
 		{
-			"name": "鋒銳劍刃", "ENG_name": "Sharpen the Blade",
+			"name": "鋒銳劍刃",
+			"ENG_name": "Sharpen the Blade",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3422,7 +3487,8 @@
 			]
 		},
 		{
-			"name": "神準精確", "ENG_name": "Unerring Accuracy",
+			"name": "神準精確",
+			"ENG_name": "Unerring Accuracy",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3436,7 +3502,8 @@
 			]
 		},
 		{
-			"name": "日魂宗", "ENG_name": "Way of the Sun Soul",
+			"name": "日魂宗",
+			"ENG_name": "Way of the Sun Soul",
 			"source": "XGE",
 			"page": 35,
 			"className": "Monk",
@@ -3453,7 +3520,8 @@
 			]
 		},
 		{
-			"name": "日光箭", "ENG_name": "Radiant Sun Bolt",
+			"name": "日光箭",
+			"ENG_name": "Radiant Sun Bolt",
 			"source": "XGE",
 			"page": 35,
 			"className": "Monk",
@@ -3470,7 +3538,8 @@
 			]
 		},
 		{
-			"name": "熱弧襲", "ENG_name": "Searing Arc Strike",
+			"name": "熱弧襲",
+			"ENG_name": "Searing Arc Strike",
 			"source": "XGE",
 			"page": 35,
 			"className": "Monk",
@@ -3485,7 +3554,8 @@
 			]
 		},
 		{
-			"name": "熾熱爆陽", "ENG_name": "Searing Sunburst",
+			"name": "熾熱爆陽",
+			"ENG_name": "Searing Sunburst",
 			"source": "XGE",
 			"page": 35,
 			"className": "Monk",
@@ -3501,7 +3571,8 @@
 			]
 		},
 		{
-			"name": "輝日護盾", "ENG_name": "Sun Shield",
+			"name": "輝日護盾",
+			"ENG_name": "Sun Shield",
 			"source": "XGE",
 			"page": 35,
 			"className": "Monk",
@@ -3516,7 +3587,8 @@
 			]
 		},
 		{
-			"name": "鯉魚打挺", "ENG_name": "Leap to Your Feet",
+			"name": "鯉魚打挺",
+			"ENG_name": "Leap to Your Feet",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3529,7 +3601,8 @@
 			]
 		},
 		{
-			"name": "借力打力", "ENG_name": "Redirect Attack",
+			"name": "借力打力",
+			"ENG_name": "Redirect Attack",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3542,7 +3615,8 @@
 			]
 		},
 		{
-			"name": "靈巧格檔", "ENG_name": "Agile Parry",
+			"name": "靈巧格檔",
+			"ENG_name": "Agile Parry",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",
@@ -3555,7 +3629,8 @@
 			]
 		},
 		{
-			"name": "劍聖神射", "ENG_name": "Kensei's Shot",
+			"name": "劍聖神射",
+			"ENG_name": "Kensei's Shot",
 			"source": "XGE",
 			"page": 34,
 			"className": "Monk",

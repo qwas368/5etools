@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "戰士", "ENG_name": "Fighter",
+			"name": "戰士",
+			"ENG_name": "Fighter",
 			"source": "PHB",
 			"page": 70,
 			"srd": true,
@@ -257,7 +258,8 @@
 						{
 							"subclasses": [
 								{
-									"name": "魔能騎士", "ENG_name": "Eldritch Knight",
+									"name": "魔能騎士",
+									"ENG_name": "Eldritch Knight",
 									"source": "PHB"
 								}
 							],
@@ -352,7 +354,8 @@
 							"title": "法術位/每環",
 							"subclasses": [
 								{
-									"name": "魔能騎士", "ENG_name": "Eldritch Knight",
+									"name": "魔能騎士",
+									"ENG_name": "Eldritch Knight",
 									"source": "PHB"
 								}
 							],
@@ -1068,7 +1071,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "戰鬥風格", "ENG_name": "Fighting Style",
+			"name": "戰鬥風格",
+			"ENG_name": "Fighting Style",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1188,7 +1192,8 @@
 			]
 		},
 		{
-			"name": "回氣", "ENG_name": "Second Wind",
+			"name": "回氣",
+			"ENG_name": "Second Wind",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1201,7 +1206,8 @@
 			]
 		},
 		{
-			"name": "動作如潮", "ENG_name": "Action Surge",
+			"name": "動作如潮",
+			"ENG_name": "Action Surge",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1214,7 +1220,8 @@
 			]
 		},
 		{
-			"name": "武術範型", "ENG_name": "Martial Archetype",
+			"name": "武術範型",
+			"ENG_name": "Martial Archetype",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1226,7 +1233,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1273,7 +1281,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊", "ENG_name": "Extra Attack",
+			"name": "額外攻擊",
+			"ENG_name": "Extra Attack",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1286,7 +1295,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1313,7 +1323,8 @@
 			]
 		},
 		{
-			"name": "武術範型能力", "ENG_name": "Martial Archetype feature",
+			"name": "武術範型能力",
+			"ENG_name": "Martial Archetype feature",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1325,7 +1336,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1352,7 +1364,8 @@
 			]
 		},
 		{
-			"name": "不屈", "ENG_name": "Indomitable",
+			"name": "不屈",
+			"ENG_name": "Indomitable",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1365,7 +1378,8 @@
 			]
 		},
 		{
-			"name": "武術範型能力", "ENG_name": "Martial Archetype feature",
+			"name": "武術範型能力",
+			"ENG_name": "Martial Archetype feature",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1377,7 +1391,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊(2)", "ENG_name": "Extra Attack (2)",
+			"name": "額外攻擊(2)",
+			"ENG_name": "Extra Attack (2)",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1389,7 +1404,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1416,7 +1432,8 @@
 			]
 		},
 		{
-			"name": "不屈(2次)", "ENG_name": "Indomitable (two uses)",
+			"name": "不屈(2次)",
+			"ENG_name": "Indomitable (two uses)",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1428,7 +1445,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1455,7 +1473,8 @@
 			]
 		},
 		{
-			"name": "武術範型能力", "ENG_name": "Martial Archetype feature",
+			"name": "武術範型能力",
+			"ENG_name": "Martial Archetype feature",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1467,7 +1486,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1494,7 +1514,8 @@
 			]
 		},
 		{
-			"name": "動作如潮(2次)", "ENG_name": "Action Surge (two uses)",
+			"name": "動作如潮(2次)",
+			"ENG_name": "Action Surge (two uses)",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1506,7 +1527,8 @@
 			]
 		},
 		{
-			"name": "不屈(3次)", "ENG_name": "Indomitable (three uses)",
+			"name": "不屈(3次)",
+			"ENG_name": "Indomitable (three uses)",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1518,7 +1540,8 @@
 			]
 		},
 		{
-			"name": "武術範型能力", "ENG_name": "Martial Archetype feature",
+			"name": "武術範型能力",
+			"ENG_name": "Martial Archetype feature",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1530,7 +1553,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1557,7 +1581,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊(3)", "ENG_name": "Extra Attack (3)",
+			"name": "額外攻擊(3)",
+			"ENG_name": "Extra Attack (3)",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -1696,7 +1721,8 @@
 			]
 		},
 		{
-			"name": "戰鬥大師", "ENG_name": "Battle Master",
+			"name": "戰鬥大師",
+			"ENG_name": "Battle Master",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -1729,7 +1755,8 @@
 			]
 		},
 		{
-			"name": "戰鬥卓越", "ENG_name": "Combat Superiority",
+			"name": "戰鬥卓越",
+			"ENG_name": "Combat Superiority",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -1745,7 +1772,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "戰技", "ENG_name": "Maneuvers",
+							"name": "戰技",
+							"ENG_name": "Maneuvers",
 							"entries": [
 								"你學會三個自選戰技，參見下列「戰技」條目。許多戰技將以某些方式強化一次攻擊。你只能為每次攻擊使用一種戰技。",
 								"你將在7級、10級、和15級時學會二個額外的戰技。每次你學會新的戰技時，你也可以將一個你已知的戰技取代成另一個不同的戰技。"
@@ -1758,7 +1786,8 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "卓越骰", "ENG_name": "Superiority Dice",
+							"name": "卓越骰",
+							"ENG_name": "Superiority Dice",
 							"entries": [
 								"你擁有四顆卓越骰，這四顆卓越骰為{@dice d8}。卓越骰將在你使用戰技時被花費。你在完成一次短休或長休後恢復你花費掉的卓越骰。",
 								"你將在7級、和15級時再獲得一顆卓越骰。"
@@ -1771,12 +1800,14 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "豁免檢定", "ENG_name": "Saving Throws",
+							"name": "豁免檢定",
+							"ENG_name": "Saving Throws",
 							"entries": [
 								"你的部分戰技會要求你的目標進行一次豁免檢定以對抗戰技的效果。這個豁免檢定DC的計算方式如下：",
 								{
 									"type": "abilityDc",
-									"name": "戰技", "ENG_name": "Maneuver",
+									"name": "戰技",
+									"ENG_name": "Maneuver",
 									"attributes": [
 										"str",
 										"dex"
@@ -1981,7 +2012,8 @@
 			]
 		},
 		{
-			"name": "戰爭學徒", "ENG_name": "Student of War",
+			"name": "戰爭學徒",
+			"ENG_name": "Student of War",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -1995,7 +2027,8 @@
 			]
 		},
 		{
-			"name": "額外戰技", "ENG_name": "Additional Maneuvers",
+			"name": "額外戰技",
+			"ENG_name": "Additional Maneuvers",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2009,7 +2042,8 @@
 			]
 		},
 		{
-			"name": "額外卓越骰", "ENG_name": "Additional Superiority Die",
+			"name": "額外卓越骰",
+			"ENG_name": "Additional Superiority Die",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2023,7 +2057,8 @@
 			]
 		},
 		{
-			"name": "知己知彼", "ENG_name": "Know Your Enemy",
+			"name": "知己知彼",
+			"ENG_name": "Know Your Enemy",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2049,7 +2084,8 @@
 			]
 		},
 		{
-			"name": "額外戰技", "ENG_name": "Additional Maneuvers",
+			"name": "額外戰技",
+			"ENG_name": "Additional Maneuvers",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2063,7 +2099,8 @@
 			]
 		},
 		{
-			"name": "精通戰鬥卓越(d10)", "ENG_name": "Improved Combat Superiority (d10)",
+			"name": "精通戰鬥卓越(d10)",
+			"ENG_name": "Improved Combat Superiority (d10)",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2077,7 +2114,8 @@
 			]
 		},
 		{
-			"name": "額外戰技", "ENG_name": "Additional Maneuvers",
+			"name": "額外戰技",
+			"ENG_name": "Additional Maneuvers",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2091,7 +2129,8 @@
 			]
 		},
 		{
-			"name": "額外卓越骰", "ENG_name": "Additional Superiority Die",
+			"name": "額外卓越骰",
+			"ENG_name": "Additional Superiority Die",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2105,7 +2144,8 @@
 			]
 		},
 		{
-			"name": "頑強", "ENG_name": "Relentless",
+			"name": "頑強",
+			"ENG_name": "Relentless",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2119,7 +2159,8 @@
 			]
 		},
 		{
-			"name": "精通戰鬥卓越(d12)", "ENG_name": "Improved Combat Superiority (d12)",
+			"name": "精通戰鬥卓越(d12)",
+			"ENG_name": "Improved Combat Superiority (d12)",
 			"source": "PHB",
 			"page": 73,
 			"className": "Fighter",
@@ -2133,7 +2174,8 @@
 			]
 		},
 		{
-			"name": "勇士", "ENG_name": "Champion",
+			"name": "勇士",
+			"ENG_name": "Champion",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -2151,7 +2193,8 @@
 			]
 		},
 		{
-			"name": "強化重擊", "ENG_name": "Improved Critical",
+			"name": "強化重擊",
+			"ENG_name": "Improved Critical",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -2166,7 +2209,8 @@
 			]
 		},
 		{
-			"name": "運動健將", "ENG_name": "Remarkable Athlete",
+			"name": "運動健將",
+			"ENG_name": "Remarkable Athlete",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -2182,7 +2226,8 @@
 			]
 		},
 		{
-			"name": "額外戰鬥風格", "ENG_name": "Additional Fighting Style",
+			"name": "額外戰鬥風格",
+			"ENG_name": "Additional Fighting Style",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -2197,7 +2242,8 @@
 			]
 		},
 		{
-			"name": "卓越重擊", "ENG_name": "Superior Critical",
+			"name": "卓越重擊",
+			"ENG_name": "Superior Critical",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -2212,7 +2258,8 @@
 			]
 		},
 		{
-			"name": "生還者", "ENG_name": "Survivor",
+			"name": "生還者",
+			"ENG_name": "Survivor",
 			"source": "PHB",
 			"page": 72,
 			"srd": true,
@@ -2227,7 +2274,8 @@
 			]
 		},
 		{
-			"name": "魔能騎士", "ENG_name": "Eldritch Knight",
+			"name": "魔能騎士",
+			"ENG_name": "Eldritch Knight",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2248,7 +2296,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2323,7 +2372,8 @@
 			]
 		},
 		{
-			"name": "武器聯結", "ENG_name": "Weapon Bond",
+			"name": "武器聯結",
+			"ENG_name": "Weapon Bond",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2339,7 +2389,8 @@
 			]
 		},
 		{
-			"name": "戰爭魔法", "ENG_name": "War Magic",
+			"name": "戰爭魔法",
+			"ENG_name": "War Magic",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2353,7 +2404,8 @@
 			]
 		},
 		{
-			"name": "魔能打擊", "ENG_name": "Eldritch Strike",
+			"name": "魔能打擊",
+			"ENG_name": "Eldritch Strike",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2367,7 +2419,8 @@
 			]
 		},
 		{
-			"name": "祕法衝鋒", "ENG_name": "Arcane Charge",
+			"name": "祕法衝鋒",
+			"ENG_name": "Arcane Charge",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2381,7 +2434,8 @@
 			]
 		},
 		{
-			"name": "精通戰爭魔法", "ENG_name": "Improved War Magic",
+			"name": "精通戰爭魔法",
+			"ENG_name": "Improved War Magic",
 			"source": "PHB",
 			"page": 74,
 			"className": "Fighter",
@@ -2395,7 +2449,8 @@
 			]
 		},
 		{
-			"name": "紫龍騎士(旗將)", "ENG_name": "Purple Dragon Knight (Banneret)",
+			"name": "紫龍騎士(旗將)",
+			"ENG_name": "Purple Dragon Knight (Banneret)",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -2418,7 +2473,8 @@
 			]
 		},
 		{
-			"name": "鼓舞戰吼", "ENG_name": "Rallying Cry",
+			"name": "鼓舞戰吼",
+			"ENG_name": "Rallying Cry",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -2433,7 +2489,8 @@
 			]
 		},
 		{
-			"name": "限制：騎士爵位", "ENG_name": "Restriction: Knighthood",
+			"name": "限制：騎士爵位",
+			"ENG_name": "Restriction: Knighthood",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -2448,7 +2505,8 @@
 			]
 		},
 		{
-			"name": "皇家特使", "ENG_name": "Royal Envoy",
+			"name": "皇家特使",
+			"ENG_name": "Royal Envoy",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -2464,7 +2522,8 @@
 			]
 		},
 		{
-			"name": "振奮之潮", "ENG_name": "Inspiring Surge",
+			"name": "振奮之潮",
+			"ENG_name": "Inspiring Surge",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -2479,7 +2538,8 @@
 			]
 		},
 		{
-			"name": "意志壁壘", "ENG_name": "Bulwark",
+			"name": "意志壁壘",
+			"ENG_name": "Bulwark",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -2493,7 +2553,8 @@
 			]
 		},
 		{
-			"name": "振奮之潮", "ENG_name": "Inspiring Surge",
+			"name": "振奮之潮",
+			"ENG_name": "Inspiring Surge",
 			"source": "SCAG",
 			"page": 128,
 			"className": "Fighter",
@@ -4928,7 +4989,8 @@
 			]
 		},
 		{
-			"name": "魔射手", "ENG_name": "Arcane Archer",
+			"name": "魔射手",
+			"ENG_name": "Arcane Archer",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -4953,7 +5015,8 @@
 			]
 		},
 		{
-			"name": "魔射手學識", "ENG_name": "Arcane Archer Lore",
+			"name": "魔射手學識",
+			"ENG_name": "Arcane Archer Lore",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -4967,7 +5030,8 @@
 			]
 		},
 		{
-			"name": "祕法射擊", "ENG_name": "Arcane Shot",
+			"name": "祕法射擊",
+			"ENG_name": "Arcane Shot",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -4983,7 +5047,8 @@
 			]
 		},
 		{
-			"name": "祕法射擊選項", "ENG_name": "Arcane Shot Options",
+			"name": "祕法射擊選項",
+			"ENG_name": "Arcane Shot Options",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5043,7 +5108,8 @@
 			]
 		},
 		{
-			"name": "額外祕法射擊選項", "ENG_name": "Additional Arcane Shot Option",
+			"name": "額外祕法射擊選項",
+			"ENG_name": "Additional Arcane Shot Option",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5057,7 +5123,8 @@
 			]
 		},
 		{
-			"name": "曲射", "ENG_name": "Curving Shot",
+			"name": "曲射",
+			"ENG_name": "Curving Shot",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5071,7 +5138,8 @@
 			]
 		},
 		{
-			"name": "魔法箭矢", "ENG_name": "Magic Arrow",
+			"name": "魔法箭矢",
+			"ENG_name": "Magic Arrow",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5085,7 +5153,8 @@
 			]
 		},
 		{
-			"name": "額外祕法射擊選項", "ENG_name": "Additional Arcane Shot Option",
+			"name": "額外祕法射擊選項",
+			"ENG_name": "Additional Arcane Shot Option",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5099,7 +5168,8 @@
 			]
 		},
 		{
-			"name": "額外祕法射擊選項", "ENG_name": "Additional Arcane Shot Option",
+			"name": "額外祕法射擊選項",
+			"ENG_name": "Additional Arcane Shot Option",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5113,7 +5183,8 @@
 			]
 		},
 		{
-			"name": "常備射擊", "ENG_name": "Ever-Ready Shot",
+			"name": "常備射擊",
+			"ENG_name": "Ever-Ready Shot",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5127,7 +5198,8 @@
 			]
 		},
 		{
-			"name": "額外祕法射擊選項", "ENG_name": "Additional Arcane Shot Option",
+			"name": "額外祕法射擊選項",
+			"ENG_name": "Additional Arcane Shot Option",
 			"source": "XGE",
 			"page": 28,
 			"className": "Fighter",
@@ -5141,7 +5213,8 @@
 			]
 		},
 		{
-			"name": "騎兵", "ENG_name": "Cavalier",
+			"name": "騎兵",
+			"ENG_name": "Cavalier",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5166,7 +5239,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiency",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiency",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5180,7 +5254,8 @@
 			]
 		},
 		{
-			"name": "生而為騎", "ENG_name": "Born to the Saddle",
+			"name": "生而為騎",
+			"ENG_name": "Born to the Saddle",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5195,7 +5270,8 @@
 			]
 		},
 		{
-			"name": "堅定印記", "ENG_name": "Unwavering Mark",
+			"name": "堅定印記",
+			"ENG_name": "Unwavering Mark",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5212,7 +5288,8 @@
 			]
 		},
 		{
-			"name": "防護戰術", "ENG_name": "Warding Maneuver",
+			"name": "防護戰術",
+			"ENG_name": "Warding Maneuver",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5227,7 +5304,8 @@
 			]
 		},
 		{
-			"name": "堅守戰線", "ENG_name": "Hold the Line",
+			"name": "堅守戰線",
+			"ENG_name": "Hold the Line",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5241,7 +5319,8 @@
 			]
 		},
 		{
-			"name": "勇猛衝鋒", "ENG_name": "Ferocious Charger",
+			"name": "勇猛衝鋒",
+			"ENG_name": "Ferocious Charger",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5255,7 +5334,8 @@
 			]
 		},
 		{
-			"name": "警戒防衛者", "ENG_name": "Vigilant Defender",
+			"name": "警戒防衛者",
+			"ENG_name": "Vigilant Defender",
 			"source": "XGE",
 			"page": 30,
 			"className": "Fighter",
@@ -5269,7 +5349,8 @@
 			]
 		},
 		{
-			"name": "武士", "ENG_name": "Samurai",
+			"name": "武士",
+			"ENG_name": "Samurai",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",
@@ -5290,7 +5371,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiency",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiency",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",
@@ -5304,7 +5386,8 @@
 			]
 		},
 		{
-			"name": "戰鬥之魂", "ENG_name": "Fighting Spirit",
+			"name": "戰鬥之魂",
+			"ENG_name": "Fighting Spirit",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",
@@ -5319,7 +5402,8 @@
 			]
 		},
 		{
-			"name": "典雅侍臣", "ENG_name": "Elegant Courtier",
+			"name": "典雅侍臣",
+			"ENG_name": "Elegant Courtier",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",
@@ -5334,7 +5418,8 @@
 			]
 		},
 		{
-			"name": "不懈戰魂", "ENG_name": "Tireless Spirit",
+			"name": "不懈戰魂",
+			"ENG_name": "Tireless Spirit",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",
@@ -5348,7 +5433,8 @@
 			]
 		},
 		{
-			"name": "迅捷打擊", "ENG_name": "Rapid Strike",
+			"name": "迅捷打擊",
+			"ENG_name": "Rapid Strike",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",
@@ -5362,7 +5448,8 @@
 			]
 		},
 		{
-			"name": "迴光返照", "ENG_name": "Strength before Death",
+			"name": "迴光返照",
+			"ENG_name": "Strength before Death",
 			"source": "XGE",
 			"page": 31,
 			"className": "Fighter",

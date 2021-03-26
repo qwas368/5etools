@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "術士", "ENG_name": "Sorcerer",
+			"name": "術士",
+			"ENG_name": "Sorcerer",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1378,7 +1379,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "術法起源", "ENG_name": "Sorcerous Origin",
+			"name": "術法起源",
+			"ENG_name": "Sorcerous Origin",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1404,7 +1406,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1468,7 +1471,8 @@
 			]
 		},
 		{
-			"name": "易變施法", "ENG_name": "Flexible Casting",
+			"name": "易變施法",
+			"ENG_name": "Flexible Casting",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1529,7 +1533,8 @@
 			]
 		},
 		{
-			"name": "魔力泉湧", "ENG_name": "Font of Magic",
+			"name": "魔力泉湧",
+			"ENG_name": "Font of Magic",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1540,7 +1545,8 @@
 				"在2級時，你挖掘出深埋於你體內的魔力湧泉。這道魔力湧泉以術法點的形式呈現，讓你得以創造多種魔法效果。",
 				{
 					"type": "entries",
-					"name": "術法點", "ENG_name": "Sorcery Points",
+					"name": "術法點",
+					"ENG_name": "Sorcery Points",
 					"entries": [
 						"你擁有2點術法點，且你每提升一級就能再額外獲得一點，並在20級時達到最大值20點。你所擁有的術法點永遠無法超過表格中對應你當前等級的數值。你在完成一次長休後恢復所有你花費掉的術法點。"
 					]
@@ -1577,7 +1583,8 @@
 			]
 		},
 		{
-			"name": "超魔法", "ENG_name": "Metamagic",
+			"name": "超魔法",
+			"ENG_name": "Metamagic",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1684,7 +1691,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1744,7 +1752,8 @@
 			]
 		},
 		{
-			"name": "術法起源能力", "ENG_name": "Sorcerous Origin feature",
+			"name": "術法起源能力",
+			"ENG_name": "Sorcerous Origin feature",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1756,7 +1765,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1783,7 +1793,8 @@
 			]
 		},
 		{
-			"name": "超魔法", "ENG_name": "Metamagic",
+			"name": "超魔法",
+			"ENG_name": "Metamagic",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1795,7 +1806,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1822,7 +1834,8 @@
 			]
 		},
 		{
-			"name": "術法起源能力", "ENG_name": "Sorcerous Origin feature",
+			"name": "術法起源能力",
+			"ENG_name": "Sorcerous Origin feature",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1834,7 +1847,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1861,7 +1875,8 @@
 			]
 		},
 		{
-			"name": "超魔法", "ENG_name": "Metamagic",
+			"name": "超魔法",
+			"ENG_name": "Metamagic",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1873,7 +1888,8 @@
 			]
 		},
 		{
-			"name": "術法起源能力", "ENG_name": "Sorcerous Origin feature",
+			"name": "術法起源能力",
+			"ENG_name": "Sorcerous Origin feature",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1885,7 +1901,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1912,7 +1929,8 @@
 			]
 		},
 		{
-			"name": "術法復原", "ENG_name": "Sorcerous Restoration",
+			"name": "術法復原",
+			"ENG_name": "Sorcerous Restoration",
 			"source": "PHB",
 			"page": 99,
 			"srd": true,
@@ -1962,7 +1980,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "龍族血脈", "ENG_name": "Draconic Bloodline",
+			"name": "龍族血脈",
+			"ENG_name": "Draconic Bloodline",
 			"source": "PHB",
 			"page": 102,
 			"srd": true,
@@ -1984,7 +2003,8 @@
 			]
 		},
 		{
-			"name": "龍族韌性", "ENG_name": "Draconic Resilience",
+			"name": "龍族韌性",
+			"ENG_name": "Draconic Resilience",
 			"source": "PHB",
 			"page": 102,
 			"srd": true,
@@ -2000,7 +2020,8 @@
 			]
 		},
 		{
-			"name": "龍族血統", "ENG_name": "Dragon Ancestor",
+			"name": "龍族血統",
+			"ENG_name": "Dragon Ancestor",
 			"source": "PHB",
 			"page": 102,
 			"srd": true,
@@ -2070,7 +2091,8 @@
 			]
 		},
 		{
-			"name": "元素親和", "ENG_name": "Elemental Affinity",
+			"name": "元素親和",
+			"ENG_name": "Elemental Affinity",
 			"source": "PHB",
 			"page": 102,
 			"srd": true,
@@ -2085,7 +2107,8 @@
 			]
 		},
 		{
-			"name": "龍之翼", "ENG_name": "Dragon Wings",
+			"name": "龍之翼",
+			"ENG_name": "Dragon Wings",
 			"source": "PHB",
 			"page": 102,
 			"srd": true,
@@ -2101,7 +2124,8 @@
 			]
 		},
 		{
-			"name": "真龍威儀", "ENG_name": "Draconic Presence",
+			"name": "真龍威儀",
+			"ENG_name": "Draconic Presence",
 			"source": "PHB",
 			"page": 102,
 			"srd": true,
@@ -2116,7 +2140,8 @@
 			]
 		},
 		{
-			"name": "狂野魔法", "ENG_name": "Wild Magic",
+			"name": "狂野魔法",
+			"ENG_name": "Wild Magic",
 			"source": "PHB",
 			"page": 103,
 			"className": "Sorcerer",
@@ -2137,7 +2162,8 @@
 			]
 		},
 		{
-			"name": "混亂之潮", "ENG_name": "Tides of Chaos",
+			"name": "混亂之潮",
+			"ENG_name": "Tides of Chaos",
 			"source": "PHB",
 			"page": 103,
 			"className": "Sorcerer",
@@ -2152,7 +2178,8 @@
 			]
 		},
 		{
-			"name": "狂野魔法浪湧", "ENG_name": "Wild Magic Surge",
+			"name": "狂野魔法浪湧",
+			"ENG_name": "Wild Magic Surge",
 			"source": "PHB",
 			"page": 103,
 			"className": "Sorcerer",
@@ -2384,7 +2411,8 @@
 			]
 		},
 		{
-			"name": "竄改運氣", "ENG_name": "Bend Luck",
+			"name": "竄改運氣",
+			"ENG_name": "Bend Luck",
 			"source": "PHB",
 			"page": 103,
 			"className": "Sorcerer",
@@ -2398,7 +2426,8 @@
 			]
 		},
 		{
-			"name": "控制混沌", "ENG_name": "Controlled Chaos",
+			"name": "控制混沌",
+			"ENG_name": "Controlled Chaos",
 			"source": "PHB",
 			"page": 103,
 			"className": "Sorcerer",
@@ -2412,7 +2441,8 @@
 			]
 		},
 		{
-			"name": "法術轟擊", "ENG_name": "Spell Bombardment",
+			"name": "法術轟擊",
+			"ENG_name": "Spell Bombardment",
 			"source": "PHB",
 			"page": 103,
 			"className": "Sorcerer",
@@ -4645,7 +4675,8 @@
 			]
 		},
 		{
-			"name": "神聖之魂", "ENG_name": "Divine Soul",
+			"name": "神聖之魂",
+			"ENG_name": "Divine Soul",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4669,7 +4700,8 @@
 			]
 		},
 		{
-			"name": "神聖魔法", "ENG_name": "Divine Magic",
+			"name": "神聖魔法",
+			"ENG_name": "Divine Magic",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4717,7 +4749,8 @@
 			]
 		},
 		{
-			"name": "諸神眷顧", "ENG_name": "Favored by the Gods",
+			"name": "諸神眷顧",
+			"ENG_name": "Favored by the Gods",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4731,7 +4764,8 @@
 			]
 		},
 		{
-			"name": "強效治療", "ENG_name": "Empowered Healing",
+			"name": "強效治療",
+			"ENG_name": "Empowered Healing",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4745,7 +4779,8 @@
 			]
 		},
 		{
-			"name": "超凡之翼", "ENG_name": "Otherworldly Wings",
+			"name": "超凡之翼",
+			"ENG_name": "Otherworldly Wings",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4760,7 +4795,8 @@
 			]
 		},
 		{
-			"name": "神秘痊癒", "ENG_name": "Unearthly Recovery",
+			"name": "神秘痊癒",
+			"ENG_name": "Unearthly Recovery",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4775,7 +4811,8 @@
 			]
 		},
 		{
-			"name": "幽影魔法", "ENG_name": "Shadow Magic",
+			"name": "幽影魔法",
+			"ENG_name": "Shadow Magic",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4835,7 +4872,8 @@
 			]
 		},
 		{
-			"name": "幽暗之瞳", "ENG_name": "Eyes of the Dark",
+			"name": "幽暗之瞳",
+			"ENG_name": "Eyes of the Dark",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4850,7 +4888,8 @@
 			]
 		},
 		{
-			"name": "終焉之力", "ENG_name": "Strength of the Grave",
+			"name": "終焉之力",
+			"ENG_name": "Strength of the Grave",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4865,7 +4904,8 @@
 			]
 		},
 		{
-			"name": "凶兆獵犬", "ENG_name": "Hound of Ill Omen",
+			"name": "凶兆獵犬",
+			"ENG_name": "Hound of Ill Omen",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4889,7 +4929,8 @@
 			]
 		},
 		{
-			"name": "幽影漫步", "ENG_name": "Shadow Walk",
+			"name": "幽影漫步",
+			"ENG_name": "Shadow Walk",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4903,7 +4944,8 @@
 			]
 		},
 		{
-			"name": "暗影型態", "ENG_name": "Umbral Form",
+			"name": "暗影型態",
+			"ENG_name": "Umbral Form",
 			"source": "XGE",
 			"page": 50,
 			"className": "Sorcerer",
@@ -4918,7 +4960,8 @@
 			]
 		},
 		{
-			"name": "暴風術法", "ENG_name": "Storm Sorcery",
+			"name": "暴風術法",
+			"ENG_name": "Storm Sorcery",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",
@@ -4940,7 +4983,8 @@
 			]
 		},
 		{
-			"name": "風暴魔法", "ENG_name": "Tempestuous Magic",
+			"name": "風暴魔法",
+			"ENG_name": "Tempestuous Magic",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",
@@ -4954,7 +4998,8 @@
 			]
 		},
 		{
-			"name": "風語者", "ENG_name": "Wind Speaker",
+			"name": "風語者",
+			"ENG_name": "Wind Speaker",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",
@@ -4968,7 +5013,8 @@
 			]
 		},
 		{
-			"name": "暴風之心", "ENG_name": "Heart of the Storm",
+			"name": "暴風之心",
+			"ENG_name": "Heart of the Storm",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",
@@ -4982,7 +5028,8 @@
 			]
 		},
 		{
-			"name": "暴風導向", "ENG_name": "Storm Guide",
+			"name": "暴風導向",
+			"ENG_name": "Storm Guide",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",
@@ -4998,7 +5045,8 @@
 			]
 		},
 		{
-			"name": "暴風狂怒", "ENG_name": "Storm's Fury",
+			"name": "暴風狂怒",
+			"ENG_name": "Storm's Fury",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",
@@ -5012,7 +5060,8 @@
 			]
 		},
 		{
-			"name": "清風之魂", "ENG_name": "Wind Soul",
+			"name": "清風之魂",
+			"ENG_name": "Wind Soul",
 			"source": "XGE",
 			"page": 51,
 			"className": "Sorcerer",

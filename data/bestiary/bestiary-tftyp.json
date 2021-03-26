@@ -1581,7 +1581,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The giant crayfish can breathe air and water."
 					]
@@ -1664,7 +1665,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The toad can breathe air and water."
 					]
@@ -1876,7 +1878,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The skeleton has advantage on saving throws against spells and other magical effects."
 					]
@@ -2532,7 +2535,8 @@
 					]
 				},
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The crab can breathe air and water."
 					]
@@ -2906,7 +2910,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"Kalka-Kylla can breathe air and water."
 					]
@@ -3074,7 +3079,8 @@
 			"cr": "4",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The kelpie can breathe air and water."
 					]
@@ -3432,7 +3438,8 @@
 			"cr": "10",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The kraken can breathe air and water."
 					]
@@ -3728,7 +3735,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The nereid can breathe air and water."
 					]
@@ -4686,7 +4694,8 @@
 			"cr": "5",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The sea lion can breathe air and water."
 					]
@@ -5104,13 +5113,15 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"Siren can breathe air and water."
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"Siren has advantage on saving throws against spells and other magical effects."
 					]
@@ -5836,7 +5847,8 @@
 			"cr": "4",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"Tecuziztecatl can breathe air and water."
 					]

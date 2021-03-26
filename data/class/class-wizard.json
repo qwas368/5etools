@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "法師", "ENG_name": "Wizard",
+			"name": "法師",
+			"ENG_name": "Wizard",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1049,7 +1050,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "奧術恢復", "ENG_name": "Arcane Recovery",
+			"name": "奧術恢復",
+			"ENG_name": "Arcane Recovery",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1076,7 +1078,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1202,7 +1205,8 @@
 			]
 		},
 		{
-			"name": "奥法學派", "ENG_name": "Arcane Tradition",
+			"name": "奥法學派",
+			"ENG_name": "Arcane Tradition",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1227,7 +1231,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1254,7 +1259,8 @@
 			]
 		},
 		{
-			"name": "奥法學派能力", "ENG_name": "Arcane Tradition feature",
+			"name": "奥法學派能力",
+			"ENG_name": "Arcane Tradition feature",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1266,7 +1272,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1293,7 +1300,8 @@
 			]
 		},
 		{
-			"name": "奥法學派能力", "ENG_name": "Arcane Tradition feature",
+			"name": "奥法學派能力",
+			"ENG_name": "Arcane Tradition feature",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1305,7 +1313,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1332,7 +1341,8 @@
 			]
 		},
 		{
-			"name": "奥法學派能力", "ENG_name": "Arcane Tradition feature",
+			"name": "奥法學派能力",
+			"ENG_name": "Arcane Tradition feature",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1344,7 +1354,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1371,7 +1382,8 @@
 			]
 		},
 		{
-			"name": "法術精通", "ENG_name": "Spell Mastery",
+			"name": "法術精通",
+			"ENG_name": "Spell Mastery",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1384,7 +1396,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1411,7 +1424,8 @@
 			]
 		},
 		{
-			"name": "招牌法術", "ENG_name": "Signature Spells",
+			"name": "招牌法術",
+			"ENG_name": "Signature Spells",
 			"source": "PHB",
 			"page": 112,
 			"srd": true,
@@ -1609,7 +1623,8 @@
 			]
 		},
 		{
-			"name": "防護學派", "ENG_name": "School of Abjuration",
+			"name": "防護學派",
+			"ENG_name": "School of Abjuration",
 			"source": "PHB",
 			"page": 115,
 			"className": "Wizard",
@@ -1631,7 +1646,8 @@
 			]
 		},
 		{
-			"name": "防護學者", "ENG_name": "Abjuration Savant",
+			"name": "防護學者",
+			"ENG_name": "Abjuration Savant",
 			"source": "PHB",
 			"page": 115,
 			"className": "Wizard",
@@ -1645,7 +1661,8 @@
 			]
 		},
 		{
-			"name": "奧法防護", "ENG_name": "Arcane Ward",
+			"name": "奧法防護",
+			"ENG_name": "Arcane Ward",
 			"source": "PHB",
 			"page": 115,
 			"className": "Wizard",
@@ -1661,7 +1678,8 @@
 			]
 		},
 		{
-			"name": "投射防護", "ENG_name": "Projected Ward",
+			"name": "投射防護",
+			"ENG_name": "Projected Ward",
 			"source": "PHB",
 			"page": 115,
 			"className": "Wizard",
@@ -1675,7 +1693,8 @@
 			]
 		},
 		{
-			"name": "精通防護", "ENG_name": "Improved Abjuration",
+			"name": "精通防護",
+			"ENG_name": "Improved Abjuration",
 			"source": "PHB",
 			"page": 115,
 			"className": "Wizard",
@@ -1689,7 +1708,8 @@
 			]
 		},
 		{
-			"name": "法術抗性", "ENG_name": "Spell Resistance",
+			"name": "法術抗性",
+			"ENG_name": "Spell Resistance",
 			"source": "PHB",
 			"page": 115,
 			"className": "Wizard",
@@ -1704,7 +1724,8 @@
 			]
 		},
 		{
-			"name": "咒法學派", "ENG_ame": "School of Conjuration",
+			"name": "咒法學派",
+			"ENG_ame": "School of Conjuration",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1725,7 +1746,8 @@
 			]
 		},
 		{
-			"name": "咒法學者", "ENG_name": "Conjuration Savant",
+			"name": "咒法學者",
+			"ENG_name": "Conjuration Savant",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1739,7 +1761,8 @@
 			]
 		},
 		{
-			"name": "次級咒喚", "ENG_name": "Minor Conjuration",
+			"name": "次級咒喚",
+			"ENG_name": "Minor Conjuration",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1754,7 +1777,8 @@
 			]
 		},
 		{
-			"name": "移形換位", "ENG_name": "Benign Transposition",
+			"name": "移形換位",
+			"ENG_name": "Benign Transposition",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1769,7 +1793,8 @@
 			]
 		},
 		{
-			"name": "咒法專注", "ENG_name": "Focused Conjuration",
+			"name": "咒法專注",
+			"ENG_name": "Focused Conjuration",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1783,7 +1808,8 @@
 			]
 		},
 		{
-			"name": "強韌召喚", "ENG_name": "Durable Summons",
+			"name": "強韌召喚",
+			"ENG_name": "Durable Summons",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1797,7 +1823,8 @@
 			]
 		},
 		{
-			"name": "預言學派", "ENG_name": "School of Divination",
+			"name": "預言學派",
+			"ENG_name": "School of Divination",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1818,7 +1845,8 @@
 			]
 		},
 		{
-			"name": "預言學者", "ENG_name": "Divination Savant",
+			"name": "預言學者",
+			"ENG_name": "Divination Savant",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1832,7 +1860,8 @@
 			]
 		},
 		{
-			"name": "預兆", "ENG_name": "Portent",
+			"name": "預兆",
+			"ENG_name": "Portent",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1847,7 +1876,8 @@
 			]
 		},
 		{
-			"name": "預言專家", "ENG_name": "Expert Divination",
+			"name": "預言專家",
+			"ENG_name": "Expert Divination",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1861,7 +1891,8 @@
 			]
 		},
 		{
-			"name": "天眼通", "ENG_name": "The Third Eye",
+			"name": "天眼通",
+			"ENG_name": "The Third Eye",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1908,7 +1939,8 @@
 			]
 		},
 		{
-			"name": "高等預兆", "ENG_name": "Greater Portent",
+			"name": "高等預兆",
+			"ENG_name": "Greater Portent",
 			"source": "PHB",
 			"page": 116,
 			"className": "Wizard",
@@ -1922,7 +1954,8 @@
 			]
 		},
 		{
-			"name": "惑控學派", "ENG_name": "School of Enchantment",
+			"name": "惑控學派",
+			"ENG_name": "School of Enchantment",
 			"source": "PHB",
 			"page": 117,
 			"className": "Wizard",
@@ -1943,7 +1976,8 @@
 			]
 		},
 		{
-			"name": "惑控學者", "ENG_name": "Enchantment Savant",
+			"name": "惑控學者",
+			"ENG_name": "Enchantment Savant",
 			"source": "PHB",
 			"page": 117,
 			"className": "Wizard",
@@ -1957,7 +1991,8 @@
 			]
 		},
 		{
-			"name": "催眠凝視", "ENG_name": "Hypnotic Gaze",
+			"name": "催眠凝視",
+			"ENG_name": "Hypnotic Gaze",
 			"source": "PHB",
 			"page": 117,
 			"className": "Wizard",
@@ -1973,7 +2008,8 @@
 			]
 		},
 		{
-			"name": "本能魅惑", "ENG_name": "Instinctive Charm",
+			"name": "本能魅惑",
+			"ENG_name": "Instinctive Charm",
 			"source": "PHB",
 			"page": 117,
 			"className": "Wizard",
@@ -1988,7 +2024,8 @@
 			]
 		},
 		{
-			"name": "分散惑控", "ENG_name": "Split Enchantment",
+			"name": "分散惑控",
+			"ENG_name": "Split Enchantment",
 			"source": "PHB",
 			"page": 117,
 			"className": "Wizard",
@@ -2002,7 +2039,8 @@
 			]
 		},
 		{
-			"name": "改動記憶", "ENG_name": "Alter Memories",
+			"name": "改動記憶",
+			"ENG_name": "Alter Memories",
 			"source": "PHB",
 			"page": 117,
 			"className": "Wizard",
@@ -2017,7 +2055,8 @@
 			]
 		},
 		{
-			"name": "塑能學派", "ENG_name": "School of Evocation",
+			"name": "塑能學派",
+			"ENG_name": "School of Evocation",
 			"source": "PHB",
 			"page": 117,
 			"srd": true,
@@ -2039,7 +2078,8 @@
 			]
 		},
 		{
-			"name": "塑能學者", "ENG_name": "Evocation Savant",
+			"name": "塑能學者",
+			"ENG_name": "Evocation Savant",
 			"source": "PHB",
 			"page": 117,
 			"srd": true,
@@ -2054,7 +2094,8 @@
 			]
 		},
 		{
-			"name": "形塑法術", "ENG_name": "Sculpt Spells",
+			"name": "形塑法術",
+			"ENG_name": "Sculpt Spells",
 			"source": "PHB",
 			"page": 117,
 			"srd": true,
@@ -2069,7 +2110,8 @@
 			]
 		},
 		{
-			"name": "強力戲法", "ENG_name": "Potent Cantrip",
+			"name": "強力戲法",
+			"ENG_name": "Potent Cantrip",
 			"source": "PHB",
 			"page": 117,
 			"srd": true,
@@ -2084,7 +2126,8 @@
 			]
 		},
 		{
-			"name": "強效塑能", "ENG_name": "Empowered Evocation",
+			"name": "強效塑能",
+			"ENG_name": "Empowered Evocation",
 			"source": "PHB",
 			"page": 117,
 			"srd": true,
@@ -2099,7 +2142,8 @@
 			]
 		},
 		{
-			"name": "過載導魔", "ENG_name": "Overchannel",
+			"name": "過載導魔",
+			"ENG_name": "Overchannel",
 			"source": "PHB",
 			"page": 117,
 			"srd": true,
@@ -2115,7 +2159,8 @@
 			]
 		},
 		{
-			"name": "幻術學派", "ENG_name": "School of Illusion",
+			"name": "幻術學派",
+			"ENG_name": "School of Illusion",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2136,7 +2181,8 @@
 			]
 		},
 		{
-			"name": "幻術學者", "ENG_name": "Illusion Savant",
+			"name": "幻術學者",
+			"ENG_name": "Illusion Savant",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2150,7 +2196,8 @@
 			]
 		},
 		{
-			"name": "精通次級幻象", "ENG_name": "Improved Minor Illusion",
+			"name": "精通次級幻象",
+			"ENG_name": "Improved Minor Illusion",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2165,7 +2212,8 @@
 			]
 		},
 		{
-			"name": "可塑幻象", "ENG_name": "Malleable Illusions",
+			"name": "可塑幻象",
+			"ENG_name": "Malleable Illusions",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2179,7 +2227,8 @@
 			]
 		},
 		{
-			"name": "幻象步", "ENG_name": "Illusory Step",
+			"name": "幻象步",
+			"ENG_name": "Illusory Step",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2194,7 +2243,8 @@
 			]
 		},
 		{
-			"name": "亦真亦幻", "ENG_name": "Illusory Reality",
+			"name": "亦真亦幻",
+			"ENG_name": "Illusory Reality",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2209,7 +2259,8 @@
 			]
 		},
 		{
-			"name": "死靈學派", "ENG_name": "School of Necromancy",
+			"name": "死靈學派",
+			"ENG_name": "School of Necromancy",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2231,7 +2282,8 @@
 			]
 		},
 		{
-			"name": "殘怖收割", "ENG_name": "Grim Harvest",
+			"name": "殘怖收割",
+			"ENG_name": "Grim Harvest",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2245,7 +2297,8 @@
 			]
 		},
 		{
-			"name": "死靈學者", "ENG_name": "Necromancy Savant",
+			"name": "死靈學者",
+			"ENG_name": "Necromancy Savant",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2259,7 +2312,8 @@
 			]
 		},
 		{
-			"name": "不死奴僕", "ENG_name": "Undead Thralls",
+			"name": "不死奴僕",
+			"ENG_name": "Undead Thralls",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2281,7 +2335,8 @@
 			]
 		},
 		{
-			"name": "不死適應", "ENG_name": "Inured to Undeath",
+			"name": "不死適應",
+			"ENG_name": "Inured to Undeath",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2295,7 +2350,8 @@
 			]
 		},
 		{
-			"name": "命令不死生物", "ENG_name": "Command Undead",
+			"name": "命令不死生物",
+			"ENG_name": "Command Undead",
 			"source": "PHB",
 			"page": 118,
 			"className": "Wizard",
@@ -2310,7 +2366,8 @@
 			]
 		},
 		{
-			"name": "變化學派", "ENG_name": "School of Transmutation",
+			"name": "變化學派",
+			"ENG_name": "School of Transmutation",
 			"source": "PHB",
 			"page": 119,
 			"className": "Wizard",
@@ -2332,7 +2389,8 @@
 			]
 		},
 		{
-			"name": "次級煉金", "ENG_name": "Minor Alchemy",
+			"name": "次級煉金",
+			"ENG_name": "Minor Alchemy",
 			"source": "PHB",
 			"page": 119,
 			"className": "Wizard",
@@ -2346,7 +2404,8 @@
 			]
 		},
 		{
-			"name": "變化學者", "ENG_name": "Transmutation Savant",
+			"name": "變化學者",
+			"ENG_name": "Transmutation Savant",
 			"source": "PHB",
 			"page": 119,
 			"className": "Wizard",
@@ -2360,7 +2419,8 @@
 			]
 		},
 		{
-			"name": "變化師之石", "ENG_name": "Transmuter's Stone",
+			"name": "變化師之石",
+			"ENG_name": "Transmuter's Stone",
 			"source": "PHB",
 			"page": 119,
 			"className": "Wizard",
@@ -2385,7 +2445,8 @@
 			]
 		},
 		{
-			"name": "變形者", "ENG_name": "Shapechanger",
+			"name": "變形者",
+			"ENG_name": "Shapechanger",
 			"source": "PHB",
 			"page": 119,
 			"className": "Wizard",
@@ -2400,7 +2461,8 @@
 			]
 		},
 		{
-			"name": "變化宗師", "ENG_name": "Master Transmuter",
+			"name": "變化宗師",
+			"ENG_name": "Master Transmuter",
 			"source": "PHB",
 			"page": 119,
 			"className": "Wizard",
@@ -2416,28 +2478,32 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "強效變化", "ENG_name": "Major Transformation",
+							"name": "強效變化",
+							"ENG_name": "Major Transformation",
 							"entries": [
 								"你可以將一個非魔法物體\u2014體積不大於5呎邊長立方體\u2014轉變成另一個體積和質量相似，且價值相同或更低的非魔法物體。你必須花費10分鐘持握住該物體以轉變它。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "萬靈密藥", "ENG_name": "Panacea",
+							"name": "萬靈密藥",
+							"ENG_name": "Panacea",
 							"entries": [
 								"你移除一個你以變化師之石觸碰的生物身上所有的詛咒、疾病、和毒素。該生物同時回復它所有的生命值。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "起死回生", "ENG_name": "Restore Life",
+							"name": "起死回生",
+							"ENG_name": "Restore Life",
 							"entries": [
 								"你對一個你以變化師之石觸碰的生物施放{@spell 喚醒死者}，無須消耗法術位、且該法術不需要在你的法術書中。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "返老還童", "ENG_name": "Restore Youth",
+							"name": "返老還童",
+							"ENG_name": "Restore Youth",
 							"entries": [
 								"你以變化師之石觸碰一個自願生物，且該生物的表面年齡將被減少{@dice 3d10}年，到最小13歲。這個效果並不會延長該生物的壽命。"
 							]
@@ -2447,7 +2513,8 @@
 			]
 		},
 		{
-			"name": "劍詠傳承", "ENG_name": "Bladesinging",
+			"name": "劍詠傳承",
+			"ENG_name": "Bladesinging",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -2478,7 +2545,8 @@
 			]
 		},
 		{
-			"name": "劍詠者風格", "ENG_name": "Bladesinger Styles",
+			"name": "劍詠者風格",
+			"ENG_name": "Bladesinger Styles",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -2521,7 +2589,8 @@
 			]
 		},
 		{
-			"name": "劍歌", "ENG_name": "Bladesong",
+			"name": "劍歌",
+			"ENG_name": "Bladesong",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -2553,7 +2622,8 @@
 			]
 		},
 		{
-			"name": "戰歌兼修 (劍詠)", "ENG_name": "Training in War and Song (Bladesinging)",
+			"name": "戰歌兼修 (劍詠)",
+			"ENG_name": "Training in War and Song (Bladesinging)",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -2574,7 +2644,8 @@
 			]
 		},
 		{
-			"name": "額外攻擊", "ENG_name": "Extra Attack",
+			"name": "額外攻擊",
+			"ENG_name": "Extra Attack",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -2594,7 +2665,8 @@
 			]
 		},
 		{
-			"name": "防禦之歌", "ENG_name": "Song of Defense",
+			"name": "防禦之歌",
+			"ENG_name": "Song of Defense",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -2614,7 +2686,8 @@
 			]
 		},
 		{
-			"name": "勝利之歌", "ENG_name": "Song of Victory",
+			"name": "勝利之歌",
+			"ENG_name": "Song of Victory",
 			"source": "TCE",
 			"page": 76,
 			"otherSources": [
@@ -4534,7 +4607,8 @@
 			]
 		},
 		{
-			"name": "戰爭魔法", "ENG_name": "War Magic",
+			"name": "戰爭魔法",
+			"ENG_name": "War Magic",
 			"source": "XGE",
 			"page": 59,
 			"className": "Wizard",
@@ -4557,7 +4631,8 @@
 			]
 		},
 		{
-			"name": "祕法偏斜", "ENG_name": "Arcane Deflection",
+			"name": "祕法偏斜",
+			"ENG_name": "Arcane Deflection",
 			"source": "XGE",
 			"page": 59,
 			"className": "Wizard",
@@ -4572,7 +4647,8 @@
 			]
 		},
 		{
-			"name": "戰術思維", "ENG_name": "Tactical Wit",
+			"name": "戰術思維",
+			"ENG_name": "Tactical Wit",
 			"source": "XGE",
 			"page": 59,
 			"className": "Wizard",
@@ -4586,7 +4662,8 @@
 			]
 		},
 		{
-			"name": "力量湧動", "ENG_name": "Power Surge",
+			"name": "力量湧動",
+			"ENG_name": "Power Surge",
 			"source": "XGE",
 			"page": 59,
 			"className": "Wizard",
@@ -4602,7 +4679,8 @@
 			]
 		},
 		{
-			"name": "耐久魔法", "ENG_name": "Durable Magic",
+			"name": "耐久魔法",
+			"ENG_name": "Durable Magic",
 			"source": "XGE",
 			"page": 59,
 			"className": "Wizard",
@@ -4616,7 +4694,8 @@
 			]
 		},
 		{
-			"name": "偏斜罩幕", "ENG_name": "Deflecting Shroud",
+			"name": "偏斜罩幕",
+			"ENG_name": "Deflecting Shroud",
 			"source": "XGE",
 			"page": 59,
 			"className": "Wizard",

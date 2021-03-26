@@ -1603,7 +1603,8 @@
 					]
 				},
 				{
-					"name": "巨鎚", "ENG_name": "Maul",
+					"name": "巨鎚",
+					"ENG_name": "Maul",
 					"entries": [
 						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}28 ({@damage 6d6 + 7}) bludgeoning damage."
 					]
@@ -2267,7 +2268,8 @@
 			"cr": "5",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The crab can breathe air and water."
 					]
@@ -3073,7 +3075,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"Hekaton can breathe air and water."
 					]
@@ -3671,13 +3674,15 @@
 					]
 				},
 				{
-					"name": "照明", "ENG_name": "Illumination",
+					"name": "照明",
+					"ENG_name": "Illumination",
 					"entries": [
 						"Maegera sheds bright light in a 120-foot radius and dim light in an additional 120 ft.."
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"Maegera has advantage on saving throws against spells and other magical effects."
 					]
@@ -5482,7 +5487,8 @@
 			],
 			"action": [
 				{
-					"name": "巨鎚", "ENG_name": "Maul",
+					"name": "巨鎚",
+					"ENG_name": "Maul",
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
 					]

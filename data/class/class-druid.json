@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "德魯伊", "ENG_name": "Druid",
+			"name": "德魯伊",
+			"ENG_name": "Druid",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2344,7 +2345,8 @@
 			]
 		},
 		{
-			"name": "德魯伊語", "ENG_name": "Druidic",
+			"name": "德魯伊語",
+			"ENG_name": "Druidic",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2356,7 +2358,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2420,7 +2423,8 @@
 			]
 		},
 		{
-			"name": "德魯伊結社", "ENG_name": "Druid Circle",
+			"name": "德魯伊結社",
+			"ENG_name": "Druid Circle",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2460,7 +2464,8 @@
 			]
 		},
 		{
-			"name": "荒野形態", "ENG_name": "Wild Shape",
+			"name": "荒野形態",
+			"ENG_name": "Wild Shape",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2521,7 +2526,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2561,7 +2567,8 @@
 			]
 		},
 		{
-			"name": "荒野形態強化", "ENG_name": "Wild Shape Improvement",
+			"name": "荒野形態強化",
+			"ENG_name": "Wild Shape Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2573,7 +2580,8 @@
 			]
 		},
 		{
-			"name": "德魯伊結社能力", "ENG_name": "Druid Circle feature",
+			"name": "德魯伊結社能力",
+			"ENG_name": "Druid Circle feature",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2585,7 +2593,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2612,7 +2621,8 @@
 			]
 		},
 		{
-			"name": "荒野形態強化", "ENG_name": "Wild Shape Improvement",
+			"name": "荒野形態強化",
+			"ENG_name": "Wild Shape Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2624,7 +2634,8 @@
 			]
 		},
 		{
-			"name": "德魯伊結社能力", "ENG_name": "Druid Circle feature",
+			"name": "德魯伊結社能力",
+			"ENG_name": "Druid Circle feature",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2636,7 +2647,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2663,7 +2675,8 @@
 			]
 		},
 		{
-			"name": "德魯伊結社能力", "ENG_name": "Druid Circle feature",
+			"name": "德魯伊結社能力",
+			"ENG_name": "Druid Circle feature",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2675,7 +2688,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2702,7 +2716,8 @@
 			]
 		},
 		{
-			"name": "野獸施法", "ENG_name": "Beast Spells",
+			"name": "野獸施法",
+			"ENG_name": "Beast Spells",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2714,7 +2729,8 @@
 			]
 		},
 		{
-			"name": "不老身軀", "ENG_name": "Timeless Body",
+			"name": "不老身軀",
+			"ENG_name": "Timeless Body",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2726,7 +2742,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2753,7 +2770,8 @@
 			]
 		},
 		{
-			"name": "大德魯伊", "ENG_name": "Archdruid",
+			"name": "大德魯伊",
+			"ENG_name": "Archdruid",
 			"source": "PHB",
 			"page": 64,
 			"srd": true,
@@ -2768,7 +2786,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "大地結社", "ENG_name": "Circle of the Land",
+			"name": "大地結社",
+			"ENG_name": "Circle of the Land",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -2794,7 +2813,8 @@
 			]
 		},
 		{
-			"name": "額外戲法", "ENG_name": "Bonus Cantrip",
+			"name": "額外戲法",
+			"ENG_name": "Bonus Cantrip",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -2809,7 +2829,8 @@
 			]
 		},
 		{
-			"name": "結社法術", "ENG_name": "Circle Spells",
+			"name": "結社法術",
+			"ENG_name": "Circle Spells",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -3065,7 +3086,8 @@
 			]
 		},
 		{
-			"name": "自然恢復", "ENG_name": "Natural Recovery",
+			"name": "自然恢復",
+			"ENG_name": "Natural Recovery",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -3081,7 +3103,8 @@
 			]
 		},
 		{
-			"name": "大地行者", "ENG_name": "Land's Stride",
+			"name": "大地行者",
+			"ENG_name": "Land's Stride",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -3097,7 +3120,8 @@
 			]
 		},
 		{
-			"name": "自然之護", "ENG_name": "Nature's Ward",
+			"name": "自然之護",
+			"ENG_name": "Nature's Ward",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -3112,7 +3136,8 @@
 			]
 		},
 		{
-			"name": "自然庇護", "ENG_name": "Nature's Sanctuary",
+			"name": "自然庇護",
+			"ENG_name": "Nature's Sanctuary",
 			"source": "PHB",
 			"page": 68,
 			"srd": true,
@@ -3128,7 +3153,8 @@
 			]
 		},
 		{
-			"name": "月亮結社", "ENG_name": "Circle of the Moon",
+			"name": "月亮結社",
+			"ENG_name": "Circle of the Moon",
 			"source": "PHB",
 			"page": 69,
 			"className": "Druid",
@@ -3150,7 +3176,8 @@
 			]
 		},
 		{
-			"name": "結社型態", "ENG_name": "Circle Forms",
+			"name": "結社型態",
+			"ENG_name": "Circle Forms",
 			"source": "PHB",
 			"page": 69,
 			"className": "Druid",
@@ -3221,7 +3248,8 @@
 			]
 		},
 		{
-			"name": "戰鬥荒野形態", "ENG_name": "Combat Wild Shape",
+			"name": "戰鬥荒野形態",
+			"ENG_name": "Combat Wild Shape",
 			"source": "PHB",
 			"page": 69,
 			"className": "Druid",
@@ -3236,7 +3264,8 @@
 			]
 		},
 		{
-			"name": "原初打擊", "ENG_name": "Primal Strike",
+			"name": "原初打擊",
+			"ENG_name": "Primal Strike",
 			"source": "PHB",
 			"page": 69,
 			"className": "Druid",
@@ -3250,7 +3279,8 @@
 			]
 		},
 		{
-			"name": "元素荒野形態", "ENG_name": "Elemental Wild Shape",
+			"name": "元素荒野形態",
+			"ENG_name": "Elemental Wild Shape",
 			"source": "PHB",
 			"page": 69,
 			"className": "Druid",
@@ -3264,7 +3294,8 @@
 			]
 		},
 		{
-			"name": "千面相", "ENG_name": "Thousand Forms",
+			"name": "千面相",
+			"ENG_name": "Thousand Forms",
 			"source": "PHB",
 			"page": 69,
 			"className": "Druid",
@@ -3278,7 +3309,8 @@
 			]
 		},
 		{
-			"name": "孢子結社", "ENG_name": "Circle of Spores",
+			"name": "孢子結社",
+			"ENG_name": "Circle of Spores",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -3311,7 +3343,8 @@
 			]
 		},
 		{
-			"name": "結社法術", "ENG_name": "Circle Spells",
+			"name": "結社法術",
+			"ENG_name": "Circle Spells",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -3362,7 +3395,8 @@
 			]
 		},
 		{
-			"name": "孢子光環", "ENG_name": "Halo of Spores",
+			"name": "孢子光環",
+			"ENG_name": "Halo of Spores",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -3382,7 +3416,8 @@
 			]
 		},
 		{
-			"name": "共生實體", "ENG_name": "Symbiotic Entity",
+			"name": "共生實體",
+			"ENG_name": "Symbiotic Entity",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -3410,7 +3445,8 @@
 			]
 		},
 		{
-			"name": "真菌感染", "ENG_name": "Fungal Infestation",
+			"name": "真菌感染",
+			"ENG_name": "Fungal Infestation",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -3432,7 +3468,8 @@
 			]
 		},
 		{
-			"name": "散佈孢子", "ENG_name": "Spreading Spores",
+			"name": "散佈孢子",
+			"ENG_name": "Spreading Spores",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -3454,7 +3491,8 @@
 			]
 		},
 		{
-			"name": "真菌身軀", "ENG_name": "Fungal Body",
+			"name": "真菌身軀",
+			"ENG_name": "Fungal Body",
 			"source": "TCE",
 			"page": 36,
 			"otherSources": [
@@ -4676,7 +4714,8 @@
 			]
 		},
 		{
-			"name": "夢境結社", "ENG_name": "Circle of Dreams",
+			"name": "夢境結社",
+			"ENG_name": "Circle of Dreams",
 			"source": "XGE",
 			"page": 22,
 			"className": "Druid",
@@ -4684,7 +4723,7 @@
 			"subclassShortName": "Dreams",
 			"subclassSource": "XGE",
 			"level": 2,
-			"entries":  [
+			"entries": [
 				"身為夢境結社成員的德魯伊們來自那些與妖精荒野與那夢境般國度有著強烈聯繫的地區。這些德魯伊們對自然世界的守護使他們與善良陣營的精類生物自然而然的組成了聯盟。這些德魯伊冀望讓這世界充滿夢幻奇事。他們的魔法能修復傷口、為沮喪的心帶來歡樂、並讓他們所守護的國度永遠熠熠發光、豐碩富饒，夢境和現實的邊界將變得模糊，任何疲憊的人都能找到休憩的場所。",
 				{
 					"type": "refSubclassFeature",
@@ -4693,7 +4732,8 @@
 			]
 		},
 		{
-			"name": "仲夏庭院的芬馥", "ENG_name": "Balm of the Summer Court",
+			"name": "仲夏庭院的芬馥",
+			"ENG_name": "Balm of the Summer Court",
 			"source": "XGE",
 			"page": 22,
 			"className": "Druid",
@@ -4709,7 +4749,8 @@
 			]
 		},
 		{
-			"name": "月光與陰影之家", "ENG_name": "Hearth of Moonlight and Shadow",
+			"name": "月光與陰影之家",
+			"ENG_name": "Hearth of Moonlight and Shadow",
 			"source": "XGE",
 			"page": 22,
 			"className": "Druid",
@@ -4725,7 +4766,8 @@
 			]
 		},
 		{
-			"name": "隱匿通途", "ENG_name": "Hidden Paths",
+			"name": "隱匿通途",
+			"ENG_name": "Hidden Paths",
 			"source": "XGE",
 			"page": 22,
 			"className": "Druid",
@@ -4740,7 +4782,8 @@
 			]
 		},
 		{
-			"name": "夢境行者", "ENG_name": "Walker in Dreams",
+			"name": "夢境行者",
+			"ENG_name": "Walker in Dreams",
 			"source": "XGE",
 			"page": 22,
 			"className": "Druid",
@@ -4757,7 +4800,8 @@
 			]
 		},
 		{
-			"name": "牧人結社", "ENG_name": "Circle of the Shepherd",
+			"name": "牧人結社",
+			"ENG_name": "Circle of the Shepherd",
 			"source": "XGE",
 			"page": 23,
 			"className": "Druid",
@@ -4779,7 +4823,8 @@
 			]
 		},
 		{
-			"name": "林地之語", "ENG_name": "Speech of the Woods",
+			"name": "林地之語",
+			"ENG_name": "Speech of the Woods",
 			"source": "XGE",
 			"page": 23,
 			"className": "Druid",
@@ -4794,7 +4839,8 @@
 			]
 		},
 		{
-			"name": "精魂圖騰", "ENG_name": "Spirit Totem",
+			"name": "精魂圖騰",
+			"ENG_name": "Spirit Totem",
 			"source": "XGE",
 			"page": 23,
 			"className": "Druid",
@@ -4810,21 +4856,24 @@
 				"這個精魂的靈光效果將根據你所召喚的精魂類型而有所不同，如下列選項所示。",
 				{
 					"type": "entries",
-					"name": "熊之精魂", "ENG_name": "Bear Spirit",
+					"name": "熊之精魂",
+					"ENG_name": "Bear Spirit",
 					"entries": [
 						"熊精魂將賦予你和你的盟友它的力量和耐性。每個在此精魂出現時處於靈光中且你所選擇的生物，將獲得等同於5+你的德魯伊等級的臨時生命值。此外，你和你的盟友在處於靈光中時，在力量檢定和力量豁免中具有優勢。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "鷹之精魂", "ENG_name": "Hawk Spirit",
+					"name": "鷹之精魂",
+					"ENG_name": "Hawk Spirit",
 					"entries": [
 						"鷹之精魂是一個完美的獵手，用它敏銳的視線協助你和你的盟友。當一個生物在對一個處於此精魂靈光中的目標進行攻擊檢定時，你可以使用你的反應以使該攻擊檢定獲得優勢。此外，你和你的盟友在處於靈光中時，在睿知（{@skill 感知}）檢定中具有優勢。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "獨角獸精魂", "ENG_name": "Unicorn Spirit",
+					"name": "獨角獸精魂",
+					"ENG_name": "Unicorn Spirit",
 					"entries": [
 						"獨角獸精魂為那些周遭的人們提供保護。你和你的盟友在所有用於偵測處於靈光中的生物時所作的檢定具有優勢。此外，若你消耗法術位以施放一個為任何處於靈光範圍內或外的生物回復生命值的法術，則每個處於靈光中且你所選擇的生物，也將回復等同於你德魯伊等級的生命值。"
 					]
@@ -4832,7 +4881,8 @@
 			]
 		},
 		{
-			"name": "強力召喚者", "ENG_name": "Mighty Summoner",
+			"name": "強力召喚者",
+			"ENG_name": "Mighty Summoner",
 			"source": "XGE",
 			"page": 23,
 			"className": "Druid",
@@ -4853,7 +4903,8 @@
 			]
 		},
 		{
-			"name": "守護精魂", "ENG_name": "Guardian Spirit",
+			"name": "守護精魂",
+			"ENG_name": "Guardian Spirit",
 			"source": "XGE",
 			"page": 23,
 			"className": "Druid",
@@ -4867,7 +4918,8 @@
 			]
 		},
 		{
-			"name": "忠誠召喚", "ENG_name": "Faithful Summons",
+			"name": "忠誠召喚",
+			"ENG_name": "Faithful Summons",
 			"source": "XGE",
 			"page": 23,
 			"className": "Druid",

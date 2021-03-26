@@ -53,7 +53,8 @@
 			"cr": "1",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The homarid can breathe air and water."
 					]

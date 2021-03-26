@@ -2,7 +2,8 @@
 	"data": [
 		{
 			"type": "section",
-			"name": "DM屏幕", "ENG_name": "DM Screen",
+			"name": "DM屏幕",
+			"ENG_name": "DM Screen",
 			"entries": [
 				{
 					"type": "table",
@@ -706,7 +707,8 @@
 				},
 				{
 					"type": "table",
-					"caption": "有事發生了！", "ENG_name": "DM Screen; Something happens!",
+					"caption": "有事發生了！",
+					"ENG_name": "DM Screen; Something happens!",
 					"colLabels": [
 						"d20",
 						"Event"
@@ -803,7 +805,8 @@
 				},
 				{
 					"type": "table",
-					"caption": "Quick Finds", "ENG_name": "DM Screen; Quick Finds",
+					"caption": "Quick Finds",
+					"ENG_name": "DM Screen; Quick Finds",
 					"colLabels": [
 						"d12",
 						"Find"
@@ -868,7 +871,8 @@
 				},
 				{
 					"type": "table",
-					"caption": "光照", "ENG_name": "DM Screen; Light",
+					"caption": "光照",
+					"ENG_name": "DM Screen; Light",
 					"colLabels": [
 						"來源",
 						"明亮光照",

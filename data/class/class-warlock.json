@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "契術師", "ENG_name": "Warlock",
+			"name": "契術師",
+			"ENG_name": "Warlock",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1518,7 +1519,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "異界宗主", "ENG_name": "Otherworldly Patron",
+			"name": "異界宗主",
+			"ENG_name": "Otherworldly Patron",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1530,7 +1532,8 @@
 			]
 		},
 		{
-			"name": "契約魔法", "ENG_name": "Pact Magic",
+			"name": "契約魔法",
+			"ENG_name": "Pact Magic",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1607,7 +1610,8 @@
 			]
 		},
 		{
-			"name": "魔能祈喚", "ENG_name": "Eldritch Invocations",
+			"name": "魔能祈喚",
+			"ENG_name": "Eldritch Invocations",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1622,14 +1626,15 @@
 			]
 		},
 		{
-			"name": "契約恩賜", "ENG_name": "Pact Boon",
+			"name": "契約恩賜",
+			"ENG_name": "Pact Boon",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"level": 3,
-			"entries":  [
+			"entries": [
 				"在3級時，你的異界宗主將因為你忠誠的服務而賜予你一項贈禮。你從以下能力中選擇並獲得一項。",
 				{
 					"type": "options",
@@ -1664,7 +1669,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1713,7 +1719,8 @@
 			]
 		},
 		{
-			"name": "異界宗主能力", "ENG_name": "Otherworldly Patron feature",
+			"name": "異界宗主能力",
+			"ENG_name": "Otherworldly Patron feature",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1725,7 +1732,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1752,7 +1760,8 @@
 			]
 		},
 		{
-			"name": "異界宗主能力", "ENG_name": "Otherworldly Patron feature",
+			"name": "異界宗主能力",
+			"ENG_name": "Otherworldly Patron feature",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1764,7 +1773,8 @@
 			]
 		},
 		{
-			"name": "玄奧秘法(6環)", "ENG_name": "Mystic Arcanum (6th level)",
+			"name": "玄奧秘法(6環)",
+			"ENG_name": "Mystic Arcanum (6th level)",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1778,7 +1788,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1805,7 +1816,8 @@
 			]
 		},
 		{
-			"name": "玄奧秘法(7環)", "ENG_name": "Mystic Arcanum (7th level)",
+			"name": "玄奧秘法(7環)",
+			"ENG_name": "Mystic Arcanum (7th level)",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1818,7 +1830,8 @@
 			]
 		},
 		{
-			"name": "異界宗主能力", "ENG_name": "Otherworldly Patron feature",
+			"name": "異界宗主能力",
+			"ENG_name": "Otherworldly Patron feature",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1830,7 +1843,8 @@
 			]
 		},
 		{
-			"name": "玄奧秘法(8環)", "ENG_name": "Mystic Arcanum (8th level)",
+			"name": "玄奧秘法(8環)",
+			"ENG_name": "Mystic Arcanum (8th level)",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1843,7 +1857,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1870,7 +1885,8 @@
 			]
 		},
 		{
-			"name": "玄奧秘法(9環)", "ENG_name": "Mystic Arcanum (9th level)",
+			"name": "玄奧秘法(9環)",
+			"ENG_name": "Mystic Arcanum (9th level)",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1883,7 +1899,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1910,7 +1927,8 @@
 			]
 		},
 		{
-			"name": "魔能大師", "ENG_name": "Eldritch Master",
+			"name": "魔能大師",
+			"ENG_name": "Eldritch Master",
 			"source": "PHB",
 			"page": 105,
 			"srd": true,
@@ -1924,7 +1942,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "至高妖精", "ENG_name": "The Archfey",
+			"name": "至高妖精",
+			"ENG_name": "The Archfey",
 			"source": "PHB",
 			"page": 108,
 			"className": "Warlock",
@@ -1936,7 +1955,8 @@
 				"你的宗主是一位妖精領主或女爵，一個掌握著在世俗種族誕生前便早已被遺忘秘密的傳說生物。這個存在的行為動機往往難以理解，ｕ有時反覆無常，且可能涉及爭取更強大的魔法力量、或解決久遠以前延續至今的仇恨。這類的存在包括了霜凍親王、薄暮之地的統治者空暗女王、仲夏之地的女王緹坦妮雅、她的配偶蒼翠之王奧伯龍、愚者之王希爾薩姆、以及古老的鬼婆們。",
 				{
 					"type": "entries",
-					"name": "擴展法術列表", "ENG_name": "Expanded Spell List",
+					"name": "擴展法術列表",
+					"ENG_name": "Expanded Spell List",
 					"entries": [
 						"當你要學習契術師法術時，至高妖精宗主讓你可以從擴展法術列表中選擇法術。對你而言下列法術將被加入契術師法術列表。",
 						{
@@ -1982,7 +2002,8 @@
 			]
 		},
 		{
-			"name": "妖精威儀", "ENG_name": "Fey Presence",
+			"name": "妖精威儀",
+			"ENG_name": "Fey Presence",
 			"source": "PHB",
 			"page": 108,
 			"className": "Warlock",
@@ -1997,7 +2018,8 @@
 			]
 		},
 		{
-			"name": "霧遁", "ENG_name": "Misty Escape",
+			"name": "霧遁",
+			"ENG_name": "Misty Escape",
 			"source": "PHB",
 			"page": 108,
 			"className": "Warlock",
@@ -2012,7 +2034,8 @@
 			]
 		},
 		{
-			"name": "迷惑防護", "ENG_name": "Beguiling Defenses",
+			"name": "迷惑防護",
+			"ENG_name": "Beguiling Defenses",
 			"source": "PHB",
 			"page": 108,
 			"className": "Warlock",
@@ -2026,7 +2049,8 @@
 			]
 		},
 		{
-			"name": "黑暗妄霧", "ENG_name": "Dark Delirium",
+			"name": "黑暗妄霧",
+			"ENG_name": "Dark Delirium",
 			"source": "PHB",
 			"page": 108,
 			"className": "Warlock",
@@ -2042,7 +2066,8 @@
 			]
 		},
 		{
-			"name": "邪魔宗主", "ENG_name": "The Fiend",
+			"name": "邪魔宗主",
+			"ENG_name": "The Fiend",
 			"source": "PHB",
 			"page": 109,
 			"srd": true,
@@ -2055,7 +2080,8 @@
 				"即使你可能致力對抗於它們的邪惡目的，你仍與一個來自下層位面的邪魔締結了契約。這類存在渴望著世間萬物的腐化或破壞，最終也包括了你。那些強大到足以締造契約的邪魔包括了像是狄摩高根、奧庫斯、弗拉茲厄魯、和巴菲門特這類的惡魔領主；阿斯蒙帝斯、迪斯帕特、墨菲斯托菲利斯、和貝利亞這類的大魔鬼；特別強大的pit fiends和balors；以及ultroloths和其他尤格羅斯魔領主。",
 				{
 					"type": "entries",
-					"name": "擴展法術列表", "ENG_name": "Expanded Spell List",
+					"name": "擴展法術列表",
+					"ENG_name": "Expanded Spell List",
 					"entries": [
 						"當你要學習契術師法術時，邪魔宗主讓你可以從擴展法術列表中選擇法術。對你而言下列法術將被加入契術師法術列表。",
 						{
@@ -2101,7 +2127,8 @@
 			]
 		},
 		{
-			"name": "黑暗者賜福", "ENG_name": "Dark One's Blessing",
+			"name": "黑暗者賜福",
+			"ENG_name": "Dark One's Blessing",
 			"source": "PHB",
 			"page": 109,
 			"srd": true,
@@ -2116,7 +2143,8 @@
 			]
 		},
 		{
-			"name": "黑暗者強運", "ENG_name": "Dark One's Own Luck",
+			"name": "黑暗者強運",
+			"ENG_name": "Dark One's Own Luck",
 			"source": "PHB",
 			"page": 109,
 			"srd": true,
@@ -2132,7 +2160,8 @@
 			]
 		},
 		{
-			"name": "邪魔韌性", "ENG_name": "Fiendish Resilience",
+			"name": "邪魔韌性",
+			"ENG_name": "Fiendish Resilience",
 			"source": "PHB",
 			"page": 109,
 			"srd": true,
@@ -2147,7 +2176,8 @@
 			]
 		},
 		{
-			"name": "直墮地獄", "ENG_name": "Hurl Through Hell",
+			"name": "直墮地獄",
+			"ENG_name": "Hurl Through Hell",
 			"source": "PHB",
 			"page": 109,
 			"srd": true,
@@ -2164,7 +2194,8 @@
 			]
 		},
 		{
-			"name": "舊日支配者", "ENG_name": "The Great Old One",
+			"name": "舊日支配者",
+			"ENG_name": "The Great Old One",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -2176,7 +2207,8 @@
 				"你的宗主是一個對現實維度而言徹底異質的神祕存在。它可能來自遙遠國度、現實之外的宇宙、或它可能是其中一位只記述於遠古傳說中的古神。它的行為動機超乎凡人所能理解，且它的知識是如此淵博而古老，與它所擁有的無盡秘密相比，就連世間最偉大的圖書館都會相形見絀。即使舊日支配者可能並未意識到你的存在、或對你完全不感興趣，但你所習得的秘密知識讓你得以利用來自它的龐大魔力。這種類型的存在包括了潛伏者關納德、受縛之神薩瑞茲頓、暗夜巨蛇丹達爾、歸來者扎貢、偉大的克蘇魯、以及其他無以名狀的存在。",
 				{
 					"type": "entries",
-					"name": "擴展法術列表", "ENG_name": "Expanded Spell List",
+					"name": "擴展法術列表",
+					"ENG_name": "Expanded Spell List",
 					"entries": [
 						"當你要學習契術師法術時，舊日支配者宗主讓你可以從擴展法術列表中選擇法術。對你而言下列法術將被加入契術師法術列表。",
 						{
@@ -2222,7 +2254,8 @@
 			]
 		},
 		{
-			"name": "喚醒心靈", "ENG_name": "Awakened Mind",
+			"name": "喚醒心靈",
+			"ENG_name": "Awakened Mind",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -2236,7 +2269,8 @@
 			]
 		},
 		{
-			"name": "熵光防護", "ENG_name": "Entropic Ward",
+			"name": "熵光防護",
+			"ENG_name": "Entropic Ward",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -2251,7 +2285,8 @@
 			]
 		},
 		{
-			"name": "思想護盾", "ENG_name": "Thought Shield",
+			"name": "思想護盾",
+			"ENG_name": "Thought Shield",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -2265,7 +2300,8 @@
 			]
 		},
 		{
-			"name": "創造奴僕", "ENG_name": "Create Thrall",
+			"name": "創造奴僕",
+			"ENG_name": "Create Thrall",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -2280,7 +2316,8 @@
 			]
 		},
 		{
-			"name": "​不朽者", "ENG_name": "The Undying",
+			"name": "​不朽者",
+			"ENG_name": "The Undying",
 			"source": "SCAG",
 			"page": 139,
 			"className": "Warlock",
@@ -2293,8 +2330,9 @@
 				"在被遺忘的國度中，不朽者宗主包括了巫師之墓的傳說之主，陰影之王拉洛克、以及巫瑟的神王吉爾金。",
 				{
 					"type": "entries",
-					"name": "擴展法術列表", "ENG_name": "Expanded Spell List",
-					"entries":  [
+					"name": "擴展法術列表",
+					"ENG_name": "Expanded Spell List",
+					"entries": [
 						"當你要學習契術師法術時，不朽者宗主讓你可以從擴展法術列表中選擇法術。對你而言下列法術將被加入契術師法術列表。",
 						{
 							"type": "table",
@@ -2339,7 +2377,8 @@
 			]
 		},
 		{
-			"name": "常伴死亡", "ENG_name": "Among the Dead",
+			"name": "常伴死亡",
+			"ENG_name": "Among the Dead",
 			"source": "SCAG",
 			"page": 139,
 			"className": "Warlock",
@@ -2354,7 +2393,8 @@
 			]
 		},
 		{
-			"name": "反抗死亡", "ENG_name": "Defy Death",
+			"name": "反抗死亡",
+			"ENG_name": "Defy Death",
 			"source": "SCAG",
 			"page": 139,
 			"className": "Warlock",
@@ -2369,7 +2409,8 @@
 			]
 		},
 		{
-			"name": "不朽天性", "ENG_name": "Undying Nature",
+			"name": "不朽天性",
+			"ENG_name": "Undying Nature",
 			"source": "SCAG",
 			"page": 139,
 			"className": "Warlock",
@@ -2384,7 +2425,8 @@
 			]
 		},
 		{
-			"name": "不滅生命", "ENG_name": "Indestructible Life",
+			"name": "不滅生命",
+			"ENG_name": "Indestructible Life",
 			"source": "SCAG",
 			"page": 139,
 			"className": "Warlock",
@@ -4413,7 +4455,8 @@
 			]
 		},
 		{
-			"name": "天界宗主", "ENG_name": "The Celestial",
+			"name": "天界宗主",
+			"ENG_name": "The Celestial",
 			"source": "XGE",
 			"page": 54,
 			"className": "Warlock",
@@ -4426,7 +4469,8 @@
 				"與這般力量的連接可能會導致你行為和信仰的改變。你可能會發現自己投身於殲滅不死生物、抵禦邪魔、和保護無辜者的大業中。有時候，你的心靈會充滿著你對宗主所在天界國度的渴望，並希冀能在你的餘生中漫遊在這樣的天堂之中。然而，你知道你現在的任務是待在凡世之中，且你的契約約束著你為世界上最黑暗的角落帶來光明。",
 				{
 					"type": "entries",
-					"name": "擴展法術列表", "ENG_name": "Expanded Spell List",
+					"name": "擴展法術列表",
+					"ENG_name": "Expanded Spell List",
 					"entries": [
 						"當你要學習契術師法術時，天界宗主讓你可以從擴展法術列表中選擇法術。對你而言下列法術將被加入契術師法術列表。",
 						{
@@ -4476,7 +4520,8 @@
 			]
 		},
 		{
-			"name": "額外戲法", "ENG_name": "Bonus Cantrips",
+			"name": "額外戲法",
+			"ENG_name": "Bonus Cantrips",
 			"source": "XGE",
 			"page": 54,
 			"className": "Warlock",
@@ -4490,7 +4535,8 @@
 			]
 		},
 		{
-			"name": "治癒之光", "ENG_name": "Healing Light",
+			"name": "治癒之光",
+			"ENG_name": "Healing Light",
 			"source": "XGE",
 			"page": 54,
 			"className": "Warlock",
@@ -4506,7 +4552,8 @@
 			]
 		},
 		{
-			"name": "光輝之魂", "ENG_name": "Radiant Soul",
+			"name": "光輝之魂",
+			"ENG_name": "Radiant Soul",
 			"source": "XGE",
 			"page": 54,
 			"className": "Warlock",
@@ -4520,7 +4567,8 @@
 			]
 		},
 		{
-			"name": "天族韌性", "ENG_name": "Celestial Resilience",
+			"name": "天族韌性",
+			"ENG_name": "Celestial Resilience",
 			"source": "XGE",
 			"page": 54,
 			"className": "Warlock",
@@ -4534,7 +4582,8 @@
 			]
 		},
 		{
-			"name": "灼光復仇", "ENG_name": "Searing Vengeance",
+			"name": "灼光復仇",
+			"ENG_name": "Searing Vengeance",
 			"source": "XGE",
 			"page": 54,
 			"className": "Warlock",
@@ -4549,7 +4598,8 @@
 			]
 		},
 		{
-			"name": "咒劍士", "ENG_name": "The Hexblade",
+			"name": "咒劍士",
+			"ENG_name": "The Hexblade",
 			"source": "XGE",
 			"page": 55,
 			"className": "Warlock",
@@ -4562,7 +4612,8 @@
 				"由於眾所周知，是鴉后打造出了最初的這類武器，因此許多賢者推測她就是這股力量的真身，且這些武器、以及咒劍契術師，都只不過是她用以操弄物質位面的工具，用以達到她那難以揣測的最終目的。",
 				{
 					"type": "entries",
-					"name": "擴展法術列表", "ENG_name": "Expanded Spell List",
+					"name": "擴展法術列表",
+					"ENG_name": "Expanded Spell List",
 					"entries": [
 						"當你要學習契術師法術時，咒劍士讓你可以從擴展法術列表中選擇法術。對你而言下列法術將被加入契術師法術列表。",
 						{
@@ -4612,7 +4663,8 @@
 			]
 		},
 		{
-			"name": "巫咒戰士", "ENG_name": "Hex Warrior",
+			"name": "巫咒戰士",
+			"ENG_name": "Hex Warrior",
 			"source": "XGE",
 			"page": 55,
 			"className": "Warlock",
@@ -4627,7 +4679,8 @@
 			]
 		},
 		{
-			"name": "咒劍詛咒", "ENG_name": "Hexblade's Curse",
+			"name": "咒劍詛咒",
+			"ENG_name": "Hexblade's Curse",
 			"source": "XGE",
 			"page": 55,
 			"className": "Warlock",
@@ -4650,7 +4703,8 @@
 			]
 		},
 		{
-			"name": "咒縛幽靈", "ENG_name": "Accursed Specter",
+			"name": "咒縛幽靈",
+			"ENG_name": "Accursed Specter",
 			"source": "XGE",
 			"page": 55,
 			"className": "Warlock",
@@ -4666,7 +4720,8 @@
 			]
 		},
 		{
-			"name": "巫咒護甲", "ENG_name": "Armor of Hexes",
+			"name": "巫咒護甲",
+			"ENG_name": "Armor of Hexes",
 			"source": "XGE",
 			"page": 55,
 			"className": "Warlock",
@@ -4680,7 +4735,8 @@
 			]
 		},
 		{
-			"name": "巫咒大師", "ENG_name": "Master of Hexes",
+			"name": "巫咒大師",
+			"ENG_name": "Master of Hexes",
 			"source": "XGE",
 			"page": 55,
 			"className": "Warlock",

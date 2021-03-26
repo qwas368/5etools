@@ -2,7 +2,8 @@
 	"monster": [
 		{
 			"source": "PHB",
-			"name": "活化物體(巨型)", "ENG_name": "Animated Object (Huge)",
+			"name": "活化物體(巨型)",
+			"ENG_name": "Animated Object (Huge)",
 			"page": 213,
 			"size": "H",
 			"type": "construct",
@@ -65,7 +66,8 @@
 		},
 		{
 			"source": "PHB",
-			"name": "活化物體(大型)", "ENG_name": "Animated Object (Large)",
+			"name": "活化物體(大型)",
+			"ENG_name": "Animated Object (Large)",
 			"page": 213,
 			"size": "L",
 			"type": "construct",
@@ -128,7 +130,8 @@
 		},
 		{
 			"source": "PHB",
-			"name": "活化物體(中型)", "ENG_name": "Animated Object (Medium)",
+			"name": "活化物體(中型)",
+			"ENG_name": "Animated Object (Medium)",
 			"page": 213,
 			"size": "M",
 			"type": "construct",
@@ -191,7 +194,8 @@
 		},
 		{
 			"source": "PHB",
-			"name": "活化物體(小型)", "ENG_name": "Animated Object (Small)",
+			"name": "活化物體(小型)",
+			"ENG_name": "Animated Object (Small)",
 			"page": 213,
 			"size": "S",
 			"type": "construct",
@@ -254,7 +258,8 @@
 		},
 		{
 			"source": "PHB",
-			"name": "活化物體(微型)", "ENG_name": "Animated Object (Tiny)",
+			"name": "活化物體(微型)",
+			"ENG_name": "Animated Object (Tiny)",
 			"page": 213,
 			"size": "T",
 			"type": "construct",

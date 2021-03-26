@@ -98,7 +98,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The archon has advantage on saving throws against spells and other magical effects."
 					]
@@ -229,7 +230,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The felidar has advantage on saving throws against spells and other magical effects."
 					]
@@ -389,7 +391,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The kraken can breathe air and water."
 					]

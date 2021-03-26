@@ -1,7 +1,8 @@
 {
 	"spell": [
 		{
-			"name": "思維編碼", "ENG_name": "Encode Thoughts",
+			"name": "思維編碼",
+			"ENG_name": "Encode Thoughts",
 			"source": "GGR",
 			"page": 47,
 			"level": 0,

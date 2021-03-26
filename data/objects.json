@@ -1,7 +1,8 @@
 {
 	"object": [
 		{
-			"name": "弩砲", "ENG_name": "Ballista",
+			"name": "弩砲",
+			"ENG_name": "Ballista",
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
@@ -36,7 +37,8 @@
 			"hasToken": true
 		},
 		{
-			"name": "火砲","ENG_name": "Cannon",
+			"name": "火砲",
+			"ENG_name": "Cannon",
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
@@ -114,7 +116,8 @@
 			"hasToken": true
 		},
 		{
-			"name": "吊掛大鍋","ENG_name": "Cauldron, Suspended",
+			"name": "吊掛大鍋",
+			"ENG_name": "Cauldron, Suspended",
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
@@ -140,7 +143,8 @@
 			]
 		},
 		{
-			"name": "Generic Object","ENG_name": "Generic Object",
+			"name": "Generic Object",
+			"ENG_name": "Generic Object",
 			"source": "DMG",
 			"page": 246,
 			"srd": true,
@@ -373,7 +377,8 @@
 			]
 		},
 		{
-			"name": "彈射投石機","ENG_name": "Mangonel",
+			"name": "彈射投石機",
+			"ENG_name": "Mangonel",
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
@@ -391,7 +396,8 @@
 			"actionEntries": [
 				{
 					"type": "actions",
-					"name": "彈射投石", "ENG_name": "Mangonel Stone",
+					"name": "彈射投石",
+					"ENG_name": "Mangonel Stone",
 					"entries": [
 						{
 							"type": "attack",
@@ -409,7 +415,8 @@
 			"hasToken": true
 		},
 		{
-			"name": "攻城槌","ENG_name": "Ram",
+			"name": "攻城槌",
+			"ENG_name": "Ram",
 			"source": "DMG",
 			"page": 255,
 			"size": "L",
@@ -445,7 +452,8 @@
 			"hasToken": true
 		},
 		{
-			"name": "攻城塔","ENG_name": "Siege Tower",
+			"name": "攻城塔",
+			"ENG_name": "Siege Tower",
 			"source": "DMG",
 			"page": 256,
 			"size": "G",
@@ -462,7 +470,8 @@
 			"hasToken": true
 		},
 		{
-			"name": "配重投石機","ENG_name": "Trebuchet",
+			"name": "配重投石機",
+			"ENG_name": "Trebuchet",
 			"source": "DMG",
 			"page": 256,
 			"size": "H",

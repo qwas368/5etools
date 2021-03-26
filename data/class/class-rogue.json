@@ -1,7 +1,8 @@
 {
 	"class": [
 		{
-			"name": "盜賊", "ENG_name": "Rogue",
+			"name": "盜賊",
+			"ENG_name": "Rogue",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1196,7 +1197,8 @@
 	],
 	"classFeature": [
 		{
-			"name": "專精", "ENG_name": "Expertise",
+			"name": "專精",
+			"ENG_name": "Expertise",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1209,7 +1211,8 @@
 			]
 		},
 		{
-			"name": "偷襲", "ENG_name": "Sneak Attack",
+			"name": "偷襲",
+			"ENG_name": "Sneak Attack",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1223,7 +1226,8 @@
 			]
 		},
 		{
-			"name": "竊賊黑話", "ENG_name": "Thieves' Cant",
+			"name": "竊賊黑話",
+			"ENG_name": "Thieves' Cant",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1236,7 +1240,8 @@
 			]
 		},
 		{
-			"name": "巧妙動作", "ENG_name": "Cunning Action",
+			"name": "巧妙動作",
+			"ENG_name": "Cunning Action",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1261,7 +1266,8 @@
 			]
 		},
 		{
-			"name": "盜賊範型", "ENG_name": "Roguish Archetype",
+			"name": "盜賊範型",
+			"ENG_name": "Roguish Archetype",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1286,7 +1292,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1313,7 +1320,8 @@
 			]
 		},
 		{
-			"name": "直覺閃避", "ENG_name": "Uncanny Dodge",
+			"name": "直覺閃避",
+			"ENG_name": "Uncanny Dodge",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1325,7 +1333,8 @@
 			]
 		},
 		{
-			"name": "專精", "ENG_name": "Expertise",
+			"name": "專精",
+			"ENG_name": "Expertise",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1337,7 +1346,8 @@
 			]
 		},
 		{
-			"name": "反射閃避", "ENG_name": "Evasion",
+			"name": "反射閃避",
+			"ENG_name": "Evasion",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1349,7 +1359,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1376,7 +1387,8 @@
 			]
 		},
 		{
-			"name": "盜賊範型能力", "ENG_name": "盜賊範型能力",
+			"name": "盜賊範型能力",
+			"ENG_name": "盜賊範型能力",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1388,7 +1400,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1415,7 +1428,8 @@
 			]
 		},
 		{
-			"name": "可靠才能", "ENG_name": "Reliable Talent",
+			"name": "可靠才能",
+			"ENG_name": "Reliable Talent",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1427,7 +1441,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1454,7 +1469,8 @@
 			]
 		},
 		{
-			"name": "盜賊範型能力", "ENG_name": "盜賊範型能力",
+			"name": "盜賊範型能力",
+			"ENG_name": "盜賊範型能力",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1466,7 +1482,8 @@
 			]
 		},
 		{
-			"name": "盲感", "ENG_name": "Blindsense",
+			"name": "盲感",
+			"ENG_name": "Blindsense",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1478,7 +1495,8 @@
 			]
 		},
 		{
-			"name": "靈活心智", "ENG_name": "Slippery Mind",
+			"name": "靈活心智",
+			"ENG_name": "Slippery Mind",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1490,7 +1508,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1517,7 +1536,8 @@
 			]
 		},
 		{
-			"name": "盜賊範型能力", "ENG_name": "盜賊範型能力",
+			"name": "盜賊範型能力",
+			"ENG_name": "盜賊範型能力",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1529,7 +1549,8 @@
 			]
 		},
 		{
-			"name": "捉摸不定", "ENG_name": "Elusive",
+			"name": "捉摸不定",
+			"ENG_name": "Elusive",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1541,7 +1562,8 @@
 			]
 		},
 		{
-			"name": "屬性值提升", "ENG_name": "Ability Score Improvement",
+			"name": "屬性值提升",
+			"ENG_name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1568,7 +1590,8 @@
 			]
 		},
 		{
-			"name": "幸運一擊", "ENG_name": "Stroke of Luck",
+			"name": "幸運一擊",
+			"ENG_name": "Stroke of Luck",
 			"source": "PHB",
 			"page": 94,
 			"srd": true,
@@ -1583,7 +1606,8 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "詭術師", "ENG_name": "Arcane Trickster",
+			"name": "詭術師",
+			"ENG_name": "Arcane Trickster",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1604,7 +1628,8 @@
 			]
 		},
 		{
-			"name": "法師之手詐術", "ENG_name": "Mage Hand Legerdemain",
+			"name": "法師之手詐術",
+			"ENG_name": "Mage Hand Legerdemain",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1617,7 +1642,7 @@
 				"從3級開始，當你施放{@spell 法師之手}時，你可以讓這隻幽靈般的手掌{@condition 隱形}，且你可以用它來進行下列的額外行動：",
 				{
 					"type": "list",
-					"items":[
+					"items": [
 						"你可以將一個這隻手所持握的物體放入一個被其他生物所穿戴或攜帶的容器內。",
 						"你可以取走一個被裝在其他生物所穿戴或攜帶的容器內的物體。",
 						"你可以使用{@item 盜賊工具|phb}以在射程內開鎖或解除陷阱。"
@@ -1628,7 +1653,8 @@
 			]
 		},
 		{
-			"name": "施法", "ENG_name": "Spellcasting",
+			"name": "施法",
+			"ENG_name": "Spellcasting",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1708,7 +1734,8 @@
 			]
 		},
 		{
-			"name": "魔法伏擊", "ENG_name": "Magical Ambush",
+			"name": "魔法伏擊",
+			"ENG_name": "Magical Ambush",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1722,7 +1749,8 @@
 			]
 		},
 		{
-			"name": "萬能詭術", "ENG_name": "Versatile Trickster",
+			"name": "萬能詭術",
+			"ENG_name": "Versatile Trickster",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1736,7 +1764,8 @@
 			]
 		},
 		{
-			"name": "法術竊賊", "ENG_name": "Spell Thief",
+			"name": "法術竊賊",
+			"ENG_name": "Spell Thief",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1752,7 +1781,8 @@
 			]
 		},
 		{
-			"name": "刺客", "ENG_name": "Assassin",
+			"name": "刺客",
+			"ENG_name": "Assassin",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1774,7 +1804,8 @@
 			]
 		},
 		{
-			"name": "刺殺", "ENG_name": "Assassinate",
+			"name": "刺殺",
+			"ENG_name": "Assassinate",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1788,7 +1819,8 @@
 			]
 		},
 		{
-			"name": "額外熟練", "ENG_name": "Bonus Proficiencies",
+			"name": "額外熟練",
+			"ENG_name": "Bonus Proficiencies",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1802,7 +1834,8 @@
 			]
 		},
 		{
-			"name": "專業滲透", "ENG_name": "Infiltration Expertise",
+			"name": "專業滲透",
+			"ENG_name": "Infiltration Expertise",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1817,7 +1850,8 @@
 			]
 		},
 		{
-			"name": "冒充者", "ENG_name": "Impostor",
+			"name": "冒充者",
+			"ENG_name": "Impostor",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1832,7 +1866,8 @@
 			]
 		},
 		{
-			"name": "死亡一擊", "ENG_name": "Death Strike",
+			"name": "死亡一擊",
+			"ENG_name": "Death Strike",
 			"source": "PHB",
 			"page": 97,
 			"className": "Rogue",
@@ -1846,7 +1881,8 @@
 			]
 		},
 		{
-			"name": "竊賊", "ENG_name": "Thief",
+			"name": "竊賊",
+			"ENG_name": "Thief",
 			"source": "PHB",
 			"page": 97,
 			"srd": true,
@@ -1868,7 +1904,8 @@
 			]
 		},
 		{
-			"name": "快手", "ENG_name": "Fast Hands",
+			"name": "快手",
+			"ENG_name": "Fast Hands",
 			"source": "PHB",
 			"page": 97,
 			"srd": true,
@@ -1883,7 +1920,8 @@
 			]
 		},
 		{
-			"name": "梁上君子", "ENG_name": "Second-Story Work",
+			"name": "梁上君子",
+			"ENG_name": "Second-Story Work",
 			"source": "PHB",
 			"page": 97,
 			"srd": true,
@@ -1899,7 +1937,8 @@
 			]
 		},
 		{
-			"name": "卓越潛行", "ENG_name": "Supreme Sneak",
+			"name": "卓越潛行",
+			"ENG_name": "Supreme Sneak",
 			"source": "PHB",
 			"page": 97,
 			"srd": true,
@@ -1914,7 +1953,8 @@
 			]
 		},
 		{
-			"name": "使用魔法裝置", "ENG_name": "Use Magic Device",
+			"name": "使用魔法裝置",
+			"ENG_name": "Use Magic Device",
 			"source": "PHB",
 			"page": 97,
 			"srd": true,
@@ -1929,7 +1969,8 @@
 			]
 		},
 		{
-			"name": "竊賊反射", "ENG_name": "Thief's Reflexes",
+			"name": "竊賊反射",
+			"ENG_name": "Thief's Reflexes",
 			"source": "PHB",
 			"page": 97,
 			"srd": true,
@@ -2910,7 +2951,8 @@
 			]
 		},
 		{
-			"name": "審訊者", "ENG_name": "Inquisitive",
+			"name": "審訊者",
+			"ENG_name": "Inquisitive",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -2935,7 +2977,8 @@
 			]
 		},
 		{
-			"name": "辨謊之耳", "ENG_name": "Ear for Deceit",
+			"name": "辨謊之耳",
+			"ENG_name": "Ear for Deceit",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -2949,7 +2992,8 @@
 			]
 		},
 		{
-			"name": "明察之眼", "ENG_name": "Eye for Detail",
+			"name": "明察之眼",
+			"ENG_name": "Eye for Detail",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -2963,7 +3007,8 @@
 			]
 		},
 		{
-			"name": "戰鬥洞察", "ENG_name": "Insightful Fighting",
+			"name": "戰鬥洞察",
+			"ENG_name": "Insightful Fighting",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -2978,7 +3023,8 @@
 			]
 		},
 		{
-			"name": "穩定之眼", "ENG_name": "Steady Eye",
+			"name": "穩定之眼",
+			"ENG_name": "Steady Eye",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -2992,7 +3038,8 @@
 			]
 		},
 		{
-			"name": "精準之眼", "ENG_name": "Unerring Eye",
+			"name": "精準之眼",
+			"ENG_name": "Unerring Eye",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -3007,7 +3054,8 @@
 			]
 		},
 		{
-			"name": "識破弱點", "ENG_name": "Eye for Weakness",
+			"name": "識破弱點",
+			"ENG_name": "Eye for Weakness",
 			"source": "XGE",
 			"page": 45,
 			"className": "Rogue",
@@ -3021,7 +3069,8 @@
 			]
 		},
 		{
-			"name": "策士", "ENG_name": "Mastermind",
+			"name": "策士",
+			"ENG_name": "Mastermind",
 			"source": "XGE",
 			"page": 46,
 			"className": "Rogue",
@@ -3029,7 +3078,7 @@
 			"subclassShortName": "Mastermind",
 			"subclassSource": "XGE",
 			"level": 3,
-			"entries":[
+			"entries": [
 				"策士專注於人們、對人們的影響力、以及他們所擁有的秘密。許多間諜、朝臣、和陰謀家會遵從這個範型，過著勾心鬥角的生活。你使用言語做為你的武器，就如同使用刀刃和毒藥一樣頻繁，而人們的祕密和支持則是你最喜愛的寶藏之一。",
 				{
 					"type": "refSubclassFeature",
@@ -3042,7 +3091,8 @@
 			]
 		},
 		{
-			"name": "陰謀大師", "ENG_name": "Master of Intrigue",
+			"name": "陰謀大師",
+			"ENG_name": "Master of Intrigue",
 			"source": "XGE",
 			"page": 46,
 			"className": "Rogue",
@@ -3057,7 +3107,8 @@
 			]
 		},
 		{
-			"name": "戰術大師", "ENG_name": "Master of Tactics",
+			"name": "戰術大師",
+			"ENG_name": "Master of Tactics",
 			"source": "XGE",
 			"page": 46,
 			"className": "Rogue",
@@ -3071,7 +3122,8 @@
 			]
 		},
 		{
-			"name": "洞察能手", "ENG_name": "Insightful Manipulator",
+			"name": "洞察能手",
+			"ENG_name": "Insightful Manipulator",
 			"source": "XGE",
 			"page": 46,
 			"className": "Rogue",
@@ -3080,7 +3132,7 @@
 			"subclassSource": "XGE",
 			"level": 9,
 			"header": 2,
-			"entries":[
+			"entries": [
 				"從9級開始，若你花費至少1分鐘的時間在戰鬥外觀察另一個生物或與之互動，則你可以得知某些關於它能力的情報。DM將會告訴你在下列兩個你所選擇的項目中，該生物的能力是與你相同、強於你、或是弱於你：",
 				{
 					"type": "list",
@@ -3095,7 +3147,8 @@
 			]
 		},
 		{
-			"name": "誤導攻擊", "ENG_name": "Misdirection",
+			"name": "誤導攻擊",
+			"ENG_name": "Misdirection",
 			"source": "XGE",
 			"page": 46,
 			"className": "Rogue",
@@ -3109,7 +3162,8 @@
 			]
 		},
 		{
-			"name": "欺瞞之魂", "ENG_name": "Soul of Deceit",
+			"name": "欺瞞之魂",
+			"ENG_name": "Soul of Deceit",
 			"source": "XGE",
 			"page": 46,
 			"className": "Rogue",
@@ -3124,7 +3178,8 @@
 			]
 		},
 		{
-			"name": "斥侯", "ENG_name": "Scout",
+			"name": "斥侯",
+			"ENG_name": "Scout",
 			"source": "XGE",
 			"page": 47,
 			"className": "Rogue",
@@ -3145,7 +3200,8 @@
 			]
 		},
 		{
-			"name": "散兵戰術", "ENG_name": "Skirmisher",
+			"name": "散兵戰術",
+			"ENG_name": "Skirmisher",
 			"source": "XGE",
 			"page": 47,
 			"className": "Rogue",
@@ -3159,7 +3215,8 @@
 			]
 		},
 		{
-			"name": "求生專家", "ENG_name": "Survivalist",
+			"name": "求生專家",
+			"ENG_name": "Survivalist",
 			"source": "XGE",
 			"page": 47,
 			"className": "Rogue",
@@ -3173,7 +3230,8 @@
 			]
 		},
 		{
-			"name": "優越機動", "ENG_name": "Superior Mobility",
+			"name": "優越機動",
+			"ENG_name": "Superior Mobility",
 			"source": "XGE",
 			"page": 47,
 			"className": "Rogue",
@@ -3187,7 +3245,8 @@
 			]
 		},
 		{
-			"name": "伏擊大師", "ENG_name": "Ambush Master",
+			"name": "伏擊大師",
+			"ENG_name": "Ambush Master",
 			"source": "XGE",
 			"page": 47,
 			"className": "Rogue",
@@ -3202,7 +3261,8 @@
 			]
 		},
 		{
-			"name": "突發猛擊", "ENG_name": "Sudden Strike",
+			"name": "突發猛擊",
+			"ENG_name": "Sudden Strike",
 			"source": "XGE",
 			"page": 47,
 			"className": "Rogue",
@@ -3216,7 +3276,8 @@
 			]
 		},
 		{
-			"name": "風流劍客", "ENG_name": "Swashbuckler",
+			"name": "風流劍客",
+			"ENG_name": "Swashbuckler",
 			"source": "XGE",
 			"page": 48,
 			"className": "Rogue",
@@ -3238,7 +3299,8 @@
 			]
 		},
 		{
-			"name": "華麗步法", "ENG_name": "Fancy Footwork",
+			"name": "華麗步法",
+			"ENG_name": "Fancy Footwork",
 			"source": "XGE",
 			"page": 48,
 			"className": "Rogue",
@@ -3252,7 +3314,8 @@
 			]
 		},
 		{
-			"name": "放蕩無畏", "ENG_name": "Rakish Audacity",
+			"name": "放蕩無畏",
+			"ENG_name": "Rakish Audacity",
 			"source": "XGE",
 			"page": 48,
 			"className": "Rogue",
@@ -3267,7 +3330,8 @@
 			]
 		},
 		{
-			"name": "瀟灑氣質", "ENG_name": "Panache",
+			"name": "瀟灑氣質",
+			"ENG_name": "Panache",
 			"source": "XGE",
 			"page": 48,
 			"className": "Rogue",
@@ -3283,7 +3347,8 @@
 			]
 		},
 		{
-			"name": "優雅戰技", "ENG_name": "Elegant Maneuver",
+			"name": "優雅戰技",
+			"ENG_name": "Elegant Maneuver",
 			"source": "XGE",
 			"page": 48,
 			"className": "Rogue",
@@ -3297,7 +3362,8 @@
 			]
 		},
 		{
-			"name": "決鬥大師", "ENG_name": "Master Duelist",
+			"name": "決鬥大師",
+			"ENG_name": "Master Duelist",
 			"source": "XGE",
 			"page": 48,
 			"className": "Rogue",

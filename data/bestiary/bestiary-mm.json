@@ -75,7 +75,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 4}，觸及5呎 或 射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -179,7 +180,8 @@
 			"cr": "10",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"底棲魔魚可以在空氣和水中呼吸。"
 					]
@@ -201,7 +203,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"底棲魔魚進行三次觸手攻擊。"
 					]
@@ -214,7 +217,8 @@
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及10呎，單一目標。{@h}15 ({@damage 3d6 + 5})鈍擊傷害。"
 					]
@@ -378,13 +382,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"耶提可以使用它的寒顫凝視，並進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}14 ({@damage 2d6 + 7})劈砍傷害加 7 ({@damage 2d6})寒冰傷害。"
 					]
@@ -645,7 +651,8 @@
 			"cr": "14",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"黑龍可以在空氣和水中呼吸。"
 					]
@@ -659,25 +666,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"黑龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害加 4 ({@damage 1d8})酸蝕傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及15呎，單一目標。{@h}15 ({@damage 2d8 + 6})鈍擊傷害。"
 					]
@@ -854,25 +865,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"龍巫妖可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及10呎，單一目標。{@h}18 ({@damage 2d10 + 7})穿刺傷害加 5 ({@damage 1d10})閃電傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及5呎，單一目標。{@h}14 ({@damage 2d6 + 7})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及15呎，單一目標。{@h}16 ({@damage 2d8 + 7})鈍擊傷害。"
 					]
@@ -1042,25 +1057,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"藍龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及10呎，單一目標。{@h}18 ({@damage 2d10 + 7})穿刺傷害加 5 ({@damage 1d10})閃電傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及5呎，單一目標。{@h}14 ({@damage 2d6 + 7})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及15呎，單一目標。{@h}16 ({@damage 2d8 + 7})鈍擊傷害。"
 					]
@@ -1226,25 +1245,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"黃銅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及15呎，單一目標。{@h}15 ({@damage 2d8 + 6})鈍擊傷害。"
 					]
@@ -1256,7 +1279,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"黃銅龍使用以下其中一種吐息武器。",
 						{
@@ -1428,7 +1452,8 @@
 			"cr": "15",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"青銅龍可以在空氣和水中呼吸。"
 					]
@@ -1442,25 +1467,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"青銅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及10呎，單一目標。{@h}18 ({@damage 2d10 + 7})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及5呎，單一目標。{@h}14 ({@damage 2d6 + 7})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及15呎，單一目標。{@h}16 ({@damage 2d8 + 7})鈍擊傷害。"
 					]
@@ -1472,7 +1501,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"青銅龍使用以下其中一種吐息武器。",
 						{
@@ -1646,25 +1676,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"赤銅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及15呎，單一目標。{@h}15 ({@damage 2d8 + 6})鈍擊傷害。"
 					]
@@ -1676,7 +1710,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"赤銅龍使用以下其中一種吐息武器。",
 						{
@@ -1835,7 +1870,8 @@
 			"cr": "17",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"金龍可以在空氣和水中呼吸。"
 					]
@@ -1849,25 +1885,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"金龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及5呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及15呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -1879,7 +1919,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"金龍使用以下其中一種吐息武器。",
 						{
@@ -2051,7 +2092,8 @@
 			"cr": "15",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"綠龍可以在空氣和水中呼吸。"
 					]
@@ -2065,25 +2107,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"綠龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及15呎，單一目標。{@h}15 ({@damage 2d8 + 6})鈍擊傷害。"
 					]
@@ -2258,25 +2304,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"紅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害加 7 ({@damage 2d6})火焰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及5呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及15呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -2444,25 +2494,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"銀龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及10呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及5呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及15呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -2474,7 +2528,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"銀龍使用以下其中一種吐息武器。",
 						{
@@ -2670,25 +2725,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"白龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害加 4 ({@damage 1d8})寒冰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及15呎，單一目標。{@h}15 ({@damage 2d8 + 6})鈍擊傷害。"
 					]
@@ -2891,13 +2950,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"氣元素進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}14 ({@damage 2d8 + 5})鈍擊傷害。"
 					]
@@ -2995,13 +3056,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4})劈砍傷害。"
 					]
@@ -3092,7 +3155,8 @@
 			"cr": "21",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"黑龍可以在空氣和水中呼吸。"
 					]
@@ -3106,25 +3170,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"黑龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及15呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害加 9 ({@damage 2d8})酸蝕傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及10呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及20呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -3289,25 +3357,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"藍龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 16}，觸及15呎，單一目標。{@h}20 ({@damage 2d10 + 9})穿刺傷害加 11 ({@damage 2d10})閃電傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 16}，觸及10呎，單一目標。{@h}16 ({@damage 2d6 + 9})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 16}，觸及20呎，單一目標。{@h}18 ({@damage 2d8 + 9})鈍擊傷害。"
 					]
@@ -3468,25 +3540,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"黃銅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及15呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及20呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -3498,7 +3574,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"黃銅龍使用以下其中一種吐息武器。",
 						{
@@ -3665,7 +3742,8 @@
 			"cr": "22",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"青銅龍可以在空氣和水中呼吸。"
 					]
@@ -3679,25 +3757,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"青銅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 16}，觸及15呎，單一目標。{@h}20 ({@damage 2d10 + 9})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 16}，觸及10呎，單一目標。{@h}16 ({@damage 2d6 + 9})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 16}，觸及20呎，單一目標。{@h}18 ({@damage 2d8 + 9})鈍擊傷害。"
 					]
@@ -3709,7 +3791,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"青銅龍使用以下其中一種吐息武器。",
 						{
@@ -3883,25 +3966,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"赤銅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及15呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及10呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及20呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -3913,7 +4000,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"赤銅龍使用以下其中一種吐息武器。",
 						{
@@ -4071,7 +4159,8 @@
 			"cr": "24",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"金龍可以在空氣和水中呼吸。"
 					]
@@ -4085,25 +4174,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"金龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及15呎，單一目標。{@h}21 ({@damage 2d10 + 10})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及10呎，單一目標。{@h}17 ({@damage 2d6 + 10})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及20呎，單一目標。{@h}19 ({@damage 2d8 + 10})鈍擊傷害。"
 					]
@@ -4115,7 +4208,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"金龍使用以下其中一種吐息武器。",
 						{
@@ -4287,7 +4381,8 @@
 			"cr": "22",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"綠龍可以在空氣和水中呼吸。"
 					]
@@ -4301,25 +4396,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"綠龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及15呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害加 10 ({@damage 3d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及10呎，單一目標。{@h}22 ({@damage 4d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及20呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -4488,25 +4587,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"紅龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及15呎，單一目標。{@h}21 ({@damage 2d10 + 10})穿刺傷害加 14 ({@damage 4d6})火焰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及10呎，單一目標。{@h}17 ({@damage 2d6 + 10})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及20呎，單一目標。{@h}19 ({@damage 2d8 + 10})鈍擊傷害。"
 					]
@@ -4666,25 +4769,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"銀龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及15呎，單一目標。{@h}21 ({@damage 2d10 + 10})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及10呎，單一目標。{@h}17 ({@damage 2d6 + 10})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及20呎，單一目標。{@h}19 ({@damage 2d8 + 10})鈍擊傷害。"
 					]
@@ -4696,7 +4803,8 @@
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"銀龍使用以下其中一種吐息武器。",
 						{
@@ -4880,25 +4988,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"白龍可以使用它的駭人威儀，然後進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及15呎，單一目標。{@h}19 ({@damage 2d10 + 8})穿刺傷害加 9 ({@damage 2d8})寒冰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}15 ({@damage 2d6 + 8})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及20呎，單一目標。{@h}17 ({@damage 2d8 + 8})鈍擊傷害。"
 					]
@@ -5138,13 +5250,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"斯芬克斯進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及5呎，單一目標。{@h}17 ({@damage 2d10 + 6})劈砍傷害。"
 					]
@@ -5355,13 +5469,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"活化盔甲進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})鈍擊傷害。"
 					]
@@ -5453,7 +5569,8 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})劈砍傷害加 3 ({@damage 1d6})酸蝕傷害。若目標為一個體型為大型或更小的生物，則它{@condition 被擒}逃脫DC 13)。直到擒抱結束前，掘地蟲只能對該{@condition 被擒}的生物進行啃咬攻擊，且在這麼做時的攻擊檢定中具有優勢。"
 					]
@@ -5533,7 +5650,8 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}18 ({@damage 4d6 + 4})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 14的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -5610,7 +5728,8 @@
 			"cr": "1/2",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"猿進行二次拳擊攻擊。"
 					]
@@ -5622,7 +5741,8 @@
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程25/50呎，單一目標。{@h}6 ({@damage 1d6 + 3})鈍擊傷害。"
 					]
@@ -5856,7 +5976,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}8 ({@damage 2d4 + 3})劈砍傷害。目標必須進行一次DC 14的體質豁免，豁免失敗則受到10 ({@damage 3d6})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -6129,7 +6250,8 @@
 			],
 			"action": [
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 6}，觸及5呎 或 射程20/60呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -6298,13 +6420,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"刺客進行二次短劍攻擊。"
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害，且目標必須進行一次DC 15的體質豁免，若豁免失敗則受到24 ({@damage 7d6})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -6518,7 +6642,8 @@
 			],
 			"action": [
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一目標。{@h}14 ({@damage 3d6 + 4})鈍擊傷害。"
 					]
@@ -6773,7 +6898,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}1 ({@damage 1d4 - 1})穿刺傷害。"
 					]
@@ -6841,7 +6967,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}1 穿刺傷害。"
 					]
@@ -6987,13 +7114,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巴洛炎魔進行二次攻擊：一次長劍，一次鞭。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}21 ({@damage 3d8 + 8})劈砍傷害加 13 ({@damage 3d8})閃電傷害。若巴洛炎魔造成重擊，則它將骰三次傷害骰，而非原本的二次。"
 					]
@@ -7147,7 +7276,8 @@
 			"cr": "1/8",
 			"action": [
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})劈砍傷害。"
 					]
@@ -7295,19 +7425,22 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"首領進行三次近戰攻擊：二次彎刀、一次匕首。或者首領使用匕首進行二次遠程攻擊。"
 					]
 				},
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
 				},
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 5}，觸及5呎 或 射程20/60呎，單一目標。{@h}5 ({@damage 1d4 + 3})穿刺傷害。"
 					]
@@ -7611,7 +7744,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -7648,19 +7782,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"猬魔進行三次近戰攻擊：一次尾擊，二次爪抓。或者，它可以使用二次投擲烈焰。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})穿刺傷害。"
 					]
@@ -7820,13 +7957,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巴古拉魔進行三次攻擊：一次啃咬，二次拳擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})穿刺傷害。"
 					]
@@ -7948,7 +8087,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
@@ -8042,7 +8182,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 0}，觸及5呎，單一生物。{@h}1 穿刺傷害。"
 					]
@@ -8142,7 +8283,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -8179,7 +8321,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"鬚魔進行二次攻擊：一次蛇鬚，一次長柄刀。"
 					]
@@ -8289,13 +8432,15 @@
 			"cr": "11",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"青足龍蛇進行二次攻擊：一次啃咬，一次絞纏。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}22 ({@damage 3d10 + 6})穿刺傷害。"
 					]
@@ -8451,7 +8596,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}14 ({@damage 4d6})穿刺傷害。"
 					]
@@ -8603,7 +8749,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}14 ({@damage 4d6})穿刺傷害。"
 					]
@@ -8850,19 +8997,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"熊進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2}) 穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 2d4 + 2}) 劈砍傷害。"
 					]
@@ -8955,7 +9105,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"黑龍可以在空氣和水中呼吸。"
 					]
@@ -8963,7 +9114,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2})穿刺傷害加 2 ({@damage 1d4})酸蝕傷害。"
 					]
@@ -9084,7 +9236,7 @@
 				{
 					"name": "腐蝕形態",
 					"entries": [
-						"一個觸碰黑布丁或在距離它5呎內時以近戰攻擊命中它的生物將受到4 ({@damage 1d8})酸蝕傷害。任何金屬或木質製成的非魔法武器會在命中黑布丁時被腐蝕。在造成傷害之後，該武器的傷害骰將受到一個永久且可累積的−1罰值。若該罰值累積至−5，則該武器被摧毀。金屬或木質製成的非魔法彈藥會在命中黑布丁時並造成傷害後被摧毀。黑布丁可以在1輪內吃掉2吋厚、非魔法的木質或金屬。"
+						"一個觸碰黑布丁或在距離它5呎內時以近戰攻擊命中它的生物將受到4 ({@damage 1d8})酸蝕傷害。任何金屬或木質製成的非魔法武器會在命中黑布丁時被腐蝕。在造成傷害之後，該武器的傷害骰將受到一個永久且可累積的\u22121罰值。若該罰值累積至\u22125，則該武器被摧毀。金屬或木質製成的非魔法彈藥會在命中黑布丁時並造成傷害後被摧毀。黑布丁可以在1輪內吃掉2吋厚、非魔法的木質或金屬。"
 					]
 				},
 				{
@@ -9098,7 +9250,7 @@
 				{
 					"name": "偽足",
 					"entries": [
-						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})鈍擊傷害加 18 ({@damage 4d8})酸蝕傷害。此外，目標穿著的非魔法護甲將被部分溶解，並它所提供的AC將受到永久且可累積的−1罰值。若它的AC被此罰值減至10，則該護甲被摧毀。"
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})鈍擊傷害加 18 ({@damage 4d8})酸蝕傷害。此外，目標穿著的非魔法護甲將被部分溶解，並它所提供的AC將受到永久且可累積的\u22121罰值。若它的AC被此罰值減至10，則該護甲被摧毀。"
 					]
 				}
 			],
@@ -9200,7 +9352,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})穿刺傷害。"
 					]
@@ -9396,7 +9549,8 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}8 ({@damage 1d10 + 3})穿刺傷害加 3 ({@damage 1d6})閃電傷害。"
 					]
@@ -9507,19 +9661,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"史拉蟾進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。若目標為一個類人生物，則它必須成功通過一次DC 15的體質豁免，否則被一種名為「混沌噬菌體」的疾病給感染。當被感染時，目標無法回復生命值，且它的生命值最大值每經過24小時就會減少10 ({@dice 3d6})點。若目標的生命值最大值因為這個疾病而歸零，則目標將立即轉變成一隻{@creature 史拉紅蟾}，或者若它具有施放3環或以上法術的能力，則轉變成一隻{@creature 史拉綠蟾}。只有{@spell 祈願術}能夠將這個轉變逆轉。"
 					]
@@ -9620,7 +9777,8 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若野豬向著一個目標直線移動至少20呎並接著在同回合以一次獠牙攻擊命中它，則目標將受到額外的3 ({@damage 1d6})劈砍傷害。若目標為一個生物，則它必須成功通過一次DC 11的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -9746,7 +9904,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -9777,13 +9936,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"骨魔進行三次攻擊：二次爪抓，一次釘刺。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一目標。{@h}8 ({@damage 1d8 + 4})劈砍傷害。"
 					]
@@ -9951,7 +10112,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及10呎，單一生物。{@h}10 ({@damage 2d6 + 3})穿刺傷害加 10 ({@damage 3d6})毒素傷害。"
 					]
@@ -10076,7 +10238,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及10呎，單一生物。{@h}10 ({@damage 2d6 + 3})穿刺傷害加 10 ({@damage 3d6})毒素傷害。"
 					]
@@ -10171,13 +10334,15 @@
 			"cr": "1",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"黃銅龍使用以下其中一種吐息武器。",
 						{
@@ -10285,7 +10450,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"青銅龍可以在空氣和水中呼吸。"
 					]
@@ -10293,13 +10459,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}8 ({@damage 1d10 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"青銅龍使用以下其中一種吐息武器。",
 						{
@@ -10418,19 +10586,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"熊進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -10566,13 +10737,15 @@
 			],
 			"action": [
 				{
-					"name": "釘頭錘","ENG_name": "Morningstar",
+					"name": "釘頭錘",
+					"ENG_name": "Morningstar",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}11 ({@damage 2d8 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 4}，觸及5呎 或 射程30/120呎，單一目標。{@h}近戰時 9 ({@damage 2d6 + 2})穿刺傷害或遠程時 5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -10688,19 +10861,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"熊地精進行二次近戰攻擊"
 					]
 				},
 				{
-					"name": "釘頭錘","ENG_name": "Morningstar",
+					"name": "釘頭錘",
+					"ENG_name": "Morningstar",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}11 ({@damage 2d8 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 5}，觸及5呎 或 射程30/120呎，單一目標。{@h}近戰時 9 ({@damage 2d6 + 3})穿刺傷害或遠程時 5 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -10804,7 +10980,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}30 ({@damage 4d12 + 4})穿刺傷害。"
 					]
@@ -10908,7 +11085,8 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"狂蛙人可以在空氣和水中呼吸。"
 					]
@@ -10934,13 +11112,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"狂蛙人進行二次近戰攻擊：一次啃咬，一次矛。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})鈍擊傷害。"
 					]
@@ -11097,7 +11277,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"魔裔進行二次近戰攻擊或使用二次火焰射線。"
 					]
@@ -11237,7 +11418,8 @@
 			"cr": "1/8",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}2 ({@damage 1d4})鈍擊傷害。"
 					]
@@ -11337,7 +11519,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"食腐蟲進行二次攻擊：一次觸鬚，一次啃咬。"
 					]
@@ -11350,7 +11533,8 @@
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 2d4 + 2})穿刺傷害。"
 					]
@@ -11460,7 +11644,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 0}，觸及5呎，單一目標。{@h}1 劈砍傷害。"
 					]
@@ -11547,19 +11732,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"熊進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}9 ({@damage 1d8 + 5})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。"
 					]
@@ -11648,7 +11836,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若半人馬向著一個目標直線移動至少30呎並接著在同回合以一次長柄槍攻擊命中它，則目標將受到額外的10 ({@damage 3d6})穿刺傷害。"
 					]
@@ -11656,7 +11845,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"半人馬進行二次攻擊：一次長柄槍，一次蹄擊，或者二次長弓。"
 					]
@@ -11676,7 +11866,8 @@
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -11777,7 +11968,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -11808,7 +12000,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"鏈魔進行二次鎖鏈攻擊。"
 					]
@@ -12086,13 +12279,15 @@
 			"cr": "6",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"奇美拉進行三次攻擊：一次啃咬，一次角擊，一次爪抓。若它能夠使用火焰吐息，則它可以使用吐息以代替啃咬或角擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})穿刺傷害。"
 					]
@@ -12104,7 +12299,8 @@
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -12218,7 +12414,8 @@
 			"cr": "4",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"甲伏怪可以在空氣和水中呼吸。"
 					]
@@ -12233,7 +12430,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"甲伏怪進行二次鉗擊攻擊。若甲伏怪正擒抱一個生物，則甲伏怪還可以使用一次觸鬚攻擊。"
 					]
@@ -12408,13 +12606,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"魔像進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}16 ({@damage 2d10 + 5})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 15的體質豁免，否則它的生命值最大值將減少等同於所受傷害的數值。若這個攻擊將目標的生命值最大值歸零，則目標死亡。這個減損持續直到被{@spell 高等復原術}法術或其他魔法給移除。"
 					]
@@ -12537,19 +12737,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"斗篷偽怪進行二次攻擊：一次啃咬，一次尾擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一生物。{@h}10 ({@damage 2d6 + 3})穿刺傷害，且若目標的體型為大型或更小，則斗篷偽怪將附著於目標身上。若斗篷偽怪對目標的攻擊具有優勢，則斗篷偽怪將附著於目標的頭部，且目標將因此陷入{@condition 目盲}，且在斗篷偽怪附著期間無法呼吸。在附著時，斗篷偽怪只能對目標進行啃咬攻擊，且在該攻擊檢定中具有優勢。斗篷偽怪可以藉由消耗5呎移動速度來解除附著狀態。包括目標在內的一個生物也可以使用一個動作，藉由成功通過一次DC 16的力量檢定以使斗篷偽怪解除附著。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一生物。{@h}7 ({@damage 1d8 + 3})劈砍傷害。"
 					]
@@ -12721,19 +12924,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨人進行二次釘頭錘攻擊。"
 					]
 				},
 				{
-					"name": "釘頭錘","ENG_name": "Morningstar",
+					"name": "釘頭錘",
+					"ENG_name": "Morningstar",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及10呎，單一目標。{@h}21 ({@damage 3d8 + 8})穿刺傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 12}，射程60/240呎，單一目標。{@h}30 ({@damage 4d10 + 8})鈍擊傷害。"
 					]
@@ -12854,7 +13060,8 @@
 			"cr": "1/2",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}3 ({@damage 1d4 + 1})穿刺傷害，且目標必須成功通過一次DC 11的體質豁免以抵抗不被魔法石化。若豁免失敗，該生物將會開始轉變成石頭並因此被{@condition 束縛}。它必須在它的下個回合結束時重複進行這個檢定。若豁免成功，則此效果結束。若豁免失敗，則該生物將被{@condition 石化}持續24小時。"
 					]
@@ -13076,13 +13283,15 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}6 ({@damage 1d8 + 2})鈍擊傷害，且目標{@condition 被擒}(逃脫DC 14)。直到擒抱結束前，該生物被{@condition 束縛}，且蟒蛇不能絞纏另一個目標。"
 					]
@@ -13174,13 +13383,15 @@
 			"cr": "1",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"赤銅龍使用以下其中一種吐息武器。",
 						{
@@ -13356,13 +13567,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一生物。{@h}8 ({@damage 1d6 + 5})穿刺傷害，且目標必須成功通過一次DC 13的體質豁免，否則陷入{@condition 中毒}狀態長達24小時。直到這個毒素結束前，目標也將陷入{@condition 昏迷}狀態。另一個生物可以使用一個動作以將目標搖醒。"
 					]
 				},
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一體型為中型或更小的生物。{@h}10 ({@damage 2d6 + 3})鈍擊傷害，且目標{@condition 被擒} (逃脫DC 15)。直到擒抱結束前，該目標被{@condition 束縛}，且羽蛇不能絞纏另一個目標。"
 					]
@@ -13471,7 +13684,8 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"蟹可以在空氣和水中呼吸。"
 					]
@@ -13582,7 +13796,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})鈍擊傷害或劈砍傷害（由蠕行之爪決定）。"
 					]
@@ -13679,7 +13894,8 @@
 			"cr": "1/2",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"鱷魚可以屏住牠的呼吸長達15分鐘。"
 					]
@@ -13687,7 +13903,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}7 ({@damage 1d10 + 2})穿刺傷害，且目標{@condition 被擒}(逃脫DC 12)。直到擒抱結束前，該生物被{@condition 束縛}，且鱷魚不能啃咬另一個目標。"
 					]
@@ -13866,13 +14083,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"狂信徒進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 4}，觸及5呎 或 射程20/60呎，單一生物。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -14031,7 +14250,8 @@
 			],
 			"action": [
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}4 ({@damage 1d6 + 1})劈砍傷害。"
 					]
@@ -14131,19 +14351,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"獨眼巨人進行二次巨棍攻擊。"
 					]
 				},
 				{
-					"name": "巨棍","ENG_name": "Greatclub",
+					"name": "巨棍",
+					"ENG_name": "Greatclub",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及10呎，單一目標。{@h}19 ({@damage 3d8 + 6})鈍擊傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 9}，射程30/120呎，單一目標。{@h}28 ({@damage 4d10 + 6})鈍擊傷害。"
 					]
@@ -14304,7 +14527,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"土巨靈進行二次拳擊攻擊或二次巨鎚攻擊。"
 					]
@@ -14548,13 +14772,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"惡犬進行二次啃咬攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 12的體質豁免，否則陷入{@condition 中毒}狀態直到這個疾病被治癒。每經過24小時，該生物都必須重複進行這個豁免檢定，豁免失敗則目標的生命值最大值將減少5 ({@dice 1d10})點。這個減損持續直到該疾病被治癒。若目標的生命值最大值因為這個疾病而歸零，則目標死亡。"
 					]
@@ -14732,13 +14958,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"死亡騎士進行三次長劍攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}9 ({@damage 1d8 + 5})劈砍傷害，或若以雙手使用則造成 10 ({@damage 1d10 + 5})劈砍傷害，加上 18 ({@damage 4d8})死靈傷害。"
 					]
@@ -14935,7 +15163,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"史拉蟾進行三次攻擊：一次啃咬，二次爪抓或巨劍。"
 					]
@@ -14953,7 +15182,8 @@
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害加 7 ({@damage 2d6})死靈傷害。"
 					]
@@ -15100,7 +15330,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}14 ({@damage 4d6})穿刺傷害。"
 					]
@@ -15360,7 +15591,8 @@
 			"cr": "0",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}2 ({@damage 1d4})穿刺傷害。"
 					]
@@ -15570,7 +15802,7 @@
 					"type": "inset",
 					"name": "Acererak and His Disciples",
 					"entries": [
-						"The transformation into a demilich isn't a bitter end for all liches that experience it. Made as a conscious choice, the path of the demilich becomes the next step in a dark evolution. The lich Acererak—a powerful wizard and demonologist and the infamous master of the Tomb of Horrors—anticipated his own transformation, preparing for it by setting enchanted gemstones into his skull's eye sockets and teeth. Each of these soul gems possessed the power to capture the souls on which his phylactery would feed.",
+						"The transformation into a demilich isn't a bitter end for all liches that experience it. Made as a conscious choice, the path of the demilich becomes the next step in a dark evolution. The lich Acererak\u2014a powerful wizard and demonologist and the infamous master of the Tomb of Horrors\u2014anticipated his own transformation, preparing for it by setting enchanted gemstones into his skull's eye sockets and teeth. Each of these soul gems possessed the power to capture the souls on which his phylactery would feed.",
 						"Acererak abandoned his physical body, accepting that it would molder and dissolve to dust while he traveled the planes as a disembodied consciousness. If the skull that was his last physical remains was ever disturbed, its gems would claim the souls of the insolent intruders to his tomb, magically transferring them to his phylactery.",
 						"Liches who follow Acererak's path believe that by becoming free of their bodies, they can continue their quest for power beyond the mortal world. As their patron did, they secure their remains within well-guarded vaults, using soul gems to maintain their phylacteries and destroy the adventurers who disturb their lairs.",
 						"Acererak or another demilich like him has a challenge rating of 21 (33,000 XP), or 23 (50,000 XP) in its lair, and gains the following additional action option.",
@@ -15724,7 +15956,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"梵天神侍進行二次近戰攻擊。"
 					]
@@ -15853,7 +16086,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 13的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -15951,7 +16185,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"位移獸進行二次觸肢攻擊。"
 					]
@@ -16093,13 +16328,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"氣巨靈進行三次彎刀攻擊。"
 					]
 				},
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害加 3 ({@damage 1d6})閃電或雷鳴傷害（由氣巨靈決定）。"
 					]
@@ -16285,7 +16522,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"二重身進行二次近戰攻擊。"
 					]
@@ -16474,7 +16712,8 @@
 			"cr": "17",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"龍龜可以在空氣和水中呼吸。"
 					]
@@ -16482,25 +16721,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"龍龜進行三次攻擊：一次啃咬，二次爪抓。它也可以用一次尾擊代替二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及15呎，單一目標。{@h}26 ({@damage 3d12 + 7})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及10呎，單一目標。{@h}16 ({@damage 2d8 + 7})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及15呎，單一目標。{@h}26 ({@damage 3d12 + 7})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 20的力量豁免，否則被推離龍龜最多10呎並被擊倒{@condition 伏地}。"
 					]
@@ -16628,19 +16871,22 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"怯魔進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}3 ({@damage 1d6})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}5 ({@damage 2d4})劈砍傷害。"
 					]
@@ -16753,7 +16999,8 @@
 			],
 			"trait": [
 				{
-					"name": "精類血統","ENG_name": "Fey Ancestry",
+					"name": "精類血統",
+					"ENG_name": "Fey Ancestry",
 					"entries": [
 						"蛛化精靈在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法使蛛化精靈入睡。"
 					]
@@ -16765,7 +17012,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，蛛化精靈在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -16779,25 +17027,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蛛化精靈進行三次攻擊，使用它的長劍或長弓。它能夠以一次啃咬攻擊取代其中的一次攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一生物。{@h}2 ({@damage 1d4})穿刺傷害加 9 ({@damage 2d8})毒素傷害。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害，或若以雙手使用則造成 8 ({@damage 1d10 + 3})劈砍傷害。"
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 6}，射程150/600呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害加 4 ({@damage 1d8})毒素傷害。"
 					]
@@ -16958,13 +17210,15 @@
 			],
 			"trait": [
 				{
-					"name": "精類血統","ENG_name": "Fey Ancestry",
+					"name": "精類血統",
+					"ENG_name": "Fey Ancestry",
 					"entries": [
 						"卓爾在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法使卓爾入睡。"
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，卓爾在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -16972,13 +17226,15 @@
 			],
 			"action": [
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "手弩","ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"ENG_name": "Hand Crossbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害，且目標必須成功通過一次DC 13的體質豁免，否則陷入{@condition 中毒}狀態長達1小時。若此豁免檢定失敗且結果與目標值差距5點或更多，則目標在中毒的同時也將陷入{@condition 昏迷}狀態。目標將在它受到傷害，或另一個生物使用一個動作將它搖醒時恢復知覺。"
 					]
@@ -17135,13 +17391,15 @@
 			],
 			"trait": [
 				{
-					"name": "精類血統","ENG_name": "Fey Ancestry",
+					"name": "精類血統",
+					"ENG_name": "Fey Ancestry",
 					"entries": [
 						"卓爾在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法使卓爾入睡。"
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，卓爾在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -17149,19 +17407,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"卓爾進行二次短劍攻擊。"
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4})穿刺傷害加 10 ({@damage 3d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "手弩","ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"ENG_name": "Hand Crossbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 7}，射程30/120呎，單一目標。{@h}7 ({@damage 1d6 + 4})穿刺傷害，且目標必須成功通過一次DC 13的體質豁免，否則陷入{@condition 中毒}狀態長達1小時。若此豁免檢定失敗且結果與目標值差距5點或更多，則目標在中毒的同時也將陷入{@condition 昏迷}狀態。目標將在它受到傷害，或另一個生物使用一個動作將它搖醒時恢復知覺。"
 					]
@@ -17384,13 +17645,15 @@
 			],
 			"trait": [
 				{
-					"name": "精類血統","ENG_name": "Fey Ancestry",
+					"name": "精類血統",
+					"ENG_name": "Fey Ancestry",
 					"entries": [
 						"卓爾在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法使卓爾入睡。"
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，卓爾在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -17404,7 +17667,8 @@
 					]
 				},
 				{
-					"name": "召喚惡魔 (1/日)","ENG_name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
+					"ENG_name": "Summon Demon (1/Day)",
 					"entries": [
 						"卓爾使用魔法召喚一個{@creature 夸塞魔}，或以{@chance 50|50％|50％召喚機率}的成功率嘗試召喚一個{@creature 影魔}。被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達10分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
@@ -17592,13 +17856,15 @@
 			],
 			"trait": [
 				{
-					"name": "精類血統","ENG_name": "Fey Ancestry",
+					"name": "精類血統",
+					"ENG_name": "Fey Ancestry",
 					"entries": [
 						"卓爾在對抗{@condition 魅惑}的豁免檢定中具有優勢，且魔法無法使卓爾入睡。"
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，卓爾在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -17606,19 +17872,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"卓爾進行二次鞭打攻擊。"
 					]
 				},
 				{
-					"name": "鞭打", "ENG_name": "Scourge",
+					"name": "鞭打",
+					"ENG_name": "Scourge",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害加 17 ({@damage 5d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "召喚惡魔 (1/日)","ENG_name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
+					"ENG_name": "Summon Demon (1/Day)",
 					"entries": [
 						"卓爾使用魔法以{@chance 30|30％|30％召喚機率}的成功率嘗試召喚一個{@creature 蠟融妖}。若召喚失敗，則卓爾將受到5 ({@damage 1d10})精神傷害。被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達10分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
@@ -18082,7 +18351,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，灰矮人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -18102,7 +18372,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 4}，觸及5呎 或 射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害，或若處於變巨效果時則造成 9 ({@damage 2d6 + 2})穿刺傷害。"
 					]
@@ -18192,7 +18463,8 @@
 					]
 				},
 				{
-					"name": "解體", "ENG_name": "Disintegration",
+					"name": "解體",
+					"ENG_name": "Disintegration",
 					"entries": [
 						"若二元冢死亡，它的身體將瓦解成塵，留下它的武器和任何它所攜帶的其它東西。"
 					]
@@ -18200,7 +18472,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"二元冢進行二次拳擊攻擊或二次標槍攻擊。"
 					]
@@ -18212,7 +18485,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 3}，觸及5呎 或 射程30/120呎，單一目標。{@h}4 ({@damage 1d6 + 1})穿刺傷害。"
 					]
@@ -18339,7 +18613,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}4 ({@damage 1d4 + 2})劈砍傷害。"
 					]
@@ -18573,13 +18848,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"土元素進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一目標。{@h}14 ({@damage 2d8 + 5})鈍擊傷害。"
 					]
@@ -18724,13 +19001,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"火巨靈進行二次彎刀攻擊，或使用二次投擲烈焰。"
 					]
 				},
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害加 7 ({@damage 2d6})火焰傷害。"
 					]
@@ -18924,7 +19203,8 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若麋鹿向著一個目標直線移動至少20呎並接著在同回合以一次衝撞攻擊命中它，則目標將受到額外的7 ({@dice 2d6})傷害。若目標為一個生物，則它必須成功通過一次DC 11的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -19245,7 +19525,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -19277,19 +19558,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"慾魔進行三次攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4})劈砍傷害，或若以雙手使用則造成 9 ({@damage 1d10 + 4})劈砍傷害，加上 13 ({@damage 3d8})毒素傷害。"
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 7}，射程150/600呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害加 13 ({@damage 3d8})毒素傷害，且目標必須成功通過一次DC 14的體質豁免，否則陷入{@condition 中毒}狀態。這個毒素將持續直到它被{@spell 次級復原術}法術或其他類似的魔法給移除。"
 					]
@@ -19439,25 +19723,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"伊特蛛怪進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}6 ({@damage 1d8 + 2})穿刺傷害加 4 ({@damage 1d8})毒素傷害。目標必須成功通過一次DC 11的體質豁免，否則將陷入{@condition 中毒}狀態長達1分鐘。該生物可以在它的每個回合結束時重複進行這個豁免檢定，成功則結束這個效果對它的影響。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 2d4 + 2})劈砍傷害。"
 					]
 				},
 				{
-					"name": "蛛網{@recharge 5}", "ENG_name": "Web {@recharge 5}",
+					"name": "蛛網{@recharge 5}",
+					"ENG_name": "Web {@recharge 5}",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程30/60呎，單一體型為大型或更小的生物。{@h}該生物將被蛛網給{@condition 束縛}。以一個動作，被{@condition 束縛}的生物可以進行一次DC 11的力量檢定，若檢定成功則從蛛網中掙脫。這個效果會在蛛網被摧毀時結束。蛛網具有AC 10和5點生命值，對火焰易傷，且免疫於鈍擊、毒素和精神傷害。"
 					]
@@ -19589,7 +19877,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"雙頭巨人進行二次攻擊：一次戰斧，一次釘頭錘。"
 					]
@@ -19601,7 +19890,8 @@
 					]
 				},
 				{
-					"name": "釘頭錘","ENG_name": "Morningstar",
+					"name": "釘頭錘",
+					"ENG_name": "Morningstar",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}14 ({@damage 2d8 + 5})穿刺傷害。"
 					]
@@ -19704,13 +19994,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -19735,7 +20025,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -19744,8 +20035,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -19853,13 +20144,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -19884,7 +20175,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -19893,8 +20185,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -19999,13 +20291,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -20030,7 +20322,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -20039,8 +20332,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -20141,13 +20434,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -20172,7 +20465,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -20181,8 +20475,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -20282,13 +20576,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -20313,7 +20607,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -20322,8 +20617,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -20437,13 +20732,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -20468,7 +20763,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -20477,8 +20773,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -20580,13 +20876,13 @@
 					"name": "七彩年齡",
 					"entries": [
 						"妖精龍的鱗片會隨其年齡而改變顏色，按照彩虹的七色順序變換。所有的妖精龍都具有天生施法能力，並隨著牠們成長習得新的法術。",
-						"紅—5 年或以下",
-						"橙—6–10 年",
-						"黃—11–20 年",
-						"綠—21–30 年",
-						"藍—31–40 年",
-						"靛—41–50 年",
-						"紫—51 年或以上",
+						"紅\u20145 年或以下",
+						"橙\u20146\u201310 年",
+						"黃\u201411\u201320 年",
+						"綠\u201421\u201330 年",
+						"藍\u201431\u201340 年",
+						"靛\u201441\u201350 年",
+						"紫\u201451 年或以上",
 						"一隻綠色或更年長的妖精龍的挑戰等級將提升至 2。"
 					]
 				},
@@ -20611,7 +20907,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}1穿刺傷害。"
 					]
@@ -20620,8 +20917,8 @@
 					"name": "亢奮吐息 {@recharge 5}",
 					"entries": [
 						"妖精龍向著距離它5呎內的一個生物吐出一口亢奮毒氣。目標必須成功通過一次DC 11的睿知豁免，否則在1分鐘內，目標無法採取反應，且必須在它的每次回合開始時骰一顆{@dice d6}以決定它在這回合的行為：",
-						"1–4：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
-						"5–6：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
+						"1\u20134：目標不採取動作或附贈動作，並使用它所有的移動速度向一個隨機方向移動。",
+						"5\u20136：目標不移動，且它在這回合唯一能做的事是進行一次DC 11的睿知豁免，若成功則結束這個效果對它的影響。"
 					]
 				}
 			],
@@ -20772,7 +21069,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"火元素進行二次觸碰攻擊。"
 					]
@@ -20890,19 +21188,22 @@
 			"cr": "9",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨人進行二次巨劍攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}28 ({@damage 6d6 + 7})劈砍傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 11}，射程60/240呎，單一目標。{@h}29 ({@damage 4d10 + 7})鈍擊傷害。"
 					]
@@ -21045,19 +21346,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"火蛇進行二次攻擊：一次啃咬，一次尾擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})穿刺傷害加 3 ({@damage 1d6})火焰傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})鈍擊傷害加 3 ({@damage 1d6})火焰傷害。"
 					]
@@ -21248,7 +21552,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"燃燒顱骨使用二次火焰射線。"
 					]
@@ -21442,13 +21747,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"魔像進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})鈍擊傷害。"
 					]
@@ -21656,7 +21963,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}1 穿刺傷害 加上 7 ({@damage 3d4})毒素傷害。"
 					]
@@ -21804,7 +22112,8 @@
 			],
 			"action": [
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}5 ({@damage 1d8 + 1})劈砍傷害。"
 					]
@@ -21883,13 +22192,15 @@
 			"cr": "8",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"廢陋巨人用它的巨棍進行二次攻擊，或進行一次巨棍攻擊並使用一次邪眼。"
 					]
 				},
 				{
-					"name": "巨棍","ENG_name": "Greatclub",
+					"name": "巨棍",
+					"ENG_name": "Greatclub",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及15呎，單一目標。{@h}19 ({@damage 3d8 + 6})鈍擊傷害。"
 					]
@@ -21981,7 +22292,8 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"青蛙可以在空氣和水中呼吸。"
 					]
@@ -22080,7 +22392,8 @@
 			"cr": "8",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨人進行二次巨斧攻擊。"
 					]
@@ -22092,7 +22405,8 @@
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 9}，射程60/240呎，單一目標。{@h}28 ({@damage 4d10 + 6})鈍擊傷害。"
 					]
@@ -22240,7 +22554,8 @@
 			],
 			"action": [
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})鈍擊傷害。"
 					]
@@ -22390,19 +22705,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"石像鬼進行二次攻擊，一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})劈砍傷害。"
 					]
@@ -22757,13 +23075,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}12 ({@damage 2d8 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})劈砍傷害。若目標為一個不死生物以外的生物，則它必須成功通過一次DC 10的體質豁免，否則將陷入{@condition 麻痺}狀態長達1分鐘。目標可以在每次它的回合結束時重複這個豁免檢定，若檢定成功則結束這個效果對它的影響。"
 					]
@@ -23101,13 +23421,15 @@
 			"cr": "1",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一生物。{@h}9 ({@damage 2d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 2d4 + 2})劈砍傷害。若目標為一個不死生物或精靈以外的生物，則它必須成功通過一次DC 10的體質豁免，否則將陷入{@condition 麻痺}狀態長達1分鐘。目標可以在每次它的回合結束時重複這個豁免檢定，若檢定成功則結束這個效果對它的影響。"
 					]
@@ -23189,7 +23511,8 @@
 			"cr": "7",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"猿進行二次拳擊攻擊。"
 					]
@@ -23201,7 +23524,8 @@
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 9}，射程50/100呎，單一目標。{@h}30 ({@damage 7d6 + 6})鈍擊傷害。"
 					]
@@ -23275,19 +23599,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"獾進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}6 ({@damage 2d4 + 1})劈砍傷害。"
 					]
@@ -23381,7 +23708,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -23459,7 +23787,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若野豬向著一個目標直線移動至少20呎並接著在同回合以一次獠牙攻擊命中它，則目標將受到額外的7 ({@damage 2d6})劈砍傷害。若目標為一個生物，則它必須成功通過一次DC 13的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -23562,7 +23891,8 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}4 ({@damage 1d4 + 2})穿刺傷害，且目標必須成功通過一次DC 11的體質豁免，否則受到10 ({@damage 3d6})毒素傷害。若此毒素傷害將目標的生命值歸零，則目標的傷勢穩定，但陷入{@condition 中毒}狀態長達1小時，這個狀態即使在目標回復生命值之後仍會持續。且目標若因此而{@condition 中毒}，則將連帶陷入{@condition 麻痺}狀態。"
 					]
@@ -23647,13 +23977,15 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一生物。{@h}11 ({@damage 2d6 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一生物。{@h}13 ({@damage 2d8 + 4})鈍擊傷害，且目標{@condition 被擒}(逃脫DC 16)。直到擒抱結束前，該生物被{@condition 束縛}，且蟒蛇不能絞纏另一個目標。"
 					]
@@ -23759,7 +24091,8 @@
 			"cr": "1/8",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"蟹可以在空氣和水中呼吸。"
 					]
@@ -23851,7 +24184,8 @@
 			"cr": "5",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"鱷魚可以屏住牠的呼吸長達30分鐘。"
 					]
@@ -23859,19 +24193,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"鱷魚進行二次攻擊：一次啃咬，一次尾擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}21 ({@damage 3d10 + 5})穿刺傷害，且目標{@condition 被擒}(逃脫DC 16)。直到擒抱結束前，目標被{@condition 束縛}，且鱷魚不能啃咬另一個目標。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一未{@condition 被擒}於鱷魚的目標。{@h}14 ({@damage 2d8 + 5})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 16的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -23958,7 +24295,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"鷹進行二次攻擊：一次喙啄，一次禽爪。"
 					]
@@ -24059,7 +24397,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若麋鹿向著一個目標直線移動至少20呎並接著在同回合以一次衝撞攻擊命中它，則目標將受到額外的7 (2d6)傷害。若目標為一個生物，則它必須成功通過一次DC 14的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -24170,7 +24509,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}2 ({@damage 1d6 - 1})劈砍傷害。"
 					]
@@ -24259,7 +24599,8 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"青蛙可以在空氣和水中呼吸。"
 					]
@@ -24273,7 +24614,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})穿刺傷害，且目標{@condition 被擒}(逃脫DC 11)。直到擒抱結束前，該生物被{@condition 束縛}，且青蛙不能啃咬另一個目標。"
 					]
@@ -24363,7 +24705,8 @@
 			"cr": "1/2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若山羊向著一個目標直線移動至少20呎並接著在同回合以一次衝撞攻擊命中它，則目標將受到額外的5 ({@damage 2d4})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 13的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -24459,7 +24802,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})穿刺傷害。"
 					]
@@ -24546,7 +24890,8 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -24657,13 +25002,15 @@
 			"cr": "1",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"在離水時，章魚可以屏住牠的呼吸長達1小時。"
 					]
 				},
 				{
-					"name": "水下偽裝","ENG_name": "Underwater Camouflage",
+					"name": "水下偽裝",
+					"ENG_name": "Underwater Camouflage",
 					"entries": [
 						"章魚在處於水中時進行的敏捷（{@skill 隱匿}）檢定中具有優勢。"
 					]
@@ -24891,7 +25238,8 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一目標。{@h}6 ({@damage 1d4 + 4})穿刺傷害，且目標必須進行一次DC 11的體質豁免，若豁免失敗則受到10 ({@damage 3d6})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -24999,7 +25347,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -25100,7 +25449,8 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蠍子進行三次攻擊：二次鉗擊，一次螫刺。"
 					]
@@ -25186,7 +25536,8 @@
 			"cr": "1/2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若海馬向著一個目標直線移動至少20呎並接著在同回合以一次衝撞攻擊命中它，則目標將受到額外的7 ({@damage 2d6})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 11的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -25294,7 +25645,8 @@
 			"cr": "5",
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"鯊魚在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -25308,7 +25660,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}22 ({@damage 3d10 + 6})穿刺傷害。"
 					]
@@ -25453,13 +25806,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}7 ({@damage 1d8 + 3})穿刺傷害，且目標必須進行一次DC 11的體質豁免，若豁免失敗則受到9 ({@damage 2d8})毒素傷害，豁免成功則只受到一半的傷害。若此毒素傷害將目標的生命值歸零，則目標的傷勢穩定，但陷入 {@condition 中毒}狀態長達1小時，這個狀態即使在目標回復生命值之後仍會持續。且目標若因此而{@condition 中毒}，則將連帶陷入{@condition 麻痺}狀態。"
 					]
 				},
 				{
-					"name": "蛛網{@recharge 5}", "ENG_name": "Web {@recharge 5}",
+					"name": "蛛網{@recharge 5}",
+					"ENG_name": "Web {@recharge 5}",
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程30/60呎，單一生物。{@h}目標被蛛網給{@condition 束縛}。以一個動作，被{@condition 束縛}的目標可以進行一次DC 12的力量檢定，若檢定成功則掙脫蛛網。蛛網可以被攻擊且被破壞（AC 10; 5點生命值; 對火焰傷害易傷; 免疫鈍擊、毒素、和精神傷害）。"
 					]
@@ -25551,7 +25906,8 @@
 			"cr": "1",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"蟾蜍可以在空氣和水中呼吸。"
 					]
@@ -25565,7 +25921,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2})穿刺傷害加 5 ({@damage 1d10})毒素傷害，且目標{@condition 被擒}(逃脫DC 13)。直到擒抱結束前，目標被{@condition 束縛}，且蟾蜍不能啃咬另一個目標。"
 					]
@@ -25684,7 +26041,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"禿鷲進行二次攻擊：一次喙啄，一次禽爪。"
 					]
@@ -25856,7 +26214,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d4 + 3})穿刺傷害。"
 					]
@@ -25962,7 +26321,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}4 ({@damage 1d6 + 1})穿刺傷害，且目標必須進行一次DC 11的體質豁免，若豁免失敗則受到7 ({@damage 2d6})毒素傷害，豁免成功則只受到一半的傷害。若此毒素傷害將目標的生命值歸零，則目標的傷勢穩定，但陷入 {@condition 中毒}狀態長達1小時，這個狀態即使在目標回復生命值之後仍會持續。且目標若因此而{@condition 中毒}，則將連帶陷入{@condition 麻痺}狀態。"
 					]
@@ -26076,7 +26436,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"懼噬體進行一次啃咬攻擊，且若可以的話，它會再使用它的致盲唾沫。"
 					]
@@ -26202,7 +26563,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"吉斯洋基人進行二次銀質巨劍攻擊。"
 					]
@@ -26312,13 +26674,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"吉斯洋基人進行二次巨劍攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}9 ({@damage 2d6 + 2})劈砍傷害加 7 ({@damage 2d6})精神傷害。"
 					]
@@ -26426,7 +26790,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"吉斯澤萊人進行二次徒手打擊。"
 					]
@@ -26550,7 +26915,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"吉斯澤萊人進行二次徒手打擊。"
 					]
@@ -26708,7 +27074,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"迷誘魔進行四次攻擊：二次鉗擊和二次拳擊。或者，它可以進行二次鉗擊並施放一個法術。"
 					]
@@ -26877,7 +27244,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"角鬥士進行三次近戰攻擊或二次遠程攻擊。"
 					]
@@ -27013,7 +27381,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -27025,7 +27394,8 @@
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 3}，射程150/600呎，單一目標。{@h}5 ({@damage 1d8 + 1})穿刺傷害。"
 					]
@@ -27132,19 +27502,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"豺狼人進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}6 ({@damage 1d6 + 3})穿刺傷害，且目標必須成功通過一次DC 12的體質豁免，否則受到 7 ({@damage 2d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害。"
 					]
@@ -27251,13 +27624,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"豺狼人進行二次攻擊，使用長柄刀或長弓，且若可以的話則再使用它的煽動暴走。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}5 ({@damage 1d4 + 3})穿刺傷害。"
 					]
@@ -27269,7 +27644,8 @@
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -27377,7 +27753,8 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若山羊向著一個目標直線移動至少20呎並接著在同回合以一次衝撞攻擊命中它，則目標將受到額外的2 ({@damage 1d4})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 10的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -27526,13 +27903,15 @@
 			],
 			"action": [
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})劈砍傷害。"
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程80/320呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -27657,19 +28036,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"哥布林進行二次彎刀攻擊。第二次攻擊具有劣勢。"
 					]
 				},
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})劈砍傷害。"
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 2}，觸及5呎 或 射程30/120呎，單一目標。{@h}3 ({@damage 1d6})穿刺傷害。"
 					]
@@ -27776,7 +28158,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"金龍可以在空氣和水中呼吸。"
 					]
@@ -27784,13 +28167,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}9 ({@damage 1d10 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"金龍使用以下其中一種吐息武器。",
 						{
@@ -28033,7 +28418,8 @@
 			"cr": "17",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若巨牛魔向著一個目標直線移動至少15呎並接著在同回合以一次角撞攻擊命中它，則目標將受到額外的38 ({@damage 7d10})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 21的力量豁免，否則被推離最多20呎並被擊倒{@condition 伏地}。"
 					]
@@ -28059,7 +28445,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨牛魔進行三次攻擊：兩次拳擊，一次蹄擊。"
 					]
@@ -28192,7 +28579,7 @@
 				{
 					"name": "腐蝕金屬",
 					"entries": [
-						"任何金屬製成的非魔法武器將在命中泥怪時被腐蝕。在造成傷害之後，該武器的傷害骰將受到一個永久且可累積的−1罰值。若該罰值累積至−5，則該武器被摧毀。金屬製成的非魔法彈藥會在命中泥怪時並造成傷害後被摧毀。",
+						"任何金屬製成的非魔法武器將在命中泥怪時被腐蝕。在造成傷害之後，該武器的傷害骰將受到一個永久且可累積的\u22121罰值。若該罰值累積至\u22125，則該武器被摧毀。金屬製成的非魔法彈藥會在命中泥怪時並造成傷害後被摧毀。",
 						"泥怪可以在1輪內吃掉2吋厚、非魔法的金屬。"
 					]
 				},
@@ -28207,7 +28594,7 @@
 				{
 					"name": "偽足",
 					"entries": [
-						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})鈍擊傷害加 7 ({@damage 2d6})酸蝕傷害，且若目標正穿著非魔法金屬護甲，則它的護甲將被部分腐蝕且其所提供的AC將受到永久且可累積的−1罰值。若護甲的AC被此罰值減至10，則該護甲被摧毀。"
+						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})鈍擊傷害加 7 ({@damage 2d6})酸蝕傷害，且若目標正穿著非魔法金屬護甲，則它的護甲將被部分腐蝕且其所提供的AC將受到永久且可累積的\u22121罰值。若護甲的AC被此罰值減至10，則該護甲被摧毀。"
 					]
 				}
 			],
@@ -28379,7 +28766,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"史拉蟾進行三次攻擊：一次啃咬，二次爪抓或巨劍。"
 					]
@@ -28397,7 +28785,8 @@
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})劈砍傷害。"
 					]
@@ -28521,7 +28910,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"綠龍可以在空氣和水中呼吸。"
 					]
@@ -28529,7 +28919,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2})穿刺傷害加 3 ({@damage 1d6})毒素傷害。"
 					]
@@ -28708,7 +29099,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"鬼婆可以在空氣和水中呼吸。"
 					]
@@ -28739,7 +29131,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})劈砍傷害。"
 					]
@@ -28914,7 +29307,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"史拉蟾進行三次攻擊：一次啃咬，二次爪抓或法杖攻擊。或者，它可以使用二次投擲烈焰。"
 					]
@@ -29070,7 +29464,8 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"觸鬚怪進行二次攻擊：一次觸鬚，一次喙啄。"
 					]
@@ -29202,7 +29597,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"穴居攫怪進行一次觸手攻擊。若該攻擊命中，則穴居攫怪可以再對同個目標進行一次喙啄攻擊。"
 					]
@@ -29310,13 +29706,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"穴居攫怪進行二次：一次尾擊，一次觸手。若它的觸手攻擊命中，則穴居攫怪可以再對同個目標進行一次喙啄攻擊。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}11 ({@damage 2d6 + 4})鈍擊傷害。"
 					]
@@ -29437,7 +29835,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"獅鷲進行二次攻擊：一次喙啄，一次爪抓。"
 					]
@@ -29449,7 +29848,8 @@
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -29856,7 +30256,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一生物。{@h}8 ({@damage 1d8 + 4})穿刺傷害，且目標必須進行一次DC 15的體質豁免檢定，若豁免失敗則受到45 ({@damage 10d8})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -30054,13 +30455,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"斯芬克斯進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})劈砍傷害。"
 					]
@@ -30197,7 +30600,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 5}，觸及5呎 或 射程30/120呎，單一目標。{@h}10 ({@damage 2d6 + 3})穿刺傷害。"
 					]
@@ -30307,19 +30711,22 @@
 			"cr": "5",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"老兵進行二次長劍攻擊。若它已經抽出一把短劍，則它可以再進行一次短劍攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害，或若以雙手使用時 8 ({@damage 1d10 + 3})劈砍傷害。"
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -30429,13 +30836,15 @@
 			"cr": "1",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"鳥身女妖進行二次攻擊：一次爪抓，一次棍棒。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}6 ({@damage 2d4 + 1})劈砍傷害。"
 					]
@@ -30666,7 +31075,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害加 7 ({@damage 2d6})火焰傷害。"
 					]
@@ -30826,13 +31236,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"恐怖鎧甲進行二次長劍攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4})劈砍傷害，或若以雙手使用則造成 9 ({@damage 1d10 + 4})劈砍傷害。"
 					]
@@ -30970,19 +31382,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"狂戰魔進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -31096,19 +31511,22 @@
 			"cr": "5",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨人進行二次巨棍攻擊。"
 					]
 				},
 				{
-					"name": "巨棍","ENG_name": "Greatclub",
+					"name": "巨棍",
+					"ENG_name": "Greatclub",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一目標。{@h}18 ({@damage 3d8 + 5})鈍擊傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 8}，射程60/240呎，單一目標。{@h}21 ({@damage 3d10 + 5})鈍擊傷害。"
 					]
@@ -31223,7 +31641,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"駿鷹進行二次攻擊：一次喙啄，一次爪抓。"
 					]
@@ -31235,7 +31654,8 @@
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})劈砍傷害。"
 					]
@@ -31360,13 +31780,15 @@
 			],
 			"action": [
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}5 ({@damage 1d8 + 1})劈砍傷害，或若以雙手使用則造成 6 ({@damage 1d10 + 1})劈砍傷害。"
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 3}，射程150/600呎，單一目標。{@h}5 ({@damage 1d8 + 1})穿刺傷害。"
 					]
@@ -31476,19 +31898,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"大哥布林進行二次巨劍攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}9 ({@damage 2d6 + 2})劈砍傷害。"
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 4}，觸及5呎 或 射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -31607,13 +32032,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"大哥布林進行三次近戰攻擊。或者，它可以使用標槍進行二次遠程攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害，或若以雙手使用則造成 8 ({@damage 1d10 + 3})劈砍傷害。"
 					]
@@ -31625,7 +32052,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 9}，觸及5呎 或 射程30/120呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -31760,7 +32188,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}1 穿刺傷害，且目標必須成功通過一次DC 10的體質豁免，否則將陷入{@condition 中毒}狀態長達1分鐘。若此豁免檢定失敗且結果與目標值差距5點或更多，則目標將改為陷入{@condition 中毒}長達 5 ({@dice 1d10})分鐘，且在{@condition 中毒}狀態的持續期間陷入{@condition 昏迷}。"
 					]
@@ -31861,13 +32290,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"恐爪怪進行二次鉤爪攻擊。"
 					]
 				},
 				{
-					"name": "鉤爪","ENG_name": "Hook",
+					"name": "鉤爪",
+					"ENG_name": "Hook",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一目標。{@h}11 ({@damage 2d6 + 4})穿刺傷害。"
 					]
@@ -31969,7 +32400,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -32000,7 +32432,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"角魔進行三次近戰攻擊：二次叉刺，一次尾擊。它也可以使用以取代任何近戰攻擊。"
 					]
@@ -32012,7 +32445,8 @@
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}10 ({@damage 1d8 + 6})穿刺傷害。若目標為一個不死生物或構裝體以外的生物，則它必須成功通過一次DC 17的體質豁免，否則將在它的每個回合開始時因為煉獄創傷而失去10 ({@dice 3d6})生命值。每當角魔使用此攻擊命中一個帶有該創傷的生物，這個創傷造成的傷害將會增加10 ({@dice 3d6})點。任何生物都可以使用一個動作，透過成功通過一次DC 12的睿知（{@skill 醫藥}）檢定以為創傷止血。這個創傷也會在目標被魔法治療的時候癒合。"
 					]
@@ -32119,7 +32553,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"鯊魚在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -32133,7 +32568,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})穿刺傷害。"
 					]
@@ -32236,7 +32672,8 @@
 			"cr": "8",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"海德拉可以屏住它的呼吸長達1小時。"
 					]
@@ -32267,13 +32704,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"海德拉進行多次啃咬攻擊，其次數等同於它頭的數量。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一目標。{@h}10 ({@damage 1d10 + 5})穿刺傷害。"
 					]
@@ -32353,7 +32792,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}3 ({@damage 1d6})穿刺傷害。"
 					]
@@ -32445,7 +32885,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -32477,25 +32918,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"冰魔進行三次攻擊：一次啃咬，一次爪抓，一次尾擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})穿刺傷害加 10 ({@damage 3d6})寒冰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}10 ({@damage 2d4 + 5})劈砍傷害加 10 ({@damage 3d6})寒冰傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}12 ({@damage 2d6 + 5})鈍擊傷害加 10 ({@damage 3d6})寒冰傷害。"
 					]
@@ -32518,7 +32963,8 @@
 						"一些冰魔矛兵有下列動作選擇。",
 						{
 							"type": "entries",
-							"name": "多重攻擊","ENG_name": "Multiattack",
+							"name": "多重攻擊",
+							"ENG_name": "Multiattack",
 							"entries": [
 								"冰魔進行二次攻擊：一次冰矛，一次尾擊。"
 							]
@@ -32669,7 +33115,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}3 ({@damage 1d4 + 1})劈砍傷害加 2 ({@damage 1d4})寒冰傷害。"
 					]
@@ -32801,7 +33248,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -33142,13 +33590,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"噬腦怪進行一次爪抓攻擊，並使用吞食智力。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 2d4 + 2})劈砍傷害。"
 					]
@@ -33326,13 +33776,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"潛獵者進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})鈍擊傷害。"
 					]
@@ -33482,13 +33934,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"魔像進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及5呎，單一目標。{@h}20 ({@damage 3d8 + 7})鈍擊傷害。"
 					]
@@ -33592,7 +34046,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}1 ({@damage 1d4 - 1})穿刺傷害。"
 					]
@@ -33674,7 +34129,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -33830,13 +34286,15 @@
 			],
 			"action": [
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程80/320呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -33934,7 +34392,8 @@
 					]
 				},
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"虎鯨可以屏住牠的呼吸長達30分鐘。"
 					]
@@ -33948,7 +34407,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}21 ({@damage 5d6 + 4})穿刺傷害。"
 					]
@@ -34076,13 +34536,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"騎士進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})劈砍傷害。"
 					]
@@ -34208,7 +34670,8 @@
 			"cr": "1/8",
 			"trait": [
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，狗頭人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -34222,7 +34685,8 @@
 			],
 			"action": [
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -34362,7 +34826,8 @@
 			"cr": "23",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"克拉肯可以在空氣和水中呼吸。"
 					]
@@ -34383,13 +34848,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"克拉肯進行三次觸肢攻擊，每一次攻擊都可以被替換成一次拋擲攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 17}，觸及5呎，單一目標。{@h}23 ({@damage 3d8 + 10})穿刺傷害。若目標為一個{@condition 被擒}於克拉肯，且體型為大型或更小的生物，則該生物將被吞嚥，且擒抱結束。在被吞嚥時，該生物將陷入{@condition 目盲}和{@condition 束縛}，它對克拉肯外的攻擊和其他效果有全掩護，且在每次克拉肯的回合開始時受到42 ({@damage 12d6})酸蝕傷害。若克拉肯在單一回合內受到超過50點來自它體內生物所造成的傷害，克拉肯必須在該回合結束時成功通過一次DC 25的體質豁免，否則將反胃嘔出所有它吞下的生物，並使它們以{@condition 伏地}狀態摔落至距離克拉肯10呎內的空間。若克拉肯死亡，被吞下的生物將不再被它{@condition 束縛}，且可以花費15呎的移動速度從屍體中逃脫，以{@condition 伏地}狀態離開。"
 					]
@@ -34564,7 +35031,8 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"寇濤魚人可以在空氣和水中呼吸。"
 					]
@@ -34584,7 +35052,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，寇濤魚人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -34592,7 +35061,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})穿刺傷害。"
 					]
@@ -34766,7 +35236,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"寇濤魚人可以在空氣和水中呼吸。"
 					]
@@ -34786,7 +35257,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，寇濤魚人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -34794,7 +35266,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"寇濤魚人進行二次近戰攻擊。"
 					]
@@ -34910,7 +35383,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"寇濤魚人可以在空氣和水中呼吸。"
 					]
@@ -34930,7 +35404,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，寇濤魚人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -34945,13 +35420,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"寇濤魚人進行一次啃咬攻擊和二次徒手打擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -35082,7 +35559,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"寇濤魚人可以在空氣和水中呼吸。"
 					]
@@ -35102,7 +35580,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，寇濤魚人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -35110,13 +35589,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"寇濤魚人進行二次攻擊：一次啃咬，一次鉗杖。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -35243,19 +35724,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"人身獅進行二次攻擊：一次爪抓，一次匕首或沉醉之觸。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}14 ({@damage 2d10 + 3})劈砍傷害。"
 					]
 				},
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d4 + 3})穿刺傷害。"
 					]
@@ -35758,13 +36242,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -35837,7 +36323,8 @@
 			"cr": "0",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 0}，觸及5呎，單一目標。{@h}1 穿刺傷害。"
 					]
@@ -35931,7 +36418,8 @@
 			"cr": "4",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"蜥蜴人可以屏住它的呼吸長達15分鐘。"
 					]
@@ -35946,19 +36434,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蜥蜴人進行二次近戰攻擊：一次啃咬，一次爪抓或三叉戟，又或者二次近戰攻擊都使用三叉戟。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d4 + 3})劈砍傷害。"
 					]
@@ -36065,7 +36556,8 @@
 			"cr": "4",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"蜥蜴人可以屏住它的呼吸長達15分鐘。"
 					]
@@ -36080,19 +36572,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蜥蜴人進行二次近戰攻擊：一次啃咬，一次爪抓或三叉戟，又或者二次近戰攻擊都使用三叉戟。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d4 + 3})劈砍傷害。"
 					]
@@ -36224,7 +36719,8 @@
 			"cr": "1/2",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"蜥蜴人可以屏住它的呼吸長達15分鐘。"
 					]
@@ -36232,13 +36728,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蜥蜴人進行二次近戰攻擊，每次使用不同的武器。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -36250,7 +36748,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 4}，觸及5呎 或 射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -36397,7 +36896,8 @@
 			],
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"蜥蜴人可以屏住它的呼吸長達15分鐘。"
 					]
@@ -36411,7 +36911,8 @@
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害，或若處於鱷魚型態則造成 7 ({@damage 1d10 + 2})穿刺傷害。若蜥蜴人處於鱷魚型態，且目標的體型為大型或更小，則目標{@condition 被擒}(逃脫DC 12)。直到擒抱結束前，目標被{@condition 束縛}，且蜥蜴人不能啃咬另一個目標。若蜥蜴人回復其真實型態，則擒抱結束。"
 					]
@@ -36635,7 +37136,8 @@
 			],
 			"action": [
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 5}，觸及5呎 或 射程20/60呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -36775,7 +37277,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}3 ({@damage 1d4 + 1})劈砍傷害加 2 ({@damage 1d4})火焰傷害。"
 					]
@@ -37106,7 +37609,8 @@
 			"cr": "1/8",
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}5 ({@damage 2d4})劈砍傷害。"
 					]
@@ -37218,19 +37722,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蠍尾獅進行三次攻擊：一次啃咬，二次爪抓，或者三次尾刺攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -37380,7 +37887,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"水巨靈可以在空氣和水中呼吸。"
 					]
@@ -37395,7 +37903,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"水巨靈進行二次三叉戟攻擊。"
 					]
@@ -37594,19 +38103,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"六臂蛇魔可以進行七次攻擊：六次長劍，一次尾擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})劈砍傷害。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及10呎，單一生物。{@h}15 ({@damage 2d10 + 4})鈍擊傷害。若目標的體型為中型或更小，則它將{@condition 被擒}(逃脫DC 19)。直到擒抱結束前，該目標被{@condition 束縛}，六臂蛇魔可以使用它的尾擊自動命中目標，且六臂蛇魔不能對其它目標使用尾擊攻擊。"
 					]
@@ -37738,7 +38250,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})，且若目標為一個生物，則它必須成功通過一次DC 11的力量豁免，否則被擊倒伏地。"
 					]
@@ -37849,7 +38362,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"梅杜莎進行三次近戰攻擊（一次蛇髮，二次短劍）或以長弓進行二次遠程攻擊。"
 					]
@@ -37862,13 +38376,15 @@
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
@@ -37959,7 +38475,8 @@
 			"cr": "1/8",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"人魚可以在空氣和水中呼吸。"
 					]
@@ -38068,7 +38585,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"邁羅人魚可以在空氣和水中呼吸。"
 					]
@@ -38076,19 +38594,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"邁羅人魚進行二次攻擊：一次啃咬，一次爪抓或魚叉。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}9 ({@damage 2d4 + 4})劈砍傷害。"
 					]
@@ -38257,13 +38778,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"麥澤羅斯魔進行二次攻擊：一次爪抓，一次三叉戟。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}9 ({@damage 2d4 + 4})劈砍傷害。"
 					]
@@ -38458,7 +38981,8 @@
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害加 4 ({@damage 1d8})酸蝕傷害。"
 					]
@@ -38958,7 +39482,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若米諾陶向著一個目標直線移動至少10呎並接著在同回合以一次角撞攻擊命中它，則目標將受到額外的9 ({@damage 2d8})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 14的力量豁免，否則被推離最多10呎並被擊倒{@condition 伏地}。"
 					]
@@ -39101,7 +39626,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若骷髏向著一個目標直線移動至少10呎並接著在同回合以一次角撞攻擊命中它，則目標將受到額外的9 ({@damage 2d8})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 14的力量豁免，否則被推離最多10呎並被擊倒{@condition 伏地}。"
 					]
@@ -39210,7 +39736,8 @@
 					]
 				},
 				{
-					"name": "解體", "ENG_name": "Disintegration",
+					"name": "解體",
+					"ENG_name": "Disintegration",
 					"entries": [
 						"若單元冢死亡，它的身體將瓦解成塵，留下它的武器和任何它所攜帶的其它東西。"
 					]
@@ -39218,13 +39745,15 @@
 			],
 			"action": [
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})穿刺傷害。"
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 2}，觸及5呎 或 射程30/120呎，單一目標。{@h}3 ({@damage 1d6})穿刺傷害。"
 					]
@@ -39569,7 +40098,8 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"木乃伊可以使用它的恐怖凝視，並進行一次腐壞之拳攻擊。"
 					]
@@ -39783,7 +40313,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"木乃伊領主可以使用它的恐怖凝視，並進行一次腐壞之拳攻擊。"
 					]
@@ -40103,7 +40634,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蕈人使用它的致幻孢子或鎮靜孢子，接著進行一次拳擊攻擊。"
 					]
@@ -40392,19 +40924,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"若可以的話，判魂魔會使用它的恐懼光環。它接著會進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}32 ({@damage 5d10 + 5})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}15 ({@damage 3d6 + 5})劈砍傷害。"
 					]
@@ -40524,7 +41059,8 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}6 ({@damage 2d4 + 1})穿刺傷害。"
 					]
@@ -40648,7 +41184,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"conditionImmune": [
@@ -41173,13 +41710,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"諾斯獨眼怪進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -41357,13 +41896,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"尼卡羅斯魔進行二次近戰攻擊，或它進行一次近戰攻擊並在該攻擊之前或之後使用傳送。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。若目標為一個生物，則它必須成功通過一次DC 16的體質豁免，否則將在它的每個回合開始時因為邪魔創傷而受到5 ({@damage 2d4})劈砍傷害。每當尼卡羅斯魔使用此攻擊命中一個帶有該創傷的生物，這個創傷造成的傷害將會增加5 ({@dice 2d4})點。任何生物都可以使用一個動作，透過成功通過一次DC 13的睿知（{@skill 醫藥}）檢定以為創傷止血。這個創傷也會在目標被魔法治療的時候癒合。"
 					]
@@ -41618,13 +42159,15 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"在離水時，章魚可以屏住牠的呼吸長達30分鐘。"
 					]
 				},
 				{
-					"name": "水下偽裝","ENG_name": "Underwater Camouflage",
+					"name": "水下偽裝",
+					"ENG_name": "Underwater Camouflage",
 					"entries": [
 						"章魚在處於水中時進行的敏捷（{@skill 隱匿}）檢定中具有優勢。"
 					]
@@ -41765,13 +42308,15 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "巨棍","ENG_name": "Greatclub",
+					"name": "巨棍",
+					"ENG_name": "Greatclub",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})鈍擊傷害。"
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 6}，觸及5呎 或 射程30/120呎，單一目標。{@h}11 ({@damage 2d6 + 4})穿刺傷害。"
 					]
@@ -41891,7 +42436,8 @@
 			],
 			"action": [
 				{
-					"name": "釘頭錘","ENG_name": "Morningstar",
+					"name": "釘頭錘",
+					"ENG_name": "Morningstar",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})鈍擊傷害。"
 					]
@@ -42041,7 +42587,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"惡鬼進行二次攻擊，使用它的爪抓或長柄刀。"
 					]
@@ -42205,7 +42752,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 5}，觸及5呎 或 射程30/120呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -42500,7 +43048,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"獸人使用它的巨斧或矛進行二次攻擊。"
 					]
@@ -42645,7 +43194,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"魔獸人進行二次巨斧攻擊。"
 					]
@@ -42657,7 +43207,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 6}，觸及5呎 或 射程30/120呎，單一目標。{@h}7 ({@damage 1d6 + 4})穿刺傷害。"
 					]
@@ -42777,13 +43328,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"食腐獸進行三次攻擊：一次啃咬，二次觸手。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}12 ({@damage 2d8 + 3})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 15的體質豁免以對抗疾病，否則將陷入{@condition 中毒}直到該疾病被治癒。每經過24小時，該目標都必須重複進行這個豁免檢定，豁免失敗則目標的生命值最大值將減少5 ({@dice 1d10})點。若豁免成功則此疾病被治癒。若目標的生命值最大值因為這個疾病而歸零，則目標死亡。這個對目標生命值最大值的減損將持續直到該疾病被治癒。"
 					]
@@ -43023,7 +43576,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"梟熊進行二次攻擊：一次喙啄，一次爪抓。"
 					]
@@ -43035,7 +43589,8 @@
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}14 ({@damage 2d8 + 5})劈砍傷害。"
 					]
@@ -43135,13 +43690,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})劈砍傷害。"
 					]
@@ -43317,7 +43874,8 @@
 					]
 				},
 				{
-					"name": "解體", "ENG_name": "Disintegration",
+					"name": "解體",
+					"ENG_name": "Disintegration",
 					"entries": [
 						"若五元冢死亡，它的身體將瓦解成塵，留下它的武器和任何它所攜帶的其它東西。"
 					]
@@ -43325,7 +43883,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"五元冢進行五次臂擊攻擊。"
 					]
@@ -43472,7 +44031,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"佩利冬進行二次攻擊：一次角撞，一次禽爪。"
 					]
@@ -43604,7 +44164,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}7 ({@damage 1d10 + 2})穿刺傷害，且目標必須進行一次DC 11的體質豁免。若豁免失敗則受到18 ({@damage 4d8})毒素傷害，豁免成功則只受到一半的傷害。若此毒素傷害將目標的生命值歸零，則目標的傷勢穩定，但陷入{@condition 中毒}狀態長達1小時，這個狀態即使在目標回復生命值之後仍會持續。且目標若因此而{@condition 中毒}，則將連帶陷入{@condition 麻痺}狀態。"
 					]
@@ -43820,7 +44381,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -43878,19 +44440,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"深獄煉魔進行四次攻擊：一次啃咬，一次爪抓，一次硬頭錘，和一次尾擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及5呎，單一目標。{@h}22 ({@damage 4d6 + 8})穿刺傷害。目標必須成功通過一次DC 21的體質豁免，否則陷入{@condition 中毒}狀態。當因此而{@condition 中毒}時，目標無法回復生命值，且會在它的每個回合開始時受到21 ({@damage 6d6})毒素傷害。{@condition 中毒}的目標可以在它的每個回合結束時重複進行這個豁免檢定，若豁免成功則結束這個效果對它的影響。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}17 ({@damage 2d8 + 8})劈砍傷害。"
 					]
@@ -43902,7 +44467,8 @@
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}24 ({@damage 3d10 + 8})鈍擊傷害。"
 					]
@@ -44192,13 +44758,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"異域神侍進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 12}，觸及5呎，單一目標。{@h}21 ({@damage 4d6 + 7})劈砍傷害加 22 ({@damage 5d8})光耀傷害。"
 					]
@@ -44298,7 +44866,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "屏息","ENG_name": "Hold Breath",
+					"name": "屏息",
+					"ENG_name": "Hold Breath",
 					"entries": [
 						"蛇頸龍可以屏住牠的呼吸長達1小時。"
 					]
@@ -44306,7 +44875,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及10呎，單一目標。{@h}14 ({@damage 3d6 + 4})穿刺傷害。"
 					]
@@ -44383,7 +44953,8 @@
 			"cr": "1/8",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}1 穿刺傷害，且目標必須進行一次DC 10的體質豁免，若豁免失敗則受到5({@damage 2d4})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -44482,19 +45053,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"熊進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}9 ({@damage 1d8 + 5})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。"
 					]
@@ -44612,7 +45186,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，作祟幽靈在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -45000,7 +45575,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -45127,7 +45703,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}6 ({@damage 2d4 + 1})穿刺傷害"
 					]
@@ -45214,13 +45791,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨紫蠕蟲進行二次攻擊：一次啃咬，一次尾螫。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}22 ({@damage 3d8 + 9})穿刺傷害。若目標為一個體型為大型或更小的生物，則它必須成功通過一次DC 19的敏捷豁免，否則被巨紫蠕蟲給吞下。被吞下的生物陷入{@condition 目盲}和{@condition 束縛}，它對來自巨紫蠕蟲體外的攻擊和其他效果有全掩護，且在每次巨紫蠕蟲的回合開始時受到21 ({@damage 6d6})酸蝕傷害。",
 						"若巨紫蠕蟲在單一回合內受到超過30點來自它體內生物所造成的傷害，巨紫蠕蟲必須在該回合結束時成功通過一次DC 21的體質豁免，否則將反胃嘔出所有它吞下的生物，並使它們以{@condition 伏地}狀態摔落至距離巨紫蠕蟲10呎內的空間。若巨紫蠕蟲死亡，被吞下的生物將不再被它{@condition 束縛}，且可以花費20呎的移動速度從屍體中逃脫，以{@condition 伏地}狀態離開。"
@@ -45327,7 +45906,8 @@
 					]
 				},
 				{
-					"name": "解體", "ENG_name": "Disintegration",
+					"name": "解體",
+					"ENG_name": "Disintegration",
 					"entries": [
 						"若四元冢死亡，它的身體將瓦解成塵，留下它的武器和任何它所攜帶的其它東西。"
 					]
@@ -45335,7 +45915,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"四元冢進行二次拳擊攻擊或四次短弓攻擊。"
 					]
@@ -45347,7 +45928,8 @@
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程80/320呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -45462,13 +46044,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"澤地熊人進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -45557,13 +46141,15 @@
 			"cr": "1",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"孢子僕役進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -45685,13 +46271,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"澤地熊人進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -45944,7 +46532,8 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"食人魚在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -45958,7 +46547,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}1 穿刺傷害。"
 					]
@@ -46112,13 +46702,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"羅剎進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}9 ({@damage 2d6 + 2})劈砍傷害，且若目標為一個生物，則目標將被詛咒。這個魔法詛咒會在目標每進行一次短休或長休時發揮效果，使目標的思緒充斥著可怕的畫面和夢境。被詛咒的生物將無法獲得完成一次短休或長休所帶來的好處。這個詛咒持續直到它被{@spell 移除詛咒}法術或類似的魔法給移除。"
 					]
@@ -46219,7 +46811,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 0}，觸及5呎，單一目標。{@h}1 穿刺傷害。"
 					]
@@ -46395,7 +46988,8 @@
 			"cr": "4",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}9 ({@damage 1d10 + 4})穿刺傷害加 3 ({@damage 1d6})火焰傷害。"
 					]
@@ -46509,19 +47103,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"史拉蟾進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}8 ({@damage 2d4 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害。若目標為一個類人生物，則它必須成功通過一次DC 14的體質豁免，否則被「史拉蟾微型卵」疾病給感染。",
 						"一個類人生物一次只能攜帶一顆史拉蟾卵。在三個月後，這顆卵將會移動到宿主的胸腔、孕育、並形成一隻{@creature 史拉蟾蝌蚪}。在史拉蟾蝌蚪出生前24小時期間，宿主將會開始感覺不適，移動速度減半，且將在攻擊檢定、屬性檢定、和豁免檢定中具有劣勢。在出生時，史拉蟾蝌蚪將在一輪的時間內咬穿宿主的維生器官並從其胸腔離開宿主，在這個過程中殺死宿主。",
@@ -46637,7 +47234,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -46743,7 +47341,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 11}，觸及10呎，單一目標。{@h}40 ({@damage 6d10 + 7})穿刺傷害加 10 ({@damage 3d6})火焰傷害。若目標為一個生物，則它將{@condition 被擒}(逃脫DC 17)。直到擒抱結束前，目標將被{@condition 束縛}，且百足魔獸不能啃咬另一個目標。"
 					]
@@ -47021,7 +47620,8 @@
 			"cr": "2",
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若犀牛向著一個目標直線移動至少20呎並接著在同回合以一次角撞攻擊命中它，則目標將受到額外的9 ({@damage 2d8})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 15的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -47213,7 +47813,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"鵬鳥進行二次攻擊：一次喙啄，一次禽爪。"
 					]
@@ -47350,13 +47951,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"樹繩妖進行四次觸手攻擊，使用拖曳，並進行一次啃咬攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}22 ({@damage 4d8 + 4})穿刺傷害。"
 					]
@@ -47615,13 +48218,14 @@
 					"name": "鏽蝕金屬",
 					"ENG_name": "Rust Metal",
 					"entries": [
-						"任何金屬製成的非魔法武器將在命中鏽蝕怪時被腐蝕。在造成傷害之後，該武器的傷害骰將受到一個永久且可累積的−1罰值。若該罰值累積至−5，則該武器被摧毀。金屬製成的非魔法彈藥會在命中鏽蝕怪並造成傷害後被摧毀。"
+						"任何金屬製成的非魔法武器將在命中鏽蝕怪時被腐蝕。在造成傷害之後，該武器的傷害骰將受到一個永久且可累積的\u22121罰值。若該罰值累積至\u22125，則該武器被摧毀。金屬製成的非魔法彈藥會在命中鏽蝕怪並造成傷害後被摧毀。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}5 ({@damage 1d8 + 1})穿刺傷害。"
 					]
@@ -47631,7 +48235,7 @@
 					"ENG_name": "Antennae",
 					"entries": [
 						"鏽蝕怪腐蝕一件距離它5呎內且它所能看見的非魔法含鐵金屬物體。若該物體未被穿戴或攜帶，則這個觸碰將會摧毀它1呎邊長立方體大小的區塊。若該物體被一個生物穿戴或攜帶，則該生物必須進行一次DC 11的敏捷豁免以避免鏽蝕怪的觸碰。",
-						"若被觸碰的物體是一件被攜帶或穿戴的金屬護甲或金屬盾牌，則它所提供的AC將受到永久且可累積的−1罰值。AC被此罰值減至10的護甲，或加值被減至+0的盾牌將會被摧毀。若被觸碰的物體是一把被持握的金屬武器，則它將如鏽蝕金屬特性中的描述被腐蝕。"
+						"若被觸碰的物體是一件被攜帶或穿戴的金屬護甲或金屬盾牌，則它所提供的AC將受到永久且可累積的\u22121罰值。AC被此罰值減至10的護甲，或加值被減至+0的盾牌將會被摧毀。若被觸碰的物體是一把被持握的金屬武器，則它將如鏽蝕金屬特性中的描述被腐蝕。"
 					]
 				}
 			],
@@ -47716,13 +48320,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}10 ({@damage 1d10 + 5})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。"
 					]
@@ -47824,7 +48430,8 @@
 			"cr": "1/2",
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"沙華魚人在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -47844,19 +48451,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"沙華魚人進行二次近戰攻擊：一次啃咬，一次爪抓或矛。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})劈砍傷害。"
 					]
@@ -47966,7 +48576,8 @@
 			"cr": "5",
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"沙華魚人在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -47986,19 +48597,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"沙華魚人進行三次近戰攻擊：一次啃咬，二次爪抓或三叉戟。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}9 ({@damage 2d4 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -48145,7 +48759,8 @@
 			],
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"沙華魚人在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -48165,19 +48780,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"沙華魚人進行二次近戰攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})劈砍傷害。"
 					]
@@ -48307,7 +48925,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"火蜥蜴進行二次攻擊：一次矛，一次尾擊。"
 					]
@@ -48319,7 +48938,8 @@
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}11 ({@damage 2d6 + 4})鈍擊傷害加 7 ({@damage 2d6})火焰傷害，且目標{@condition 被擒}(逃脫DC 14)。直到擒抱結束前，目標被{@condition 束縛}，火蜥蜴可以使用它的尾擊自動命中目標，且火蜥蜴不能對其它目標使用尾擊攻擊。"
 					]
@@ -48429,13 +49049,15 @@
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 5}，射程80/320呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -48592,13 +49214,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"稻草人進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}6 ({@damage 2d4 + 1})劈砍傷害。若目標為一個生物，則它必須成功通過一次DC 11的睿知豁免，否則陷入{@condition 恐懼}直到稻草人的下個回合結束。"
 					]
@@ -48820,19 +49444,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"斥候進行二次近戰攻擊或二次遠程攻擊。"
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -48997,7 +49624,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"鬼婆可以在空氣和水中呼吸。"
 					]
@@ -49029,7 +49657,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})劈砍傷害。"
 					]
@@ -49431,7 +50060,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}10 ({@damage 2d6 + 3})精神傷害，或者，若影魔在此攻擊檢定中具有優勢則為17 ({@damage 4d6 + 3})精神傷害。"
 					]
@@ -49553,13 +50183,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蔓生怪進行二次猛擊攻擊。若這兩次攻擊都命中一個體型為中型或更小的目標，則目標將{@condition 被擒}(逃脫DC 14)，且蔓生怪對它使用吞沒攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})鈍擊傷害。"
 					]
@@ -49709,7 +50341,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"構裝盾衛進行二次拳擊攻擊。"
 					]
@@ -49898,13 +50531,15 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}9 ({@damage 1d10 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"銀龍使用以下其中一種吐息武器。",
 						{
@@ -50056,13 +50691,15 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程80/320呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -50158,7 +50795,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
@@ -50278,7 +50916,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}4 ({@damage 1d4 + 2})劈砍傷害。"
 					]
@@ -50457,13 +51096,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"熾天神侍進行二次巨劍攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 15}，觸及5呎，單一目標。{@h}22 ({@damage 4d6 + 8})劈砍傷害加 27 ({@damage 6d8})光耀傷害。"
 					]
@@ -50627,7 +51268,8 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}2 ({@damage 1d6 - 1})穿刺傷害。"
 					]
@@ -50832,7 +51474,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，幽靈在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -50940,7 +51583,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}1 穿刺傷害，且目標必須成功通過一次DC 9的體質豁免，否則受到2({@damage 1d4})毒素傷害。"
 					]
@@ -51029,7 +51673,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -51073,13 +51718,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"棘魔進行二次攻擊：一次啃咬，一次叉刺，或者二次尾刺攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}5 ({@damage 2d4})劈砍傷害。"
 					]
@@ -51265,7 +51912,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一生物。{@h}7 ({@damage 1d6 + 4})穿刺傷害，且目標必須進行一次DC 13的體質豁免，豁免失敗則受到31 ({@damage 7d8})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -51370,13 +52018,15 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}1 劈砍傷害。"
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 6}，射程40/160呎，單一目標。{@h}1 穿刺傷害，且目標必須成功通過一次DC 10的體質豁免，否則陷入{@condition 中毒}狀態長達1分鐘。若此豁免檢定失敗且結果與目標值差距5點或更多，則{@condition 中毒}的目標將陷入{@condition 昏迷}狀態長達相同的持續時間，或直到它受到傷害或另一個生物使用一個動作將它搖醒。"
 					]
@@ -51535,19 +52185,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"密探進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "手弩","ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"ENG_name": "Hand Crossbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})穿刺傷害。"
 					]
@@ -51671,7 +52324,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一生物。{@h}2 ({@damage 1d4})劈砍傷害加 2 ({@damage 1d4})火焰傷害。"
 					]
@@ -51916,19 +52570,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨人進行二次巨棍攻擊。"
 					]
 				},
 				{
-					"name": "巨棍","ENG_name": "Greatclub",
+					"name": "巨棍",
+					"ENG_name": "Greatclub",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及15呎，單一目標。{@h}19 ({@damage 3d8 + 6})鈍擊傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 9}，射程60/240呎，單一目標。{@h}28 ({@damage 4d10 + 6})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 17的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -52123,13 +52780,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"魔像進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}19 ({@damage 3d8 + 6})鈍擊傷害。"
 					]
@@ -52265,7 +52924,8 @@
 			],
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"巨人可以在空氣和水中呼吸。"
 					]
@@ -52273,19 +52933,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨人進行二次巨劍攻擊。"
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}30 ({@damage 6d6 + 9})劈砍傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 14}，射程60/240呎，單一目標。{@h}35 ({@damage 4d12 + 9})鈍擊傷害。"
 					]
@@ -52623,7 +53286,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及0呎，單一處於集群所在位置的生物。{@h}5 ({@damage 2d4})穿刺傷害，或若集群的生命值等於或低於一半時則造成2 ({@damage 1d4})穿刺傷害。"
 					]
@@ -52722,7 +53386,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及0呎，單一處於集群所在位置的生物。{@h}10 ({@damage 4d4})穿刺傷害，或若集群的生命值等於或低於一半時則造成5 ({@damage 2d4})穿刺傷害。"
 					]
@@ -53061,7 +53726,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及0呎，單一處於集群所在位置的生物。{@h}7 ({@damage 2d6})穿刺傷害，或若集群的生命值等於或低於一半時則造成3 ({@damage 1d6})穿刺傷害。目標必須進行一次DC 10的體質豁免，若豁免失敗則受到14 ({@damage 4d6})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -53164,7 +53830,8 @@
 			"cr": "1",
 			"trait": [
 				{
-					"name": "鮮血狂熱","ENG_name": "Blood Frenzy",
+					"name": "鮮血狂熱",
+					"ENG_name": "Blood Frenzy",
 					"entries": [
 						"集群在對任何生命值沒有全滿的生物所進行的近戰攻擊檢定中具有優勢。"
 					]
@@ -53184,7 +53851,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及0呎，單一處於集群所在位置的生物。{@h}14 ({@damage 4d6})穿刺傷害，或若集群的生命值等於或低於一半時則造成7 ({@damage 2d6})穿刺傷害。"
 					]
@@ -53305,7 +53973,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及0呎，單一處於集群所在位置的生物。{@h}7 ({@damage 2d6})穿刺傷害，或若集群的生命值等於或低於一半時則造成3 ({@damage 1d6})穿刺傷害。"
 					]
@@ -53796,19 +54465,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"泰拉斯奎巨獸可以使用它的駭人威儀。它接著進行五次攻擊：一次啃咬，二次爪抓，一次角擊，和一次尾擊。它可以使用它的吞嚥以取代啃咬攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 19}，觸及10呎，單一目標。{@h}36 ({@damage 4d12 + 10})穿刺傷害。若目標為一個生物，則它將{@condition 被擒}(逃脫DC 20)。直到擒抱結束前，目標被{@condition 束縛}，且泰拉斯奎巨獸不能再啃咬另一個目標。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 19}，觸及15呎，單一目標。{@h}28 ({@damage 4d8 + 10})劈砍傷害。"
 					]
@@ -53821,7 +54493,8 @@
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 19}，觸及20呎，單一目標。{@h}24 ({@damage 4d6 + 10})鈍擊傷害。若目標為一個生物，則它必須成功通過一次DC 20的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -53973,19 +54646,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"斯里克林螳螂人進行二次攻擊：一次啃咬，一次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一生物。{@h}4 ({@damage 1d6 + 1})穿刺傷害，且目標必須成功通過一次DC 11的體質豁免，否則陷入{@condition 中毒}狀態長達1分鐘。若此豁免檢定失敗且結果與目標值差距5點或更多，則因此{@condition 中毒}的目標也將連帶陷入{@condition 麻痺}狀態。{@condition 中毒}的目標可以在它的每個回合結束時重複進行這個豁免檢定，若檢定成功則結束這個效果對它的影響。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}6 ({@damage 2d4 + 1})劈砍傷害。"
 					]
@@ -54179,7 +54855,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"暴徒進行二次近戰攻擊。"
 					]
@@ -54299,13 +54976,15 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}8 ({@damage 1d10 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害。"
 					]
@@ -54438,19 +55117,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"樹人進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}16 ({@damage 3d6 + 6})鈍擊傷害。"
 					]
 				},
 				{
-					"name": "投石","ENG_name": "Rock",
+					"name": "投石",
+					"ENG_name": "Rock",
 					"entries": [
 						"{@atk rw} 命中{@hit 10}，射程60/180呎，單一目標。{@h}28 ({@damage 4d10 + 6})鈍擊傷害。"
 					]
@@ -54738,7 +55420,8 @@
 					]
 				},
 				{
-					"name": "解體", "ENG_name": "Disintegration",
+					"name": "解體",
+					"ENG_name": "Disintegration",
 					"entries": [
 						"若三元冢死亡，它的身體將瓦解成塵，留下它的武器和任何它所攜帶的其它東西。"
 					]
@@ -54746,7 +55429,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"三元冢進行三次拳擊攻擊或三次標槍攻擊。"
 					]
@@ -54758,7 +55442,8 @@
 					]
 				},
 				{
-					"name": "標槍","ENG_name": "Javelin",
+					"name": "標槍",
+					"ENG_name": "Javelin",
 					"entries": [
 						"{@atk mw,rw} 命中{@hit 3}，觸及5呎 或 射程30/120呎，單一目標。{@h}4 ({@damage 1d6 + 1})穿刺傷害。"
 					]
@@ -54879,7 +55564,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，戰蜥人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -54887,19 +55573,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"戰蜥人進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2})劈砍傷害。"
 					]
@@ -55044,19 +55733,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"巨魔進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -55074,22 +55766,22 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "1–10:",
+									"name": "1\u201310:",
 									"entry": "Nothing else happens."
 								},
 								{
 									"type": "item",
-									"name": "11–14:",
+									"name": "11\u201314:",
 									"entry": "One leg is severed from the troll if it has any legs left."
 								},
 								{
 									"type": "item",
-									"name": "15–18:",
+									"name": "15\u201318:",
 									"entry": "One arm is severed from the troll if it has any arms left."
 								},
 								{
 									"type": "item",
-									"name": "19–20:",
+									"name": "19\u201320:",
 									"entry": "The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head."
 								}
 							]
@@ -55216,7 +55908,8 @@
 			],
 			"action": [
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})穿刺傷害。"
 					]
@@ -55303,19 +55996,22 @@
 			"cr": "8",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"霸王龍進行二次攻擊：一次啃咬，一次尾擊。牠不能對同一個目標進行這二次攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}33 ({@damage 4d12 + 7})穿刺傷害。若目標為一個體型為中型或更小的生物，則它{@condition 被擒}(逃脫DC 17)。直到擒抱結束前，目標被{@condition 束縛}，且霸王龍不能對另一個目標使用啃咬。"
 					]
 				},
 				{
-					"name": "尾擊","ENG_name": "Tail",
+					"name": "尾擊",
+					"ENG_name": "Tail",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}20 ({@damage 3d8 + 7})鈍擊傷害。"
 					]
@@ -55481,13 +56177,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"烏特羅斯魔可以使用它的催眠凝視，並進行三次近戰攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害，或若以雙手使用則造成 8 ({@damage 1d10 + 3})劈砍傷害。"
 					]
@@ -55640,13 +56338,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"土巨怪進行三次攻擊：二次爪抓，一次大顎。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}9 ({@damage 1d8 + 5})劈砍傷害。"
 					]
@@ -55772,7 +56472,8 @@
 			],
 			"trait": [
 				{
-					"name": "衝鋒","ENG_name": "Charge",
+					"name": "衝鋒",
+					"ENG_name": "Charge",
 					"entries": [
 						"若獨角獸向著一個目標直線移動至少20呎並接著在同回合以一次角擊攻擊命中它，則目標將受到額外的9 ({@damage 2d8})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 15的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -55793,7 +56494,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"獨角獸進行二次攻擊：一次蹄擊，一次角擊。"
 					]
@@ -56271,19 +56973,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"吸血鬼眷族進行二次攻擊，但其中只有一次可以是啃咬攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一自願生物，或一個{@condition 被擒}於該吸血鬼眷族、或陷入{@condition 無力}、或{@condition 束縛}狀態的生物。{@h}6 ({@damage 1d6 + 3})穿刺傷害加 7 ({@damage 2d6})死靈傷害。目標的生命值最大值將減少等同於所受死靈傷害的數值，且該吸血鬼眷族回復等同該數值的生命值。這個減損持續直到目標完成一次長休。若目標因為這個效果而導致生命值最大值歸零，則目標死亡。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一生物。{@h}8 ({@damage 2d4 + 3})劈砍傷害。吸血鬼眷族也可以選擇不造成傷害，而是擒抱該目標(逃脫DC 13)。"
 					]
@@ -56721,7 +57426,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"吸血鬼進行二次巨劍攻擊。"
 					]
@@ -56739,7 +57445,8 @@
 					]
 				},
 				{
-					"name": "巨劍","ENG_name": "Greatsword",
+					"name": "巨劍",
+					"ENG_name": "Greatsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一生物。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -56934,19 +57641,22 @@
 			"cr": "3",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"老兵進行二次長劍攻擊。若它已經抽出一把短劍，則它可以再進行一次短劍攻擊。"
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})劈砍傷害，或若以雙手使用時 8 ({@damage 1d10 + 3})劈砍傷害"
 					]
 				},
 				{
-					"name": "短劍","ENG_name": "Shortsword",
+					"name": "短劍",
+					"ENG_name": "Shortsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})穿刺傷害。"
 					]
@@ -57049,7 +57759,8 @@
 			],
 			"action": [
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及10呎，單一目標。{@h}9 ({@damage 2d6 + 2})鈍擊傷害，且體型為大型或更小的目標{@condition 被擒}(逃脫DC 12)。直到擒抱結束前，該目標被{@condition 束縛}，且枯藤怪不能絞纏另一個目標。"
 					]
@@ -57158,7 +57869,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"紫蕈進行{@dice 1d4}次腐壞之觸攻擊。"
 					]
@@ -57303,7 +58015,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"弗洛魔進行二次攻擊：一次喙啄，一次禽爪。"
 					]
@@ -57796,13 +58509,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"水元素進行二次猛擊攻擊。"
 					]
 				},
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})鈍擊傷害。"
 					]
@@ -57945,7 +58660,8 @@
 			],
 			"action": [
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及10呎，單一生物。{@h}13 ({@damage 3d6 + 3})鈍擊傷害。若目標為一個體型為中型或更小的生物，則它將{@condition 被擒}(逃脫DC 13)且被向水詭的位置拉近5呎距離。直到擒抱結束前，該目標被{@condition 束縛}，水詭將嘗試將它溺斃，且水詭不能絞纏另一個目標。"
 					]
@@ -58028,7 +58744,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}1 穿刺傷害。"
 					]
@@ -58117,7 +58834,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -58141,7 +58859,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"在熊型態下，熊人進行二次爪抓攻擊。在類人型態下，它進行二次巨斧攻擊。在半熊人型態下，它可以像熊型態或類人型態一樣進行攻擊。"
 					]
@@ -58287,7 +59006,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -58454,7 +59174,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -58605,7 +59326,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -58805,7 +59527,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"languages": [
@@ -58966,7 +59689,8 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2})穿刺傷害加 2 ({@damage 1d4})寒冰傷害。"
 					]
@@ -59091,7 +59815,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -59107,7 +59832,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，屍妖在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -59115,7 +59841,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"屍妖進行二次長劍攻擊或二次長弓攻擊。它可以使用生命吸取以取代其中一次長劍攻擊。"
 					]
@@ -59129,13 +59856,15 @@
 					]
 				},
 				{
-					"name": "長劍","ENG_name": "Longsword",
+					"name": "長劍",
+					"ENG_name": "Longsword",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2})劈砍傷害，或若以雙手使用則造成 7 ({@damage 1d10 + 2})劈砍傷害。"
 					]
 				},
 				{
-					"name": "長弓", "ENG_name": "Longbow",
+					"name": "長弓",
+					"ENG_name": "Longbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -59409,7 +60138,8 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，狗頭人在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -59423,7 +60153,8 @@
 			],
 			"action": [
 				{
-					"name": "匕首","ENG_name": "Dagger",
+					"name": "匕首",
+					"ENG_name": "Dagger",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}5 ({@damage 1d4 + 3})穿刺傷害。"
 					]
@@ -59557,7 +60288,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 14的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -59686,7 +60418,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 2d4 + 2})穿刺傷害，且若目標為一個生物，則它必須成功通過一次DC 11的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -59788,7 +60521,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})穿刺傷害。若目標為一個生物，則它必須成功通過一次DC 13的力量豁免，否則被擊倒{@condition 伏地}。"
 					]
@@ -59922,7 +60656,8 @@
 						"piercing",
 						"slashing"
 					],
-					"note": "非銀製武器且非魔法攻擊所造成的","cond": true
+					"note": "非銀製武器且非魔法攻擊所造成的",
+					"cond": true
 				}
 			],
 			"immune": [
@@ -59952,7 +60687,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，縛靈在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -60068,19 +60804,22 @@
 			"cr": "6",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"飛龍進行二次攻擊：一次啃咬，一次釘刺。在飛行時，它可以使用它的爪抓攻擊取代其中一次攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一生物。{@h}11 ({@damage 2d6 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})劈砍傷害。"
 					]
@@ -60208,19 +60947,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"索爾石怪進行三次爪抓和一次啃咬攻擊。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 3d6 + 3})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3})劈砍傷害。"
 					]
@@ -60340,13 +61082,15 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"耶提可以使用它的寒顫凝視，並進行二次爪抓攻擊。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4})劈砍傷害加 3 ({@damage 1d6})寒冰傷害。"
 					]
@@ -60525,7 +61269,8 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蠟融妖進行二次近戰攻擊。"
 					]
@@ -60675,7 +61420,8 @@
 			"cr": "7",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"黑龍可以在空氣和水中呼吸。"
 					]
@@ -60683,19 +61429,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"黑龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害加 4 ({@damage 1d8})酸蝕傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -60821,19 +61570,22 @@
 			"cr": "9",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"藍龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及10呎，單一目標。{@h}16 ({@damage 2d10 + 5})穿刺傷害加 5 ({@damage 1d10})閃電傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。"
 					]
@@ -60946,25 +61698,29 @@
 			"cr": "6",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"黃銅龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"黃銅龍使用以下其中一種吐息武器。",
 						{
@@ -61092,7 +61848,8 @@
 			"cr": "8",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"青銅龍可以在空氣和水中呼吸。"
 					]
@@ -61100,25 +61857,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"青銅龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及10呎，單一目標。{@h}16 ({@damage 2d10 + 5})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5})劈砍傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"青銅龍使用以下其中一種吐息武器。",
 						{
@@ -61243,25 +62004,29 @@
 			"cr": "7",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"赤銅龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"赤銅龍使用以下其中一種吐息武器。",
 						{
@@ -61379,7 +62144,8 @@
 			"cr": "10",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"金龍可以在空氣和水中呼吸。"
 					]
@@ -61387,25 +62153,29 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"金龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"金龍使用以下其中一種吐息武器。",
 						{
@@ -61546,7 +62316,8 @@
 			"cr": "8",
 			"trait": [
 				{
-					"name": "兩棲","ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"綠龍可以在空氣和水中呼吸。"
 					]
@@ -61554,19 +62325,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"綠龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -61695,19 +62469,22 @@
 			"cr": "10",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"紅龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害加 3 ({@damage 1d6})火焰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
@@ -61827,7 +62604,8 @@
 					]
 				},
 				{
-					"name": "日光敏感","ENG_name": "Sunlight Sensitivity",
+					"name": "日光敏感",
+					"ENG_name": "Sunlight Sensitivity",
 					"entries": [
 						"當處於日光照耀下時，幽影龍在攻擊檢定，以及依賴視覺的睿知（{@skill 感知}）檢定中具有劣勢。"
 					]
@@ -61835,19 +62613,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"幽影龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害加 3 ({@damage 1d6})死靈傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
@@ -61959,7 +62740,8 @@
 			],
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}20 ({@damage 3d10 + 4})穿刺傷害加 7 ({@damage 2d6})火焰傷害。"
 					]
@@ -62054,25 +62836,29 @@
 			"cr": "9",
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"銀龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}17 ({@damage 2d10 + 6})穿刺傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及5呎，單一目標。{@h}13 ({@damage 2d6 + 6})劈砍傷害。"
 					]
 				},
 				{
-					"name": "吐息武器 {@recharge 5}","ENG_name": "Breath Weapons {@recharge 5}",
+					"name": "吐息武器 {@recharge 5}",
+					"ENG_name": "Breath Weapons {@recharge 5}",
 					"entries": [
 						"銀龍使用以下其中一種吐息武器。",
 						{
@@ -62215,19 +63001,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"白龍進行三次攻擊：一次啃咬，二次爪抓。"
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}15 ({@damage 2d10 + 4})穿刺傷害加 4 ({@damage 1d8})寒冰傷害。"
 					]
 				},
 				{
-					"name": "爪抓","ENG_name": "Claw",
+					"name": "爪抓",
+					"ENG_name": "Claw",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4})劈砍傷害。"
 					]
@@ -62390,13 +63179,15 @@
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一生物。{@h}7 ({@damage 1d6 + 4})穿刺傷害加 10 ({@damage 3d6})毒素傷害。"
 					]
 				},
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及10呎，單一目標。{@h}11 ({@damage 2d6 + 4})鈍擊傷害，且目標{@condition 被擒}(逃脫DC 14)。直到擒抱結束前，目標被{@condition 束縛}，且蛇人不能絞纏另一個目標。"
 					]
@@ -62601,7 +63392,8 @@
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}5 ({@damage 1d4 + 3})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
@@ -62613,7 +63405,8 @@
 					]
 				},
 				{
-					"name": "長弓 (限定蛇人型態)","ENG_name": "Longbow (Yuan-ti Form Only)",
+					"name": "長弓 (限定蛇人型態)",
+					"ENG_name": "Longbow (Yuan-ti Form Only)",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
@@ -62796,7 +63589,8 @@
 					]
 				},
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一生物。{@h}5 ({@damage 1d4 + 3})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
@@ -62982,7 +63776,8 @@
 					]
 				},
 				{
-					"name": "絞纏","ENG_name": "Constrict",
+					"name": "絞纏",
+					"ENG_name": "Constrict",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3})鈍擊傷害，且目標{@condition 被擒}(逃脫DC 13)。直到擒抱結束前，目標被{@condition 束縛}，且蛇人不能絞纏另一個目標。"
 					]
@@ -62994,7 +63789,8 @@
 					]
 				},
 				{
-					"name": "長弓 (限定蛇人型態)","ENG_name": "Longbow (Yuan-ti Form Only)",
+					"name": "長弓 (限定蛇人型態)",
+					"ENG_name": "Longbow (Yuan-ti Form Only)",
 					"entries": [
 						"{@atk rw} 命中{@hit 4}，射程150/600呎，單一目標。{@h}6 ({@damage 1d8 + 2})穿刺傷害。"
 					]
@@ -63148,19 +63944,22 @@
 			],
 			"action": [
 				{
-					"name": "多重攻擊","ENG_name": "Multiattack",
+					"name": "多重攻擊",
+					"ENG_name": "Multiattack",
 					"entries": [
 						"蛇人進行二次近戰攻擊。"
 					]
 				},
 				{
-					"name": "彎刀","ENG_name": "Scimitar",
+					"name": "彎刀",
+					"ENG_name": "Scimitar",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})劈砍傷害。"
 					]
 				},
 				{
-					"name": "短弓","ENG_name": "Shortbow",
+					"name": "短弓",
+					"ENG_name": "Shortbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 3}，射程80/320呎，單一目標。{@h}4 ({@damage 1d6 + 1})穿刺傷害加 7 ({@damage 2d6})毒素傷害。"
 					]
@@ -63316,7 +64115,8 @@
 			],
 			"action": [
 				{
-					"name": "猛擊","ENG_name": "Slam",
+					"name": "猛擊",
+					"ENG_name": "Slam",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}4 ({@damage 1d6 + 1})鈍擊傷害。"
 					]

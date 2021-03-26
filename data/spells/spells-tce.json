@@ -77,7 +77,8 @@
 			}
 		},
 		{
-			"name": "轟雷劍", "ENG_name": "Booming Blade",
+			"name": "轟雷劍",
+			"ENG_name": "Booming Blade",
 			"source": "TCE",
 			"page": 106,
 			"otherSources": [
@@ -258,7 +259,8 @@
 			"hasFluff": true
 		},
 		{
-			"name": "翠炎劍", "ENG_name": "Green-Flame Blade",
+			"name": "翠炎劍",
+			"ENG_name": "Green-Flame Blade",
 			"source": "TCE",
 			"page": 107,
 			"otherSources": [
@@ -461,7 +463,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "閃電牽引", "ENG_name": "Lightning Lure",
+			"name": "閃電牽引",
+			"ENG_name": "Lightning Lure",
 			"source": "TCE",
 			"page": 107,
 			"otherSources": [
@@ -1396,7 +1399,8 @@
 			}
 		},
 		{
-			"name": "劍刃爆發", "ENG_name": "Sword Burst",
+			"name": "劍刃爆發",
+			"ENG_name": "Sword Burst",
 			"source": "TCE",
 			"page": 115,
 			"otherSources": [

@@ -1,7 +1,8 @@
 {
 	"monster": [
 		{
-			"name": "死亡化身", "ENG_name": "Avatar of Death",
+			"name": "死亡化身",
+			"ENG_name": "Avatar of Death",
 			"source": "DMG",
 			"page": 164,
 			"srd": true,
@@ -59,13 +60,15 @@
 			"cr": "Unknown",
 			"trait": [
 				{
-					"name": "虛體移動", "ENG_name": "Incorporeal Movement",
+					"name": "虛體移動",
+					"ENG_name": "Incorporeal Movement",
 					"entries": [
 						"死亡化身可以把其它生物和物體視作困難地形移動穿過它們。若它在一個物體內結束它的回合，則它將受到5 ({@damage 1d10})力場傷害。"
 					]
 				},
 				{
-					"name": "驅散免疫", "ENG_name": "Turn Immunity",
+					"name": "驅散免疫",
+					"ENG_name": "Turn Immunity",
 					"entries": [
 						"死亡化身免疫於驅散不死的效果。"
 					]
@@ -73,7 +76,8 @@
 			],
 			"action": [
 				{
-					"name": "收割之鐮", "ENG_name": "Reaping Scythe",
+					"name": "收割之鐮",
+					"ENG_name": "Reaping Scythe",
 					"entries": [
 						"死亡化身將它的靈體大鐮橫掃穿過一個距離它5呎內的生物，造成 7 ({@damage 1d8 + 3})劈砍傷害加上 4 ({@damage 1d8})死靈傷害。"
 					]
@@ -99,7 +103,8 @@
 			"hasFluff": true
 		},
 		{
-			"name": "巨蒼蠅", "ENG_name": "Giant Fly",
+			"name": "巨蒼蠅",
+			"ENG_name": "Giant Fly",
 			"source": "DMG",
 			"page": 169,
 			"size": "L",
@@ -134,7 +139,8 @@
 			]
 		},
 		{
-			"name": "墮魂幼蟲", "ENG_name": "Larva",
+			"name": "墮魂幼蟲",
+			"ENG_name": "Larva",
 			"source": "DMG",
 			"page": 63,
 			"otherSources": [
@@ -171,7 +177,8 @@
 			"cr": "0",
 			"action": [
 				{
-					"name": "啃咬", "ENG_name": "Bite",
+					"name": "啃咬",
+					"ENG_name": "Bite",
 					"entries": [
 						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}1 ({@damage 1d4 - 1})穿刺傷害。"
 					]

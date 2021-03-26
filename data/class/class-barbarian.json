@@ -2885,7 +2885,8 @@
 			]
 		},
 		{
-			"name": "護盾風暴", "ENG_name": "Shielding Storm",
+			"name": "護盾風暴",
+			"ENG_name": "Shielding Storm",
 			"source": "XGE",
 			"page": 10,
 			"className": "Barbarian",
@@ -2931,7 +2932,8 @@
 			]
 		},
 		{
-			"name": "狂熱者道途", "ENG_name": "Path of the Zealot",
+			"name": "狂熱者道途",
+			"ENG_name": "Path of the Zealot",
 			"source": "XGE",
 			"page": 11,
 			"className": "Barbarian",
@@ -2953,7 +2955,8 @@
 			]
 		},
 		{
-			"name": "神性狂怒", "ENG_name": "Divine Fury",
+			"name": "神性狂怒",
+			"ENG_name": "Divine Fury",
 			"source": "XGE",
 			"page": 11,
 			"className": "Barbarian",
@@ -2967,7 +2970,8 @@
 			]
 		},
 		{
-			"name": "諸神勇士", "ENG_name": "Warrior of the Gods",
+			"name": "諸神勇士",
+			"ENG_name": "Warrior of the Gods",
 			"source": "XGE",
 			"page": 11,
 			"className": "Barbarian",
@@ -2981,7 +2985,8 @@
 			]
 		},
 		{
-			"name": "狂熱專注", "ENG_name": "Fanatical Focus",
+			"name": "狂熱專注",
+			"ENG_name": "Fanatical Focus",
 			"source": "XGE",
 			"page": 11,
 			"className": "Barbarian",
@@ -2995,7 +3000,8 @@
 			]
 		},
 		{
-			"name": "狂熱之姿", "ENG_name": "Zealous Presence",
+			"name": "狂熱之姿",
+			"ENG_name": "Zealous Presence",
 			"source": "XGE",
 			"page": 11,
 			"className": "Barbarian",
@@ -3010,7 +3016,8 @@
 			]
 		},
 		{
-			"name": "怒不畏死", "ENG_name": "Rage beyond Death",
+			"name": "怒不畏死",
+			"ENG_name": "Rage beyond Death",
 			"source": "XGE",
 			"page": 11,
 			"className": "Barbarian",

@@ -544,7 +544,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The golem has advantage on saving throws against spells and other magical effects."
 					]

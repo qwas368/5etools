@@ -548,7 +548,8 @@
 			"cr": "1",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The aldani can breathe air and water."
 					]
@@ -1779,7 +1780,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"While holding his holy avenger, Dragonbait creates an aura in a 10-foot radius around him. While this aura is active, Dragonbait and all creatures friendly to him in the aura have advantage on saving throws against spells and other magical effects."
 					]
@@ -2298,7 +2300,8 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "兩棲", "ENG_name": "Amphibious",
+					"name": "兩棲",
+					"ENG_name": "Amphibious",
 					"entries": [
 						"The turtle can breathe air and water."
 					]
@@ -3889,7 +3892,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"Ras Nsi has advantage on saving throws against spells and other magical effects."
 					]
@@ -4263,7 +4267,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The tomb guardian has advantage on saving throws against spells and other magical effects."
 					]
@@ -5017,7 +5022,8 @@
 					]
 				},
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The tomb guardian has advantage on saving throws against spells and other magical effects."
 					]
@@ -6555,7 +6561,8 @@
 			"cr": "1/2",
 			"trait": [
 				{
-					"name": "魔法抗性", "ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"ENG_name": "Magic Resistance",
 					"entries": [
 						"The zorbo has advantage on saving throws against spells and other magical effects."
 					]
