@@ -8878,7 +8878,7 @@
 				},
 				{
 					"name": "克拉肯之聲 (短休或長休之後充能)",
-					"ENG_name": "Voice of the Kraken",
+					"ENG_name": "Voice of the Kraken (Recharges after a Short or Long Rest)",
 					"entries": [
 						"克拉肯將透過克拉肯祭司以雷鳴般的聲音說話，這個聲音可以在最遠300呎的距離內被聽到。每個由克拉肯祭司所選擇，且可以聽見克拉肯的話語（通常會使用深淵語、煉獄語、或原初語）的生物都必須成功通過一次DC 14的魅力豁免，否則將陷入{@condition 恐懼}長達1分鐘。陷入{@condition 恐懼}的生物可以在它的每個回合結束時重複這個豁免檢定，豁免成功則結束這個效果對它的影響。"
 					]

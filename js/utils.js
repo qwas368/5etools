@@ -2547,7 +2547,14 @@ DataUtil = {
 			function doMod_appendIfNotExistsArr (modInfo, prop) {
 				doEnsureArray(modInfo, "items");
 				if (!copyTo[prop]) return copyTo[prop] = modInfo.items;
-				copyTo[prop] = copyTo[prop].concat(modInfo.items.filter(it => !copyTo[prop].some(x => CollectionUtil.deepEquals(it, x))));
+				// 	copyTo[prop] = copyTo[prop].concat(modInfo.items.filter(it => !copyTo[prop].some(x => CollectionUtil.deepEquals(it, x)))); 不懂原本的寫法為什麼會一直顯示錯誤...
+				copyTo[prop] = copyTo[prop].concat(modInfo.items.filter(it => {
+					for (var x in copyTo[prop])
+					{
+						if (CollectionUtil.deepEquals(it, x)) return false;
+					}
+					return true;
+				}));
 			}
 
 			function doMod_replaceArr (modInfo, prop, isThrow = true) {

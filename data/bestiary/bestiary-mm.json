@@ -551,6 +551,7 @@
 			"action": [
 				{
 					"name": "棍棒",
+					"ENG_name": "Club",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}2 ({@damage 1d4})鈍擊傷害。"
 					]
@@ -900,6 +901,7 @@
 				},
 				{
 					"name": "閃電吐息{@recharge 5}",
+					"ENG_name": "Lightning Breath {@recharge 5}",
 					"entries": [
 						"龍巫妖吐出一道90呎長，5呎寬直線型的閃電。每個在直線範圍內的生物都必須進行一次DC 20的敏捷豁免，豁免失敗則受到66 ({@damage 12d10})閃電傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -1092,6 +1094,7 @@
 				},
 				{
 					"name": "閃電吐息{@recharge 5}",
+					"ENG_name": "Lightning Breath {@recharge 5}",
 					"entries": [
 						"藍龍吐出一道90呎長，5呎寬直線型的閃電。每個在直線範圍內的生物都必須進行一次DC 19的敏捷豁免，豁免失敗則受到66 ({@damage 12d10})閃電傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -3392,6 +3395,7 @@
 				},
 				{
 					"name": "閃電吐息{@recharge 5}",
+					"ENG_name": "Lightning Breath {@recharge 5}",
 					"entries": [
 						"藍龍吐出一道120呎長，10呎寬直線型的閃電。每個在直線範圍內的生物都必須進行一次DC 23的敏捷豁免，豁免失敗則受到88 ({@damage 16d10})閃電傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -6429,6 +6433,7 @@
 				},
 				{
 					"name": "輕弩",
+					"ENG_name": "Light Crossbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 6}，射程80/320呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害，且目標必須進行一次DC 15的體質豁免，若豁免失敗則受到24 ({@damage 7d6})毒素傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -7278,6 +7283,7 @@
 				},
 				{
 					"name": "輕弩",
+					"ENG_name": "Light Crossbow",
 					"entries": [
 						"{@atk rw} 命中{@hit 3}，射程80/320呎，單一目標。{@h}5 ({@damage 1d8 + 1})穿刺傷害。"
 					]
@@ -8448,6 +8454,7 @@
 				},
 				{
 					"name": "閃電吐息{@recharge 5}",
+					"ENG_name": "Lightning Breath {@recharge 5}",
 					"entries": [
 						"青足龍蛇吐出一道20呎長，5呎寬直線型的閃電。每個在直線範圍內的生物都必須進行一次DC 16的敏捷豁免，豁免失敗則受到66 ({@damage 12d10})閃電傷害，豁免成功則只受到一半的傷害。"
 					]
@@ -13192,6 +13199,7 @@
 			"action": [
 				{
 					"name": "棍棒",
+					"ENG_name": "Club",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}2 ({@damage 1d4})鈍擊傷害。"
 					]
@@ -15961,6 +15969,7 @@
 				},
 				{
 					"name": "硬頭錘",
+					"ENG_name": "Mace",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4})鈍擊傷害加 18 ({@damage 4d8})光耀傷害。"
 					]
@@ -18216,6 +18225,7 @@
 			"action": [
 				{
 					"name": "棍棒",
+					"ENG_name": "Club",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}(橡棍術時命中{@hit 6})，觸及5呎，單一目標。{@h}2 ({@damage 1d4})鈍擊傷害，或若使用橡棍術時則造成 8 ({@damage 1d8 + 4})鈍擊傷害。"
 					]
@@ -19122,6 +19132,7 @@
 			"action": [
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}19 ({@damage 3d8 + 6})穿刺傷害。"
 					]
@@ -28464,6 +28475,7 @@
 				},
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 13}，觸及10呎，單一目標。{@h}45 ({@damage 7d10 + 7})穿刺傷害。"
 					]
@@ -30854,6 +30866,7 @@
 				},
 				{
 					"name": "棍棒",
+					"ENG_name": "Club",
 					"entries": [
 						"{@atk mw} 命中{@hit 3}，觸及5呎，單一目標。{@h}3 ({@damage 1d4 + 1})鈍擊傷害。"
 					]
@@ -32443,6 +32456,7 @@
 				},
 				{
 					"name": "叉刺",
+					"ENG_name": "Fork",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}15 ({@damage 2d8 + 6})穿刺傷害。"
 					]
@@ -37506,6 +37520,7 @@
 			"action": [
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 10}，觸及10呎，單一目標。{@h}25 ({@damage 4d8 + 7})穿刺傷害。"
 					]
@@ -39515,6 +39530,7 @@
 				},
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})穿刺傷害。"
 					]
@@ -39647,6 +39663,7 @@
 				},
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}13 ({@damage 2d8 + 4})穿刺傷害。"
 					]
@@ -44046,6 +44063,7 @@
 				},
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3})穿刺傷害。"
 					]
@@ -44469,6 +44487,7 @@
 				},
 				{
 					"name": "硬頭錘",
+					"ENG_name": "Mace",
 					"entries": [
 						"{@atk mw} 命中{@hit 14}，觸及10呎，單一目標。{@h}15 ({@damage 2d6 + 8})鈍擊傷害加 21 ({@damage 6d6})火焰傷害。"
 					]
@@ -45466,6 +45485,7 @@
 			"action": [
 				{
 					"name": "硬頭錘",
+					"ENG_name": "Mace",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}3 ({@damage 1d6})鈍擊傷害。"
 					]
@@ -47637,6 +47657,7 @@
 			"action": [
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}14 ({@damage 2d8 + 5})鈍擊傷害。"
 					]
@@ -51745,6 +51766,7 @@
 				},
 				{
 					"name": "叉刺",
+					"ENG_name": "Fork",
 					"entries": [
 						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}3 ({@damage 1d6})穿刺傷害。"
 					]
@@ -54852,6 +54874,7 @@
 				},
 				{
 					"name": "硬頭錘",
+					"ENG_name": "Mace",
 					"entries": [
 						"{@atk mw} 命中{@hit 4}，觸及5呎，單一生物。{@h}5 ({@damage 1d6 + 2})鈍擊傷害。"
 					]
@@ -55323,6 +55346,7 @@
 			"action": [
 				{
 					"name": "角撞",
+					"ENG_name": "Gore",
 					"entries": [
 						"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}24 ({@damage 4d8 + 6})穿刺傷害。"
 					]
