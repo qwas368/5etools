@@ -1336,7 +1336,6 @@ class Filter extends FilterBase {
 		};
 		this._addHook("state", item.item, hook);
 		hook();
-		console.log(displayText);
 		item.searchText = displayText.toLowerCase();
 
 		return btnPill;
