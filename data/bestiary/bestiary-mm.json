@@ -524,24 +524,24 @@
 			"cr": "1/4",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The acolyte has following cleric spells prepared:"
+						"侍僧是1級的施法者。它的施法屬性為睿知（法術豁免DC 12，法術攻擊命中{@hit 4}）。侍僧已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell bless}",
-								"{@spell cure wounds}",
-								"{@spell sanctuary}"
+								"{@spell 祝福術}",
+								"{@spell 治療傷勢}",
+								"{@spell 聖域術}"
 							]
 						}
 					},
@@ -5174,58 +5174,59 @@
 			"cr": "17",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:"
+						"斯芬克斯是12級的施法者。它的施法屬性為睿知（法術豁免DC 18，法術攻擊命中{@hit 10}）。它無須材料構材以施放它的法術。斯芬克斯已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell sacred flame}",
-								"{@spell spare the dying}",
-								"{@spell thaumaturgy}"
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell detect evil and good}",
-								"{@spell detect magic}"
+								"{@spell 命令術}",
+								"{@spell 偵測善惡}",
+								"{@spell 偵測魔法}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell zone of truth}"
+								"{@spell 次級復原術}",
+								"{@spell 誠實之域}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell tongues}"
+								"{@spell 解除魔法}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell freedom of movement}"
+								"{@spell 放逐術}",
+								"{@spell 行動自如術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell flame strike}",
-								"{@spell greater restoration}"
+								"{@spell 焰擊術}",
+								"{@spell 高等復原術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell heroes' feast}"
+								"{@spell 英雄宴}"
 							]
 						}
 					},
@@ -5870,89 +5871,89 @@
 			"cr": "12",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The arcanaloth's innate spellcasting ability is Charisma (spell save {@dc 15}). The arcanaloth can innately cast the following spells, requiring no material components:"
+						"奧登羅斯魔的天生施法屬性為魅力（法術豁免DC 15）。奧登羅斯魔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell alter self}",
-						"{@spell darkness}",
-						"{@spell heat metal}",
-						"{@spell invisibility} (self only)",
-						"{@spell magic missile}"
+						"{@spell 變造自身}",
+						"{@spell 黑暗術}",
+						"{@spell 灼熱金屬}",
+						"{@spell 隱形術}(限定自身)",
+						"{@spell 魔法飛彈}"
 					],
 					"ability": "cha"
 				},
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The arcanaloth is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The arcanaloth has the following wizard spells prepared:"
+						"奧登羅斯魔是16級的施法者。它的施法屬性為智力（法術豁免DC 17，法術攻擊命中{@hit 9}）。奧登羅斯魔已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell shield}",
-								"{@spell Tenser's floating disk}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 護盾術}",
+								"{@spell 譚森浮碟術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell phantasmal force}",
-								"{@spell suggestion}"
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}",
+								"{@spell 魅影之力}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fear}",
-								"{@spell fireball}"
+								"{@spell 反制法術}",
+								"{@spell 恐懼術}",
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell dimension door}"
+								"{@spell 放逐術}",
+								"{@spell 次元門}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contact other plane}",
-								"{@spell hold monster}"
+								"{@spell 異界探知}",
+								"{@spell 怪物定身術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell chain lightning}"
+								"{@spell 連環閃電}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}"
+								"{@spell 死亡一指}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell mind blank}"
+								"{@spell 心靈屏障}"
 							]
 						}
 					},
@@ -5992,16 +5993,16 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Yugoloth Summoning",
+					"name": "召喚尤格羅斯魔",
 					"entries": [
-						"Some yugoloths have an action option that allows them to summon other yugoloths.",
+						"有些尤格羅斯魔擁有允許它們召喚出其他尤格羅斯魔的動作項。",
 						{
-							"name": "Summon Yugoloth (1/Day)",
+							"name": "召喚尤格羅斯魔 (1/日)",
 							"type": "entries",
 							"entries": [
-								"The yugoloth attempts a magical summoning.",
-								"An arcanaloth has a {@chance 40|40 percent|40% summoning chance} chance of summoning one arcanaloth.",
-								"A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+								"該尤格羅斯魔嘗試進行一次魔法召喚。",
+								"一個奧登羅斯魔有{@chance 40|40％|40％召喚機率}機率召喚出另一個奧登羅斯魔。",
+								"被召喚的尤格羅斯魔將出現距離它召喚者60呎內的一處未被佔據空間，隨自己的喜好行動，且不能再召喚其它尤格羅斯魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個附贈動作解消它。"
 							]
 						}
 					]
@@ -6147,95 +6148,88 @@
 			"cr": "12",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The archmage can cast {@spell disguise self} and {@spell invisibility} at will and has the following wizard spells prepared:"
+						"大法師是18級的施法者。它的施法屬性為智力（法術豁免DC 17，法術攻擊命中{@hit 9}）。大法師可以隨意施放{@spell 易容術}和{@spell 隱形術}，且已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}*",
-								"{@spell magic missile}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 法師護甲}*",
+								"{@spell 魔法飛彈}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}*"
+								"{@spell 放逐術}",
+								"{@spell 火焰護盾}",
+								"{@spell 石膚術}*"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
+								"{@spell 寒冰錐}",
+								"{@spell 探知}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell globe of invulnerability}"
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell teleport}"
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell mind blank}*"
+								"{@spell 心靈屏障}*"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell time stop}"
+								"{@spell 時間停止}"
 							]
 						}
 					},
-					"will": [
-						"{@spell disguise self}",
-						"{@spell invisibility}"
-					],
-					"hidden": [
-						"will"
-					],
 					"footerEntries": [
-						"*The archmage casts these spells on itself before combat."
+						"*大法師會在戰鬥之前對自己施放這些法術。"
 					],
 					"ability": "int"
 				}
@@ -7143,11 +7137,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A balor has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d8} {@creature vrock||vrocks}, {@dice 1d6} {@creature hezrou||hezrous}, {@dice 1d4} {@creature glabrezu||glabrezus}, {@dice 1d3} {@creature nalfeshnee||nalfeshnees}, {@dice 1d2} {@creature marilith||mariliths}, or one {@creature goristro}.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個巴洛炎魔有{@chance 50|50％|50％召喚機率}機率召喚出、{@dice 1d8}個{@creature 弗洛魔|mm}、{@dice 1d6}個{@creature 狂戰魔|mm}、{@dice 1d4}個{@creature 迷誘魔|mm}、{@dice 1d3}個{@creature 判魂魔|mm}、{@dice 1d2}個{@creature 六臂蛇魔|mm}、或一個{@creature 巨牛魔}。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -7924,18 +7918,18 @@
 			"cr": "5",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The barlgura's spellcasting ability is Wisdom (spell save {@dc 13}). The barlgura can innately cast the following spells, requiring no material components:"
+						"巴古拉魔的天生施法屬性為睿知（法術豁免DC 13）。巴古拉魔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell entangle}",
-							"{@spell phantasmal force}"
+							"{@spell 糾纏術}",
+							"{@spell 魅影之力}"
 						],
 						"2e": [
-							"{@spell disguise self}",
-							"{@spell invisibility} (self only)"
+							"{@spell 易容術}",
+							"{@spell 隱形術}(限定自身)"
 						]
 					},
 					"ability": "wis"
@@ -7980,11 +7974,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A barlgura has a {@chance 30|30 percent|30% summoning chance} chance of summoning one barlgura.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個巴古拉魔有{@chance 30|30％|30％召喚機率}機率召喚出另一個巴古拉魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -9685,12 +9679,12 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Control Gem",
+					"name": "支配寶石",
 					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"植入史拉蟾腦內的是一顆魔法支配寶石。該史拉蟾必須服從任何擁有該寶石的對象，且在被這個方式支配時免疫於{@condition 魅惑}。",
+						"某些法術可以被用於獲得該寶石。若史拉蟾在對抗{@spell 禁錮術}的豁免檢定中失敗，則該法術可以將寶石轉移到施法者的手上，而非將史拉蟾給禁錮。{@spell 祈願術}法術若在史拉蟾在場時被施放，則可以被許願以獲得該寶石。",
+						"施放於史拉蟾的{@spell 高等復原術}法術將會摧毀該寶石而不至於傷害到史拉蟾。",
+						"熟練於睿知（{@skill 醫藥}）的角色可以從一個{@condition 無力}的史拉蟾腦中移除該寶石。每次嘗試都需要1分鐘不被打擾的工作時間，且必須成功通過一次DC 20的睿知（{@skill 醫藥}）檢定。每次嘗試失敗都會對該史拉蟾造成22 ({@damage 4d10})精神傷害。"
 					]
 				}
 			],
@@ -9959,21 +9953,21 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Bone Devil Polearm",
+					"name": "骨魔鉤槍兵",
 					"entries": [
-						"Some bone devils have the following action options.",
+						"有些骨魔擁有下列動作項。",
 						{
-							"name": "Multiattack",
+							"name": "多重攻擊",
 							"type": "entries",
 							"entries": [
-								"The devil makes two attacks: one with its hooked polearm and one with its sting."
+								"骨魔進行二次攻擊：一次長柄鉤槍，一次釘刺。"
 							]
 						},
 						{
-							"name": "Hooked Polearm",
+							"name": "長柄鉤槍",
 							"type": "entries",
 							"entries": [
-								"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d12 + 4}) piercing damage. If the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the devil can't use its polearm on another target."
+								"{@atk mw} 命中{@hit 8}，觸及10呎，單一目標。{@h}17 ({@dice 2d12 + 4})穿刺傷害。若目標為一個體型為巨型或更小的生物，則它將{@condition 被擒}(逃脫DC 14)。直到擒抱結束前，骨魔不能對另一個目標使用它的長柄鉤槍。"
 							]
 						}
 					]
@@ -10074,36 +10068,37 @@
 			"cr": "4",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The naga is a 5th-level spellcaster (spell save {@dc 12}, {@hit 4} to hit with spell attacks) that needs only verbal components to cast its spells. Its spellcasting ability is Wisdom, and it has the following cleric spells prepared:"
+						"納迦是5級的施法者（法術豁免DC 12，法術攻擊命中{@hit 4}），且只需要聲音構材以施放它的法術。它的施法屬性為睿知，且它已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mending}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 修復術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell calm emotions}",
-								"{@spell hold person}"
+								"{@spell 安定心神}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell bestow curse}"
+								"{@spell 降咒}"
 							]
 						}
 					},
@@ -10200,36 +10195,37 @@
 			"cr": "4",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The naga is a 5th-level spellcaster (spell save {@dc 12}, {@hit 4} to hit with spell attacks) that needs only verbal components to cast its spells. Its spellcasting ability is Intelligence, and it has the following wizard spells prepared:"
+						"納迦是5級的施法者（法術豁免DC 12，法術攻擊命中{@hit 4}），且只需要聲音構材以施放它的法術。它的施法屬性為智力，且它已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell sleep}"
+								"{@spell 魅惑人類}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell hold person}"
+								"{@spell 偵測思想}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell lightning bolt}"
+								"{@spell 閃電束}"
 							]
 						}
 					},
@@ -11249,18 +11245,18 @@
 			"cr": "5",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The cambion's spellcasting ability is Charisma (spell save {@dc 14}). The cambion can innately cast the following spells, requiring no material components:"
+						"魔裔的天生施法屬性為魅力（法術豁免DC 14）。魔裔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1": [
-							"{@spell plane shift} (self only)"
+							"{@spell 異界傳送}(限定自身)"
 						],
 						"3e": [
-							"{@spell alter self}",
-							"{@spell command}",
-							"{@spell detect magic}"
+							"{@spell 變造自身}",
+							"{@spell 命令術}",
+							"{@spell 偵測魔法}"
 						]
 					},
 					"ability": "cha"
@@ -12170,11 +12166,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A chasme has a {@chance 30|30 percent|30% summoning chance} chance of summoning one chasme.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個喀嘶魔有{@chance 30|30％|30％召喚機率}機率召喚出另一個喀嘶魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -12890,25 +12886,25 @@
 			"cr": "9",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
+						"巨人的天生施法屬性為魅力。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 雲霧術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell fly}",
-							"{@spell misty step}",
-							"{@spell telekinesis}"
+							"{@spell 羽落術}",
+							"{@spell 飛行術}",
+							"{@spell 迷蹤步}",
+							"{@spell 心靈遙控}"
 						],
 						"1e": [
-							"{@spell control weather}",
-							"{@spell gaseous form}"
+							"{@spell 操控天氣}",
+							"{@spell 氣化形體}"
 						]
 					},
 					"ability": "cha"
@@ -12948,21 +12944,21 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "New Giant Options",
+					"name": "新巨人選項",
 					"entries": [
-						"Some adult cloud giants have the magical ability to create barriers of gale-force wind around themselves that can deflect incoming missiles. Others like to fling enemies through the air. These abilities are represented by the following action options.",
+						"有些成年的雲巨人擁有魔法能力以在它們周遭創造出風力屏障，偏轉射來的投射物。其他雲巨人則喜歡將敵人拋向空中。這些能力透過下列動作選項呈現。",
 						{
-							"name": "Fling",
+							"name": "拋擲",
 							"type": "entries",
 							"entries": [
-								"The giant tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a {@dc 20} Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the giant's choice and land {@condition prone}, taking 4 ({@damage 1d8}) bludgeoning damage for every 10 feet it was thrown."
+								"巨人嘗試將一個距離它10呎內且體型為小型或中型的生物丟出去。目標必須成功通過一次DC 20的敏捷豁免，否則將被向著巨人所選的方向拋擲並水平飛出最多60呎距離，以{@condition 伏地}狀態著地，並受到被扔出每10呎距離4 ({@damage 1d8})的鈍擊傷害。"
 							]
 						},
 						{
-							"name": "Wind Aura",
+							"name": "狂風靈光",
 							"type": "entries",
 							"entries": [
-								"A magical aura of wind surrounds the giant. The aura is a 10-foot-radius sphere that lasts as long as the giant maintains concentration on it (as if concentrating on a spell). While the aura is in effect, the giant gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical."
+								"一道魔法性的狂風靈光環繞著巨人。這道靈光是一個10呎半徑的球體，並只要巨人維持對它的專注就能持續存在（如同專注於法術）。當這道靈光發揮效果時，巨人對遠程武器攻擊的AC將獲得+2加值，且靈光內除了魔法火焰之外的所有未受保護的火焰都將被熄滅。"
 							]
 						}
 					],
@@ -13521,29 +13517,29 @@
 			"cr": "4",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The couatl's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:"
+						"羽蛇的天生施法屬性為魅力（法術豁免DC 14）。羽蛇天生就可以施展以下法術，且只需要聲音構材："
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell detect magic}",
-						"{@spell detect thoughts}"
+						"{@spell 偵測善惡}",
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell bless}",
-							"{@spell create food and water}",
-							"{@spell cure wounds}",
-							"{@spell lesser restoration}",
-							"{@spell protection from poison}",
-							"{@spell sanctuary}",
-							"{@spell shield}"
+							"{@spell 祝福術}",
+							"{@spell 創造飲食}",
+							"{@spell 治療傷勢}",
+							"{@spell 次級復原術}",
+							"{@spell 防護毒素}",
+							"{@spell 聖域術}",
+							"{@spell 護盾術}"
 						],
 						"1e": [
-							"{@spell dream}",
-							"{@spell greater restoration}",
-							"{@spell scrying}"
+							"{@spell 託夢術}",
+							"{@spell 高等復原術}",
+							"{@spell 探知}"
 						]
 					},
 					"ability": "cha"
@@ -14042,31 +14038,31 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The fanatic has the following cleric spells prepared:"
+						"狂信徒是4級的施法者。它的施法屬性為睿知（法術豁免DC 11，法術攻擊命中{@hit 3}）。狂信徒已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 造成傷勢}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						}
 					},
@@ -14475,28 +14471,28 @@
 			"cr": "11",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dao's innate spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"土巨靈的天生施法屬性為魅力（法術豁免DC 14，法術攻擊命中{@hit 6}）。土巨靈天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell detect magic}",
-						"{@spell stone shape}"
+						"{@spell 偵測善惡}",
+						"{@spell 偵測魔法}",
+						"{@spell 塑石術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell passwall}",
-							"{@spell move earth}",
-							"{@spell tongues}"
+							"{@spell 穿牆術}",
+							"{@spell 地動術}",
+							"{@spell 巧舌術}"
 						],
 						"1e": [
-							"{@spell conjure elemental} (earth elemental only)",
-							"{@spell gaseous form}",
-							"{@spell invisibility}",
-							"{@spell phantasmal killer}",
-							"{@spell plane shift}",
-							"{@spell wall of stone}"
+							"{@spell 召喚元素生物}(限定{@creature 土元素})",
+							"{@spell 氣化形體}",
+							"{@spell 隱形術}",
+							"{@spell 魅影殺手}",
+							"{@spell 異界傳送}",
+							"{@spell 石牆術}"
 						]
 					},
 					"ability": "cha"
@@ -14549,22 +14545,22 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Genie Powers",
+					"name": "巨靈之力",
 					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"巨靈擁有各式各樣的魔法能力，包括各種法術。其中一些個體甚至擁有更強大的力量，讓它們得以改變自己的外表和現實性質。",
 						{
 							"type": "entries",
-							"name": "Disguises",
+							"name": "偽裝",
 							"entries": [
-								"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the {@spell disguise self} spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the {@spell true polymorph} spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well."
+								"某些巨靈可以將它們自己隱藏在幻象中，使它們偽裝成其他相似身型的生物。這類巨靈天生就可以隨意施放{@spell 易容術}法術，且其通常會具有比原本法術更長的持續時間。更強大的巨靈可以每日施放一到三次的{@spell 完全變形術}法術，並可能也具有比原本更長的持續時間。這類巨靈只能改變它們自己的身形，但仍有極少數的個體也能夠將該法術施放在其他生物或物體上。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Wishes",
+							"name": "許願",
 							"entries": [
-								"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year), and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-								"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the {@spell wish} spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+								"在俗世間，巨靈實現願望的力量已經是一件廣為人知的傳說。只有最強大的巨靈（像是巨靈貴族中的某些個體）才能夠做到。一個擁有這項能力的巨靈可以實現一個非巨靈的生物一到三個願望。一旦巨靈實現了它所能給予的所有願望，它在一段時間內將無法再實現任何願望（通常為1年）。除此之外，宇宙法則也規定了同一個巨靈只能為一個特定生物實現其所能授予願望上限的願望一次。一旦巨靈在該生物身上用盡了它的願望額度，該巨靈將再也不能讓該生物許願。",
+								"要向巨靈許願的生物必須距離巨靈60呎內，並向巨靈說出所想要的效果。巨靈可以為該生物施放{@spell 祈願術}以產生該效果。根據巨靈的本性不同，巨靈可能會試圖利用願望的糟糕措辭以曲解願望的意圖。這種意圖的曲解往往是巨靈為了自己的利益而故意為之。"
 							]
 						}
 					]
@@ -14890,44 +14886,45 @@
 			"cr": "17",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The death knight is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following paladin spells prepared:"
+						"死亡騎士是19級的施法者。它的施法屬性為魅力（法術豁免DC 18，法術攻擊命中{@hit 10}）。死亡騎士已準備了以下聖騎士法術："
 					],
 					"spells": {
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell compelled duel}",
-								"{@spell searing smite}"
+								"{@spell 命令術}",
+								"{@spell 強迫決鬥}",
+								"{@spell 熾炎斬}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell magic weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 魔化武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell elemental weapon}"
+								"{@spell 解除魔法}",
+								"{@spell 元素武器}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell staggering smite}"
+								"{@spell 放逐術}",
+								"{@spell 驚震斬}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell destructive wave} (necrotic)"
+								"{@spell 湮滅波}(死靈)"
 							]
 						}
 					},
@@ -15106,27 +15103,27 @@
 			"cr": "10",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The slaad can innately cast the following spells, requiring no material components:"
+						"史拉蟾的天生施法屬性為魅力（法術豁免DC 15，法術攻擊命中{@hit 7}）。史拉蟾天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell detect thoughts}",
-						"{@spell invisibility} (self only)",
-						"{@spell mage hand}",
-						"{@spell major image}"
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}",
+						"{@spell 隱形術}(限定自身)",
+						"{@spell 法師之手}",
+						"{@spell 強效幻影}"
 					],
 					"daily": {
 						"2e": [
-							"{@spell fear}",
-							"{@spell fireball}",
-							"{@spell fly}",
-							"{@spell tongues}"
+							"{@spell 恐懼術}",
+							"{@spell 火球術}",
+							"{@spell 飛行術}",
+							"{@spell 巧舌術}"
 						],
 						"1e": [
-							"{@spell cloudkill}",
-							"{@spell plane shift}"
+							"{@spell 死雲術}",
+							"{@spell 異界傳送}"
 						]
 					},
 					"ability": "cha"
@@ -15192,12 +15189,12 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Control Gem",
+					"name": "支配寶石",
 					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"植入史拉蟾腦內的是一顆魔法支配寶石。該史拉蟾必須服從任何擁有該寶石的對象，且在被這個方式支配時免疫於{@condition 魅惑}。",
+						"某些法術可以被用於獲得該寶石。若史拉蟾在對抗{@spell 禁錮術}的豁免檢定中失敗，則該法術可以將寶石轉移到施法者的手上，而非將史拉蟾給禁錮。{@spell 祈願術}法術若在史拉蟾在場時被施放，則可以被許願以獲得該寶石。",
+						"施放於史拉蟾的{@spell 高等復原術}法術將會摧毀該寶石而不至於傷害到史拉蟾。",
+						"熟練於睿知（{@skill 醫藥}）的角色可以從一個{@condition 無力}的史拉蟾腦中移除該寶石。每次嘗試都需要1分鐘不被打擾的工作時間，且必須成功通過一次DC 20的睿知（{@skill 醫藥}）檢定。每次嘗試失敗都會對該史拉蟾造成22 ({@damage 4d10})精神傷害。"
 					]
 				}
 			],
@@ -15470,18 +15467,18 @@
 			"cr": "1/2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The gnome's innate spellcasting ability is Intelligence (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:"
+						"地侏的天生施法屬性為智力（法術豁免DC 11）。它生來就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell nondetection} (self only)"
+						"{@spell 迴避偵測}(限定自身)"
 					],
 					"daily": {
 						"1e": [
-							"{@spell blindness/deafness}",
-							"{@spell blur}",
-							"{@spell disguise self}"
+							"{@spell 目盲/耳聾術}",
+							"{@spell 朦朧術}",
+							"{@spell 易容術}"
 						]
 					},
 					"ability": "int"
@@ -15923,17 +15920,17 @@
 			"cr": "10",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The deva's spellcasting ability is Charisma (spell save {@dc 17}). The deva can innately cast the following spells, requiring only verbal components:"
+						"梵天神侍的天生施法屬性為魅力（法術豁免DC 17）。梵天神侍天生就可以施展以下法術，且只需要聲音構材："
 					],
 					"will": [
-						"{@spell detect evil and good}"
+						"{@spell 偵測善惡}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell commune}",
-							"{@spell raise dead}"
+							"{@spell 通神術}",
+							"{@spell 喚醒死者}"
 						]
 					},
 					"ability": "cha"
@@ -16290,28 +16287,28 @@
 			"cr": "11",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The djinni's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"氣巨靈的天生施法屬性為魅力（法術豁免DC 17，法術攻擊命中{@hit 9}）。氣巨靈天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell detect magic}",
-						"{@spell thunderwave}"
+						"{@spell 偵測善惡}",
+						"{@spell 偵測魔法}",
+						"{@spell 雷鳴波}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell create food and water} (can create wine instead of water)",
-							"{@spell tongues}",
-							"{@spell wind walk}"
+							"{@spell 創造飲食}(可以創造紅酒而非水)",
+							"{@spell 巧舌術}",
+							"{@spell 御風而行}"
 						],
 						"1e": [
-							"{@spell conjure elemental} (air elemental only)",
-							"{@spell creation}",
-							"{@spell gaseous form}",
-							"{@spell invisibility}",
-							"{@spell major image}",
-							"{@spell plane shift}"
+							"{@spell 召喚元素生物}(限定{@creature 氣元素}})",
+							"{@spell 造物術}",
+							"{@spell 氣化形體}",
+							"{@spell 隱形術}",
+							"{@spell 強效幻影}",
+							"{@spell 異界傳送}"
 						]
 					},
 					"ability": "cha"
@@ -16352,22 +16349,22 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Genie Powers",
+					"name": "巨靈之力",
 					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"巨靈擁有各式各樣的魔法能力，包括各種法術。其中一些個體甚至擁有更強大的力量，讓它們得以改變自己的外表和現實性質。",
 						{
 							"type": "entries",
-							"name": "Disguises",
+							"name": "偽裝",
 							"entries": [
-								"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the {@spell disguise self} spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the {@spell true polymorph} spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well."
+								"某些巨靈可以將它們自己隱藏在幻象中，使它們偽裝成其他相似身型的生物。這類巨靈天生就可以隨意施放{@spell 易容術}法術，且其通常會具有比原本法術更長的持續時間。更強大的巨靈可以每日施放一到三次的{@spell 完全變形術}法術，並可能也具有比原本更長的持續時間。這類巨靈只能改變它們自己的身形，但仍有極少數的個體也能夠將該法術施放在其他生物或物體上。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Wishes",
+							"name": "許願",
 							"entries": [
-								"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year), and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-								"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the {@spell wish} spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+								"在俗世間，巨靈實現願望的力量已經是一件廣為人知的傳說。只有最強大的巨靈（像是巨靈貴族中的某些個體）才能夠做到。一個擁有這項能力的巨靈可以實現一個非巨靈的生物一到三個願望。一旦巨靈實現了它所能給予的所有願望，它在一段時間內將無法再實現任何願望（通常為1年）。除此之外，宇宙法則也規定了同一個巨靈只能為一個特定生物實現其所能授予願望上限的願望一次。一旦巨靈在該生物身上用盡了它的願望額度，該巨靈將再也不能讓該生物許願。",
+								"要向巨靈許願的生物必須距離巨靈60呎內，並向巨靈說出所想要的效果。巨靈可以為該生物施放{@spell 祈願術}以產生該效果。根據巨靈的本性不同，巨靈可能會試圖利用願望的糟糕措辭以曲解願望的意圖。這種意圖的曲解往往是巨靈為了自己的利益而故意為之。"
 							]
 						}
 					]
@@ -16981,17 +16978,17 @@
 			"cr": "6",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The drider's innate spellcasting ability is Wisdom (spell save {@dc 13}). The drider can innately cast the following spells, requiring no material components:"
+						"蛛化精靈的天生施法屬性為睿知（法術豁免DC 13）。蛛化精靈天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}"
 						]
 					},
 					"ability": "wis"
@@ -17058,19 +17055,19 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Drider Spellcasting",
+					"name": "蛛化精靈施法",
 					"entries": [
-						"Driders that were once drow spellcasters might retain their ability to cast spells. Such driders typically have a higher spellcasting ability (15 or 16) than other driders. Further, the drider gains the Spellcasting trait. A drider that was a drow divine spellcaster, therefore, could have a Wisdom of 16 (+3) and a Spellcasting trait as follows.",
-						"Spellcasting. The drider is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The drider has the following spells prepared from the cleric spell list:",
+						"曾經身為卓爾施法者的蛛化精靈可能會保留它們施放法術的能力。這類蛛化精靈通常擁有較其他蛛化精靈更高的施法屬性（15或16），並且具有施法特性。因此，一個曾是卓爾神術施法者的蛛化精靈可能會具有16點的睿知值(+3)，並具有如下的施法特性。",
+						"施法. 蛛化精靈是7級的施法者。它的施法屬性為睿知（法術豁免DC 14，法術攻擊命中{@hit 6}）。蛛化精靈已經從牧師法術列表中準備了以下法術：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
-								"Cantrips (at will): {@spell poison spray}, {@spell thaumaturgy}",
-								"1st level (4 slots): {@spell bane}, {@spell detect magic}, {@spell sanctuary}",
-								"2nd level (3 slots): {@spell hold person}, {@spell silence}",
-								"3rd level (3 slots): {@spell clairvoyance}, {@spell dispel magic}",
-								"4th level (2 slots): {@spell divination}, {@spell freedom of movement}"
+								"戲法 (隨意): {@spell 毒氣噴灑}, {@spell 奇術}",
+								"1環 (4法術位):: {@spell 災禍術}, {@spell 偵測魔法}, {@spell 聖域術}",
+								"2環 (3法術位): {@spell 人類定身術}, {@spell 沉默術}",
+								"3環 (3法術位: {@spell 銳眼術}, {@spell 解除魔法}",
+								"4環 (2法術位): {@spell 預言術}, {@spell 行動自如術}"
 							]
 						}
 					]
@@ -17192,17 +17189,17 @@
 			"cr": "1/4",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The drow's spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components:"
+						"卓爾的天生施法屬性為魅力（法術豁免DC 11）。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}"
 						]
 					},
 					"ability": "cha"
@@ -17243,13 +17240,13 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Drow Magic Armor and Weapons",
+					"name": "卓爾魔法護甲和武器",
 					"entries": [
 						{
 							"type": "entries",
 							"entries": [
-								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow} wearing a {@item +1 chain shirt} and carrying a {@item +1 shortsword} has AC 16 and a +1 bonus on attack and damage rolls with shortsword attacks."
+								"卓爾經常穿戴魔法護甲並攜帶魔法武器，但其附魔加值會在暴露於日光照耀下超過1小時後永久消失。",
+								"一個{@creature 卓爾}在穿戴{@item 鏈甲衫+1|dmg}並攜帶一把{@item 短劍+1|dmg}時，具有AC 16，並在使用短劍進行的攻擊檢定和傷害骰上具有+1加值。"
 							]
 						}
 					]
@@ -17372,18 +17369,18 @@
 			"cr": "5",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The drow's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
+						"卓爾的天生施法屬性為魅力（法術豁免DC 12）。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術}（限自身）"
 						]
 					},
 					"ability": "cha"
@@ -17439,13 +17436,13 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Drow Magic Armor and Weapons",
+					"name": "卓爾魔法護甲和武器",
 					"entries": [
 						{
 							"type": "entries",
 							"entries": [
-								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow elite warrior} wearing {@item +2 Studded Leather Armor||+2 studded leather} and carrying a {@item +2 shortsword} has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks."
+								"卓爾經常穿戴魔法護甲並攜帶魔法武器，但其附魔加值會在暴露於日光照耀下超過1小時後永久消失。",
+								"一個{@creature 卓爾菁英戰士}在穿戴{@item 鑲釘皮甲+2|dmg}並攜帶一把{@item 短劍+2|dmg}時，具有AC 20，並在使用短劍進行的攻擊檢定和傷害骰上具有+2加值。"
 							]
 						}
 					]
@@ -17572,71 +17569,71 @@
 			"cr": "7",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The drow's spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
+						"卓爾的天生施法屬性為魅力（法術豁免DC 12）。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術}(限定自身)"
 						]
 					},
 					"ability": "cha"
 				},
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The drow is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The drow has the following wizard spells prepared:"
+						"卓爾是10級的施法者。它的施法屬性為智力（法術豁免DC 14，法術攻擊命中{@hit 6}）。卓爾已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell poison spray}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell witch bolt}"
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 巫術箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell alter self}",
-								"{@spell misty step}",
-								"{@spell web}"
+								"{@spell 變造自身}",
+								"{@spell 迷蹤步}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell Evard's black tentacles}",
-								"{@spell greater invisibility}"
+								"{@spell 艾伐黑觸手}",
+								"{@spell 高等隱形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cloudkill}"
+								"{@spell 死雲術}"
 							]
 						}
 					},
@@ -17781,73 +17778,73 @@
 			"cr": "8",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The drow's spellcasting ability is Charisma (spell save {@dc 15}). She can innately cast the following spells, requiring no material components:"
+						"卓爾的天生施法屬性為魅力（法術豁免DC 15）。她天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術}(限定自身)"
 						]
 					},
 					"ability": "cha"
 				},
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The drow is a 10th-level spellcaster. Her spellcasting ability is Wisdom (save {@dc 14}, {@hit 6} to hit with spell attacks). The drow has the following cleric spells prepared:"
+						"卓爾是10級的施法者。她的施法屬性為睿知（法術豁免DC 14，法術攻擊命中{@hit 6}）。卓爾已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell poison spray}",
-								"{@spell resistance}",
-								"{@spell spare the dying}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 提升抗力}",
+								"{@spell 拯救瀕死}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell animal friendship}",
-								"{@spell cure wounds}",
-								"{@spell detect poison and disease}",
-								"{@spell ray of sickness}"
+								"{@spell 化獸為友}",
+								"{@spell 治療傷勢}",
+								"{@spell 偵測毒素或疾病}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell protection from poison}",
-								"{@spell web}"
+								"{@spell 次級復原術}",
+								"{@spell 防護毒素}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure animals} (2 giant spiders)",
-								"{@spell dispel magic}"
+								"{@spell 召喚動物}（2個{@creature 巨蜘蛛}）",
+								"{@spell 解除魔法}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell divination}",
-								"{@spell freedom of movement}"
+								"{@spell 預言術}",
+								"{@spell 行動自如術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell insect plague}",
-								"{@spell mass cure wounds}"
+								"{@spell 疫病蟲群}",
+								"{@spell 群體治療傷勢}"
 							]
 						}
 					},
@@ -17896,13 +17893,13 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Drow Magic Armor and Weapons",
+					"name": "卓爾魔法護甲和武器",
 					"entries": [
 						{
 							"type": "entries",
 							"entries": [
-								"Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.",
-								"A {@creature drow priestess of lolth} wearing {@item +3 scale mail} has AC 19."
+								"卓爾經常穿戴魔法護甲並攜帶魔法武器，但其附魔加值會在暴露於日光照耀下超過1小時後永久消失。",
+								"一個{@creature 卓爾．羅絲女祭司}在穿戴{@item 鱗甲+3|dmg}時，具有AC 19。"
 							]
 						}
 					]
@@ -18038,32 +18035,32 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
+						"德魯伊是4級的施法者。它的施法屬性為睿知（法術豁免DC 12，法術攻擊命中{@hit 4}）。它已準備了以下德魯伊法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 燃火術}",
+								"{@spell 橡棍術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
+								"{@spell 糾纏術}",
+								"{@spell 大步奔行}",
+								"{@spell 動物交談術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
+								"{@spell 動物信使}",
+								"{@spell 樹膚術}"
 							]
 						}
 					},
@@ -18173,22 +18170,22 @@
 			"cr": "1",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dryad's innate spellcasting ability is Charisma (spell save {@dc 14}). The dryad can innately cast the following spells, requiring no material components:"
+						"樹精的天生施法屬性為魅力（法術豁免DC 14）。樹精天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell druidcraft}"
+						"{@spell 德魯伊伎倆}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell entangle}",
-							"{@spell goodberry}"
+							"{@spell 糾纏術}",
+							"{@spell 神莓術}"
 						],
 						"1e": [
-							"{@spell barkskin}",
-							"{@spell pass without trace}",
-							"{@spell shillelagh}"
+							"{@spell 樹膚術}",
+							"{@spell 行蹤無跡}",
+							"{@spell 橡棍術}"
 						]
 					},
 					"ability": "cha"
@@ -18495,10 +18492,10 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Rogue Modrons",
+					"name": "遊蕩魔冢",
 					"entries": [
-						"A modron unit sometimes becomes defective, either through natural decay or exposure to chaotic forces. Rogue modrons don't act in accordance with Primus's wishes and directives, breaking laws, disobeying orders, and even engaging in violence. Other modrons hunt down such rogues.",
-						"A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank."
+						"一個魔冢單元有時候會變得殘缺，無論是因為自然的衰敗、或是因為暴露於混亂力量之下。遊蕩魔冢不會依循奇點的意願或指令行動，它們破壞律法、違背命令、甚至會訴諸於暴力。其他魔冢將會獵殺這類遊盪魔冢。",
+						"一個遊蕩魔冢失去公理之念特質，且屬於任何不是守序中立的陣營。除此之外，它們具有和同階級尋常魔冢相同的數據資料。"
 					]
 				}
 			],
@@ -18589,12 +18586,12 @@
 			"cr": "1/2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (1/Day)",
+					"name": "天生施法 (1/日)",
 					"headerEntries": [
-						"The mephit can innately cast {@spell sleep}, requiring no material components. Its innate spellcasting ability is Charisma."
+						"塵魔蝠天生就可以施放{@spell 睡眠術}，且無需任何材料構材。它的天生施法屬性為魅力。"
 					],
 					"will": [
-						"{@spell sleep}"
+						"{@spell 睡眠術}"
 					],
 					"hidden": [
 						"will"
@@ -18629,9 +18626,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Mephits (1/Day)",
+					"name": "召喚魔蝠 (1/日)",
 					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"魔蝠有{@chance 25|25％|25％召喚機率}機率召喚出{@dice 1d4}個與它同種類的魔蝠。被召喚的魔蝠將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它魔蝠。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -18966,25 +18963,25 @@
 			"cr": "11",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The efreeti's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"火巨靈的天生施法屬性為魅力（法術豁免DC 15，法術攻擊命中{@hit 7}）。火巨靈天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}"
+						"{@spell 偵測魔法}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell enlarge/reduce}",
-							"{@spell tongues}"
+							"{@spell 變巨/縮小術}",
+							"{@spell 巧舌術}"
 						],
 						"1e": [
-							"{@spell conjure elemental} (fire elemental only)",
-							"{@spell gaseous form}",
-							"{@spell invisibility}",
-							"{@spell major image}",
-							"{@spell plane shift}",
-							"{@spell wall of fire}"
+							"{@spell 召喚元素生物}(限定{@creature 火元素})",
+							"{@spell 氣化形體}",
+							"{@spell 隱形術}",
+							"{@spell 強效幻影}",
+							"{@spell 異界傳送}",
+							"{@spell 火牆術}"
 						]
 					},
 					"ability": "cha"
@@ -19024,22 +19021,22 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Genie Powers",
+					"name": "巨靈之力",
 					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"巨靈擁有各式各樣的魔法能力，包括各種法術。其中一些個體甚至擁有更強大的力量，讓它們得以改變自己的外表和現實性質。",
 						{
 							"type": "entries",
-							"name": "Disguises",
+							"name": "偽裝",
 							"entries": [
-								"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the {@spell disguise self} spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the {@spell true polymorph} spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well."
+								"某些巨靈可以將它們自己隱藏在幻象中，使它們偽裝成其他相似身型的生物。這類巨靈天生就可以隨意施放{@spell 易容術}法術，且其通常會具有比原本法術更長的持續時間。更強大的巨靈可以每日施放一到三次的{@spell 完全變形術}法術，並可能也具有比原本更長的持續時間。這類巨靈只能改變它們自己的身形，但仍有極少數的個體也能夠將該法術施放在其他生物或物體上。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Wishes",
+							"name": "許願",
 							"entries": [
-								"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year), and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-								"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the {@spell wish} spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+								"在俗世間，巨靈實現願望的力量已經是一件廣為人知的傳說。只有最強大的巨靈（像是巨靈貴族中的某些個體）才能夠做到。一個擁有這項能力的巨靈可以實現一個非巨靈的生物一到三個願望。一旦巨靈實現了它所能給予的所有願望，它在一段時間內將無法再實現任何願望（通常為1年）。除此之外，宇宙法則也規定了同一個巨靈只能為一個特定生物實現其所能授予願望上限的願望一次。一旦巨靈在該生物身上用盡了它的願望額度，該巨靈將再也不能讓該生物許願。",
+								"要向巨靈許願的生物必須距離巨靈60呎內，並向巨靈說出所想要的效果。巨靈可以為該生物施放{@spell 祈願術}以產生該效果。根據巨靈的本性不同，巨靈可能會試圖利用願望的糟糕措辭以曲解願望的意圖。這種意圖的曲解往往是巨靈為了自己的利益而故意為之。"
 							]
 						}
 					]
@@ -19343,23 +19340,23 @@
 			"cr": "23",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The empyrean's innate spellcasting ability is Charisma (spell save {@dc 23}, {@hit 15} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"至高天的天生施法屬性為魅力（法術豁免DC 23，法術攻擊命中{@hit 15}）。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell greater restoration}",
-						"{@spell pass without trace}",
-						"{@spell water breathing}",
-						"{@spell water walk}"
+						"{@spell 高等復原術}",
+						"{@spell 行蹤無跡}",
+						"{@spell 水下呼吸}",
+						"{@spell 水面行走}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell commune}",
-							"{@spell dispel evil and good}",
-							"{@spell earthquake}",
-							"{@spell fire storm}",
-							"{@spell plane shift} (self only)"
+							"{@spell 通神術}",
+							"{@spell 反制善惡}",
+							"{@spell 地震術}",
+							"{@spell 火焰風暴}",
+							"{@spell 異界傳送}(限定自身)"
 						]
 					},
 					"ability": "cha"
@@ -19590,9 +19587,10 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Rope of Entanglement",
+					"name": "糾纏繩",
+					"ENG_name": "Rope of Entanglement",
 					"entries": [
-						"Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks."
+						"有些慾魔會攜帶糾纏繩（詳細記載於《地下城主指南》）。當這類慾魔使用多重攻擊時，慾魔可以使用糾纏繩以取代其中二次攻擊。"
 					]
 				}
 			],
@@ -19754,9 +19752,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Web Garrote",
+					"name": "蛛絲絞索",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one Medium or Small creature against which the ettercap has advantage on the attack roll. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target can't breathe, and the ettercap has advantage on attack rolls against it."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一體型為中型或小型，且伊特蛛怪對其的攻擊檢定具有優勢的生物。{@h}4 ({@damage 1d4 + 2})鈍擊傷害，且目標{@condition 被擒}(逃脫DC 12)。直到擒抱結束前，目標被無法呼吸，且伊特蛛怪在對其進行的攻擊檢定中具有優勢。"
 					]
 				}
 			],
@@ -19971,19 +19969,19 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell color spray}",
-							"{@spell dancing lights}",
-							"{@spell mage hand}",
-							"{@spell major image}",
-							"{@spell minor illusion}",
-							"{@spell mirror image}",
-							"{@spell suggestion}"
+							"{@spell 七彩噴射}",
+							"{@spell 舞光術}",
+							"{@spell 法師之手}",
+							"{@spell 強效幻影}",
+							"{@spell 次級幻象}",
+							"{@spell 鏡影術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -20122,18 +20120,18 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell color spray}",
-							"{@spell dancing lights}",
-							"{@spell mage hand}",
-							"{@spell minor illusion}",
-							"{@spell mirror image}",
-							"{@spell suggestion}"
+							"{@spell 七彩噴射}",
+							"{@spell 舞光術}",
+							"{@spell 法師之手}",
+							"{@spell 次級幻象}",
+							"{@spell 鏡影術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -20267,20 +20265,20 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell color spray}",
-							"{@spell dancing lights}",
-							"{@spell hallucinatory terrain}",
-							"{@spell mage hand}",
-							"{@spell major image}",
-							"{@spell minor illusion}",
-							"{@spell mirror image}",
-							"{@spell suggestion}"
+							"{@spell 七彩噴射}",
+							"{@spell 舞光術}",
+							"{@spell 幻景}",
+							"{@spell 法師之手}",
+							"{@spell 強效幻影}",
+							"{@spell 次級幻象}",
+							"{@spell 鏡影術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -20414,16 +20412,16 @@
 			"cr": "1",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell color spray}",
-							"{@spell dancing lights}",
-							"{@spell mage hand}",
-							"{@spell minor illusion}"
+							"{@spell 七彩噴射}",
+							"{@spell 舞光術}",
+							"{@spell 法師之手}",
+							"{@spell 次級幻象}"
 						]
 					},
 					"ability": "cha"
@@ -20557,15 +20555,15 @@
 			"cr": "1",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell dancing lights}",
-							"{@spell mage hand}",
-							"{@spell minor illusion}"
+							"{@spell 舞光術}",
+							"{@spell 法師之手}",
+							"{@spell 次級幻象}"
 						]
 					},
 					"ability": "cha"
@@ -20707,21 +20705,21 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell color spray}",
-							"{@spell dancing lights}",
-							"{@spell hallucinatory terrain}",
-							"{@spell mage hand}",
-							"{@spell major image}",
-							"{@spell minor illusion}",
-							"{@spell mirror image}",
-							"{@spell polymorph}",
-							"{@spell suggestion}"
+							"{@spell 七彩噴射}",
+							"{@spell 舞光術}",
+							"{@spell 幻景}",
+							"{@spell 法師之手}",
+							"{@spell 強效幻影}",
+							"{@spell 次級幻象}",
+							"{@spell 鏡影術}",
+							"{@spell 變形術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -20855,17 +20853,17 @@
 			"cr": "1",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The dragon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast a number of spells, requiring no material components:"
+						"妖精龍的天生施法屬性為魅力（法術豁免DC 13）。它天生就可以施展數種法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1e": [
-							"{@spell color spray}",
-							"{@spell dancing lights}",
-							"{@spell mage hand}",
-							"{@spell minor illusion}",
-							"{@spell mirror image}"
+							"{@spell 七彩噴射}",
+							"{@spell 舞光術}",
+							"{@spell 法師之手}",
+							"{@spell 次級幻象}",
+							"{@spell 鏡影術}"
 						]
 					},
 					"ability": "cha"
@@ -21212,21 +21210,21 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "New Giant Options",
+					"name": "新巨人選項",
 					"entries": [
-						"Some adult fire giants are trained to lay siege to strongholds and break through enemy lines. These abilities are represented by the following traits.",
+						"有些成年的火巨人受訓於襲擊要塞並突破敵人的防線。這些能力透過下列特性呈現。",
 						{
 							"type": "entries",
-							"name": "Siege Monster",
+							"name": "攻城怪物",
 							"entries": [
-								"The giant deals double damage to objects and structures."
+								"巨人對物體和建築物造成兩倍的傷害。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Tackle",
+							"name": "衝撞扭倒",
 							"entries": [
-								"When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+								"當巨人在一個回合中第一次進入任何敵人所在的空間，該敵人必須成功通過一次DC 19的力量豁免，否則被擊倒{@condition 伏地}。"
 							]
 						}
 					],
@@ -21494,34 +21492,35 @@
 			"cr": "4",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:"
+						"燃燒顱骨是5級的施法者。它的施法屬性為智力（法術豁免DC 13，法術攻擊命中{@hit 5}）。它無須聲音或材料構材就可以施放它的法術。燃燒顱骨已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}"
+								"{@spell 法師之手}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell blur}",
-								"{@spell flaming sphere}"
+								"{@spell 朦朧術}",
+								"{@spell 熾焰法球}"
 							]
 						},
 						"3": {
 							"slots": 1,
 							"spells": [
-								"{@spell fireball}"
+								"{@spell 火球術}"
 							]
 						}
 					},
@@ -22415,14 +22414,14 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "New Giant Options",
+					"name": "新巨人選項",
 					"entries": [
-						"Some adult frost giants are skilled hunters who construct and hurl nets weighted down with fragments of metal or bone. This ability is represented by the following action option.",
+						"有些成年的霜巨人是技巧純熟的獵人，它們製作並投擲以金屬片或骨片加重過的捕網。這個能力透過下列動作選項呈現。",
 						{
-							"name": "Weighted Net",
+							"name": "加重捕網",
 							"type": "entries",
 							"entries": [
-								"{@atk rw} {@hit 5} to hit, ranged 20/60 ft., one Small, Medium, or Large creature. {@h}The target is {@condition restrained} until it escapes the net. Any creature can use its action to make a {@dc 17} Strength check to free itself or another creature in the net, ending the effect on a success. Dealing 15 slashing damage to the net (AC 12) destroys the net and frees the target."
+								"{@atk rw} 命中{@hit 5}，射程20/60呎，單一體型為小型、中型、或大型的生物。{@h}目標被{@condition 束縛}直到它從捕網中逃脫。任何生物都可以使用它的動作進行一次DC 17的力量檢定，成功則釋放它自己或另一個在捕網內的生物並結束該效果。對捕網（AC12）造成15點劈砍傷害可以將捕網摧毀並釋放目標。"
 							]
 						}
 					],
@@ -24900,21 +24899,21 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Giant Lizard Traits",
+					"name": "巨蜥蜴特性",
 					"entries": [
-						"Some giant lizards have one or both of the following traits:",
+						"有些巨蜥蜴會擁有以下一個或兩個特性：",
 						{
 							"type": "entries",
-							"name": "Hold Breath",
+							"name": "屏息",
 							"entries": [
-								"The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+								"蜥蜴可以屏住牠的呼吸長達15分鐘。(擁有這個特性的蜥蜴同時擁有30呎的游泳速度。)"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spider Climb",
+							"name": "蛛行",
 							"entries": [
-								"The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+								"蜥蜴可以爬越困難表面，包括倒吊在天花板上，而無須進行屬性檢定。"
 							]
 						}
 					]
@@ -26539,23 +26538,23 @@
 			"cr": "8",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（靈能）",
 					"headerEntries": [
-						"The githyanki's innate spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
+						"吉斯洋基人的天生施法屬性為智力（法術豁免DC 13，法術攻擊命中{@hit 5}）。它天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell mage hand} (the hand is invisible)"
+						"{@spell 法師之手}（這隻手為隱形狀態）"
 					],
 					"daily": {
 						"3e": [
-							"{@spell jump}",
-							"{@spell misty step}",
-							"{@spell nondetection} (self only)",
-							"{@spell tongues}"
+							"{@spell 跳躍術}",
+							"{@spell 迷蹤步}",
+							"{@spell 迴避偵測}(限定自身)",
+							"{@spell 巧舌術}"
 						],
 						"1e": [
-							"{@spell plane shift}",
-							"{@spell telekinesis}"
+							"{@spell 異界傳送}",
+							"{@spell 心靈遙控}"
 						]
 					},
 					"ability": "int"
@@ -26655,18 +26654,18 @@
 			"cr": "3",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（靈能）",
 					"headerEntries": [
-						"The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:"
+						"吉斯洋基人的天生施法屬性為智力。它天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell mage hand} (the hand is invisible)"
+						"{@spell 法師之手}（這隻手為隱形狀態）"
 					],
 					"daily": {
 						"3e": [
-							"{@spell jump}",
-							"{@spell misty step}",
-							"{@spell nondetection} (self only)"
+							"{@spell 跳躍術}",
+							"{@spell 迷蹤步}",
+							"{@spell 迴避偵測}(限定自身)"
 						]
 					},
 					"ability": "int"
@@ -26762,19 +26761,19 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（靈能）",
 					"headerEntries": [
-						"The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:"
+						"吉斯澤萊人的天生施法屬性為睿知。它天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell mage hand} (the hand is invisible)"
+						"{@spell 法師之手}（這隻手為隱形狀態）"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell jump}",
-							"{@spell see invisibility}",
-							"{@spell shield}"
+							"{@spell 羽落術}",
+							"{@spell 跳躍術}",
+							"{@spell 識破隱形}",
+							"{@spell 護盾術}"
 						]
 					},
 					"ability": "wis"
@@ -26883,23 +26882,23 @@
 			"cr": "6",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（靈能）",
 					"headerEntries": [
-						"The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components:"
+						"吉斯澤萊人的天生施法屬性為睿知。它天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell mage hand} (the hand is invisible)"
+						"{@spell 法師之手}（這隻手為隱形狀態）"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell jump}",
-							"{@spell see invisibility}",
-							"{@spell shield}"
+							"{@spell 羽落術}",
+							"{@spell 跳躍術}",
+							"{@spell 識破隱形}",
+							"{@spell 護盾術}"
 						],
 						"1e": [
-							"{@spell phantasmal killer}",
-							"{@spell plane shift}"
+							"{@spell 魅影殺手}",
+							"{@spell 異界傳送}"
 						]
 					},
 					"ability": "wis"
@@ -27045,20 +27044,20 @@
 			"cr": "9",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The glabrezu's spellcasting ability is Intelligence (spell save {@dc 16}). The glabrezu can innately cast the following spells, requiring no material components:"
+						"迷誘魔的天生施法屬性為智力（法術豁免DC 16）。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell darkness}",
-						"{@spell detect magic}",
-						"{@spell dispel magic}"
+						"{@spell 黑暗術}",
+						"{@spell 偵測魔法}",
+						"{@spell 解除魔法}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell confusion}",
-							"{@spell fly}",
-							"{@spell power word stun}"
+							"{@spell 困惑術}",
+							"{@spell 飛行術}",
+							"{@spell 律令震懾}"
 						]
 					},
 					"ability": "int"
@@ -27096,11 +27095,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A glabrezu has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 1d3} {@creature vrock||vrocks}, {@dice 1d2} {@creature hezrou||hezrous}, or one glabrezu.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個迷誘魔有{@chance 30|30％|30％召喚機率}機率召喚出{@dice 1d3}個{@creature 弗洛魔}、{@dice 1d2}個{@creature 狂戰魔}、或一個迷誘魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -28604,13 +28603,14 @@
 					"name": "灰泥怪(靈能)",
 					"ENG_name": "Psychic Gray Ooze",
 					"entries": [
-						"生存時間長的灰泥怪可以進化成更聰明，並發展出有限的靈能能力。這樣的情況在生活在靈能生物附近的灰泥怪中比較常見，比如{@creature mind flayer||mind flayers}，這說明灰泥怪可以感知和模仿靈能。",
+						"生存時間長的灰泥怪可以進化成更聰明，並發展出有限的靈能能力。這樣的情況在生活在靈能生物附近的灰泥怪中比較常見，比如{@creature 奪心魔}，這說明灰泥怪可以感知和模仿靈能。",
 						"靈能灰泥怪的智力評分為6（-2），以及以下額外行動。",
 						{
 							"type": "entries",
-							"name": "Psychic Crush {@recharge 5}",
+							"name": "精神粉碎 {@recharge 5}",
+							"ENG_name": "Psychic Crush {@recharge 5}",
 							"entries": [
-								"The ooze targets one creature that it can sense within 60 feet of it. The target must make a {@dc 10} Intelligence saving throw, taking 10 ({@damage 3d6}) psychic damage on a failed save, or half as much damage on a successful one."
+								"泥怪以距離它60呎內一個它可以感知到的生物為目標。目標必須進行一次{@dc 10}的智力豁免，若豁免失敗則受到10 ({@damage 3d6})精神傷害，豁免成功則只受到一半的傷害。"
 							]
 						}
 					]
@@ -28710,26 +28710,26 @@
 			"cr": "9",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 14}). The slaad can innately cast the following spells, requiring no material components:"
+						"史拉蟾的天生施法屬性為魅力（法術豁免DC 14）。史拉蟾天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell detect thoughts}",
-						"{@spell invisibility} (self only)",
-						"{@spell mage hand}",
-						"{@spell major image}"
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}",
+						"{@spell 隱形術}(限定自身)",
+						"{@spell 法師之手}",
+						"{@spell 強效幻影}"
 					],
 					"daily": {
 						"1": [
-							"{@spell plane shift} (self only)"
+							"{@spell 異界傳送}(限定自身)"
 						],
 						"2e": [
-							"{@spell fear}",
-							"{@spell fly}",
-							"{@spell fireball}",
-							"{@spell tongues}"
+							"{@spell 恐懼術}",
+							"{@spell 飛行術}",
+							"{@spell 火球術}",
+							"{@spell 巧舌術}"
 						]
 					},
 					"ability": "cha"
@@ -28795,12 +28795,12 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Control Gem",
+					"name": "支配寶石",
 					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"植入史拉蟾腦內的是一顆魔法支配寶石。該史拉蟾必須服從任何擁有該寶石的對象，且在被這個方式支配時免疫於{@condition 魅惑}。",
+						"某些法術可以被用於獲得該寶石。若史拉蟾在對抗{@spell 禁錮術}的豁免檢定中失敗，則該法術可以將寶石轉移到施法者的手上，而非將史拉蟾給禁錮。{@spell 祈願術}法術若在史拉蟾在場時被施放，則可以被許願以獲得該寶石。",
+						"施放於史拉蟾的{@spell 高等復原術}法術將會摧毀該寶石而不至於傷害到史拉蟾。",
+						"熟練於睿知（{@skill 醫藥}）的角色可以從一個{@condition 無力}的史拉蟾腦中移除該寶石。每次嘗試都需要1分鐘不被打擾的工作時間，且必須成功通過一次DC 20的睿知（{@skill 醫藥}）檢定。每次嘗試失敗都會對該史拉蟾造成22 ({@damage 4d10})精神傷害。"
 					]
 				}
 			],
@@ -29032,68 +29032,69 @@
 			},
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The hag's innate spellcasting ability is Charisma (spell save {@dc 12}). She can innately cast the following spells, requiring no material components:"
+						"鬼婆的天生施法屬性為魅力（法術豁免DC 12）。她天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell dancing lights}",
-						"{@spell minor illusion}",
-						"{@spell vicious mockery}"
+						"{@spell 舞光術}",
+						"{@spell 次級幻象}",
+						"{@spell 惡毒嘲笑}"
 					],
 					"ability": "cha"
 				},
 				{
-					"name": "Shared Spellcasting (Coven Only)",
+					"name": "共享施法 (限定集會)",
+					"ENG_name": "Shared Spellcasting (Coven Only)",
 					"headerEntries": [
-						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+						"當鬼婆集會的三個成員都距離彼此30呎內，她們各自都可以施放以下來自法師法術列表的法術，且必須共用法術位："
 					],
 					"spells": {
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell identify}",
-								"{@spell ray of sickness}"
+								"{@spell 鑑定術}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell locate object}"
+								"{@spell 人類定身術}",
+								"{@spell 物品定位術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell counterspell}",
-								"{@spell lightning bolt}"
+								"{@spell 降咒}",
+								"{@spell 反制法術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell phantasmal killer}",
-								"{@spell polymorph}"
+								"{@spell 魅影殺手}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contact other plane}",
-								"{@spell scrying}"
+								"{@spell 異界探知}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell eyebite}"
+								"{@spell 攝心目光}"
 							]
 						}
 					},
 					"footerEntries": [
-						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier."
+						"在施放這些法術時，每個鬼婆都是12級的施法者，且使用智力做為她的施法屬性。法術的豁免DC為12+鬼婆的智力調整值，且法術攻擊加值為4+鬼婆的智力調整值。"
 					]
 				}
 			],
@@ -29262,22 +29263,22 @@
 			"cr": "8",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 12}). The slaad can innately cast the following spells, requiring no material components:"
+						"史拉蟾的天生施法屬性為魅力（法術豁免DC 12）。史拉蟾天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell detect thoughts}",
-						"{@spell mage hand}"
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}",
+						"{@spell 法師之手}"
 					],
 					"daily": {
 						"1": [
-							"{@spell fireball}"
+							"{@spell 火球術}"
 						],
 						"2e": [
-							"{@spell fear}",
-							"{@spell invisibility} (self only)"
+							"{@spell 恐懼術}",
+							"{@spell 隱形術}(限定自身)"
 						]
 					},
 					"ability": "cha"
@@ -29341,12 +29342,12 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Control Gem",
+					"name": "支配寶石",
 					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"植入史拉蟾腦內的是一顆魔法支配寶石。該史拉蟾必須服從任何擁有該寶石的對象，且在被這個方式支配時免疫於{@condition 魅惑}。",
+						"某些法術可以被用於獲得該寶石。若史拉蟾在對抗{@spell 禁錮術}的豁免檢定中失敗，則該法術可以將寶石轉移到施法者的手上，而非將史拉蟾給禁錮。{@spell 祈願術}法術若在史拉蟾在場時被施放，則可以被許願以獲得該寶石。",
+						"施放於史拉蟾的{@spell 高等復原術}法術將會摧毀該寶石而不至於傷害到史拉蟾。",
+						"熟練於睿知（{@skill 醫藥}）的角色可以從一個{@condition 無力}的史拉蟾腦中移除該寶石。每次嘗試都需要1分鐘不被打擾的工作時間，且必須成功通過一次DC 20的睿知（{@skill 醫藥}）檢定。每次嘗試失敗都會對該史拉蟾造成22 ({@damage 4d10})精神傷害。"
 					]
 				}
 			],
@@ -30187,58 +30188,59 @@
 			"cr": "10",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:"
+						"納迦是11級的施法者。它的施法屬性為睿知（法術豁免DC 16，法術攻擊命中{@hit 8}），且它只需要聲音構材以施放它的法術。納迦已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mending}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 修復術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell cure wounds}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 治療傷勢}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell calm emotions}",
-								"{@spell hold person}"
+								"{@spell 安定心神}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell clairvoyance}"
+								"{@spell 降咒}",
+								"{@spell 銳眼術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell freedom of movement}"
+								"{@spell 放逐術}",
+								"{@spell 行動自如術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell flame strike}",
-								"{@spell geas}"
+								"{@spell 焰擊術}",
+								"{@spell 指使術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell true seeing}"
+								"{@spell 真知術}"
 							]
 						}
 					},
@@ -30384,53 +30386,54 @@
 			"cr": "11",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:"
+						"斯芬克斯是9級的施法者。它的施法屬性為智力（法術豁免DC 16，法術攻擊命中{@hit 8}）。它無須材料構材以施放它的法術。斯芬克斯已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell locate object}",
-								"{@spell suggestion}"
+								"{@spell 黑暗術}",
+								"{@spell 物品定位術}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell remove curse}",
-								"{@spell tongues}"
+								"{@spell 解除魔法}",
+								"{@spell 移除詛咒}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell greater invisibility}"
+								"{@spell 放逐術}",
+								"{@spell 高等隱形術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell legend lore}"
+								"{@spell 通曉傳奇}"
 							]
 						}
 					},
@@ -31406,11 +31409,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A hezrou has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 2d6} {@creature dretch||dretches} or one hezrou.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個狂戰魔有{@chance 30|30％|30％召喚機率}機率召喚出{@dice 2d6}個{@creature 怯魔}或一個狂戰魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -31535,14 +31538,14 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "New Giant Options",
+					"name": "新巨人選項",
 					"entries": [
-						"Some adult hill giants like to hurl themselves bodily at smaller foes and crush them beneath their bulk. This ability is represented by the following action option.",
+						"有些成年的山丘巨人喜歡把自己的身體扔向體型較小的敵人，並把敵人壓垮在它們的身體下。這個能力透過下列動作選項呈現。",
 						{
-							"name": "Squash",
+							"name": "輾壓",
 							"type": "entries",
 							"entries": [
-								"{@atk mw} {@hit 8} to hit, reach 5 ft., one Medium or Smaller creature. {@h}26 ({@damage 6d6 + 5}) bludgeoning damage, the giant lands {@condition prone} in the target's space, and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition prone}. The grapple ends early if the giant stands up."
+								"{@atk mw} 命中{@hit 8}，觸及5呎，單一體型為中型或更小的生物。{@h}26 ({@damage 6d6 + 5})鈍擊傷害，巨人在目標的空間內以{@condition 伏地}狀態著地，且目標{@condition 被擒}(逃脫DC 15)。直到擒抱結束前，目標處於{@condition 伏地}。這個擒抱會在山丘巨人起身時提早結束。"
 							]
 						}
 					],
@@ -33084,12 +33087,12 @@
 			"cr": "1/2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (1/Day)",
+					"name": "天生施法 (1/日)",
 					"headerEntries": [
-						"The mephit can innately cast {@spell fog cloud}, requiring no material components. Its innate spellcasting ability is Charisma."
+						"冰魔蝠天生就可以施放{@spell 雲霧術}，且無需任何材料構材。它的天生施法屬性為魅力。"
 					],
 					"will": [
-						"{@spell fog cloud}"
+						"{@spell 雲霧術}"
 					],
 					"hidden": [
 						"will"
@@ -33131,9 +33134,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Mephits (1/Day)",
+					"name": "召喚魔蝠 (1/日)",
 					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"魔蝠有{@chance 25|25％|25％召喚機率}機率召喚出{@dice 1d4}個與它同種類的魔蝠。被召喚的魔蝠將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它魔蝠。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -33301,14 +33304,14 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Imp Familiar",
+					"name": "小魔鬼魔寵",
 					"entries": [
-						"Imps can be found in the service to mortal spellcasters, acting as advisors, spies, and familiars. An imp urges its master to acts of evil, knowing the mortal's soul is a prize the imp might ultimately claim. Imps display an unusual loyalty to their masters, and an imp can be quite dangerous if its master is threatened. Some such imps have the following trait.",
+						"小魔鬼時常會擔任凡人施法者的僕役，擔任顧問、密探、或是魔寵等角色。一個小魔鬼會敦促它的主人施行邪惡的行為，以期它能在最終將這個凡人的靈魂做為獎勵據為己有。小魔鬼會對它的主人展現出非同尋常的忠誠，且在它主人受到威脅時變的相當危險。某些這類的小魔鬼具有以下特質。",
 						{
-							"name": "Familiar",
+							"name": "魔寵",
 							"type": "entries",
 							"entries": [
-								"The imp can enter into a contract to serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the imp senses as long as they are within 1 mile of each other. While the imp is within 10 feet of its master, the master shares the imp's Magic Resistance trait. If its master violates the terms of the contract, the imp can end its service as a familiar, ending the telepathic bond."
+								"小魔鬼可以簽下契約以做為魔寵服侍另一個生物，與它的主人建立一道心靈連結。當雙方連結時，只要他們距離彼此1哩之內，主人就可以感知小魔鬼所感知的事物。當小魔鬼距離它主人10呎內，其主人將能享有小魔鬼的魔法抗性特質。若它的主人違背契約內容時，小魔鬼可以結束它做為魔寵的服務，並終止這道心靈連結。"
 							]
 						}
 					]
@@ -35182,52 +35185,52 @@
 			"cr": "6",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The kuo-toa is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The kuo-toa has the following cleric spells prepared:"
+						"寇濤魚人是10級的施法者。它的施法屬性為睿知（法術豁免DC 14，法術攻擊命中{@hit 6}）。寇濤魚人已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell sanctuary}",
-								"{@spell shield of faith}"
+								"{@spell 偵測魔法}",
+								"{@spell 聖域術}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell spirit guardians}",
-								"{@spell tongues}"
+								"{@spell 靈體守衛}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell control water}",
-								"{@spell divination}"
+								"{@spell 操控水體}",
+								"{@spell 預言術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell mass cure wounds}",
-								"{@spell scrying}"
+								"{@spell 群體治療傷勢}",
+								"{@spell 探知}"
 							]
 						}
 					},
@@ -35535,22 +35538,22 @@
 			"cr": "1",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The kuo-toa has the following cleric spells prepared:"
+						"寇濤魚人是2級的施法者。它的施法屬性為睿知（法術豁免DC 12，法術攻擊命中{@hit 4}）。寇濤魚人已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell bane}",
-								"{@spell shield of faith}"
+								"{@spell 災禍術}",
+								"{@spell 虔誠護盾}"
 							]
 						}
 					},
@@ -35700,23 +35703,23 @@
 			"cr": "4",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The lamia's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components."
+						"人身獅的天生施法屬性為魅力（法術豁免DC 13）。人身天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell disguise self} (any humanoid form)",
-						"{@spell major image}"
+						"{@spell 易容術}(任意類人生物型態)",
+						"{@spell 強效幻影}"
 					],
 					"daily": {
 						"1": [
-							"{@spell geas}"
+							"{@spell 指使術}"
 						],
 						"3e": [
-							"{@spell charm person}",
-							"{@spell mirror image}",
-							"{@spell scrying}",
-							"{@spell suggestion}"
+							"{@spell 魅惑人類}",
+							"{@spell 鏡影術}",
+							"{@spell 探知}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -35988,84 +35991,85 @@
 			},
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). The lich has the following wizard spells prepared:"
+						"巫妖是18級的施法者。它的施法屬性為智力（法術豁免DC 20，法術攻擊命中{@hit 12}）。巫妖已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell invisibility}",
-								"{@spell Melf's acid arrow}",
-								"{@spell mirror image}"
+								"{@spell 偵測思想}",
+								"{@spell 隱形術}",
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 鏡影術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}"
+								"{@spell 活化死屍}",
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell dimension door}"
+								"{@spell 枯萎術}",
+								"{@spell 次元門}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell scrying}"
+								"{@spell 死雲術}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell disintegrate}",
-								"{@spell globe of invulnerability}"
+								"{@spell 解離術}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell plane shift}"
+								"{@spell 死亡一指}",
+								"{@spell 異界傳送}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate monster}",
-								"{@spell power word stun}"
+								"{@spell 支配怪物}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell power word kill}"
+								"{@spell 律令死亡}"
 							]
 						}
 					},
@@ -36857,37 +36861,37 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Spellcasting (Lizardfolk Form Only)",
+					"name": "施法 (限定蜥蜴人型態)",
 					"headerEntries": [
-						"The lizardfolk is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The lizardfolk has the following druid spells prepared:"
+						"蜥蜴人薩滿是5級的施法者。它的施法屬性為睿知（法術豁免DC 12，法術攻擊命中{@hit 4}）。蜥蜴人薩滿已準備了以下德魯伊法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell thorn whip}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 燃火術}",
+								"{@spell 荊棘之鞭}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell entangle}",
-								"{@spell fog cloud}"
+								"{@spell 糾纏術}",
+								"{@spell 雲霧術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell heat metal}",
-								"{@spell spike growth}"
+								"{@spell 灼熱金屬}",
+								"{@spell 荊棘叢生}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell conjure animals} (reptiles only)",
-								"{@spell plant growth}"
+								"{@spell 召喚動物}(限定爬蟲類)",
+								"{@spell 植物滋長}"
 							]
 						}
 					},
@@ -37080,54 +37084,54 @@
 			"cr": "6",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following wizard spells prepared:"
+						"魔法師是9級的施法者。它的施法屬性為智力（法術豁免DC 14，法術攻擊命中{@hit 6}）。魔法師已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -37246,12 +37250,12 @@
 			"cr": "1/2",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (1/Day)",
+					"name": "天生施法 (1/日)",
 					"headerEntries": [
-						"The mephit can innately cast {@spell heat metal} (spell save {@dc 10}), requiring no material components. Its innate spellcasting ability is Charisma."
+						"熔岩魔蝠天生就可以施放{@spell 灼熱金屬}（法術豁免DC 10），且無需任何材料構材。它的天生施法屬性為魅力。"
 					],
 					"will": [
-						"{@spell heat metal}"
+						"{@spell 灼熱金屬}"
 					],
 					"hidden": [
 						"will"
@@ -37293,9 +37297,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Mephits (1/Day)",
+					"name": "召喚魔蝠 (1/日)",
 					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"魔蝠有{@chance 25|25％|25％召喚機率}機率召喚出{@dice 1d4}個與它同種類的魔蝠。被召喚的魔蝠將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它魔蝠。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -37857,29 +37861,29 @@
 			"cr": "11",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The marid's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+						"水巨靈的天生施法屬性為魅力（法術豁免DC 16，法術攻擊命中{@hit 8}）。水巨靈天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell create or destroy water}",
-						"{@spell detect evil and good}",
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell purify food and drink}"
+						"{@spell 造水/枯水術}",
+						"{@spell 偵測善惡}",
+						"{@spell 偵測魔法}",
+						"{@spell 雲霧術}",
+						"{@spell 淨化飲食}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell tongues}",
-							"{@spell water breathing}",
-							"{@spell water walk}"
+							"{@spell 巧舌術}",
+							"{@spell 水下呼吸}",
+							"{@spell 水面行走}"
 						],
 						"1e": [
-							"{@spell conjure elemental} (water elemental only)",
-							"{@spell control water}",
-							"{@spell gaseous form}",
-							"{@spell invisibility}",
-							"{@spell plane shift}"
+							"{@spell 召喚元素生物}(限定{@creature 水元素})",
+							"{@spell 操控水體}",
+							"{@spell 氣化形體}",
+							"{@spell 隱形術}",
+							"{@spell 異界傳送}"
 						]
 					},
 					"ability": "cha"
@@ -37925,22 +37929,22 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Genie Powers",
+					"name": "巨靈之力",
 					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"巨靈擁有各式各樣的魔法能力，包括各種法術。其中一些個體甚至擁有更強大的力量，讓它們得以改變自己的外表和現實性質。",
 						{
 							"type": "entries",
-							"name": "Disguises",
+							"name": "偽裝",
 							"entries": [
-								"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the {@spell disguise self} spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the {@spell true polymorph} spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well."
+								"某些巨靈可以將它們自己隱藏在幻象中，使它們偽裝成其他相似身型的生物。這類巨靈天生就可以隨意施放{@spell 易容術}法術，且其通常會具有比原本法術更長的持續時間。更強大的巨靈可以每日施放一到三次的{@spell 完全變形術}法術，並可能也具有比原本更長的持續時間。這類巨靈只能改變它們自己的身形，但仍有極少數的個體也能夠將該法術施放在其他生物或物體上。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Wishes",
+							"name": "許願",
 							"entries": [
-								"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year), and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-								"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the {@spell wish} spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+								"在俗世間，巨靈實現願望的力量已經是一件廣為人知的傳說。只有最強大的巨靈（像是巨靈貴族中的某些個體）才能夠做到。一個擁有這項能力的巨靈可以實現一個非巨靈的生物一到三個願望。一旦巨靈實現了它所能給予的所有願望，它在一段時間內將無法再實現任何願望（通常為1年）。除此之外，宇宙法則也規定了同一個巨靈只能為一個特定生物實現其所能授予願望上限的願望一次。一旦巨靈在該生物身上用盡了它的願望額度，該巨靈將再也不能讓該生物許願。",
+								"要向巨靈許願的生物必須距離巨靈60呎內，並向巨靈說出所想要的效果。巨靈可以為該生物施放{@spell 祈願術}以產生該效果。根據巨靈的本性不同，巨靈可能會試圖利用願望的糟糕措辭以曲解願望的意圖。這種意圖的曲解往往是巨靈為了自己的利益而故意為之。"
 							]
 						}
 					]
@@ -38141,11 +38145,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A marilith has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d6} {@creature vrock||vrocks}, {@dice 1d4} {@creature hezrou||hezrous}, {@dice 1d3} {@creature glabrezu||glabrezus}, {@dice 1d2} {@creature nalfeshnee||nalfeshnees}, or one marilith.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個六臂蛇魔有{@chance 50|50％|50％召喚機率}機率召喚出{@dice 1d6}個{@creature 弗洛魔}、{@dice 1d4}個{@creature 狂戰魔}、{@dice 1d3}個{@creature 迷誘魔}、{@dice 1d2}個{@creature 判魂魔}、或一個六臂蛇魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -38745,17 +38749,17 @@
 			"cr": "5",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The mezzoloth's innate spellcasting ability is Charisma (spell save {@dc 11}). The mezzoloth can innately cast the following spells, requiring no material components:"
+						"麥澤羅斯魔的天生施法屬性為魅力（法術豁免DC 11）。麥澤羅斯魔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"daily": {
 						"1": [
-							"{@spell cloudkill}"
+							"{@spell 死雲術}"
 						],
 						"2e": [
-							"{@spell darkness}",
-							"{@spell dispel magic}"
+							"{@spell 黑暗術}",
+							"{@spell 解除魔法}"
 						]
 					},
 					"ability": "cha"
@@ -38807,16 +38811,16 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Yugoloth Summoning",
+					"name": "召喚尤格羅斯魔",
 					"entries": [
-						"Some yugoloths have an action option that allows them to summon other yugoloths.",
+						"有些尤格羅斯魔擁有允許它們召喚出其他尤格羅斯魔的動作項。",
 						{
-							"name": "Summon Yugoloth (1/Day)",
+							"name": "召喚尤格羅斯魔 (1/日)",
 							"type": "entries",
 							"entries": [
-								"The yugoloth attempts a magical summoning.",
-								"A mezzoloth has a {@chance 30|30 percent|30% summoning chance} chance of summoning one mezzoloth.",
-								"A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+								"該尤格羅斯魔嘗試進行一次魔法召喚。",
+								"一個麥澤羅斯魔有{@chance 30|30％|30％召喚機率}機率召喚出另一個麥澤羅斯魔。",
+								"被召喚的尤格羅斯魔將出現距離它召喚者60呎內的一處未被佔據空間，隨自己的喜好行動，且不能再召喚其它尤格羅斯魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個附贈動作解消它。"
 							]
 						}
 					]
@@ -39101,18 +39105,18 @@
 			"cr": "7",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（靈能）",
 					"headerEntries": [
-						"The mind flayer's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+						"奪心魔的天生施法屬性為智力（法術豁免DC 15）。它天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell levitate}"
+						"{@spell 偵測思想}",
+						"{@spell 浮空術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell dominate monster}",
-							"{@spell plane shift} (self only)"
+							"{@spell 支配怪物}",
+							"{@spell 異界傳送}(限定自身)"
 						]
 					},
 					"ability": "int"
@@ -39258,73 +39262,74 @@
 			"cr": "8",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（靈能）",
 					"headerEntries": [
-						"The mind flayer's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+						"奪心魔的天生施法屬性為智力（法術豁免DC 15）。它天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell levitate}"
+						"{@spell 偵測思想}",
+						"{@spell 浮空術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell dominate monster}",
-							"{@spell plane shift} (self only)"
+							"{@spell 支配怪物}",
+							"{@spell 異界傳送}(限定自身)"
 						]
 					},
 					"ability": "int"
 				},
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The mind flayer is a 10th-level spellcaster. Its spellcasting ability is Intelligence (save {@dc 15}, {@hit 7} to hit with spell attacks). The mind flayer has the following wizard spells prepared:"
+						"奪心魔是10級的施法者。它的施法屬性為智力（法術豁免DC 15，法術攻擊命中{@hit 7}）。奪心魔已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell blade ward}",
-								"{@spell dancing lights}",
-								"{@spell mage hand}",
-								"{@spell shocking grasp}"
+								"{@spell 劍刃防護}",
+								"{@spell 舞光術}",
+								"{@spell 法師之手}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell shield}",
-								"{@spell sleep}"
+								"{@spell 偵測魔法}",
+								"{@spell 易容術}",
+								"{@spell 護盾術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell invisibility}",
-								"{@spell ray of enfeeblement}"
+								"{@spell 朦朧術}",
+								"{@spell 隱形術}",
+								"{@spell 衰弱射線}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell lightning bolt}",
-								"{@spell sending}"
+								"{@spell 銳眼術}",
+								"{@spell 閃電束}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell hallucinatory terrain}"
+								"{@spell 困惑術}",
+								"{@spell 幻景}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell telekinesis}",
-								"{@spell wall of force}"
+								"{@spell 心靈遙控}",
+								"{@spell 力牆術}"
 							]
 						}
 					},
@@ -39762,10 +39767,10 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Rogue Modrons",
+					"name": "遊蕩魔冢",
 					"entries": [
-						"A modron unit sometimes becomes defective, either through natural decay or exposure to chaotic forces. Rogue modrons don't act in accordance with Primus's wishes and directives, breaking laws, disobeying orders, and even engaging in violence. Other modrons hunt down such rogues.",
-						"A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank."
+						"一個魔冢單元有時候會變得殘缺，無論是因為自然的衰敗、或是因為暴露於混亂力量之下。遊蕩魔冢不會依循奇點的意願或指令行動，它們破壞律法、違背命令、甚至會訴諸於暴力。其他魔冢將會獵殺這類遊盪魔冢。",
+						"一個遊蕩魔冢失去公理之念特質，且屬於任何不是守序中立的陣營。除此之外，它們具有和同階級尋常魔冢相同的數據資料。"
 					]
 				}
 			],
@@ -39885,9 +39890,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Mephits (1/Day)",
+					"name": "召喚魔蝠 (1/日)",
 					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"魔蝠有{@chance 25|25％|25％召喚機率}機率召喚出{@dice 1d4}個與它同種類的魔蝠。被召喚的魔蝠將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它魔蝠。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -40238,58 +40243,59 @@
 			},
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The mummy lord has the following cleric spells prepared:"
+						"木乃伊領主是10級的施法者。它的施法屬性為睿知（法術豁免DC 17，法術攻擊命中{@hit 9}）。木乃伊領主已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell guiding bolt}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 光導箭}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell silence}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 沉默術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell dispel magic}"
+								"{@spell 活化死屍}",
+								"{@spell 解除魔法}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell divination}",
-								"{@spell guardian of faith}"
+								"{@spell 預言術}",
+								"{@spell 虔誠守衛}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contagion}",
-								"{@spell insect plague}"
+								"{@spell 疫病術}",
+								"{@spell 疫病蟲群}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell harm}"
+								"{@spell 傷害術}"
 							]
 						}
 					},
@@ -40506,28 +40512,28 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Zuggtomoy's Empowerment",
+					"name": "祖格莫伊之賦權",
 					"entries": [
-						"Myconids that embrace {@creature Zuggtmoy|MTF} can develop new, more destructive kinds of spores. Myconid adults can have two of the following spore effects.",
+						"那些信奉{@creature Zuggtmoy|OotA}的蕈人們能夠發展出嶄新、更具毀滅性的孢子。蕈人成體可以擁有二種下列孢子效果。",
 						{
 							"type": "entries",
-							"name": "Caustic Spores (1/Day)",
+							"name": "腐蝕孢子 (1/日)",
 							"entries": [
-								"The myconid releases spores in a 30-foot cone. Each creature inside the cone must succeed on a {@dc 11} Dexterity saving throw or take 3 ({@damage 1d6}) acid damage at the start of each of the myconid's turns. A creature can repeat the saving throw at the end of its turn, ending the effect on itself on a success. The save DC is 8 + the myconid's Constitution modifier + the myconid's proficiency bonus."
+								"蕈人釋放出一道30呎錐形的孢子。每個在錐形範圍內的生物都必須成功通過一次DC 11的敏捷豁免，否則將在每個該蕈人的回合開始時受到3 ({@damage 1d6})酸蝕傷害。這個豁免檢定的DC為8+蕈人的體質調整值+蕈人的熟練加值。該生物可以在它的每個回合結束時重複進行這個檢定，若成功則結束這個效果對它的影響。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Infestation Spores (1/Day)",
+							"name": "寄生孢子 (1/日)",
 							"entries": [
-								"The myconid releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a {@dc 11} Constitution saving throw. The save DC is 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy) and also gains a random form of indefinite madness (determined by rolling on the Madness of {@creature Zuggtmoy|MTF} table) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a humanoid or a Large or smaller beast."
+								"蕈人以自己為中心釋放出一團10呎半徑球體的孢子雲團，且這團雲將會持續存在長達1分鐘。任何具有血肉之軀的生物若在這團雲出現時處於其中，或在之後進入雲團中，都必須進行一次DC 11的體質豁免。這個豁免檢定的DC為8+蕈人的體質調整值+蕈人的熟練加值。若豁免成功，該生物在24小時內將不會被這些孢子給感染。若豁免失敗，該生物則會被一種被稱作「祖格莫伊孢子」的疾病給感染，並同時獲得一個隨機的永久瘋狂（透過擲骰使用祖格莫伊瘋狂表決定）並持續直到該生物身上的此疾病被治癒，或該生物死亡。當被這個方式感染時，該生物不會再被二度感染，且它必須在之後每經過24小時後重複進行這個豁免檢定，若成功則結束這個效果對它的影響。若豁免失敗，則被感染生物的身體將會緩慢地被生長出的蕈類佔據，且在三次這種豁免失敗後，該生物將會死亡，且若該生物為一個類人生物或體型為大型或更小的野獸，則它將被做為孢子僕役被重新活化。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Euphoria Spores (1/Day)",
+							"name": "興奮孢子 (1/日)",
 							"entries": [
-								"The myconid releases a cloud of spores in a 20-foot-radius sphere centered on itself. Other creatures in that area must each succeed on a {@dc 11} Constitution saving throw or become {@condition poisoned} for 1 minute. The save DC is 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. A creature can repeat the saving throw at the end of each of its turns, ending the effect early on itself on a success. When the effect ends on it, the creature gains one level of {@condition exhaustion}."
+								"蕈人以自己為中心釋放出一團20呎半徑球體的孢子。其他在這個範圍內的生物都必須各自成功通過一次DC 11的體質豁免，否則陷入{@condition 中毒}狀態長達1分鐘。這個豁免檢定的DC為8+蕈人的體質調整值+蕈人的熟練加值。該生物可以在它的每個回合結束時重複進行這個檢定，若成功則結束這個效果對它的影響。當這個效果對該生物的影響結束時，該生物將獲得一級的{@condition 力竭}。"
 							]
 						}
 					],
@@ -40674,28 +40680,28 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Zuggtomoy's Empowerment",
+					"name": "祖格莫伊之賦權",
 					"entries": [
-						"Myconids that embrace {@creature Zuggtmoy|MTF} can develop new, more destructive kinds of spores. Myconid sovereigns have all these spore effects.",
+						"那些信奉{@creature Zuggtmoy|OotA}的蕈人們能夠發展出嶄新、更具毀滅性的孢子。蕈人王可以擁有所有這些孢子效果。",
 						{
 							"type": "entries",
-							"name": "Caustic Spores (1/Day)",
+							"name": "腐蝕孢子 (1/日)",
 							"entries": [
-								"The myconid releases spores in a 30-foot cone. Each creature inside the cone must succeed on a {@dc 12} Dexterity saving throw or take 3 ({@damage 1d6}) acid damage at the start of each of the myconid's turns. A creature can repeat the saving throw at the end of its turn, ending the effect on itself on a success. The save DC is 8 + the myconid's Constitution modifier + the myconid's proficiency bonus."
+								"蕈人釋放出一道30呎錐形的孢子。每個在錐形範圍內的生物都必須成功通過一次DC 12的敏捷豁免，否則將在每個該蕈人的回合開始時受到3 ({@damage 1d6})酸蝕傷害。該生物可以在它的每個回合結束時重複進行這個檢定，若成功則結束這個效果對它的影響。這個豁免檢定的DC為8+蕈人的體質調整值+蕈人的熟練加值。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Infestation Spores (1/Day)",
+							"name": "寄生孢子 (1/日)",
 							"entries": [
-								"The myconid releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a {@dc 12} Constitution saving throw. The save DC is 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy) and also gains a random form of indefinite madness (determined by rolling on the Madness of {@creature Zuggtmoy|MTF} table) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a humanoid or a Large or smaller beast."
+								"蕈人以自己為中心釋放出一團10呎半徑球體的孢子雲團，且這團雲將會持續存在長達1分鐘。任何具有血肉之軀的生物若在這團雲出現時處於其中，或在之後進入雲團中，都必須進行一次DC 12的體質豁免。這個豁免檢定的DC為8+蕈人的體質調整值+蕈人的熟練加值。若豁免成功，該生物在24小時內將不會被這些孢子給感染。若豁免失敗，該生物則會被一種被稱作「祖格莫伊孢子」的疾病給感染，並同時獲得一個隨機的永久瘋狂（透過擲骰使用祖格莫伊瘋狂表決定）並持續直到該生物身上的此疾病被治癒，或該生物死亡。當被這個方式感染時，該生物不會再被二度感染，且它必須在之後每經過24小時後重複進行這個豁免檢定，若成功則結束這個效果對它的影響。若豁免失敗，則被感染生物的身體將會緩慢地被生長出的蕈類佔據，且在三次這種豁免失敗後，該生物將會死亡，且若該生物為一個類人生物或體型為大型或更小的野獸，則它將被做為孢子僕役被重新活化。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Euphoria Spores (1/Day)",
+							"name": "興奮孢子 (1/日)",
 							"entries": [
-								"The myconid releases a cloud of spores in a 20-foot-radius sphere centered on itself. Other creatures in that area must each succeed on a {@dc 12} Constitution saving throw or become {@condition poisoned} for 1 minute. The save DC is 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. A creature can repeat the saving throw at the end of each of its turns, ending the effect early on itself on a success. When the effect ends on it, the creature gains one level of {@condition exhaustion}."
+								"蕈人以自己為中心釋放出一團20呎半徑球體的孢子。其他在這個範圍內的生物都必須各自成功通過一次DC 12的體質豁免，否則陷入{@condition 中毒}狀態長達1分鐘。這個豁免檢定的DC為8+蕈人的體質調整值+蕈人的熟練加值。該生物可以在它的每個回合結束時重複進行這個檢定，若成功則結束這個效果對它的影響。當這個效果對該生物的影響結束時，該生物將獲得一級的{@condition 力竭}。"
 							]
 						}
 					],
@@ -40960,11 +40966,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A nalfeshnee has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d4} {@creature vrock||vrocks}, {@dice 1d3} {@creature hezrou||hezrous}, {@dice 1d2} {@creature glabrezu||glabrezus}, or one nalfeshnee.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個判魂魔有{@chance 50|50％|50％召喚機率}機率召喚出{@dice 1d4}個{@creature 弗洛魔}、{@dice 1d3}個{@creature 狂戰魔}、{@dice 1d2}個{@creature 迷誘魔}、或一個判魂魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -41203,74 +41209,75 @@
 			},
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The hag's innate spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+						"鬼婆的天生施法屬性為魅力（法術豁免DC 14，法術攻擊命中{@hit 6}）。她天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell magic missile}"
+						"{@spell 偵測魔法}",
+						"{@spell 魔法飛彈}"
 					],
 					"daily": {
 						"2e": [
-							"{@spell plane shift} (self only)",
-							"{@spell ray of enfeeblement}",
-							"{@spell sleep}"
+							"{@spell 異界傳送}(限定自身)",
+							"{@spell 衰弱射線}",
+							"{@spell 睡眠術}"
 						]
 					},
 					"ability": "cha"
 				},
 				{
-					"name": "Shared Spellcasting (Coven Only)",
+					"name": "共享施法 (限定集會)",
+					"ENG_name": "Shared Spellcasting (Coven Only)",
 					"headerEntries": [
-						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+						"當鬼婆集會的三個成員都距離彼此30呎內，她們各自都可以施放以下來自法師法術列表的法術，且必須共用法術位："
 					],
 					"spells": {
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell identify}",
-								"{@spell ray of sickness}"
+								"{@spell 鑑定術}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell locate object}"
+								"{@spell 人類定身術}",
+								"{@spell 物品定位術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell counterspell}",
-								"{@spell lightning bolt}"
+								"{@spell 降咒}",
+								"{@spell 反制法術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell phantasmal killer}",
-								"{@spell polymorph}"
+								"{@spell 魅影殺手}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contact other plane}",
-								"{@spell scrying}"
+								"{@spell 異界探知}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell eyebite}"
+								"{@spell 攝心目光}"
 							]
 						}
 					},
 					"footerEntries": [
-						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier."
+						"在施放這些法術時，每個鬼婆都是12級的施法者，且使用智力做為她的施法屬性。法術的豁免DC為12+鬼婆的智力調整值，且法術攻擊加值為4+鬼婆的智力調整值。"
 					]
 				}
 			],
@@ -41865,16 +41872,16 @@
 			"cr": "9",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The nycaloth's innate spellcasting ability is Charisma. The nycaloth can innately cast the following spells, requiring no material components:"
+						"尼卡羅斯魔的天生施法屬性為魅力。尼卡羅斯魔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell darkness}",
-						"{@spell detect magic}",
-						"{@spell dispel magic}",
-						"{@spell invisibility} (self only)",
-						"{@spell mirror image}"
+						"{@spell 黑暗術}",
+						"{@spell 偵測魔法}",
+						"{@spell 解除魔法}",
+						"{@spell 隱形術}(限定自身)",
+						"{@spell 鏡影術}"
 					],
 					"ability": "cha"
 				}
@@ -41925,16 +41932,16 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Yugoloth Summoning",
+					"name": "召喚尤格羅斯魔",
 					"entries": [
-						"Some yugoloths have an action option that allows them to summon other yugoloths.",
+						"有些尤格羅斯魔擁有允許它們召喚出其他尤格羅斯魔的動作項。",
 						{
-							"name": "Summon Yugoloth (1/Day)",
+							"name": "召喚尤格羅斯魔 (1/日)",
 							"type": "entries",
 							"entries": [
-								"The yugoloth chooses what to summon and attempts a magical summoning.",
-								"A nycaloth has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d4} {@creature mezzoloth||mezzoloths} or one nycaloth.",
-								"A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+								"該尤格羅斯魔選擇要召喚什麼並嘗試進行一次魔法召喚。",
+								"一個尼卡羅斯魔有{@chance 50|50％|50％召喚機率}機率召喚出{@dice 1d4}格{@creature 麥澤羅斯魔}、或一個尼卡羅斯魔。",
+								"被召喚的尤格羅斯魔將出現距離它召喚者60呎內的一處未被佔據空間，隨自己的喜好行動，且不能再召喚其它尤格羅斯魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個附贈動作解消它。"
 							]
 						}
 					]
@@ -42550,20 +42557,20 @@
 			"cr": "7",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The oni's innate spellcasting ability is Charisma (spell save {@dc 13}). The oni can innately cast the following spells, requiring no material components:"
+						"惡鬼的天生施法屬性為魅力（法術豁免DC 13）。惡鬼天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell darkness}",
-						"{@spell invisibility}"
+						"{@spell 黑暗術}",
+						"{@spell 隱形術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell charm person}",
-							"{@spell cone of cold}",
-							"{@spell gaseous form}",
-							"{@spell sleep}"
+							"{@spell 魅惑人類}",
+							"{@spell 寒冰錐}",
+							"{@spell 氣化形體}",
+							"{@spell 睡眠術}"
 						]
 					},
 					"ability": "cha"
@@ -42871,30 +42878,30 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The orc is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The orc has the following cleric spells prepared:"
+						"獸人是3級的施法者。它的施法屬性為睿知（法術豁免DC 11，法術攻擊命中{@hit 3}）。獸人已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell resistance}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 提升抗力}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bless}",
-								"{@spell command}"
+								"{@spell 祝福術}",
+								"{@spell 命令術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell augury}",
-								"{@spell spiritual weapon} (spear)"
+								"{@spell 卜筮}",
+								"{@spell 靈體武器}（矛）"
 							]
 						}
 					},
@@ -43905,10 +43912,10 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Rogue Modrons",
+					"name": "遊蕩魔冢",
 					"entries": [
-						"A modron unit sometimes becomes defective, either through natural decay or exposure to chaotic forces. Rogue modrons don't act in accordance with Primus's wishes and directives, breaking laws, disobeying orders, and even engaging in violence. Other modrons hunt down such rogues.",
-						"A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank."
+						"一個魔冢單元有時候會變得殘缺，無論是因為自然的衰敗、或是因為暴露於混亂力量之下。遊蕩魔冢不會依循奇點的意願或指令行動，它們破壞律法、違背命令、甚至會訴諸於暴力。其他魔冢將會獵殺這類遊盪魔冢。",
+						"一個遊蕩魔冢失去公理之念特質，且屬於任何不是守序中立的陣營。除此之外，它們具有和同階級尋常魔冢相同的數據資料。"
 					]
 				}
 			],
@@ -44399,18 +44406,18 @@
 			"cr": "20",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The pit fiend's spellcasting ability is Charisma (spell save {@dc 21}). The pit fiend can innately cast the following spells, requiring no material components:"
+						"深獄煉魔的天生施法屬性為魅力（法術豁免DC 21）。深獄煉魔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fireball}"
+						"{@spell 偵測魔法}",
+						"{@spell 火球術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell hold monster}",
-							"{@spell wall of fire}"
+							"{@spell 怪物定身術}",
+							"{@spell 火牆術}"
 						]
 					},
 					"ability": "cha"
@@ -44570,25 +44577,25 @@
 			"cr": "1/4",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The pixie's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring only its pixie dust as a component:"
+						"皮克精的天生施法屬性為魅力（法術豁免DC 12）。它天生就可以施展以下法術，且只需要它的妖精塵做為材料構材："
 					],
 					"will": [
-						"{@spell druidcraft}"
+						"{@spell 德魯伊伎倆}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell confusion}",
-							"{@spell dancing lights}",
-							"{@spell detect evil and good}",
-							"{@spell detect thoughts}",
-							"{@spell dispel magic}",
-							"{@spell entangle}",
-							"{@spell fly}",
-							"{@spell phantasmal force}",
-							"{@spell polymorph}",
-							"{@spell sleep}"
+							"{@spell 困惑術}",
+							"{@spell 舞光術}",
+							"{@spell 偵測善惡}",
+							"{@spell 偵測思想}",
+							"{@spell 解除魔法}",
+							"{@spell 糾纏術}",
+							"{@spell 飛行術}",
+							"{@spell 魅影之力}",
+							"{@spell 變形術}",
+							"{@spell 睡眠術}"
 						]
 					},
 					"ability": "cha"
@@ -44710,25 +44717,25 @@
 			"cr": "16",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The planetar's spellcasting ability is Charisma (spell save {@dc 20}). The planetar can innately cast the following spells, requiring no material components:"
+						"異域神侍的天生施法屬性為魅力（法術豁免DC 20）。異域神侍天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell invisibility} (self only)"
+						"{@spell 偵測善惡}",
+						"{@spell 隱形術}(限定自身)"
 					],
 					"daily": {
 						"3e": [
-							"{@spell blade barrier}",
-							"{@spell dispel evil and good}",
-							"{@spell flame strike}",
-							"{@spell raise dead}"
+							"{@spell 劍刃障壁}",
+							"{@spell 反制善惡}",
+							"{@spell 焰擊術}",
+							"{@spell 喚醒死者}"
 						],
 						"1e": [
-							"{@spell commune}",
-							"{@spell control weather}",
-							"{@spell insect plague}"
+							"{@spell 通神術}",
+							"{@spell 操控天氣}",
+							"{@spell 疫病蟲群}"
 						]
 					},
 					"ability": "cha"
@@ -45410,38 +45417,38 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The priest has the following cleric spells prepared:"
+						"祭司是5級的施法者。它的施法屬性為睿知（法術豁免DC 13，法術攻擊命中{@hit 5}）。祭司已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell guiding bolt}",
-								"{@spell sanctuary}"
+								"{@spell 治療傷勢}",
+								"{@spell 光導箭}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell spiritual weapon}"
+								"{@spell 次級復原術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell spirit guardians}"
+								"{@spell 解除魔法}",
+								"{@spell 靈體守衛}"
 							]
 						}
 					},
@@ -45591,14 +45598,14 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Pseudodragon Familiar",
+					"name": "偽龍魔寵",
 					"entries": [
-						"Some pseudodragons are willing to serve spellcasters as a familiar. Such pseudodragons have the following trait.",
+						"有些偽龍自願於做為魔寵服侍施法者。這類偽龍具有以下特質：",
 						{
-							"name": "Familiar",
+							"name": "魔寵",
 							"type": "entries",
 							"entries": [
-								"The pseudodragon can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the pseudodragon senses as long as they are within 1 mile of each other. While the pseudodragon is within 10 feet of its companion, the companion shares the pseudodragon's Magic Resistance trait. At any time and for any reason, the pseudodragon can end its service as a familiar, ending the telepathic bond."
+								"偽龍可以做為魔寵服侍另一個生物，與它自願的夥伴建立一道魔法性的心靈連結。當雙方連結時，只要他們距離彼此1哩之內，夥伴就可以感知偽龍所感知的事物。當偽龍距離它夥伴10呎內，其夥伴將能享有偽龍的魔法抗性特質。偽龍可以在任何時候且以任何理由結束它做為魔寵的服務，並終止這道心靈連結。"
 							]
 						}
 					]
@@ -45938,10 +45945,10 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Rogue Modrons",
+					"name": "遊蕩魔冢",
 					"entries": [
-						"A modron unit sometimes becomes defective, either through natural decay or exposure to chaotic forces. Rogue modrons don't act in accordance with Primus's wishes and directives, breaking laws, disobeying orders, and even engaging in violence. Other modrons hunt down such rogues.",
-						"A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank."
+						"一個魔冢單元有時候會變得殘缺，無論是因為自然的衰敗、或是因為暴露於混亂力量之下。遊蕩魔冢不會依循奇點的意願或指令行動，它們破壞律法、違背命令、甚至會訴諸於暴力。其他魔冢將會獵殺這類遊盪魔冢。",
+						"一個遊蕩魔冢失去公理之念特質，且屬於任何不是守序中立的陣營。除此之外，它們具有和同階級尋常魔冢相同的數據資料。"
 					]
 				}
 			],
@@ -46242,20 +46249,20 @@
 			"cr": "3",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法 (靈能)",
 					"headerEntries": [
-						"The quaggoth's innate spellcasting ability is Wisdom (spell save {@dc 11}). The quaggoth can innately cast the following spells, requiring no components:"
+						"澤地熊人的天生施法屬性為睿知（法術豁免DC 11）。澤地熊人天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell feather fall}",
-						"{@spell mage hand} (the hand is invisible)"
+						"{@spell 羽落術}",
+						"{@spell 法師之手}（這隻手為隱形狀態）"
 					],
 					"daily": {
 						"1e": [
-							"{@spell cure wounds}",
-							"{@spell enlarge/reduce}",
-							"{@spell heat metal}",
-							"{@spell mirror image}"
+							"{@spell 治療傷勢}",
+							"{@spell 變巨/縮小術}",
+							"{@spell 灼熱金屬}",
+							"{@spell 鏡影術}"
 						]
 					},
 					"ability": "wis"
@@ -46437,14 +46444,14 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Quasit Familiar",
+					"name": "夸塞魔魔寵",
 					"entries": [
-						"Mortal spellcasters interested in extraplanar familiars find quasits easy to summon and eager to serve. The quasit plays the part of the obsequious servant. It serves its master well, but it goads the mortal to greater and greater acts of chaos and evil. Such quasits have the following trait.",
+						"對異位面魔寵抱持興趣的凡人施法者發現了夸塞魔易於被召喚，且積極服務的特點。夸塞魔扮演著忠實僕役的角色。它會很好的服侍它的主人，但會唆使凡人的行為越來越趨向混亂與邪惡。這類夸塞魔具有以下特質。",
 						{
-							"name": "Familiar",
+							"name": "魔寵",
 							"type": "entries",
 							"entries": [
-								"The quasit can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the quasit senses as long as they are within 1 mile of each other. While the quasit is within 10 feet of its master, the master shares the quasit's Magic Resistance trait. At any time and for any reason, the quasit can end its service as a familiar, ending the telepathic bond."
+								"夸塞魔可以做為魔寵服侍另一個生物，與它自願的主人建立一道魔法性的心靈連結。當雙方連結時，只要他們距離彼此1哩之內，主人就可以感知夸塞魔所感知的事物。當夸塞魔距離它主人10呎內，其主人將能享有夸塞魔的魔法抗性特質。夸塞魔可以在任何時候且以任何理由結束它做為魔寵的服務，並終止這道心靈連結。"
 							]
 						}
 					]
@@ -46663,29 +46670,29 @@
 			"cr": "13",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The rakshasa's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no material components:"
+						"羅剎的天生施法屬性為魅力（法術豁免DC 18，法術攻擊命中{@hit 10}）。羅剎天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell disguise self}",
-						"{@spell mage hand}",
-						"{@spell minor illusion}"
+						"{@spell 偵測思想}",
+						"{@spell 易容術}",
+						"{@spell 法師之手}",
+						"{@spell 次級幻象}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell charm person}",
-							"{@spell detect magic}",
-							"{@spell invisibility}",
-							"{@spell major image}",
-							"{@spell suggestion}"
+							"{@spell 魅惑人類}",
+							"{@spell 偵測魔法}",
+							"{@spell 隱形術}",
+							"{@spell 強效幻影}",
+							"{@spell 暗示術}"
 						],
 						"1e": [
-							"{@spell dominate person}",
-							"{@spell fly}",
-							"{@spell plane shift}",
-							"{@spell true seeing}"
+							"{@spell 支配人類}",
+							"{@spell 飛行術}",
+							"{@spell 異界傳送}",
+							"{@spell 真知術}"
 						]
 					},
 					"ability": "cha"
@@ -47129,12 +47136,12 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Control Gem",
+					"name": "支配寶石",
 					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being {@condition charmed} while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against {@spell imprisonment}, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A {@spell wish} spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A {@spell greater restoration} spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an {@condition incapacitated} slaad. Each try requires 1 minute of uninterrupted work and a successful {@dc 20} Wisdom (Medicine) check. Each failed attempt deals 22 ({@damage 4d10}) psychic damage to the slaad."
+						"植入史拉蟾腦內的是一顆魔法支配寶石。該史拉蟾必須服從任何擁有該寶石的對象，且在被這個方式支配時免疫於{@condition 魅惑}。",
+						"某些法術可以被用於獲得該寶石。若史拉蟾在對抗{@spell 禁錮術}的豁免檢定中失敗，則該法術可以將寶石轉移到施法者的手上，而非將史拉蟾給禁錮。{@spell 祈願術}法術若在史拉蟾在場時被施放，則可以被許願以獲得該寶石。",
+						"施放於史拉蟾的{@spell 高等復原術}法術將會摧毀該寶石而不至於傷害到史拉蟾。",
+						"熟練於睿知（{@skill 醫藥}）的角色可以從一個{@condition 無力}的史拉蟾腦中移除該寶石。每次嘗試都需要1分鐘不被打擾的工作時間，且必須成功通過一次DC 20的睿知（{@skill 醫藥}）檢定。每次嘗試失敗都會對該史拉蟾造成22 ({@damage 4d10})精神傷害。"
 					]
 				}
 			],
@@ -47527,9 +47534,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Revenants with Spells and Weapons",
+					"name": "還魂屍的法術和武器",
 					"entries": [
-						"Revenants that were spellcasters before they died might retain some or all of their spellcasting capabilities. Similarly, revenants that wore armor and wielded weapons in life might continue to do so."
+						"在死亡前曾身為施法者的還魂屍可能會保有它們一部份或所有的施法能力。同樣的，還魂屍也可能繼續穿戴並揮舞其生前使用的護甲和武器。"
 					]
 				}
 			],
@@ -48720,37 +48727,37 @@
 			"cr": "2",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
 					"headerEntries": [
-						"The sahuagin is a 6th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). She has the following cleric spells prepared:"
+						"沙華魚人是6級的施法者。她的施法屬性為睿知（法術豁免DC 12，法術攻擊命中{@hit 4}）。她已準備了以下牧師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bless}",
-								"{@spell detect magic}",
-								"{@spell guiding bolt}"
+								"{@spell 祝福術}",
+								"{@spell 偵測魔法}",
+								"{@spell 光導箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon} (trident)"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}（三叉戟）"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell mass healing word}",
-								"{@spell tongues}"
+								"{@spell 群體治癒真言}",
+								"{@spell 巧舌術}"
 							]
 						}
 					},
@@ -49066,34 +49073,38 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Satyr Pipes",
+					"name": "薩特羊人排笛",
 					"entries": [
-						"A satyr might carry panpipes that it can play to create magical effects. Usually, only one satyr in a group carries such pipes. If a satyr has pipes, it gains the following additional action option.",
+						"一個薩特羊人可能會攜帶一個能夠演奏並創造魔法效果的排笛。通常來說，一個團體中只會有一個薩特羊人攜帶這種排笛。若一個薩特羊人擁有此排笛，它將獲得下列的額外動作項。",
 						{
 							"type": "entries",
-							"name": "Panpipes",
+							"name": "潘神排笛",
+							"ENG_name": "Panpipes",
 							"entries": [
-								"The satyr plays its pipes and chooses one of the following magical effects: a charming melody, a frightening strain, or a gentle lullaby. Any creature within 60 feet of the satyr that can hear the pipes must succeed on a {@dc 13} Wisdom saving throw or be affected as described below. Other satyrs and creature that can't be {@condition charmed} are unaffected",
-								"An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to these panpipes for the next 24 hours.",
+								"薩特羊人演奏它的排笛，並從下列魔法效果中選擇一種：魅惑旋律、驚恐音聲、或柔美催眠曲。任何距離薩特羊人60呎內且可以聽到排笛聲的生物都必須成功通過一次DC 13的睿知豁免，否則被下述的效果影響。其他薩特羊人和不會被{@condition 魅惑}的生物將不會受到任何影響。",
+								"一個受影響的生物可以在它的每個回合結束時重複進行這個豁免檢定，豁免成功則結束這個效果對它的影響。若該生物豁免成功，或該效果對它的影響結束，則該生物將在接下來的24小時內免疫於這些潘神排笛的效果。",
 								{
 									"type": "variantSub",
-									"name": "Charming Melody",
+									"name": "魅惑旋律",
+									"ENG_name": "Charming Melody",
 									"entries": [
-										"The creature is {@condition charmed} by the satyr for 1 minute. If the satyr or any of its companions harms the creature, the effect on it ends immediately."
+										"該生物被薩特羊人{@condition 魅惑}長達1分鐘。若薩特羊人或它的任何同伴傷害了該生物，這個效果將立刻結束。"
 									]
 								},
 								{
 									"type": "variantSub",
-									"name": "Frightening Strain",
+									"name": "驚恐音聲",
+									"ENG_name": "Frightening Strain",
 									"entries": [
-										"The creature is {@condition frightened} for 1 minute."
+										"該生物陷入{@condition 恐懼}狀態長達1分鐘。"
 									]
 								},
 								{
 									"type": "variantSub",
-									"name": "Gentle Lullaby",
+									"name": "柔美催眠曲",
+									"ENG_name": "Gentle Lullaby",
 									"entries": [
-										"The creature falls asleep and is {@condition unconscious} for 1 minute. The effect ends if the creature takes damage or if someone takes an action to shake the creature awake."
+										"該生物陷入沉睡並處於{@condition 昏迷}狀態長達1分鐘。這個效果會在該生物受到傷害，或當其他人採取一個動作將該生物搖醒時結束。"
 									]
 								}
 							]
@@ -49569,56 +49580,57 @@
 			},
 			"spellcasting": [
 				{
-					"name": "Shared Spellcasting (Coven Only)",
+					"name": "共享施法 (限定集會)",
+					"ENG_name": "Shared Spellcasting (Coven Only)",
 					"headerEntries": [
-						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+						"當鬼婆集會的三個成員都距離彼此30呎內，她們各自都可以施放以下來自法師法術列表的法術，且必須共用法術位："
 					],
 					"spells": {
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell identify}",
-								"{@spell ray of sickness}"
+								"{@spell 鑑定術}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell locate object}"
+								"{@spell 人類定身術}",
+								"{@spell 物品定位術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell counterspell}",
-								"{@spell lightning bolt}"
+								"{@spell 降咒}",
+								"{@spell 反制法術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell phantasmal killer}",
-								"{@spell polymorph}"
+								"{@spell 魅影殺手}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contact other plane}",
-								"{@spell scrying}"
+								"{@spell 異界探知}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell eyebite}"
+								"{@spell 攝心目光}"
 							]
 						}
 					},
 					"footerEntries": [
-						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier."
+						"在施放這些法術時，每個鬼婆都是12級的施法者，且使用智力做為她的施法屬性。法術的豁免DC為12+鬼婆的智力調整值，且法術攻擊加值為4+鬼婆的智力調整值。"
 					]
 				}
 			],
@@ -50892,12 +50904,12 @@
 			"cr": "1/4",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (1/Day)",
+					"name": "天生施法 (1/日)",
 					"headerEntries": [
-						"The mephit can innately cast {@spell dancing lights}, requiring no material components. Its innate spellcasting ability is Charisma."
+						"煙魔蝠天生就可以施放{@spell 舞光術}，且無需任何材料構材。它的天生施法屬性為魅力。"
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"hidden": [
 						"will"
@@ -50932,9 +50944,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Mephits (1/Day)",
+					"name": "召喚魔蝠 (1/日)",
 					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"魔蝠有{@chance 25|25％|25％召喚機率}機率召喚出{@dice 1d4}個與它同種類的魔蝠。被召喚的魔蝠將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它魔蝠。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -51050,23 +51062,23 @@
 			"cr": "21",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The solar's spellcasting ability is Charisma (spell save {@dc 25}). It can innately cast the following spells, requiring no material components:"
+						"熾天神侍的天生施法屬性為魅力（法術豁免DC 25）。熾天神侍天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell invisibility} (self only)"
+						"{@spell 偵測善惡}",
+						"{@spell 隱形術}(限定自身)"
 					],
 					"daily": {
 						"3e": [
-							"{@spell blade barrier}",
-							"{@spell dispel evil and good}",
-							"{@spell resurrection}"
+							"{@spell 劍刃障壁}",
+							"{@spell 反制善惡}",
+							"{@spell 復活術}"
 						],
 						"1e": [
-							"{@spell commune}",
-							"{@spell control weather}"
+							"{@spell 通神術}",
+							"{@spell 操控天氣}"
 						]
 					},
 					"ability": "cha"
@@ -51850,51 +51862,52 @@
 			"cr": "8",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:"
+						"納迦是10級的施法者。它的施法屬性為智力（法術豁免DC 14，法術攻擊命中{@hit 6}），且它只需要聲音構材以施放它的法術。納迦已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell detect magic}",
-								"{@spell sleep}"
+								"{@spell 魅惑人類}",
+								"{@spell 偵測魔法}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell hold person}"
+								"{@spell 偵測思想}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell lightning bolt}",
-								"{@spell water breathing}"
+								"{@spell 閃電束}",
+								"{@spell 水下呼吸}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell dimension door}"
+								"{@spell 枯萎術}",
+								"{@spell 次元門}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell dominate person}"
+								"{@spell 支配人類}"
 							]
 						}
 					},
@@ -52300,12 +52313,12 @@
 			"cr": "1/4",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (1/Day)",
+					"name": "天生施法 (1/日).",
 					"headerEntries": [
-						"The mephit can innately cast {@spell blur}, requiring no material components. Its innate spellcasting ability is Charisma."
+						"蒸氣魔蝠天生就可以施放{@spell 朦朧術}，且無需任何材料構材。它的天生施法屬性為魅力。"
 					],
 					"will": [
-						"{@spell blur}"
+						"{@spell 朦朧術}"
 					],
 					"hidden": [
 						"will"
@@ -52340,9 +52353,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Mephits (1/Day)",
+					"name": "召喚魔蝠 (1/日)",
 					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"魔蝠有{@chance 25|25％|25％召喚機率}機率召喚出{@dice 1d4}個與它同種類的魔蝠。被召喚的魔蝠將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它魔蝠。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -52602,21 +52615,21 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "New Giant Options",
+					"name": "新巨人選項",
 					"entries": [
-						"Some adult stone giants like to grab enemies and fling them through the air. They can also roll boulders across the ground, striking multiple enemies in a line. These abilities are represented by the following action options.",
+						"有些成年的石巨人喜歡抓住敵人並將它們拋向空中。它們也可以讓巨石滾過地面，攻擊直線上的複數敵人。這些能力透過下列動作選項呈現。",
 						{
-							"name": "Fling",
+							"name": "拋擲",
 							"type": "entries",
 							"entries": [
-								"The giant tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a {@dc 17} Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the giant's choice and land {@condition prone}, taking 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown."
+								"巨人嘗試將一個距離它10呎內且體型為小型或中型的生物丟出去。目標必須成功通過一次DC 17的敏捷豁免，否則將被向著巨人所選的方向拋擲並水平飛出最多60呎距離，以{@condition 伏地}狀態著地，並受到被扔出每10呎距離3 ({@damage 1d6})的鈍擊傷害。"
 							]
 						},
 						{
-							"name": "Rolling Rock",
+							"name": "滾石",
 							"type": "entries",
 							"entries": [
-								"The giant sends a rock tumbling along the ground in a 30-foot line that is 5 feet wide. Each creature in that line must make a {@dc 17} Dexterity saving throw, taking 22 ({@damage 3d10 + 6}) bludgeoning damage and falling {@condition prone} on a failed save"
+								"巨人投出一顆岩石，沿著地面滾動並波及30呎長，5呎寬的直線範圍。每個在直線範圍內的生物都必須進行一次DC 17的敏捷豁免，豁免失敗將受到22 ({@damage 3d10 + 6})鈍擊傷害，並陷入{@condition 伏地}狀態。"
 							]
 						}
 					],
@@ -52903,20 +52916,20 @@
 			"cr": "13",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The giant's innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:"
+						"巨人的天生施法屬性為魅力（法術豁免DC 17）。它天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell feather fall}",
-						"{@spell levitate}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 羽落術}",
+						"{@spell 浮空術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell control weather}",
-							"{@spell water breathing}"
+							"{@spell 操控天氣}",
+							"{@spell 水下呼吸}"
 						]
 					},
 					"ability": "cha"
@@ -52963,14 +52976,14 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "New Giant Options",
+					"name": "新巨人選項",
 					"entries": [
-						"Some adult storm giants can channel thunderous power through their bodies and release it with a deafening stomp. This ability is represented by the following action option.",
+						"有些成年的風暴巨人可以引導雷鳴能量通過它們的身體，並以一次震耳欲聾的踏步將其釋放出來。這個能力透過下列動作選項呈現。",
 						{
 							"type": "entries",
-							"name": "Thunderous Stomp {@recharge}",
+							"name": "雷鳴重踏{@recharge 6}",
 							"entries": [
-								"The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a {@dc 17} Constitution saving throw or take 33 ({@damage 6d10}) thunder damage and be {@condition deafened} until the start of the giant's next turn. On a successful save, a creature takes half as much damage and isn't {@condition deafened}. The thunderclap can be heard out to a range of 1,200 feet."
+								"風暴巨人重踏地面，引發霹靂雷鳴。所有距離巨人15呎內的其他生物必須成功通過一次DC 17的體質豁免，否則受到33 ({@damage 6d10})雷鳴傷害，且被{@condition 耳聾}直到巨人的下個回合開始。若豁免成功，該生物只會受到一半的傷害且不會{@condition 耳聾}。這道雷鳴可以在最遠1,200呎的距離外被聽到。"
 							]
 						}
 					],
@@ -54670,8 +54683,7 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "斯里克林螳螂人(靈能)",
-					"ENG_name": "Thri-kreen Weapons and Psionics",
+					"name": "斯里克林螳螂人的武器和靈能",
 					"entries": [
 						"有些斯里克林螳螂人會使用特殊的軍用武器。螳螂戟(Gythka)是一種在兩端各有一片斧刃的雙手長柄武器。三稜梭(Chatkcha)則是一種由三片鋸齒刀刃組成的三角扁平武器（一種輕型投擲武器）。一個裝備著螳螂戟和三稜梭的斯里克林螳螂人將會獲得下列動作選項：",
 						{
@@ -54696,29 +54708,6 @@
 							"entries": [
 								"{@atk rw} 命中{@hit 4}，射程30/120呎，單一目標。{@h}5 ({@damage 1d6 + 2})劈砍傷害。"
 							]
-						},
-						"少數斯里克林螳螂人有靈能的能力，用他們的力量幫助狩獵，並更容易與外人溝通",
-						"一個靈能的斯里克林螳螂人擁有60英尺範圍內的心靈感應，並獲得以下額外的特性：",
-						{
-							"type": "spellcasting",
-							"name": "天生施法 (靈能)",
-							"ENG_name": "Innate Spellcasting (Psionics)",
-							"headerEntries": [
-								"斯里克林螳螂人的天生施法屬性為睿知。它天生就可以施展以下法術，且無需任何構材："
-							],
-							"will": [
-								"{@spell 法師之手}（這隻手為隱形狀態）"
-							],
-							"daily": {
-								"1": [
-									"{@spell 隱形術}(限定自身)"
-								],
-								"2e": [
-									"{@spell 朦朧術}",
-									"{@spell 魔化武器}"
-								]
-							},
-							"ability": "wis"
 						}
 					]
 				}
@@ -55452,10 +55441,10 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Rogue Modrons",
+					"name": "遊蕩魔冢",
 					"entries": [
-						"A modron unit sometimes becomes defective, either through natural decay or exposure to chaotic forces. Rogue modrons don't act in accordance with Primus's wishes and directives, breaking laws, disobeying orders, and even engaging in violence. Other modrons hunt down such rogues.",
-						"A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank."
+						"一個魔冢單元有時候會變得殘缺，無論是因為自然的衰敗、或是因為暴露於混亂力量之下。遊蕩魔冢不會依循奇點的意願或指令行動，它們破壞律法、違背命令、甚至會訴諸於暴力。其他魔冢將會獵殺這類遊盪魔冢。",
+						"一個遊蕩魔冢失去公理之念特質，且屬於任何不是守序中立的陣營。除此之外，它們具有和同階級尋常魔冢相同的數據資料。"
 					]
 				}
 			],
@@ -55757,9 +55746,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Loathsome Limbs",
+					"name": "擾人斷肢",
 					"entries": [
-						"Whenever the troll takes at least 15 slashing damage at one time, roll a {@dice d20} to determine what else happens to it:",
+						"每當巨魔一次受到至少15點劈砍傷害時，骰一顆{@dice d20}以決定它還會發生什麼事：",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -55767,30 +55756,30 @@
 								{
 									"type": "item",
 									"name": "1\u201310:",
-									"entry": "Nothing else happens."
+									"entry": "沒有其他事情發生。"
 								},
 								{
 									"type": "item",
 									"name": "11\u201314:",
-									"entry": "One leg is severed from the troll if it has any legs left."
+									"entry": "若巨魔還擁有任何腿，則巨魔的一條腿將被切斷。"
 								},
 								{
 									"type": "item",
 									"name": "15\u201318:",
-									"entry": "One arm is severed from the troll if it has any arms left."
+									"entry": "若巨魔還擁有任何手臂，則巨魔的一條手臂將被切斷。"
 								},
 								{
 									"type": "item",
 									"name": "19\u201320:",
-									"entry": "The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head."
+									"entry": "巨魔被斬首，但巨魔只會在它無法再生時才會因此死亡。若它死亡，則被砍下的頭也會隨之死亡。"
 								}
 							]
 						},
-						"If the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.",
-						"A severed leg is unable to attack and has a speed of 5 feet.",
-						"A severed arm has a speed of 5 feet and can make one claw attack on its turn, with disadvantage on the attack roll unless the troll can see the arm and its target. Each time the troll loses an arm, it loses a claw attack.",
-						"If its head is severed, the troll loses its bite attack and its body is {@condition blinded} unless the head can see it. The severed head has a speed of 0 feet and the troll's Keen Smell trait. It can make a bite attack but only against a target in its space.",
-						"The troll's speed is halved if it's missing a leg. If it loses both legs, it falls {@condition prone}. If it has both arms, it can crawl. With only one arm, it can still crawl, but its speed is halved. With no arms or legs, its speed is 0, and it can't benefit from bonuses to speed."
+						"若巨魔未接上斷肢或斷頭而完成一次短休或長休，則該部位將會重新長出。同時，被切斷的身體部位將會死亡。在這之前，被切斷的身體部位將會在巨魔的先攻順序行動，並執行自己的動作和移動。一個被切斷的身體部位具有AC 13和10點生命值，且擁有巨魔的再生特性。",
+						"一只斷腿無法進行攻擊，且具有5呎的移動速度。",
+						"一只斷臂具有5呎的移動速度，且可以在它的回合進行一次爪抓攻擊，除非巨魔可以看見斷臂和它的攻擊目標，否則該攻擊將具有劣勢。巨魔每失去一隻手臂，它就失去一次爪抓攻擊。",
+						"若巨魔的頭被砍下，巨魔將失去它的啃咬攻擊，且除非它的頭可以看見本體，否則它的本體將陷入{@condition 目盲}狀態。斷頭具有0呎的移動速度，且擁有巨魔的敏銳嗅覺特性。它可以進行一次啃咬攻擊，但只能對處於它所在空間的目標進行攻擊。",
+						"若巨魔失去一條腿，則它的移動速度將被減半。若它失去了兩條腿，則它將陷入{@condition 伏地}狀態。若它仍具有兩隻手臂，則它可以爬行移動。若它只剩下一隻手臂，則它仍可以爬行，但移動速度減半。若它失去了所有手臂和雙腿，則它的移動速度歸零，且無法得益於任何對移動速度的加值。"
 					]
 				}
 			],
@@ -56132,29 +56121,29 @@
 			"cr": "13",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The ultroloth's innate spellcasting ability is Charisma (spell save {@dc 17}). The ultroloth can innately cast the following spells, requiring no material components:"
+						"烏特羅斯魔的天生施法屬性為魅力（法術豁免DC 17）。烏特羅斯魔天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell alter self}",
-						"{@spell clairvoyance}",
-						"{@spell darkness}",
-						"{@spell detect magic}",
-						"{@spell detect thoughts}",
-						"{@spell dispel magic}",
-						"{@spell invisibility} (self only)",
-						"{@spell suggestion}"
+						"{@spell 變造自身}",
+						"{@spell 銳眼術}",
+						"{@spell 黑暗術}",
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}",
+						"{@spell 解除魔法}",
+						"{@spell 隱形術}(限定自身)",
+						"{@spell 暗示術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell dimension door}",
-							"{@spell fear}",
-							"{@spell wall of fire}"
+							"{@spell 次元門}",
+							"{@spell 恐懼術}",
+							"{@spell 火牆術}"
 						],
 						"1e": [
-							"{@spell fire storm}",
-							"{@spell mass suggestion}"
+							"{@spell 火焰風暴}",
+							"{@spell 群體暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -56206,16 +56195,16 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Yugoloth Summoning",
+					"name": "召喚尤格羅斯魔",
 					"entries": [
-						"Some yugoloths have an action option that allows them to summon other yugoloths.",
+						"有些尤格羅斯魔擁有允許它們召喚出其他尤格羅斯魔的動作項。",
 						{
-							"name": "Summon Yugoloth (1/Day)",
+							"name": "召喚尤格羅斯魔 (1/日)",
 							"type": "entries",
 							"entries": [
-								"The yugoloth chooses what to summon and attempts a magical summoning.",
-								"An ultroloth has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d6} {@creature mezzoloth||mezzoloths}, {@dice 1d4} {@creature nycaloth||nycaloths}, or one ultroloth.",
-								"A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+								"該尤格羅斯魔選擇要召喚什麼並嘗試進行一次魔法召喚。",
+								"一個烏特羅斯魔有{@chance 50|50％|50％召喚機率}機率召喚出{@dice 1d6}個{@creature 麥澤羅斯魔}、{@dice 1d4}個{@creature 尼卡羅斯魔}、或一個烏特羅斯魔。",
+								"被召喚的尤格羅斯魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它尤格羅斯魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個附贈動作解消它。"
 							]
 						}
 					]
@@ -56451,20 +56440,20 @@
 			"cr": "5",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The unicorn's innate spellcasting ability is Charisma (spell save {@dc 14}). The unicorn can innately cast the following spells, requiring no components:"
+						"獨角獸的天生施法屬性為魅力（法術豁免DC 14）。獨角獸天生就可以施展以下法術，且無需任何構材："
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell druidcraft}",
-						"{@spell pass without trace}"
+						"{@spell 偵測善惡}",
+						"{@spell 德魯伊伎倆}",
+						"{@spell 行蹤無跡}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell calm emotions}",
-							"{@spell dispel evil and good}",
-							"{@spell entangle}"
+							"{@spell 安定心神}",
+							"{@spell 反制善惡}",
+							"{@spell 糾纏術}"
 						]
 					},
 					"ability": "cha"
@@ -57101,53 +57090,54 @@
 			"cr": "15",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "施法",
+					"ENG_name": "Spellcasting",
 					"headerEntries": [
-						"The vampire is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). The vampire has the following wizard spells prepared:"
+						"吸血鬼是9級的施法者。它的施法屬性為智力（法術豁免DC 16，法術攻擊命中{@hit 8}）。吸血鬼已準備了以下法師法術："
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell fog cloud}",
-								"{@spell sleep}"
+								"{@spell 通曉語言}",
+								"{@spell 雲霧術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell gust of wind}",
-								"{@spell mirror image}"
+								"{@spell 偵測思想}",
+								"{@spell 造風術}",
+								"{@spell 鏡影術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell bestow curse}",
-								"{@spell nondetection}"
+								"{@spell 活化死屍}",
+								"{@spell 降咒}",
+								"{@spell 迴避偵測}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell greater invisibility}"
+								"{@spell 枯萎術}",
+								"{@spell 高等隱形術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate person}"
+								"{@spell 支配人類}"
 							]
 						}
 					},
@@ -58049,11 +58039,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A vrock has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 2d4} {@creature dretch||dretches} or one vrock.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個弗洛魔有{@chance 30|30％|30％召喚機率}機率召喚出{@dice 2d4}個{@creature 怯魔}或一個弗洛魔。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -58249,9 +58239,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Warhorse Armor",
+					"name": "戰馬護甲",
 					"entries": [
-						"An armored warhorse has an AC based on the type of barding worn (see the Player's Handbook for more information on barding). The horse's AC includes its Dexterity modifier, where applicable. Barding doesn't alter the horse's challenge rating.",
+						"一匹著甲的戰馬有著基於它所穿戴護馬鎧甲類型的AC（更多資訊請參見《玩家手冊》的「護馬鎧甲」）。馬的AC包含其可應用的敏捷調整值。護馬鎧甲並不會影響馬匹的挑戰等級。",
 						{
 							"type": "table",
 							"colLabels": [
@@ -58259,37 +58249,37 @@
 								"Barding"
 							],
 							"colStyles": [
-								"col-6 text-center",
-								"col-6 text-center"
+								"col-6",
+								"col-6"
 							],
 							"rows": [
 								[
 									"12",
-									"{@item Leather barding|phb|Leather}"
+									"皮甲"
 								],
 								[
 									"13",
-									"{@item Studded leather barding|phb|Studded leather}"
+									"鑲釘皮甲"
 								],
 								[
 									"14",
-									"{@item Ring mail barding|phb|Ring mail}"
+									"環甲"
 								],
 								[
 									"15",
-									"{@item Scale mail barding|phb|Scale mail}"
+									"鱗甲"
 								],
 								[
 									"16",
-									"{@item Chain mail barding|phb|Chain mail}"
+									"鎖子甲"
 								],
 								[
 									"17",
-									"{@item Splint barding|phb|Splint}"
+									"條板甲"
 								],
 								[
 									"18",
-									"{@item Plate barding|phb|Plate}"
+									"板甲"
 								]
 							]
 						}
@@ -58887,9 +58877,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Nonhuman Lycanthropes",
+					"name": "非人類獸化者",
 					"entries": [
-						"The statistics presented in this section assume a base creature of human. However, you can also use the statistics to represent nonhuman lycanthropes, adding verisimilitude by allowing a nonhuman lycanthrope to retain one or more of its humanoid racial traits. For example, an elf werewolf might have the Fey Ancestry trait."
+						"這個欄目中所提供的數據是以人類做為獸化症的基礎生物。然而，你也可以使用這個數據以呈現非人類獸化者，並藉由讓非人類獸化者保留一個或多個它的類人屬性特質以添加真實感。舉例來說，一名精靈狼人可能會保有「精類血統特性」。"
 					]
 				}
 			],
@@ -59058,9 +59048,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Nonhuman Lycanthropes",
+					"name": "非人類獸化者",
 					"entries": [
-						"The statistics presented in this section assume a base creature of human. However, you can also use the statistics to represent nonhuman lycanthropes, adding verisimilitude by allowing a nonhuman lycanthrope to retain one or more of its humanoid racial traits. For example, an elf werewolf might have the Fey Ancestry trait."
+						"這個欄目中所提供的數據是以人類做為獸化症的基礎生物。然而，你也可以使用這個數據以呈現非人類獸化者，並藉由讓非人類獸化者保留一個或多個它的類人屬性特質以添加真實感。舉例來說，一名精靈狼人可能會保有「精類血統特性」。"
 					]
 				}
 			],
@@ -59226,9 +59216,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Nonhuman Lycanthropes",
+					"name": "非人類獸化者",
 					"entries": [
-						"The statistics presented in this section assume a base creature of human. However, you can also use the statistics to represent nonhuman lycanthropes, adding verisimilitude by allowing a nonhuman lycanthrope to retain one or more of its humanoid racial traits. For example, an elf werewolf might have the Fey Ancestry trait."
+						"這個欄目中所提供的數據是以人類做為獸化症的基礎生物。然而，你也可以使用這個數據以呈現非人類獸化者，並藉由讓非人類獸化者保留一個或多個它的類人屬性特質以添加真實感。舉例來說，一名精靈狼人可能會保有「精類血統特性」。"
 					]
 				}
 			],
@@ -59390,9 +59380,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Nonhuman Lycanthropes",
+					"name": "非人類獸化者",
 					"entries": [
-						"The statistics presented in this section assume a base creature of human. However, you can also use the statistics to represent nonhuman lycanthropes, adding verisimilitude by allowing a nonhuman lycanthrope to retain one or more of its humanoid racial traits. For example, an elf werewolf might have the Fey Ancestry trait."
+						"這個欄目中所提供的數據是以人類做為獸化症的基礎生物。然而，你也可以使用這個數據以呈現非人類獸化者，並藉由讓非人類獸化者保留一個或多個它的類人屬性特質以添加真實感。舉例來說，一名精靈狼人可能會保有「精類血統特性」。"
 					]
 				}
 			],
@@ -59579,9 +59569,9 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Nonhuman Lycanthropes",
+					"name": "非人類獸化者",
 					"entries": [
-						"The statistics presented in this section assume a base creature of human. However, you can also use the statistics to represent nonhuman lycanthropes, adding verisimilitude by allowing a nonhuman lycanthrope to retain one or more of its humanoid racial traits. For example, an elf werewolf might have the Fey Ancestry trait."
+						"這個欄目中所提供的數據是以人類做為獸化症的基礎生物。然而，你也可以使用這個數據以呈現非人類獸化者，並藉由讓非人類獸化者保留一個或多個它的類人屬性特質以添加真實感。舉例來說，一名精靈狼人可能會保有「精類血統特性」。"
 					]
 				}
 			],
@@ -61225,17 +61215,17 @@
 			"cr": "10",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The yochlol's spellcasting ability is Charisma (spell save {@dc 14}). The yochlol can innately cast the following spells, requiring no material components:"
+						"蠟融妖的天生施法屬性為魅力（法術豁免DC 14）。蠟融妖天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell web}"
+						"{@spell 偵測思想}",
+						"{@spell 蛛網術}"
 					],
 					"daily": {
 						"1": [
-							"{@spell dominate person}"
+							"{@spell 支配人類}"
 						]
 					},
 					"ability": "cha"
@@ -61293,11 +61283,11 @@
 			"variant": [
 				{
 					"type": "variant",
-					"name": "Summon Demon (1/Day)",
+					"name": "召喚惡魔 (1/日)",
 					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A yochlol has a {@chance 50|50 percent|50% summoning chance} chance of summoning one yochlol.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+						"該惡魔選擇要召喚什麼，並嘗試進行一次魔法召喚。",
+						"一個蠟融妖有{@chance 50|50％|50％召喚機率}機率召喚出另一個蠟融妖。",
+						"被召喚的惡魔將出現距離它召喚者60呎內的一處未被佔據空間，做為召喚者的盟友行動，且不能再召喚其它惡魔。它會持續存在長達1分鐘，直到它或它的召喚者死亡、或直到召喚者以一個動作解消它。"
 					]
 				}
 			],
@@ -63138,19 +63128,19 @@
 			"cr": "7",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Abomination Form Only)",
+					"name": "天生施法 (限定憎惡蛇人型態)",
 					"headerEntries": [
-						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 15}). The yuan-ti can innately cast the following spells, requiring no material components:"
+						"蛇人的天生施法屬性為魅力（法術豁免DC 15）。蛇人天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)"
+						"{@spell 化獸為友} (限蛇類)"
 					],
 					"daily": {
 						"1": [
-							"{@spell fear}"
+							"{@spell 恐懼術}"
 						],
 						"3": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -63326,16 +63316,16 @@
 			"cr": "3",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"name": "天生施法 (限定蛇人型態)",
 					"headerEntries": [
-						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
+						"蛇人的天生施法屬性為魅力（法術豁免DC 13）。蛇人天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)"
+						"{@spell 化獸為友} (限蛇類)"
 					],
 					"daily": {
 						"3": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -63523,16 +63513,16 @@
 			"cr": "3",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"name": "天生施法 (限定蛇人型態)",
 					"headerEntries": [
-						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
+						"蛇人的天生施法屬性為魅力（法術豁免DC 13）。蛇人天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)"
+						"{@spell 化獸為友} (限蛇類)"
 					],
 					"daily": {
 						"3": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -63704,16 +63694,16 @@
 			"cr": "3",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"name": "天生施法 (限定蛇人型態)",
 					"headerEntries": [
-						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}). The yuan-ti can innately cast the following spells, requiring no material components:"
+						"蛇人的天生施法屬性為魅力（法術豁免DC 13）。蛇人天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)"
+						"{@spell 化獸為友} (限蛇類)"
 					],
 					"daily": {
 						"3": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -63918,17 +63908,17 @@
 			"cr": "1",
 			"spellcasting": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "天生施法",
 					"headerEntries": [
-						"The yuan-ti's spellcasting ability is Charisma (spell save {@dc 12}). The yuan-ti can innately cast the following spells, requiring no material components:"
+						"蛇人的天生施法屬性為魅力（法術豁免DC 12）。蛇人天生就可以施展以下法術，且無需任何材料構材："
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)"
+						"{@spell 化獸為友}（限蛇類）"
 					],
 					"daily": {
 						"3e": [
-							"{@spell poison spray}",
-							"{@spell suggestion}"
+							"{@spell 毒氣噴灑}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"

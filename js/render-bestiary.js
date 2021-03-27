@@ -83,7 +83,7 @@ class RenderBestiary {
 
 			const pageTrInner = Renderer.utils.getSourceAndPageTrHtml(srcCpy);
 			if (mon.environment && mon.environment.length) {
-				return [pageTrInner, `<div class="mb-1 mt-2"><b>環境：</b> ${mon.environment.sort(SortUtil.ascSortLower).map(it => it.toTitleCase()).join(", ")}</div>`];
+				return [pageTrInner, `<div class="mb-1 mt-2"><b>環境：</b> ${mon.environment.sort(SortUtil.ascSortLower).map(it => Parser.EnvironmentToDisplay(it)).join(", ")}</div>`];
 			} else {
 				return [pageTrInner];
 			}
@@ -147,7 +147,7 @@ class RenderBestiary {
 		<tr class="mythic"><td colspan="6"><span class="name"></span> <span>${Renderer.monster.getMythicActionIntro(mon)}</span></td></tr>
 		${RenderBestiary._getRenderedSection("mythic", mon.mythic, 1)}` : ""}
 
-		${legGroup && legGroup.lairActions ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">Lair Actions</span></td></tr>
+		${legGroup && legGroup.lairActions ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">巢穴動作</span></td></tr>
 		${RenderBestiary._getRenderedSection("lairaction", legGroup.lairActions, -1)}` : ""}
 		${legGroup && legGroup.regionalEffects ? `<tr><td colspan="6" class="mon__stat-header-underline"><span class="mon__sect-header-inner">區域效應</span></td></tr>
 		${RenderBestiary._getRenderedSection("regionaleffect", legGroup.regionalEffects, -1)}` : ""}
