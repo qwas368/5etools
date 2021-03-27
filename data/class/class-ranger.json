@@ -3269,7 +3269,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 1st-level ranger feature (replaces Favored Enemy)}",
-				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the {@spell hunter's mark} spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot and without requiring concentration\u2014a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the {@spell 獵人印記} spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot and without requiring concentration\u2014a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
 				"When you gain the Spellcasting feature at 2nd level, hunter's mark doesn't count against the number of ranger spells you know."
 			]
 		},
@@ -3533,23 +3533,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell speak with animals}"
+							"{@spell 動物交談術}"
 						],
 						[
 							"5th",
-							"{@spell beast sense}"
+							"{@spell 野獸知覺}"
 						],
 						[
 							"9th",
-							"{@spell speak with plants}"
+							"{@spell 植物交談術}"
 						],
 						[
 							"13th",
-							"{@spell locate creature}"
+							"{@spell 生物定位術}"
 						],
 						[
 							"17th",
-							"{@spell commune with nature}"
+							"{@spell 問道自然}"
 						]
 					]
 				},
@@ -3581,23 +3581,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell detect magic}, {@spell speak with animals}"
+							"{@spell 偵測魔法}, {@spell 動物交談術}"
 						],
 						[
 							"5th",
-							"{@spell beast sense}, {@spell locate animals or plants}"
+							"{@spell 野獸知覺}, {@spell 動植物定位術}"
 						],
 						[
 							"9th",
-							"{@spell speak with plants}"
+							"{@spell 植物交談術}"
 						],
 						[
 							"13th",
-							"{@spell locate creature}"
+							"{@spell 生物定位術}"
 						],
 						[
 							"17th",
-							"{@spell commune with nature}"
+							"{@spell 問道自然}"
 						]
 					]
 				},
@@ -4120,7 +4120,7 @@
 			"entries": [
 				"{@i 1st-level ranger feature (replaces Favored Enemy)}",
 				"{@note Note that this feature is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Spell-less Ranger feature.}",
-				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the {@spell hunter's mark} spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot and without requiring concentration\u2014a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the {@spell 獵人印記} spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot and without requiring concentration\u2014a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
 				"When you gain the Spellcasting feature at 2nd level, hunter's mark doesn't count against the number of ranger spells you know."
 			]
 		},
@@ -4348,23 +4348,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell speak with animals}"
+							"{@spell 動物交談術}"
 						],
 						[
 							"5th",
-							"{@spell beast sense}"
+							"{@spell 野獸知覺}"
 						],
 						[
 							"9th",
-							"{@spell speak with plants}"
+							"{@spell 植物交談術}"
 						],
 						[
 							"13th",
-							"{@spell locate creature}"
+							"{@spell 生物定位術}"
 						],
 						[
 							"17th",
-							"{@spell commune with nature}"
+							"{@spell 問道自然}"
 						]
 					]
 				},
@@ -4397,23 +4397,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell detect magic}, {@spell speak with animals}"
+							"{@spell 偵測魔法}, {@spell 動物交談術}"
 						],
 						[
 							"5th",
-							"{@spell beast sense}, {@spell locate animals or plants}"
+							"{@spell 野獸知覺}, {@spell 動植物定位術}"
 						],
 						[
 							"9th",
-							"{@spell speak with plants}"
+							"{@spell 植物交談術}"
 						],
 						[
 							"13th",
-							"{@spell locate creature}"
+							"{@spell 生物定位術}"
 						],
 						[
 							"17th",
-							"{@spell commune with nature}"
+							"{@spell 問道自然}"
 						]
 					]
 				},
@@ -5469,7 +5469,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Beast Master feature (enhances Ranger's Companion)}",
-				"While wandering the wilds, a ranger encounters many sorts of animals, some of which the ranger might befriend. This friendship can arise from successful use of the {@skill Animal Handling} skill or the {@spell animal friendship} spell. If the resulting bond is strong enough, the animal might join the ranger on adventures.",
+				"While wandering the wilds, a ranger encounters many sorts of animals, some of which the ranger might befriend. This friendship can arise from successful use of the {@skill Animal Handling} skill or the {@spell 化獸為友} spell. If the resulting bond is strong enough, the animal might join the ranger on adventures.",
 				"A ranger who has the Beast Master archetype can form an even stronger bond, feeling almost like a sibling to an animal. A special type of beast awaits a Beast Master in the wilds, a creature whose lineage stretches back to the beginnings of the world: a primal beast known as a {@creature Beast of the Air|UAClassFeatureVariants} or a {@creature Beast of the Earth|UAClassFeatureVariants}. Such a creature seeks out the type of companionship that a Beast Master offers, ready for the two of them to battle the imbalances in the natural world.",
 				"The primal beast is a special creature that a Beast Master can choose for the Ranger's Companion feature. When choosing such a creature, you decide whether it is a Beast of the Air or the Earth, and you determine its appearance. Stories describe primal beasts that mystically change form to align with the spirit of their companion.",
 				"When a primal beast is met apart from a Beast Master, the creature takes the form a regular beast of challenge rating 1/4 or lower, as determined by the DM."
@@ -5931,23 +5931,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell charm person}"
+							"{@spell 魅惑人類}"
 						],
 						[
 							"5th",
-							"{@spell misty step}"
+							"{@spell 迷蹤步}"
 						],
 						[
 							"9th",
-							"{@spell dispel magic}"
+							"{@spell 解除魔法}"
 						],
 						[
 							"13th",
-							"{@spell dimension door}"
+							"{@spell 次元門}"
 						],
 						[
 							"17th",
-							"{@spell mislead}"
+							"{@spell 假象術}"
 						]
 					]
 				},
@@ -6052,7 +6052,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Fey Wanderer feature}",
-				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell misty step} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell 迷蹤步} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
 				"In addition, whenever you cast {@i misty step}, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
 			]
 		},
@@ -6133,7 +6133,7 @@
 					"type": "inset",
 					"name": "It's Your Swarm",
 					"entries": [
-						"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the {@spell arcane eye} spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3.",
+						"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the {@spell 祕法眼} spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3.",
 						"Also, remember that the swarm's appearance is yours to customize, and don't feel confined to a single appearance. Perhaps the spirits' look changes with the ranger's mood or with the seasons. You decide!"
 					]
 				}
@@ -6151,7 +6151,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Swarmkeeper feature}",
-				"You learn the {@spell mage hand} cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.",
+				"You learn the {@spell 法師之手} cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.",
 				"You also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
 				{
 					"type": "table",
@@ -6167,23 +6167,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell faerie fire}"
+							"{@spell 妖火術}"
 						],
 						[
 							"5th",
-							"{@spell web}"
+							"{@spell 蛛網術}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}"
+							"{@spell 氣化形體}"
 						],
 						[
 							"13th",
-							"{@spell arcane eye}"
+							"{@spell 祕法眼}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -6367,23 +6367,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell charm person}"
+							"{@spell 魅惑人類}"
 						],
 						[
 							"5th",
-							"{@spell misty step}"
+							"{@spell 迷蹤步}"
 						],
 						[
 							"9th",
-							"{@spell dispel magic}"
+							"{@spell 解除魔法}"
 						],
 						[
 							"13th",
-							"{@spell banishment}"
+							"{@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell mislead}"
+							"{@spell 假象術}"
 						]
 					]
 				}
@@ -6519,7 +6519,7 @@
 					"type": "list",
 					"items": [
 						"If you can't already, you learn to speak, read, and write {@language Draconic}.",
-						"You learn the {@spell thaumaturgy} cantrip, which is a ranger spell for you."
+						"You learn the {@spell 奇術} cantrip, which is a ranger spell for you."
 					]
 				}
 			]
@@ -6670,23 +6670,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell protection from evil and good}"
+							"{@spell 防護善惡}"
 						],
 						[
 							"5th",
-							"{@spell zone of truth}"
+							"{@spell 誠實之域}"
 						],
 						[
 							"9th",
-							"{@spell magic circle}"
+							"{@spell 防護法陣}"
 						],
 						[
 							"13th",
-							"{@spell banishment}"
+							"{@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell planar binding}"
+							"{@spell 異界誓縛}"
 						]
 					]
 				}
@@ -6786,7 +6786,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Swarmkeeper feature}",
-				"You learn the {@spell mage hand} cantrip if you don't already know it. When you cast it, the hand takes the form of swarming nature spirits. You also learn an additional spell when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. These spells count as ranger spells for you, but don't count against the number of ranger spells you know.",
+				"You learn the {@spell 法師之手} cantrip if you don't already know it. When you cast it, the hand takes the form of swarming nature spirits. You also learn an additional spell when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. These spells count as ranger spells for you, but don't count against the number of ranger spells you know.",
 				{
 					"type": "table",
 					"caption": "Swarmkeeper Spells",
@@ -6801,23 +6801,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell faerie fire}"
+							"{@spell 妖火術}"
 						],
 						[
 							"5th",
-							"{@spell web}"
+							"{@spell 蛛網術}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}"
+							"{@spell 氣化形體}"
 						],
 						[
 							"13th",
-							"{@spell giant insect}"
+							"{@spell 巨蟲術}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -6942,23 +6942,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell disguise self}"
+							"{@spell 易容術}"
 						],
 						[
 							"5th",
-							"{@spell rope trick}"
+							"{@spell 通天繩}"
 						],
 						[
 							"9th",
-							"{@spell glyph of warding}"
+							"{@spell 守衛銘文}"
 						],
 						[
 							"13th",
-							"{@spell greater invisibility}"
+							"{@spell 高等隱形術}"
 						],
 						[
 							"17th",
-							"{@spell seeming}"
+							"{@spell 偽裝術}"
 						]
 					]
 				}
@@ -7075,23 +7075,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell protection from evil and good}"
+							"{@spell 防護善惡}"
 						],
 						[
 							"5th",
-							"{@spell alter self}"
+							"{@spell 變造自身}"
 						],
 						[
 							"9th",
-							"{@spell protection from energy}"
+							"{@spell 防護能量}"
 						],
 						[
 							"13th",
-							"{@spell banishment}"
+							"{@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell teleportation circle}"
+							"{@spell 傳送法陣}"
 						]
 					]
 				}
@@ -7140,7 +7140,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action on your turn, you can cast the {@spell etherealness} spell with this feature, but the spell ends at the end of the current turn. Once you use this feature, you can't use it again until you finish a short or long rest."
+				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action on your turn, you can cast the {@spell 跨入乙太界} spell with this feature, but the spell ends at the end of the current turn. Once you use this feature, you can't use it again until you finish a short or long rest."
 			]
 		},
 		{
@@ -7226,23 +7226,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell entangle}"
+							"{@spell 糾纏術}"
 						],
 						[
 							"5th",
-							"{@spell enhance ability}"
+							"{@spell 強化屬性}"
 						],
 						[
 							"9th",
-							"{@spell conjure animals}"
+							"{@spell 召喚動物}"
 						],
 						[
 							"13th",
-							"{@spell giant insect}"
+							"{@spell 巨蟲術}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -7847,7 +7847,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Beast Master feature (enhances Ranger's Companion)}",
-				"While wandering the wilds, a ranger encounters many sorts of animals, some of which the ranger might befriend. This friendship can arise from successful use of the {@skill Animal Handling} skill or the {@spell animal friendship} spell. If the resulting bond is strong enough, the animal might join the ranger on adventures.",
+				"While wandering the wilds, a ranger encounters many sorts of animals, some of which the ranger might befriend. This friendship can arise from successful use of the {@skill Animal Handling} skill or the {@spell 化獸為友} spell. If the resulting bond is strong enough, the animal might join the ranger on adventures.",
 				"A ranger who has the Beast Master archetype can form an even stronger bond, feeling almost like a sibling to an animal. A special type of beast awaits a Beast Master in the wilds, a creature whose lineage stretches back to the beginnings of the world: a primal beast known as a {@creature Beast of the Air|UAClassFeatureVariants} or a {@creature Beast of the Earth|UAClassFeatureVariants}. Such a creature seeks out the type of companionship that a Beast Master offers, ready for the two of them to battle the imbalances in the natural world.",
 				"The primal beast is a special creature that a Beast Master can choose for the Ranger's Companion feature. When choosing such a creature, you decide whether it is a Beast of the Air or the Earth, and you determine its appearance. Stories describe primal beasts that mystically change form to align with the spirit of their companion.",
 				"When a primal beast is met apart from a Beast Master, the creature takes the form a regular beast of challenge rating 1/4 or lower, as determined by the DM."
@@ -8308,23 +8308,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell charm person}"
+							"{@spell 魅惑人類}"
 						],
 						[
 							"5th",
-							"{@spell misty step}"
+							"{@spell 迷蹤步}"
 						],
 						[
 							"9th",
-							"{@spell dispel magic}"
+							"{@spell 解除魔法}"
 						],
 						[
 							"13th",
-							"{@spell dimension door}"
+							"{@spell 次元門}"
 						],
 						[
 							"17th",
-							"{@spell mislead}"
+							"{@spell 假象術}"
 						]
 					]
 				},
@@ -8429,7 +8429,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Fey Wanderer feature}",
-				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell misty step} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell 迷蹤步} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
 				"In addition, whenever you cast {@i misty step}, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
 			]
 		},
@@ -8510,7 +8510,7 @@
 					"type": "inset",
 					"name": "It's Your Swarm",
 					"entries": [
-						"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the {@spell arcane eye} spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3.",
+						"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the {@spell 祕法眼} spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3.",
 						"Also, remember that the swarm's appearance is yours to customize, and don't feel confined to a single appearance. Perhaps the spirits' look changes with the ranger's mood or with the seasons. You decide!"
 					]
 				}
@@ -8528,7 +8528,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Swarmkeeper feature}",
-				"You learn the {@spell mage hand} cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.",
+				"You learn the {@spell 法師之手} cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.",
 				"You also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
 				{
 					"type": "table",
@@ -8544,23 +8544,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell faerie fire}"
+							"{@spell 妖火術}"
 						],
 						[
 							"5th",
-							"{@spell web}"
+							"{@spell 蛛網術}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}"
+							"{@spell 氣化形體}"
 						],
 						[
 							"13th",
-							"{@spell arcane eye}"
+							"{@spell 祕法眼}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -8845,7 +8845,7 @@
 					"type": "list",
 					"items": [
 						"If you can't already, you learn to speak, read, and write {@language Draconic}.",
-						"You learn the {@spell thaumaturgy} cantrip, which is a ranger spell for you."
+						"You learn the {@spell 奇術} cantrip, which is a ranger spell for you."
 					]
 				}
 			]
@@ -9567,7 +9567,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the {@spell etherealness} spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.",
+				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the {@spell 跨入乙太界} spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."
 			]
 		},
@@ -9868,23 +9868,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell charm person}"
+							"{@spell 魅惑人類}"
 						],
 						[
 							"5th",
-							"{@spell misty step}"
+							"{@spell 迷蹤步}"
 						],
 						[
 							"9th",
-							"{@spell dispel magic}"
+							"{@spell 解除魔法}"
 						],
 						[
 							"13th",
-							"{@spell dimension door}"
+							"{@spell 次元門}"
 						],
 						[
 							"17th",
-							"{@spell mislead}"
+							"{@spell 假象術}"
 						]
 					]
 				},
@@ -10004,7 +10004,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Fey Wanderer feature}",
-				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell misty step} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell 迷蹤步} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
 				"In addition, whenever you cast {@i misty step}, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
 			]
 		},
@@ -10086,7 +10086,7 @@
 					"type": "inset",
 					"name": "It's Your Swarm",
 					"entries": [
-						"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the {@spell arcane eye} spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3.",
+						"A Swarmkeeper's swarm and spells are reflections of the character's bond with nature spirits. Take the opportunity to describe the swarm and the ranger's magic in play. For example, when your ranger casts gaseous form, they might appear to melt into the swarm, instead of a cloud of mist, or the {@spell 祕法眼} spell could create an extension of your swarm that spies for you. Such descriptions don't change the effects of spells, but they are an exciting opportunity to explore your character's narrative through their class abilities. For more guidance on customizing spells, see the \"Personalizing Spells\" section in chapter 3.",
 						"Also, remember that the swarm's appearance is yours to customize, and don't feel confined to a single appearance. Perhaps the spirits' look changes with the ranger's mood or with the seasons. You decide!"
 					]
 				}
@@ -10104,7 +10104,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Swarmkeeper feature}",
-				"You learn the {@spell mage hand} cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.",
+				"You learn the {@spell 法師之手} cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.",
 				"You also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
 				{
 					"type": "table",
@@ -10120,23 +10120,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell faerie fire}"
+							"{@spell 妖火術}"
 						],
 						[
 							"5th",
-							"{@spell web}"
+							"{@spell 蛛網術}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}"
+							"{@spell 氣化形體}"
 						],
 						[
 							"13th",
-							"{@spell arcane eye}"
+							"{@spell 祕法眼}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -10336,23 +10336,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell charm person}"
+							"{@spell 魅惑人類}"
 						],
 						[
 							"5th",
-							"{@spell misty step}"
+							"{@spell 迷蹤步}"
 						],
 						[
 							"9th",
-							"{@spell dispel magic}"
+							"{@spell 解除魔法}"
 						],
 						[
 							"13th",
-							"{@spell banishment}"
+							"{@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell mislead}"
+							"{@spell 假象術}"
 						]
 					]
 				}
@@ -10505,7 +10505,7 @@
 					"type": "list",
 					"items": [
 						"If you can't already, you learn to speak, read, and write {@language Draconic}.",
-						"You learn the {@spell thaumaturgy} cantrip, which is a ranger spell for you."
+						"You learn the {@spell 奇術} cantrip, which is a ranger spell for you."
 					]
 				}
 			]
@@ -10672,23 +10672,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell protection from evil and good}"
+							"{@spell 防護善惡}"
 						],
 						[
 							"5th",
-							"{@spell zone of truth}"
+							"{@spell 誠實之域}"
 						],
 						[
 							"9th",
-							"{@spell magic circle}"
+							"{@spell 防護法陣}"
 						],
 						[
 							"13th",
-							"{@spell banishment}"
+							"{@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell planar binding}"
+							"{@spell 異界誓縛}"
 						]
 					]
 				}
@@ -10819,23 +10819,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell faerie fire}"
+							"{@spell 妖火術}"
 						],
 						[
 							"5th",
-							"{@spell web}"
+							"{@spell 蛛網術}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}"
+							"{@spell 氣化形體}"
 						],
 						[
 							"13th",
-							"{@spell giant insect}"
+							"{@spell 巨蟲術}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -10981,23 +10981,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell protection from evil and good}"
+							"{@spell 防護善惡}"
 						],
 						[
 							"5th",
-							"{@spell alter self}"
+							"{@spell 變造自身}"
 						],
 						[
 							"9th",
-							"{@spell protection from energy}"
+							"{@spell 防護能量}"
 						],
 						[
 							"13th",
-							"{@spell banishment}"
+							"{@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell teleportation circle}"
+							"{@spell 傳送法陣}"
 						]
 					]
 				}
@@ -11061,7 +11061,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action on your turn, you can cast the {@spell etherealness} spell with this feature, but the spell ends at the end of the current turn. Once you use this feature, you can't use it again until you finish a short or long rest."
+				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action on your turn, you can cast the {@spell 跨入乙太界} spell with this feature, but the spell ends at the end of the current turn. Once you use this feature, you can't use it again until you finish a short or long rest."
 			]
 		},
 		{
@@ -11148,23 +11148,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell entangle}"
+							"{@spell 糾纏術}"
 						],
 						[
 							"5th",
-							"{@spell enhance ability}"
+							"{@spell 強化屬性}"
 						],
 						[
 							"9th",
-							"{@spell conjure animals}"
+							"{@spell 召喚動物}"
 						],
 						[
 							"13th",
-							"{@spell giant insect}"
+							"{@spell 巨蟲術}"
 						],
 						[
 							"17th",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						]
 					]
 				}
@@ -12238,7 +12238,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the {@spell etherealness} spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.",
+				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the {@spell 跨入乙太界} spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."
 			]
 		},

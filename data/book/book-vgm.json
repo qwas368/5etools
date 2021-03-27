@@ -984,57 +984,57 @@
 										{
 											"type": "item",
 											"name": "Antimagic Cone:",
-											"entry": "{@spell mirage arcane}, {@spell power word stun} (affecting the weakest non-stunned target in the cone each round)"
+											"entry": "{@spell 海市蜃樓}, {@spell 律令震懾} (affecting the weakest non-stunned target in the cone each round)"
 										},
 										{
 											"type": "item",
 											"name": "Charm Ray:",
-											"entry": "{@spell banishment} (1 minute), {@spell confusion} (1 minute)"
+											"entry": "{@spell 放逐術} (1 minute), {@spell 困惑術} (1 minute)"
 										},
 										{
 											"type": "item",
 											"name": "Death Ray:",
-											"entry": "{@spell circle of death} (10-foot-radius sphere; {@dice 4d6} necrotic damage to all creatures in the area), {@spell feeblemind}"
+											"entry": "{@spell 死亡之環} (10-foot-radius sphere; {@dice 4d6} necrotic damage to all creatures in the area), {@spell 弱智術}"
 										},
 										{
 											"type": "item",
 											"name": "Disintegration Ray:",
-											"entry": "{@spell chain lightning} (primary target takes {@dice 6d8} lightning damage; two secondary targets within 30 feet of the primary target take {@dice 3d8} lightning damage each), {@spell eyebite} (sickened effect; 1 minute)"
+											"entry": "{@spell 連環閃電} (primary target takes {@dice 6d8} lightning damage; two secondary targets within 30 feet of the primary target take {@dice 3d8} lightning damage each), {@spell 攝心目光} (sickened effect; 1 minute)"
 										},
 										{
 											"type": "item",
 											"name": "Enervation Ray:",
-											"entry": "{@spell create undead} (usable regardless of the time of day), {@spell polymorph} (1 minute)"
+											"entry": "{@spell 創造不死生物} (usable regardless of the time of day), {@spell 變形術} (1 minute)"
 										},
 										{
 											"type": "item",
 											"name": "Fear Ray:",
-											"entry": "{@spell gaseous form} (self or willing creature only), {@spell moonbeam}"
+											"entry": "{@spell 氣化形體} (self or willing creature only), {@spell 月華之光}"
 										},
 										{
 											"type": "item",
 											"name": "Paralyzing Ray:",
-											"entry": "{@spell modify memory}, {@spell silence} (1 minute)"
+											"entry": "{@spell 修改記憶}, {@spell 沉默術} (1 minute)"
 										},
 										{
 											"type": "item",
 											"name": "Petrification Ray:",
-											"entry": "{@spell Otto's irresistible dance} (1 minute), {@spell wall of ice} (1 minute; one 10-foot-square panel)"
+											"entry": "{@spell 奧圖狂舞術} (1 minute), {@spell 冰牆術} (1 minute; one 10-foot-square panel)"
 										},
 										{
 											"type": "item",
 											"name": "Sleep Ray:",
-											"entry": "{@spell blindness/deafness}, {@spell misty step} (self or willing creature only) "
+											"entry": "{@spell 目盲/耳聾術}, {@spell 迷蹤步} (self or willing creature only) "
 										},
 										{
 											"type": "item",
 											"name": "Slowing Ray:",
-											"entry": "{@spell bestow curse} (1 minute), {@spell sleet storm} (one 10-foot-cube)"
+											"entry": "{@spell 降咒} (1 minute), {@spell 雪雨暴} (one 10-foot-cube)"
 										},
 										{
 											"type": "item",
 											"name": "Telekinesis Ray:",
-											"entry": "{@spell geas} (1 hour), {@spell wall of force} (1 minute; one 10-foot-square panel)"
+											"entry": "{@spell 指使術} (1 hour), {@spell 力牆術} (1 minute; one 10-foot-square panel)"
 										}
 									]
 								}
@@ -3657,7 +3657,7 @@
 									"entries": [
 										"Bugbears have no use for priests or shamans. No one needs to tell them what their gods want. If the brother gods are angry with them, they let the bugbears know with bolts of lightning (Hruggek) or by striking them blind or dead (Grankhul). Bugbears worship their gods simply by preying on other creatures, using no other sort of ceremony to show obeisance-with one exception.",
 										"In an act of worship that also sometimes attracts favorable attention from their gods, bugbears sever the heads of defeated foes, cut away or stitch open the eyelids, and leave the mouths hanging open. The heads are then placed on spikes or hung from cords around a bugbear den. The heads themselves are trophies that honor Hruggek, and their ever-staring eyes are an homage to sleepless Grankhul.",
-										"The heads of leaders and mighty opponents are particularly sacred, and offering up such a trophy can provide a bugbear gang with a special boon. A gang that gains the favor of Hruggek and Grankhul in this way might find that the head will emit a shout when an enemy gets too close (in the fashion of an alarm spell). Sometimes the heads of people who have information the bugbears need speak their secrets amid blubbered pleas for mercy (as with the {@spell speak with dead} spell)."
+										"The heads of leaders and mighty opponents are particularly sacred, and offering up such a trophy can provide a bugbear gang with a special boon. A gang that gains the favor of Hruggek and Grankhul in this way might find that the head will emit a shout when an enemy gets too close (in the fashion of an alarm spell). Sometimes the heads of people who have information the bugbears need speak their secrets amid blubbered pleas for mercy (as with the {@spell 死者交談術} spell)."
 									],
 									"id": "0aa"
 								}
@@ -4492,7 +4492,7 @@
 							"entries": [
 								"Over the course of a seemingly endless lifetime, a hag typically discovers or creates several unusual ways to use magic. The weird magic that hags can call upon comes in a number of forms and with various means of activation. Even those who have read scholarly books about hag lore can't predict what a particular hag might have up her sleeve.",
 								"A grandmother or some other hag of great age and renown might know unique rituals that can temporarily or permanently alter or transform a creature, bring back the dead for a limited time, rewrite memories, or siphon emotions. At the other end of the spectrum, even a hag without lofty status is likely to have strange, single-use items that don't emulate common spells or even follow the normal rules of magic. For inspiration in devising the effects of such weird items, see \"Charms\" in chapter 7 of the {@i Dungeon Master's Guide.}",
-								"If you want a hag to use a weird object of this sort in a combat situation, provide her with an item that produces a CR-appropriate spell effect when the hag manipulates or activates it. The effect might be a benefit to herself or an attack against her enemies. For example, a green hag (CR 3) might smash an ornate hand mirror, producing a cloud of glass shards that damages creatures like {@spell cloud of daggers} (a 2nd-level spell). She might instead uncork a bottle of wasps that surround her and stitch up her wounds with their stingers, healing her as {@spell cure wounds} (cast as a 2nd-level spell). Or she could take a mummified toad from her pocket and throw it into her cauldron, which immediately spews out inky blackness equivalent to {@spell darkness} (a 2nd-level spell).",
+								"If you want a hag to use a weird object of this sort in a combat situation, provide her with an item that produces a CR-appropriate spell effect when the hag manipulates or activates it. The effect might be a benefit to herself or an attack against her enemies. For example, a green hag (CR 3) might smash an ornate hand mirror, producing a cloud of glass shards that damages creatures like {@spell 匕首之雲} (a 2nd-level spell). She might instead uncork a bottle of wasps that surround her and stitch up her wounds with their stingers, healing her as {@spell 治療傷勢} (cast as a 2nd-level spell). Or she could take a mummified toad from her pocket and throw it into her cauldron, which immediately spews out inky blackness equivalent to {@spell 黑暗術} (a 2nd-level spell).",
 								"A hag carefully shepherds her use of weird magic because the items in her repertoire are often impossible to duplicate or replace. To reflect this fact, a hag should be able to use weird magic only once or twice per encounter in her lair, or only once per encounter if she is elsewhere. A hag who is expecting a fight might be better prepared and able (or willing) to use weird magic one additional time per encounter.",
 								"If a hag is faced with mortal peril, all thoughts of conserving her resources vanish-she will use any weird magic at her disposal if it helps her stay alive. After all, a hag that's not dead has a virtually limitless lifetime to replace what was spent. No matter how hard it was to acquire that jar of death slugs, or that book on how to invoke the razor wind, or the runestone containing the three syllables for crystallizing blood, it is better to use such things than to risk death by not doing so."
 							],
@@ -4609,12 +4609,12 @@
 													"type": "list",
 													"style": "list-no-bullets",
 													"items": [
-														"1st level (4 slots): {@spell false life}, {@spell inflict wounds}",
-														"2nd level (3 slots): {@spell gentle repose}, {@spell ray of enfeeblement}",
-														"3rd level (3 slots): {@spell animate dead} {@spell revivify}, {@spell speak with dead}",
-														"4th level (3 slots): {@spell blight}, {@spell death ward}",
-														"5th level (2 slots): {@spell contagion}, {@spell raise dead}",
-														"6th level (1 slot): {@spell circle of death}"
+														"1st level (4 slots): {@spell 摹造生命}, {@spell 造成傷勢}",
+														"2nd level (3 slots): {@spell 遺體防腐}, {@spell 衰弱射線}",
+														"3rd level (3 slots): {@spell 活化死屍} {@spell 回生術}, {@spell 死者交談術}",
+														"4th level (3 slots): {@spell 枯萎術}, {@spell 防死護咒}",
+														"5th level (2 slots): {@spell 疫病術}, {@spell 喚醒死者}",
+														"6th level (1 slot): {@spell 死亡之環}"
 													]
 												}
 											],
@@ -4630,12 +4630,12 @@
 													"type": "list",
 													"style": "list-no-bullets",
 													"items": [
-														"1st level (4 slots): {@spell entangle}, {@spell speak with animals}",
-														"2nd level (3 slots): {@spell flaming sphere}, {@spell moonbeam}, {@spell spike growth}",
-														"3rd level (3 slots): {@spell call lightning}, {@spell plant growth}",
-														"4th level (3 slots): {@spell dominate beast}, {@spell grasping vine}",
-														"5th level (2 slots): {@spell insect plague}, {@spell tree stride}",
-														"6th level (1 slot): {@spell wall of thorns}"
+														"1st level (4 slots): {@spell 糾纏術}, {@spell 動物交談術}",
+														"2nd level (3 slots): {@spell 熾焰法球}, {@spell 月華之光}, {@spell 荊棘叢生}",
+														"3rd level (3 slots): {@spell 召雷術}, {@spell 植物滋長}",
+														"4th level (3 slots): {@spell 支配野獸}, {@spell 抓攫藤蔓}",
+														"5th level (2 slots): {@spell 疫病蟲群}, {@spell 樹躍術}",
+														"6th level (1 slot): {@spell 棘牆術}"
 													]
 												}
 											],
@@ -4651,12 +4651,12 @@
 													"type": "list",
 													"style": "list-no-bullets",
 													"items": [
-														"1st level (4 slots): {@spell bane}, {@spell bless}",
-														"2nd level (3 slots): {@spell augury}, {@spell detect thoughts}",
-														"3rd level (3 slots): {@spell clairvoyance}, {@spell dispel magic}, {@spell nondetection}",
-														"4th level (3 slots): {@spell arcane eye}, {@spell locate creature}",
-														"5th level (2 slots): {@spell geas}, {@spell legend lore}",
-														"6th level (1 slot): {@spell true seeing}"
+														"1st level (4 slots): {@spell 災禍術}, {@spell 祝福術}",
+														"2nd level (3 slots): {@spell 卜筮}, {@spell 偵測思想}",
+														"3rd level (3 slots): {@spell 銳眼術}, {@spell 解除魔法}, {@spell 迴避偵測}",
+														"4th level (3 slots): {@spell 祕法眼}, {@spell 生物定位術}",
+														"5th level (2 slots): {@spell 指使術}, {@spell 通曉傳奇}",
+														"6th level (1 slot): {@spell 真知術}"
 													]
 												}
 											],
@@ -6063,7 +6063,7 @@
 							"page": 75,
 							"entries": [
 								"The \"writing\" of mind flayers, known as Qualith, isn't as simple as a set of symbols representing sounds or ideas. An inscription in Qualith captures the thoughts of its creator and psionically transmits the thoughts to a mind flayer who later reads the inscription by touching it with its tentacles. Mind flayers write in Qualith by psionically imprinting their messages on nonmagical, nonliving material they grasp or caress with their tentacles. The imprinting causes imperceptible surface changes to the object, and abrasion or degradation of the material can cause the inscription to fade and fail.",
-								"An expression in Qualith is made up of four-line stanzas packed into interlocking blocks, creating complex patterns that are indecipherable by other creatures. Someone that touches a Qualith inscription, however, can receive fragmentary insight into the multilayered thoughts contained within it. A non-illithid that wants to understand a Qualith inscription can make an Intelligence check (DC based on the complexity of the contained thoughts) to try to derive some of the inscription's meaning. Multiple successful attempts might uncover different aspects about the illithid author, its intended meaning, and its intended audience. A failed attempt results in a crushing headache and, in extreme cases, madness. A {@spell comprehend languages} spell provides understanding of the inscription roughly equivalent to what a mind flayer would get from it."
+								"An expression in Qualith is made up of four-line stanzas packed into interlocking blocks, creating complex patterns that are indecipherable by other creatures. Someone that touches a Qualith inscription, however, can receive fragmentary insight into the multilayered thoughts contained within it. A non-illithid that wants to understand a Qualith inscription can make an Intelligence check (DC based on the complexity of the contained thoughts) to try to derive some of the inscription's meaning. Multiple successful attempts might uncover different aspects about the illithid author, its intended meaning, and its intended audience. A failed attempt results in a crushing headache and, in extreme cases, madness. A {@spell 通曉語言} spell provides understanding of the inscription roughly equivalent to what a mind flayer would get from it."
 							],
 							"id": "125"
 						},
@@ -6451,7 +6451,7 @@
 									"page": 81,
 									"entries": [
 										"This carapace-like augmentation encases portions of the wearer's shoulders, neck, and chest. A survival mantle is equivalent to a suit of nonmagical half plate armor and takes just as long to don or doff. It can't be worn with other kinds of armor.",
-										"A creature wearing a survival mantle can breathe normally in any environment (including a vacuum) and has advantage on saving throws against harmful gases (such as those created by a {@spell cloudkill} spell, a {@spell stinking cloud} spell, inhaled poisons, and the breath weapons of some dragons)."
+										"A creature wearing a survival mantle can breathe normally in any environment (including a vacuum) and has advantage on saving throws against harmful gases (such as those created by a {@spell 死雲術} spell, a {@spell 臭雲術} spell, inhaled poisons, and the breath weapons of some dragons)."
 									],
 									"id": "14c"
 								}

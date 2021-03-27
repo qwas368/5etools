@@ -141,14 +141,14 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell sacred flame}"
+								"{@spell 指導術}",
+								"{@spell 聖焰}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell cure wounds}"
+								"{@spell 治療傷勢}"
 							]
 						}
 					},
@@ -162,14 +162,14 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell sleep}"
+								"{@spell 睡眠術}"
 							]
 						}
 					},

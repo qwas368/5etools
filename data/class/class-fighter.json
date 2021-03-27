@@ -2707,7 +2707,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Psi Warrior feature}",
-				"Your ability to move creatures and objects with your mind is matched by few. You can cast the {@spell telekinesis} spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action.",
+				"Your ability to move creatures and objects with your mind is matched by few. You can cast the {@spell 心靈遙控} spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action.",
 				"Once you cast the spell with this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to cast it again."
 			]
 		},
@@ -3115,7 +3115,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Psi Knight feature}",
-				"Your ability to move creatures and objects with your mind is matched by few. If your Psionic Talent die is available, you can cast the {@spell telekinesis} spell, requiring no components. Your spellcasting ability for the spell is Intelligence. When you cast this spell, your Psionic Talent die decreases by one die size."
+				"Your ability to move creatures and objects with your mind is matched by few. If your Psionic Talent die is available, you can cast the {@spell 心靈遙控} spell, requiring no components. Your spellcasting ability for the spell is Intelligence. When you cast this spell, your Psionic Talent die decreases by one die size."
 			]
 		},
 		{
@@ -3900,7 +3900,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Psychic Warrior feature}",
-				"You learn the {@spell mage hand} cantrip. You can cast it without components, and you can make the spectral hand {@condition invisible}. Intelligence is your spellcasting ability for this spell."
+				"You learn the {@spell 法師之手} cantrip. You can cast it without components, and you can make the spectral hand {@condition invisible}. Intelligence is your spellcasting ability for this spell."
 			]
 		},
 		{
@@ -4087,7 +4087,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, your study of the supernatural gives you a limited ability to use magic. You can cast {@spell detect magic} as a ritual. You can cast {@spell protection from evil and good}, but you cannot cast it again with this feature until you finish a long rest. Wisdom is your spellcasting ability for these spells.",
+				"At 3rd level, your study of the supernatural gives you a limited ability to use magic. You can cast {@spell 偵測魔法} as a ritual. You can cast {@spell 防護善惡}, but you cannot cast it again with this feature until you finish a long rest. Wisdom is your spellcasting ability for these spells.",
 				"In addition, you gain the ability to speak one of the following languages of your choice: Abyssal, Celestial, or Infernal."
 			]
 		},

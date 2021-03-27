@@ -1883,7 +1883,7 @@
 					"id": "085",
 					"entries": [
 						"This room is lined with faintly glowing purplish-green stone, engraved with disturbing shapes and signs that seem to stare out from the walls and columns and to shift positions when the viewer's back is turned. Touching the walls sends a chill up a character's spine, and touching a pillar brings on nausea-a creature that does so must make a DC 15 Constitution saving throw. On a failed save, the creature becomes poisoned for 1 hour.",
-						"At the far west end of the temple is an altar of pale, yellow-gray translucent stone. It feels greasy to the touch but has no obvious effect upon those who touch it. Behind this altar is a flight of low, uneven stairs that lead to a semicircular alcove with a back wall made of a purplish-black, glassy-appearing substance. Anyone who stands before this wall and gazes upon it for 1 round sees a writhing, amorphous form of sickly mauve and violet stretching its formless members to embrace the viewer. This sight forces a character to succeed on a DC 15 Intelligence saving throw or be cursed with insanity (as the symbol spell's insanity effect, but permanent until ended with {@spell remove curse}, {@spell greater restoration}, {@spell heal}, or similar magic).",
+						"At the far west end of the temple is an altar of pale, yellow-gray translucent stone. It feels greasy to the touch but has no obvious effect upon those who touch it. Behind this altar is a flight of low, uneven stairs that lead to a semicircular alcove with a back wall made of a purplish-black, glassy-appearing substance. Anyone who stands before this wall and gazes upon it for 1 round sees a writhing, amorphous form of sickly mauve and violet stretching its formless members to embrace the viewer. This sight forces a character to succeed on a DC 15 Intelligence saving throw or be cursed with insanity (as the symbol spell's insanity effect, but permanent until ended with {@spell 移除詛咒}, {@spell 高等復原術}, {@spell 治癒術}, or similar magic).",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -2445,7 +2445,7 @@
 							"name": "Treasure",
 							"id": "0b4",
 							"entries": [
-								"If the characters move any of the boxes and barrels around, the third container moved will reveal a hole filled with 600 gp, four 250 gp gems, and a silver tube (worth 50 gp) that holds a {@item Spell Scroll (1st level)||spell scroll} bearing a 3rd-level {@spell cure wounds} spell."
+								"If the characters move any of the boxes and barrels around, the third container moved will reveal a hole filled with 600 gp, four 250 gp gems, and a silver tube (worth 50 gp) that holds a {@item Spell Scroll (1st level)||spell scroll} bearing a 3rd-level {@spell 治療傷勢} spell."
 							]
 						}
 					]
@@ -3943,7 +3943,7 @@
 								"Number 3 contains a map marking the location of the Hall of the Fire Giant King.",
 								"Number 4 holds a {@item scroll of protection from fiends||scroll of protection (fiends)}.",
 								"Number 5 contains a scroll of gibberish with an explosive runes glyph of warding on it (spell save DC 15).",
-								"Number 6 has two spell scrolls, one of {@spell delayed blast fireball} and one of {@spell finger of death}."
+								"Number 6 has two spell scrolls, one of {@spell 延遲爆裂火球} and one of {@spell 死亡一指}."
 							]
 						},
 						{
@@ -4290,7 +4290,7 @@
 								"One of the bronze caskets holds 400 cp, and the other one has 300 pp concealed beneath a layer of 100 cp."
 							]
 						},
-						"If the lid of the strongbox is opened by anyone but Frupy, a {@spell glyph of warding} inside is triggered, producing a {@i firebal} l spell centered on the chest (save DC 15). The strongbox itself holds nothing of value, but it has a trick panel in the side, which requires a successful DC 20 Wisdom (Perception) check to find.",
+						"If the lid of the strongbox is opened by anyone but Frupy, a {@spell 守衛銘文} inside is triggered, producing a {@i firebal} l spell centered on the chest (save DC 15). The strongbox itself holds nothing of value, but it has a trick panel in the side, which requires a successful DC 20 Wisdom (Perception) check to find.",
 						"The panel, if opened, allows access to a jade box (worth 500 gp). This box has a false bottom, found with another successful DC 20 Wisdom (Perception) check, that contains spell scrolls of two random 7th-level spells of a particular class (DM's choice).",
 						"All but one of the copper coffers contain unguents and the like; the third coffer examined contains four pieces of gem-set gold jewelry worth 750 gp each.",
 						"The drawers in the chest hold worthless personal articles, except for the fifth drawer from the bottom, where under some underthings Queen Frupy has concealed three potions: {@item potion of fire resistance}, {@item potion of mind control (beast)|TftYP|potion of mind control (mammal)}, and {@item potion of mind control (monster)|TftYP|potion of mind control (fire giant)}, the latter of which she plans to use on the king.",
@@ -4383,7 +4383,7 @@
 						"{@b Coffer 1} is unlocked and trapped. It contains thirty gold rings, one of which is a ring of protection. The others are ordinary rings worth 50 gp each. If the treasure is touched before the trap is disabled, a poison needle shoots from the inner side of the coffer, hitting the extremity that was extended. The needle deals 1 piercing damage and delivers a dose of purple worm poison (see \"Sample Poisons\" in chapter 8 of the {@i Dungeon Master's Guid} e). With a successful DC 20 Wisdom (Perception) check, a character discovers the recess in the coffer wall that holds the needle. A character can remove the needle, thereby disabling the trap, by using thieves' tools and making a successful DC 15 Dexterity check.",
 						"{@b Coffer 2} is locked. It contains 200 pp concealed beneath a layer of 500 cp.",
 						"{@b Coffer 3} is locked. It holds packets of leaves and seeds and husks-various hot spices worth a total of 100 gp.",
-						"{@b Coffer 4} is unlocked. It contains six small, highly crafted, carved statues of unknown mineral and workmanship. All register as desecrated objects to the scrutiny of Divine Sense or a {@spell detect evil and good} spell. Each idol is associated with a different ability score. While one is carried, its bearer has disadvantage on all d20 rolls involving that particular ability score.",
+						"{@b Coffer 4} is unlocked. It contains six small, highly crafted, carved statues of unknown mineral and workmanship. All register as desecrated objects to the scrutiny of Divine Sense or a {@spell 偵測善惡} spell. Each idol is associated with a different ability score. While one is carried, its bearer has disadvantage on all d20 rolls involving that particular ability score.",
 						"{@b Coffer 5} is locked. It holds sixteen gems (worth 250 gp each) concealed beneath a layer of two hundred gems worth 10 gp each, further topped by five hundred gems of good size and fine appearance but worth only 1 gp each."
 					]
 				},
@@ -4579,7 +4579,7 @@
 							"name": "Treasure",
 							"id": "145",
 							"entries": [
-								"The rakshasa carries 50 gp and two gems (worth 100 gp each). The disguised chest holds a jeweled scepter worth 1,000 gp, three potions ({@item potion of superior healing}, {@item potion of mind reading}, and {@spell invulnerability|XGE}), and five spell scrolls ({@spell zone of truth}, {@spell true seeing}, {@spell darkness}, {@spell cure wounds} cast at 4th level, and {@spell symbol})."
+								"The rakshasa carries 50 gp and two gems (worth 100 gp each). The disguised chest holds a jeweled scepter worth 1,000 gp, three potions ({@item potion of superior healing}, {@item potion of mind reading}, and {@spell invulnerability|XGE}), and five spell scrolls ({@spell 誠實之域}, {@spell 真知術}, {@spell 黑暗術}, {@spell 治療傷勢} cast at 4th level, and {@spell 徽記術})."
 							]
 						}
 					]
@@ -5273,7 +5273,7 @@
 					"id": "182",
 					"entries": [
 						"The entrance to this chamber is protected by a wall of tentacles (not depicted on the map). It appears as rough brown-purple stone. This magic wall is like two ropers combined into one creature, giving it two bite attacks and eight tendrils that it can employ every round (though the tendrils have a range of only 20 feet). The wall has resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons. A casting of dispel magic deals the wall 50 damage, and disintegrate deals it 100 damage.",
-						"Drow can freely pass through the wall. If any other creature touches it, the wall attacks and emits a hissing and champing noise to alert the occupants of the chamber beyond it. If its current hit points drop to half its hit point maximum or lower, the wall casts {@spell darkness} on itself (affecting only the outside of the wall, not its inner surface).",
+						"Drow can freely pass through the wall. If any other creature touches it, the wall attacks and emits a hissing and champing noise to alert the occupants of the chamber beyond it. If its current hit points drop to half its hit point maximum or lower, the wall casts {@spell 黑暗術} on itself (affecting only the outside of the wall, not its inner surface).",
 						"The chamber south of the wall is lit by the same everburning black candles that are found in the temple ({@area 11|180}), so the illumination is eerie and dim. The walls are hung with purple cloth, and the floor is thickly carpeted in black. The inner room to the east is screened off from the outer room by a brocaded hanging of black with orange, gold, lilac, and mauve.",
 						{
 							"type": "entries",
@@ -5289,7 +5289,7 @@
 							"name": "Treasure",
 							"id": "184",
 							"entries": [
-								"The jasper basins and ewers are worth 300 gp per set. The first coffer examined holds a spell scroll of {@spell word of recall} and three bars of adamantine, each weighing 5 pounds and worth 500 gp each. The second coffer contains 100 cp, 100 sp, 10 ep, 20 gp, and 10 pp, each type of coin in its own black leather pouch, as well as a pouch of ten gems (worth 50 gp each)."
+								"The jasper basins and ewers are worth 300 gp per set. The first coffer examined holds a spell scroll of {@spell 回返真言} and three bars of adamantine, each weighing 5 pounds and worth 500 gp each. The second coffer contains 100 cp, 100 sp, 10 ep, 20 gp, and 10 pp, each type of coin in its own black leather pouch, as well as a pouch of ten gems (worth 50 gp each)."
 							]
 						},
 						{
@@ -5321,7 +5321,7 @@
 							]
 						},
 						"The priestess's ceremonial garment is set with ten violet garnets (worth 50 gp each), ten topazes (50 gp each), ten black opals (100 gp each), and ten amethysts (100 gp each); it is covered with a plain black wrapper to protect it from dust and damage.",
-						"A coffer on the low chest between the divans has a glyph of warding on the inside of the lid, so if anyone other than Eclavdra opens it, the glyph casts insect plague (spell save DC 14). The container holds three spell scrolls ({@spell gate}, {@spell divine word}, and {@spell greater restoration}).",
+						"A coffer on the low chest between the divans has a glyph of warding on the inside of the lid, so if anyone other than Eclavdra opens it, the glyph casts insect plague (spell save DC 14). The container holds three spell scrolls ({@spell 異界之門}, {@spell 聖言術}, and {@spell 高等復原術}).",
 						"A coffer near her bed contains six potions: {@item potion of poison}, {@item potion of mind control (monster)|TftYP|potion of mind control (fire giant)}, {@item potion of growth}, {@item potion of heroism}, and two {@item philter of love||philters of love}.",
 						"On the dressing table are two combs, a brush, four pins, and ten jars that hold unguents and cosmetics. These items are of onyx and silver, set with tiny gems. Each is worth 50 gp.",
 						"Beside her bed on a small table are a basin, a ewer, and a goblet made from lapis lazuli (each is worth 500 gp). The ebony-and-amber screen around the dressing area weighs 10 pounds and is worth 150 gp. The large mirror of silver is worth 50 gp"
@@ -5795,9 +5795,9 @@
 						{
 							"type": "list",
 							"items": [
-								"A {@i bolt of holding}, which casts {@spell hold person} on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
-								"A {@i bolt of blinding}, which casts {@spell blindness/deafness} to blind on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
-								"A {@i bolt of vapors}, which casts {@spell stinking cloud} centered on the point it hits"
+								"A {@i bolt of holding}, which casts {@spell 人類定身術} on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
+								"A {@i bolt of blinding}, which casts {@spell 目盲/耳聾術} to blind on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
+								"A {@i bolt of vapors}, which casts {@spell 臭雲術} centered on the point it hits"
 							]
 						},
 						"Each of these effects has a spell save DC of 15 and a duration of 1 minute.",

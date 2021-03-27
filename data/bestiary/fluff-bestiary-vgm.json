@@ -588,7 +588,7 @@
 										{
 											"name": "Ravaged Soul",
 											"entries": [
-												" The soul of a creature that becomes a bodak is so damaged that it is unfit for most forms of magical resurrection. Only a {@spell wish} spell or similar magic can return a bodak to its former life."
+												" The soul of a creature that becomes a bodak is so damaged that it is unfit for most forms of magical resurrection. Only a {@spell 祈願術} spell or similar magic can return a bodak to its former life."
 											],
 											"type": "entries"
 										},
@@ -3091,7 +3091,7 @@
 									"type": "entries",
 									"name": "Variant: Mind Flayer Lich (Illithilich)",
 									"entries": [
-										"The path to true lichdom is something only the most powerful mind flayer mages can pursue, since it requires the ability to craft a phylactery and cast the {@spell imprisonment} spell. A mind flayer lich uses the lich stat block (see the Monster Manual), with the following changes:",
+										"The path to true lichdom is something only the most powerful mind flayer mages can pursue, since it requires the ability to craft a phylactery and cast the {@spell 禁錮術} spell. A mind flayer lich uses the lich stat block (see the Monster Manual), with the following changes:",
 										{
 											"type": "list",
 											"items": [
@@ -3660,7 +3660,7 @@
 									"type": "inset",
 									"name": "Telepathic Torment",
 									"entries": [
-										"Up to four meenlocks can telepathically torment one {@condition incapacitated} creature, filling its mind with disturbing sounds and dreadful imagery. Participating meenlocks can't use their telepathy for any other purpose during this time, though they can move about and take actions and reactions as normal. This torment has no effect on a creature that is immune to the {@condition frightened} condition. If the creature is susceptible and remains {@condition incapacitated} for 1 hour, the creature must make a Wisdom saving throw, taking 10 ({@damage 3d6}) psychic damage on a failed save, or half as much damage on a successful one. The save DC is 10 + the number of meenlocks participating in the torment, considering only those that remain within sight of the victim for the entire hour and aren't {@condition incapacitated} during it. The process can be repeated. A humanoid that drops to 0 hit points as a result of this damage instantly transforms into a meenlock at full health and under the DM's control. Only a {@spell wish} spell or divine intervention can restore a transformed creature to its former state."
+										"Up to four meenlocks can telepathically torment one {@condition incapacitated} creature, filling its mind with disturbing sounds and dreadful imagery. Participating meenlocks can't use their telepathy for any other purpose during this time, though they can move about and take actions and reactions as normal. This torment has no effect on a creature that is immune to the {@condition frightened} condition. If the creature is susceptible and remains {@condition incapacitated} for 1 hour, the creature must make a Wisdom saving throw, taking 10 ({@damage 3d6}) psychic damage on a failed save, or half as much damage on a successful one. The save DC is 10 + the number of meenlocks participating in the torment, considering only those that remain within sight of the victim for the entire hour and aren't {@condition incapacitated} during it. The process can be repeated. A humanoid that drops to 0 hit points as a result of this damage instantly transforms into a meenlock at full health and under the DM's control. Only a {@spell 祈願術} spell or divine intervention can restore a transformed creature to its former state."
 									]
 								}
 							]
@@ -5369,7 +5369,7 @@
 											"name": "Abyssal Nuisances",
 											"entries": [
 												" Swarms of vargouilles flap through the caverns and skies of the Abyss. They are given little regard by powerful and intelligent demons since vargouilles can do them no harm. Even the weakest demon, such as a manes or a dretch, fears vargouilles only if they appear in great numbers. In the Lower Planes, vargouilles rarely get the chance to eat live prey other than vermin. More often, they lap up the ichor left behind when one fiend kills another.",
-												"The kiss of a vargouille infects a humanoid with a fiendish curse. If allowed to run its course, the curse brings about a gruesome transformation as an abyssal spirit invades the person's body. Over a period of hours, the victim's head takes on fiendish aspects such as fangs, tentacles, and horns. At the same time, the person's ears grow larger, expanding and transforming into wing-like appendages. In the final moments, the victim's head tears away from the body in a fountain of blood, becoming another vargouille, which often then eagerly laps up its own life fluids. Sunlight or the brilliant illumination of a {@spell daylight} spell can delay this transformation, and vargouilles instinctively shun bright light as a result."
+												"The kiss of a vargouille infects a humanoid with a fiendish curse. If allowed to run its course, the curse brings about a gruesome transformation as an abyssal spirit invades the person's body. Over a period of hours, the victim's head takes on fiendish aspects such as fangs, tentacles, and horns. At the same time, the person's ears grow larger, expanding and transforming into wing-like appendages. In the final moments, the victim's head tears away from the body in a fountain of blood, becoming another vargouille, which often then eagerly laps up its own life fluids. Sunlight or the brilliant illumination of a {@spell 晝明術} spell can delay this transformation, and vargouilles instinctively shun bright light as a result."
 											],
 											"type": "entries"
 										},
@@ -6015,7 +6015,7 @@
 									"name": "Making a Broodguard",
 									"entries": [
 										"Yuan-ti create broodguards from captured humanoids. Each subject is fed a special potion that immediately renders it {@condition incapacitated} and transforms it into a broodguard over the next {@dice 1d6 + 6} days. A subject forced to imbibe the brew can make a DC 15 Constitution saving throw; on a success, it takes 14 ({@damage 4d6}) poison damage and isn't otherwise affected.",
-										"A spell such as lesser restoration or remove curse can end the transformation process at any time before it runs its course. After the process is complete, only a {@spell wish} spell can reverse the effect."
+										"A spell such as lesser restoration or remove curse can end the transformation process at any time before it runs its course. After the process is complete, only a {@spell 祈願術} spell can reverse the effect."
 									]
 								}
 							]

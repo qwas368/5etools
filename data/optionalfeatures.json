@@ -1646,7 +1646,7 @@
 			],
 			"entries": [
 				"A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus.",
-				"You can cast the {@spell sending} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
+				"You can cast the {@spell 短訊術} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
 				"As an action, you can magically erase a name on the page by touching it."
 			]
 		},
@@ -1671,7 +1671,7 @@
 			],
 			"entries": [
 				"A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of 1).",
-				"You can cast the {@spell sending} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
+				"You can cast the {@spell 短訊術} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
 				"As an action, you can magically erase a name on the page by touching the name on it."
 			]
 		},
@@ -1769,7 +1769,7 @@
 				}
 			],
 			"entries": [
-				"Once on each of your turns when you hit a creature with your {@spell eldritch blast}, you can reduce that creature's speed by 10 feet until the end of your next turn."
+				"Once on each of your turns when you hit a creature with your {@spell 魔能爆}, you can reduce that creature's speed by 10 feet until the end of your next turn."
 			]
 		},
 		{
@@ -1788,7 +1788,7 @@
 				}
 			],
 			"entries": [
-				"You draw on the gifts of the Prince of Frost to trap your enemies in ice. When you hit a creature with your {@spell eldritch blast} cantrip one or more times on your turn, you can reduce that creature's speed by 10 feet until the end of your next turn."
+				"You draw on the gifts of the Prince of Frost to trap your enemies in ice. When you hit a creature with your {@spell 魔能爆} cantrip one or more times on your turn, you can reduce that creature's speed by 10 feet until the end of your next turn."
 			]
 		},
 		{
@@ -2341,7 +2341,7 @@
 				"You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.",
 				"The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.",
 				"In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the homunculus can take any action of its choice, not just {@action Dodge}.",
-				"The homunculus regains {@dice 2d6} hit points if the {@spell mending} spell is cast on it. If it dies, it vanishes, leaving its heart in its space. If you or the homunculus dies, it vanishes, leaving its heart in its space."
+				"The homunculus regains {@dice 2d6} hit points if the {@spell 修復術} spell is cast on it. If it dies, it vanishes, leaving its heart in its space. If you or the homunculus dies, it vanishes, leaving its heart in its space."
 			]
 		},
 		{
@@ -2459,7 +2459,7 @@
 				}
 			],
 			"entries": [
-				"When you cast {@spell find familiar}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits:",
+				"When you cast {@spell 尋獲魔寵}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -2535,7 +2535,7 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with your {@spell eldritch blast}, you can cast fireball as a bonus action using a warlock spell slot. The spell must be centered on the creature you hit with {@spell eldritch blast}."
+				"When you hit a creature with your {@spell 魔能爆}, you can cast fireball as a bonus action using a warlock spell slot. The spell must be centered on the creature you hit with {@spell 魔能爆}."
 			]
 		},
 		{
@@ -2560,7 +2560,7 @@
 				}
 			],
 			"entries": [
-				"You can channel the fires of Mephistopheles through your {@spell eldritch blast}. When you hit a creature with that cantrip, you can cast {@spell fireball} as a bonus action using a warlock spell slot. However, the spell must be centered on a creature you hit with eldritch blast."
+				"You can channel the fires of Mephistopheles through your {@spell 魔能爆}. When you hit a creature with that cantrip, you can cast {@spell 火球術} as a bonus action using a warlock spell slot. However, the spell must be centered on a creature you hit with eldritch blast."
 			]
 		},
 		{
@@ -3364,7 +3364,7 @@
 				}
 			],
 			"entries": [
-				"When you score a critical hit with your {@spell eldritch blast} cantrip, pick yourself or an ally you can see within 30 feet of you. The chosen creature can immediately expend a Hit Die to regain hit points equal to the roll + the creature's Constitution modifier (minimum of 1 hit point)."
+				"When you score a critical hit with your {@spell 魔能爆} cantrip, pick yourself or an ally you can see within 30 feet of you. The chosen creature can immediately expend a Hit Die to regain hit points equal to the roll + the creature's Constitution modifier (minimum of 1 hit point)."
 			]
 		},
 		{
@@ -4348,7 +4348,7 @@
 			],
 			"entries": [
 				"The Sea Twins rule seas in the Feywild. Their gift allows you to travel through water with ease. You can breathe underwater, and you gain a swimming speed equal to your walking speed.",
-				"You can also cast {@spell water breathing} using a warlock spell slot. Once you cast it using this invocation, you can't do so again until you finish a long rest."
+				"You can also cast {@spell 水下呼吸} using a warlock spell slot. Once you cast it using this invocation, you can't do so again until you finish a long rest."
 			]
 		},
 		{
@@ -5224,7 +5224,7 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell animate dead} without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest."
+				"You can cast {@spell 活化死屍} without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest."
 			]
 		},
 		{

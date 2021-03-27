@@ -85,56 +85,56 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell mending}",
+								"{@spell 指導術}",
+								"{@spell 修復術}",
 								"{@spell shape water|XGE}",
-								"{@spell shillelagh}"
+								"{@spell 橡棍術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
 								"{@spell absorb elements|XGE}",
-								"{@spell cure wounds}",
-								"{@spell entangle}",
-								"{@spell speak with animals}"
+								"{@spell 治療傷勢}",
+								"{@spell 糾纏術}",
+								"{@spell 動物交談術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkvision}",
-								"{@spell hold person}",
-								"{@spell lesser restoration}",
-								"{@spell moonbeam}"
+								"{@spell 黑暗視覺}",
+								"{@spell 人類定身術}",
+								"{@spell 次級復原術}",
+								"{@spell 月華之光}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure animals}",
-								"{@spell dispel magic}",
-								"{@spell water breathing}"
+								"{@spell 召喚動物}",
+								"{@spell 解除魔法}",
+								"{@spell 水下呼吸}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell charm monster|XGE}",
-								"{@spell freedom of movement}"
+								"{@spell 行動自如術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell greater restoration}",
-								"{@spell mass cure wounds}"
+								"{@spell 高等復原術}",
+								"{@spell 群體治療傷勢}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell conjure fey}"
+								"{@spell 召喚精類生物}"
 							]
 						}
 					},
@@ -237,8 +237,8 @@
 						"daily": {
 							"1e": [
 								{
-									"replace": "{@spell call lightning}",
-									"with": "{@spell lightning bolt}"
+									"replace": "{@spell 召雷術}",
+									"with": "{@spell 閃電束}"
 								}
 							]
 						}
@@ -368,8 +368,8 @@
 						"0": {
 							"spells": [
 								"{@spell frostbite|XGE}",
-								"{@spell mending}",
-								"{@spell resistance}",
+								"{@spell 修復術}",
+								"{@spell 提升抗力}",
 								"{@spell shape water|XGE}",
 								"{@spell thunderclap|XGE}*"
 							]
@@ -377,62 +377,62 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell create or destroy water}",
-								"{@spell charm person}",
-								"{@spell cure wounds}",
-								"{@spell thunderwave}"
+								"{@spell 造水/枯水術}",
+								"{@spell 魅惑人類}",
+								"{@spell 治療傷勢}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkvision}",
-								"{@spell hold person}",
-								"{@spell mirror image}*",
-								"{@spell misty step}*",
-								"{@spell pass without trace}",
-								"{@spell protection from poison}"
+								"{@spell 黑暗視覺}",
+								"{@spell 人類定身術}",
+								"{@spell 鏡影術}*",
+								"{@spell 迷蹤步}*",
+								"{@spell 行蹤無跡}",
+								"{@spell 防護毒素}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure animals}",
-								"{@spell dispel magic}",
+								"{@spell 召喚動物}",
+								"{@spell 解除魔法}",
 								"{@spell tidal wave|XGE}",
-								"{@spell water breathing}*",
-								"{@spell water walk}*"
+								"{@spell 水下呼吸}*",
+								"{@spell 水面行走}*"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell charm monster|XGE}",
-								"{@spell control water}*",
-								"{@spell dominate beast}",
-								"{@spell freedom of movement}*",
+								"{@spell 操控水體}*",
+								"{@spell 支配野獸}",
+								"{@spell 行動自如術}*",
 								"{@spell watery sphere|XGE}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell conjure elemental}*",
+								"{@spell 召喚元素生物}*",
 								"{@spell maelstrom|XGE}",
-								"{@spell scrying}*",
-								"{@spell tree stride}"
+								"{@spell 探知}*",
+								"{@spell 樹躍術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell heal}"
+								"{@spell 治癒術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell plane shift}"
+								"{@spell 異界傳送}"
 							]
 						}
 					},
@@ -574,7 +574,7 @@
 				11,
 				{
 					"ac": 14,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -620,7 +620,7 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell create or destroy water}"
+							"{@spell 造水/枯水術}"
 						]
 					},
 					"ability": "con"
@@ -633,32 +633,32 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell chill touch}",
-								"{@spell light}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 酸液濺爆}",
+								"{@spell 寒顫之觸}",
+								"{@spell 光亮術}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell disguise self}",
-								"{@spell mage armor}",
-								"{@spell shield}"
+								"{@spell 易容術}",
+								"{@spell 法師護甲}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell misty step}"
+								"{@spell 人類定身術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell lightning bolt}",
+								"{@spell 閃電束}",
 								"{@spell tidal wave|XGE}"
 							]
 						},
@@ -728,8 +728,8 @@
 						"daily": {
 							"1e": [
 								{
-									"replace": "{@spell call lightning}",
-									"with": "{@spell lightning bolt}"
+									"replace": "{@spell 召雷術}",
+									"with": "{@spell 閃電束}"
 								}
 							]
 						}

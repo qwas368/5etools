@@ -812,7 +812,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a wizard quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution or Dexterity. If you plan to join the School of Enchantment, make Charisma your next-best score. Second, choose the {@background sage} background. Third, choose the {@spell mage hand}, {@spell light}, and {@spell ray of frost} cantrips, along with the following 1st-level spells for your spellbook: {@spell burning hands}, {@spell charm person}, {@spell feather fall}, {@spell mage armor}, {@spell magic missile}, and {@spell sleep}."
+										"You can make a wizard quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution or Dexterity. If you plan to join the School of Enchantment, make Charisma your next-best score. Second, choose the {@background sage} background. Third, choose the {@spell 法師之手}, {@spell 光亮術}, and {@spell 冷凍射線} cantrips, along with the following 1st-level spells for your spellbook: {@spell 燃燒之手}, {@spell 魅惑人類}, {@spell 羽落術}, {@spell 法師護甲}, {@spell 魔法飛彈}, and {@spell 睡眠術}."
 									]
 								}
 							]
@@ -2972,7 +2972,7 @@
 				"{@i 14th-level Order of Scribes feature}",
 				"Your connection to your Awakened Spellbook has become so profound that your soul has become entwined with it. While you are holding the book and its spectral mind is manifest, you can take an action to cause the two of you to teleport, swapping places. You can teleport in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
 				"Moreover, if you die but at least one spell remains in your Awakened Spellbook, you can return to life 1 minute later within 5 feet of the book. You revive with 1 hit point. Then roll {@dice 3d6}. The book loses spells of your choice that have a combined spell level equal to that roll or higher. For example, if the roll's total is 9, spells vanish from the book that have a combined level of at least 9, which could mean one 9th-level spell, three 3rd-level spells, or some other combination.",
-				"Thereafter, you are incapable of casting the lost spells, even if you find them on a scroll or in another spellbook. The only way to restore your ability to cast one of the lost spells is through the {@spell wish} spell, which can restore one spell to the book per casting."
+				"Thereafter, you are incapable of casting the lost spells, even if you find them on a scroll or in another spellbook. The only way to restore your ability to cast one of the lost spells is through the {@spell 祈願術} spell, which can restore one spell to the book per casting."
 			]
 		},
 		{
@@ -3048,7 +3048,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Onomancy feature}",
-				"You can bend magic to assist or hinder creatures through the power of their true names, and even use those names as an anchor to affect others around them. The {@spell bane} and {@spell bless} spells are wizard spells for you, and you add them to your spellbook. You always have them prepared, yet they don't count against the number of spells you can prepare.",
+				"You can bend magic to assist or hinder creatures through the power of their true names, and even use those names as an anchor to affect others around them. The {@spell 災禍術} and {@spell 祝福術} spells are wizard spells for you, and you add them to your spellbook. You always have them prepared, yet they don't count against the number of spells you can prepare.",
 				"You can cast either spell without expending a spell slot if you speak the true name of one target of the spell as part of casting it. You can cast the spells in this way a number of times equal to your Intelligence modifier (a minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
@@ -3721,7 +3721,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Psionics feature}",
-				"Your mind's power expands to greater heights. When you gain this feature, choose one of the following spells: {@spell dominate person}, {@spell scrying}, or {@spell telekinesis}. You can add the spell to your spellbook, and you can cast it without components.",
+				"Your mind's power expands to greater heights. When you gain this feature, choose one of the following spells: {@spell 支配人類}, {@spell 探知}, or {@spell 心靈遙控}. You can add the spell to your spellbook, and you can cast it without components.",
 				"You can also cast the chosen spell once without expending a spell slot. After you do so, you regain the ability to cast the spell without a slot when you finish a long rest."
 			]
 		},
@@ -3916,39 +3916,39 @@
 					"rows": [
 						[
 							"1",
-							"{@spell acid splash}"
+							"{@spell 酸液濺爆}"
 						],
 						[
 							"2",
-							"{@spell chill touch}"
+							"{@spell 寒顫之觸}"
 						],
 						[
 							"3",
-							"{@spell fire bolt}"
+							"{@spell 火焰箭}"
 						],
 						[
 							"4",
-							"{@spell light}"
+							"{@spell 光亮術}"
 						],
 						[
 							"5",
-							"{@spell poison spray}"
+							"{@spell 毒氣噴灑}"
 						],
 						[
 							"6",
-							"{@spell ray of frost}"
+							"{@spell 冷凍射線}"
 						],
 						[
 							"7",
-							"{@spell shocking grasp}"
+							"{@spell 電爪}"
 						],
 						[
 							"8",
-							"{@spell sacred flame}"
+							"{@spell 聖焰}"
 						],
 						[
 							"9",
-							"{@spell thorn whip}"
+							"{@spell 荊棘之鞭}"
 						],
 						[
 							"10",
@@ -3969,39 +3969,39 @@
 					"rows": [
 						[
 							"1",
-							"{@spell burning hands}"
+							"{@spell 燃燒之手}"
 						],
 						[
 							"2",
-							"{@spell chromatic orb}"
+							"{@spell 幻色法球}"
 						],
 						[
 							"3",
-							"{@spell color spray}"
+							"{@spell 七彩噴射}"
 						],
 						[
 							"4",
-							"{@spell faerie fire}"
+							"{@spell 妖火術}"
 						],
 						[
 							"5",
-							"{@spell false life}"
+							"{@spell 摹造生命}"
 						],
 						[
 							"6",
-							"{@spell fog cloud}"
+							"{@spell 雲霧術}"
 						],
 						[
 							"7",
-							"{@spell jump}"
+							"{@spell 跳躍術}"
 						],
 						[
 							"8",
-							"{@spell magic missile}"
+							"{@spell 魔法飛彈}"
 						],
 						[
 							"9",
-							"{@spell thunderwave}"
+							"{@spell 雷鳴波}"
 						],
 						[
 							"10",
@@ -4022,39 +4022,39 @@
 					"rows": [
 						[
 							"1",
-							"{@spell blur}"
+							"{@spell 朦朧術}"
 						],
 						[
 							"2",
-							"{@spell darkness}"
+							"{@spell 黑暗術}"
 						],
 						[
 							"3",
-							"{@spell enlarge/reduce}"
+							"{@spell 變巨/縮小術}"
 						],
 						[
 							"4",
-							"{@spell gust of wind}"
+							"{@spell 造風術}"
 						],
 						[
 							"5",
-							"{@spell invisibility}"
+							"{@spell 隱形術}"
 						],
 						[
 							"6",
-							"{@spell levitate}"
+							"{@spell 浮空術}"
 						],
 						[
 							"7",
-							"{@spell Melf's acid arrow}"
+							"{@spell 馬友夫強酸箭}"
 						],
 						[
 							"8",
-							"{@spell scorching ray}"
+							"{@spell 灼熱射線}"
 						],
 						[
 							"9",
-							"{@spell shatter}"
+							"{@spell 粉碎音波}"
 						],
 						[
 							"10",
@@ -4075,39 +4075,39 @@
 					"rows": [
 						[
 							"1",
-							"{@spell blink}"
+							"{@spell 閃現術}"
 						],
 						[
 							"2",
-							"{@spell fear}"
+							"{@spell 恐懼術}"
 						],
 						[
 							"3",
-							"{@spell feign death}"
+							"{@spell 假死術}"
 						],
 						[
 							"4",
-							"{@spell fireball}"
+							"{@spell 火球術}"
 						],
 						[
 							"5",
-							"{@spell fly}"
+							"{@spell 飛行術}"
 						],
 						[
 							"6",
-							"{@spell gaseous form}"
+							"{@spell 氣化形體}"
 						],
 						[
 							"7",
-							"{@spell lightning bolt}"
+							"{@spell 閃電束}"
 						],
 						[
 							"8",
-							"{@spell sleet storm}"
+							"{@spell 雪雨暴}"
 						],
 						[
 							"9",
-							"{@spell stinking cloud}"
+							"{@spell 臭雲術}"
 						],
 						[
 							"10",
@@ -4128,39 +4128,39 @@
 					"rows": [
 						[
 							"1",
-							"{@spell blight}"
+							"{@spell 枯萎術}"
 						],
 						[
 							"2",
-							"{@spell confusion}"
+							"{@spell 困惑術}"
 						],
 						[
 							"3",
-							"{@spell Evard's black tentacles}"
+							"{@spell 艾伐黑觸手}"
 						],
 						[
 							"4",
-							"{@spell fire shield}"
+							"{@spell 火焰護盾}"
 						],
 						[
 							"5",
-							"{@spell greater invisibility}"
+							"{@spell 高等隱形術}"
 						],
 						[
 							"6",
-							"{@spell ice storm}"
+							"{@spell 冰風暴}"
 						],
 						[
 							"7",
-							"{@spell phantasmal killer}"
+							"{@spell 魅影殺手}"
 						],
 						[
 							"8",
-							"{@spell stoneskin}"
+							"{@spell 石膚術}"
 						],
 						[
 							"9",
-							"{@spell wall of fire}"
+							"{@spell 火牆術}"
 						],
 						[
 							"10",
@@ -4181,39 +4181,39 @@
 					"rows": [
 						[
 							"1",
-							"{@spell cloudkill}"
+							"{@spell 死雲術}"
 						],
 						[
 							"2",
-							"{@spell cone of cold}"
+							"{@spell 寒冰錐}"
 						],
 						[
 							"3",
-							"{@spell destructive wave}"
+							"{@spell 湮滅波}"
 						],
 						[
 							"4",
-							"{@spell flame strike}"
+							"{@spell 焰擊術}"
 						],
 						[
 							"5",
-							"{@spell hold monster}"
+							"{@spell 怪物定身術}"
 						],
 						[
 							"6",
-							"{@spell insect plague}"
+							"{@spell 疫病蟲群}"
 						],
 						[
 							"7",
-							"{@spell mass cure wounds}"
+							"{@spell 群體治療傷勢}"
 						],
 						[
 							"8",
-							"{@spell wall of force}"
+							"{@spell 力牆術}"
 						],
 						[
 							"9",
-							"{@spell wall of stone}"
+							"{@spell 石牆術}"
 						],
 						[
 							"10",
@@ -4318,7 +4318,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"While the Spell Secrets feature offers increased versatility, at the table its effects can be difficult to spot by the other players. If you're playing a savant, take a moment to describe how you alter your spells. Think of a signature change your character is particularly proud of. Be inventive, and make the game more fun for everyone by playing up the sudden, unexpected tricks you character can employ. For example, a {@spell fireball} transformed to require a Strength save might become a sphere of burning rock that shatters and slams into its target. A {@spell charm person} that requires a Constitution save might take the form of a vaporous narcotic that alters the target's mood."
+				"While the Spell Secrets feature offers increased versatility, at the table its effects can be difficult to spot by the other players. If you're playing a savant, take a moment to describe how you alter your spells. Think of a signature change your character is particularly proud of. Be inventive, and make the game more fun for everyone by playing up the sudden, unexpected tricks you character can employ. For example, a {@spell 火球術} transformed to require a Strength save might become a sphere of burning rock that shatters and slams into its target. A {@spell 魅惑人類} that requires a Constitution save might take the form of a vaporous narcotic that alters the target's mood."
 			]
 		},
 		{

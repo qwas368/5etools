@@ -33,7 +33,7 @@
 						{
 							"type": "list",
 							"items": [
-								"Spells: {@spell acid splash} assumes PHB by default, {@spell tiny servant|xge} can have sources added with a pipe, {@spell tiny servant|xge|and optional link text added with another pipe}.",
+								"Spells: {@spell 酸液濺爆} assumes PHB by default, {@spell tiny servant|xge} can have sources added with a pipe, {@spell tiny servant|xge|and optional link text added with another pipe}.",
 								"Items: {@item alchemy jug} assumed DMG by default, {@item longsword|phb} can have sources added with a pipe, {@item longsword|phb|and optional link text added with another pipe}.",
 								"Creatures: {@creature goblin} assumes MM by default, {@creature cow|vgm} can have sources added with a pipe, {@creature cow|vgm|and optional link text added with another pipe}.",
 								"Backgrounds: {@background Charlatan} assumes PHB by default, {@background Anthropologist|toa} can have sources added with a pipe, {@background Anthropologist|ToA|and optional link text added with another pipe}.",
@@ -514,7 +514,7 @@
 				{
 					"type": "optfeature",
 					"name": "Optional Feature Name",
-					"prerequisite": "Optional prerequisite, which can include tags {@spell eldritch blast}",
+					"prerequisite": "Optional prerequisite, which can include tags {@spell 魔能爆}",
 					"entries": [
 						"Optional feature text."
 					]
@@ -695,15 +695,15 @@
 									"The unicorn's innate spellcasting ability is Charisma (spell save {@dc 14}). The unicorn can innately cast the following spells, requiring no components:"
 								],
 								"will": [
-									"{@spell detect evil and good}",
-									"{@spell druidcraft}",
-									"{@spell pass without trace}"
+									"{@spell 偵測善惡}",
+									"{@spell 德魯伊伎倆}",
+									"{@spell 行蹤無跡}"
 								],
 								"daily": {
 									"1e": [
-										"{@spell calm emotions}",
-										"{@spell dispel evil and good}",
-										"{@spell entangle}"
+										"{@spell 安定心神}",
+										"{@spell 反制善惡}",
+										"{@spell 糾纏術}"
 									]
 								},
 								"ability": "cha"

@@ -297,15 +297,15 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell ensnaring strike}",
-								"{@spell hail of thorns}",
-								"{@spell hunter's mark}"
+								"{@spell 誘捕打擊}",
+								"{@spell 棘刺雹}",
+								"{@spell 獵人印記}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell locate animals or plants}"
+								"{@spell 動植物定位術}"
 							]
 						}
 					},
@@ -473,7 +473,7 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}"
+								"{@spell 光亮術}"
 							]
 						}
 					},
@@ -484,7 +484,7 @@
 				{
 					"name": "Petrifying Gaze",
 					"entries": [
-						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 14} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to metal, wood, or porcelain (the medusa's choice) and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
+						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 14} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to metal, wood, or porcelain (the medusa's choice) and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell 高等復原術} spell or other magic.",
 						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
 						"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
 					]
@@ -733,49 +733,49 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell dancing lights}",
-								"{@spell light}",
-								"{@spell message}",
-								"{@spell shocking grasp}"
+								"{@spell 舞光術}",
+								"{@spell 光亮術}",
+								"{@spell 傳訊術}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell cure wounds}",
-								"{@spell grease}",
-								"{@spell identify}"
+								"{@spell 通曉語言}",
+								"{@spell 治療傷勢}",
+								"{@spell 油膩術}",
+								"{@spell 鑑定術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell invisibility}",
-								"{@spell heat metal}"
+								"{@spell 偵測思想}",
+								"{@spell 隱形術}",
+								"{@spell 灼熱金屬}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
+								"{@spell 解除魔法}",
 								"{@spell flame arrows|XGE}",
-								"{@spell hypnotic pattern}"
+								"{@spell 催眠圖紋}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell fabricate}",
-								"{@spell stone shape}",
-								"{@spell stoneskin}"
+								"{@spell 鬼斧神工}",
+								"{@spell 塑石術}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell creation}"
+								"{@spell 造物術}"
 							]
 						}
 					},
@@ -898,12 +898,12 @@
 						"The neo-otyugh's innate spellcasting ability is Intelligence (spell save {@dc 12}). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell detect thoughts}"
+						"{@spell 偵測思想}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell command}",
-							"{@spell hold person}"
+							"{@spell 命令術}",
+							"{@spell 人類定身術}"
 						]
 					},
 					"ability": "int"
@@ -1391,49 +1391,49 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell message}",
-								"{@spell shocking grasp}"
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 傳訊術}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell alarm}",
-								"{@spell cure wounds}",
-								"{@spell identify}",
-								"{@spell ray of sickness}"
+								"{@spell 警報術}",
+								"{@spell 治療傷勢}",
+								"{@spell 鑑定術}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell Melf's acid arrow}",
-								"{@spell web}"
+								"{@spell 隱形術}",
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell haste}",
-								"{@spell stinking cloud}"
+								"{@spell 解除魔法}",
+								"{@spell 加速術}",
+								"{@spell 臭雲術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell Mordenkainen's faithful hound}",
-								"{@spell Otiluke's resilient sphere}"
+								"{@spell 枯萎術}",
+								"{@spell 魔鄧肯忠犬}",
+								"{@spell 歐提路克魔封法球}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cloudkill}"
+								"{@spell 死雲術}"
 							]
 						}
 					},

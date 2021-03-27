@@ -206,7 +206,7 @@
 				11,
 				{
 					"ac": 16,
-					"condition": "with {@spell barkskin}",
+					"condition": "with {@spell 樹膚術}",
 					"braces": true
 				}
 			],
@@ -244,23 +244,23 @@
 							"spells": [
 								"{@spell 德魯伊伎倆}",
 								"{@spell 毒氣噴灑}",
-								"{@spell shillelagh}"
+								"{@spell 橡棍術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell entangle}",
+								"{@spell 治療傷勢}",
+								"{@spell 糾纏術}",
 								"{@spell 妖火術}",
-								"{@spell thunderwave}"
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell barkskin}",
-								"{@spell flaming sphere}"
+								"{@spell 樹膚術}",
+								"{@spell 熾焰法球}"
 							]
 						}
 					},
@@ -535,7 +535,7 @@
 				{
 					"name": "Hooves",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature, it must succeed on a {@dc 14} Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the {@spell remove curse} spell or similar magic."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature, it must succeed on a {@dc 14} Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the {@spell 移除詛咒} spell or similar magic."
 					]
 				},
 				{
@@ -827,9 +827,9 @@
 								{
 									"type": "list",
 									"items": [
-										"A {@i bolt of holding}, which casts {@spell hold person} on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
-										"A {@i bolt of blinding}, which casts {@spell blindness/deafness} to blind on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
-										"A {@i bolt of vapors}, which casts {@spell stinking cloud} centered on the point it hits"
+										"A {@i bolt of holding}, which casts {@spell 人類定身術} on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
+										"A {@i bolt of blinding}, which casts {@spell 目盲/耳聾術} to blind on a target hit with the bolt, as well as up to two other targets within 30 feet of that target",
+										"A {@i bolt of vapors}, which casts {@spell 臭雲術} centered on the point it hits"
 									]
 								},
 								"Each of these effects has a spell save DC of 15 and a duration of 1 minute."
@@ -1218,17 +1218,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell bless}",
-								"{@spell cure wounds}",
-								"{@spell sanctuary}"
+								"{@spell 祝福術}",
+								"{@spell 治療傷勢}",
+								"{@spell 聖域術}"
 							]
 						}
 					},
@@ -2282,14 +2282,14 @@
 						"0": {
 							"spells": [
 								"{@spell 毒氣噴灑}",
-								"{@spell thaumaturgy}"
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell bane}",
-								"{@spell inflict wounds}"
+								"{@spell 災禍術}",
+								"{@spell 造成傷勢}"
 							]
 						}
 					},
@@ -2767,26 +2767,26 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell poison spray}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 6,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell shield}",
-								"{@spell sleep}"
+								"{@spell 燃燒之手}",
+								"{@spell 護盾術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell scorching ray}"
+								"{@spell 隱形術}",
+								"{@spell 灼熱射線}"
 							]
 						}
 					},
@@ -3756,7 +3756,7 @@
 				{
 					"name": "Shape Water",
 					"entries": [
-						"The nereid can cast {@spell control water} at will, requiring no components. Its spellcasting ability for it is Charisma. This use of the spell has a range of 30 feet and can affect a cube of water no larger than 30 feet on a side."
+						"The nereid can cast {@spell 操控水體} at will, requiring no components. Its spellcasting ability for it is Charisma. This use of the spell has a range of 30 feet and can affect a cube of water no larger than 30 feet on a side."
 					]
 				},
 				{
@@ -4011,48 +4011,48 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell friends}",
-								"{@spell mage hand}",
+								"{@spell 酸液濺爆}",
+								"{@spell 交友術}",
+								"{@spell 法師之手}",
 								"{@spell 毒氣噴灑}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell detect magic}",
-								"{@spell magic missile}",
+								"{@spell 魅惑人類}",
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
 								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell Melf's acid arrow}",
-								"{@spell suggestion}"
+								"{@spell 偵測思想}",
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
 								"{@spell 恐懼術}",
-								"{@spell slow}",
+								"{@spell 緩速術}",
 								"{@spell 臭雲術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell Evard's black tentacles}"
+								"{@spell 困惑術}",
+								"{@spell 艾伐黑觸手}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cloudkill}"
+								"{@spell 死雲術}"
 							]
 						}
 					},
@@ -4889,18 +4889,18 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 光亮術}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell color spray}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell sleep}"
+								"{@spell 七彩噴射}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 睡眠術}"
 							]
 						}
 					},
@@ -4917,7 +4917,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Sharwyn has a {@item spellbook|phb} that contains the spells listed in her Spellcasting trait, plus {@spell detect magic} and {@spell silent image}."
+						"Sharwyn has a {@item spellbook|phb} that contains the spells listed in her Spellcasting trait, plus {@spell 偵測魔法} and {@spell 無聲幻影}."
 					]
 				},
 				{
@@ -5102,10 +5102,10 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell charm person}",
-							"{@spell fog cloud}",
-							"{@spell greater invisibility}",
-							"{@spell polymorph} (self only)"
+							"{@spell 魅惑人類}",
+							"{@spell 雲霧術}",
+							"{@spell 高等隱形術}",
+							"{@spell 變形術} (self only)"
 						]
 					},
 					"ability": "cha"
@@ -5247,25 +5247,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
 								"{@spell 鏡影術}",
-								"{@spell web}"
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
@@ -5273,7 +5273,7 @@
 							"spells": [
 								"{@spell 解除魔法}",
 								"{@spell 恐懼術}",
-								"{@spell haste}",
+								"{@spell 加速術}",
 								"{@spell 臭雲術}"
 							]
 						}
@@ -5424,25 +5424,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell color spray}",
-								"{@spell shield}",
-								"{@spell silent image}"
+								"{@spell 七彩噴射}",
+								"{@spell 護盾術}",
+								"{@spell 無聲幻影}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell shatter}"
+								"{@spell 人類定身術}",
+								"{@spell 粉碎音波}"
 							]
 						}
 					},
@@ -5638,57 +5638,57 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell unseen servant}*"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 隱形僕役}*"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell flaming sphere}*",
+								"{@spell 偵測思想}",
+								"{@spell 熾焰法球}*",
 								"{@spell 鏡影術}",
-								"{@spell scorching ray}"
+								"{@spell 灼熱射線}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
+								"{@spell 反制法術}",
 								"{@spell 解除魔法}",
-								"{@spell fireball}"
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell dimension door}*",
-								"{@spell Evard's black tentacles}*"
+								"{@spell 次元門}*",
+								"{@spell 艾伐黑觸手}*"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}*",
-								"{@spell scrying}"
+								"{@spell 死雲術}*",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell circle of death}"
+								"{@spell 死亡之環}"
 							]
 						}
 					},
@@ -5939,7 +5939,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -5974,26 +5974,26 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell shield}"
+								"{@spell 燃燒之手}",
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell scorching ray}"
+								"{@spell 朦朧術}",
+								"{@spell 灼熱射線}"
 							]
 						}
 					},
@@ -6308,13 +6308,13 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Tloques can cast {@spell hold person} ({@dc 14}) at will, requiring no components, but his target must be able to see him."
+						"Tloques can cast {@spell 人類定身術} ({@dc 14}) at will, requiring no components, but his target must be able to see him."
 					],
 					"hidden": [
 						"will"
 					],
 					"will": [
-						"{@spell hold person}"
+						"{@spell 人類定身術}"
 					]
 				}
 			],
@@ -6739,7 +6739,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -6779,18 +6779,18 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell chromatic orb}",
-								"{@spell mage armor}"
+								"{@spell 燃燒之手}",
+								"{@spell 幻色法球}",
+								"{@spell 法師護甲}"
 							]
 						}
 					},

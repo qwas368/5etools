@@ -709,7 +709,7 @@
 							"id": "02a",
 							"entries": [
 								"The altar is flanked by a pair of heavy silver candlesticks worth 25 gp each. They hold thick black candles, lit only when a ritual is being performed in the shrine.",
-								"The eight \"eyes\" of the spider statue are eight pieces of polished jet - four small ones worth 5 gp each and four larger ones worth 10 gp each. Any non-drow who possesses these gems falls under a curse from Lolth. All spiders and spiderlike creatures attack the bearer of the stones on sight, and such creatures have advantage on checks to detect the possessor of the stones. The curse lasts until all the stones are given into the safekeeping of a drow worshiper of Lolth or the gems are subject to a {@spell remove curse} spell."
+								"The eight \"eyes\" of the spider statue are eight pieces of polished jet - four small ones worth 5 gp each and four larger ones worth 10 gp each. Any non-drow who possesses these gems falls under a curse from Lolth. All spiders and spiderlike creatures attack the bearer of the stones on sight, and such creatures have advantage on checks to detect the possessor of the stones. The curse lasts until all the stones are given into the safekeeping of a drow worshiper of Lolth or the gems are subject to a {@spell 移除詛咒} spell."
 							]
 						}
 					]
@@ -750,7 +750,7 @@
 								]
 							]
 						},
-						"Ilvara retreats to her quarters for privacy, rest, and meditation. Roll a d6. On 1-2, the priestess is here. On a roll of 1, Shoor Vandree is also here with her. Ilvara is furious if anyone dares to enter her quarters unbidden. If the characters catch her here, she casts {@spell web}, {@spell conjure animals}, or {@spell insect plague} to bedevil them while she flees and calls for help. If Shoor is with Ilvara, he attacks to cover her escape.",
+						"Ilvara retreats to her quarters for privacy, rest, and meditation. Roll a d6. On 1-2, the priestess is here. On a roll of 1, Shoor Vandree is also here with her. Ilvara is furious if anyone dares to enter her quarters unbidden. If the characters catch her here, she casts {@spell 蛛網術}, {@spell 召喚動物}, or {@spell 疫病蟲群} to bedevil them while she flees and calls for help. If Shoor is with Ilvara, he attacks to cover her escape.",
 						{
 							"type": "entries",
 							"name": "Trap",
@@ -1217,7 +1217,7 @@
 							"id": "04b",
 							"entries": [
 								"Unless they obtain a supply of food and water, the adventurers must forage to survive on their journey. Finding sustenance in the Underdark is difficult but not impossible. Characters can gather food and water if the party travels at a normal or slow pace. A foraging character makes a Wisdom (Survival) check. The DC is typically 15, but might be as high as 20 in some parts of the Underdark. Food and water requirements for characters are described in chapter 8, \"Adventuring,\" of the {@i Player's Handbook}.",
-								"In addition to foraging, spells such as {@spell create food and water} and {@spell goodberry} can help provision the party, and there's always a chance for the characters to encounter others from whom they can buy or steal provisions. Additionally, many creatures the adventurers might meet and kill can be butchered, but the meat they yield spoils after a single day if uneaten. Eating spoiled meat might require a Constitution saving throw to keep the meal down, a Wisdom saving throw to avoid acquiring a level of madness from the awful experience (see \"Madness\" later in this chapter), or both.",
+								"In addition to foraging, spells such as {@spell 創造飲食} and {@spell 神莓術} can help provision the party, and there's always a chance for the characters to encounter others from whom they can buy or steal provisions. Additionally, many creatures the adventurers might meet and kill can be butchered, but the meat they yield spoils after a single day if uneaten. Eating spoiled meat might require a Constitution saving throw to keep the meal down, a Wisdom saving throw to avoid acquiring a level of madness from the awful experience (see \"Madness\" later in this chapter), or both.",
 								{
 									"type": "table",
 									"caption": "Creature Food Yield",
@@ -1348,7 +1348,7 @@
 						},
 						"A creature's madness level starts at 0. When the creature fails a madness saving throw, its madness level increases by 1, and the creature immediately suffers the level's effect (as determined by rolling on the Short-Term Madness, Long-Term Madness, or Indefinite Madness table in the {@i Dungeon Master's Guide}, as appropriate). When the effect ends, the creature's madness level doesn't change. Any time the creature's madness level increases, it suffers the effect of the new level.",
 						"If a creature with level 3 madness fails a madness saving throw, its madness level becomes 1. In this way, characters can potentially accumulate multiple forms of madness.",
-						"Bouts of short- and long-term madness can be cured as described in the {@i Dungeon Master's Guide}. Given the demonic source of the madness, {@spell remove curse} and {@i dispel evil} are also effective as cures. A {@spell greater restoration} spell or more powerful magic is needed to cure indefinite madness and also resets a creature's madness level to 0."
+						"Bouts of short- and long-term madness can be cured as described in the {@i Dungeon Master's Guide}. Given the demonic source of the madness, {@spell 移除詛咒} and {@i dispel evil} are also effective as cures. A {@spell 高等復原術} spell or more powerful magic is needed to cure indefinite madness and also resets a creature's madness level to 0."
 					]
 				},
 				{
@@ -1360,9 +1360,9 @@
 						{
 							"type": "list",
 							"items": [
-								"A {@item Spell Scroll (5th level)||spell scroll} of {@spell raise dead} can turn up among some treasure, either when it is needed or for the characters to save for later. A successful DC 15 spellcasting ability check is required for a lower-level character to use such a scroll.",
+								"A {@item Spell Scroll (5th level)||spell scroll} of {@spell 喚醒死者} can turn up among some treasure, either when it is needed or for the characters to save for later. A successful DC 15 spellcasting ability check is required for a lower-level character to use such a scroll.",
 								"A strange faerzress effect can bring a fallen character back to life, but not without a cost. The restored character's madness level increases by 1 upon being restored to life (see \"Madness\" earlier in this chapter).",
-								"If a fallen character's body is lost or left behind, the party's drow pursuers find it. The drow high priestess casts {@spell raise dead} on the corpse so that the character can be questioned. The character might escape later, or can be reunited with the other adventurers in a later chapter of the adventure when the drow catch up to them."
+								"If a fallen character's body is lost or left behind, the party's drow pursuers find it. The drow high priestess casts {@spell 喚醒死者} on the corpse so that the character can be questioned. The character might escape later, or can be reunited with the other adventurers in a later chapter of the adventure when the drow catch up to them."
 							]
 						},
 						"If a player character is permanently slain, think about the ways a player might introduce a new character to the party in the midst of a journey through the Underdark.",
@@ -1427,7 +1427,7 @@
 								"A nightlight is a tall and tube-shaped bioluminescent mushroom that grows to a height of 1d6+4 feet and emits bright light in a 15-foot radius and dim light for an additional 15 feet. A nightlight that is uprooted or destroyed goes dark after 1 round. If a living nightlight is touched, either by a creature or an object, its light goes out until it is touched again.",
 								"A Nilhogg's nose is a small mushroom that grants any creature that eats it advantage on Wisdom (Perception) checks based on smell for 1d4 hours. However, the creature suffers disadvantage on saving throws against effects based on smell for the same amount of time.",
 								"A bioluminescent green moss that grows in warm and damp areas, ormu is particularly common near steam tunnels and vents. It sheds dim light in a 5-foot radius, and can be harvested, dried, and made into a phosphorescent powder or pigment.",
-								"Also known as \"the devil's mushroom,\" a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a {@spell confusion} spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends.",
+								"Also known as \"the devil's mushroom,\" a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a {@spell 困惑術} spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends.",
 								"Tongue of madness is an edible fungus that looks somewhat like a large human tongue. A creature that eats a tongue of madness must succeed on a DC 12 Constitution saving throw or compulsively speak aloud its every thought for the next hour. The effect can be ended with a lesser restoration spell or similar magic.",
 								"A one- to two-foot-tall mushroom with a combustible cap, a single torchstalk burns for 24 hours once lit. There is a 1-in-6 chance that a torchstalk explodes when lit, bursting into a cloud of fiery spores. Creatures within 10 feet of an exploding torchstalk take 3 (1d6) fire damage."
 							]
@@ -1519,7 +1519,7 @@
 					"name": "Timmask",
 					"id": "060",
 					"entries": [
-						"Also known as \"the devil's mushroom,\" a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a {@spell confusion} spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends."
+						"Also known as \"the devil's mushroom,\" a timmask is a two-foot-tall toadstool with orange and red stripes across its beige cap. Uprooting or destroying a timmask causes it to expel a 15-foot-radius cloud of poisonous spores. Creatures in the area must succeed at a DC 14 Constitution saving throw or be poisoned. While poisoned in this way, the creature is under the effect of a {@spell 困惑術} spell with a duration of 1 minute. When the spell effect ends, the poisoned condition also ends."
 					]
 				},
 				{
@@ -5214,7 +5214,7 @@
 						},
 						"At the end of each hour the adventurers stay inside either derro area, there is a 25 percent chance that 2d4 {@creature derro|mtf} attack without warning. If the characters kill any derro, the chance of another attack becomes 50 percent every half hour.",
 						"Sneaking through the senseless arrangement of the burrows is relatively easy, as the derro are normally too preoccupied with their own mad scheming to notice a group trying not to attract attention. The characters can attempt a DC 10 group Dexterity (Stealth) check, with success negating the need to roll for a possible attack at the end of each hour or half hour.",
-						"Other means of subterfuge such as illusions, climbing along the walls, or using flying or levitation magic automatically avoid detection, but invisibility of any kind activates magical wards placed by derro savants to guard against duergar intrusion. When a ward activates in response to the presence of an invisible creature, nearby derro fly into a frenzy, creating a chaotic mob meant to drive away invisible duergar patrols. Derro make active Wisdom (Perception) checks contested by the characters' Dexterity (Stealth) checks if a ward is activated. Characters using {@spell detect magic} actively can spot the invisible sensor of a ward before it activates. Otherwise, invisible characters encounter a ward every 15 minutes they move through derro territory.",
+						"Other means of subterfuge such as illusions, climbing along the walls, or using flying or levitation magic automatically avoid detection, but invisibility of any kind activates magical wards placed by derro savants to guard against duergar intrusion. When a ward activates in response to the presence of an invisible creature, nearby derro fly into a frenzy, creating a chaotic mob meant to drive away invisible duergar patrols. Derro make active Wisdom (Perception) checks contested by the characters' Dexterity (Stealth) checks if a ward is activated. Characters using {@spell 偵測魔法} actively can spot the invisible sensor of a ward before it activates. Otherwise, invisible characters encounter a ward every 15 minutes they move through derro territory.",
 						{
 							"type": "entries",
 							"name": "Access to the Whorlstone Tunnels",
@@ -5232,7 +5232,7 @@
 					"name": "Halls of Sacred Scrolls",
 					"id": "141",
 					"entries": [
-						"The Halls of Sacred Scrolls comprise a temple of Diirinka carved into a stalagmite in Northfurrow District. Here, the derro Council of Savants meets and plots, living in luxurious quarters and hiding such opulence from their fellow derro. All areas of the Halls of Sacred Scrolls except the central worship chamber are forbidden to derro who aren't savants. Duergar don't enter this place, whose main doors are false and carved into the rock. The savants enter and leave using spells such as {@spell dimension door} and {@spell passwall}, while lesser derro access the worship chamber through secret tunnels from the West Cleft."
+						"The Halls of Sacred Scrolls comprise a temple of Diirinka carved into a stalagmite in Northfurrow District. Here, the derro Council of Savants meets and plots, living in luxurious quarters and hiding such opulence from their fellow derro. All areas of the Halls of Sacred Scrolls except the central worship chamber are forbidden to derro who aren't savants. Duergar don't enter this place, whose main doors are false and carved into the rock. The savants enter and leave using spells such as {@spell 次元門} and {@spell 穿牆術}, while lesser derro access the worship chamber through secret tunnels from the West Cleft."
 					]
 				},
 				{
@@ -5386,7 +5386,7 @@
 							"name": "Bigwig",
 							"id": "14e",
 							"entries": [
-								"A bigwig is a four-inch-tall mushroom with a thin stem and a wide purple cap. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it grows in size as though under the enlarge effect of an {@spell enlarge/reduce} spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another bigwig. The effect ends if the creature eats a pygmywort mushroom or is magically reduced to its normal size (using the reduce effect of an {@spell enlarge/reduce} spell, for example)."
+								"A bigwig is a four-inch-tall mushroom with a thin stem and a wide purple cap. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it grows in size as though under the enlarge effect of an {@spell 變巨/縮小術} spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another bigwig. The effect ends if the creature eats a pygmywort mushroom or is magically reduced to its normal size (using the reduce effect of an {@spell 變巨/縮小術} spell, for example)."
 							]
 						},
 						{
@@ -5394,7 +5394,7 @@
 							"name": "Pygmywort",
 							"id": "14f",
 							"entries": [
-								"A pygmywort is a mushroom with a one-inch-long stem and a stubby blue cap with white dots. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it shrinks in size as though under the reduce effect of an {@spell enlarge/reduce} spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another pygmywort. The effect ends if the creature eats a bigwig mushroom or is magically enlarged to its normal size (using the enlarge effect of an {@spell enlarge/reduce} spell, for example)."
+								"A pygmywort is a mushroom with a one-inch-long stem and a stubby blue cap with white dots. A creature that eats one can choose to make a DC 12 Constitution saving throw to not be affected by the mushroom's magic. If the creature fails or forgoes the saving throw, it shrinks in size as though under the reduce effect of an {@spell 變巨/縮小術} spell. The effect lasts for 1 hour. Ten minutes before the effect ends, the creature feels a tingling sensation, at which point it can sustain its current size by eating another pygmywort. The effect ends if the creature eats a bigwig mushroom or is magically enlarged to its normal size (using the enlarge effect of an {@spell 變巨/縮小術} spell, for example)."
 							]
 						}
 					]
@@ -5610,10 +5610,10 @@
 									"type": "list",
 									"items": [
 										"1 gp and 10 sp",
-										"A {@item Spell Scroll (2nd level)||spell scroll} of {@spell see invisibility}",
+										"A {@item Spell Scroll (2nd level)||spell scroll} of {@spell 識破隱形}",
 										"Two potions of healing",
 										"A worthless collection of dead vermin (spiders, centipedes, and the like) in various states of decomposition",
-										"Pages of lizard-skin parchment held together between two leather covers from two different books. The pages are full of mad scribbles and arcane formulas, but a character proficient in Intelligence (Arcana) can study them for 1 hour to discover that they constitute a spellbook containing the {@spell Tenser's floating disk} and {@spell feign death} spells.",
+										"Pages of lizard-skin parchment held together between two leather covers from two different books. The pages are full of mad scribbles and arcane formulas, but a character proficient in Intelligence (Arcana) can study them for 1 hour to discover that they constitute a spellbook containing the {@spell 譚森浮碟術} and {@spell 假死術} spells.",
 										"A strange lump of black metal, which Droki intends to deliver to the Gray Ghosts (see below)",
 										"A scroll in a copper tube and four small pouches containing stone giant toenail clippings and skin flecks, which Droki intends to deliver to the cultists (see below). Each pouch is tagged with a different name, and the scroll contains a list of names matching those on the tags, together with descriptions. One of the names is \"Dorhun,\" with a description corresponding to Stonespeaker Hgraam's apprentice. The rest of the names belong to other stone giants of Clan Cairngorm."
 									]
@@ -5833,9 +5833,9 @@
 					"name": "Zuggtomoy's Gift",
 					"id": "172",
 					"entries": [
-						"A myconid with Zuggtmoy's gift can, as an action once per day, release a 20-foot-radius cloud of demon-tainted spores. Any other creature within the area that isn't already \"blessed\" with Zuggtmoy's gift must make a Constitution saving throw, with a save DC of 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. A creature that forgoes or fails the saving throw becomes infected. While infected with Zuggtmoy's gift, the creature gains the ability to cast a special version of the {@spell tree stride} spell that has no components. This spell allows the infected creature to move through patches of mold and fungi instead of trees. Once it casts this spell, the infected creature can't cast the spell again until it finishes a long rest.",
+						"A myconid with Zuggtmoy's gift can, as an action once per day, release a 20-foot-radius cloud of demon-tainted spores. Any other creature within the area that isn't already \"blessed\" with Zuggtmoy's gift must make a Constitution saving throw, with a save DC of 8 + the myconid's Constitution modifier + the myconid's proficiency bonus. A creature that forgoes or fails the saving throw becomes infected. While infected with Zuggtmoy's gift, the creature gains the ability to cast a special version of the {@spell 樹躍術} spell that has no components. This spell allows the infected creature to move through patches of mold and fungi instead of trees. Once it casts this spell, the infected creature can't cast the spell again until it finishes a long rest.",
 						"Any creature infected with Zuggtmoy's gift has disadvantage on attack rolls against plant creatures. In addition, whenever an infected creature finishes a short or long rest, it must make a DC 15 Wisdom saving throw. On a failed save, the creature lapses into a state of euphoric bliss. While in this state, the creature can't take actions, bonus actions, or reactions, and must use all of its movement to dance and twirl about. At the end of its turn, the creature can repeat the saving throw, ending the euphoric bliss effect on a success.",
-						"A {@spell remove curse} or {@spell greater restoration} spell rids a creature of Zuggtmoy's gift."
+						"A {@spell 移除詛咒} or {@spell 高等復原術} spell rids a creature of Zuggtmoy's gift."
 					]
 				},
 				{
@@ -5958,7 +5958,7 @@
 							"id": "17b",
 							"entries": [
 								"The copper tank is a sprinkler used by the duergar to fertilize the fungi in the pit. The copper pipe that extends from the tank is 10 feet long and can be turned so that its nozzle points in any direction. The nozzle is pointed toward the pit by default.",
-								"Any creature can use an action to open or close a valve on the tank, releasing a cloud of pungent fertilizer that fills a 30-foot cube. The cloud grows 10 feet per side each round the valve remains open. The cloud has the same effect as a {@spell stinking cloud} spell (save DC 12), but the effect ends 1d4+1 rounds after the valve is closed or the tank runs out of fertilizer. The tank contains enough fertilizer to spray for 10 rounds.",
+								"Any creature can use an action to open or close a valve on the tank, releasing a cloud of pungent fertilizer that fills a 30-foot cube. The cloud grows 10 feet per side each round the valve remains open. The cloud has the same effect as a {@spell 臭雲術} spell (save DC 12), but the effect ends 1d4+1 rounds after the valve is closed or the tank runs out of fertilizer. The tank contains enough fertilizer to spray for 10 rounds.",
 								"As an action or a bonus action, a creature can turn the pipe 90 degrees in any direction."
 							]
 						},
@@ -6113,7 +6113,7 @@
 							"name": "Spiral Path",
 							"id": "189",
 							"entries": [
-								"This path helps to channel the ritual magic the cultists use to tame the cave bears. Though the ritual is currently inactive, the area radiates a faint aura of enchantment under the scrutiny of a {@spell detect magic} spell."
+								"This path helps to channel the ritual magic the cultists use to tame the cave bears. Though the ritual is currently inactive, the area radiates a faint aura of enchantment under the scrutiny of a {@spell 偵測魔法} spell."
 							]
 						},
 						{
@@ -8418,8 +8418,8 @@
 								{
 									"type": "list",
 									"items": [
-										"A {@spell gust of wind} spell or similar magic can forcibly move the cloud.",
-										"Casting a {@spell banishment} spell on the cloud sends it back to the Elemental Plane of Air if it fails its Charisma saving throw (it has a +4 modifier to the roll). A {@spell dispel evil and good} spell is equally effective and doesn't require a successful attack roll; however, the caster must be in contact with the cloud."
+										"A {@spell 造風術} spell or similar magic can forcibly move the cloud.",
+										"Casting a {@spell 放逐術} spell on the cloud sends it back to the Elemental Plane of Air if it fails its Charisma saving throw (it has a +4 modifier to the roll). A {@spell 反制善惡} spell is equally effective and doesn't require a successful attack roll; however, the caster must be in contact with the cloud."
 									]
 								},
 								"Creatures native to the Elemental Plane of Earth (including earth elementals, galeb duhr, gargoyles, and xorn) that come in contact with Ogremoch's Bane instantly fall under the cloud's sway. The effect lasts as long as the enslaved elementals and Ogremoch's Bane are on the same plane of existence."
@@ -8723,7 +8723,7 @@
 							"name": "Treasure",
 							"id": "25d",
 							"entries": [
-								"The hidden compartment in the Pudding King's fungal footstool contains 55 gp, 30 ep, a {@item potion of poison} in a gourd, two {@item Spell Scroll (4th level)||spell scrolls} written on sheets of dried trillimac ({@spell conjure minor elementals} and {@spell speak with plants}), and a varnished nothic eye that functions as a {@item crystal ball of true seeing} that can be used only once."
+								"The hidden compartment in the Pudding King's fungal footstool contains 55 gp, 30 ep, a {@item potion of poison} in a gourd, two {@item Spell Scroll (4th level)||spell scrolls} written on sheets of dried trillimac ({@spell 召喚次級元素生物} and {@spell 植物交談術}), and a varnished nothic eye that functions as a {@item crystal ball of true seeing} that can be used only once."
 							]
 						}
 					]
@@ -9180,7 +9180,7 @@
 							]
 						},
 						"If any of the named drow were killed in chapter 1, they have been replaced by other drow with similar statistics.",
-						"On her first turn in combat, Ilvara casts conjure animals to summon two {@creature giant spider||giant spiders} to fight alongside the drow, while Asha casts {@spell spirit guardians} on herself and concentrates to maintain it. The other drow cast {@spell darkness} to hinder ranged attackers before closing to melee. Shoor protects Ilvara, while Jorlan makes no effort to protect his fellow drow. Ilvara prefers to strike from a distance with her {@item tentacle rod}, or cast spells such as {@spell poison spray} and {@spell ray of sickness}.",
+						"On her first turn in combat, Ilvara casts conjure animals to summon two {@creature giant spider||giant spiders} to fight alongside the drow, while Asha casts {@spell 靈體守衛} on herself and concentrates to maintain it. The other drow cast {@spell 黑暗術} to hinder ranged attackers before closing to melee. Shoor protects Ilvara, while Jorlan makes no effort to protect his fellow drow. Ilvara prefers to strike from a distance with her {@item tentacle rod}, or cast spells such as {@spell 毒氣噴灑} and {@spell 致病射線}.",
 						"If Ilvara loses more than half her hit points, she attempts to summon a {@creature yochlol} demon.",
 						{
 							"type": "entries",
@@ -9654,7 +9654,7 @@
 								"{@b Personality:} Proud, self-assured, fickle, spendthrift",
 								"{@b Potential Resources:} Shield guardian",
 								"Lord Roaringhorn hails from a Waterdhavian noble family, with all the self-assurance and pride that entails. He pursued his talent for the arcane arts, but never forgot his roots or lost his fondness for spending his family's considerable income on the finer things in life. He's a confident sort who likes to gamble. Winning over Roaringhorn requires a willingness to dine, drink, and potentially game with him.",
-								"Lord Roaringhorn is accompanied by a shield guardian and holds its control amulet. The shield guardian currently has a {@spell lightning bolt} spell stored within it. A character can gain use of the shield guardian by winning a game of chess against the Harper wizard. Zelraun suggests a match after dinner.",
+								"Lord Roaringhorn is accompanied by a shield guardian and holds its control amulet. The shield guardian currently has a {@spell 閃電束} spell stored within it. A character can gain use of the shield guardian by winning a game of chess against the Harper wizard. Zelraun suggests a match after dinner.",
 								"A chess match takes 1 hour, and the outcome is determined by a best-of-three Intelligence check contest. Zelraun's experience gives him a +9 modifier to his Intelligence checks. Zelraun loans the shield guardian and its control amulet to the first character to beat him at the game. If Zelraun proves unbeatable, you can decide that Zelraun, ever the gracious winner, loans the shield guardian and amulet to the party on the provision that the characters vow to redeem themselves with a rematch upon their return from the Underdark.",
 								"If a character obtains Zelraun's shield guardian and control amulet, share the {@creature Shield Guardian} stats with the player whose character has the amulet. If the amulet changes hands, so too does control of the shield guardian.",
 								"If the characters attack Zelraun, use the {@creature archmage} statistics to represent him."
@@ -11425,7 +11425,7 @@
 							]
 						},
 						"After his initial greeting, Veldyskar speaks only if spoken to, and his answers are brief. With the basilisk as their guide, it takes the characters another eight hours to reach the gates of Gravenhollow. Untold years ago, a visiting stone giant druid presented the librarians with a gift: Veldyskar, an intelligent basilisk trained to serve the keepers as a guardian and general-purpose helper. The basilisk adapted readily to the timeless nature of the library and embraced his new duties with great dedication.",
-						"Veldyskar is committed to the protection of the library and its librarians. If trouble arises, his philosophy is to petrify first and ask questions later. Initially, this presented a problem for the stone giant librarians, as the basilisk had some difficulty reconciling his temper and bestial nature with the recognition of what trouble might actually look like. The stone giants taught Veldyskar how to cast {@spell greater restoration}, which the {@creature basilisk} can do once per day to restore anyone who crosses him."
+						"Veldyskar is committed to the protection of the library and its librarians. If trouble arises, his philosophy is to petrify first and ask questions later. Initially, this presented a problem for the stone giant librarians, as the basilisk had some difficulty reconciling his temper and bestial nature with the recognition of what trouble might actually look like. The stone giants taught Veldyskar how to cast {@spell 高等復原術}, which the {@creature basilisk} can do once per day to restore anyone who crosses him."
 					]
 				},
 				{
@@ -12410,10 +12410,10 @@
 							"name": "Wards",
 							"id": "358",
 							"entries": [
-								"Getting to the tower undetected is all but impossible. Vizeran knows whenever the secret door accessing the passage to Araj opens, by way of a permanent magical effect similar to a powerful {@spell alarm} spell. Intruders also have to deal with the {@spell guards and wards} spell active within the tower, which places {@spell arcane lock} spells on all the doors and sets {@spell web} spells across the central shaft and stairways. Doors within the Tower of Vengeance (including the main door) have AC 16, 25 hit points, a damage threshold of 5, resistance to thunder damage, and immunity to poison and psychic damage.",
-								"A {@spell magic mouth} spell at the entrance to the tower activates when intruders try to open the door, shouting: \"You dare to enter here unbidden? Flee for your lives now, while you still can!\" Another {@spell magic mouth} placed outside Vizeran's sanctum repeatedly calls out: \"Intruders! Beware!\" when any intruder approaches within 20 feet of the sanctum door.",
+								"Getting to the tower undetected is all but impossible. Vizeran knows whenever the secret door accessing the passage to Araj opens, by way of a permanent magical effect similar to a powerful {@spell 警報術} spell. Intruders also have to deal with the {@spell 銅牆鐵壁} spell active within the tower, which places {@spell 祕法鎖} spells on all the doors and sets {@spell 蛛網術} spells across the central shaft and stairways. Doors within the Tower of Vengeance (including the main door) have AC 16, 25 hit points, a damage threshold of 5, resistance to thunder damage, and immunity to poison and psychic damage.",
+								"A {@spell 魔嘴術} spell at the entrance to the tower activates when intruders try to open the door, shouting: \"You dare to enter here unbidden? Flee for your lives now, while you still can!\" Another {@spell 魔嘴術} placed outside Vizeran's sanctum repeatedly calls out: \"Intruders! Beware!\" when any intruder approaches within 20 feet of the sanctum door.",
 								"The tower's twenty-four suits of {@creature animated armor} attack anyone who enters Araj without Vizeran's permission, and continue attacking until they are destroyed or he calls them off. At the first sign of trouble, the {@creature death slaad} Kleve stalks intruders invisibly and attempts to attack with surprise. If Kleve is reduced to half its hit points, it retreats to its master's side.",
-								"Vizeran casts his protective spells before entering combat, along with {@spell invisibility} (renewing the death slaad's invisibility as well if he has time). As a last-ditch escape, Vizeran casts {@spell time stop} and uses the opportunity to flee or make a risky {@spell teleport} attempt to a bolt-hole shelter he has hidden in another Underdark location of your choice.",
+								"Vizeran casts his protective spells before entering combat, along with {@spell 隱形術} (renewing the death slaad's invisibility as well if he has time). As a last-ditch escape, Vizeran casts {@spell 時間停止} and uses the opportunity to flee or make a risky {@spell 傳送術} attempt to a bolt-hole shelter he has hidden in another Underdark location of your choice.",
 								"In the event the characters have the opportunity to loot Araj, they find the items listed under \"What Vizeran Offers,\" along with other treasure suitable for a foe of the archmage's power. See chapter 7, \"Treasure,\" of the {@i Dungeon Master's Guide} for guidelines on creating Vizeran's treasury, keeping in mind that the wily drow has likely trapped his most powerful magic items. If he survives and escapes, Vizeran adds those who dare to threaten him and loot his home to the list of people who will suffer his revenge."
 							]
 						}
@@ -12784,7 +12784,7 @@
 							"name": "Treasure",
 							"id": "375",
 							"entries": [
-								"Searching the cave reveals the remains of a half-eaten male drow lying against one wall. The drow carries a small pouch containing 30 gp and two spell scrolls ({@spell shield} and {@spell phantasmal force}) written on sheets of trillimac (see \"{@area Fungi of the Underdark|053|x}\" in chapter 2).",
+								"Searching the cave reveals the remains of a half-eaten male drow lying against one wall. The drow carries a small pouch containing 30 gp and two spell scrolls ({@spell 護盾術} and {@spell 魅影之力}) written on sheets of trillimac (see \"{@area Fungi of the Underdark|053|x}\" in chapter 2).",
 								"If the ropers are killed and cut open, the adventurers find 25 pp in the gizzard of one, and a {@item ring of protection} in the gizzard of the other."
 							]
 						}
@@ -13301,7 +13301,7 @@
 									]
 								},
 								"As long as the adventurers are respectful toward Shedrak and his master - and particularly if they claim to carry messages or items of possible interest to the beholder - Shedrak agrees to lead them to Karazikar.",
-								"If the characters become hostile, Shedrak orders them to depart, lest they provoke the wrath of his all-powerful master. If attacked, he uses his {@spell globe of invulnerability} scroll, casts {@spell fly} on himself, and flies into the chasm.",
+								"If the characters become hostile, Shedrak orders them to depart, lest they provoke the wrath of his all-powerful master. If attacked, he uses his {@spell 法術無效結界} scroll, casts {@spell 飛行術} on himself, and flies into the chasm.",
 								"Shedrak allows up to ten party members accompany him, demanding that the rest of the expeditionary force remain behind. Shedrak then leads the smaller group across a bridge into the middle of Karazikar's Maw."
 							]
 						},
@@ -15373,7 +15373,7 @@
 					"id": "429",
 					"entries": [
 						"The estates of the various drow houses are clustered beneath the plateau of Qu'ellarz'orl in an area called Narbondellyn, allowing the superiors of those drow to literally look down upon them. Largely untouched during Demogorgon's rampage, the so-called \"Broad Streets\" district remains the bright center of Menzoberranzan, as the lesser houses vie to outdo each other in shows of wealth, power, and influence. Soaring stalagmite towers and great manors rise across the area, which is also home to luxury shops, pleasure houses, and discriminating merchants.",
-						"A noble estate in Narbondellyn maintains its own militia, consisting of fifty or more highly disciplined {@creature drow} warriors and {@creature drow elite warrior||drow elite warriors}, with one elite warrior for every ten drow warriors. In addition, an estate holds 3d6 drow {@creature noble||nobles} and scores of slaves, 6d6 of which can be pressed into defending the house. These fighting slaves are usually {@creature bugbear||bugbears}, {@creature ogre||ogres}, {@creature orc||orcs}, or {@creature quaggoth||quaggoths}. Doors and windows are protected with {@spell glyph of warding} spells (spell save DC 13), and 2d6 {@creature gargoyle||gargoyles} watch for trouble from ledges and rooftops.",
+						"A noble estate in Narbondellyn maintains its own militia, consisting of fifty or more highly disciplined {@creature drow} warriors and {@creature drow elite warrior||drow elite warriors}, with one elite warrior for every ten drow warriors. In addition, an estate holds 3d6 drow {@creature noble||nobles} and scores of slaves, 6d6 of which can be pressed into defending the house. These fighting slaves are usually {@creature bugbear||bugbears}, {@creature ogre||ogres}, {@creature orc||orcs}, or {@creature quaggoth||quaggoths}. Doors and windows are protected with {@spell 守衛銘文} spells (spell save DC 13), and 2d6 {@creature gargoyle||gargoyles} watch for trouble from ledges and rooftops.",
 						"If you want a random encounter to occur as the characters make their way through the Narbondellyn district, roll a d20 and consult the Narbondellyn Encounters table, or choose an encounter that you like. The party can avoid random encounters in Narbondellyn by succeeding on a DC 13 Dexterity (Stealth) group check.",
 						{
 							"type": "table",
@@ -15669,7 +15669,7 @@
 					"name": "Drow Mages",
 					"id": "43b",
 					"entries": [
-						"The characters encounter 1d3 {@creature drow mage||drow mages} out for a walk. There is a 50 percent chance that these mages are members of the Council of Spiders and of a mind to help the characters infiltrate Sorcere, should the characters reveal that they are in league with Vizeran DeVir. These mages offer to cast {@spell greater invisibility} spells on visible characters and escort the party to Gromph's sanctum in the tower. As long as the characters are under the protection of these mages, they have no hostile encounters until they enter Gromph's sanctum (see \"Sorcere\" for details)."
+						"The characters encounter 1d3 {@creature drow mage||drow mages} out for a walk. There is a 50 percent chance that these mages are members of the Council of Spiders and of a mind to help the characters infiltrate Sorcere, should the characters reveal that they are in league with Vizeran DeVir. These mages offer to cast {@spell 高等隱形術} spells on visible characters and escort the party to Gromph's sanctum in the tower. As long as the characters are under the protection of these mages, they have no hostile encounters until they enter Gromph's sanctum (see \"Sorcere\" for details)."
 					]
 				},
 				{
@@ -15881,7 +15881,7 @@
 						},
 						"When Matron Mother Quenthel Baenre resurrected House Do'Urden, she ordered her brother Jarlaxle to look after the long-abandoned Do'Urden estate. He now uses the ruined drow house as a Bregan D'aerthe base. Most of the house is off-limits to visitors, and Jarlaxle won't allow the characters to stay long.",
 						"Jarlaxle doesn't want the demon lords rampaging through the Underdark or making it to the surface world. If the characters reveal that their ultimate goal is to send the demon lords back to the Abyss, Jarlaxle gives them whatever aid he can short of doing their \"dirty work\" for them. If the characters mention Vizeran DeVir, Jarlaxle's interest is piqued, for he thought Vizeran was dead. He warns them not to trust that \"relic of a bygone house.\" If the characters mention Vizeran's plan to make Menzoberranzan the site for the final showdown with the demon lords, Jarlaxle insists that the characters choose a different battleground, warning them that Bregan D'aerthe will oppose any effort to visit further destruction upon the city.",
-						"If the characters claim to be looking for a safe way into Sorcere, Jarlaxle arranges for a member of the Council of Spiders to visit the party at a Bregan D'aerthe safe house in West Wall. This male {@creature drow mage} brings scrolls of {@spell greater invisibility} - one for each party member - and also gives the characters a password that temporarily bypasses the tower's defenses. Characters who speak the password while inside the tower won't have to deal with the tower's {@spell guards and wards} effect for a period of 1 hour (see \"Sorcere\" later in this chapter). Bregan D'aerthe makes sure that the characters have no hostile encounters as they make their way to the Academy.",
+						"If the characters claim to be looking for a safe way into Sorcere, Jarlaxle arranges for a member of the Council of Spiders to visit the party at a Bregan D'aerthe safe house in West Wall. This male {@creature drow mage} brings scrolls of {@spell 高等隱形術} - one for each party member - and also gives the characters a password that temporarily bypasses the tower's defenses. Characters who speak the password while inside the tower won't have to deal with the tower's {@spell 銅牆鐵壁} effect for a period of 1 hour (see \"Sorcere\" later in this chapter). Bregan D'aerthe makes sure that the characters have no hostile encounters as they make their way to the Academy.",
 						"Once he becomes aware of Gromph's grimoire, Jarlaxle does everything in his power to make sure the characters get the grimoire out of the city. Once Vizeran's ritual is complete, Jarlaxle plans to send Bregan D'aerthe spies to find Vizeran and steal the grimoire, so that he has evidence he can lord over his brother.",
 						"Vizeran's plan is appealing to Jarlaxle because it doesn't cost him anything. As long as the adventurers are committed to driving the demon lords back to the Abyss, Jarlaxle keeps his Bregan D'aerthe forces on the sidelines, ready to defend Menzoberranzan.",
 						{
@@ -15928,7 +15928,7 @@
 					"name": "Guards and Wards",
 					"id": "451",
 					"entries": [
-						"The whole tower is protected by permanent {@spell guards and wards} spells. The tower's drow residents are immune to the effects, but intruders are not. If the characters have the support of the Council of Spiders, members of the council give them a password which, when spoken aloud inside the tower, grants the speaker immunity to the spells' effect for 1 hour. After that, the password magically changes, and any characters still in the tower must deal with the {@spell guards and wards} effect."
+						"The whole tower is protected by permanent {@spell 銅牆鐵壁} spells. The tower's drow residents are immune to the effects, but intruders are not. If the characters have the support of the Council of Spiders, members of the council give them a password which, when spoken aloud inside the tower, grants the speaker immunity to the spells' effect for 1 hour. After that, the password magically changes, and any characters still in the tower must deal with the {@spell 銅牆鐵壁} effect."
 					]
 				},
 				{
@@ -15989,7 +15989,7 @@
 					"id": "453",
 					"entries": [
 						"There is a 50 percent chance that these mages have been forewarned of the party's arrival, either by Vizeran DeVir or by Matron Mother Quenthel Baenre, in which case they let the characters pass. Otherwise, the drow mages assume the characters are intruders and attack unless Grin Ousstyl is with them. If the characters declare that they have Quenthel Baenre's permission to be here, they can convince the mages to stand down with a successful DC 12 Charisma (Deception or Persuasion) check.",
-						"If one or more mages fall in battle, the rest use {@spell greater invisibility} spells to turn invisible and retreat, putting the tower on alert if it isn't already."
+						"If one or more mages fall in battle, the rest use {@spell 高等隱形術} spells to turn invisible and retreat, putting the tower on alert if it isn't already."
 					]
 				},
 				{
@@ -16107,7 +16107,7 @@
 					"name": "Gromph's Outer Sanctum",
 					"id": "45a",
 					"entries": [
-						"The black marble door to Gromph Baenre's chambers is etched with silvery runes around its edge and closed with an {@spell arcane lock} keyed to him. Picking the lock requires a successful DC 23 Dexterity check using thieves' tools, while forcing the door open requires a successful DC 25 Strength check. A {@spell knock} spell also opens the door, and Grin Ousstyl can have the spell prepared if none of the adventurers knows it.",
+						"The black marble door to Gromph Baenre's chambers is etched with silvery runes around its edge and closed with an {@spell 祕法鎖} keyed to him. Picking the lock requires a successful DC 23 Dexterity check using thieves' tools, while forcing the door open requires a successful DC 25 Strength check. A {@spell 敲擊術} spell also opens the door, and Grin Ousstyl can have the spell prepared if none of the adventurers knows it.",
 						{
 							"type": "inset",
 							"id": "45b",
@@ -16125,8 +16125,8 @@
 							"name": "Trapped Secret Door",
 							"id": "45c",
 							"entries": [
-								"Any party member with a passive Wisdom (Perception) score of 20 or higher notices a secret door in the wall, while a character searching the room for secret doors must succeed on a DC 15 Wisdom (Perception) check to find it. Any creature with 12 Hit Dice or fewer that approaches within 5 feet of the secret door without speaking the word {@i khaless} (\"trust\") triggers an {@spell imprisonment} spell (save DC 17). On a failed save, the creature is trapped in minimus containment inside a gemstone in Gromph's inner sanctum (described in the next section). The trap ceases to exist once a creature becomes imprisoned. A successful {@spell dispel magic} (DC 19) cast on the secret door removes the trap.",
-								"Opening the secret door requires a {@spell knock} spell or a successful DC 20 Intelligence (Arcana) check to assess and manipulate its magic. Beyond it lies a dark void that can't be dispelled or destroyed. Anyone or anything that touches the void is instantly transported to a labyrinthine demiplane similar to that created by a {@spell maze} spell. A creature that succeeds on the DC 20 Intelligence check to escape the maze reappears in the middle of the outer sanctum. However, if a creature casts a spell of 5th level or higher while in the demiplane, all creatures and objects in the demiplane instantly appear in Gromph's inner sanctum instead."
+								"Any party member with a passive Wisdom (Perception) score of 20 or higher notices a secret door in the wall, while a character searching the room for secret doors must succeed on a DC 15 Wisdom (Perception) check to find it. Any creature with 12 Hit Dice or fewer that approaches within 5 feet of the secret door without speaking the word {@i khaless} (\"trust\") triggers an {@spell 禁錮術} spell (save DC 17). On a failed save, the creature is trapped in minimus containment inside a gemstone in Gromph's inner sanctum (described in the next section). The trap ceases to exist once a creature becomes imprisoned. A successful {@spell 解除魔法} (DC 19) cast on the secret door removes the trap.",
+								"Opening the secret door requires a {@spell 敲擊術} spell or a successful DC 20 Intelligence (Arcana) check to assess and manipulate its magic. Beyond it lies a dark void that can't be dispelled or destroyed. Anyone or anything that touches the void is instantly transported to a labyrinthine demiplane similar to that created by a {@spell 迷宮術} spell. A creature that succeeds on the DC 20 Intelligence check to escape the maze reappears in the middle of the outer sanctum. However, if a creature casts a spell of 5th level or higher while in the demiplane, all creatures and objects in the demiplane instantly appear in Gromph's inner sanctum instead."
 							]
 						},
 						{
@@ -16134,8 +16134,8 @@
 							"name": "Treasure",
 							"id": "45d",
 							"entries": [
-								"The collection of rare books and scrolls in the archmage's chambers is worth 15,000 gp, assuming the characters have the means to haul it out. A character who spends 10 minutes poring over the collection can make a DC 15 Intelligence (Arcana) check. On a successful check, the character confirms that Gromph's grimoire isn't among the books in the collection and also identifies the collection's five most valuable tomes, worth 1,000 gp each. However, one of these valuable works is trapped with a {@spell glyph of warding} that triggers the third effect of {@spell bestow curse} (save DC 17), and which lasts until dispelled.",
-								"The drawers of the desk are sealed with {@spell arcane lock} spells. Picking a drawer's lock requires thieves' tools and a successful DC 23 Dexterity check. A {@spell knock} spell or a successful {@spell dispel magic} (DC 15) cast on a drawer removes its magical lock. When opened, the drawers are empty. An effect similar to {@spell Leomund's secret chest} shifts the drawers' contents into an extradimensional space when anyone other than Gromph opens them."
+								"The collection of rare books and scrolls in the archmage's chambers is worth 15,000 gp, assuming the characters have the means to haul it out. A character who spends 10 minutes poring over the collection can make a DC 15 Intelligence (Arcana) check. On a successful check, the character confirms that Gromph's grimoire isn't among the books in the collection and also identifies the collection's five most valuable tomes, worth 1,000 gp each. However, one of these valuable works is trapped with a {@spell 守衛銘文} that triggers the third effect of {@spell 降咒} (save DC 17), and which lasts until dispelled.",
+								"The drawers of the desk are sealed with {@spell 祕法鎖} spells. Picking a drawer's lock requires thieves' tools and a successful DC 23 Dexterity check. A {@spell 敲擊術} spell or a successful {@spell 解除魔法} (DC 15) cast on a drawer removes its magical lock. When opened, the drawers are empty. An effect similar to {@spell 李歐蒙秘藏箱} shifts the drawers' contents into an extradimensional space when anyone other than Gromph opens them."
 							]
 						}
 					]
@@ -16164,7 +16164,7 @@
 							"id": "460",
 							"entries": [
 								"Gromph's grimoire rests atop the lectern near the circle and bears the title {@i Zhaun'ol'leal} (\"The Book of the Eight\" in Elvish) and describes rituals for summoning and binding powerful demons. It's open to a chapter that talks about the summoning of Demogorgon.",
-								"The various arcane components and ritual items in the workroom are worth 1,000 gp total. A 6,000 gp diamond also sits on a small stand atop a workbench. It contains any creature trapped by the {@spell imprisonment} spell that guards the secret door in Gromph's Outer Sanctum."
+								"The various arcane components and ritual items in the workroom are worth 1,000 gp total. A 6,000 gp diamond also sits on a small stand atop a workbench. It contains any creature trapped by the {@spell 禁錮術} spell that guards the secret door in Gromph's Outer Sanctum."
 							]
 						},
 						{
@@ -16621,7 +16621,7 @@
 					"name": "Into the Gray Dream",
 					"id": "47b",
 					"entries": [
-						"The rapport with Araumycos affects the adventurers like an {@spell astral projection} spell, sending their astral bodies out into the Astral Plane where Araumycos's vast, dreaming mind resides. Their bodies remain unconscious in suspended animation while they are projected into the Astral Plane. Read the following aloud to the players.",
+						"The rapport with Araumycos affects the adventurers like an {@spell 星界投影} spell, sending their astral bodies out into the Astral Plane where Araumycos's vast, dreaming mind resides. Their bodies remain unconscious in suspended animation while they are projected into the Astral Plane. Read the following aloud to the players.",
 						{
 							"type": "inset",
 							"id": "47c",
@@ -16674,7 +16674,7 @@
 					"id": "481",
 					"entries": [
 						"As the psychic din awakens Araumycos from its trance, the shimmering colors piercing the silver of the Astral Plane flare even brighter. The following round, Araumycos enters into full rapport with the characters and their myconid allies. The entity reveals that Zuggtmoy has already infected its mind with her demonic influence, which Araumycos can feel growing in strength. It's only a matter of time before it falls to the demon queen's will. Focused but fearful, the entity asks the adventurers to cut out and destroy the diseased part of its mind before it's too late.",
-						"The characters are guided to the far side of the suspended fungus cluster inside the skull, where a dark mass is spreading. The first time any character comes within 20 feet of the dark mass, it erupts with the effect of an {@spell Evard's black tentacles} spell. The infected area of Araumycos's mind has AC 13, 100 hit points, and vulnerability to necrotic and psychic damage.",
+						"The characters are guided to the far side of the suspended fungus cluster inside the skull, where a dark mass is spreading. The first time any character comes within 20 feet of the dark mass, it erupts with the effect of an {@spell 艾伐黑觸手} spell. The infected area of Araumycos's mind has AC 13, 100 hit points, and vulnerability to necrotic and psychic damage.",
 						"When the infected area first takes damage, Zuggtmoy senses it and turns her attention away from Juiblex in an attempt to stop the characters. As she exerts her will over Araumycos, a burst of spores spreads out in a cloud from the infected area. Any creature within 20 feet of the infected area must make a successful DC 19 Constitution saving throw or take 3d6 poison damage and become poisoned. While poisoned in this way, the creature takes 3d6 poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.",
 						"As the characters destroy more of the infected area, the view beyond the bounds of the skull chamber begins to darken. When the area reaches 0 hit points, a powerful psychic wind howls through the area. Each character must make a successful DC 15 Intelligence saving throw to avoid the mental effect of a psychic wind (see \"The Astral Plane\" in chapter 2 of the {@i Dungeon Master's Guide}). This psychic wind has no location effect, as the rapport ends thereafter and the characters awaken back in their physical bodies. Physical damage and ongoing effects suffered by their astral forms aren't carried over to the characters' physical bodies."
 					]
@@ -16842,7 +16842,7 @@
 					"name": "Enacting the Plan",
 					"id": "490",
 					"entries": [
-						"Once the {@i dark heart} is in place, the ritual can begin. The adventurers and their allies take up a position not far from the {@i dark heart}, close to where the demons will appear. Where exactly depends on the placement of the talisman and the adventurers' own tactics and plans. They can use a {@spell sending} spell to signal Vizeran to begin the ritual once the talisman is in place. (If none of the characters can cast {@spell sending}, Vizeran can provide the spell on a {@i spell scroll}).",
+						"Once the {@i dark heart} is in place, the ritual can begin. The adventurers and their allies take up a position not far from the {@i dark heart}, close to where the demons will appear. Where exactly depends on the placement of the talisman and the adventurers' own tactics and plans. They can use a {@spell 短訊術} spell to signal Vizeran to begin the ritual once the talisman is in place. (If none of the characters can cast {@spell 短訊術}, Vizeran can provide the spell on a {@i spell scroll}).",
 						"Vizeran (assisted by Grin if the apprentice is available), performs the complex ritual in the sanctum of his tower. The ritual causes the dark heart to radiate a summons throughout the Underdark using the faerzress-an irresistible call drawing the demons toward it. When the ritual reaches its conclusion at the end of nine hours, portals of faerzress form. All the demons and demon lords in the Underdark are drawn through those portals, appearing together in the area around the dark heart talisman.",
 						"Enraged by being forcibly summoned yet again by a ritual, the demons fly into a frenzy once they see each other, beginning a battle to the death. As each demon's material form is destroyed, its essence is banished back into the Abyss. The task of the adventurers is to be close at hand but not get caught up in the battle until one demon lord is left standing, weakened and spent from the conflict. That becomes the adventurers' cue to attack and destroy the last demon lord, banishing it to the Abyss if they succeed."
 					]

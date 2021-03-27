@@ -1282,17 +1282,17 @@
 										{
 											"type": "item",
 											"name": "Mage:",
-											"entry": "{@spell mage hand}, {@spell ray of frost}, {@spell thunderwave}"
+											"entry": "{@spell 法師之手}, {@spell 冷凍射線}, {@spell 雷鳴波}"
 										},
 										{
 											"type": "item",
 											"name": "Healer:",
-											"entry": "{@spell cure wounds}, {@spell guidance}, {@spell sacred flame}"
+											"entry": "{@spell 治療傷勢}, {@spell 指導術}, {@spell 聖焰}"
 										},
 										{
 											"type": "item",
 											"name": "Prodigy:",
-											"entry": "{@spell eldritch blast}, {@spell healing word}, {@spell light}"
+											"entry": "{@spell 魔能爆}, {@spell 治癒真言}, {@spell 光亮術}"
 										},
 										"The Cantrips Known and Spells Known columns of the Spellcaster table shows when the sidekick learns more spells of your choice. Each of the spells in the Spells Known column must be of a level for which the sidekick has spell slots, as shown on the table. For instance, when the sidekick reaches 5th level in this class, it can learn one new spell of 1st or 2nd level.",
 										"Additionally, when the sidekick gains a level in this class, you can choose one of the spells it knows from this class and replace it with another spell from its spell list. The new spell must be a cantrip or of a level for which the sidekick has spell slots."
@@ -2120,7 +2120,7 @@
 					"name": "Spell Slots",
 					"entries": [
 						"The Spellcaster table shows how many spell slots the sidekick has to cast its spellcaster spells of 1st level and higher. To cast one of these spells, the sidekick must expend a slot of the spell's level or higher. The spellcaster regains all expended spell slots when it finishes a long rest.",
-						"For example, if the sidekick knows the 1st-level spell {@spell cure wounds} and has a 1st-level and a 2nd-level spell slot available, it can cast the spell using either slot."
+						"For example, if the sidekick knows the 1st-level spell {@spell 治療傷勢} and has a 1st-level and a 2nd-level spell slot available, it can cast the spell using either slot."
 					]
 				},
 				{

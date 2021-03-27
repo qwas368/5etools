@@ -340,7 +340,7 @@
 								"This is {@creature Amble|LR}, a tortle druid who sought passage on this ship, and was on board when it sank. Amble was traveling to Turmish on the Sea of Fallen Stars, as they had heard of the war with Thay. Detesting undead and necromancy, Amble wants to help fight the Thayans in any way they can.",
 								"Due to their extremely strong connection with the Feywild, Amble was able to enter a protected state of suspended animation as the ship sunk, protecting them from drowning.",
 								"The undead will not willingly approach this ship, repelled by the power emanating from Amble, and Gar has yet to explore this passage inside the coral mountain.",
-								"At the moment, Amble is waiting for someone to wake them up. Any good-aligned character who touches the tortle will wake them. When this occurs, Amble is momentarily confused, and then gathering their wits, casts {@spell water breathing} on themself.",
+								"At the moment, Amble is waiting for someone to wake them up. Any good-aligned character who touches the tortle will wake them. When this occurs, Amble is momentarily confused, and then gathering their wits, casts {@spell 水下呼吸} on themself.",
 								"Assuming the characters don't act with hostility, Amble is very interested in hearing what the characters are doing. Amble can be a powerful ally for the party, though the tortle's vow to never harm humanoids is not negotiable. Amble doesn't necessarily expect others to follow this rule, but will encourage them to do so nonetheless.",
 								{
 									"type": "inset",
@@ -554,8 +554,8 @@
 									"width": 914,
 									"height": 1000
 								},
-								"Otherwise, as the characters pass between (or into) {@area areas 8|029|x} and {@area 9|031|x}, one of the kraken priests triggers the ballistae trap, firing both siege weapons simultaneously, while the other casts {@spell Evard's black tentacles}, effectively blocking off the entrance to area 10. On the following round, the other kraken priest will also cast {@spell Evard's black tentacles}, and the two of them will proceed to do whatever they can (such as casting command) to keep the characters caught up in those spell areas.",
-								"Once the characters emerge from those areas, or manage to remove the spells altogether, the kraken priests cast {@spell lightning bolt} and then move to use their thunderous touch attack, as they have no choice but to engage in melee combat.",
+								"Otherwise, as the characters pass between (or into) {@area areas 8|029|x} and {@area 9|031|x}, one of the kraken priests triggers the ballistae trap, firing both siege weapons simultaneously, while the other casts {@spell 艾伐黑觸手}, effectively blocking off the entrance to area 10. On the following round, the other kraken priest will also cast {@spell 艾伐黑觸手}, and the two of them will proceed to do whatever they can (such as casting command) to keep the characters caught up in those spell areas.",
+								"Once the characters emerge from those areas, or manage to remove the spells altogether, the kraken priests cast {@spell 閃電束} and then move to use their thunderous touch attack, as they have no choice but to engage in melee combat.",
 								"When both kraken priests have been reduced to half their hit points, they call for the {@creature young kraken|LR} to attack the characters. Likewise, if one or more of the kraken priests falls in combat, the creature emerges from its enclosure in the rear of the chamber to assault the party.",
 								{
 									"type": "entries",
@@ -598,7 +598,7 @@
 											"name": "Trap",
 											"id": "03b",
 											"entries": [
-												"When a character crosses the threshold of the bulkhead between the back and the front of the ship, the trap is triggered. When that occurs, refer to the \"Olhydra's Gambit\" sidebar. {@spell Dispel magic}, successfully cast against a 6th level spell, suppresses this trap for 1 minute.",
+												"When a character crosses the threshold of the bulkhead between the back and the front of the ship, the trap is triggered. When that occurs, refer to the \"Olhydra's Gambit\" sidebar. {@spell 解除魔法}, successfully cast against a 6th level spell, suppresses this trap for 1 minute.",
 												{
 													"type": "inset",
 													"name": "Olhydra's Gambit",
@@ -662,7 +662,7 @@
 								},
 								"If the characters are not hostile toward Shoalar, and express a desire to help him in this mission, the devotee of Olhydra will gladly join them.",
 								"If at any point the characters attack Shoalar, or if they say something to make him believe they cannot be allies, he will attack them. If this occurs, the two helms on the altar will rise up as a pair of {@creature Water Elemental Myrmidon|MTF|water elemental myrmidons} and assist Shoalar in fighting the characters.",
-								"Shoalar is already under the effect of the {@spell mage armor} spell when the characters arrive. He begins combat by casting {@spell lightning bolt}, affecting as many characters as possible. He's likely to follow up with {@spell watery sphere|XGE} to restrain troublesome characters so the water elemental myrmidons can attack while they're {@condition restrained}.",
+								"Shoalar is already under the effect of the {@spell 法師護甲} spell when the characters arrive. He begins combat by casting {@spell 閃電束}, affecting as many characters as possible. He's likely to follow up with {@spell watery sphere|XGE} to restrain troublesome characters so the water elemental myrmidons can attack while they're {@condition restrained}.",
 								{
 									"type": "entries",
 									"id": "03f",
@@ -695,7 +695,7 @@
 									]
 								},
 								"Gar's power has grown by no small measure since he last encountered adventurers. Though he remains sullen and morose, he simultaneously projects an air of strength and confidence.",
-								"With the exception of anyone under the effect of a {@spell nondetection} spell, Gar is aware of every inhabitant within the coral mountain and has been tracking the characters' progress through his domain. While he doesn't know precisely what they've accomplished, outside of any creatures they might have killed or destroyed, he is ready for their arrival.",
+								"With the exception of anyone under the effect of a {@spell 迴避偵測} spell, Gar is aware of every inhabitant within the coral mountain and has been tracking the characters' progress through his domain. While he doesn't know precisely what they've accomplished, outside of any creatures they might have killed or destroyed, he is ready for their arrival.",
 								"After everyone has entered the chamber, Gar surreptitiously (but rapidly) grows the coral over the entrance, blocking them in. If anyone is hesitant to enter, he'll beckon for them to come forward, asking them to converse with him. In this regard, his demeanor is regal, but gracious and non-hostile.",
 								{
 									"type": "insetReadaloud",
@@ -724,7 +724,7 @@
 										"If at any point the characters act in a manner unbecoming to a peaceful conversation (cast a spell, move to attack, attempt to circle to his flank or behind him, etc.) Gar sighs, and disappears from the chamber."
 									]
 								},
-								"In both instances, Gar teleports using the coral as a means of transport, similar to the tree stride spell. He casts no spell to do this, so {@spell counterspell} cannot be used to prevent his departure.",
+								"In both instances, Gar teleports using the coral as a means of transport, similar to the tree stride spell. He casts no spell to do this, so {@spell 反制法術} cannot be used to prevent his departure.",
 								{
 									"type": "inset",
 									"name": "The Final Countdown",
@@ -733,10 +733,10 @@
 										"At this point it is extremely important that you keep track of how many rounds it takes the characters to complete this combat, and exit the chamber. While they're in combat here, Gar has proceeded to the final encounter that begins with his assault on the kraken priests. See below for more details."
 									]
 								},
-								"When Gar leaves this area, the {@creature Sea Lion|TftYP|sea lions} attack the characters, and the entire room is flooded with magic that acts like an {@spell entangle} spell of massive proportions.",
+								"When Gar leaves this area, the {@creature Sea Lion|TftYP|sea lions} attack the characters, and the entire room is flooded with magic that acts like an {@spell 糾纏術} spell of massive proportions.",
 								"Each round the characters are in the room, the coral attempts to grow up and around them, forcing them to make a DC 18 Strength saving throw or be {@condition restrained}.",
 								"A character who is restrained by the coral can use their action to make a DC 18 Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check to free themselves. The sea lions are immune to this effect.",
-								"A character who successfully casts {@spell dispel magic} against a 6th level spell suppresses this effect for 1 minute.",
+								"A character who successfully casts {@spell 解除魔法} against a 6th level spell suppresses this effect for 1 minute.",
 								"To leave this chamber, the characters will have to cut their way out or move through the coral blocking the entrance. The coral covering the entrance has has AC 15, 40 hit points, immunity to psychic and poison damage, and resistance to piercing and slashing damage.",
 								"It's possible to push through the coral, but doing so requires a successful DC 18 Dexterity saving throw. A creature who fails this saving throw takes {@dice 7d8} slashing damage, or half as much on a success. The wall is 5 feet thick and every 1 foot costs 5 feet of movement. Characters stuck in the wall are considered restrained until they push through, and are required to make the above Dexterity saving throw on their turn each round."
 							]
@@ -785,7 +785,7 @@
 															"name": "Round 1",
 															"id": "04b",
 															"entries": [
-																"Not suspecting treachery, the kraken priests aren't prepared when Gar casts {@spell charm person} as a 2nd level spell, charming them both."
+																"Not suspecting treachery, the kraken priests aren't prepared when Gar casts {@spell 魅惑人類} as a 2nd level spell, charming them both."
 															]
 														},
 														{
@@ -856,7 +856,7 @@
 															"name": "Round 2",
 															"id": "054",
 															"entries": [
-																"Gar casts {@spell conjure animals} as a 7th level spell, summoning six {@creature Swarm of Quippers||swarms of quippers} and directing them to slay and consume the kraken priests."
+																"Gar casts {@spell 召喚動物} as a 7th level spell, summoning six {@creature Swarm of Quippers||swarms of quippers} and directing them to slay and consume the kraken priests."
 															]
 														},
 														{
@@ -872,7 +872,7 @@
 															"name": "Round 5",
 															"id": "056",
 															"entries": [
-																"Gar casts {@spell freedom of movement}, escaping the grapple, and then uses a legendary action to attack the creature. He will score a critical hit, slaying the kraken."
+																"Gar casts {@spell 行動自如術}, escaping the grapple, and then uses a legendary action to attack the creature. He will score a critical hit, slaying the kraken."
 															]
 														},
 														{
@@ -880,7 +880,7 @@
 															"name": "Round 6",
 															"id": "057",
 															"entries": [
-																"Gar casts {@spell heal} on himself, bringing him back to his hit point maximum, and begins the process of drawing blood from the kraken, storing it in massive five-gallon bladders he brought along for this purpose."
+																"Gar casts {@spell 治癒術} on himself, bringing him back to his hit point maximum, and begins the process of drawing blood from the kraken, storing it in massive five-gallon bladders he brought along for this purpose."
 															]
 														}
 													]

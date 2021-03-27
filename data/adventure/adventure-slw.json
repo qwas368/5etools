@@ -379,7 +379,7 @@
 							"name": "House of Thalivar",
 							"id": "021",
 							"entries": [
-								"This wizard's tower has been recently rebuilt as a garrison for the Neverwinter soldiery. Gallio Elibro is a brooding middle-aged male Rashemi with the {@creature mage} statistics (except that he has the {@spell legend lore} spell prepared instead of {@spell cone of cold}). He came to Neverwinter to find and unlock the secrets of the House of Thalivar. Gallio has found many coded journals inside the ruin, which he decrypted. He has now rebuilt the tower's planar beacon and is using it to study the creatures of the Ethereal Plane.",
+								"This wizard's tower has been recently rebuilt as a garrison for the Neverwinter soldiery. Gallio Elibro is a brooding middle-aged male Rashemi with the {@creature mage} statistics (except that he has the {@spell 通曉傳奇} spell prepared instead of {@spell 寒冰錐}). He came to Neverwinter to find and unlock the secrets of the House of Thalivar. Gallio has found many coded journals inside the ruin, which he decrypted. He has now rebuilt the tower's planar beacon and is using it to study the creatures of the Ethereal Plane.",
 								"Gallio does not talk much about his work with adventurers but is willing to cast spells in exchange for gold. The mage casts the {@i legend lore} spell for 400 gp."
 							]
 						},
@@ -398,7 +398,7 @@
 							"id": "023",
 							"entries": [
 								"This shrine to Lathander, god of light, was the first temple to be reconstructed in Leilon. Merrygold Brightshine, an outgoing young female halfling with the {@creature priest} statistics, cares for the shrine and offers council to any who pray at the small stone altar to Lathander within. She conducts services at the shrine each day at dawn.",
-								"Merrygold casts the {@spell cure wounds} spell for a donation of 10 gp to the shrine and the {@spell lesser restoration} spell for a donation of 20 gp."
+								"Merrygold casts the {@spell 治療傷勢} spell for a donation of 10 gp to the shrine and the {@spell 次級復原術} spell for a donation of 20 gp."
 							]
 						},
 						{
@@ -859,7 +859,7 @@
 							"name": "Aftermath",
 							"id": "050",
 							"entries": [
-								"After defeating the forces of Talos on land, the party can find a {@item spell scroll} of {@spell mass cure wounds} on Nixoxious. They don't have long to recover, however, because the water creatures summoned by the ritual are about to arrive."
+								"After defeating the forces of Talos on land, the party can find a {@item spell scroll} of {@spell 群體治療傷勢} on Nixoxious. They don't have long to recover, however, because the water creatures summoned by the ritual are about to arrive."
 							]
 						},
 						{
@@ -1273,7 +1273,7 @@
 											"name": "Curse of Talos",
 											"id": "07c",
 											"entries": [
-												"If a character is hit with a lightning strike attack from any of the myrmidons, and then fails their saving throw and becomes {@condition stunned}, a mark resembling three parallel lightning bolts appears on their head. It can only be removed by a {@spell remove curse} spell, and its effects are noted later in this quest.",
+												"If a character is hit with a lightning strike attack from any of the myrmidons, and then fails their saving throw and becomes {@condition stunned}, a mark resembling three parallel lightning bolts appears on their head. It can only be removed by a {@spell 移除詛咒} spell, and its effects are noted later in this quest.",
 												"Note that three of these creatures is a deadly encounter, even for 6 characters of 8th level. For fewer characters, or for lower level characters, have the enemies start at half their normal hit points, and allow Emmalou to assist the characters for longer than normal by increasing her hit points."
 											]
 										},
@@ -1375,7 +1375,7 @@
 							"id": "083",
 							"entries": [
 								"The cultists of Talos are performing a ritual inside the Wayside Inn. The doors and windows to the building are locked but can be opened with a successful DC 15 Dexterity check using {@item thieves' tools|PHB}. Also, the doors and windows have an AC of 12 and break with 25 points of damage.",
-								"Magical runes, as per the {@spell glyph of warding} spell, protect the cloak room and barn doors. If the party opens the doors without first removing or disabling the runes, they take thunder damage as per the spell.",
+								"Magical runes, as per the {@spell 守衛銘文} spell, protect the cloak room and barn doors. If the party opens the doors without first removing or disabling the runes, they take thunder damage as per the spell.",
 								"A window at the back of the inn on the second floor is open (see \"{@adventure The Upstairs|SLW|5|Upstairs. The cultists believe they cleared the rooms of all guests, using them as sacrifices to power their ritual. However, one sneaky individual avoided capture.}\" below). A successful DC 10 Strength ({@skill Athletics}) check to climb to the window gives characters access to the inn without having to go through the more dangerous front doors.",
 								{
 									"type": "entries",
@@ -1404,7 +1404,7 @@
 											"id": "087",
 											"entries": [
 												"The cultists believe they cleared the rooms of all guests, using them as sacrifices to power their ritual. However, one sneaky individual avoided capture.",
-												"In the posh room at the end of the hallway (Room C on the map), a gnome {@creature apprentice wizard|VGM} named Cray Onderquill hides beneath the bed. She was traveling from Neverwinter to Waterdeep on an errand for her master, and she decided to stay the night. When the cultists began grabbing people, she used {@spell disguise self} to imitate a cultist, and then snuck away here to hide. She thought about climbing out the window but is afraid the fall might kill her. She is willing to help the characters in an assault on the cultists, if only by lending her expertise in {@skill Arcana} to figure out what's happening with the ritual.",
+												"In the posh room at the end of the hallway (Room C on the map), a gnome {@creature apprentice wizard|VGM} named Cray Onderquill hides beneath the bed. She was traveling from Neverwinter to Waterdeep on an errand for her master, and she decided to stay the night. When the cultists began grabbing people, she used {@spell 易容術} to imitate a cultist, and then snuck away here to hide. She thought about climbing out the window but is afraid the fall might kill her. She is willing to help the characters in an assault on the cultists, if only by lending her expertise in {@skill Arcana} to figure out what's happening with the ritual.",
 												"Cray also reveals that not all the captives taken by cultists were impaled on the doors: the inn's owner, Martisha Vinetalker, was dragged into the basement, and a local bard, Tarbin Tul, was taken away on horseback. Cray thinks the cultists had strict orders to capture the bard alive, as he heard them talking about being careful with Tul."
 											]
 										},
@@ -1469,7 +1469,7 @@
 											"name": "Treasure",
 											"id": "08f",
 											"entries": [
-												"In sacks stored in the basement, the party finds 500 gp, 5 {@item Potion of Greater Healing||potions of greater healing} a {@item spell scroll} of {@spell call lightning}, and a {@item ring of water walking}. More importantly, they find a clue to the location of the local headquarters of the Cult of Talos."
+												"In sacks stored in the basement, the party finds 500 gp, 5 {@item Potion of Greater Healing||potions of greater healing} a {@item spell scroll} of {@spell 召雷術}, and a {@item ring of water walking}. More importantly, they find a clue to the location of the local headquarters of the Cult of Talos."
 											]
 										},
 										{
@@ -1601,14 +1601,14 @@
 							"name": "Dealing with Gallio Elibro",
 							"id": "09a",
 							"entries": [
-								"Gallio Elibro is a short-tempered male Rashemi {@creature mage} (with the {@spell legend lore} spell prepared instead of {@spell cone of cold}). His relentless studies have pushed him to the brink of {@condition exhaustion} and his sleep is troubled (since he doesn't know that the ghost of Thalivar possesses him each night when he sleeps). Gallio wears an ink-stained robe and his curly black hair is tousled. His fingertips are stained with purple ink.",
+								"Gallio Elibro is a short-tempered male Rashemi {@creature mage} (with the {@spell 通曉傳奇} spell prepared instead of {@spell 寒冰錐}). His relentless studies have pushed him to the brink of {@condition exhaustion} and his sleep is troubled (since he doesn't know that the ghost of Thalivar possesses him each night when he sleeps). Gallio wears an ink-stained robe and his curly black hair is tousled. His fingertips are stained with purple ink.",
 								"Gallio is furious that his workers have abandoned their duties. He beseeches the group to rid the tower of any spectral presences so his people can return and finish the job. Gallio has not seen any spirits, but he doesn't doubt the word of his underlings. He remains in his study ({@area area H3|0a7|x}) while the characters explore. Gallio can recount the history of the tower to anyone who enquires.",
 								{
 									"type": "entries",
 									"name": "Gallio's Possession",
 									"id": "09b",
 									"entries": [
-										"Each night, Thalivar's {@creature ghost} emerges from the Ethereal Plane to possess Gallio while he's sleeping. Unlike normal ghostly possession, Gallio remains unaware that his body has been hijacked and placed under the effects of the {@spell spider climb} spell. He crawls around the tower in his night gown, peers worriedly at the pile of rubble at the top of the tower, and scribbles in Thalivar's old journal ({@area area H9|0af|x}). If confronted, he uses Horrifying Visage to scare away his enemies or tries to defeat them in combat (see \"{@area Confronting Thalivar's Ghost|09d|x}\" for information on how the ghost fights). Thalivar does not hesitate to abandon Gallio's body if he feels threatened."
+										"Each night, Thalivar's {@creature ghost} emerges from the Ethereal Plane to possess Gallio while he's sleeping. Unlike normal ghostly possession, Gallio remains unaware that his body has been hijacked and placed under the effects of the {@spell 蛛行術} spell. He crawls around the tower in his night gown, peers worriedly at the pile of rubble at the top of the tower, and scribbles in Thalivar's old journal ({@area area H9|0af|x}). If confronted, he uses Horrifying Visage to scare away his enemies or tries to defeat them in combat (see \"{@area Confronting Thalivar's Ghost|09d|x}\" for information on how the ghost fights). Thalivar does not hesitate to abandon Gallio's body if he feels threatened."
 									]
 								}
 							]
@@ -1766,7 +1766,7 @@
 											"id": "0aa",
 											"entries": [
 												"Characters who've read Thalivar's journal ({@area area H9|0af|x}) may be interested in raising Soapwort from the dead. If they have the mean to do so, the mysterious faerie agrees to help lay Thalivar's ghost to rest. The old mage gladly listens to Soapwort and is laid to rest when the faerie tells him that this life is but a dream. Soapwort returns to the Feywild when his job is done.",
-												"Casting {@spell speak with dead} is fruitless, as the corpse no longer has a mouth through which to speak."
+												"Casting {@spell 死者交談術} is fruitless, as the corpse no longer has a mouth through which to speak."
 											]
 										}
 									]
@@ -1777,7 +1777,7 @@
 									"id": "0ab",
 									"entries": [
 										"These ruined chambers contain high shelves stacked with Thalivar's moldering research notes. Each chamber houses a large statue of a peasant girl with her forefinger pressed to her lips in a hushing gesture. Characters who succeed on a DC 15 Intelligence ({@skill Religion} or {@skill Arcana}) check recognize her as Mystra, goddess of magic.",
-										"Thalivar's notes are written in pictographic code. Using magic, nothing short of a {@spell wish} spell can decipher them. Without such magic, Gallio must decrypt them himself using laborious trial and error. The task is highly taxing but Gallio is committed to seeing it through. At short notice, characters who examine the notes are unlikely to have any epiphanies.",
+										"Thalivar's notes are written in pictographic code. Using magic, nothing short of a {@spell 祈願術} spell can decipher them. Without such magic, Gallio must decrypt them himself using laborious trial and error. The task is highly taxing but Gallio is committed to seeing it through. At short notice, characters who examine the notes are unlikely to have any epiphanies.",
 										{
 											"type": "entries",
 											"name": "Trapped Statues",
@@ -2341,8 +2341,8 @@
 							"id": "0dd",
 							"entries": [
 								"The shoreline, where the water meets the sandy beach, crashes with the breaking waves. The echoes formed within the caves reverberate back, filling the air with a sound like the crashing of thunder.",
-								"The shore is lined with thin wire treated with a modified version of the {@spell alarm} spell. Water and other natural circumstances do not trigger the spell, but any humanoid creatures that trip the wires cause an alarm to sound within the caves, alerting the cultists that intruders are present.",
-								"The wires can be spotted with a successful DC 15 Wisdom ({@skill Perception}) check. Getting to shore without tripping the wires is practically impossible, but the wires can be disarmed with a DC 15 Dexterity ({@skill Sleight of Hand}) check, or the {@spell alarm} spell can be suppressed for an hour using {@spell dispel magic}."
+								"The shore is lined with thin wire treated with a modified version of the {@spell 警報術} spell. Water and other natural circumstances do not trigger the spell, but any humanoid creatures that trip the wires cause an alarm to sound within the caves, alerting the cultists that intruders are present.",
+								"The wires can be spotted with a successful DC 15 Wisdom ({@skill Perception}) check. Getting to shore without tripping the wires is practically impossible, but the wires can be disarmed with a DC 15 Dexterity ({@skill Sleight of Hand}) check, or the {@spell 警報術} spell can be suppressed for an hour using {@spell 解除魔法}."
 							]
 						},
 						{
@@ -2444,7 +2444,7 @@
 										"When the characters encounter Sovendahl, he is resting in his quarters His bodyguards sort through the latest haul of stolen and salvaged treasure. Occasionally the drow erupts in a coughing spasm that brings up blood from his lungs. He is worried but tries not to show it.",
 										"If combat breaks out here, Sovendahl fights bravely and expertly, but the exertion leads to more coughing. As the fight progresses, describe the drow's spasms of coughing, and blood spraying over the adventurers who face him. (That's something that can scare even the bravest barbarian!) The disease is not communicable, but no one has to know that.",
 										"If at any point the characters speak with the drow about his affliction, pointing out that he is sick and in need of assistance, the drow might stop fighting and ask the characters if they can help him. He is willing to walk away from the cult to obtain a cure.",
-										"A successful DC 15 Wisdom ({@skill Medicine}) check reveals that the ailment is not a disease, but a curse. A character who casts {@spell remove curse} on Sovendahl earns the drow's thanks. As a reward, the he gives the characters a magic item has been storing away: a {@item dagger of venom}.",
+										"A successful DC 15 Wisdom ({@skill Medicine}) check reveals that the ailment is not a disease, but a curse. A character who casts {@spell 移除詛咒} on Sovendahl earns the drow's thanks. As a reward, the he gives the characters a magic item has been storing away: a {@item dagger of venom}.",
 										{
 											"type": "entries",
 											"name": "Treasure",
@@ -2471,7 +2471,7 @@
 									"entries": [
 										"In an alcove to the north of the room is a special feature that the occupants of the cave call \"the blowhole.\" This vertical shaft runs both beneath the water and up into the cave ceiling.",
 										"When Gadrille believes a cultist is lacking the proper amount of faith to be a true servant of Talos, the cultist is dragged here and tossed into the water of the blowhole to be judged. Sometimes they are pulled down into the bottom of the shaft, sometimes a geyser of water blows them up through the top of the shaft, and sometimes nothing happens. If nothing happens, Gadrille takes that as a sign Talos approves.",
-										"The truth is that the blowhole is a magical portal. When a living creature enters the blowhole, roll a {@dice d10}. On a 1-8, nothing happens. On a 9, the creature is pulled down into the shaft, through a portal, and appears moments later floating in Waterdeep Harbor, alive and well. On a 10, the creature is pushed up through the ceiling by the geyser. With a successful DC 10 Strength saving throw, a creature can grab onto the side of the shaft and avoid getting pushed through the portal. On a failure, the creature tumbles through a portal at the top of the shaft and ends up in the Elemental Plane of Water. (Perhaps a passing {@creature marid} takes pity on the creature and uses {@spell plane shift} to return it home\u2014for a price!)",
+										"The truth is that the blowhole is a magical portal. When a living creature enters the blowhole, roll a {@dice d10}. On a 1-8, nothing happens. On a 9, the creature is pulled down into the shaft, through a portal, and appears moments later floating in Waterdeep Harbor, alive and well. On a 10, the creature is pushed up through the ceiling by the geyser. With a successful DC 10 Strength saving throw, a creature can grab onto the side of the shaft and avoid getting pushed through the portal. On a failure, the creature tumbles through a portal at the top of the shaft and ends up in the Elemental Plane of Water. (Perhaps a passing {@creature marid} takes pity on the creature and uses {@spell 異界傳送} to return it home\u2014for a price!)",
 										"The party can learn about the magic of the blowhole in a number of ways:",
 										{
 											"type": "list",
@@ -2499,7 +2499,7 @@
 									"id": "0ec",
 									"entries": [
 										"Sovendahl fears that some of the cultists might be stealing from the stockpiles of goods for sale, so he placed a crate here that might be tempting to a thief.",
-										"The crate marked \"Gold\" is full of rocks, and there are tiny runes on the edge of the lid, which can be noticed with a DC 20 Intelligence ({@skill Investigation}) check. The runes can be deactivated with a {@spell dispel magic} spell, or carefully filed away with a DC 15 Dexterity ({@skill Sleight of Hand}) check.",
+										"The crate marked \"Gold\" is full of rocks, and there are tiny runes on the edge of the lid, which can be noticed with a DC 20 Intelligence ({@skill Investigation}) check. The runes can be deactivated with a {@spell 解除魔法} spell, or carefully filed away with a DC 15 Dexterity ({@skill Sleight of Hand}) check.",
 										"If the crate is opened without deactivating the runes, it explodes. Any creature within 10 feet of the crate must succeed on a DC 15 Constitution saving throw, taking {@dice 8d8} thunder damage on a failed save, or half as much on a success. The creatures within the blast radius are also covered in green ink that only comes off with repeated scrubbing over the course of months.",
 										{
 											"type": "entries",
@@ -3327,7 +3327,7 @@
 												"type": "entries",
 												"name": "Ability Score Improvement",
 												"entries": [
-													"The spellcaster's Int. (mage) or Wis. (healer) score increases by 2, raising the modifier by 1, so increase the following numbers by 1: the Int. or Wis. saving throw bonus; Int. or Wis. based skill bonuses; and the bonuses to hit and to saving throw DCs with spells. Spellcasting. The caster gains one 4th-level spell slot and learns one new 4th-level spell: {@spell banishment} (healer) or {@spell polymorph} (mage)."
+													"The spellcaster's Int. (mage) or Wis. (healer) score increases by 2, raising the modifier by 1, so increase the following numbers by 1: the Int. or Wis. saving throw bonus; Int. or Wis. based skill bonuses; and the bonuses to hit and to saving throw DCs with spells. Spellcasting. The caster gains one 4th-level spell slot and learns one new 4th-level spell: {@spell 放逐術} (healer) or {@spell 變形術} (mage)."
 												],
 												"id": "0f8"
 											}
@@ -3339,7 +3339,7 @@
 												"type": "entries",
 												"name": "Spellcasting",
 												"entries": [
-													"The spellcaster gains one 4th-level and one 5th-level spell slot and learns one new 5th-level spell: {@spell greater restoration} (healer) or {@spell cone of cold} (mage)."
+													"The spellcaster gains one 4th-level and one 5th-level spell slot and learns one new 5th-level spell: {@spell 高等復原術} (healer) or {@spell 寒冰錐} (mage)."
 												],
 												"id": "0f9"
 											}

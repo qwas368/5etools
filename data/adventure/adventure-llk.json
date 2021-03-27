@@ -310,7 +310,7 @@
 											"name": "Value to the Party",
 											"id": "020",
 											"entries": [
-												"Gearbox's unique programming allows the modron to function as an {@item Orb of Direction|XGE} and an {@item Orb of Time|XGE} (see {@book Xanathar's Guide to Everything|XGE}), to cast the {@spell light} cantrip at will, and to grant other characters advantage on Dexterity checks made with thieves' tools and on ability checks made to identify or operate mechanical or laboratory equipment. It can also help override the security of the monastery's control room ({@area M8|06d}) and treasury ({@area area M10|079|x}), and can pilot the skiff first seen in {@area area C3|03b|x}."
+												"Gearbox's unique programming allows the modron to function as an {@item Orb of Direction|XGE} and an {@item Orb of Time|XGE} (see {@book Xanathar's Guide to Everything|XGE}), to cast the {@spell 光亮術} cantrip at will, and to grant other characters advantage on Dexterity checks made with thieves' tools and on ability checks made to identify or operate mechanical or laboratory equipment. It can also help override the security of the monastery's control room ({@area M8|06d}) and treasury ({@area area M10|079|x}), and can pilot the skiff first seen in {@area area C3|03b|x}."
 											]
 										},
 										{
@@ -424,7 +424,7 @@
 								],
 								[
 									"66\u201370",
-									"{@i The Barrier Peaks are unstable. The city of Daoine Gloine was destroyed in an {@spell earthquake}, and so was Kwalish's expedition. There's no path now to find the place, unless you fancy a trip to the Elemental Plane of Earth and sacrifice there to Ogrémoch.}"
+									"{@i The Barrier Peaks are unstable. The city of Daoine Gloine was destroyed in an {@spell 地震術}, and so was Kwalish's expedition. There's no path now to find the place, unless you fancy a trip to the Elemental Plane of Earth and sacrifice there to Ogrémoch.}"
 								],
 								[
 									"71\u201380",
@@ -611,7 +611,7 @@
 											"entries": [
 												"Instead of asking a traditional riddle that the characters must solve, the enhanced sphinx demands that they ask a question that it cannot answer. This could be a riddle, a secret, a logical contradiction, or any other question\u2014but the sphinx warns the characters that with all the knowledge it has collected throughout the years, it knows the answer to every question. If it fails to answer, the characters are allowed to cross to the island without paying the toll.",
 												"With its enhanced knowledge, the sphinx can correctly answer almost any question. To simulate this around the table, you might challenge the players to stump you as the DM with a riddle or trivia question. This might be something inherent to their characters' own knowledge, or something completely outside the context of the game. If this is a question pertaining to the real world, you might tell the players in advance that you'll make use of the Internet with a 30-second time limit to mimic the sphinx's vast knowledge base. If this is a game-world question, you can instead let the sphinx attempt a DC 15 Intelligence check to answer the question, with advantage on the check (and look for further options in {@adventure appendix B|LLK|5}).",
-												"Each time the enhanced sphinx successfully answers a question, it demands that the characters pay the toll to cross: either one character's Intelligence score permanently decreases by 1, or two characters each have another ability score of their choice permanently decrease by 1. This toll is magically extracted immediately, and manifests as another of the sphinx's mechanical {@item Ioun stone|LLK}-like devices. This curse can be removed only by a {@spell remove curse} spell cast by an 18th-level spellcaster, by defeating the enhanced sphinx in combat, or through mechanisms found in Kwalish's lab in Daoine Gloine (see area O7)."
+												"Each time the enhanced sphinx successfully answers a question, it demands that the characters pay the toll to cross: either one character's Intelligence score permanently decreases by 1, or two characters each have another ability score of their choice permanently decrease by 1. This toll is magically extracted immediately, and manifests as another of the sphinx's mechanical {@item Ioun stone|LLK}-like devices. This curse can be removed only by a {@spell 移除詛咒} spell cast by an 18th-level spellcaster, by defeating the enhanced sphinx in combat, or through mechanisms found in Kwalish's lab in Daoine Gloine (see area O7)."
 											]
 										},
 										{
@@ -884,7 +884,7 @@
 											"id": "056",
 											"entries": [
 												"The throne is an assemblage of magical-mechanical parts backed by a standing metallic arch set with complex filigree. The armrests of the throne are set with a complicated array of instruments, though many of the controls have been stripped away. (The throne was once the control center of the archway\u2014the gate Kwalish opened to the Nine Hells, crafted from the technology of the crashed planar craft.)",
-												"A character who sits on the throne notes that many of its instruments are still operational, allowing them to track the comings and goings of the merrenoloth's ferry. If a creature seated in the throne wears the bone devil's crown and holds its scepter, that creature can attempt a DC 15 Intelligence ({@skill Arcana}) check to reopen the archway. Treat a successful check as if the character had cast the {@spell gate} spell to open a gate to the Nine Hells."
+												"A character who sits on the throne notes that many of its instruments are still operational, allowing them to track the comings and goings of the merrenoloth's ferry. If a creature seated in the throne wears the bone devil's crown and holds its scepter, that creature can attempt a DC 15 Intelligence ({@skill Arcana}) check to reopen the archway. Treat a successful check as if the character had cast the {@spell 異界之門} spell to open a gate to the Nine Hells."
 											]
 										},
 										{
@@ -1102,7 +1102,7 @@
 											"id": "071",
 											"entries": [
 												"With respectful discussion and a successful DC 12 Charisma ({@skill Persuasion}) check, a brain can be enticed to reveal its knowledge of Kwalish and his initial expedition. All of Kwalish's companions died at the hands of the sphinx, but the inventor managed to harvest their brains in order to return them to a semblance of life. Kwalish promised to research a means of finding new bodies for his fallen companions, but was driven away by the Grand Master before he could complete this task. The brains suspect that Kwalish traveled onward to Daoine Gloine, and though they don't know the route, they do know that Kwalish's journal from their original expedition can be found in the treasury (area M10).",
-												"If the check result is 14 or higher, the characters also learn that the brains have control over the floating disks leading to the treasury, and that they are ordered to deactivate the disks if anyone other than the Grand Master attempts to cross them. They also reveal the existence of the {@spell antimagic field} surrounding the treasury (see area M10 for more information).",
+												"If the check result is 14 or higher, the characters also learn that the brains have control over the floating disks leading to the treasury, and that they are ordered to deactivate the disks if anyone other than the Grand Master attempts to cross them. They also reveal the existence of the {@spell 反魔法結界} surrounding the treasury (see area M10 for more information).",
 												"If the check result is 16 or higher, the characters learn of a final, more powerful brain sequestered within the treasury. However, the brains in this area can only speculate on who that brain once belonged to, its state of mind, and what it controls."
 											]
 										},
@@ -1188,7 +1188,7 @@
 							"name": "M9. Floating Bridge",
 							"id": "075",
 							"entries": [
-								"The route to the treasury takes characters out across a series of ten magical floating disks\u2014all of which are suspended hundreds of feet in the open air above the valley floor. All the disks are kept active by default, unless they are specifically deactivated by one of the brains in jars in area M8. Each disk is identical to the effect created by a {@spell Tenser's floating disk} spell\u2014a circular, horizontal plane of force 3 feet in diameter and 1 inch thick. The disks are set in a line and spaced 5 feet apart. If any disks are deactivated, a not-insignificant leap is required to cross the empty space between them.",
+								"The route to the treasury takes characters out across a series of ten magical floating disks\u2014all of which are suspended hundreds of feet in the open air above the valley floor. All the disks are kept active by default, unless they are specifically deactivated by one of the brains in jars in area M8. Each disk is identical to the effect created by a {@spell 譚森浮碟術} spell\u2014a circular, horizontal plane of force 3 feet in diameter and 1 inch thick. The disks are set in a line and spaced 5 feet apart. If any disks are deactivated, a not-insignificant leap is required to cross the empty space between them.",
 								{
 									"type": "entries",
 									"id": "076",
@@ -1520,7 +1520,7 @@
 											"name": "Temple Gate",
 											"id": "095",
 											"entries": [
-												"On the ground floor of the temple tower, beneath the ooze where it fills the lower levels of the building, is a standing arch that is a match to the arch in the central abbey of the monastery ({@area area M3|04e|x}), but without the throne. If the crown and scepter from that area are worn and held by a creature within 5 feet of the arch (including a creature within an {@item Apparatus of Kwalish} or similar device), that creature can attempt a DC 15 Intelligence ({@skill Arcana}) check to open the archway. Treat this as if the character had cast the {@spell gate} spell to open a gate to the 222nd layer of the Abyss."
+												"On the ground floor of the temple tower, beneath the ooze where it fills the lower levels of the building, is a standing arch that is a match to the arch in the central abbey of the monastery ({@area area M3|04e|x}), but without the throne. If the crown and scepter from that area are worn and held by a creature within 5 feet of the arch (including a creature within an {@item Apparatus of Kwalish} or similar device), that creature can attempt a DC 15 Intelligence ({@skill Arcana}) check to open the archway. Treat this as if the character had cast the {@spell 異界之門} spell to open a gate to the 222nd layer of the Abyss."
 											]
 										},
 										{
@@ -1533,7 +1533,7 @@
 												{
 													"type": "list",
 													"items": [
-														"{@item Spell Scroll||Spell scrolls} of {@spell animate dead}, {@i flock of familiars} (see {@adventure appendix E|LLK|7}), and {@spell greater restoration}.",
+														"{@item Spell Scroll||Spell scrolls} of {@spell 活化死屍}, {@i flock of familiars} (see {@adventure appendix E|LLK|7}), and {@spell 高等復原術}.",
 														"One of Kwalish's completed experiments\u2014a set of clockwork-enhanced footwear that act as {@item Boots of Striding and Springing}",
 														"A collection of tiny glass statues of creatures, including a pseudodragon, an imp, and several will-o'-wisps, as well as several glass statues of hearts and brains\u2014all vitrified creatures and once-living organs. The collection is worth 2,000 gp, but is very fragile."
 													]
@@ -1708,7 +1708,7 @@
 											"id": "0a7",
 											"entries": [
 												"The suit of armor at the end of the room is clearly the focus of the lab's current experimentation, connected to various pieces of equipment by more silver wire recognizable as a form of astral cord. If the characters end the adventure on friendly terms with Kwalish, he indicates that although the {@i powered armor} is still being researched, it requires a test subject. He is thus willing to loan the armor to any character, provided they use it as their sole suit of armor and report back to him periodically so as to gauge its efficacy.",
-												"A character who accepts this offer automatically falls under the effect of a high-level {@spell geas} spell, with instructions to report back to Kwalish at least once every three levels, and to return the {@i powered armor} to the inventor if they ever desire to wear some other armor instead.",
+												"A character who accepts this offer automatically falls under the effect of a high-level {@spell 指使術} spell, with instructions to report back to Kwalish at least once every three levels, and to return the {@i powered armor} to the inventor if they ever desire to wear some other armor instead.",
 												"If Kwalish is missing (see the \"{@area Meeting Kwalish|0aa|x}\" section below), a character can simply don the armor themselves. However, this might lead to its own complications. See {@adventure appendix B|LLK|5} and {@adventure appendix D|LLK|7} for more information."
 											]
 										},
@@ -1838,7 +1838,7 @@
 									"id": "0ac",
 									"entries": [
 										"The easiest approach is to have Kwalish in {@area area O7|0a0|x} when the characters arrive\u2014an elderly gnome arcane inventor (use the {@creature Evoker|VGM} stat block from {@book Volo's Guide to Monsters|VGM}) working on his latest experiments. Though surprised by visitors, Kwalish listens to the characters and might even be willing to bargain for whatever help they need to complete their quest. In exchange, he requires only a bit of special material to fuel his experiments and continue his work\u2014a piece of the characters' souls, extracted by his machinery.",
-										"With a successful DC 15 Charisma ({@skill Persuasion}) check made to negotiate with Kwalish, the gnome asks only for a single bit of soul energy from any one character. If unsuccessful, he demands one bit of soul from each character in exchange for his aid or information. The magically enhanced demilich skull built into the lab's instrumentation panels is used to channel a character's soul energy once the bargain is struck. A character who has a portion of their soul removed in this way falls under a curse. While so cursed, whenever the character drops to 0 hit points, they are treated as if they had already failed one death saving throw. This curse can be removed only by a {@spell remove curse} spell cast by an 18th-level spellcaster, by defeating Kwalish and reversing the process using his machines, or by completing a separate task for the inventor."
+										"With a successful DC 15 Charisma ({@skill Persuasion}) check made to negotiate with Kwalish, the gnome asks only for a single bit of soul energy from any one character. If unsuccessful, he demands one bit of soul from each character in exchange for his aid or information. The magically enhanced demilich skull built into the lab's instrumentation panels is used to channel a character's soul energy once the bargain is struck. A character who has a portion of their soul removed in this way falls under a curse. While so cursed, whenever the character drops to 0 hit points, they are treated as if they had already failed one death saving throw. This curse can be removed only by a {@spell 移除詛咒} spell cast by an 18th-level spellcaster, by defeating Kwalish and reversing the process using his machines, or by completing a separate task for the inventor."
 									]
 								},
 								{
@@ -2274,7 +2274,7 @@
 					"name": "Abyssal Throne Gate",
 					"id": "0d1",
 					"entries": [
-						"Opening either of these devices (in the central abbey or the tomb of the medusa) creates the effect of casting a {@spell gate} spell. As per that spell, the characters might wish to name a specific creature from the plane the gate leads to, hoping to interact with it. Or you might have a creature Kwalish previously met through the gate arrive in response to it being opened. That creature might have knowledge to impart, a debt to repay, or a grudge to have righted. You could even have creatures from the two gates know of each another\u2014and, as with the monastery's sphinx and brains in jars\u2014attempt to work with the characters against one another.",
+						"Opening either of these devices (in the central abbey or the tomb of the medusa) creates the effect of casting a {@spell 異界之門} spell. As per that spell, the characters might wish to name a specific creature from the plane the gate leads to, hoping to interact with it. Or you might have a creature Kwalish previously met through the gate arrive in response to it being opened. That creature might have knowledge to impart, a debt to repay, or a grudge to have righted. You could even have creatures from the two gates know of each another\u2014and, as with the monastery's sphinx and brains in jars\u2014attempt to work with the characters against one another.",
 						"Additionally, the extradimensional portal Kwalish used to open a gate to the Abyss from Daoine Gloine might be reversible. If the characters meet descendants of the city's original inhabitants, they might be asked to free the city of the ooze, perhaps in exchange for valuable lost lore. Kwalish might also ask for their aid in restoring the city to its former state.",
 						"If the undead medusa guarding area O4 is overcome, the crown and scepter recovered from the monastery can be used to open the temple gate, as noted in the adventure. A follow-up successful DC 15 Intelligence ({@skill Religion}) check can then trigger ritual magic that reverses the flood of ooze and sends it back to the Slime Pits. However, if this check is failed by 5 or more, the botched ritual summons forth a new plague of acidic slime\u2014so potent that it quickly melts the stone of the city away, destroying Daoine Gloine for all time.",
 						"To raise the stakes for characters attempting to activate or reverse the abyssal gate, you can also require that the character wearing the crown and holding the scepter must be in physical contact with the standing arch\u2014making it impossible to activate the gate from inside the {@item Apparatus of Kwalish} or any similar protective device."
@@ -2286,7 +2286,7 @@
 					"id": "0d2",
 					"entries": [
 						"The legendary arcane inventor is presented as an obsessed, distracted, but basically benign figure in the adventure. However, you might choose to present him as a much more sinister villain. Instead of preserving the brains of his fallen comrades in the hope of one day reviving them, Kwalish might have worked with the sphinx to arrange their deaths in order to harvest their brains for his research. Any of the brains in jars in the Monastery of the Distressed Body can detail those events.",
-						"Likewise, instead of flooding Daoine Gloine with ooze in order to save himself from the city's evil cultists, Kwalish might simply have wished to drive away the population and seal off the city for his own use. Descendants of Daoine Gloine's original inhabitants met on the way to the city (see {@adventure appendix A|LLK|4}) can detail these events, as can any revived statues, or even the medusa if the characters use {@spell speak with dead} after ending her threat for good.",
+						"Likewise, instead of flooding Daoine Gloine with ooze in order to save himself from the city's evil cultists, Kwalish might simply have wished to drive away the population and seal off the city for his own use. Descendants of Daoine Gloine's original inhabitants met on the way to the city (see {@adventure appendix A|LLK|4}) can detail these events, as can any revived statues, or even the medusa if the characters use {@spell 死者交談術} after ending her threat for good.",
 						"If used as a villain, Kwalish should be presented as a final opponent to overcome in his laboratory. Any knowledge required to complete the party's quest can then be found within his journals and personal notes."
 					]
 				}

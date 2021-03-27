@@ -113,73 +113,73 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 法師之手}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"spells": [
 								"{@spell 致病射線}",
-								"{@spell shield}"
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"spells": [
-								"{@spell arcane lock}",
-								"{@spell knock}"
+								"{@spell 祕法鎖}",
+								"{@spell 敲擊術}"
 							]
 						},
 						"3": {
 							"spells": [
 								"{@spell 活化死屍}",
-								"{@spell counterspell}"
+								"{@spell 反制法術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell 枯萎術}",
-								"{@spell ice storm}",
-								"{@spell phantasmal killer}"
+								"{@spell 冰風暴}",
+								"{@spell 魅影殺手}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell hold monster}",
-								"{@spell wall of force}"
+								"{@spell 死雲術}",
+								"{@spell 怪物定身術}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 3,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell circle of death}",
-								"{@spell disintegrate}"
+								"{@spell 連環閃電}",
+								"{@spell 死亡之環}",
+								"{@spell 解離術}"
 							]
 						},
 						"7": {
 							"slots": 3,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell plane shift}",
+								"{@spell 死亡一指}",
+								"{@spell 異界傳送}",
 								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 2,
 							"spells": [
-								"{@spell maze}",
-								"{@spell mind blank}"
+								"{@spell 迷宮術}",
+								"{@spell 心靈屏障}"
 							]
 						},
 						"9": {
 							"slots": 2,
 							"spells": [
-								"{@spell power word kill}",
-								"{@spell time stop}"
+								"{@spell 律令死亡}",
+								"{@spell 時間停止}"
 							]
 						}
 					},
@@ -228,7 +228,7 @@
 				{
 					"name": "Invoke Curse",
 					"entries": [
-						"While holding the Staff of the Forgotten One, Acererak expends 1 charge from it and targets one creature he can see within 60 feet of him. The target must succeed on a {@dc 23} Constitution saving throw or be cursed. Until the curse is ended, the target can't regain hit points and has vulnerability to necrotic damage. {@spell Greater restoration}, {@spell remove curse}, or similar magic ends the curse on the target."
+						"While holding the Staff of the Forgotten One, Acererak expends 1 charge from it and targets one creature he can see within 60 feet of him. The target must succeed on a {@dc 23} Constitution saving throw or be cursed. Until the curse is ended, the target can't regain hit points and has vulnerability to necrotic damage. {@spell 高等復原術}, {@spell 移除詛咒}, or similar magic ends the curse on the target."
 					]
 				}
 			],
@@ -367,11 +367,11 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell hunter's mark}",
-							"{@spell jump}",
+							"{@spell 獵人印記}",
+							"{@spell 跳躍術}",
 							"{@spell 行蹤無跡}",
-							"{@spell speak with animals}",
-							"{@spell speak with plants}"
+							"{@spell 動物交談術}",
+							"{@spell 植物交談術}"
 						]
 					},
 					"ability": "wis"
@@ -638,7 +638,7 @@
 				{
 					"name": "Familiar",
 					"entries": [
-						"With the DM's permission, the {@spell find familiar} spell can summon an almiraj."
+						"With the DM's permission, the {@spell 尋獲魔寵} spell can summon an almiraj."
 					]
 				}
 			],
@@ -817,8 +817,8 @@
 							"items": [
 								"Cause a blue gem set into the dagger's pommel to shed bright light in a 20-foot radius and dim light for an additional 20 feet, or make the gem go dark.",
 								"Turn the dagger into a compass that, while resting on your palm, points north.",
-								"Cast {@spell dimension door} from the dagger. Once this property is used, it can't be used again until the next dawn.",
-								"Cast {@spell compulsion} (save {@dc 15}) from the dagger. The range of the spell increases to 90 feet but it targets only spiders that are beasts. Once this property is used, it can't be used again until the next dawn."
+								"Cast {@spell 次元門} from the dagger. Once this property is used, it can't be used again until the next dawn.",
+								"Cast {@spell 強迫術} (save {@dc 15}) from the dagger. The range of the spell increases to 90 feet but it targets only spiders that are beasts. Once this property is used, it can't be used again until the next dawn."
 							]
 						}
 					]
@@ -851,7 +851,7 @@
 							"type": "list",
 							"items": [
 								"Artus can expend 1 charge and use the ring to lower the temperature in a 120-foot-radius sphere centered on a point he can see within 300 feet of him. The temperature in that area drops 20 degrees per minute, to a minimum of \u221230 degrees Fahrenheit. Frost and ice begin to form on surfaces once the temperature drops below 32 degrees. This effect is permanent unless Artus uses the ring to end the effect as an action, at which point the temperature in the area returns to normal at a rate of 10 degrees per minute.",
-								"Artus can cast one of the following spells from the ring (spell save {@dc 17}) by expending the necessary number of charges: {@spell Bigby's hand} (2 charges) the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist, {@spell cone of cold} (2 charges), {@spell flesh to stone||flesh to ice} (3 charges); as flesh to stone except that the target turns to solid ice with the density and durability of stone, {@spell ice storm} (2 charges), {@spell Otiluke's freezing sphere} (3 charges), {@spell sleet storm} (1 charge), {@spell spike growth} (1 charge) the spikes are made of ice, or {@spell wall of ice} (2 charges).",
+								"Artus can cast one of the following spells from the ring (spell save {@dc 17}) by expending the necessary number of charges: {@spell 畢格比之掌} (2 charges) the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist, {@spell 寒冰錐} (2 charges), {@spell flesh to stone||flesh to ice} (3 charges); as flesh to stone except that the target turns to solid ice with the density and durability of stone, {@spell 冰風暴} (2 charges), {@spell 歐提路克冰凍法球} (3 charges), {@spell 雪雨暴} (1 charge), {@spell 荊棘叢生} (1 charge) the spikes are made of ice, or {@spell 冰牆術} (2 charges).",
 								"Artus can expend the necessary number of charges and use the ring to create either an inanimate ice object (2 charges) or an animated ice creature (4 charges). The ice object can't have any moving parts, must be able to fit inside a 10-foot cube, and has the density and durability of metal or stone (Artus's choice). The ice creature must be modeled after a beast with a challenge rating of 2 or less. The ice creature has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: {@condition charmed}, {@condition exhaustion}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, and {@condition poisoned}. The ice creature obeys only its creator's commands. The object or creature appears in an unoccupied space within 60 feet of Artus. It melts into a pool of normal water after 24 hours or when it drops to 0 hit points. In extreme heat, it loses 5 ({@dice 1d10}) hit points per minute as it melts. Use the guidelines in chapter 8 of the Dungeon Master's Guide to determine the hit points of an inanimate object if they become necessary."
 							]
 						}
@@ -934,31 +934,31 @@
 						"0": {
 							"spells": [
 								"{@spell 德魯伊伎倆}",
-								"{@spell mending}",
-								"{@spell produce flame}"
+								"{@spell 修復術}",
+								"{@spell 燃火術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
+								"{@spell 偵測魔法}",
 								"{@spell 妖火術}",
-								"{@spell thunderwave}"
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell gust of wind}",
-								"{@spell hold person}",
-								"{@spell lesser restoration}"
+								"{@spell 造風術}",
+								"{@spell 人類定身術}",
+								"{@spell 次級復原術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell call lightning}",
-								"{@spell wind wall}"
+								"{@spell 召雷術}",
+								"{@spell 風牆術}"
 							]
 						}
 					},
@@ -1557,9 +1557,9 @@
 					],
 					"will": [
 						"{@spell 德魯伊伎倆}",
-						"{@spell guidance}",
+						"{@spell 指導術}",
 						"{@spell 行蹤無跡}",
-						"{@spell resistance}"
+						"{@spell 提升抗力}"
 					],
 					"ability": "wis"
 				}
@@ -1896,9 +1896,9 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell blur}",
-							"{@spell hypnotic pattern}",
-							"{@spell minor illusion}"
+							"{@spell 朦朧術}",
+							"{@spell 催眠圖紋}",
+							"{@spell 次級幻象}"
 						]
 					},
 					"ability": "int"
@@ -2116,7 +2116,7 @@
 				{
 					"name": "Familiar",
 					"entries": [
-						"With the DM's permission, the {@spell find familiar} spell can summon a flying monkey."
+						"With the DM's permission, the {@spell 尋獲魔寵} spell can summon a flying monkey."
 					]
 				}
 			],
@@ -2931,7 +2931,7 @@
 						"The King of Feathers's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:"
 					],
 					"will": [
-						"{@spell misty step}"
+						"{@spell 迷蹤步}"
 					],
 					"ability": "wis"
 				}
@@ -3377,17 +3377,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell eldritch blast}",
-								"{@spell mage hand}"
+								"{@spell 魔能爆}",
+								"{@spell 法師之手}"
 							]
 						},
 						"1": {
 							"lower": 1,
 							"slots": 2,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell protection from evil and good}",
-								"{@spell unseen servant}"
+								"{@spell 魅惑人類}",
+								"{@spell 防護善惡}",
+								"{@spell 隱形僕役}"
 							]
 						}
 					},
@@ -3804,11 +3804,11 @@
 						"Ras Nsi's innate spellcasting ability is Charisma (spell save {@dc 16}). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)"
+						"{@spell 化獸為友} (snakes only)"
 					],
 					"daily": {
 						"3": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -3822,36 +3822,36 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch}",
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell mending}",
+								"{@spell 寒顫之觸}",
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
 								"{@spell 毒氣噴灑}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell expeditious retreat}",
-								"{@spell false life}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 腳底抹油}",
+								"{@spell 摹造生命}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell hold person}",
-								"{@spell misty step}"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 人類定身術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
 								"{@spell 活化死屍}",
-								"{@spell counterspell}",
-								"{@spell fireball}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
@@ -3864,14 +3864,14 @@
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contact other plane}",
-								"{@spell geas}"
+								"{@spell 異界探知}",
+								"{@spell 指使術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell create undead}"
+								"{@spell 創造不死生物}"
 							]
 						}
 					},
@@ -4075,12 +4075,12 @@
 						"Sekelok's spellcasting ability is Charisma (spell save {@dc 13}). Sekelok can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)",
-						"{@spell poison spray}"
+						"{@spell 化獸為友} (snakes only)",
+						"{@spell 毒氣噴灑}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -5348,26 +5348,26 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell invisibility}",
-								"{@spell Melf's acid arrow}",
+								"{@spell 偵測思想}",
+								"{@spell 隱形術}",
+								"{@spell 馬友夫強酸箭}",
 								"{@spell 鏡影術}"
 							]
 						},
@@ -5375,50 +5375,50 @@
 							"slots": 3,
 							"spells": [
 								"{@spell 活化死屍}",
-								"{@spell counterspell}",
+								"{@spell 反制法術}",
 								"{@spell 解除魔法}",
-								"{@spell fireball}"
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell 枯萎術}",
-								"{@spell dimension door}"
+								"{@spell 次元門}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell scrying}"
+								"{@spell 死雲術}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell disintegrate}",
-								"{@spell globe of invulnerability}"
+								"{@spell 解離術}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell plane shift}"
+								"{@spell 死亡一指}",
+								"{@spell 異界傳送}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate monster}",
-								"{@spell power word stun}"
+								"{@spell 支配怪物}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell power word kill}"
+								"{@spell 律令死亡}"
 							]
 						}
 					},
@@ -5597,17 +5597,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell friends}",
-								"{@spell mending}",
-								"{@spell prestidigitation}"
+								"{@spell 交友術}",
+								"{@spell 修復術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell detect magic}",
-								"{@spell disguise self}"
+								"{@spell 通曉語言}",
+								"{@spell 偵測魔法}",
+								"{@spell 易容術}"
 							]
 						}
 					},
@@ -5777,47 +5777,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}"
+								"{@spell 酸液濺爆}",
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell expeditious retreat}",
-								"{@spell feather fall}",
-								"{@spell thunderwave}"
+								"{@spell 偵測魔法}",
+								"{@spell 腳底抹油}",
+								"{@spell 羽落術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 4,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell hold person}",
-								"{@spell rope trick}"
+								"{@spell 黑暗術}",
+								"{@spell 人類定身術}",
+								"{@spell 通天繩}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
 								"{@spell 解除魔法}",
-								"{@spell lightning bolt}"
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell 枯萎術}",
-								"{@spell wall of fire}"
+								"{@spell 火牆術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell telekinesis}"
+								"{@spell 心靈遙控}"
 							]
 						}
 					},
@@ -5951,46 +5951,46 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell ray of frost}"
+								"{@spell 酸液濺爆}",
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell chromatic orb}",
-								"{@spell feather fall}",
-								"{@spell shield}"
+								"{@spell 幻色法球}",
+								"{@spell 羽落術}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 4,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell misty step}"
+								"{@spell 隱形術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell ice storm}",
+								"{@spell 冰風暴}",
 								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate person}"
+								"{@spell 支配人類}"
 							]
 						}
 					},
@@ -6088,7 +6088,7 @@
 				{
 					"name": "Touch",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}13 ({@damage 3d8}) psychic damage. If the target is a humanoid that drops to 0 hit points as a result of this damage, it dies and is implanted with a yellow musk creeper bulb. Unless the bulb is destroyed, the corpse animates as a yellow musk zombie after being dead for 24 hours. The bulb is destroyed if the creature is raised from the dead before it can transform into a yellow musk zombie, or if the corpse is targeted by a {@spell remove curse} spell or similar magic before it animates."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}13 ({@damage 3d8}) psychic damage. If the target is a humanoid that drops to 0 hit points as a result of this damage, it dies and is implanted with a yellow musk creeper bulb. Unless the bulb is destroyed, the corpse animates as a yellow musk zombie after being dead for 24 hours. The bulb is destroyed if the creature is raised from the dead before it can transform into a yellow musk zombie, or if the corpse is targeted by a {@spell 移除詛咒} spell or similar magic before it animates."
 					]
 				},
 				{
@@ -6227,14 +6227,14 @@
 						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell animal friendship} (snakes only)",
-						"{@spell eldritch blast} (2 beams)",
-						"{@spell minor illusion}",
-						"{@spell poison spray}"
+						"{@spell 化獸為友} (snakes only)",
+						"{@spell 魔能爆} (2 beams)",
+						"{@spell 次級幻象}",
+						"{@spell 毒氣噴灑}"
 					],
 					"daily": {
 						"3": [
-							"{@spell suggestion}"
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -6404,54 +6404,54 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell friends}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell message}"
+								"{@spell 火焰箭}",
+								"{@spell 交友術}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 傳訊術}"
 							]
 						},
 						"1": {
 							"slots": 6,
 							"spells": [
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell sleep}"
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell knock}"
+								"{@spell 偵測思想}",
+								"{@spell 敲擊術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell tongues}"
+								"{@spell 銳眼術}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell dominate beast}",
-								"{@spell stoneskin}"
+								"{@spell 支配野獸}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold monster}",
-								"{@spell telekinesis}"
+								"{@spell 怪物定身術}",
+								"{@spell 心靈遙控}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell true seeing}"
+								"{@spell 真知術}"
 							]
 						},
 						"7": {

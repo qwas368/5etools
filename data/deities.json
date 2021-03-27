@@ -881,7 +881,7 @@
 									"name": "Athreos's Devotee",
 									"entries": [
 										"{@i Piety 3+ Athreos trait}",
-										"Your life is intertwined with the fate of the dead. You can cast {@spell gentle repose} with this trait, requiring no material components, a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"Your life is intertwined with the fate of the dead. You can cast {@spell 遺體防腐} with this trait, requiring no material components, a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -889,7 +889,7 @@
 									"name": "Athreos's Votary",
 									"entries": [
 										"{@i Piety 10+ Athreos trait}",
-										"You can cast {@spell speak with dead} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"You can cast {@spell 死者交談術} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -897,7 +897,7 @@
 									"name": "Athreos's Disciple",
 									"entries": [
 										"{@i Piety 25+ Athreos trait}",
-										"You can cast {@spell false life} with this trait, requiring no material components. When you do so, you gain an additional 25 temporary hit points. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"You can cast {@spell 摹造生命} with this trait, requiring no material components. When you do so, you gain an additional 25 temporary hit points. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -3296,7 +3296,7 @@
 									"name": "Ephara's Devotee",
 									"entries": [
 										"{@i Piety 3+ Ephara trait}",
-										"Ephara grants you insight into how people communicate. You can cast {@spell comprehend languages} with this trait, requiring no material component, a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest. Intelligence is your spellcasting ability for this spell."
+										"Ephara grants you insight into how people communicate. You can cast {@spell 通曉語言} with this trait, requiring no material component, a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest. Intelligence is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -3313,7 +3313,7 @@
 									"name": "Ephara's Disciple",
 									"entries": [
 										"{@i Piety 25+ Ephara trait}",
-										"You can cast {@spell Mordenkainen's private sanctum} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell."
+										"You can cast {@spell 魔鄧肯私人密室} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -3668,7 +3668,7 @@
 									"name": "Erebos's Devotee",
 									"entries": [
 										"{@i Piety 3+ Erebos trait}",
-										"As a devotee of Erebos, you have proven yourself an executor of the Underworld's grim laws. You can call on Erebos's favor to cast {@spell bane} with this trait, requiring no material components, a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"As a devotee of Erebos, you have proven yourself an executor of the Underworld's grim laws. You can call on Erebos's favor to cast {@spell 災禍術} with this trait, requiring no material components, a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -3676,7 +3676,7 @@
 									"name": "Erebos's Votary",
 									"entries": [
 										"{@i Piety 10+ Erebos trait}",
-										"You can cast {@spell vampiric touch} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"You can cast {@spell 吸血鬼之觸} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -4882,7 +4882,7 @@
 									"name": "Heliod's Devotee",
 									"entries": [
 										"{@i Piety 3+ Heliod trait}",
-										"As a devotee of Heliod, you have proven yourself a worthy champion of the sun god. You can call on Heliod's favor and cast {@spell bless} with this trait, requiring no material components. Heliod's blessing manifests as a nimbus around the affected creatures, causing them to shed dim light in a 5-foot radius until the spell ends. You can cast the spell in this way a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"As a devotee of Heliod, you have proven yourself a worthy champion of the sun god. You can call on Heliod's favor and cast {@spell 祝福術} with this trait, requiring no material components. Heliod's blessing manifests as a nimbus around the affected creatures, causing them to shed dim light in a 5-foot radius until the spell ends. You can cast the spell in this way a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -4890,7 +4890,7 @@
 									"name": "Heliod's Votary",
 									"entries": [
 										"{@i Piety 10+ Heliod trait}",
-										"You can cast {@spell daylight} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"You can cast {@spell 晝明術} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -5619,7 +5619,7 @@
 									"name": "Iroas's Devotee",
 									"entries": [
 										"{@i Piety 3+ Iroas trait}",
-										"As a devotee of Iroas, you have earned his favor through victories won in his name. You can cast {@spell compelled duel} with this trait a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell."
+										"As a devotee of Iroas, you have earned his favor through victories won in his name. You can cast {@spell 強迫決鬥} with this trait a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -5627,7 +5627,7 @@
 									"name": "Iroas's Votary",
 									"entries": [
 										"{@i Piety 10+ Iroas trait}",
-										"You can cast {@spell crusader's mantle} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.",
+										"You can cast {@spell 十字軍斗篷} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for this spell.",
 										"In addition, you have advantage on saving throws against being {@condition frightened}."
 									]
 								},
@@ -6048,7 +6048,7 @@
 									"name": "Karametra's Votary",
 									"entries": [
 										"{@i Piety 10+ Karametra trait}",
-										"You can cast {@spell create food and water} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell.",
+										"You can cast {@spell 創造飲食} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell.",
 										"In addition, you have advantage on saving throws against being {@condition poisoned}."
 									]
 								},
@@ -6786,7 +6786,7 @@
 									"name": "Klothys's Devotee",
 									"entries": [
 										"{@i Piety 3+ Klothys trait}",
-										"As a devotee of Klothys, you can manipulate the bonds of destiny that invisibly entangle every living thing. You can cast {@spell command} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"As a devotee of Klothys, you can manipulate the bonds of destiny that invisibly entangle every living thing. You can cast {@spell 命令術} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -6794,7 +6794,7 @@
 									"name": "Klothys's Votary",
 									"entries": [
 										"{@i Piety 10+ Klothys trait}",
-										"You can cast {@spell clairvoyance} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell.",
+										"You can cast {@spell 銳眼術} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Wisdom is your spellcasting ability for this spell.",
 										"In addition, you have advantage on saving throws against being {@condition charmed}."
 									]
 								},
@@ -7226,8 +7226,8 @@
 									"name": "Kruphix's Devotee",
 									"entries": [
 										"{@i Piety 3+ Kruphix trait}",
-										"As a devotee of Kruphix, you have proven yourself a devotee of reality's mysteries and laws. You can cast {@spell detect magic} with this trait a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.",
-										"In addition, you know the {@spell mage hand} cantrip. Intelligence is your spellcasting ability for these spells."
+										"As a devotee of Kruphix, you have proven yourself a devotee of reality's mysteries and laws. You can cast {@spell 偵測魔法} with this trait a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.",
+										"In addition, you know the {@spell 法師之手} cantrip. Intelligence is your spellcasting ability for these spells."
 									]
 								},
 								{
@@ -7235,7 +7235,7 @@
 									"name": "Kruphix's Votary",
 									"entries": [
 										"{@i Piety 10+ Kruphix trait}",
-										"You can cast {@spell detect thoughts} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell.",
+										"You can cast {@spell 偵測思想} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell.",
 										"In addition, you have advantage on saving throws against being {@condition charmed}."
 									]
 								},
@@ -7244,7 +7244,7 @@
 									"name": "Kruphix's Disciple",
 									"entries": [
 										"{@i Piety 25+ Kruphix trait}",
-										"As a true champion of Kruphix, you can use your {@spell mage hand} cantrip to protect yourself. While your spectral hand is within 5 feet of you, you gain a +2 bonus to your AC against ranged attacks."
+										"As a true champion of Kruphix, you can use your {@spell 法師之手} cantrip to protect yourself. While your spectral hand is within 5 feet of you, you gain a +2 bonus to your AC against ranged attacks."
 									]
 								},
 								{
@@ -8501,7 +8501,7 @@
 									"name": "Mogis's Devotee",
 									"entries": [
 										"{@i Piety 3+ Mogis trait}",
-										"As a devotee of Mogis, you have shown yourself to be a brutal combatant. You can call on Mogis's favor and cast {@spell wrathful smite} with this trait. Mogis's blessing manifest as a blood-red glow around your weapon, causing it to shed dim light in a 5-foot radius until the spell ends. You can cast the spell in this way a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest. Constitution is your spellcasting ability for this spell."
+										"As a devotee of Mogis, you have shown yourself to be a brutal combatant. You can call on Mogis's favor and cast {@spell 激憤斬} with this trait. Mogis's blessing manifest as a blood-red glow around your weapon, causing it to shed dim light in a 5-foot radius until the spell ends. You can cast the spell in this way a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest. Constitution is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -8509,7 +8509,7 @@
 									"name": "Mogis's Votary",
 									"entries": [
 										"{@i Piety 10+ Mogis trait}",
-										"You can cast {@spell blinding smite} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Constitution is your spellcasting ability for this spell."
+										"You can cast {@spell 致盲斬} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Constitution is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -9339,7 +9339,7 @@
 									"name": "Nylea's Devotee",
 									"entries": [
 										"{@i Piety 3+ Nylea trait}",
-										"As a devotee of Nylea, you have proven yourself a guardian of the wilds. You can cast {@spell hunter's mark} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"As a devotee of Nylea, you have proven yourself a guardian of the wilds. You can cast {@spell 獵人印記} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -9347,7 +9347,7 @@
 									"name": "Nylea's Votary",
 									"entries": [
 										"{@i Piety 10+ Nylea trait}",
-										"You can cast {@spell speak with animals} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.",
+										"You can cast {@spell 動物交談術} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell.",
 										"In addition, you have advantage on saving throws against being {@condition poisoned}."
 									]
 								},
@@ -10003,7 +10003,7 @@
 									"name": "Pharika's Devotee",
 									"entries": [
 										"{@i Piety 3+ Pharika trait}",
-										"As a devotee of Pharika, you have power over affliction. You can cast {@spell ray of sickness} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+										"As a devotee of Pharika, you have power over affliction. You can cast {@spell 致病射線} with this trait a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -10297,7 +10297,7 @@
 									"name": "Phenax's Devotee",
 									"entries": [
 										"{@i Piety 3+ Phenax trait}",
-										"As a devotee of Phenax, you have proven yourself accomplished at deception. You can call on Phenax's blessing and cast {@spell disguise self} with this trait. While the spell is active, your shadow still resembles your original form. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell."
+										"As a devotee of Phenax, you have proven yourself accomplished at deception. You can call on Phenax's blessing and cast {@spell 易容術} with this trait. While the spell is active, your shadow still resembles your original form. You can cast the spell in this way a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest. Charisma is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -10641,8 +10641,8 @@
 									"name": "Purphoros's Devotee",
 									"entries": [
 										"{@i Piety 3+ Purphoros trait}",
-										"As a devotee of Purphoros, you have drawn the notice of the forge god with your skill. You can cast {@spell shield of faith} with this trait, requiring no material components, a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.",
-										"In addition, you know the {@spell mending} cantrip. Intelligence is your spellcasting ability for these spells."
+										"As a devotee of Purphoros, you have drawn the notice of the forge god with your skill. You can cast {@spell 虔誠護盾} with this trait, requiring no material components, a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.",
+										"In addition, you know the {@spell 修復術} cantrip. Intelligence is your spellcasting ability for these spells."
 									]
 								},
 								{
@@ -10650,7 +10650,7 @@
 									"name": "Purphoros's Votary",
 									"entries": [
 										"{@i Piety 10+ Purphoros trait}",
-										"You can cast {@spell heat metal} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell.",
+										"You can cast {@spell 灼熱金屬} with this trait, requiring no material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell.",
 										"In addition, you have advantage on saving throws against being knocked {@condition prone}."
 									]
 								},
@@ -12468,7 +12468,7 @@
 									"name": "Thassa's Devotee",
 									"entries": [
 										"{@i Piety 3+ Thassa trait}",
-										"As a devotee of Thassa, you have proven yourself a worthy representative of the god of the sea. You can cast {@spell fog cloud} with this trait. Fog created in this way smells strongly of the sea. You can cast the spell in this way a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest. Intelligence is your spellcasting ability for this spell."
+										"As a devotee of Thassa, you have proven yourself a worthy representative of the god of the sea. You can cast {@spell 雲霧術} with this trait. Fog created in this way smells strongly of the sea. You can cast the spell in this way a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest. Intelligence is your spellcasting ability for this spell."
 									]
 								},
 								{
@@ -12476,7 +12476,7 @@
 									"name": "Thassa's Votary",
 									"entries": [
 										"{@i Piety 10+ Thassa trait}",
-										"You can cast {@spell blink} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell."
+										"You can cast {@spell 閃現術} with this trait. Once you cast the spell in this way, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for this spell."
 									]
 								},
 								{

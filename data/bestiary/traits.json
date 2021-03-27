@@ -4,7 +4,7 @@
 			"name": "Awakened",
 			"source": "PHB",
 			"page": 216,
-			"ref": "{@spell Awaken}",
+			"ref": "{@spell 啟蒙術}",
 			"prerequisite": {
 				"size": {
 					"max": "H"
@@ -120,13 +120,13 @@
 									"<$title_short_name$>'s innate spellcasting ability is Intelligence (spell save DC <$spell_dc__int$>). <$title_short_name$> can innately cast the following spells, requiring no material components:"
 								],
 								"will": [
-									"{@spell nondetection} (self only)"
+									"{@spell 迴避偵測} (self only)"
 								],
 								"daily": {
 									"1e": [
-										"{@spell blindness/deafness}",
-										"{@spell blur}",
-										"{@spell disguise self}"
+										"{@spell 目盲/耳聾術}",
+										"{@spell 朦朧術}",
+										"{@spell 易容術}"
 									]
 								},
 								"ability": "int"
@@ -245,12 +245,12 @@
 									"<$title_short_name$>'s innate spellcasting ability is Charisma (spell save DC <$spell_dc__cha$>). <$title_short_name$> can innately cast the following spells, requiring no material components:"
 								],
 								"will": [
-									"{@spell dancing lights}"
+									"{@spell 舞光術}"
 								],
 								"daily": {
 									"1e": [
-										"{@spell darkness}",
-										"{@spell faerie fire}"
+										"{@spell 黑暗術}",
+										"{@spell 妖火術}"
 									]
 								},
 								"ability": "cha"
@@ -2486,12 +2486,12 @@
 									"<$title_short_name$>'s innate spellcasting ability is Charisma (spell save DC <$spell_dc__cha$>). <$title_short_name$> can innately cast the following spells, requiring no material components:"
 								],
 								"will": [
-									"{@spell thaumaturgy}"
+									"{@spell 奇術}"
 								],
 								"daily": {
 									"1e": [
-										"{@spell darkness}",
-										"{@spell hellish rebuke}"
+										"{@spell 黑暗術}",
+										"{@spell 煉獄叱喝}"
 									]
 								},
 								"ability": "cha"

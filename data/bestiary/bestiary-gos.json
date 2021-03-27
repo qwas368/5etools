@@ -1663,8 +1663,8 @@
 						"spells": {
 							"2": [
 								{
-									"replace": "{@spell animal messenger}",
-									"with": "{@spell flaming sphere}"
+									"replace": "{@spell 動物信使}",
+									"with": "{@spell 熾焰法球}"
 								}
 							]
 						}
@@ -1743,7 +1743,7 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell fog cloud}"
+							"{@spell 雲霧術}"
 						]
 					},
 					"ability": "cha"
@@ -2280,33 +2280,33 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell guiding bolt}",
-								"{@spell purify food and drink}"
+								"{@spell 命令術}",
+								"{@spell 光導箭}",
+								"{@spell 淨化飲食}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell lesser restoration}",
-								"{@spell silence}"
+								"{@spell 人類定身術}",
+								"{@spell 次級復原術}",
+								"{@spell 沉默術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell dispel magic}"
+								"{@spell 降咒}",
+								"{@spell 解除魔法}"
 							]
 						}
 					},
@@ -3175,19 +3175,19 @@
 						"Mr. Dory's innate spellcasting ability is Charisma (save {@dc 15}, {@hit 7} to hit with spell attacks). Mr. Dory can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell detect thoughts}",
-						"{@spell invisibility} (self only)"
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}",
+						"{@spell 隱形術} (self only)"
 					],
 					"daily": {
 						"2e": [
-							"{@spell fear}",
-							"{@spell fireball}",
-							"{@spell fly}"
+							"{@spell 恐懼術}",
+							"{@spell 火球術}",
+							"{@spell 飛行術}"
 						],
 						"1e": [
-							"{@spell cloudkill}",
-							"{@spell etherealness}"
+							"{@spell 死雲術}",
+							"{@spell 跨入乙太界}"
 						]
 					},
 					"ability": "cha"
@@ -3608,7 +3608,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -3643,27 +3643,27 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell friends}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 交友術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell disguise self}",
-								"{@spell fog cloud}",
-								"{@spell mage armor}",
-								"{@spell witch bolt}"
+								"{@spell 易容術}",
+								"{@spell 雲霧術}",
+								"{@spell 法師護甲}",
+								"{@spell 巫術箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell gust of wind}",
-								"{@spell Melf's acid arrow}",
-								"{@spell misty step}"
+								"{@spell 造風術}",
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 迷蹤步}"
 							]
 						}
 					},
@@ -3840,32 +3840,32 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch}",
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 寒顫之觸}",
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell expeditious retreat}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 腳底抹油}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell hold person}"
+								"{@spell 朦朧術}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell sleet storm}"
+								"{@spell 雪雨暴}"
 							]
 						}
 					},
@@ -4578,40 +4578,40 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell mending}",
-								"{@spell resistance}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 修復術}",
+								"{@spell 提升抗力}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bless}",
-								"{@spell detect magic}",
-								"{@spell guiding bolt}"
+								"{@spell 祝福術}",
+								"{@spell 偵測魔法}",
+								"{@spell 光導箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon} (trident)"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器} (trident)"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell fear}",
-								"{@spell mass healing word}",
-								"{@spell tongues}"
+								"{@spell 降咒}",
+								"{@spell 恐懼術}",
+								"{@spell 群體治癒真言}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 1,
 							"spells": [
-								"{@spell banishment}"
+								"{@spell 放逐術}"
 							]
 						}
 					},
@@ -4746,11 +4746,11 @@
 						"The wave shaper's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can cast the following spells, requiring only verbal components:"
 					],
 					"will": [
-						"{@spell message}"
+						"{@spell 傳訊術}"
 					],
 					"daily": {
 						"1": [
-							"{@spell comprehend languages}"
+							"{@spell 通曉語言}"
 						]
 					},
 					"ability": "int"
@@ -4877,25 +4877,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell dancing lights}",
-								"{@spell minor illusion}",
-								"{@spell ray of frost}"
+								"{@spell 舞光術}",
+								"{@spell 次級幻象}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell color spray}",
-								"{@spell magic missile}",
-								"{@spell silent image}"
+								"{@spell 魅惑人類}",
+								"{@spell 七彩噴射}",
+								"{@spell 魔法飛彈}",
+								"{@spell 無聲幻影}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell magic mouth}",
-								"{@spell scorching ray}"
+								"{@spell 魔嘴術}",
+								"{@spell 灼熱射線}"
 							]
 						}
 					},

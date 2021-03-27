@@ -1133,7 +1133,7 @@
 								"South of the village and surrounded by the river moat is a cone-shaped, flat-topped hill on which stands a stone keep enclosed by a wooden wall. The keep, which overlooks the village, has partially collapsed. A wooden bridge that once connected the keep to the village has also partially collapsed."
 							]
 						},
-						"Nightstone got its name from a massive chunk of obsidian that once stood in the middle of the village square. The obsidian megalith had strange glyphs carved into it and radiated magic under the scrutiny of {@spell detect magic} spells, but its properties and purpose couldn't be ascertained. The villagers assumed it was a relic of some bygone age or kingdom and left it alone.",
+						"Nightstone got its name from a massive chunk of obsidian that once stood in the middle of the village square. The obsidian megalith had strange glyphs carved into it and radiated magic under the scrutiny of {@spell 偵測魔法} spells, but its properties and purpose couldn't be ascertained. The villagers assumed it was a relic of some bygone age or kingdom and left it alone.",
 						"Three days ago, a cloud giant castle passed over Nightstone and dropped large rocks on the settlement and its keep. Unable to defend themselves against the bombardment, villagers who weren't killed in the attack lowered the drawbridge and fled into the nearby hills, taking refuge in some caves. Once the village was abandoned, four cloud giants descended from the sky, uprooted the nightstone, and bore it back to their castle for further study, believing it to be an Ostorian artifact. The cloud castle then drifted away with its prize.",
 						"The villagers were surprised to find a clan of goblins and an allied pair of ogres lurking in the caves. The villagers were ambushed, captured, and brought before Hark, the goblin boss. Hark interrogated them, learned of the giant attack on Nightstone, and sent a band of goblins to plunder the abandoned village. Characters who capture and interrogate these goblins can learn where the villagers are located.",
 						"The following warning signs indicate that all is not well in Nightstone:",
@@ -1182,11 +1182,11 @@
 							"id": "029",
 							"entries": [
 								"Nightstone is a motte-and-bailey fortification built on the Ardeep River. The settlement's general features are summarized here.",
-								"{@b Bailey.} A 15-foot-high wooden palisade encloses the village bailey. The palisade's logs rise to sharpened points, and the gaps between the logs are sealed with tar. The palisade and its stone watchtowers (see {@area 2|02c}) can't be climbed without the aid of climbing gear or magic, such as a {@spell spider climb} spell.",
+								"{@b Bailey.} A 15-foot-high wooden palisade encloses the village bailey. The palisade's logs rise to sharpened points, and the gaps between the logs are sealed with tar. The palisade and its stone watchtowers (see {@area 2|02c}) can't be climbed without the aid of climbing gear or magic, such as a {@spell 蛛行術} spell.",
 								"All the buildings in the village except the watchtowers are made of wood and have steep, shingled rooftops. Muddy paths connect them.",
 								"{@b Moat.} Water from the river fills the moat to a depth of 15 feet. The moat is 30 feet wide, narrowing to a width of 20 feet under the drawbridge ({@area 1|02a}). The moat is home to schools of trout.",
 								"{@b Motte.} The keep overlooking the village stands atop a constructed, funnel-shaped hill called a motte. The rocky slopes of the motte are covered with loose shale, and scaling these slopes without climbing gear requires a successful DC 20 Strength (Athletics) check.",
-								"Encircling the motte's keep is an 8-foot-high stone parapet with a 15-foot-high outer curtain wall made of thick wooden planks perforated with shuttered archer windows. The outer walls of the keep are made of smooth, tightly fitted stone bricks. The keep and the outer curtain wall can't be climbed without the aid of climbing gear or magic, such as a {@spell spider climb} spell.",
+								"Encircling the motte's keep is an 8-foot-high stone parapet with a 15-foot-high outer curtain wall made of thick wooden planks perforated with shuttered archer windows. The outer walls of the keep are made of smooth, tightly fitted stone bricks. The keep and the outer curtain wall can't be climbed without the aid of climbing gear or magic, such as a {@spell 蛛行術} spell.",
 								"{@b Rocks.} As the characters explore Nightstone, they see ample evidence of the giants' attack: rocks embedded in the earth, holes punched through rooftops, shattered wreckage, and dead villagers buried under piles of debris. The cloud giants' rocks are 3 feet in diameter and weigh 500 pounds each."
 							]
 						}
@@ -2160,7 +2160,7 @@
 								"You see an enormous tower floating on a billowy cloud a thousand feet overhead. The tower must be hundreds of feet tall, and its spire looks strangely like a pointy wizard's hat. As the tower drifts closer, stairs made of clouds begin to form underneath it and descend toward you."
 							]
 						},
-						"Map 1.3 shows the tower. The stairs are made of firm cloud stuff and spiral downward, stopping just short of the ground. They are sized for humans and safe to climb. After climbing the stairs for 1,000 feet, the characters stand in front of the tower's entrance, on a cloud that feels as firm and safe as solid ground. If the characters enter the first floor of the tower, a cloud giant wizard named Zephyros descends from the second floor (using a {@spell levitate} spell) to greet them.",
+						"Map 1.3 shows the tower. The stairs are made of firm cloud stuff and spiral downward, stopping just short of the ground. They are sized for humans and safe to climb. After climbing the stairs for 1,000 feet, the characters stand in front of the tower's entrance, on a cloud that feels as firm and safe as solid ground. If the characters enter the first floor of the tower, a cloud giant wizard named Zephyros descends from the second floor (using a {@spell 浮空術} spell) to greet them.",
 						{
 							"type": "gallery",
 							"images": [
@@ -2223,7 +2223,7 @@
 							"height": 541
 						},
 						"Ever since the ordning shattered, Zephyros has been using {@i contact other} plane spells to find a way to set things right. Failed castings of the spell have driven him insane on multiple occasions. He has recovered from the madness, yet it has accentuated his eccentricity. His magical investigations led him to Nightstone. He had nothing to do with the cloud giant attack on the settlement and is horrified to learn of the damage his fellow giants caused.",
-						"Zephyros holds \"small folk\" in higher regard than most giants. If the characters introduce themselves to him, a wide smile settles on the cloud giant's face as he realizes they are the ones mentioned by the mysterious planar entities with which he has spoken. Convinced that the characters can restore the ordning, Zephyros offers to transport them to one destination of their choice in the North. That is the extent of his involvement. The planar entities with whom Zephyros has spoken via the {@spell contact other plane} spell warned him against taking a more direct hand in events. The party's destination should coincide with Morak's quest. After safely delivering the characters to their destination, Zephyros and his tower depart for the Moonshae Isles.",
+						"Zephyros holds \"small folk\" in higher regard than most giants. If the characters introduce themselves to him, a wide smile settles on the cloud giant's face as he realizes they are the ones mentioned by the mysterious planar entities with which he has spoken. Convinced that the characters can restore the ordning, Zephyros offers to transport them to one destination of their choice in the North. That is the extent of his involvement. The planar entities with whom Zephyros has spoken via the {@spell 異界探知} spell warned him against taking a more direct hand in events. The party's destination should coincide with Morak's quest. After safely delivering the characters to their destination, Zephyros and his tower depart for the Moonshae Isles.",
 						"If the characters ask Zephyros to take them somewhere other than Bryn Shander, Goldenfields, or Triboar, Zephyros (eccentric wizard that he is) gets a little befuddled and ends up taking them to one of these places by accident.",
 						"Zephyros is a cloud giant, with the following changes:",
 						{
@@ -2240,13 +2240,13 @@
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
-								"Cantrips (at will): {@spell mending}, {@spell message}, {@spell prestidigitation}, {@spell ray of frost}, {@spell shocking grasp}",
-								"1st level (4 slots): {@spell charm person}, {@spell comprehend languages}, {@spell magic missile}, {@spell shield}",
-								"2nd level (3 slots): {@spell crown of madness}, {@spell gust of wind}, {@spell levitate}",
-								"3rd level (3 slots): {@spell nondetection}, {@spell protection from energy}, {@spell tongues}",
-								"4th level (3 slots): {@spell conjure minor elementals}, {@spell greater invisibility}, {@spell Otiluke's resilient sphere}",
-								"5th level (2 slots): {@spell cone of cold}, {@spell contact other plane}",
-								"6th level (1 slot): {@spell mass suggestion}"
+								"Cantrips (at will): {@spell 修復術}, {@spell 傳訊術}, {@spell 魔法技倆}, {@spell 冷凍射線}, {@spell 電爪}",
+								"1st level (4 slots): {@spell 魅惑人類}, {@spell 通曉語言}, {@spell 魔法飛彈}, {@spell 護盾術}",
+								"2nd level (3 slots): {@spell 瘋狂冠冕}, {@spell 造風術}, {@spell 浮空術}",
+								"3rd level (3 slots): {@spell 迴避偵測}, {@spell 防護能量}, {@spell 巧舌術}",
+								"4th level (3 slots): {@spell 召喚次級元素生物}, {@spell 高等隱形術}, {@spell 歐提路克魔封法球}",
+								"5th level (2 slots): {@spell 寒冰錐}, {@spell 異界探知}",
+								"6th level (1 slot): {@spell 群體暗示術}"
 							]
 						},
 						"Zephyros's tower has no fitting accommodations for small folk, but the cloud giant wizard allows the party to camp on the first floor. He requests that the characters confine their activities to the first floor and stay away from the second floor and the aerie. Zephyros controls the tower's movements using a navigation orb on the second floor.",
@@ -2287,7 +2287,7 @@
 							"name": "First Floor",
 							"id": "08b",
 							"entries": [
-								"The tower rests atop a cloud that feels solid underfoot. An open archway leads to an empty vestibule, at the back of which hangs a thin, translucent blue curtain that flaps in the breeze. Beyond the curtain lies a 100-foot high hexagonal chamber containing a giant-sized wooden table and stone chair. Dangling from the ceiling by iron chains are six crystal spheres with {@spell continual flame} spells cast on them. The illuminated spheres keep the room brightly lit.",
+								"The tower rests atop a cloud that feels solid underfoot. An open archway leads to an empty vestibule, at the back of which hangs a thin, translucent blue curtain that flaps in the breeze. Beyond the curtain lies a 100-foot high hexagonal chamber containing a giant-sized wooden table and stone chair. Dangling from the ceiling by iron chains are six crystal spheres with {@spell 不滅明焰} spells cast on them. The illuminated spheres keep the room brightly lit.",
 								"The tower's second floor can be seen through a 20-foot-wide hole in the soaring ceiling."
 							]
 						},
@@ -2296,7 +2296,7 @@
 							"name": "Second Floor",
 							"id": "08c",
 							"entries": [
-								"This level of the tower has an 80-foot-high ceiling and tall, slender windows set with panes of stained glass. Furnishings include a giant-sized bed and an enormous wooden chest sealed by an {@spell arcane lock} spell. Stone shelves protrude from the walls at heights of 20, 40, and 60 feet, and these shelves bear the weight of Zephyros's vast collection of journals (see \"Treasure\").",
+								"This level of the tower has an 80-foot-high ceiling and tall, slender windows set with panes of stained glass. Furnishings include a giant-sized bed and an enormous wooden chest sealed by an {@spell 祕法鎖} spell. Stone shelves protrude from the walls at heights of 20, 40, and 60 feet, and these shelves bear the weight of Zephyros's vast collection of journals (see \"Treasure\").",
 								"Floating 10 feet above the floor is a {@item navigation orb|SKT} that Zephyros uses to control the movement of the tower.",
 								"Zephyros uses magic to move between levels. A 20-foot-diameter hole in the floor allows access to the first level, the floor of which is 100 feet below. A similarly sized hole in the ceiling leads to the aerie."
 							]
@@ -2306,7 +2306,7 @@
 							"name": "Treasure",
 							"id": "08d",
 							"entries": [
-								"The wooden chest is 9 feet long, 5 feet wide, and 5 feet tall. It contains an assortment of giant-sized robes, a giant pair of sandals, a large electrum comb encrusted with moonstones (worth 750 gp and weighing 25 pounds), and Zephyros's spellbook. The spellbook weighs 250 pounds has gilded silver covers. It contains all the spells that Zephyros has prepared plus the following additional spells: {@spell arcane eye}, {@spell continual flame}, {@spell fire shield}, {@spell hypnotic pattern}, {@spell mage armor}, {@spell mirror image}, {@spell misty step}, {@spell modify memory}, {@spell shatter}, and {@spell slow}.",
+								"The wooden chest is 9 feet long, 5 feet wide, and 5 feet tall. It contains an assortment of giant-sized robes, a giant pair of sandals, a large electrum comb encrusted with moonstones (worth 750 gp and weighing 25 pounds), and Zephyros's spellbook. The spellbook weighs 250 pounds has gilded silver covers. It contains all the spells that Zephyros has prepared plus the following additional spells: {@spell 祕法眼}, {@spell 不滅明焰}, {@spell 火焰護盾}, {@spell 催眠圖紋}, {@spell 法師護甲}, {@spell 鏡影術}, {@spell 迷蹤步}, {@spell 修改記憶}, {@spell 粉碎音波}, and {@spell 緩速術}.",
 								"Zephyros's library contains more than five hundred research journals that he wrote himself. For the past fifty years, Zephyros has been drifting around the Moonshae Isles and cataloging its many wonders, both magical and mundane. Each book weighs 100 pounds, consolidates a month's worth of research, and is worth as much as 250 gp."
 							]
 						},
@@ -2394,7 +2394,7 @@
 										],
 										[
 											"81-90",
-											"The creature sprinkled with dust must succeed on a DC 11 Wisdom saving throw or be affected by a {@spell confusion} spell."
+											"The creature sprinkled with dust must succeed on a DC 11 Wisdom saving throw or be affected by a {@spell 困惑術} spell."
 										],
 										[
 											"91-00",
@@ -2409,9 +2409,9 @@
 							"name": "Development",
 							"id": "093",
 							"entries": [
-								"If a battle erupts between the characters and the cultists, Zephyros (eccentric wizard that he is) watches the chaos unfold from a safe distance. Only if the characters are near defeat does the cloud giant cast a {@spell mass suggestion} spell on the cultists and the invisible stalker, urging them to leave at once and never return.",
+								"If a battle erupts between the characters and the cultists, Zephyros (eccentric wizard that he is) watches the chaos unfold from a safe distance. Only if the characters are near defeat does the cloud giant cast a {@spell 群體暗示術} spell on the cultists and the invisible stalker, urging them to leave at once and never return.",
 								"If the characters allow the cultists to speak to Zephyros, they offer him the pouch of pixie dust as a gift and urge him to help Yan-C-Bin \"return the world to its primordial state, as it was at the dawn of history.\" The cultists are hazy on how this can be achieved and more interested in a yes or no from the giant.",
-								"Zephyros accepts whatever counsel the characters wish to offer. Unless the characters advise him to send away the cultists, Zephyros accepts the cultists' gift and allows them to remain in his tower while he considers their offer. He then retreats to the second floor and casts {@spell contact other plane} to determine the best course of action. If he fails the spell's Intelligence saving throw, he remains catatonic until he finishes a long rest. If the save is successful, he determines with the aid of the spell that the cult's interests are opposed to his own, and politely asks the cultists to leave. The cultists grudgingly concede to his request and take their leave, but not before Amarath chastises the cloud giant wizard for his \"foolish and shortsighted decision.\"",
+								"Zephyros accepts whatever counsel the characters wish to offer. Unless the characters advise him to send away the cultists, Zephyros accepts the cultists' gift and allows them to remain in his tower while he considers their offer. He then retreats to the second floor and casts {@spell 異界探知} to determine the best course of action. If he fails the spell's Intelligence saving throw, he remains catatonic until he finishes a long rest. If the save is successful, he determines with the aid of the spell that the cult's interests are opposed to his own, and politely asks the cultists to leave. The cultists grudgingly concede to his request and take their leave, but not before Amarath chastises the cloud giant wizard for his \"foolish and shortsighted decision.\"",
 								"After his business with the cultists is concluded, Zephyros feels bad about keeping their gift and gives the pouch of pixie dust to the characters, believing they might get more use out of it than he will."
 							]
 						}
@@ -2446,7 +2446,7 @@
 								"Each is equipped with a {@item potion of gaseous form}."
 							]
 						},
-						"The dwarves quaff their {@item potion of gaseous form||potions of gaseous form} upon landing and make their way into the tower, searching for the {@item navigation orb|SKT}. Realizing that the orb isn't on the first floor, they fly up to the second floor. Once the orb is in sight, the dwarves revert to their true forms and attack it. Zephyros does his best to protect the orb without harming any of the dwarves, using spells such as {@spell charm person}, {@spell Otiluke's resilient sphere}, and {@spell mass suggestion} to trap or divert them. Meanwhile, the dragon watches the battle from the aerie and tries to neutralize the cloud giant wizard with its paralyzing breath.",
+						"The dwarves quaff their {@item potion of gaseous form||potions of gaseous form} upon landing and make their way into the tower, searching for the {@item navigation orb|SKT}. Realizing that the orb isn't on the first floor, they fly up to the second floor. Once the orb is in sight, the dwarves revert to their true forms and attack it. Zephyros does his best to protect the orb without harming any of the dwarves, using spells such as {@spell 魅惑人類}, {@spell 歐提路克魔封法球}, and {@spell 群體暗示術} to trap or divert them. Meanwhile, the dragon watches the battle from the aerie and tries to neutralize the cloud giant wizard with its paralyzing breath.",
 						"The dragon and the dwarves avoid armed conflict with the characters. If the characters kill one or more of the dwarves or deal damage to the dragon, they are accused of conspiring with giants to bring about the downfall of dwarven civilization in the North. The strike team turns on the party, attempting to knock the characters unconscious instead of killing them.",
 						{
 							"type": "entries",
@@ -2533,7 +2533,7 @@
 						"The player-controlled NPCs are intentionally simpler and easier to run than the players' own characters, and the NPCs help bring the location to life. The players will be far more inclined to defend the location knowing that its inhabitants are more than just faceless figures with hit points. These NPCs are predisposed to aid in their settlement's defense, but players might try to keep them out of harm's way instead. Each NPC has an ideal, a bond, and a flaw, and though you should encourage players to roleplay these traits accurately, players can portray the NPCs as they choose.",
 						"Rather than have each player roll initiative for a special NPC, assume that the NPC acts on the same initiative count as the player's character, immediately after that character's turn. If an enemy is forced to choose between attacking a player character or an NPC, assume it attacks the NPC unless it has a strong incentive to do otherwise.",
 						"At the end of the battle, regardless of the outcome, take back all the special NPCs. For each NPC who survives, give the characters that NPC's corresponding special quest. A special quest is imparted even if the NPC didn't participate in the battle. These special quests shouldn't be revealed to the players until you're ready to move on to the next part of the adventure. Once the dust has settled, the surviving NPCs approach the characters and present their quests (not necessarily all at once). The characters are under no obligation to accept and complete a quest, though doing so usually leads to some kind of reward.",
-						"The adventurers don't receive any quest (or the reward gained from completing it) that is tied to an NPC who dies and isn't brought back to life using a {@spell revivify} spell or some other means.",
+						"The adventurers don't receive any quest (or the reward gained from completing it) that is tied to an NPC who dies and isn't brought back to life using a {@spell 回生術} spell or some other means.",
 						"If you are running the adventure for inexperienced players, you can run one or more of the special NPCs yourself and use them to assist or advise the player characters, rather than have the players run the NPCs in addition to their own characters. If the NPCs survive the battle, award one special quest per character in the party."
 					]
 				},
@@ -3735,7 +3735,7 @@
 					"entries": [
 						"This chilly, creaking, decrepit wooden rooming house is run by Tolmara Hysstryn (CN female Illuskan human {@creature commoner}), a deranged middle-aged woman. Visitors unable to secure rooms at Everwyvern House or Northshield House might be forced to bunk here, but they rarely stay longer than a night because they quickly discover that Tolmara isn't shy about spying on them through keyholes and listening at doors while chuckling to herself.",
 						"Locked in the Six Windows' attic are the bones of Tolmara's dead husband, Mirak, of whom she rarely speaks. Tolmara hides the key to the attic door in her brassiere. The lock can be picked with thieves' tools and a DC 10 Dexterity check. If Mirak's bones are touched, his {@creature skeleton} animates for {@dice 1d4} rounds, after which it clatters to the floor. The effect repeats if the bones are touched again, unless the skeleton is reduced to 0 hit points or the bones are destroyed, in which case they can't animate. The skeleton is unarmed and deals 1 bludgeoning damage on a hit.",
-						"Any character who casts a {@spell speak with dead} spell on Mirak's skull and asks Mirak's spirit how he died learns that Tolmara drugged him and sealed him in a barrel with a poisonous snake, which killed him with its bite. Mirak has no clue why Tolmara killed him, and Tolmara is too addled to remember the incident or the circumstances leading up to it. Casting a {@spell greater restoration} spell on Tolmara restores her sanity, whereupon she confesses to murdering her husband for being unfaithful.",
+						"Any character who casts a {@spell 死者交談術} spell on Mirak's skull and asks Mirak's spirit how he died learns that Tolmara drugged him and sealed him in a barrel with a poisonous snake, which killed him with its bite. Mirak has no clue why Tolmara killed him, and Tolmara is too addled to remember the incident or the circumstances leading up to it. Casting a {@spell 高等復原術} spell on Tolmara restores her sanity, whereupon she confesses to murdering her husband for being unfaithful.",
 						"If the characters report Tolmara's crime to Darathra Shendrel, the lord protector has Tolmara arrested and imprisoned pending a trial. Darathra also notifies Mirak's two brothers, who work on a nearby ranch. For years, they were led to believe that Mirak had left town with another woman; they are grateful to the characters for unearthing the truth and offer them a {@item +1 longbow} (a family heirloom) as a reward."
 					]
 				},
@@ -3752,7 +3752,7 @@
 							"name": "Treasure",
 							"id": "103",
 							"entries": [
-								"Kolstaag hides his valuables with the aid of a {@spell Leomund's secret chest} spell. He keeps the tiny replica needed to recall the chest on his person, or on a nearby nightstand while he sleeps. Only Kolstaag can use the replica to recall the chest, which he does before entering combat to gain access to the magic items within. If he's captured, he can be persuaded to recall the chest in exchange for a promise of freedom. The extradimensional chest contains six 500 gp gems, Kolstaag's {@item bracers of defense}, and a {@item +1 wand of the war mage}."
+								"Kolstaag hides his valuables with the aid of a {@spell 李歐蒙秘藏箱} spell. He keeps the tiny replica needed to recall the chest on his person, or on a nearby nightstand while he sleeps. Only Kolstaag can use the replica to recall the chest, which he does before entering combat to gain access to the magic items within. If he's captured, he can be persuaded to recall the chest in exchange for a promise of freedom. The extradimensional chest contains six 500 gp gems, Kolstaag's {@item bracers of defense}, and a {@item +1 wand of the war mage}."
 							]
 						}
 					]
@@ -3810,7 +3810,7 @@
 						"The snobbery of Everwyvern House is equaled by its elegant foppery. The atmosphere in the place is like a parody of the grandest Waterdhavian noble parties. Folk come here to be awed by it, to be amused by it, or to feel at home in it. Minstrels play quiet background music among floating plants and many-hued driftglobes, while startlingly gowned women and dashingly sashed and ruffled men chat, stroll, dance, and sneer at each other. Several of these well-dressed fops are actually escorts (N male and female human {@creature commoner||commoners} of various ethnicities) employed by the inn's proprietor to enhance the mood. They are coached to speak and parade about like nobles, but they are nothing more than low-paid actors.",
 						"The Everwyvern's condescending peacock of a proprietor, Draven Millovyr (NE male Illuskan human {@creature mage}), tried and failed to gain membership in the Arcane Brotherhood. When that career path didn't pan out, he used his inherited wealth to buy Everwyvern House. The Everwyvern's beds are comfortable but horribly overpriced (15 gp per night), though the fee includes room service and companionship, if desired. The meals on the menu are prepared just as they are in Waterdeep's finest restaurants, but nonetheless they are extraordinarily expensive (25 gp per plate). Draven employs spies to keep him apprised of the latest dining and fashion trends.",
 						"Draven doesn't allow \"nobodies\" to stay at his inn, and he employs six bouncers (NE male Illuskan human {@creature thug||thugs}) to throw out the trash. Adventurers of noble blood and their servants are welcome; others are not.",
-						"Draven keeps his wealth in his locked quarters, located on the top floor of the Everwyvern's turret. He carries the only key to the door. Its lock can be picked with thieves' tools and a successful DC 15 Dexterity check. A {@spell glyph of warding} spell cast on the door is triggered when someone other than Draven opens it. When triggered, the glyph casts a {@spell conjure animals} spell that summons a pair of {@creature death dog||death dogs}. They attack anyone not accompanied by Draven.",
+						"Draven keeps his wealth in his locked quarters, located on the top floor of the Everwyvern's turret. He carries the only key to the door. Its lock can be picked with thieves' tools and a successful DC 15 Dexterity check. A {@spell 守衛銘文} spell cast on the door is triggered when someone other than Draven opens it. When triggered, the glyph casts a {@spell 召喚動物} spell that summons a pair of {@creature death dog||death dogs}. They attack anyone not accompanied by Draven.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -3917,7 +3917,7 @@
 					"id": "113",
 					"entries": [
 						"Ildmane clutches a {@item rod of the Vonindod|SKT}, which guides her to {@area T2|0f4}. When the fire giants arrive there, they use their greatswords like shovels, digging up the ground to reach the Vonindod fragment-a bent and broken band of 2-inch-thick adamantine roughly 11 feet long and weighing 1,000 pounds. It takes ten actions by the giants to unearth the C-shaped fragment, and another action for one of them to pull it free. One fire giant can carry the fragment using both hands or drag it using one hand.",
-						"Any character who inspects the broken adamantine ring can, with a successful DC 15 Intelligence (Arcana) check, determine that it was once part of some kind of enormous construct. Casting a {@spell detect magic} spell on the fragment reveals a faint, lingering magical aura, though the school of magic can't be ascertained. If the characters obtain the fragment, Alaestra Ulgar (see {@area T6|0f8}) and Urlam Stockspool (see {@area T9|0fc}) each offers to buy it for 5,000 gp (paid in 500 gp gemstones), though its actual value is three times as much.",
+						"Any character who inspects the broken adamantine ring can, with a successful DC 15 Intelligence (Arcana) check, determine that it was once part of some kind of enormous construct. Casting a {@spell 偵測魔法} spell on the fragment reveals a faint, lingering magical aura, though the school of magic can't be ascertained. If the characters obtain the fragment, Alaestra Ulgar (see {@area T6|0f8}) and Urlam Stockspool (see {@area T9|0fc}) each offers to buy it for 5,000 gp (paid in 500 gp gemstones), though its actual value is three times as much.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -3952,13 +3952,13 @@
 					"entries": [
 						"Darathra doesn't have much contact with her fellow Harpers, but it strikes her as odd that fire giants would make it this far into the Dessarin Valley without her receiving some kind of warning. She wants to make sure her organization is aware of the gravity of the situation. She gives the characters a platinum badge (worth 50 gp) bearing the Triboar insignia (three boars charging forward) and urges the characters to travel east along the Evermoor Way, visit Danivarr's House in Everlund, and give the badge to Dral Thelev, the one-eyed half-orc proprietor.",
 						"If the characters follow Darathra's instructions, Dral pockets the badge, uncorks a flask of elven wine that he claims is Silverymoon's finest, and pours its contents into small wooden cups-one per character. Characters who take even the smallest drink of the wine are teleported to a parlor in the heart of Moongleam Tower, the Harpers' stronghold in Everlund (see the \"Everlund\" section in chapter 3). Dral explains how the magic of the elixir works after one party member takes a sip and disappears, expecting that the others will want to follow.",
-						"The parlor in Moongleam Tower contains austere furnishings and a dozen harmless, domesticated {@creature tressym|SKT} behaving like house cats. A silent {@spell alarm} spell notifies Krowen Valharrow, the tower's resident archmage, of the party's arrival. The dotty old wizard enters the parlor shortly after the characters appear, greets them warmly, and grants them free access to a secret network of teleportation circles until, as he puts it, \"the Harpers decide otherwise\" (see the \"Inner Circles\" section in chapter 3).",
+						"The parlor in Moongleam Tower contains austere furnishings and a dozen harmless, domesticated {@creature tressym|SKT} behaving like house cats. A silent {@spell 警報術} spell notifies Krowen Valharrow, the tower's resident archmage, of the party's arrival. The dotty old wizard enters the parlor shortly after the characters appear, greets them warmly, and grants them free access to a secret network of teleportation circles until, as he puts it, \"the Harpers decide otherwise\" (see the \"Inner Circles\" section in chapter 3).",
 						{
 							"type": "entries",
 							"name": "Treasure",
 							"id": "118",
 							"entries": [
-								"After showing them the teleportation circle in Moongleam Tower, Krowen gives the adventurers a small wooden coffer that Darathra sent him for his birthday a few years back. The coffer's interior space is divided into six compartments, each of which contains a rolled-up spell scroll. The spells written on the scrolls are {@spell dispel magic}, {@spell fly}, {@spell magic weapon}, {@spell sending}, {@spell tongues}, and {@spell water breathing}. (If the characters meet Krowen in Everlund but are not engaged in Darathra's quest, Krowen does not provide the scrolls.)"
+								"After showing them the teleportation circle in Moongleam Tower, Krowen gives the adventurers a small wooden coffer that Darathra sent him for his birthday a few years back. The coffer's interior space is divided into six compartments, each of which contains a rolled-up spell scroll. The spells written on the scrolls are {@spell 解除魔法}, {@spell 飛行術}, {@spell 魔化武器}, {@spell 短訊術}, {@spell 巧舌術}, and {@spell 水下呼吸}. (If the characters meet Krowen in Everlund but are not engaged in Darathra's quest, Krowen does not provide the scrolls.)"
 							]
 						}
 					]
@@ -4041,13 +4041,13 @@
 							"items": [
 								"The carriage house is a 30-foot-square stone building with two floors. The windowless ground floor that holds the carriage has a big wooden sliding door in the front. The upper floor is an apartment with a floor made of wooden planks and a barred window set into each wall. An open wooden staircase in one corner of the building connects the floors.",
 								"Two human guards with spears are stationed in the upstairs apartment.",
-								"An {@spell arcane lock} spell protects the sliding wooden door.",
-								"The carriage has two {@creature draft horse||draft horses} harnessed to it, ready to leave at a moment's notice. The carriage is protected by an {@spell alarm} spell, set to go off when a carriage door is opened.",
+								"An {@spell 祕法鎖} spell protects the sliding wooden door.",
+								"The carriage has two {@creature draft horse||draft horses} harnessed to it, ready to leave at a moment's notice. The carriage is protected by an {@spell 警報術} spell, set to go off when a carriage door is opened.",
 								"The magic items are hidden in a compartment under the passenger seat inside the carriage."
 							]
 						},
-						"Othovir doesn't know what magic items are included in the stash. He also doesn't know that the human guards are actually two {@creature cambion||cambions} using {@spell alter self} spells to conceal their true forms. The cambions are loyal to House Margaster and attack anyone they catch infiltrating the carriage house.",
-						"The {@spell alarm} spell not only attracts the cambions but also alerts Xamlyn Margaster (LE female Illuskan human {@creature mage}), who lives in the nearby tower. She emerges from the tower on the third round and casts spells at anyone trying to make off with the magic items or the carriage.",
+						"Othovir doesn't know what magic items are included in the stash. He also doesn't know that the human guards are actually two {@creature cambion||cambions} using {@spell 變造自身} spells to conceal their true forms. The cambions are loyal to House Margaster and attack anyone they catch infiltrating the carriage house.",
+						"The {@spell 警報術} spell not only attracts the cambions but also alerts Xamlyn Margaster (LE female Illuskan human {@creature mage}), who lives in the nearby tower. She emerges from the tower on the third round and casts spells at anyone trying to make off with the magic items or the carriage.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -5372,7 +5372,7 @@
 							"name": "Development",
 							"id": "188",
 							"entries": [
-								"If the characters received a letter of recommendation from Tamalin Zoar (see the \"Calling Horns\" section) and they show it to Dral Thelev, the half-orc tells them that the Zoar family has power in the city and that the characters can give the letter of recommendation to Dral in exchange for one favor from the Zoars (see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in chapter 7 of the {@i Dungeon Master's Guide}). When the characters decide to call in the favor, Dral contacts his employers, and High Captain Horix Zoar does everything in his power to give the characters what they want, provided it's within his power and isn't likely to burden him or the Zoar family. Examples of what he might provide include a meeting with one or more members of the Council of Elders, an arranged meeting with a Lords' Alliance representative from another city, and a spell {@item Spell Scroll (5th level)||scroll of} {@spell raise dead}."
+								"If the characters received a letter of recommendation from Tamalin Zoar (see the \"Calling Horns\" section) and they show it to Dral Thelev, the half-orc tells them that the Zoar family has power in the city and that the characters can give the letter of recommendation to Dral in exchange for one favor from the Zoars (see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in chapter 7 of the {@i Dungeon Master's Guide}). When the characters decide to call in the favor, Dral contacts his employers, and High Captain Horix Zoar does everything in his power to give the characters what they want, provided it's within his power and isn't likely to burden him or the Zoar family. Examples of what he might provide include a meeting with one or more members of the Council of Elders, an arranged meeting with a Lords' Alliance representative from another city, and a spell {@item Spell Scroll (5th level)||scroll of} {@spell 喚醒死者}."
 							]
 						}
 					]
@@ -5498,7 +5498,7 @@
 							"name": "Ancient Relic",
 							"id": "193",
 							"entries": [
-								"Casting {@spell detect magic} on the altar reveals a faint aura of divination magic originating from underneath it. The slab weighs several tons and is too large to be lifted or moved by any creature smaller and weaker than a stone giant, but multiple Small or Medium creatures lifting in tandem can move the stone if at least five of them succeed on a DC 20 Strength (Athletics) check. The altar can be broken in half to get at the ground underneath; it has AC 17, 100 hit points, a damage threshold of 10, and immunity to poison and psychic damage.",
+								"Casting {@spell 偵測魔法} on the altar reveals a faint aura of divination magic originating from underneath it. The slab weighs several tons and is too large to be lifted or moved by any creature smaller and weaker than a stone giant, but multiple Small or Medium creatures lifting in tandem can move the stone if at least five of them succeed on a DC 20 Strength (Athletics) check. The altar can be broken in half to get at the ground underneath; it has AC 17, 100 hit points, a damage threshold of 10, and immunity to poison and psychic damage.",
 								"Uthgar's early followers who founded the Elk tribe buried a relic of giantkind under the altar to empower it: a 5-foot-long mithral spear tip weighing 75 pounds. The spear tip is the source of the faint aura of divination magic, though it no longer has the powers it once held."
 							]
 						},
@@ -5566,7 +5566,7 @@
 								},
 								"In either case, the characters encounter the drow in a dusty, 20-foot-wide, 30-foot-high hall lined with 10-foot tall dwarven statues. Assume the two groups are 60 feet apart when they see each other. The dark elves are making their way toward a secret door set into the wall behind one of the statues, beyond which is a 5-foot-wide, 7-foot-high, mile-long tunnel that the drow intend to use as their escape route. The secret door is between the two groups-20 feet from the drow party and 40 feet from the adventuring party at the start of the encounter-and the characters have no prior knowledge of it. So masterfully crafted is the secret door that spotting it requires a careful search of the wall and a successful DC 25 Wisdom (Perception) check. The drow are already aware of the secret door, having used it to creep into Gauntlgrym undetected.",
 								"The leader of the all-male party is a slippery, never-say-die dark elf named Draac Xorlarrin. Taal, his younger cousin, accompanies him. Both are {@creature drow mage||drow mages}. Their escort consists of six male {@creature drow elite warrior||drow elite warriors} and two {@creature shadow demon||shadow demons} (one summoned by Draac, the other by Taal).",
-								"Draac and Taal have both used their Summon Demon ability, as well as all of their 5th-level spell slots. They know that they can't afford to spar with adventurers or risk getting caught. On their first turns in combat, Draac and Taal cast {@spell Evard's black tentacles} spells. The tentacles erupt from the floor in front of the characters, filling the two 20-foot squares between them and the secret door. Confident that the tentacles will hold their enemies at bay, the drow mages then head toward the secret door and try to escape. The drow elite warriors and the shadow demons follow the mages, serving as personal bodyguards. Once inside the secret tunnel, the mages use {@spell web} spells to obstruct the passageway behind their party, hoping to ensnare or slow down their pursuers."
+								"Draac and Taal have both used their Summon Demon ability, as well as all of their 5th-level spell slots. They know that they can't afford to spar with adventurers or risk getting caught. On their first turns in combat, Draac and Taal cast {@spell 艾伐黑觸手} spells. The tentacles erupt from the floor in front of the characters, filling the two 20-foot squares between them and the secret door. Confident that the tentacles will hold their enemies at bay, the drow mages then head toward the secret door and try to escape. The drow elite warriors and the shadow demons follow the mages, serving as personal bodyguards. Once inside the secret tunnel, the mages use {@spell 蛛網術} spells to obstruct the passageway behind their party, hoping to ensnare or slow down their pursuers."
 							]
 						},
 						{
@@ -5682,7 +5682,7 @@
 							]
 						},
 						"Characters who travel by air have an easy time spotting the tree and can reach the perimeter of this area without encountering any ground patrols.",
-						"Grandfather Tree has AC 15, 500 hit points, a damage threshold of 15, and immunity to fire and psychic damage. As long as it has 1 hit point remaining, it regenerates 50 hit points on initiative count 0. Although it's a living creature like any plant, Grandfather Tree isn't self-aware and can neither move nor take actions. Creatures tasked with protecting the tree gain the effect of a {@spell bless} spell while they are beneath its great boughs. In addition, any creature that finishes a long rest under the boughs gains the benefit of the {@spell greater restoration} spell.",
+						"Grandfather Tree has AC 15, 500 hit points, a damage threshold of 15, and immunity to fire and psychic damage. As long as it has 1 hit point remaining, it regenerates 50 hit points on initiative count 0. Although it's a living creature like any plant, Grandfather Tree isn't self-aware and can neither move nor take actions. Creatures tasked with protecting the tree gain the effect of a {@spell 祝福術} spell while they are beneath its great boughs. In addition, any creature that finishes a long rest under the boughs gains the benefit of the {@spell 高等復原術} spell.",
 						{
 							"type": "entries",
 							"name": "Ancient Relic",
@@ -6291,7 +6291,7 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"1/day each: {@spell banishment}, {@spell etherealness}, {@spell find the path}, {@spell locate object}, {@spell prismatic spray}, {@spell suggestion}"
+												"1/day each: {@spell 放逐術}, {@spell 跨入乙太界}, {@spell 尋找捷徑}, {@spell 物品定位術}, {@spell 虹光噴射}, {@spell 暗示術}"
 											]
 										}
 									]
@@ -6306,14 +6306,14 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"Cantrips (at will): {@spell mage hand}, {@spell mending}, {@spell minor illusion}, {@spell prestidigitation}",
-												"1st level (4 slots): {@spell comprehend languages}, {@spell detect magic}, {@spell expeditious retreat}, {@spell identify}",
-												"2nd level (3 slots): {@spell darkness}, {@spell detect thoughts}, {@spell Melf's acid arrow}",
-												"3rd level (3 slots): {@spell clairvoyance}, {@spell haste}, {@spell nondetection}",
-												"4th level (3 slots): {@spell greater invisibility}, {@spell ice storm}, {@spell stoneskin}",
-												"5th level (2 slots): {@spell Bigby's hand}, {@spell cloudkill}, {@spell scrying}",
-												"6th level (1 slot): {@spell disintegrate}, {@spell mass suggestion}",
-												"7th level (1 slot): {@spell mirage arcane}"
+												"Cantrips (at will): {@spell 法師之手}, {@spell 修復術}, {@spell 次級幻象}, {@spell 魔法技倆}",
+												"1st level (4 slots): {@spell 通曉語言}, {@spell 偵測魔法}, {@spell 腳底抹油}, {@spell 鑑定術}",
+												"2nd level (3 slots): {@spell 黑暗術}, {@spell 偵測思想}, {@spell 馬友夫強酸箭}",
+												"3rd level (3 slots): {@spell 銳眼術}, {@spell 加速術}, {@spell 迴避偵測}",
+												"4th level (3 slots): {@spell 高等隱形術}, {@spell 冰風暴}, {@spell 石膚術}",
+												"5th level (2 slots): {@spell 畢格比之掌}, {@spell 死雲術}, {@spell 探知}",
+												"6th level (1 slot): {@spell 解離術}, {@spell 群體暗示術}",
+												"7th level (1 slot): {@spell 海市蜃樓}"
 											]
 										}
 									]
@@ -6354,7 +6354,7 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"1/day each: {@spell invisibility}, {@spell legend lore}, {@spell protection from energy}, {@spell true seeing}"
+												"1/day each: {@spell 隱形術}, {@spell 通曉傳奇}, {@spell 防護能量}, {@spell 真知術}"
 											]
 										}
 									]
@@ -6369,11 +6369,11 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"Cantrips (at will): {@spell druidcraft}, {@spell mending}, {@spell produce flame}",
-												"1st level (4 slots): {@spell cure wounds}, {@spell detect magic}, {@spell entangle}, {@spell speak with animals}",
-												"2nd level (3 slots): {@spell animal messenger}, {@spell pass without trace}",
-												"3rd level (3 slots): {@spell dispel magic}, {@spell plant growth}",
-												"4th level (2 slots): {@spell blight}, {@spell locate creature}, {@spell stoneskin}"
+												"Cantrips (at will): {@spell 德魯伊伎倆}, {@spell 修復術}, {@spell 燃火術}",
+												"1st level (4 slots): {@spell 治療傷勢}, {@spell 偵測魔法}, {@spell 糾纏術}, {@spell 動物交談術}",
+												"2nd level (3 slots): {@spell 動物信使}, {@spell 行蹤無跡}",
+												"3rd level (3 slots): {@spell 解除魔法}, {@spell 植物滋長}",
+												"4th level (2 slots): {@spell 枯萎術}, {@spell 生物定位術}, {@spell 石膚術}"
 											]
 										}
 									]
@@ -6495,7 +6495,7 @@
 						"In reality, Luskan is anything but that. It's a dirty dive with filthy streets, squat buildings, ramshackle docks, creaky old longships, and crass pirates thinly disguised as sea traders. Rising above the fog and the stench is the Hosttower of the Arcane, home of a league of greedy, power-hungry wizards called the Arcane Brotherhood. Their ghastly tower branches into multiple thinner spires at the top. From a distance, the Hosttower might be mistaken for a giant, leafless tree. To those who have the misfortune of seeing it up close, it looks like a clawed hand bursting out of the ground, each of its fingers a tower with many peering windows.",
 						"Five High Captains rule the city. Each one is a glorified pirate lord who controls a fleet of longships. The five fleets serve many purposes: they defend Luskan against seafaring barbarians and other enemies, they conduct legitimate sea trade up and down the Sword Coast, and they raid and plunder the island kingdoms to the west (and the occasional settlement on the Sword Coast). The High Captains have no influence over the actions of the Arcane Brotherhood, nor is it apparent that the wizards have any allegiance to Luskan.",
 						"Luskan's best-kept secret is that the High Captains are under the sway of Jarlaxle Baenre, the leader of a clandestine brotherhood of drow mercenaries and rogues called Bregan D'aerthe. Jarlaxle is a master schemer (and a master of disguise) who would like to bring Luskan into the Lords' Alliance, but the City of Sails has such an unsavory reputation and so little to offer that most alliance members won't allow it. That doesn't stop Jarlaxle from trying, especially now that the alliance has lost two members: Everlund and Sundabar.",
-						"Characters approaching Luskan for the first time see a thick black cloud of smoke rising from the harbor. The smoke billows out of a frost giant greatship (see the \"Svardborg: General Features\" sidebar in chapter 7, \"Berg of the Frost Giants\") that blew into port and rammed several longships, sinking them before a group of wizards emerged from the Hosttower of the Arcane and set the ship ablaze with a flurry of {@spell fireball} spells. The wizards have since returned to their monstrous tower, and the High Captains are waiting for the ship to stop burning before they board and search it. (Given the size of the ship, that could take a while.) Several charred frost giant corpses float facedown in the frigid water around the burning wreck, and the greatship's deck is strewn with other dead giants.",
+						"Characters approaching Luskan for the first time see a thick black cloud of smoke rising from the harbor. The smoke billows out of a frost giant greatship (see the \"Svardborg: General Features\" sidebar in chapter 7, \"Berg of the Frost Giants\") that blew into port and rammed several longships, sinking them before a group of wizards emerged from the Hosttower of the Arcane and set the ship ablaze with a flurry of {@spell 火球術} spells. The wizards have since returned to their monstrous tower, and the High Captains are waiting for the ship to stop burning before they board and search it. (Given the size of the ship, that could take a while.) Several charred frost giant corpses float facedown in the frigid water around the burning wreck, and the greatship's deck is strewn with other dead giants.",
 						"For a map of Luskan and more information about it, see the {@i Sword Coast Adventurer's Guide}."
 					]
 				},
@@ -6825,7 +6825,7 @@
 							"name": "Ancient Relic",
 							"id": "208",
 							"entries": [
-								"Casting a {@spell detect magic} spell on the boulder reveals an aura of transmutation magic emanating from it. The boulder itself is a relic of giantkind that was shaped, carved, and abandoned long ago by a stone giant earth shaman. Uthgar and his followers found it in its shrunken form and brought it here. Any character who succeeds on a DC 15 Intelligence (Arcana) check can tell that the engraved lines adorning its outer surface are carefully designed to channel magical energy. Casting an {@spell identify} spell on the boulder allows one to learn its magical properties, each of which is activated by tracing specific lines on its surface:",
+								"Casting a {@spell 偵測魔法} spell on the boulder reveals an aura of transmutation magic emanating from it. The boulder itself is a relic of giantkind that was shaped, carved, and abandoned long ago by a stone giant earth shaman. Uthgar and his followers found it in its shrunken form and brought it here. Any character who succeeds on a DC 15 Intelligence (Arcana) check can tell that the engraved lines adorning its outer surface are carefully designed to channel magical energy. Casting an {@spell 鑑定術} spell on the boulder allows one to learn its magical properties, each of which is activated by tracing specific lines on its surface:",
 								{
 									"type": "list",
 									"items": [
@@ -7013,7 +7013,7 @@
 							"id": "217",
 							"entries": [
 								"Two ancient giant relics are buried here-one in the ground before the giant stone raven, and another under the Gray Wolves' altar. Uthgar's early followers planted these objects here to empower and ward their spirit mound. A detect magic spell reveals an aura of conjuration magic emanating from the ground in front of the giant stone raven, and an aura of transmutation magic from underneath the altar. The ground in both locations is frozen solid year-round.",
-								"Without the aid of magic, it takes 5 hours for one character to dig up the relic hidden in the ground by the giant stone raven; reduce the amount of time proportionately if other party members help. The relic is a ring of hardened magma sized for a fire giant's finger. When a creature attunes to the ring, it magically shrinks to fit that creature's index finger, and warm orange light spills from minuscule cracks that form on its outer surface. The ring has 6 charges left. While attuned to the ring, a creature can expend 1 charge to cast {@spell conjure minor elementals} (summoning either four {@creature magma mephit||magma mephits} or four {@creature magmin||magmins}, as the wearer wishes) or {@spell fire shield} (warm shield version only) from the ring. Once all of its charges are spent, the ring loses its spellcasting properties but retains its resizing property.",
+								"Without the aid of magic, it takes 5 hours for one character to dig up the relic hidden in the ground by the giant stone raven; reduce the amount of time proportionately if other party members help. The relic is a ring of hardened magma sized for a fire giant's finger. When a creature attunes to the ring, it magically shrinks to fit that creature's index finger, and warm orange light spills from minuscule cracks that form on its outer surface. The ring has 6 charges left. While attuned to the ring, a creature can expend 1 charge to cast {@spell 召喚次級元素生物} (summoning either four {@creature magma mephit||magma mephits} or four {@creature magmin||magmins}, as the wearer wishes) or {@spell 火焰護盾} (warm shield version only) from the ring. Once all of its charges are spent, the ring loses its spellcasting properties but retains its resizing property.",
 								"To reach the relic buried under the Gray Wolves' altar, the characters must smash through the altar or burrow underneath it. One character can accomplish either task in 10 hours; reduce the amount of time proportionately if other party members help. The buried relic is a 14-foot-long, 250-pound red dragon's thighbone. Part of the bone is wrapped in old leather, suggesting that it was once used as a giant's greatclub. If a creature attunes to the greatclub, it magically shrinks to a size that the creature can wield effectively. The greatclub is considered a magic weapon that deals an extra {@dice 2d8} bludgeoning damage whenever it hits a dragon (including any creature of the dragon type)."
 							]
 						},
@@ -7133,12 +7133,12 @@
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
-										"Cantrips (at will): {@spell druidcraft}, {@spell guidance}, {@spell resistance}",
-										"1st level (4 slots): {@spell detect magic}, {@spell entangle}, {@spell goodberry}, {@spell speak with animals}",
-										"2nd level (3 slots): {@spell animal messenger}, {@spell gust of wind}, {@spell pass without trace}",
-										"3rd level (3 slots): {@spell plant growth}, {@spell speak with plants}",
-										"4th level (3 slots): {@spell conjure woodland beings}, {@spell hallucinatory terrain}",
-										"5th level (1 slot): {@spell commune with nature}"
+										"Cantrips (at will): {@spell 德魯伊伎倆}, {@spell 指導術}, {@spell 提升抗力}",
+										"1st level (4 slots): {@spell 偵測魔法}, {@spell 糾纏術}, {@spell 神莓術}, {@spell 動物交談術}",
+										"2nd level (3 slots): {@spell 動物信使}, {@spell 造風術}, {@spell 行蹤無跡}",
+										"3rd level (3 slots): {@spell 植物滋長}, {@spell 植物交談術}",
+										"4th level (3 slots): {@spell 召喚林地之精}, {@spell 幻景}",
+										"5th level (1 slot): {@spell 問道自然}"
 									]
 								}
 							]
@@ -7195,7 +7195,7 @@
 							"name": "Ancient Relic",
 							"id": "226",
 							"entries": [
-								"In the middle of Shining White is an altar mound surrounded by a griffon-shaped indentation in the earth, the form of which isn't readily apparent until one takes to the air or climbs to the top of the rocky spire. The stone giants smashed the marble altar to rubble, but they didn't dig underneath it. There, the followers of Uthgar buried both halves of a giant relic: a colorfully painted porcelain mask crafted long ago for a cloud giant. The mask is nonmagical, and each half weighs 20 pounds. If the halves are brought together, they display the image of a face that bears a fearsome scowl. The mask is too large to be repaired with a {@spell mending} spell."
+								"In the middle of Shining White is an altar mound surrounded by a griffon-shaped indentation in the earth, the form of which isn't readily apparent until one takes to the air or climbs to the top of the rocky spire. The stone giants smashed the marble altar to rubble, but they didn't dig underneath it. There, the followers of Uthgar buried both halves of a giant relic: a colorfully painted porcelain mask crafted long ago for a cloud giant. The mask is nonmagical, and each half weighs 20 pounds. If the halves are brought together, they display the image of a face that bears a fearsome scowl. The mask is too large to be repaired with a {@spell 修復術} spell."
 							]
 						},
 						{
@@ -7203,7 +7203,7 @@
 							"name": "Suggested Encounter",
 							"id": "227",
 							"entries": [
-								"If the characters linger here for an hour or more, four {@creature griffon||griffons} descend from the sky and attack. The griffons target horses and ponies first, then mules, then humanoids. They are hungry and fight to the death. Any creature that kills a griffon at Shining White is cursed. The cursed creature gains the following flaw: \"I have an in satiable craving for horse flesh.\" In addition, beasts with a challenge rating of 2 or lower treat the cursed creature as hostile and do everything they can to avoid it. A {@spell remove curse} spell or similar magic lifts the curse."
+								"If the characters linger here for an hour or more, four {@creature griffon||griffons} descend from the sky and attack. The griffons target horses and ponies first, then mules, then humanoids. They are hungry and fight to the death. Any creature that kills a griffon at Shining White is cursed. The cursed creature gains the following flaw: \"I have an in satiable craving for horse flesh.\" In addition, beasts with a challenge rating of 2 or lower treat the cursed creature as hostile and do everything they can to avoid it. A {@spell 移除詛咒} spell or similar magic lifts the curse."
 							]
 						}
 					]
@@ -7337,7 +7337,7 @@
 							"name": "Ancient Relic",
 							"id": "233",
 							"entries": [
-								"Early followers of Uthgar buried a relic of giantkind under the central mound, believing that its magic would empower and protect the oak tree. The tree's roots wrap around the ancient relic, which is actually a source of unrest for the Uthgardt ghosts that languish here (see \"Suggested Encounter\"). A {@spell detect magic} spell cast within range of the tree reveals an aura of necromancy magic emanating from underneath it. To reach the relic, characters must dig under the tree and hack away at its roots. This exercise takes a single character 40 hours to accomplish; multiple party members working together can reduce the amount of time accordingly. The buried relic is the skull of Gurt, Lord of the Pale Giants, a frost giant that Uthgar defeated in single combat at the site of Morgur's Mound. The skull weighs 100 pounds. If it is taken from Stone Stand, the ghosts that haunt the spirit mound are finally laid to rest."
+								"Early followers of Uthgar buried a relic of giantkind under the central mound, believing that its magic would empower and protect the oak tree. The tree's roots wrap around the ancient relic, which is actually a source of unrest for the Uthgardt ghosts that languish here (see \"Suggested Encounter\"). A {@spell 偵測魔法} spell cast within range of the tree reveals an aura of necromancy magic emanating from underneath it. To reach the relic, characters must dig under the tree and hack away at its roots. This exercise takes a single character 40 hours to accomplish; multiple party members working together can reduce the amount of time accordingly. The buried relic is the skull of Gurt, Lord of the Pale Giants, a frost giant that Uthgar defeated in single combat at the site of Morgur's Mound. The skull weighs 100 pounds. If it is taken from Stone Stand, the ghosts that haunt the spirit mound are finally laid to rest."
 							]
 						},
 						{
@@ -7671,7 +7671,7 @@
 							"items": [
 								"If the characters are looking for an individual in the city whose location isn't well known, the Hand of Yartar can reliably track down that person in {@dice 4d6} hours.",
 								"If the characters need to sell loot, the Hand of Yartar can find (not necessarily honest) buyers for them.",
-								"If the characters come to Yartar seeking an expeditious means of travel, the Hand of Yartar tells them about a not-so-secret {@spell teleportation circle} guarded by a wizard named Kolbaz (see the \"Inner Circles\" section at the end of this chapter)."
+								"If the characters come to Yartar seeking an expeditious means of travel, the Hand of Yartar tells them about a not-so-secret {@spell 傳送法陣} guarded by a wizard named Kolbaz (see the \"Inner Circles\" section at the end of this chapter)."
 							]
 						},
 						"The greatest threat facing Yartar is the Kraken Society (see the \"Factions in the North\" section in the introduction), which is trying to seize control of the city from within and turn it into a stronghold. One of Yartar's nobles is a Kraken Society member named Khaspere Drylund. Lord Drylund is eager to displace Ruthiol as the city's Waterbaron. He can't have Ruthiol eliminated, however, until he has gathered enough support to guarantee victory in the election to determine her successor. He hopes to win votes by identifying and bribing (or blackmailing) Yartar's most corruptible officials, and by hosting extravagant parties aboard his private, splendidly decorated riverboat. For more information on Lord Drylund and his boat, see chapter 11."
@@ -7824,12 +7824,12 @@
 							"width": 545,
 							"height": 750
 						},
-						"Krowen isn't very adventurous himself, but he's fond of adventurers and uses them to do his dirty work. If the characters explain that they're trying to thwart the giants, Krowen grants the party free access to a secret network of {@spell teleportation circle||teleportation circles} that he and his fellow Harper wizards use for travel. He also gives the characters a sheet of parchment that shows all six circles and their sigil addresses (show the players figure 3.1). The circles are located in Everlund, Loudwater, Mirabar, Neverwinter, Waterdeep, and Yartar. The specific locations of these circles are briefly described below, and a Harper spellcaster stands ready at each site to cast the {@spell teleportation circle} spell should the party require it. Each spellcaster has the statistics of a {@creature mage}, with the following changes:",
+						"Krowen isn't very adventurous himself, but he's fond of adventurers and uses them to do his dirty work. If the characters explain that they're trying to thwart the giants, Krowen grants the party free access to a secret network of {@spell teleportation circle||teleportation circles} that he and his fellow Harper wizards use for travel. He also gives the characters a sheet of parchment that shows all six circles and their sigil addresses (show the players figure 3.1). The circles are located in Everlund, Loudwater, Mirabar, Neverwinter, Waterdeep, and Yartar. The specific locations of these circles are briefly described below, and a Harper spellcaster stands ready at each site to cast the {@spell 傳送法陣} spell should the party require it. Each spellcaster has the statistics of a {@creature mage}, with the following changes:",
 						{
 							"type": "list",
 							"items": [
 								"Each spellcaster speaks Common, Draconic, Dwarvish, and Elvish.",
-								"Each spellcaster has the {@spell teleportation circle} spell prepared instead of {@spell cone of cold}."
+								"Each spellcaster has the {@spell 傳送法陣} spell prepared instead of {@spell 寒冰錐}."
 							]
 						}
 					]
@@ -7839,7 +7839,7 @@
 					"name": "Everlund Circle",
 					"id": "261",
 					"entries": [
-						"The {@spell teleportation circle} in Everlund is located inside a circular chamber in Moongleam Tower. An {@spell arcane lock} spell has been cast on the chamber door, though tower mages can bypass it. Krowen has assigned a brusque but reliable apprentice named Nespril Menk (LG male Damaran human {@creature mage}) to watch over this circle during the day, and a lazy, sleep-deprived apprentice named Flewen Aldhark (NG male Chondathan human {@creature mage}) to mind the circle at night. If the characters arrive while Flewen is on duty, there is a 90 percent chance he's propped up in a chair, sound asleep."
+						"The {@spell 傳送法陣} in Everlund is located inside a circular chamber in Moongleam Tower. An {@spell 祕法鎖} spell has been cast on the chamber door, though tower mages can bypass it. Krowen has assigned a brusque but reliable apprentice named Nespril Menk (LG male Damaran human {@creature mage}) to watch over this circle during the day, and a lazy, sleep-deprived apprentice named Flewen Aldhark (NG male Chondathan human {@creature mage}) to mind the circle at night. If the characters arrive while Flewen is on duty, there is a 90 percent chance he's propped up in a chair, sound asleep."
 					]
 				},
 				{
@@ -7847,7 +7847,7 @@
 					"name": "Loudwater Circle",
 					"id": "262",
 					"entries": [
-						"The {@spell teleportation circle} in Loudwater is located in a 30-foot-square cellar under a tavern called the Smiling Satyr. Tucked underneath a wooden staircase is an unmade bed where the circle's attending mage sleeps. His name is Revil Slombarr (CG male Chondathan human {@creature mage}). He's a heavyset young man who shirks his duties from time to time to visit nearby festhalls. There is a 50 percent chance that Revil is absent when the characters arrive, in which case he returns after {@dice 1d4} hours.",
+						"The {@spell 傳送法陣} in Loudwater is located in a 30-foot-square cellar under a tavern called the Smiling Satyr. Tucked underneath a wooden staircase is an unmade bed where the circle's attending mage sleeps. His name is Revil Slombarr (CG male Chondathan human {@creature mage}). He's a heavyset young man who shirks his duties from time to time to visit nearby festhalls. There is a 50 percent chance that Revil is absent when the characters arrive, in which case he returns after {@dice 1d4} hours.",
 						"The stairs leads up to a secret door that opens inside a large wooden trunk bolted to the floor above. Characters who climb out of the trunk find themselves in a curtained cloakroom near the taproom. A Harper sympathizer named Gharwin Umbryl (LG male human {@creature commoner}) runs the Smiling Satyr and does his best to cover for Revil."
 					]
 				},
@@ -7856,7 +7856,7 @@
 					"name": "Mirabar Circle",
 					"id": "263",
 					"entries": [
-						"The Mirabarran authorities would be angry to learn that the Harpers have compromised the city's security by constructing a permanent {@spell teleportation circle} within Mirabar's walls. The circle is inscribed in a stable house loft and can be quickly hidden under hay. The circle's attendant, Zazspar Bronzefire (LG male shield dwarf {@creature mage}), poses as a stablehand, complete with leather overalls and straw in his beard."
+						"The Mirabarran authorities would be angry to learn that the Harpers have compromised the city's security by constructing a permanent {@spell 傳送法陣} within Mirabar's walls. The circle is inscribed in a stable house loft and can be quickly hidden under hay. The circle's attendant, Zazspar Bronzefire (LG male shield dwarf {@creature mage}), poses as a stablehand, complete with leather overalls and straw in his beard."
 					]
 				},
 				{
@@ -7872,7 +7872,7 @@
 					"name": "Waterdeep Circle",
 					"id": "265",
 					"entries": [
-						"The Waterdeep circle is located inside a raised crypt in Waterdeep's walled cemetery, the City of the Dead. The crypt has two levels, and the name MYRNA is inscribed above its entrance (which is sealed with an {@spell arcane lock} spell). The topmost level is the crypt itself, which contains a stone sarcophagus watched over by a {@creature shield guardian} that is trained to lift the lid whenever someone speaks the name Myrna aloud. The sarcophagus contains a stone staircase leading down to a magically lit room. The circle is on the floor of this chamber, which also includes a small study alcove and a cot for its attending mage, a pale wisp of a girl named Thestryl Mellardin (LG female Chondathan human {@creature mage}). She wears the shield guardian's control amulet around her neck."
+						"The Waterdeep circle is located inside a raised crypt in Waterdeep's walled cemetery, the City of the Dead. The crypt has two levels, and the name MYRNA is inscribed above its entrance (which is sealed with an {@spell 祕法鎖} spell). The topmost level is the crypt itself, which contains a stone sarcophagus watched over by a {@creature shield guardian} that is trained to lift the lid whenever someone speaks the name Myrna aloud. The sarcophagus contains a stone staircase leading down to a magically lit room. The circle is on the floor of this chamber, which also includes a small study alcove and a cot for its attending mage, a pale wisp of a girl named Thestryl Mellardin (LG female Chondathan human {@creature mage}). She wears the shield guardian's control amulet around her neck."
 					]
 				},
 				{
@@ -7880,7 +7880,7 @@
 					"name": "Yartar Circle",
 					"id": "266",
 					"entries": [
-						"The Harpers purchased a villa in the heart of Yartar that was about to be torn down. Behind the dilapidated building is a 40-foot-square garden patio enclosed by an 8-foot-high wall of ivy-covered stone. A {@spell hallucinatory terrain} spell conceals not only the {@spell teleportation circle} inscribed in the middle of the patio but also the broken benches, weed-infested flowerbeds, and shattered statuary that surround the circle. While the {@spell hallucinatory terrain} spell is in effect, the garden looks as it did in its hey day, with statues of frolicking dryads and satyrs situated among the flowers and stone benches. A cantankerous old Harper named Kolbaz (NG male Calishite human {@creature mage}) dwells in the villa and renews the {@spell hallucinatory terrain} spell every day at highsun (he has that spell prepared instead of {@spell ice storm}). He uses his cantrips to frighten away squatters and other unwanted intruders."
+						"The Harpers purchased a villa in the heart of Yartar that was about to be torn down. Behind the dilapidated building is a 40-foot-square garden patio enclosed by an 8-foot-high wall of ivy-covered stone. A {@spell 幻景} spell conceals not only the {@spell 傳送法陣} inscribed in the middle of the patio but also the broken benches, weed-infested flowerbeds, and shattered statuary that surround the circle. While the {@spell 幻景} spell is in effect, the garden looks as it did in its hey day, with statues of frolicking dryads and satyrs situated among the flowers and stone benches. A cantankerous old Harper named Kolbaz (NG male Calishite human {@creature mage}) dwells in the villa and renews the {@spell 幻景} spell every day at highsun (he has that spell prepared instead of {@spell 冰風暴}). He uses his cantrips to frighten away squatters and other unwanted intruders."
 					]
 				},
 				{
@@ -8128,7 +8128,7 @@
 							"id": "276",
 							"entries": [
 								"If the characters haven't confronted the Uthgardt barbarians in {@area 4|27b}, they hear the barbarians' grunts when they reach this point. The tunnel is 40 feet wide, 40 feet tall, and level. Characters who have a passive Wisdom (Perception) score of 14 or higher notice gaps in the ceiling, suggesting the presence of two hanging blocks of stone. Characters who search for traps and succeed on a DC 14 Wisdom (Perception) check also notice these blocks, which constitute the temple's outer defenses.",
-								"Each block is a 40-foot-tall, 40-foot-wide, 20-foot-thick slab held up by mechanisms buried in the mountainside. When the lever in {@area 2A|277} is moved to the down position, the block of stone closer to the entrance ({@area 1|275}) falls, sealing off the tunnel. When the lever in {@area 2B|278} is moved to the down position, the inner block does the same thing. Each block takes about 6 seconds to drop to the floor, allowing time for creatures to get out of the way. Any creature that doesn't get out of the way takes 132 ({@dice 24d10}) bludgeoning damage and is knocked prone and pinned underneath the block, or crushed to a pulp if the damage reduces its hit points to 0. A creature pinned under a block is restrained until the block is lifted (by raising the appropriate lever). {@spell Knock} spells and similar magic have no effect on these gigantic barricades.",
+								"Each block is a 40-foot-tall, 40-foot-wide, 20-foot-thick slab held up by mechanisms buried in the mountainside. When the lever in {@area 2A|277} is moved to the down position, the block of stone closer to the entrance ({@area 1|275}) falls, sealing off the tunnel. When the lever in {@area 2B|278} is moved to the down position, the inner block does the same thing. Each block takes about 6 seconds to drop to the floor, allowing time for creatures to get out of the way. Any creature that doesn't get out of the way takes 132 ({@dice 24d10}) bludgeoning damage and is knocked prone and pinned underneath the block, or crushed to a pulp if the damage reduces its hit points to 0. A creature pinned under a block is restrained until the block is lifted (by raising the appropriate lever). {@spell 敲擊術} spells and similar magic have no effect on these gigantic barricades.",
 								{
 									"type": "entries",
 									"name": "2A. Northwest Guard Room",
@@ -8155,7 +8155,7 @@
 							"entries": [
 								"The ceiling in this hall is 60 feet high, sloping down to 40 feet as it moves toward {@area 2|276}. Although the ceiling remains level heading eastward, its distance from the floor decreases to 40 feet on the landing in front of {@area 4|27b} because of the staircase leading up to that location.",
 								"Overlooking the hall to the north and south are unguarded 20-foot-high ledges that have no railings or battlements. Giants once stood atop these ledges, ready to hurl rocks at interlopers that passed below.",
-								"Five niches are carved into the back wall of each ledge. Each one holds an iron sconce that radiates a faint aura of conjuration magic under the scrutiny of a {@spell detect magic} spell. Touching a sconce with an open flame causes a spectral fire to materialize above the sconce. This flame sheds light and heat like a normal torch, and it burns until smothered. If a sconce is taken from its niche, it loses its magic forever. Lighting a sconce in this hall alerts the berserkers in {@area 4|27b}, who investigate.",
+								"Five niches are carved into the back wall of each ledge. Each one holds an iron sconce that radiates a faint aura of conjuration magic under the scrutiny of a {@spell 偵測魔法} spell. Touching a sconce with an open flame causes a spectral fire to materialize above the sconce. This flame sheds light and heat like a normal torch, and it burns until smothered. If a sconce is taken from its niche, it loses its magic forever. Lighting a sconce in this hall alerts the berserkers in {@area 4|27b}, who investigate.",
 								{
 									"type": "entries",
 									"name": "Barbarians at the Gate",
@@ -8171,7 +8171,7 @@
 							"name": "4. Giant Doors",
 							"id": "27b",
 							"entries": [
-								"A 40-foot-long flight of steps leading east ascends 20 feet to a landing, next to which stands a pair of 30-foot tall granite doors carved with images of giant gods locked in battle with dragons. The doors are impervious to all types of damage and coated with ice on the inside. Any Huge or larger creature with a Strength of 23 or higher can throw its weight against the doors and force them open. If Harshnag is with the party, he does exactly that if given the chance. Smaller creatures can't open the doors until the ice on the other side is chipped away or melted (see {@area 6|281}). {@spell Knock} spells and similar magic are likewise ineffective until the ice is removed.",
+								"A 40-foot-long flight of steps leading east ascends 20 feet to a landing, next to which stands a pair of 30-foot tall granite doors carved with images of giant gods locked in battle with dragons. The doors are impervious to all types of damage and coated with ice on the inside. Any Huge or larger creature with a Strength of 23 or higher can throw its weight against the doors and force them open. If Harshnag is with the party, he does exactly that if given the chance. Smaller creatures can't open the doors until the ice on the other side is chipped away or melted (see {@area 6|281}). {@spell 敲擊術} spells and similar magic are likewise ineffective until the ice is removed.",
 								"Pushing on the doors are six {@creature berserker||berserkers} (CE male and female Uthgardt humans) of the Great Worm tribe. Overseeing them is Wormblod, a bloodthirsty {@creature berserker} (CE male Uthgardt human with 90 hit points) who is also the Great Chief of the Great Worm tribe. He keeps an enslaved {@creature white dragon wyrmling} for a pet and a female {@creature Uthgardt shaman|SKT} of the Great Worm tribe as an advisor. She carries a lit torch in one hand and has a sacred bundle slung over her back.",
 								"Wormblod and his barbarians have come to the Eye of the All-Father to find a missing member of their tribe (see {@area 9A|291}). The chieftain is secretly hoping to use this opportunity as an excuse to plunder the temple of its treasures, but his berserkers have been unable to get through these doors. The Uthgardt and their leader are hostile toward anyone who isn't a member of their tribe, and they fight to the death. This is true even if the characters open the doors or offer to do so.",
 								{
@@ -8238,9 +8238,9 @@
 										"The archway is 40 feet wide and 40 feet tall. Six different runes are carved into it, each one inlaid with mithral, and a glowing mist fills the arch. Niches in the walls on either side of it contain empty, ice-covered sconces made of iron."
 									]
 								},
-								"The double doors that lead to this chamber are 30 feet tall and open into the room. The double doors leading to areas 4 and 7 are covered with a 4-inch-thick layer of ice that must be chipped away or melted before the doors can be pulled open from this side (either physically or with the aid of knock spells or a chime of opening). A {@spell fireball} spell produces enough heat to melt the ice on one set of doors. Otherwise, it takes a character using a weapon, a pick, or a similar tool 1 hour to chip away the ice covering one set of doors, or 1 hour to melt the ice with a torch. Multiple characters working together to remove the ice shorten the time proportionately.",
+								"The double doors that lead to this chamber are 30 feet tall and open into the room. The double doors leading to areas 4 and 7 are covered with a 4-inch-thick layer of ice that must be chipped away or melted before the doors can be pulled open from this side (either physically or with the aid of knock spells or a chime of opening). A {@spell 火球術} spell produces enough heat to melt the ice on one set of doors. Otherwise, it takes a character using a weapon, a pick, or a similar tool 1 hour to chip away the ice covering one set of doors, or 1 hour to melt the ice with a torch. Multiple characters working together to remove the ice shorten the time proportionately.",
 								"Characters who search the temple for secret doors and succeed on a DC 20 Wisdom (Perception) check find two secret doors behind the frost that covers the west wall. These slabs of stone are 40 feet tall by 20 feet wide, and each pushes open to reveal a chamber beyond ({@area 5A|27f} or 5B). Each secret door requires a successful DC 20 Strength (Athletics) check to open or close.",
-								"The iron sconces are bolted to their niches and radiate faint auras of conjuration magic under the scrutiny of a {@spell detect magic} spell. Touching a sconce with an open flame causes a spectral fire to appear above the sconce. This flame sheds light and heat like a normal torch, and it burns until smothered. If a sconce is taken from its niche, it loses its magic forever.",
+								"The iron sconces are bolted to their niches and radiate faint auras of conjuration magic under the scrutiny of a {@spell 偵測魔法} spell. Touching a sconce with an open flame causes a spectral fire to appear above the sconce. This flame sheds light and heat like a normal torch, and it burns until smothered. If a sconce is taken from its niche, it loses its magic forever.",
 								{
 									"type": "entries",
 									"name": "Statues",
@@ -8346,8 +8346,8 @@
 											"width": 366,
 											"height": 347
 										},
-										"The six runes include a haug (hill) rune, a stein (stone) rune, an ise (frost) rune, an ild (fire) rune, a skye (cloud) rune, and an uvar (storm) rune. The characters have to figure out which rune is which through trial and error, or with the aid of magic such as the {@spell divination} spell. A character who has proficiency in the Arcana skill can tell that the runes are magical, but not what the runes mean. Harshnag is familiar with the ise rune and can identify it; the other runes are unknown to him. Iymrith, Klauth, Claugiyliamatar, and most other ancient dragons know all of these runes by name and appearance.",
-										"The mist in the archway dimly illuminates the temple. A {@spell detect magic} spell reveals an aura of conjuration magic around the archway, but nothing happens when something enters the mist. While the archway is inactive, cold rock wall can be felt beyond the churning mist.",
+										"The six runes include a haug (hill) rune, a stein (stone) rune, an ise (frost) rune, an ild (fire) rune, a skye (cloud) rune, and an uvar (storm) rune. The characters have to figure out which rune is which through trial and error, or with the aid of magic such as the {@spell 預言術} spell. A character who has proficiency in the Arcana skill can tell that the runes are magical, but not what the runes mean. Harshnag is familiar with the ise rune and can identify it; the other runes are unknown to him. Iymrith, Klauth, Claugiyliamatar, and most other ancient dragons know all of these runes by name and appearance.",
+										"The mist in the archway dimly illuminates the temple. A {@spell 偵測魔法} spell reveals an aura of conjuration magic around the archway, but nothing happens when something enters the mist. While the archway is inactive, cold rock wall can be felt beyond the churning mist.",
 										"The archway is a portal that connects the temple to the divine oracle ({@area 11|297}), allowing instantaneous two way travel once it is activated. To activate the portal, a giant of the hill, stone, frost, fire, cloud, or storm variety (or a creature polymorphed into one of these forms) must take a weapon from one of the statues of the six lesser giant gods and touch it to the appropriate rune on the archway. The wielder must use the weapon belonging to the god that corresponds to the wielder's physical form; for example, Harshnag (a frost giant) can activate the portal only by using Thrym's steel greataxe, and only by touching it to the ise (frost) rune. As soon as the archway activates, the weapon vanishes and reappears in the hands of the statue it came from, unless that statue has been destroyed, in which case the weapon disappears.",
 										"Touching a rune with the wrong weapon triggers a spell effect, as described in the Rune Traps table. The effect also occurs when a non-giant touches a rune."
 									]
@@ -8374,7 +8374,7 @@
 												[
 													"Haug",
 													"Hill",
-													"Multiple {@spell confusion} spells activate (save DC 15), such that each creature in the room is targeted once."
+													"Multiple {@spell 困惑術} spells activate (save DC 15), such that each creature in the room is targeted once."
 												],
 												[
 													"Stein",
@@ -8443,7 +8443,7 @@
 								"This part of the temple contains quarters where visiting giants used to rest, with two sets of stairs leading to an upper level ({@area 10|294}).",
 								"A 60-foot-high hall stretches northward. The hall is inclined at a slight angle, so that the floor in the north end of the hall is higher than in the south end. The slope isn't so great that the frost on the floor presents a hazard. Fourteen 30-foot-tall archways spaced along the west and east walls lead to 60-foot-square chambers furnished with frost-covered stone couches that serve as beds. Some of these beds have tattered furs atop them. A fissure in the back wall of the center room on the west side leads to a network of natural tunnels ({@area 9|28f}).",
 								"This hallway contains a magical trap, and a detect magic spell can reveal certain clues, as described in areas 8A and 8B. The trap triggers when one or more creatures that aren't giants enter {@area 8B|28d}, a 40-foot square section of the hallway. It triggers even if they fly over or move invisibly through that area. Harshnag is unaware of this trap and can't warn the party about it.",
-								"When the trap activates, walls of stone (created by {@spell wall of stone} spells) seal off the archways along the west and east walls. When that happens, all creatures in the hallway or the adjacent rooms must roll initiative. On initiative count 15, a 40-foot-diameter sphere of solid granite phases out of the north wall at {@area 8C|28e} and rolls southward down the corridor. It rolls 200 feet on each of its turns until it reaches the end of the hall. The sphere can move through creatures' spaces, and creatures can move through its space, treating it as difficult terrain. Whenever the sphere enters a creature's space or a creature enters its space while it's rolling, that creature must succeed on a DC 12 Dexterity saving throw or take 55 ({@dice 10d10}) bludgeoning damage and be knocked prone. The sphere can't harm creatures above it.",
+								"When the trap activates, walls of stone (created by {@spell 石牆術} spells) seal off the archways along the west and east walls. When that happens, all creatures in the hallway or the adjacent rooms must roll initiative. On initiative count 15, a 40-foot-diameter sphere of solid granite phases out of the north wall at {@area 8C|28e} and rolls southward down the corridor. It rolls 200 feet on each of its turns until it reaches the end of the hall. The sphere can move through creatures' spaces, and creatures can move through its space, treating it as difficult terrain. Whenever the sphere enters a creature's space or a creature enters its space while it's rolling, that creature must succeed on a DC 12 Dexterity saving throw or take 55 ({@dice 10d10}) bludgeoning damage and be knocked prone. The sphere can't harm creatures above it.",
 								"When the sphere reaches the south end of the hallway, the stone giant statue ({@area 8A|28c}) animates and uses its outstretched arms to stop the sphere before it slams into the wall around the alcove. Each round thereafter on initiative count 15, the statue moves 20 feet northward, rolling the sphere ahead of it. The statue and sphere move slowly enough that creatures can easily get out of the way. When the statue reaches the north end of the hallway, it pushes the sphere back into the wall (the sphere melds with the stone as it comes into contact with it). The statue then lumbers back toward its alcove, moving 60 feet on each of its turns. While the giant is out of its alcove, the magic trap is disabled. The trap resets when the statue returns to its alcove. The walls of stone disappear when the trap resets.",
 								{
 									"type": "entries",
@@ -8468,7 +8468,7 @@
 									"name": "8B. Magical Trap",
 									"id": "28d",
 									"entries": [
-										"A {@spell detect magic} spell reveals conjuration magic filling this 40-foot section of hallway. Successfully casting {@spell dispel magic} (DC 18) on the area disables the trap."
+										"A {@spell 偵測魔法} spell reveals conjuration magic filling this 40-foot section of hallway. Successfully casting {@spell 解除魔法} (DC 18) on the area disables the trap."
 									]
 								},
 								{
@@ -8594,7 +8594,7 @@
 										"Beyond the thundering archway lies a hexagonal chamber whose walls rise 50 feet before tapering to a 90-foot-high apex. Standing in each corner of the room is a life-size statue of a giant holding up a heavy, iron lantern with one raised arm. Each type of giant is represented: hill, stone, frost, fire, cloud, and storm. A cold, magical light radiates from each lantern, illuminating a giant corpse lying on the floor beneath a shroud of frost in the middle of the room. The corpse looks like it has been here for some time, preserved by the cold. Next to the body rests a giant, frost-covered morningstar."
 									]
 								},
-								"This chamber allows communion with a divine proxy of Annam the All-Father. It's called the Eye of Annam because ancient giants thought the chamber enabled them to gain wisdom from him directly. Casting {@spell detect magic} reveals an aura of divination magic in the room.",
+								"This chamber allows communion with a divine proxy of Annam the All-Father. It's called the Eye of Annam because ancient giants thought the chamber enabled them to gain wisdom from him directly. Casting {@spell 偵測魔法} reveals an aura of divination magic in the room.",
 								"The corpse belongs to a young cloud giant named Eigeron, whose father, Blagothkus, betrayed and murdered him. If the characters disturb Eigeron's body or come within 10 feet of it, the giant's ghost rises up from the corpse (see \"Eigeron's Ghost\").",
 								{
 									"type": "image",
@@ -8608,7 +8608,7 @@
 								},
 								"The dead giant wears a golden breastplate (see \"Treasure\"). His morningstar is nonmagical and made for a Huge creature. Characters close enough to touch the cloud giant's corpse or the morningstar notice a rune-inscribed circle carved into the floor, obscured by frost (see the \"Words of the Divine Oracle\" section).",
 								"The teleportation archway looks much the same as it does when viewed from {@area 6|281}, except it bears no runes, and it can't be activated from this side. Characters who study the arch and succeed on a DC 17 Intelligence (Arcana) check can sense that the archway will remain open for a short time only, perhaps as long as an hour.",
-								"The statues are impressive and harmless. The lights in their lanterns are created by {@spell continual flame} spells.",
+								"The statues are impressive and harmless. The lights in their lanterns are created by {@spell 不滅明焰} spells.",
 								{
 									"type": "entries",
 									"name": "Eigeron's Ghost",
@@ -8667,7 +8667,7 @@
 						},
 						"in Dethek, the Dwarvish script. The kong rune, which is nearly as big as the circle enclosing it, is often associated with Annam the All-Father. Characters spot the circle and the rune as soon as they come within 5 feet of either. Otherwise, the frost must be cleared away to reveal the presence of the circle and its rune.",
 						"The oracle has 6 charges. Any creature in the circle that asks a question receives a truthful, thundering answer in the Giant tongue (even if the question was asked in another language). Each answer the oracle gives expends 1 charge and causes one of the six lanterns in the room to go out. The oracle regains all expended charges at dawn, whereupon the lanterns relight. If a question is asked and the oracle lacks charges, it gives no answer.",
-						"The oracle's power is similar to a {@spell divination} spell. If creatures ask different questions simultaneously, the oracle chooses one of them at random to answer.",
+						"The oracle's power is similar to a {@spell 預言術} spell. If creatures ask different questions simultaneously, the oracle chooses one of them at random to answer.",
 						"Answers to several likely questions are presented here, although you can tweak these answers to make them more clear or cryptic, as you see fit.",
 						{
 							"type": "inset",
@@ -9001,7 +9001,7 @@
 								"The airship's enormous balloon is made from dragon hide that has been dyed bright red. Atop the balloon is a crow's nest that is reached by crawling up the ropes on the outside of the balloon. Crawling up the ropes requires a DC 10 Strength (Athletics) or Dexterity (Acrobatics) check. If the check fails, no progress is made; if the check fails by 5 or more, the creature falls.",
 								"The balloon is roped to a gondola that has been fitted with steel runners. The airship has a speed of 8 miles per hour while skiing across ice or snow or flying in the air. A strong headwind reduces the ship's speed to 4 mph, while a strong tailwind increases its speed to 12 mph. By changing altitude, the ship can use air currents to move in a particular direction. A propeller aft of the gondola thrusts the ship forward and can also be pivoted. The hull of the gondola is watertight and buoyant in water, and the propeller can push it across water.",
 								"The airship can hold up to 1 ton of cargo and requires a crew of two, one to operate the propeller and one to operate the furnace. If the ship has fewer than two crew members on duty, its speed can't be controlled, and it moves in a random direction, carried by the wind, until control is regained or until it collides with something.",
-								"The gondola and the balloon are separate targets. The gondola has AC 13, 250 hit points, and a damage threshold of 10. The balloon has AC 11 and 50 hit points. Both have immunity to poison and psychic damage. If the balloon drops to 0 hit points, it bursts, and the ship loses the ability to fly. While the balloon or gondola has at least 1 hit point, it can be repaired. Repairing 1 hit point of damage to either the balloon or the gondola requires 1 day and costs 20 gp. ({@spell Mending} spells can repair superficial damage but can't restore hit points.)",
+								"The gondola and the balloon are separate targets. The gondola has AC 13, 250 hit points, and a damage threshold of 10. The balloon has AC 11 and 50 hit points. Both have immunity to poison and psychic damage. If the balloon drops to 0 hit points, it bursts, and the ship loses the ability to fly. While the balloon or gondola has at least 1 hit point, it can be repaired. Repairing 1 hit point of damage to either the balloon or the gondola requires 1 day and costs 20 gp. ({@spell 修復術} spells can repair superficial damage but can't restore hit points.)",
 								{
 									"type": "gallery",
 									"images": [
@@ -9061,7 +9061,7 @@
 									"id": "2b8",
 									"entries": [
 										"In the middle of the upper deck is a 10-foot-tall, cylindrical bronze furnace with a {@creature fire elemental} magically trapped inside it. A narrow hatch in the front of the furnace has a small grill through which the elemental can be seen, and the heat pouring out through the grill helps keep the deck crew warm on cold days and nights. An iron wheel on the starboard side of the furnace opens and closes a bronze valve at the top of the cylinder, which has the effect of increasing or reducing the size of the fire spilling out of the furnace. The more heat that is allowed to fill the balloon, the higher the ship can rise.",
-										"Opening the hatch or the valve doesn't release the fire elemental, but destroying the furnace does, as does successfully casting {@spell dispel magic} (DC 19) on it. The furnace has AC 15, 30 hit points, a damage threshold of 10, and immunity to fire, poison, and psychic damage. The fire elemental goes berserk if released, attacking all other creatures it sees. Inside or outside the furnace, it can be banished using a {@spell banishment} spell or similar magic, or trapped inside an {@item iron flask} or a similar device. If the furnace is destroyed or the elemental released from within it, the air inside the balloon cools, causing the airship to descend at a rate of 10 feet per round.",
+										"Opening the hatch or the valve doesn't release the fire elemental, but destroying the furnace does, as does successfully casting {@spell 解除魔法} (DC 19) on it. The furnace has AC 15, 30 hit points, a damage threshold of 10, and immunity to fire, poison, and psychic damage. The fire elemental goes berserk if released, attacking all other creatures it sees. Inside or outside the furnace, it can be banished using a {@spell 放逐術} spell or similar magic, or trapped inside an {@item iron flask} or a similar device. If the furnace is destroyed or the elemental released from within it, the air inside the balloon cools, causing the airship to descend at a rate of 10 feet per round.",
 										"While the furnace chamber is intact, a fire elemental under the control of another creature can be trapped in the furnace, until it is released as described above. The furnace can contain only one fire elemental at a time."
 									]
 								},
@@ -10151,8 +10151,8 @@
 									"id": "300",
 									"entries": [
 										"The giant meditates for 1 hour, during which time it can do nothing else. At the end of the hour, provided the giant's meditation has been uninterrupted, it becomes {@condition petrified} for 8 hours. At the end of this time, the giant is no longer petrified and gains tremorsense out to a range of 30 feet, as well as a measure of innate spellcasting ability based on Wisdom. For the next 24 hours, it can innately cast the following spells, requiring no material components:",
-										"3/day: {@spell meld into stone}, {@spell stone shape}",
-										"1/day: {@spell stoneskin}, {@spell time stop}",
+										"3/day: {@spell 融身入石}, {@spell 塑石術}",
+										"1/day: {@spell 石膚術}, {@spell 時間停止}",
 										"The adventure notes which giants have recently completed the meditation and emerged from their petrified state with tremorsense and the ability to cast spells."
 									]
 								}
@@ -10585,14 +10585,14 @@
 									"width": 2100,
 									"height": 2520
 								},
-								"This cave contains a {@creature stone giant} that has gained the benefits of the Olach Morrah feature (see \"The Great Stillness\" section earlier in this chapter) and cast a {@spell meld into stone} spell on itself. It hides in the eastern wall, between the tunnels that lead to areas 5 and 15A. It uses its tremorsense to detect intruders. As soon as a character passes by, the giant emerges from the wall and tries to shove that character into the pool of gorgon mud on its first turn in combat. It does so if it succeeds on a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
+								"This cave contains a {@creature stone giant} that has gained the benefits of the Olach Morrah feature (see \"The Great Stillness\" section earlier in this chapter) and cast a {@spell 融身入石} spell on itself. It hides in the eastern wall, between the tunnels that lead to areas 5 and 15A. It uses its tremorsense to detect intruders. As soon as a character passes by, the giant emerges from the wall and tries to shove that character into the pool of gorgon mud on its first turn in combat. It does so if it succeeds on a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
 								"When the giant appears, it surprises characters who have a passive Wisdom (Perception) score lower than 12. After attempting to shove a character into the mud, the giant attacks the party with its greatclub.",
 								{
 									"type": "entries",
 									"name": "Gorgon Mud",
 									"id": "315",
 									"entries": [
-										"This pool of thick, magical mud is treated as quicksand (see the \"Wilderness Hazards\" section in chapter 5 of the {@i Dungeon Master's Guide}), and it also can petrify creatures that become immersed in it. A creature that ends its turn in an area of gorgon mud must succeed on a DC 12 Constitution saving throw or be petrified. Gorgon mud removed from its pool becomes ordinary mud. The pool radiates an aura of transmutation magic under the scrutiny of a {@spell detect magic} spell.",
+										"This pool of thick, magical mud is treated as quicksand (see the \"Wilderness Hazards\" section in chapter 5 of the {@i Dungeon Master's Guide}), and it also can petrify creatures that become immersed in it. A creature that ends its turn in an area of gorgon mud must succeed on a DC 12 Constitution saving throw or be petrified. Gorgon mud removed from its pool becomes ordinary mud. The pool radiates an aura of transmutation magic under the scrutiny of a {@spell 偵測魔法} spell.",
 										"A petrified creature can be pulled out of the mud. For simplicity's sake, assume that a petrified Small character weighs 250 pounds and a petrified Medium character weighs 600 pounds."
 									]
 								}
@@ -10604,7 +10604,7 @@
 							"id": "316",
 							"entries": [
 								"This cave, open to the sky, has 100-foot-high walls. The cave floor is bowl-shaped, with a 10-foot-deep pool of rainwater in the middle. Five fossilized stone giants wearing stone regalia-the remains of long-dead thanes-stand in alcoves, their eyes wide and mouths agape. Set into the walls are three pairs of carved stone doors with simple stone hinges. The doors are 25 feet tall and weigh several tons, but are well balanced on their hinges; a character can pull one open with a successful DC 18 Strength (Athletics) check.",
-								"This room contains two {@creature stone giant||stone giants} that have gained the benefits of the Olach Morrah feature (see \"The Great Stillness\" section earlier in this chapter). They have used {@spell meld into stone} spells to sink into the floor near the tunnels that lead into this area. They rise up and attack intruders, surprising those who have a passive Wisdom (Perception) score lower than 12.",
+								"This room contains two {@creature stone giant||stone giants} that have gained the benefits of the Olach Morrah feature (see \"The Great Stillness\" section earlier in this chapter). They have used {@spell 融身入石} spells to sink into the floor near the tunnels that lead into this area. They rise up and attack intruders, surprising those who have a passive Wisdom (Perception) score lower than 12.",
 								"Behind each door is a rough-hewn chamber with a 50-foot-high ceiling. The southwest chamber appears empty but contains a nasty surprise (see \"Trap\"). The giants store their valuables in the rooms to the east and northeast (see \"Treasure\").",
 								{
 									"type": "entries",
@@ -10703,7 +10703,7 @@
 									"width": 2380,
 									"height": 3640
 								},
-								"A {@creature stone giant} bathes in the pool. It has gained the benefits of the Olach Morrah feature (see \"The Great Stillness\" section earlier in this chapter). If it hears intruders approaching, it uses its {@spell meld into stone} spell to sink into the stone at the bottom of the pool. If the characters disturb the pool or attempt to cross the room, the giant rises up and attacks with its greatclub. Characters with a passive Wisdom (Perception) score lower than 16 are surprised by the giant as it rises from the pool.",
+								"A {@creature stone giant} bathes in the pool. It has gained the benefits of the Olach Morrah feature (see \"The Great Stillness\" section earlier in this chapter). If it hears intruders approaching, it uses its {@spell 融身入石} spell to sink into the stone at the bottom of the pool. If the characters disturb the pool or attempt to cross the room, the giant rises up and attacks with its greatclub. Characters with a passive Wisdom (Perception) score lower than 16 are surprised by the giant as it rises from the pool.",
 								"Clinging to the 50-foot-high ceiling are ten {@creature piercer||piercers}. As a bonus action on its turn, the giant can hum a tone and cause one of the piercers to drop on another creature in the cavern. The piercers don't attack otherwise."
 							]
 						},
@@ -10827,7 +10827,7 @@
 									"width": 1588,
 									"height": 750
 								},
-								"If the characters make ranged attacks against her, Kayalithica casts {@spell meld into stone} and hides within the stalactite. She waits until they are close before emerging to attack them with her {@item adamantine greatclub|XGE}. The Steinfang is impervious to all spells of 3rd level or lower, but has vulnerability to bludgeoning, slashing, and piercing damage from adamantine weapons. It has AC 15, a damage threshold of 10, and 100 hit points. When the Steinfang drops to 0 hit points, it explodes, and each creature on or above the island must make a DC 15 Dexterity saving throw, taking 70 ({@dice 20d6}) bludgeoning damage from flying debris on a failed save, or half as much damage on a successful one. A creature melded with the Steinfang when it explodes takes no damage and appears out of the midst of the explosion.",
+								"If the characters make ranged attacks against her, Kayalithica casts {@spell 融身入石} and hides within the stalactite. She waits until they are close before emerging to attack them with her {@item adamantine greatclub|XGE}. The Steinfang is impervious to all spells of 3rd level or lower, but has vulnerability to bludgeoning, slashing, and piercing damage from adamantine weapons. It has AC 15, a damage threshold of 10, and 100 hit points. When the Steinfang drops to 0 hit points, it explodes, and each creature on or above the island must make a DC 15 Dexterity saving throw, taking 70 ({@dice 20d6}) bludgeoning damage from flying debris on a failed save, or half as much damage on a successful one. A creature melded with the Steinfang when it explodes takes no damage and appears out of the midst of the explosion.",
 								{
 									"type": "entries",
 									"name": "Kayalithica's Questions",
@@ -11372,7 +11372,7 @@
 									"name": "Treasure",
 									"id": "350",
 									"entries": [
-										"Nilraun wears a wolf fur cloak (worth 25 gp), wields a {@item wand of fireballs}, and has a spell scroll of {@spell sending} in a wooden scroll tube fastened to his belt. He also carries a spellbook in which are written the spells he has prepared (see the mage in the {@i Monster Manual})."
+										"Nilraun wears a wolf fur cloak (worth 25 gp), wields a {@item wand of fireballs}, and has a spell scroll of {@spell 短訊術} in a wooden scroll tube fastened to his belt. He also carries a spellbook in which are written the spells he has prepared (see the mage in the {@i Monster Manual})."
 									]
 								}
 							]
@@ -11390,7 +11390,7 @@
 							"name": "1G. Throne Room",
 							"id": "352",
 							"entries": [
-								"Icicles hang from the rafters of this ice-glazed hall, which is illuminated by bluish {@spell continual flame} spells. An ivory drinking horn rests atop a frozen table in the middle of the room. South of the table are a rug made from the hide of a white saber-toothed tiger and a throne carved from ice. Lying on the seat of the throne is a large conch (see \"Treasure\"). Against the walls stand three shelving units heaped with furs and packed with bottles of wine, stoppered jugs, and casks of mead.",
+								"Icicles hang from the rafters of this ice-glazed hall, which is illuminated by bluish {@spell 不滅明焰} spells. An ivory drinking horn rests atop a frozen table in the middle of the room. South of the table are a rug made from the hide of a white saber-toothed tiger and a throne carved from ice. Lying on the seat of the throne is a large conch (see \"Treasure\"). Against the walls stand three shelving units heaped with furs and packed with bottles of wine, stoppered jugs, and casks of mead.",
 								"Snowy wind blows in through a pillared opening in the south wall that leads to a balcony with no railing.",
 								"Jarl Storvald retires here when he's not plying the northern waters. He isn't here when the characters first arrive at Svardborg. Instead, two {@creature frost giant||frost giants} and two {@creature winter wolf||winter wolves} stand guard here, watching over seven frost-covered white dragon eggs in the northeast corner of the room. Each egg is 4 feet tall, weighs 300 pounds, and is covered with an icy glaze. An egg has AC 14 and 20 hit points. When an egg is broken, there is a 50 percent chance that the {@creature white dragon wyrmling} inside hatches and is able to attack; otherwise, it is dead.",
 								"A wooden ladder ascends 40 feet to {@area 1H|355}; the rungs of the ladder are 5 feet apart.",
@@ -11408,7 +11408,7 @@
 									"name": "Development.",
 									"id": "354",
 									"entries": [
-										"Nilraun hasn't placed his fate entirely in the hands of the frost giants. Hiding on a nearby iceberg are two Zhentarim {@creature scout||scouts} (NE female Illuskan humans) and three {@creature manticore||manticores}. If Nilraun ever thinks his life is in jeopardy, he uses his spell {@item Spell Scroll (3rd level)||scroll of} {@spell sending} to contact the scouts and waits for them on the balcony. Each scout rides a manticore and provides aerial support while Nilraun mounts the third manticore and uses it to escape. Nilraun and his escorts return to the mainland and report what they've seen to their superiors.",
+										"Nilraun hasn't placed his fate entirely in the hands of the frost giants. Hiding on a nearby iceberg are two Zhentarim {@creature scout||scouts} (NE female Illuskan humans) and three {@creature manticore||manticores}. If Nilraun ever thinks his life is in jeopardy, he uses his spell {@item Spell Scroll (3rd level)||scroll of} {@spell 短訊術} to contact the scouts and waits for them on the balcony. Each scout rides a manticore and provides aerial support while Nilraun mounts the third manticore and uses it to escape. Nilraun and his escorts return to the mainland and report what they've seen to their superiors.",
 										"Nothing about Nilraun's appearance suggests that he's a member of the Zhentarim. If Nilraun learns that one or more characters work for the Black Network, he reveals his allegiance to the faction but advises the characters to leave Svardborg before the {@i Krigvind} returns. Nilraun isn't looking out for anyone's interests but his own; he wants the {@item Ring of Winter|ToA} for himself and doesn't trust other Zhents to help him get it.",
 										"Unless you decide otherwise, the {@i Krigvind} returns after the characters obtain the conch but before they have time to attune to it. The bellows of the {@i Krigvind's} crew can be heard in the throne room as the ship approaches (see \"The {@i Krigvind\"} section at the end of this chapter).",
 										{
@@ -11511,7 +11511,7 @@
 							"id": "359",
 							"entries": [
 								"Three {@creature frost giant||frost giants} (one male and two females) are engaged in a drinking contest in this area and are so inebriated that they are considered poisoned (see appendix A in the {@i Player's Handbook}). Despite their present condition, they are spoiling for a fight and hoist their greataxes when intruders appear. After the first round of combat, it occurs to one of the giants that she should sound the warning horn. She staggers up a flight of wooden stairs to blow the horn ({@area 2C|35c}) while the other giants keep fighting. If the characters react quickly enough, they can prevent her from reaching the horn. If they keep the giant from sounding the horn, the other inhabitants of Svardborg aren't placed on alert.",
-								"The frost giants have tracked a lot of snow through the main doors. Torch sconces mounted to wooden pillars have {@spell continual flame} spells cast on them, shedding cold blue light. Mounted on the walls of the lodge are the severed heads of polar bears, giant walruses, young white dragons, and remorhazes. A long wooden table and four smaller round tables take up much of the floor space, their tops strewn with wooden mugs and scraps of leftover food. A few empty barrels and crates sit near a wall.",
+								"The frost giants have tracked a lot of snow through the main doors. Torch sconces mounted to wooden pillars have {@spell 不滅明焰} spells cast on them, shedding cold blue light. Mounted on the walls of the lodge are the severed heads of polar bears, giant walruses, young white dragons, and remorhazes. A long wooden table and four smaller round tables take up much of the floor space, their tops strewn with wooden mugs and scraps of leftover food. A few empty barrels and crates sit near a wall.",
 								{
 									"type": "entries",
 									"name": "Treasure",
@@ -11902,9 +11902,9 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"1st level (4 slots): {@spell hunter's mark}, {@spell jump}",
-												"2nd level (3 slots): {@spell locate animals or plants}, {@spell locate object}",
-												"3rd level (2 slots): {@spell water breathing}, {@spell water walk}"
+												"1st level (4 slots): {@spell 獵人印記}, {@spell 跳躍術}",
+												"2nd level (3 slots): {@spell 動植物定位術}, {@spell 物品定位術}",
+												"3rd level (2 slots): {@spell 水下呼吸}, {@spell 水面行走}"
 											]
 										}
 									]
@@ -11926,7 +11926,7 @@
 					"name": "Dragon in Chains",
 					"id": "37d",
 					"entries": [
-						"While Cryovain is chained to the deck, he is restrained. Two chains are secured to an iron collar around his neck. Two more chains secure his back legs. A creature can use a bonus action on its turn to magically release the four chains by speaking a command word (\"uvenfetter\") while within 60 feet of the dragon. Only Storvald and Nilraun know the command word. A {@spell knock} spell or a similar effect can unlock a single collar, and a creature can break a single chain by using an action and succeeding on a DC 27 Strength (Athletics) check, or by reducing the chain to 0 hit points. Each chain has AC 20, 20 hit points, a damage threshold of 20, and immunity to cold, fire, psychic, poison, and thunder damage.",
+						"While Cryovain is chained to the deck, he is restrained. Two chains are secured to an iron collar around his neck. Two more chains secure his back legs. A creature can use a bonus action on its turn to magically release the four chains by speaking a command word (\"uvenfetter\") while within 60 feet of the dragon. Only Storvald and Nilraun know the command word. A {@spell 敲擊術} spell or a similar effect can unlock a single collar, and a creature can break a single chain by using an action and succeeding on a DC 27 Strength (Athletics) check, or by reducing the chain to 0 hit points. Each chain has AC 20, 20 hit points, a damage threshold of 20, and immunity to cold, fire, psychic, poison, and thunder damage.",
 						"Storvald frees the dragon if the {@i Krigvind} is boarded or if the ship is attacked from the air. The jarl commands the dragon to fight as his ally. While Storvald has the dragon's mate and eggs as prisoners, Cryovain does as the jarl commands. If Cryovain's mate and young are liberated, the dragon turns on Storvald and his giants.",
 						"Cryovain is a mean creature who doesn't make deals with puny humanoids or show mercy toward creatures that are kind to him (including those who try to free him). Once he is freed, he reunites with his mate, and the two of them try to reclaim Svardborg as their lair.",
 						"Cryovain doesn't gain lair actions and can't cause regional effects in the vicinity of his lair."
@@ -12855,7 +12855,7 @@
 					"id": "3bb",
 					"entries": [
 						"Wide iron gantries extend a short distance into a vast chamber. Two lit braziers illuminate the western gantry, which has iron stairs leading down to the floor of {@area 28|3dd}. The steps are iron grills with holes large enough for a human fist to pass through. The steps provide three-quarters cover against any ranged attack that must pass through them to hit its target. The northern and eastern gantries are unlit. The ceiling is 40 feet above the gantries, the floor 50 feet below. The rattling of the bucket chain fills the room. Four cable towers support the bucket chain as it moves through this area.",
-						"Hanging in midair, held in place by chains bolted to the floor and ceiling, is the helmed head and upper torso of the Vonindod. Cranes extending out from the western and eastern gantries have two other fragments of the colossus hanging from them: an enormous greatsword and a giant gauntlet-like hand and forearm. These fragments are hanging at the same level as the gantries. They are too heavy for the characters to unhitch, but each crane has a winch that can be released, causing the fragment to fall to the floor with a crash that can be heard throughout Ironslag. If they haven't already been defeated or lured elsewhere, the creatures in areas 12 and 15 investigate the sound, arriving on the northern and eastern gantries in 2 and 3 rounds, respectively. Releasing the catch on a winch requires a {@spell knock} spell.",
+						"Hanging in midair, held in place by chains bolted to the floor and ceiling, is the helmed head and upper torso of the Vonindod. Cranes extending out from the western and eastern gantries have two other fragments of the colossus hanging from them: an enormous greatsword and a giant gauntlet-like hand and forearm. These fragments are hanging at the same level as the gantries. They are too heavy for the characters to unhitch, but each crane has a winch that can be released, causing the fragment to fall to the floor with a crash that can be heard throughout Ironslag. If they haven't already been defeated or lured elsewhere, the creatures in areas 12 and 15 investigate the sound, arriving on the northern and eastern gantries in 2 and 3 rounds, respectively. Releasing the catch on a winch requires a {@spell 敲擊術} spell.",
 						"A creature can also use its action to make a DC 15 Strength (Athletics) check, releasing the catch on a success. Any creature under the greatsword or the gauntlet when it falls must succeed on a DC 15 Dexterity saving throw or take 55 ({@dice 10d10}) bludgeoning damage and be knocked prone and restrained under the fragment. A creature in this predicament can use its action to make a DC 20 Strength (Athletics) or Dexterity (Acrobatics) check, extricating itself on a success.",
 						"Set into the south wall at the top of the stairs, close to another lit brazier, is an iron portcullis. Beyond the portcullis is a dark hallway that leads to {@area 23|3d0}.",
 						{
@@ -13203,7 +13203,7 @@
 					"id": "3db",
 					"entries": [
 						"A basalt table, its base sculpted to look like a fountain of black fire, stands in the middle of this well-lit room. Bare marble shelves jut from the walls at heights of 10 and 15 feet. Standing against the northwest wall is an {@creature iron golem} with a rune-carved iron ingot embedded in its forehead (see \"Treasure\"). Although golems normally have elemental spirits of earth trapped within them, this golem holds an elemental spirit of fire. The golem is deactivated and incapacitated, although that fact isn't readily apparent.",
-						"Activating the iron golem requires one to speak the proper command word. Not even Duke Zalto knows it. Casting an {@spell identify} spell on the golem reveals the long lost command word, which is \"ildstryke.\"",
+						"Activating the iron golem requires one to speak the proper command word. Not even Duke Zalto knows it. Casting an {@spell 鑑定術} spell on the golem reveals the long lost command word, which is \"ildstryke.\"",
 						"When the golem is activated, fires burn in its eyes, and sulfurous smoke billows from vents in its shoulder pauldrons. Any creature that activates the golem can issue commands to it. The elemental spirit that animates it is compelled to obey the commands of fire giants; as a result, a command issued by a fire giant supersedes any other commands the golem has received. The golem is magically programmed to shut down after 1 hour. Once it shuts down, the golem can't be reactivated for 1 hour.",
 						{
 							"type": "entries",
@@ -13254,7 +13254,7 @@
 							"name": "Adamantine Doors",
 							"id": "3df",
 							"entries": [
-								"Set into the southeast wall is a pair of 50-foot-tall adamantine doors sealed by ancient magic. The doors are airtight and soundproof. They open only when a fire giant standing within 50 feet of them speaks, in Giant, the phrase \"By Surtur's flame, I command these doors to open!\" The doors remain open until a fire giant standing within 50 feet of them speaks, in Giant, the phrase \"By Surtur's flame, I command these doors to close!\" in Giant. The doors can also be closed manually with a DC 25 Strength (Athletics) check. {@spell Knock} spells and similar magic have no effect on these doors, though a legend lore spell or similar magic reveals how the doors can be opened and closed. A clever character can fool the magic on the doors by creating an illusory fire giant and having it speak the pass phrase. Characters can also try to hide and wait for a fire giant to open the doors (see the \"Reinforcements\" section earlier in this chapter)."
+								"Set into the southeast wall is a pair of 50-foot-tall adamantine doors sealed by ancient magic. The doors are airtight and soundproof. They open only when a fire giant standing within 50 feet of them speaks, in Giant, the phrase \"By Surtur's flame, I command these doors to open!\" The doors remain open until a fire giant standing within 50 feet of them speaks, in Giant, the phrase \"By Surtur's flame, I command these doors to close!\" in Giant. The doors can also be closed manually with a DC 25 Strength (Athletics) check. {@spell 敲擊術} spells and similar magic have no effect on these doors, though a legend lore spell or similar magic reveals how the doors can be opened and closed. A clever character can fool the magic on the doors by creating an illusory fire giant and having it speak the pass phrase. Characters can also try to hide and wait for a fire giant to open the doors (see the \"Reinforcements\" section earlier in this chapter)."
 							]
 						},
 						{
@@ -13402,7 +13402,7 @@
 					"id": "3e9",
 					"entries": [
 						"One basalt pillar supports the ceiling of this room, which contains wooden crates and barrels that the fire giants brought with them to Ironslag. The crates contain food, and the barrels contain water, rock salt, and ale.",
-						"Resting against the east wall is a wooden chest, 10 feet long by 6 feet tall by 8 feet wide. The chest feels cold to the touch, and a {@spell detect magic} spell reveals an aura of transmutation magic around the chest. Its interior stays as cold as an icebox regardless of the temperature outside, and it currently holds the frozen carcasses of an elk and a wolf."
+						"Resting against the east wall is a wooden chest, 10 feet long by 6 feet tall by 8 feet wide. The chest feels cold to the touch, and a {@spell 偵測魔法} spell reveals an aura of transmutation magic around the chest. Its interior stays as cold as an icebox regardless of the temperature outside, and it currently holds the frozen carcasses of an elk and a wolf."
 					]
 				},
 				{
@@ -13542,7 +13542,7 @@
 				"One such noble is Countess Sansuri, who believes that her destiny lies buried in the past, waiting for her to unearth it. Sansuri's ancient ancestors, anticipating the fall of their great empire, reportedly hid their magical knowledge and wealth in vaults and left markers for future generations to find them. The greatest of these troves was a cache of \"dragon magic\"-spells and artifacts plundered from the lairs of powerful wyrms. Sansuri wants to find this cache and use her newfound power to destroy her ambitious rivals and convince the rest of giantkind to kneel before her. Sansuri believes the gods will reward her appropriately for doing so. When that day comes, all other cloud giants will thank her for doing what they could only dream of.",
 				"After using telescopes to scour the land below for clues, Sansuri has come to the realization that her maps are woefully out of date. She hasn't found a single marker pointing the way to the trove she seeks. When a curious and danger-prone bronze dragon named {@creature adult bronze dragon||Felgolos} paid her a visit some weeks ago, Sansuri played the role of benevolent host. She tricked the dragon into helping her and, when its guard was down, captured and imprisoned it. When the adventurers come knocking, Sansuri is in the midst of torturing the bronze dragon for information, hoping it knows where one of the ancient Ostorian markers might be. The dragon's roars of pain can be heard for miles.",
 				"In this part of their mission, the characters travel to Lyn Armaal, Sansuri's cloud castle, and meet the countess and her family. The countess shares the place with her castellan and consort, Cressaro; her younger brother, Count Thullen; and her twin children, Alastrah and Kaaltar. The castle can be anywhere you want it to be. If you have no particular location in mind, assume that it's hovering one mile above the Evermoors (its default location).",
-				"The characters' primary goal is to find the {@item conch of teleportation|SKT} that King Hekaton gave to Sansuri, so that they can use it to travel to Maelstrom, Hekaton's undersea citadel (see chapter 10, \"Hold of the Storm Giants\"). There's a catch: the conch is hidden inside a {@spell Leomund's secret chest} created by the countess, and only she can summon it.",
+				"The characters' primary goal is to find the {@item conch of teleportation|SKT} that King Hekaton gave to Sansuri, so that they can use it to travel to Maelstrom, Hekaton's undersea citadel (see chapter 10, \"Hold of the Storm Giants\"). There's a catch: the conch is hidden inside a {@spell 李歐蒙秘藏箱} created by the countess, and only she can summon it.",
 				{
 					"type": "entries",
 					"name": "Cloud Giants",
@@ -13588,7 +13588,7 @@
 					"name": "Aarakocra Simulacra",
 					"id": "3f7",
 					"entries": [
-						"Years ago, a wounded aarakocra named Jakka landed on Sansuri's cloud castle. Sansuri was struck by the beauty and color of the noble creature, but rather than befriend Jakka, she locked him in a cage and imprisoned him for months while she used {@spell simulacrum} spells to create effigies of him out of ice and snow. (Sansuri's version of the spell allows her to have multiple simulacra of the same creature.) After creating a host of Jakka simulacra, she killed the original, then (in typical noble fashion) had his body stuffed and mounted above the fireplace in her lounge.",
+						"Years ago, a wounded aarakocra named Jakka landed on Sansuri's cloud castle. Sansuri was struck by the beauty and color of the noble creature, but rather than befriend Jakka, she locked him in a cage and imprisoned him for months while she used {@spell 擬像術} spells to create effigies of him out of ice and snow. (Sansuri's version of the spell allows her to have multiple simulacra of the same creature.) After creating a host of Jakka simulacra, she killed the original, then (in typical noble fashion) had his body stuffed and mounted above the fireplace in her lounge.",
 						"The countess uses the simulacra as guards and castle decorations. Their poise and striking plumage are the envy of the cloud giant nobility, and they obey their mistress's commands without question. An aarakocra simulacrum has the statistics of an {@creature aarakocra}, with the following changes:",
 						{
 							"type": "list",
@@ -13855,7 +13855,7 @@
 							"name": "Illumination",
 							"id": "405",
 							"entries": [
-								"All indoor areas are brightly lit, either by sunlight filtered through windows or arrow slits, or by magical flames (created by {@spell continual flame} spells) that blaze in golden sconces along the walls. A golden sconce is worth 250 gp and weighs 25 pounds. Outdoor areas have natural lighting."
+								"All indoor areas are brightly lit, either by sunlight filtered through windows or arrow slits, or by magical flames (created by {@spell 不滅明焰} spells) that blaze in golden sconces along the walls. A golden sconce is worth 250 gp and weighs 25 pounds. Outdoor areas have natural lighting."
 							]
 						},
 						{
@@ -13966,7 +13966,7 @@
 							"name": "Treasure",
 							"id": "40a",
 							"entries": [
-								"Seventy-two gemstones decorate Sansuri's throne. There are thirty 50 gp gemstones, twenty 100 gp gemstones, fifteen 500 gp gemstones, and six 1,000 gp gemstones, plus a black sapphire (worth 5,000 gp) set into the top of the throne, in the middle of a sun-shaped marble fitting engraved with runes. A character can use an action to pry loose a gemstone. Removing the black sapphire triggers a {@spell glyph of warding} (explosive runes) spell placed on the throne. The effect deals 36 ({@dice 8d8}) cold damage to all creatures in the spell's area."
+								"Seventy-two gemstones decorate Sansuri's throne. There are thirty 50 gp gemstones, twenty 100 gp gemstones, fifteen 500 gp gemstones, and six 1,000 gp gemstones, plus a black sapphire (worth 5,000 gp) set into the top of the throne, in the middle of a sun-shaped marble fitting engraved with runes. A character can use an action to pry loose a gemstone. Removing the black sapphire triggers a {@spell 守衛銘文} (explosive runes) spell placed on the throne. The effect deals 36 ({@dice 8d8}) cold damage to all creatures in the spell's area."
 							]
 						}
 					]
@@ -13983,7 +13983,7 @@
 							"name": "Development",
 							"id": "40c",
 							"entries": [
-								"If the characters are captured, their equipment is placed atop the table in this room, where it remains until Sansuri finds time to examine it with the aid of her detect magic spell. Any magic items found in the party's gear are stored in one of the cabinets, which Sansuri then secures with an {@spell arcane lock} spell."
+								"If the characters are captured, their equipment is placed atop the table in this room, where it remains until Sansuri finds time to examine it with the aid of her detect magic spell. Any magic items found in the party's gear are stored in one of the cabinets, which Sansuri then secures with an {@spell 祕法鎖} spell."
 							]
 						}
 					]
@@ -14054,7 +14054,7 @@
 					"id": "414",
 					"entries": [
 						"Felgolos, an {@creature adult bronze dragon}, is chained to the back wall and floor of this spacious, windowless cell. Two locked manacles bind the dragon's hind legs, preventing him from moving more than a few feet in any direction. He has a locked collar around his neck and a locked iron muzzle covering his snout. The muzzle, the collar, and the manacles are all designed to hold a dragon of his size and aren't useful on creatures of other shapes and sizes. The bonds are strengthened by magic, and as such they can't be broken by physical force. The magic on Felgolos's collar prevents him from using his Change Shape ability, and he can't use his Frightful Presence ability while chained up. While he is muzzled, Felgolos can speak with some difficulty, but the range of his breath weapons is reduced to 5 feet. The dragon is bleeding from multiple wounds and has 160 hit points when the characters find him.",
-						"A {@spell knock} spell can unlock the shackles around one of the dragon's legs or unlock the dragon's muzzle or collar. Any of these locks can be picked open using thieves' tools, though it requires an action to do so and a successful DC 20 Dexterity check.",
+						"A {@spell 敲擊術} spell can unlock the shackles around one of the dragon's legs or unlock the dragon's muzzle or collar. Any of these locks can be picked open using thieves' tools, though it requires an action to do so and a successful DC 20 Dexterity check.",
 						"Across from the dragon, stashed in a corner of the room, are three empty iron cages sized for humanoid prisoners. The cages have bars that are 1 inch thick with 4-inch gaps between them. Any party members captured by the cloud giants are stripped of their gear and locked in the cages. The oversized padlock on each cage door is too big to be picked using thieves' tools, but a character outside a cage can use an action to reach into the locking mechanism of the cage's padlock and manually pick the lock, doing so with a successful DC 20 Dexterity check. Sansuri keeps the key to the padlocks in her workshop ({@area 2|40b}).",
 						{
 							"type": "entries",
@@ -14083,14 +14083,14 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"Cantrips (at will): {@spell mage hand}, {@spell mending}, {@spell message}, {@spell prestidigitation}, {@spell ray of frost}",
-												"1st level (4 slots): {@spell identify}, {@spell magic missile}, {@spell shield}, {@spell unseen servant}",
-												"2nd level (3 slots): {@spell arcane lock}, {@spell gust of wind}, {@spell invisibility}",
-												"3rd level (3 slots): {@spell haste}, {@spell hypnotic pattern}, {@spell lightning bolt}",
-												"4th level (3 slots): {@spell ice storm}, {@spell stoneskin}",
-												"5th level (2 slots): {@spell Bigby's hand}, {@spell wall of force}",
-												"6th level (1 slot): {@spell globe of invulnerability}",
-												"7th level (1 slot): {@spell Mordenkainen's sword}"
+												"Cantrips (at will): {@spell 法師之手}, {@spell 修復術}, {@spell 傳訊術}, {@spell 魔法技倆}, {@spell 冷凍射線}",
+												"1st level (4 slots): {@spell 鑑定術}, {@spell 魔法飛彈}, {@spell 護盾術}, {@spell 隱形僕役}",
+												"2nd level (3 slots): {@spell 祕法鎖}, {@spell 造風術}, {@spell 隱形術}",
+												"3rd level (3 slots): {@spell 加速術}, {@spell 催眠圖紋}, {@spell 閃電束}",
+												"4th level (3 slots): {@spell 冰風暴}, {@spell 石膚術}",
+												"5th level (2 slots): {@spell 畢格比之掌}, {@spell 力牆術}",
+												"6th level (1 slot): {@spell 法術無效結界}",
+												"7th level (1 slot): {@spell 魔鄧肯之劍}"
 											]
 										}
 									]
@@ -14168,7 +14168,7 @@
 					"id": "41c",
 					"entries": [
 						"The door at the end of the bridge is the main entrance to the keep, through which all guests are expected to pass. The door is decorated in a cloud motif and guarded by two regal-looking {@creature aarakocra simulacra|SKT} (see the \"Aarakocra Simulacra\" section earlier in this chapter) that stand aside as visitors approach. They attack only if Countess Sansuri commands them to do so or if a fight breaks out in {@area 10|41a}.",
-						"Opening the door triggers a permanent {@spell alarm} spell that alerts the castellan in {@area 14|41f} and the cloud giant guard in {@area 24|42f}. If he's not already aware of visitors, the castellan confronts them in the hall beyond the doors, demands to know their business, and escorts them to {@area 1|409} if he deems them worthy of a meeting with Countess Sansuri. If the visitors are threatening or insulting, the castellan attacks them and sounds the alarm. Murder holes in the ceiling above the door allow the giant in {@area 24|42f} to rain acid down upon intruders who try to breach the castle by this route.",
+						"Opening the door triggers a permanent {@spell 警報術} spell that alerts the castellan in {@area 14|41f} and the cloud giant guard in {@area 24|42f}. If he's not already aware of visitors, the castellan confronts them in the hall beyond the doors, demands to know their business, and escorts them to {@area 1|409} if he deems them worthy of a meeting with Countess Sansuri. If the visitors are threatening or insulting, the castellan attacks them and sounds the alarm. Murder holes in the ceiling above the door allow the giant in {@area 24|42f} to rain acid down upon intruders who try to breach the castle by this route.",
 						"The door can be barred shut from the inside, though the giants do this only when expecting a major attack. A wooden bar hangs on the wall next to the door. The bar weighs 800 pounds, and the braces that hold it in place are mounted 15 feet above the floor. While the door is barred, it can't be opened from the outside without the aid of a battering ram or a siege engine. A Huge or larger creature acting in such a capacity can break down the door with a successful DC 30 Strength check."
 					]
 				},
@@ -14305,7 +14305,7 @@
 					"id": "42a",
 					"entries": [
 						"Like most wizards, Sansuri has acquired books covering a broad range of subjects. Six of the tomes in her library are of considerable worth (see \"Treasure\"). These valuable tomes are kept on the highest shelves, 25 feet above floor level, and are enormous, with metal covers that are 5 feet tall, 4 feet wide, and 1 inch thick. Each book weighs 150 pounds.",
-						"A large wooden table, its legs carved to look like rearing pegasi, dominates the room. An ornate bronze lantern hanging above the table has a {@spell continual flame} spell cast within it.",
+						"A large wooden table, its legs carved to look like rearing pegasi, dominates the room. An ornate bronze lantern hanging above the table has a {@spell 不滅明焰} spell cast within it.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -14313,13 +14313,13 @@
 							"entries": [
 								"Among Sansuri's collection of books are four historical texts chronicling the rise and fall of Ostoria (worth 500 gp each and weighing 50 pounds each) and a one-of-a-kind book of original plays written in Dethek, the Dwarvish script, with Common translations, by a legendary and long-deceased cloud giant poet named Delevarius (worth 750 gp and weighing 50 pounds).",
 								"A thorough search of the library yields Sansuri's enormous spellbook, which is 5 feet tall, 4 feet wide, and 2 feet thick. It has bronze covers inlaid with sixty gemstones worth 10 gp each and weighs 250 pounds. The book contains the following spells:",
-								"1st level: {@spell alarm}, {@spell identify}, {@spell magic missile}, {@spell shield}, {@spell thunderwave}, {@spell unseen servant}",
-								"2nd level: {@spell arcane lock}, {@spell continual flame}, {@spell gust of wind}, {@spell invisibility}, {@spell knock}, {@spell mirror image}",
-								"3rd level: {@spell dispel magic}, {@spell glyph of warding}, {@spell haste}, {@spell hypnotic pattern}, {@spell lightning bolt}, {@spell sending}",
-								"4th level: {@spell fabricate}, {@spell ice storm}, {@spell Leomund's secret chest}, {@spell Mordenkainen's faithful hound}, {@spell stoneskin}",
-								"5th level: {@spell Bigby's hand}, {@spell cloudkill}, {@spell geas}, {@spell wall of force}",
-								"6th level: {@spell globe of invulnerability}, {@spell guards and wards}, {@spell true seeing}",
-								"7th level: {@spell Mordenkainen's sword}, {@spell reverse gravity}, {@spell simulacrum||Sansuri's simulacrum (see below)}",
+								"1st level: {@spell 警報術}, {@spell 鑑定術}, {@spell 魔法飛彈}, {@spell 護盾術}, {@spell 雷鳴波}, {@spell 隱形僕役}",
+								"2nd level: {@spell 祕法鎖}, {@spell 不滅明焰}, {@spell 造風術}, {@spell 隱形術}, {@spell 敲擊術}, {@spell 鏡影術}",
+								"3rd level: {@spell 解除魔法}, {@spell 守衛銘文}, {@spell 加速術}, {@spell 催眠圖紋}, {@spell 閃電束}, {@spell 短訊術}",
+								"4th level: {@spell 鬼斧神工}, {@spell 冰風暴}, {@spell 李歐蒙秘藏箱}, {@spell 魔鄧肯忠犬}, {@spell 石膚術}",
+								"5th level: {@spell 畢格比之掌}, {@spell 死雲術}, {@spell 指使術}, {@spell 力牆術}",
+								"6th level: {@spell 法術無效結界}, {@spell 銅牆鐵壁}, {@spell 真知術}",
+								"7th level: {@spell 魔鄧肯之劍}, {@spell 重力反轉}, {@spell simulacrum||Sansuri's simulacrum (see below)}",
 								"Sansuri's version of the simulacrum spell allows her to create multiple duplicates of the same creature-but it requires powdered diamond worth 5,000 gp as an additional material component. The powdered diamond, like the powdered ruby also needed to cast the spell, must be sprinkled over the duplicate and is consumed by the spell."
 							]
 						}
@@ -14355,7 +14355,7 @@
 							"name": "Development",
 							"id": "42e",
 							"entries": [
-								"If the characters capture one or both children and use them as leverage to obtain Sansuri's {@item conch of teleportation|SKT}, she gives them what they want, even though bowing to their demands infuriates her. She must retrieve the conch from the {@spell Leomund's secret chest} in her bedchamber ({@area 33|43c}). If the characters get greedy and ask for more than the conch, Sansuri is willing to part with just about anything else except her spellbook (see {@area 21|42a}), her castle, and the {@item navigation orb|SKT} (see {@area 30|437}). She would even agree to release {@creature adult bronze dragon||Felgolos} from custody. She has no honor, however, and will break her word or attempt to reclaim what's hers as soon as the children are safely returned to her.",
+								"If the characters capture one or both children and use them as leverage to obtain Sansuri's {@item conch of teleportation|SKT}, she gives them what they want, even though bowing to their demands infuriates her. She must retrieve the conch from the {@spell 李歐蒙秘藏箱} in her bedchamber ({@area 33|43c}). If the characters get greedy and ask for more than the conch, Sansuri is willing to part with just about anything else except her spellbook (see {@area 21|42a}), her castle, and the {@item navigation orb|SKT} (see {@area 30|437}). She would even agree to release {@creature adult bronze dragon||Felgolos} from custody. She has no honor, however, and will break her word or attempt to reclaim what's hers as soon as the children are safely returned to her.",
 								"If any harm befalls either child, Sansuri won't rest until those responsible are crushed to a pulp. The same is true for Thullen (see {@area 28|433}), who loves the children even more than his sister does."
 							]
 						}
@@ -14376,7 +14376,7 @@
 					"id": "430",
 					"entries": [
 						"Sansuri retires to this opulent chamber when she needs to relax and clear her mind. A 5-foot-tall table of varnished wood stands in the middle of the room. Arranged atop it are several items: a hookah, a blue crystal decanter filled with fine wine, and a wooden plate covered with a mountain of figs. Blue crystal flute glasses are stored on shelves on either side of a door that leads to the library ({@area 21|42a}). Two padded chairs covered in yeti hide with blue-dyed seat cushions are turned to face the table. The chairs flank a marble fireplace carved with images of birds. Above the mantelpiece is a stuffed and mounted aarakocra with blue plumage. This poor creature is the remains of Jakka (see the \"Aarakocra Simulacra\" section earlier in this chapter).",
-						"A {@spell detect magic} spell reveals a faint aura of conjuration magic surrounding the fireplace. Any creature that points at the fireplace and speaks the word \"ild\" causes a magical, crackling fire to erupt within it. The fire lasts for 1 hour before it dies out. This property can be activated at will. Casting an {@spell identify} spell on the fireplace reveals both its property and the command word needed to activate it."
+						"A {@spell 偵測魔法} spell reveals a faint aura of conjuration magic surrounding the fireplace. Any creature that points at the fireplace and speaks the word \"ild\" causes a magical, crackling fire to erupt within it. The fire lasts for 1 hour before it dies out. This property can be activated at will. Casting an {@spell 鑑定術} spell on the fireplace reveals both its property and the command word needed to activate it."
 					]
 				},
 				{
@@ -14426,12 +14426,12 @@
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
-										"Cantrips (at will): {@spell druidcraft}, {@spell mending}, {@spell produce flame}",
-										"1st level (4 slots): {@spell cure wounds}, {@spell entangle}, {@spell thunderwave}",
-										"2nd level (3 slots): {@spell animal messenger}, {@spell barkskin}, {@spell gust of wind}",
-										"3rd level (3 slots): {@spell call lightning}, {@spell conjure animals}, {@spell speak with plants}",
-										"4th level (3 slots): {@spell freedom of movement}, {@spell grasping vine}",
-										"5th level (1 slot): {@spell conjure elemental}"
+										"Cantrips (at will): {@spell 德魯伊伎倆}, {@spell 修復術}, {@spell 燃火術}",
+										"1st level (4 slots): {@spell 治療傷勢}, {@spell 糾纏術}, {@spell 雷鳴波}",
+										"2nd level (3 slots): {@spell 動物信使}, {@spell 樹膚術}, {@spell 造風術}",
+										"3rd level (3 slots): {@spell 召雷術}, {@spell 召喚動物}, {@spell 植物交談術}",
+										"4th level (3 slots): {@spell 行動自如術}, {@spell 抓攫藤蔓}",
+										"5th level (1 slot): {@spell 召喚元素生物}"
 									]
 								}
 							]
@@ -14528,7 +14528,7 @@
 									"type": "list",
 									"items": [
 										"Six giant-sized potions ({@item potion of clairvoyance}, {@item potion of diminution}, {@item potion of fire resistance}, {@item potion of lightning resistance}, {@item potion of storm giant strength}, and {@item potion of supreme healing||supreme healing}). Each potion is contained in a 1-foot-tall crystal flask that weighs 15 pounds while full, or 5 pounds when empty. A giant potion must be consumed in its entirety to gain its effect, and it takes a Medium or Small character 1 minute to chug one down.",
-										"Five spell scrolls ({@spell animate objects}, {@spell chain lightning}, {@spell dominate monster}, {@spell legend lore}, and {@spell phantasmal killer}). Each scroll is written on a 12-foot-long, 5-foot-wide rolled sheet of vellum. Normal-sized characters can use the scrolls despite their size.",
+										"Five spell scrolls ({@spell 活化物體}, {@spell 連環閃電}, {@spell 支配怪物}, {@spell 通曉傳奇}, and {@spell 魅影殺手}). Each scroll is written on a 12-foot-long, 5-foot-wide rolled sheet of vellum. Normal-sized characters can use the scrolls despite their size.",
 										"Three normal-sized magic items. Roll on {@table Magic Item Table F} in chapter 7 of the {@i Dungeon Master's Guide} for the first two items and on {@table Magic Item Table G||Table G} for the third."
 									]
 								}
@@ -14542,14 +14542,14 @@
 					"id": "43c",
 					"entries": [
 						"Sansuri has adorned her bedchamber with decorations befitting her noble status. Her mattress is filled with the softest down, and her bed's wooden frame is inlaid with gold tracery and gemstones. (These and other precious items are described in the \"Treasure\" section that follows.) The chamber's conical roof reaches its apex 60 feet overhead. Hanging from the rafters is Sansuri's bizarre \"merry-go-round,\" which is made up of seven stuffed pegasi hanging from a ring-shaped \"track\" made of steel. The ring magically turns so that the winged horses \"glide\" overhead continually in a counterclockwise direction.",
-						"Hidden in the bed's headboard is a secret compartment that can be found with a DC 15 Wisdom (Perception) check. It contains a small, bejeweled chest made of gold with platinum filigree. This chest is a miniature replica of a much larger chest that Sansuri uses as the main component of a {@spell Leomund's secret chest} spell. By touching the replica, Sansuri can recall the larger chest (see \"Treasure\"), causing it to appear within 5 feet of her. No other creature can summon the full-sized chest in this manner, which means the characters must persuade Sansuri to summon it for them if they want to obtain its contents (see \"Development\").",
+						"Hidden in the bed's headboard is a secret compartment that can be found with a DC 15 Wisdom (Perception) check. It contains a small, bejeweled chest made of gold with platinum filigree. This chest is a miniature replica of a much larger chest that Sansuri uses as the main component of a {@spell 李歐蒙秘藏箱} spell. By touching the replica, Sansuri can recall the larger chest (see \"Treasure\"), causing it to appear within 5 feet of her. No other creature can summon the full-sized chest in this manner, which means the characters must persuade Sansuri to summon it for them if they want to obtain its contents (see \"Development\").",
 						{
 							"type": "entries",
 							"name": "Treasure",
 							"id": "43d",
 							"entries": [
 								"The gold tracery that adorns Sansuri's bed, if it is all pried loose, is worth only 100 gp, but the fifty gemstones embedded in the bed frame are worth 100 gp each. Prying out a single gem requires an action. Six goldspun tapestries (each worth 2,500 gp and weighing 750 pounds) adorn the walls. Sansuri also has a freestanding mirror with an electrum frame (worth 1,500 gp and weighing 500 pounds) and a three-fold wooden privacy screen carved to look like trees with blowing leaves made of thinly pressed gold and platinum (worth 2,500 gp and weighing 500 pounds).",
-								"The full-sized {@spell Leomund's secret chest} is worth 5,000 gp. Its smaller replica is worth 50 gp. Inside the full-sized chest are Sansuri's {@item conch of teleportation|SKT}, 500 pp, and six pieces of jewelry: four platinum bracelets (worth 750 gp each), a gold pendant necklace set with a fist-sized amethyst (worth 7,500 gp), and a diamond-encrusted diadem (worth 7,500 gp)."
+								"The full-sized {@spell 李歐蒙秘藏箱} is worth 5,000 gp. Its smaller replica is worth 50 gp. Inside the full-sized chest are Sansuri's {@item conch of teleportation|SKT}, 500 pp, and six pieces of jewelry: four platinum bracelets (worth 750 gp each), a gold pendant necklace set with a fist-sized amethyst (worth 7,500 gp), and a diamond-encrusted diadem (worth 7,500 gp)."
 							]
 						},
 						{
@@ -14557,7 +14557,7 @@
 							"name": "Development",
 							"id": "43e",
 							"entries": [
-								"The characters need some kind of influence to make Sansuri use the replica chest to summon the full-size {@spell Leomund's secret chest}. They can use a {@spell suggestion} spell or similar magic to compel Sansuri to summon the chest. They can also hold one or both of her children hostage and use them as leverage to get what they want. If the characters defeat Sansuri in combat but keep her alive, she agrees to summon the chest and give up its contents in exchange for her life.",
+								"The characters need some kind of influence to make Sansuri use the replica chest to summon the full-size {@spell 李歐蒙秘藏箱}. They can use a {@spell 暗示術} spell or similar magic to compel Sansuri to summon the chest. They can also hold one or both of her children hostage and use them as leverage to get what they want. If the characters defeat Sansuri in combat but keep her alive, she agrees to summon the chest and give up its contents in exchange for her life.",
 								"If the characters kill Sansuri before realizing that they need her help to obtain the {@item conch of teleportation|SKT}, they must either restore her to life, seek out another {@item conch of teleportation|SKT}, or find some other way to reach Maelstrom."
 							]
 						}
@@ -15434,7 +15434,7 @@
 								},
 								"Iymrith realizes almost instantly that she has chosen those words poorly, for how could she know that Hekaton has been abducted? If the players fail to pick up on her self-incriminating words, have Serissa and all characters present make a DC 15 Wisdom (Insight) check. Those who succeed on the check realize that Iymrith knows more than she's letting on.",
 								"If the characters accuse Iymrith of being a dragon in disguise, she expresses outrage at the accusation and tries to convince Serissa that this claim is a ploy to sow discord in the storm giants' court. Heedless of Iymrith's words, Serissa is inclined to give the characters the benefit of the doubt. When it becomes clear to Iymrith that Serissa's fondness for small folk can't be undone with mere words, the dragon begins plotting her exit strategy.",
-								"Casting {@spell dispel magic} on Iymrith doesn't reveal her true form, but contact with an {@spell antimagic field} causes her to revert to her dragon form. It's unlikely that characters will have access to such powerful magic, but if all else fails, they can simply attack her. Iymrith doesn't revert to dragon form in this encounter. On her first turn in combat, she curses the characters in Draconic, declares that all giants and small folk are doomed, and snatches the {@item Korolnor Scepter|SKT} from around Serissa's neck. On her next turn, she teleports away. If she is unable to cast her {@spell teleport} spell for some reason, she flees through the circular pool in the floor and swims out of the strong hold to the surface. (As long as she remains in storm giant form, Iymrith can breathe underwater.) If Serissa is seated on the {@item Wyrmskull Throne|SKT} when the scepter is stolen from her, Serissa is paralyzed (see the throne's description in appendix B for details).",
+								"Casting {@spell 解除魔法} on Iymrith doesn't reveal her true form, but contact with an {@spell 反魔法結界} causes her to revert to her dragon form. It's unlikely that characters will have access to such powerful magic, but if all else fails, they can simply attack her. Iymrith doesn't revert to dragon form in this encounter. On her first turn in combat, she curses the characters in Draconic, declares that all giants and small folk are doomed, and snatches the {@item Korolnor Scepter|SKT} from around Serissa's neck. On her next turn, she teleports away. If she is unable to cast her {@spell 傳送術} spell for some reason, she flees through the circular pool in the floor and swims out of the strong hold to the surface. (As long as she remains in storm giant form, Iymrith can breathe underwater.) If Serissa is seated on the {@item Wyrmskull Throne|SKT} when the scepter is stolen from her, Serissa is paralyzed (see the throne's description in appendix B for details).",
 								"If the characters do nothing to force Iymrith's hand, she allows them to leave and pursue Serissa's quest, convinced that they will never find King Hekaton. At the same time, Serissa's confidence in the characters' abilities sows doubt in Iymrith's mind (see \"Development\")."
 							]
 						},
@@ -15452,7 +15452,7 @@
 							"id": "486",
 							"entries": [
 								"If the characters forge an alliance with Serissa or expose Iymrith as a villainous deceiver, the blue dragon returns to her lair in the Anauroch desert and isn't encountered again until chapter 12, \"Doom of the Desert.\"",
-								"It's possible that the characters might come into possession of a {@item Spell Scroll (7th level)||scroll of} {@spell resurrection} at some point in the adventure, in which case they could offer to cast the spell on Queen Neri and bring her back from the dead. If they make such an offer, Serissa leads them to her mother's sunken tomb ({@area 22|494}) or has the queen's body brought to them. If Neri is returned to life, she replaces Iymrith as Serissa's advisor, and Serissa rewards the characters by giving them the magic items in the sea chest in the royal treasury ({@area 16|487}). Queen Neri, like Serissa, has a fondness for the small folk, and she's just as eager to find out what happened to Hekaton."
+								"It's possible that the characters might come into possession of a {@item Spell Scroll (7th level)||scroll of} {@spell 復活術} at some point in the adventure, in which case they could offer to cast the spell on Queen Neri and bring her back from the dead. If they make such an offer, Serissa leads them to her mother's sunken tomb ({@area 22|494}) or has the queen's body brought to them. If Neri is returned to life, she replaces Iymrith as Serissa's advisor, and Serissa rewards the characters by giving them the magic items in the sea chest in the royal treasury ({@area 16|487}). Queen Neri, like Serissa, has a fondness for the small folk, and she's just as eager to find out what happened to Hekaton."
 							]
 						}
 					]
@@ -15500,13 +15500,13 @@
 					"entries": [
 						"This naturally formed cave has bioluminescent lichen, coral, snails, and starfish clinging to its damp walls. The area radiates overlapping auras of conjuration, divination, and evocation magic when scrutinized with a detect magic spell. Over the years, the storm giants have learned how to become attuned to the magic of this cave and harness its innate magical properties.",
 						"Becoming attuned to the cave requires a creature to spend a short rest meditating inside the cave. While meditating, the creature can't engage in any strenuous activity. If the short rest is interrupted, the attunement fails. Otherwise, at the end of the short rest, the creature becomes aware of the cave's magical properties and can use them as described here.",
-						"Only one creature can be attuned to the cave at a time. A creature's attunement to the cave ends as soon as it leaves the cave. A creature that is attuned to the cave can use an action to cast one of the following spells, requiring no material components: {@spell clairvoyance}, {@spell identify}, {@spell sending}, or {@spell teleport}.",
+						"Only one creature can be attuned to the cave at a time. A creature's attunement to the cave ends as soon as it leaves the cave. A creature that is attuned to the cave can use an action to cast one of the following spells, requiring no material components: {@spell 銳眼術}, {@spell 鑑定術}, {@spell 短訊術}, or {@spell 傳送術}.",
 						{
 							"type": "entries",
 							"name": "Development",
 							"id": "48c",
 							"entries": [
-								"King Hekaton often used the {@spell sending} property of the cave to arrange meetings with lesser giants and used the {@spell teleport} property from time to time to send guests to far-flung destinations. If Serissa is on speaking terms with the party, she can use the cave's {@spell teleport} property to send the characters wherever they wish to go, once their business in Maelstrom is concluded."
+								"King Hekaton often used the {@spell 短訊術} property of the cave to arrange meetings with lesser giants and used the {@spell 傳送術} property from time to time to send guests to far-flung destinations. If Serissa is on speaking terms with the party, she can use the cave's {@spell 傳送術} property to send the characters wherever they wish to go, once their business in Maelstrom is concluded."
 							]
 						}
 					]
@@ -15592,8 +15592,8 @@
 					"name": "23. Scrying Pool",
 					"id": "496",
 					"entries": [
-						"The central feature of this air-filled chamber is a semicircular basin 20 feet in diameter and 10 feet deep in the middle. Fresh water fills the basin. The raised stone lip surrounding the pool is 5 feet high and equally thick. A {@spell detect magic} spell cast on the basin reveals an aura of divination magic.",
-						"The basin has 3 charges. As long as the water in the basin is unpolluted, a creature can touch the basin and expend 1 charge to cast a {@spell scrying} spell from the basin. The subject of the spell appears in the water's surface. The basin regains all expended charges daily at dawn.",
+						"The central feature of this air-filled chamber is a semicircular basin 20 feet in diameter and 10 feet deep in the middle. Fresh water fills the basin. The raised stone lip surrounding the pool is 5 feet high and equally thick. A {@spell 偵測魔法} spell cast on the basin reveals an aura of divination magic.",
+						"The basin has 3 charges. As long as the water in the basin is unpolluted, a creature can touch the basin and expend 1 charge to cast a {@spell 探知} spell from the basin. The subject of the spell appears in the water's surface. The basin regains all expended charges daily at dawn.",
 						"The northwest wall has a giant-sized secret door set into it. It leads to a spiral staircase that climbs to {@area 31|4a4} and descends to {@area 6|460}."
 					]
 				},
@@ -15624,7 +15624,7 @@
 							"name": "Treasure",
 							"id": "49a",
 							"entries": [
-								"Five rocks have the following wizard spells inscribed on them: {@spell antimagic field}, {@spell conjure elemental}, {@spell fabricate}, {@spell legend lore}, and {@spell stone shape}. The rocks function like pages of a spellbook, but each weighs 600 pounds. A character who has a spellbook can record these spells in it."
+								"Five rocks have the following wizard spells inscribed on them: {@spell 反魔法結界}, {@spell 召喚元素生物}, {@spell 鬼斧神工}, {@spell 通曉傳奇}, and {@spell 塑石術}. The rocks function like pages of a spellbook, but each weighs 600 pounds. A character who has a spellbook can record these spells in it."
 							]
 						}
 					]
@@ -16015,11 +16015,11 @@
 							"type": "list",
 							"items": [
 								"Pow Ming speaks Common, Draconic, Dwarvish, and Elvish.",
-								"She has the {@spell detect thoughts} spell prepared in place of {@spell misty step}.",
+								"She has the {@spell 偵測思想} spell prepared in place of {@spell 迷蹤步}.",
 								"She carries a {@item bag of holding} and wears a {@item robe of serpents|SKT} with six snakes."
 							]
 						},
-						"Pow Ming keeps hundreds of golden goose chips in her {@item bag of holding}. The bag is also where she keeps the money she receives in trade. At any given time, the bag holds {@dice 1d10 × 100} gp. When the ship returns to port, Pow Ming pays out the winners, collects all the golden goose chips, and gives the remaining spoils to Lord Drylund, who places them in a locked chest (in {@area 13|4c4}). If Pow Ming suspects that a guest might be cheating, she casts a {@spell detect thoughts} spell to confirm or put to rest her suspicions. If she becomes convinced that someone is cheating, she uses her {@spell suggestion} spell to convince the individual to take a flying leap off the deck of the ship.",
+						"Pow Ming keeps hundreds of golden goose chips in her {@item bag of holding}. The bag is also where she keeps the money she receives in trade. At any given time, the bag holds {@dice 1d10 × 100} gp. When the ship returns to port, Pow Ming pays out the winners, collects all the golden goose chips, and gives the remaining spoils to Lord Drylund, who places them in a locked chest (in {@area 13|4c4}). If Pow Ming suspects that a guest might be cheating, she casts a {@spell 偵測思想} spell to confirm or put to rest her suspicions. If she becomes convinced that someone is cheating, she uses her {@spell 暗示術} spell to convince the individual to take a flying leap off the deck of the ship.",
 						"Assuming that nothing happens to prevent its launch, the ship begins a slow, scenic journey upriver at dusk. Two deckhands oversee the rowers in {@area 4|4ba}. Captain Storn and his six remaining deckhands take turns on the bridge ({@area 11|4c2}). Pow Ming spends most of her evening in the gambling hall, keeping an eye on the guests ({@area 9|4bf}). In the wee hours of the morning, the rowers turn the ship and head back to port so that guests and workers can disembark at dawn. Lord Drylund gives Storn money to pay the workers as they disembark.",
 						"Lord Drylund remains in his cabin ({@area 13|4c4}) throughout the day, then emerges once the ship leaves port to greet every guest with a smile and a handshake, offering his favorites handfuls of free gambling chips. If he doesn't recognize one or more visitors, he questions them to see if they're worth keeping aboard. Drylund caters to those who have political influence in the city of Yartar, but he's eager to meet anyone with a lot of money. He expects his guests to be splendidly dressed-and unarmed. Those who are caught carrying concealed weapons are advised to cast their weapons overboard. Those who refuse to do so are unceremoniously thrown off the deck of the ship by the crew."
 					]
@@ -16208,7 +16208,7 @@
 					"name": "The Hunt for Hekaton",
 					"id": "4c9",
 					"entries": [
-						"The characters might kill Lord Drylund before he can be interrogated. If Lord Drylund dies before the characters learn King Hekaton's whereabouts, they can still learn where the storm giant king is being held by casting a {@spell speak with dead} spell on Lord Drylund's corpse. If that option is unavailable to them, they can raise Lord Drylund from the dead. If they lack the means to do so themselves, they can bring Lord Drylund's body to a temple in any major city and pay to have the {@spell raise dead} spell cast. The party must provide the material component of the spell (a diamond worth at least 500 gp) and make a donation of 500 gp to the temple. If one or more of the characters are members of the Lords' Alliance, they can muster the resources to acquire a {@item Spell Scroll (5th level)||scroll of} {@spell raise dead} free of charge, as long as they're in Yartar or another settlement that's part of the Lords' Alliance (see \"The Lords' Alliance\" section in chapter 1).",
+						"The characters might kill Lord Drylund before he can be interrogated. If Lord Drylund dies before the characters learn King Hekaton's whereabouts, they can still learn where the storm giant king is being held by casting a {@spell 死者交談術} spell on Lord Drylund's corpse. If that option is unavailable to them, they can raise Lord Drylund from the dead. If they lack the means to do so themselves, they can bring Lord Drylund's body to a temple in any major city and pay to have the {@spell 喚醒死者} spell cast. The party must provide the material component of the spell (a diamond worth at least 500 gp) and make a donation of 500 gp to the temple. If one or more of the characters are members of the Lords' Alliance, they can muster the resources to acquire a {@item Spell Scroll (5th level)||scroll of} {@spell 喚醒死者} free of charge, as long as they're in Yartar or another settlement that's part of the Lords' Alliance (see \"The Lords' Alliance\" section in chapter 1).",
 						"Slarkrethel has cast a powerful spell on the {@i Morkoth}, its crew, and their prisoner, hiding them all from divination magic. Neither the ship nor anyone aboard it can be targeted by any form of divination magic or perceived through magical scrying sensors."
 					]
 				},
@@ -16422,7 +16422,7 @@
 					"entries": [
 						"Tholtz Daggerdark's cabin is a mess. Nautical books and navigational charts are strewn across the floor, as are quills, loose sheets of blank parchment, empty wine bottles, and spilled jars of ink. Most of the furniture is bolted to the floor, including an unmade bed with a squid-shaped headboard, a writing desk stained with ink, an open trunk, a slender wardrobe stuffed with old robes, and a wooden cloak rack.",
 						"If he hasn't been disturbed, Tholtz the {@creature archmage} is sleeping on the floor in a corner of the room, facing the cabin door. In his sleep, he used a knife to carve the words \"DRAGON,\" \"IYMRITH,\" \"SISTERS,\" and \"TREACHERY\" into the floorboards. If he is awakened by a loud disturbance on deck, he drops the knife and leaves the cabin to investigate. He doesn't know who or what Iymrith is, nor does he know why he carved these words into the cabin floor.",
-						"Tholtz casts {@spell mage armor} on himself before entering battle. If enemies threaten him with ranged attacks, he casts {@spell fly} on himself, then tries to maneuver himself into a position where he can deal the most damage to them. Tholtz doesn't care if he catches his allies or King Hekaton in a spell's area.",
+						"Tholtz casts {@spell 法師護甲} on himself before entering battle. If enemies threaten him with ranged attacks, he casts {@spell 飛行術} on himself, then tries to maneuver himself into a position where he can deal the most damage to them. Tholtz doesn't care if he catches his allies or King Hekaton in a spell's area.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -16433,15 +16433,15 @@
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
-										"1st level: {@spell detect magic}, {@spell disguise self}, {@spell identify}, {@spell mage armor}, {@spell magic missile}, {@spell thunderwave}",
-										"2nd level: {@spell darkvision}, {@spell detect thoughts}, {@spell mirror image}, {@spell misty step}, {@spell suggestion}",
-										"3rd level: {@spell counterspell}, {@spell fly}, {@spell lightning bolt}, {@spell sending}, {@spell water breathing}",
-										"4th level: {@spell arcane eye}, {@spell banishment}, {@spell fire shield}, {@spell ice storm}, {@spell stoneskin}",
-										"5th level: {@spell cone of cold}, {@spell scrying}, {@spell seeming}, {@spell teleportation circle}, {@spell wall of force}",
-										"6th level: {@spell chain lightning}, {@spell flesh to stone}, {@spell globe of invulnerability}",
-										"7th level: {@spell prismatic spray}, {@spell teleport}",
-										"8th level: {@spell dominate monster}, {@spell mind blank}",
-										"9th level: {@spell time stop}"
+										"1st level: {@spell 偵測魔法}, {@spell 易容術}, {@spell 鑑定術}, {@spell 法師護甲}, {@spell 魔法飛彈}, {@spell 雷鳴波}",
+										"2nd level: {@spell 黑暗視覺}, {@spell 偵測思想}, {@spell 鏡影術}, {@spell 迷蹤步}, {@spell 暗示術}",
+										"3rd level: {@spell 反制法術}, {@spell 飛行術}, {@spell 閃電束}, {@spell 短訊術}, {@spell 水下呼吸}",
+										"4th level: {@spell 祕法眼}, {@spell 放逐術}, {@spell 火焰護盾}, {@spell 冰風暴}, {@spell 石膚術}",
+										"5th level: {@spell 寒冰錐}, {@spell 探知}, {@spell 偽裝術}, {@spell 傳送法陣}, {@spell 力牆術}",
+										"6th level: {@spell 連環閃電}, {@spell 石化術}, {@spell 法術無效結界}",
+										"7th level: {@spell 虹光噴射}, {@spell 傳送術}",
+										"8th level: {@spell 支配怪物}, {@spell 心靈屏障}",
+										"9th level: {@spell 時間停止}"
 									]
 								}
 							]
@@ -16510,15 +16510,15 @@
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
-										"1st level (4 slots): {@spell comprehend languages}, {@spell detect magic}, {@spell identify}, {@spell sleep}",
-										"2nd level (3 slots): {@spell blindness/deafness}, {@spell detect thoughts}, {@spell suggestion}",
-										"3rd level (3 slots): {@spell fly}, {@spell nondetection}, {@spell sending}",
-										"4th level (3 slots): {@spell arcane eye}, {@spell ice storm}, {@spell locate creature}",
-										"5th level (3 slots): {@spell cloudkill}, {@spell scrying}, {@spell telekinesis}",
-										"6th level (2 slots): {@spell chain lightning}, {@spell flesh to stone}, {@spell mass suggestion}",
-										"7th level (2 slots): {@spell delayed blast fireball}, {@spell sequester}, {@spell teleport}",
-										"8th level (1 slot): {@spell control weather}, {@spell feeblemind}",
-										"9th level (1 slot): {@spell foresight}, {@spell power word kill}"
+										"1st level (4 slots): {@spell 通曉語言}, {@spell 偵測魔法}, {@spell 鑑定術}, {@spell 睡眠術}",
+										"2nd level (3 slots): {@spell 目盲/耳聾術}, {@spell 偵測思想}, {@spell 暗示術}",
+										"3rd level (3 slots): {@spell 飛行術}, {@spell 迴避偵測}, {@spell 短訊術}",
+										"4th level (3 slots): {@spell 祕法眼}, {@spell 冰風暴}, {@spell 生物定位術}",
+										"5th level (3 slots): {@spell 死雲術}, {@spell 探知}, {@spell 心靈遙控}",
+										"6th level (2 slots): {@spell 連環閃電}, {@spell 石化術}, {@spell 群體暗示術}",
+										"7th level (2 slots): {@spell 延遲爆裂火球}, {@spell 隔離術}, {@spell 傳送術}",
+										"8th level (1 slot): {@spell 操控天氣}, {@spell 弱智術}",
+										"9th level (1 slot): {@spell 預視術}, {@spell 律令死亡}"
 									]
 								}
 							]
@@ -17507,8 +17507,8 @@
 							"items": [
 								"The throne gains a flying speed of 30 feet and can hover and flies where the creature wills. This property doesn't expend any charges.",
 								"Both the throne and the creature sitting on it can move through earth and stone without disturbing the material they move through. This property doesn't expend any charges.",
-								"As an action, the creature can expend 1 charge to cast {@spell lightning bolt} (spell save DC 19) from the throne. The spell is cast as though using a 9th-level spell slot and deals 49 ({@dice 14d6}) lightning damage. The bolt discharges from the mouth of one of the throne's blue dragon skulls.",
-								"As an action, the creature can expend 2 charges to cast the {@spell globe of invulnerability} spell from the throne. The globe encloses both the creature and the throne.",
+								"As an action, the creature can expend 1 charge to cast {@spell 閃電束} (spell save DC 19) from the throne. The spell is cast as though using a 9th-level spell slot and deals 49 ({@dice 14d6}) lightning damage. The bolt discharges from the mouth of one of the throne's blue dragon skulls.",
+								"As an action, the creature can expend 2 charges to cast the {@spell 法術無效結界} spell from the throne. The globe encloses both the creature and the throne.",
 								"As an action, the creature can expend 3 charges to create a spectral image of an ancient blue dragon that surrounds both it and the throne. The spectral dragon lasts for 1 minute. At the end of each of the creature's turns, the spectral dragon makes one bite attack and two claw attacks against targets of the creature's choice. These attacks have the same attack bonus, reach, and damage as an ancient blue dragon's bite and claw attacks."
 							]
 						},
@@ -17601,7 +17601,7 @@
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
-										"1/day each: {@spell counterspell}, {@spell detect magic}, {@spell ice storm}, {@spell stone shape}, {@spell teleport}"
+										"1/day each: {@spell 反制法術}, {@spell 偵測魔法}, {@spell 冰風暴}, {@spell 塑石術}, {@spell 傳送術}"
 									]
 								}
 							]
@@ -17674,17 +17674,17 @@
 							"id": "548",
 							"entries": [
 								"Depending on an Uthgardt shaman's tribe, the shaman's Innate Spellcasting feature gains additional spells the shaman can cast once per day.",
-								"{@b Black Lion:} {@spell animate dead}, {@spell chill touch}, {@spell feign death}, {@spell revivify}",
-								"{@b Black Raven:} {@spell animal messenger} (raven only), {@spell feather fall}, {@spell polymorph} (into a raven only)",
-								"{@b Blue Bear:} {@spell enhance ability} (bear's endurance only), {@spell heroism}",
-								"{@creature Elk}: {@spell expeditious retreat}, {@spell find steed} (elk only), {@spell haste}",
-								"{@b Gray Wolf:} {@spell beast sense} (wolf or dire wolf only), {@spell moonbeam}, {@spell speak with animals} (wolf or dire wolf only)",
-								"{@b Great Worm:} {@spell crusader's mantle}, {@spell divine favor}, {@spell hypnotic pattern}",
-								"{@creature Griffon}: {@spell feather fall}, {@spell fly}",
-								"{@b Sky Pony:} {@spell divine favor}, {@spell feather fall}, {@spell lightning bolt}",
-								"{@b Red Tiger:} {@spell beast sense} (tiger only), {@spell enhance ability} (cat's grace only), {@spell jump}",
-								"{@b Thunderbeast:} {@spell enhance ability} (bull's strength only), {@spell pass without trace}, {@spell stoneskin}",
-								"{@b Tree Ghost:} {@spell barkskin}, {@spell druidcraft}, {@spell plant growth}, {@spell speak with plants}"
+								"{@b Black Lion:} {@spell 活化死屍}, {@spell 寒顫之觸}, {@spell 假死術}, {@spell 回生術}",
+								"{@b Black Raven:} {@spell 動物信使} (raven only), {@spell 羽落術}, {@spell 變形術} (into a raven only)",
+								"{@b Blue Bear:} {@spell 強化屬性} (bear's endurance only), {@spell 英雄氣概}",
+								"{@creature Elk}: {@spell 腳底抹油}, {@spell 尋獲坐騎} (elk only), {@spell 加速術}",
+								"{@b Gray Wolf:} {@spell 野獸知覺} (wolf or dire wolf only), {@spell 月華之光}, {@spell 動物交談術} (wolf or dire wolf only)",
+								"{@b Great Worm:} {@spell 十字軍斗篷}, {@spell 神恩術}, {@spell 催眠圖紋}",
+								"{@creature Griffon}: {@spell 羽落術}, {@spell 飛行術}",
+								"{@b Sky Pony:} {@spell 神恩術}, {@spell 羽落術}, {@spell 閃電束}",
+								"{@b Red Tiger:} {@spell 野獸知覺} (tiger only), {@spell 強化屬性} (cat's grace only), {@spell 跳躍術}",
+								"{@b Thunderbeast:} {@spell 強化屬性} (bull's strength only), {@spell 行蹤無跡}, {@spell 石膚術}",
+								"{@b Tree Ghost:} {@spell 樹膚術}, {@spell 德魯伊伎倆}, {@spell 植物滋長}, {@spell 植物交談術}"
 							]
 						}
 					]

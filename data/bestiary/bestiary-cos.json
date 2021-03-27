@@ -216,72 +216,72 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 酸液濺爆}",
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell sleep}",
-								"{@spell witch bolt}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 睡眠術}",
+								"{@spell 巫術箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
 								"{@spell 瘋狂冠冕}",
-								"{@spell enlarge/reduce}",
-								"{@spell misty step}"
+								"{@spell 變巨/縮小術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
 								"{@spell 解除魔法}",
-								"{@spell fireball}",
-								"{@spell lightning bolt}"
+								"{@spell 火球術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell 枯萎術}",
-								"{@spell Evard's black tentacles}",
+								"{@spell 艾伐黑觸手}",
 								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell geas}",
-								"{@spell scrying}"
+								"{@spell 死雲術}",
+								"{@spell 指使術}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell programmed illusion}",
-								"{@spell true seeing}"
+								"{@spell 預置幻象}",
+								"{@spell 真知術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell mirage arcane}"
+								"{@spell 死亡一指}",
+								"{@spell 海市蜃樓}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell power word stun}"
+								"{@spell 律令震懾}"
 							]
 						}
 					},
@@ -298,7 +298,7 @@
 				{
 					"name": "Blessing of Mother Night",
 					"entries": [
-						"Baba Lysaga is shielded against divination magic, as though protected by a {@spell nondetection} spell."
+						"Baba Lysaga is shielded against divination magic, as though protected by a {@spell 迴避偵測} spell."
 					]
 				}
 			],
@@ -592,24 +592,24 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
 								"{@spell 致病射線}",
-								"{@spell sleep}",
-								"{@spell Tasha's hideous laughter}"
+								"{@spell 睡眠術}",
+								"{@spell 塔莎狂笑術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell alter self}",
-								"{@spell invisibility}"
+								"{@spell 變造自身}",
+								"{@spell 隱形術}"
 							]
 						}
 					},
@@ -1043,9 +1043,9 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						}
 					},
@@ -1121,40 +1121,40 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell protection from evil and good}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 防護善惡}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkvision}",
-								"{@spell knock}",
+								"{@spell 黑暗視覺}",
+								"{@spell 敲擊術}",
 								"{@spell 鏡影術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell lightning bolt}",
-								"{@spell magic circle}"
+								"{@spell 銳眼術}",
+								"{@spell 閃電束}",
+								"{@spell 防護法陣}"
 							]
 						},
 						"4": {
 							"slots": 1,
 							"spells": [
-								"{@spell greater invisibility}"
+								"{@spell 高等隱形術}"
 							]
 						}
 					},
@@ -1197,7 +1197,7 @@
 				{
 					"name": "Curse (Recharges after a Long Rest)",
 					"entries": [
-						"Ezmerelda targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 14} Wisdom saving throw or be cursed. While cursed, the target has vulnerability to one type of damage of Ezmerelda's choice. The curse lasts until ended with a {@spell greater restoration} spell, a {@spell remove curse} spell, or similar magic. When the curse ends, Ezmerelda takes {@dice 3d6} psychic damage."
+						"Ezmerelda targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 14} Wisdom saving throw or be cursed. While cursed, the target has vulnerability to one type of damage of Ezmerelda's choice. The curse lasts until ended with a {@spell 高等復原術} spell, a {@spell 移除詛咒} spell, or similar magic. When the curse ends, Ezmerelda takes {@dice 3d6} psychic damage."
 					]
 				},
 				{
@@ -1335,10 +1335,10 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell counterspell}",
+							"{@spell 反制法術}",
 							"{@spell 瘋狂冠冕}",
-							"{@spell hypnotic pattern}",
-							"{@spell telekinesis}"
+							"{@spell 催眠圖紋}",
+							"{@spell 心靈遙控}"
 						]
 					},
 					"ability": "int"
@@ -1609,7 +1609,7 @@
 							{
 								"name": "Special Equipment",
 								"entries": [
-									"Kasimir wears a {@item ring of warmth} and carries a spellbook containing all the spells he has prepared plus the following spells: {@spell arcane lock}, {@spell comprehend languages}, {@spell hold person}, {@spell identify}, {@spell locate object}, {@spell nondetection}, {@spell polymorph}, {@spell protection from evil and good}, {@spell ray of frost}, and {@spell wall of stone}."
+									"Kasimir wears a {@item ring of warmth} and carries a spellbook containing all the spells he has prepared plus the following spells: {@spell 祕法鎖}, {@spell 通曉語言}, {@spell 人類定身術}, {@spell 鑑定術}, {@spell 物品定位術}, {@spell 迴避偵測}, {@spell 變形術}, {@spell 防護善惡}, {@spell 冷凍射線}, and {@spell 石牆術}."
 								]
 							}
 						]
@@ -1637,47 +1637,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -1808,32 +1808,32 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell purify food and drink}",
-								"{@spell sanctuary}"
+								"{@spell 命令術}",
+								"{@spell 淨化飲食}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell augury}",
-								"{@spell gentle repose}",
-								"{@spell hold person}"
+								"{@spell 卜筮}",
+								"{@spell 遺體防腐}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell create food and water}"
+								"{@spell 活化死屍}",
+								"{@spell 創造飲食}"
 							]
 						}
 					},
@@ -2013,71 +2013,71 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bane}",
-								"{@spell command}",
-								"{@spell detect evil and good}",
-								"{@spell protection from evil and good}"
+								"{@spell 災禍術}",
+								"{@spell 命令術}",
+								"{@spell 偵測善惡}",
+								"{@spell 防護善惡}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell protection from poison}",
-								"{@spell spiritual weapon}"
+								"{@spell 次級復原術}",
+								"{@spell 防護毒素}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell create food and water}",
-								"{@spell speak with dead}",
-								"{@spell spirit guardians}"
+								"{@spell 創造飲食}",
+								"{@spell 死者交談術}",
+								"{@spell 靈體守衛}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell divination}",
-								"{@spell freedom of movement}",
-								"{@spell guardian of faith}"
+								"{@spell 預言術}",
+								"{@spell 行動自如術}",
+								"{@spell 虔誠守衛}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell greater restoration}",
-								"{@spell raise dead}"
+								"{@spell 高等復原術}",
+								"{@spell 喚醒死者}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell find the path}",
-								"{@spell harm}",
-								"{@spell true seeing}"
+								"{@spell 尋找捷徑}",
+								"{@spell 傷害術}",
+								"{@spell 真知術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
 								"{@spell 火焰風暴}",
-								"{@spell regenerate}"
+								"{@spell 再生術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell earthquake}"
+								"{@spell 地震術}"
 							]
 						}
 					},
@@ -2094,13 +2094,13 @@
 				{
 					"name": "Curse (Recharges after a Long Rest)",
 					"entries": [
-						"Madam Eva targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 17} Wisdom saving throw or be cursed. While cursed, the target is {@condition blinded} and {@condition deafened}. The curse lasts until ended with a greater restoration spell, a {@spell remove curse} spell, or similar magic. When the curse ends, Madam Eva takes {@dice 5d6} psychic damage."
+						"Madam Eva targets one creature that she can see within 30 feet of her. The target must succeed on a {@dc 17} Wisdom saving throw or be cursed. While cursed, the target is {@condition blinded} and {@condition deafened}. The curse lasts until ended with a greater restoration spell, a {@spell 移除詛咒} spell, or similar magic. When the curse ends, Madam Eva takes {@dice 5d6} psychic damage."
 					]
 				},
 				{
 					"name": "Evil Eye (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Madam Eva targets one creature that she can see within 10 feet of her and casts one of the following spells on the target (save {@dc 17}), requiring neither somatic nor material components to do so: {@spell animal friendship}, {@spell charm person}, or {@spell hold person}. If the target succeeds on the initial saving throw, Madam Eva is {@condition blinded} until the end of her next turn. Once a target succeeds on a saving throw against this effect, it is immune to the Evil Eye power of all Vistani for 24 hours."
+						"Madam Eva targets one creature that she can see within 10 feet of her and casts one of the following spells on the target (save {@dc 17}), requiring neither somatic nor material components to do so: {@spell 化獸為友}, {@spell 魅惑人類}, or {@spell 人類定身術}. If the target succeeds on the initial saving throw, Madam Eva is {@condition blinded} until the end of her next turn. Once a target succeeds on a saving throw against this effect, it is immune to the Evil Eye power of all Vistani for 24 hours."
 					]
 				}
 			],
@@ -2798,12 +2798,12 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell magic weapon}",
-							"{@spell nondetection}"
+							"{@spell 魔化武器}",
+							"{@spell 迴避偵測}"
 						],
 						"3": [
-							"{@spell misty step}",
-							"{@spell phantom steed}"
+							"{@spell 迷蹤步}",
+							"{@spell 魅影駒}"
 						]
 					},
 					"ability": "int"
@@ -2813,7 +2813,7 @@
 				{
 					"name": "Deathly Choir",
 					"entries": [
-						"Any creature within 10 feet of Rahadin that isn't protected by a {@spell mind blank} spell hears in its mind the screams of the thousands of people Rahadin has killed. As a bonus action, Rahadin can force all creatures that can hear the screams to make a {@dc 16} Wisdom saving throw. Each creature takes 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one."
+						"Any creature within 10 feet of Rahadin that isn't protected by a {@spell 心靈屏障} spell hears in its mind the screams of the thousands of people Rahadin has killed. As a bonus action, Rahadin can force all creatures that can hear the screams to make a {@dc 16} Wisdom saving throw. Each creature takes 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
@@ -2945,48 +2945,48 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell detect evil and good}",
-								"{@spell protection from evil and good}",
-								"{@spell sanctuary}"
+								"{@spell 治療傷勢}",
+								"{@spell 偵測善惡}",
+								"{@spell 防護善惡}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell augury}",
-								"{@spell lesser restoration}",
-								"{@spell protection from poison}"
+								"{@spell 卜筮}",
+								"{@spell 次級復原術}",
+								"{@spell 防護毒素}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell magic circle}",
-								"{@spell remove curse}",
-								"{@spell speak with dead}"
+								"{@spell 防護法陣}",
+								"{@spell 移除詛咒}",
+								"{@spell 死者交談術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell death ward}",
-								"{@spell freedom of movement}"
+								"{@spell 防死護咒}",
+								"{@spell 行動自如術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell dispel evil and good}"
+								"{@spell 反制善惡}"
 							]
 						}
 					},
@@ -2997,7 +2997,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}, and he carries a {@item spell scroll (5th level)||spell scroll} of {@spell raise dead}."
+						"In addition to his sword cane, Rictavio wears a {@item hat of disguise} and a {@item ring of mind shielding}, and he carries a {@item spell scroll (5th level)||spell scroll} of {@spell 喚醒死者}."
 					]
 				},
 				{
@@ -3173,33 +3173,33 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell detect magic}",
-								"{@spell divine favor}",
-								"{@spell thunderous smite}"
+								"{@spell 命令術}",
+								"{@spell 偵測魔法}",
+								"{@spell 神恩術}",
+								"{@spell 雷霆斬}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell aid}",
-								"{@spell branding smite}",
-								"{@spell magic weapon}"
+								"{@spell 援助術}",
+								"{@spell 烙印斬}",
+								"{@spell 魔化武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell blinding smite}",
-								"{@spell dispel magic}",
-								"{@spell remove curse}"
+								"{@spell 致盲斬}",
+								"{@spell 解除魔法}",
+								"{@spell 移除詛咒}"
 							]
 						},
 						"4": {
 							"slots": 2,
 							"spells": [
-								"{@spell aura of purity}",
-								"{@spell staggering smite}"
+								"{@spell 淨化靈光}",
+								"{@spell 驚震斬}"
 							]
 						}
 					},
@@ -3285,47 +3285,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell friends}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 交友術}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell mage armor}",
-								"{@spell shield}",
-								"{@spell sleep}"
+								"{@spell 魅惑人類}",
+								"{@spell 法師護甲}",
+								"{@spell 護盾術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell phantom steed}",
-								"{@spell vampiric touch}"
+								"{@spell 降咒}",
+								"{@spell 魅影駒}",
+								"{@spell 吸血鬼之觸}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell stoneskin}"
+								"{@spell 高等隱形術}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate person}"
+								"{@spell 支配人類}"
 							]
 						}
 					},
@@ -3438,24 +3438,24 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell fog cloud}",
-								"{@spell sleep}"
+								"{@spell 通曉語言}",
+								"{@spell 雲霧術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell gust of wind}",
+								"{@spell 偵測思想}",
+								"{@spell 造風術}",
 								"{@spell 鏡影術}"
 							]
 						},
@@ -3463,23 +3463,23 @@
 							"slots": 3,
 							"spells": [
 								"{@spell 活化死屍}",
-								"{@spell fireball}",
-								"{@spell nondetection}"
+								"{@spell 火球術}",
+								"{@spell 迴避偵測}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
 								"{@spell 枯萎術}",
-								"{@spell greater invisibility}",
+								"{@spell 高等隱形術}",
 								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell animate objects}",
-								"{@spell scrying}"
+								"{@spell 活化物體}",
+								"{@spell 探知}"
 							]
 						}
 					},
@@ -3931,87 +3931,87 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The mad mage is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He can cast {@spell disguise self} and {@spell invisibility} at will and has the following wizard spells prepared:"
+						"The mad mage is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He can cast {@spell 易容術} and {@spell 隱形術} at will and has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell mirror image}",
-								"{@spell misty step}",
-								"{@spell web}"
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell Mordenkainen's faithful hound}",
-								"{@spell polymorph}",
-								"{@spell stoneskin}"
+								"{@spell 魔鄧肯忠犬}",
+								"{@spell 變形術}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell cone of cold}",
-								"{@spell scrying}"
+								"{@spell 畢格比之掌}",
+								"{@spell 寒冰錐}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell true seeing}"
+								"{@spell 真知術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell Mordenkainen's magnificent mansion}"
+								"{@spell 魔鄧肯豪宅術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell mind blank}"
+								"{@spell 心靈屏障}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell time stop}"
+								"{@spell 時間停止}"
 							]
 						}
 					},
 					"will": [
-						"{@spell disguise self}",
-						"{@spell invisibility}"
+						"{@spell 易容術}",
+						"{@spell 隱形術}"
 					],
 					"hidden": [
 						"will"
@@ -4321,7 +4321,7 @@
 				{
 					"name": "Rejuvenation",
 					"entries": [
-						"When Vladimir's body is destroyed, his soul lingers. After 24 hours, the soul inhabits and animates another corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a {@spell wish} spell can be used to force the soul to go to the afterlife and not return."
+						"When Vladimir's body is destroyed, his soul lingers. After 24 hours, the soul inhabits and animates another corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a {@spell 祈願術} spell can be used to force the soul to go to the afterlife and not return."
 					]
 				},
 				{

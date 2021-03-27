@@ -386,13 +386,13 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell animate dead}",
-							"{@spell branding smite} (at 4th level)",
-							"{@spell revivify}"
+							"{@spell 活化死屍}",
+							"{@spell 烙印斬} (at 4th level)",
+							"{@spell 回生術}"
 						],
 						"1e": [
-							"{@spell geas}",
-							"{@spell raise dead}"
+							"{@spell 指使術}",
+							"{@spell 喚醒死者}"
 						]
 					},
 					"ability": "cha"
@@ -408,7 +408,7 @@
 				{
 					"name": "Hand of Vecna",
 					"entries": [
-						"The Hand of Vecna has 8 charges and regains {@dice 1d4 + 4} expended charges daily at dawn. Arkhan can cast the following spells from the hand by expending the specified number of charges (spell save {@dc 18}): {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), and {@spell teleport} (3 charges)."
+						"The Hand of Vecna has 8 charges and regains {@dice 1d4 + 4} expended charges daily at dawn. Arkhan can cast the following spells from the hand by expending the specified number of charges (spell save {@dc 18}): {@spell 死亡一指} (5 charges), {@spell 睡眠術} (1 charge), {@spell 緩速術} (2 charges), and {@spell 傳送術} (3 charges)."
 					]
 				},
 				{
@@ -554,22 +554,22 @@
 						"Bel's spellcasting ability is Charisma (spell save {@dc 23}). Bel can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fireball}"
+						"{@spell 偵測魔法}",
+						"{@spell 火球術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell dispel magic}",
-							"{@spell hold monster}",
-							"{@spell mirror image}",
-							"{@spell mislead}",
-							"{@spell raise dead}",
-							"{@spell teleport}",
-							"{@spell wall of fire}"
+							"{@spell 解除魔法}",
+							"{@spell 怪物定身術}",
+							"{@spell 鏡影術}",
+							"{@spell 假象術}",
+							"{@spell 喚醒死者}",
+							"{@spell 傳送術}",
+							"{@spell 火牆術}"
 						],
 						"1e": [
-							"{@spell imprisonment}",
-							"{@spell meteor swarm}"
+							"{@spell 禁錮術}",
+							"{@spell 流星爆}"
 						]
 					},
 					"ability": "cha"
@@ -762,33 +762,33 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bane}",
-								"{@spell bless}",
-								"{@spell cure wounds}",
-								"{@spell guiding bolt} (see \"Actions\" below)"
+								"{@spell 災禍術}",
+								"{@spell 祝福術}",
+								"{@spell 治療傷勢}",
+								"{@spell 光導箭} (see \"Actions\" below)"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell hold person}",
-								"{@spell silence}"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 人類定身術}",
+								"{@spell 沉默術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell sending}",
-								"{@spell spirit guardians}"
+								"{@spell 短訊術}",
+								"{@spell 靈體守衛}"
 							]
 						}
 					},
@@ -968,9 +968,9 @@
 										"type": "list",
 										"items": [
 											"Unless Burney decided otherwise, once any creature less powerful than a deity has taken three steps from her, they can no longer remember her or having interacted with her specifically.",
-											"Burney is under the effect of a permanent {@spell mind blank} spell, and cannot be detected by magical or mundane means unless she wishes it. In exchange for this blessing, Burney can take no direct action against the denizens of the Nine Hells, though she can certainly enlist the help of those who can.",
-											"Burney always knows the location of the Wandering Emporium and can transport herself there as though by a {@spell word of recall} spell. This explains why Burney simply seems to appear amid the fully deployed marketplace each morning it is active to provide service and tell stories.",
-											"Once each day, when Burney so desires, she can instantly transport herself to the court of Bahamut via a powerful blessing akin to the {@spell plane shift} spell."
+											"Burney is under the effect of a permanent {@spell 心靈屏障} spell, and cannot be detected by magical or mundane means unless she wishes it. In exchange for this blessing, Burney can take no direct action against the denizens of the Nine Hells, though she can certainly enlist the help of those who can.",
+											"Burney always knows the location of the Wandering Emporium and can transport herself there as though by a {@spell 回返真言} spell. This explains why Burney simply seems to appear amid the fully deployed marketplace each morning it is active to provide service and tell stories.",
+											"Once each day, when Burney so desires, she can instantly transport herself to the court of Bahamut via a powerful blessing akin to the {@spell 異界傳送} spell."
 										]
 									}
 								]
@@ -2098,20 +2098,20 @@
 						"The hollyphant's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell light}"
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"2e": [
-							"{@spell bless}",
-							"{@spell cure wounds}",
-							"{@spell protection from evil and good}"
+							"{@spell 祝福術}",
+							"{@spell 治療傷勢}",
+							"{@spell 防護善惡}"
 						],
 						"1e": [
-							"{@spell banishment}",
-							"{@spell heal}",
-							"{@spell raise dead}",
-							"{@spell shapechange} (into a golden-furred {@creature mammoth} with feathered wings and a flying speed of 120 ft.)",
-							"{@spell teleport} (with no chance of error)"
+							"{@spell 放逐術}",
+							"{@spell 治癒術}",
+							"{@spell 喚醒死者}",
+							"{@spell 形體變化} (into a golden-furred {@creature mammoth} with feathered wings and a flying speed of 120 ft.)",
+							"{@spell 傳送術} (with no chance of error)"
 						]
 					},
 					"ability": "wis"
@@ -2369,17 +2369,17 @@
 						"Kostchtchie's innate spellcasting ability is Charisma (spell save {@dc 20}). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell command}",
-						"{@spell darkness}"
+						"{@spell 命令術}",
+						"{@spell 黑暗術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell dispel evil and good}",
-							"{@spell gate}",
-							"{@spell harm}",
-							"{@spell telekinesis}",
-							"{@spell teleport}",
-							"{@spell wind walk}"
+							"{@spell 反制善惡}",
+							"{@spell 異界之門}",
+							"{@spell 傷害術}",
+							"{@spell 心靈遙控}",
+							"{@spell 傳送術}",
+							"{@spell 御風而行}"
 						]
 					},
 					"ability": "cha"
@@ -2533,75 +2533,75 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch}",
-								"{@spell mending}",
-								"{@spell resistance}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}",
-								"{@spell thaumaturgy}"
+								"{@spell 寒顫之觸}",
+								"{@spell 修復術}",
+								"{@spell 提升抗力}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell detect evil and good}",
-								"{@spell false life}",
-								"{@spell inflict wounds}",
-								"{@spell ray of sickness}"
+								"{@spell 治療傷勢}",
+								"{@spell 偵測善惡}",
+								"{@spell 摹造生命}",
+								"{@spell 造成傷勢}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell gentle repose}",
-								"{@spell hold person}",
-								"{@spell ray of enfeeblement}",
-								"{@spell spiritual weapon}"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 遺體防腐}",
+								"{@spell 人類定身術}",
+								"{@spell 衰弱射線}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell magic circle}",
-								"{@spell speak with dead}",
-								"{@spell spirit guardians}",
-								"{@spell vampiric touch}"
+								"{@spell 活化死屍}",
+								"{@spell 防護法陣}",
+								"{@spell 死者交談術}",
+								"{@spell 靈體守衛}",
+								"{@spell 吸血鬼之觸}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell blight}",
-								"{@spell death ward}",
-								"{@spell divination}",
-								"{@spell locate creature}"
+								"{@spell 放逐術}",
+								"{@spell 枯萎術}",
+								"{@spell 防死護咒}",
+								"{@spell 預言術}",
+								"{@spell 生物定位術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell antilife shell}",
-								"{@spell cloudkill}",
-								"{@spell contagion}",
-								"{@spell greater restoration}"
+								"{@spell 反活物護罩}",
+								"{@spell 死雲術}",
+								"{@spell 疫病術}",
+								"{@spell 高等復原術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell create undead}",
-								"{@spell true seeing}"
+								"{@spell 創造不死生物}",
+								"{@spell 真知術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell divine word}",
-								"{@spell regenerate}"
+								"{@spell 聖言術}",
+								"{@spell 再生術}"
 							]
 						}
 					},
@@ -2789,31 +2789,31 @@
 						"Mahadi's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 9} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell disguise self}",
-						"{@spell mage hand}",
-						"{@spell minor illusion}"
+						"{@spell 偵測思想}",
+						"{@spell 易容術}",
+						"{@spell 法師之手}",
+						"{@spell 次級幻象}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell charm person}",
-							"{@spell detect magic}",
-							"{@spell dispel magic}",
-							"{@spell hellish rebuke}",
-							"{@spell invisibility}",
-							"{@spell major image}",
-							"{@spell speak with dead}",
-							"{@spell suggestion}"
+							"{@spell 魅惑人類}",
+							"{@spell 偵測魔法}",
+							"{@spell 解除魔法}",
+							"{@spell 煉獄叱喝}",
+							"{@spell 隱形術}",
+							"{@spell 強效幻影}",
+							"{@spell 死者交談術}",
+							"{@spell 暗示術}"
 						],
 						"1e": [
-							"{@spell banishment}",
-							"{@spell demiplane}",
-							"{@spell dominate person}",
-							"{@spell fly}",
-							"{@spell forcecage}",
-							"{@spell geas}",
-							"{@spell plane shift}",
-							"{@spell true seeing}"
+							"{@spell 放逐術}",
+							"{@spell 創造半位面}",
+							"{@spell 支配人類}",
+							"{@spell 飛行術}",
+							"{@spell 力場監牢}",
+							"{@spell 指使術}",
+							"{@spell 異界傳送}",
+							"{@spell 真知術}"
 						]
 					},
 					"ability": "cha"
@@ -2934,34 +2934,34 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch} (see \"Actions\" below)",
-								"{@spell mage hand}",
-								"{@spell message}",
-								"{@spell prestidigitation}"
+								"{@spell 寒顫之觸} (see \"Actions\" below)",
+								"{@spell 法師之手}",
+								"{@spell 傳訊術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell detect magic}",
-								"{@spell ray of sickness} (see \"Actions\" below)",
-								"{@spell shield}"
+								"{@spell 燃燒之手}",
+								"{@spell 偵測魔法}",
+								"{@spell 致病射線} (see \"Actions\" below)",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell misty step}",
-								"{@spell scorching ray} (see \"Actions\" below)"
+								"{@spell 黑暗術}",
+								"{@spell 迷蹤步}",
+								"{@spell 灼熱射線} (see \"Actions\" below)"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell fireball}"
+								"{@spell 活化死屍}",
+								"{@spell 火球術}"
 							]
 						}
 					},
@@ -3539,9 +3539,9 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell charm person}",
-							"{@spell disguise self}",
-							"{@spell sanctuary}"
+							"{@spell 魅惑人類}",
+							"{@spell 易容術}",
+							"{@spell 聖域術}"
 						]
 					},
 					"ability": "cha"
@@ -3783,25 +3783,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell message}",
-								"{@spell prestidigitation}"
+								"{@spell 法師之手}",
+								"{@spell 傳訊術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell protection from evil and good}",
-								"{@spell ray of sickness} (see \"Actions\" below)",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 防護善惡}",
+								"{@spell 致病射線} (see \"Actions\" below)",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell misty step}"
+								"{@spell 黑暗術}",
+								"{@spell 迷蹤步}"
 							]
 						}
 					},
@@ -3925,18 +3925,18 @@
 						"Smiler's innate spellcasting ability is Charisma (spell save {@dc 15}). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell charm person}",
-						"{@spell Tasha's hideous laughter}"
+						"{@spell 魅惑人類}",
+						"{@spell 塔莎狂笑術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell confusion}",
-							"{@spell enthrall}",
-							"{@spell suggestion}"
+							"{@spell 困惑術}",
+							"{@spell 注目術}",
+							"{@spell 暗示術}"
 						],
 						"1e": [
-							"{@spell hallucinatory terrain}",
-							"{@spell Otto's irresistible dance}"
+							"{@spell 幻景}",
+							"{@spell 奧圖狂舞術}"
 						]
 					},
 					"ability": "cha"
@@ -4182,17 +4182,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell sacred flame} (see \"Actions\" below)",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 聖焰} (see \"Actions\" below)",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell command}",
-								"{@spell detect evil and good}",
-								"{@spell sanctuary}"
+								"{@spell 命令術}",
+								"{@spell 偵測善惡}",
+								"{@spell 聖域術}"
 							]
 						}
 					},
@@ -4371,8 +4371,8 @@
 						"spells": {
 							"7": [
 								{
-									"replace": "{@spell teleport}",
-									"with": "{@spell plane shift}"
+									"replace": "{@spell 傳送術}",
+									"with": "{@spell 異界傳送}"
 								}
 							]
 						}

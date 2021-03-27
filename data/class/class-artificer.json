@@ -1803,8 +1803,8 @@
 							"type": "inset",
 							"name": "The Magic of Artifice",
 							"entries": [
-								"As an artificer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast {@spell cure wounds} using {@item alchemist's supplies|PHB}, you could be quickly producing a salve. If you cast it using {@item tinker's tools|PHB}, you might have a miniature mechanical spider that binds wounds. When you cast {@spell poison spray}, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special.",
-								"The same principle applies when you prepare your spells. As an artificer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace {@spell cure wounds} with {@spell heat metal}, you might be altering the device you use to heal\u2014perhaps modifying a tool so that it channels heat instead of healing energy.",
+								"As an artificer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast {@spell 治療傷勢} using {@item alchemist's supplies|PHB}, you could be quickly producing a salve. If you cast it using {@item tinker's tools|PHB}, you might have a miniature mechanical spider that binds wounds. When you cast {@spell 毒氣噴灑}, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special.",
+								"The same principle applies when you prepare your spells. As an artificer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace {@spell 治療傷勢} with {@spell 灼熱金屬}, you might be altering the device you use to heal\u2014perhaps modifying a tool so that it channels heat instead of healing energy.",
 								"Such details don't limit you in any way or provide you with any benefit beyond the spell's effects. You don't have to justify how you're using tools to cast a spell. But describing your spellcasting creatively is a fun way to distinguish yourself from other spellcasters."
 							]
 						}
@@ -1824,7 +1824,7 @@
 					"entries": [
 						"The Artificer table shows how many spell slots you have to cast your artificer spells. To cast one of your artificer spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
 						"You prepare the list of artificer spells that are available for you to cast, choosing from the {@filter artificer spell list|spells|class=Artificer}. When you do so, choose a number of artificer spells equal to your Intelligence modifier + half your artificer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell 治療傷勢}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
 						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of artificer spells requires time spent tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell on your list."
 					]
 				},
@@ -2324,7 +2324,7 @@
 			"classSource": "UAArtificer",
 			"level": 1,
 			"entries": [
-				"Starting at 1st level, your understanding of magic items allows you to analyze and understand their secrets. You know the artificer spells {@spell detect magic} and {@spell identify}, and you can cast them as rituals. You don't need to provide a material component when casting {@spell identify} with this class feature."
+				"Starting at 1st level, your understanding of magic items allows you to analyze and understand their secrets. You know the artificer spells {@spell 偵測魔法} and {@spell 鑑定術}, and you can cast them as rituals. You don't need to provide a material component when casting {@spell 鑑定術} with this class feature."
 			]
 		},
 		{
@@ -2530,7 +2530,7 @@
 					]
 				},
 				"The servant obeys your orders to the best of its ability. In combat, it rolls its own initiative and acts on its own.",
-				"If the servant is killed, it can be returned to life via normal means, such as with the {@spell revivify} spell. In addition, over the course of a long rest, you can repair a slain servant if you have access to its body. It returns to life with 1 hit point at the end of the rest. If the servant is beyond recovery, you can build a new one with one week of work (eight hours each day) and 1,000 gp of raw materials."
+				"If the servant is killed, it can be returned to life via normal means, such as with the {@spell 回生術} spell. In addition, over the course of a long rest, you can repair a slain servant if you have access to its body. It returns to life with 1 hit point at the end of the rest. If the servant is beyond recovery, you can build a new one with one week of work (eight hours each day) and 1,000 gp of raw materials."
 			]
 		},
 		{
@@ -2763,7 +2763,7 @@
 					"entries": [
 						"The Artificer table shows how many spell slots you have to cast your artificer spells. To cast one of your artificer spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
 						"You prepare the list of artificer spells that are available for you to cast, choosing from the {@filter artificer spell list|spells|class=artificer (uaar)}. When you do so, choose a number of artificer spells equal to your Intelligence modifier + half your artificer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell 治療傷勢}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
 						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of artificer spells requires time spent in tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell on your list."
 					]
 				},
@@ -2799,8 +2799,8 @@
 					"type": "inset",
 					"name": "The Magic of Artifice",
 					"entries": [
-						"As an artificer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast {@spell cure wounds} using {@item alchemist's supplies|PHB}, you could be quickly producing a salve. If you cast it using {@item tinker's tools|phb}, you might have a miniature mechanical spider that binds wounds. When you cast {@spell poison spray}, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special.",
-						"The same principle applies when you prepare your spells. As an artificer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace {@spell cure wounds} with {@spell shocking grasp}, you might be breaking down the device you used to heal and creating an offensive item in its place\u2014perhaps a gauntlet that lets you channel a surge of energy.",
+						"As an artificer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast {@spell 治療傷勢} using {@item alchemist's supplies|PHB}, you could be quickly producing a salve. If you cast it using {@item tinker's tools|phb}, you might have a miniature mechanical spider that binds wounds. When you cast {@spell 毒氣噴灑}, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special.",
+						"The same principle applies when you prepare your spells. As an artificer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace {@spell 治療傷勢} with {@spell 電爪}, you might be breaking down the device you used to heal and creating an offensive item in its place\u2014perhaps a gauntlet that lets you channel a surge of energy.",
 						"Such details don't limit you in any way or provide you with any benefit. You don't have to justify how you're using tools to cast a spell. But describing your spellcasting creatively is a fun way to distinguish yourself from other spellcasters."
 					]
 				}
@@ -3136,23 +3136,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell healing word}, {@spell ray of sickness}"
+							"{@spell 治癒真言}, {@spell 致病射線}"
 						],
 						[
 							"5th",
-							"{@spell flaming sphere}, {@spell Melf's acid arrow}"
+							"{@spell 熾焰法球}, {@spell 馬友夫強酸箭}"
 						],
 						[
 							"9th",
-							"{@spell gaseous form}, {@spell mass healing word}"
+							"{@spell 氣化形體}, {@spell 群體治癒真言}"
 						],
 						[
 							"13th",
-							"{@spell blight}, {@spell death ward}"
+							"{@spell 枯萎術}, {@spell 防死護咒}"
 						],
 						[
 							"17th",
-							"{@spell cloudkill}, {@spell raise dead}"
+							"{@spell 死雲術}, {@spell 喚醒死者}"
 						]
 					]
 				}
@@ -3213,7 +3213,7 @@
 						],
 						[
 							"6",
-							"{@b Transformation}. The drinker's body is transformed as if by the {@spell alter self} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes."
+							"{@b Transformation}. The drinker's body is transformed as if by the {@spell 變造自身} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes."
 						]
 					]
 				}
@@ -3281,7 +3281,7 @@
 					"type": "list",
 					"items": [
 						"Whenever a creature drinks an {@i experimental elixir} you created, the creature gains temporary hit points equal to {@dice 2d6} + your Intelligence modifier (minimum of 1 temporary hit point).",
-						"You can cast {@spell lesser restoration} without expending a spell slot and without preparing the spell, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+						"You can cast {@spell 次級復原術} without expending a spell slot and without preparing the spell, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 					]
 				}
 			]
@@ -3308,7 +3308,7 @@
 					"type": "list",
 					"items": [
 						"You gain resistance to acid damage and poison damage, and you are immune to the {@condition poisoned} condition.",
-						"You can cast {@spell greater restoration} and {@spell heal} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest."
+						"You can cast {@spell 高等復原術} and {@spell 治癒術} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest."
 					]
 				}
 			]
@@ -3467,23 +3467,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell magic missile}, {@spell thunderwave}"
+							"{@spell 魔法飛彈}, {@spell 雷鳴波}"
 						],
 						[
 							"5th",
-							"{@spell mirror image}, {@spell shatter}"
+							"{@spell 鏡影術}, {@spell 粉碎音波}"
 						],
 						[
 							"9th",
-							"{@spell hypnotic pattern}, {@spell lightning bolt}"
+							"{@spell 催眠圖紋}, {@spell 閃電束}"
 						],
 						[
 							"13th",
-							"{@spell fire shield}, {@spell greater invisibility}"
+							"{@spell 火焰護盾}, {@spell 高等隱形術}"
 						],
 						[
 							"17th",
-							"{@spell passwall}, {@spell wall of force}"
+							"{@spell 穿牆術}, {@spell 力牆術}"
 						]
 					]
 				}
@@ -3628,23 +3628,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell shield}, {@spell thunderwave}"
+							"{@spell 護盾術}, {@spell 雷鳴波}"
 						],
 						[
 							"5th",
-							"{@spell scorching ray}, {@spell shatter}"
+							"{@spell 灼熱射線}, {@spell 粉碎音波}"
 						],
 						[
 							"9th",
-							"{@spell fireball}, {@spell wind wall}"
+							"{@spell 火球術}, {@spell 風牆術}"
 						],
 						[
 							"13th",
-							"{@spell ice storm}, {@spell wall of fire}"
+							"{@spell 冰風暴}, {@spell 火牆術}"
 						],
 						[
 							"17th",
-							"{@spell cone of cold}, {@spell wall of force}"
+							"{@spell 寒冰錐}, {@spell 力牆術}"
 						]
 					]
 				}
@@ -3669,7 +3669,7 @@
 			"entries": [
 				"At 3rd level, you learn how to create a magical cannon. Using {@item woodcarver's tools|PHB} or {@item smith's tools|PHB}, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.",
 				"Once you create a cannon, you can't do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can't create one while your cannon is present.",
-				"The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the {@spell mending} spell is cast on it, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.",
+				"The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the {@spell 修復術} spell is cast on it, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.",
 				"When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.",
 				{
 					"type": "table",
@@ -3889,23 +3889,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell heroism}, {@spell shield}"
+							"{@spell 英雄氣概}, {@spell 護盾術}"
 						],
 						[
 							"5th",
-							"{@spell branding smite}, {@spell warding bond}"
+							"{@spell 烙印斬}, {@spell 守護聯結}"
 						],
 						[
 							"9th",
-							"{@spell aura of vitality}, {@spell conjure barrage}"
+							"{@spell 活力靈光}, {@spell 召喚箭幕}"
 						],
 						[
 							"13th",
-							"{@spell aura of purity}, {@spell fire shield}"
+							"{@spell 淨化靈光}, {@spell 火焰護盾}"
 						],
 						[
 							"17th",
-							"{@spell banishing smite}, {@spell mass cure wounds}"
+							"{@spell 放逐斬}, {@spell 群體治療傷勢}"
 						]
 					]
 				}
@@ -3930,7 +3930,7 @@
 			"entries": [
 				"By 3rd level, your tinkering has borne you a faithful companion, a {@creature steel defender|tce}. It is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the steel defender stat block, which uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics.",
 				"In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the defender can take any action of its choice, not just {@action Dodge}.",
-				"If the {@spell mending} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item smith's tools|PHB} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.",
+				"If the {@spell 修復術} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item smith's tools|PHB} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.",
 				"At the end of a long rest, you can create a new steel defender if you have your {@item smith's tools|PHB} with you. If you already have a steel defender from this feature, the first one immediately perishes. The defender also perishes if you die."
 			]
 		},
@@ -4154,23 +4154,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell magic missile}, {@spell shield}"
+							"{@spell 魔法飛彈}, {@spell 護盾術}"
 						],
 						[
 							"5th",
-							"{@spell mirror image}, {@spell shatter}"
+							"{@spell 鏡影術}, {@spell 粉碎音波}"
 						],
 						[
 							"9th",
-							"{@spell hypnotic pattern}, {@spell lightning bolt}"
+							"{@spell 催眠圖紋}, {@spell 閃電束}"
 						],
 						[
 							"13th",
-							"{@spell fire shield}, {@spell greater invisibility}"
+							"{@spell 火焰護盾}, {@spell 高等隱形術}"
 						],
 						[
 							"17th",
-							"{@spell passwall}, {@spell wall of force}"
+							"{@spell 穿牆術}, {@spell 力牆術}"
 						]
 					]
 				}
@@ -4587,7 +4587,7 @@
 				"Whenever you finish a long rest and your {@item alchemist's supplies|PHB} are with you, you can form this homunculus in an unoccupied space within 5 feet of you. If you already have a homunculus from this feature, the first one immediately dies.",
 				"The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the {@creature Alchemical Homunculus|uaartificerrevisited} stat block. You determine the homunculus's appearance, which includes wings and bits of alchemical equipment. Some alchemists prefer mechanical-looking birds, whereas others like winged vials or miniature cauldrons.",
 				"In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or to take the {@action Dash}, {@action Disengage}, or {@action Help} action.",
-				"If the {@spell mending} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item alchemist's supplies|PHB} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The homunculus returns to life with all its hit points restored."
+				"If the {@spell 修復術} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item alchemist's supplies|PHB} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The homunculus returns to life with all its hit points restored."
 			]
 		},
 		{
@@ -4616,23 +4616,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell purify food and drink}, {@spell ray of sickness}"
+							"{@spell 淨化飲食}, {@spell 致病射線}"
 						],
 						[
 							"5th",
-							"{@spell Melf's acid arrow}, {@spell web}"
+							"{@spell 馬友夫強酸箭}, {@spell 蛛網術}"
 						],
 						[
 							"9th",
-							"{@spell create food and water}, {@spell stinking cloud}"
+							"{@spell 創造飲食}, {@spell 臭雲術}"
 						],
 						[
 							"13th",
-							"{@spell blight}, {@spell death ward}"
+							"{@spell 枯萎術}, {@spell 防死護咒}"
 						],
 						[
 							"17th",
-							"{@spell cloudkill}, {@spell raise dead}"
+							"{@spell 死雲術}, {@spell 喚醒死者}"
 						]
 					]
 				}
@@ -4678,7 +4678,7 @@
 			"header": 2,
 			"entries": [
 				"At 6th level, your command of magical chemicals has become masterful, enhancing the healing and damage you create through them. When you cast a spell using your {@item alchemist's supplies|phb} as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).",
-				"In addition, you can cast {@spell lesser restoration} without expending a spell slot, provided you use {@item alchemist's supplies|phb} as the spellcasting focus. You can do so a number of times per day equal to your Intelligence modifier (minimum of once)."
+				"In addition, you can cast {@spell 次級復原術} without expending a spell slot, provided you use {@item alchemist's supplies|phb} as the spellcasting focus. You can do so a number of times per day equal to your Intelligence modifier (minimum of once)."
 			]
 		},
 		{
@@ -4693,7 +4693,7 @@
 			"header": 2,
 			"entries": [
 				"By 14th level, you have been exposed to so many chemicals and unlocked their secrets that they pose little risk to you, and you can use them to quickly end certain ailments. You gain resistance to acid damage and poison damage, and you are now immune to the {@condition poisoned} condition.",
-				"In addition, you can cast {@spell greater restoration} once without expending a spell slot and without providing the material component, provided you use {@item alchemist's supplies|phb} as the spellcasting focus. You regain the ability to do so when you finish a long rest."
+				"In addition, you can cast {@spell 高等復原術} once without expending a spell slot and without providing the material component, provided you use {@item alchemist's supplies|phb} as the spellcasting focus. You regain the ability to do so when you finish a long rest."
 			]
 		},
 		{
@@ -4751,23 +4751,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell comprehend languages}, {@spell dissonant whispers}"
+							"{@spell 通曉語言}, {@spell 噪音暗語}"
 						],
 						[
 							"5th",
-							"{@spell detect thoughts}, {@spell locate object}"
+							"{@spell 偵測思想}, {@spell 物品定位術}"
 						],
 						[
 							"9th",
-							"{@spell hypnotic pattern}, {@spell tongues}"
+							"{@spell 催眠圖紋}, {@spell 巧舌術}"
 						],
 						[
 							"13th",
-							"{@spell locate creature}, {@spell phantasmal killer}"
+							"{@spell 生物定位術}, {@spell 魅影殺手}"
 						],
 						[
 							"17th",
-							"{@spell legend lore}, {@spell modify memory}"
+							"{@spell 通曉傳奇}, {@spell 修改記憶}"
 						]
 					]
 				}
@@ -4981,7 +4981,7 @@
 			"header": 1,
 			"entries": [
 				"At 3rd level, you learn how to create a magical turret. With your {@item smith's tools|phb} in hand, you can take an action to magically summon a Medium turret in an unoccupied space on a horizontal surface within 5 feet of you.",
-				"The turret is a magical object that occupies its space and that has crablike legs. It has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage, psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the {@spell mending} spell is cast on it, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 10 minutes. You can dismiss it early as an action.",
+				"The turret is a magical object that occupies its space and that has crablike legs. It has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage, psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the {@spell 修復術} spell is cast on it, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 10 minutes. You can dismiss it early as an action.",
 				"When you summon the turret, you decide which type it is, choosing from the options on the Arcane Turrets table. On each of your turns, you can take a bonus action to cause the turret to activate if you are within 60 feet of it. As part of the same action, you can direct the turret to walk or climb up to 15 feet to an unoccupied space.",
 				"You can summon a turret once for free and must finish a long rest before doing so again. You can also summon the turret by expending a spell slot of 1st level or higher. If you summon a second turret, the first turret disappears.",
 				"As an action, you can command your turret to detonate if you are within 60 feet of it. Doing so destroys the turret and forces each creature within 10 feet of it to make a Dexterity saving throw against your spell save DC, taking {@damage 3d6} force damage on a failed save or half as much damage on a successful one.",
@@ -5039,23 +5039,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell shield}, {@spell thunderwave}"
+							"{@spell 護盾術}, {@spell 雷鳴波}"
 						],
 						[
 							"5th",
-							"{@spell scorching ray}, {@spell shatter}"
+							"{@spell 灼熱射線}, {@spell 粉碎音波}"
 						],
 						[
 							"9th",
-							"{@spell fireball}, {@spell wind wall}"
+							"{@spell 火球術}, {@spell 風牆術}"
 						],
 						[
 							"13th",
-							"{@spell ice storm}, {@spell wall of fire}"
+							"{@spell 冰風暴}, {@spell 火牆術}"
 						],
 						[
 							"17th",
-							"{@spell cone of cold}, {@spell wall of force}"
+							"{@spell 寒冰錐}, {@spell 力牆術}"
 						]
 					]
 				}
@@ -5198,23 +5198,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell heroism}, {@spell searing smite}"
+							"{@spell 英雄氣概}, {@spell 熾炎斬}"
 						],
 						[
 							"5th",
-							"{@spell branding smite}, {@spell warding bond}"
+							"{@spell 烙印斬}, {@spell 守護聯結}"
 						],
 						[
 							"9th",
-							"{@spell aura of vitality}, {@spell blinding smite}"
+							"{@spell 活力靈光}, {@spell 致盲斬}"
 						],
 						[
 							"13th",
-							"{@spell aura of purity}, {@spell staggering smite}"
+							"{@spell 淨化靈光}, {@spell 驚震斬}"
 						],
 						[
 							"17th",
-							"{@spell banishing smite}, {@spell mass cure wounds}"
+							"{@spell 放逐斬}, {@spell 群體治療傷勢}"
 						]
 					]
 				}
@@ -5233,7 +5233,7 @@
 			"entries": [
 				"By 3rd level, the tinkering in your free time has borne you a faithful companion, an iron defender. This metallic creature resembles a hound, a cougar, a bear, or another four-legged creature of your choice. It is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the {@creature iron defender|uaartificerrevisited} stat block.",
 				"In combat, the iron defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the {@action Dash}, {@action Disengage}, or {@action Help} action.",
-				"If the {@spell mending} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item smith's tools|phb} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The iron defender returns to life after 1 minute with all its hit points restored.",
+				"If the {@spell 修復術} spell is cast on it, it regains {@dice 2d6} hit points. If it has died within the last hour, you can use your {@item smith's tools|phb} as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The iron defender returns to life after 1 minute with all its hit points restored.",
 				"At the end of a long rest, you can create a new iron defender if you have your {@item smith's tools|phb} with you. If you already have an iron defender from this feature, the first one immediately perishes."
 			]
 		},

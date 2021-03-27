@@ -1409,7 +1409,7 @@
 					],
 					"daily": {
 						"3": [
-							"{@spell divine word}"
+							"{@spell 聖言術}"
 						]
 					},
 					"ability": "cha"

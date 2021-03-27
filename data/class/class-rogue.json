@@ -2592,7 +2592,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 9th-level Revived feature}",
-				"You can create a link with a spirit through their corpse. When you do so, you cast the {@spell speak with dead} spell, without using a spell slot or material components. Intelligence is your spellcasting ability for this spell.",
+				"You can create a link with a spirit through their corpse. When you do so, you cast the {@spell 死者交談術} spell, without using a spell slot or material components. Intelligence is your spellcasting ability for this spell.",
 				"Speaking with the dead in this way temporarily gives you a capability from a past life\u2014you're unsure whether it's from your past or the spirit's. When the spell ends, you gain one random benefit from the Revived Capabilities table. The benefit lasts until you finish a short or long rest.",
 				{
 					"type": "table",

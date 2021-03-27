@@ -61,7 +61,7 @@
 				"entry": "Any NPC or monster that has suffered a fall from grace"
 			},
 			"signaturespells": {
-				"entry": "{@spell Minor illusion} (cantrip), {@spell disguise self} (1st level), {@spell phantasmal force} (2nd level), {@spell major image} (3rd level)"
+				"entry": "{@spell 次級幻象} (cantrip), {@spell 易容術} (1st level), {@spell 魅影之力} (2nd level), {@spell 強效幻影} (3rd level)"
 			},
 			"entries": [
 				"Baalzebul typically recruits individuals rather than cults. He offers hope to those whose failures drive them to seek redemption.",
@@ -87,7 +87,7 @@
 				"entry": "Any NPC or monster who has suffered a fall from grace"
 			},
 			"signaturespells": {
-				"entry": "{@spell Minor illusion} (cantrip), {@spell disguise self} (1st level), {@spell phantasmal force} (2nd level), {@spell major image} (3rd level)"
+				"entry": "{@spell 次級幻象} (cantrip), {@spell 易容術} (1st level), {@spell 魅影之力} (2nd level), {@spell 強效幻影} (3rd level)"
 			},
 			"entries": [
 				"Baalzebul typically recruits individuals rather than cults. He offers hope to those whose failures drive them to seek redemption.",
@@ -110,7 +110,7 @@
 				"entry": "{@creature acolyte||acolytes}, {@creature cultist||cultists}, {@creature cult fanatic||cult fanatics}, {@creature mage||mages}, or {@creature priest||priests} for Cultists, Initiates, and Priests; {@creature gladiator||gladiators}, {@creature guard||guards}, {@creature knight||knights}, {@creature veteran||veterans}, or infrequently {@creature wight||wights} riding undead horses with the statistics of Large-sized {@creature zombie||zombies} for Grimnants; and {@creature assassin||assassins}, {@creature bandit||bandits}, {@creature bandit captain||bandit captains}, {@creature spy||spies}, or {@creature thug||thugs} for Infiltrators and Assassins."
 			},
 			"signaturespells": {
-				"entry": "{@spell Chill touch} (cantrip), {@spell hex} (1st level), {@spell phantasmal force} (2nd level), {@spell fear} (3rd level)"
+				"entry": "{@spell 寒顫之觸} (cantrip), {@spell 脆弱詛咒} (1st level), {@spell 魅影之力} (2nd level), {@spell 恐懼術} (3rd level)"
 			},
 			"entries": [
 				{
@@ -186,7 +186,7 @@
 				"entry": "{@creature Acolyte}, {@creature bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature noble}, {@creature spy}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Guidance} (cantrip), {@spell identify} (1st level), {@spell see invisibility} (2nd level), {@spell clairvoyance} (3rd level)"
+				"entry": "{@spell 指導術} (cantrip), {@spell 鑑定術} (1st level), {@spell 識破隱形} (2nd level), {@spell 銳眼術} (3rd level)"
 			},
 			"entries": [
 				"Dispater trades in secrets, offering them in return for a creature's soul. His cults typically trade secrets to devils in return for other information. They often hatch conspiracies aimed at toppling and replacing governments or religious orders.",
@@ -220,7 +220,7 @@
 				"entry": "{@creature Acolyte}, {@creature bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature noble}, {@creature spy}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Guidance} (cantrip), {@spell identify} (1st level), {@spell see invisibility} (2nd level), {@spell clairvoyance} (3rd level)"
+				"entry": "{@spell 指導術} (cantrip), {@spell 鑑定術} (1st level), {@spell 識破隱形} (2nd level), {@spell 銳眼術} (3rd level)"
 			},
 			"entries": [
 				"Dispater trades in secrets, offering them in return for a creature's soul. His cults typically trade secrets to devils in return for other information. They often hatch conspiracies aimed at toppling and replacing governments or religious orders.",
@@ -254,7 +254,7 @@
 				"entry": "{@creature Acolyte}, {@creature archmage}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature knight}, {@creature noble}, {@creature priest}, {@creature spy}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Friends} (cantrip), {@spell charm person} (1st level), {@spell suggestion} (2nd level), {@spell hypnotic pattern} (3rd level)"
+				"entry": "{@spell 交友術} (cantrip), {@spell 魅惑人類} (1st level), {@spell 暗示術} (2nd level), {@spell 催眠圖紋} (3rd level)"
 			},
 			"entries": [
 				"Fierna is a master manipulator. Mortals who desire success in love or who seek to become beloved leaders at the head of a band of fanatics are drawn to striking bargains with her.",
@@ -287,7 +287,7 @@
 				"entry": "{@creature Acolyte}, {@creature archmage}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature knight}, {@creature noble}, {@creature priest}, {@creature spy}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Friends} (cantrip), {@spell charm person} (1st level), {@spell suggestion} (2nd level), {@spell hypnotic pattern} (3rd level)"
+				"entry": "{@spell 交友術} (cantrip), {@spell 魅惑人類} (1st level), {@spell 暗示術} (2nd level), {@spell 催眠圖紋} (3rd level)"
 			},
 			"entries": [
 				"Fierna is a master manipulator. Mortals who desire success in love or who seek to become beloved leaders at the head of a band of fanatics are drawn to striking bargains with her.",
@@ -320,7 +320,7 @@
 				"entry": "{@creature Bandit}, {@creature bandit captain}, {@creature berserker}, {@creature cult fanatic}, {@creature cultist}, {@creature gladiator}, {@creature thug}, {@creature tribal warrior}, {@creature veteran||veterans}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Shillelagh} (cantrip), {@spell wrathful smite} (1st level), {@spell enhance ability} (2nd level), {@spell aura of vitality} (3rd level)"
+				"entry": "{@spell 橡棍術} (cantrip), {@spell 激憤斬} (1st level), {@spell 強化屬性} (2nd level), {@spell 活力靈光} (3rd level)"
 			},
 			"entries": [
 				"Despite being deposed, Geryon still has the ability to strike bargains. He deals especially with those who seek brute strength. Any warlike monster-such as {@creature orc||orcs}, {@creature ogre||ogres}, and {@creature troll||trolls}-can be lured into Geryon's cult.",
@@ -354,7 +354,7 @@
 				"entry": "{@creature Bandit}, {@creature bandit captain}, {@creature berserker}, {@creature cult fanatic}, {@creature cultist}, {@creature gladiator}, {@creature thug}, {@creature tribal warrior}, {@creature veteran||veterans}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Shillelagh} (cantrip), {@spell wrathful smite} (1st level), {@spell enhance ability} (2nd level), {@spell aura of vitality} (3rd level)"
+				"entry": "{@spell 橡棍術} (cantrip), {@spell 激憤斬} (1st level), {@spell 強化屬性} (2nd level), {@spell 活力靈光} (3rd level)"
 			},
 			"entries": [
 				"Despite being deposed, Geryon still has the ability to strike bargains. He deals especially with those who seek brute strength. Any warlike monster-such as {@creature orc||orcs}, {@creature ogre||ogres}, and {@creature troll||trolls}-can be lured into Geryon's cult.",
@@ -388,7 +388,7 @@
 				"entry": "{@creature Bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature knight}, {@creature noble}, {@creature spy}, {@creature thug}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Friends} (cantrip), {@spell charm person} (1st level), {@spell invisibility} (2nd level), {@spell haste} (3rd level)"
+				"entry": "{@spell 交友術} (cantrip), {@spell 魅惑人類} (1st level), {@spell 隱形術} (2nd level), {@spell 加速術} (3rd level)"
 			},
 			"entries": [
 				"As an expert in finding loopholes and exploiting the law for her own good, Glasya is a patron of thieves and other criminals, especially corrupt nobles. Her influence is supposed to strengthen family bonds, but she has taken a liberal interpretation of that and offers gifts that can be turned against family members.",
@@ -422,7 +422,7 @@
 				"entry": "{@creature Bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature knight}, {@creature noble}, {@creature spy}, {@creature thug}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Friends} (cantrip), {@spell charm person} (1st level), {@spell invisibility} (2nd level), {@spell haste} (3rd level)"
+				"entry": "{@spell 交友術} (cantrip), {@spell 魅惑人類} (1st level), {@spell 隱形術} (2nd level), {@spell 加速術} (3rd level)"
 			},
 			"entries": [
 				"As an expert in finding loopholes and exploiting the law for her own good, Glasya is a patron of thieves and other criminals, especially corrupt nobles. Her influence is supposed to strengthen family bonds, but she has taken a liberal interpretation of that and offers gifts that can be turned against family members.",
@@ -471,7 +471,7 @@
 				"entry": "{@creature Assassin}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature noble}, {@creature spy}, {@creature thug}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Blade ward} (cantrip), {@spell expeditious retreat} (1st level), {@spell spider climb} (2nd level), {@spell gaseous form} (3rd level)"
+				"entry": "{@spell 劍刃防護} (cantrip), {@spell 腳底抹油} (1st level), {@spell 蛛行術} (2nd level), {@spell 氣化形體} (3rd level)"
 			},
 			"entries": [
 				"Levistus has no cult in the traditional sense. Instead, he offers favors to those who are desperate to escape a seemingly inevitable fate.",
@@ -498,7 +498,7 @@
 				"entry": "{@creature Assassin}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature noble}, {@creature spy}, {@creature thug}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Blade ward} (cantrip), {@spell expeditious retreat} (1st level), {@spell spider climb} (2nd level), {@spell gaseous form} (3rd level)"
+				"entry": "{@spell 劍刃防護} (cantrip), {@spell 腳底抹油} (1st level), {@spell 蛛行術} (2nd level), {@spell 氣化形體} (3rd level)"
 			},
 			"entries": [
 				"Levistus has no cult in the traditional sense.",
@@ -526,7 +526,7 @@
 				"entry": "{@creature Bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature noble}, {@creature spy}, {@creature thug}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Mending} (cantrip), {@spell Tenser's floating disk} (1st level), {@spell arcane lock} (2nd level), {@spell glyph of warding} (3rd level)"
+				"entry": "{@spell 修復術} (cantrip), {@spell 譚森浮碟術} (1st level), {@spell 祕法鎖} (2nd level), {@spell 守衛銘文} (3rd level)"
 			},
 			"entries": [
 				"Mammon's greed overwhelms everything else. He deals with mortals who desire material wealth and provides them with the ability to spread that greed like an infection.",
@@ -560,7 +560,7 @@
 				"entry": "{@creature Bandit}, {@creature bandit captain}, {@creature cult fanatic}, {@creature cultist}, {@creature noble}, {@creature spy}, {@creature thug}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Mending} (cantrip), {@spell Tenser's floating disk} (1st level), {@spell arcane lock} (2nd level), {@spell glyph of warding} (3rd level)"
+				"entry": "{@spell 修復術} (cantrip), {@spell 譚森浮碟術} (1st level), {@spell 祕法鎖} (2nd level), {@spell 守衛銘文} (3rd level)"
 			},
 			"entries": [
 				"Mammon's greed overwhelms everything else.",
@@ -595,7 +595,7 @@
 				"entry": "{@creature Archmage}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature priest}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Fire bolt} (cantrip), {@spell burning hands} (1st level), {@spell flaming sphere} (2nd level), {@spell fireball} (3rd level)"
+				"entry": "{@spell 火焰箭} (cantrip), {@spell 燃燒之手} (1st level), {@spell 熾焰法球} (2nd level), {@spell 火球術} (3rd level)"
 			},
 			"entries": [
 				"As a master of the arcane arts, Mephistopheles finds eager recruits among those who study magic. Any monsters that use spells, such as {@creature storm giant||storm giants} and {@creature oni}, might follow him, and wizards' guilds and conclaves of sages are the most likely to come under his influence.",
@@ -628,7 +628,7 @@
 				"entry": "{@creature Archmage}, {@creature cult fanatic}, {@creature cultist}, {@creature mage}, {@creature priest}"
 			},
 			"signaturespells": {
-				"entry": "{@spell Fire bolt} (cantrip), {@spell burning hands} (1st level), {@spell flaming sphere} (2nd level), {@spell fireball} (3rd level)"
+				"entry": "{@spell 火焰箭} (cantrip), {@spell 燃燒之手} (1st level), {@spell 熾焰法球} (2nd level), {@spell 火球術} (3rd level)"
 			},
 			"entries": [
 				"As a master of the arcane arts, Mephistopheles finds eager recruits among those who study magic. Any monster that uses spells, such as {@creature storm giant||storm giants} and {@creature oni}, might follow him, and wizards' guilds and conclaves of sages are the most likely to come under his influence.",
@@ -950,7 +950,7 @@
 				"entry": "{@creature Berserker}, {@creature cult fanatic}, {@creature cultist}, {@creature gladiator}, {@creature guard}, {@creature knight}, {@creature veteran}"
 			},
 			"signaturespells": {
-				"entry": "{@spell True strike} (cantrip), {@spell heroism} (1st level), {@spell spiritual weapon} (2nd level), {@spell crusader's mantle} (3rd level)"
+				"entry": "{@spell 克敵機先} (cantrip), {@spell 英雄氣概} (1st level), {@spell 靈體武器} (2nd level), {@spell 十字軍斗篷} (3rd level)"
 			},
 			"entries": [
 				"Zariel's cult offers martial training and talent. It flourishes in areas wracked by war. Refugees with the will to fight but lacking experience are drawn to Zariel, as she can provide them with the skills needed to survive. Established warriors looking for an edge are otherwise her most common recruits.",
@@ -984,7 +984,7 @@
 				"entry": "{@creature Berserker}, {@creature cult fanatic}, {@creature cultist}, {@creature gladiator}, {@creature guard}, {@creature knight}, {@creature veteran}"
 			},
 			"signaturespells": {
-				"entry": "{@spell True strike} (cantrip), {@spell heroism} (1st level), {@spell spiritual weapon} (2nd level), {@spell crusader's mantle} (3rd level)"
+				"entry": "{@spell 克敵機先} (cantrip), {@spell 英雄氣概} (1st level), {@spell 靈體武器} (2nd level), {@spell 十字軍斗篷} (3rd level)"
 			},
 			"entries": [
 				"Zariel's cult offers martial training and talent. It flourishes in areas wracked by war. Refugees with the will to fight but lacking experience are drawn to Zariel, as she can provide them with the skills needed to survive. Established warriors looking for an edge are otherwise her most common recruits.",
@@ -1033,7 +1033,7 @@
 				"entry": "Up to a +4 bonus to Strength, Wisdom, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell Hunter's mark} (1st level), {@spell beast sense} (2nd level), {@spell slow} (3rd level)"
+				"entry": "{@spell 獵人印記} (1st level), {@spell 野獸知覺} (2nd level), {@spell 緩速術} (3rd level)"
 			},
 			"entries": [
 				"Baphomet grants the gifts of cunning and physical power. He grants his rank-and-file followers the Unerring Tracker trait, and cult leaders gain the Incite the Hunters trait. All of his devotees also gain the Labyrinthine Recall trait.",
@@ -1069,7 +1069,7 @@
 				"entry": "Up to a +4 bonus to Strength, Wisdom, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell Hunter's mark} (1st level), {@spell beast sense} (2nd level), {@spell slow} (3rd level)"
+				"entry": "{@spell 獵人印記} (1st level), {@spell 野獸知覺} (2nd level), {@spell 緩速術} (3rd level)"
 			},
 			"entries": [
 				"Baphomet grants the gifts of cunning and physical power. He grants his rank and file followers the Unerring Tracker trait, and cult leaders gain the Incite the Hunters trait. All of his devotees also gain the Labyrinthine Recall trait.",
@@ -1105,7 +1105,7 @@
 				"entry": "Up to a +4 bonus to Strength, Charisma, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell Charm person} (1st level), {@spell enlarge/reduce} (2nd level), {@spell vampiric touch} (3rd level)"
+				"entry": "{@spell 魅惑人類} (1st level), {@spell 變巨/縮小術} (2nd level), {@spell 吸血鬼之觸} (3rd level)"
 			},
 			"entries": [
 				"Demogorgon's followers are typically lone killers driven by the whispering voice of their master. His most blessed followers gain the Two Minds of Madness trait.",
@@ -1127,7 +1127,7 @@
 				"entry": "Up to a +4 bonus to Strength, Charisma, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell Charm person} (1st level), {@spell enlarge/reduce} (2nd level), {@spell vampiric touch} (3rd level)"
+				"entry": "{@spell 魅惑人類} (1st level), {@spell 變巨/縮小術} (2nd level), {@spell 吸血鬼之觸} (3rd level)"
 			},
 			"entries": [
 				"Demogorgon's followers are typically lone killers driven by the whispering voice of their master. His most blessed followers gain the Two Minds of Madness trait.",
@@ -1149,7 +1149,7 @@
 				"entry": "Up to a +4 bonus to Wisdom, Charisma, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell Minor illusion} (cantrip), {@spell disguise self} (1st level), {@spell invisibility} (2nd level), {@spell hypnotic pattern} (3rd level)"
+				"entry": "{@spell 次級幻象} (cantrip), {@spell 易容術} (1st level), {@spell 隱形術} (2nd level), {@spell 催眠圖紋} (3rd level)"
 			},
 			"entries": [
 				"As a master of deceit, Fraz-Urb'luu teaches his initiates the secrets of lies and illusions. They can also gain the Liar's Eye trait.",
@@ -1172,7 +1172,7 @@
 				"entry": "Up to a +4 bonus to Wisdom, Charisma, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell Minor illusion} (cantrip), {@spell disguise self} (1st level), {@spell invisibility} (2nd level), {@spell hypnotic pattern} (3rd level)"
+				"entry": "{@spell 次級幻象} (cantrip), {@spell 易容術} (1st level), {@spell 隱形術} (2nd level), {@spell 催眠圖紋} (3rd level)"
 			},
 			"entries": [
 				"As a master of deceit, Fraz-Urb'luu teaches his initiates the secrets of lies and illusions. They can also gain the Liar's Eye trait.",
@@ -1211,7 +1211,7 @@
 				"entry": "Up to a +4 bonus to Constitution, Charisma, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell False life} (1st level), {@spell hold person} (2nd level), {@spell fear} (3rd level)"
+				"entry": "{@spell 摹造生命} (1st level), {@spell 人類定身術} (2nd level), {@spell 恐懼術} (3rd level)"
 			},
 			"entries": [
 				"The Lord of Forbidden Pleasures grants his cultists the ability to transform even the most hideous pain into pleasure. His cultists gain the Joy from Pain trait, while his cult leaders gain the Master of Pleasures trait.",
@@ -1240,7 +1240,7 @@
 				"entry": "Up to a +4 bonus to Constitution, Charisma, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell False life} (1st level), {@spell hold person} (2nd level), {@spell fear} (3rd level)"
+				"entry": "{@spell 摹造生命} (1st level), {@spell 人類定身術} (2nd level), {@spell 恐懼術} (3rd level)"
 			},
 			"entries": [
 				"The Lord of Forbidden Pleasures grants his cultists the ability to transform even the most hideous pain into pleasure. His cultists gain the Joy from Pain trait, while his cult leaders gain the Master of Pleasures trait.",
@@ -1269,7 +1269,7 @@
 				"entry": "Up to a +8 bonus to Constitution, with an equal penalty to Intelligence, Wisdom, and Charisma"
 			},
 			"signaturespells": {
-				"entry": "{@spell Grease} (1st level), {@spell web} (2nd level), {@spell gaseous form} (3rd level)"
+				"entry": "{@spell 油膩術} (1st level), {@spell 蛛網術} (2nd level), {@spell 氣化形體} (3rd level)"
 			},
 			"entries": [
 				"The Faceless Lord's followers are bizarre loners who prefer the company of slimes and oozes to other creatures. They gain the hardiness of a slime at the cost of their minds. Lesser followers gain the Liquid Movement trait. The most dedicated devotees of ooze also gain the Slimy Organs trait.",
@@ -1358,7 +1358,7 @@
 				"entry": "Up to a +4 bonus to Intelligence, Wisdom, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell False life} (1st level), {@spell ray of enfeeblement} (2nd level), {@spell animate dead} (3rd level)"
+				"entry": "{@spell 摹造生命} (1st level), {@spell 衰弱射線} (2nd level), {@spell 活化死屍} (3rd level)"
 			},
 			"entries": [
 				"In most cases, Orcus transforms his followers into undead creatures such as ghouls and wights. Sometimes he needs his followers to retain their mortal forms, to more easily infiltrate a kingdom or city. He grants rank-and-file cultists the Undying Soul trait, and his cult leaders gain the Aura of Death trait.",
@@ -1387,7 +1387,7 @@
 				"entry": "Up to a +4 bonus to Intelligence, Wisdom, or both"
 			},
 			"signaturespells": {
-				"entry": "{@spell False life} (1st level), {@spell ray of enfeeblement} (2nd level), {@spell animate dead} (3rd level)"
+				"entry": "{@spell 摹造生命} (1st level), {@spell 衰弱射線} (2nd level), {@spell 活化死屍} (3rd level)"
 			},
 			"entries": [
 				"In most cases, Orcus transforms his followers into undead creatures such as ghouls and wights. Sometimes he needs his followers to retain their mortal forms, to more easily infiltrate a kingdom or city. He grants rank and file cultists the Undying Soul trait, and his cult leaders gain the Aura of Death trait.",
@@ -1416,7 +1416,7 @@
 				"entry": "Up to a +4 bonus to Strength and Dexterity, with an equal penalty to Intelligence and Charisma"
 			},
 			"signaturespells": {
-				"entry": "{@spell Tasha's hideous laughter} (1st level), {@spell crown of madness} (2nd level), {@spell fear} (3rd level)"
+				"entry": "{@spell 塔莎狂笑術} (1st level), {@spell 瘋狂冠冕} (2nd level), {@spell 恐懼術} (3rd level)"
 			},
 			"entries": [
 				"Yeenoghu's followers form packs of cannibalistic marauders. They grow more like {@creature gnoll||gnolls} in temperament with each passing day. His most devoted followers gain the Gnashing Jaws action option and the Rampage trait, while cult leaders gain the Aura of Bloodthirst trait.",
@@ -1452,7 +1452,7 @@
 				"entry": "Up to a +4 bonus to Strength and Dexterity, with an equal penalty to Intelligence and Charisma"
 			},
 			"signaturespells": {
-				"entry": "{@spell Tasha's hideous laughter} (1st level), {@spell crown of madness} (2nd level), {@spell fear} (3rd level)"
+				"entry": "{@spell 塔莎狂笑術} (1st level), {@spell 瘋狂冠冕} (2nd level), {@spell 恐懼術} (3rd level)"
 			},
 			"entries": [
 				"Yeenoghu's followers form roving packs of cannibalistic marauders. They grow more like {@creature gnoll||gnolls} in temperament and action with each passing day. His most devoted followers gain the Gnashing Jaws action option and the Rampage trait, while cult leaders gain the Aura of Bloodthirst trait.",
@@ -1488,7 +1488,7 @@
 				"entry": "Up to a +4 bonus to Constitution, with an equal penalty to Intelligence, Wisdom, and Charisma"
 			},
 			"signaturespells": {
-				"entry": "{@spell Ray of sickness} (1st level), {@spell suggestion} (2nd level), {@spell plant growth} (3rd level)"
+				"entry": "{@spell 致病射線} (1st level), {@spell 暗示術} (2nd level), {@spell 植物滋長} (3rd level)"
 			},
 			"entries": [
 				"Zuggtmoy's followers are primarily mindless victims of her children's strange spores. The spores burrow into a victim's brain, turning it into a fanatic servitor. Each victim gains the Spore Kissed trait.",

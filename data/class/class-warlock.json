@@ -1302,7 +1302,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a warlock quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the {@background charlatan} background. Third, choose the {@spell eldritch blast} and {@spell chill touch} cantrips, along with the 1st-level spells {@spell charm person} and {@spell witch bolt}."
+										"You can make a warlock quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the {@background charlatan} background. Third, choose the {@spell 魔能爆} and {@spell 寒顫之觸} cantrips, along with the 1st-level spells {@spell 魅惑人類} and {@spell 巫術箭}."
 									]
 								}
 							]
@@ -2485,23 +2485,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell create or destroy water}, {@spell thunderwave}"
+									"{@spell 造水/枯水術}, {@spell 雷鳴波}"
 								],
 								[
 									"2nd",
-									"{@spell gust of wind}, {@spell silence}"
+									"{@spell 造風術}, {@spell 沉默術}"
 								],
 								[
 									"3rd",
-									"{@spell lightning bolt}, {@spell sleet storm}"
+									"{@spell 閃電束}, {@spell 雪雨暴}"
 								],
 								[
 									"4th",
-									"{@spell control water}, {@spell summon elemental|tce} (water only)"
+									"{@spell 操控水體}, {@spell summon elemental|tce} (water only)"
 								],
 								[
 									"5th",
-									"{@spell Bigby's hand} (appears as a tentacle), {@spell cone of cold}"
+									"{@spell 畢格比之掌} (appears as a tentacle), {@spell 寒冰錐}"
 								]
 							]
 						}
@@ -2592,7 +2592,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Fathomless feature}",
-				"You learn the spell {@spell Evard's black tentacles}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
+				"You learn the spell {@spell 艾伐黑觸手}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
 				"Whenever you cast this spell, your patron's magic bolsters you, granting you a number of temporary hit points equal to your warlock level. Moreover, damage can't break your concentration on this spell."
 			]
 		},
@@ -2688,47 +2688,47 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell detect evil and good}",
-									"{@spell sanctuary}",
-									"{@spell thunderwave}",
-									"{@spell burning hands}",
-									"{@spell fog cloud}"
+									"{@spell 偵測善惡}",
+									"{@spell 聖域術}",
+									"{@spell 雷鳴波}",
+									"{@spell 燃燒之手}",
+									"{@spell 雲霧術}"
 								],
 								[
 									"2nd",
-									"{@spell phantasmal force}",
-									"{@spell spike growth}",
-									"{@spell gust of wind}",
-									"{@spell scorching ray}",
-									"{@spell blur}"
+									"{@spell 魅影之力}",
+									"{@spell 荊棘叢生}",
+									"{@spell 造風術}",
+									"{@spell 灼熱射線}",
+									"{@spell 朦朧術}"
 								],
 								[
 									"3rd",
-									"{@spell create food and water}",
-									"{@spell meld into stone}",
-									"{@spell wind wall}",
-									"{@spell fireball}",
-									"{@spell sleet storm}"
+									"{@spell 創造飲食}",
+									"{@spell 融身入石}",
+									"{@spell 風牆術}",
+									"{@spell 火球術}",
+									"{@spell 雪雨暴}"
 								],
 								[
 									"4th",
-									"{@spell phantasmal killer}",
-									"{@spell stone shape}",
-									"{@spell greater invisibility}",
-									"{@spell fire shield}",
-									"{@spell control water}"
+									"{@spell 魅影殺手}",
+									"{@spell 塑石術}",
+									"{@spell 高等隱形術}",
+									"{@spell 火焰護盾}",
+									"{@spell 操控水體}"
 								],
 								[
 									"5th",
-									"{@spell creation}",
-									"{@spell wall of stone}",
-									"{@spell seeming}",
-									"{@spell flame strike}",
-									"{@spell cone of cold}"
+									"{@spell 造物術}",
+									"{@spell 石牆術}",
+									"{@spell 偽裝術}",
+									"{@spell 焰擊術}",
+									"{@spell 寒冰錐}"
 								],
 								[
 									"9th",
-									"{@spell wish}",
+									"{@spell 祈願術}",
 									"\u2014",
 									"\u2014",
 									"\u2014",
@@ -2894,23 +2894,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell fog cloud}, {@spell sleep}"
+									"{@spell 雲霧術}, {@spell 睡眠術}"
 								],
 								[
 									"2nd",
-									"{@spell enlarge/reduce}, {@spell phantasmal force}"
+									"{@spell 變巨/縮小術}, {@spell 魅影之力}"
 								],
 								[
 									"3rd",
-									"{@spell create food and water}, {@spell protection from energy}"
+									"{@spell 創造飲食}, {@spell 防護能量}"
 								],
 								[
 									"4th",
-									"{@spell polymorph}, {@spell phantasmal killer}"
+									"{@spell 變形術}, {@spell 魅影殺手}"
 								],
 								[
 									"5th",
-									"{@spell Bigby's hand}, {@spell creation}"
+									"{@spell 畢格比之掌}, {@spell 造物術}"
 								]
 							]
 						}
@@ -3059,7 +3059,7 @@
 					"items": [
 						"A creature you can see within 60 feet of you regains {@dice 8d6} hit points and ends one disease or condition afflicting it: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, or {@condition poisoned}.",
 						"A creature you can see within 60 feet of you has disadvantage on attack rolls and saving throws until the start of your next turn.",
-						"You cast the {@spell legend lore} spell without material components."
+						"You cast the {@spell 通曉傳奇} spell without material components."
 					]
 				},
 				"Whether the check succeeds or fails, you can't use this feature again until you finish a long rest. Alternatively, you can regain the use of this feature by sacrificing nonmagical treasure worth at least 500 gp to your patron. This sacrifice requires the treasure to be within 10 feet of you for at least 1 minute, at the end of which you use an action to teleport the treasure to your patron's realm, provided you have the vessel of your Collector's Vessel in hand."
@@ -3096,23 +3096,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell bane}, {@spell false life}"
+									"{@spell 災禍術}, {@spell 摹造生命}"
 								],
 								[
 									"2nd",
-									"{@spell blindness/deafness}, {@spell phantasmal force}"
+									"{@spell 目盲/耳聾術}, {@spell 魅影之力}"
 								],
 								[
 									"3rd",
-									"{@spell speak with dead}, {@spell phantom steed}"
+									"{@spell 死者交談術}, {@spell 魅影駒}"
 								],
 								[
 									"4th",
-									"{@spell death ward}, {@spell greater invisibility}"
+									"{@spell 防死護咒}, {@spell 高等隱形術}"
 								],
 								[
 									"5th",
-									"{@spell antilife shell}, {@spell cloudkill}"
+									"{@spell 反活物護罩}, {@spell 死雲術}"
 								]
 							]
 						}
@@ -3284,47 +3284,47 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell detect evil and good}",
-									"{@spell sanctuary}",
-									"{@spell thunderwave}",
-									"{@spell burning hands}",
-									"{@spell fog cloud}"
+									"{@spell 偵測善惡}",
+									"{@spell 聖域術}",
+									"{@spell 雷鳴波}",
+									"{@spell 燃燒之手}",
+									"{@spell 雲霧術}"
 								],
 								[
 									"2nd",
-									"{@spell phantasmal force}",
-									"{@spell spike growth}",
-									"{@spell gust of wind}",
-									"{@spell scorching ray}",
-									"{@spell blur}"
+									"{@spell 魅影之力}",
+									"{@spell 荊棘叢生}",
+									"{@spell 造風術}",
+									"{@spell 灼熱射線}",
+									"{@spell 朦朧術}"
 								],
 								[
 									"3rd",
-									"{@spell create food and water}",
-									"{@spell meld into stone}",
-									"{@spell wind wall}",
-									"{@spell fireball}",
-									"{@spell sleet storm}"
+									"{@spell 創造飲食}",
+									"{@spell 融身入石}",
+									"{@spell 風牆術}",
+									"{@spell 火球術}",
+									"{@spell 雪雨暴}"
 								],
 								[
 									"4th",
-									"{@spell phantasmal killer}",
-									"{@spell stone shape}",
-									"{@spell greater invisibility}",
-									"{@spell fire shield}",
-									"{@spell control water}"
+									"{@spell 魅影殺手}",
+									"{@spell 塑石術}",
+									"{@spell 高等隱形術}",
+									"{@spell 火焰護盾}",
+									"{@spell 操控水體}"
 								],
 								[
 									"5th",
-									"{@spell creation}",
-									"{@spell wall of stone}",
-									"{@spell seeming}",
-									"{@spell flame strike}",
-									"{@spell cone of cold}"
+									"{@spell 造物術}",
+									"{@spell 石牆術}",
+									"{@spell 偽裝術}",
+									"{@spell 焰擊術}",
+									"{@spell 寒冰錐}"
 								],
 								[
 									"9th",
-									"{@spell wish}",
+									"{@spell 祈願術}",
 									"\u2014",
 									"\u2014",
 									"\u2014",
@@ -3531,23 +3531,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell burning hands}"
+									"{@spell 燃燒之手}"
 								],
 								[
 									"2nd",
-									"{@spell flaming sphere}"
+									"{@spell 熾焰法球}"
 								],
 								[
 									"3rd",
-									"{@spell daylight}"
+									"{@spell 晝明術}"
 								],
 								[
 									"4th",
-									"{@spell fire shield}"
+									"{@spell 火焰護盾}"
 								],
 								[
 									"5th",
-									"{@spell flame strike}"
+									"{@spell 焰擊術}"
 								]
 							]
 						}
@@ -3570,7 +3570,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, your link to the Positive Plane allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant damage or fire damage, you add your Charisma modifier to that damage. Additionally, you know the {@spell sacred flame} and {@spell light} cantrips and can cast them at will. They don't count against your number of cantrips known."
+				"Starting at 1st level, your link to the Positive Plane allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant damage or fire damage, you add your Charisma modifier to that damage. Additionally, you know the {@spell 聖焰} and {@spell 光亮術} cantrips and can cast them at will. They don't count against your number of cantrips known."
 			]
 		},
 		{
@@ -3734,7 +3734,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, you have learned to apply your innate knowledge of encryption to your thoughts, memories, and presence. You have advantage on saving throws against {@spell scrying}, thought detection, or any other method of magically learning your whereabouts or reading your thoughts. For any such effect that does not grant you a saving throw but which requires the creature targeting you to make an ability check, the check is made with disadvantage."
+				"Beginning at 10th level, you have learned to apply your innate knowledge of encryption to your thoughts, memories, and presence. You have advantage on saving throws against {@spell 探知}, thought detection, or any other method of magically learning your whereabouts or reading your thoughts. For any such effect that does not grant you a saving throw but which requires the creature targeting you to make an ability check, the check is made with disadvantage."
 			]
 		},
 		{
@@ -3749,8 +3749,8 @@
 			"header": 2,
 			"entries": [
 				"At 14th level, you gain the ability to infect a humanoid's body with living circuitry. You can use an action to make a melee attack against a humanoid creature using your spell attack modifier. The target must make a Constitution saving throw against your spell save DC as a techno-organic virus quickly spreads through its body. On a failed save, the target takes {@damage 8d10} psychic damage, or half as much damage on a successful one.",
-				"Additionally, if the target fails the saving throw, you can use an action to issue it a single command, as if you were casting the {@spell command} spell. The target makes its saving throw against your {@spell command} with disadvantage. You can issue this {@spell command} at any time while the target remains infected.",
-				"Once you use this feature, you can't use it again until you finish a long rest, at which point the target is cured of the technovirus. The infection can also be removed with a {@spell lesser restoration} spell."
+				"Additionally, if the target fails the saving throw, you can use an action to issue it a single command, as if you were casting the {@spell 命令術} spell. The target makes its saving throw against your {@spell 命令術} with disadvantage. You can issue this {@spell 命令術} at any time while the target remains infected.",
+				"Once you use this feature, you can't use it again until you finish a long rest, at which point the target is cured of the technovirus. The infection can also be removed with a {@spell 次級復原術} spell."
 			]
 		},
 		{
@@ -3784,23 +3784,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell burning hands}, {@spell cure wounds}"
+									"{@spell 燃燒之手}, {@spell 治療傷勢}"
 								],
 								[
 									"2nd",
-									"{@spell flaming sphere}, {@spell lesser restoration}"
+									"{@spell 熾焰法球}, {@spell 次級復原術}"
 								],
 								[
 									"3rd",
-									"{@spell daylight}, {@spell revivify}"
+									"{@spell 晝明術}, {@spell 回生術}"
 								],
 								[
 									"4th",
-									"{@spell guardian of faith}, {@spell wall of fire}"
+									"{@spell 虔誠守衛}, {@spell 火牆術}"
 								],
 								[
 									"5th",
-									"{@spell flame strike}, {@spell greater restoration}"
+									"{@spell 焰擊術}, {@spell 高等復原術}"
 								]
 							]
 						}
@@ -3827,7 +3827,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you learn the {@spell sacred flame} and {@spell light} cantrips. They count as warlock cantrips for you, but they don't count against your number of cantrips known."
+				"At 1st level, you learn the {@spell 聖焰} and {@spell 光亮術} cantrips. They count as warlock cantrips for you, but they don't count against your number of cantrips known."
 			]
 		},
 		{
@@ -3924,23 +3924,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell create or destroy water}, {@spell thunderwave}"
+									"{@spell 造水/枯水術}, {@spell 雷鳴波}"
 								],
 								[
 									"2nd",
-									"{@spell gust of wind}, {@spell silence}"
+									"{@spell 造風術}, {@spell 沉默術}"
 								],
 								[
 									"3rd",
-									"{@spell lightning bolt}, {@spell sleet storm}"
+									"{@spell 閃電束}, {@spell 雪雨暴}"
 								],
 								[
 									"4th",
-									"{@spell control water}, {@spell Evard's black tentacles}"
+									"{@spell 操控水體}, {@spell 艾伐黑觸手}"
 								],
 								[
 									"5th",
-									"{@spell commune with nature}, {@spell cone of cold}"
+									"{@spell 問道自然}, {@spell 寒冰錐}"
 								]
 							]
 						}
@@ -4235,23 +4235,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell shield}, {@spell wrathful smite}"
+									"{@spell 護盾術}, {@spell 激憤斬}"
 								],
 								[
 									"2nd",
-									"{@spell branding smite}, {@spell magic weapon}"
+									"{@spell 烙印斬}, {@spell 魔化武器}"
 								],
 								[
 									"3rd",
-									"{@spell blink}, {@spell elemental weapon}"
+									"{@spell 閃現術}, {@spell 元素武器}"
 								],
 								[
 									"4th",
-									"{@spell phantasmal killer}, {@spell staggering smite}"
+									"{@spell 魅影殺手}, {@spell 驚震斬}"
 								],
 								[
 									"5th",
-									"{@spell cone of cold}, {@spell destructive wave}"
+									"{@spell 寒冰錐}, {@spell 湮滅波}"
 								]
 							]
 						}
@@ -4316,7 +4316,7 @@
 			"header": 2,
 			"entries": [
 				"Starting at 6th level, your shadow can split from you and transform into a hound of pure darkness. Most of the time, your shadow hound masquerades as your normal shadow. As a bonus action, you can command it to magically slip into the shadow of a creature you can see within 60 feet of you. While the shadow hound is merged in this manner, the target can't gain the benefits of half cover or three-quarters cover against your attack rolls, and you know the distance and direction to the target even if it is hidden. The hound can't be seen by anyone but you and those with {@sense truesight}, and it is unaffected by light. The target has a vague feeling of dread while the hound is present.",
-				"As a bonus action, you can command your shadow hound to return to you. It also automatically returns to you if you and the target are on different planes of existence, if you're {@condition incapacitated}, or if dispel magic, {@spell remove curse}, or similar magic is used on the target."
+				"As a bonus action, you can command your shadow hound to return to you. It also automatically returns to you if you and the target are on different planes of existence, if you're {@condition incapacitated}, or if dispel magic, {@spell 移除詛咒}, or similar magic is used on the target."
 			]
 		},
 		{
@@ -4378,23 +4378,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell false life}, {@spell sanctuary}"
+									"{@spell 摹造生命}, {@spell 聖域術}"
 								],
 								[
 									"2nd",
-									"{@spell silence}, {@spell spiritual weapon}"
+									"{@spell 沉默術}, {@spell 靈體武器}"
 								],
 								[
 									"3rd",
-									"{@spell feign death}, {@spell speak with dead}"
+									"{@spell 假死術}, {@spell 死者交談術}"
 								],
 								[
 									"4th",
-									"{@spell ice storm}, {@spell locate creature}"
+									"{@spell 冰風暴}, {@spell 生物定位術}"
 								],
 								[
 									"5th",
-									"{@spell commune}, {@spell cone of cold}"
+									"{@spell 通神術}, {@spell 寒冰錐}"
 								]
 							]
 						}
@@ -4463,7 +4463,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, you can channel the Raven Queen's power to slay a creature. You can cast {@spell finger of death}. After you cast the spell with this feature, you can't do so again until you finish a long rest."
+				"Starting at 14th level, you can channel the Raven Queen's power to slay a creature. You can cast {@spell 死亡一指}. After you cast the spell with this feature, you can't do so again until you finish a long rest."
 			]
 		},
 		{

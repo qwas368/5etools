@@ -3021,23 +3021,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell guiding bolt}, {@spell heroism}"
+							"{@spell 光導箭}, {@spell 英雄氣概}"
 						],
 						[
 							"5th",
-							"{@spell enhance ability}, {@spell magic weapon}"
+							"{@spell 強化屬性}, {@spell 魔化武器}"
 						],
 						[
 							"9th",
-							"{@spell haste}, {@spell protection from energy}"
+							"{@spell 加速術}, {@spell 防護能量}"
 						],
 						[
 							"13th",
-							"{@spell compulsion}, {@spell freedom of movement}"
+							"{@spell 強迫術}, {@spell 行動自如術}"
 						],
 						[
 							"17th",
-							"{@spell commune}, {@spell flame strike}"
+							"{@spell 通神術}, {@spell 焰擊術}"
 						]
 					]
 				}
@@ -3288,23 +3288,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell alarm}, {@spell detect magic}"
+							"{@spell 警報術}, {@spell 偵測魔法}"
 						],
 						[
 							"5th",
-							"{@spell moonbeam}, {@spell see invisibility}"
+							"{@spell 月華之光}, {@spell 識破隱形}"
 						],
 						[
 							"9th",
-							"{@spell counterspell}, {@spell nondetection}"
+							"{@spell 反制法術}, {@spell 迴避偵測}"
 						],
 						[
 							"13th",
-							"{@spell aura of purity}, {@spell banishment}"
+							"{@spell 淨化靈光}, {@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell hold monster}, {@spell scrying}"
+							"{@spell 怪物定身術}, {@spell 探知}"
 						]
 					]
 				}
@@ -3483,23 +3483,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell alarm}, {@spell chromatic orb}"
+							"{@spell 警報術}, {@spell 幻色法球}"
 						],
 						[
 							"5th",
-							"{@spell augury}, {@spell moonbeam}"
+							"{@spell 卜筮}, {@spell 月華之光}"
 						],
 						[
 							"9th",
-							"{@spell counterspell}, {@spell nondetection}"
+							"{@spell 反制法術}, {@spell 迴避偵測}"
 						],
 						[
 							"13th",
-							"{@spell aura of purity}, {@spell banishment}"
+							"{@spell 淨化靈光}, {@spell 放逐術}"
 						],
 						[
 							"17th",
-							"{@spell hold monster}, {@spell hallow}"
+							"{@spell 怪物定身術}, {@spell 聖居}"
 						]
 					]
 				}
@@ -3700,23 +3700,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell shield}, {@spell sleep}"
+							"{@spell 護盾術}, {@spell 睡眠術}"
 						],
 						[
 							"5th",
-							"{@spell hold person}, {@spell ray of enfeeblement}"
+							"{@spell 人類定身術}, {@spell 衰弱射線}"
 						],
 						[
 							"9th",
-							"{@spell counterspell}, {@spell hypnotic pattern}"
+							"{@spell 反制法術}, {@spell 催眠圖紋}"
 						],
 						[
 							"13th",
-							"{@spell Otiluke's resilient sphere}, {@spell stoneskin}"
+							"{@spell 歐提路克魔封法球}, {@spell 石膚術}"
 						],
 						[
 							"17th",
-							"{@spell hold monster}, {@spell wall of force}"
+							"{@spell 怪物定身術}, {@spell 力牆術}"
 						]
 					]
 				}
@@ -3929,23 +3929,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell expeditious retreat}, {@spell guiding bolt}"
+							"{@spell 腳底抹油}, {@spell 光導箭}"
 						],
 						[
 							"5th",
-							"{@spell enhance ability}, {@spell enthrall}"
+							"{@spell 強化屬性}, {@spell 注目術}"
 						],
 						[
 							"9th",
-							"{@spell haste}, {@spell protection from energy}"
+							"{@spell 加速術}, {@spell 防護能量}"
 						],
 						[
 							"13th",
-							"{@spell compulsion}, {@spell freedom of movement}"
+							"{@spell 強迫術}, {@spell 行動自如術}"
 						],
 						[
 							"17th",
-							"{@spell commune}, {@spell conjure volley}"
+							"{@spell 通神術}, {@spell 召喚箭雨}"
 						]
 					]
 				}
@@ -4542,23 +4542,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell armor of Agathys}, {@spell command}"
+							"{@spell 艾嘉西斯之鎧}, {@spell 命令術}"
 						],
 						[
 							"5th",
-							"{@spell hold person}, {@spell spiritual weapon}"
+							"{@spell 人類定身術}, {@spell 靈體武器}"
 						],
 						[
 							"9th",
-							"{@spell bestow curse}, {@spell fear}"
+							"{@spell 降咒}, {@spell 恐懼術}"
 						],
 						[
 							"13th",
-							"{@spell dominate beast}, {@spell stoneskin}"
+							"{@spell 支配野獸}, {@spell 石膚術}"
 						],
 						[
 							"17th",
-							"{@spell cloudkill}, {@spell dominate person}"
+							"{@spell 死雲術}, {@spell 支配人類}"
 						]
 					]
 				}

@@ -413,7 +413,7 @@
 									"id": "031",
 									"entries": [
 										"During the second or third session of the Council of Waterdeep, rumors spread of an aide from Neverwinter who killed an aide from Mithral Hall and then hanged himself. In truth, the Cult of the Dragon sent a {@creature succubus} spy to Waterdeep. She {@condition charmed} the Neverwinter aide into collecting information for her, but the other aide discovered their meetings. The succubus forced her victim to slay the other aide to cover her tracks, then to kill himself.",
-										"If the characters investigate, they can obtain the body to question it using {@spell speak with dead}, or they might use {@spell commune} to discover the spy. The succubus has gained another victim by that point\u2014a knight of the Order of the Gauntlet who regularly goes to meet her at her slum dwelling in the Field Ward of Waterdeep. This pattern of murder and suicide continues unless the spy's true identity is discovered."
+										"If the characters investigate, they can obtain the body to question it using {@spell 死者交談術}, or they might use {@spell 通神術} to discover the spy. The succubus has gained another victim by that point\u2014a knight of the Order of the Gauntlet who regularly goes to meet her at her slum dwelling in the Field Ward of Waterdeep. This pattern of murder and suicide continues unless the spy's true identity is discovered."
 									]
 								}
 							]
@@ -1164,7 +1164,7 @@
 												]
 											]
 										},
-										"* Acolytes have {@spell command} prepared instead of {@spell sanctuary}.",
+										"* Acolytes have {@spell 命令術} prepared instead of {@spell 聖域術}.",
 										"Most of the cultists, guards, and acolytes are human. You can include a few dwarves, half-elves, half-orcs, or halflings without altering any game statistics.",
 										{
 											"type": "inset",
@@ -1259,7 +1259,7 @@
 							"entries": [
 								"The keep has a sally port along the west wall for counterattacking foes who bring a battering ram against the gates. During the night while characters are in the keep, raiders approach the old gate, force it open, and rush through. Escobert discovers them and races into the courtyard to sound the alarm ahead of the infiltrators.",
 								"Enough defenders are available to deal with the immediate threat from raiders loose in the keep, since it's more a probe that got out of hand rather than a full-scale assault. Escobert is most concerned about resealing the sally port, and he seeks out the characters for that job.",
-								"To secure the sally port, characters must battle through two groups of foes. The first fight occurs against three {@creature Acolyte||acolytes}, three {@creature Kobold||kobolds}, and one {@creature ambush drake|HotDQ} (see {@adventure appendix D|HotDQ|12}), which are guarding the sally port's 10-foot-by-20-foot ready room against exactly this type of counterattack. After characters seize the room, they discover that the door is heavily damaged. The fastest repair is with five castings of {@spell mending} (taking five minutes). If none of the characters can do this, an NPC in the keep knows the cantrip. Someone must find and fetch her to the ready room.",
+								"To secure the sally port, characters must battle through two groups of foes. The first fight occurs against three {@creature Acolyte||acolytes}, three {@creature Kobold||kobolds}, and one {@creature ambush drake|HotDQ} (see {@adventure appendix D|HotDQ|12}), which are guarding the sally port's 10-foot-by-20-foot ready room against exactly this type of counterattack. After characters seize the room, they discover that the door is heavily damaged. The fastest repair is with five castings of {@spell 修復術} (taking five minutes). If none of the characters can do this, an NPC in the keep knows the cantrip. Someone must find and fetch her to the ready room.",
 								"Before the door can be repaired, a second group of raiders consisting of two {@creature Guard||guards}, three {@creature Cultist||cultists}, and three {@creature Kobold||kobolds} attacks. These foes can come from outside the keep, or they might be a group of infiltrators trying to fight its way back outside. If characters barricade the door with barrels or other heavy objects while awaiting repairs, they might hold off attackers until the repairs are finished and avoid this fight entirely.",
 								{
 									"type": "entries",
@@ -2056,7 +2056,7 @@
 									"name": "Spike Trap",
 									"id": "0bc",
 									"entries": [
-										"A portion of the floor between areas 4 and 7 has been replaced with a sheet of parchment cleverly painted to resemble the surrounding stone. It can be spotted with a successful DC 15 Wisdom ({@skill Perception}) check, or automatically by someone who is systematically tapping the floor ahead with a pole or other tool. Beneath the parchment sheet is a shallow pit (about 2 feet deep) lined with poisoned spikes. Each time a character moves between areas 4 and 7, roll a {@dice d10}. On a roll of 1 or 2, that character's foot has gone through the trap. The character takes {@dice 1d4} piercing damage from the spikes and must make a DC 10 Constitution saving throw against poison. On a failed save, the character is affected as by a {@spell confusion} spell for one minute (10 rounds). On a successful save, the character is affected as by a {@spell confusion} spell for 1 round. The effect is not magical."
+										"A portion of the floor between areas 4 and 7 has been replaced with a sheet of parchment cleverly painted to resemble the surrounding stone. It can be spotted with a successful DC 15 Wisdom ({@skill Perception}) check, or automatically by someone who is systematically tapping the floor ahead with a pole or other tool. Beneath the parchment sheet is a shallow pit (about 2 feet deep) lined with poisoned spikes. Each time a character moves between areas 4 and 7, roll a {@dice d10}. On a roll of 1 or 2, that character's foot has gone through the trap. The character takes {@dice 1d4} piercing damage from the spikes and must make a DC 10 Constitution saving throw against poison. On a failed save, the character is affected as by a {@spell 困惑術} spell for one minute (10 rounds). On a successful save, the character is affected as by a {@spell 困惑術} spell for 1 round. The effect is not magical."
 									]
 								}
 							]
@@ -3891,7 +3891,7 @@
 							"name": "1V. West Guest Rooms",
 							"id": "15e",
 							"entries": [
-								"Normally, these rooms aren't used, but Azbara Jos occupies them currently. They are reasonably warm and comfortable. Jos will be here when he isn't consulting with Rezmir in area 1U, {@area 2N|16a|x}, or {@area 3L|176|x}. Jos keeps all of his real valuables with him. The only things he leaves in these chambers are his clothes and his traveling spellbook\u2014which contains all the spells he has prepared (see {@adventure appendix D|HotDQ|12}). The spellbook is locked inside a box of silver-inlaid redwood. The lock can be opened with a successful DC 15 Dexterity check, but if the roll is less than 20, the tampering sets off a magical ward with the same effect as a {@spell Melf's acid arrow} spell; the acid arrow launches at the character who opened the box and causes {@dice 4d6} acid damage immediately plus another {@dice 4d6} acid damage at the end of the character's next turn. The damage is halved if the character makes a successful DC 15 Dexterity saving throw. Opening the box with the key disarms the trap automatically; Jos carries the key on a string around his neck."
+								"Normally, these rooms aren't used, but Azbara Jos occupies them currently. They are reasonably warm and comfortable. Jos will be here when he isn't consulting with Rezmir in area 1U, {@area 2N|16a|x}, or {@area 3L|176|x}. Jos keeps all of his real valuables with him. The only things he leaves in these chambers are his clothes and his traveling spellbook\u2014which contains all the spells he has prepared (see {@adventure appendix D|HotDQ|12}). The spellbook is locked inside a box of silver-inlaid redwood. The lock can be opened with a successful DC 15 Dexterity check, but if the roll is less than 20, the tampering sets off a magical ward with the same effect as a {@spell 馬友夫強酸箭} spell; the acid arrow launches at the character who opened the box and causes {@dice 4d6} acid damage immediately plus another {@dice 4d6} acid damage at the end of the character's next turn. The damage is halved if the character makes a successful DC 15 Dexterity saving throw. Opening the box with the key disarms the trap automatically; Jos carries the key on a string around his neck."
 							]
 						}
 					]
@@ -4231,7 +4231,7 @@
 							"name": "3U. Observatory",
 							"id": "180",
 							"entries": [
-								"The Stargazers converted the top level of the keep into an astrological observatory. The most interesting device they installed was a {@i farseer of Illusk}\u2014a telescope-like contraption that is useful for observing and studying heavenly bodies but which can also be used in a manner similar to an {@spell arcane eye} spell. In that mode, the {@i farseer} can view a location within fifty miles of it. Tuning and focusing the device this way calls for a considerable amount of skill and practice, and the device's dilapidated condition makes the process more difficult.",
+								"The Stargazers converted the top level of the keep into an astrological observatory. The most interesting device they installed was a {@i farseer of Illusk}\u2014a telescope-like contraption that is useful for observing and studying heavenly bodies but which can also be used in a manner similar to an {@spell 祕法眼} spell. In that mode, the {@i farseer} can view a location within fifty miles of it. Tuning and focusing the device this way calls for a considerable amount of skill and practice, and the device's dilapidated condition makes the process more difficult.",
 								"Both Rezmir and Borngray visit this area frequently to study the {@i farseer}. The elf has had limited success with it, but Rezmir has mastered its use. Over the past year, she used the {@i farseer} to study Voaraghamanthar in the dragon's lair. During those spying sessions, Rezmir discovered the dragon's secret twin.",
 								"To protect this area, Rezmir enlisted the service of four {@creature Gargoyle||gargoyles}. They perch day and night on the four corners of the keep's roof, where they can be seen from the ground and where they can see through windows into the observatory. Only Rezmir and Borngray know the gargoyles are alive. If anyone enters the observatory without being accompanied by one of the two cult officers, the gargoyles tear open the observatory's four ceiling hatches and attack. This is the only intrusion they respond to. The gargoyles don't interfere elsewhere without direct orders from Rezmir, and she won't give such an order unless it is the direst of emergencies.",
 								"A character who inspects the contents of the observatory recognizes the {@i farseer of Illusk} with a successful DC 15 Intelligence ({@skill Arcana}) check. After its true nature is ascertained, using it to view a distant location requires a successful DC 15 Intelligence ({@skill Arcana}) check and a successful DC 15 Dexterity ({@skill Sleight of Hand}) check. If the Intelligence check fails, the desired location can't be found. If the Dexterity check fails, the image is too distorted to convey any information. If the Dexterity check result is 5 or less, a key part of the {@i farseer} breaks off, rendering the item inoperable.",
@@ -4350,7 +4350,7 @@
 							"name": "4. Centipede Lair",
 							"id": "18b",
 							"entries": [
-								"This chamber is empty, but swarms of centipedes live in niches and alcoves lining the western wall. They are {@condition frightened} away by torches, but lanterns, candles, and {@spell light} spells don't bother them. They attack any group that isn't carrying at least one lit torch. There are two {@creature Swarm of Centipedes||swarms of centipedes} per party member."
+								"This chamber is empty, but swarms of centipedes live in niches and alcoves lining the western wall. They are {@condition frightened} away by torches, but lanterns, candles, and {@spell 光亮術} spells don't bother them. They attack any group that isn't carrying at least one lit torch. There are two {@creature Swarm of Centipedes||swarms of centipedes} per party member."
 							]
 						},
 						{
@@ -4622,7 +4622,7 @@
 										"The stone outbuilding has a mossy roof and no windows. The solid oak doors at either end are 9 feet tall; the whole thing resembles a small barn."
 									]
 								},
-								"Opening the door requires a {@spell knock} spell or a successful DC 20 Strength check; hammering on it brings the occupants over to open it, but they might be a surprise. When the door opens, read:",
+								"Opening the door requires a {@spell 敲擊術} spell or a successful DC 20 Strength check; hammering on it brings the occupants over to open it, but they might be a surprise. When the door opens, read:",
 								{
 									"type": "insetReadaloud",
 									"id": "1ab",
@@ -4755,7 +4755,7 @@
 									"id": "1b6",
 									"entries": [
 										"The freestanding suits of elven armor are warded with freezing runes that can be detected with a successful DC 20 Wisdom ({@skill Perception}) check. Any character that touches one of the suits or passes between them must make a DC 15 Constitution saving throw. On a failed saving throw, the character takes {@dice 1d12} cold damage and is {@condition restrained} (frozen in place) for 1 minute. The character may use an action on his or her turn to make a DC 15 Strength check, ending the effect early on a success.",
-										"Each suit of plate armor is mounted on a crude wooden stand vaguely shaped like a headless elf. A freezing rune can be removed with {@spell dispel magic} (DC 15), whereupon the armor becomes nonmagical."
+										"Each suit of plate armor is mounted on a crude wooden stand vaguely shaped like a headless elf. A freezing rune can be removed with {@spell 解除魔法} (DC 15), whereupon the armor becomes nonmagical."
 									]
 								}
 							]
@@ -4773,7 +4773,7 @@
 									]
 								},
 								"The black armor is a {@creature helmed horror} built to serve the cult, and disguised by an illusion to appear as ordinary armor. It detects as magical and attacks if disturbed or if commanded to do so by Talis or someone else wearing purple Cult of the Dragon robes.",
-								"The helmed horror has an {@spell Evard's black tentacles} spell stored in it. It is programmed to cast this spell when confronted by three or more adversaries, and can do so only once. (See the helmed horror's stat block for details on its Spell Storing trait.)",
+								"The helmed horror has an {@spell 艾伐黑觸手} spell stored in it. It is programmed to cast this spell when confronted by three or more adversaries, and can do so only once. (See the helmed horror's stat block for details on its Spell Storing trait.)",
 								"The tapestry is magical and transports those who step through it into the surrounding forest, about five miles from the lodge. It often places the travelers near a deer, mountain goat, or other wild game.",
 								{
 									"type": "entries",
@@ -5106,7 +5106,7 @@
 									"name": "Treasure",
 									"id": "1db",
 									"entries": [
-										"One of the rusty spears is decorated with inlaid mithral (50 gp), and another, named {@item Dragongleam|hotdq}, is enchanted with 10 charges of a {@spell daylight} spell for use in twilight or dark forest underbrush. The command phrase is \"Tiamat's eyes shine,\" written in Draconic runes on the spear's crossguard."
+										"One of the rusty spears is decorated with inlaid mithral (50 gp), and another, named {@item Dragongleam|hotdq}, is enchanted with 10 charges of a {@spell 晝明術} spell for use in twilight or dark forest underbrush. The command phrase is \"Tiamat's eyes shine,\" written in Draconic runes on the spear's crossguard."
 									]
 								}
 							]
@@ -5128,7 +5128,7 @@
 									"name": "Treasure",
 									"id": "1de",
 									"entries": [
-										"Talis keeps a locked chest in this room and she carries the only key. It can also be opened by a character using {@item thieves' tools|PHB} with a successful DC 21 Dexterity check. When opened, light spills out from the {@item +1 chain mail} within it. The armor's light also shines on the chest's 4,000 gp and a {@item spell scroll} of {@spell scorching ray}.",
+										"Talis keeps a locked chest in this room and she carries the only key. It can also be opened by a character using {@item thieves' tools|PHB} with a successful DC 21 Dexterity check. When opened, light spills out from the {@item +1 chain mail} within it. The armor's light also shines on the chest's 4,000 gp and a {@item spell scroll} of {@spell 灼熱射線}.",
 										"The two veterans carry 20 gp each, and Kusphia carries a symbol of the cult worked in silver worth 40 gp."
 									]
 								}
@@ -5797,8 +5797,8 @@
 									"name": "Treasure",
 									"id": "227",
 									"entries": [
-										"The stone giants collect small-but-perfect gemstones, primarily amethysts but also diamonds, opals, rubies, and topaz. Their collection is secured by a magical globe of force inside an iron chest, which is six feet long, four feet tall and wide, and weighs 500 pounds. Lifting the heavy iron lid requires an action and a DC 12 Strength check, and destroying the globe of force requires an {@spell antimagic field} or a successful casting of {@spell dispel magic} (DC 16). The 32 gems are worth 500 gp each, or a total of 16,000 gp. The iron chest also contains the stone giants' masonry tools, but they are neither valuable nor usable by smaller creatures.",
-										"The iron cauldron weighs 50 pounds. When filled with water or some other liquid, the cauldron substitutes for the normal material components needed to cast the {@spell augury} spell. The cauldron is worth 25 gp."
+										"The stone giants collect small-but-perfect gemstones, primarily amethysts but also diamonds, opals, rubies, and topaz. Their collection is secured by a magical globe of force inside an iron chest, which is six feet long, four feet tall and wide, and weighs 500 pounds. Lifting the heavy iron lid requires an action and a DC 12 Strength check, and destroying the globe of force requires an {@spell 反魔法結界} or a successful casting of {@spell 解除魔法} (DC 16). The 32 gems are worth 500 gp each, or a total of 16,000 gp. The iron chest also contains the stone giants' masonry tools, but they are neither valuable nor usable by smaller creatures.",
+										"The iron cauldron weighs 50 pounds. When filled with water or some other liquid, the cauldron substitutes for the normal material components needed to cast the {@spell 卜筮} spell. The cauldron is worth 25 gp."
 									]
 								},
 								{
@@ -5816,7 +5816,7 @@
 							"name": "11. Rezmir's Chamber",
 							"id": "229",
 							"entries": [
-								"The door is always locked and Rezmir holds the key. A {@spell knock} spell is the easiest way to get in, but a character can also unlock the door with a DC 25 Dexterity check made using {@item thieves' tools|PHB}. Alternatively, knocking and spinning a good yarn might work; cultists and servants come and go at all hours.",
+								"The door is always locked and Rezmir holds the key. A {@spell 敲擊術} spell is the easiest way to get in, but a character can also unlock the door with a DC 25 Dexterity check made using {@item thieves' tools|PHB}. Alternatively, knocking and spinning a good yarn might work; cultists and servants come and go at all hours.",
 								{
 									"type": "insetReadaloud",
 									"id": "22a",
@@ -5891,7 +5891,7 @@
 									"id": "22f",
 									"entries": [
 										"Between two windows is a 35-foot-long, 20-foot-high section of icy wall that vanishes for 1 minute when touched. Beyond the wall is an outdoor landing platform.",
-										"If he is outmatched, Rath Modar turns {@condition invisible}, casts {@spell fly} on himself, touches the disappearing wall, and leaps off the landing platform, leaving Azbara Jos to fend for himself. If the gargoyle is still alive, it tries to cover Rath's escape. His {@spell fly} spell and disappearing trick mean that an escape is very likely."
+										"If he is outmatched, Rath Modar turns {@condition invisible}, casts {@spell 飛行術} on himself, touches the disappearing wall, and leaps off the landing platform, leaving Azbara Jos to fend for himself. If the gargoyle is still alive, it tries to cover Rath's escape. His {@spell 飛行術} spell and disappearing trick mean that an escape is very likely."
 									]
 								},
 								{
@@ -5907,7 +5907,7 @@
 									"name": "Treasure",
 									"id": "231",
 									"entries": [
-										"Rath Modar has three {@item Spell Scroll||spell scrolls} ({@spell dimension door}, {@spell feather fall} and {@spell fireball}) and he carries a {@item staff of fire}.",
+										"Rath Modar has three {@item Spell Scroll||spell scrolls} ({@spell 次元門}, {@spell 羽落術} and {@spell 火球術}) and he carries a {@item staff of fire}.",
 										"A thorough search of the room yields several letters to Rath Modar from Severin, the supreme leader of the Cult of the Dragon. Severin's letters reveal the depths of the connections between the Red Wizards (at least those friendly to Rath Modar) and the cult. The characters also find other letters from Thay revealing that clearly some Red Wizards are not nearly as keen on the cult's plans. If the characters deliver these letters to Leosin Erlanthar, Ontharr Frume, or one of their other contacts in organizations opposed to the Red Wizards and the Cult of the Dragon, award the party 1,000 XP.",
 										"Resting on a lectern is a book titled {@i Beyond the Iron Gates}. Written entirely in Infernal, it describes various forms of devil summoning, but the final chapter describes the use of massive summonings and the sacrifice of hundreds of souls to bring Tiamat bodily out of the Nine Hells and into the world. The details of the ritual make it clear that this is something that requires enormous preparation and expense\u2014but the actual magical formulae and chants are not given in this volume. Neither the book nor the other papers here, however, provide a timetable for when the cult or the Red Wizards plan to attempt the summoning, nor do they mention the significance of the treasure that the cult has amassed. (Rath Modar and Azbara Jos can both attest that the treasure is to appease Tiamat upon her arrival.)"
 									]
@@ -6068,7 +6068,7 @@
 							"name": "19. Steering Tower",
 							"id": "243",
 							"entries": [
-								"Blagothkus has secured the door to this tower with an {@spell arcane lock}. It can be opened normally by a giant or by a {@spell knock} spell. For everyone else, breaking it down is largely impossible, because a DC 70 Strength check is required.",
+								"Blagothkus has secured the door to this tower with an {@spell 祕法鎖}. It can be opened normally by a giant or by a {@spell 敲擊術} spell. For everyone else, breaking it down is largely impossible, because a DC 70 Strength check is required.",
 								{
 									"type": "insetReadaloud",
 									"id": "244",
@@ -6227,7 +6227,7 @@
 									"id": "257",
 									"entries": [
 										"If the characters insist on tearing out the valuable control elements, they can pry loose fistfuls of emeralds, turquoise, moonstones, a huge chunk of jade, bits of amber, and large pieces of mithral, worth 10,000 gp total.",
-										"This destroys the castle's ability to move under power, generate weather effects, and so on. The castle will drift on powerful winds that carry it northward, where it ultimately crashes on the Miklos Glacier in the Spine of the World Mountains. Repairing the control mechanism requires a long period of extremely difficult and expensive work, though a {@spell wish} spell could accomplish it."
+										"This destroys the castle's ability to move under power, generate weather effects, and so on. The castle will drift on powerful winds that carry it northward, where it ultimately crashes on the Miklos Glacier in the Spine of the World Mountains. Repairing the control mechanism requires a long period of extremely difficult and expensive work, though a {@spell 祈願術} spell could accomplish it."
 									]
 								},
 								{
@@ -6242,7 +6242,7 @@
 											"id": "259",
 											"entries": [
 												"If the cloud giant is slain, his wife's spirit in the steering chamber is replaced by his spirit. Enraged, he avenges his death by moving the castle northward and then commanding it to crash in the Spine of the World, near the Miklos Glacier. More details of this crash and its consequences are provided in {@adventure The Rise of Tiamat|RoT}.",
-												"If the dragon is slain and the cultists are routed, Rath Modar gathers any remaining forces allied with the cult and slays Blagothkus, knowing full well that the cloud giant's death will cause the castle to crash (see above). Rath Modar then uses his {@spell fly} spell to escape."
+												"If the dragon is slain and the cultists are routed, Rath Modar gathers any remaining forces allied with the cult and slays Blagothkus, knowing full well that the cloud giant's death will cause the castle to crash (see above). Rath Modar then uses his {@spell 飛行術} spell to escape."
 											]
 										},
 										{

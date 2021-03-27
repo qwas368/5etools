@@ -247,7 +247,7 @@
 					"type": "list",
 					"items": [
 						"You gain proficiency in the {@skill Arcana} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
-						"You learn the {@spell prestidigitation} and {@spell detect magic} spells. You can cast detect magic once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+						"You learn the {@spell 魔法技倆} and {@spell 偵測魔法} spells. You can cast detect magic once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
 					]
 				}
 			]
@@ -585,7 +585,7 @@
 					"type": "list",
 					"items": [
 						"You gain proficiency in the {@skill Animal Handling} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
-						"You learn the {@spell speak with animals} spell and can cast it at will, without expending a spell slot. You also learn the {@spell animal friendship} spell, and you can cast it once with this feat, without expending a spell slot. You regain the ability to cast it in this way when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+						"You learn the {@spell 動物交談術} spell and can cast it at will, without expending a spell slot. You also learn the {@spell 化獸為友} spell, and you can cast it once with this feat, without expending a spell slot. You regain the ability to cast it in this way when you finish a long rest. Intelligence is your spellcasting ability for these spells."
 					]
 				}
 			]
@@ -909,21 +909,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell detect magic}, {@spell mage hand}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 偵測魔法}, {@spell 法師之手}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell detect thoughts}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 偵測思想}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell clairvoyance}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 銳眼術}"
 					]
 				}
 			],
@@ -983,21 +983,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell identify}, {@spell mage hand}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 鑑定術}, {@spell 法師之手}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell locate object}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 物品定位術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell clairvoyance}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 銳眼術}"
 					]
 				}
 			]
@@ -1053,21 +1053,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell druidcraft}, {@spell speak with animals}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 德魯伊伎倆}, {@spell 動物交談術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell beast sense}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 野獸知覺}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell conjure animals}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 召喚動物}"
 					]
 				}
 			]
@@ -1123,21 +1123,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell cure wounds}, {@spell spare the dying}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 治療傷勢}, {@spell 拯救瀕死}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell lesser restoration}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 次級復原術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell revivify}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 回生術}"
 					]
 				}
 			]
@@ -1193,21 +1193,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell friends}, {@spell unseen servant}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 交友術}, {@spell 隱形僕役}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell rope trick}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 通天繩}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell Leomund's tiny hut}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 李歐蒙小屋}"
 					]
 				}
 			]
@@ -1263,21 +1263,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell identify}, {@spell mending}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 鑑定術}, {@spell 修復術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell magic weapon}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 魔化武器}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell fabricate}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 鬼斧神工}"
 					]
 				}
 			]
@@ -1333,21 +1333,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell expeditious retreat}, {@spell light}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 腳底抹油}, {@spell 光亮術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell misty step}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 迷蹤步}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell teleportation circle}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 傳送法陣}"
 					]
 				}
 			]
@@ -1403,21 +1403,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell comprehend languages}, {@spell message}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 通曉語言}, {@spell 傳訊術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell sending}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 短訊術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell tongues}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 巧舌術}"
 					]
 				}
 			]
@@ -1473,21 +1473,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell blade ward}, {@spell compelled duel}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 劍刃防護}, {@spell 強迫決鬥}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell blur}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 朦朧術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell protection from energy}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 防護能量}"
 					]
 				}
 			]
@@ -1543,21 +1543,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell dancing lights}, {@spell disguise self}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 舞光術}, {@spell 易容術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell darkness}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 黑暗術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell nondetection}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 迴避偵測}"
 					]
 				}
 			]
@@ -1613,21 +1613,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell fog cloud}, {@spell shocking grasp}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 雲霧術}, {@spell 電爪}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell gust of wind}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 造風術}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell sleet storm}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 雪雨暴}"
 					]
 				}
 			]
@@ -1683,21 +1683,21 @@
 					"type": "entries",
 					"name": "Least Dragonmark",
 					"entries": [
-						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell alarm}, {@spell resistance}"
+						"When you first take this feat, you gain the least dragonmark. You learn the following spells: {@spell 警報術}, {@spell 提升抗力}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Lesser Dragonmark",
 					"entries": [
-						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell arcane lock}"
+						"At 5th level and higher, your mark becomes more potent, improving to lesser dragonmark. You learn the following spell: {@spell 祕法鎖}"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Greater Dragonmark",
 					"entries": [
-						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell magic circle}"
+						"At 9th level and higher, your mark's power increases again, becoming a greater dragonmark. You learn the following spell: {@spell 防護法陣}"
 					]
 				}
 			]
@@ -2267,7 +2267,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell misty step} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+						"You learn the {@spell 迷蹤步} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
 					]
 				}
 			]
@@ -2310,7 +2310,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell misty step} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+						"You learn the {@spell 迷蹤步} spell and one {@filter 1st-level spell|spells|level=1|school=E;D} of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
 					]
 				}
 			]
@@ -3315,7 +3315,7 @@
 					"type": "list",
 					"items": [
 						"You gain proficiency in the {@skill Nature} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
-						"You learn the {@spell druidcraft} and {@spell detect poison and disease} spells. You can cast {@spell detect poison and disease} once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+						"You learn the {@spell 德魯伊伎倆} and {@spell 偵測毒素或疾病} spells. You can cast {@spell 偵測毒素或疾病} once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
 					]
 				}
 			]
@@ -4052,7 +4052,7 @@
 				}
 			],
 			"entries": [
-				"You are skilled in the creation of servos\u2014tiny constructs that function as personal assistants. You can cast the {@spell find familiar} spell as a ritual, creating a servo to serve as your familiar instead of an animal. A servo's statistics appear in the \"Artifact Creatures\" section of this document. In every other way, a servo familiar functions as described in the {@spell find familiar} spell.",
+				"You are skilled in the creation of servos\u2014tiny constructs that function as personal assistants. You can cast the {@spell 尋獲魔寵} spell as a ritual, creating a servo to serve as your familiar instead of an animal. A servo's statistics appear in the \"Artifact Creatures\" section of this document. In every other way, a servo familiar functions as described in the {@spell 尋獲魔寵} spell.",
 				"You can communicate telepathically with your servo familiar and perceive through its senses as long as you are on the same plane of existence. You can speak through your servo in your own voice.",
 				"Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your servo familiar to make one attack of its own."
 			]
@@ -4095,7 +4095,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell invisibility} spell and one 1st-level spell of your choice. The {@filter 1st-level spell|spells|level=1|school=I;N} must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+						"You learn the {@spell 隱形術} spell and one 1st-level spell of your choice. The {@filter 1st-level spell|spells|level=1|school=I;N} must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
 					]
 				}
 			]
@@ -4138,7 +4138,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell darkness} spell and one {@filter 1st-level spell|spells|level=1|school=I;N} of your choice. The 1st-level spell must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+						"You learn the {@spell 黑暗術} spell and one {@filter 1st-level spell|spells|level=1|school=I;N} of your choice. The 1st-level spell must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
 					]
 				}
 			]
@@ -4581,7 +4581,7 @@
 					"type": "list",
 					"items": [
 						"You gain proficiency in the {@skill Survival} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
-						"You learn the {@spell alarm} spell. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+						"You learn the {@spell 警報術} spell. You can cast it once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
 					]
 				}
 			]
@@ -4709,7 +4709,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.",
+						"You learn the {@spell 法師之手} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.",
 						"As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved 5 feet toward you or away from you. A creature can willingly fail this save."
 					]
 				}
@@ -4751,7 +4751,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.",
+						"You learn the {@spell 法師之手} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand {@condition invisible}. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.",
 						"As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save."
 					]
 				}
@@ -4780,8 +4780,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell mage hand} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible.",
-						"As a bonus action, you can try to shove one creature you can see within 5 feet of the spectral hand created by your {@spell mage hand} spell. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Intelligence modifier) or be pushed 5 feet away from you."
+						"You learn the {@spell 法師之手} cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible.",
+						"As a bonus action, you can try to shove one creature you can see within 5 feet of the spectral hand created by your {@spell 法師之手} spell. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Intelligence modifier) or be pushed 5 feet away from you."
 					]
 				}
 			]
@@ -4822,7 +4822,7 @@
 					"type": "list",
 					"items": [
 						"You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
-						"You can cast the {@spell detect thoughts} spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability increased by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
+						"You can cast the {@spell 偵測思想} spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability increased by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
 					]
 				}
 			]
@@ -4868,7 +4868,7 @@
 					"type": "list",
 					"items": [
 						"You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.",
-						"If your Psionic Talent die is available, you can cast the {@spell detect thoughts} spell, requiring no components. When you start casting the spell, your Psionic Talent die decreases by one die size. Your spellcasting ability for the spell is the ability increased by this feat."
+						"If your Psionic Talent die is available, you can cast the {@spell 偵測思想} spell, requiring no components. When you start casting the spell, your Psionic Talent die decreases by one die size. Your spellcasting ability for the spell is the ability increased by this feat."
 					]
 				}
 			]
@@ -4924,7 +4924,7 @@
 					"type": "list",
 					"items": [
 						"You gain proficiency in the {@skill Religion} skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.",
-						"You learn the {@spell thaumaturgy} and {@spell detect evil and good} spells. You can cast {@spell detect evil and good} once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
+						"You learn the {@spell 奇術} and {@spell 偵測善惡} spells. You can cast {@spell 偵測善惡} once without expending a spell slot, and you regain the ability to do so when you finish a long rest."
 					]
 				}
 			]
@@ -4979,7 +4979,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn the {@spell hunter's mark} spell. You can cast it once without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Wisdom is your spellcasting ability for this spell.",
+						"You learn the {@spell 獵人印記} spell. You can cast it once without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Wisdom is your spellcasting ability for this spell.",
 						"You have advantage on Wisdom ({@skill Survival}) checks to track creatures"
 					]
 				}

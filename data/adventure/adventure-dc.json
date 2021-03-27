@@ -427,8 +427,8 @@
 							"name": "House of Thalivar",
 							"id": "023",
 							"entries": [
-								"This wizard's tower has been recently rebuilt as a garrison for the Neverwinter soldiery. Gallio Elibro is a brooding middle-aged male Rashemi human with the {@creature mage} statistics (except that he has the {@spell legend lore} spell prepared instead of {@spell cone of cold}). He came to Neverwinter to find and unlock the secrets of the House of Thalivar. Gallio has found many coded journals inside the ruin, which he decrypted. He has now rebuilt the tower's planar beacon and is using it to study the creatures of the Ethereal Plane.",
-								"Gallio does not talk much about his work with adventurers but is willing to cast spells in exchange for gold. The mage casts the {@spell legend lore} spell for 400 gp."
+								"This wizard's tower has been recently rebuilt as a garrison for the Neverwinter soldiery. Gallio Elibro is a brooding middle-aged male Rashemi human with the {@creature mage} statistics (except that he has the {@spell 通曉傳奇} spell prepared instead of {@spell 寒冰錐}). He came to Neverwinter to find and unlock the secrets of the House of Thalivar. Gallio has found many coded journals inside the ruin, which he decrypted. He has now rebuilt the tower's planar beacon and is using it to study the creatures of the Ethereal Plane.",
+								"Gallio does not talk much about his work with adventurers but is willing to cast spells in exchange for gold. The mage casts the {@spell 通曉傳奇} spell for 400 gp."
 							]
 						},
 						{
@@ -454,7 +454,7 @@
 							"id": "026",
 							"entries": [
 								"This shrine to Lathander, god of light, was the first temple to be reconstructed in Leilon. Merrygold Brightshine, an outgoing young female halfling {@creature priest}, cares for the shrine and offers council to any who pray at the small stone altar to Lathander within. She conducts services at the shrine each day at dawn.",
-								"Merrygold casts the {@spell cure wounds} spell for a donation of 10 gp to the shrine and the {@spell lesser restoration} spell for a donation of 20 gp."
+								"Merrygold casts the {@spell 治療傷勢} spell for a donation of 10 gp to the shrine and the {@spell 次級復原術} spell for a donation of 20 gp."
 							]
 						},
 						{
@@ -980,7 +980,7 @@
 									"id": "05a",
 									"entries": [
 										"Large sections of the tomb have collapsed over the centuries. Areas of loose rubble count as difficult terrain and grant half cover to creatures hiding there.",
-										"{@b Wards}. The mausoleum is under the permanent effect of a {@spell forbiddance} spell that is set to damage any fey creatures that enter. When a fey creature enters the mausoleum for the first time on a turn or starts its turn there, the creature takes {@dice 5d10} necrotic damage."
+										"{@b Wards}. The mausoleum is under the permanent effect of a {@spell 禁制術} spell that is set to damage any fey creatures that enter. When a fey creature enters the mausoleum for the first time on a turn or starts its turn there, the creature takes {@dice 5d10} necrotic damage."
 									]
 								}
 							]
@@ -1030,7 +1030,7 @@
 												"\"Who is dead but cannot die, the Lord of Bones, whose embrace is patient but sure?\""
 											]
 										},
-										"A {@spell detect magic} spell reveals that the voice is an illusion. Characters who succeed on a DC 20 Intelligence ({@skill Religion}) check recognize the \"Lord of Bones\" as one of the ancient titles given to Myrkul, god of the dead. If a character says this name aloud, the door at the end of the hallway silently opens."
+										"A {@spell 偵測魔法} spell reveals that the voice is an illusion. Characters who succeed on a DC 20 Intelligence ({@skill Religion}) check recognize the \"Lord of Bones\" as one of the ancient titles given to Myrkul, god of the dead. If a character says this name aloud, the door at the end of the hallway silently opens."
 									]
 								},
 								{
@@ -1080,7 +1080,7 @@
 											"name": "Treasure",
 											"id": "062",
 											"entries": [
-												"The death priest's backpack contains 700 gp, 35 pp, {@item eyes of minute seeing}, and the following spell scrolls: {@spell raise dead}, {@spell forbiddance}, and {@spell holy aura}.",
+												"The death priest's backpack contains 700 gp, 35 pp, {@item eyes of minute seeing}, and the following spell scrolls: {@spell 喚醒死者}, {@spell 禁制術}, and {@spell 神聖靈光}.",
 												{
 													"type": "inset",
 													"name": "Using the Ruinstone",
@@ -1284,7 +1284,7 @@
 											"name": "Figureheads",
 											"id": "079",
 											"entries": [
-												"A {@spell detect magic} spell or similar magic reveals an aura of illusion magic around either ship's figurehead\u2014the effect that makes every drow aboard the ship appear as a human. A drow's gender, height, and weight are unchanged; the illusion affects only appearance, not voice or mannerisms. Casting {@spell dispel magic} on a disguised drow causes the illusion around it to wink out, but only for a moment. An {@spell antimagic field} (including the one generated by the crystal on {@i Twinkle} in {@area area T5|094|x}) suppresses the figurehead's magic within the field's area. Destroying the figurehead ends the effect throughout the ship. A figurehead has AC 15, 50 hit points, and immunity to poison and psychic damage."
+												"A {@spell 偵測魔法} spell or similar magic reveals an aura of illusion magic around either ship's figurehead\u2014the effect that makes every drow aboard the ship appear as a human. A drow's gender, height, and weight are unchanged; the illusion affects only appearance, not voice or mannerisms. Casting {@spell 解除魔法} on a disguised drow causes the illusion around it to wink out, but only for a moment. An {@spell 反魔法結界} (including the one generated by the crystal on {@i Twinkle} in {@area area T5|094|x}) suppresses the figurehead's magic within the field's area. Destroying the figurehead ends the effect throughout the ship. A figurehead has AC 15, 50 hit points, and immunity to poison and psychic damage."
 											]
 										},
 										{
@@ -1374,7 +1374,7 @@
 											"name": "Magic Statue",
 											"id": "081",
 											"entries": [
-												"An 8-foot-tall, 4,000-pound stone statue of Drizzt Do'Urden, a famous drow ranger, stands near the front of the main deck, posed with hands on the pommels of his famous, sheathed scimitars. The statue's mouth is open in a goofy grin. A {@spell detect magic} spell reveals that the statue radiates an aura of transmutation magic. Whenever a creature on the main deck speaks the statue's command word (\"Artemis\"), the statue animates and obeys the creature who animated it. As a bonus action, the creature can direct the statue to move up to 30 feet or shoot a stream of water out of its mouth at a target within 30 feet of the statue. The stream of water has the same effect as the geyser option of a {@item decanter of endless water}. If the command word is spoken by that creature again, the statue returns to its original position on the ship and is no longer animate. The statue has AC 17, 27 hit points, and immunity to poison and psychic damage. Captain Xalti Tezzan (see \"{@area Drow Crews|072|x}\") knows the statue's command word."
+												"An 8-foot-tall, 4,000-pound stone statue of Drizzt Do'Urden, a famous drow ranger, stands near the front of the main deck, posed with hands on the pommels of his famous, sheathed scimitars. The statue's mouth is open in a goofy grin. A {@spell 偵測魔法} spell reveals that the statue radiates an aura of transmutation magic. Whenever a creature on the main deck speaks the statue's command word (\"Artemis\"), the statue animates and obeys the creature who animated it. As a bonus action, the creature can direct the statue to move up to 30 feet or shoot a stream of water out of its mouth at a target within 30 feet of the statue. The stream of water has the same effect as the geyser option of a {@item decanter of endless water}. If the command word is spoken by that creature again, the statue returns to its original position on the ship and is no longer animate. The statue has AC 17, 27 hit points, and immunity to poison and psychic damage. Captain Xalti Tezzan (see \"{@area Drow Crews|072|x}\") knows the statue's command word."
 											]
 										}
 									]
@@ -1408,7 +1408,7 @@
 												"Silk pillows and discarded robes surround a central two-foot-high table attached to the floor. At the back of the room, a small wooden chest is built into the wall."
 											]
 										},
-										"The inside lid of the chest is covered by a {@creature Swarm of Spiders||swarm of insects spiders}), which attack any creature who opens the chest, expect Xalti. The chest contains Xalti's spellbook, which includes all the spells he has prepared, as well as {@spell detect magic}, {@spell find familiar}, and {@spell fireball}. The inside cover of the spellbook also contains the phrase \"Artemis animates\" in Elvish (a clue to animating the statue in {@area area I1|080|x})."
+										"The inside lid of the chest is covered by a {@creature Swarm of Spiders||swarm of insects spiders}), which attack any creature who opens the chest, expect Xalti. The chest contains Xalti's spellbook, which includes all the spells he has prepared, as well as {@spell 偵測魔法}, {@spell 尋獲魔寵}, and {@spell 火球術}. The inside cover of the spellbook also contains the phrase \"Artemis animates\" in Elvish (a clue to animating the statue in {@area area I1|080|x})."
 									]
 								},
 								{
@@ -1544,7 +1544,7 @@
 											"name": "Antimagic Crystal",
 											"id": "096",
 											"entries": [
-												"The antimagic crystal creates a 200-foot-radius sphere of antimagic, as in the {@spell antimagic field} spell, centered on the crystal. While inside the cabin, the crystal's effect is contained in the room. The crystal has AC 13, 27 hit points, and immunity to poison and psychic damage."
+												"The antimagic crystal creates a 200-foot-radius sphere of antimagic, as in the {@spell 反魔法結界} spell, centered on the crystal. While inside the cabin, the crystal's effect is contained in the room. The crystal has AC 13, 27 hit points, and immunity to poison and psychic damage."
 											]
 										}
 									]
@@ -1890,7 +1890,7 @@
 							"name": "Use of Magic",
 							"id": "0b2",
 							"entries": [
-								"Magic plays a powerful role on a fantasy battlefield. A wizard armed with {@spell fireball} or {@spell lightning bolt} serves as a deadly artillery unit, while clerics can roam the battlefield, using {@spell cure wounds} to heal the injured. In the chaos of battle, spells such as {@spell message}, {@spell sending}, or {@spell thaumaturgy} can make the difference between triumph and disaster.",
+								"Magic plays a powerful role on a fantasy battlefield. A wizard armed with {@spell 火球術} or {@spell 閃電束} serves as a deadly artillery unit, while clerics can roam the battlefield, using {@spell 治療傷勢} to heal the injured. In the chaos of battle, spells such as {@spell 傳訊術}, {@spell 短訊術}, or {@spell 奇術} can make the difference between triumph and disaster.",
 								"In a narrative battle, the simplest way to adjudicate such spells outside of combat is to grant an ad-hoc benefit to the party (see \"{@area Narrative Combat|0aa|x}\"). If a spell creates a powerful effect that sways the course of the battle, consider granting the caster's side an additional victory."
 							]
 						},
@@ -2174,7 +2174,7 @@
 												"Chaos reigns in the town square. On one side, Leilon's defenders make a valiant stand against the invaders, while on the other, fleeing townsfolk clog the thoroughfare leading out of town. Screams of panic suddenly echo through the crowd. Looking up, you see a huge green dragon swoop out of the storm!"
 											]
 										},
-										"Ularan Mortus has sent his dragon to crush his enemies. {@creature Claugiyliamatar|SKT} is an ancient green dragon, except her breath weapon deals necrotic damage instead of poison damage as a result of Ebondeath's possession. If the party has not yet silenced the drummers (see Event 8: \"Thunder Drums\"), the magic storm cloud above town unleashes targeted bolts of lightning during combat. At the end of each round, ask each player to roll a {@dice d20}, and then roll a {@dice d20} for the dragon. Whoever gets the lowest result is targeted by the effect of a {@spell call lightning} spell.",
+										"Ularan Mortus has sent his dragon to crush his enemies. {@creature Claugiyliamatar|SKT} is an ancient green dragon, except her breath weapon deals necrotic damage instead of poison damage as a result of Ebondeath's possession. If the party has not yet silenced the drummers (see Event 8: \"Thunder Drums\"), the magic storm cloud above town unleashes targeted bolts of lightning during combat. At the end of each round, ask each player to roll a {@dice d20}, and then roll a {@dice d20} for the dragon. Whoever gets the lowest result is targeted by the effect of a {@spell 召雷術} spell.",
 										"The dragon attacks any enemy forces gathered here, including cultists of Talos, but switches to attack the party if they present a threat. If the dragon loses over 100 hit points or is forced to use its Legendary Resistance feature more than once, it retreats into the clouds. If the dragon retreats, the defenders are inspired to turn the tide of battle against their enemies.",
 										{
 											"type": "list",
@@ -2198,7 +2198,7 @@
 												"The first light of dawn paints the landscape in shades of gray, yet the wind and rain are worsening. On a crag overlooking the town, a line of six savage barbarians beat out a relentless rhythm on their war drums. With each crescendo, a bolt of lightning slams into the town below!"
 											]
 										},
-										"Six {@creature wereboar} drummers perform a magical ritual to bring down lightning. Once per round, while at least one wereboar is drumming, any one of the drummers can duplicate the effect of a {@spell call lightning} spell, except it has no limit to its range. The drummers fight until death and refuse to parley.",
+										"Six {@creature wereboar} drummers perform a magical ritual to bring down lightning. Once per round, while at least one wereboar is drumming, any one of the drummers can duplicate the effect of a {@spell 召雷術} spell, except it has no limit to its range. The drummers fight until death and refuse to parley.",
 										{
 											"type": "list",
 											"items": [
@@ -2580,7 +2580,7 @@
 									"entries": [
 										"The animated skeleton of a stone giant is lashed to the ship's bow. This creature has the statistics of a {@creature giant skeleton|TftYP} (see {@adventure appendix A|DC|9}) that cannot move and uses the following attack in place of a scimitar:",
 										"{@b Halberd}. {@atk mw} +8 to hit, reach 20 ft., one target. {@i Hit}: 21 ({@dice 3d10 + 5}) slashing damage.",
-										"Once per day, the skeleton can use its action to unleash a {@spell lightning bolt} from its halberd, as though cast using a 5th-level spell slot.",
+										"Once per day, the skeleton can use its action to unleash a {@spell 閃電束} from its halberd, as though cast using a 5th-level spell slot.",
 										"The evil spirit of the death knight can see and speak through the skeletal figurehead (see \"{@area Death Knight's Soul|0e8|x}\")."
 									]
 								},
@@ -2645,7 +2645,7 @@
 											"name": "Treasure",
 											"id": "0f5",
 											"entries": [
-												"The following treasures looted from Fheralai's raids are dumped carelessly around her cabin: 1,500 gp, a 2-foot-tall solid gold bull statue worth 3,500 gp, two crystal decanters worth 500 gp each, 5 {@item Potion of Greater Healing||potions of greater healing}, a {@item spell scroll} of {@spell chain lightning}, and four {@item Javelin of Lightning||javelins of lightning}."
+												"The following treasures looted from Fheralai's raids are dumped carelessly around her cabin: 1,500 gp, a 2-foot-tall solid gold bull statue worth 3,500 gp, two crystal decanters worth 500 gp each, 5 {@item Potion of Greater Healing||potions of greater healing}, a {@item spell scroll} of {@spell 連環閃電}, and four {@item Javelin of Lightning||javelins of lightning}."
 											]
 										}
 									]
@@ -2839,7 +2839,7 @@
 							"name": "Meeting Gallio Elibro",
 							"id": "10c",
 							"entries": [
-								"Gallio Elibro is a short-tempered Rashemi human male {@creature mage} (with the {@spell legend lore} spell prepared instead of {@spell cone of cold}). Characters who played the first part of this trilogy, {@adventure Storm Lord's Wrath|SLW}, likely saved Gallio when Thalivar's restless spirit possessed him. If Gallio died during that quest, replace him with one of his colleagues from the Order of the Many-Starred Cloak.",
+								"Gallio Elibro is a short-tempered Rashemi human male {@creature mage} (with the {@spell 通曉傳奇} spell prepared instead of {@spell 寒冰錐}). Characters who played the first part of this trilogy, {@adventure Storm Lord's Wrath|SLW}, likely saved Gallio when Thalivar's restless spirit possessed him. If Gallio died during that quest, replace him with one of his colleagues from the Order of the Many-Starred Cloak.",
 								"Gallio meets the party in the building's entry hall and escorts them to his laboratory on the third floor, where he explains the mission:",
 								{
 									"type": "list",
@@ -3114,7 +3114,7 @@
 										"As the silver bell is struck, the world fades away. Grey mist swirls into view and the temperature drops to a soul-chilling cold. Your companions and the tower you just stood in remain visible, but appear translucent and oddly distant. In this strange world, a beam of blue light spills from the planar beacon and sweeps around it in a circle, like a spectral lighthouse. Most mysterious of all, a spiral staircase rises from an archway in the wall that wasn't present before."
 									]
 								},
-								"Anyone who rings the bell enters the Border Ethereal as though affected by an {@spell etherealness} spell. The effect lasts for 24 hours, during which time a character can pass back and forth between worlds by ringing the silver bell, which exists in both planes simultaneously. When all the characters have passed through, Gallio rings the bell to join them."
+								"Anyone who rings the bell enters the Border Ethereal as though affected by an {@spell 跨入乙太界} spell. The effect lasts for 24 hours, during which time a character can pass back and forth between worlds by ringing the silver bell, which exists in both planes simultaneously. When all the characters have passed through, Gallio rings the bell to join them."
 							]
 						},
 						{
@@ -3122,7 +3122,7 @@
 							"name": "Hunting for Star Spawn",
 							"id": "127",
 							"entries": [
-								"Gallio leads the characters upstairs to the mysterious chamber at the top of the ethereal spire (area B14). As they approach the chamber, Gallio casts a {@spell greater invisibility} spell on himself and instructs the characters to lure the monsters within into the planar beacon. When the characters enter the room, the monsters emerge from the mists to attack them. Any interplanar creature that starts its turn inside the planar beacon room (area B13) is {@condition paralyzed} for one minute. If a character grabs a {@condition paralyzed} monster and then rings the silver bell, they can drag the creature back to the Material Plane and imprison it inside one of the dimensional cells.",
+								"Gallio leads the characters upstairs to the mysterious chamber at the top of the ethereal spire (area B14). As they approach the chamber, Gallio casts a {@spell 高等隱形術} spell on himself and instructs the characters to lure the monsters within into the planar beacon. When the characters enter the room, the monsters emerge from the mists to attack them. Any interplanar creature that starts its turn inside the planar beacon room (area B13) is {@condition paralyzed} for one minute. If a character grabs a {@condition paralyzed} monster and then rings the silver bell, they can drag the creature back to the Material Plane and imprison it inside one of the dimensional cells.",
 								"While the characters are dealing with the monsters, Gallio tries to unlock the {@item ruinstone|DC} from its pedestal. After 5 rounds, he grabs hold of the stone and tries to remove it by force. Read the following boxed text aloud when this occurs:",
 								{
 									"type": "insetReadaloud",
@@ -3158,7 +3158,7 @@
 										"The ghosts have sensed that evil powers have recently learned of the stone and are conspiring to claim it. It must not fall into evil hands!"
 									]
 								},
-								"The ghosts urge the characters to help them protect the stone. If a living humanoid willingly binds their soul to the {@item ruinstone|DC}, the artifact will be destroyed when it's next used\u2014but doing so erases the soul from existence. Any creature that binds its soul to the artifact suffers no ill effects until the artifact is used, at which point the creature disappears from reality and can only be brought back with a {@spell wish} spell, or similar magic. If no characters are willing to volunteer their souls, the ghosts ask them to stay clear of the tower and leave them to guard it.",
+								"The ghosts urge the characters to help them protect the stone. If a living humanoid willingly binds their soul to the {@item ruinstone|DC}, the artifact will be destroyed when it's next used\u2014but doing so erases the soul from existence. Any creature that binds its soul to the artifact suffers no ill effects until the artifact is used, at which point the creature disappears from reality and can only be brought back with a {@spell 祈願術} spell, or similar magic. If no characters are willing to volunteer their souls, the ghosts ask them to stay clear of the tower and leave them to guard it.",
 								"When Gallio awakens, he admits to his deception and swears never to seek the {@item ruinstone|DC} again. The wizard resigns from his post at once and returns to Neverwinter to face his order."
 							]
 						}

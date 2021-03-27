@@ -71,9 +71,9 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell scrying}",
-							"{@spell telekinesis}",
-							"{@spell teleportation circle}"
+							"{@spell 探知}",
+							"{@spell 心靈遙控}",
+							"{@spell 傳送法陣}"
 						]
 					},
 					"ability": "int"

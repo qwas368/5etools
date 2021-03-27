@@ -76,13 +76,13 @@
 					],
 					"daily": {
 						"3": [
-							"{@spell thunderwave} ({@dice 2d8} damage)"
+							"{@spell 雷鳴波} ({@dice 2d8} damage)"
 						],
 						"1e": [
-							"{@spell augury}",
-							"{@spell bless}",
-							"{@spell lightning bolt} ({@dice 8d6} damage)",
-							"{@spell revivify}"
+							"{@spell 卜筮}",
+							"{@spell 祝福術}",
+							"{@spell 閃電束} ({@dice 8d6} damage)",
+							"{@spell 回生術}"
 						]
 					},
 					"ability": "wis"
@@ -462,7 +462,7 @@
 				10,
 				{
 					"ac": 13,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -501,18 +501,18 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost} (see \"Actions\" below)"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線} (see \"Actions\" below)"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile} (see \"Actions\" below)",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈} (see \"Actions\" below)",
+								"{@spell 護盾術}"
 							]
 						}
 					},

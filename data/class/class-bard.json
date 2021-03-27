@@ -800,7 +800,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell dancing lights} and {@spell vicious mockery} cantrips, along with the following 1st-level spells: {@spell charm person}, {@spell detect magic}, {@spell healing word}, and {@spell thunderwave}."
+										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell 舞光術} and {@spell 惡毒嘲笑} cantrips, along with the following 1st-level spells: {@spell 魅惑人類}, {@spell 偵測魔法}, {@spell 治癒真言}, and {@spell 雷鳴波}."
 									]
 								}
 							]
@@ -2143,7 +2143,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level College of Spirits feature}",
-				"You can reach out to spirits to guide you and others. You learn the {@spell guidance} cantrip, which doesn't count against the number of bard cantrips you know. For you, it has a range of 60 feet when you cast it."
+				"You can reach out to spirits to guide you and others. You learn the {@spell 指導術} cantrip, which doesn't count against the number of bard cantrips you know. For you, it has a range of 60 feet when you cast it."
 			]
 		},
 		{
@@ -2445,7 +2445,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you take on an appearance of unearthly beauty for 1 minute. During this time, you can cast {@spell command} as a bonus action on each of your turns, without using a spell slot. This effect lasts for 1 minute, and any creature {@condition charmed} by you automatically fails its saving throw against the spell.",
+				"At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you take on an appearance of unearthly beauty for 1 minute. During this time, you can cast {@spell 命令術} as a bonus action on each of your turns, without using a spell slot. This effect lasts for 1 minute, and any creature {@condition charmed} by you automatically fails its saving throw against the spell.",
 				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		},
@@ -2461,8 +2461,8 @@
 			"header": 2,
 			"entries": [
 				"At 14th level, you gain an otherworldly aspect to your appearance that makes you look more fierce and lovely.",
-				"In addition, through this feature, you can cast {@spell sanctuary} on yourself. If a creature fails its saving throw against the spell, you also gain advantage on all Charisma checks against the creature for 1 minute, and it has disadvantage on any saving throw it makes against your spells on your next turn.",
-				"Once you cast {@spell sanctuary} using this feature, you can't do so again until you finish a short or long rest."
+				"In addition, through this feature, you can cast {@spell 聖域術} on yourself. If a creature fails its saving throw against the spell, you also gain advantage on all Charisma checks against the creature for 1 minute, and it has disadvantage on any saving throw it makes against your spells on your next turn.",
+				"Once you cast {@spell 聖域術} using this feature, you can't do so again until you finish a short or long rest."
 			]
 		},
 		{

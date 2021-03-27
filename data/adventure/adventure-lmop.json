@@ -1653,7 +1653,7 @@
 								"This steep-sided fissure is 5 to 10 feet wide and 20 feet deep. Its rough walls are easily climbed without an ability check. A creature that falls into the crevasse takes 2d6 bludgeoning damage and lands prone in a jumble of rubble that is difficult terrain (see \"Difficult Terrain\" in the rulebook)."
 							]
 						},
-						"The bottom of the crevasse feels unnaturally cold. When viewed with a {@spell detect magic} spell, the area emanates a faint necromantic aura. The magic causes all organic matter in the crevasse to age and decompose at half the normal rate.",
+						"The bottom of the crevasse feels unnaturally cold. When viewed with a {@spell 偵測魔法} spell, the area emanates a faint necromantic aura. The magic causes all organic matter in the crevasse to age and decompose at half the normal rate.",
 						"Currently heaped at the bottom among broken and well-gnawed bones is the half-eaten body of Thel Dendrar, the woodcarver of Phandalin who was murdered by the Redbrands. The outlaws left his corpse here for the nothic to feed on.",
 						{
 							"type": "entries",
@@ -1838,7 +1838,7 @@
 								"A former member of the Lords' Alliance, Iarno seized an opportunity in Phandalin to line his own pockets. Originally tasked with setting up a constabulary, the mage instead assembled a group of outlaws and local ruffians to secure his own position in town.",
 								"Iarno knew of the Black Spider through his contacts in the Lords' Alliance and brokered a meeting. The drow promised to share the secrets and wealth of the Forge of Spells with the wizard in exchange for his help and loyalty.",
 								"Iarno puts on airs of gentility and courteous manners, addressing his ruffians as \"my good gentlemen,\" and referring to sordid acts such as kidnapping or arson as \"that unpleasant little business\" or \"those unfortunate events.\" He refers to the characters as \"guests\" and expresses regret that he cannot provide suitable entertainment for their visit. Beneath his genteel demeanor, however, Iarno is just as thuggish and arrogant as any Redbrand outlaws.",
-								"If threatened, Iarno uses his {@item staff of defense|LMoP} to cast {@spell mage armor} on himself. He then casts offensive spells at enemies he can see. Iarno's stat block contains a list of the spells he has prepared. For descriptions of those spells and their effects, see the rulebook. Iarno uses the shield power of his staff for added protection.",
+								"If threatened, Iarno uses his {@item staff of defense|LMoP} to cast {@spell 法師護甲} on himself. He then casts offensive spells at enemies he can see. Iarno's stat block contains a list of the spells he has prepared. For descriptions of those spells and their effects, see the rulebook. Iarno uses the shield power of his staff for added protection.",
 								"If he is reduced to 8 or fewer hit points and has no avenues of escape, Iarno surrenders. He values his life more than anything, and he remains a model prisoner in the hopes that the Black Spider will somehow learn of his predicament and \"arrange for his freedom.\"",
 								"If he is questioned while in captivity, Iarno relates the following information, all of which is true:",
 								{
@@ -2223,7 +2223,7 @@
 							"name": "Treasure",
 							"id": "0cc",
 							"entries": [
-								"Hamun Kost's tent contains a comfortable traveling suite, including a cot, a chair, a writing desk, supplies, and a chest of clothes. In the chest is a leather bag containing 35 sp, 20 ep, 20 gp, 5 pp, one pearl (100 gp), a {@item potion of healing}, a {@item Spell Scroll (2nd level)||scroll of} {@spell darkness} in a bone tube, and a tiny jeweled box (25 gp) containing a {@item ring of protection} from ancient Netheril, the Red Wizard's most interesting discovery so far."
+								"Hamun Kost's tent contains a comfortable traveling suite, including a cot, a chair, a writing desk, supplies, and a chest of clothes. In the chest is a leather bag containing 35 sp, 20 ep, 20 gp, 5 pp, one pearl (100 gp), a {@item potion of healing}, a {@item Spell Scroll (2nd level)||scroll of} {@spell 黑暗術} in a bone tube, and a tiny jeweled box (25 gp) containing a {@item ring of protection} from ancient Netheril, the Red Wizard's most interesting discovery so far."
 							]
 						},
 						{
@@ -2539,7 +2539,7 @@
 							"name": "Treasure",
 							"id": "0ef",
 							"entries": [
-								"An old wooden chest broken open on the tower floor holds the last of the dead wizard's treasure: 800 sp, 150 gp, four silver goblets set with moonstones (60 gp each), a {@item Spell Scroll (2nd level)||scroll of} {@spell misty step}, and a {@item Spell Scroll (3rd level)||scroll of} {@spell lightning bolt}. Venomfang spends much of his time greedily admiring the loot.",
+								"An old wooden chest broken open on the tower floor holds the last of the dead wizard's treasure: 800 sp, 150 gp, four silver goblets set with moonstones (60 gp each), a {@item Spell Scroll (2nd level)||scroll of} {@spell 迷蹤步}, and a {@item Spell Scroll (3rd level)||scroll of} {@spell 閃電束}. Venomfang spends much of his time greedily admiring the loot.",
 								"The dragon has barely noticed the most interesting item in its hoard. Beneath the coins is a rusty old battleaxe of dwarven manufacture. Runes in Dwarvish on the axe head read, \"Hew,\" and the rust is misleading. Hew is a +1 battleaxe that deals maximum damage when the wielder hits a plant creature or an object made of wood. The axe's creator was a dwarf smith who feuded with the dryads of a forest where he cut firewood. Whoever carries the axe feels uneasy whenever he or she travels through a forest."
 							]
 						},
@@ -3074,7 +3074,7 @@
 							"id": "12d",
 							"entries": [
 								"The stone brazier contains a mound of coal, buried under which is a gold statuette of a sun elf (100 gp) wrapped in crimson cloth. A goblin hid the figurine here, hoping his fellow goblins wouldn't steal it from him.",
-								"A {@spell detect magic} spell reveals that the statuette is imbued with divination magic. Any non-evil creature grasping the statue can ask it a question and receive a telepathic response, as though it had cast {@spell augury} (see the rulebook for a description of this spell). Once a creature has asked its question and received a response, it can never activate the statuette again."
+								"A {@spell 偵測魔法} spell reveals that the statuette is imbued with divination magic. Any non-evil creature grasping the statue can ask it a question and receive a telepathic response, as though it had cast {@spell 卜筮} (see the rulebook for a description of this spell). Once a creature has asked its question and received a response, it can never activate the statuette again."
 							]
 						},
 						{
@@ -3213,7 +3213,7 @@
 							"name": "Treasure",
 							"id": "13e",
 							"entries": [
-								"All that remains of the tower's second floor is a jagged ledge, upon which sits a battered wooden chest. The chest is hard to see from the floor, requiring a successful DC 15 Wisdom (Perception) check to notice. The chest is unlocked and contains 90 ep, 120 gp, a {@item potion of healing}, a {@item Spell Scroll (2nd level)||scroll of} {@spell silence}, and a {@item Spell Scroll (3rd level)||scroll of} {@spell revivify}."
+								"All that remains of the tower's second floor is a jagged ledge, upon which sits a battered wooden chest. The chest is hard to see from the floor, requiring a successful DC 15 Wisdom (Perception) check to notice. The chest is unlocked and contains 90 ep, 120 gp, a {@item potion of healing}, a {@item Spell Scroll (2nd level)||scroll of} {@spell 沉默術}, and a {@item Spell Scroll (3rd level)||scroll of} {@spell 回生術}."
 							]
 						},
 						{
@@ -3768,7 +3768,7 @@
 							]
 						},
 						"The damaged buildings are described in areas 14 and 15. Minerals in the ceiling are pretty, but they are neither magical nor valuable.",
-						"Any character proficient in Arcana can sense a subtle aura of magic in this cavern. (A {@spell detect magic} spell reveals the same.) The aura becomes stronger as one approaches the northern building ({@area 15|17d})."
+						"Any character proficient in Arcana can sense a subtle aura of magic in this cavern. (A {@spell 偵測魔法} spell reveals the same.) The aura becomes stronger as one approaches the northern building ({@area 15|17d})."
 					]
 				},
 				{
@@ -3946,14 +3946,14 @@
 								"Two bugbears stand by the table, flanking a dark elf dressed in black leather armor and robes. He clutches a black staff with a carved spider at the top and frowns as he sees you. \"It seems that I must deal with you myself. A pity it must end this way.\""
 							]
 						},
-						"{@creature Nezznar the Black Spider|LMoP} is joined by four {@creature giant spider||giant spiders} that defend their master to the death. If they are expecting trouble, the spiders hide behind pillars, and Nezznar casts {@spell invisibility} on himself and stands near the table. Make a Dexterity (Stealth) check for the spiders. When intruders appear, the spiders try to entangle them in webs before closing to melee range. Nezznar joins the fray on the round after the spiders attack.",
+						"{@creature Nezznar the Black Spider|LMoP} is joined by four {@creature giant spider||giant spiders} that defend their master to the death. If they are expecting trouble, the spiders hide behind pillars, and Nezznar casts {@spell 隱形術} on himself and stands near the table. Make a Dexterity (Stealth) check for the spiders. When intruders appear, the spiders try to entangle them in webs before closing to melee range. Nezznar joins the fray on the round after the spiders attack.",
 						"If the {@creature doppelganger} from {@area 18|186} retreated to this area, it assumes the guise of Nundro Rockseeker so that Nezznar can use the \"dwarf\" as leverage to force the party's surrender (although the drow won't actually harm the doppelganger). See the \"Roleplaying Nezznar\" section for more information on the drow villain.",
 						{
 							"type": "entries",
 							"name": "Statue",
 							"id": "18e",
 							"entries": [
-								"The statue depicts Dumathoin, the dwarven god of mining. Any character who has proficiency in Religion recognizes the deity. The statue is beautifully carved, and its emerald eyes appear extremely valuable. However, the jewels are clever fakes made of worthless glass, as close inspection and a successful DC 15 Intelligence (Investigation) check reveals. Nevertheless, a powerful spell protects them, and a {@spell detect magic} spell reveals a strong aura of abjuration magic surrounding the statue."
+								"The statue depicts Dumathoin, the dwarven god of mining. Any character who has proficiency in Religion recognizes the deity. The statue is beautifully carved, and its emerald eyes appear extremely valuable. However, the jewels are clever fakes made of worthless glass, as close inspection and a successful DC 15 Intelligence (Investigation) check reveals. Nevertheless, a powerful spell protects them, and a {@spell 偵測魔法} spell reveals a strong aura of abjuration magic surrounding the statue."
 							]
 						},
 						"A character can climb the statue easily and pry a jewel loose with a successful DC 10 Strength check. However, if either eye is removed, the pillars that line the walls crack, triggering a ceiling collapse. Each creature in the room must make a DC 15 Dexterity saving throw, taking 4d10 bludgeoning damage from falling rubble and falling prone on a failure, or taking only half the damage on a success.",
@@ -4059,7 +4059,7 @@
 					"name": "Using a Magic Item",
 					"id": "19a",
 					"entries": [
-						"A magic item's description explains how the item works. Handling a magic item is enough to give a character a sense that something is extraordinary about the item. Casting the {@spell identify} spell on the item then reveals its properties. Alternatively, a character can concentrate on the item during a short rest, while being in physical contact with the item. At the end of the rest, the character learns the item's properties. Potions are an exception; a little taste is enough to tell the taster what the potion does.",
+						"A magic item's description explains how the item works. Handling a magic item is enough to give a character a sense that something is extraordinary about the item. Casting the {@spell 鑑定術} spell on the item then reveals its properties. Alternatively, a character can concentrate on the item during a short rest, while being in physical contact with the item. At the end of the rest, the character learns the item's properties. Potions are an exception; a little taste is enough to tell the taster what the potion does.",
 						"Certain magic items require a user to {@b attune} to them before their magical properties can be used. Attuning to a magic item requires that you spend a short rest concentrating on it (this can't be the same short rest used to learn an item's properties). Depending on the nature of the item, this concentration can take the form of prayers, weapon practice, or meditation. In any case, the concentration period must be uninterrupted. Once you are attuned to an item, you can use its magical properties.",
 						"An item can be attuned to only one creature at a time. A creature can be attuned to no more than three magic items at any given time, and you can attune yourself to only one item during a short rest.",
 						"Your attunement to an item ends when the item has been more than 100 feet away from you for 24 hours and when you die. You can also voluntarily end your attunement to an item with another short rest."

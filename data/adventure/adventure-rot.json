@@ -413,7 +413,7 @@
 									"id": "031",
 									"entries": [
 										"During the second or third session of the Council of Waterdeep, rumors spread of an aide from Neverwinter who killed an aide from Mithral Hall and then hanged himself. In truth, the Cult of the Dragon sent a {@creature succubus} spy to Waterdeep. She {@condition charmed} the Neverwinter aide into collecting information for her, but the other aide discovered their meetings. The succubus forced her victim to slay the other aide to cover her tracks, then to kill himself.",
-										"If the characters investigate, they can obtain the body to question it using {@spell speak with dead}, or they might use {@spell commune} to discover the spy. The succubus has gained another victim by that point\u2014a knight of the Order of the Gauntlet who regularly goes to meet her at her slum dwelling in the Field Ward of Waterdeep. This pattern of murder and suicide continues unless the spy's true identity is discovered."
+										"If the characters investigate, they can obtain the body to question it using {@spell 死者交談術}, or they might use {@spell 通神術} to discover the spy. The succubus has gained another victim by that point\u2014a knight of the Order of the Gauntlet who regularly goes to meet her at her slum dwelling in the Field Ward of Waterdeep. This pattern of murder and suicide continues unless the spy's true identity is discovered."
 									]
 								}
 							]
@@ -979,7 +979,7 @@
 					"entries": [
 						"{@i The Rise of Tiamat} begins in Waterdeep. If you played {@i Hoard of the Dragon Queen}, the characters might have already made their way back to the City of Splendors after Skyreach Castle crashed at the end of that first adventure. If you didn't play {@i Hoard of the Dragon Queen}, if Skyreach Castle wasn't crashed, or if the characters went somewhere other than Waterdeep afterward, you need to get the party back to Waterdeep for the start of this adventure.",
 						"It's easy enough to simply tell the players that their characters are back in Waterdeep. However, if you suspect that your group won't find that satisfying, you can avoid playing through a long overland journey by making use of the following scenario.",
-						"Wherever the characters are when this session begins, a raven flies up to them. The bird is part of an {@spell animal messenger} relay dispatched by Leosin Erlanthar's allies in the Emerald Enclave.",
+						"Wherever the characters are when this session begins, a raven flies up to them. The bird is part of an {@spell 動物信使} relay dispatched by Leosin Erlanthar's allies in the Emerald Enclave.",
 						{
 							"type": "insetReadaloud",
 							"id": "061",
@@ -987,7 +987,7 @@
 								"The raven lands a dozen paces from you, then boldly hops closer, a flat parcel wrapped in oilskin strapped to its belly. It eyes you enigmatically for a few moments, then speaks in a familiar voice. \"Leosin Erlanthar sends his heartiest congratulations! Please use the gift this bird brings to meet me in Waterdeep as soon as possible.\""
 							]
 						},
-						"The bird waits patiently while the leather parcel is removed from its harness. The parcel contains a carefully folded {@item spell scroll} of {@spell teleport} and the sigil sequence of a permanent teleport circle in Waterdeep. The circle can be in a temple, a government building, or any other site of your choice. If the party includes more than six characters, the parcel contains two scrolls. If none of the characters can use a {@spell teleport} scroll, they'll need to seek out an NPC who can. Just don't make it too difficult."
+						"The bird waits patiently while the leather parcel is removed from its harness. The parcel contains a carefully folded {@item spell scroll} of {@spell 傳送術} and the sigil sequence of a permanent teleport circle in Waterdeep. The circle can be in a temple, a government building, or any other site of your choice. If the party includes more than six characters, the parcel contains two scrolls. If none of the characters can use a {@spell 傳送術} scroll, they'll need to seek out an NPC who can. Just don't make it too difficult."
 					]
 				},
 				{
@@ -1209,7 +1209,7 @@
 									"id": "07a",
 									"entries": [
 										"At an appropriate point in the council meetings, Rian Nightshade approaches the characters and asks for a private audience. She explains her position as an emissary of the Zhentarim, and of the Zhentarim's interest in current affairs. She bemoans the dithering of the other factions, stating that the Black Network is willing to act immediately and unflinchingly\u2014if the party can help arrange agreeable terms for the Zhentarim's support.",
-										"Rian points out that the Zhentarim have a keen interest in Xonthal's Tower. Ownership of the tower is under discussion by the council, but the tiefling wants to deal directly with the adventurers, who have claim to the tower by right of conquest. The Zhentarim are willing to purchase the adventurers' interest in the tower for 50,000 gold pieces, and Rian can throw in a {@item Potion of Greater Healing|| greater healing potion}, a {@item potion of frost giant strength}, and a {@item spell scroll} of {@spell earthquake} to sweeten the deal. This price could go up considerably if the party negotiates agreeable terms from the other factions for the Zhentarim's support\u2014up to an additional 25,000 gp, at your discretion."
+										"Rian points out that the Zhentarim have a keen interest in Xonthal's Tower. Ownership of the tower is under discussion by the council, but the tiefling wants to deal directly with the adventurers, who have claim to the tower by right of conquest. The Zhentarim are willing to purchase the adventurers' interest in the tower for 50,000 gold pieces, and Rian can throw in a {@item Potion of Greater Healing|| greater healing potion}, a {@item potion of frost giant strength}, and a {@item spell scroll} of {@spell 地震術} to sweeten the deal. This price could go up considerably if the party negotiates agreeable terms from the other factions for the Zhentarim's support\u2014up to an additional 25,000 gp, at your discretion."
 									]
 								},
 								{
@@ -1322,7 +1322,7 @@
 									"type": "insetReadaloud",
 									"id": "084",
 									"entries": [
-										"\"Maccath reported her progress to the Hosttower by way of {@spell sending} spells. Her last report spoke of seeing Ice Hunters paddling their sealskin boats toward a huge iceberg, flattened like a plateau across its surface, but ringed by icy peaks. She had intended to follow the Ice Hunters and investigate the iceberg. After that, no more reports came.",
+										"\"Maccath reported her progress to the Hosttower by way of {@spell 短訊術} spells. Her last report spoke of seeing Ice Hunters paddling their sealskin boats toward a huge iceberg, flattened like a plateau across its surface, but ringed by icy peaks. She had intended to follow the Ice Hunters and investigate the iceberg. After that, no more reports came.",
 										"\"Attempts to find Maccath using scrying and other magical means located only her ship, adrift and heavily damaged. Some of the ship's crew were seen dead, but no sign of the tiefling sorcerer was ever found. However, the lair of a dragon as powerful as Arauthator is no doubt protected against scrying magic. If Maccath is alive, in addition to the lore she can share regarding the {@item Draakhorn|RoT}, the Arcane Brotherhood would be most grateful to get her back.\""
 									]
 								}
@@ -1520,7 +1520,7 @@
 										"The Ice Hunters are determined not to allow the strangers inside the village hall, where they might discover the entrance to the ice caves. They know that letting powerful adventurers get past them into the dragon's lair means torture or death for every adult and child of the tribe.",
 										"As they stall for time, Barking Seal, Bonecarver, and Orcaheart are also sizing up the adventurers' strength. If the characters refuse to leave the iceberg, Barking Seal proposes a contest: the village's champion against any warrior among the strangers. If the champion wins, the characters must hand over some of their fine steel weapons and sail away immediately, never to return. If the adventurer wins, the strangers will have earned their place among the villagers. They can spend the night in the village, after which Bonecarver will answer their questions to the best of her ability.",
 										"If the characters agree to the duel, one of them must fight Orcaheart one-on-one. No magic is allowed, but if the character possesses a magic weapon or magic armor with no obvious effects, the villagers are unlikely to notice. The fight continues until one contestant is {@condition unconscious} and dying. (Allow Orcaheart to make death saving throws if he drops to 0 hit points.) At that point, the match ends and each combatant's allies can step in to provide healing and assistance.",
-										"During the fight, a combatant forfeits if he or she gains assistance of any kind from allies. Despite this, however, Bonecarver aids Orcaheart during the fight if she can. She positions herself so that when he is struck, he can fall backward and land in front of her. When she helps him back onto his feet, she surreptitiously casts {@spell cure wounds}. If a player states specifically that a character is watching the crowd for signs of interference, that character can attempt a DC 15 Wisdom ({@skill Perception}) check. Success means that Bonecarver was spotted in the act, though she denies providing assistance if accused of cheating."
+										"During the fight, a combatant forfeits if he or she gains assistance of any kind from allies. Despite this, however, Bonecarver aids Orcaheart during the fight if she can. She positions herself so that when he is struck, he can fall backward and land in front of her. When she helps him back onto his feet, she surreptitiously casts {@spell 治療傷勢}. If a player states specifically that a character is watching the crowd for signs of interference, that character can attempt a DC 15 Wisdom ({@skill Perception}) check. Success means that Bonecarver was spotted in the act, though she denies providing assistance if accused of cheating."
 									]
 								},
 								{
@@ -1753,7 +1753,7 @@
 							"entries": [
 								"Hidden beneath the planks in the back corner of the village hall, this entrance to the ice caves consists of a chute carved with icy stairs descending 100 feet in a tight spiral. This route is used regularly to bring supplies to Arauthator's minions, so the steps are clear and easy to climb. Supplies are carried down strapped to villagers' backs, or lowered in baskets with the pulley and rope in the village hall.",
 								"This chamber is empty except for three bundles of rolled-up sealskins sitting where the ladder descends from the chute above to the approximate center of the room. Additionally, a bed of piled furs has been arranged in the southwest corner, from which the sound of loud coughing can be heard when the characters enter the chamber. Villagers who suffer disease or injury beyond Bonecarver's limited healing ability are quarantined here in the relative warmth of the caves. The coughing villager is named Mend-nets ({@creature tribal warrior}).",
-								"Mend-nets is naturally suspicious of strangers, but if any character can use {@spell lesser restoration} to cure his disease, he becomes a trustworthy ally. He won't do anything to hurt the village or the tribe, but he hates the kobolds who live in the caves. The ice toads likewise repulse him, though they also ignore him. The ice trolls terrify him, and he has awoken several times to find a troll hungrily peering at him from the tunnel leading to the trolls' lair ({@area area 12|0c1|x}). He tells the characters that the creatures of the caves have been warned of their presence, but the only chambers he knows anything about besides this one are areas 1, 3, and {@area 7|0b2|x}."
+								"Mend-nets is naturally suspicious of strangers, but if any character can use {@spell 次級復原術} to cure his disease, he becomes a trustworthy ally. He won't do anything to hurt the village or the tribe, but he hates the kobolds who live in the caves. The ice toads likewise repulse him, though they also ignore him. The ice trolls terrify him, and he has awoken several times to find a troll hungrily peering at him from the tunnel leading to the trolls' lair ({@area area 12|0c1|x}). He tells the characters that the creatures of the caves have been warned of their presence, but the only chambers he knows anything about besides this one are areas 1, 3, and {@area 7|0b2|x}."
 							]
 						},
 						{
@@ -1888,7 +1888,7 @@
 									]
 								},
 								"When Maccath arrived at Oyaviggaton three years ago, Arauthator would normally have killed her without a second thought. However, the brooch of the Arcane Brotherhood she wore suggested to Arauthator that the tiefling might present a solution to two problems. First, the dragon possessed numerous items stolen from the Arcane Brotherhood, some of which defied his understanding even after decades of study. Second, Arauthator had long sought to help his mate Arveiaturace overcome her grief over the death of the wizard she once served. Replacing that wizard with a member of the Arcane Brotherhood seemed a perfect solution.",
-								"Maccath was smart enough to convince the dragon that his offer had won her over, expecting that she would eventually be able to seek a means of escape from the iceberg. However, she has so far been thwarted by Arauthator's potent magic\u2014including spells and rituals stolen from the Arcane Brotherhood\u2014which have kept her sealed and helpless in Oyaviggaton, invisible to scrying and unable to use {@spell sending} to call for help. Before he turns Maccath over to Arveiaturace, Arauthator has had the tiefling deciphering his stolen writings, though the work has gone slowly thanks to the inherent complexity and danger of the material. Maccath is studying one of the stolen scrolls when the characters walk in.",
+								"Maccath was smart enough to convince the dragon that his offer had won her over, expecting that she would eventually be able to seek a means of escape from the iceberg. However, she has so far been thwarted by Arauthator's potent magic\u2014including spells and rituals stolen from the Arcane Brotherhood\u2014which have kept her sealed and helpless in Oyaviggaton, invisible to scrying and unable to use {@spell 短訊術} to call for help. Before he turns Maccath over to Arveiaturace, Arauthator has had the tiefling deciphering his stolen writings, though the work has gone slowly thanks to the inherent complexity and danger of the material. Maccath is studying one of the stolen scrolls when the characters walk in.",
 								"If the characters announced their presence by fighting the ice troll, the 2 {@creature Kobold||kobolds} will be visibly agitated, even though Maccath shows little concern. The kobolds have been directed to stay with the tiefling and follow her orders, which mostly means undertaking errands to the scriptorium (area 11). She also relies on them for cooking, housekeeping, and other mundane chores. The moment the characters make it clear that they are here to rescue Maccath, the kobolds make a dash for {@area area 12|0c1|x}. They alert the ice trolls unless they are stopped.",
 								{
 									"type": "entries",
@@ -1943,7 +1943,7 @@
 									"name": "Treasure",
 									"id": "0bf",
 									"entries": [
-										"Arcane spellcasters can find much of value in this scriptorium, along with much that's worthless. Arauthator has collected many spellbooks from slain wizards over the centuries. More importantly for the party's immediate benefit, he also collected dozens of scrolls. Though many of those here have deteriorated from dampness or age, characters who spend a few minutes searching can find ten {@item Spell Scroll||spell scrolls}: {@spell gaseous form}, {@spell haste}, {@spell protection from energy}, {@spell water breathing}, {@spell Evard's black tentacles}, {@spell fire shield}, {@spell wall of fire}, {@spell hold monster}, {@spell chain lightning}, and {@spell disintegrate}."
+										"Arcane spellcasters can find much of value in this scriptorium, along with much that's worthless. Arauthator has collected many spellbooks from slain wizards over the centuries. More importantly for the party's immediate benefit, he also collected dozens of scrolls. Though many of those here have deteriorated from dampness or age, characters who spend a few minutes searching can find ten {@item Spell Scroll||spell scrolls}: {@spell 氣化形體}, {@spell 加速術}, {@spell 防護能量}, {@spell 水下呼吸}, {@spell 艾伐黑觸手}, {@spell 火焰護盾}, {@spell 火牆術}, {@spell 怪物定身術}, {@spell 連環閃電}, and {@spell 解離術}."
 									]
 								},
 								{
@@ -2107,8 +2107,8 @@
 							"name": "18a. The Gullet",
 							"id": "0d2",
 							"entries": [
-								"This narrow passage is rigged with a magic trap. When the first character passes through the narrowest point of the passage, the entire area of the passage fills with a {@spell stinking cloud} for 1 minute.",
-								"Arauthator immediately becomes aware of intruders if the {@spell stinking cloud} is triggered. The dragon does not set off the trap if it moves through the area."
+								"This narrow passage is rigged with a magic trap. When the first character passes through the narrowest point of the passage, the entire area of the passage fills with a {@spell 臭雲術} for 1 minute.",
+								"Arauthator immediately becomes aware of intruders if the {@spell 臭雲術} is triggered. The dragon does not set off the trap if it moves through the area."
 							]
 						},
 						{
@@ -2116,8 +2116,8 @@
 							"name": "18b. The Throat",
 							"id": "0d3",
 							"entries": [
-								"This narrow passage is rigged with a magic trap. When the first character moves through the narrowest point of the passage, a {@spell slow} spell is triggered, targeting every creature in the area. Creatures affected by the spell suffer its effects for 1 minute.",
-								"Arauthator immediately becomes aware of intruders if the {@spell slow} spell is triggered. The dragon does not set off the trap if it moves through the area."
+								"This narrow passage is rigged with a magic trap. When the first character moves through the narrowest point of the passage, a {@spell 緩速術} spell is triggered, targeting every creature in the area. Creatures affected by the spell suffer its effects for 1 minute.",
+								"Arauthator immediately becomes aware of intruders if the {@spell 緩速術} spell is triggered. The dragon does not set off the trap if it moves through the area."
 							]
 						},
 						{
@@ -2513,7 +2513,7 @@
 									"name": "Statue Trap",
 									"id": "0f8",
 									"entries": [
-										" When the first adventurer passes the halfway point of the room, the sound of grinding stone announces the statues turning their cowled heads to follow the characters' movements. The characters must not look into the darkness in the statues' hoods. Any character who does must make a DC 15 Wisdom saving throw against a {@spell suggestion} spell. Success indicates that the character shrugs off the statue's magic, while failure indicates the character is held by the dark gaze within the stony cowl for 1 round. During this time, the statue whispers impossible secrets to the character, which carry both benefit and burden.",
+										" When the first adventurer passes the halfway point of the room, the sound of grinding stone announces the statues turning their cowled heads to follow the characters' movements. The characters must not look into the darkness in the statues' hoods. Any character who does must make a DC 15 Wisdom saving throw against a {@spell 暗示術} spell. Success indicates that the character shrugs off the statue's magic, while failure indicates the character is held by the dark gaze within the stony cowl for 1 round. During this time, the statue whispers impossible secrets to the character, which carry both benefit and burden.",
 										"The character must then make a DC 15 Intelligence saving throw. On a failed save, the character cannot grasp the secrets it was shown, and there is no effect. On a success, the character understands the world more accurately, gaining advantage on Intelligence checks for the next 24 hours. However, the character is also driven temporarily insane for 1 minute. An insane creature can't take actions or reactions, can't understand what other creatures say, can't read, and speaks only in gibberish. You control the creature's movement, which is erratic."
 									]
 								}
@@ -2641,7 +2641,7 @@
 							"id": "106",
 							"entries": [
 								"A throne on a massive dais resembles a floating cloud concealing a golden sun. Seated on the throne is a twelve-foot-tall, regal and well-muscled humanoid male with a flowing white beard and purple toga\u2014in reality, a {@creature clay golem} that Diderius used to receive favored guests in this area.",
-								"The golem has been imbued with castings of {@spell magic mouth}. When any character first approaches it, the crea-ture speaks in a soothing, magnificent voice, saying, \"Ye who seek Diderius's insight must first furnish tribute, that Diderius might work his mighty magic. Lay such tribute at my feet or depart.\"",
+								"The golem has been imbued with castings of {@spell 魔嘴術}. When any character first approaches it, the crea-ture speaks in a soothing, magnificent voice, saying, \"Ye who seek Diderius's insight must first furnish tribute, that Diderius might work his mighty magic. Lay such tribute at my feet or depart.\"",
 								"Diderius was not a greedy wizard, and he accepted even meek offerings from the poor in the town. As long as each party member places something more valuable than a clay cup in the treasure pile, the characters are allowed to pass. If the adventurers attempt to steal any of the treasure or to use the door to {@area area 10|109|x} without leaving treasure, the golem attacks.",
 								{
 									"type": "entries",
@@ -2709,7 +2709,7 @@
 										"The bookshelves contain magical treatises and notes on divination that have withstood the ravages of time. They detail the spellcasting practices of ancient Netheril, and will fetch 750 gp if sold. If the characters search the room, they find a crumbling book titled {@i Transubstantiality across Potentialities} stuck between the bed and the wall. If it is returned to the library ({@area area 9|108|x}), the ghost is free to move on from this world.",
 										"The silver ewer and four goblets next to the bed are magical. If a character pours from the empty ewer into an empty goblet, a fuming gas flows between both vessels. A character who \"drinks\" from a gas-filled goblet receives advantage on saving throws against poison and resistance to poison damage for 3 hours. Each of the goblets can be used to produce this effect once per seven days.",
 										"The airtight chest holds seven silk robes kept free from rot, and worth 50 gp each if sold.",
-										"The chest also holds an amethyst-set {@item Ring of Poison Resistance||ring of resistance (poison)} and two {@item Spell Scroll||spell scrolls} of {@spell protection from energy}."
+										"The chest also holds an amethyst-set {@item Ring of Poison Resistance||ring of resistance (poison)} and two {@item Spell Scroll||spell scrolls} of {@spell 防護能量}."
 									]
 								}
 							]
@@ -2728,7 +2728,7 @@
 									"id": "10e",
 									"entries": [
 										"The pool is currently empty. Varram had only just completed the pool's divination ritual when the yuan-ti attacked and hauled him off. A stone sluice runs from the southern wall to empty into the pool. If the characters can fill the basin in {@area area 5 |0ff|x} and release the sluice quickly enough, the water pours into the pool before it has a chance to evaporate. Alternatively, the pool can be activated with a flask of holy water, which is not subject to the mummy lord's lair effects.",
-										"When any water hits the pool, it spreads out and flares with a black light. Any character who received Ilda's warning (or who remembers the statues words in {@area area 3|0f7|x}) will hopefully declare that he or she looks away from the pool. Otherwise, a character must make a DC 20 Wisdom saving throw against a {@spell suggestion} spell. On a failed save, the character is compelled to gaze into the divination pool. unless another character immediately pulls the curious victim away from the pool (and avoids gazing into it as he or she does so). If not pulled away, a gazing character is driven temporarily insane for 1 minute (see area 3). A character pulled away from the pool does not suffer insanity but is {@condition stunned} for 1 minute."
+										"When any water hits the pool, it spreads out and flares with a black light. Any character who received Ilda's warning (or who remembers the statues words in {@area area 3|0f7|x}) will hopefully declare that he or she looks away from the pool. Otherwise, a character must make a DC 20 Wisdom saving throw against a {@spell 暗示術} spell. On a failed save, the character is compelled to gaze into the divination pool. unless another character immediately pulls the curious victim away from the pool (and avoids gazing into it as he or she does so). If not pulled away, a gazing character is driven temporarily insane for 1 minute (see area 3). A character pulled away from the pool does not suffer insanity but is {@condition stunned} for 1 minute."
 									]
 								},
 								{
@@ -2756,7 +2756,7 @@
 									"width": 796,
 									"height": 1000
 								},
-								"Diderius's final resting place is a 20-foot-high chamber lit by braziers imbued with {@spell continual flame}. A massive stone sarcophagus sits atop a stepped stone dais at center. The walls are decorated with life-sized frescoes showing the lost gods of Netheril and Anauria. If the party benefits from the boon granted in {@area area 1|0f1|x}, all the characters sense it would be disrespectful to disturb anything here\u2014everything should remain as it is.",
+								"Diderius's final resting place is a 20-foot-high chamber lit by braziers imbued with {@spell 不滅明焰}. A massive stone sarcophagus sits atop a stepped stone dais at center. The walls are decorated with life-sized frescoes showing the lost gods of Netheril and Anauria. If the party benefits from the boon granted in {@area area 1|0f1|x}, all the characters sense it would be disrespectful to disturb anything here\u2014everything should remain as it is.",
 								{
 									"type": "entries",
 									"id": "111",
@@ -2785,12 +2785,12 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"Cantrips (at will): {@spell minor illusion}, {@spell ray of frost}",
-												"1st level (4 slots): {@spell charm person}, {@spell detect magic}, {@spell shield}, {@spell thunderwave}",
-												"2nd level (3 slots): {@spell cloud of daggers}, {@spell hold person}, {@spell see invisibility}",
-												"3rd level (3 slots): {@spell animate dead}, {@spell dispel magic}",
-												"4th level (3 slots): {@spell fire shield}, {@spell greater invisibility}",
-												"5th level (2 slots): {@spell cloudkill}, {@spell wall of stone}"
+												"Cantrips (at will): {@spell 次級幻象}, {@spell 冷凍射線}",
+												"1st level (4 slots): {@spell 魅惑人類}, {@spell 偵測魔法}, {@spell 護盾術}, {@spell 雷鳴波}",
+												"2nd level (3 slots): {@spell 匕首之雲}, {@spell 人類定身術}, {@spell 識破隱形}",
+												"3rd level (3 slots): {@spell 活化死屍}, {@spell 解除魔法}",
+												"4th level (3 slots): {@spell 火焰護盾}, {@spell 高等隱形術}",
+												"5th level (2 slots): {@spell 死雲術}, {@spell 石牆術}"
 											]
 										},
 										"A canopic jar in the sarcophagus contains Diderius's withered heart."
@@ -2801,7 +2801,7 @@
 									"name": "Secret Door",
 									"id": "115",
 									"entries": [
-										"In the northern wall is a secret door that requires a successful DC 20 Wisdom ({@skill Perception}) check to find. Knocking on the stone wall reveals a hollow echo beyond, but the mechanism for opening the door is on the other side. A {@spell knock} or {@spell stone shape} spell can open it, or the door can be forced with a successful DC 20 Strength check."
+										"In the northern wall is a secret door that requires a successful DC 20 Wisdom ({@skill Perception}) check to find. Knocking on the stone wall reveals a hollow echo beyond, but the mechanism for opening the door is on the other side. A {@spell 敲擊術} or {@spell 塑石術} spell can open it, or the door can be forced with a successful DC 20 Strength check."
 									]
 								}
 							]
@@ -2877,7 +2877,7 @@
 								"The steep stairs from area 14 lead to a 40-foot-long stone bridge extending over a dark pit. The west end of the bridge is 10 feet higher than the eastern edge.",
 								"Moisture drips down from the high ceiling, covering the bridge in slick moss that hangs over the edge in green curtains. Any creature moving along of the bridge must succeed on a DC 14 Dexterity saving throw or fall. On a failed saving throw, a creature can attempt a DC 10 Dexterity ({@skill Acrobatics}) check to cling to the bridge rather than fall off into the darkness.",
 								"The pit over which the bridge extends is 60 feet deep at the top of the bridge (to the west) and 50 feet deep at the foot of the bridge (to the east). The area below the bridge is a feeding chamber for the snakelike yuan-ti young (see {@area area 19|125|x}), which crawl between the two areas through holes in the wall. Any characters or lizardfolk that fall off the bridge take appropriate falling damage, then are attacked by the yuan-ti young. Climbing back up to where the bridge meets either set of stairs requires three successful DC 15 Strength ({@skill Athletics}) checks.",
-								"Any lizardfolk that retreated from area 14 attempt to hold the party off here. In addition, 6 more {@creature lizardfolk} crouch on the bridge to reinforce the area, hoping that characters trying to fight their way past fall off into the darkness below. They are supported by 2 {@creature Yuan-ti Malison (Type 1)||yuan-ti malisons (type 1)} armed with bows, which attack from the eastern stairs. The malisons also use {@spell suggestion} spells to tell characters that a fellow party member has been replaced by a yuan-ti spy and should be attacked."
+								"Any lizardfolk that retreated from area 14 attempt to hold the party off here. In addition, 6 more {@creature lizardfolk} crouch on the bridge to reinforce the area, hoping that characters trying to fight their way past fall off into the darkness below. They are supported by 2 {@creature Yuan-ti Malison (Type 1)||yuan-ti malisons (type 1)} armed with bows, which attack from the eastern stairs. The malisons also use {@spell 暗示術} spells to tell characters that a fellow party member has been replaced by a yuan-ti spy and should be attacked."
 							]
 						},
 						{
@@ -2937,7 +2937,7 @@
 							"id": "125",
 							"entries": [
 								"The floor of this room is 20 feet below the floor of the adjoining hallways, which are reached by tall ladders. The walls of this yuan-ti hatchery drip with slime, and the floor literally writhes with the room's occupants. Yuan-ti produce copious young, which are consumed by their siblings so that only the strongest survive. A swarm of these young (use the {@creature swarm of poisonous snakes}) crawl through piles of eggs and crushed egg shells littering the floor, and are watched over by 1 {@creature yuan-ti abomination} and 3 {@creature Yuan-ti Pureblood||yuan-ti purebloods}.",
-								"At the first sign of the party, the yuan-ti use {@spell suggestion} as they apologize for any previous strife, stating that their kin meant no harm to the characters. As a show of good faith, the abomination invites the characters to descend the ladders and join the yuan-ti for a feast.",
+								"At the first sign of the party, the yuan-ti use {@spell 暗示術} as they apologize for any previous strife, stating that their kin meant no harm to the characters. As a show of good faith, the abomination invites the characters to descend the ladders and join the yuan-ti for a feast.",
 								"If the characters are completely swayed, the yuan-ti wait until they descend, then they and the swarms attack. If the characters flee, the yuan-ti pursue. If they are attacked from above, the yuan-ti ascend the ladders to fight. The abomination flees any fight if reduced to half its hit points or fewer."
 							]
 						},
@@ -2980,7 +2980,7 @@
 										"If the characters have made any mention of their search for Varram during their previous battles with the yuan-ti or lizardfolk, the yuan-ti abomination priestess holds Varram's {@item dragontooth dagger|RoT} to the dwarf's neck. The priestess has heard of the characters' mission, though she does not know or care why they seek the dwarf.",
 										"If the yuan-ti have no idea why the characters have attacked, the priestess knows only that Varram has been begging for his life by promising the yuan-ti great wealth if he is freed. The priestess plans to bargain with the characters by offering them the hypothetical wealth the dwarf has promised her.",
 										"Either way, if the characters want Varram alive, the priestess demands that the party leave the complex without killing any more yuan-ti. She is willing to turn over the dwarf, but explains that his soul has been temporarily drawn from his body by powerful yuan-ti magic. When the characters have left the enclave, it will be returned. (The priestess is lying\u2014Varram is in his present semiconscious state because of the brutal treatment he's received at the hands of the yuan-ti.)",
-										"If the characters refuse her offer, the priestess attempts to use {@spell suggestion} to sway whomever she perceives as the party's leader. If that fails and combat breaks out, she slays Varram (he has only 3 hit points remaining), then attacks with her followers."
+										"If the characters refuse her offer, the priestess attempts to use {@spell 暗示術} to sway whomever she perceives as the party's leader. If that fails and combat breaks out, she slays Varram (he has only 3 hit points remaining), then attacks with her followers."
 									]
 								},
 								{
@@ -2988,7 +2988,7 @@
 									"name": "Developments",
 									"id": "12b",
 									"entries": [
-										"A successful DC 15 Intelligence ({@skill Investigation}) check reveals a secret space and a passage beneath one of the serpent statues in the temple. Within the space is the enclave's treasure hoard, comprising 800 gold pieces, 100 pp, 2 cloudy emeralds worth 500 gp each, a necklace of 22 crysoprase beads worth 20 gp each, and 2 {@item Spell Scroll||spell scrolls}, one of {@spell levitate} and the other of {@spell call lightning}. The passage leads to the exit the yuan-ti use to leave the complex without passing through the crypt. The exit is carefully hidden behind a screen of rocks and scrub trees a hundred yards away from the plaza entrance to the ruins."
+										"A successful DC 15 Intelligence ({@skill Investigation}) check reveals a secret space and a passage beneath one of the serpent statues in the temple. Within the space is the enclave's treasure hoard, comprising 800 gold pieces, 100 pp, 2 cloudy emeralds worth 500 gp each, a necklace of 22 crysoprase beads worth 20 gp each, and 2 {@item Spell Scroll||spell scrolls}, one of {@spell 浮空術} and the other of {@spell 召雷術}. The passage leads to the exit the yuan-ti use to leave the complex without passing through the crypt. The exit is carefully hidden behind a screen of rocks and scrub trees a hundred yards away from the plaza entrance to the ruins."
 									]
 								}
 							]
@@ -3090,8 +3090,8 @@
 							"name": "Silent Witnesses",
 							"id": "134",
 							"entries": [
-								"Where the humanoid witnesses to the attack are limited in their knowledge, the characters have other potential resources to draw on. By using {@spell speak with plants}, the characters can draw on the impressions and memories of the trees themselves. Though the spell allows only for impressions of the previous 24 hours to be recalled by its subjects, the trees of Altand can report that late the previous night, they witnessed Galin sneaking out of the village and disappearing into the woods, accompanied by his pet raven. Galin has been making this sojourn most nights since the attack, giving Neronvain information on other elven settlements, which the wyrmspeaker is using to plan his next round of assaults.",
-								"If the characters use {@spell speak with animals} to question the raven, they learn that Galin walked a mile or more into the woods and came face to face with the green dragon Chuth and his rider the previous night. Remember that an animal intelligence is not as articulate as a humanoid, and it might take subtle coaxing to get the raven to describe a scene that likely frightened it.",
+								"Where the humanoid witnesses to the attack are limited in their knowledge, the characters have other potential resources to draw on. By using {@spell 植物交談術}, the characters can draw on the impressions and memories of the trees themselves. Though the spell allows only for impressions of the previous 24 hours to be recalled by its subjects, the trees of Altand can report that late the previous night, they witnessed Galin sneaking out of the village and disappearing into the woods, accompanied by his pet raven. Galin has been making this sojourn most nights since the attack, giving Neronvain information on other elven settlements, which the wyrmspeaker is using to plan his next round of assaults.",
+								"If the characters use {@spell 動物交談術} to question the raven, they learn that Galin walked a mile or more into the woods and came face to face with the green dragon Chuth and his rider the previous night. Remember that an animal intelligence is not as articulate as a humanoid, and it might take subtle coaxing to get the raven to describe a scene that likely frightened it.",
 								"The characters might also choose to watch and follow Galin on one of his late night excursions. Neronvain does not show up that night, but the warden's prearranged meeting place is a spot of flattened brush where a dragon has clearly landed more than once."
 							]
 						},
@@ -3100,7 +3100,7 @@
 							"name": "Confronting Galin",
 							"id": "135",
 							"entries": [
-								"If confronted with evidence against him, Galin accuses the adventurers (publicly if necessary) of being in league with the cult and attempting to break the resolve of Altand's survivors. If the characters have access to {@spell zone of truth} or similar magic, he flatly refuses to take part in any further questioning.",
+								"If confronted with evidence against him, Galin accuses the adventurers (publicly if necessary) of being in league with the cult and attempting to break the resolve of Altand's survivors. If the characters have access to {@spell 誠實之域} or similar magic, he flatly refuses to take part in any further questioning.",
 								"Galin will not respond to intimidation. However, effective roleplaying can be used to tap into his guilt. If he is offered commiseration for his wife's death\u2014as opposed to accusations\u2014the warden eventually breaks down. He confesses that after seeing his wife killed, he found himself face to face with Neronvain in the thick of battle and begged for his life, offering anything in return. Neronvain took the warden up on his offer, agreeing to spare Galin and leave Altand intact in exchange for information on other settlements that would become the targets of the cult's next round of raids.",
 								"Galin does not know the identity of the green wyrmspeaker, or the location of Neronvain and Chuth's lair. However, from the meeting place, he has watched",
 								"the dragon flying off on a course due southeast and he has noticed that the wyrmspeaker's clothes and hair are often wet."
@@ -3290,7 +3290,7 @@
 									"id": "147",
 									"entries": [
 										"An ancient shrine stands in the southwest corner of the cavern, showing a young female human holding a basin. A successful DC 15 Intelligence ({@skill Religion}) check recognizes the shrine of Eldath, goddess of waterfalls. Water flows from cracks in the ceiling and onto the statue's head, then into the basin. The long years have etched thin white lines resembling the tracks of tears across the statue's face.",
-										"The goddess Eldath still listens at this shrine. Characters who pray for her assistance in fighting the dragon can receive a boon at your discretion, including {@spell water breathing}, {@spell bless}, or other useful spells."
+										"The goddess Eldath still listens at this shrine. Characters who pray for her assistance in fighting the dragon can receive a boon at your discretion, including {@spell 水下呼吸}, {@spell 祝福術}, or other useful spells."
 									]
 								}
 							]
@@ -3342,7 +3342,7 @@
 							"id": "14d",
 							"entries": [
 								"Neronvain has created a lush living space in this rough-walled cavern, decorating it with select art and craftworks from his raids. Rich carpets and tapestries cover the floor and walls of the cavern, which features a hewn-log bed, a large mirror, and a trunk.",
-								"The entrance tunnel to this chamber is protected by a {@spell glyph of warding} attuned to Neronvain. A DC 14 Intelligence ({@skill Investigation}) check notices the glyph. If anyone but Neronvain steps within 5 feet of the glyph, it erupts.All creatures within 20 feet of the glyph must make a DC 14 Dexterity saving throw, taking 22 ({@dice 5d8}) acid damage on a failed save, or half as much damage on a successful save.",
+								"The entrance tunnel to this chamber is protected by a {@spell 守衛銘文} attuned to Neronvain. A DC 14 Intelligence ({@skill Investigation}) check notices the glyph. If anyone but Neronvain steps within 5 feet of the glyph, it erupts.All creatures within 20 feet of the glyph must make a DC 14 Dexterity saving throw, taking 22 ({@dice 5d8}) acid damage on a failed save, or half as much damage on a successful save.",
 								"If {@creature Neronvain|RoT} is in the stronghold, he is found in this area only if the characters have managed to come this far without engaging in any combat or causing any alert to be sounded. He is otherwise encountered when he enters the fight against the characters.",
 								{
 									"type": "entries",
@@ -3419,7 +3419,7 @@
 					"name": "Character Death",
 					"id": "154",
 					"entries": [
-						"Character death should always be handled carefully, but don't be afraid to kill party members in this adventure. The characters should be high enough level to cast {@spell raise dead}, or to seek out such magic from their allies. Especially if they played through {@adventure Hoard of the Dragon Queen|HotDQ}, the characters have had ample opportunity to prove their worth to the Harpers, the Order of the Gauntlet, and the other factions."
+						"Character death should always be handled carefully, but don't be afraid to kill party members in this adventure. The characters should be high enough level to cast {@spell 喚醒死者}, or to seek out such magic from their allies. Especially if they played through {@adventure Hoard of the Dragon Queen|HotDQ}, the characters have had ample opportunity to prove their worth to the Harpers, the Order of the Gauntlet, and the other factions."
 					]
 				},
 				{
@@ -3598,7 +3598,7 @@
 									"name": "Option 1: Indoor Attack",
 									"id": "162",
 									"entries": [
-										"The attackers launch their assault while the characters are visiting an important location crowded with innocent bystanders. The black dragon begins by tearing off a section of the roof to incite as much terror as possible. While the characters are distracted by that assault, {@condition invisible} nycaloths move in and attack with surprise. The mezzoloths use {@spell cloudkill} to surround the characters, unconcerned about NPCs caught up in the attack."
+										"The attackers launch their assault while the characters are visiting an important location crowded with innocent bystanders. The black dragon begins by tearing off a section of the roof to incite as much terror as possible. While the characters are distracted by that assault, {@condition invisible} nycaloths move in and attack with surprise. The mezzoloths use {@spell 死雲術} to surround the characters, unconcerned about NPCs caught up in the attack."
 									]
 								},
 								{
@@ -3747,7 +3747,7 @@
 							"name": "Conclusion",
 							"id": "16d",
 							"entries": [
-								"Great heroes rebound from losses to fight even harder for the cause they believe in. Thanks to {@spell raise dead}, a lost battle is a setback, not a defeat. It's a wake-up call to any players who assumed that the characters' victory was assured. The Cult of the Dragon is committed to its goal and will stop at nothing to achieve it. The characters must be even more committed to theirs.",
+								"Great heroes rebound from losses to fight even harder for the cause they believe in. Thanks to {@spell 喚醒死者}, a lost battle is a setback, not a defeat. It's a wake-up call to any players who assumed that the characters' victory was assured. The Cult of the Dragon is committed to its goal and will stop at nothing to achieve it. The characters must be even more committed to theirs.",
 								"The characters gain a level at the end of this event."
 							]
 						}
@@ -4020,7 +4020,7 @@
 											"name": "Concession",
 											"id": "18c",
 											"entries": [
-												"Pick one magic item owned by a member of the party, and which was found during a previous adventure. That item turns out to have once belonged to Tazmikella, and was part of a hoard she took from an ancient black dragon she defeated. ({@spell Legend lore} or similar magic used on the item confirms this story.) The item holds sentimental value to her\u2014or it did until a thief stole it from her hoard. Returning the item to her with an apology improves Tazmikella's attitude.",
+												"Pick one magic item owned by a member of the party, and which was found during a previous adventure. That item turns out to have once belonged to Tazmikella, and was part of a hoard she took from an ancient black dragon she defeated. ({@spell 通曉傳奇} or similar magic used on the item confirms this story.) The item holds sentimental value to her\u2014or it did until a thief stole it from her hoard. Returning the item to her with an apology improves Tazmikella's attitude.",
 												{
 													"type": "inset",
 													"name": "A Relic for Just Such an Occasion",
@@ -4342,7 +4342,7 @@
 								"When the cyclopes are within 20 feet of the characters, the one that lost the game scoops up a small boulder from the ground and gestures toward the party. He then looks downfield and heaves the boulder 100 feet, where it bounces and rolls another 20 feet. Both cyclopes then turn and look at the characters expectantly.",
 								"The boulders at this end of the field are all at least 2 feet in diameter and weigh 500 pounds or more.",
 								"The cyclopes speak only Giant. If any character addresses them in that language, they ignore any questions but explain the rules of their game: the characters' boulder must fly farther than the cyclops's. How the characters accomplish this is unimportant to the cyclopes, but the boulder can't be dragged or carried\u2014it must fly at least part of the distance.",
-								"The characters can beat this challenge in several ways. The most straightforward solution is to reduce the boulder with an {@spell enlarge/reduce} spell, then use the same spell to enlarge a strong character to throw it. Other solutions might involve casting {@spell levitate} on the rock and giving it a push, digging a trench for the rock to roll down the length of the field, or propelling it with magic in some other way. The cyclopes will accept any solution the characters attempt, as long as it propels the stone farther than the cyclops did.",
+								"The characters can beat this challenge in several ways. The most straightforward solution is to reduce the boulder with an {@spell 變巨/縮小術} spell, then use the same spell to enlarge a strong character to throw it. Other solutions might involve casting {@spell 浮空術} on the rock and giving it a push, digging a trench for the rock to roll down the length of the field, or propelling it with magic in some other way. The cyclopes will accept any solution the characters attempt, as long as it propels the stone farther than the cyclops did.",
 								"Each {@creature cyclops} defends itself if attacked, and killing them changes nothing. The characters still need to propel a stone farther than the cyclops did to get back to the sundial.",
 								"When the characters beat the challenge, the stone that the cyclops threw splits in half, revealing a topaz gemstone inside. If the topaz is carried out of this area, either path leads the characters back to the sundial.",
 								"If the characters attempt to leave the area without winning the contest, both paths curve away and bring them back here after a short walk. If the characters leave any marks, items, or companions behind in this area, all the same conditions apply here as in {@area area 1|19c|x}."
@@ -4379,9 +4379,9 @@
 								},
 								"When the characters arrive, the robed figure bows to them, and sits down on the boulder where it protrudes through the floor of the pagoda. He waits patiently for the party to join him. Around the boulder, the floor of the pagoda is not wood, but rather is a rock garden of decorative stones and brushed sand. A charcoal pit smolders beside the boulder where the man sits.",
 								"The master of the pagoda does not speak, and he waits as long as long as it takes for the adventurers to join him. When they enter the pagoda, he gives a brief smile and proffers silk cushions. He then waves his hand and an iron tea kettle rises up from beneath the embers. The kettle resembles a scowling face with thick features, and a character who studies it may recognize it as a dao with a successful DC 12 Wisdom ({@skill Perception}) or Intelligence ({@skill Arcana}) check. The man pours clear water from a clay jug into the kettle and adds tea leaves. He bows to the kettle and shows great reverence to the vessel, then lowers his head in meditation. Soon steam rises from the kettle.",
-								"The tea brewer is a {@creature dao} magically disguised as a human, and the pot brews not tea but a deadly gaseous poison. The tea kettle is also the dao's {@spell magic jar} (described below).",
-								"With a successful DC 15 Intelligence ({@skill Arcana}) check, a character realizes that an innate ability lifted the teapot from the coals ({@spell move earth} acting on a small clay column). Characters who watch the leaves going into the kettle can attempt a DC 13 Intelligence ({@skill Nature}) or Wisdom ({@skill Medicine}) check. Success indicates the character recognizes drakeswort, a potentially lethal herb.",
-								"If characters do nothing, the steeping drakeswort fills the pagoda with poisonous vapor, and the dao encloses the pagoda in a {@spell wall of stone} (including the roof), trapping the poison and the characters inside. He uses Earth Glide to sink into the boulder. With his body safe beneath the ground, his soul jumps into the tea kettle, and he monitors the characters' escape attempts and enjoys watching their suffering. For the next 3 minutes (30 rounds), creatures inside the pagoda (except the dao in his {@spell magic jar}) must make a DC 13 Constitution saving throw against poison at the start of each of their turns. On a failed save, a creature takes 14 ({@dice 4d6}) poison damage, or half damage on a successful save. Three successful saving throws in a row confer immunity to the poison.",
+								"The tea brewer is a {@creature dao} magically disguised as a human, and the pot brews not tea but a deadly gaseous poison. The tea kettle is also the dao's {@spell 魔魂壺} (described below).",
+								"With a successful DC 15 Intelligence ({@skill Arcana}) check, a character realizes that an innate ability lifted the teapot from the coals ({@spell 地動術} acting on a small clay column). Characters who watch the leaves going into the kettle can attempt a DC 13 Intelligence ({@skill Nature}) or Wisdom ({@skill Medicine}) check. Success indicates the character recognizes drakeswort, a potentially lethal herb.",
+								"If characters do nothing, the steeping drakeswort fills the pagoda with poisonous vapor, and the dao encloses the pagoda in a {@spell 石牆術} (including the roof), trapping the poison and the characters inside. He uses Earth Glide to sink into the boulder. With his body safe beneath the ground, his soul jumps into the tea kettle, and he monitors the characters' escape attempts and enjoys watching their suffering. For the next 3 minutes (30 rounds), creatures inside the pagoda (except the dao in his {@spell 魔魂壺}) must make a DC 13 Constitution saving throw against poison at the start of each of their turns. On a failed save, a creature takes 14 ({@dice 4d6}) poison damage, or half damage on a successful save. Three successful saving throws in a row confer immunity to the poison.",
 								"Trapped characters have several options for escape:",
 								{
 									"type": "list",
@@ -4389,10 +4389,10 @@
 										"The stone walls are AC 5, 6 inches thick, and have 15 hit points per inch of thickness (90 hp total). Motivated characters can create air holes in the walls.",
 										"Dumping the kettle into the fire reduces damage to 7 ({@dice 2d6}) poison damage on a failed save, or half damage on a successful save. Smoke from burning drakeswort is less dangerous than steam.",
 										"Plugging the kettle's spout or extinguishing the fire reduces the saving throw DC to 8.",
-										"Damaging the tea kettle forces the dao to return to the pagoda. When the dao's soul inhabits the kettle, the face is slightly animated. Anyone touching the kettle notices the eyes looking around the pagoda. The kettle has AC 5 and 20 hit points. If it takes more than 10 points of damage, the dao returns to his body, emerges from the stone, drops the {@spell wall of stone} (because he can't breathe the poison either), and attacks."
+										"Damaging the tea kettle forces the dao to return to the pagoda. When the dao's soul inhabits the kettle, the face is slightly animated. Anyone touching the kettle notices the eyes looking around the pagoda. The kettle has AC 5 and 20 hit points. If it takes more than 10 points of damage, the dao returns to his body, emerges from the stone, drops the {@spell 石牆術} (because he can't breathe the poison either), and attacks."
 									]
 								},
-								"If characters attack the dao before his trap is sprung, he fights back, making full use of {@spell invisibility}, {@spell move earth}, and his other abilities. He shifts the odds in his favor by killing the weakest characters first. The dao fights to 45 hit points or fewer, then retreats into the earth.",
+								"If characters attack the dao before his trap is sprung, he fights back, making full use of {@spell 隱形術}, {@spell 地動術}, and his other abilities. He shifts the odds in his favor by killing the weakest characters first. The dao fights to 45 hit points or fewer, then retreats into the earth.",
 								"A jade gemstone sits inside the teapot. If it is carried out of this area, either path leads characters back to the sundial.",
 								"If characters leave the area without the jade gemstone, both paths curve away and bring them back here after a short walk. If the characters leave marks, items, or companions behind in this area, all the same conditions apply here as in {@area area 1|19c|x}."
 							]
@@ -4472,7 +4472,7 @@
 											"name": "Sound",
 											"id": "1b3",
 											"entries": [
-												"The structure of the tower muffles sound between levels. Only the loudest shouting or noise can be heard on an adjacent level, and nothing short of an explosion or a {@spell thunderwave} spell can be heard more than one level away."
+												"The structure of the tower muffles sound between levels. Only the loudest shouting or noise can be heard on an adjacent level, and nothing short of an explosion or a {@spell 雷鳴波} spell can be heard more than one level away."
 											]
 										},
 										{
@@ -4591,7 +4591,7 @@
 										"Painted renditions of dracoliches line the walls of this chamber, and a stone altar in the center of the area features the skeletal limbs and claws of a dragon. A half-dozen cultists look up in surprise at your appearance."
 									]
 								},
-								"The skeletal forelimbs of a black dragon have been mounted to the altar and enchanted with a permanent {@spell animate objects} spell. When the characters enter, it won't be apparent that the limbs are connected to the altar or that they can be animated. Each limb has AC 10 and 50 hit points and can make one melee attack per round at a creature within 5 feet of it: +4 to hit; 6 ({@dice 1d10 + 1}) piercing damage.",
+								"The skeletal forelimbs of a black dragon have been mounted to the altar and enchanted with a permanent {@spell 活化物體} spell. When the characters enter, it won't be apparent that the limbs are connected to the altar or that they can be animated. Each limb has AC 10 and 50 hit points and can make one melee attack per round at a creature within 5 feet of it: +4 to hit; 6 ({@dice 1d10 + 1}) piercing damage.",
 								"The room is occupied by two {@creature Mage||mages} and five {@creature cult fanatic} who attack at the first sign of intruders. As an action, one of the mages screams the command word to activate the skeletal dragon limbs. If the cultist who activated the limbs is killed, the limbs stop attacking, but both mages know the command word. The cultists all fight to the death.",
 								"This room contains many notes and scrolls about dracoliches but nothing of value."
 							]
@@ -4718,7 +4718,7 @@
 									"height": 1000
 								},
 								"The creatures are 2 {@creature Earth Elemental||earth elementals} and a {@creature fire elemental} Xonthal called forth to guard his workshops. In the absence of new orders, the elementals eternally follow Xonthal's last command to slay intruders. When any character enters the room, the elementals attack. They fight until destroyed, or until the party flees back to area 14 or moves further into the dungeon. The elementals do not pursue outside this area unless attacked from a distance.",
-								"A large, round table with four chairs sits in one corner of the room, with shelves and workbenches arranged along the walls. Books and papers are scattered on the table, along with a locked wooden chest about the size of a shoebox. Opening the lock requires {@item thieves' tools|PHB} and a successful DC 15 Dexterity check. A failed check sets off a magic {@spell glyph of warding} trap that triggers a {@spell slow} spell affecting all creatures in the area except elementals. Creatures affected by the spell can attempt the saving throw again at the end of each of their turns. Otherwise, the effect ends after 1 minute.",
+								"A large, round table with four chairs sits in one corner of the room, with shelves and workbenches arranged along the walls. Books and papers are scattered on the table, along with a locked wooden chest about the size of a shoebox. Opening the lock requires {@item thieves' tools|PHB} and a successful DC 15 Dexterity check. A failed check sets off a magic {@spell 守衛銘文} trap that triggers a {@spell 緩速術} spell affecting all creatures in the area except elementals. Creatures affected by the spell can attempt the saving throw again at the end of each of their turns. Otherwise, the effect ends after 1 minute.",
 								"The writing on the papers and books in the room has become illegible, and the paper is so brittle from the fire elementals' heat that it crumbles at a touch.",
 								{
 									"type": "entries",
@@ -4876,7 +4876,7 @@
 									]
 								},
 								"In addition to his mastery of spatial magic, Xonthal dabbled in the manipulation of time. These hourglasses were part of his attempt to control the flow of time, though he abandoned that research. The hourglasses can be rotated by pulling on their chains, but the only effect is a hideous, ear-grating groan. The sand runs, but the hourglasses' magic has long since dissipated.",
-								"Casting a {@spell detect magic} spell reveals faint auras of transmutation magic within the sand of each hourglass. An hourglass has AC 5, 25 hit points, and vulnerability to bludgeoning and thunder damage. An hourglass that drops to 0 hit points shatters, spilling its sand onto the floor. Sifting through the pile reveals {@dice 1d4 + 2} tiny diamonds amid the grains of sand. Each diamond has an apparent value of 100 gp, and a character in possession of a diamond can use a bonus action to teleport to a space it can see up to 30 feet away, whereupon the diamond disappears.",
+								"Casting a {@spell 偵測魔法} spell reveals faint auras of transmutation magic within the sand of each hourglass. An hourglass has AC 5, 25 hit points, and vulnerability to bludgeoning and thunder damage. An hourglass that drops to 0 hit points shatters, spilling its sand onto the floor. Sifting through the pile reveals {@dice 1d4 + 2} tiny diamonds amid the grains of sand. Each diamond has an apparent value of 100 gp, and a character in possession of a diamond can use a bonus action to teleport to a space it can see up to 30 feet away, whereupon the diamond disappears.",
 								"Iskander has been dead since shortly after he arrived here, slain by the wounds inflicted by the elementals. The (false) {@item Blue Dragon Mask|RoTOS} is bloody but undamaged."
 							]
 						}
@@ -4888,7 +4888,7 @@
 					"id": "1da",
 					"entries": [
 						"The teleport circle in {@area area 14 |1c6|x} can take the characters back to any level of the tower (areas {@area 8|1b6|x} to {@area 13|1bf|x}). The teleport circles in those areas can take them back to the sundial, from which they can exit the maze. The characters are not yet in the clear, though.",
-						"However much Jorgen Pawl opposed Severin, he remained loyal to the Cult of the Dragon. As soon as he understood that the traitorous Iskander was somehow in league with the adventurers, he used {@spell sending} to call an {@creature adult blue dragon} from its nearby lair, telling it of Iskander's theft of the dragon mask.",
+						"However much Jorgen Pawl opposed Severin, he remained loyal to the Cult of the Dragon. As soon as he understood that the traitorous Iskander was somehow in league with the adventurers, he used {@spell 短訊術} to call an {@creature adult blue dragon} from its nearby lair, telling it of Iskander's theft of the dragon mask.",
 						"When the characters teleport to the sundial, they are greeted by the terrible sound of villagers screaming, a dragon roaring, and lightning bolts tearing houses to splinters. When they reach the edge of the garden, they see the dragon swooping over the village and terrified villagers fleeing in every direction. A character with passive {@skill Perception} of 14 or higher recognizes this dragon as Lennithon, the adult blue dragon the party faced in the {@i Hoard of the Dragon Queen}.",
 						"Like any smart foe, Lennithon tries to fight on its terms, not the enemy's. It stays in the air and uses its breath weapon to maximum effect. If the characters refuse to face it, Lennithon is happy to wreck the village and murder innocents in an effort to bring the heroes into the open.",
 						"When the characters face the dragon, read or paraphrase the following.",
@@ -4907,8 +4907,8 @@
 					"name": "Conclusion",
 					"id": "1dc",
 					"entries": [
-						"If any of the cultists in the tower are left alive for questioning, or if the characters use {@spell speak with dead} to converse with either Jorgen Pawl or Iskander, they learn nothing new of Severin's plots. The cultists here are motivated primarily by self-interest.",
-						"The fact that the {@item Blue Dragon Mask|RoTOS} is a forgery is quickly discovered by experts at Waterdeep. It becomes a cause for much concern among the members of the council, some of who see it as a sign that the cult might have placed spies within the council. {@spell Speak with dead} used to contact either Iskander or Jorgen Pawl can shed some light on why a false mask might have been supplied to the cultists at Xonthal's Tower, but the false mask might otherwise remain a troubling mystery.",
+						"If any of the cultists in the tower are left alive for questioning, or if the characters use {@spell 死者交談術} to converse with either Jorgen Pawl or Iskander, they learn nothing new of Severin's plots. The cultists here are motivated primarily by self-interest.",
+						"The fact that the {@item Blue Dragon Mask|RoTOS} is a forgery is quickly discovered by experts at Waterdeep. It becomes a cause for much concern among the members of the council, some of who see it as a sign that the cult might have placed spies within the council. {@spell 死者交談術} used to contact either Iskander or Jorgen Pawl can shed some light on why a false mask might have been supplied to the cultists at Xonthal's Tower, but the false mask might otherwise remain a troubling mystery.",
 						"The characters gain a level at the end of this chapter."
 					]
 				}
@@ -4937,7 +4937,7 @@
 					"id": "1de",
 					"entries": [
 						"At the start of this chapter, the characters are summoned to a secret meeting by someone they trust on the Council of Waterdeep. At the meeting, they learn that the council has been approached by a Red Wizard of Thay named Nyh Ilmichh. Ilmichh has extended an invitation to the council to send an envoy to Thay, to discuss ways in which Thay and the Sword Coast might aid each other during the current crisis. The adventurers have been specifically requested to represent the Sword Coast at this meeting, after which the characters will be returned to Waterdeep unharmed.",
-						"The visit to the embassy will last only a few days, but the location of the meeting is not negotiable. The duties of the tharchion (a Thayan governor) the characters will meet precludes her leaving her post. The characters' council contact tells them that Ilmichh has been carefully questioned and subjected to a {@spell zone of truth}, and that all she said has been confirmed.",
+						"The visit to the embassy will last only a few days, but the location of the meeting is not negotiable. The duties of the tharchion (a Thayan governor) the characters will meet precludes her leaving her post. The characters' council contact tells them that Ilmichh has been carefully questioned and subjected to a {@spell 誠實之域}, and that all she said has been confirmed.",
 						"The characters should understand that without the Red Wizards, Severin's plans are severely compromised. Moreover, it is common knowledge that Szass Tam wants all exiled Red Wizards dead in the worst possible way. Despite reservations from some on the council, most believe that since the factions and Szass Tam have a common goal, the invitation is worth accepting.",
 						"The final decision is up to the characters, of course. No one will compel them to go to Thay. But in the council's estimation, the potential to delay or even undo Severin's plan at a single blow is too much to pass up.",
 						{
@@ -5000,7 +5000,7 @@
 							"name": "Dreams and Nightmares",
 							"id": "1e3",
 							"entries": [
-								"That night, each of the adventurers are targeted by a customized version of the {@spell dream} spell, cast and crafted by Red Wizard illusionists. Each character is confronted in a vision by a pale Red Wizard who says, \"We have further questions for you.\" Elves and other creatures that do not sleep are not subject to this effect.",
+								"That night, each of the adventurers are targeted by a customized version of the {@spell 託夢術} spell, cast and crafted by Red Wizard illusionists. Each character is confronted in a vision by a pale Red Wizard who says, \"We have further questions for you.\" Elves and other creatures that do not sleep are not subject to this effect.",
 								"Each character must make a DC 18 Wisdom saving throw with disadvantage. On a successful save, a character remembers vague, disturbing dreams in the morning, but suffers no other effects.",
 								"Each character who fails the saving throw experiences a similar nightmare. He or she is {@condition paralyzed} and magically bound within a mystic cauldron among animated chains and tentacles. A dozen Red Wizards observe placidly while three more Red Wizards subject the helpless character to agonizing tortures. The character is questioned about why the party came to Thay, about Severin's plots, about Rath Modar, about his or her own past and the lives of the other adventurers, about the party's attitude toward Szass Tam, and anything else you care to ask.",
 								"Each answer the character gives must be accompanied by a DC 15 Charisma ({@skill Persuasion}) check if the character answers truthfully, or a DC 15 Charisma ({@skill Deception}) check if the response is even partially false. A character who succeeded on the Charisma ({@skill Persuasion}) check made during the audience has advantage on each of these checks. On each failed check, a character suffers excruciating pain as a Red Wizard shouts out a tally of the character's failed answers. Refusing to answer is treated the same as failing the check.",
@@ -5015,7 +5015,7 @@
 							"id": "1e4",
 							"entries": [
 								"In the morning, after another delicious meal, the characters are ushered back to the audience chamber. Eseldra Yeth is not there. Instead, they're greeted by Nyh Ilmichh and one of the Red Wizards present at the audience the previous day. Only Nyh Ilmichh speaks.",
-								"What she says is determined by the number of characters who answered five questions successfully during the dream. If that number accounts for more than half the non-elven party (that is, elves don't count toward the party total, because they cannot be affected by the Red Wizards' {@spell dream} spell), Nyh Ilmichh informs the characters that the Red Wizards have agreed to aid the factions of the Sword Coast, and that she will accompany them as Thay's ambassador to the council. When the characters have gathered their belongings, the Red Wizard teleports with them back to Waterdeep.",
+								"What she says is determined by the number of characters who answered five questions successfully during the dream. If that number accounts for more than half the non-elven party (that is, elves don't count toward the party total, because they cannot be affected by the Red Wizards' {@spell 託夢術} spell), Nyh Ilmichh informs the characters that the Red Wizards have agreed to aid the factions of the Sword Coast, and that she will accompany them as Thay's ambassador to the council. When the characters have gathered their belongings, the Red Wizard teleports with them back to Waterdeep.",
 								"If the tally is half the number of non-elven characters in the party or fewer, Nyh Ilmichh states that Tharchion Yeth thanks them for their information, but that Thay's attention is commanded by matters within its own borders and the Red Wizards cannot help. Before the characters can react, the other Red Wizard waves his hand and a previously {@condition invisible} magic circle on the floor around the characters flares to life. A moment later, the adventurers are standing in an abandoned and ruined farmhouse a mile north of Waterdeep. The barely visible outline of a Thayan teleportation circle fades around them and their neatly packed belongings."
 							]
 						}
@@ -5181,7 +5181,7 @@
 											"name": "Sound",
 											"id": "1f6",
 											"entries": [
-												"The sound of the {@item Draakhorn|RoT} constantly moans throughout the Well of Dragons, originating from {@area area 8|201|x}. Combined with the cult's activity in and above the caverns, it creates a constant thrum of background noise transmitted through the stone. Sounds of combat go unnoticed if a fight is over in 3 rounds or fewer, or if the combat is more than 200 feet away from creatures that might hear it. Especially loud noises, such as a {@spell thunderwave} spell, are easily heard."
+												"The sound of the {@item Draakhorn|RoT} constantly moans throughout the Well of Dragons, originating from {@area area 8|201|x}. Combined with the cult's activity in and above the caverns, it creates a constant thrum of background noise transmitted through the stone. Sounds of combat go unnoticed if a fight is over in 3 rounds or fewer, or if the combat is more than 200 feet away from creatures that might hear it. Especially loud noises, such as a {@spell 雷鳴波} spell, are easily heard."
 											]
 										}
 									]
@@ -5298,7 +5298,7 @@
 									"name": "Treasure",
 									"id": "1ff",
 									"entries": [
-										"This cavern holds treasure beyond counting. If the characters seek a particular item and have hours to spend searching, they can probably find it here. A {@spell detect magic} spell is blocked by the metal of the coins, so only items on the surface can be easily found. Place whatever common or uncommon magic items you wish on the surface, but finding something rare should take a long and noisy search."
+										"This cavern holds treasure beyond counting. If the characters seek a particular item and have hours to spend searching, they can probably find it here. A {@spell 偵測魔法} spell is blocked by the metal of the coins, so only items on the surface can be easily found. Place whatever common or uncommon magic items you wish on the surface, but finding something rare should take a long and noisy search."
 									]
 								}
 							]
@@ -5587,7 +5587,7 @@
 							"entries": [
 								"To successfully bring Tiamat from the Nine Hells into the world, the Red Wizards must successfully focus the summoning ritual for 10 rounds after the adventurers enter the Temple of Tiamat. Each round, at least five Red Wizards must use an action to perform the ritual in order for it to be successfully focused for that round, helping guide Tiamat across the planes.",
 								"At the end of the Red Wizards' turn, if fewer than five Red Wizards used an action to perform the ritual, the portal floating in the great apse (area 7) wavers and no progress in the ritual is made. If fewer than five Red Wizards perform the ritual for 2 rounds in succession, the portal collapses and the count of successfully focused rounds is reset to 0.",
-								"The {@item Mask of the Dragon Queen|RoT} is essential to the ritual, and Severin cannot leave the sanctuary. His {@spell levitate} spell will last the duration of the ritual, and it keeps him floating in the sanctuary even if he is {@condition incapacitated} or killed. Severin can attack and defend himself while he wears the {@item Mask of the Dragon Queen|RoT}. He need not even be alive for the ritual to continue, as long as his body wears the mask and remains in the sanctuary."
+								"The {@item Mask of the Dragon Queen|RoT} is essential to the ritual, and Severin cannot leave the sanctuary. His {@spell 浮空術} spell will last the duration of the ritual, and it keeps him floating in the sanctuary even if he is {@condition incapacitated} or killed. Severin can attack and defend himself while he wears the {@item Mask of the Dragon Queen|RoT}. He need not even be alive for the ritual to continue, as long as his body wears the mask and remains in the sanctuary."
 							]
 						}
 					]
@@ -5919,7 +5919,7 @@
 										"The count of rounds over which the ritual is successfully focused is reset to 0 because the ritual is interrupted for two successive rounds.",
 										"The {@item Mask of the Dragon Queen|RoT} is destroyed, or is removed from Severin's body and taken from the temple sanctuary (area 13).",
 										"The characters hold any of the dragon masks, or can otherwise prevent one or more masks from being used in the ritual. (The {@item Black Dragon Mask|HotDQ} might have been claimed by the characters in the previous adventure.)",
-										"Severe damage is inflicted to the Temple of Tiamat, as from an {@spell earthquake} spell.",
+										"Severe damage is inflicted to the Temple of Tiamat, as from an {@spell 地震術} spell.",
 										"The sacrifice of prisoners in front of the temple is stopped. This might have been previously accomplished by attacking the dragons or by cutting off the flow of prisoners to the area."
 									]
 								},

@@ -154,7 +154,7 @@
 														"10 + your Dexterity modifier + your natural armor bonus. This is a calculation method typically used only by monsters and NPCs, although it is also relevant to a druid or another character who assumes a form that has natural armor.",
 														"These methods\u2014along with any others that give you a formula for calculating your AC\u2014are mutually exclusive; you can benefit from only one at a time. If you have access to more than one, you pick which one to use. For example, if you're a sorcerer/monk, you can use either Unarmored Defense or Draconic Resilience, not both. Similarly, a druid/ barbarian who transforms into a beast form that has natural armor can use either the beast's natural armor or Unarmored Defense (you aren't considered to be wearing armor when you use natural armor).",
 														"What about a shield? A shield increases your AC by 2 while you use it. For example, if you're unarmored and use a shield, your AC is 12 + your Dexterity modifier. Keep in mind that some AC calculations, such as a monk's Unarmored Defense, prohibit the use of a shield.",
-														"Once you have your base AC, it can be temporarily modified by situational bonuses and penalties. For instance, having half cover gives you a +2 bonus to your AC, and three-quarters cover gives a +5 bonus. Spells sometimes modify AC as well. {@spell Shield of faith}, for example, grants a target a +2 bonus to AC until the spell ends.",
+														"Once you have your base AC, it can be temporarily modified by situational bonuses and penalties. For instance, having half cover gives you a +2 bonus to your AC, and three-quarters cover gives a +5 bonus. Spells sometimes modify AC as well. {@spell 虔誠護盾}, for example, grants a target a +2 bonus to AC until the spell ends.",
 														"Magic items can also enhance your AC. Here are a few examples: {@item +1 chain mail} gives you an AC of 17, a {@item ring of protection} gives you a +1 bonus to AC no matter what you're wearing, and {@item bracers of defense} grant you a +2 bonus to AC if you're not wearing armor or using a shield."
 													]
 												}
@@ -294,15 +294,15 @@
 											"name": "Do the benefits from Bardic Inspiration and the guidance spell stack? Can they be applied to the same roll?",
 											"id": "01f",
 											"entries": [
-												"Yes, different effects stack if they don't have the same name. If a creature makes an ability check while it is under the effect of a {@spell guidance} spell and also has a Bardic Inspiration die, it can roll both a {@dice d4} and a {@dice d6} if it so chooses."
+												"Yes, different effects stack if they don't have the same name. If a creature makes an ability check while it is under the effect of a {@spell 指導術} spell and also has a Bardic Inspiration die, it can roll both a {@dice d4} and a {@dice d6} if it so chooses."
 											]
 										},
 										{
 											"type": "entries",
-											"name": "Is the intent that a bard gets to know the number rolled on an attack roll or ability check before using Cutting Words, or should they always guess? If used on a damage roll, does Cutting Words apply to any kind of damage roll including an auto-hit spell like {@spell magic missile}?",
+											"name": "Is the intent that a bard gets to know the number rolled on an attack roll or ability check before using Cutting Words, or should they always guess? If used on a damage roll, does Cutting Words apply to any kind of damage roll including an auto-hit spell like {@spell 魔法飛彈}?",
 											"id": "020",
 											"entries": [
-												"You can wait to use Cutting Words after the roll, but you must commit to doing so before you know for sure whether the total of the roll or check is a success or a failure. You can use Cutting Words to reduce the damage from any effect that calls for a damage roll (including {@spell magic missile}) even if the damage roll is not preceded by an attack roll."
+												"You can wait to use Cutting Words after the roll, but you must commit to doing so before you know for sure whether the total of the roll or check is a success or a failure. You can use Cutting Words to reduce the damage from any effect that calls for a damage roll (including {@spell 魔法飛彈}) even if the damage roll is not preceded by an attack roll."
 											]
 										},
 										{
@@ -476,7 +476,7 @@
 											"name": "If my Eldritch Knight casts true strike and has the War Magic feature, is the attack granted by War Magic made with advantage because of true strike?",
 											"id": "034",
 											"entries": [
-												"No. The attack from War Magic is made normally, and you get the benefit of {@spell true strike} on your next turn if the spell hasn't ended."
+												"No. The attack from War Magic is made normally, and you get the benefit of {@spell 克敵機先} on your next turn if the spell hasn't ended."
 											]
 										},
 										{
@@ -547,7 +547,7 @@
 											"name": "Does a monk's Purity of Body feature grant immunity to poison damage, the poisoned condition, or both?",
 											"id": "03c",
 											"entries": [
-												"That feature grants immunity to both. As a result, a monk with Purity of Body can, for example, inhale a {@creature Young Green Dragon||green dragon's} poison breath unharmed. Similarly, the monk is unaffected by {@spell ray of sickness}, which both deals poison damage and imposes the {@condition poisoned} condition."
+												"That feature grants immunity to both. As a result, a monk with Purity of Body can, for example, inhale a {@creature Young Green Dragon||green dragon's} poison breath unharmed. Similarly, the monk is unaffected by {@spell 致病射線}, which both deals poison damage and imposes the {@condition poisoned} condition."
 											]
 										},
 										{
@@ -602,7 +602,7 @@
 											"name": "Can my paladin use a smite spell along with Divine Smite? As in, I cast wrathful smite, hit, then use Divine Smite on the same attack?",
 											"id": "043",
 											"entries": [
-												"Yes, you can use Divine Smite on the same weapon attack that benefits from a smite spell, such as {@spell wrathful smite}\u2014as long as the attack you make after casting the smite spell is a melee weapon attack. Divine Smite doesn't work with any other kind of attack."
+												"Yes, you can use Divine Smite on the same weapon attack that benefits from a smite spell, such as {@spell 激憤斬}\u2014as long as the attack you make after casting the smite spell is a melee weapon attack. Divine Smite doesn't work with any other kind of attack."
 											]
 										},
 										{
@@ -674,7 +674,7 @@
 											"name": "Does Uncanny Dodge work automatically against every attack a rogue or ranger gets hit by? Spell attacks too?",
 											"id": "04a",
 											"entries": [
-												"A use of Uncanny Dodge works against only one attack, since it expends your {@book reaction|PHB|9|Reactions}, and only if you can see the attacker. It works against attacks of all sorts, including spell attacks, but it is no help against a spell or other effect, such as {@spell fireball}, that delivers its damage after a saving throw rather than after an attack roll."
+												"A use of Uncanny Dodge works against only one attack, since it expends your {@book reaction|PHB|9|Reactions}, and only if you can see the attacker. It works against attacks of all sorts, including spell attacks, but it is no help against a spell or other effect, such as {@spell 火球術}, that delivers its damage after a saving throw rather than after an attack roll."
 											]
 										},
 										{
@@ -735,7 +735,7 @@
 											"name": "If a sorcerer casts a spell with only verbal or somatic components using Subtle Spell, can an opponent use counterspell against it?",
 											"id": "050",
 											"entries": [
-												"If a spell that's altered by Subtle Spell has no material component, then it's impossible for anyone to perceive the spell being cast. So, since you can't see the casting, {@spell counterspell} is of no use."
+												"If a spell that's altered by Subtle Spell has no material component, then it's impossible for anyone to perceive the spell being cast. So, since you can't see the casting, {@spell 反制法術} is of no use."
 											]
 										},
 										{
@@ -751,7 +751,7 @@
 											"name": "Elemental Affinity improves one damage roll of a spell, not multiple rolls? So with scorching ray, I don't add my Charisma modifier to each ray that hits?",
 											"id": "052",
 											"entries": [
-												"That's correct. Elemental Affinity benefits one damage roll per casting of a spell, even if the spell allows more than one roll. So, for example, the feature improves one of the rays of a {@spell scorching ray} spell or one of the beams of an {@spell eldritch blast} spell."
+												"That's correct. Elemental Affinity benefits one damage roll per casting of a spell, even if the spell allows more than one roll. So, for example, the feature improves one of the rays of a {@spell 灼熱射線} spell or one of the beams of an {@spell 魔能爆} spell."
 											]
 										},
 										{
@@ -759,7 +759,7 @@
 											"name": "Can Empowered Spell affect all the rays of a scorching ray spell, or just one?",
 											"id": "053",
 											"entries": [
-												"A sorcerer's Empowered Spell could affect more than one ray of a {@spell scorching ray}, abiding by the feature's die limit. For instance, if you create three rays with the spell and you have a +3 Charisma modifier, you could reroll one of the damage dice for each ray, or two of the damage dice for one ray and one of the damage dice for another one."
+												"A sorcerer's Empowered Spell could affect more than one ray of a {@spell 灼熱射線}, abiding by the feature's die limit. For instance, if you create three rays with the spell and you have a +3 Charisma modifier, you could reroll one of the damage dice for each ray, or two of the damage dice for one ray and one of the damage dice for another one."
 											]
 										},
 										{
@@ -888,7 +888,7 @@
 											"name": "Does the evoker's Potent Cantrip feature apply to cantrips with attack rolls or only to saves?",
 											"id": "063",
 											"entries": [
-												"Potent Cantrip affects only cantrips that require a saving throw, such as {@spell acid splash} and {@spell poison spray}."
+												"Potent Cantrip affects only cantrips that require a saving throw, such as {@spell 酸液濺爆} and {@spell 毒氣噴灑}."
 											]
 										},
 										{
@@ -904,7 +904,7 @@
 											"name": "For the Shapechanger feature of the School of Transmutation, does polymorph need to be prepared if I only want to cast it without using a spell slot?",
 											"id": "065",
 											"entries": [
-												"A transmuter must have {@spell polymorph} prepared, as normal, to cast it with the Shapechanger feature."
+												"A transmuter must have {@spell 變形術} prepared, as normal, to cast it with the Shapechanger feature."
 											]
 										},
 										{
@@ -1029,7 +1029,7 @@
 											"name": "Can a barbarian/cleric use spiritual weapon to attack while raging, if it is cast before entering rage?",
 											"id": "073",
 											"entries": [
-												"A barbarian's Rage feature makes {@book concentration|PHB|10|Concentration} impossible but has no effect on spells, like {@spell spiritual weapon}, that don't require concentration."
+												"A barbarian's Rage feature makes {@book concentration|PHB|10|Concentration} impossible but has no effect on spells, like {@spell 靈體武器}, that don't require concentration."
 											]
 										},
 										{
@@ -1220,8 +1220,8 @@
 											"name": "Does Polearm Master let me make an opportunity attack against a target that is being forced to approach me?",
 											"id": "08b",
 											"entries": [
-												"A creature doesn't provoke an opportunity attack if it is moved without the use of its movement, its action, or its {@book reaction|PHB|9|Reactions}. For example, the effect of the {@spell antipathy/sympathy} spell requires the target to use its movement, meaning that it would provoke opportunity attacks when it does so.",
-												"Similarly, {@spell dissonant whispers} requires the target to move using its {@book reaction|PHB|9|Reactions} (if available), so that activity also provokes opportunity attacks. In contrast, a creature that's pushed by a {@spell gust of wind} spell does not provoke opportunity attacks."
+												"A creature doesn't provoke an opportunity attack if it is moved without the use of its movement, its action, or its {@book reaction|PHB|9|Reactions}. For example, the effect of the {@spell 嫌惡/共感術} spell requires the target to use its movement, meaning that it would provoke opportunity attacks when it does so.",
+												"Similarly, {@spell 噪音暗語} requires the target to move using its {@book reaction|PHB|9|Reactions} (if available), so that activity also provokes opportunity attacks. In contrast, a creature that's pushed by a {@spell 造風術} spell does not provoke opportunity attacks."
 											]
 										}
 									]
@@ -1320,7 +1320,7 @@
 											"id": "098",
 											"entries": [
 												"They aren't. It's easy to mistake the three rolls as three faces of the same thing, because they each involve rolling a {@dice d20}, adding any modifiers, and comparing the total to a {@book Difficulty Class|PHB|7|Ability Checks}, and they're all subject to advantage and disadvantage. In short, they share the same procedure for determining success or failure.",
-												"Despite this common procedure, the three rolls are separate from each other. If something in the game, like the {@spell guidance} spell, affects one of them, the other two aren't affected unless the rules specifically say so. The next few questions touch on this point again."
+												"Despite this common procedure, the three rolls are separate from each other. If something in the game, like the {@spell 指導術} spell, affects one of them, the other two aren't affected unless the rules specifically say so. The next few questions touch on this point again."
 											]
 										},
 										{
@@ -1344,7 +1344,7 @@
 											"name": "If you cast the hex spell and choose Strength as the affected ability, does the target also have disadvantage on attack rolls and saving throws that use Strength?",
 											"id": "09b",
 											"entries": [
-												"No, the {@spell hex} spell's description says it affects ability checks that use the chosen ability. The description says nothing about affecting attack rolls or saving throws. This means, for example, that if you choose Constitution, the spell's target doesn't suffer disadvantage when trying to maintain {@book concentration|PHB|10|Concentration} on a spell, since concentration requires a Constitution saving throw, not a Constitution check.",
+												"No, the {@spell 脆弱詛咒} spell's description says it affects ability checks that use the chosen ability. The description says nothing about affecting attack rolls or saving throws. This means, for example, that if you choose Constitution, the spell's target doesn't suffer disadvantage when trying to maintain {@book concentration|PHB|10|Concentration} on a spell, since concentration requires a Constitution saving throw, not a Constitution check.",
 												"Curious about the spell's intent? The spell is meant to be a classic jinx\u2014the sort seen in folklore\u2014that is useful in and out of combat. In combat, the spell provides some extra necrotic damage. Outside combat, you could foil a cunning diplomat, for example, by casting the spell and imposing disadvantage on his or her Charisma checks."
 											]
 										},
@@ -1361,7 +1361,7 @@
 											"name": "When you make a Strength (Athletics) check to grapple or shove someone, are you making an attack roll?",
 											"id": "09d",
 											"entries": [
-												"No. That check is an ability check, so game effects tied to attack rolls don't apply to it. Going back to an earlier question, the {@spell hex} spell could be used to diminish a grappler's effectiveness. And if the grappler's target is under the effect of the {@action Dodge} action, that action doesn't inhibit the {@book grapple|PHB|9|Grappling}, since Dodge doesn't affect ability checks."
+												"No. That check is an ability check, so game effects tied to attack rolls don't apply to it. Going back to an earlier question, the {@spell 脆弱詛咒} spell could be used to diminish a grappler's effectiveness. And if the grappler's target is under the effect of the {@action Dodge} action, that action doesn't inhibit the {@book grapple|PHB|9|Grappling}, since Dodge doesn't affect ability checks."
 											]
 										}
 									]
@@ -1406,7 +1406,7 @@
 											"name": "What's an example of an effect that can reduce exhaustion?",
 											"id": "0a3",
 											"entries": [
-												"The {@spell greater restoration} spell can reduce exhaustion."
+												"The {@spell 高等復原術} spell can reduce exhaustion."
 											]
 										},
 										{
@@ -1414,7 +1414,7 @@
 											"name": "Is there a way to get lost Intelligence back, such as after an intellect devourer zeroes it?",
 											"id": "0a4",
 											"entries": [
-												"The {@spell greater restoration} spell can remove the reduction to an ability score."
+												"The {@spell 高等復原術} spell can remove the reduction to an ability score."
 											]
 										},
 										{
@@ -1511,7 +1511,7 @@
 											"name": "Can a bonus action be used as an action or vice versa? For example, can a bard use a bonus action to grant a Bardic Inspiration die and an action to cast healing word?",
 											"id": "0ad",
 											"entries": [
-												"No. Actions and bonus actions aren't interchangeable. In the example, the bard could use Bardic Inspiration or {@spell healing word} on a turn, not both."
+												"No. Actions and bonus actions aren't interchangeable. In the example, the bard could use Bardic Inspiration or {@spell 治癒真言} on a turn, not both."
 											]
 										},
 										{
@@ -1649,9 +1649,9 @@
 												},
 												"* Add your proficiency bonus if you're using a weapon with which you're proficient.",
 												"** Add your proficiency bonus. Your spellcasting ability is determined by your class or whatever feature gave you the ability to make the spell attack.",
-												"For example, if you make a melee weapon attack with a longsword, you add your Strength modifier to the attack and damage rolls of the attack. In contrast, if you make the spell attack of the {@spell fire bolt} cantrip, you add your spellcasting ability modifier to the attack roll. If you're a wizard, Intelligence is your spellcasting ability, so add your Intelligence modifier. {@spell Fire bolt} doesn't tell you to add your modifier to its damage roll, though, so you don't.",
+												"For example, if you make a melee weapon attack with a longsword, you add your Strength modifier to the attack and damage rolls of the attack. In contrast, if you make the spell attack of the {@spell 火焰箭} cantrip, you add your spellcasting ability modifier to the attack roll. If you're a wizard, Intelligence is your spellcasting ability, so add your Intelligence modifier. {@spell 火焰箭} doesn't tell you to add your modifier to its damage roll, though, so you don't.",
 												"Various features in the game make explicit exceptions to the rule. For example, a weapon that has the finesse property lets you choose whether to use your Strength or Dexterity modifier with it. Another example: when you use the two-weapon fighting option in the {@book Player's Handbook|PHB} ({@i PHB} \"{@book Two-Weapon Fighting|PHB|9|Two-Weapon Fighting}\"), you don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. You do, however, still add your ability modifier to the attack roll, since the option doesn't tell you not to. In other words, you follow the general rule until an exception in the game tells you not to.",
-												"What about unusual cases like the {@spell green-flame blade|TCE} spell? The spell, which appears in the {@book Sword Coast Adventurer's Guide|SCAG}, tells you to make a melee attack with a weapon. Look at the table above, and you see that, under normal circumstances, you use your Strength modifier when you make a melee weapon attack. It doesn't matter that a spell told you to attack. If a spell expects you to make a spell attack, the spell's description says so. For examples, take a look at {@spell fire bolt} and {@spell ray of frost}. Both say it\u2014\"spell attack.\""
+												"What about unusual cases like the {@spell green-flame blade|TCE} spell? The spell, which appears in the {@book Sword Coast Adventurer's Guide|SCAG}, tells you to make a melee attack with a weapon. Look at the table above, and you see that, under normal circumstances, you use your Strength modifier when you make a melee weapon attack. It doesn't matter that a spell told you to attack. If a spell expects you to make a spell attack, the spell's description says so. For examples, take a look at {@spell 火焰箭} and {@spell 冷凍射線}. Both say it\u2014\"spell attack.\""
 											]
 										},
 										{
@@ -1817,7 +1817,7 @@
 											"name": "Can a spellcaster cast spells off-target to minimize damage to party members from a spell like shatter?",
 											"id": "0cd",
 											"entries": [
-												"The spellcaster chooses where to place the point of origin of a spell like {@spell shatter} and may, therefore, choose a position that is advantageous to allies."
+												"The spellcaster chooses where to place the point of origin of a spell like {@spell 粉碎音波} and may, therefore, choose a position that is advantageous to allies."
 											]
 										},
 										{
@@ -1825,7 +1825,7 @@
 											"name": "Can permanent magical effects be dispelled? Or are they no longer considered magical effects once permanent?",
 											"id": "0ce",
 											"entries": [
-												"If the effect of a spell becomes permanent, it can be dispelled, unless its description says otherwise (such as in the {@spell wall of stone} spell)."
+												"If the effect of a spell becomes permanent, it can be dispelled, unless its description says otherwise (such as in the {@spell 石牆術} spell)."
 											]
 										},
 										{
@@ -1849,8 +1849,8 @@
 											"name": "Do you always know when you're under the effect of a spell?",
 											"id": "0d1",
 											"entries": [
-												"You're aware that a spell is affecting you if it has a perceptible effect or if its text says you're aware of it (see {@i PHB}, under \"{@book Targets|PHB|10|Targets}\"). Most spells are obvious. For example, {@spell fireball} burns you, {@spell cure wounds} heals you, and {@spell command} forces you to suddenly do something you didn't intend. Certain spells are more subtle, yet you become aware of the spell at a time specified in the spell's description. {@spell Charm person} and {@spell detect thoughts} are examples of such spells.",
-												"Some spells are so subtle that you might not know you were ever under their effects. A prime example of that sort of spell is {@spell suggestion}. Assuming you failed to notice the spellcaster casting the spell, you might simply remember the caster saying, \"The treasure you're looking for isn't here. Go look for it in the room at the top of the next tower.\" You failed your saving throw, and off you went to the other tower, thinking it was your idea to go there. You and your companions might deduce that you were beguiled if evidence of the spell is found. It's ultimately up to the DM whether you discover the presence of inconspicuous spells. Discovery usually comes through the use of skills like {@skill Arcana}, {@skill Investigation}, {@skill Insight}, and {@skill Perception} or through spells like {@spell detect magic}."
+												"You're aware that a spell is affecting you if it has a perceptible effect or if its text says you're aware of it (see {@i PHB}, under \"{@book Targets|PHB|10|Targets}\"). Most spells are obvious. For example, {@spell 火球術} burns you, {@spell 治療傷勢} heals you, and {@spell 命令術} forces you to suddenly do something you didn't intend. Certain spells are more subtle, yet you become aware of the spell at a time specified in the spell's description. {@spell 魅惑人類} and {@spell 偵測思想} are examples of such spells.",
+												"Some spells are so subtle that you might not know you were ever under their effects. A prime example of that sort of spell is {@spell 暗示術}. Assuming you failed to notice the spellcaster casting the spell, you might simply remember the caster saying, \"The treasure you're looking for isn't here. Go look for it in the room at the top of the next tower.\" You failed your saving throw, and off you went to the other tower, thinking it was your idea to go there. You and your companions might deduce that you were beguiled if evidence of the spell is found. It's ultimately up to the DM whether you discover the presence of inconspicuous spells. Discovery usually comes through the use of skills like {@skill Arcana}, {@skill Investigation}, {@skill Insight}, and {@skill Perception} or through spells like {@spell 偵測魔法}."
 											]
 										},
 										{
@@ -1898,7 +1898,7 @@
 											"entries": [
 												"The short answer is no.",
 												"As explained in the {@book Player's Handbook|PHB}, you can take one action on your turn in combat, in addition to moving. You choose your action from the options available to everyone\u2014options such as {@action Attack}, {@action Cast a Spell}, and {@action Dash}\u2014or you choose from among the special actions you've gained from a class, a feat, or another source.",
-												"If you want to cast a spell on your turn, you take the {@action Cast a Spell} action. Doing so means you're not taking the {@action Attack} action or any other action. It is true that a number of spells, such as {@spell fire bolt} and {@spell ray of frost}, involve making an attack, but you can't make such an attack without first casting the spell that delivers it. In other words, just because something involves an attack doesn't mean the {@action Attack} action is being used.",
+												"If you want to cast a spell on your turn, you take the {@action Cast a Spell} action. Doing so means you're not taking the {@action Attack} action or any other action. It is true that a number of spells, such as {@spell 火焰箭} and {@spell 冷凍射線}, involve making an attack, but you can't make such an attack without first casting the spell that delivers it. In other words, just because something involves an attack doesn't mean the {@action Attack} action is being used.",
 												"By extension, the Extra Attack feature (given by several classes, including the fighter and paladin) doesn't let you cast extra attack spells. That feature specifically relies on the {@action Attack} action, not the {@action Cast a Spell} action or any other action.",
 												"In summary, to make a spell attack, you have to first cast a spell or use a feature that creates the spell's effect. A game feature, such as Extra Attack, that lets you make an attack doesn't let you cast a spell unless it says it does."
 											]
@@ -1908,7 +1908,7 @@
 											"name": "Can you use a melee spell attack to make an opportunity attack?",
 											"id": "0d7",
 											"entries": [
-												"You can't if the spell attack is created by casting a spell. When a creature triggers an opportunity attack from you, you can use your {@book reaction|PHB|9|Reactions} to make a melee attack against it. The opportunity attack doesn't suddenly give you the ability to cast a spell, such as {@spell shocking grasp}.",
+												"You can't if the spell attack is created by casting a spell. When a creature triggers an opportunity attack from you, you can use your {@book reaction|PHB|9|Reactions} to make a melee attack against it. The opportunity attack doesn't suddenly give you the ability to cast a spell, such as {@spell 電爪}.",
 												"Each spell has a casting time. A game feature, such as an opportunity attack, doesn't let you bypass that casting time, unless the feature says otherwise. The {@feat War Caster} feat is an example of a feature that does let you bypass a 1-action casting time to cast a spell in place of making an opportunity attack.",
 												"A few monsters can make opportunity attacks with melee spell attacks. Here's how: certain monsters\u2014including the {@creature banshee}, the {@creature lich}, and the {@creature specter}\u2014have a melee spell attack that isn't delivered by a spell. For example, the banshee's Corrupting Touch action is a melee spell attack but no spell is cast to make it. The {@creature banshee} can, therefore, make opportunity attacks with Corrupting Touch."
 											]
@@ -1946,8 +1946,8 @@
 												{
 													"type": "list",
 													"items": [
-														"The warlock's Chains of Carceri feature lets a warlock cast {@spell hold monster} without using a spell slot. That casting of {@spell hold monster} is, therefore, 5th level, which is the lowest possible level for that spell.",
-														"The warlock's Thief of Five Fates feature lets a warlock cast {@spell bane} using a spell slot, which means the spell is 1st level or higher, depending on the slot that the warlock expends to cast it.",
+														"The warlock's Chains of Carceri feature lets a warlock cast {@spell 怪物定身術} without using a spell slot. That casting of {@spell 怪物定身術} is, therefore, 5th level, which is the lowest possible level for that spell.",
+														"The warlock's Thief of Five Fates feature lets a warlock cast {@spell 災禍術} using a spell slot, which means the spell is 1st level or higher, depending on the slot that the warlock expends to cast it.",
 														"The monk's Disciple of the Elements feature lets the monk spend ki points, rather than a spell slot, to increase the level of a spell."
 													]
 												},
@@ -1967,7 +1967,7 @@
 											"id": "0dd",
 											"entries": [
 												"There's no rule that says you can cast only X number of spells on your turn, but there are some practical limits. The main limiting factor is your action. Most spells require an action to cast, and unless you use a feature like the fighter's Action Surge, you have only one action on your turn.",
-												"If you cast a spell, such as {@spell healing word}, with a bonus action, you can cast another spell with your action, but that other spell must be a cantrip. Keep in mind that this particular limit is specific to spells that use a bonus action. For instance, if you cast a second spell using Action Surge, you aren't limited to casting a cantrip with it."
+												"If you cast a spell, such as {@spell 治癒真言}, with a bonus action, you can cast another spell with your action, but that other spell must be a cantrip. Keep in mind that this particular limit is specific to spells that use a bonus action. For instance, if you cast a second spell using Action Surge, you aren't limited to casting a cantrip with it."
 											]
 										},
 										{
@@ -1975,7 +1975,7 @@
 											"name": "Does the rule on casting a bonus action spell apply when you take a bonus action granted by a spell?",
 											"id": "0de",
 											"entries": [
-												"The rule on {@book casting a spell as a bonus action|PHB|10|Bonus Action} applies only on the turn you cast the spell. For example, {@spell spiritual weapon} can be cast as a bonus action, and it lasts for 1 minute. On the turn you cast it, you can't cast another spell before or after it, unless that spell is a cantrip with a casting time of 1 action. Until {@spell spiritual weapon} ends, it gives you the option of controlling its spectral weapon as a bonus action. That bonus action does not involve casting a spell, despite the fact that it's granted by a spell, so you can control the weapon and cast whatever spell you like on the same turn."
+												"The rule on {@book casting a spell as a bonus action|PHB|10|Bonus Action} applies only on the turn you cast the spell. For example, {@spell 靈體武器} can be cast as a bonus action, and it lasts for 1 minute. On the turn you cast it, you can't cast another spell before or after it, unless that spell is a cantrip with a casting time of 1 action. Until {@spell 靈體武器} ends, it gives you the option of controlling its spectral weapon as a bonus action. That bonus action does not involve casting a spell, despite the fact that it's granted by a spell, so you can control the weapon and cast whatever spell you like on the same turn."
 											]
 										},
 										{
@@ -1983,7 +1983,7 @@
 											"name": "Can you cast a reaction spell on your turn?",
 											"id": "0df",
 											"entries": [
-												"You sure can! Here's a common way for it to happen: Cornelius the wizard is casting {@spell fireball} on his turn, and his foe casts {@spell counterspell} on him. Cornelius also has {@spell counterspell} prepared, so he uses his {@book reaction|PHB|9|Reactions} to cast it and break his foe's {@spell counterspell} before it can stop {@spell fireball}."
+												"You sure can! Here's a common way for it to happen: Cornelius the wizard is casting {@spell 火球術} on his turn, and his foe casts {@spell 反制法術} on him. Cornelius also has {@spell 反制法術} prepared, so he uses his {@book reaction|PHB|9|Reactions} to cast it and break his foe's {@spell 反制法術} before it can stop {@spell 火球術}."
 											]
 										},
 										{
@@ -2006,7 +2006,7 @@
 											"name": "Does a spell consume its material components?",
 											"id": "0e2",
 											"entries": [
-												"A spell doesn't consume its material components unless its description says it does. For example, the pearl required by the {@spell identify} spell isn't consumed, whereas the diamond required by {@spell raise dead} is used up when you cast the spell."
+												"A spell doesn't consume its material components unless its description says it does. For example, the pearl required by the {@spell 鑑定術} spell isn't consumed, whereas the diamond required by {@spell 喚醒死者} is used up when you cast the spell."
 											]
 										},
 										{
@@ -2023,9 +2023,9 @@
 											"id": "0e4",
 											"entries": [
 												"If a spell has a material component, you need to handle that {@book component|PHB|10|Components} when you cast the spell. The same rule applies if you're using a spellcasting focus as the material component.",
-												"If a spell has a somatic component, you can use the hand that performs the somatic component to also handle the material component. For example, a wizard who uses an {@item orb|PHB} as a spellcasting focus could hold a {@item quarterstaff|PHB} in one hand and the orb in the other, and he could cast {@spell lightning bolt} by using the orb as the spell's material component and the orb hand to perform the spell's somatic component.",
-												"Another example: a cleric's {@item holy symbol|PHB} is emblazoned on her {@item shield|PHB}. She likes to wade into melee combat with a {@item mace|PHB} in one hand and a shield in the other. She uses the holy symbol as her spellcasting focus, so she needs to have the shield in hand when she casts a cleric spell that has a material component. If the spell, such as {@spell aid}, also has a somatic component, she can perform that component with the shield hand and keep holding the mace in the other.",
-												"If the same cleric casts {@spell cure wounds}, she needs to put the {@item mace|PHB} or the {@item shield|PHB} away, because that spell doesn't have a material component but does have a somatic component. She's going to need a free hand to make the spell's gestures. If she had the {@feat War Caster} feat, she could ignore this restriction."
+												"If a spell has a somatic component, you can use the hand that performs the somatic component to also handle the material component. For example, a wizard who uses an {@item orb|PHB} as a spellcasting focus could hold a {@item quarterstaff|PHB} in one hand and the orb in the other, and he could cast {@spell 閃電束} by using the orb as the spell's material component and the orb hand to perform the spell's somatic component.",
+												"Another example: a cleric's {@item holy symbol|PHB} is emblazoned on her {@item shield|PHB}. She likes to wade into melee combat with a {@item mace|PHB} in one hand and a shield in the other. She uses the holy symbol as her spellcasting focus, so she needs to have the shield in hand when she casts a cleric spell that has a material component. If the spell, such as {@spell 援助術}, also has a somatic component, she can perform that component with the shield hand and keep holding the mace in the other.",
+												"If the same cleric casts {@spell 治療傷勢}, she needs to put the {@item mace|PHB} or the {@item shield|PHB} away, because that spell doesn't have a material component but does have a somatic component. She's going to need a free hand to make the spell's gestures. If she had the {@feat War Caster} feat, she could ignore this restriction."
 											]
 										}
 									]
@@ -2057,7 +2057,7 @@
 											"name": "Can a spellcaster dismiss a spell after casting it?",
 											"id": "0e8",
 											"entries": [
-												"You can't normally dismiss a spell that you cast unless (a) its description says you can or (b) it requires {@book concentration|PHB|10|Concentration} and you decide to end your concentration on it. Otherwise, a spell's magic is unleashed on the environment, and if you want to end it, you need to cast {@spell dispel magic} on it."
+												"You can't normally dismiss a spell that you cast unless (a) its description says you can or (b) it requires {@book concentration|PHB|10|Concentration} and you decide to end your concentration on it. Otherwise, a spell's magic is unleashed on the environment, and if you want to end it, you need to cast {@spell 解除魔法} on it."
 											]
 										}
 									]
@@ -2071,7 +2071,7 @@
 											"type": "entries",
 											"name": "Can I cast animate dead on the humanoid-shaped corpse of an undead creature such as a zombie or a ghast?",
 											"entries": [
-												"When {@spell animate dead} targets a corpse, the body must have belonged to a creature of the humanoid creature type. If the spell targets a pile of bones, there is no creature type restriction; the bones become a skeleton."
+												"When {@spell 活化死屍} targets a corpse, the body must have belonged to a creature of the humanoid creature type. If the spell targets a pile of bones, there is no creature type restriction; the bones become a skeleton."
 											]
 										},
 										{
@@ -2087,7 +2087,7 @@
 											"id": "0ea",
 											"entries": [
 												"The spell is meant to work only as long as you have the temporary hit points that the spell grants. When those temporary hit points are gone, the spell is done.",
-												"Keep in mind that temporary hit points aren't cumulative. If you have temporary hit points and receive more of them, you don't add them together, unless a game feature says you can. You decide which temporary hit points to keep. As an example, let's say you're a warlock with the Dark One's Blessing feature, which gives you temporary hit points when you reduce a creature to 0 hit points. You currently have 2 temporary hit points remaining from {@spell Armor of Agathys||armor of Agathys}, you just slew a monster, and your Dark One's Blessing can now give you 4 temporary hit points. If you take those temporary hit points, they replace the ones from {@spell armor of Agathys} and end that spell, so you might not want to take them and keep the spell going instead, so as to continue benefiting from the cold damage it delivers."
+												"Keep in mind that temporary hit points aren't cumulative. If you have temporary hit points and receive more of them, you don't add them together, unless a game feature says you can. You decide which temporary hit points to keep. As an example, let's say you're a warlock with the Dark One's Blessing feature, which gives you temporary hit points when you reduce a creature to 0 hit points. You currently have 2 temporary hit points remaining from {@spell Armor of Agathys||armor of Agathys}, you just slew a monster, and your Dark One's Blessing can now give you 4 temporary hit points. If you take those temporary hit points, they replace the ones from {@spell 艾嘉西斯之鎧} and end that spell, so you might not want to take them and keep the spell going instead, so as to continue benefiting from the cold damage it delivers."
 											]
 										},
 										{
@@ -2095,7 +2095,7 @@
 											"name": "How does barkskin work with shields, cover, and other modifiers to AC?",
 											"id": "0eb",
 											"entries": [
-												"{@spell Barkskin} specifies that your AC can't be lower than 16 while you are affected by the spell. This means you effectively ignore any modifiers to your AC\u2014including your Dexterity modifier, your armor, a shield, and cover\u2014unless your AC is higher than 16. For example, if your AC is normally 14, it's 16 while {@spell barkskin} is on you. If your AC is normally 15 and you have half cover, your AC is 17; {@spell barkskin} isn't relevant in this case."
+												"{@spell 樹膚術} specifies that your AC can't be lower than 16 while you are affected by the spell. This means you effectively ignore any modifiers to your AC\u2014including your Dexterity modifier, your armor, a shield, and cover\u2014unless your AC is higher than 16. For example, if your AC is normally 14, it's 16 while {@spell 樹膚術} is on you. If your AC is normally 15 and you have half cover, your AC is 17; {@spell 樹膚術} isn't relevant in this case."
 											]
 										},
 										{
@@ -2111,7 +2111,7 @@
 											"name": "Is the chill touch spell intended as a way of foiling any creature that has Regeneration?",
 											"id": "0ed",
 											"entries": [
-												"{@spell Chill touch} does, indeed, stop the target it hits from regaining hit points until the spell ends. This is true even if the target takes none of the necrotic damage, whether because of immunity or some other reason."
+												"{@spell 寒顫之觸} does, indeed, stop the target it hits from regaining hit points until the spell ends. This is true even if the target takes none of the necrotic damage, whether because of immunity or some other reason."
 											]
 										},
 										{
@@ -2119,7 +2119,7 @@
 											"name": "Using 5-foot squares, does cloud of daggers affect a single square?",
 											"id": "0ee",
 											"entries": [
-												"{@spell Cloud of daggers} (5 ft. cube) can affect more than one square on a grid, unless the DM says effects snap to the grid. There are many ways to position that cube."
+												"{@spell 匕首之雲} (5 ft. cube) can affect more than one square on a grid, unless the DM says effects snap to the grid. There are many ways to position that cube."
 											]
 										},
 										{
@@ -2149,9 +2149,9 @@
 											"name": "When you cast a spell like conjure woodland beings , does the spellcaster or the DM choose the creatures that are conjured?",
 											"id": "0f0",
 											"entries": [
-												"A number of spells in the game let you summon creatures. {@spell Conjure animals}, {@spell conjure celestial}, {@spell conjure minor elementals}, and {@spell conjure woodland beings} are just a few examples.",
-												"Some spells of this sort specify that the spellcaster chooses the creature conjured. For example, {@spell find familiar} gives the caster a list of animals to choose from.",
-												"Other spells of this sort let the spellcaster choose from among several broad options. For example, {@spell conjure minor elementals} offers four options. Here are the first two:",
+												"A number of spells in the game let you summon creatures. {@spell 召喚動物}, {@spell 召喚天界生物}, {@spell 召喚次級元素生物}, and {@spell 召喚林地之精} are just a few examples.",
+												"Some spells of this sort specify that the spellcaster chooses the creature conjured. For example, {@spell 尋獲魔寵} gives the caster a list of animals to choose from.",
+												"Other spells of this sort let the spellcaster choose from among several broad options. For example, {@spell 召喚次級元素生物} offers four options. Here are the first two:",
 												{
 													"type": "list",
 													"items": [
@@ -2182,7 +2182,7 @@
 											"name": "Can you cast darkness with a higher-level slot to end a spell of 3rd level or higher that creates light?",
 											"id": "0f1",
 											"entries": [
-												"No. The {@spell darkness} spell can dispel only a light-creating spell of 2nd level or lower, no matter what spell slot is used for {@spell darkness}. Similarly, the {@spell daylight} spell can dispel only a darkness-creating spell of 3rd level or lower, regardless of the spell slot used."
+												"No. The {@spell 黑暗術} spell can dispel only a light-creating spell of 2nd level or lower, no matter what spell slot is used for {@spell 黑暗術}. Similarly, the {@spell 晝明術} spell can dispel only a darkness-creating spell of 3rd level or lower, regardless of the spell slot used."
 											]
 										},
 										{
@@ -2190,7 +2190,7 @@
 											"name": "If the damage from disintegrate reduces a half-orc to 0 hit points, can Relentless Endurance prevent the orc from turning to ash?",
 											"id": "0f2",
 											"entries": [
-												"Yes. The {@spell disintegrate} spell turns you into dust only if the spell's damage leaves you with 0 hit points. If you're a half-orc, Relentless Endurance can turn the 0 into a 1 before the spell can disintegrate you."
+												"Yes. The {@spell 解離術} spell turns you into dust only if the spell's damage leaves you with 0 hit points. If you're a half-orc, Relentless Endurance can turn the 0 into a 1 before the spell can disintegrate you."
 											]
 										},
 										{
@@ -2206,9 +2206,9 @@
 											"name": "Can you use dispel magic to dispel a magical effect like a vampire's Charm ability or a druid's Wild Shape?",
 											"id": "0f4",
 											"entries": [
-												"{@spell Dispel magic} has a particular purpose: to break other spells. It has no effect on a vampire's Charm ability or any other magical effect that isn't a spell. It also does nothing to the properties of a magic item. It can, however, end a spell cast from a magic item or from another source. Spells\u2014they're what {@spell dispel magic} is about. For example, if you cast {@spell dispel magic} on a {@item staff of power}, the spell fails to disrupt the staff's magical properties, but if the staff's wielder casts {@spell hold monster} from the staff, {@spell dispel magic} can end that spell if cast on the target of {@spell hold monster}.",
-												"There are abilities and other spells that can end or suspend magical effects that aren't spells. For example, the {@spell greater restoration} spell can end a charm effect of any sort on a target (such as a {@creature Vampire||vampire's} Charm or a {@creature Dryad||dryad's} Fey Charm), and a paladin's Aura of Devotion can prevent or suspend such an effect.",
-												"Three of the most versatile spells for ending certain magical effects are {@spell lesser restoration}, {@spell greater restoration}, and {@spell remove curse}."
+												"{@spell 解除魔法} has a particular purpose: to break other spells. It has no effect on a vampire's Charm ability or any other magical effect that isn't a spell. It also does nothing to the properties of a magic item. It can, however, end a spell cast from a magic item or from another source. Spells\u2014they're what {@spell 解除魔法} is about. For example, if you cast {@spell 解除魔法} on a {@item staff of power}, the spell fails to disrupt the staff's magical properties, but if the staff's wielder casts {@spell 怪物定身術} from the staff, {@spell 解除魔法} can end that spell if cast on the target of {@spell 怪物定身術}.",
+												"There are abilities and other spells that can end or suspend magical effects that aren't spells. For example, the {@spell 高等復原術} spell can end a charm effect of any sort on a target (such as a {@creature Vampire||vampire's} Charm or a {@creature Dryad||dryad's} Fey Charm), and a paladin's Aura of Devotion can prevent or suspend such an effect.",
+												"Three of the most versatile spells for ending certain magical effects are {@spell 次級復原術}, {@spell 高等復原術}, and {@spell 移除詛咒}."
 											]
 										},
 										{
@@ -2216,9 +2216,9 @@
 											"name": "Can you use dispel magic on the creations of a spell like animate dead or affect those creations with antimagic field?",
 											"id": "0f5",
 											"entries": [
-												"Whenever you wonder whether a spell's effects can be dispelled or suspended, you need to answer one question: is the spell's duration instantaneous? If the answer is yes, there is nothing to dispel or suspend. Here's why: the effects of an {@book instantaneous spell|PHB|10|Instantaneous} are brought into being by magic, but the effects aren't sustained by magic. The magic flares for a split second and then vanishes. For example, the instantaneous spell {@spell animate dead} harnesses magical energy to turn a corpse or a pile of bones into an undead creature. That necromantic magic is present for an instant and is then gone. The resulting undead now exists without the magic's help. Casting {@spell dispel magic} on the creature can't end its mockery of life, and the undead can wander into an {@spell antimagic field} with no adverse effect.",
-												"Another example: {@spell cure wounds} instantaneously restores hit points to a creature. Because the spell's duration is instantaneous, the restoration can't be later dispelled. And you don't suddenly lose hit points if you step into an {@spell antimagic field} !",
-												"In contrast, a spell like {@spell conjure woodland beings} has a non-instantaneous duration, which means its creations can be ended by {@spell dispel magic} and they temporarily disappear within an {@spell antimagic field}."
+												"Whenever you wonder whether a spell's effects can be dispelled or suspended, you need to answer one question: is the spell's duration instantaneous? If the answer is yes, there is nothing to dispel or suspend. Here's why: the effects of an {@book instantaneous spell|PHB|10|Instantaneous} are brought into being by magic, but the effects aren't sustained by magic. The magic flares for a split second and then vanishes. For example, the instantaneous spell {@spell 活化死屍} harnesses magical energy to turn a corpse or a pile of bones into an undead creature. That necromantic magic is present for an instant and is then gone. The resulting undead now exists without the magic's help. Casting {@spell 解除魔法} on the creature can't end its mockery of life, and the undead can wander into an {@spell 反魔法結界} with no adverse effect.",
+												"Another example: {@spell 治療傷勢} instantaneously restores hit points to a creature. Because the spell's duration is instantaneous, the restoration can't be later dispelled. And you don't suddenly lose hit points if you step into an {@spell 反魔法結界} !",
+												"In contrast, a spell like {@spell 召喚林地之精} has a non-instantaneous duration, which means its creations can be ended by {@spell 解除魔法} and they temporarily disappear within an {@spell 反魔法結界}."
 											]
 										},
 										{
@@ -2226,8 +2226,8 @@
 											"name": "Can you ready dispel magic to stop another spell from taking effect?",
 											"id": "0f6",
 											"entries": [
-												"The easiest way to stop a spell is to cast {@spell counterspell} on its caster while it's being cast. If successful, {@spell counterspell} interrupts the other spell's casting, and that spell fails to take effect. {@spell Counterspell} works against any spell, regardless of a spell's casting time or duration.",
-												"With the {@action Ready} action, dispel magic can be cast in response to another spell being cast, yet {@spell dispel magic} can't substitute for {@spell counterspell}. The main reason is that {@spell dispel magic} removes a spell that is already on a target, whether that target is a creature, an object, or some other phenomenon. {@spell Dispel magic} can't dispel something in advance. If a spell isn't already present on a target, {@spell dispel magic} does nothing to that target. The best that a readied {@spell dispel magic} can do is dispel a spell immediately after the spell has been cast to prevent it from having any effect after the action used to cast it. For example, on your turn you could say something like this: \"I ready {@spell dispel magic}, and if the high priest casts a spell on anyone, I cast {@spell dispel magic} on the target if the spell takes hold.\" If the high priest then cast {@spell hold person} on your companion who fails the save against it, you could unleash your readied {@spell dispel magic} and end {@spell hold person}."
+												"The easiest way to stop a spell is to cast {@spell 反制法術} on its caster while it's being cast. If successful, {@spell 反制法術} interrupts the other spell's casting, and that spell fails to take effect. {@spell 反制法術} works against any spell, regardless of a spell's casting time or duration.",
+												"With the {@action Ready} action, dispel magic can be cast in response to another spell being cast, yet {@spell 解除魔法} can't substitute for {@spell 反制法術}. The main reason is that {@spell 解除魔法} removes a spell that is already on a target, whether that target is a creature, an object, or some other phenomenon. {@spell 解除魔法} can't dispel something in advance. If a spell isn't already present on a target, {@spell 解除魔法} does nothing to that target. The best that a readied {@spell 解除魔法} can do is dispel a spell immediately after the spell has been cast to prevent it from having any effect after the action used to cast it. For example, on your turn you could say something like this: \"I ready {@spell 解除魔法}, and if the high priest casts a spell on anyone, I cast {@spell 解除魔法} on the target if the spell takes hold.\" If the high priest then cast {@spell 人類定身術} on your companion who fails the save against it, you could unleash your readied {@spell 解除魔法} and end {@spell 人類定身術}."
 											]
 										},
 										{
@@ -2235,7 +2235,7 @@
 											"name": "Can dispel magic end globe of invulnerability?",
 											"id": "0f7",
 											"entries": [
-												"Yes, {@spell dispel magic} can dispel the barrier created by {@spell globe of invulnerability}, but not any magical effects that are active inside the barrier."
+												"Yes, {@spell 解除魔法} can dispel the barrier created by {@spell 法術無效結界}, but not any magical effects that are active inside the barrier."
 											]
 										},
 										{
@@ -2243,7 +2243,7 @@
 											"name": "If dispel magic targets the magical effect from bless cast by a cleric, does it remove the effect on all the targets?",
 											"id": "0f8",
 											"entries": [
-												"{@spell Dispel magic} ends a spell on one target. It doesn't end the same spell on other targets."
+												"{@spell 解除魔法} ends a spell on one target. It doesn't end the same spell on other targets."
 											]
 										},
 										{
@@ -2274,7 +2274,7 @@
 											"name": "Can a spell such as fireball go past its 20-foot radius if the point of origin is set in an enclosed space that's less than 40 feet across?",
 											"id": "0fb",
 											"entries": [
-												"The fire of the {@spell fireball} spell can spread around corners, but it's limited by the spell's 20-foot radius. It doesn't extend farther than 20 feet from the point of origin no matter where it is cast."
+												"The fire of the {@spell 火球術} spell can spread around corners, but it's limited by the spell's 20-foot radius. It doesn't extend farther than 20 feet from the point of origin no matter where it is cast."
 											]
 										},
 										{
@@ -2282,7 +2282,7 @@
 											"name": "If I'm a cleric/druid with the Disciple of Life feature, does the goodberry spell benefit from the feature?",
 											"id": "0fc",
 											"entries": [
-												"Yes. The Disciple of Life feature would make each berry restore 4 hit points, instead of 1, assuming you cast {@spell goodberry} with a 1st-level spell slot."
+												"Yes. The Disciple of Life feature would make each berry restore 4 hit points, instead of 1, assuming you cast {@spell 神莓術} with a 1st-level spell slot."
 											]
 										},
 										{
@@ -2308,7 +2308,7 @@
 											"name": "For the spell hail of thorns , does it last for the initial attack or as long as you maintain concentration?",
 											"id": "0fe",
 											"entries": [
-												"{@spell Hail of thorns} lasts until you hit a creature with a ranged weapon attack or your {@book concentration|PHB|10|Concentration} ends, whichever comes first."
+												"{@spell 棘刺雹} lasts until you hit a creature with a ranged weapon attack or your {@book concentration|PHB|10|Concentration} ends, whichever comes first."
 											]
 										},
 										{
@@ -2324,7 +2324,7 @@
 											"name": "Does the heroes' feast spell grant immunity to poison damage or just the poison condition?",
 											"id": "100",
 											"entries": [
-												"The {@spell heroes' feast} spell grants immunity to poison in any form\u2014damage and the {@condition poisoned|phb|condition}."
+												"The {@spell 英雄宴} spell grants immunity to poison in any form\u2014damage and the {@condition poisoned|phb|condition}."
 											]
 										},
 										{
@@ -2340,7 +2340,7 @@
 											"name": "If the heroism spell is cast on a character that is already frightened, does it remove the frightened effect?",
 											"id": "102",
 											"entries": [
-												"The {@spell heroism} spell would suppress a frightening effect that was already on its target. When the spell ends, the target's immunity goes away and the frightening effect resumes if it has not expired or been removed."
+												"The {@spell 英雄氣概} spell would suppress a frightening effect that was already on its target. When the spell ends, the target's immunity goes away and the frightening effect resumes if it has not expired or been removed."
 											]
 										},
 										{
@@ -2348,7 +2348,7 @@
 											"name": "Does the extra damage from hex only apply if there is an attack roll?",
 											"id": "103",
 											"entries": [
-												"The extra damage in the {@spell hex} spell requires an attack that hits."
+												"The extra damage in the {@spell 脆弱詛咒} spell requires an attack that hits."
 											]
 										},
 										{
@@ -2356,7 +2356,7 @@
 											"name": "Since resting identifies magic items, and the identify spell doesn't spot curses, what is the role of the identify spell?",
 											"id": "104",
 											"entries": [
-												"The most important factors are time and convenience. During a short rest, which takes at least 1 hour, a character who meets the qualifications can determine the properties of one magic item (see \"{@book Identifying a Magic Item|DMG|7|Identifying a Magic Item}\" in the {@book Dungeon Master's Guide|DMG}). In contrast, casting the {@spell identify} spell takes only 1 minute (or 11 minutes if it is cast as a ritual) and can be done when a quick determination is needed."
+												"The most important factors are time and convenience. During a short rest, which takes at least 1 hour, a character who meets the qualifications can determine the properties of one magic item (see \"{@book Identifying a Magic Item|DMG|7|Identifying a Magic Item}\" in the {@book Dungeon Master's Guide|DMG}). In contrast, casting the {@spell 鑑定術} spell takes only 1 minute (or 11 minutes if it is cast as a ritual) and can be done when a quick determination is needed."
 											]
 										},
 										{
@@ -2365,7 +2365,7 @@
 											"id": "105",
 											"entries": [
 												"Your jump is limited by how far you can move; each foot jumped uses a foot of movement. You can take the {@action Dash} action if you want to extend how far you can move on your turn.",
-												"For example, if you have a Strength score of 15, you can normally leap 15 feet when you make a long jump if you move at least 10 feet immediately beforehand. If the {@spell jump} spell is cast on you, that potential jump distance is tripled. That's a jump of 45 feet! If your speed is 30 feet, you can use only 30 feet of that jump distance on your turn, unless you take the {@action Dash} action, which allows you to leap the full 45 feet."
+												"For example, if you have a Strength score of 15, you can normally leap 15 feet when you make a long jump if you move at least 10 feet immediately beforehand. If the {@spell 跳躍術} spell is cast on you, that potential jump distance is tripled. That's a jump of 45 feet! If your speed is 30 feet, you can use only 30 feet of that jump distance on your turn, unless you take the {@action Dash} action, which allows you to leap the full 45 feet."
 											]
 										},
 										{
@@ -2373,7 +2373,7 @@
 											"name": "Can you use a shield with mage armor?",
 											"id": "106",
 											"entries": [
-												"{@spell Mage armor} works with a {@item shield|PHB}. Shields are grouped with armor in the equipment rules in the {@book Player's Handbook|PHB}, but various game features distinguish between the armor you wear and a shield you wield. Take a look at the monk's Unarmored Defense feature and compare it to the barbarian's version. In the monk's version, you must both forgo wearing armor and forgo wielding a shield if you want to benefit from the feature, whereas a barbarian must only forgo wearing armor."
+												"{@spell 法師護甲} works with a {@item shield|PHB}. Shields are grouped with armor in the equipment rules in the {@book Player's Handbook|PHB}, but various game features distinguish between the armor you wear and a shield you wield. Take a look at the monk's Unarmored Defense feature and compare it to the barbarian's version. In the monk's version, you must both forgo wearing armor and forgo wielding a shield if you want to benefit from the feature, whereas a barbarian must only forgo wearing armor."
 											]
 										},
 										{
@@ -2381,7 +2381,7 @@
 											"name": "Does Unarmored Defense work with a spell like mage armor?",
 											"id": "107",
 											"entries": [
-												"Unarmored Defense doesn't work with {@spell mage armor}. You might be asking yourself, \"Why don't they work together? {@spell Mage armor} specifies that it works on a creature who isn't wearing armor.\" It's true that the target of {@spell mage armor} must be unarmored, but {@spell mage armor} gives you a new way to calculate your AC (13 + your Dexterity modifier) and is therefore incompatible with Unarmored Defense or any other feature that provides an AC calculation."
+												"Unarmored Defense doesn't work with {@spell 法師護甲}. You might be asking yourself, \"Why don't they work together? {@spell 法師護甲} specifies that it works on a creature who isn't wearing armor.\" It's true that the target of {@spell 法師護甲} must be unarmored, but {@spell 法師護甲} gives you a new way to calculate your AC (13 + your Dexterity modifier) and is therefore incompatible with Unarmored Defense or any other feature that provides an AC calculation."
 											]
 										},
 										{
@@ -2389,7 +2389,7 @@
 											"name": "I find it confusing that the mage armor spell is named that when it doesn't count as armor.",
 											"id": "108",
 											"entries": [
-												"Some spells and class features have figurative, not literal, names. The text of the spell or class feature explains what it does. In this case, {@spell mage armor} surrounds the target with \"protective magical force\"; the spell doesn't provide armor."
+												"Some spells and class features have figurative, not literal, names. The text of the spell or class feature explains what it does. In this case, {@spell 法師護甲} surrounds the target with \"protective magical force\"; the spell doesn't provide armor."
 											]
 										},
 										{
@@ -2397,7 +2397,7 @@
 											"name": "Can an object created with minor illusion move? For example, a wall sliding down a corridor?",
 											"id": "109",
 											"entries": [
-												"An illusory object created by {@spell minor illusion} doesn't move. Compare to spells like {@spell major image} and {@spell mislead}, which talk about moving."
+												"An illusory object created by {@spell 次級幻象} doesn't move. Compare to spells like {@spell 強效幻影} and {@spell 假象術}, which talk about moving."
 											]
 										},
 										{
@@ -2405,7 +2405,7 @@
 											"name": "Could minor illusion create a fog cloud? If so, would shooting an arrow through it cancel the illusion?",
 											"id": "10a",
 											"entries": [
-												"An illusory object made by {@spell minor illusion} is meant to be like a stool or a rock, not an atmospheric effect."
+												"An illusory object made by {@spell 次級幻象} is meant to be like a stool or a rock, not an atmospheric effect."
 											]
 										},
 										{
@@ -2422,25 +2422,25 @@
 											"id": "10b",
 											"entries": [
 												"The answer to both questions is no. Here's some elaboration on that answer.",
-												"Some spells and other game features create an area of effect that does something when a creature enters that area for the first time on a turn or when a creature starts its turn in that area. On the turn when you cast such a spell, you're primarily setting up hurt for your foes on later turns. {@spell Moonbeam}, for example, creates a beam of light that can damage a creature who enters the beam or who starts its turn in the beam.",
-												"Here are some spells with the same timing as {@spell moonbeam} for their areas of effect:",
+												"Some spells and other game features create an area of effect that does something when a creature enters that area for the first time on a turn or when a creature starts its turn in that area. On the turn when you cast such a spell, you're primarily setting up hurt for your foes on later turns. {@spell 月華之光}, for example, creates a beam of light that can damage a creature who enters the beam or who starts its turn in the beam.",
+												"Here are some spells with the same timing as {@spell 月華之光} for their areas of effect:",
 												{
 													"type": "list",
 													"items": [
-														"{@spell blade barrier}",
-														"{@spell cloudkill}",
-														"{@spell cloud of daggers}",
-														"{@spell Evard's black tentacles}",
-														"{@spell forbiddance}",
-														"{@spell moonbeam}",
-														"{@spell sleet storm}",
-														"{@spell spirit guardians}"
+														"{@spell 劍刃障壁}",
+														"{@spell 死雲術}",
+														"{@spell 匕首之雲}",
+														"{@spell 艾伐黑觸手}",
+														"{@spell 禁制術}",
+														"{@spell 月華之光}",
+														"{@spell 雪雨暴}",
+														"{@spell 靈體守衛}"
 													],
 													"columns": 2
 												},
-												"Reading the description of any of those spells, you might wonder whether a creature is considered to be entering the spell's area of effect if the area is created on the creature's space. And if the area of effect can be moved\u2014as the beam of {@spell moonbeam} can\u2014does moving it into a creature's space count as the creature entering the area? Our design intent for such spells is this: a creature enters the area of effect when the creature passes into it. Creating the area of effect on the creature or moving it onto the creature doesn't count. If the creature is still in the area at the start of its turn, it is subjected to the area's effect.",
-												"Entering such an area of effect needn't be voluntary, unless a spell says otherwise. You can, therefore, hurl a creature into the area with a spell like {@spell thunderwave}. We consider that clever play, not an imbalance, so hurl away! Keep in mind, however, that a creature is subjected to such an area of effect only the first time it enters the area on a turn. You can't move a creature in and out of it to damage it over and over again on the same turn.",
-												"In summary, a spell like {@spell moonbeam} affects a creature when the creature passes into the spell's area of effect and when the creature starts its turn there. You're essentially creating a hazard on the battlefield."
+												"Reading the description of any of those spells, you might wonder whether a creature is considered to be entering the spell's area of effect if the area is created on the creature's space. And if the area of effect can be moved\u2014as the beam of {@spell 月華之光} can\u2014does moving it into a creature's space count as the creature entering the area? Our design intent for such spells is this: a creature enters the area of effect when the creature passes into it. Creating the area of effect on the creature or moving it onto the creature doesn't count. If the creature is still in the area at the start of its turn, it is subjected to the area's effect.",
+												"Entering such an area of effect needn't be voluntary, unless a spell says otherwise. You can, therefore, hurl a creature into the area with a spell like {@spell 雷鳴波}. We consider that clever play, not an imbalance, so hurl away! Keep in mind, however, that a creature is subjected to such an area of effect only the first time it enters the area on a turn. You can't move a creature in and out of it to damage it over and over again on the same turn.",
+												"In summary, a spell like {@spell 月華之光} affects a creature when the creature passes into the spell's area of effect and when the creature starts its turn there. You're essentially creating a hazard on the battlefield."
 											]
 										},
 										{
@@ -2455,7 +2455,7 @@
 											"name": "Does planar binding summon the creature to be bound, or is that done separately?",
 											"id": "10c",
 											"entries": [
-												"{@spell Planar binding} doesn't summon a creature. It attempts to bind a creature that is within the spell's range."
+												"{@spell 異界誓縛} doesn't summon a creature. It attempts to bind a creature that is within the spell's range."
 											]
 										},
 										{
@@ -2463,7 +2463,7 @@
 											"name": "Can you concentrate on a spell while transformed by polymorph?",
 											"id": "10d",
 											"entries": [
-												"You can't cast spells while you're transformed by {@spell polymorph}, but nothing in the spell prevents you from concentrating on a spell that you previously cast before being transformed."
+												"You can't cast spells while you're transformed by {@spell 變形術}, but nothing in the spell prevents you from concentrating on a spell that you previously cast before being transformed."
 											]
 										},
 										{
@@ -2500,7 +2500,7 @@
 											"name": "What kinds of things count as \"nonmagical trinkets\" for prestidigitation?",
 											"id": "10f",
 											"entries": [
-												"{@spell Prestidigitation} can create a little bauble, the nature of which is up to the spellcaster and the DM. See the {@book Trinkets table|PHB|5|Trinkets} in the {@book Player's Handbook|PHB} for examples."
+												"{@spell 魔法技倆} can create a little bauble, the nature of which is up to the spellcaster and the DM. See the {@book Trinkets table|PHB|5|Trinkets} in the {@book Player's Handbook|PHB} for examples."
 											]
 										},
 										{
@@ -2508,7 +2508,7 @@
 											"name": "If you grapple or shove an enemy creature, does that end a sanctuary spell cast on you?",
 											"id": "110",
 											"entries": [
-												"If you use the {@book grapple|PHB|9|Grappling} or {@book shove|PHB|9|Shoving a Creature} option in the combat rules, the {@spell sanctuary} spell does end on you, since you have made an attack."
+												"If you use the {@book grapple|PHB|9|Grappling} or {@book shove|PHB|9|Shoving a Creature} option in the combat rules, the {@spell 聖域術} spell does end on you, since you have made an attack."
 											]
 										},
 										{
@@ -2523,7 +2523,7 @@
 											"name": "If I cast shillelagh on my quarterstaff and have the Polearm Master feat, does the bonus attack use a d4 or a d8 for damage?",
 											"id": "111",
 											"entries": [
-												"The benefit from {@feat Polearm Master} applies to the opposite end of the weapon and always uses a {@dice d4} for damage rather than the weapon's normal damage die. This is true for a {@item quarterstaff|PHB} enhanced with {@spell shillelagh} just as it is for a normal one."
+												"The benefit from {@feat Polearm Master} applies to the opposite end of the weapon and always uses a {@dice d4} for damage rather than the weapon's normal damage die. This is true for a {@item quarterstaff|PHB} enhanced with {@spell 橡棍術} just as it is for a normal one."
 											]
 										},
 										{
@@ -2546,7 +2546,7 @@
 											"name": "Do the effects of storm of vengeance stack? Or do the effects change each turn?",
 											"id": "113",
 											"entries": [
-												"In the spell {@spell storm of vengeance}, each new effect replaces the effect of the previous round."
+												"In the spell {@spell 復仇風暴}, each new effect replaces the effect of the previous round."
 											]
 										},
 										{
@@ -2554,7 +2554,7 @@
 											"name": "Is the sentence of suggestion in the suggestion spell the verbal component, or is the verbal component separate?",
 											"id": "114",
 											"entries": [
-												"{@book Verbal components|PHB|10|Verbal (V)} are mystic words, not normal speech. The spell's suggestion is an intelligible utterance that is separate from the verbal component. The {@spell command} spell is the simplest example of this principle. The utterance of the verbal component is separate from, and precedes, any verbal utterance that would bring about the spell's effect."
+												"{@book Verbal components|PHB|10|Verbal (V)} are mystic words, not normal speech. The spell's suggestion is an intelligible utterance that is separate from the verbal component. The {@spell 命令術} spell is the simplest example of this principle. The utterance of the verbal component is separate from, and precedes, any verbal utterance that would bring about the spell's effect."
 											]
 										},
 										{
@@ -2562,7 +2562,7 @@
 											"name": "The wording in Tasha's hideous laughter implies that the incapacitated effect applies only if the target is made prone. Is this right?",
 											"id": "115",
 											"entries": [
-												"Failing a save against {@spell Tasha's hideous laughter} means you're {@condition incapacitated} even if you can't fall {@condition prone}."
+												"Failing a save against {@spell 塔莎狂笑術} means you're {@condition incapacitated} even if you can't fall {@condition prone}."
 											]
 										},
 										{
@@ -2584,7 +2584,7 @@
 											"name": "Can I use unseen servant to act as an ally when using a class feature like Sneak Attack?",
 											"id": "116",
 											"entries": [
-												"{@spell Unseen servant} creates \"an {@condition invisible}, mindless, shapeless force\". In combat, it doesn't act as a creature, an enemy, or an ally."
+												"{@spell 隱形僕役} creates \"an {@condition invisible}, mindless, shapeless force\". In combat, it doesn't act as a creature, an enemy, or an ally."
 											]
 										},
 										{
@@ -2592,7 +2592,7 @@
 											"name": "Whenever you cast wish , do you always have a 33 percent chance of never casting it again?",
 											"id": "117",
 											"entries": [
-												"If you cast {@spell wish} to duplicate a spell of level 0\u20138, there are no detrimental effects. However, if you do anything other than duplicate a spell of level 0\u20138, you suffer the stress described in the final paragraph of the spell. As soon as that stress affects you, there is a 33 percent chance that you are unable to cast {@spell wish} again."
+												"If you cast {@spell 祈願術} to duplicate a spell of level 0\u20138, there are no detrimental effects. However, if you do anything other than duplicate a spell of level 0\u20138, you suffer the stress described in the final paragraph of the spell. As soon as that stress affects you, there is a 33 percent chance that you are unable to cast {@spell 祈願術} again."
 											]
 										}
 									]
@@ -2677,7 +2677,7 @@
 											"name": "The Monster Manual notes that a Mezzoloth exhales toxic fumes that can choke and kill whole groups of creatures. However, its cloudkill is listed under Innate Spellcasting. Because of that, would a paladin's Aura of Warding resist it?",
 											"id": "122",
 											"entries": [
-												"Yes, because {@spell cloudkill} is a spell, Aura of Warding would be able to grant you and friendly creatures within 10 feet of you resistance to it."
+												"Yes, because {@spell 死雲術} is a spell, Aura of Warding would be able to grant you and friendly creatures within 10 feet of you resistance to it."
 											]
 										},
 										{
@@ -2685,7 +2685,7 @@
 											"name": "Is the breath weapon of a dragon magical?",
 											"id": "123",
 											"entries": [
-												"If you cast {@spell antimagic field}, don {@item armor of invulnerability}, or use another feature of the game that protects against magical or nonmagical effects, you might ask yourself, \"Will this protect me against a dragon's breath?\" The breath weapon of a typical dragon isn't considered magical, so {@spell antimagic field} won't help you but {@item armor of invulnerability} will.",
+												"If you cast {@spell 反魔法結界}, don {@item armor of invulnerability}, or use another feature of the game that protects against magical or nonmagical effects, you might ask yourself, \"Will this protect me against a dragon's breath?\" The breath weapon of a typical dragon isn't considered magical, so {@spell 反魔法結界} won't help you but {@item armor of invulnerability} will.",
 												"You might be thinking, \"Dragons seem pretty magical to me.\" And yes, they are extraordinary! Their description even says they're magical. But our game makes a distinction between two types of magic:",
 												{
 													"type": "list",
@@ -2769,7 +2769,7 @@
 											"name": "Is a vampire affected by hold person or calm emotions?",
 											"id": "12a",
 											"entries": [
-												"Many spells affect not just any creatures, but only certain types, as specified in the spell. {@spell Hold person} and {@spell calm emotions} work only on humanoids, and a {@creature vampire} is not a humanoid."
+												"Many spells affect not just any creatures, but only certain types, as specified in the spell. {@spell 人類定身術} and {@spell 安定心神} work only on humanoids, and a {@creature vampire} is not a humanoid."
 											]
 										},
 										{

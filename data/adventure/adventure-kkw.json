@@ -282,7 +282,7 @@
 										"You stand shin-deep in sewer water, in a dimly lit tunnel. There's a raised walkway on either side that gets you out of the smelly, muck-filled water. Small lamps housing magical flames shed dim light. The walls are covered in moss and lichen."
 									]
 								},
-								"The tunnel is dimly lit by small {@spell continual flame} beacons positioned every 30 feet or so on alternating sides of the 20-foot-high tunnel. The sewer tunnel is 30 feet wide and continues in both directions. The tunnel has a raised walkway 5 feet wide and 5 feet tall along both sides. The main passage is flowing with 1-foot-deep water and smelly refuse.",
+								"The tunnel is dimly lit by small {@spell 不滅明焰} beacons positioned every 30 feet or so on alternating sides of the 20-foot-high tunnel. The sewer tunnel is 30 feet wide and continues in both directions. The tunnel has a raised walkway 5 feet wide and 5 feet tall along both sides. The main passage is flowing with 1-foot-deep water and smelly refuse.",
 								"Krenko and three other goblins came this way, heading to his new hideout. The characters can spot signs of grimy boot prints made by Small creatures on one of the walkways by succeeding on a DC 10 Wisdom ({@skill Perception}) check. After finding the prints, they can continue to track them through the sewer tunnels by succeeding on a DC 15 Wisdom ({@skill Survival}) check. For every day since the goblins came through here, add 5 to the DC of the check. It takes 2 hours to navigate the twisting tunnels at normal walking speed. The tunnels are near Golgari territory, but above the undercity.",
 								"For each hour the party spends in the sewers, roll a {@dice d20}. On a 15 or higher, the party has an encounter determined by rolling on the Sewer Encounters table.",
 								{
@@ -415,7 +415,7 @@
 												"Beyond the door, you see a narrow staircase that leads twenty feet down to a green-tinged copper door, with a closed sliding peephole in its center."
 											]
 										},
-										"This copper door is locked and requires a successful DC 15 Dexterity check with thieves' tools to open. It can also be forced open with a successful DC 20 Strength check. The door is trapped with a {@spell glyph of warding} spell that triggers when a character attempts to pick the lock or force open the door. The triggered glyph casts {@spell sleep} at 3rd level, affecting {@dice 9d8} hit points of creatures. A character who searches the door for traps can detect the glyph with a successful DC 15 Intelligence ({@skill Investigation}) check.",
+										"This copper door is locked and requires a successful DC 15 Dexterity check with thieves' tools to open. It can also be forced open with a successful DC 20 Strength check. The door is trapped with a {@spell 守衛銘文} spell that triggers when a character attempts to pick the lock or force open the door. The triggered glyph casts {@spell 睡眠術} at 3rd level, affecting {@dice 9d8} hit points of creatures. A character who searches the door for traps can detect the glyph with a successful DC 15 Intelligence ({@skill Investigation}) check.",
 										"When the characters enter the room, read:",
 										{
 											"type": "insetReadaloud",

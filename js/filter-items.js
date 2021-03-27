@@ -8,7 +8,7 @@ class PageFilterEquipment extends PageFilter {
 		this._propertyFilter = new Filter({header: "Property", headerName: "物品屬性", displayFn: StrUtil.uppercaseFirst});
 		this._costFilter = new RangeFilter({header: "Cost", headerName: "價值", min: 0, max: 100, isAllowGreater: true, suffix: " gp"});
 		this._weightFilter = new RangeFilter({header: "Weight", min: 0, max: 100, isAllowGreater: true, suffix: " lb."});
-		this._focusFilter = new Filter({header: "Spellcasting Focus",  headerName: "施法法器",items: [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES]});
+		this._focusFilter = new Filter({header: "Spellcasting Focus",  headerName: "施法法器",items: [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES], displayFn: Parser.ClassToDisplay});
 		this._damageTypeFilter = new Filter({header: "Weapon Damage Type", displayFn: it => Parser.dmgTypeToFull(it).uppercaseFirst(), itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.dmgTypeToFull(a), Parser.dmgTypeToFull(b))});
 		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Item Group", "SRD", "Has Images", "Has Info"], isSrdFilter: true});
 		this._poisonTypeFilter = new Filter({header: "Poison Type", items: ["ingested", "injury", "inhaled", "contact"], displayFn: StrUtil.toTitleCase});
@@ -119,12 +119,12 @@ class PageFilterItems extends PageFilterEquipment {
 	constructor () {
 		super();
 
-		this._tierFilter = new Filter({header: "Tier", items: ["none", "minor", "major"], itemSortFn: null, displayFn: StrUtil.toTitleCase});
-		this._attachedSpellsFilter = new Filter({header: "Attached Spells", displayFn: (it) => it.split("|")[0].toTitleCase(), itemSortFn: SortUtil.ascSortLower});
+		this._tierFilter = new Filter({header: "Tier", headerName: "階級", items: ["none", "minor", "major"], itemSortFn: null, displayFn: Parser.ItemTierToDisplay});
+		this._attachedSpellsFilter = new Filter({header: "Attached Spells", headerName: "附加法術", displayFn: (it) => it.split("|")[0].toTitleCase(), itemSortFn: SortUtil.ascSortLower});
 		this._lootTableFilter = new Filter({
 			header: "Found On",
 			headerName: "列於魔法物品表",
-			items: ["Magic Item Table A", "Magic Item Table B", "Magic Item Table C", "Magic Item Table D", "Magic Item Table E", "Magic Item Table F", "Magic Item Table G", "Magic Item Table H", "Magic Item Table I"],
+			items: ["魔法物品表A", "魔法物品表B", "魔法物品表C", "魔法物品表D", "魔法物品表E", "魔法物品表F", "魔法物品表G", "魔法物品表H", "魔法物品表I"],
 			displayFn: it => {
 				const [name, sourceJson] = it.split("|");
 				return `${name}${sourceJson ? ` (${Parser.sourceJsonToAbv(sourceJson)})` : ""}`
@@ -135,18 +135,34 @@ class PageFilterItems extends PageFilterEquipment {
 			headerName: "稀有度",
 			items: [...Parser.ITEM_RARITIES],
 			itemSortFn: null,
-			displayFn: StrUtil.toTitleCase,
+			displayFn: Parser.translateItemKeyToDisplay,
 		});
-		this._attunementFilter = new Filter({header: "Attunement", items: ["Requires Attunement", "Requires Attunement By...", "Attunement Optional", VeCt.STR_NO_ATTUNEMENT], itemSortFn: null});
+		this._attunementFilter = new Filter({header: "Attunement", headerName: "同調", items: ["Requires Attunement", "Requires Attunement By...", "Attunement Optional", VeCt.STR_NO_ATTUNEMENT], itemSortFn: null, displayFn: function(str)
+		{
+			switch(str){
+			case "Requires Attunement": return "需要";
+			case "Requires Attunement By...": return "限定...";
+			case "Attunement Optional": return "可選";
+			case VeCt.STR_NO_ATTUNEMENT: return "不須";
+			default: return str;
+		};}});
 		this._categoryFilter = new Filter({
 			header: "Category",
 			headerName: "分類",
 			items: ["Basic", "Generic Variant", "Specific Variant", "Other"],
 			deselFn: (it) => it === "Specific Variant",
 			itemSortFn: null,
+			displayFn: function(str){
+				switch(str){
+				case "Basic": return "基本";
+				case "Generic Variant": return "通用變體";
+				case "Specific Variant": return "特定變體";
+				case "Other": return "其他";
+				default: return str;
+			};}
 		});
 		this._bonusFilter = new Filter({header: "Bonus", items: ["Armor Class", "Proficiency Bonus", "Spell Attacks", "Spell Save DC", "Saving Throws", "Weapon Attack and Damage Rolls", "Weapon Attack Rolls", "Weapon Damage Rolls"]});
-		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Ability Score Adjustment", "Charges", "Cursed", "Grants Proficiency", "Has Images", "Has Info", "Item Group", "Magic", "Mundane", "Sentient", "SRD"], isSrdFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", headerName: "雜項",items: ["Ability Score Adjustment", "Charges", "Cursed", "Grants Proficiency", "Has Images", "Has Info", "Item Group", "Magic", "Mundane", "Sentient", "SRD"], isSrdFilter: true});
 		this._baseSourceFilter = new SourceFilter({header: "Base Source", selFn: null});
 	}
 

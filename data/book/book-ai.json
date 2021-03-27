@@ -868,7 +868,7 @@
 									"name": "Weapon Features",
 									"page": 16,
 									"entries": [
-										"At rank 2, the members of a franchise can add a weapon to their headquarters, choosing from the options in the \"{@book Siege Equipment|DMG|8|Siege Equipment}\" section of chapter 8 of the {@book Dungeon Master's Guide|DMG}. The DM can limit those options or change the details of specific choices, and players can also design unique offensive features, subject to approval by the DM. For example, a walking statue that strikes with a fist could be treated as a ram\u2014or the DM and the players might agree that it would be fun to use some of the effects of {@spell Bigby's hand} for such an attack.",
+										"At rank 2, the members of a franchise can add a weapon to their headquarters, choosing from the options in the \"{@book Siege Equipment|DMG|8|Siege Equipment}\" section of chapter 8 of the {@book Dungeon Master's Guide|DMG}. The DM can limit those options or change the details of specific choices, and players can also design unique offensive features, subject to approval by the DM. For example, a walking statue that strikes with a fist could be treated as a ram\u2014or the DM and the players might agree that it would be fun to use some of the effects of {@spell 畢格比之掌} for such an attack.",
 										"Most siege weapons (whether mechanical or magical) require two characters, crew, or skilled hirelings to operate, and such weapons might be slow to reload or recharge. Headquarters weapons are not particularly effective against small bands of creatures (such as a group of goblins), but they can be useful against a single large threat (such as a dragon). If siege weapons are abused by franchisees, they might be targeted by enemies, break down, or require costly maintenance each time they are employed in battle.",
 										{
 											"type": "entries",
@@ -893,7 +893,7 @@
 											"name": "Lighthouse Energy Blast",
 											"page": 16,
 											"entries": [
-												"Magical power can be focused through a lighthouse beacon, requiring 1 round to gather energy and aim. The following round, the energy can be released. The beacon has AC 12, 75 hit points, immunity to poison and psychic damage, and vulnerability to cold. The explosion of energy can be treated as a {@spell scorching ray}, {@spell fireball}, or {@spell lightning bolt} spell, as the DM determines. More powerful features might require more time to recharge, or could be usable only a certain number of times per day. Such attacks might function at longer range but be unable to target creatures or objects within 60 feet of the lighthouse."
+												"Magical power can be focused through a lighthouse beacon, requiring 1 round to gather energy and aim. The following round, the energy can be released. The beacon has AC 12, 75 hit points, immunity to poison and psychic damage, and vulnerability to cold. The explosion of energy can be treated as a {@spell 灼熱射線}, {@spell 火球術}, or {@spell 閃電束} spell, as the DM determines. More powerful features might require more time to recharge, or could be usable only a certain number of times per day. Such attacks might function at longer range but be unable to target creatures or objects within 60 feet of the lighthouse."
 											],
 											"id": "033"
 										}
@@ -919,7 +919,7 @@
 											"name": "Ever-Changing Ship",
 											"page": 16,
 											"entries": [
-												"Whether an oceangoing vessel or an airship, this headquarters can alter its appearance with illusion magic. Additionally, the appearance of some or all creatures aboard can be changed as if they were affected by a {@spell seeming} spell. Franchisees can alter the appearance of the ship and its occupants a number of times per day, or can drop the illusory effects as needs be. The nature of the illusion magic means that the ship's size and features do not change, and individuals interacting with the ship or investigating its appearance have a chance to see the true form of the ship and its crew."
+												"Whether an oceangoing vessel or an airship, this headquarters can alter its appearance with illusion magic. Additionally, the appearance of some or all creatures aboard can be changed as if they were affected by a {@spell 偽裝術} spell. Franchisees can alter the appearance of the ship and its occupants a number of times per day, or can drop the illusory effects as needs be. The nature of the illusion magic means that the ship's size and features do not change, and individuals interacting with the ship or investigating its appearance have a chance to see the true form of the ship and its crew."
 											],
 											"id": "035"
 										},
@@ -928,7 +928,7 @@
 											"name": "Spectral Wait Staff",
 											"page": 16,
 											"entries": [
-												"A tavern headquarters (which already has a cosmetic feature to make it appear haunted) now gains spectral wait staff. The spectral staff serve customers expertly, and speak and understand speech as if intelligent. However, they are magical creations similar to those conjured by the {@spell unseen servant} spell, able to perform all the functions of such a creation and any other functions agreed to by the DM. Spectral staff can momentarily become insubstantial, along with anything they carry, allowing them to serve food and drink through walls. Any member of the franchise can spend an action to telepathically command one or more spectral staff members."
+												"A tavern headquarters (which already has a cosmetic feature to make it appear haunted) now gains spectral wait staff. The spectral staff serve customers expertly, and speak and understand speech as if intelligent. However, they are magical creations similar to those conjured by the {@spell 隱形僕役} spell, able to perform all the functions of such a creation and any other functions agreed to by the DM. Spectral staff can momentarily become insubstantial, along with anything they carry, allowing them to serve food and drink through walls. Any member of the franchise can spend an action to telepathically command one or more spectral staff members."
 											],
 											"id": "036"
 										}
@@ -940,7 +940,7 @@
 									"name": "Defensive Features",
 									"page": 16,
 									"entries": [
-										"Also at rank 3, the headquarters gains one defensive feature, planned out by the players in collaboration with the DM. Ships and other vessels with statistics can gain an increase to hit points or AC. Or a general defensive feature could include the choice of any two effects noted in the {@spell guards and wards} spell, which can be enabled or disabled by any franchise member.",
+										"Also at rank 3, the headquarters gains one defensive feature, planned out by the players in collaboration with the DM. Ships and other vessels with statistics can gain an increase to hit points or AC. Or a general defensive feature could include the choice of any two effects noted in the {@spell 銅牆鐵壁} spell, which can be enabled or disabled by any franchise member.",
 										"Players are encouraged to be creative in thinking about defensive features. An airship might have a deck that can channel lightning to repel boarders. A wagon might have transparent windows as strong as steel, and the ability to retract any rails or platforms upon which attacking foes could stand. Defensive features might impose conditions on enemies, or even deal damage. The DM should limit damaging effects to dealing 10 damage to a single target (5 damage for a multitarget or area effect) per franchise rank. When a saving throw is required, a good DC is 12 + franchise rank.",
 										{
 											"type": "entries",
@@ -1655,7 +1655,7 @@
 									"page": 22,
 									"entries": [
 										"At rank 4, your {@item voting kit|AI} becomes a common magic item that conceals an extradimensional space. As a bonus action, you can place one tool kit that you are proficient with into the {@i voting kit}, or can remove it. No other type of object can be placed into the extradimensional space. A creature searching the {@i voting kit} finds and extracts the tool kit with a successful DC 20 Intelligence ({@skill Investigation}) or Wisdom ({@skill Perception}) check.",
-										"Additionally, you can use the {@item voting kit|AI} to cast {@spell charm person} (save DC 15). This property of the kit can't be used again until the next dawn.",
+										"Additionally, you can use the {@item voting kit|AI} to cast {@spell 魅惑人類} (save DC 15). This property of the kit can't be used again until the next dawn.",
 										{
 											"type": "quote",
 											"entries": [
@@ -1869,7 +1869,7 @@
 									"name": "Fluent in Boss",
 									"page": 24,
 									"entries": [
-										"Also at rank 2, your documancer training allows you to better process Head Office communications, as well as to understand what pleases your superiors. You can cast the {@spell augury} spell, with the spell's omens of weal or woe based solely on the perspective of Head Office. (It should be noted that Head Office at times has a surprisingly high disregard for potential woe to its employees.) Once you use this feature, you cannot use it again until dawn seven days later."
+										"Also at rank 2, your documancer training allows you to better process Head Office communications, as well as to understand what pleases your superiors. You can cast the {@spell 卜筮} spell, with the spell's omens of weal or woe based solely on the perspective of Head Office. (It should be noted that Head Office at times has a surprisingly high disregard for potential woe to its employees.) Once you use this feature, you cannot use it again until dawn seven days later."
 									],
 									"id": "063"
 								},
@@ -1879,7 +1879,7 @@
 									"page": 24,
 									"entries": [
 										"At rank 3, your {@item documancy satchel|AI} gains additional features and becomes an uncommon magic item. One of the satchel's pouches now functions as a {@item bag of holding}.",
-										"Additionally, you can use an action to draw forth from the {@item documancy satchel|AI} a {@item spell scroll} of {@spell comprehend languages}. The scroll vanishes when used, or ten minutes after it appears. This property of the bag can't be used again until the next dawn."
+										"Additionally, you can use an action to draw forth from the {@item documancy satchel|AI} a {@item spell scroll} of {@spell 通曉語言}. The scroll vanishes when used, or ten minutes after it appears. This property of the bag can't be used again until the next dawn."
 									],
 									"id": "064"
 								},
@@ -2153,7 +2153,7 @@
 									"name": "Secret Satchel",
 									"page": 26,
 									"entries": [
-										"As a rank 3 hoardsperson, your {@item living loot satchel|AI} gets an upgrade to function as the replica chest used for the {@spell Leomund's secret chest} spell, becoming a rare magic item. You can open the secret chest through your {@item living loot satchel|AI} to deposit or withdraw items\u2014even items that wouldn't normally fit in your satchel, but which fit within the chest. Thanks to Head Office striking deals you don't want to know about with extraplanar creatures you really don't want to know about, there is no chance for the spell to end."
+										"As a rank 3 hoardsperson, your {@item living loot satchel|AI} gets an upgrade to function as the replica chest used for the {@spell 李歐蒙秘藏箱} spell, becoming a rare magic item. You can open the secret chest through your {@item living loot satchel|AI} to deposit or withdraw items\u2014even items that wouldn't normally fit in your satchel, but which fit within the chest. Thanks to Head Office striking deals you don't want to know about with extraplanar creatures you really don't want to know about, there is no chance for the spell to end."
 									],
 									"id": "06e"
 								},
@@ -2443,7 +2443,7 @@
 									"name": "Whispered Arcana",
 									"page": 28,
 									"entries": [
-										"Also at rank 4, your {@item whisper jar|AI} gains access to even more magic. By whispering the name of one of the following spells into the jar as an action, you can cast that spell from the jar: {@spell detect evil and good}, {@spell detect magic}, {@spell detect poison and disease}, {@spell find traps}, {@spell identify}, or {@spell locate animals or plants}. This property of the {@item whisper jar|AI} can't be used again until the next dawn.",
+										"Also at rank 4, your {@item whisper jar|AI} gains access to even more magic. By whispering the name of one of the following spells into the jar as an action, you can cast that spell from the jar: {@spell 偵測善惡}, {@spell 偵測魔法}, {@spell 偵測毒素或疾病}, {@spell 尋找陷阱}, {@spell 鑑定術}, or {@spell 動植物定位術}. This property of the {@item whisper jar|AI} can't be used again until the next dawn.",
 										{
 											"type": "table",
 											"caption": "Why Be a Loremonger?",
@@ -2886,7 +2886,7 @@
 									"name": "Eldritch Occultant",
 									"page": 31,
 									"entries": [
-										"Starting at rank 2, your {@item occultant abacus|AI} becomes an uncommon magic item that can track lives both eliminated and saved. While holding your {@i occultant abacus} within 5 feet of a creature killed within the past 24 hours, you can cast the {@spell augury} spell. The course of action you inquire about with the spell does not need to have any connection to the dead creature. This property of the {@item occultant abacus|AI} can't be used again until the next dawn."
+										"Starting at rank 2, your {@item occultant abacus|AI} becomes an uncommon magic item that can track lives both eliminated and saved. While holding your {@i occultant abacus} within 5 feet of a creature killed within the past 24 hours, you can cast the {@spell 卜筮} spell. The course of action you inquire about with the spell does not need to have any connection to the dead creature. This property of the {@item occultant abacus|AI} can't be used again until the next dawn."
 									],
 									"id": "08a"
 								},
@@ -3179,8 +3179,8 @@
 									"name": "Cards of Sending",
 									"page": 34,
 									"entries": [
-										"At rank 3, the power of your {@i portfolio keeper} becomes more potent, making it a rare magic item. When you give out a business card stored in your {@item portfolio keeper|AI}, you can choose to have the card allow its recipient to contact you through your {@item sending stone|AI} as if they had cast a {@spell sending} spell. A business card loses this power seven days after it has been given out, and no more than five cards can have this power at one time.",
-										"You can also use your {@item sending stone|AI} to cast {@spell sending} and contact anyone who has one of your business cards. Once you use this feature of the stone, you cannot use it again until dawn seven days later."
+										"At rank 3, the power of your {@i portfolio keeper} becomes more potent, making it a rare magic item. When you give out a business card stored in your {@item portfolio keeper|AI}, you can choose to have the card allow its recipient to contact you through your {@item sending stone|AI} as if they had cast a {@spell 短訊術} spell. A business card loses this power seven days after it has been given out, and no more than five cards can have this power at one time.",
+										"You can also use your {@item sending stone|AI} to cast {@spell 短訊術} and contact anyone who has one of your business cards. Once you use this feature of the stone, you cannot use it again until dawn seven days later."
 									],
 									"id": "096"
 								},
@@ -3208,7 +3208,7 @@
 									"name": "Charming Introduction",
 									"page": 34,
 									"entries": [
-										"Also at rank 4, you are able to make a focused effort to keep a potential customer's attention. When you provide a humanoid with a business card from your {@item portfolio keeper|AI}, you can cast {@spell charm person} on them (save DC 15). The spell ends prematurely if the character loses the business card.",
+										"Also at rank 4, you are able to make a focused effort to keep a potential customer's attention. When you provide a humanoid with a business card from your {@item portfolio keeper|AI}, you can cast {@spell 魅惑人類} on them (save DC 15). The spell ends prematurely if the character loses the business card.",
 										{
 											"type": "table",
 											"caption": "Why Be a Secretarian?",
@@ -4639,7 +4639,7 @@
 											"name": "Team Building Memories",
 											"page": 46,
 											"entries": [
-												"The most potent personal changes inspired by team building can last a lifetime. Or at least an encounter. A character who earns a team building memory gains an extraordinary ability that can be used once. As a bonus action, the character gains one effect of the {@spell enhance ability} spell for 10 minutes (no concentration required).",
+												"The most potent personal changes inspired by team building can last a lifetime. Or at least an encounter. A character who earns a team building memory gains an extraordinary ability that can be used once. As a bonus action, the character gains one effect of the {@spell 強化屬性} spell for 10 minutes (no concentration required).",
 												"A character can retain team building memories only from the most recent instance of this activity. If a character has unused team building memories and undertakes this activity again, those memories are lost.",
 												{
 													"type": "quote",
@@ -5060,7 +5060,7 @@
 									"page": 54,
 									"entries": [
 										"As a bard, you're known as the go-to figure when things need to get done. Your tremendous array of skills and abilities mean that you're often the first one called upon to do the hard jobs. And if you're going to do something difficult, you might as well do it with panache. Since most of your franchise compatriots likely think \"panache\" is some kind of elven delicacy, it's all the more impressive.",
-										"Jumping a small pit? Land with the flourish of a world-class gymnast! Slaying a kobold? Take it down with a legendary oath, and no one will realize that an asthmatic farmhand could have done the same thing with a rusty sickle. Running across a room? Use {@spell prestidigitation} to blow your hair back, making it look like you have the speed and grace of Corellon themself."
+										"Jumping a small pit? Land with the flourish of a world-class gymnast! Slaying a kobold? Take it down with a legendary oath, and no one will realize that an asthmatic farmhand could have done the same thing with a rusty sickle. Running across a room? Use {@spell 魔法技倆} to blow your hair back, making it look like you have the speed and grace of Corellon themself."
 									],
 									"id": "0e9"
 								},
@@ -5120,7 +5120,7 @@
 												],
 												[
 													"10",
-													"Truly, your intellect is as deep as a {@spell Tenser's floating disk}."
+													"Truly, your intellect is as deep as a {@spell 譚森浮碟術}."
 												],
 												[
 													"11",
@@ -7264,7 +7264,7 @@
 									"name": "Master of Idiom",
 									"page": 69,
 									"entries": [
-										"As a warlock, you bring every dark aspect of your dark path and darker calling to bear darkly on your franchise's operations. Wrapping yourself in mysterious defensive power or tagging an enemy in the face with {@spell eldritch blast} are just as valuable for corporate espionage as for tomb raiding.",
+										"As a warlock, you bring every dark aspect of your dark path and darker calling to bear darkly on your franchise's operations. Wrapping yourself in mysterious defensive power or tagging an enemy in the face with {@spell 魔能爆} are just as valuable for corporate espionage as for tomb raiding.",
 										"How you present yourself to the world at large is often a subtle reflection of your patron. Being a member of an Acquisitions Incorporated franchise means you have no trouble wearing suitable business apparel to make the right impression. But whether that stylish suit is made from fine Calimshan silk or the flayed skin of fiends is totally up to you."
 									],
 									"id": "14b"
@@ -7434,7 +7434,7 @@
 									"page": 70,
 									"entries": [
 										"Though wizard encompasses a single class, the study of arcane magic lends itself to a broad range of specialization. As such, it's not enough to simply dedicate yourself to being the best wizard you can be. It's about figuring out which wizardly path best addresses your franchise's potential needs.",
-										"Enchanters and illusionists in the service of a franchise can boggle the minds of enemies and allies. Transmuters, conjurers, and necromancers ensure that franchise members always have the right tool or monster for the job. Abjurers and diviners can help avoid catastrophic events before they happen. And evokers and war mages? No one needs to be reminded of the simple yet devastating majesty of a {@spell fireball} spell. Well, they don't need to be reminded more than once."
+										"Enchanters and illusionists in the service of a franchise can boggle the minds of enemies and allies. Transmuters, conjurers, and necromancers ensure that franchise members always have the right tool or monster for the job. Abjurers and diviners can help avoid catastrophic events before they happen. And evokers and war mages? No one needs to be reminded of the simple yet devastating majesty of a {@spell 火球術} spell. Well, they don't need to be reminded more than once."
 									],
 									"id": "155"
 								},
@@ -7563,7 +7563,7 @@
 									"name": "Conjuration",
 									"page": 72,
 									"entries": [
-										"The ability to make something from nothing is the greatest business plan ever developed\u2014and that plan has your name all over it. As a conjurer, your utility to your franchise knows no bounds, whether you're creating the right tool for the job, summoning creatures for scouting or guard duty, or using {@spell dimension door} to slip away from a deal gone bad. The hard part of that last one is always figuring out which of your franchise mates you'll bring with you. Who's been particularly nice to you lately?"
+										"The ability to make something from nothing is the greatest business plan ever developed\u2014and that plan has your name all over it. As a conjurer, your utility to your franchise knows no bounds, whether you're creating the right tool for the job, summoning creatures for scouting or guard duty, or using {@spell 次元門} to slip away from a deal gone bad. The hard part of that last one is always figuring out which of your franchise mates you'll bring with you. Who's been particularly nice to you lately?"
 									],
 									"id": "15a"
 								},
@@ -7608,7 +7608,7 @@
 									"name": "Necromancy",
 									"page": 72,
 									"entries": [
-										"As a necromancer, you've always had an easy time making friends. Hah! That's hilarious because your friends are undead. But not everyone else in your franchise sees the lighter side of your magical craft. Clearly, the labor-to-paid-benefits ratio of undead interns can't be beat, but you need to be cognizant of the potential public-relations nightmare of franchise-branded zombies running amok. Still, if things get bad, there's nothing like a general marketing campaign reminding local folk that necromancy means {@spell raise dead}. Even if you can't cast it."
+										"As a necromancer, you've always had an easy time making friends. Hah! That's hilarious because your friends are undead. But not everyone else in your franchise sees the lighter side of your magical craft. Clearly, the labor-to-paid-benefits ratio of undead interns can't be beat, but you need to be cognizant of the potential public-relations nightmare of franchise-branded zombies running amok. Still, if things get bad, there's nothing like a general marketing campaign reminding local folk that necromancy means {@spell 喚醒死者}. Even if you can't cast it."
 									],
 									"id": "15f"
 								},
@@ -8018,7 +8018,7 @@
 								},
 								"The drow warlock {@creature K'thriss Drow'b|AI} cuts a dashing figure as the worldly representative of the Ur\u2014a ravenous, inscrutable, and largely indifferent elder entity from beyond reality. Tapped into this dark power, the \"C\" Team's hoardsperson sees all existence as a puzzle to unlock, and he is obsessed by the essential lack of meaning and purpose in the structures of so-called \"reality.\" Still, all things considered, he is most often polite and affable. Because after a long adventuring career, he understands that he can't afford to make more enemies.",
 								"Given his blue skin tone, rumors suggest that K'thriss is of mixed heritage, but no one knows for sure. As a young and doubting adherent of Lolth, he stumbled upon fragments of a relic known as the Black Altar, exposing him to their infinite truths and shocking the drow's hair jet-black. His matching \"beard\" is actually a slow-growing colony of inert spores that K'thriss believes makes him look distinguished. Possessed of alarming and asymmetric crystalline eyes, he often wears a blindfold to spare others his visage, seeing through the eyes of his familiar while he does.",
-								"Tentacles play a big part in K'thriss's spellcasting, whether wrenching him through the sky when he uses magic to fly, or manifesting in dark, suckered form when he casts spells such as {@spell thorn whip}. And when enemies hear K'thriss whisper the deep truths of the Ur\u2014typically something about how on a geologic time scale, everyone's desires are meaningless\u2014they remember it.",
+								"Tentacles play a big part in K'thriss's spellcasting, whether wrenching him through the sky when he uses magic to fly, or manifesting in dark, suckered form when he casts spells such as {@spell 荊棘之鞭}. And when enemies hear K'thriss whisper the deep truths of the Ur\u2014typically something about how on a geologic time scale, everyone's desires are meaningless\u2014they remember it.",
 								"K'thriss's familiar, Ligotti, is a semisapient remnant of a tentacle attack, spawned by the warlock's intercessor patron god. Though entirely alien to the material plane (and often appearing in the form of a staff), Ligotti uses the stat block of a {@creature poisonous snake} with these changes:",
 								{
 									"type": "list",
@@ -8703,7 +8703,7 @@
 											"name": "Charming Introduction (1/Day)",
 											"page": 216,
 											"entries": [
-												"As an action, the secretarian hands a business card from its {@item portfolio keeper|AI} to a creature within 5 feet of it. The target must succeed on a DC 13 Charisma saving throw or be {@condition charmed} by the secretarian, as if under the effect of the {@spell charm person} spell."
+												"As an action, the secretarian hands a business card from its {@item portfolio keeper|AI} to a creature within 5 feet of it. The target must succeed on a DC 13 Charisma saving throw or be {@condition charmed} by the secretarian, as if under the effect of the {@spell 魅惑人類} spell."
 											],
 											"id": "1ad"
 										}

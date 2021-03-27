@@ -166,7 +166,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -216,47 +216,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell friends}",
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell message}"
+								"{@spell 交友術}",
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 傳訊術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell mage armor}",
-								"{@spell magic missile}"
+								"{@spell 魅惑人類}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell invisibility}",
-								"{@spell suggestion}"
+								"{@spell 人類定身術}",
+								"{@spell 隱形術}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell fireball}",
-								"{@spell haste}",
-								"{@spell tongues}"
+								"{@spell 火球術}",
+								"{@spell 加速術}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell stoneskin}"
+								"{@spell 困惑術}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell hold monster}"
+								"{@spell 怪物定身術}"
 							]
 						}
 					},
@@ -460,7 +460,7 @@
 				10,
 				{
 					"ac": 13,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -504,41 +504,41 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell blade ward}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell message}"
+								"{@spell 劍刃防護}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 傳訊術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell identify}",
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell shield}"
+								"{@spell 通曉語言}",
+								"{@spell 鑑定術}",
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell suggestion}"
+								"{@spell 偵測思想}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell sending}"
+								"{@spell 銳眼術}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 1,
 							"spells": [
-								"{@spell locate creature}",
-								"{@spell Otiluke's resilient sphere}"
+								"{@spell 生物定位術}",
+								"{@spell 歐提路克魔封法球}"
 							]
 						}
 					},
@@ -884,55 +884,55 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell minor illusion}",
-								"{@spell vicious mockery}"
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 次級幻象}",
+								"{@spell 惡毒嘲笑}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell disguise self}",
-								"{@spell sleep}"
+								"{@spell 治療傷勢}",
+								"{@spell 易容術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell crown of madness}",
-								"{@spell invisibility}",
-								"{@spell suggestion}"
+								"{@spell 瘋狂冠冕}",
+								"{@spell 隱形術}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell nondetection}",
-								"{@spell sending}",
-								"{@spell tongues}"
+								"{@spell 迴避偵測}",
+								"{@spell 短訊術}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell compulsion}",
-								"{@spell freedom of movement}",
-								"{@spell polymorph}"
+								"{@spell 強迫術}",
+								"{@spell 行動自如術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell dominate person}",
-								"{@spell greater restoration}"
+								"{@spell 支配人類}",
+								"{@spell 高等復原術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell Otto's irresistible dance}"
+								"{@spell 奧圖狂舞術}"
 							]
 						}
 					},
@@ -1192,13 +1192,13 @@
 						"The drow's spellcasting ability is Charisma (spell save {@dc 12}) It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術} (self only)"
 						]
 					},
 					"ability": "cha"
@@ -1466,7 +1466,7 @@
 						"Embric's spellcasting ability is Constitution ({@hit 4} to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell produce flame}"
+						"{@spell 燃火術}"
 					],
 					"ability": "con"
 				}
@@ -1561,17 +1561,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mending}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 修復術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell disguise self}",
-								"{@spell shield}"
+								"{@spell 燃燒之手}",
+								"{@spell 易容術}",
+								"{@spell 護盾術}"
 							]
 						}
 					},
@@ -1636,7 +1636,7 @@
 				11,
 				{
 					"ac": 16,
-					"condition": "with {@spell barkskin}",
+					"condition": "with {@spell 樹膚術}",
 					"braces": true
 				}
 			],
@@ -1677,25 +1677,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 燃火術}",
+								"{@spell 橡棍術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
+								"{@spell 糾纏術}",
+								"{@spell 大步奔行}",
+								"{@spell 動物交談術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
+								"{@spell 動物信使}",
+								"{@spell 樹膚術}"
 							]
 						}
 					},
@@ -2075,17 +2075,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mending}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 修復術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell disguise self}",
-								"{@spell shield}"
+								"{@spell 燃燒之手}",
+								"{@spell 易容術}",
+								"{@spell 護盾術}"
 							]
 						}
 					},
@@ -2229,35 +2229,35 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}"
+								"{@spell 指導術}",
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect evil and good}",
-								"{@spell healing word}",
-								"{@spell sanctuary}",
-								"{@spell shield of faith}"
+								"{@spell 偵測善惡}",
+								"{@spell 治癒真言}",
+								"{@spell 聖域術}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell calm emotions}",
-								"{@spell prayer of healing}",
-								"{@spell silence}"
+								"{@spell 安定心神}",
+								"{@spell 治癒祈禱}",
+								"{@spell 沉默術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell protection from energy}",
-								"{@spell remove curse}",
-								"{@spell sending}"
+								"{@spell 防護能量}",
+								"{@spell 移除詛咒}",
+								"{@spell 短訊術}"
 							]
 						}
 					},
@@ -2552,57 +2552,57 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}"
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell divine favor}",
-								"{@spell guiding bolt}",
-								"{@spell healing word}",
-								"{@spell shield of faith}"
+								"{@spell 神恩術}",
+								"{@spell 光導箭}",
+								"{@spell 治癒真言}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell magic weapon}",
-								"{@spell hold person}",
-								"{@spell silence}",
-								"{@spell spiritual weapon}"
+								"{@spell 次級復原術}",
+								"{@spell 魔化武器}",
+								"{@spell 人類定身術}",
+								"{@spell 沉默術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell beacon of hope}",
-								"{@spell crusader's mantle}",
-								"{@spell dispel magic}",
-								"{@spell revivify}",
-								"{@spell spirit guardians}",
-								"{@spell water walk}"
+								"{@spell 希望信標}",
+								"{@spell 十字軍斗篷}",
+								"{@spell 解除魔法}",
+								"{@spell 回生術}",
+								"{@spell 靈體守衛}",
+								"{@spell 水面行走}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell freedom of movement}",
-								"{@spell guardian of faith}",
-								"{@spell stoneskin}"
+								"{@spell 放逐術}",
+								"{@spell 行動自如術}",
+								"{@spell 虔誠守衛}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell flame strike}",
-								"{@spell mass cure wounds}",
-								"{@spell hold monster}"
+								"{@spell 焰擊術}",
+								"{@spell 群體治療傷勢}",
+								"{@spell 怪物定身術}"
 							]
 						}
 					},
@@ -2838,7 +2838,7 @@
 						"Jandar's spellcasting ability is Charisma. He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell thaumaturgy}"
+						"{@spell 奇術}"
 					],
 					"ability": "cha"
 				},
@@ -2850,24 +2850,24 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 造成傷勢}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						}
 					},
@@ -2994,13 +2994,13 @@
 						"Jarlaxle's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks) He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術} (self only)"
 						]
 					},
 					"ability": "cha"
@@ -3182,7 +3182,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -3224,47 +3224,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell sending}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -3369,26 +3369,26 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell friends}",
-								"{@spell mage hand}",
-								"{@spell vicious mockery}"
+								"{@spell 交友術}",
+								"{@spell 法師之手}",
+								"{@spell 惡毒嘲笑}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell healing word}",
-								"{@spell heroism}",
-								"{@spell sleep}",
-								"{@spell thunderwave}"
+								"{@spell 魅惑人類}",
+								"{@spell 治癒真言}",
+								"{@spell 英雄氣概}",
+								"{@spell 睡眠術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell shatter}"
+								"{@spell 隱形術}",
+								"{@spell 粉碎音波}"
 							]
 						}
 					},
@@ -3670,78 +3670,78 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 易容術}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell invisibility}",
-								"{@spell misty step}"
+								"{@spell 偵測思想}",
+								"{@spell 隱形術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell sending}",
-								"{@spell tongues}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 短訊術}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell greater invisibility}",
-								"{@spell Otiluke's resilient sphere}"
+								"{@spell 放逐術}",
+								"{@spell 高等隱形術}",
+								"{@spell 歐提路克魔封法球}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell geas}",
-								"{@spell Rary's telepathic bond}"
+								"{@spell 寒冰錐}",
+								"{@spell 指使術}",
+								"{@spell 拉瑞心靈聯結}"
 							]
 						},
 						"6": {
 							"slots": 2,
 							"spells": [
-								"{@spell globe of invulnerability}",
-								"{@spell mass suggestion}"
+								"{@spell 法術無效結界}",
+								"{@spell 群體暗示術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell prismatic spray}",
-								"{@spell teleport}"
+								"{@spell 虹光噴射}",
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell feeblemind}",
-								"{@spell power word stun}"
+								"{@spell 弱智術}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell time stop}"
+								"{@spell 時間停止}"
 							]
 						}
 					},
@@ -3798,8 +3798,8 @@
 						{
 							"type": "list",
 							"items": [
-								"Cast the {@spell cure wounds} spell. The target regains {@dice 1d8 + 5} hit points. After Laeral takes this action, roll a {@dice d6}. On a roll of 1, the silver fire disappears.",
-								"Cast the {@spell revivify} spell without material components. After Laeral takes this action, roll a {@dice d6}. On a roll of 1-2, the silver fire disappears.",
+								"Cast the {@spell 治療傷勢} spell. The target regains {@dice 1d8 + 5} hit points. After Laeral takes this action, roll a {@dice d6}. On a roll of 1, the silver fire disappears.",
+								"Cast the {@spell 回生術} spell without material components. After Laeral takes this action, roll a {@dice d6}. On a roll of 1-2, the silver fire disappears.",
 								"Release a 60-foot line of silver fire that is 5 feet wide or a 30-foot cone of silver fire. Objects in the area that aren't being worn or carried take 26 ({@damage 4d12}) fire damage. Each creature in the area must succeed on a {@dc 21} Dexterity saving throw, taking 26 ({@damage 4d12}) fire damage on a failed save, or half as much damage on a successful one. After Laeral takes this action, roll a {@dice d6}. On a roll of 1-3, the silver fire disappears."
 							]
 						}
@@ -3912,7 +3912,7 @@
 						"Laiba's spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell thaumaturgy}"
+						"{@spell 奇術}"
 					],
 					"ability": "cha"
 				},
@@ -3924,24 +3924,24 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 造成傷勢}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						}
 					},
@@ -4020,7 +4020,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -4060,47 +4060,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 活化死屍}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell ice storm}"
+								"{@spell 枯萎術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -4260,7 +4260,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -4300,47 +4300,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -4460,80 +4460,80 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell lightning bolt}",
-								"{@spell sending}"
+								"{@spell 反制法術}",
+								"{@spell 閃電束}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell fire shield}",
-								"{@spell greater invisibility}",
-								"{@spell polymorph}"
+								"{@spell 火焰護盾}",
+								"{@spell 高等隱形術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
+								"{@spell 畢格比之掌}",
+								"{@spell 探知}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell flesh to stone}",
-								"{@spell globe of invulnerability}"
+								"{@spell 石化術}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell simulacrum}"
+								"{@spell 死亡一指}",
+								"{@spell 擬像術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell feeblemind}",
-								"{@spell mind blank}"
+								"{@spell 弱智術}",
+								"{@spell 心靈屏障}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell imprisonment}",
-								"{@spell power word kill}"
+								"{@spell 禁錮術}",
+								"{@spell 律令死亡}"
 							]
 						}
 					},
@@ -4662,52 +4662,52 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell lightning bolt}",
-								"{@spell sending}"
+								"{@spell 反制法術}",
+								"{@spell 閃電束}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell fire shield}",
-								"{@spell greater invisibility}",
-								"{@spell polymorph}"
+								"{@spell 火焰護盾}",
+								"{@spell 高等隱形術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
+								"{@spell 畢格比之掌}",
+								"{@spell 探知}",
+								"{@spell 力牆術}"
 							]
 						}
 					},
@@ -4893,7 +4893,7 @@
 				11,
 				{
 					"ac": 16,
-					"condition": "with {@spell barkskin}",
+					"condition": "with {@spell 樹膚術}",
 					"braces": true
 				}
 			],
@@ -4933,25 +4933,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell shillelagh}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 燃火術}",
+								"{@spell 橡棍術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell entangle}",
-								"{@spell longstrider}",
-								"{@spell speak with animals}",
-								"{@spell thunderwave}"
+								"{@spell 糾纏術}",
+								"{@spell 大步奔行}",
+								"{@spell 動物交談術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell animal messenger}",
-								"{@spell barkskin}"
+								"{@spell 動物信使}",
+								"{@spell 樹膚術}"
 							]
 						}
 					},
@@ -5257,7 +5257,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -5296,13 +5296,13 @@
 						"Nar'l's innate spellcasting ability is Charisma. He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術} (self only)"
 						]
 					},
 					"ability": "cha"
@@ -5315,47 +5315,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell poison spray}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell witch bolt}"
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 巫術箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell alter self}",
-								"{@spell misty step}",
-								"{@spell web}"
+								"{@spell 變造自身}",
+								"{@spell 迷蹤步}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell sending}",
-								"{@spell lightning bolt}"
+								"{@spell 短訊術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell Evard's black tentacles}",
-								"{@spell greater invisibility}"
+								"{@spell 艾伐黑觸手}",
+								"{@spell 高等隱形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cloudkill}"
+								"{@spell 死雲術}"
 							]
 						}
 					},
@@ -6098,17 +6098,17 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mending}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 修復術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell burning hands}",
-								"{@spell disguise self}",
-								"{@spell shield}"
+								"{@spell 燃燒之手}",
+								"{@spell 易容術}",
+								"{@spell 護盾術}"
 							]
 						}
 					},
@@ -6167,7 +6167,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -6215,63 +6215,63 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell dancing lights}",
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell message}",
-								"{@spell ray of frost}"
+								"{@spell 舞光術}",
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 傳訊術}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell alarm}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 警報術}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell arcane lock}",
-								"{@spell invisibility}"
+								"{@spell 祕法鎖}",
+								"{@spell 隱形術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}"
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell stoneskin}"
+								"{@spell 放逐術}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell wall of force}"
+								"{@spell 寒冰錐}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell flesh to stone}",
-								"{@spell globe of invulnerability}"
+								"{@spell 石化術}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell symbol}",
-								"{@spell teleport}"
+								"{@spell 徽記術}",
+								"{@spell 傳送術}"
 							]
 						}
 					},
@@ -6459,7 +6459,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -6504,47 +6504,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -6871,7 +6871,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -6918,47 +6918,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -7066,13 +7066,13 @@
 						"Soluun's spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell levitate} (self only)"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 浮空術} (self only)"
 						]
 					},
 					"ability": "cha"
@@ -7898,7 +7898,7 @@
 						"Tissina's spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell thaumaturgy}"
+						"{@spell 奇術}"
 					],
 					"ability": "cha"
 				},
@@ -7910,24 +7910,24 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 造成傷勢}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						}
 					},
@@ -8127,7 +8127,7 @@
 				14,
 				{
 					"ac": 17,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -8175,79 +8175,79 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell message}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 傳訊術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}",
-								"{@spell thunderwave}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 法師護甲}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell misty step}",
-								"{@spell web}"
+								"{@spell 隱形術}",
+								"{@spell 迷蹤步}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell sending}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}"
+								"{@spell 放逐術}",
+								"{@spell 火焰護盾}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell geas}",
-								"{@spell telekinesis}"
+								"{@spell 畢格比之掌}",
+								"{@spell 指使術}",
+								"{@spell 心靈遙控}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell globe of invulnerability}"
+								"{@spell 連環閃電}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell forcecage}",
-								"{@spell prismatic spray}"
+								"{@spell 力場監牢}",
+								"{@spell 虹光噴射}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell antimagic field}",
-								"{@spell power word stun}"
+								"{@spell 反魔法結界}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell imprisonment}"
+								"{@spell 禁錮術}"
 							]
 						}
 					},
@@ -8270,7 +8270,7 @@
 				{
 					"name": "Staff Spells",
 					"entries": [
-						"While holding the blackstaff, Vajra can use an action to expend 1 or more of its charges to cast one of the following spells from it, using her spell save DC and spell attack bonus: {@spell cone of cold} (5 charges), {@spell fireball} (5th-level version, 5 charges), {@spell globe of invulnerability} (6 charges), {@spell hold monster} (5 charges), {@spell levitate} (2 charges), {@spell lightning bolt} (5th-level version, 5 charges), {@spell magic missile} (1 charge), {@spell ray of enfeeblement} (1 charge), or {@spell wall of force} (5 charges)."
+						"While holding the blackstaff, Vajra can use an action to expend 1 or more of its charges to cast one of the following spells from it, using her spell save DC and spell attack bonus: {@spell 寒冰錐} (5 charges), {@spell 火球術} (5th-level version, 5 charges), {@spell 法術無效結界} (6 charges), {@spell 怪物定身術} (5 charges), {@spell 浮空術} (2 charges), {@spell 閃電束} (5th-level version, 5 charges), {@spell 魔法飛彈} (1 charge), {@spell 衰弱射線} (1 charge), or {@spell 力牆術} (5 charges)."
 					]
 				}
 			],
@@ -8365,31 +8365,31 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell guiding bolt}",
-								"{@spell sanctuary}"
+								"{@spell 治療傷勢}",
+								"{@spell 光導箭}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell spiritual weapon}"
+								"{@spell 次級復原術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell spirit guardians}"
+								"{@spell 解除魔法}",
+								"{@spell 靈體守衛}"
 							]
 						}
 					},
@@ -8510,79 +8510,79 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell spare the dying}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 拯救瀕死}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell command}",
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell protection from evil and good}",
-								"{@spell sanctuary}"
+								"{@spell 魅惑人類}",
+								"{@spell 命令術}",
+								"{@spell 偵測魔法}",
+								"{@spell 易容術}",
+								"{@spell 防護善惡}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell augury}",
-								"{@spell lesser restoration}",
-								"{@spell mirror image}",
-								"{@spell pass without trace}",
-								"{@spell spiritual weapon}"
+								"{@spell 卜筮}",
+								"{@spell 次級復原術}",
+								"{@spell 鏡影術}",
+								"{@spell 行蹤無跡}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell blink}",
-								"{@spell clairvoyance}",
-								"{@spell dispel magic}",
-								"{@spell magic circle}",
-								"{@spell protection from energy}"
+								"{@spell 閃現術}",
+								"{@spell 銳眼術}",
+								"{@spell 解除魔法}",
+								"{@spell 防護法陣}",
+								"{@spell 防護能量}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell dimension door}",
-								"{@spell divination}",
-								"{@spell freedom of movement}",
-								"{@spell polymorph}"
+								"{@spell 放逐術}",
+								"{@spell 次元門}",
+								"{@spell 預言術}",
+								"{@spell 行動自如術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell dominate person}",
-								"{@spell flame strike}",
-								"{@spell modify memory}",
-								"{@spell insect plague}"
+								"{@spell 支配人類}",
+								"{@spell 焰擊術}",
+								"{@spell 修改記憶}",
+								"{@spell 疫病蟲群}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell heal}"
+								"{@spell 治癒術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell divine word}"
+								"{@spell 聖言術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell earthquake}"
+								"{@spell 地震術}"
 							]
 						}
 					},
@@ -9369,23 +9369,23 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell protection from evil and good}",
-								"{@spell thunderous smite}"
+								"{@spell 命令術}",
+								"{@spell 防護善惡}",
+								"{@spell 雷霆斬}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell branding smite}",
-								"{@spell find steed}"
+								"{@spell 烙印斬}",
+								"{@spell 尋獲坐騎}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell blinding smite}",
-								"{@spell dispel magic}"
+								"{@spell 致盲斬}",
+								"{@spell 解除魔法}"
 							]
 						}
 					},

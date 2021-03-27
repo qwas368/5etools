@@ -68,21 +68,21 @@
 						"The brain in a jar's innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell mage hand}",
-						"{@spell zone of truth}"
+						"{@spell 偵測思想}",
+						"{@spell 法師之手}",
+						"{@spell 誠實之域}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell charm person}",
-							"{@spell command}",
-							"{@spell hold person}"
+							"{@spell 魅惑人類}",
+							"{@spell 命令術}",
+							"{@spell 人類定身術}"
 						],
 						"1e": [
-							"{@spell compulsion}",
-							"{@spell hold monster}",
-							"{@spell sleep} (cast at 3rd level)",
-							"{@spell Tasha's hideous laughter}"
+							"{@spell 強迫術}",
+							"{@spell 怪物定身術}",
+							"{@spell 睡眠術} (cast at 3rd level)",
+							"{@spell 塔莎狂笑術}"
 						]
 					},
 					"ability": "int"
@@ -92,7 +92,7 @@
 				{
 					"name": "Detect Sentience",
 					"entries": [
-						"The brain in a jar can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a {@spell mind blank} spell."
+						"The brain in a jar can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a {@spell 心靈屏障} spell."
 					]
 				},
 				{
@@ -304,18 +304,18 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell blade ward}",
-								"{@spell vicious mockery}"
+								"{@spell 劍刃防護}",
+								"{@spell 惡毒嘲笑}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell detect magic}",
-								"{@spell disguise self}",
-								"{@spell identify}",
-								"{@spell Tasha's hideous laughter}"
+								"{@spell 魅惑人類}",
+								"{@spell 偵測魔法}",
+								"{@spell 易容術}",
+								"{@spell 鑑定術}",
+								"{@spell 塔莎狂笑術}"
 							]
 						}
 					},
@@ -412,7 +412,7 @@
 				{
 					"name": "Petrifying Gaze",
 					"entries": [
-						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 14} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to glass and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
+						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 14} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to glass and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell 高等復原術} spell or other magic.",
 						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
 						"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
 					]
@@ -486,21 +486,21 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch}",
-								"{@spell eldritch blast}",
-								"{@spell mage hand}"
+								"{@spell 寒顫之觸}",
+								"{@spell 魔能爆}",
+								"{@spell 法師之手}"
 							]
 						},
 						"3": {
 							"lower": 1,
 							"slots": 3,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell hex}",
-								"{@spell hypnotic pattern}",
-								"{@spell misty step}",
-								"{@spell phantasmal force}",
-								"{@spell unseen servant}"
+								"{@spell 黑暗術}",
+								"{@spell 脆弱詛咒}",
+								"{@spell 催眠圖紋}",
+								"{@spell 迷蹤步}",
+								"{@spell 魅影之力}",
+								"{@spell 隱形僕役}"
 							]
 						}
 					},

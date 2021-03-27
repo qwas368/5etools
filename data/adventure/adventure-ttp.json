@@ -818,7 +818,7 @@
 									"id": "033",
 									"entries": [
 										"The statuette on the pedestal represents Umberlee. A tortle carved it out of driftwood, painted it, and gave it to the palace's Umberlee worshipers as a gift. It was placed here so that visitors could prostrate themselves before the sea goddess.",
-										"A {@spell glyph of warding} spell triggers the first time the statuette is removed from the pedestal by a creature that is not wearing a holy symbol of Umberlee. A character who studies the statuette and succeeds on a DC 15 Intelligence (Investigation) check spots the nearly invisible glyph, which is inscribed on the trident. When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) thunder damage on a failed save, or half as much damage on a successful one."
+										"A {@spell 守衛銘文} spell triggers the first time the statuette is removed from the pedestal by a creature that is not wearing a holy symbol of Umberlee. A character who studies the statuette and succeeds on a DC 15 Intelligence (Investigation) check spots the nearly invisible glyph, which is inscribed on the trident. When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) thunder damage on a failed save, or half as much damage on a successful one."
 									]
 								}
 							]
@@ -831,12 +831,12 @@
 								"A partial collapse of the roof has filled the western doorway with rubble. Characters can't use the doorway until the rubble is cleared away (see {@area 5|02e} for details).",
 								"The plastered walls of this dark room are slick with moisture and set with colorful stones, starfish, shells, and coral branches. Extruding from the east wall is a stone sculpture of a giant crab, its pincered arms hugging a ten-foot-wide stone basin. A trickle of water flows from the crab's mouth into the basin. Holes in the basin's rim serve as drains to keep the pool from overflowing. Through a narrow window in the south wall comes the crash of tidal sea water flowing in and out of a cave.",
 								"The tortles built a cistern on the roof that catches rainwater and channels it through the crab sculpture into the pool. If a creature bathes in the pool, a dozen {@creature crab||crabs} scuttle out of holes in the giant stone crab sculpture to clean the bather. The process takes 10 minutes. The crabs are harmless and can be killed normally.",
-								"A {@spell detect magic} spell reveals an aura of transmutation magic emanating from the pool. The pool has the following powers, which an {@spell identify} spell can ascertain:",
+								"A {@spell 偵測魔法} spell reveals an aura of transmutation magic emanating from the pool. The pool has the following powers, which an {@spell 鑑定術} spell can ascertain:",
 								{
 									"type": "list",
 									"items": [
 										"A creature that speaks a prayer to Umberlee while tossing 10 gp or more worth of treasure into the pool gains the magical ability to breathe water for 24 hours while retaining its normal mode of respiration. The treasure vanishes as the blessing is conferred.",
-										"Any creature that damages the basin must succeed on a DC 15 Constitution saving throw or be transformed into a {@creature crab} for 24 hours. The effect is otherwise identical to that of the {@spell polymorph} spell."
+										"Any creature that damages the basin must succeed on a DC 15 Constitution saving throw or be transformed into a {@creature crab} for 24 hours. The effect is otherwise identical to that of the {@spell 變形術} spell."
 									]
 								},
 								{
@@ -887,12 +887,12 @@
 									"name": "Throne",
 									"id": "03a",
 									"entries": [
-										"The granite throne weighs 3,000 pounds and radiates a strong aura of transmutation magic under the scrutiny of a {@spell detect magic} spell or a similar effect. An {@spell identify} spell reveals its magical properties:",
+										"The granite throne weighs 3,000 pounds and radiates a strong aura of transmutation magic under the scrutiny of a {@spell 偵測魔法} spell or a similar effect. An {@spell 鑑定術} spell reveals its magical properties:",
 										{
 											"type": "list",
 											"items": [
-												"A humanoid that sits in the throne can use it to cast the {@spell control weather} spell without needing components. As long as the creature remains seated in the throne, it doesn't need to concentrate to maintain the spell. Leaving the throne ends the effect, whereupon the weather gradually returns to normal.",
-												"A humanoid that sits in the throne can transform itself into a sea gull (use the raven statistics without the Mimicry trait) or an octopus. The effect is identical to that of a {@spell polymorph} spell, except the duration is 8 hours and the creature can end the effect on itself at any time (no action required)."
+												"A humanoid that sits in the throne can use it to cast the {@spell 操控天氣} spell without needing components. As long as the creature remains seated in the throne, it doesn't need to concentrate to maintain the spell. Leaving the throne ends the effect, whereupon the weather gradually returns to normal.",
+												"A humanoid that sits in the throne can transform itself into a sea gull (use the raven statistics without the Mimicry trait) or an octopus. The effect is identical to that of a {@spell 變形術} spell, except the duration is 8 hours and the creature can end the effect on itself at any time (no action required)."
 											]
 										}
 									]
@@ -966,7 +966,7 @@
 							"name": "15. Cleric's Chambers",
 							"id": "042",
 							"entries": [
-								"The Typhoon Palace's resident cleric of Umberlee claimed these rooms for herself. The double door to this suite has a {@spell glyph of warding} spell inscribed above it that triggers when a creature passes between the opened doors. Only a creature wearing a holy symbol of Umberlee does not trigger the glyph and can pass through the doors safely. A character who studies the door frame and succeeds on a DC 15 Intelligence (Investigation) check spots the nearly invisible glyph. When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.",
+								"The Typhoon Palace's resident cleric of Umberlee claimed these rooms for herself. The double door to this suite has a {@spell 守衛銘文} spell inscribed above it that triggers when a creature passes between the opened doors. Only a creature wearing a holy symbol of Umberlee does not trigger the glyph and can pass through the doors safely. A character who studies the door frame and succeeds on a DC 15 Intelligence (Investigation) check spots the nearly invisible glyph. When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.",
 								"When the characters first lay eyes on the cleric's bedchamber, read:",
 								"This palatial bedchamber is eerily quiet and still. Cracks have formed in the blue plaster walls, set into which are colorful coral branches and seashells. Pillars carved to resemble tentacles support the vaulted ceiling, which features a large dome painted to look like the night sky. Beneath the dome and between the pillars, a large bed stands atop a wide, circular dais. The bed's wooden frame is carved to resemble surging waves. Set into the north wall are two doors. Dust covers everything.",
 								"The bedchamber contains nothing of value. The doors to the north lead to smaller rooms described below.",
@@ -1004,7 +1004,7 @@
 							"id": "046",
 							"entries": [
 								"This arched hallway is reinforced with stone buttresses, between which are painted murals depicting gloomy underwater scenes. A large double door stands to the west, and a flickering orb is embedded in the wall at the east end of the hall. Along the hall's length are two more sets of double doors, a single door, and two clay urns covered with dust and cobwebs.",
-								"The orb at the east end of the hall is made of crystal and radiates an aura of conjuration magic under the scrutiny of a {@spell detect magic} spell or similar effect. The orb, which is 1 foot in diameter, sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Whenever a creature touches the orb, roll a d6. On a roll of 2 or higher, the orb teleports the creature to {@area 24|051}. On a roll of 1, the orb malfunctions and emits lightning in a 100-foot-long line as wide as the hall. Each creature in the area of effect must make a DC 15 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much damage on a successful one. The orb can't be removed from its wall fixture. It has AC 10, 1 hit point, and immunity to poison and psychic damage. Destroying the orb extinguishes its light and renders the pieces nonmagical.",
+								"The orb at the east end of the hall is made of crystal and radiates an aura of conjuration magic under the scrutiny of a {@spell 偵測魔法} spell or similar effect. The orb, which is 1 foot in diameter, sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Whenever a creature touches the orb, roll a d6. On a roll of 2 or higher, the orb teleports the creature to {@area 24|051}. On a roll of 1, the orb malfunctions and emits lightning in a 100-foot-long line as wide as the hall. Each creature in the area of effect must make a DC 15 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much damage on a successful one. The orb can't be removed from its wall fixture. It has AC 10, 1 hit point, and immunity to poison and psychic damage. Destroying the orb extinguishes its light and renders the pieces nonmagical.",
 								"The doors along the north wall open into the rooms beyond. The doors to the west and south have hinges on this side and open into the hallway.",
 								"The clay urns are purely decorative and contain nothing of value."
 							]
@@ -1032,7 +1032,7 @@
 									"entries": [
 										"A wide alcove in the east wall is not visible from the northern entrance. When characters see the alcove for the first time, read:",
 										"At the back of a recess in the east wall is a giant stone visage rendered in bas-relief. The face is that of a divinely beautiful woman with kelp for hair, eyelids like seashells, and a vaguely menacing half-smile.",
-										"The face, which is 12 feet tall and 10 feet wide, represents the sea goddess Umberlee. It radiates an aura of transmutation magic under the scrutiny of a {@spell detect magic} spell or similar effect. When a creature openly wearing or brandishing a holy symbol of Umberlee comes within 10 feet of the face, its mouth opens wide, creating a 5-foot-diameter opening that allows access to the caves beyond ({@area 22|04f}). The opening is lined with rows of triangular teeth similar to those of a giant shark, but they are easily avoided. The mouth closes after 1 minute but can be reopened from either side."
+										"The face, which is 12 feet tall and 10 feet wide, represents the sea goddess Umberlee. It radiates an aura of transmutation magic under the scrutiny of a {@spell 偵測魔法} spell or similar effect. When a creature openly wearing or brandishing a holy symbol of Umberlee comes within 10 feet of the face, its mouth opens wide, creating a 5-foot-diameter opening that allows access to the caves beyond ({@area 22|04f}). The opening is lined with rows of triangular teeth similar to those of a giant shark, but they are easily avoided. The mouth closes after 1 minute but can be reopened from either side."
 									]
 								},
 								{
@@ -1158,7 +1158,7 @@
 									"name": "Treasure",
 									"id": "04d",
 									"entries": [
-										"When the ghost is laid to rest, it leaves behind a pearlescent conch shell that weighs 2 pounds. The conch radiates an aura of evocation magic under the scrutiny of a {@spell detect magic} spell or similar effect. An {@spell identify} spell reveals that the conch is a single-use magic item with the following property: a creature can use an action to blow the conch like a horn, creating an effect identical with that of a Leomund's tiny hut spell. The conch disappears once the spell takes effect. The effect ends if the creature that blew the horn leaves the spell's area."
+										"When the ghost is laid to rest, it leaves behind a pearlescent conch shell that weighs 2 pounds. The conch radiates an aura of evocation magic under the scrutiny of a {@spell 偵測魔法} spell or similar effect. An {@spell 鑑定術} spell reveals that the conch is a single-use magic item with the following property: a creature can use an action to blow the conch like a horn, creating an effect identical with that of a Leomund's tiny hut spell. The conch disappears once the spell takes effect. The effect ends if the creature that blew the horn leaves the spell's area."
 									]
 								}
 							]
@@ -1342,14 +1342,14 @@
 							"entries": [
 								"The sea mare was a merchant ship that fell prey to pirates twenty-four years ago. After the pirates killed the ship's crew and looted the hold, they tried to set the ship ablaze before abandoning it. A rainstorm extinguished the flames before they could do much damage, but strong winds blew the derelict vessel to its doom. Of all the wrecked ships found at High Horn, the sea mare is the one farthest from shore, nestled in a hole and lodged against a coral reef. It's mostly intact but lies completely underwater at high tide. Even at low tide, only the battered remains of the crow's nest can be seen above the water.",
 								"Tortles have tried numerous times to plunder the wreck, to no avail. With her dying breath, the ship's captain pledged her soul to Orcus and was transformed into a {@creature wight} that lurks in the ship's hold. Though she carries no weapons, she guards what's left of the cargo (see \"Treasure\" below).",
-								"Within the flooded hold, amid skeletons picked clean by fish, the characters can find an airtight stone sarcophagus carved in the likeness of a demon with folded wings. The sarcophagus weighs 2,000 pounds, and its lid has an {@spell arcane lock} spell cast on it. Opening the sarcophagus requires a {@spell knock} spell or a successful DC 28 Strength (Athletics) check. It contains the mummified corpse of an archmage who perished after failing to become a lich. The corpse is wrapped in a black shroud. A stoppered bronze scroll tube rests at its feet, and a staff fashioned from a single branch of pale white wood (see \"Treasure\" below) lies beside it.",
+								"Within the flooded hold, amid skeletons picked clean by fish, the characters can find an airtight stone sarcophagus carved in the likeness of a demon with folded wings. The sarcophagus weighs 2,000 pounds, and its lid has an {@spell 祕法鎖} spell cast on it. Opening the sarcophagus requires a {@spell 敲擊術} spell or a successful DC 28 Strength (Athletics) check. It contains the mummified corpse of an archmage who perished after failing to become a lich. The corpse is wrapped in a black shroud. A stoppered bronze scroll tube rests at its feet, and a staff fashioned from a single branch of pale white wood (see \"Treasure\" below) lies beside it.",
 								"The scroll tube contains a dry sheet of parchment bearing the following message in Abyssal: \"Orcus, claim your prize! The secrets of lichdom remain yours, but my deeds and magic will live on, as will my soul in the Abyss.\"",
 								{
 									"type": "entries",
 									"name": "Treasure",
 									"id": "060",
 									"entries": [
-										"The top of the archmage's staff is shaped like a demon's claw. The staff is not magical, but it radiates a false aura of conjuration magic when studied under a {@spell detect magic} spell or similar magic. Casting {@spell dispel magic} on the staff removes the false aura. The staff is worth 25 gp and can be used as an arcane focus."
+										"The top of the archmage's staff is shaped like a demon's claw. The staff is not magical, but it radiates a false aura of conjuration magic when studied under a {@spell 偵測魔法} spell or similar magic. Casting {@spell 解除魔法} on the staff removes the false aura. The staff is worth 25 gp and can be used as an arcane focus."
 									]
 								}
 							]
@@ -1369,7 +1369,7 @@
 					"name": "Mud Pits of Florrb",
 					"id": "062",
 					"entries": [
-						"In the heart of the island's jungle are three pools of mud heated by geothermal vents. Each pool is within sight of the other two and is 5 feet deep, 50 feet wide, and roughly circular. (The pools shown on map 1 are not to scale.) A {@spell detect magic} spell reveals a faint aura of abjuration magic around each pool. The tortles of the island like to bathe and relax in the mud pools for hours at a time, singing and bellowing to pass the time. A winding foot trail connects the mud pits to the tortle fort of Ahoyhoy.",
+						"In the heart of the island's jungle are three pools of mud heated by geothermal vents. Each pool is within sight of the other two and is 5 feet deep, 50 feet wide, and roughly circular. (The pools shown on map 1 are not to scale.) A {@spell 偵測魔法} spell reveals a faint aura of abjuration magic around each pool. The tortles of the island like to bathe and relax in the mud pools for hours at a time, singing and bellowing to pass the time. A winding foot trail connects the mud pits to the tortle fort of Ahoyhoy.",
 						"The \"lord\" of the mud pits is Florrb, a {@creature mud mephit} with 1d10 temporary hit points (which he gained by swimming in the mud pits). The mephit and the tortles share a common language (Aquan). Through words and gestures, Florrb urges visitors to bathe in the mud and enjoy themselves. It demands no payment but insists on joining those who bathe. Florrb likes being in its natural element, but the longer the mephit remains in the mud, the more dour it becomes. A successful DC 10 Wisdom (Insight) check reveals that the mud mephit seems to be waiting for something to happen. Florrb doesn't want others to know what's really going on and reveals the cause of its anxiety only if magically compelled to do so.",
 						{
 							"type": "entries",
@@ -1377,7 +1377,7 @@
 							"id": "063",
 							"entries": [
 								"When the mud pits formed a hundred years ago, Florrb and two other mud mephits were transported into them from the Elemental Plane of Earth. The other two mephits found a way to get back to their home plane, but Florrb was left behind. It wants to return home but doesn't know how. The other mephits were swimming in the mud pits when they disappeared. In the years since, other creatures have disappeared while bathing in the mud pits, but Florrb has yet to figure out the trick to activating them. With a successful DC 15 Charisma (Persuasion) check, a character can help Florrb recall that each of other mephits disappeared during a volcanic eruption, as ash and embers were falling from the sky.",
-								"A {@spell legend lore} spell reveals that all three mud pits are portals to the Elemental Plane of Earth and that a special \"gate key\" is needed to unlock them from this side. The gate key is any open flame. (The flame and the mud pit symbolize the coming together of the four elements: earth and water in the mud, fire and air in the flame.) Whenever an open flame is burning within 10 feet of a mud pit, the pit becomes a portal linked to a similar but larger mud pit on the Elemental Plane of Earth. At such times, any creature that fully submerges itself in one pit emerges in the other. An open flame is not needed to travel from one of the mud pits on the Elemental Plane of Earth to its corresponding mud pit on the island."
+								"A {@spell 通曉傳奇} spell reveals that all three mud pits are portals to the Elemental Plane of Earth and that a special \"gate key\" is needed to unlock them from this side. The gate key is any open flame. (The flame and the mud pit symbolize the coming together of the four elements: earth and water in the mud, fire and air in the flame.) Whenever an open flame is burning within 10 feet of a mud pit, the pit becomes a portal linked to a similar but larger mud pit on the Elemental Plane of Earth. At such times, any creature that fully submerges itself in one pit emerges in the other. An open flame is not needed to travel from one of the mud pits on the Elemental Plane of Earth to its corresponding mud pit on the island."
 							]
 						},
 						{

@@ -1053,7 +1053,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the {@spell light}, {@spell prestidigitation}, {@spell ray of frost}, and {@spell shocking grasp} cantrips, along with the 1st-level spells {@spell shield} and {@spell magic missile}."
+										"You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the {@spell 光亮術}, {@spell 魔法技倆}, {@spell 冷凍射線}, and {@spell 電爪} cantrips, along with the 1st-level spells {@spell 護盾術} and {@spell 魔法飛彈}."
 									]
 								}
 							]
@@ -2626,23 +2626,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell arms of Hadar}, {@spell dissonant whispers}, {@spell mind sliver|tce}"
+							"{@spell 哈達之臂}, {@spell 噪音暗語}, {@spell mind sliver|tce}"
 						],
 						[
 							"3rd",
-							"{@spell calm emotions}, {@spell detect thoughts}"
+							"{@spell 安定心神}, {@spell 偵測思想}"
 						],
 						[
 							"5th",
-							"{@spell hunger of Hadar}, {@spell sending}"
+							"{@spell 哈達之欲}, {@spell 短訊術}"
 						],
 						[
 							"7th",
-							"{@spell Evard's black tentacles}, {@spell summon aberration|TCE}"
+							"{@spell 艾伐黑觸手}, {@spell summon aberration|TCE}"
 						],
 						[
 							"9th",
-							"{@spell Rary's telepathic bond}, {@spell telekinesis}"
+							"{@spell 拉瑞心靈聯結}, {@spell 心靈遙控}"
 						]
 					]
 				}
@@ -2784,23 +2784,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell alarm}, {@spell protection from evil and good}"
+							"{@spell 警報術}, {@spell 防護善惡}"
 						],
 						[
 							"3rd",
-							"{@spell aid}, {@spell lesser restoration}"
+							"{@spell 援助術}, {@spell 次級復原術}"
 						],
 						[
 							"5th",
-							"{@spell dispel magic}, {@spell protection from energy}"
+							"{@spell 解除魔法}, {@spell 防護能量}"
 						],
 						[
 							"7th",
-							"{@spell freedom of movement}, {@spell summon construct|TCE}"
+							"{@spell 行動自如術}, {@spell summon construct|TCE}"
 						],
 						[
 							"9th",
-							"{@spell greater restoration}, {@spell wall of force}"
+							"{@spell 高等復原術}, {@spell 力牆術}"
 						]
 					]
 				},
@@ -3191,23 +3191,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell alarm}, {@spell protection from evil and good}"
+							"{@spell 警報術}, {@spell 防護善惡}"
 						],
 						[
 							"3rd",
-							"{@spell find traps}, {@spell heat metal}"
+							"{@spell 尋找陷阱}, {@spell 灼熱金屬}"
 						],
 						[
 							"5th",
-							"{@spell counterspell}, {@spell glyph of warding}"
+							"{@spell 反制法術}, {@spell 守衛銘文}"
 						],
 						[
 							"7th",
-							"{@spell arcane eye}, {@spell Otiluke's resilient sphere}"
+							"{@spell 祕法眼}, {@spell 歐提路克魔封法球}"
 						],
 						[
 							"9th",
-							"{@spell animate objects}, {@spell wall of force}"
+							"{@spell 活化物體}, {@spell 力牆術}"
 						]
 					]
 				}
@@ -3347,33 +3347,33 @@
 					"rows": [
 						[
 							"{@creature Cloud Giant}",
-							"{@spell fog cloud}, {@spell minor illusion}",
-							"{@spell invisibility}"
+							"{@spell 雲霧術}, {@spell 次級幻象}",
+							"{@spell 隱形術}"
 						],
 						[
 							"{@creature Fire Giant}",
-							"{@spell burning hands}, {@spell fire bolt}",
-							"{@spell flaming sphere}"
+							"{@spell 燃燒之手}, {@spell 火焰箭}",
+							"{@spell 熾焰法球}"
 						],
 						[
 							"{@creature Frost Giant}",
-							"{@spell armor of Agathys}, {@spell ray of frost}",
-							"{@spell hold person}"
+							"{@spell 艾嘉西斯之鎧}, {@spell 冷凍射線}",
+							"{@spell 人類定身術}"
 						],
 						[
 							"{@creature Hill Giant}",
-							"{@spell heroism}, {@spell shillelagh}",
-							"{@spell enlarge/reduce}"
+							"{@spell 英雄氣概}, {@spell 橡棍術}",
+							"{@spell 變巨/縮小術}"
 						],
 						[
 							"{@creature Stone Giant}",
-							"{@spell entangle}, {@spell resistance}",
-							"{@spell spike growth}"
+							"{@spell 糾纏術}, {@spell 提升抗力}",
+							"{@spell 荊棘叢生}"
 						],
 						[
 							"{@creature Storm Giant}",
-							"{@spell shocking grasp}, {@spell thunderwave}",
-							"{@spell gust of wind}"
+							"{@spell 電爪}, {@spell 雷鳴波}",
+							"{@spell 造風術}"
 						]
 					]
 				}
@@ -3409,7 +3409,7 @@
 					"type": "entries",
 					"name": "Frost Giant",
 					"entries": [
-						"Immediately after you cast any of your Mark of the Ordning spells, you gain temporary hit points equal to your Constitution modifier (minimum of 1). But if the spell is {@spell armor of Agathys}, you instead increase its temporary hit points by an amount equal to your Constitution modifier (minimum of 1)."
+						"Immediately after you cast any of your Mark of the Ordning spells, you gain temporary hit points equal to your Constitution modifier (minimum of 1). But if the spell is {@spell 艾嘉西斯之鎧}, you instead increase its temporary hit points by an amount equal to your Constitution modifier (minimum of 1)."
 					]
 				},
 				{
@@ -3547,7 +3547,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"From 1st level, you have {@sense darkvision} with a range of 60 feet. You can cast {@spell darkness} by spending 1 sorcery point. You can see through any {@spell darkness} spell you cast using this ability."
+				"From 1st level, you have {@sense darkvision} with a range of 60 feet. You can cast {@spell 黑暗術} by spending 1 sorcery point. You can see through any {@spell 黑暗術} spell you cast using this ability."
 			]
 		},
 		{
@@ -3742,7 +3742,7 @@
 			"header": 1,
 			"entries": [
 				"Your link to the divine allows you to learn spells normally associated with the cleric class. When your Spellcasting feature lets you learn a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list, in addition to the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.",
-				"You also learn the {@spell cure wounds} spell, which does not count against your number of sorcerer spells known."
+				"You also learn the {@spell 治療傷勢} spell, which does not count against your number of sorcerer spells known."
 			]
 		},
 		{
@@ -4283,19 +4283,19 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell compelled duel}, {@spell searing smite}, {@spell thunderous smite}, {@spell wrathful smite}"
+							"{@spell 強迫決鬥}, {@spell 熾炎斬}, {@spell 雷霆斬}, {@spell 激憤斬}"
 						],
 						[
 							"2nd",
-							"{@spell branding smite}, {@spell magic weapon}"
+							"{@spell 烙印斬}, {@spell 魔化武器}"
 						],
 						[
 							"3rd",
-							"{@spell blinding smite}, {@spell elemental weapon}"
+							"{@spell 致盲斬}, {@spell 元素武器}"
 						],
 						[
 							"4th",
-							"{@spell staggering smite}"
+							"{@spell 驚震斬}"
 						]
 					]
 				}
@@ -4416,23 +4416,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell arms of Hadar}, {@spell dissonant whispers}"
+							"{@spell 哈達之臂}, {@spell 噪音暗語}"
 						],
 						[
 							"3rd",
-							"{@spell calm emotions}, {@spell detect thoughts}"
+							"{@spell 安定心神}, {@spell 偵測思想}"
 						],
 						[
 							"5th",
-							"{@spell hunger of Hadar}, {@spell sending}"
+							"{@spell 哈達之欲}, {@spell 短訊術}"
 						],
 						[
 							"7th",
-							"{@spell compulsion}, {@spell Evard's black tentacles}"
+							"{@spell 強迫術}, {@spell 艾伐黑觸手}"
 						],
 						[
 							"9th",
-							"{@spell modify memory}, {@spell Rary's telepathic bond}"
+							"{@spell 修改記憶}, {@spell 拉瑞心靈聯結}"
 						]
 					]
 				}
@@ -4586,23 +4586,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell Fog cloud}, {@spell thunderwave}"
+							"{@spell 雲霧術}, {@spell 雷鳴波}"
 						],
 						[
 							"3rd",
-							"{@spell Gust of wind}, {@spell levitate}"
+							"{@spell 造風術}, {@spell 浮空術}"
 						],
 						[
 							"5th",
-							"{@spell Call lightning}, {@spell sleet storm}"
+							"{@spell 召雷術}, {@spell 雪雨暴}"
 						],
 						[
 							"7th",
-							"{@spell Conjure minor elementals}*, {@spell ice storm}"
+							"{@spell 召喚次級元素生物}*, {@spell 冰風暴}"
 						],
 						[
 							"9th",
-							"{@spell Conjure elemental}**"
+							"{@spell 召喚元素生物}**"
 						]
 					],
 					"footnotes": [

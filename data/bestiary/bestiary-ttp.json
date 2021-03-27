@@ -219,9 +219,9 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell guiding bolt}",
-							"{@spell sanctuary}",
-							"{@spell spiritual weapon}"
+							"{@spell 光導箭}",
+							"{@spell 聖域術}",
+							"{@spell 靈體武器}"
 						]
 					},
 					"ability": "wis"

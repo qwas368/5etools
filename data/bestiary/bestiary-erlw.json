@@ -300,20 +300,20 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell compelled duel}",
-								"{@spell hellish rebuke}",
-								"{@spell wrathful smite}"
+								"{@spell 命令術}",
+								"{@spell 強迫決鬥}",
+								"{@spell 煉獄叱喝}",
+								"{@spell 激憤斬}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell branding smite}",
-								"{@spell crown of madness}",
-								"{@spell darkness}",
-								"{@spell find steed}",
-								"{@spell magic weapon}"
+								"{@spell 烙印斬}",
+								"{@spell 瘋狂冠冕}",
+								"{@spell 黑暗術}",
+								"{@spell 尋獲坐騎}",
+								"{@spell 魔化武器}"
 							]
 						}
 					},
@@ -888,18 +888,18 @@
 						"The hag's spellcasting ability is Charisma (spell save {@dc 15}). She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell disguise self}"
+						"{@spell 偵測魔法}",
+						"{@spell 易容術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell dream}",
-							"{@spell hypnotic pattern}",
-							"{@spell sleep} ({@dice 9d8})"
+							"{@spell 託夢術}",
+							"{@spell 催眠圖紋}",
+							"{@spell 睡眠術} ({@dice 9d8})"
 						],
 						"1e": [
-							"{@spell legend lore}",
-							"{@spell scrying}"
+							"{@spell 通曉傳奇}",
+							"{@spell 探知}"
 						]
 					},
 					"ability": "cha"
@@ -1381,17 +1381,17 @@
 						"The quori's spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell charm person}"
+						"{@spell 魅惑人類}"
 					],
 					"daily": {
 						"1": [
-							"{@spell dominate person}",
-							"{@spell dream}"
+							"{@spell 支配人類}",
+							"{@spell 託夢術}"
 						],
 						"3e": [
-							"{@spell detect thoughts}",
-							"{@spell disguise self}",
-							"{@spell suggestion}"
+							"{@spell 偵測思想}",
+							"{@spell 易容術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "int"
@@ -1420,7 +1420,7 @@
 					"name": "Possession {@recharge}",
 					"entries": [
 						"One humanoid that the quori can see within 5 feet of it must succeed on a {@dc 16} Charisma saving throw or be possessed by the quori; the quori then disappears, and the target is {@condition incapacitated} and loses control of its body. The quori now controls the body but doesn't deprive the target of awareness. The quori can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
-						"The possession lasts until the body drops to 0 hit points, the quori ends it as a bonus action, or the quori is forced out by an effect like the {@spell dispel evil and good} spell. When the possession ends, the quori reappears in an unoccupied space within 5 feet of the body. The target is immune to this quori's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+						"The possession lasts until the body drops to 0 hit points, the quori ends it as a bonus action, or the quori is forced out by an effect like the {@spell 反制善惡} spell. When the possession ends, the quori reappears in an unoccupied space within 5 feet of the body. The target is immune to this quori's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -1479,7 +1479,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -1525,16 +1525,16 @@
 						"The Inspired's spellcasting ability is Intelligence (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell mage hand}",
-						"{@spell vicious mockery} (see \"Actions\" below)"
+						"{@spell 法師之手}",
+						"{@spell 惡毒嘲笑} (see \"Actions\" below)"
 					],
 					"daily": {
 						"1e": [
-							"{@spell charm person}",
-							"{@spell dissonant whispers}",
-							"{@spell hex}",
-							"{@spell hold person}",
-							"{@spell mage armor}"
+							"{@spell 魅惑人類}",
+							"{@spell 噪音暗語}",
+							"{@spell 脆弱詛咒}",
+							"{@spell 人類定身術}",
+							"{@spell 法師護甲}"
 						]
 					},
 					"ability": "int"
@@ -1582,7 +1582,7 @@
 									"type": "entries",
 									"name": "Suggestion (3/Day)",
 									"entries": [
-										"The Inspired can cast the {@spell suggestion} spell (spell save {@dc 13}), requiring no material components."
+										"The Inspired can cast the {@spell 暗示術} spell (spell save {@dc 13}), requiring no material components."
 									]
 								}
 							]
@@ -1602,7 +1602,7 @@
 									"type": "entries",
 									"name": "Arcane Eye (3/Day)",
 									"entries": [
-										"The Inspired can cast the {@spell arcane eye} spell, requiring no material components."
+										"The Inspired can cast the {@spell 祕法眼} spell, requiring no material components."
 									]
 								}
 							]
@@ -1615,7 +1615,7 @@
 									"type": "entries",
 									"name": "Fear (1/Day)",
 									"entries": [
-										"The Inspired can cast the {@spell fear} spell (spell save {@dc 13}), requiring no material components."
+										"The Inspired can cast the {@spell 恐懼術} spell (spell save {@dc 13}), requiring no material components."
 									]
 								}
 							]
@@ -1828,14 +1828,14 @@
 						"The quori's spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell arcane eye}"
+						"{@spell 祕法眼}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell clairvoyance}",
-							"{@spell confusion}",
-							"{@spell dream}",
-							"{@spell eyebite}"
+							"{@spell 銳眼術}",
+							"{@spell 困惑術}",
+							"{@spell 託夢術}",
+							"{@spell 攝心目光}"
 						]
 					},
 					"ability": "cha"
@@ -1884,7 +1884,7 @@
 					"name": "Mind Seed (1/Day)",
 					"entries": [
 						"The quori touches one humanoid, which must succeed on a {@dc 21} Intelligence saving throw or be cursed. The curse lasts until it's removed by a remove curse or greater restoration spell.",
-						"The cursed target suffers 1 level of {@condition exhaustion} every 24 hours, and finishing a long rest doesn't reduce its {@condition exhaustion}. If the cursed target reaches {@condition exhaustion} level 6, it doesn't die; it instead becomes a thrall under the quori's control, and all its {@condition exhaustion} is removed. Only the {@spell wish} spell can free the thrall from this control."
+						"The cursed target suffers 1 level of {@condition exhaustion} every 24 hours, and finishing a long rest doesn't reduce its {@condition exhaustion}. If the cursed target reaches {@condition exhaustion} level 6, it doesn't die; it instead becomes a thrall under the quori's control, and all its {@condition exhaustion} is removed. Only the {@spell 祈願術} spell can free the thrall from this control."
 					]
 				},
 				{
@@ -1897,7 +1897,7 @@
 					"name": "Possession {@recharge}",
 					"entries": [
 						"One humanoid that the quori can see within 5 feet of it must succeed on a {@dc 21} Charisma saving throw or be possessed by the quori; the quori then disappears, and the target is {@condition incapacitated} and loses control of its body. The quori now controls the body but doesn't deprive the target of awareness. The quori can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
-						"The possession lasts until the body drops to 0 hit points, the quori ends it as a bonus action, or the quori is forced out by an effect like the {@spell dispel evil and good} spell. When the possession ends, the quori reappears in an unoccupied space within 5 feet of the body. The target is immune to this quori's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+						"The possession lasts until the body drops to 0 hit points, the quori ends it as a bonus action, or the quori is forced out by an effect like the {@spell 反制善惡} spell. When the possession ends, the quori reappears in an unoccupied space within 5 feet of the body. The target is immune to this quori's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -2234,85 +2234,85 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch} (see \"Actions\" below)",
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 寒顫之觸} (see \"Actions\" below)",
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell sleep}"
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell detect thoughts}",
-								"{@spell mirror image}"
+								"{@spell 朦朧術}",
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 活化死屍}",
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell confusion}",
-								"{@spell polymorph}"
+								"{@spell 枯萎術}",
+								"{@spell 困惑術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell cone of cold}",
-								"{@spell hold monster}",
-								"{@spell scrying}"
+								"{@spell 死雲術}",
+								"{@spell 寒冰錐}",
+								"{@spell 怪物定身術}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 2,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell circle of death}",
-								"{@spell create undead}",
-								"{@spell scrying}"
+								"{@spell 連環閃電}",
+								"{@spell 死亡之環}",
+								"{@spell 創造不死生物}",
+								"{@spell 探知}"
 							]
 						},
 						"7": {
 							"slots": 2,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell forcecage}",
-								"{@spell prismatic spray}"
+								"{@spell 死亡一指}",
+								"{@spell 力場監牢}",
+								"{@spell 虹光噴射}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell incendiary cloud}",
-								"{@spell maze}"
+								"{@spell 焚雲術}",
+								"{@spell 迷宮術}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell power word kill}",
-								"{@spell time stop}"
+								"{@spell 律令死亡}",
+								"{@spell 時間停止}"
 							]
 						}
 					},
@@ -2807,11 +2807,11 @@
 						"The magewright's spellcasting ability is Intelligence (spell save {@dc 12}). To cast one of its rituals, the magewright must provide additional material components whose value in gold pieces is 20 times the spell's level. These components are consumed when the ritual is finished. The magewright knows the following spells:"
 					],
 					"will": [
-						"{@spell mage hand}",
-						"{@spell prestidigitation}"
+						"{@spell 法師之手}",
+						"{@spell 魔法技倆}"
 					],
 					"ritual": [
-						"{@spell knock}"
+						"{@spell 敲擊術}"
 					],
 					"ability": "int"
 				}
@@ -2920,19 +2920,19 @@
 						"Mordakhesh's spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Mordakhesh can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell chromatic orb} (see \"Actions\" below)",
-						"{@spell detect thoughts}",
-						"{@spell disguise self}"
+						"{@spell 幻色法球} (see \"Actions\" below)",
+						"{@spell 偵測思想}",
+						"{@spell 易容術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell banishing smite}",
-							"{@spell destructive wave}",
-							"{@spell fly}",
-							"{@spell mass suggestion}",
-							"{@spell staggering smite}",
-							"{@spell suggestion}",
-							"{@spell true seeing}"
+							"{@spell 放逐斬}",
+							"{@spell 湮滅波}",
+							"{@spell 飛行術}",
+							"{@spell 群體暗示術}",
+							"{@spell 驚震斬}",
+							"{@spell 暗示術}",
+							"{@spell 真知術}"
 						]
 					},
 					"ability": "cha"
@@ -3084,18 +3084,18 @@
 						"The radiant idol's spellcasting ability is Charisma (spell save {@dc 17}). The radiant idol can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell charm person}",
-						"{@spell cure wounds}",
-						"{@spell disguise self}",
-						"{@spell thaumaturgy}"
+						"{@spell 魅惑人類}",
+						"{@spell 治療傷勢}",
+						"{@spell 易容術}",
+						"{@spell 奇術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell commune}",
-							"{@spell dominate person}",
-							"{@spell insect plague}",
-							"{@spell mass suggestion}",
-							"{@spell raise dead}"
+							"{@spell 通神術}",
+							"{@spell 支配人類}",
+							"{@spell 疫病蟲群}",
+							"{@spell 群體暗示術}",
+							"{@spell 喚醒死者}"
 						]
 					},
 					"ability": "cha"
@@ -3261,15 +3261,15 @@
 						"Rak Tulkhesh's spellcasting ability is Charisma (spell save {@dc 24}). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell dispel magic}",
-						"{@spell spirit guardians}"
+						"{@spell 偵測思想}",
+						"{@spell 解除魔法}",
+						"{@spell 靈體守衛}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell banishing smite}",
-							"{@spell blinding smite}",
-							"{@spell staggering smite}"
+							"{@spell 放逐斬}",
+							"{@spell 致盲斬}",
+							"{@spell 驚震斬}"
 						]
 					},
 					"ability": "cha"
@@ -3565,29 +3565,29 @@
 						"Sul Khatesh's spellcasting ability is Intelligence (spell save {@dc 26}, {@hit 18} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell counterspell}",
-						"{@spell detect magic}",
-						"{@spell detect thoughts}",
-						"{@spell dispel magic}",
-						"{@spell eyebite}",
-						"{@spell fireball}",
-						"{@spell lightning bolt}",
-						"{@spell shield}"
+						"{@spell 反制法術}",
+						"{@spell 偵測魔法}",
+						"{@spell 偵測思想}",
+						"{@spell 解除魔法}",
+						"{@spell 攝心目光}",
+						"{@spell 火球術}",
+						"{@spell 閃電束}",
+						"{@spell 護盾術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell chain lightning}",
-							"{@spell create undead}",
-							"{@spell dream}",
-							"{@spell hold monster}",
-							"{@spell mass suggestion}",
-							"{@spell scrying}"
+							"{@spell 連環閃電}",
+							"{@spell 創造不死生物}",
+							"{@spell 託夢術}",
+							"{@spell 怪物定身術}",
+							"{@spell 群體暗示術}",
+							"{@spell 探知}"
 						],
 						"1e": [
-							"{@spell foresight}",
-							"{@spell gate}",
-							"{@spell power word kill}",
-							"{@spell teleport}"
+							"{@spell 預視術}",
+							"{@spell 異界之門}",
+							"{@spell 律令死亡}",
+							"{@spell 傳送術}"
 						]
 					},
 					"ability": "int"
@@ -3762,11 +3762,11 @@
 						"The assassin's spellcasting ability is Constitution ({@hit 4} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell fire bolt}"
+						"{@spell 火焰箭}"
 					],
 					"daily": {
 						"1": [
-							"{@spell chromatic orb}"
+							"{@spell 幻色法球}"
 						]
 					},
 					"ability": "con"
@@ -3908,49 +3908,49 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt} (see \"Actions\" below)",
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭} (see \"Actions\" below)",
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell expeditious retreat}",
-								"{@spell sanctuary}",
-								"{@spell thunderwave}"
+								"{@spell 腳底抹油}",
+								"{@spell 聖域術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell heat metal}",
-								"{@spell scorching ray}",
-								"{@spell see invisibility}"
+								"{@spell 朦朧術}",
+								"{@spell 灼熱金屬}",
+								"{@spell 灼熱射線}",
+								"{@spell 識破隱形}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell fly}",
-								"{@spell haste}"
+								"{@spell 解除魔法}",
+								"{@spell 飛行術}",
+								"{@spell 加速術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell freedom of movement}",
-								"{@spell Mordenkainen's faithful hound}"
+								"{@spell 行動自如術}",
+								"{@spell 魔鄧肯忠犬}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell animate objects}",
-								"{@spell wall of force}"
+								"{@spell 活化物體}",
+								"{@spell 力牆術}"
 							]
 						}
 					},
@@ -4127,11 +4127,11 @@
 						"The quori's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell charm person}"
+						"{@spell 魅惑人類}"
 					],
 					"daily": {
 						"1": [
-							"{@spell fear}"
+							"{@spell 恐懼術}"
 						]
 					},
 					"ability": "cha"
@@ -4166,7 +4166,7 @@
 					"name": "Possession {@recharge}",
 					"entries": [
 						"One humanoid that the quori can see within 5 feet of it must succeed on a {@dc 14} Charisma saving throw or be possessed by the quori; the quori then disappears, and the target is {@condition incapacitated} and loses control of its body. The quori now controls the body but doesn't deprive the target of awareness. The quori can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
-						"The possession lasts until the body drops to 0 hit points, the quori ends it as a bonus action, or the quori is forced out by an effect like the {@spell dispel evil and good} spell. When the possession ends, the quori reappears in an unoccupied space within 5 feet of the body. The target is immune to this quori's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+						"The possession lasts until the body drops to 0 hit points, the quori ends it as a bonus action, or the quori is forced out by an effect like the {@spell 反制善惡} spell. When the possession ends, the quori reappears in an unoccupied space within 5 feet of the body. The target is immune to this quori's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -4281,64 +4281,64 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell mending}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 修復術}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bless}",
-								"{@spell command}",
-								"{@spell create or destroy water}"
+								"{@spell 祝福術}",
+								"{@spell 命令術}",
+								"{@spell 造水/枯水術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell augury}",
-								"{@spell calm emotions}",
-								"{@spell hold person}"
+								"{@spell 卜筮}",
+								"{@spell 安定心神}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell daylight}",
-								"{@spell dispel magic}",
-								"{@spell spirit guardians}"
+								"{@spell 晝明術}",
+								"{@spell 解除魔法}",
+								"{@spell 靈體守衛}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell divination}",
-								"{@spell guardian of faith}"
+								"{@spell 放逐術}",
+								"{@spell 預言術}",
+								"{@spell 虔誠守衛}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell dispel evil and good}",
-								"{@spell flame strike} (see \"Actions\" below)",
-								"{@spell scrying}"
+								"{@spell 反制善惡}",
+								"{@spell 焰擊術} (see \"Actions\" below)",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell forbiddance}",
-								"{@spell planar ally}"
+								"{@spell 禁制術}",
+								"{@spell 異界盟友}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell plane shift}"
+								"{@spell 異界傳送}"
 							]
 						}
 					},
@@ -5245,12 +5245,12 @@
 						"The rakshasa's innate spellcasting ability is Charisma (spell save {@dc 11}). The rakshasa can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect thoughts}",
-						"{@spell disguise self}"
+						"{@spell 偵測思想}",
+						"{@spell 易容術}"
 					],
 					"daily": {
 						"1": [
-							"{@spell shield}"
+							"{@spell 護盾術}"
 						]
 					},
 					"ability": "cha"

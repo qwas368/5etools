@@ -526,7 +526,7 @@
 									"id": "88a",
 									"entries": [
 										"The stone chest's outer lid is carved with the face of a dragon. A character who examines the chest and succeeds on a DC 12 Wisdom ({@skill Perception}) check finds pin-sized openings in the dragon's mouth that contain a blue powder. The powder can be removed with a successful DC 15 Dexterity check using thieves' tools. A character who fails this check must succeed on a DC 11 Constitution saving throw or contract frigid woe (see the \"{@book Eiselcross|EGW|4}\" section of chapter 3).",
-										"A {@spell detect magic} spell reveals that the chest radiates an aura of evocation magic. When a creature touches the chest without speaking a prayer to Tiamat, a gust of wind escapes the dragon's mouth. If the blue powder is still in the dragon's mouth, it forms a cloud that fills a 15-foot cube in front of the chest. Each creature within the area must succeed on a DC 11 Constitution saving throw or contract frigid woe."
+										"A {@spell 偵測魔法} spell reveals that the chest radiates an aura of evocation magic. When a creature touches the chest without speaking a prayer to Tiamat, a gust of wind escapes the dragon's mouth. If the blue powder is still in the dragon's mouth, it forms a cloud that fills a 15-foot cube in front of the chest. Each creature within the area must succeed on a DC 11 Constitution saving throw or contract frigid woe."
 									]
 								},
 								{
@@ -707,7 +707,7 @@
 									"name": "Stone Chest",
 									"id": "89d",
 									"entries": [
-										"A {@spell detect magic} spell reveals that the chest radiates an aura of conjuration magic. When an item is placed in the chest, the Buyer can teleport it to secret locations in Uthodurn or its outpost of Palebank Village, with those locations known only to the authorities of those settlements."
+										"A {@spell 偵測魔法} spell reveals that the chest radiates an aura of conjuration magic. When an item is placed in the chest, the Buyer can teleport it to secret locations in Uthodurn or its outpost of Palebank Village, with those locations known only to the authorities of those settlements."
 									]
 								}
 							]
@@ -883,7 +883,7 @@
 									"name": "Chests",
 									"id": "8ab",
 									"entries": [
-										"Stone chests two feet on each side are built into the floors in several areas. A {@spell detect magic} spell reveals a faint aura of abjuration magic radiating from each chest. A chest has AC 17; 27 hit points; resistance to bludgeoning, piercing, and slashing damage; and immunity to poison and psychic damage.",
+										"Stone chests two feet on each side are built into the floors in several areas. A {@spell 偵測魔法} spell reveals a faint aura of abjuration magic radiating from each chest. A chest has AC 17; 27 hit points; resistance to bludgeoning, piercing, and slashing damage; and immunity to poison and psychic damage.",
 										"If an area's description notes a locked chest, the chest's lock can be picked with a successful DC 15 Dexterity check using thieves' tools or forced open with a successful DC 18 Strength check. {@creature Ferol Sal|EGW} (see {@adventure area S17|FS|0|S17. Ferol's Laboratory}) carries a master key that locks or unlocks all chests in Salsvault."
 									]
 								},
@@ -892,7 +892,7 @@
 									"name": "Doors and Walls",
 									"id": "8ac",
 									"entries": [
-										"Salsvault's heavy doors are made of black stone, and its walls are made of blue stone. A {@spell detect magic} spell reveals a faint aura of abjuration magic radiating from the doors and walls. Each door and each 10-foot section of wall has AC 17; 27 hit points; resistance to bludgeoning, piercing, and slashing damage; and immunity to poison and psychic damage.",
+										"Salsvault's heavy doors are made of black stone, and its walls are made of blue stone. A {@spell 偵測魔法} spell reveals a faint aura of abjuration magic radiating from the doors and walls. Each door and each 10-foot section of wall has AC 17; 27 hit points; resistance to bludgeoning, piercing, and slashing damage; and immunity to poison and psychic damage.",
 										"If an area's description notes a locked door, the lock can be picked with a successful DC 15 Dexterity check using thieves' tools, or the door can be forced open with a successful DC 18 Strength check. {@creature Ferol Sal|EGW} (see {@adventure area S17|FS|0|S17. Ferol's Laboratory}) carries a master key that locks or unlocks all the doors in Salsvault."
 									]
 								},
@@ -917,7 +917,7 @@
 									"name": "Light",
 									"id": "8af",
 									"entries": [
-										"Unless otherwise noted, wall sconces with {@spell continual flame} spells cast on them brightly light the interior of Salsvault."
+										"Unless otherwise noted, wall sconces with {@spell 不滅明焰} spells cast on them brightly light the interior of Salsvault."
 									]
 								},
 								{
@@ -982,7 +982,7 @@
 										"The heavy stone walls of this room dampen the cold and the howling wind outside. An inscription in what looks like Draconic runes is carved into the east wall."
 									]
 								},
-								"The inscription is in an archaic version of Draconic that was spoken in ancient Aeor. It can be read by any character who can read Draconic with a few minutes of study, or by anyone with access to a {@spell comprehend languages} spell or similar magic. The message reads: \"Welcome to Salsvault! Visitors, please wait here for an escort, and DO NOT TOUCH ANYTHING WITHOUT PERMISSION.\"",
+								"The inscription is in an archaic version of Draconic that was spoken in ancient Aeor. It can be read by any character who can read Draconic with a few minutes of study, or by anyone with access to a {@spell 通曉語言} spell or similar magic. The message reads: \"Welcome to Salsvault! Visitors, please wait here for an escort, and DO NOT TOUCH ANYTHING WITHOUT PERMISSION.\"",
 								"If the characters make any noise louder than a whisper in this chamber, the suits of animated armor in {@adventure area S3|FS|0|S3. Animated Armor Laboratory} come to investigate.",
 								{
 									"type": "entries",
@@ -1101,7 +1101,7 @@
 									"name": "Trapped Door",
 									"id": "8c6",
 									"entries": [
-										"A {@spell detect magic} spell reveals an aura of conjuration magic radiating from the locked door to area S5. When a creature makes a failed attempt to pick the door's lock, or attacks or attempts to force the door open, that creature is teleported into the middle of {@adventure area S15|FS|0|S15. Animated Weapon Storage}.",
+										"A {@spell 偵測魔法} spell reveals an aura of conjuration magic radiating from the locked door to area S5. When a creature makes a failed attempt to pick the door's lock, or attacks or attempts to force the door open, that creature is teleported into the middle of {@adventure area S15|FS|0|S15. Animated Weapon Storage}.",
 										"A character who searches the door and succeeds on a DC 13 Intelligence ({@skill Investigation}) check finds an archaic Draconic word for \"disappear\" carved in tiny letters near the foot of the door on both sides. With a successful DC 10 Intelligence ({@skill Arcana}) check, a character senses that the inscription is connected to a trap. Scratching out either inscription with a tool or a weapon causes the trap to stop functioning."
 									]
 								}
@@ -1237,7 +1237,7 @@
 									"name": "Desk",
 									"id": "8d6",
 									"entries": [
-										"Any search of the desk turns up a bottle of dried ink, several used quills, five sheets of blank parchment, and a piece of paper with a faded message written on it in archaic Draconic. A character who understands Draconic can spend a few minutes to piece together the meaning of the note, or it can be deciphered with a {@spell comprehend languages} spell or similar magic. The note reads:",
+										"Any search of the desk turns up a bottle of dried ink, several used quills, five sheets of blank parchment, and a piece of paper with a faded message written on it in archaic Draconic. A character who understands Draconic can spend a few minutes to piece together the meaning of the note, or it can be deciphered with a {@spell 通曉語言} spell or similar magic. The note reads:",
 										{
 											"type": "insetReadaloud",
 											"id": "8d7",
@@ -1323,7 +1323,7 @@
 									"name": "Treasure",
 									"id": "8e0",
 									"entries": [
-										"A character with a passive Wisdom ({@skill Perception}) score of 12 or higher, or one who succeeds on a DC 12 Wisdom ({@skill Perception}) check, notices a watertight scroll case floating in the water. The case holds two {@item Spell Scroll||spell scrolls} of {@spell detect magic}."
+										"A character with a passive Wisdom ({@skill Perception}) score of 12 or higher, or one who succeeds on a DC 12 Wisdom ({@skill Perception}) check, notices a watertight scroll case floating in the water. The case holds two {@item Spell Scroll||spell scrolls} of {@spell 偵測魔法}."
 									]
 								}
 							]

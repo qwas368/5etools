@@ -15053,7 +15053,7 @@
 							"page": 136,
 							"entries": [
 								"一些魔法物品與某些非魔法物品非常相似而難以鑑別，而另一些魔法物品則毫不掩飾的散發著自己的魔法性質。無論魔法物品的外觀如何，處理這些物品的角色都會感覺到其本身的非凡之處。不過你還是必須進行某些處理才能獲知一件魔法物品的屬性。",
-								"法術鑑定術{@spell identify}是揭曉物品屬性最快捷的方法。另一種方法是讓一名角色在一次短休過程中對該魔法物品維持專注，並同時保持與該物品進行物理接觸。休息完成後，該角色將獲知該物品的屬性並知曉其使用方式。藥水則較為例外，稍微嚐一下味道就可以知曉這是什麼藥水。",
+								"法術鑑定術{@spell 鑑定術}是揭曉物品屬性最快捷的方法。另一種方法是讓一名角色在一次短休過程中對該魔法物品維持專注，並同時保持與該物品進行物理接觸。休息完成後，該角色將獲知該物品的屬性並知曉其使用方式。藥水則較為例外，稍微嚐一下味道就可以知曉這是什麼藥水。",
 								"有時候，魔法物品也會帶著一些與其屬性相關的線索。激活戒指的命令語可能用細小的字符銘刻在戒指的內側，羽毛造型的設計可能表明這是一枚羽落戒指ring of feather falling。",
 								"穿戴或試驗物品也可以獲得與其屬性相關的提示。例如，如果一名角色戴上了跳躍戒指ring of jumping，你可以說\"你踏步時感覺有種奇異的彈跳力。\"也許該角色隨後會試著上下跳躍來感覺會發生何時，而此時你可以告訴該角色他跳出非比尋常的高度。",
 								{
@@ -22182,15 +22182,15 @@
 									"rows": [
 										[
 											"1",
-											"{@bold Lose an Eye.} You have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the {@spell regenerate} spell can restore the lost eye. If you have no eyes left after sustaining this injury, you're {@condition blinded}."
+											"{@bold Lose an Eye.} You have disadvantage on Wisdom (Perception) checks that rely on sight and on ranged attack rolls. Magic such as the {@spell 再生術} spell can restore the lost eye. If you have no eyes left after sustaining this injury, you're {@condition blinded}."
 										],
 										[
 											"2",
-											"{@bold Lose an Arm or a Hand.} You can no longer hold anything with two hands, and you can hold only a single object at a time. Magic such as the {@spell regenerate} spell can restore the lost appendage."
+											"{@bold Lose an Arm or a Hand.} You can no longer hold anything with two hands, and you can hold only a single object at a time. Magic such as the {@spell 再生術} spell can restore the lost appendage."
 										],
 										[
 											"3",
-											"{@bold Lose a Foot or Leg.} Your speed on foot is halved, and you must use a cane or crutch to move unless you have a peg leg or other prosthesis. You fall {@condition prone} after using the Dash action. You have disadvantage on Dexterity checks made to balance. Magic such as the {@spell regenerate} spell can restore the lost appendage."
+											"{@bold Lose a Foot or Leg.} Your speed on foot is halved, and you must use a cane or crutch to move unless you have a peg leg or other prosthesis. You fall {@condition prone} after using the Dash action. You have disadvantage on Dexterity checks made to balance. Magic such as the {@spell 再生術} spell can restore the lost appendage."
 										],
 										[
 											"4",
@@ -22206,7 +22206,7 @@
 										],
 										[
 											"11-13",
-											"{@bold Horrible Scar.} You are disfigured to the extent that the wound can't be easily concealed. You have disadvantage on Charisma (Persuasion) checks and advantage on Charisma (Intimidation) checks. Magical healing of 6th level or higher, such as {@spell heal} 和 {@spell regenerate}, removes the scar."
+											"{@bold Horrible Scar.} You are disfigured to the extent that the wound can't be easily concealed. You have disadvantage on Charisma (Persuasion) checks and advantage on Charisma (Intimidation) checks. Magical healing of 6th level or higher, such as {@spell 治癒術} 和 {@spell 再生術}, removes the scar."
 										],
 										[
 											"14-16",
@@ -22214,7 +22214,7 @@
 										],
 										[
 											"17-20",
-											"{@bold Minor Scar.} The scar doesn't have any adverse effect. Magical healing of 6th level or higher, such as {@spell heal} 和 {@spell regenerate}, removes the scar."
+											"{@bold Minor Scar.} The scar doesn't have any adverse effect. Magical healing of 6th level or higher, such as {@spell 治癒術} 和 {@spell 再生術}, removes the scar."
 										]
 									]
 								},
@@ -26585,7 +26585,7 @@
 										],
 										[
 											"3",
-											"{@spell Blade barrier} blocks passage"
+											"{@spell 劍刃障壁} blocks passage"
 										],
 										[
 											"4-8",
@@ -26617,11 +26617,11 @@
 										],
 										[
 											"19",
-											"{@spell Wall of fire} blocks passage"
+											"{@spell 火牆術} blocks passage"
 										],
 										[
 											"20",
-											"{@spell Wall of force} blocks passage"
+											"{@spell 力牆術} blocks passage"
 										]
 									]
 								}
@@ -26736,7 +26736,7 @@
 										],
 										[
 											"17-19",
-											"Touching an object triggers a {@spell disintegrate} spell"
+											"Touching an object triggers a {@spell 解離術} spell"
 										],
 										[
 											"20-23",
@@ -26748,7 +26748,7 @@
 										],
 										[
 											"28-30",
-											"Touching an object triggers a {@spell flesh to stone} spell"
+											"Touching an object triggers a {@spell 石化術} spell"
 										],
 										[
 											"31-33",
@@ -26764,7 +26764,7 @@
 										],
 										[
 											"40-43",
-											"{@spell Glyph of warding}"
+											"{@spell 守衛銘文}"
 										],
 										[
 											"44-46",
@@ -26772,7 +26772,7 @@
 										],
 										[
 											"47-49",
-											"{@spell Lightning bolt} shoots from wall or object"
+											"{@spell 閃電束} shoots from wall or object"
 										],
 										[
 											"50-52",
@@ -26816,7 +26816,7 @@
 										],
 										[
 											"85-88",
-											"{@spell Thunderwave} knocks characters into a pit or spikes"
+											"{@spell 雷鳴波} knocks characters into a pit or spikes"
 										],
 										[
 											"89-91",
@@ -26828,7 +26828,7 @@
 										],
 										[
 											"95-97",
-											"{@spell Symbol}"
+											"{@spell 徽記術}"
 										],
 										[
 											"98-100",
@@ -26994,11 +26994,11 @@
 										],
 										[
 											"33-35",
-											"{@spell Magic mouth} speaks a riddle"
+											"{@spell 魔嘴術} speaks a riddle"
 										],
 										[
 											"36-38",
-											"{@spell Confusion} (targets all creatures within 10 ft.)"
+											"{@spell 困惑術} (targets all creatures within 10 ft.)"
 										],
 										[
 											"39-41",
@@ -27014,7 +27014,7 @@
 										],
 										[
 											"48-50",
-											"Casts {@spell geas} on the characters"
+											"Casts {@spell 指使術} on the characters"
 										],
 										[
 											"51-53",
@@ -27042,7 +27042,7 @@
 										],
 										[
 											"69-71",
-											"Casts {@spell polymorph} on the characters (lasts 1 hour)"
+											"Casts {@spell 變形術} on the characters (lasts 1 hour)"
 										],
 										[
 											"72-75",
@@ -27062,7 +27062,7 @@
 										],
 										[
 											"85-87",
-											"Casts {@spell suggestion} on the characters"
+											"Casts {@spell 暗示術} on the characters"
 										],
 										[
 											"88-90",

@@ -358,7 +358,7 @@
 							"id": "00f",
 							"entries": [
 								"Eberron is rich in villains, from two-bit hoods to continental masterminds. It might be a long time before you're ready to face the sinister leader behind the Order of the Emerald Claw in battle. But part of the flavor of pulp adventure includes recurring villains who closely match the heroes\u2014rivals who advance in power as you do.",
-								"To create a compelling villain, the DM and players might develop a villain's backstory together. A DM might ask a player: {@i When you fought in the Last War, Halas Martain served in your unit until he betrayed you. What did he do, exactly?} Likewise, when a pulp villain appears to die, they can devise remarkable escapes from death. Perhaps Halas had a ring that cast an illusion of his death while stabilizing him or cast {@spell feather fall} when he leapt from that tower in Sharn. A DM could engage the players in determining the answer: {@i It's Halas Martain, all right. How do you think he survived your last encounter?} This collaboration can produce a compelling story and a sense of investment in the world."
+								"To create a compelling villain, the DM and players might develop a villain's backstory together. A DM might ask a player: {@i When you fought in the Last War, Halas Martain served in your unit until he betrayed you. What did he do, exactly?} Likewise, when a pulp villain appears to die, they can devise remarkable escapes from death. Perhaps Halas had a ring that cast an illusion of his death while stabilizing him or cast {@spell 羽落術} when he leapt from that tower in Sharn. A DM could engage the players in determining the answer: {@i It's Halas Martain, all right. How do you think he survived your last encounter?} This collaboration can produce a compelling story and a sense of investment in the world."
 							]
 						}
 					]
@@ -537,7 +537,7 @@
 					"id": "016",
 					"entries": [
 						"The Five Nations were built on a magical foundation. To them, magic is a form of science, which can be studied and taught. Nevertheless, few people possess the skill required to become a wizard or an artificer, and high-level magic remains rare. Resurrection and teleportation aren't part of everyday life, but citizens harness lesser effects and use them for the common good.",
-						"Artisans called magewrights provide much of this magic. Compared to a wizard or an artificer, a magewright's knowledge of magic is narrow: a locksmith might master the {@spell arcane lock} and {@spell knock} spells to supplement the use of physical tools; a magewright healer could cast {@spell lesser restoration} and {@spell cure wounds} in addition to using healer's kits and the {@skill Medicine} skill. A magewright's casting is also slow and expensive: they typically cast their spells as rituals. They are artisans, not adventurers, and the prosperity of the Five Nations was built on their foundation.",
+						"Artisans called magewrights provide much of this magic. Compared to a wizard or an artificer, a magewright's knowledge of magic is narrow: a locksmith might master the {@spell 祕法鎖} and {@spell 敲擊術} spells to supplement the use of physical tools; a magewright healer could cast {@spell 次級復原術} and {@spell 治療傷勢} in addition to using healer's kits and the {@skill Medicine} skill. A magewright's casting is also slow and expensive: they typically cast their spells as rituals. They are artisans, not adventurers, and the prosperity of the Five Nations was built on their foundation.",
 						"Game statistics are given for magewrights in {@book chapter 6|ERLW|13}, including how much it costs them to cast a spell of 1st level or higher. In chapter 2, prices are given for magewright services in the city of Sharn, but those prices can be used elsewhere in the world as well.",
 						{
 							"type": "entries",
@@ -557,7 +557,7 @@
 							"id": "018",
 							"entries": [
 								"The Courier's Guild of House Orien operates a mail service, carrying messages and packages across Khorvaire by horse and the house's lightning rail. Sending a letter by mail is inexpensive; sending a package or a message by way of a courier is more secure but more expensive.",
-								"If security is particularly important, House Sivis can protect written messages using magic, such as the {@spell illusory script} spell, and House Kundarak can secure packages with the {@spell glyph of warding} spell.",
+								"If security is particularly important, House Sivis can protect written messages using magic, such as the {@spell 迷幻手稿} spell, and House Kundarak can secure packages with the {@spell 守衛銘文} spell.",
 								"The gnomes of House Sivis also maintain a network of {@item speaking stone|ERLW|speaking stones} (described in {@book chapter 5|ERLW|12}) to facilitate instantaneous communication across long distances. Short messages pass from one stone to another one within a network of message stations.",
 								"The Communication and Security Services table shows typical prices.",
 								{
@@ -573,7 +573,7 @@
 									],
 									"rows": [
 										[
-											"{@spell Arcane lock} (House Kundarak)",
+											"{@spell 祕法鎖} (House Kundarak)",
 											"20 gp"
 										],
 										[
@@ -581,11 +581,11 @@
 											"1 sp per mile"
 										],
 										[
-											"{@spell Glyph of warding} (House Kundarak)",
+											"{@spell 守衛銘文} (House Kundarak)",
 											"350 gp"
 										],
 										[
-											"{@spell Illusory script} (House Sivis)",
+											"{@spell 迷幻手稿} (House Sivis)",
 											"15 gp"
 										],
 										[
@@ -610,7 +610,7 @@
 							"page": 10,
 							"id": "019",
 							"entries": [
-								"In the cities of Khorvaire, magic provides a host of minor conveniences. {@item Everbright lantern|ERLW|Everbright lanterns} (described in {@book chapter 5|ERLW|12}) light the streets. A chef heats a pot of stew with a whispered incantation, while magic amplifies a town crier's voice. The various effects produced by {@spell prestidigitation}\u2014heating, cooling, cleaning, and minor illusion\u2014all enhance daily life in the cities."
+								"In the cities of Khorvaire, magic provides a host of minor conveniences. {@item Everbright lantern|ERLW|Everbright lanterns} (described in {@book chapter 5|ERLW|12}) light the streets. A chef heats a pot of stew with a whispered incantation, while magic amplifies a town crier's voice. The various effects produced by {@spell 魔法技倆}\u2014heating, cooling, cleaning, and minor illusion\u2014all enhance daily life in the cities."
 							]
 						},
 						{
@@ -629,7 +629,7 @@
 							"page": 10,
 							"id": "01b",
 							"entries": [
-								"The dragonmarked House Jorasco maintains houses of healing across Khorvaire. The simplest service is the expert application of the {@skill Medicine} skill. For those with desperate need and gold to pay, most Jorasco outposts can provide {@spell lesser restoration}; the best healers can also provide {@spell greater restoration}. In the finest Jorasco enclaves, it's even possible to raise the dead.",
+								"The dragonmarked House Jorasco maintains houses of healing across Khorvaire. The simplest service is the expert application of the {@skill Medicine} skill. For those with desperate need and gold to pay, most Jorasco outposts can provide {@spell 次級復原術}; the best healers can also provide {@spell 高等復原術}. In the finest Jorasco enclaves, it's even possible to raise the dead.",
 								"The Healing Services table summarizes typical prices for the services provided by House Jorasco.",
 								{
 									"type": "table",
@@ -652,23 +652,23 @@
 											"1 gp per day"
 										],
 										[
-											"{@spell Cure wounds}",
+											"{@spell 治療傷勢}",
 											"25 gp per level of the spell"
 										],
 										[
-											"{@spell Lesser restoration}",
+											"{@spell 次級復原術}",
 											"50 gp"
 										],
 										[
-											"{@spell Remove curse}",
+											"{@spell 移除詛咒}",
 											"75 gp"
 										],
 										[
-											"{@spell Greater restoration}",
+											"{@spell 高等復原術}",
 											"150 gp"
 										],
 										[
-											"{@spell Raise dead}",
+											"{@spell 喚醒死者}",
 											"750 gp"
 										]
 									]
@@ -740,7 +740,7 @@
 											"5 mph"
 										],
 										[
-											"{@spell Teleportation circle} (House Orien)",
+											"{@spell 傳送法陣} (House Orien)",
 											"2,500 gp",
 											"Instant"
 										]
@@ -1239,7 +1239,7 @@
 										],
 										[
 											"2",
-											"You have an anonymous contact who sends you missions via the {@spell sending} spell. When you do as you're asked, you receive handsome rewards."
+											"You have an anonymous contact who sends you missions via the {@spell 短訊術} spell. When you do as you're asked, you receive handsome rewards."
 										],
 										[
 											"3",
@@ -2459,7 +2459,7 @@
 								"{@b Leader}: Ulara d'Jorasco",
 								"{@b Headquarters}: Vedkyar Enclave (Vedykar, Karrnath)",
 								"The Healer's Guild provides a vital service to Khorvaire, and the Last War ensured there was great need for healers. The leader of the guild, Baron Ulara d'Jorasco, is much beloved in northwestern Khorvaire for her instrumental role in combating an epidemic in that region a decade ago, and Jorasco medics served in every nation's army during the war.",
-								"The guild runs schools that teach medicine, as well as houses of healing that provide both mundane and magical services. If it could save a life, it's probably marked by the House Jorasco griffon emblem, and it will come with a cost. If you have the gold, Jorasco healers can remove a disease instantly with {@spell lesser restoration}. If you can't afford such a service, they will treat you with mundane techniques. House Jorasco is also the source of {@item Potion of Healing||potions of healing}. While many criticize Jorasco's demands for payment, the house maintains that it's not about greed; it's about ensuring the prosperity of the house, so they can continue to help future generations.",
+								"The guild runs schools that teach medicine, as well as houses of healing that provide both mundane and magical services. If it could save a life, it's probably marked by the House Jorasco griffon emblem, and it will come with a cost. If you have the gold, Jorasco healers can remove a disease instantly with {@spell 次級復原術}. If you can't afford such a service, they will treat you with mundane techniques. House Jorasco is also the source of {@item Potion of Healing||potions of healing}. While many criticize Jorasco's demands for payment, the house maintains that it's not about greed; it's about ensuring the prosperity of the house, so they can continue to help future generations.",
 								"While the public face of Jorasco is that of the healer, there are rumors that the house engaged in disturbing experiments during the Last War, working with House Vadalis to develop biological weapons and new creatures. A Jorasco heir has to decide if they want to investigate these rumors."
 							]
 						},
@@ -5626,7 +5626,7 @@
 											"entries": [
 												"The {@i Korranberg Chronicle} is widely known and respected as a source of balanced news coverage. As such, it has friends in many places, including some in positions of power. Some of the {@i Chronicle}'s closest allies come from the following groups:",
 												"{@b House Orien}. House Orien distributes the {@i Chronicle} along its mail and lightning rail runs across Khorvaire, helping the newspaper reach a huge audience. Employees of the {@i Chronicle} can travel on lightning rail coaches at a discounted rate of 15 cp/mile (instead of the usual 2 sp/mile).",
-												"{@b House Sivis}. The newspaper also cooperates closely with House Sivis to facilitate communication between the main office and the field offices, as well as between reporters and their editors. The house bills the {@i Chronicle} directly for communications using {@item speaking stone|ERLW|speaking stones} or {@spell sending} spells directed to the newspaper's main office.",
+												"{@b House Sivis}. The newspaper also cooperates closely with House Sivis to facilitate communication between the main office and the field offices, as well as between reporters and their editors. The house bills the {@i Chronicle} directly for communications using {@item speaking stone|ERLW|speaking stones} or {@spell 短訊術} spells directed to the newspaper's main office.",
 												"{@b Zilargo}. The gnome nation of Zilargo is generally friendly to the newspaper. The senior editors, publisher, and owners of the {@i Chronicle} are influential people in the city of Korranberg and Zilargo as a whole. In extreme circumstances Zilargo officials might be persuaded to advocate for the newspaper's employees."
 											]
 										},
@@ -6550,7 +6550,7 @@
 							"entries": [
 								"Regardless of your Intelligence score, as an Aundairian you're sure you're the smartest person in the room. Consider the following characteristics for your Aundairian:",
 								"{@b Arcane Talent}. If you're not going to play a magic-using class, consider creating a high elf or a human with the Magic Initiate feat. Whether you favor damage-dealing cantrips or more utilitarian ones, every Aundairian should know a little magic.",
-								"{@b Magic Beats Mundane}. Why use your hand when you could use {@spell mage hand}? Why strain your muscles tugging on a bowstring when you could use a wand?",
+								"{@b Magic Beats Mundane}. Why use your hand when you could use {@spell 法師之手}? Why strain your muscles tugging on a bowstring when you could use a wand?",
 								"{@b Show Some Style}. Don't settle for common clothes and a squalid meal when you could wear {@item glamerweave|ERLW} (see {@book chapter 5|ERLW|12}) and drink the finest wine. If you're a fighter, focus on finesse instead of crude strength. And never miss an opportunity for a clever quip."
 							]
 						},
@@ -7201,7 +7201,7 @@
 									"items": [
 										"The Towering Wood is vast and untamed. The Wardens of the Wood seek to protect travelers, but swathes of forest remain entirely untouched by human or shifter. Such areas could hold giant beasts never seen in the outside world, or relics from a previous age\u2014artifacts or ruins created by demons or the terrifying daelkyr.",
 										"The fey have a strong presence in the Towering Wood. Even outside the fey stronghold of the Twilight Demesne, manifest zones tied to Thelanis (see {@book chapter 4|ERLW|5|Eldeen Reaches}) allow passage between worlds. The Eldeen Reaches are a logical origin for a character with ties to the fey.",
-										"Druidic magic is a vital tool in the Eldeen Reaches. Residents use animal messengers to carry communications between villages, and beasts perform vital services. {@spell Goodberry} wine takes the place of House Vadalis healing. Communities include awakened animals and plants as members."
+										"Druidic magic is a vital tool in the Eldeen Reaches. Residents use animal messengers to carry communications between villages, and beasts perform vital services. {@spell 神莓術} wine takes the place of House Vadalis healing. Communities include awakened animals and plants as members."
 									]
 								}
 							]
@@ -8175,7 +8175,7 @@
 						},
 						"Zilargo isn't a tyranny. Each major city has a democratically elected ruling council and a seat on the Triumvirate that governs the nation; the Trust reports to the Triumvirate. The Zil gnomes built this system, and they are quite happy with it. Their streets are safe, and as long as you play by the rules of the game, the Trust ignores you. Outsiders find this casual acceptance of preemptive assassination to be terrifying, but the Zil genuinely trust the Trust.",
 						"Zil gnomes live within a web of intrigues. The Trust condones their actions, as long as they break no laws and don't threaten the state or the status quo. A gnome charlatan can connive to steal a jewel mine from another gnome\u2014as long as the charlatan accomplishes the deed through cunning, negotiation, or deception rather than violence or outright theft, and as long as the mine stays in Zil hands. The same applies to adventurers planning schemes in Zilargo. Violence draws attention and deadly consequences from the Trust, but intrigue is perfectly acceptable.",
-						"The Trust is a network of spies and assassins. Most agents of the Trust simply pass information through dead drops; some estimate that a third of the nation works for the Trust in this capacity. When the Trust identifies a threat, it acts preemptively. Trust agents prefer to solve a problem without violence\u2014by sharing a piece of information or a whispered warning sent via a {@spell message} spell. But the Trust won't hesitate to eliminate a threat, whether with poison, spell, or blade. Typically, a target never sees the agent of their demise.",
+						"The Trust is a network of spies and assassins. Most agents of the Trust simply pass information through dead drops; some estimate that a third of the nation works for the Trust in this capacity. When the Trust identifies a threat, it acts preemptively. Trust agents prefer to solve a problem without violence\u2014by sharing a piece of information or a whispered warning sent via a {@spell 傳訊術} spell. But the Trust won't hesitate to eliminate a threat, whether with poison, spell, or blade. Typically, a target never sees the agent of their demise.",
 						{
 							"type": "entries",
 							"name": "Interesting Things About Zilargo",
@@ -10067,7 +10067,7 @@
 									]
 								},
 								"As befits the City of Towers, Sharn is also a city of bridges and balconies. These thoroughfares and outcroppings can be extremely narrow or comfortably wide. Although most of them are bounded by walls or railings, there's always a chance that during your time in Sharn, you or someone you know will go over the edge. So, how do residents cope with this risk?",
-								"Those who can afford it usually carry a {@item feather token|ERLW} as insurance. No token? Don't panic! Because of the maze of bridges and spans connecting the towers, there's an excellent chance that you won't fall more than a hundred feet before impacting on a lower bridge. Though this alone might seem like small comfort, it's also true that the major bridges in the upper and middle wards are enchanted with {@spell feather fall} effects that trigger automatically, keeping you from crushing an innocent passerby in your descent.",
+								"Those who can afford it usually carry a {@item feather token|ERLW} as insurance. No token? Don't panic! Because of the maze of bridges and spans connecting the towers, there's an excellent chance that you won't fall more than a hundred feet before impacting on a lower bridge. Though this alone might seem like small comfort, it's also true that the major bridges in the upper and middle wards are enchanted with {@spell 羽落術} effects that trigger automatically, keeping you from crushing an innocent passerby in your descent.",
 								"Many different outcomes could follow a lengthy fall. The Falling in Sharn table presents a few possibilities.",
 								{
 									"type": "table",
@@ -10087,7 +10087,7 @@
 										],
 										[
 											"2",
-											"You fall {@dice 3d6 × 10} feet before striking a bridge. A major bridge in an upper or a middle ward will have a {@spell feather fall} enchantment; otherwise, it's going to be a hard landing."
+											"You fall {@dice 3d6 × 10} feet before striking a bridge. A major bridge in an upper or a middle ward will have a {@spell 羽落術} enchantment; otherwise, it's going to be a hard landing."
 										],
 										[
 											"3",
@@ -10107,7 +10107,7 @@
 										],
 										[
 											"7",
-											"You can fly! Actually, a nearby wizard or artificer casts {@spell feather fall} to save you, but for a moment it felt like you can fly. And now the spellcaster wants payment."
+											"You can fly! Actually, a nearby wizard or artificer casts {@spell 羽落術} to save you, but for a moment it felt like you can fly. And now the spellcaster wants payment."
 										],
 										[
 											"8",
@@ -10123,7 +10123,7 @@
 							"page": 153,
 							"id": "31e",
 							"entries": [
-								"Need to get a message to someone? If you're not in a hurry, the Orien post has boxes throughout the city; you can mail a letter for 1 cp. Hiring a courier generally costs between 5 cp and 5 gp, depending on the size of the package and where you need it delivered. You can find Sivis message stations in almost every upper and middle ward, and if you absolutely have to contact someone instantly, the Sivis enclave in the Dragon Towers district (Middle Central) can perform a {@spell sending} spell for 200 gp.",
+								"Need to get a message to someone? If you're not in a hurry, the Orien post has boxes throughout the city; you can mail a letter for 1 cp. Hiring a courier generally costs between 5 cp and 5 gp, depending on the size of the package and where you need it delivered. You can find Sivis message stations in almost every upper and middle ward, and if you absolutely have to contact someone instantly, the Sivis enclave in the Dragon Towers district (Middle Central) can perform a {@spell 短訊術} spell for 200 gp.",
 								"House Tharashk has brought an innovation to message delivery in Sharn: the use of {@creature Gargoyle||gargoyles}. Tharashk has several of these creatures in its employ, and these flying couriers are a quick way to get a message across the city. If you spot a gargoyle without a burden, you can flag it down, and it costs 5 gp to deliver a letter or a small package."
 							]
 						},
@@ -10200,7 +10200,7 @@
 							"id": "323",
 							"entries": [
 								"House Jorasco operates houses of healing throughout the city, largely in the middle and upper wards. The Panaceum in Dragon Towers (Middle Central) is the primary Jorasco enclave. The houses' services use the prices in this book's introduction.",
-								"The Panaceum has an altar that can be used to perform {@spell raise dead}, but this service isn't without its risks. Sometimes the wrong spirit returns to a body, or malevolent ghosts or wraiths might escape from the netherworld along with the person being raised. Before the healers take gold to perform a resurrection, a Jorasco adept will first cast {@spell augury}. If this divination indicates looming disaster, the adept will reject the request.",
+								"The Panaceum has an altar that can be used to perform {@spell 喚醒死者}, but this service isn't without its risks. Sometimes the wrong spirit returns to a body, or malevolent ghosts or wraiths might escape from the netherworld along with the person being raised. Before the healers take gold to perform a resurrection, a Jorasco adept will first cast {@spell 卜筮}. If this divination indicates looming disaster, the adept will reject the request.",
 								"A few divine spellcasters in Sharn can raise the dead, notably the high priest of the Undying Court in Shae Lias. These devout clerics rarely sell their services, however, and the high priest would need a compelling reason to help someone who has different beliefs."
 							]
 						},
@@ -12502,7 +12502,7 @@
 							"id": "37f",
 							"entries": [
 								"Officers of the watch can levy fines on the spot when they catch culprits, which is the typical way that minor crimes are dealt with. For a serious offense, the perpetrator is taken to a garrison and held until a trial can be arranged. A criminal who is considered to be a serious flight risk will be taken to the most secure facility in Sharn\u2014the King's Citadel headquarters.",
-								"Typically, a prisoner's case comes to the attention of a local magistrate within {@dice 1d4} days. The magistrate reviews the facts of the case and asks the victim to confirm or deny their role in the crime while under the influence of a {@spell zone of truth} spell. The magistrate will then propose a punishment to the accused; if the offer is refused, the case goes to trial.",
+								"Typically, a prisoner's case comes to the attention of a local magistrate within {@dice 1d4} days. The magistrate reviews the facts of the case and asks the victim to confirm or deny their role in the crime while under the influence of a {@spell 誠實之域} spell. The magistrate will then propose a punishment to the accused; if the offer is refused, the case goes to trial.",
 								"Punishment for convicted criminals varies, but long-term imprisonment is quite rare. Prisoners who deemed to be too dangerous to be allowed to roam free are more likely to be executed than imprisoned. Typically, a long prison sentence is used only for criminals who can't be allowed to go free, but whose deaths would have negative diplomatic repercussions.",
 								"Fines are the typical form of punishment. The amount of a fine is generally based on the nature of the crime, but a magistrate has the right to increase a fine to ensure that it is an effective punishment. For example, a fine of 10 gp is crippling to a commoner but can be inconsequential to an adventurer or a member of the Aurum, and in such cases it will be increased. Also, the court can confiscate possessions in lieu of receiving payments in gold; you might not care about having to pay a fine of 100 gp, but having your grandfather's magic sword confiscated instead might sting. If a criminal can't afford to pay a fine, the sentence might be changed to hard labor\u2014or, in the case of adventurers, performing special services on behalf of the city or the Crown.",
 								"Other kinds of punishment include branding (generally in a visible location, warning others of your criminal actions), exile, or several magical measures: an ongoing curse, a period of induced blindness, and so on. A repeat offender might be declared an outlaw, which status is often indicated by a brand. An outlaw is stripped of the protection of the law, and anyone can take any action against them without fear of legal retribution."
@@ -13850,7 +13850,7 @@
 							"page": 196,
 							"id": "3af",
 							"entries": [
-								"All dreams occur in the plane of Dal Quor. When mortals sleep, their minds touch the plane and shape a shard of it. Normally, a dream is shaped by the memories and emotions of the dreamer. But the {@spell dream} spell and similar effects (such as a night hag's Nightmare Haunting) can influence a dream from the outside, to a specific and often sinister purpose. The quori are masters of using the {@spell dream} spell as a weapon to terrorize their foes.",
+								"All dreams occur in the plane of Dal Quor. When mortals sleep, their minds touch the plane and shape a shard of it. Normally, a dream is shaped by the memories and emotions of the dreamer. But the {@spell 託夢術} spell and similar effects (such as a night hag's Nightmare Haunting) can influence a dream from the outside, to a specific and often sinister purpose. The quori are masters of using the {@spell 託夢術} spell as a weapon to terrorize their foes.",
 								"It's possible for an entire adventure to take place in a dream. The trick with a dream adventure is ensuring that it feels meaningful, even consequential, and not just a waste of time. One of four basic approaches can help you do that:",
 								{
 									"type": "list",
@@ -15685,7 +15685,7 @@
 											"rows": [
 												[
 													"1",
-													"The creature has grown to an unusual size. You can either set its new size and alter its statistics using the guidelines in the {@book Dungeon Master's Guide|DMG}, or apply the enlarge effect of the {@spell enlarge/reduce} spell to it."
+													"The creature has grown to an unusual size. You can either set its new size and alter its statistics using the guidelines in the {@book Dungeon Master's Guide|DMG}, or apply the enlarge effect of the {@spell 變巨/縮小術} spell to it."
 												],
 												[
 													"2",
@@ -15746,11 +15746,11 @@
 												],
 												[
 													"4",
-													"The area is affected by a {@spell silence} spell."
+													"The area is affected by a {@spell 沉默術} spell."
 												],
 												[
 													"5",
-													"Each creature that enters the area is affected by an {@spell enlarge/reduce} spell, with an equal chance for each effect. The effect lasts until the creature leaves the area."
+													"Each creature that enters the area is affected by an {@spell 變巨/縮小術} spell, with an equal chance for each effect. The effect lasts until the creature leaves the area."
 												],
 												[
 													"6",
@@ -15758,7 +15758,7 @@
 												],
 												[
 													"7",
-													"All creatures are linked to every other creature in the area as if by the {@spell telepathy} spell."
+													"All creatures are linked to every other creature in the area as if by the {@spell 心靈感應} spell."
 												],
 												[
 													"8",
@@ -16565,7 +16565,7 @@
 										],
 										[
 											"4",
-											"Motes of {@spell continual flame} are spontaneously generated in this region, typically attached to some vegetation or minerals from the area. These flames persist even if they are removed from the region."
+											"Motes of {@spell 不滅明焰} are spontaneously generated in this region, typically attached to some vegetation or minerals from the area. These flames persist even if they are removed from the region."
 										]
 									]
 								}
@@ -16578,7 +16578,7 @@
 							"id": "421",
 							"entries": [
 								"Irian is the plane of light and hope, the wellspring of positive energy which is the foundation of light, life, and love. The regions of Irian reflect the idea of beginnings and of resurgent life: fertile lands untouched by any tool, glittering crystal forests, and thriving homesteads and communities. Angels dwell in a grand city reflecting the first days of a glorious empire. The sun never sets here.",
-								"Positive energy flows into Eberron from Irian, and the denizens of Irian believe that the simple fact of their existence helps the mortals of the Material Plane. The celestials of Irian are also those most likely to respond to {@spell planar ally} and similar spells.",
+								"Positive energy flows into Eberron from Irian, and the denizens of Irian believe that the simple fact of their existence helps the mortals of the Material Plane. The celestials of Irian are also those most likely to respond to {@spell 異界盟友} and similar spells.",
 								{
 									"type": "table",
 									"caption": "Irian Manifest Zone Features",
@@ -16797,7 +16797,7 @@
 										],
 										[
 											"3",
-											"Storms of whirling blades cut the sky during times of combat, randomly attacking the participants. The effect is the same as that of the {@spell cloud of daggers} spell, but the area and the damage might both increase."
+											"Storms of whirling blades cut the sky during times of combat, randomly attacking the participants. The effect is the same as that of the {@spell 匕首之雲} spell, but the area and the damage might both increase."
 										],
 										[
 											"4",
@@ -16833,7 +16833,7 @@
 										],
 										[
 											"2",
-											"Those with great will and fortitude who ascend a mountain peak in this area can try to bend the weather for miles around to their will, as if they had cast the {@spell control weather} spell."
+											"Those with great will and fortitude who ascend a mountain peak in this area can try to bend the weather for miles around to their will, as if they had cast the {@spell 操控天氣} spell."
 										],
 										[
 											"3",
@@ -17025,7 +17025,7 @@
 										"Piloting an elemental vessel requires effective communication between the pilot and the bound elemental. The elemental controls the vehicle's movement, and everything from basic propulsion to delicate maneuvering is dependent on the ability of the pilot to control the elemental. If the elemental is uncontrolled and not suppressed, the vehicle moves according to the elemental's whim until a pilot asserts control again.",
 										"A dragonmarked heir at the helm of a vessel can command the elemental easily. Without such a pilot, it's very difficult to control the vessel. A character who is touching either the Khyber dragonshard where the bound elemental is housed or the magic item at the vessel's helm can try to communicate with the elemental, but with no guarantee of success.",
 										"A character can make a DC 20 Charisma ({@skill Persuasion} or {@skill Intimidation}) check to persuade the elemental to cooperate or demand its obedience. On a successful check, the elemental obeys the character for 1 minute.",
-										"The {@spell dominate monster} spell can also enable a character without a dragonmark to control an elemental vessel, even wresting control away from a dragonmarked pilot. The {@spell charm monster|XGE} spell (found in {@book Xanathar's Guide to Everything|XGE}) also makes the elemental compliant to the caster's wishes, but the elemental remains obedient to the commands of a dragonmarked pilot at the helm."
+										"The {@spell 支配怪物} spell can also enable a character without a dragonmark to control an elemental vessel, even wresting control away from a dragonmarked pilot. The {@spell charm monster|XGE} spell (found in {@book Xanathar's Guide to Everything|XGE}) also makes the elemental compliant to the caster's wishes, but the elemental remains obedient to the commands of a dragonmarked pilot at the helm."
 									]
 								},
 								{
@@ -17034,7 +17034,7 @@
 									"page": 234,
 									"id": "434",
 									"entries": [
-										"Shattering the Khyber dragonshard that binds it can free an elemental, preventing the vehicle from moving. On most elemental vessels, the shard is sealed in a protective metal chest with 10 ({@dice 3d6}) hit points, usually made of iron (AC 19) but sometimes of mithral (AC 21) or adamantine (AC 23). The chest is often guarded with a {@spell glyph of warding} and housed in a room behind locked and possibly trapped doors. The shard itself has AC 17 and 10 ({@dice 3d6}) hit points."
+										"Shattering the Khyber dragonshard that binds it can free an elemental, preventing the vehicle from moving. On most elemental vessels, the shard is sealed in a protective metal chest with 10 ({@dice 3d6}) hit points, usually made of iron (AC 19) but sometimes of mithral (AC 21) or adamantine (AC 23). The chest is often guarded with a {@spell 守衛銘文} and housed in a room behind locked and possibly trapped doors. The shard itself has AC 17 and 10 ({@dice 3d6}) hit points."
 									]
 								}
 							]
@@ -17406,7 +17406,7 @@
 									"entries": [
 										"Every Gold Dragon Inn provides a standard menu of reliable services at reasonable rates. Prices are fixed (equal to those given in {@book chapter 5|PHB|4} of the {@book Player's Handbook|PHB}), and the quality of services is reliably modest, with some comfortable upgrades available. Every inn uses one of a small number of possible floor plans, and every inn's restaurant offers the same menu.",
 										"The size and number of guest rooms can vary from inn to inn: a small roadside inn has four rooms and a moderately sized common room, while a thriving inn in a large city has forty rooms, a restaurant, and a separate common room, with two stages for entertainment. Because the inns are owned by House Ghallanda, the buildings all include accommodations for halfling-sized guests as well as taller folk.",
-										"Because travelers often carry valuables with them, each inn has a heavy strongbox secured with an {@spell arcane lock} spell. To make a traveler's stay more enjoyable, perhaps even memorable, House Ghallanda has arranged with House Thuranni and House Phiarlan to employ guild-licensed entertainers at almost every Gold Dragon Inn.",
+										"Because travelers often carry valuables with them, each inn has a heavy strongbox secured with an {@spell 祕法鎖} spell. To make a traveler's stay more enjoyable, perhaps even memorable, House Ghallanda has arranged with House Thuranni and House Phiarlan to employ guild-licensed entertainers at almost every Gold Dragon Inn.",
 										"To populate an inn with some distinctive individuals, you can use the {@book Mysterious Passengers table|ERLW|10|Mysterious Passengers}."
 									]
 								},
@@ -18108,7 +18108,7 @@
 							"id": "44b",
 							"entries": [
 								"From the owners of incense-clouded dens to fast-talking street dealers, many entrepreneurs\u2014legitimate and otherwise\u2014make a profitable business selling narcotics in Sharn. The following drugs are just two of the most notorious substances available in the City of Towers and beyond.",
-								"{@b Dragon's Blood}. Introduced into Sharn by Daask, dragon's blood is a potent and highly addictive stimulant. In addition to inducing euphoria, it can enhance spellcasting ability or even temporarily imbue a user with the ability to cast sorcerer spells. The drug's effects are potentially dangerous and always unpredictable. This isn't something a player character should want to use; adventurers are more likely to interfere with Daask smugglers or deal with an addict who accidentally casts a {@spell fireball} in a crowded street. The specific effects of dragon's blood are up to you, but you can take inspiration from the {@table Wild Magic Surge|PHB} table in the {@book Player's Handbook|PHB}.",
+								"{@b Dragon's Blood}. Introduced into Sharn by Daask, dragon's blood is a potent and highly addictive stimulant. In addition to inducing euphoria, it can enhance spellcasting ability or even temporarily imbue a user with the ability to cast sorcerer spells. The drug's effects are potentially dangerous and always unpredictable. This isn't something a player character should want to use; adventurers are more likely to interfere with Daask smugglers or deal with an addict who accidentally casts a {@spell 火球術} in a crowded street. The specific effects of dragon's blood are up to you, but you can take inspiration from the {@table Wild Magic Surge|PHB} table in the {@book Player's Handbook|PHB}.",
 								"{@b Dreamlily}. A psychoactive liquid that smells and tastes like your favorite beverage, essence of dreamlily is a Sarlonan opiate. First imported to help manage pain during the Last War, it's now the most commonly abused substance in Sharn. Though dreamlily isn't illegal if used for medicinal purposes, it's heavily taxed, and thus most dreamlily is smuggled in and sold on the black market. Dreamlily dens can be found across the lower wards. Consuming dreamlily causes disorienting euphoria and brings about remarkable resistance to pain. A creature under the effects of dreamlily is {@condition poisoned} for 1 hour. While {@condition poisoned} in this way, the creature is immune to fear, and the first time it drops to 0 hit points without being killed outright, it drops to 1 hit point instead. A dose of dreamlily costs around 1 gp, or up to ten times that if purchased through legal channels. There are many varieties of the drug, however, and the duration or the price might vary accordingly."
 							]
 						},
@@ -19660,7 +19660,7 @@
 							"page": 281,
 							"id": "50d",
 							"entries": [
-								"This device emanates an antimagic field (same effects as the {@spell antimagic field} spell) in a radius of 1 to 3 miles. The field can be activated or deactivated as an action with a touch by its controller.",
+								"This device emanates an antimagic field (same effects as the {@spell 反魔法結界} spell) in a radius of 1 to 3 miles. The field can be activated or deactivated as an action with a touch by its controller.",
 								"The form that the device takes depends on the nature of its creator. The Ashbound druids despise unnatural magic, so a spell sink created by them might be a living artifact, such as a twisted tree that consumes the magical energy around it. Conversely, a spell sink created by a mad artificer might be a massive vessel composed of dragonshards and exotic metals.",
 								"A variant device called the spell siphon not only neutralizes magic but also absorbs all magical energy in the area, storing that power for a cataclysmic effect."
 							]
@@ -20093,7 +20093,7 @@
 								"{@b Damage Immunity}. Replace the living spell's damage immunity with immunity to the type (or types) of damage dealt by the chosen spell.",
 								"{@b Magical Strike}. Replace the damage that Magical Strike deals with one type of damage dealt by the chosen spell.",
 								"{@b Spell Mimicry}. Replace the effect of Spell Mimicry with the effect of the chosen spell. If that spell requires a saving throw, use spell save DC from the replaced spell, and if the spell involves an attack roll, use the attack bonus from the living spell's Magical Strike.",
-								"For example, if you turn {@spell fireball} (a 3rd-level spell) into a living spell, customize the {@creature living lightning bolt|ERLW}. The living fireball has immunity to fire damage, instead of lightning damage; deals fire damage with its Magical Strike; and replicates {@spell fireball} with Spell Mimicry."
+								"For example, if you turn {@spell 火球術} (a 3rd-level spell) into a living spell, customize the {@creature living lightning bolt|ERLW}. The living fireball has immunity to fire damage, instead of lightning damage; deals fire damage with its Magical Strike; and replicates {@spell 火球術} with Spell Mimicry."
 							],
 							"id": "02d"
 						}

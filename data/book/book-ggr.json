@@ -4793,7 +4793,7 @@
 									"name": "Sewers",
 									"page": 102,
 									"entries": [
-										"A vast, winding sewer network runs under the Tenth District, lit by {@spell continual flame} spells. Some of the tunnels are simply storm sewers, meant to carry rainwater (and the debris it washes from the streets) into great cisterns, where it is purified and sent into the pipes in the plumbing system that serves Ravnica's nicer neighborhoods. Others carry waste and refuse out of those neighborhoods, depositing it in different cisterns or dumping it into the subterranean oceans of the undercity."
+										"A vast, winding sewer network runs under the Tenth District, lit by {@spell 不滅明焰} spells. Some of the tunnels are simply storm sewers, meant to carry rainwater (and the debris it washes from the streets) into great cisterns, where it is purified and sent into the pipes in the plumbing system that serves Ravnica's nicer neighborhoods. Others carry waste and refuse out of those neighborhoods, depositing it in different cisterns or dumping it into the subterranean oceans of the undercity."
 									],
 									"id": "0e9"
 								},
@@ -4856,7 +4856,7 @@
 									"name": "Duskmantle",
 									"page": 102,
 									"entries": [
-										"The Dimir guildhall is protected by memory wards (glyphs of warding that store {@spell modify memory} spells) to ensure that few know of its existence. Those who are called there never remember what transpired, beyond what is necessary. Most assume that the place lies somewhere within Nightveil, but it could lie anywhere in the undercity."
+										"The Dimir guildhall is protected by memory wards (glyphs of warding that store {@spell 修改記憶} spells) to ensure that few know of its existence. Those who are called there never remember what transpired, beyond what is necessary. Most assume that the place lies somewhere within Nightveil, but it could lie anywhere in the undercity."
 									],
 									"id": "0ef"
 								},
@@ -8566,7 +8566,7 @@
 												],
 												[
 													"3",
-													"The area is affected by a {@spell guards and wards}{@i  spell}."
+													"The area is affected by a {@spell 銅牆鐵壁}{@i  spell}."
 												],
 												[
 													"4",
@@ -8578,7 +8578,7 @@
 												],
 												[
 													"6",
-													"Random sections of the area are affected by an {@spell antimagic field} spell."
+													"Random sections of the area are affected by an {@spell 反魔法結界} spell."
 												]
 											]
 										}
@@ -8738,7 +8738,7 @@
 										],
 										[
 											"3",
-											"A researcher trying to craft an antigravity alloy for a personal flight apparatus has created a number of {@spell reverse gravity} effects, and is now trapped in midair at the top of one."
+											"A researcher trying to craft an antigravity alloy for a personal flight apparatus has created a number of {@spell 重力反轉} effects, and is now trapped in midair at the top of one."
 										],
 										[
 											"4",
@@ -9877,7 +9877,7 @@
 										],
 										[
 											"5",
-											"A sage of the Gyre Clade accidentally creates an {@spell antimagic field} that slowly spreads over the neighborhood."
+											"A sage of the Gyre Clade accidentally creates an {@spell 反魔法結界} that slowly spreads over the neighborhood."
 										],
 										[
 											"6",
@@ -9939,7 +9939,7 @@
 						},
 						"A guild charm is a magical effect placed on an otherwise mundane item. Charms are often given to favored members of the guild\u2014those whose renown scores with their guilds have reached 10 or higher\u2014or those entrusted with important missions. A charm typically manifests as the guild's symbol emblazoned on an item that is worn or carried by the chosen creature.",
 						"A guild charm can be used only a certain number of times before it vanishes, and only by the creature upon which it was bestowed. If you use a charm to cast a spell, you can do so without expending a spell slot or providing any components. The spell's save DC is 15, its attack bonus is +7, and the spellcasting ability modifier for any spell effects is +4.",
-						"A charm can't be used in the area created by an {@spell antimagic field} spell or a similar effect. The guildmaster of the charm's guild can revoke the charm as an action, but otherwise the charm can't be removed from the object on which it was placed by anything short of divine intervention or a {@i wish} spell.",
+						"A charm can't be used in the area created by an {@spell 反魔法結界} spell or a similar effect. The guildmaster of the charm's guild can revoke the charm as an action, but otherwise the charm can't be removed from the object on which it was placed by anything short of divine intervention or a {@i wish} spell.",
 						"The charms associated with each guild are described below.",
 						{
 							"type": "list",
@@ -10996,12 +10996,12 @@
 											"type": "list",
 											"style": "list-hang-notitle",
 											"items": [
-												"Cantrips (at will): {@spell friends}, {@spell mage hand}, {@spell message}",
-												"1st level (4 slots): {@spell command}, {@spell ensnaring strike}, {@spell shield}",
-												"2nd level (3 slots): {@spell calm emotions}, {@spell hold person}, {@spell suggestion}",
-												"3rd level (3 slots): {@spell clairvoyance}, {@spell counterspell}, {@spell dispel magic}",
-												"4th level (3 slots): {@spell banishment}, {@spell divination}",
-												"5th level (1 slot): {@spell dominate person}"
+												"Cantrips (at will): {@spell 交友術}, {@spell 法師之手}, {@spell 傳訊術}",
+												"1st level (4 slots): {@spell 命令術}, {@spell 誘捕打擊}, {@spell 護盾術}",
+												"2nd level (3 slots): {@spell 安定心神}, {@spell 人類定身術}, {@spell 暗示術}",
+												"3rd level (3 slots): {@spell 銳眼術}, {@spell 反制法術}, {@spell 解除魔法}",
+												"4th level (3 slots): {@spell 放逐術}, {@spell 預言術}",
+												"5th level (1 slot): {@spell 支配人類}"
 											]
 										},
 										{
@@ -13626,7 +13626,7 @@
 											"items": [
 												"Fire erupts from the ground at up to four points of the DM's choice in the carnival. The fire lasts for 1 minute or until this action is used again. Each jet of flame is a 20-foot-tall cylinder with a 5-foot radius. Each creature in the cylinder when it first appears must make a DC 15 Dexterity saving throw, taking 10 ({@dice 3d6}) fire damage on a failed save, or half as much damage on a successful one. Any creature that starts its turn in the flames must also make the saving throw.",
 												"Whirling blades, spiked chains, or other implements of agony appear for a moment to menace {@dice 1d6} random creatures in a 20-foot cube. Each target must succeed on a DC 15 Dexterity saving throw or take 9 ({@dice 2d8}) force damage.",
-												"Blood splashes all creatures in a 20-foot-radius sphere centered on a point within the carnival. Each creature in that area becomes the target of a {@spell confusion} spell (save DC 15)."
+												"Blood splashes all creatures in a 20-foot-radius sphere centered on a point within the carnival. Each creature in that area becomes the target of a {@spell 困惑術} spell (save DC 15)."
 											]
 										}
 									],

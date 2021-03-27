@@ -577,7 +577,7 @@
 							"name": "Vanquish the Orc Raiders",
 							"id": "024",
 							"entries": [
-								"In the mining town of Blasingdell, the characters learn that orc raiders have been pillaging isolated farmsteads and camps in the hills north of the town. The local militia captured an orc warrior left for dead by its comrades and brought it back for questioning. Under the influence of a {@spell charm person} spell, the orc divulged the location of the monsters' lair, a lonely hill called the Stone Tooth. The mayor offers a bounty of 25 gp per orc, dead or alive, and the gratitude of the townsfolk to any who can permanently end the threat."
+								"In the mining town of Blasingdell, the characters learn that orc raiders have been pillaging isolated farmsteads and camps in the hills north of the town. The local militia captured an orc warrior left for dead by its comrades and brought it back for questioning. Under the influence of a {@spell 魅惑人類} spell, the orc divulged the location of the monsters' lair, a lonely hill called the Stone Tooth. The mayor offers a bounty of 25 gp per orc, dead or alive, and the gratitude of the townsfolk to any who can permanently end the threat."
 							]
 						},
 						{
@@ -1336,7 +1336,7 @@
 							]
 						},
 						"The door to {@area 10|078} is locked, but the key is inserted in the keyhole on this side. Burdug keeps the door closed because she wants to confine the stirges on the other side. (She calls the stirges her \"little stingies\" and occasionally captures one to use in her potions and brews.)",
-						"Burdug orders her two followers to engage intruders while she attempts to neutralize a dangerous-looking combatant with a command spell. Then she casts {@spell bless} on herself and the others, and finally casts {@spell spiritual weapon} before joining battle.",
+						"Burdug orders her two followers to engage intruders while she attempts to neutralize a dangerous-looking combatant with a command spell. Then she casts {@spell 祝福術} on herself and the others, and finally casts {@spell 靈體武器} before joining battle.",
 						"If the fight goes poorly, Burdug throws alchemist's fire (she has three flasks) and opens the door to {@area 10|078}, releasing the stirges. She takes advantage of the confusion, using more alchemist's fire if necessary, to escape and seek help.",
 						{
 							"type": "entries",
@@ -1869,9 +1869,9 @@
 							"id": "0ac",
 							"entries": [
 								"Kaarghaz is a 4th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). He knows the following sorcerer spells:",
-								"{@b Cantrips (at will}): {@spell fire bolt}, {@spell mage hand}, {@spell poison spray}, {@spell prestidigitation}, {@spell ray of frost}",
-								"{@b 1st level (6 slots}): {@spell burning hands}, {@spell shield}, {@spell sleep}",
-								"{@b 2nd level (3 slots}): {@spell invisibility}, {@spell scorching ray}"
+								"{@b Cantrips (at will}): {@spell 火焰箭}, {@spell 法師之手}, {@spell 毒氣噴灑}, {@spell 魔法技倆}, {@spell 冷凍射線}",
+								"{@b 1st level (6 slots}): {@spell 燃燒之手}, {@spell 護盾術}, {@spell 睡眠術}",
+								"{@b 2nd level (3 slots}): {@spell 隱形術}, {@spell 灼熱射線}"
 							]
 						},
 						"If the characters make a lot of noise or tip off their presence in some other way, Kaarghaz begins this encounter invisible (see below). Otherwise, read:",
@@ -1882,7 +1882,7 @@
 								"Behind the lizard, a hulking, scaly-skinned creature easily a foot taller than any of the others you've seen glares at you and snarls."
 							]
 						},
-						"If Kaarghaz is alerted to the party's approach, he casts {@spell invisibility} on himself before they enter. If he loses at least half his hit points, he tries to escape (using {@spell invisibility} if possible). If his escape succeeds, he soon afterward rounds up a war party of surviving troglodytes from other areas to track down and ambush the party.",
+						"If Kaarghaz is alerted to the party's approach, he casts {@spell 隱形術} on himself before they enter. If he loses at least half his hit points, he tries to escape (using {@spell 隱形術} if possible). If his escape succeeds, he soon afterward rounds up a war party of surviving troglodytes from other areas to track down and ambush the party.",
 						{
 							"type": "entries",
 							"name": "Negotiation",
@@ -2306,7 +2306,7 @@
 								"The water is about 5 feet deep and is tainted by disease. Anyone who drinks the water or wades into it is exposed and must succeed on a DC 10 Constitution saving throw to avoid infection. Symptoms manifest one day after exposure and include high fever, muscle spasms, and eventual paralysis."
 							]
 						},
-						"An infected creature suffers one level of {@condition exhaustion} when it finishes the first long rest it takes after being exposed. Whenever it finishes a long rest thereafter, it must make a DC 10 Constitution saving throw. On a failed save, the creature suffers another level of {@condition exhaustion}. On a successful save, its {@condition exhaustion} level is reduced by one. If its {@condition exhaustion} level reaches 5, the infected creature becomes paralyzed until the disease is cured or the effect is removed with a {@spell lesser restoration} spell or similar magic. If a successful saving throw reduces the infected creature's {@condition exhaustion} level to 0, the creature recovers from the disease.",
+						"An infected creature suffers one level of {@condition exhaustion} when it finishes the first long rest it takes after being exposed. Whenever it finishes a long rest thereafter, it must make a DC 10 Constitution saving throw. On a failed save, the creature suffers another level of {@condition exhaustion}. On a successful save, its {@condition exhaustion} level is reduced by one. If its {@condition exhaustion} level reaches 5, the infected creature becomes paralyzed until the disease is cured or the effect is removed with a {@spell 次級復原術} spell or similar magic. If a successful saving throw reduces the infected creature's {@condition exhaustion} level to 0, the creature recovers from the disease.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -2493,7 +2493,7 @@
 								"The secret door behind the east statue is well hidden, requiring a successful DC 18 Wisdom (Perception) check to spot. If the characters detected the faint trail that leads there, a successful DC 10 Wisdom (Perception) check locates the door. Beyond is a flight of stone stairs that leads upward."
 							]
 						},
-						"The stairs have been warded with a magical alarm. When a creature ascends past the halfway point of the staircase, a {@spell magic mouth} spell calls out in Dwarvish,",
+						"The stairs have been warded with a magical alarm. When a creature ascends past the halfway point of the staircase, a {@spell 魔嘴術} spell calls out in Dwarvish,",
 						{
 							"type": "inset",
 							"name": "Dwarvish Voice",
@@ -2606,9 +2606,9 @@
 							"id": "0f6",
 							"entries": [
 								"Snurrevin is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). He has the following wizard spells prepared:",
-								"{@b Cantrips (at will}): {@spell fire bolt}, {@spell mage hand}, {@spell minor illusion}, {@spell shocking grasp}",
-								"{@b 1st level (4 slots}): {@spell color spray}, {@spell shield}, {@spell silent image}",
-								"{@b 2nd level (2 slots}): {@spell hold person}, {@spell shatter}"
+								"{@b Cantrips (at will}): {@spell 火焰箭}, {@spell 法師之手}, {@spell 次級幻象}, {@spell 電爪}",
+								"{@b 1st level (4 slots}): {@spell 七彩噴射}, {@spell 護盾術}, {@spell 無聲幻影}",
+								"{@b 2nd level (2 slots}): {@spell 人類定身術}, {@spell 粉碎音波}"
 							]
 						},
 						"Snurrevin has a familiar, a {@creature rat} named Browngnaw, that hides in the shadows near the unlit forge to the east. The duergar are preoccupied with their task and don't notice the party's entrance unless the characters make themselves known. They object violently to intruders who aren't escorted by duergar.",
@@ -2831,7 +2831,7 @@
 							"name": "Treasure",
 							"id": "10c",
 							"entries": [
-								"The orcs looted the shrine after the fall of Khundrukar, but two members of the previous expedition fell to the undead defenders with valuables in their possession. Under a scattering of bones near the altar can be found a sack that holds 280 gp and a bone case that contains a {@item Spell Scroll (2nd level)||scroll of} {@spell web} and a {@item Spell Scroll (2nd level)||scroll of} {@spell spider climb}."
+								"The orcs looted the shrine after the fall of Khundrukar, but two members of the previous expedition fell to the undead defenders with valuables in their possession. Under a scattering of bones near the altar can be found a sack that holds 280 gp and a bone case that contains a {@item Spell Scroll (2nd level)||scroll of} {@spell 蛛網術} and a {@item Spell Scroll (2nd level)||scroll of} {@spell 蛛行術}."
 							]
 						}
 					]
@@ -3071,7 +3071,7 @@
 							"name": "Treasure",
 							"id": "126",
 							"entries": [
-								"The dwarf scholar amassed a small amount of treasure, which he kept in the secret compartment: 110 gp and a cat's-eye gem worth 70 gp. In the library, in addition to an extensive collection of dwarven lore, the characters can find four spell scrolls (of {@spell alarm}, {@spell disguise self}, {@spell enlarge/reduce}, and {@spell shield}). The shelves might also include more scrolls, useful information tying in to future adventures, items of value to a collector, or other interesting lore, as you see fit."
+								"The dwarf scholar amassed a small amount of treasure, which he kept in the secret compartment: 110 gp and a cat's-eye gem worth 70 gp. In the library, in addition to an extensive collection of dwarven lore, the characters can find four spell scrolls (of {@spell 警報術}, {@spell 易容術}, {@spell 變巨/縮小術}, and {@spell 護盾術}). The shelves might also include more scrolls, useful information tying in to future adventures, items of value to a collector, or other interesting lore, as you see fit."
 							]
 						}
 					]

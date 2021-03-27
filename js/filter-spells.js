@@ -32,11 +32,11 @@ class PageFilterSpells extends PageFilter {
 	}
 
 	static getFilterAbilitySave (ability) {
-		return `${ability.uppercaseFirst().substring(0, 3)}. 豁免`;
+		return `${Parser.translateKeyToDisplay(ability.uppercaseFirst().substring(0, 3))}豁免`;
 	}
 
 	static getFilterAbilityCheck (ability) {
-		return `${ability.uppercaseFirst().substring(0, 3)}. 檢定`;
+		return `${Parser.translateKeyToDisplay(ability.uppercaseFirst().substring(0, 3))}檢定`;
 	}
 
 	static getMetaFilterObj (s) {
@@ -171,7 +171,7 @@ class PageFilterSpells extends PageFilter {
 	}
 
 	static getFltrSpellLevelStr (level) {
-		return level === 0 ? Parser.spLevelToFull(level) : `${Parser.spLevelToFull(level)} level`;
+		return level === 0 ? Parser.spLevelToFull(level) : `${Parser.spLevelToFull(level)}`;
 	}
 
 	static getRangeType (range) {
@@ -254,11 +254,19 @@ class PageFilterSpells extends PageFilter {
 			header: "Class",
 			headerName: "職業",
 			groupFn: it => it.userData,
+			displayFn:Parser.ClassToDisplay
 		});
 		const subclassFilter = new Filter({
 			header: "Subclass", headerName: "子職業",
 			nests: {},
 			groupFn: (it) => SourceUtil.isSubclassReprinted(it.userData.class.name, it.userData.class.source, it.userData.subClass.name, it.userData.subClass.source) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(it.userData.subClass.source).startsWith(PS_PREFIX),
+			displayFn: (str) =>
+			{
+				var its = str.split(':').map(x => x.trim());
+				return its.length > 1
+					? `${Parser.ClassToDisplay(its[0])}：${Parser.SubclassToDisplay(its[1])}`
+					: `${Parser.SubclassToDisplay(its[0]) + gg}`;
+			}
 		});
 		const variantClassFilter = new Filter({
 			header: "Optional/Variant Class",
@@ -266,12 +274,13 @@ class PageFilterSpells extends PageFilter {
 			nests: {},
 			groupFn: it => it.userData,
 		});
-		const classAndSubclassFilter = new MultiFilter({header: "Classes", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});
+		const classAndSubclassFilter = new MultiFilter({header: "Classes", headerName: "職業分類", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});
 		const raceFilter = new Filter({
 			header: "Race",
 			headerName: "種族",
 			nests: {},
 			groupFn: it => it.userData,
+			displayFn: Parser.RaceToDisplay
 		});
 		const backgroundFilter = new Filter({header: "Background", headerName: "背景"});
 		const metaFilter = new Filter({
@@ -296,12 +305,12 @@ class PageFilterSpells extends PageFilter {
 		const damageFilter = new Filter({
 			header: "Damage Type", headerName: "傷害類型",
 			items: MiscUtil.copy(Parser.DMG_TYPES),
-			displayFn: StrUtil.uppercaseFirst,
+			displayFn: Parser.DamageToDisplay,
 		});
 		const conditionFilter = new Filter({
 			header: "Conditions Inflicted", headerName: "造成狀態",
 			items: MiscUtil.copy(Parser.CONDITIONS),
-			displayFn: StrUtil.uppercaseFirst,
+			displayFn: Parser.ConditionToDisplay,
 		});
 		const spellAttackFilter = new Filter({
 			header: "Spell Attack", headerName: "法術攻擊",

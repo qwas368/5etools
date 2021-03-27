@@ -157,23 +157,23 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell shocking grasp}"
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell magic missile}"
+								"{@spell 魅惑人類}",
+								"{@spell 魔法飛彈}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell misty step}"
+								"{@spell 人類定身術}",
+								"{@spell 迷蹤步}"
 							]
 						}
 					},
@@ -355,7 +355,7 @@
 				11,
 				{
 					"ac": 14,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -397,12 +397,12 @@
 						"Nezznar can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell dancing lights}"
+						"{@spell 舞光術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell darkness}",
-							"{@spell faerie fire} (save {@dc 12})"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術} (save {@dc 12})"
 						]
 					}
 				},
@@ -414,24 +414,24 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 法師之手}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell suggestion}"
+								"{@spell 隱形術}",
+								"{@spell 暗示術}"
 							]
 						}
 					},

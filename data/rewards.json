@@ -341,7 +341,7 @@
 			"type": "Charm",
 			"entries": [
 				"{@note This charm can be bestowed by a {@creature chwinga|ToA} living in Icewind Dale or other cold regions by using their Magical Gift action.}",
-				"This charm has 3 charges. As an action, you can expend 1 of the charm's charges to cast the {@spell create food and water} spell, requiring no components. Once all its charges have been expended, this charm vanishes from you."
+				"This charm has 3 charges. As an action, you can expend 1 of the charm's charges to cast the {@spell 創造飲食} spell, requiring no components. Once all its charges have been expended, this charm vanishes from you."
 			]
 		},
 		{
@@ -480,7 +480,7 @@
 			"page": 41,
 			"type": "Charm",
 			"entries": [
-				"You become charged with the power of the storm, to the extent that tiny sparks crackle in your eyes. You can cast the {@spell lightning bolt} spell (3rd-level version) as an action. Once used three times, the charm vanishes from you."
+				"You become charged with the power of the storm, to the extent that tiny sparks crackle in your eyes. You can cast the {@spell 閃電束} spell (3rd-level version) as an action. Once used three times, the charm vanishes from you."
 			]
 		},
 		{
@@ -499,7 +499,7 @@
 			"type": "Charm",
 			"entries": [
 				"{@note This charm can be bestowed by a {@creature chwinga|ToA} living in Icewind Dale or other cold regions by using their Magical Gift action.}",
-				"This charm has 3 charges. As an action, you can expend 1 of the charm's charges to cast the {@spell Leomund's tiny hut} spell, no components required. Once all its charges have been expended, this charm vanishes from you."
+				"This charm has 3 charges. As an action, you can expend 1 of the charm's charges to cast the {@spell 李歐蒙小屋} spell, no components required. Once all its charges have been expended, this charm vanishes from you."
 			]
 		},
 		{
@@ -558,7 +558,7 @@
 			"page": 192,
 			"type": "Charm",
 			"entries": [
-				"Dahlver-Nar's gift is the power to live many lives. Upon receiving this dark gift, the beneficiary instantly reincarnates when it dies, as though it was the target of a {@spell reincarnate} spell. The new body appears within 10 feet of the old one. After it has been used three times, the dark gift vanishes.",
+				"Dahlver-Nar's gift is the power to live many lives. Upon receiving this dark gift, the beneficiary instantly reincarnates when it dies, as though it was the target of a {@spell 轉生術} spell. The new body appears within 10 feet of the old one. After it has been used three times, the dark gift vanishes.",
 				"The beneficiary of this dark gift loses all of its teeth until it reincarnates for the third and final time."
 			]
 		},
@@ -568,7 +568,7 @@
 			"page": 193,
 			"type": "Charm",
 			"entries": [
-				"Delban's gift is the power to unleash deadly cold. This dark gift allows its beneficiary to cast the {@spell cone of cold} spell as an action. After it has been used seven times, the dark gift vanishes. Until it vanishes, the beneficiary also gains the benefits of a {@item ring of warmth}.",
+				"Delban's gift is the power to unleash deadly cold. This dark gift allows its beneficiary to cast the {@spell 寒冰錐} spell as an action. After it has been used seven times, the dark gift vanishes. Until it vanishes, the beneficiary also gains the benefits of a {@item ring of warmth}.",
 				"The beneficiary of this dark gift gains the following flaw: \"Fire terrifies me.\""
 			]
 		},
@@ -588,7 +588,7 @@
 			"page": 191,
 			"type": "Charm",
 			"entries": [
-				"Fekre's gift is the power of spreading disease. This dark gift allows its beneficiary to cast the {@spell contagion} spell as an action. After it has been used three times, the dark gift vanishes.",
+				"Fekre's gift is the power of spreading disease. This dark gift allows its beneficiary to cast the {@spell 疫病術} spell as an action. After it has been used three times, the dark gift vanishes.",
 				"The beneficiary of this dark gift reeks of filth."
 			]
 		},
@@ -608,7 +608,7 @@
 			"page": 193,
 			"type": "Charm",
 			"entries": [
-				"Khirad's gift is the power of divination. This gift allows its beneficiary to cast the {@spell scrying} spell as an action. After it has been used three times, the dark gift vanishes.",
+				"Khirad's gift is the power of divination. This gift allows its beneficiary to cast the {@spell 探知} spell as an action. After it has been used three times, the dark gift vanishes.",
 				"The beneficiary's voice becomes a low whisper, and its smile becomes cruel and evil."
 			]
 		},
@@ -618,7 +618,7 @@
 			"page": 193,
 			"type": "Charm",
 			"entries": [
-				"Norganas's gift is the power to turn life into undeath. This dark gift allows its beneficiary to cast the {@spell finger of death} spell as an action. After it has been used three times, the dark gift vanishes. When it vanishes, the beneficiary must succeed on a DC 15 Constitution saving throw or drop to 0 hit points.",
+				"Norganas's gift is the power to turn life into undeath. This dark gift allows its beneficiary to cast the {@spell 死亡一指} spell as an action. After it has been used three times, the dark gift vanishes. When it vanishes, the beneficiary must succeed on a DC 15 Constitution saving throw or drop to 0 hit points.",
 				"This dark gift turns the beneficiary's blood pitch black and viscid, like tar."
 			]
 		},
@@ -628,7 +628,7 @@
 			"page": 192,
 			"type": "Charm",
 			"entries": [
-				"Savnok's gift is the power to shield the mind. This dark gift takes the form of a {@spell mind blank} spell cast on the beneficiary. The spell has an extended duration of 1 year, after which the dark gift vanishes.",
+				"Savnok's gift is the power to shield the mind. This dark gift takes the form of a {@spell 心靈屏障} spell cast on the beneficiary. The spell has an extended duration of 1 year, after which the dark gift vanishes.",
 				"The beneficiary's eyes melt away upon receiving this dark gift, leaving empty sockets that can still see."
 			]
 		},
@@ -648,7 +648,7 @@
 			"page": 192,
 			"type": "Charm",
 			"entries": [
-				"Shami-Amourae's gift is the power of persuasion. This dark gift allows its beneficiary to cast the {@spell suggestion} spell as an action, and saving throws against the spell have disadvantage. After it has been used three times, the dark gift vanishes.",
+				"Shami-Amourae's gift is the power of persuasion. This dark gift allows its beneficiary to cast the {@spell 暗示術} spell as an action, and saving throws against the spell have disadvantage. After it has been used three times, the dark gift vanishes.",
 				"The beneficiary of this dark gift gains an extra finger on each hand, as well as the following flaw: \"I can't get enough pleasure. I desire others to create beauty for me at all times.\""
 			]
 		},
@@ -658,7 +658,7 @@
 			"page": 192,
 			"type": "Charm",
 			"entries": [
-				"Sykane's gift is the power to raise the recently deceased. This dark gift allows its beneficiary to cast the {@spell raise dead} spell as an action. After it has been used three times, the dark gift vanishes.",
+				"Sykane's gift is the power to raise the recently deceased. This dark gift allows its beneficiary to cast the {@spell 喚醒死者} spell as an action. After it has been used three times, the dark gift vanishes.",
 				"As soon as this dark gift is received, the beneficiary's eyes glow a sickly yellow until the dark gift vanishes. The beneficiary also gains the following flaw: \"If I help someone, I expect payment in return.\""
 			]
 		},
@@ -718,7 +718,7 @@
 			"page": 192,
 			"type": "Charm",
 			"entries": [
-				"Zrin-Hala's gift is the power to create lightning. This dark gift allows its beneficiary to cast the {@spell lightning bolt} spell as an action. After it has been used three times, the dark gift vanishes.",
+				"Zrin-Hala's gift is the power to create lightning. This dark gift allows its beneficiary to cast the {@spell 閃電束} spell as an action. After it has been used three times, the dark gift vanishes.",
 				"As soon as this dark gift is received, one side of the beneficiary's face sags and loses all feeling."
 			]
 		},
@@ -1140,7 +1140,7 @@
 			"page": 179,
 			"type": "Charm",
 			"entries": [
-				"While you have Strawbundle in your possession, this charm allows you to cast the {@spell etherealness} spell as an action, no components required. After it is used three times, the charm vanishes.",
+				"While you have Strawbundle in your possession, this charm allows you to cast the {@spell 跨入乙太界} spell as an action, no components required. After it is used three times, the charm vanishes.",
 				"The doll is a Tiny construct. Destroying the doll causes the child's soul within it to become trapped in {@adventure the Soulmonger|ToA|5|The Soulmonger}.",
 				{
 					"type": "dataObject",
@@ -1226,7 +1226,7 @@
 			"page": 228,
 			"type": "Charm",
 			"entries": [
-				"You gain 1 foot of height every hour and become proportionately heavier until you stand 21 feet tall and weigh 7,700 pounds. When you are 9 feet tall, your Strength becomes 19 unless it is already higher. For every 3 additional feet of height you gain, your Strength increases by 1, to a maximum of 23. Armor and clothing you are wearing and weapons you are carrying magically increase in size to match your growth. If you are the recipient of a {@spell greater restoration} spell or similar magic, this charm vanishes from you, and you immediately shrink back to normal size, along with any armor, clothing, and weapons in your possession."
+				"You gain 1 foot of height every hour and become proportionately heavier until you stand 21 feet tall and weigh 7,700 pounds. When you are 9 feet tall, your Strength becomes 19 unless it is already higher. For every 3 additional feet of height you gain, your Strength increases by 1, to a maximum of 23. Armor and clothing you are wearing and weapons you are carrying magically increase in size to match your growth. If you are the recipient of a {@spell 高等復原術} spell or similar magic, this charm vanishes from you, and you immediately shrink back to normal size, along with any armor, clothing, and weapons in your possession."
 			]
 		},
 		{
@@ -1279,7 +1279,7 @@
 			"page": 119,
 			"type": "Other",
 			"entries": [
-				"A human can be transformed into a yuan-ti pureblood. The transformation can be undone only by a {@spell wish} spell or divine intervention. A character who survives it gains a random form of {@table indefinite madness} (see \"{@book Madness|DMG|8|Madness}\" in chapter 8 of the {@i Dungeon Master's Guide}). A human that undergoes and survives the ritual retains its traits and gains the following yuan-ti racial traits.",
+				"A human can be transformed into a yuan-ti pureblood. The transformation can be undone only by a {@spell 祈願術} spell or divine intervention. A character who survives it gains a random form of {@table indefinite madness} (see \"{@book Madness|DMG|8|Madness}\" in chapter 8 of the {@i Dungeon Master's Guide}). A human that undergoes and survives the ritual retains its traits and gains the following yuan-ti racial traits.",
 				{
 					"type": "entries",
 					"name": "Darkvision",
@@ -1291,7 +1291,7 @@
 					"type": "entries",
 					"name": "Innate Spellcasting",
 					"entries": [
-						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"You know the {@spell 毒氣噴灑} cantrip. You can cast {@spell 化獸為友} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell 暗示術} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
 					]
 				},
 				{

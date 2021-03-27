@@ -2795,7 +2795,7 @@
 								"\u2014The Callapheia"
 							]
 						},
-						"The gods are fond of meddling in mortal affairs, and heroes sometimes call on their gods for aid in times of desperate need. Spells such as {@spell divination} and {@spell commune} give characters the opportunity to ask their gods for information, and clerics who beseech their gods for assistance sometimes receive miracles in answer. Heroes also have the opportunity to ask the gods for favors, after proving their worth by enduring a divine ordeal.",
+						"The gods are fond of meddling in mortal affairs, and heroes sometimes call on their gods for aid in times of desperate need. Spells such as {@spell 預言術} and {@spell 通神術} give characters the opportunity to ask their gods for information, and clerics who beseech their gods for assistance sometimes receive miracles in answer. Heroes also have the opportunity to ask the gods for favors, after proving their worth by enduring a divine ordeal.",
 						{
 							"type": "image",
 							"href": {
@@ -2858,8 +2858,8 @@
 											"page": 111,
 											"id": "23b",
 											"entries": [
-												"The gods usually send omens as either warnings or as signs of their favor. The response to the {@spell augury} spell takes the form of an omen foretelling weal or woe, and the gods might use omens in the same way, even without being asked to provide a sign. When a divine champion sets out on a course of action, a god might express approval or disapproval, hoping to either encourage or dissuade the mortal.",
-												"The {@spell augury} spell requests an omen. At your option, you can simply provide the short answers offered in the spell description\u2014weal, woe, weal and woe, or nothing\u2014but you can also describe more elaborate omens. The form of the response might vary depending on the method of divination used, which can go beyond the inlaid sticks, dragon bones, or ornate cards mentioned in the spell description. Diviners in Theros look for signs in the stars, in the patterns of flocks of birds in flight, in the shapes of clouds, in the organs of sacrificed animals, in the sounds of thunder, in the designs left by waves on sand, and through many other means. So if an oracle stands on a beach imploring Thassa for an augury regarding a course of action you believe to be disastrous, you might describe the waves washing over the beach\u2014and circling around the oracle's feet, leaving them completely dry. (If necessary, though, you should clarify that the oracle knows the answer to be \"woe.\")",
+												"The gods usually send omens as either warnings or as signs of their favor. The response to the {@spell 卜筮} spell takes the form of an omen foretelling weal or woe, and the gods might use omens in the same way, even without being asked to provide a sign. When a divine champion sets out on a course of action, a god might express approval or disapproval, hoping to either encourage or dissuade the mortal.",
+												"The {@spell 卜筮} spell requests an omen. At your option, you can simply provide the short answers offered in the spell description\u2014weal, woe, weal and woe, or nothing\u2014but you can also describe more elaborate omens. The form of the response might vary depending on the method of divination used, which can go beyond the inlaid sticks, dragon bones, or ornate cards mentioned in the spell description. Diviners in Theros look for signs in the stars, in the patterns of flocks of birds in flight, in the shapes of clouds, in the organs of sacrificed animals, in the sounds of thunder, in the designs left by waves on sand, and through many other means. So if an oracle stands on a beach imploring Thassa for an augury regarding a course of action you believe to be disastrous, you might describe the waves washing over the beach\u2014and circling around the oracle's feet, leaving them completely dry. (If necessary, though, you should clarify that the oracle knows the answer to be \"woe.\")",
 												{
 													"type": "list",
 													"style": "list-hang-notitle",
@@ -3638,7 +3638,7 @@
 									"page": 111,
 									"id": "23c",
 									"entries": [
-										"Clerics and oracles have spells at their disposal that allow them to ask the gods for insight. The {@spell divination} and {@spell commune} spells contact a god and promise a truthful reply to the caster's questions. The reply takes the form of a simple \"yes\" or \"no,\" a cryptic rhyme, or an omen. It might be transmitted through a disembodied voice, a vision only the caster can see, or any other mystical manner. A verbal reply to a {@spell divination} or {@spell commune} spell must be truthful, but it might still be misleading. A god can't speak a deliberate lie in response to either spell, but they can be evasive while remaining within the boundaries of the truth. If a character casts one of these spells more than once in the same day, however, there is an increasing chance of receiving an unclear answer or none at all (as described in the spells' entries in the {@book Player's Handbook|PHB}). This might happen because another god, alerted to the connection between the caster and their god by the first casting of the spell, intercepts the second one and chooses to mislead the character. Or it could simply mean that the god is tired of the character's pestering and chooses not to answer."
+										"Clerics and oracles have spells at their disposal that allow them to ask the gods for insight. The {@spell 預言術} and {@spell 通神術} spells contact a god and promise a truthful reply to the caster's questions. The reply takes the form of a simple \"yes\" or \"no,\" a cryptic rhyme, or an omen. It might be transmitted through a disembodied voice, a vision only the caster can see, or any other mystical manner. A verbal reply to a {@spell 預言術} or {@spell 通神術} spell must be truthful, but it might still be misleading. A god can't speak a deliberate lie in response to either spell, but they can be evasive while remaining within the boundaries of the truth. If a character casts one of these spells more than once in the same day, however, there is an increasing chance of receiving an unclear answer or none at all (as described in the spells' entries in the {@book Player's Handbook|PHB}). This might happen because another god, alerted to the connection between the caster and their god by the first casting of the spell, intercepts the second one and chooses to mislead the character. Or it could simply mean that the god is tired of the character's pestering and chooses not to answer."
 									]
 								},
 								{
@@ -3647,7 +3647,7 @@
 									"page": 111,
 									"id": "23d",
 									"entries": [
-										"When mortals sleep and dream, they are said to \"visit Nyx.\" During this time, mortals are particularly susceptible to divine contact. A god might communicate with a sleeping mortal as if by casting {@spell dream}\u2014including the ability to transform the mortal's dreamscape into a nightmare. Whatever form such a dream takes, they are often similar to omens, making heavy use of symbol and metaphor.",
+										"When mortals sleep and dream, they are said to \"visit Nyx.\" During this time, mortals are particularly susceptible to divine contact. A god might communicate with a sleeping mortal as if by casting {@spell 託夢術}\u2014including the ability to transform the mortal's dreamscape into a nightmare. Whatever form such a dream takes, they are often similar to omens, making heavy use of symbol and metaphor.",
 										{
 											"type": "image",
 											"href": {
@@ -3812,7 +3812,7 @@
 									"id": "249",
 									"entries": [
 										"The first stage of a divine ordeal is entering Nyx. Callaphe the mariner is said to have sailed her ship over the waterfall at the edge of the world and right into Nyx, where she can still be seen among the constellations. Additionally, Kruphix's Temple of Mystery at the edge of the world and the shrine of Nykthos are known to hold portals that lead to the gates of Nyx.",
-										"In theory, high-level characters can use spells such as {@spell plane shift} or {@spell gate} to move from the mortal realm to Nyx. In practice, securing the proper material component to travel to Nyx through the {@spell plane shift} spell is roughly as difficult as sailing to the edge of the world, and Kruphix can (and usually does) prevent the {@spell gate} spell from opening a portal into Nyx.",
+										"In theory, high-level characters can use spells such as {@spell 異界傳送} or {@spell 異界之門} to move from the mortal realm to Nyx. In practice, securing the proper material component to travel to Nyx through the {@spell 異界傳送} spell is roughly as difficult as sailing to the edge of the world, and Kruphix can (and usually does) prevent the {@spell 異界之門} spell from opening a portal into Nyx.",
 										"There might be other ways to get into Nyx, and each one is a challenge suited for the greatest heroes."
 									]
 								},
@@ -5932,7 +5932,7 @@
 												],
 												[
 													"8",
-													"A {@creature druid} uses the {@spell awaken} spell on beasts in the arena to make them more capable competitors."
+													"A {@creature druid} uses the {@spell 啟蒙術} spell on beasts in the arena to make them more capable competitors."
 												]
 											]
 										}
@@ -8524,7 +8524,7 @@
 												],
 												[
 													"5",
-													"A {@creature giant boar} affected by the {@spell awaken} spell convinces the shrine's druids to cast the spell on other boars to strike back at a contingent of hunting nobles."
+													"A {@creature giant boar} affected by the {@spell 啟蒙術} spell convinces the shrine's druids to cast the spell on other boars to strike back at a contingent of hunting nobles."
 												],
 												[
 													"6",
@@ -10200,7 +10200,7 @@
 												],
 												[
 													"5",
-													"A {@creature giant octopus} under the effects of the {@spell awaken} spell hunts in the temple at high tide."
+													"A {@creature giant octopus} under the effects of the {@spell 啟蒙術} spell hunts in the temple at high tide."
 												],
 												[
 													"6",
@@ -10321,7 +10321,7 @@
 											"type": "list",
 											"items": [
 												"Aquatic or flying characters can visit the characters as they travel, appearing unexpectedly.",
-												"Magic items such as {@item sending stones} and spells such as {@spell animal messenger} allow characters to stay in touch over long distances.",
+												"Magic items such as {@item sending stones} and spells such as {@spell 動物信使} allow characters to stay in touch over long distances.",
 												"Powerful creatures might teleport to the characters' location\u2014particularly those unable (or disinclined) to share their teleportation powers.",
 												"When the characters dream, they might meet other creatures in Nyx.",
 												"Some of Theros's mystical islands move around on the sea, allowing the characters to run into them and their inhabitants multiple times."
@@ -10498,7 +10498,7 @@
 											"page": 178,
 											"id": "301",
 											"entries": [
-												"Those who visit the island risk being enchanted so they never want to leave. At the end of each long rest it takes on this island, a visitor must succeed on a DC 10 Wisdom saving throw or be unwilling to leave the island before finishing another long rest. After failing this saving throw three times, the creature never willingly leaves the island and, if forcibly removed, does everything in its power to return. A {@spell dispel evil and good} spell removes this effect from the creature."
+												"Those who visit the island risk being enchanted so they never want to leave. At the end of each long rest it takes on this island, a visitor must succeed on a DC 10 Wisdom saving throw or be unwilling to leave the island before finishing another long rest. After failing this saving throw three times, the creature never willingly leaves the island and, if forcibly removed, does everything in its power to return. A {@spell 反制善惡} spell removes this effect from the creature."
 											]
 										},
 										{
@@ -10507,7 +10507,7 @@
 											"page": 178,
 											"id": "302",
 											"entries": [
-												"Visitors to this island risk being afflicted by the Curse of the Swine. At the end of each long rest it takes on this island, a visitor must succeed on a DC 10 Wisdom saving throw or be affected by the {@spell polymorph} spell and transformed into a pig (use the {@creature boar} stat block). The curse lasts until the visitor leaves the isle or until it is broken by a spell like {@spell remove curse}."
+												"Visitors to this island risk being afflicted by the Curse of the Swine. At the end of each long rest it takes on this island, a visitor must succeed on a DC 10 Wisdom saving throw or be affected by the {@spell 變形術} spell and transformed into a pig (use the {@creature boar} stat block). The curse lasts until the visitor leaves the isle or until it is broken by a spell like {@spell 移除詛咒}."
 											]
 										},
 										{
@@ -10748,7 +10748,7 @@
 									"page": 182,
 									"id": "311",
 									"entries": [
-										"By far the simplest means of return for a dead soul is for someone who yet lives to cast a {@spell raise dead}, {@spell resurrection}, or {@spell true resurrection} spell. If a mortal is a frequent recipient of resurrection magic, Erebos might take a special interest in that soul. A soul in the clutches of Erebos himself isn't free, so it can't be returned to life by mortal magic."
+										"By far the simplest means of return for a dead soul is for someone who yet lives to cast a {@spell 喚醒死者}, {@spell 復活術}, or {@spell 完全復活術} spell. If a mortal is a frequent recipient of resurrection magic, Erebos might take a special interest in that soul. A soul in the clutches of Erebos himself isn't free, so it can't be returned to life by mortal magic."
 									]
 								},
 								{
@@ -11623,7 +11623,7 @@
 											"type": "list",
 											"items": [
 												"Arasta learns about any creature touching her webs. Each creature {@condition restrained} by a web or Arasta's Web of Hair must make a DC 21 Intelligence saving throw. On a failed save, Arasta gains knowledge of a creature's name, race, where they consider home, and what brought them to her web.",
-												"Arasta casts the {@spell giant insect} spell (spiders only). It lasts until she uses this lair action again or until she dies."
+												"Arasta casts the {@spell 巨蟲術} spell (spiders only). It lasts until she uses this lair action again or until she dies."
 											]
 										},
 										{
@@ -11721,7 +11721,7 @@
 											"type": "list",
 											"items": [
 												"Hythonia briefly animates creatures that have been {@condition petrified} by her gaze. Each statue attacks one creature within 5 feet of it, with a +11 bonus to hit and dealing 10 ({@dice 3d6}) bludgeoning damage on a hit. If a Medium or smaller creature takes this damage, it is also {@condition grappled} (escape DC 15).",
-												"Hythonia causes spectral snakes to erupt from a point she can see within 150 feet of her. Each creature within 20 feet of that point must succeed on a DC 19 Constitution saving throw or take 5 ({@dice 2d4}) piercing damage and become {@condition poisoned} until the end of its next turn. While {@condition poisoned} in this way, the creature has disadvantage on Intelligence checks and Intelligence saving throws, and it behaves as if under the effect of the {@spell confusion} spell."
+												"Hythonia causes spectral snakes to erupt from a point she can see within 150 feet of her. Each creature within 20 feet of that point must succeed on a DC 19 Constitution saving throw or take 5 ({@dice 2d4}) piercing damage and become {@condition poisoned} until the end of its next turn. While {@condition poisoned} in this way, the creature has disadvantage on Intelligence checks and Intelligence saving throws, and it behaves as if under the effect of the {@spell 困惑術} spell."
 											]
 										},
 										{

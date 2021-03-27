@@ -2258,7 +2258,7 @@
 						{
 							"name": "Duergar Magic",
 							"entries": [
-								"When you reach 3rd level, you can cast the {@spell Enlarge/Reduce} spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the {@spell Invisibility} spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+								"When you reach 3rd level, you can cast the {@spell 變巨/縮小術} spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the {@spell 隱形術} spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells."
 							],
 							"type": "entries"
 						},
@@ -2365,7 +2365,7 @@
 							"type": "entries",
 							"name": "Wards and Seals",
 							"entries": [
-								"You can cast the {@spell alarm} and {@spell mage armor} spells with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
+								"You can cast the {@spell 警報術} and {@spell 法師護甲} spells with this trait. Starting at 3rd level, you can also cast the {@spell 祕法鎖} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait."
 							]
 						},
 						{
@@ -2387,23 +2387,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell alarm}, {@spell armor of Agathys}"
+											"{@spell 警報術}, {@spell 艾嘉西斯之鎧}"
 										],
 										[
 											"2nd",
-											"{@spell arcane lock}, {@spell knock}"
+											"{@spell 祕法鎖}, {@spell 敲擊術}"
 										],
 										[
 											"3rd",
-											"{@spell glyph of warding}, {@spell magic circle}"
+											"{@spell 守衛銘文}, {@spell 防護法陣}"
 										],
 										[
 											"4th",
-											"{@spell Leomund's secret chest}, {@spell Mordenkainen's faithful hound}"
+											"{@spell 李歐蒙秘藏箱}, {@spell 魔鄧肯忠犬}"
 										],
 										[
 											"5th",
-											"{@spell antilife shell}"
+											"{@spell 反活物護罩}"
 										]
 									]
 								}
@@ -2726,7 +2726,7 @@
 						{
 							"name": "Drow Magic",
 							"entries": [
-								"You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 舞光術} cantrip. When you reach 3rd level, you can cast the {@spell 妖火術} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell 黑暗術} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries"
 						},
@@ -2778,7 +2778,7 @@
 						{
 							"name": "Fey Step",
 							"entries": [
-								"You can cast the {@spell misty step} spell once using this trait. You regain the ability to do so when you finish a short or long rest."
+								"You can cast the {@spell 迷蹤步} spell once using this trait. You regain the ability to do so when you finish a short or long rest."
 							],
 							"type": "entries"
 						}
@@ -2896,19 +2896,19 @@
 									"rows": [
 										[
 											"Autumn",
-											"{@spell Friends}"
+											"{@spell 交友術}"
 										],
 										[
 											"Winter",
-											"{@spell Chill touch}"
+											"{@spell 寒顫之觸}"
 										],
 										[
 											"Spring",
-											"{@spell Minor illusion}"
+											"{@spell 次級幻象}"
 										],
 										[
 											"Summer",
-											"{@spell Fire bolt}"
+											"{@spell 火焰箭}"
 										]
 									]
 								}
@@ -3159,7 +3159,7 @@
 							"type": "entries",
 							"name": "Shape Shadows",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. Starting at 3rd level, you can cast the {@spell invisibility} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 次級幻象} cantrip. Starting at 3rd level, you can cast the {@spell 隱形術} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -3181,23 +3181,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell disguise self}, {@spell silent image}"
+											"{@spell 易容術}, {@spell 無聲幻影}"
 										],
 										[
 											"2nd",
-											"{@spell darkness}, {@spell pass without trace}"
+											"{@spell 黑暗術}, {@spell 行蹤無跡}"
 										],
 										[
 											"3rd",
-											"{@spell clairvoyance}, {@spell major image}"
+											"{@spell 銳眼術}, {@spell 強效幻影}"
 										],
 										[
 											"4th",
-											"{@spell greater invisibility}, {@spell hallucinatory terrain}"
+											"{@spell 高等隱形術}, {@spell 幻景}"
 										],
 										[
 											"5th",
-											"{@spell mislead}"
+											"{@spell 假象術}"
 										]
 									]
 								}
@@ -3259,7 +3259,7 @@
 							"type": "entries",
 							"name": "Blessing of the Moon Weaver",
 							"entries": [
-								"You know the {@spell light} cantrip. When you reach 3rd level, you can cast the {@spell sleep} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+								"You know the {@spell 光亮術} cantrip. When you reach 3rd level, you can cast the {@spell 睡眠術} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 隱形術} spell (targeting yourself only) once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
 							]
 						}
 					],
@@ -3471,7 +3471,7 @@
 						{
 							"name": "Cantrip",
 							"entries": [
-								"You know one of the following cantrips of your choice: {@spell chill touch}, {@spell spare the dying}, or {@spell thaumaturgy}. Charisma is your spellcasting ability for it."
+								"You know one of the following cantrips of your choice: {@spell 寒顫之觸}, {@spell 拯救瀕死}, or {@spell 奇術}. Charisma is your spellcasting ability for it."
 							],
 							"type": "entries"
 						},
@@ -3908,7 +3908,7 @@
 						{
 							"name": "Mul Daya Magic",
 							"entries": [
-								"You know the {@spell chill touch} cantrip. When you reach 3rd level, you can cast the {@spell hex} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells."
+								"You know the {@spell 寒顫之觸} cantrip. When you reach 3rd level, you can cast the {@spell 脆弱詛咒} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 黑暗術} spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells."
 							],
 							"type": "entries"
 						},
@@ -4212,7 +4212,7 @@
 						{
 							"name": "Mingle with the Wind",
 							"entries": [
-								"You can cast the {@spell levitate} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+								"You can cast the {@spell 浮空術} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
 							],
 							"type": "entries"
 						}
@@ -4252,7 +4252,7 @@
 						{
 							"name": "Merge with Stone",
 							"entries": [
-								"You can cast the {@spell pass without trace} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+								"You can cast the {@spell 行蹤無跡} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
 							],
 							"type": "entries"
 						}
@@ -4310,7 +4310,7 @@
 						{
 							"name": "Reach to the Blaze",
 							"entries": [
-								"You know the {@spell produce flame} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+								"You know the {@spell 燃火術} cantrip. Once you reach 3rd level, you can cast the {@spell 燃燒之手} spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
 							],
 							"type": "entries"
 						}
@@ -4379,7 +4379,7 @@
 						{
 							"name": "Call to the Wave",
 							"entries": [
-								"You know the {@spell shape water|xge} cantrip. When you reach 3rd level, you can cast the {@spell create or destroy water} spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+								"You know the {@spell shape water|xge} cantrip. When you reach 3rd level, you can cast the {@spell 造水/枯水術} spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
 							],
 							"type": "entries"
 						}
@@ -4531,8 +4531,8 @@
 						{
 							"name": "Githyanki Psionics",
 							"entries": [
-								"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
-								"When you reach 3rd level, you can cast {@spell jump} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell misty step} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
+								"You know the {@spell 法師之手} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
+								"When you reach 3rd level, you can cast {@spell 跳躍術} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 迷蹤步} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
 								"Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components."
 							],
 							"type": "entries"
@@ -4598,8 +4598,8 @@
 						{
 							"name": "Githzerai Psionics",
 							"entries": [
-								"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
-								"When you reach 3rd level, you can cast {@spell shield} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
+								"You know the {@spell 法師之手} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
+								"When you reach 3rd level, you can cast {@spell 護盾術} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 偵測思想} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
 								"Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components."
 							],
 							"type": "entries"
@@ -4741,7 +4741,7 @@
 						{
 							"name": "Githyanki Psionics",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast {@spell jump} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell misty step} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
+								"You know the {@spell 法師之手} cantrip. When you reach 3rd level, you can cast {@spell 跳躍術} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 迷蹤步} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
 								"Intelligence is your spellcasting ability for these spells. You can cast all of them without components."
 							],
 							"type": "entries"
@@ -4802,7 +4802,7 @@
 						{
 							"name": "Githzerai Psionics",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast {@spell shield} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
+								"You know the {@spell 法師之手} cantrip. When you reach 3rd level, you can cast {@spell 護盾術} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 偵測思想} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
 								"Wisdom is your spellcasting ability for these spells. You can cast all of them without components."
 							],
 							"type": "entries"
@@ -5121,7 +5121,7 @@
 						{
 							"name": "Natural Illusionist",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. Intelligence is your spellcasting ability for it."
+								"You know the {@spell 次級幻象} cantrip. Intelligence is your spellcasting ability for it."
 							],
 							"type": "entries"
 						},
@@ -5212,7 +5212,7 @@
 							"type": "entries",
 							"name": "Scribe's Insight",
 							"entries": [
-								"You know the {@spell message} cantrip. You can also cast {@spell comprehend languages} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell magic mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
+								"You know the {@spell 傳訊術} cantrip. You can also cast {@spell 通曉語言} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell 魔嘴術} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -5234,23 +5234,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell comprehend languages}, {@spell illusory script}"
+											"{@spell 通曉語言}, {@spell 迷幻手稿}"
 										],
 										[
 											"2nd",
-											"{@spell animal messenger}, {@spell silence}"
+											"{@spell 動物信使}, {@spell 沉默術}"
 										],
 										[
 											"3rd",
-											"{@spell sending}, {@spell tongues}"
+											"{@spell 短訊術}, {@spell 巧舌術}"
 										],
 										[
 											"4th",
-											"{@spell arcane eye}, {@spell confusion}"
+											"{@spell 祕法眼}, {@spell 困惑術}"
 										],
 										[
 											"5th",
-											"{@spell dream}"
+											"{@spell 託夢術}"
 										]
 									]
 								}
@@ -6580,7 +6580,7 @@
 								{
 									"name": "Drow Magic",
 									"entries": [
-										"You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+										"You know the {@spell 舞光術} cantrip. When you reach 3rd level, you can cast the {@spell 妖火術} spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell 黑暗術} spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
 									],
 									"type": "entries"
 								}
@@ -6677,7 +6677,7 @@
 							"type": "entries",
 							"name": "Magical Detection",
 							"entries": [
-								"You can cast the {@spell detect magic} and {@spell detect poison and disease} spells with this trait. Starting at 3rd level, you can also cast the {@spell see invisibility} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components for them."
+								"You can cast the {@spell 偵測魔法} and {@spell 偵測毒素或疾病} spells with this trait. Starting at 3rd level, you can also cast the {@spell 識破隱形} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells, and you don't require material components for them."
 							]
 						},
 						{
@@ -6699,23 +6699,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell detect evil and good}, {@spell detect poison and disease}"
+											"{@spell 偵測善惡}, {@spell 偵測毒素或疾病}"
 										],
 										[
 											"2nd",
-											"{@spell detect thoughts}, {@spell find traps}"
+											"{@spell 偵測思想}, {@spell 尋找陷阱}"
 										],
 										[
 											"3rd",
-											"{@spell clairvoyance}, {@spell nondetection}"
+											"{@spell 銳眼術}, {@spell 迴避偵測}"
 										],
 										[
 											"4th",
-											"{@spell arcane eye}, {@spell divination}"
+											"{@spell 祕法眼}, {@spell 預言術}"
 										],
 										[
 											"5th",
-											"{@spell legend lore}"
+											"{@spell 通曉傳奇}"
 										]
 									]
 								}
@@ -6802,7 +6802,7 @@
 							"type": "entries",
 							"name": "Headwinds",
 							"entries": [
-								"You know the {@spell gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell gust of wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell 造風術} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -6824,23 +6824,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell feather fall}, {@spell fog cloud}"
+											"{@spell 羽落術}, {@spell 雲霧術}"
 										],
 										[
 											"2nd",
-											"{@spell gust of wind}, {@spell levitate}"
+											"{@spell 造風術}, {@spell 浮空術}"
 										],
 										[
 											"3rd",
-											"{@spell sleet storm}, {@spell wind wall}"
+											"{@spell 雪雨暴}, {@spell 風牆術}"
 										],
 										[
 											"4th",
-											"{@spell conjure minor elementals}, {@spell control water}"
+											"{@spell 召喚次級元素生物}, {@spell 操控水體}"
 										],
 										[
 											"5th",
-											"{@spell conjure elemental}"
+											"{@spell 召喚元素生物}"
 										]
 									]
 								}
@@ -7235,7 +7235,7 @@
 					"type": "entries",
 					"name": "Finder's Magic",
 					"entries": [
-						"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+						"You can cast the {@spell 獵人印記} spell with this trait. Starting at 3rd level, you can also cast the {@spell 物品定位術} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
 					]
 				},
 				{
@@ -7264,23 +7264,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell faerie fire}, {@spell longstrider}"
+									"{@spell 妖火術}, {@spell 大步奔行}"
 								],
 								[
 									"2nd",
-									"{@spell locate animals or plants}, {@spell locate object}"
+									"{@spell 動植物定位術}, {@spell 物品定位術}"
 								],
 								[
 									"3rd",
-									"{@spell clairvoyance}, {@spell speak with plants}"
+									"{@spell 銳眼術}, {@spell 植物交談術}"
 								],
 								[
 									"4th",
-									"{@spell divination}, {@spell locate creature}"
+									"{@spell 預言術}, {@spell 生物定位術}"
 								],
 								[
 									"5th",
-									"{@spell commune with nature}"
+									"{@spell 問道自然}"
 								]
 							]
 						}
@@ -7450,7 +7450,7 @@
 							"type": "entries",
 							"name": "Child of the Wood",
 							"entries": [
-								"You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell entangle} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell spike growth} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
+								"You know the {@spell 德魯伊伎倆} cantrip. When you reach 3rd level, you can cast the {@spell 糾纏術} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 荊棘叢生} spell once with this trait and regain the ability to do so when you finish a long rest. Casting these spells with this trait doesn't require material components. Wisdom is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -7533,7 +7533,7 @@
 							"type": "entries",
 							"name": "Healing Touch",
 							"entries": [
-								"You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+								"You can cast the {@spell 治療傷勢} spell with this trait. Starting at 3rd level, you can also cast {@spell 次級復原術} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -7555,23 +7555,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell cure wounds}, {@spell healing word}"
+											"{@spell 治療傷勢}, {@spell 治癒真言}"
 										],
 										[
 											"2nd",
-											"{@spell lesser restoration}, {@spell prayer of healing}"
+											"{@spell 次級復原術}, {@spell 治癒祈禱}"
 										],
 										[
 											"3rd",
-											"{@spell aura of vitality}, {@spell mass healing word}"
+											"{@spell 活力靈光}, {@spell 群體治癒真言}"
 										],
 										[
 											"4th",
-											"{@spell aura of purity}, {@spell aura of life}"
+											"{@spell 淨化靈光}, {@spell 生命靈光}"
 										],
 										[
 											"5th",
-											"{@spell greater restoration}"
+											"{@spell 高等復原術}"
 										]
 									]
 								}
@@ -7643,7 +7643,7 @@
 							"type": "entries",
 							"name": "Innkeeper's Magic",
 							"entries": [
-								"You know the {@spell prestidigitation} cantrip. You can also cast the {@spell purify food and drink} and {@spell unseen servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 魔法技倆} cantrip. You can also cast the {@spell 淨化飲食} and {@spell 隱形僕役} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -7665,23 +7665,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell goodberry}, {@spell sleep}"
+											"{@spell 神莓術}, {@spell 睡眠術}"
 										],
 										[
 											"2nd",
-											"{@spell aid}, {@spell calm emotions}"
+											"{@spell 援助術}, {@spell 安定心神}"
 										],
 										[
 											"3rd",
-											"{@spell create food and water}, {@spell Leomund's tiny hut}"
+											"{@spell 創造飲食}, {@spell 李歐蒙小屋}"
 										],
 										[
 											"4th",
-											"{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
+											"{@spell 淨化靈光}, {@spell 魔鄧肯私人密室}"
 										],
 										[
 											"5th",
-											"{@spell hallow}"
+											"{@spell 聖居}"
 										]
 									]
 								}
@@ -7781,7 +7781,7 @@
 					"type": "entries",
 					"name": "Hex Magic",
 					"entries": [
-						"You can cast the {@spell disguise self} and {@spell hex} spells with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you gain this lineage). Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spells slots you have."
+						"You can cast the {@spell 易容術} and {@spell 脆弱詛咒} spells with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you gain this lineage). Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spells slots you have."
 					]
 				},
 				{
@@ -8203,7 +8203,7 @@
 							"type": "entries",
 							"name": "Finder's Magic",
 							"entries": [
-								"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
+								"You can cast the {@spell 獵人印記} spell with this trait. Starting at 3rd level, you can also cast the {@spell 物品定位術} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -8235,23 +8235,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell faerie fire}, {@spell longstrider}"
+											"{@spell 妖火術}, {@spell 大步奔行}"
 										],
 										[
 											"2nd",
-											"{@spell locate animals or plants}, {@spell locate object}"
+											"{@spell 動植物定位術}, {@spell 物品定位術}"
 										],
 										[
 											"3rd",
-											"{@spell clairvoyance}, {@spell speak with plants}"
+											"{@spell 銳眼術}, {@spell 植物交談術}"
 										],
 										[
 											"4th",
-											"{@spell divination}, {@spell locate creature}"
+											"{@spell 預言術}, {@spell 生物定位術}"
 										],
 										[
 											"5th",
-											"{@spell commune with nature}"
+											"{@spell 問道自然}"
 										]
 									]
 								}
@@ -8340,14 +8340,14 @@
 							"type": "entries",
 							"name": "Primal Connection",
 							"entries": [
-								"You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+								"You can cast the {@spell 化獸為友} and {@spell 動物交談術} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "The Bigger They Are",
 							"entries": [
-								"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
+								"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell 化獸為友} or {@spell 動物交談術}, provided the creature's Intelligence score is 3 or lower."
 							]
 						},
 						{
@@ -8369,23 +8369,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell animal friendship}, {@spell speak with animals}"
+											"{@spell 化獸為友}, {@spell 動物交談術}"
 										],
 										[
 											"2nd",
-											"{@spell beast sense}, {@spell calm emotions}"
+											"{@spell 野獸知覺}, {@spell 安定心神}"
 										],
 										[
 											"3rd",
-											"{@spell beacon of hope}, {@spell conjure animals}"
+											"{@spell 希望信標}, {@spell 召喚動物}"
 										],
 										[
 											"4th",
-											"{@spell aura of life}, {@spell dominate beast}"
+											"{@spell 生命靈光}, {@spell 支配野獸}"
 										],
 										[
 											"5th",
-											"{@spell awaken}"
+											"{@spell 啟蒙術}"
 										]
 									]
 								}
@@ -8478,7 +8478,7 @@
 							"type": "entries",
 							"name": "Spellsmith",
 							"entries": [
-								"You know the {@spell mending} cantrip. You can also cast the {@spell magic weapon} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require concentration. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
+								"You know the {@spell 修復術} cantrip. You can also cast the {@spell 魔化武器} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require concentration. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence is your spellcasting ability for these spells."
 							]
 						},
 						{
@@ -8500,23 +8500,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell identify}, {@spell Tenser's floating disk}"
+											"{@spell 鑑定術}, {@spell 譚森浮碟術}"
 										],
 										[
 											"2nd",
-											"{@spell continual flame}, {@spell magic weapon}"
+											"{@spell 不滅明焰}, {@spell 魔化武器}"
 										],
 										[
 											"3rd",
-											"{@spell conjure barrage}, {@spell elemental weapon}"
+											"{@spell 召喚箭幕}, {@spell 元素武器}"
 										],
 										[
 											"4th",
-											"{@spell fabricate}, {@spell stone shape}"
+											"{@spell 鬼斧神工}, {@spell 塑石術}"
 										],
 										[
 											"5th",
-											"{@spell creation}"
+											"{@spell 造物術}"
 										]
 									]
 								}
@@ -8604,7 +8604,7 @@
 							"type": "entries",
 							"name": "Magical Passage",
 							"entries": [
-								"You can cast the {@spell misty step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
+								"You can cast the {@spell 迷蹤步} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
 							]
 						},
 						{
@@ -8626,23 +8626,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell expeditious retreat}, {@spell jump}"
+											"{@spell 腳底抹油}, {@spell 跳躍術}"
 										],
 										[
 											"2nd",
-											"{@spell misty step}, {@spell pass without trace}"
+											"{@spell 迷蹤步}, {@spell 行蹤無跡}"
 										],
 										[
 											"3rd",
-											"{@spell blink}, {@spell phantom steed}"
+											"{@spell 閃現術}, {@spell 魅影駒}"
 										],
 										[
 											"4th",
-											"{@spell dimension door}, {@spell freedom of movement}"
+											"{@spell 次元門}, {@spell 行動自如術}"
 										],
 										[
 											"5th",
-											"{@spell teleportation circle}"
+											"{@spell 傳送法陣}"
 										]
 									]
 								}
@@ -8713,7 +8713,7 @@
 							"type": "entries",
 							"name": "Guardian's Shield",
 							"entries": [
-								"You can cast the {@spell shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
+								"You can cast the {@spell 護盾術} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell."
 							]
 						},
 						{
@@ -8742,23 +8742,23 @@
 									"rows": [
 										[
 											"1st",
-											"{@spell compelled duel}, {@spell shield of faith}"
+											"{@spell 強迫決鬥}, {@spell 虔誠護盾}"
 										],
 										[
 											"2nd",
-											"{@spell warding bond}, {@spell zone of truth}"
+											"{@spell 守護聯結}, {@spell 誠實之域}"
 										],
 										[
 											"3rd",
-											"{@spell counterspell}, {@spell protection from energy}"
+											"{@spell 反制法術}, {@spell 防護能量}"
 										],
 										[
 											"4th",
-											"{@spell death ward}, {@spell guardian of faith}"
+											"{@spell 防死護咒}, {@spell 虔誠守衛}"
 										],
 										[
 											"5th",
-											"{@spell Bigby's hand}"
+											"{@spell 畢格比之掌}"
 										]
 									]
 								}
@@ -9319,7 +9319,7 @@
 					"type": "entries",
 					"name": "Severed from Dreams",
 					"entries": [
-						"Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like {@spell dream}, but not to spells and other magical effects that put you to sleep, like {@spell sleep}."
+						"Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like {@spell 託夢術}, but not to spells and other magical effects that put you to sleep, like {@spell 睡眠術}."
 					]
 				},
 				{
@@ -13395,39 +13395,39 @@
 									"rows": [
 										[
 											"1",
-											"{@spell Dancing lights}",
-											"{@spell Burning hands}",
-											"{@spell Alter self}"
+											"{@spell 舞光術}",
+											"{@spell 燃燒之手}",
+											"{@spell 變造自身}"
 										],
 										[
 											"2",
-											"{@spell True strike}",
-											"{@spell Charm person}",
-											"{@spell Darkness}"
+											"{@spell 克敵機先}",
+											"{@spell 魅惑人類}",
+											"{@spell 黑暗術}"
 										],
 										[
 											"3",
-											"{@spell Light}",
-											"{@spell Magic missile}",
-											"{@spell Invisibility}"
+											"{@spell 光亮術}",
+											"{@spell 魔法飛彈}",
+											"{@spell 隱形術}"
 										],
 										[
 											"4",
-											"{@spell Message}",
-											"{@spell Cure wounds}",
-											"{@spell Levitate}"
+											"{@spell 傳訊術}",
+											"{@spell 治療傷勢}",
+											"{@spell 浮空術}"
 										],
 										[
 											"5",
-											"{@spell Spare the dying}",
-											"{@spell Tasha's hideous laughter}",
-											"{@spell Mirror Image}"
+											"{@spell 拯救瀕死}",
+											"{@spell 塔莎狂笑術}",
+											"{@spell 鏡影術}"
 										],
 										[
 											"6",
-											"{@spell Prestidigitation}",
-											"{@spell Thunderwave}",
-											"{@spell Spider climb}"
+											"{@spell 魔法技倆}",
+											"{@spell 雷鳴波}",
+											"{@spell 蛛行術}"
 										]
 									]
 								}
@@ -13508,7 +13508,7 @@
 						{
 							"name": "Legacy of Maladomini",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. When you reach 3rd level, you can cast the {@spell 致病射線} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 瘋狂冠冕} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13551,7 +13551,7 @@
 						{
 							"name": "Legacy of Maladomini",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. When you reach 3rd level, you can cast the {@spell 致病射線} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 瘋狂冠冕} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13598,7 +13598,7 @@
 						{
 							"name": "Legacy of Dis",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. When you reach 3rd level, you can cast the {@spell 易容術} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 偵測思想} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13650,7 +13650,7 @@
 						{
 							"name": "Legacy of Dis",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. When you reach 3rd level, you can cast the {@spell 易容術} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 隱形術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13700,7 +13700,7 @@
 						{
 							"name": "Legacy of Phlegethos",
 							"entries": [
-								"You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 交友術} cantrip. When you reach 3rd level, you can cast the {@spell 魅惑人類} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 暗示術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13752,7 +13752,7 @@
 						{
 							"name": "Legacy of Phlegethos",
 							"entries": [
-								"You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 交友術} cantrip. When you reach 3rd level, you can cast the {@spell 魅惑人類} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 暗示術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13802,7 +13802,7 @@
 						{
 							"name": "Legacy of Malbolge",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 次級幻象} cantrip. When you reach 3rd level, you can cast the {@spell 易容術} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 隱形術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13854,7 +13854,7 @@
 						{
 							"name": "Legacy of Malbolge",
 							"entries": [
-								"You know the {@spell minor illusion} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 次級幻象} cantrip. When you reach 3rd level, you can cast the {@spell 易容術} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 隱形術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13904,7 +13904,7 @@
 						{
 							"name": "Legacy of Stygia",
 							"entries": [
-								"You know the {@spell ray of frost} cantrip. When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 冷凍射線} cantrip. When you reach 3rd level, you can cast the {@spell 艾嘉西斯之鎧} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 黑暗術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -13959,7 +13959,7 @@
 						{
 							"name": "Legacy of Stygia",
 							"entries": [
-								"You know the {@spell ray of frost} cantrip. When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 冷凍射線} cantrip. When you reach 3rd level, you can cast the {@spell 艾嘉西斯之鎧} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 黑暗術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -14003,7 +14003,7 @@
 						{
 							"name": "Legacy of Minauros",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 法師之手} cantrip. When you reach 3rd level, you can cast the {@spell 譚森浮碟術} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell 祕法鎖} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -14046,7 +14046,7 @@
 						{
 							"name": "Legacy of Minauros",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 法師之手} cantrip. When you reach 3rd level, you can cast the {@spell 譚森浮碟術} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell 祕法鎖} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -14087,7 +14087,7 @@
 						{
 							"name": "Legacy of Cania",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell burning hands} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell flame blade} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 法師之手} cantrip. When you reach 3rd level, you can cast the {@spell 燃燒之手} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 火焰刀} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -14130,7 +14130,7 @@
 						{
 							"name": "Legacy of Cania",
 							"entries": [
-								"You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell magic missile} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell web} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 法師之手} cantrip. When you reach 3rd level, you can cast the {@spell 魔法飛彈} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 蛛網術} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -14192,7 +14192,7 @@
 							"type": "entries",
 							"name": "Devil's Tongue",
 							"entries": [
-								"You know the {@spell vicious mockery} cantrip. When your reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell enthrall} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
+								"You know the {@spell 惡毒嘲笑} cantrip. When your reach 3rd level, you can cast the {@spell 魅惑人類} spell as a 2nd-level spell once with this trait. When you reach 5th level, you can cast the {@spell 注目術} spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them. This trait replaces the Infernal Legacy trait."
 							],
 							"data": {
 								"overwrite": "Infernal Legacy"
@@ -14256,7 +14256,7 @@
 							"type": "entries",
 							"name": "Hellfire",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. Once you reach 3rd level, you can cast the {@spell 燃燒之手} spell once per day as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell 黑暗術} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
 							],
 							"data": {
 								"overwrite": "Infernal Legacy"
@@ -14408,7 +14408,7 @@
 						{
 							"name": "Legacy of Avernus",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. When you reach 3rd level, you can cast the {@spell 熾炎斬} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 烙印斬} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {
@@ -14460,7 +14460,7 @@
 						{
 							"name": "Legacy of Avernus",
 							"entries": [
-								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+								"You know the {@spell 奇術} cantrip. When you reach 3rd level, you can cast the {@spell 熾炎斬} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell 烙印斬} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 							],
 							"type": "entries",
 							"data": {

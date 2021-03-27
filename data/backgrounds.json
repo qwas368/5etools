@@ -1222,31 +1222,31 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell friends}, {@spell message}"
+									"{@spell 交友術}, {@spell 傳訊術}"
 								],
 								[
 									"1st",
-									"{@spell command}, {@spell ensnaring strike}"
+									"{@spell 命令術}, {@spell 誘捕打擊}"
 								],
 								[
 									"2nd",
-									"{@spell arcane lock}, {@spell calm emotions}, {@spell hold person}"
+									"{@spell 祕法鎖}, {@spell 安定心神}, {@spell 人類定身術}"
 								],
 								[
 									"3rd",
-									"{@spell clairvoyance}, {@spell counterspell}"
+									"{@spell 銳眼術}, {@spell 反制法術}"
 								],
 								[
 									"4th",
-									"{@spell compulsion}, {@spell divination}"
+									"{@spell 強迫術}, {@spell 預言術}"
 								],
 								[
 									"5th",
-									"{@spell dominate person}"
+									"{@spell 支配人類}"
 								]
 							]
 						},
-						"Your magic often takes the form of blue or golden runes floating and glowing in the air in circular patterns or of shimmering azure barriers of magical energy. If you cast {@spell ensnaring strike}, for example, the vines created by the spell might appear as rune-inscribed glowing bands that wrap around the target and hold it in place."
+						"Your magic often takes the form of blue or golden runes floating and glowing in the air in circular patterns or of shimmering azure barriers of magical energy. If you cast {@spell 誘捕打擊}, for example, the vines created by the spell might appear as rune-inscribed glowing bands that wrap around the target and hold it in place."
 					]
 				},
 				{
@@ -2545,27 +2545,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell fire bolt}, {@spell sacred flame}"
+									"{@spell 火焰箭}, {@spell 聖焰}"
 								],
 								[
 									"1st",
-									"{@spell guiding bolt}, {@spell heroism}"
+									"{@spell 光導箭}, {@spell 英雄氣概}"
 								],
 								[
 									"2nd",
-									"{@spell aid}, {@spell scorching ray}"
+									"{@spell 援助術}, {@spell 灼熱射線}"
 								],
 								[
 									"3rd",
-									"{@spell beacon of hope}, {@spell blinding smite}"
+									"{@spell 希望信標}, {@spell 致盲斬}"
 								],
 								[
 									"4th",
-									"{@spell death ward}, {@spell wall of fire}"
+									"{@spell 防死護咒}, {@spell 火牆術}"
 								],
 								[
 									"5th",
-									"{@spell flame strike}"
+									"{@spell 焰擊術}"
 								]
 							]
 						},
@@ -4688,27 +4688,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell encode thoughts|GGR}, {@spell mage hand}"
+									"{@spell encode thoughts|GGR}, {@spell 法師之手}"
 								],
 								[
 									"1st",
-									"{@spell disguise self}, {@spell sleep}"
+									"{@spell 易容術}, {@spell 睡眠術}"
 								],
 								[
 									"2nd",
-									"{@spell detect thoughts}, {@spell pass without trace}"
+									"{@spell 偵測思想}, {@spell 行蹤無跡}"
 								],
 								[
 									"3rd",
-									"{@spell gaseous form}, {@spell meld into stone}, {@spell nondetection}"
+									"{@spell 氣化形體}, {@spell 融身入石}, {@spell 迴避偵測}"
 								],
 								[
 									"4th",
-									"{@spell arcane eye}, {@spell freedom of movement}"
+									"{@spell 祕法眼}, {@spell 行動自如術}"
 								],
 								[
 									"5th",
-									"{@spell modify memory}"
+									"{@spell 修改記憶}"
 								]
 							]
 						},
@@ -8053,27 +8053,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell dancing lights}, {@spell spare the dying}"
+									"{@spell 舞光術}, {@spell 拯救瀕死}"
 								],
 								[
 									"1st",
-									"{@spell entangle}, {@spell ray of sickness}"
+									"{@spell 糾纏術}, {@spell 致病射線}"
 								],
 								[
 									"2nd",
-									"{@spell protection from poison}, {@spell ray of enfeeblement}, {@spell spider climb}"
+									"{@spell 防護毒素}, {@spell 衰弱射線}, {@spell 蛛行術}"
 								],
 								[
 									"3rd",
-									"{@spell animate dead}, {@spell plant growth}"
+									"{@spell 活化死屍}, {@spell 植物滋長}"
 								],
 								[
 									"4th",
-									"{@spell giant insect}, {@spell grasping vine}"
+									"{@spell 巨蟲術}, {@spell 抓攫藤蔓}"
 								],
 								[
 									"5th",
-									"{@spell cloudkill}, {@spell insect plague}"
+									"{@spell 死雲術}, {@spell 疫病蟲群}"
 								]
 							]
 						},
@@ -8712,27 +8712,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell fire bolt}, {@spell produce flame}"
+									"{@spell 火焰箭}, {@spell 燃火術}"
 								],
 								[
 									"1st",
-									"{@spell compelled duel}, {@spell speak with animals}, {@spell thunderwave}"
+									"{@spell 強迫決鬥}, {@spell 動物交談術}, {@spell 雷鳴波}"
 								],
 								[
 									"2nd",
-									"{@spell beast sense}, {@spell shatter}"
+									"{@spell 野獸知覺}, {@spell 粉碎音波}"
 								],
 								[
 									"3rd",
-									"{@spell conjure animals}, {@spell conjure barrage}"
+									"{@spell 召喚動物}, {@spell 召喚箭幕}"
 								],
 								[
 									"4th",
-									"{@spell dominate beast}, {@spell stoneskin}"
+									"{@spell 支配野獸}, {@spell 石膚術}"
 								],
 								[
 									"5th",
-									"{@spell destructive wave}"
+									"{@spell 湮滅波}"
 								]
 							]
 						},
@@ -11978,31 +11978,31 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell produce flame}, {@spell shocking grasp}"
+									"{@spell 燃火術}, {@spell 電爪}"
 								],
 								[
 									"1st",
-									"{@spell chaos bolt|XGE}, {@spell create or destroy water}, {@spell unseen servant}"
+									"{@spell chaos bolt|XGE}, {@spell 造水/枯水術}, {@spell 隱形僕役}"
 								],
 								[
 									"2nd",
-									"{@spell heat metal}, {@spell rope trick}"
+									"{@spell 灼熱金屬}, {@spell 通天繩}"
 								],
 								[
 									"3rd",
-									"{@spell call lightning}, {@spell elemental weapon}, {@spell glyph of warding}"
+									"{@spell 召雷術}, {@spell 元素武器}, {@spell 守衛銘文}"
 								],
 								[
 									"4th",
-									"{@spell conjure minor elementals}, {@spell divination}, {@spell Otiluke's resilient sphere}"
+									"{@spell 召喚次級元素生物}, {@spell 預言術}, {@spell 歐提路克魔封法球}"
 								],
 								[
 									"5th",
-									"{@spell animate objects}, {@spell conjure elemental}"
+									"{@spell 活化物體}, {@spell 召喚元素生物}"
 								]
 							]
 						},
-						"Your spells tend to be loud, flashy, or explosive, even when the effect is unremarkable. For example, when you open the portal of a {@spell rope trick} spell, the portal might be outlined by harmless, showy sparkles.",
+						"Your spells tend to be loud, flashy, or explosive, even when the effect is unremarkable. For example, when you open the portal of a {@spell 通天繩} spell, the portal might be outlined by harmless, showy sparkles.",
 						"If you use an arcane focus, it probably takes the form of an intricate device that could include metal gauntlets, glass canisters, copper tubing, and leather straps attaching it to your body. The {@item mizzium apparatus|GGR} described in {@book chapter 5|GGR|4|Mizzium Apparatus} is a magical version of this gear.",
 						"The {@spell chaos bolt|XGE} spell is a favorite of Izzet spellcasters because of its unpredictable nature."
 					]
@@ -13363,27 +13363,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell friends}, {@spell guidance}"
+									"{@spell 交友術}, {@spell 指導術}"
 								],
 								[
 									"1st",
-									"{@spell command}, {@spell illusory script}"
+									"{@spell 命令術}, {@spell 迷幻手稿}"
 								],
 								[
 									"2nd",
-									"{@spell enthrall}, {@spell ray of enfeeblement}, {@spell zone of truth}"
+									"{@spell 注目術}, {@spell 衰弱射線}, {@spell 誠實之域}"
 								],
 								[
 									"3rd",
-									"{@spell bestow curse}, {@spell speak with dead}, {@spell spirit guardians}"
+									"{@spell 降咒}, {@spell 死者交談術}, {@spell 靈體守衛}"
 								],
 								[
 									"4th",
-									"{@spell blight}, {@spell death ward}, {@spell Leomund's secret chest}"
+									"{@spell 枯萎術}, {@spell 防死護咒}, {@spell 李歐蒙秘藏箱}"
 								],
 								[
 									"5th",
-									"{@spell geas}"
+									"{@spell 指使術}"
 								]
 							]
 						},
@@ -14932,27 +14932,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell fire bolt}, {@spell vicious mockery}"
+									"{@spell 火焰箭}, {@spell 惡毒嘲笑}"
 								],
 								[
 									"1st",
-									"{@spell burning hands}, {@spell dissonant whispers}, {@spell hellish rebuke}"
+									"{@spell 燃燒之手}, {@spell 噪音暗語}, {@spell 煉獄叱喝}"
 								],
 								[
 									"2nd",
-									"{@spell crown of madness}, {@spell enthrall}, {@spell flaming sphere}"
+									"{@spell 瘋狂冠冕}, {@spell 注目術}, {@spell 熾焰法球}"
 								],
 								[
 									"3rd",
-									"{@spell fear}, {@spell haste}"
+									"{@spell 恐懼術}, {@spell 加速術}"
 								],
 								[
 									"4th",
-									"{@spell confusion}, {@spell wall of fire}"
+									"{@spell 困惑術}, {@spell 火牆術}"
 								],
 								[
 									"5th",
-									"{@spell dominate person}"
+									"{@spell 支配人類}"
 								]
 							]
 						},
@@ -16381,27 +16381,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell druidcraft}, {@spell friends}"
+									"{@spell 德魯伊伎倆}, {@spell 交友術}"
 								],
 								[
 									"1st",
-									"{@spell animal friendship}, {@spell charm person}"
+									"{@spell 化獸為友}, {@spell 魅惑人類}"
 								],
 								[
 									"2nd",
-									"{@spell aid}, {@spell animal messenger}, {@spell calm emotions}, {@spell warding bond}"
+									"{@spell 援助術}, {@spell 動物信使}, {@spell 安定心神}, {@spell 守護聯結}"
 								],
 								[
 									"3rd",
-									"{@spell plant growth}, {@spell speak with plants}"
+									"{@spell 植物滋長}, {@spell 植物交談術}"
 								],
 								[
 									"4th",
-									"{@spell aura of life}, {@spell conjure minor elementals}"
+									"{@spell 生命靈光}, {@spell 召喚次級元素生物}"
 								],
 								[
 									"5th",
-									"{@spell awaken}, {@spell commune with nature}"
+									"{@spell 啟蒙術}, {@spell 問道自然}"
 								]
 							]
 						},
@@ -17374,27 +17374,27 @@
 							"rows": [
 								[
 									"Cantrip",
-									"{@spell acid splash}, {@spell druidcraft}"
+									"{@spell 酸液濺爆}, {@spell 德魯伊伎倆}"
 								],
 								[
 									"1st",
-									"{@spell detect poison and disease}, {@spell expeditious retreat}, {@spell jump}"
+									"{@spell 偵測毒素或疾病}, {@spell 腳底抹油}, {@spell 跳躍術}"
 								],
 								[
 									"2nd",
-									"{@spell alter self}, {@spell enhance ability}, {@spell enlarge/reduce}"
+									"{@spell 變造自身}, {@spell 強化屬性}, {@spell 變巨/縮小術}"
 								],
 								[
 									"3rd",
-									"{@spell gaseous form}, {@spell water breathing}, {@spell wind wall}"
+									"{@spell 氣化形體}, {@spell 水下呼吸}, {@spell 風牆術}"
 								],
 								[
 									"4th",
-									"{@spell freedom of movement}, {@spell polymorph}"
+									"{@spell 行動自如術}, {@spell 變形術}"
 								],
 								[
 									"5th",
-									"{@spell creation}"
+									"{@spell 造物術}"
 								]
 							]
 						},

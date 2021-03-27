@@ -305,7 +305,7 @@
 			"page": 227,
 			"entries": [
 				"Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is {@condition blinded}.",
-				"{@note This disease can be inflicted with the {@spell contagion} spell.}"
+				"{@note This disease can be inflicted with the {@spell 疫病術} spell.}"
 			]
 		},
 		{
@@ -353,7 +353,7 @@
 			"page": 227,
 			"entries": [
 				"A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.",
-				"{@note This disease can be inflicted with the {@spell contagion} spell.}"
+				"{@note This disease can be inflicted with the {@spell 疫病術} spell.}"
 			]
 		},
 		{
@@ -362,7 +362,7 @@
 			"page": 227,
 			"entries": [
 				"The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.",
-				"{@note This disease can be inflicted with the {@spell contagion} spell.}"
+				"{@note This disease can be inflicted with the {@spell 疫病術} spell.}"
 			]
 		},
 		{
@@ -380,8 +380,8 @@
 			"source": "PHB",
 			"page": 227,
 			"entries": [
-				"The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell confusion} spell during combat.",
-				"{@note This disease can be inflicted with the {@spell contagion} spell.}"
+				"The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell 困惑術} spell during combat.",
+				"{@note This disease can be inflicted with the {@spell 疫病術} spell.}"
 			]
 		},
 		{
@@ -390,7 +390,7 @@
 			"page": 227,
 			"entries": [
 				"The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.",
-				"{@note This disease can be inflicted with the {@spell contagion} spell.}"
+				"{@note This disease can be inflicted with the {@spell 疫病術} spell.}"
 			]
 		},
 		{
@@ -427,7 +427,7 @@
 			"srd": true,
 			"entries": [
 				"這個痛苦的傳染病會使血液從眼睛流出，並最終導致患者失明。",
-				"飲用被這個疾病汙染的水的野獸或類人生物必須成功通過一次DC15的體質豁免，否則被感染。在被感染後經過一天，該生物的視力將開始變得模糊。該生物在依賴視覺的攻擊檢定和屬性檢定承受-1減值。在症狀浮現後的每個長休結束，這個減值都會惡化1點。當減值達到-5時，患者陷入{@condition 目盲}直到他的視力被魔法回復，像是{@spell 次級復原術}或{@spell heal}。",
+				"飲用被這個疾病汙染的水的野獸或類人生物必須成功通過一次DC15的體質豁免，否則被感染。在被感染後經過一天，該生物的視力將開始變得模糊。該生物在依賴視覺的攻擊檢定和屬性檢定承受-1減值。在症狀浮現後的每個長休結束，這個減值都會惡化1點。當減值達到-5時，患者陷入{@condition 目盲}直到他的視力被魔法回復，像是{@spell 次級復原術}或{@spell 治癒術}。",
 				"視力腐化可以透過一種生長在沼澤，名為小米草(Eyebright)的罕見花朵給治癒。一個熟練於{@item 藥草師工具組|phb}的角色可以用一個小時將花朵製作成一劑軟膏。在長休前塗抹一劑於眼睛上可以防止疾病的惡化，塗抹三劑之後，軟膏將完全治癒疾病。"
 			]
 		},
@@ -437,7 +437,7 @@
 			"page": 227,
 			"entries": [
 				"The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is {@condition stunned} until the end of its next turn.",
-				"{@note This disease can be inflicted with the {@spell contagion} spell.}"
+				"{@note This disease can be inflicted with the {@spell 疫病術} spell.}"
 			]
 		},
 		{

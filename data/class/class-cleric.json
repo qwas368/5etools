@@ -5102,23 +5102,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell heroism}, {@spell sanctuary}"
+									"{@spell 英雄氣概}, {@spell 聖域術}"
 								],
 								[
 									"3rd",
-									"{@spell aid}, {@spell warding bond}"
+									"{@spell 援助術}, {@spell 守護聯結}"
 								],
 								[
 									"5th",
-									"{@spell beacon of hope}, {@spell sending}"
+									"{@spell 希望信標}, {@spell 短訊術}"
 								],
 								[
 									"7th",
-									"{@spell aura of purity}, {@spell Otiluke's resilient sphere}"
+									"{@spell 淨化靈光}, {@spell 歐提路克魔封法球}"
 								],
 								[
 									"9th",
-									"{@spell greater restoration}, {@spell Rary's telepathic bond}"
+									"{@spell 高等復原術}, {@spell 拉瑞心靈聯結}"
 								]
 							]
 						}
@@ -5319,23 +5319,23 @@
 							"rows": [
 								[
 									"1st",
-									"{@spell faerie fire}, {@spell sleep}"
+									"{@spell 妖火術}, {@spell 睡眠術}"
 								],
 								[
 									"3rd",
-									"{@spell moonbeam}, {@spell see invisibility}"
+									"{@spell 月華之光}, {@spell 識破隱形}"
 								],
 								[
 									"5th",
-									"{@spell aura of vitality}, {@spell Leomund's tiny hut}"
+									"{@spell 活力靈光}, {@spell 李歐蒙小屋}"
 								],
 								[
 									"7th",
-									"{@spell aura of life}, {@spell greater invisibility}"
+									"{@spell 生命靈光}, {@spell 高等隱形術}"
 								],
 								[
 									"9th",
-									"{@spell circle of power}, {@spell mislead}"
+									"{@spell 威能法環}, {@spell 假象術}"
 								]
 							]
 						}
@@ -5582,23 +5582,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell charm person}, {@spell heroism}"
+							"{@spell 魅惑人類}, {@spell 英雄氣概}"
 						],
 						[
 							"3rd",
-							"{@spell enthrall}, {@spell warding bond}"
+							"{@spell 注目術}, {@spell 守護聯結}"
 						],
 						[
 							"5th",
-							"{@spell beacon of hope}, {@spell hypnotic pattern}"
+							"{@spell 希望信標}, {@spell 催眠圖紋}"
 						],
 						[
 							"7th",
-							"{@spell aura of purity}, {@spell confusion}"
+							"{@spell 淨化靈光}, {@spell 困惑術}"
 						],
 						[
 							"9th",
-							"{@spell greater restoration}, {@spell hold monster}"
+							"{@spell 高等復原術}, {@spell 怪物定身術}"
 						]
 					]
 				},
@@ -5806,23 +5806,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell heroism}, {@spell shield of faith}"
+							"{@spell 英雄氣概}, {@spell 虔誠護盾}"
 						],
 						[
 							"3rd",
-							"{@spell aid}, {@spell warding bond}"
+							"{@spell 援助術}, {@spell 守護聯結}"
 						],
 						[
 							"5th",
-							"{@spell beacon of hope}, {@spell sending}"
+							"{@spell 希望信標}, {@spell 短訊術}"
 						],
 						[
 							"7th",
-							"{@spell aura of purity}, {@spell guardian of faith}"
+							"{@spell 淨化靈光}, {@spell 虔誠守衛}"
 						],
 						[
 							"9th",
-							"{@spell greater restoration}, {@spell Rary's telepathic bond}"
+							"{@spell 高等復原術}, {@spell 拉瑞心靈聯結}"
 						]
 					]
 				},
@@ -6218,7 +6218,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you gain the ability to manipulate the line between life and death. When you cast a spell that restores hit points to a living creature currently at 0, treat any dice rolled to determine the spell's healing as having rolled their maximum result. In addition, if you have the {@spell spare the dying} cantrip, you can cast it as a bonus action."
+				"At 1st level, you gain the ability to manipulate the line between life and death. When you cast a spell that restores hit points to a living creature currently at 0, treat any dice rolled to determine the spell's healing as having rolled their maximum result. In addition, if you have the {@spell 拯救瀕死} cantrip, you can cast it as a bonus action."
 			]
 		},
 		{
@@ -6527,23 +6527,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell faerie fire}, {@spell sleep}"
+							"{@spell 妖火術}, {@spell 睡眠術}"
 						],
 						[
 							"3rd",
-							"{@spell darkness}, {@spell invisibility}"
+							"{@spell 黑暗術}, {@spell 隱形術}"
 						],
 						[
 							"5th",
-							"{@spell aura of vitality}, {@spell Leomund's tiny hut}"
+							"{@spell 活力靈光}, {@spell 李歐蒙小屋}"
 						],
 						[
 							"7th",
-							"{@spell aura of life}, {@spell greater invisibility}"
+							"{@spell 生命靈光}, {@spell 高等隱形術}"
 						],
 						[
 							"9th",
-							"{@spell circle of power}, {@spell dream}"
+							"{@spell 威能法環}, {@spell 託夢術}"
 						]
 					]
 				},
@@ -6711,7 +6711,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Twilight Domain feature}",
-				"You can harness the shrouding power of night to protect your allies and stymie your foes. Whenever you cast the {@spell darkness} spell using a spell slot, you can choose a number of creatures that you can see (including yourself) equal to your Wisdom modifier (minimum of one). The chosen creatures can see through the darkness."
+				"You can harness the shrouding power of night to protect your allies and stymie your foes. Whenever you cast the {@spell 黑暗術} spell using a spell slot, you can choose a number of creatures that you can see (including yourself) equal to your Wisdom modifier (minimum of one). The chosen creatures can see through the darkness."
 			]
 		},
 		{
@@ -6904,7 +6904,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you can use mass transit routes to transport instantaneously to other points in the city. Starting from a bus stop, train station, subway stop, or other suitable mass transit site within the city, you can teleport to any other similar transit stop within the city, as if you had cast a {@spell teleport} spell whose destination is a permanent {@spell teleportation circle} you know. Once you use this feature, you must finish a short or long rest before using it again."
+				"At 17th level, you can use mass transit routes to transport instantaneously to other points in the city. Starting from a bus stop, train station, subway stop, or other suitable mass transit site within the city, you can teleport to any other similar transit stop within the city, as if you had cast a {@spell 傳送術} spell whose destination is a permanent {@spell 傳送法陣} you know. Once you use this feature, you must finish a short or long rest before using it again."
 			]
 		},
 		{

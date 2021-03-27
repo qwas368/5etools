@@ -179,7 +179,7 @@
 				{
 					"name": "Staff of Frost",
 					"entries": [
-						"The staff has 10 charges. It can expend 1 or more of its charges to cast one of the following spells (save {@dc 12}): {@spell cone of cold} (5 charges), {@spell fog cloud} (1 charge), {@spell ice storm} (4 charges), or {@spell wall of ice} (4 charges). It regains {@dice 1d6 + 4} expended charges daily at dawn. If the staff expends its last charge, roll a {@dice d20}. On a 1, the staff turns to water and is destroyed."
+						"The staff has 10 charges. It can expend 1 or more of its charges to cast one of the following spells (save {@dc 12}): {@spell 寒冰錐} (5 charges), {@spell 雲霧術} (1 charge), {@spell 冰風暴} (4 charges), or {@spell 冰牆術} (4 charges). It regains {@dice 1d6 + 4} expended charges daily at dawn. If the staff expends its last charge, roll a {@dice d20}. On a 1, the staff turns to water and is destroyed."
 					]
 				},
 				{
@@ -365,87 +365,87 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Arcturia is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Arcturia can cast {@spell alter self} at will and has the following wizard spells prepared:"
+						"Arcturia is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Arcturia can cast {@spell 變造自身} at will and has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell enlarge/reduce}",
-								"{@spell Melf's Acid Arrow}",
-								"{@spell mirror image}"
+								"{@spell 偵測思想}",
+								"{@spell 變巨/縮小術}",
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 鏡影術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}",
-								"{@spell slow}"
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 火球術}",
+								"{@spell 緩速術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell polymorph}"
+								"{@spell 枯萎術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate objects}",
-								"{@spell telekinesis}"
+								"{@spell 活化物體}",
+								"{@spell 心靈遙控}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell disintegrate}",
-								"{@spell flesh to stone}"
+								"{@spell 解離術}",
+								"{@spell 石化術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell reverse gravity}",
-								"{@spell teleport}"
+								"{@spell 重力反轉}",
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell feeblemind}",
-								"{@spell maze}"
+								"{@spell 弱智術}",
+								"{@spell 迷宮術}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell True Polymorph}"
+								"{@spell 完全變形術}"
 							]
 						}
 					},
 					"will": [
-						"{@spell alter self}"
+						"{@spell 變造自身}"
 					],
 					"hidden": [
 						"will"
@@ -483,12 +483,12 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell alarm}",
-							"{@spell detect magic}",
-							"{@spell gaseous form}",
-							"{@spell misty step}",
-							"{@spell passwall}",
-							"{@spell see invisibility}"
+							"{@spell 警報術}",
+							"{@spell 偵測魔法}",
+							"{@spell 氣化形體}",
+							"{@spell 迷蹤步}",
+							"{@spell 穿牆術}",
+							"{@spell 識破隱形}"
 						]
 					},
 					"ability": "cha"
@@ -587,76 +587,76 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}*",
-								"{@spell magic missile}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 法師護甲}*",
+								"{@spell 魔法飛彈}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell polymorph}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}*"
+								"{@spell 變形術}",
+								"{@spell 火焰護盾}",
+								"{@spell 石膚術}*"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
+								"{@spell 寒冰錐}",
+								"{@spell 探知}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell globe of invulnerability}"
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell teleport}"
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell mind blank}*"
+								"{@spell 心靈屏障}*"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell time stop}"
+								"{@spell 時間停止}"
 							]
 						}
 					},
@@ -957,7 +957,7 @@
 				14,
 				{
 					"ac": 17,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -984,76 +984,76 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell mage armor}*",
-								"{@spell magic missile}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 法師護甲}*",
+								"{@spell 魔法飛彈}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
+								"{@spell 偵測思想}",
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell phantasmal killer}",
-								"{@spell fire shield}",
-								"{@spell stoneskin}*"
+								"{@spell 魅影殺手}",
+								"{@spell 火焰護盾}",
+								"{@spell 石膚術}*"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
+								"{@spell 寒冰錐}",
+								"{@spell 探知}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell globe of invulnerability}"
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell teleport}"
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell mind blank}*"
+								"{@spell 心靈屏障}*"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell time stop}"
+								"{@spell 時間停止}"
 							]
 						}
 					},
@@ -1273,36 +1273,36 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell compelled duel}",
-								"{@spell searing smite}"
+								"{@spell 命令術}",
+								"{@spell 強迫決鬥}",
+								"{@spell 熾炎斬}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell magic weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 魔化武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell elemental weapon}"
+								"{@spell 解除魔法}",
+								"{@spell 元素武器}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell locate creature}",
-								"{@spell staggering smite}"
+								"{@spell 生物定位術}",
+								"{@spell 驚震斬}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell destructive wave} (necrotic)"
+								"{@spell 湮滅波} (necrotic)"
 							]
 						}
 					},
@@ -1449,77 +1449,77 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell invisibility}",
-								"{@spell Melf's acid arrow}",
-								"{@spell mirror image}"
+								"{@spell 偵測思想}",
+								"{@spell 隱形術}",
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 鏡影術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}"
+								"{@spell 活化死屍}",
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell dimension door}"
+								"{@spell 枯萎術}",
+								"{@spell 次元門}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell scrying}"
+								"{@spell 死雲術}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell disintegrate}",
-								"{@spell globe of invulnerability}"
+								"{@spell 解離術}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell forcecage}"
+								"{@spell 死亡一指}",
+								"{@spell 力場監牢}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate monster}",
-								"{@spell power word stun}"
+								"{@spell 支配怪物}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell power word kill}"
+								"{@spell 律令死亡}"
 							]
 						}
 					},
@@ -1751,7 +1751,7 @@
 								"name": "Invisibility (Recharges after a Short or Long Rest)",
 								"entries": [
 									"The mummy lord magically turns {@condition invisible} for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the mummy lord wears or carries is {@condition invisible} with it.",
-									"The stalagmite in the northwest alcove is hollow and serves as Gorka Tharn's sarcophagus. The mummy lord is lodged inside the stalagmite's funnel-shaped interior. When it awakens, the mummy lord uses a {@spell stone shape} spell to create an opening large enough for it to emerge. It destroys any intruders in its lair, then returns to its sarcophagus and its slumber.",
+									"The stalagmite in the northwest alcove is hollow and serves as Gorka Tharn's sarcophagus. The mummy lord is lodged inside the stalagmite's funnel-shaped interior. When it awakens, the mummy lord uses a {@spell 塑石術} spell to create an opening large enough for it to emerge. It destroys any intruders in its lair, then returns to its sarcophagus and its slumber.",
 									"At the bottom of the stalagmite's hollow cavity, four 1-foot-tall clay urns contain Gorka Tharn's preserved internal organs, including the mummy lord's shriveled heart. Only by destroying the heart can the characters prevent the mummy lord from rejuvenating. The heart is a Tiny object with AC 5, 25 hit points, and immunity to all damage except fire."
 								]
 							}
@@ -1772,51 +1772,51 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell guiding bolt}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 光導箭}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell silence}",
-								"{@spell spiritual weapon}"
+								"{@spell 人類定身術}",
+								"{@spell 沉默術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell dispel magic}"
+								"{@spell 活化死屍}",
+								"{@spell 解除魔法}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell stone shape}",
-								"{@spell guardian of faith}"
+								"{@spell 塑石術}",
+								"{@spell 虔誠守衛}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell contagion}",
-								"{@spell insect plague}"
+								"{@spell 疫病術}",
+								"{@spell 疫病蟲群}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell harm}"
+								"{@spell 傷害術}"
 							]
 						}
 					},
@@ -1900,7 +1900,7 @@
 				14,
 				{
 					"ac": 17,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -1954,99 +1954,99 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 22}, {@hit 14} to hit with spell attacks). He can cast {@spell disguise self} and {@spell invisibility} at will. He can cast {@spell fly} and {@spell lightning bolt} once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:"
+						"Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 22}, {@hit 14} to hit with spell attacks). He can cast {@spell 易容術} and {@spell 隱形術} at will. He can cast {@spell 飛行術} and {@spell 閃電束} once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell dancing lights}",
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 舞光術}",
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell silent image}"
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 無聲幻影}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell arcane lock}",
-								"{@spell cloud of daggers}",
-								"{@spell darkvision}",
-								"{@spell knock}"
+								"{@spell 祕法鎖}",
+								"{@spell 匕首之雲}",
+								"{@spell 黑暗視覺}",
+								"{@spell 敲擊術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}"
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 火球術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell hallucinatory terrain}",
-								"{@spell polymorph}"
+								"{@spell 困惑術}",
+								"{@spell 幻景}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell geas}",
-								"{@spell wall of force}"
+								"{@spell 畢格比之掌}",
+								"{@spell 指使術}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 2,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell globe of invulnerability}",
-								"{@spell programmed illusion}"
+								"{@spell 連環閃電}",
+								"{@spell 法術無效結界}",
+								"{@spell 預置幻象}"
 							]
 						},
 						"7": {
 							"slots": 2,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell symbol}",
-								"{@spell teleport}"
+								"{@spell 死亡一指}",
+								"{@spell 徽記術}",
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell maze}",
-								"{@spell mind blank}"
+								"{@spell 迷宮術}",
+								"{@spell 心靈屏障}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell meteor swarm}",
-								"{@spell wish}"
+								"{@spell 流星爆}",
+								"{@spell 祈願術}"
 							]
 						}
 					},
 					"will": [
-						"{@spell disguise self}",
-						"{@spell invisibility}"
+						"{@spell 易容術}",
+						"{@spell 隱形術}"
 					],
 					"daily": {
 						"1": [
-							"{@spell fly}",
-							"{@spell lightning bolt}"
+							"{@spell 飛行術}",
+							"{@spell 閃電束}"
 						]
 					},
 					"hidden": [
@@ -2168,7 +2168,7 @@
 						"items": {
 							"name": "Spell Immunity",
 							"entries": [
-								"The Halaster horror is immune to the {@spell cone of cold}, {@spell disintegrate}, and {@spell fireball} spells."
+								"The Halaster horror is immune to the {@spell 寒冰錐}, {@spell 解離術}, and {@spell 火球術} spells."
 							]
 						}
 					}
@@ -2285,7 +2285,7 @@
 				{
 					"name": "Magical Properties",
 					"entries": [
-						"A creature that uses an action to touch the living snail gains 6 temporary hit points that last for 24 hours. Any creature or object that touches the living snail also gains the benefit of a {@spell remove curse} spell. The snail loses these magical properties if it dies."
+						"A creature that uses an action to touch the living snail gains 6 temporary hit points that last for 24 hours. Any creature or object that touches the living snail also gains the benefit of a {@spell 移除詛咒} spell. The snail loses these magical properties if it dies."
 					]
 				},
 				{
@@ -2413,17 +2413,17 @@
 						"The pudding's spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell dancing lights}",
-						"{@spell mage hand}"
+						"{@spell 舞光術}",
+						"{@spell 法師之手}"
 					],
 					"daily": {
 						"1": [
-							"{@spell Melf's acid arrow}"
+							"{@spell 馬友夫強酸箭}"
 						],
 						"3e": [
-							"{@spell darkness}",
-							"{@spell faerie fire}",
-							"{@spell shield}"
+							"{@spell 黑暗術}",
+							"{@spell 妖火術}",
+							"{@spell 護盾術}"
 						]
 					},
 					"ability": "int"
@@ -2603,51 +2603,51 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell mending}",
-								"{@spell resistance}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 修復術}",
+								"{@spell 提升抗力}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bane}",
-								"{@spell command}",
-								"{@spell inflict wounds}",
-								"{@spell ray of sickness}"
+								"{@spell 災禍術}",
+								"{@spell 命令術}",
+								"{@spell 造成傷勢}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell ray of enfeeblement}",
-								"{@spell spiritual weapon}"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 衰弱射線}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell bestow curse}",
-								"{@spell dispel magic}",
-								"{@spell spirit guardians}"
+								"{@spell 活化死屍}",
+								"{@spell 降咒}",
+								"{@spell 解除魔法}",
+								"{@spell 靈體守衛}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell death ward}",
-								"{@spell divination}"
+								"{@spell 枯萎術}",
+								"{@spell 防死護咒}",
+								"{@spell 預言術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell antilife shell}",
-								"{@spell destructive wave}"
+								"{@spell 反活物護罩}",
+								"{@spell 湮滅波}"
 							]
 						}
 					},
@@ -3034,7 +3034,7 @@
 						"spells": {
 							"0": {
 								"spells": [
-									"{@spell ray of frost}"
+									"{@spell 冷凍射線}"
 								]
 							}
 						}
@@ -3094,8 +3094,8 @@
 						"spells": {
 							"4": [
 								{
-									"replace": "{@spell banishment}",
-									"with": "{@spell dimension door}"
+									"replace": "{@spell 放逐術}",
+									"with": "{@spell 次元門}"
 								}
 							]
 						}
@@ -3257,64 +3257,64 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell dancing lights}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 舞光術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell expeditious retreat}",
-								"{@spell fog cloud}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 腳底抹油}",
+								"{@spell 雲霧術}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell knock}",
-								"{@spell see invisibility}",
-								"{@spell spider climb}"
+								"{@spell 黑暗術}",
+								"{@spell 敲擊術}",
+								"{@spell 識破隱形}",
+								"{@spell 蛛行術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell counterspell}",
-								"{@spell lightning bolt}"
+								"{@spell 活化死屍}",
+								"{@spell 反制法術}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell polymorph}"
+								"{@spell 高等隱形術}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell animate objects}",
-								"{@spell wall of force}"
+								"{@spell 活化物體}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell create undead}",
-								"{@spell flesh to stone}"
+								"{@spell 創造不死生物}",
+								"{@spell 石化術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}"
+								"{@spell 死亡一指}"
 							]
 						}
 					},
@@ -3487,20 +3487,20 @@
 						"spells": {
 							"3": [
 								{
-									"replace": "{@spell fly}",
-									"with": "{@spell animate dead}"
+									"replace": "{@spell 飛行術}",
+									"with": "{@spell 活化死屍}"
 								}
 							],
 							"4": [
 								{
-									"replace": "{@spell banishment}",
-									"with": "{@spell blight}"
+									"replace": "{@spell 放逐術}",
+									"with": "{@spell 枯萎術}"
 								}
 							],
 							"5": [
 								{
-									"replace": "{@spell scrying}",
-									"with": "{@spell Rary's telepathic bond}"
+									"replace": "{@spell 探知}",
+									"with": "{@spell 拉瑞心靈聯結}"
 								}
 							]
 						}
@@ -3682,7 +3682,7 @@
 				{
 					"name": "Brew Bound",
 					"entries": [
-						"The weird dies if forced to leave the basin of toxic brew it inhabits, or if a {@spell purify food and drink} spell is cast on the brew."
+						"The weird dies if forced to leave the basin of toxic brew it inhabits, or if a {@spell 淨化飲食} spell is cast on the brew."
 					]
 				},
 				{
@@ -3719,7 +3719,7 @@
 							"items": {
 								"name": "Shadowfell Despair",
 								"entries": [
-									"Portia suffers from Shadowfell despair manifesting as unshakable dread. Until the despair ends, she has disadvantage on all saving throws and gains the following flaw: \"I'm convinced that I'm going to die in Vanrakdoom.\" Portia can attempt to end her despair each time she finishes a long rest, doing so with a successful DC 15 Wisdom saving throw. A {@spell calm emotions} spell also ends her despair, as does any spell or other magical effect that removes a curse."
+									"Portia suffers from Shadowfell despair manifesting as unshakable dread. Until the despair ends, she has disadvantage on all saving throws and gains the following flaw: \"I'm convinced that I'm going to die in Vanrakdoom.\" Portia can attempt to end her despair each time she finishes a long rest, doing so with a successful DC 15 Wisdom saving throw. A {@spell 安定心神} spell also ends her despair, as does any spell or other magical effect that removes a curse."
 								]
 							}
 						}
@@ -3863,13 +3863,13 @@
 				{
 					"name": "Lesser Magic",
 					"entries": [
-						"The behir casts {@spell color spray} or {@spell sleep}, requiring no components."
+						"The behir casts {@spell 七彩噴射} or {@spell 睡眠術}, requiring no components."
 					]
 				},
 				{
 					"name": "Greater Magic (Costs 2 Actions)",
 					"entries": [
-						"The behir casts {@spell invisibility} or {@spell misty step}, requiring no components."
+						"The behir casts {@spell 隱形術} or {@spell 迷蹤步}, requiring no components."
 					]
 				}
 			],
@@ -4653,27 +4653,27 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}"
+								"{@spell 法師之手}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell blur}",
-								"{@spell flaming sphere}"
+								"{@spell 朦朧術}",
+								"{@spell 熾焰法球}"
 							]
 						},
 						"3": {
 							"slots": 1,
 							"spells": [
-								"{@spell lightning bolt}"
+								"{@spell 閃電束}"
 							]
 						}
 					},
@@ -4728,77 +4728,77 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell detect thoughts}",
-								"{@spell misty step}",
-								"{@spell shatter}"
+								"{@spell 朦朧術}",
+								"{@spell 偵測思想}",
+								"{@spell 迷蹤步}",
+								"{@spell 粉碎音波}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell fireball}",
-								"{@spell haste}"
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 火球術}",
+								"{@spell 加速術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell greater invisibility}"
+								"{@spell 枯萎術}",
+								"{@spell 高等隱形術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate objects}",
-								"{@spell Bigby's hand}",
-								"{@spell scrying}"
+								"{@spell 活化物體}",
+								"{@spell 畢格比之掌}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell globe of invulnerability}"
+								"{@spell 連環閃電}",
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell forcecage}"
+								"{@spell 死亡一指}",
+								"{@spell 力場監牢}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell incendiary cloud}",
-								"{@spell power word stun}"
+								"{@spell 焚雲術}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell power word kill}"
+								"{@spell 律令死亡}"
 							]
 						}
 					},
@@ -4923,8 +4923,8 @@
 						"spells": {
 							"4": [
 								{
-									"replace": "{@spell banishment}",
-									"with": "{@spell Otiluke's Resilient Sphere}"
+									"replace": "{@spell 放逐術}",
+									"with": "{@spell 歐提路克魔封法球}"
 								}
 							]
 						}
@@ -4977,8 +4977,8 @@
 						"spells": {
 							"4": [
 								{
-									"replace": "{@spell banishment}",
-									"with": "{@spell confusion}"
+									"replace": "{@spell 放逐術}",
+									"with": "{@spell 困惑術}"
 								}
 							]
 						}
@@ -5261,8 +5261,8 @@
 						"spells": {
 							"4": [
 								{
-									"replace": "{@spell banishment}",
-									"with": "{@spell locate creature}"
+									"replace": "{@spell 放逐術}",
+									"with": "{@spell 生物定位術}"
 								}
 							]
 						}
@@ -5543,8 +5543,8 @@
 						"spells": {
 							"4": [
 								{
-									"replace": "{@spell banishment}",
-									"with": "{@spell confusion}"
+									"replace": "{@spell 放逐術}",
+									"with": "{@spell 困惑術}"
 								}
 							]
 						}

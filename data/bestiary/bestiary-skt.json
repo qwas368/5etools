@@ -66,7 +66,7 @@
 				{
 					"name": "Simulacra",
 					"entries": [
-						"When a simulacrum drops to 0 hit points or is subjected to a successful {@spell dispel magic} spell ({@dc 17}), it reverts to ice and snow and is destroyed."
+						"When a simulacrum drops to 0 hit points or is subjected to a successful {@spell 解除魔法} spell ({@dc 17}), it reverts to ice and snow and is destroyed."
 					]
 				}
 			],
@@ -644,10 +644,10 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell invisibility}",
-							"{@spell legend lore}",
-							"{@spell protection from energy}",
-							"{@spell true seeing}"
+							"{@spell 隱形術}",
+							"{@spell 通曉傳奇}",
+							"{@spell 防護能量}",
+							"{@spell 真知術}"
 						]
 					},
 					"ability": "cha"
@@ -660,40 +660,40 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell mending}",
-								"{@spell produce flame}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 修復術}",
+								"{@spell 燃火術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell detect magic}",
-								"{@spell entangle}",
-								"{@spell speak with animals}"
+								"{@spell 治療傷勢}",
+								"{@spell 偵測魔法}",
+								"{@spell 糾纏術}",
+								"{@spell 動物交談術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell animal messenger}",
-								"{@spell pass without trace}"
+								"{@spell 動物信使}",
+								"{@spell 行蹤無跡}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell plant growth}"
+								"{@spell 解除魔法}",
+								"{@spell 植物滋長}"
 							]
 						},
 						"4": {
 							"slots": 2,
 							"spells": [
-								"{@spell blight}",
-								"{@spell locate creature}",
-								"{@spell stoneskin}"
+								"{@spell 枯萎術}",
+								"{@spell 生物定位術}",
+								"{@spell 石膚術}"
 							]
 						}
 					},
@@ -784,46 +784,46 @@
 							"spells": {
 								"0": {
 									"spells": [
-										"{@spell druidcraft}",
-										"{@spell mending}",
-										"{@spell produce flame}"
+										"{@spell 德魯伊伎倆}",
+										"{@spell 修復術}",
+										"{@spell 燃火術}"
 									]
 								},
 								"1": {
 									"slots": 4,
 									"spells": [
-										"{@spell cure wounds}",
-										"{@spell entangle}",
-										"{@spell thunderwave}"
+										"{@spell 治療傷勢}",
+										"{@spell 糾纏術}",
+										"{@spell 雷鳴波}"
 									]
 								},
 								"2": {
 									"slots": 3,
 									"spells": [
-										"{@spell animal messenger}",
-										"{@spell barkskin}",
-										"{@spell gust of wind}"
+										"{@spell 動物信使}",
+										"{@spell 樹膚術}",
+										"{@spell 造風術}"
 									]
 								},
 								"3": {
 									"slots": 3,
 									"spells": [
-										"{@spell call lightning}",
-										"{@spell conjure animals}",
-										"{@spell speak with plants}"
+										"{@spell 召雷術}",
+										"{@spell 召喚動物}",
+										"{@spell 植物交談術}"
 									]
 								},
 								"4": {
 									"slots": 3,
 									"spells": [
-										"{@spell freedom of movement}",
-										"{@spell grasping vine}"
+										"{@spell 行動自如術}",
+										"{@spell 抓攫藤蔓}"
 									]
 								},
 								"5": {
 									"slots": 1,
 									"spells": [
-										"{@spell conjure elemental}"
+										"{@spell 召喚元素生物}"
 									]
 								}
 							},
@@ -845,7 +845,7 @@
 				},
 				{
 					"ac": 16,
-					"condition": "with {@spell barkskin}",
+					"condition": "with {@spell 樹膚術}",
 					"braces": true
 				}
 			],
@@ -924,20 +924,20 @@
 						"Sansuri's innate spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 雲霧術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell fly}",
-							"{@spell misty step}",
-							"{@spell telekinesis}"
+							"{@spell 羽落術}",
+							"{@spell 飛行術}",
+							"{@spell 迷蹤步}",
+							"{@spell 心靈遙控}"
 						],
 						"1e": [
-							"{@spell control weather}",
-							"{@spell gaseous form}"
+							"{@spell 操控天氣}",
+							"{@spell 氣化形體}"
 						]
 					},
 					"ability": "cha"
@@ -950,62 +950,62 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell message}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 傳訊術}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell identify}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell unseen servant}"
+								"{@spell 鑑定術}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 隱形僕役}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell arcane lock}",
-								"{@spell gust of wind}",
-								"{@spell invisibility}"
+								"{@spell 祕法鎖}",
+								"{@spell 造風術}",
+								"{@spell 隱形術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell haste}",
-								"{@spell hypnotic pattern}",
-								"{@spell lightning bolt}"
+								"{@spell 加速術}",
+								"{@spell 催眠圖紋}",
+								"{@spell 閃電束}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell ice storm}",
-								"{@spell stoneskin}"
+								"{@spell 冰風暴}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell wall of force}"
+								"{@spell 畢格比之掌}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell globe of invulnerability}"
+								"{@spell 法術無效結界}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell Mordenkainen's sword}"
+								"{@spell 魔鄧肯之劍}"
 							]
 						}
 					},
@@ -1450,12 +1450,12 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell meld into stone}",
-							"{@spell stone shape}"
+							"{@spell 融身入石}",
+							"{@spell 塑石術}"
 						],
 						"1e": [
-							"{@spell stoneskin}",
-							"{@spell time stop}"
+							"{@spell 石膚術}",
+							"{@spell 時間停止}"
 						]
 					},
 					"ability": "wis"
@@ -1824,31 +1824,31 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell guiding bolt}",
-								"{@spell sanctuary}"
+								"{@spell 治療傷勢}",
+								"{@spell 光導箭}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell spiritual weapon}"
+								"{@spell 次級復原術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell create food and water}"
+								"{@spell 解除魔法}",
+								"{@spell 創造飲食}"
 							]
 						}
 					},
@@ -2564,10 +2564,10 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell counterspell}",
-							"{@spell detect magic}",
-							"{@spell ice storm}",
-							"{@spell stone shape}",
+							"{@spell 反制法術}",
+							"{@spell 偵測魔法}",
+							"{@spell 冰風暴}",
+							"{@spell 塑石術}",
 							"{@spell 傳送術}"
 						]
 					},
@@ -2752,22 +2752,22 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell hunter's mark}",
-								"{@spell jump}"
+								"{@spell 獵人印記}",
+								"{@spell 跳躍術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell locate animals or plants}",
-								"{@spell locate object}"
+								"{@spell 動植物定位術}",
+								"{@spell 物品定位術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell water breathing}",
-								"{@spell water walk}"
+								"{@spell 水下呼吸}",
+								"{@spell 水面行走}"
 							]
 						}
 					},
@@ -3059,15 +3059,15 @@
 						"The giant's innate spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell feather fall}",
-						"{@spell levitate}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 羽落術}",
+						"{@spell 浮空術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell control weather}",
-							"{@spell water breathing}"
+							"{@spell 操控天氣}",
+							"{@spell 水下呼吸}"
 						]
 					},
 					"ability": "cha"
@@ -3207,12 +3207,12 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell banishment}",
-							"{@spell etherealness}",
-							"{@spell find the path}",
-							"{@spell locate object}",
-							"{@spell prismatic spray}",
-							"{@spell suggestion}"
+							"{@spell 放逐術}",
+							"{@spell 跨入乙太界}",
+							"{@spell 尋找捷徑}",
+							"{@spell 物品定位術}",
+							"{@spell 虹光噴射}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -3225,64 +3225,64 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}"
+								"{@spell 法師之手}",
+								"{@spell 修復術}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell detect magic}",
-								"{@spell expeditious retreat}",
-								"{@spell identify}"
+								"{@spell 通曉語言}",
+								"{@spell 偵測魔法}",
+								"{@spell 腳底抹油}",
+								"{@spell 鑑定術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell darkness}",
-								"{@spell detect thoughts}",
-								"{@spell Melf's acid arrow}"
+								"{@spell 黑暗術}",
+								"{@spell 偵測思想}",
+								"{@spell 馬友夫強酸箭}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell haste}",
-								"{@spell nondetection}"
+								"{@spell 銳眼術}",
+								"{@spell 加速術}",
+								"{@spell 迴避偵測}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}",
-								"{@spell stoneskin}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}",
+								"{@spell 石膚術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell Bigby's hand}",
-								"{@spell cloudkill}",
-								"{@spell scrying}"
+								"{@spell 畢格比之掌}",
+								"{@spell 死雲術}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell disintegrate}",
-								"{@spell mass suggestion}"
+								"{@spell 解離術}",
+								"{@spell 群體暗示術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell mirage arcane}"
+								"{@spell 海市蜃樓}"
 							]
 						}
 					},
@@ -3649,7 +3649,7 @@
 						"Maegera's spell casting ability is Charisma. Maegera's can innately cast the following spell (spell save {@dc 19}), requiring no material components:"
 					],
 					"will": [
-						"{@spell fireball}"
+						"{@spell 火球術}"
 					],
 					"ability": "cha"
 				}
@@ -4167,7 +4167,7 @@
 				10,
 				{
 					"ac": 13,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -4205,32 +4205,32 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell misty step}",
-								"{@spell suggestion}"
+								"{@spell 迷蹤步}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						}
 					},
@@ -4633,7 +4633,7 @@
 				10,
 				{
 					"ac": 13,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -4670,18 +4670,18 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell blade ward}",
-								"{@spell fire bolt}",
-								"{@spell mending}",
-								"{@spell prestidigitation}"
+								"{@spell 劍刃防護}",
+								"{@spell 火焰箭}",
+								"{@spell 修復術}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell mage armor}",
-								"{@spell thunderwave}",
-								"{@spell witch bolt}"
+								"{@spell 法師護甲}",
+								"{@spell 雷鳴波}",
+								"{@spell 巫術箭}"
 							]
 						}
 					},
@@ -4807,47 +4807,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell mage armor}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell suggestion}"
+								"{@spell 偵測思想}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell fly}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 飛行術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
+								"{@spell 高等隱形術}",
+								"{@spell 冰風暴}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell cone of cold}"
+								"{@spell 寒冰錐}"
 							]
 						}
 					},
@@ -5703,72 +5703,72 @@
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell sleep}"
+								"{@spell 通曉語言}",
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell detect thoughts}",
-								"{@spell suggestion}"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 偵測思想}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell fly}",
-								"{@spell nondetection}",
-								"{@spell sending}"
+								"{@spell 飛行術}",
+								"{@spell 迴避偵測}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell arcane eye}",
-								"{@spell ice storm}",
-								"{@spell locate creature}"
+								"{@spell 祕法眼}",
+								"{@spell 冰風暴}",
+								"{@spell 生物定位術}"
 							]
 						},
 						"5": {
 							"slots": 3,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell scrying}",
-								"{@spell telekinesis}"
+								"{@spell 死雲術}",
+								"{@spell 探知}",
+								"{@spell 心靈遙控}"
 							]
 						},
 						"6": {
 							"slots": 2,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell flesh to stone}",
-								"{@spell mass suggestion}"
+								"{@spell 連環閃電}",
+								"{@spell 石化術}",
+								"{@spell 群體暗示術}"
 							]
 						},
 						"7": {
 							"slots": 2,
 							"spells": [
-								"{@spell delayed blast fireball}",
-								"{@spell sequester}",
+								"{@spell 延遲爆裂火球}",
+								"{@spell 隔離術}",
 								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell control weather}",
-								"{@spell feeblemind}"
+								"{@spell 操控天氣}",
+								"{@spell 弱智術}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell foresight}",
-								"{@spell power word kill}"
+								"{@spell 預視術}",
+								"{@spell 律令死亡}"
 							]
 						}
 					},
@@ -6472,46 +6472,46 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell guidance}",
-								"{@spell resistance}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 指導術}",
+								"{@spell 提升抗力}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell entangle}",
-								"{@spell goodberry}",
-								"{@spell speak with animals}"
+								"{@spell 偵測魔法}",
+								"{@spell 糾纏術}",
+								"{@spell 神莓術}",
+								"{@spell 動物交談術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell animal messenger}",
-								"{@spell gust of wind}",
-								"{@spell pass without trace}"
+								"{@spell 動物信使}",
+								"{@spell 造風術}",
+								"{@spell 行蹤無跡}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell plant growth}",
-								"{@spell speak with plants}"
+								"{@spell 植物滋長}",
+								"{@spell 植物交談術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure woodland beings}",
-								"{@spell hallucinatory terrain}"
+								"{@spell 召喚林地之精}",
+								"{@spell 幻景}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell commune with nature}"
+								"{@spell 問道自然}"
 							]
 						}
 					},
@@ -6747,21 +6747,21 @@
 						"The shaman can innately cast the following spells. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks)."
 					],
 					"will": [
-						"{@spell dancing lights}",
-						"{@spell message}",
-						"{@spell mage hand}",
-						"{@spell thaumaturgy}"
+						"{@spell 舞光術}",
+						"{@spell 傳訊術}",
+						"{@spell 法師之手}",
+						"{@spell 奇術}"
 					],
 					"daily": {
 						"1": [
-							"{@spell augury}",
-							"{@spell bestow curse}",
-							"{@spell cordon of arrows}",
-							"{@spell detect magic}",
-							"{@spell hex}",
-							"{@spell prayer of healing}",
-							"{@spell speak with dead}",
-							"{@spell spirit guardians}"
+							"{@spell 卜筮}",
+							"{@spell 降咒}",
+							"{@spell 警戒箭陣}",
+							"{@spell 偵測魔法}",
+							"{@spell 脆弱詛咒}",
+							"{@spell 治癒祈禱}",
+							"{@spell 死者交談術}",
+							"{@spell 靈體守衛}"
 						]
 					},
 					"ability": "wis"
@@ -7029,41 +7029,41 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bane}",
-								"{@spell command}",
-								"{@spell cure wounds}",
-								"{@spell sanctuary}"
+								"{@spell 災禍術}",
+								"{@spell 命令術}",
+								"{@spell 治療傷勢}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell augury}",
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 卜筮}",
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell protection from energy}",
-								"{@spell sending}"
+								"{@spell 降咒}",
+								"{@spell 防護能量}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 1,
 							"spells": [
-								"{@spell banishment}"
+								"{@spell 放逐術}"
 							]
 						}
 					},
@@ -7075,7 +7075,7 @@
 					"name": "Possession (Recharges after a Short or Long Rest)",
 					"entries": [
 						"The yakfolk attempts to magically possess a humanoid or giant. The yakfolk must touch the target throughout a short rest, or the attempt fails. At the end of the rest, the target must succeed on a {@dc 12} Constitution saving throw or be possessed by the yakfolk, which disappears with everything it is carrying and wearing. Until the possession ends, the target is {@condition incapacitated}, loses control of its body, and is unaware of its surroundings. The yakfolk now controls the body and can't be targeted by any attack, spell, or other effect, and it retains its alignment; its Intelligence, Wisdom, and Charisma scores; and its proficiencies. It otherwise uses the target's statistics, except the target's knowledge, class features, feats, and proficiencies.",
-						"The possession lasts until either the body drops to 0 hit points, the yakfolk ends the possession as an action, or the yakfolk is forced out of the body by an effect such as the {@spell dispel evil and good} spell. When the possession ends, the yakfolk reappears in an unoccupied space within 5 feet of the body and is {@condition stunned} until the end of its next turn. If the host body dies while it is possessed by the yakfolk, the yakfolk dies as well, and its body doesn't reappear."
+						"The possession lasts until either the body drops to 0 hit points, the yakfolk ends the possession as an action, or the yakfolk is forced out of the body by an effect such as the {@spell 反制善惡} spell. When the possession ends, the yakfolk reappears in an unoccupied space within 5 feet of the body and is {@condition stunned} until the end of its next turn. If the host body dies while it is possessed by the yakfolk, the yakfolk dies as well, and its body doesn't reappear."
 					]
 				}
 			],
@@ -7172,7 +7172,7 @@
 					"name": "Possession (Recharges after a Short or Long Rest)",
 					"entries": [
 						"The yakfolk attempts to magically possess a humanoid or giant. The yakfolk must touch the target throughout a short rest, or the attempt fails. At the end of the rest, the target must succeed on a {@dc 12} Constitution saving throw or be possessed by the yakfolk, which disappears with everything it is carrying and wearing. Until the possession ends, the target is {@condition incapacitated}, loses control of its body, and is unaware of its surroundings. The yakfolk now controls the body and can't be targeted by any attack, spell, or other effect, and it retains its alignment; its Intelligence, Wisdom, and Charisma scores; and its proficiencies. It otherwise uses the target's statistics, except the target's knowledge, class features, feats, and proficiencies.",
-						"The possession lasts until either the body drops to 0 hit points, the yakfolk ends the possession as an action, or the yakfolk is forced out of the body by an effect such as the {@spell dispel evil and good} spell. When the possession ends, the yakfolk reappears in an unoccupied space within 5 feet of the body and is {@condition stunned} until the end of its next turn. If the host body dies while it is possessed by the yakfolk, the yakfolk dies as well, and its body doesn't reappear."
+						"The possession lasts until either the body drops to 0 hit points, the yakfolk ends the possession as an action, or the yakfolk is forced out of the body by an effect such as the {@spell 反制善惡} spell. When the possession ends, the yakfolk reappears in an unoccupied space within 5 feet of the body and is {@condition stunned} until the end of its next turn. If the host body dies while it is possessed by the yakfolk, the yakfolk dies as well, and its body doesn't reappear."
 					]
 				}
 			],
@@ -7246,20 +7246,20 @@
 						"The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 雲霧術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell fly}",
-							"{@spell misty step}",
-							"{@spell telekinesis}"
+							"{@spell 羽落術}",
+							"{@spell 飛行術}",
+							"{@spell 迷蹤步}",
+							"{@spell 心靈遙控}"
 						],
 						"1e": [
-							"{@spell control weather}",
-							"{@spell gaseous form}"
+							"{@spell 操控天氣}",
+							"{@spell 氣化形體}"
 						]
 					},
 					"ability": "cha"
@@ -7409,20 +7409,20 @@
 						"Zephyros's innate spellcasting ability is Charisma. He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 雲霧術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell fly}",
-							"{@spell misty step}",
-							"{@spell telekinesis}"
+							"{@spell 羽落術}",
+							"{@spell 飛行術}",
+							"{@spell 迷蹤步}",
+							"{@spell 心靈遙控}"
 						],
 						"1e": [
-							"{@spell control weather}",
-							"{@spell gaseous form}"
+							"{@spell 操控天氣}",
+							"{@spell 氣化形體}"
 						]
 					},
 					"ability": "cha"
@@ -7435,57 +7435,57 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mending}",
-								"{@spell message}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 修復術}",
+								"{@spell 傳訊術}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell comprehend languages}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 魅惑人類}",
+								"{@spell 通曉語言}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
 								"{@spell 瘋狂冠冕}",
-								"{@spell gust of wind}",
+								"{@spell 造風術}",
 								"{@spell 浮空術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell nondetection}",
-								"{@spell protection from energy}",
-								"{@spell tongues}"
+								"{@spell 迴避偵測}",
+								"{@spell 防護能量}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure minor elementals}",
-								"{@spell greater invisibility}",
-								"{@spell Otiluke's resilient sphere}"
+								"{@spell 召喚次級元素生物}",
+								"{@spell 高等隱形術}",
+								"{@spell 歐提路克魔封法球}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell contact other plane}"
+								"{@spell 寒冰錐}",
+								"{@spell 異界探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell mass suggestion}"
+								"{@spell 群體暗示術}"
 							]
 						}
 					},

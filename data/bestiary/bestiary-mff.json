@@ -447,13 +447,13 @@
 						"The eye of fear and flame's innate spellcasting ability is Intelligence (spell save {@dc 16}). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell detect evil and good}",
-						"{@spell detect thoughts}"
+						"{@spell 偵測善惡}",
+						"{@spell 偵測思想}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell etherealness}",
-							"{@spell true seeing}"
+							"{@spell 跨入乙太界}",
+							"{@spell 真知術}"
 						]
 					},
 					"ability": "int"
@@ -584,14 +584,14 @@
 						"The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect magic}",
-						"{@spell fog cloud}",
-						"{@spell light}"
+						"{@spell 偵測魔法}",
+						"{@spell 雲霧術}",
+						"{@spell 光亮術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell feather fall}",
-							"{@spell misty step}"
+							"{@spell 羽落術}",
+							"{@spell 迷蹤步}"
 						]
 					},
 					"ability": "cha"
@@ -712,21 +712,21 @@
 						"The forlarren's innate spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell expeditious retreat}",
-						"{@spell false life}",
-						"{@spell minor illusion}",
-						"{@spell prestidigitation}"
+						"{@spell 腳底抹油}",
+						"{@spell 摹造生命}",
+						"{@spell 次級幻象}",
+						"{@spell 魔法技倆}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell aid}",
-							"{@spell misty step}",
-							"{@spell Tasha's hideous laughter}"
+							"{@spell 援助術}",
+							"{@spell 迷蹤步}",
+							"{@spell 塔莎狂笑術}"
 						],
 						"1e": [
-							"{@spell heal}",
-							"{@spell heat metal}",
-							"{@spell mirror image}"
+							"{@spell 治癒術}",
+							"{@spell 灼熱金屬}",
+							"{@spell 鏡影術}"
 						]
 					},
 					"ability": "cha"
@@ -1781,29 +1781,29 @@
 						"Ygorl's innate spellcasting ability is Charisma (spell save {@dc 23}, {@hit 15} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell blight}",
-						"{@spell blink}",
+						"{@spell 枯萎術}",
+						"{@spell 閃現術}",
 						"{@spell chaos bolt|XGE}*",
-						"{@spell detect magic}",
-						"{@spell fly}",
-						"{@spell shield}"
+						"{@spell 偵測魔法}",
+						"{@spell 飛行術}",
+						"{@spell 護盾術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell circle of death}",
+							"{@spell 死亡之環}",
 							"{@spell enervation|XGE}*",
-							"{@spell symbol} (discord only)"
+							"{@spell 徽記術} (discord only)"
 						],
 						"2e": [
-							"{@spell finger of death}",
-							"{@spell harm}",
+							"{@spell 死亡一指}",
+							"{@spell 傷害術}",
 							"{@spell mental prison|XGE}*"
 						],
 						"1e": [
-							"{@spell power word kill}",
-							"{@spell power word stun}",
-							"{@spell symbol} (death only)",
-							"{@spell weird}"
+							"{@spell 律令死亡}",
+							"{@spell 律令震懾}",
+							"{@spell 徽記術} (death only)",
+							"{@spell 怪影殺手}"
 						]
 					},
 					"footerEntries": [

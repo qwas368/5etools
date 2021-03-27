@@ -30,7 +30,7 @@
 							"id": "003",
 							"entries": [
 								"In the course of dealing with Thavius Kreeg and the Vanthampur family, characters are likely to acquire the {@item Shield of the Hidden Lord|BGDIA} as well as an {@item infernal puzzle box|BGDIA} that they can't open. They might also liberate a spy imprisoned in Duke Vanthampur's dungeon who works for Sylvira Savikas, a tiefling expert on the Nine Hells. Determined to thwart devil worshipers in positions of power throughout the Western Heartlands, Sylvira operates out of the library of Candlekeep and has spent years monitoring devil activity in Baldur's Gate, Elturel, and the surrounding region. Her spies are after the puzzle box, which is believed to contain a copy of the fiendish contract Thavius signed to seal Elturel's doom.",
-								"If the characters wish to help Baldur's Gate further, they must journey to the Nine Hells and rescue Ulder Ravengard from what's left of Elturel. The characters are urged to seek out Sylvira Savikas in Candlekeep. Sylvira knows the secret to unlocking Thavius's puzzle box. She can also facilitate the characters' descent into Avernus and provide them with a map (albeit an unreliable one). Sylvira advises characters to leave the {@item Shield of the Hidden Lord|BGDIA} in her custody. However, there are benefits to taking the shield with them, for Gargauth can guide them through the Nine Hells in ways others cannot. With or without the shield, the characters depart Candlekeep and visit Sylvira's friend, Traxigor, a wizard who can use the {@spell plane shift} spell to get them to Elturel. At this wizard's tower, they meet a {@creature hollyphant|BGDIA} named Lulu."
+								"If the characters wish to help Baldur's Gate further, they must journey to the Nine Hells and rescue Ulder Ravengard from what's left of Elturel. The characters are urged to seek out Sylvira Savikas in Candlekeep. Sylvira knows the secret to unlocking Thavius's puzzle box. She can also facilitate the characters' descent into Avernus and provide them with a map (albeit an unreliable one). Sylvira advises characters to leave the {@item Shield of the Hidden Lord|BGDIA} in her custody. However, there are benefits to taking the shield with them, for Gargauth can guide them through the Nine Hells in ways others cannot. With or without the shield, the characters depart Candlekeep and visit Sylvira's friend, Traxigor, a wizard who can use the {@spell 異界傳送} spell to get them to Elturel. At this wizard's tower, they meet a {@creature hollyphant|BGDIA} named Lulu."
 							]
 						},
 						{
@@ -721,7 +721,7 @@
 										"\"Several blocks northwest of here is a public bathhouse with a walled garden and frolicking nymphs carved into its front gates. Followers of the Dead Three have been seen coming and going from the bathhouse, and I'm told there's a secret door inside that leads to a dungeon. That's where the killers are hiding.\""
 									]
 								},
-								"If Tarina is killed, the characters can deliver her body to Captain Zodge, who makes arrangements with a priest to cast {@spell speak with dead} on the corpse. Once the corpse reveals what it knows, Zodge gives that information to the characters.",
+								"If Tarina is killed, the characters can deliver her body to Captain Zodge, who makes arrangements with a priest to cast {@spell 死者交談術} on the corpse. Once the corpse reveals what it knows, Zodge gives that information to the characters.",
 								"With the knowledge provided by Tarina or her corpse, the characters can head to the bathhouse and search for the dungeon hidden below it. Make sure the characters advance to 2nd level before continuing the adventure. When the characters arrive at the bathhouse, proceed with the \"Dungeon of the Dead Three\" section."
 							]
 						}
@@ -953,9 +953,9 @@
 											"id": "051",
 											"entries": [
 												"The necromites in area {@dice D10} hid three spellbooks beneath the dust and humanoid bones in the sarcophagus, having stolen the books from murder victims.",
-												"Spellbook 1 is bound in red leather and contains the following spells: {@spell burning hands}, {@spell detect magic}, {@spell disguise self}, {@spell fog cloud}, {@spell ray of sickness}, {@spell silent image}.",
-												"Spellbook 2 has the personal rune of its previous owner burned into its umber cover. This book contains the following spells: {@spell charm person}, {@spell find familiar}, {@spell identify}, {@spell magic missile}, {@spell sleep}.",
-												"Spellbook 3 is bound in scaly black reptile hide and contains the following spells: {@spell cloud of daggers}, {@spell darkvision}, {@spell detect magic}, {@spell feather fall}, {@spell mage armor}, {@spell magic missile}, {@spell Tasha's hideous laughter}."
+												"Spellbook 1 is bound in red leather and contains the following spells: {@spell 燃燒之手}, {@spell 偵測魔法}, {@spell 易容術}, {@spell 雲霧術}, {@spell 致病射線}, {@spell 無聲幻影}.",
+												"Spellbook 2 has the personal rune of its previous owner burned into its umber cover. This book contains the following spells: {@spell 魅惑人類}, {@spell 尋獲魔寵}, {@spell 鑑定術}, {@spell 魔法飛彈}, {@spell 睡眠術}.",
+												"Spellbook 3 is bound in scaly black reptile hide and contains the following spells: {@spell 匕首之雲}, {@spell 黑暗視覺}, {@spell 偵測魔法}, {@spell 羽落術}, {@spell 法師護甲}, {@spell 魔法飛彈}, {@spell 塔莎狂笑術}."
 											]
 										}
 									]
@@ -994,14 +994,14 @@
 											]
 										},
 										"The necromancer looming over the corpse is Flennis, a female human {@creature master of souls|BGDIA} and the highest-ranking follower of Myrkul in the dungeon. Use the {@creature swarm of rats} stat block in the {@book Monster Manual|MM} to represent Flennis's skeletal rats, which are undead instead of beasts. The swarm can be turned by any character with the Turn Undead feature, but spells that target beasts have no effect on it.",
-										"Flennis is preparing to make a zombie out of the corpse on the table, but the {@spell animate dead} spell takes 1 minute to cast, which means she must deal with the characters first. Her skeletal rats attack the nearest foe, and she casts spells while using the table for cover.",
+										"Flennis is preparing to make a zombie out of the corpse on the table, but the {@spell 活化死屍} spell takes 1 minute to cast, which means she must deal with the characters first. Her skeletal rats attack the nearest foe, and she casts spells while using the table for cover.",
 										{
 											"type": "entries",
 											"name": "Treasure",
 											"id": "056",
 											"entries": [
 												"In addition to her robe and her flail, Flennis carries a dusty spellbook that contains all the spells she has prepared. The book has black leather covers and sports a tiny, skull-shaped locking mechanism. Flennis has the key to the lock stuck in her hair. A character can also pick the lock with a successful DC 10 Dexterity check made with {@item thieves' tools|phb}.",
-												"The first time a creature other than Flennis opens the book, a wisp of black smoke rises from its pages and coalesces into a skull that cackles madly for a few seconds before dissipating. The creature holding the book when the smoke appears must succeed on a DC 14 Constitution saving throw or be cursed for 24 hours, during which time the creature has vulnerability to necrotic damage. A {@spell remove curse} spell or similar effect ends the curse on the creature."
+												"The first time a creature other than Flennis opens the book, a wisp of black smoke rises from its pages and coalesces into a skull that cackles madly for a few seconds before dissipating. The creature holding the book when the smoke appears must succeed on a DC 14 Constitution saving throw or be cursed for 24 hours, during which time the creature has vulnerability to necrotic damage. A {@spell 移除詛咒} spell or similar effect ends the curse on the creature."
 											]
 										}
 									]
@@ -1011,7 +1011,7 @@
 									"name": "D14. Hungry Rat",
 									"id": "057",
 									"entries": [
-										"An ordinary {@creature rat} scurries around this room, looking for scraps of food. If the characters use a {@spell speak with animals} spell or similar magic to communicate with the rat, it can share its knowledge of the dungeon with them. It warms to characters who offer it food.",
+										"An ordinary {@creature rat} scurries around this room, looking for scraps of food. If the characters use a {@spell 動物交談術} spell or similar magic to communicate with the rat, it can share its knowledge of the dungeon with them. It warms to characters who offer it food.",
 										"The rat's knowledge is limited to places it has visited\u2014specifically {@adventure areas {@dice D5}|BGDIA|1|D5. Welcome to the Dungeon} through {@adventure {@dice D26}|BGDIA|1|D26. Bhaal's Rest}. It doesn't know the location of secret doors, so it's unaware of {@adventure areas {@dice D27}|BGDIA|1|D27. Echoes of Battle} through {@adventure {@dice D33}|BGDIA|1|D33. Covenant of the Dead Three}, which are hidden behind the secret door in {@adventure area {@dice D23}|BGDIA|1|D23. Secret Door and Sentry}."
 									]
 								},
@@ -1028,14 +1028,14 @@
 									"name": "D16. Flooded Crypt",
 									"id": "059",
 									"entries": [
-										"Murky, foul-smelling water surrounds an open stone sarcophagus resting in the middle of this crypt, its stone lid lying broken in three pieces under the water north of it. A {@spell detect magic} spell reveals an aura of evocation magic around the sarcophagus. Characters who pull the lid fragments out of the water see that the lid was carved in the likeness of a screaming, axe-wielding barbarian.",
+										"Murky, foul-smelling water surrounds an open stone sarcophagus resting in the middle of this crypt, its stone lid lying broken in three pieces under the water north of it. A {@spell 偵測魔法} spell reveals an aura of evocation magic around the sarcophagus. Characters who pull the lid fragments out of the water see that the lid was carved in the likeness of a screaming, axe-wielding barbarian.",
 										"Exposure to the dampness has rotted the bones in the sarcophagus, reducing them to black sludge.",
 										{
 											"type": "entries",
 											"name": "Trap",
 											"id": "05a",
 											"entries": [
-												"If the contents of the sarcophagus are disturbed, a ghostly battleaxe appears above the sarcophagus. The battleaxe is created by magic similar to a {@spell spiritual weapon} spell and is treated as a 2nd-level spell effect for the purpose of dispelling it. The ghostly battleaxe can't be harmed, can't leave the room, and targets only creatures, acting on initiative count 20. On each of its turns, it moves up to 10 feet and makes a melee spell attack (+5 to hit) against an available target, dealing 6 ({@dice 1d8 + 2}) force damage on a hit. The effect ends when there are no longer any creatures in the room, and the trap resets after 24 hours."
+												"If the contents of the sarcophagus are disturbed, a ghostly battleaxe appears above the sarcophagus. The battleaxe is created by magic similar to a {@spell 靈體武器} spell and is treated as a 2nd-level spell effect for the purpose of dispelling it. The ghostly battleaxe can't be harmed, can't leave the room, and targets only creatures, acting on initiative count 20. On each of its turns, it moves up to 10 feet and makes a melee spell attack (+5 to hit) against an available target, dealing 6 ({@dice 1d8 + 2}) force damage on a hit. The effect ends when there are no longer any creatures in the room, and the trap resets after 24 hours."
 											]
 										}
 									]
@@ -1172,7 +1172,7 @@
 												"Four flickering torches in wall sconces light this partially collapsed crypt. An open sarcophagus in the middle of the area is filled to the rim with blood, with spillage streaking the sides of the sarcophagus and pooling around its base. The sarcophagus lid lies half buried under rubble behind it."
 											]
 										},
-										"Bhaal worshipers like to bathe in the human blood that fills the sarcophagus. A female {@creature reaper of Bhaal|BGDIA} lurks behind the sarcophagus, drenched in blood from head to toe. At the first sign of intruders, she uses a {@spell disguise self} spell to appear as a frail old woman named Nebra. In this guise, she claims to be a florist who was captured by the Dead Three and brought to the dungeon as a slave. If the characters fall for the act and bring Nebra with them, she claims to know the location of a secret door ({@adventure area {@dice D23}|BGDIA|1|D23. Secret Door and Sentry}) and tries to lead them through it to {@adventure area {@dice D29}|BGDIA|1|D29. Mortlock Vanthampur}, where she hopes to find reinforcements. If she leads the party to a location occupied by other cultists, she drops the disguise and attacks. She also attacks if her spell ends before then."
+										"Bhaal worshipers like to bathe in the human blood that fills the sarcophagus. A female {@creature reaper of Bhaal|BGDIA} lurks behind the sarcophagus, drenched in blood from head to toe. At the first sign of intruders, she uses a {@spell 易容術} spell to appear as a frail old woman named Nebra. In this guise, she claims to be a florist who was captured by the Dead Three and brought to the dungeon as a slave. If the characters fall for the act and bring Nebra with them, she claims to know the location of a secret door ({@adventure area {@dice D23}|BGDIA|1|D23. Secret Door and Sentry}) and tries to lead them through it to {@adventure area {@dice D29}|BGDIA|1|D29. Mortlock Vanthampur}, where she hopes to find reinforcements. If she leads the party to a location occupied by other cultists, she drops the disguise and attacks. She also attacks if her spell ends before then."
 									]
 								},
 								{
@@ -1313,7 +1313,7 @@
 											"name": "Myrkul Statue",
 											"id": "078",
 											"entries": [
-												"Anyone who desecrates this statue is cursed by the Lord of Bones. Until the curse is ended with a {@spell remove curse} spell or similar magic, the offender gains no benefit from magical healing."
+												"Anyone who desecrates this statue is cursed by the Lord of Bones. Until the curse is ended with a {@spell 移除詛咒} spell or similar magic, the offender gains no benefit from magical healing."
 											]
 										}
 									]
@@ -1375,7 +1375,7 @@
 											"name": "Murder Squad (for 4th-level characters)",
 											"id": "07e",
 											"entries": [
-												"An {@creature iron consul|BGDIA} with two {@creature Fist of Bane|BGDIA|fists of Bane} as bodyguards uses three {@creature Night Blade|BGDIA|night blades} as scouts and assassins to pick off random passersby. A {@creature skull lasher of Myrkul|BGDIA} provides magical support, casting {@spell darkness} spells to confound foes and facilitate escape."
+												"An {@creature iron consul|BGDIA} with two {@creature Fist of Bane|BGDIA|fists of Bane} as bodyguards uses three {@creature Night Blade|BGDIA|night blades} as scouts and assassins to pick off random passersby. A {@creature skull lasher of Myrkul|BGDIA} provides magical support, casting {@spell 黑暗術} spells to confound foes and facilitate escape."
 											]
 										},
 										{
@@ -1539,7 +1539,7 @@
 											"name": "Treasure",
 											"id": "08b",
 											"entries": [
-												"The chest contains a nice pair of boots, a bottle of fine wine (10 gp), a bundle of letters from an unnamed admirer, and Laraelra's spellbook, which contains all the spells she has prepared plus {@spell identify}, {@spell gust of wind}, {@spell magic weapon}, {@spell sending}, {@spell sleep}, and {@spell tongues}."
+												"The chest contains a nice pair of boots, a bottle of fine wine (10 gp), a bundle of letters from an unnamed admirer, and Laraelra's spellbook, which contains all the spells she has prepared plus {@spell 鑑定術}, {@spell 造風術}, {@spell 魔化武器}, {@spell 短訊術}, {@spell 睡眠術}, and {@spell 巧舌術}."
 											]
 										}
 									]
@@ -1907,7 +1907,7 @@
 									"entries": [
 										"Drab curtains cover the windows of this plain room, which contains a bed, a padlocked iron chest, a claw-footed iron bathtub, and a fireplace. Standing in the middle of the room is {@creature Thurstwell Vanthampur|BGDIA}, a frail and hateful forty-two-year-old man clutching an {@item infernal puzzle box|BGDIA} (see \"Treasure\" below). If alerted to intruders, Thurstwell has locked the puzzle box in the iron chest and tucked the key into his robe pocket.",
 										"Thurstwell commands several imp spies who enter and leave his room through the chimney, but only one such creature is present when the characters arrive. This {@creature imp} is {@condition invisible}, lurks in the fireplace, and attacks anyone who threatens Thurstwell.",
-										"Thurstwell greets intruders in the most uncivil fashion\u2014by casting {@spell sacred flame} at the nearest one. On the same turn, he casts {@spell sanctuary} on himself as a bonus action and uses his movement to cower behind the bed while the imp defends him. If taken prisoner, he whines about the failure of his guards to protect him and bides his time, hoping his captors get in over their heads and afford him a chance to escape. If interrogated, he offers the following information in exchange for his release:",
+										"Thurstwell greets intruders in the most uncivil fashion\u2014by casting {@spell 聖焰} at the nearest one. On the same turn, he casts {@spell 聖域術} on himself as a bonus action and uses his movement to cower behind the bed while the imp defends him. If taken prisoner, he whines about the failure of his guards to protect him and bides his time, hoping his captors get in over their heads and afford him a chance to escape. If interrogated, he offers the following information in exchange for his release:",
 										{
 											"type": "list",
 											"items": [
@@ -1997,7 +1997,7 @@
 									"id": "0b9",
 									"entries": [
 										"An oak writing desk angled to face the middle of the room has a matching chair behind it and two black candlesticks atop it. Other furnishings include three bookcases and a freestanding suit of black plate armor topped with a bucket helm and equipped with a longsword and a shield. A wrought-iron spiral staircase leads up to {@area area V19|0bb|x}.",
-										"The suit of armor is a {@creature helmed horror} that was fashioned on Avernus. The construct understands Infernal but can't speak, and it is immune to the following spells: {@spell fire bolt}, {@spell sacred flame}, and {@spell shocking grasp}. The only creatures permitted in this area are Duke Vanthampur and her sons. If any other creature enters the room unescorted, a fiery orange light fills the helmed horror's hollow interior as it attacks. The helmed horror pursues intruders beyond the room, returning here only after the trespassers leave the villa or are hacked to pieces.",
+										"The suit of armor is a {@creature helmed horror} that was fashioned on Avernus. The construct understands Infernal but can't speak, and it is immune to the following spells: {@spell 火焰箭}, {@spell 聖焰}, and {@spell 電爪}. The only creatures permitted in this area are Duke Vanthampur and her sons. If any other creature enters the room unescorted, a fiery orange light fills the helmed horror's hollow interior as it attacks. The helmed horror pursues intruders beyond the room, returning here only after the trespassers leave the villa or are hacked to pieces.",
 										{
 											"type": "entries",
 											"name": "Bookcases",
@@ -2352,7 +2352,7 @@
 												"This ten-foot-high vaulted chamber has a plaster ceiling painted with images of terrifying winged devils looking down on a symbol embedded in the room's floor: a circular disk of black stone inscribed with a nine-pointed gold star. Four wrought-iron candlesticks bristling with unlit, half-melted red candles surround the circle."
 											]
 										},
-										"The cultists use this chamber to perform diabolical rituals that duplicate the effect of a {@spell divination} spell, except that the spell's contact is a devil that manifests as a pillar of smoke above the symbol on the floor. The images on the ceiling are pit fiends, recognizable by any character who succeeds on a DC 15 Intelligence ({@skill Religion}) check."
+										"The cultists use this chamber to perform diabolical rituals that duplicate the effect of a {@spell 預言術} spell, except that the spell's contact is a devil that manifests as a pillar of smoke above the symbol on the floor. The images on the ceiling are pit fiends, recognizable by any character who succeeds on a DC 15 Intelligence ({@skill Religion}) check."
 									]
 								},
 								{
@@ -2413,7 +2413,7 @@
 												"The eight coffers are unlocked and contain money belonging to the Vanthampur family, as well as treasure stolen from Tiamat's hoard on Avernus. Duke Vanthampur plans to use this combined treasure to bribe the city's patriars and government officials into supporting her bid to become the new grand duke.",
 												"Coffer 1 contains 30 electrum ingots (10 gp each) belonging to the Vanthampur family.",
 												"Coffers 2, 3, and 4 each contain 100 gp belonging to the Vanthampur family.",
-												"Coffer 5 contains two pieces of a broken ceremonial dagger stolen from Tiamat's hoard: a curved ivory blade bearing Draconic runes that spell out \"Fang,\" along with a bone hilt wrapped in leather strips and studded with gemstones. A {@spell mending} cantrip can make the nonmagical dagger whole again, restoring its value (250 gp).",
+												"Coffer 5 contains two pieces of a broken ceremonial dagger stolen from Tiamat's hoard: a curved ivory blade bearing Draconic runes that spell out \"Fang,\" along with a bone hilt wrapped in leather strips and studded with gemstones. A {@spell 修復術} cantrip can make the nonmagical dagger whole again, restoring its value (250 gp).",
 												"Coffers 6 and 7 each contain 100 pp belonging to the Vanthampur family.",
 												"Coffer 8 contains twenty azurite gemstones (10 gp each) stolen from Tiamat's hoard."
 											]
@@ -2521,7 +2521,7 @@
 										"Coming up the road toward you is a human farmer riding on the front of a hay-filled wagon pulled by two draft horses. The farmer gives you a friendly wave as the wagon draws near."
 									]
 								},
-								"The farmer is Kaddrus, a lawful evil {@creature cambion} using the {@spell alter self} spell to conceal his true form. Hiding under the hay are the cambion's evil accomplices: three human {@creature Veteran||veterans} who speak Common and Infernal. Their names are Falar and Zaroud al'Ryshal, and Nulra Blacksaddle. When the cambion gives the order in Infernal, the veterans leap out of the hay and attack. Meanwhile, the cambion assumes his true form, flies up into the air, and targets creatures with his Fire Ray attack. The two {@creature Draft Horse||draft horses} are ordinary beasts but don't spook easily.",
+								"The farmer is Kaddrus, a lawful evil {@creature cambion} using the {@spell 變造自身} spell to conceal his true form. Hiding under the hay are the cambion's evil accomplices: three human {@creature Veteran||veterans} who speak Common and Infernal. Their names are Falar and Zaroud al'Ryshal, and Nulra Blacksaddle. When the cambion gives the order in Infernal, the veterans leap out of the hay and attack. Meanwhile, the cambion assumes his true form, flies up into the air, and targets creatures with his Fire Ray attack. The two {@creature Draft Horse||draft horses} are ordinary beasts but don't spook easily.",
 								"Kaddrus and the veterans are members of a secret society known as the Knights of the Shield (see {@area area V29|0d3|x}). Their goals are to kill the characters and take the {@item Shield of the Hidden Lord|BGDIA} back to the Hhune patriar family in Baldur's Gate. If the veterans are killed or {@condition incapacitated}, Kaddrus flies back to Baldur's Gate to report to his superiors. If the cambion escapes, the characters might encounter him again in Candlekeep, in the guise of a monk. The next time he encounters the party, Kaddrus fights to the death to claim the shield."
 							]
 						},
@@ -2750,12 +2750,12 @@
 					"name": "Getting to Avernus",
 					"id": "104",
 					"entries": [
-						"Although Sylvira can prepare the {@spell plane shift} spell, there's no point, as magical wards placed on Candlekeep prevent creatures from using such means to go to or from the library. Instead, she presents an alternative plan for sending the characters to the Nine Hells:",
+						"Although Sylvira can prepare the {@spell 異界傳送} spell, there's no point, as magical wards placed on Candlekeep prevent creatures from using such means to go to or from the library. Instead, she presents an alternative plan for sending the characters to the Nine Hells:",
 						{
 							"type": "insetReadaloud",
 							"id": "105",
 							"entries": [
-								"\"A wizard named Traxigor lives in a tower twenty miles from here. I've loaned him a spellbook or two, so he owes me a favor. I can have you delivered safely to his tower, and he can use a {@spell plane shift} spell to take you straight to Elturel. Even more importantly, Traxigor is looking after an old friend of mine\u2014someone with a history of battling devils in the Nine Hells. I think you'll enjoy her company very much. Her name is Lulu.\""
+								"\"A wizard named Traxigor lives in a tower twenty miles from here. I've loaned him a spellbook or two, so he owes me a favor. I can have you delivered safely to his tower, and he can use a {@spell 異界傳送} spell to take you straight to Elturel. Even more importantly, Traxigor is looking after an old friend of mine\u2014someone with a history of battling devils in the Nine Hells. I think you'll enjoy her company very much. Her name is Lulu.\""
 							]
 						},
 						"Characters need not leave for Traxigor's tower at once. If they wish to remain in Candlekeep for a while, Sylvira is happy to accommodate them. However, Reya Mantlemorn becomes more impatient the longer they stay. Falaster Fisk parts company with the characters at this time, choosing to remain at Candlekeep for a few days before returning to Baldur's Gate.",
@@ -2787,11 +2787,11 @@
 									"type": "insetReadaloud",
 									"id": "109",
 									"entries": [
-										"One level down, you see a cluttered chamber illuminated by various objects upon which {@spell continual flame} spells have been cast. Scurrying around the room is an otter dressed in a tiny red cassock. The otter mumbles to itself in Common, mentioning something about a tuning fork. Suddenly, it takes notice of you and stands upright. \"Lulu! Wake up! Our guests have arrived!\"",
+										"One level down, you see a cluttered chamber illuminated by various objects upon which {@spell 不滅明焰} spells have been cast. Scurrying around the room is an otter dressed in a tiny red cassock. The otter mumbles to itself in Common, mentioning something about a tuning fork. Suddenly, it takes notice of you and stands upright. \"Lulu! Wake up! Our guests have arrived!\"",
 										"At the sound of her name, a small elephant with golden fur appears from under a pile of blankets near a table strewn with alchemical equipment. The elephant takes to the air on feathery wings and lets out a pleasing trumpet sound."
 									]
 								},
-								"{@creature Traxigor|BGDIA} was polymorphed into an otter years ago, and decided he preferred the new form to his original one (that of a wizened old man). His otter form was made permanent by a {@spell wish} spell. He uses the {@creature archmage} stat block, but is a Tiny beast with a Strength of 3. His alignment is chaotic good, and he speaks Common, Draconic, Dwarvish, Gnomish, Halfling, and Troglodyte. He has the {@spell plane shift} spell prepared instead of {@spell teleport}, and is searching for the tuning fork he needs to cast the spell. What little he knows about the characters has been communicated to him by {@spell sending} spells, sent by Sylvira Savikas in advance of their arrival.",
+								"{@creature Traxigor|BGDIA} was polymorphed into an otter years ago, and decided he preferred the new form to his original one (that of a wizened old man). His otter form was made permanent by a {@spell 祈願術} spell. He uses the {@creature archmage} stat block, but is a Tiny beast with a Strength of 3. His alignment is chaotic good, and he speaks Common, Draconic, Dwarvish, Gnomish, Halfling, and Troglodyte. He has the {@spell 異界傳送} spell prepared instead of {@spell 傳送術}, and is searching for the tuning fork he needs to cast the spell. What little he knows about the characters has been communicated to him by {@spell 短訊術} spells, sent by Sylvira Savikas in advance of their arrival.",
 								"Characters can help {@creature Traxigor|BGDIA} search for his missing tuning fork, which is keyed to the Nine Hells. Whoever rolls the highest on a Wisdom ({@skill Perception}) check finds the tuning fork. Whoever rolls the lowest finds a random trinket, determined by rolling on the {@table Trinket|PHB|Trinkets table} in chapter 5 of the {@book Player's Handbook|PHB}. Traxigor doesn't care if the character keeps the trinket or not, and doesn't remember how or when he acquired it."
 							]
 						},
@@ -2804,9 +2804,9 @@
 								{
 									"type": "list",
 									"items": [
-										"In {@adventure chapter 2|BGDIA|2}, Lulu regains the at-will ability to cast {@spell light} when she arrives in Elturel for the first time.",
-										"In {@adventure chapter 4|BGDIA|7}, Lulu regains her 2/day spells ({@spell bless}, {@spell cure wounds}, and {@spell protection from evil and good}) when she arrives at the Bleeding Citadel.",
-										"In {@adventure chapter 5|BGDIA|8}, Lulu regains her 1/day spells ({@spell banishment}, {@spell heal}, {@spell raise dead}, {@spell shapechange}, and {@spell teleport}) once she helps reunite Zariel with her sword."
+										"In {@adventure chapter 2|BGDIA|2}, Lulu regains the at-will ability to cast {@spell 光亮術} when she arrives in Elturel for the first time.",
+										"In {@adventure chapter 4|BGDIA|7}, Lulu regains her 2/day spells ({@spell 祝福術}, {@spell 治療傷勢}, and {@spell 防護善惡}) when she arrives at the Bleeding Citadel.",
+										"In {@adventure chapter 5|BGDIA|8}, Lulu regains her 1/day spells ({@spell 放逐術}, {@spell 治癒術}, {@spell 喚醒死者}, {@spell 形體變化}, and {@spell 傳送術}) once she helps reunite Zariel with her sword."
 									]
 								},
 								{
@@ -2904,7 +2904,7 @@
 									"type": "insetReadaloud",
 									"id": "111",
 									"entries": [
-										"As you stand together in a circle, Traxigor taps the tuning fork on the floor and casts his {@spell plane shift} spell."
+										"As you stand together in a circle, Traxigor taps the tuning fork on the floor and casts his {@spell 異界傳送} spell."
 									]
 								}
 							]
@@ -2945,7 +2945,7 @@
 					"name": "Arrival in Elturel",
 					"id": "114",
 					"entries": [
-						"A {@spell plane shift} spell transports {@creature Traxigor|BGDIA} the wizard and up to eight other creatures to Elturel, including {@creature Hollyphant|BGDIA|Lulu the hollyphant} and Reya Mantlemorn if she's still with the party. When the group arrives in Elturel, read the following boxed text aloud to the players:",
+						"A {@spell 異界傳送} spell transports {@creature Traxigor|BGDIA} the wizard and up to eight other creatures to Elturel, including {@creature Hollyphant|BGDIA|Lulu the hollyphant} and Reya Mantlemorn if she's still with the party. When the group arrives in Elturel, read the following boxed text aloud to the players:",
 						{
 							"type": "insetReadaloud",
 							"id": "115",
@@ -2964,9 +2964,9 @@
 							"width": 713,
 							"height": 1142
 						},
-						"{@creature Traxigor|BGDIA} casts {@spell time stop}, giving him time to flee using his {@spell fly} spell. He's long gone before the {@spell time stop} ends and the characters can react. Any character who succeeds on a DC 19 Intelligence ({@skill Arcana}) check deduces how Traxigor made his escape. The party doesn't encounter Traxigor again unless you want him to reappear later in the adventure. Traxigor has no interest in saving Elturel or picking sides in the Blood War. After finishing a long rest, he can cast {@spell plane shift} again and return to his tower on the Material Plane.",
+						"{@creature Traxigor|BGDIA} casts {@spell 時間停止}, giving him time to flee using his {@spell 飛行術} spell. He's long gone before the {@spell 時間停止} ends and the characters can react. Any character who succeeds on a DC 19 Intelligence ({@skill Arcana}) check deduces how Traxigor made his escape. The party doesn't encounter Traxigor again unless you want him to reappear later in the adventure. Traxigor has no interest in saving Elturel or picking sides in the Blood War. After finishing a long rest, he can cast {@spell 異界傳送} again and return to his tower on the Material Plane.",
 						"The characters and any remaining NPC companions have a few minutes to acclimate to their new surroundings before facing their first threat in the city (see \"{@area Unwelcome Party|116|x}\" below). See the \"{@area Elturel Hazards|123|x}\" sidebar for more information about the earthquakes and other dangers.",
-						"Upon her return to Avernus, {@creature Hollyphant|BGDIA|Lulu the hollyphant} regains her at-will innate spellcasting ability: {@spell light}. In terms of her memories, she can at first only recognize that the surroundings feel familiar, albeit in a terrible way. The sounds and scents of Avernus trigger memories of Zariel's fall and the angel's earliest days as a denizen of the Lower Planes. Lulu's time spent in Avernus and key interactions with specific NPCs slowly trigger the memories that help put the characters on a path to save the city.",
+						"Upon her return to Avernus, {@creature Hollyphant|BGDIA|Lulu the hollyphant} regains her at-will innate spellcasting ability: {@spell 光亮術}. In terms of her memories, she can at first only recognize that the surroundings feel familiar, albeit in a terrible way. The sounds and scents of Avernus trigger memories of Zariel's fall and the angel's earliest days as a denizen of the Lower Planes. Lulu's time spent in Avernus and key interactions with specific NPCs slowly trigger the memories that help put the characters on a path to save the city.",
 						"Reya Mantlemorn is disheartened by what she sees around her\u2014Elturel in shambles\u2014and is more determined than ever to try to save her city from destruction. She offers to lead the characters to the High Hall cathedral, where she hopes to find someone in charge.",
 						"If the characters brought the {@item Shield of the Hidden Lord|BGDIA} with them, Gargauth the pit fiend tries to escape from its prison and fails miserably. Although characters are unaware of Gargauth's escape attempt, the pit fiend grows increasingly despondent and impatient as they explore Elturel. Gargauth urges the characters not to tarry in the city, lest they get pulled down into the River Styx with it. Secretly, the pit fiend hopes that another means of escape will present itself once the characters leave Elturel and explore Avernus.",
 						{
@@ -3409,7 +3409,7 @@
 											"name": "Art",
 											"id": "13a",
 											"entries": [
-												"Once decorated with beautiful paintings, statues, and other works that depicted the strength and valor of Elturel's people, the cathedral was magically transformed when Elturel was pulled into Avernus. Now its artwork is a testament to the devils' superiority and strength, showing scenes of mortals succumbing to temptation, dying at the hands of fiends, and suffering eternal torture. When viewed, those images shift and swirl unsettlingly. A {@spell detect magic} spell reveals that the frescoes, mosaics, paintings, and tapestries of the cathedral radiate auras of illusion magic. These effects end if Elturel is freed from the chains of Avernus."
+												"Once decorated with beautiful paintings, statues, and other works that depicted the strength and valor of Elturel's people, the cathedral was magically transformed when Elturel was pulled into Avernus. Now its artwork is a testament to the devils' superiority and strength, showing scenes of mortals succumbing to temptation, dying at the hands of fiends, and suffering eternal torture. When viewed, those images shift and swirl unsettlingly. A {@spell 偵測魔法} spell reveals that the frescoes, mosaics, paintings, and tapestries of the cathedral radiate auras of illusion magic. These effects end if Elturel is freed from the chains of Avernus."
 											]
 										},
 										{
@@ -3433,7 +3433,7 @@
 											"name": "Illumination",
 											"id": "13d",
 											"entries": [
-												"Areas within the cathedral are brightly lit by {@spell continual flame} spells cast on wall sconces."
+												"Areas within the cathedral are brightly lit by {@spell 不滅明焰} spells cast on wall sconces."
 											]
 										},
 										{
@@ -3549,7 +3549,7 @@
 											"entries": [
 												"Seltern Obranch, a {@creature druid} dedicated to {@deity Silvanus|Faerûnian|SCAG}, was here when the attack took place. After being knocked down in the melee, he feigned his demise to trick his attackers. If the characters search the bodies, they notice Seltern open his eyes.",
 												"If the characters treat him kindly, Seltern tells of how forces of devils assaulted the cathedral. He knows nothing of the current state of the place, but can tell the characters that all in the cathedral knew to flee to the main crypts ({@area area H16|159|x}) in case of an attack.",
-												"Seltern has been using the {@spell goodberry} spell to help keep those in the cathedral alive. However, his connection to his beloved nature grows weaker by the day, and he fears he may soon be unable to cast spells at all. Though he is not truly in danger of losing this ability (his resolve is simply shaken), this can provide a roleplaying opportunity for the characters to boost his spirits and strengthen his faith."
+												"Seltern has been using the {@spell 神莓術} spell to help keep those in the cathedral alive. However, his connection to his beloved nature grows weaker by the day, and he fears he may soon be unable to cast spells at all. Though he is not truly in danger of losing this ability (his resolve is simply shaken), this can provide a roleplaying opportunity for the characters to boost his spirits and strengthen his faith."
 											]
 										}
 									]
@@ -3624,7 +3624,7 @@
 												"Situated atop this balcony is a magnificent pipe organ. Its ivory keys practically glow, even as its ebony keys seem to absorb all light."
 											]
 										},
-										"The balcony looks out over {@area area H3|143|x}. Any character who sits down at the pipe organ can feel that it is enchanted with powerful magic, and a {@spell detect magic} spell reveals an aura of enchantment magic around it.",
+										"The balcony looks out over {@area area H3|143|x}. Any character who sits down at the pipe organ can feel that it is enchanted with powerful magic, and a {@spell 偵測魔法} spell reveals an aura of enchantment magic around it.",
 										"A character who plays the organ and succeeds on a DC 15 Charisma ({@skill Performance}) check can play a powerful song that resonates throughout the cathedral. This song grants a bonus die, a {@dice d8}, to every other player character who can hear it. A character can only receive this benefit only once, and the {@dice d8} can be added to one attack roll, ability check, or saving throw made by the character in the next 24 hours.",
 										"If the Charisma ({@skill Performance}) check fails by 5 or more, a screeching, hellish tune erupts from the organ instead. Inspired by this cacophony, each devil the characters face in the next combat encounter in the cathedral has advantage on attack rolls during its first turn."
 									]
@@ -3636,7 +3636,7 @@
 									"entries": [
 										"Two defensive turrets decorate the front of this area, looking down over the courtyard. Arrow slits in the walls of each turret offer a view of the ground below, but are too narrow for even Small creatures to squeeze through.",
 										"The north turret contains a traumatized male human {@creature guard} named Trevick Thantorme. The other guards here ran downstairs when the attack started, only to quickly fall. The panicked Trevick remained here, and now sits curled up and whispering to himself that everything's going to be okay.",
-										"A successful DC 10 Charisma ({@skill Persuasion}) check restores Trevick's courage, as does a {@spell calm emotions} spell or similar effect. If the characters allow it, Trevick vows to accompany them on their hunt for the devils. However, the first time he takes any damage, he curls up in a ball again, requiring another check made as an action to get him back in the fight."
+										"A successful DC 10 Charisma ({@skill Persuasion}) check restores Trevick's courage, as does a {@spell 安定心神} spell or similar effect. If the characters allow it, Trevick vows to accompany them on their hunt for the devils. However, the first time he takes any damage, he curls up in a ball again, requiring another check made as an action to get him back in the fight."
 									]
 								},
 								{
@@ -4023,7 +4023,7 @@
 											"id": "173",
 											"entries": [
 												"The book is a testament written by Gideon in the months leading up to Elturel's fall. It pontificates about the evil of demons, instructing the reader to be ever vigilant against their incursions, and expounding that the demonic threat must be defeated at all costs. It praises the devils that stoically stand against the unending demonic tide, while chastising Helm, Torm, Tyr, Lathander, and their angelic servitors for not doing the same. Gideon has nothing but praise for Zariel's efforts to end the demonic threat. Any character who spends 10 minutes poring over the tome can conclude, with a successful DC 10 Intelligence ({@skill Investigation}) check, that it's the work of a madman.",
-												"Any character who continues to read the book beyond that basic level of understanding must succeed on a DC 15 Wisdom saving throw. On a failed check, the character is cursed with a particularly intense hatred of demons. A creature cursed in this way takes 5 ({@dice 1d10}) psychic damage if it can see any demon within 60 feet of it and ends its turn not having attempted to attack a demon. This curse can be removed with a {@spell remove curse} spell or similar magic. At the end of each long rest, a cursed creature can make a DC 15 Wisdom saving throw, ending the effect on itself on a success."
+												"Any character who continues to read the book beyond that basic level of understanding must succeed on a DC 15 Wisdom saving throw. On a failed check, the character is cursed with a particularly intense hatred of demons. A creature cursed in this way takes 5 ({@dice 1d10}) psychic damage if it can see any demon within 60 feet of it and ends its turn not having attempted to attack a demon. This curse can be removed with a {@spell 移除詛咒} spell or similar magic. At the end of each long rest, a cursed creature can make a DC 15 Wisdom saving throw, ending the effect on itself on a success."
 											]
 										}
 									]
@@ -4261,7 +4261,7 @@
 											"name": "Treasure",
 											"id": "185",
 											"entries": [
-												"Searching the bodies of the fallen guards turns up three wet but usable {@item Spell Scroll||spell scrolls} ({@spell mass healing word}, {@spell remove curse}, and {@spell tongues}).",
+												"Searching the bodies of the fallen guards turns up three wet but usable {@item Spell Scroll||spell scrolls} ({@spell 群體治癒真言}, {@spell 移除詛咒}, and {@spell 巧舌術}).",
 												"In addition to the Helm of Torm's Sight, Ravengard wears a bloodied suit of {@item plate armor|phb} emblazoned with the emblem of the Flaming Fist. His {@item shield|phb}, which also bears this emblem, is slung over his back. The grand duke's {@item +1 longsword} is sheathed at his side."
 											]
 										}
@@ -4333,7 +4333,7 @@
 											"id": "18c",
 											"entries": [
 												"You can simplify the encounter with Ulder Ravengard by allowing the characters to remove the Helm of Torm's Sight from his head, whereupon Ravengard quickly regains his senses. At that point, he can tell them about his visions, which provide the information they need and trigger Lulu's memories. He then lets them plot a path forward in their quest to save Elturel.",
-												"Alternatively, Ravengard can fall {@condition unconscious} when the helm is removed, even as the character who removes it feels an almost overwhelming urge to don it. A character who dons the helm feels at peace and sees visions of troops in gleaming armor marching across a grassy plain with military precision. In the next breath, the character sees massive groups of disfigured monsters loping across a blighted landscape, tearing at screaming enemies. The character wearing the helm can't remove it until they receive a {@spell bless} spell from a worshiper of Torm. (Pherria fits this description.) In the meantime, as the adventuring party travels back to the cathedral with the still-{@condition unconscious} Ravengard, the character wearing the helm experiences the same visions that Ravengard was having, as described in \"{@area The Path Forward|18d|x}\". Ravengard then awakens after 1 hour, no worse for wear."
+												"Alternatively, Ravengard can fall {@condition unconscious} when the helm is removed, even as the character who removes it feels an almost overwhelming urge to don it. A character who dons the helm feels at peace and sees visions of troops in gleaming armor marching across a grassy plain with military precision. In the next breath, the character sees massive groups of disfigured monsters loping across a blighted landscape, tearing at screaming enemies. The character wearing the helm can't remove it until they receive a {@spell 祝福術} spell from a worshiper of Torm. (Pherria fits this description.) In the meantime, as the adventuring party travels back to the cathedral with the still-{@condition unconscious} Ravengard, the character wearing the helm experiences the same visions that Ravengard was having, as described in \"{@area The Path Forward|18d|x}\". Ravengard then awakens after 1 hour, no worse for wear."
 											]
 										}
 									]
@@ -4392,7 +4392,7 @@
 									"name": "Flying",
 									"id": "191",
 									"entries": [
-										"Lulu has the ability to fly, and one or more characters might also be able to do so. Whether they possess wings or have access to magic such as a {@spell fly} spell or a {@item potion of flying}, characters who take to the air can easily get clear of Elturel. However, flying creatures might attract the attention of winged devils and demons in the area, at your discretion."
+										"Lulu has the ability to fly, and one or more characters might also be able to do so. Whether they possess wings or have access to magic such as a {@spell 飛行術} spell or a {@item potion of flying}, characters who take to the air can easily get clear of Elturel. However, flying creatures might attract the attention of winged devils and demons in the area, at your discretion."
 									]
 								},
 								{
@@ -4608,8 +4608,8 @@
 							"id": "1a3",
 							"entries": [
 								"The River Styx courses through the Lower Planes, frustrating every attempt to map it or predict its course. Getting lost while sailing the Styx isn't the only danger the river presents. Simply tasting or touching its waters can shatter a creature's intellect and personality, as well as strip away its memories. Certain fiends are immune to the river's effects, but most creatures have no defense against it.",
-								"Unless immune to the river's effects, a creature that drinks from the Styx or enters the river is targeted by a {@spell feeblemind} spell (save DC 20). A creature must repeat the saving throw whenever it starts its turn in the river, until it fails the save. A feebleminded creature can drink from the Styx and swim in its waters without suffering any additional deleterious effects.",
-								"If a creature fails its saving throw and remains under the spell's effect for 30 consecutive days, the effect becomes permanent (no save) and the creature loses all its memories, becoming a near-mindless shell of its former self. At that point, nothing short of a {@spell wish} spell or divine intervention can undo the effect.",
+								"Unless immune to the river's effects, a creature that drinks from the Styx or enters the river is targeted by a {@spell 弱智術} spell (save DC 20). A creature must repeat the saving throw whenever it starts its turn in the river, until it fails the save. A feebleminded creature can drink from the Styx and swim in its waters without suffering any additional deleterious effects.",
+								"If a creature fails its saving throw and remains under the spell's effect for 30 consecutive days, the effect becomes permanent (no save) and the creature loses all its memories, becoming a near-mindless shell of its former self. At that point, nothing short of a {@spell 祈願術} spell or divine intervention can undo the effect.",
 								"Water taken from the River Styx loses its potency after 24 hours, becoming a harmless, foul-tasting liquid. However, {@creature Arcanaloth||arcanaloths}, {@creature Night Hag||night hags}, and other fell creatures might know rituals that can prolong the water's potency, at your discretion."
 							]
 						},
@@ -4625,14 +4625,14 @@
 									"id": "1a5",
 									"entries": [
 										"At your discretion, a spell can be modified cosmetically to enhance the corrupting nature of Avernus. Here are some examples:",
-										"{@spell Bigby's Hand}. The conjured hand is a fiendish claw.",
-										"{@spell Find Familiar}. The familiar is an {@creature imp}.",
-										"{@spell Find Steed}. The steed is a {@creature nightmare}.",
-										"{@spell Find the Path}. An {@creature imp} appears and begrudgingly guides the caster to the desired location while complaining the whole time, disappearing when the destination is reached or the spell ends.",
-										"{@spell Fog Cloud}. Moaning faces appear and fade in the yellow fog that smells like sulfur.",
-										"{@spell Hellish Rebuke}. The cackling of imps accompanies the fire unleashed by this spell.",
-										"{@spell Mage Hand}. The summoned hand is shaped like a claw.",
-										"{@spell Rary's Telepathic Bond}. Characters linked together by the spell can hear vague, infernal whispering in the background, but can't make out what's being said."
+										"{@spell 畢格比之掌}. The conjured hand is a fiendish claw.",
+										"{@spell 尋獲魔寵}. The familiar is an {@creature imp}.",
+										"{@spell 尋獲坐騎}. The steed is a {@creature nightmare}.",
+										"{@spell 尋找捷徑}. An {@creature imp} appears and begrudgingly guides the caster to the desired location while complaining the whole time, disappearing when the destination is reached or the spell ends.",
+										"{@spell 雲霧術}. Moaning faces appear and fade in the yellow fog that smells like sulfur.",
+										"{@spell 煉獄叱喝}. The cackling of imps accompanies the fire unleashed by this spell.",
+										"{@spell 法師之手}. The summoned hand is shaped like a claw.",
+										"{@spell 拉瑞心靈聯結}. Characters linked together by the spell can hear vague, infernal whispering in the background, but can't make out what's being said."
 									]
 								},
 								{
@@ -4640,7 +4640,7 @@
 									"name": "Telepathic Communications",
 									"id": "1a6",
 									"entries": [
-										"Archdevils can eavesdrop on communication spells such as {@spell message} and {@spell sending} sent from or within the Nine Hells. Because of this, those engaging in telepathic communication always have the feeling that they are being listened in on or watched by some infernal presence, even if an archdevil isn't eavesdropping on their communication.",
+										"Archdevils can eavesdrop on communication spells such as {@spell 傳訊術} and {@spell 短訊術} sent from or within the Nine Hells. Because of this, those engaging in telepathic communication always have the feeling that they are being listened in on or watched by some infernal presence, even if an archdevil isn't eavesdropping on their communication.",
 										"Telepathic communications via magic items such as {@item sending stones} or a {@item helm of telepathy} can be overheard by an archdevil as well. Communicating with a {@item Figurine of Wondrous Power, Serpentine Owl||serpentine owl}, an {@item orb of dragonkind}, or a sentient weapon also runs the risk of being overheard in Avernus. {@item Ring of Mind Shielding||Rings of mind shielding} work the same in Avernus as they do on any other plane and are highly valuable items in the Nine Hells, coveted by all fiends to avoid the prying minds of their masters.",
 										{
 											"type": "image",
@@ -4701,7 +4701,7 @@
 									"id": "1ad",
 									"entries": [
 										"Whenever a character fails a death save in the Nine Hells, an archdevil may contact that character telepathically and offer its assistance. The character must agree to perform a task for the archdevil afterward. The nature of the task is not revealed until the character agrees to these terms.",
-										"A character who agrees to the archdevil's terms automatically rolls a 20 on their next death save. At the same time, the character falls under the effect of a {@spell geas} spell (no saving throw allowed). If this spell ends prematurely, the character immediately drops to 0 hit points and is dying. The task that the character must complete is usually simple and straightforward, and always for the benefit of the archdevil who struck the deal. Sample tasks include delivering a {@item soul coin|BGDIA} to one of the archdevil's minions, refusing to help someone the character is fated to meet in the future, or destroying something the archdevil abhors (such as a holy symbol)."
+										"A character who agrees to the archdevil's terms automatically rolls a 20 on their next death save. At the same time, the character falls under the effect of a {@spell 指使術} spell (no saving throw allowed). If this spell ends prematurely, the character immediately drops to 0 hit points and is dying. The task that the character must complete is usually simple and straightforward, and always for the benefit of the archdevil who struck the deal. Sample tasks include delivering a {@item soul coin|BGDIA} to one of the archdevil's minions, refusing to help someone the character is fated to meet in the future, or destroying something the archdevil abhors (such as a holy symbol)."
 									]
 								},
 								{
@@ -4717,7 +4717,7 @@
 									"name": "Pervasive Evil",
 									"id": "1af",
 									"entries": [
-										"Evil pervades the Nine Hells, and visitors to this plane feel its influence. At the end of each long rest taken on this plane, a visitor that isn't evil must make a DC 10 Wisdom saving throw. On a failed save, the creature's alignment changes to lawful evil. The change becomes permanent if the creature doesn't leave the plane within {@dice 1d4} days. Otherwise, the creature's alignment reverts to normal after one day spent on a plane other than the Nine Hells. Casting the {@spell dispel evil and good} spell on the creature also restores its original alignment.",
+										"Evil pervades the Nine Hells, and visitors to this plane feel its influence. At the end of each long rest taken on this plane, a visitor that isn't evil must make a DC 10 Wisdom saving throw. On a failed save, the creature's alignment changes to lawful evil. The change becomes permanent if the creature doesn't leave the plane within {@dice 1d4} days. Otherwise, the creature's alignment reverts to normal after one day spent on a plane other than the Nine Hells. Casting the {@spell 反制善惡} spell on the creature also restores its original alignment.",
 										{
 											"type": "gallery",
 											"images": [
@@ -4960,7 +4960,7 @@
 											"id": "1c2",
 											"entries": [
 												"One of the parts in the {@vehicle Demon Grinder|BGDIA}\u2014a spiky gear\u2014is disrupting the flow of infernal energy through the vehicle. The gear, comprised of spikes from a hezrou demon, surges with demonic energy to cause the malfunction. A successful DC 15 Intelligence ({@skill Arcana} or {@skill Investigation}) by a character who spends at least 10 minutes examining the vehicle reveals which part is to blame.",
-												"Chukka and Clonk appreciate the help in identifying the problem. Characters can further assist by finding a way to remove the demonic essence from the gear. Spells such as {@spell dispel magic} or {@spell protection from evil and good}, or other methods that the characters might imagine, could make the part usable. If the characters help the pair get the infernal machine running, the kenku express their pleasure to Mad Maggie, who becomes even more likely to help the characters in their quest."
+												"Chukka and Clonk appreciate the help in identifying the problem. Characters can further assist by finding a way to remove the demonic essence from the gear. Spells such as {@spell 解除魔法} or {@spell 防護善惡}, or other methods that the characters might imagine, could make the part usable. If the characters help the pair get the infernal machine running, the kenku express their pleasure to Mad Maggie, who becomes even more likely to help the characters in their quest."
 											]
 										}
 									]
@@ -5199,7 +5199,7 @@
 									"name": "Vengeful Pursuits",
 									"id": "1da",
 									"entries": [
-										"If the characters take one or more infernal war machines from Fort Knucklebone without Mad Maggie's consent, the night hag organizes a posse to run them down and get back what's hers, plus \"interest.\" Mad Maggie chases after them in her {@vehicle Scavenger|BGDIA}, with Mickey in the passenger seat behind her while she drives. Barnabas the flameskull operates the Grappling Claw with his {@spell mage hand} spell, Chukka and Clonk operate the Harpoon Flingers, and six madcaps cling to the outside hull, ready to leap onto enemy vehicles. If Chukka and Clonk got the broken {@vehicle Demon Grinder|BGDIA} working, that vehicle comes after the characters as well and is manned entirely by redcaps and madcaps."
+										"If the characters take one or more infernal war machines from Fort Knucklebone without Mad Maggie's consent, the night hag organizes a posse to run them down and get back what's hers, plus \"interest.\" Mad Maggie chases after them in her {@vehicle Scavenger|BGDIA}, with Mickey in the passenger seat behind her while she drives. Barnabas the flameskull operates the Grappling Claw with his {@spell 法師之手} spell, Chukka and Clonk operate the Harpoon Flingers, and six madcaps cling to the outside hull, ready to leap onto enemy vehicles. If Chukka and Clonk got the broken {@vehicle Demon Grinder|BGDIA} working, that vehicle comes after the characters as well and is manned entirely by redcaps and madcaps."
 									]
 								}
 							]
@@ -5621,14 +5621,14 @@
 							]
 						},
 						"Lakes of demonic ichor appear where demons are slaughtered in great numbers. Malformed trees grow on their shorelines, their branches laden with fleshy sacs. These eventually flop to the ground and wetly break open, each one releasing a fully grown {@creature abyssal chicken|BGDIA}. Abyssal chickens are carnivorous, temperamental, tasty bottom-feeders native to the Abyss. They beat their leathery wings to scare predators and to help them run faster, and they taste like fatty chicken.",
-						"With your permission, a character who casts the {@spell find familiar} spell can henceforth choose to conjure an abyssal chicken instead of a raven.",
+						"With your permission, a character who casts the {@spell 尋獲魔寵} spell can henceforth choose to conjure an abyssal chicken instead of a raven.",
 						{
 							"type": "entries",
 							"name": "Devilish Work Crew",
 							"id": "1fd",
 							"entries": [
 								"Zariel dispatched infernal cleanup crews to scour the lake shores for the trees and destroy them before they become thickets. When the characters arrive, they encounter a work crew of five {@creature Bearded Devil||bearded devils} in the process of raising a pyre around a tree to incinerate it. Four of the devils tease the fifth, whose name is Krikendolt. A vrock savaged Krikendolt's skull during one of the many battles of the Blood War, leaving him with terrible scars and a brain injury that has turned his alignment to chaotic good. Krikendolt's comrades learned that he pities the abyssal chickens, and they are now goading him into slaughtering the chickens on pain of death. Secretly, Krikendolt keeps an {@creature abyssal chicken|BGDIA} named Earwax in his sack.",
-								"The devils are likely to attack on sight unless a character can convince them to parley with a successful DC 12 Charisma ({@skill Persuasion}) check. The devils won't forgive their comrade for his compassion, but the characters could persuade them to release Krikendolt into their care if they offer the right price. Krikendolt knows Avernus well, so he makes a good traveling companion and guide. The characters can cure Krikendolt of his disorder using a {@spell heal} spell or similar magic, which restores his lawful evil alignment.",
+								"The devils are likely to attack on sight unless a character can convince them to parley with a successful DC 12 Charisma ({@skill Persuasion}) check. The devils won't forgive their comrade for his compassion, but the characters could persuade them to release Krikendolt into their care if they offer the right price. Krikendolt knows Avernus well, so he makes a good traveling companion and guide. The characters can cure Krikendolt of his disorder using a {@spell 治癒術} spell or similar magic, which restores his lawful evil alignment.",
 								"The devils don't know where the Bleeding Citadel is, but they do know someone who could help. For the price of a {@item soul coin|BGDIA}, the devils direct the group to a mysterious outlander (see \"Development\" below). If the characters are unable to pay, they must return later with the coin and track down the fiends on the lake shore.",
 								{
 									"type": "entries",
@@ -5685,7 +5685,7 @@
 							"id": "202",
 							"entries": [
 								"Mordenkainen is a stern, bald man with a neatly trimmed black goatee beard and a penetrating stare. When his tower arrives in Avernus, Mordenkainen steps out onto the balcony to address the fiends gathered below. Fights frequently break out between the yugoloths as they jostle for his attention.",
-								"Zariel's assassins often lurk here, so Mordenkainen presents a {@spell simulacrum} of his true self that disintegrates into a pile of snow if it is destroyed. The real archmage remains deep inside his tower and swiftly shunts the building to another plane in times of danger.",
+								"Zariel's assassins often lurk here, so Mordenkainen presents a {@spell 擬像術} of his true self that disintegrates into a pile of snow if it is destroyed. The real archmage remains deep inside his tower and swiftly shunts the building to another plane in times of danger.",
 								"If the characters make themselves known to Mordenkainen's simulacrum, he demands to know their reasons for visiting. The archmage doesn't know the location of the Bleeding Citadel, nor does he care to find it. Even so, he claims that \"balance will be maintained in the universe\" by giving the characters directions to a lesser mage who also studies the workings of magic in Avernus\u2014specifically, a \"mage of no renown\" who haunts the site of an obelisk. The yugoloths recently told Mordenkainen about this stranger and his guidance has an ulterior motive: if the characters end up slaying the mysterious mage, Mordenkainen has one less rival to contend with in Avernus."
 							]
 						}
@@ -5706,7 +5706,7 @@
 								"A thirty-foot-tall obelisk ringed by seven smaller standing stones rises from the crest of this hill. A tall man wearing tattered robes strides between the standing stones, gesticulating wildly and screaming curses into the wind."
 							]
 						},
-						"The pit fiend Bel imprisoned the {@creature barlgura} demon Ubbalux inside this circle of standing stones. To torment his adversary, Bel revealed that the secret to escaping the prison was hidden in the arcane runes etched across the standing stones. Ever since, the tormented demon has tried futilely to solve the riddle and escape. The figure pacing the standing stones is Ubbalux masquerading in human form using a {@spell disguise self} spell. The magic of the obelisk prevents the demon from leaving the circle and stops any form of divination magic from affecting the stones or targeting a creature inside their perimeter.",
+						"The pit fiend Bel imprisoned the {@creature barlgura} demon Ubbalux inside this circle of standing stones. To torment his adversary, Bel revealed that the secret to escaping the prison was hidden in the arcane runes etched across the standing stones. Ever since, the tormented demon has tried futilely to solve the riddle and escape. The figure pacing the standing stones is Ubbalux masquerading in human form using a {@spell 易容術} spell. The magic of the obelisk prevents the demon from leaving the circle and stops any form of divination magic from affecting the stones or targeting a creature inside their perimeter.",
 						"Ubbalux appears as a tall human wizard. The demon stole this appearance from the last visitor to stray into his stones (after Ubbalux ate him). If the characters approach, the \"wizard\" greets them eagerly and is keen to divulge details of his studies, but his conversation often trails off on confusing tangents. The following information can be gleaned by speaking with the false wizard:",
 						{
 							"type": "list",
@@ -5749,19 +5749,19 @@
 												],
 												[
 													"Divination",
-													"You gain the benefits of a {@spell true seeing} spell for the next hour."
+													"You gain the benefits of a {@spell 真知術} spell for the next hour."
 												],
 												[
 													"Enchantment",
-													"The standing stone casts {@spell confusion} on you (save DC 15). The spell lasts for 1 minute."
+													"The standing stone casts {@spell 困惑術} on you (save DC 15). The spell lasts for 1 minute."
 												],
 												[
 													"Evocation",
-													"The standing stone casts {@spell magic missile}, targeting you with five missiles."
+													"The standing stone casts {@spell 魔法飛彈}, targeting you with five missiles."
 												],
 												[
 													"Illusion",
-													"An illusory swarm of harmless bats or pigeons (DM's choice) flutters over your head for the next hour. A {@spell dispel magic} cast on the swarm ends the effect."
+													"An illusory swarm of harmless bats or pigeons (DM's choice) flutters over your head for the next hour. A {@spell 解除魔法} cast on the swarm ends the effect."
 												],
 												[
 													"Necromancy",
@@ -5769,7 +5769,7 @@
 												],
 												[
 													"Transmutation",
-													"Your skin turns blue for the next 24 hours. A {@spell remove curse} spell ends the effect on you."
+													"Your skin turns blue for the next 24 hours. A {@spell 移除詛咒} spell ends the effect on you."
 												]
 											]
 										}
@@ -5866,7 +5866,7 @@
 							"entries": [
 								"When the characters arrive here, they spot an {@creature ultroloth} imprisoned in the iron cage suspended over the chasm. The iron crane has a magically powered winch mechanism that repeatedly dunks the cage into the goo, nearly drowning the prisoner with each submersion. The ultroloth, Baazit, is bound by {@item dimensional shackles} that prevent it from teleporting away.",
 								"Baazit contacts the characters telepathically as soon as they're in range. The ultroloth was imprisoned by a pit fiend for stealing {@item Soul Coin|BGDIA|soul coins}. Baazit promises to show the characters how to form magical servants from the goo if they free it. Baazit can also direct the group to Bel's forge (see \"{@area Bel's Forge|251|x}\").",
-								"A character can jam the crane's winch with a crowbar or similar tool, preventing it from lowering or raising Baazit's cage. Once the cage stops moving, a character can try to use {@item thieves' tools|phb} to unlock the cage door, doing so with a successful DC 20 Dexterity check. A {@spell knock} spell or similar magic also unlocks the cage door.",
+								"A character can jam the crane's winch with a crowbar or similar tool, preventing it from lowering or raising Baazit's cage. Once the cage stops moving, a character can try to use {@item thieves' tools|phb} to unlock the cage door, doing so with a successful DC 20 Dexterity check. A {@spell 敲擊術} spell or similar magic also unlocks the cage door.",
 								{
 									"type": "entries",
 									"name": "Creating a Homunuculus",
@@ -5967,7 +5967,7 @@
 												"A pair of basalt doors block the passage ahead, their surfaces engraved with a relief of a knight locked in combat with a devil. Both wield burning swords."
 											]
 										},
-										"The doors do not have visible handles, locks, or bolts, and they are magically locked, hardened, and enchanted to resist magic. Any spell cast to unlock, damage, or re-mold the doors automatically fails. Characters can use {@spell dimension door} or similar magic to get past the doors. They can also slip through the cracks between the doors if they have the magic to do so (such as the {@spell gaseous form} spell). Otherwise, they'll need the speak the pass phrase \"For Glory\" to proceed any farther. Characters can learn the pass phrase from Ubbalux the barlgura (as discussed in the \"{@area Pit of Shummrath|20d|x}\" section).",
+										"The doors do not have visible handles, locks, or bolts, and they are magically locked, hardened, and enchanted to resist magic. Any spell cast to unlock, damage, or re-mold the doors automatically fails. Characters can use {@spell 次元門} or similar magic to get past the doors. They can also slip through the cracks between the doors if they have the magic to do so (such as the {@spell 氣化形體} spell). Otherwise, they'll need the speak the pass phrase \"For Glory\" to proceed any farther. Characters can learn the pass phrase from Ubbalux the barlgura (as discussed in the \"{@area Pit of Shummrath|20d|x}\" section).",
 										"If a character speaks the pass phrase aloud within 10 feet of the doors, the doors slowly grind open. The doors close on their own after 1 hour unless they are held or wedged open."
 									]
 								},
@@ -6060,8 +6060,8 @@
 												"Adorning the wall across from the steles is a carved relief showing a solemn, blindfolded angel on the back of a mammoth with feathered wings. The mammoth is reared up on its hind legs, and the angel holds her sword high. All around them are the broken bodies of fallen knights and devils."
 											]
 										},
-										"Characters who use {@spell detect magic} or similar magic to examine the steles discern a strong aura of necromantic magic emanating from the engraved names.",
-										"While the steles remain empowered, necrotic energy lashes out at anyone who touches them. A creature touching a stele must make a DC 15 Dexterity saving throw, taking 36 ({@dice 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. If the soulbound parchments in both ritual rooms (area C6) are destroyed, the steles deactivate. The characters can then free the warriors' souls by striking their names from the stone. As the names are removed, the knights' ghosts fade from view with gasps of relief. If all the names are struck from the stele, each character gains the benefit of a {@spell bless} spell that lasts for 24 hours."
+										"Characters who use {@spell 偵測魔法} or similar magic to examine the steles discern a strong aura of necromantic magic emanating from the engraved names.",
+										"While the steles remain empowered, necrotic energy lashes out at anyone who touches them. A creature touching a stele must make a DC 15 Dexterity saving throw, taking 36 ({@dice 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. If the soulbound parchments in both ritual rooms (area C6) are destroyed, the steles deactivate. The characters can then free the warriors' souls by striking their names from the stone. As the names are removed, the knights' ghosts fade from view with gasps of relief. If all the names are struck from the stele, each character gains the benefit of a {@spell 祝福術} spell that lasts for 24 hours."
 									]
 								},
 								{
@@ -6147,7 +6147,7 @@
 								"Two ornate, black arches dominate the scorched landscape for miles, each one rising two hundred feet into the stiflingly hot air. Every inch of stonework is engraved with images of devils waging war against demons."
 							]
 						},
-						"In forgotten times, archdevils used these twin arches to transport entire regiments to other planes of existence. The arches' magic has waned significantly, but there's still enough magic left in each one to transport creatures to another location in the Nine Hells. Characters who use a {@spell detect magic} spell or similar magic to examine the arches discern a powerful aura of conjuration magic around each one.",
+						"In forgotten times, archdevils used these twin arches to transport entire regiments to other planes of existence. The arches' magic has waned significantly, but there's still enough magic left in each one to transport creatures to another location in the Nine Hells. Characters who use a {@spell 偵測魔法} spell or similar magic to examine the arches discern a powerful aura of conjuration magic around each one.",
 						"When a creature approaches within 100 feet of either arch, the stonework emits a loud, resonant hum that grows louder and higher in pitch as the creature draws closer. As a creature passes through an arch, a roaring sheet of flame fills the archway, teleporting the creature to another location in the Nine Hells. Any creature or object that passes through the arch while the portal is open is transported to the same destination. Each arch is wide enough to accommodate infernal war machines.",
 						"To travel to a specific destination, a creature must have visited it before or be able to point to its location on a map. Characters who point to Kostchtchie's Maw on their map as they pass through an arch are teleported to the top of the demon lord's prison-chasm.",
 						"If the characters fail to pick a destination, determine it randomly. Ask a player to roll a {@dice d20} on the poster map of Avernus. The location closest to where the die rests becomes the destination. If the die rolls off the map, the DM chooses a destination.",
@@ -6194,7 +6194,7 @@
 									"name": "Development",
 									"id": "22e",
 									"entries": [
-										"If Kostchtchie is freed, the he cries out to Zariel (in Giant) that he's coming for his hammer and swears to crush her with it. He then casts {@spell wind walk}, which turns him into a cloudy form with an astonishingly fast flying speed of 300 feet. In this form, he travels with great haste across Avernus, determined to get his hammer back. Characters swift enough to follow in his wake are led to Zariel (see {@adventure chapter 5|BGDIA|8}).",
+										"If Kostchtchie is freed, the he cries out to Zariel (in Giant) that he's coming for his hammer and swears to crush her with it. He then casts {@spell 御風而行}, which turns him into a cloudy form with an astonishingly fast flying speed of 300 feet. In this form, he travels with great haste across Avernus, determined to get his hammer back. Characters swift enough to follow in his wake are led to Zariel (see {@adventure chapter 5|BGDIA|8}).",
 										"With Kostchtchie freed, the characters can return to the Crypt of the Hellriders, where Olanthius dutifully reveals the location of the Bleeding Citadel (see {@adventure chapter 4|BGDIA|7}). As the characters leave the catacombs, he asks them to give his love to Yael when they see her.",
 										{
 											"type": "image",
@@ -6252,7 +6252,7 @@
 							"id": "232",
 							"entries": [
 								"A {@creature dao} named Ralzala defends the demon zapper. Ralzala swore loyalty to Zariel to gain revenge against a rival dao who tried to ruin her. The dao regrets the arrangement and wants to break her pact with the archdevil.",
-								"Ralzala hides under the ground at the base of the zapper. If the characters damage the zapper, Ralzala emerges from the ground, casts {@spell tongues}, and offers them a deal. She reveals that the deposed archdevil {@creature Bel|BGDIA} would gladly aid the characters in overthrowing {@creature Archduke Zariel of Avernus|BGDIA|Zariel}. If the characters help Ralzala break her pact with Zariel, the dao promises to direct them to Bel's Forge and write them a letter of introduction.",
+								"Ralzala hides under the ground at the base of the zapper. If the characters damage the zapper, Ralzala emerges from the ground, casts {@spell 巧舌術}, and offers them a deal. She reveals that the deposed archdevil {@creature Bel|BGDIA} would gladly aid the characters in overthrowing {@creature Archduke Zariel of Avernus|BGDIA|Zariel}. If the characters help Ralzala break her pact with Zariel, the dao promises to direct them to Bel's Forge and write them a letter of introduction.",
 								"Ralzala knows an oracle named Red Ruth, who could surely divine a solution to her problem. Being bound to the demon zapper, Ralzala is unable to seek out this oracle herself, but the characters could do so in her stead. She tells them to speak with Red Ruth in the corrupted forest nearby and follow her instructions to break the pact. This leads the players to the {@area Bone Brambles|233|x}.",
 								{
 									"type": "image",
@@ -6410,7 +6410,7 @@
 										},
 										"Red Ruth, a {@creature night hag}, makes her lair inside this gory den. She wears a dress made from stitched-together bones. Strings of infants' skulls hang around her neck and chatter nursery rhymes incessantly (and in different languages) as she talks.",
 										"Evil visitors from all over the multiverse travel to Avernus to hear Red Ruth's divinations and sample her mystical brews. If the characters talk to Red Ruth about the dao's curse, she offers them a deal for her assistance (see \"{@area Hold the Fort|23e|x}\" below).",
-										"Red Ruth sells potions brewed from blood, which she gladly trades for {@item Soul Coin|BGDIA|soul coins} as listed on the Red Ruth's Bargains table. Each potion imparts an unpleasant but harmless side effect when imbibed: flatulence, boils, hair loss, or any other ghastliness you can conceive. Her divinations replicate the effects of a {@spell commune} spell, although Red Ruth provides the answers to the questions without needing to appeal to a divine being.",
+										"Red Ruth sells potions brewed from blood, which she gladly trades for {@item Soul Coin|BGDIA|soul coins} as listed on the Red Ruth's Bargains table. Each potion imparts an unpleasant but harmless side effect when imbibed: flatulence, boils, hair loss, or any other ghastliness you can conceive. Her divinations replicate the effects of a {@spell 通神術} spell, although Red Ruth provides the answers to the questions without needing to appeal to a divine being.",
 										{
 											"type": "table",
 											"caption": "Red Ruth's Bargains",
@@ -6432,7 +6432,7 @@
 													"2 {@item Soul Coin|BGDIA|soul coins}"
 												],
 												[
-													"{@spell Commune} spell",
+													"{@spell 通神術} spell",
 													"3 {@item Soul Coin|BGDIA|soul coins}"
 												]
 											]
@@ -6628,14 +6628,14 @@
 								"The dragonborn {@creature Arkhan the Cruel|BGDIA} is in the tent along with his {@creature manticore} companion, Chango, and {@creature Torogar Steelfist|BGDIA}, his savage minotaur bodyguard. Arkhan visits the monument to commune with his queen and report on his ongoing battle of wills to master the {@item Hand of Vecna}, which came into his possession during a brief excursion to the world of Exandria.",
 								"If the characters approach Arkhan's encampment, the twelve {@creature white abishai|MTF} at the camp rush forward to intercept them. Characters accompanied by {@creature Krull|BGDIA} the tortle (see \"{@area Arkhan's Tower|247|x}\") or who have something Arkhan might consider valuable are permitted to approach his camp.",
 								"Arkhan believes he can use the {@item Hand of Vecna} to unlock the means of freeing Tiamat from her prison in the Nine Hells, but only if the hand doesn't kill him first. The hand is slowly corrupting Arkhan's flesh and decomposing his body on one side. To stave off this decline, Arkhan needs to use the {@item Hand of Vecna} to snuff the life out of good-aligned creatures. If the characters try to cut a deal with Arkhan\u2014for a vial of Tiamat's blood or help contacting the dragon queen herself\u2014Arkhan demands the sacrifice of a good-aligned creature in exchange. Lulu is an ideal candidate, as is the unicorn Mooncolor (see \"{@area Demon Zapper|230|x}\"). Sacrificing such a creature to Arkhan is an evil act.",
-								"In battle, Arkhan uses {@spell branding smite} to channel the radiant power of Tiamat into his weapon attacks. If a fight turns against him, he uses the {@spell teleport} power of the {@item Hand of Vecna} to return to his tower with as many allies as possible. Should one or more of his comrades fall in battle, Arkhan uses {@spell revivify} and {@spell raise dead} spells to bring them back to life as soon as possible.",
+								"In battle, Arkhan uses {@spell 烙印斬} to channel the radiant power of Tiamat into his weapon attacks. If a fight turns against him, he uses the {@spell 傳送術} power of the {@item Hand of Vecna} to return to his tower with as many allies as possible. Should one or more of his comrades fall in battle, Arkhan uses {@spell 回生術} and {@spell 喚醒死者} spells to bring them back to life as soon as possible.",
 								"If Arkhan finds himself overwhelmed with opposition, he orders the abishai to attack. Arkhan can also use a bonus action to call forth Asojano, a {@creature chimera} lairing in the depths of the colossal dragon skull. This evil monster in the service of Tiamat considers Arkhan a friend and ally.",
 								{
 									"type": "entries",
 									"name": "Development",
 									"id": "250",
 									"entries": [
-										"The characters most likely come here to bargain with Arkhan for a vial of Tiamat's blood in his possession. If they acquire this reliquary, they can return Tiamat's blood to Uldrak and use it to break his curse. Uldrak excitedly splashes the vial's hissing contents onto the ground at his feet. Moments later, he sheds his fiendish skin and grows back into his true form, that of a lawful evil {@creature empyrean}. Laughing gleefully, Uldrak yanks his sword from the ground and gladly provides the characters with a gallon of his blood so they can break the curse on Ralzala. When this is done, he casts {@spell plane shift} to return to the realm of his deity, Surtur.",
+										"The characters most likely come here to bargain with Arkhan for a vial of Tiamat's blood in his possession. If they acquire this reliquary, they can return Tiamat's blood to Uldrak and use it to break his curse. Uldrak excitedly splashes the vial's hissing contents onto the ground at his feet. Moments later, he sheds his fiendish skin and grows back into his true form, that of a lawful evil {@creature empyrean}. Laughing gleefully, Uldrak yanks his sword from the ground and gladly provides the characters with a gallon of his blood so they can break the curse on Ralzala. When this is done, he casts {@spell 異界傳送} to return to the realm of his deity, Surtur.",
 										"Returning to the demon zapper, the characters find that Ralzala also honors her word. After gulping down the empyrean's blood to free herself from her pact, she etches her letter of introduction to Bel onto a basalt tablet and directs the characters to his volcanic lair. The adventure continues in Bel's Forge."
 									]
 								}
@@ -6780,7 +6780,7 @@
 									"height": 492
 								},
 								"If the characters become belligerent or demanding, Bel sighs and snaps his fingers, causing the infernal chains to fall off the fire giants. He promises freedom to any fire giant that kills an intruder, prompting the giants to attack the characters without mercy. Bel then steeples his fingers and watches the battle unfold. In battle, the fire giants hurl buckets, tools, and heavy chains instead of boulders. They also try to shove enemies into channels of molten lava.",
-								"If the characters defeat the fire giants, Bel commends their victory and offers them the same deal as before. If the characters refuse him a second time, Bel smiles and says, \"A pity. All those poor people in Elturel were counting on you.\" He then offers to teleport them out of his fortress, so they can be on their way. Gracious host that Bel is, he won't attack the characters directly unless they attack him first, in which case he casts {@spell imprisonment} on a party member (Lulu being his first choice). If the spell works, Bel vows to release his prisoner once the nine adamantine rods are found and returned to him, no questions asked.",
+								"If the characters defeat the fire giants, Bel commends their victory and offers them the same deal as before. If the characters refuse him a second time, Bel smiles and says, \"A pity. All those poor people in Elturel were counting on you.\" He then offers to teleport them out of his fortress, so they can be on their way. Gracious host that Bel is, he won't attack the characters directly unless they attack him first, in which case he casts {@spell 禁錮術} on a party member (Lulu being his first choice). If the spell works, Bel vows to release his prisoner once the nine adamantine rods are found and returned to him, no questions asked.",
 								{
 									"type": "entries",
 									"name": "Development",
@@ -6901,7 +6901,7 @@
 						"\u2014The Cartographer",
 						"To reach the wrecked flying fortress, characters must cross a hot, windswept plain wracked by magical fire storms. Flying characters and fast-moving infernal war machines can easily avoid these fire storms.",
 						"Characters traveling on foot must succeed on a DC 20 group Wisdom ({@skill Survival}) check as they cross the fireswept plain. On a failed check, a fire storm filling a 60-foot cube sweeps across the ground and engulfs as many party members as it can. The storm then attaches itself to one randomly determined party member, staying centered on that creature for 1 minute. At the end of the duration, the storm detaches from that creature and moves off in a random direction. The storm must remain in contact with the ground at all times. If it becomes separated from the creature to which it has attached itself, the storm moves off in a random direction and ceases to endanger the party.",
-						"Any character that enters a fire storm for the first time on a turn or starts its turn there must succeed on a DC 20 Dexterity saving throw, taking 44 ({@dice 8d10}) fire damage on a failed save, or half as much damage on a successful one. The fire storm ignites flammable objects that aren't being worn or held. A successful {@spell dispel magic} (DC 18) cast on the storm causes it to flame out and disappear.",
+						"Any character that enters a fire storm for the first time on a turn or starts its turn there must succeed on a DC 20 Dexterity saving throw, taking 44 ({@dice 8d10}) fire damage on a failed save, or half as much damage on a successful one. The fire storm ignites flammable objects that aren't being worn or held. A successful {@spell 解除魔法} (DC 18) cast on the storm causes it to flame out and disappear.",
 						{
 							"type": "entries",
 							"name": "Arrival at the Wreck",
@@ -7027,7 +7027,7 @@
 													"type": "list",
 													"items": [
 														"Two {@vehicle Devil's Ride|BGDIA|Devil's Rides}, one driven by Chukka and the other by Clonk (see \"{@area Chukka and Clonk|1c0|x}\"). Each kenku carries a small bag containing three {@item Soul Coin|BGDIA|soul coins}.",
-														"A {@vehicle Tormentor|BGDIA} crewed by Barnabas the {@creature flameskull} (using its {@spell mage hand} spell to drive) and three {@creature Redcap|VGM|redcaps}. Clinging to the vehicle's outer hull are six {@creature Redcap|VGM|madcaps}."
+														"A {@vehicle Tormentor|BGDIA} crewed by Barnabas the {@creature flameskull} (using its {@spell 法師之手} spell to drive) and three {@creature Redcap|VGM|redcaps}. Clinging to the vehicle's outer hull are six {@creature Redcap|VGM|madcaps}."
 													]
 												},
 												"Mad Maggie has sent this force to search the wreck for machine parts and other valuables. The {@vehicle Tormentor|BGDIA} and the {@vehicle Devil's Ride|BGDIA|Devil's Rides} have 12 hours of fuel remaining before they need more {@item Soul Coin|BGDIA|soul coins}.",
@@ -7098,7 +7098,7 @@
 												"Lying on the floor near you are a pair of glass, bell-shaped horns attached to some loose wires. They look like they were removed from a pair of tall, slender, metal machines standing against the wall opposite you."
 											]
 										},
-										"The gnoll is a shapechanged {@creature death slaad} under the effects of a {@spell feeblemind} spell. While fighting alongside Yeenoghu's demon hordes, the slaad fell into the River Styx, leaving it in a feebleminded state. In five days, it gets a new saving throw to end the effect. Any character who examines the gnoll and succeeds on a DC 15 Intelligence ({@skill Arcana}) check realizes that some sort of magical effect has reduced it to a witless nincompoop.",
+										"The gnoll is a shapechanged {@creature death slaad} under the effects of a {@spell 弱智術} spell. While fighting alongside Yeenoghu's demon hordes, the slaad fell into the River Styx, leaving it in a feebleminded state. In five days, it gets a new saving throw to end the effect. Any character who examines the gnoll and succeeds on a DC 15 Intelligence ({@skill Arcana}) check realizes that some sort of magical effect has reduced it to a witless nincompoop.",
 										"While the slaad is feebleminded, its Intelligence and Charisma scores are 1, and it can't cast spells, activate magic items, understand language, or communicate in any intelligible way. It's not even self-aware enough to revert to its normal form. It eyes characters suspiciously but doesn't attack them. It has no weapons but can use its action to bite someone on its turn:",
 										{
 											"type": "entries",
@@ -7106,7 +7106,7 @@
 											"id": "278",
 											"entries": [
 												"{@i Melee Weapon Attack}: +9 to hit, reach 5 ft., one creature. {@i Hit}: 8 ({@dice 1d6 + 5}) piercing damage.",
-												"Casting {@spell greater restoration}, {@spell heal}, or similar magic on the hapless creature restores its mental faculties, whereupon the slaad assumes its true form and attacks. As a creature of pure chaos and extreme malice, it delights in wanton destruction."
+												"Casting {@spell 高等復原術}, {@spell 治癒術}, or similar magic on the hapless creature restores its mental faculties, whereupon the slaad assumes its true form and attacks. As a creature of pure chaos and extreme malice, it delights in wanton destruction."
 											]
 										},
 										{
@@ -7140,7 +7140,7 @@
 												"This dark room contains a metal console that has torn free of the wall to your right. Pinned between the console and another wall is a small, desiccated, winged devil that looks like it was crushed to death. In another corner stands a 3-foot block of infernal iron\u2014a locked safe with clawed feet and a three-dial mechanism built into its thick door. Each dial bears numerals written in Infernal."
 											]
 										},
-										"The safe is stuck to the floor with {@item sovereign glue} and can't be moved. It's also airtight, watertight, and impervious to damage and {@item thieves' tools|phb}. To unlock it, the characters need the three-digit combination. When the dials are set to {@b 6 - 6 - 6} (\"6-6-6\" in Infernal), the safe door unlocks. Three {@spell knock} spells are needed to force it open, as the safe has three separate locking mechanisms.",
+										"The safe is stuck to the floor with {@item sovereign glue} and can't be moved. It's also airtight, watertight, and impervious to damage and {@item thieves' tools|phb}. To unlock it, the characters need the three-digit combination. When the dials are set to {@b 6 - 6 - 6} (\"6-6-6\" in Infernal), the safe door unlocks. Three {@spell 敲擊術} spells are needed to force it open, as the safe has three separate locking mechanisms.",
 										"After three unsuccessful attempts to open the safe with the wrong combination, an alarm klaxon sounds throughout the command deck. The alarm is loud enough to startle any vrocks still circling above the wreck, but the alarm attracts no one. The alarm stops after 1 minute.",
 										"The safe contains nine adamantine rods, each one weighing 3 pounds and engraved with runes that spell out the words \"Solar Insidiator Lock\" in Infernal, followed by a number from 1 to 9. These are the rods that the characters are searching for. Characters familiar with Thavius Kreeg's infernal contract recall that \"Solar Insidiator\" is another name for the Companion. Armed with this knowledge, a character who succeeds on a DC 10 Intelligence ({@skill Arcana}) check can conclude that the rods were designed to unlock the Companion, suggesting that it might contain something.",
 										{
@@ -7167,7 +7167,7 @@
 											]
 										},
 										"Each crate contains twenty iron flasks of demon ichor (see \"{@area Demon Ichor|1a7|x}\").",
-										"A {@spell detect magic} spell reveals an aura of transmutation magic around the bell-shaped contraption. Any character who examines the bell and succeeds on a DC 20 Intelligence ({@skill Arcana}) check can ascertain its purpose: it kept the fortress aloft and level with the ground. The noise it makes is a rhythmic malfunction caused by the fact that the fortress is leaning to one side."
+										"A {@spell 偵測魔法} spell reveals an aura of transmutation magic around the bell-shaped contraption. Any character who examines the bell and succeeds on a DC 20 Intelligence ({@skill Arcana}) check can ascertain its purpose: it kept the fortress aloft and level with the ground. The noise it makes is a rhythmic malfunction caused by the fact that the fortress is leaning to one side."
 									]
 								},
 								{
@@ -7476,7 +7476,7 @@
 									"id": "29a",
 									"entries": [
 										"Outwardly, Mahadi presents himself as a charismatic and gracious host. He makes each guest of Infernal Rapture feel as though they're the most important person in all the planes of existence, catering to their every whim and desire. While he is equally cordial to all guests of the Wandering Emporium, those entering his establishment fall under a special contract and therefore rank most highly in his esteem.",
-										"Of course, guests leaving Infernal Rapture are expected to pay their bills in full prior to departure. If a guest cannot pay for whatever reason, the contract they signed on entry clearly stipulates their soul is forfeit. They're required to pay off their debt through service. All such individuals fall under the effect of a {@spell geas} cast as a 9th-level spell, which cannot be willingly broken by the affected individual until their debt is paid in full. What Mahadi does with such defaulters depends on their capabilities. Some become indentured servants, working at Infernal Rapture. If they possess a talent for sales, they might eventually obtain a business to run within the Wandering Emporium.",
+										"Of course, guests leaving Infernal Rapture are expected to pay their bills in full prior to departure. If a guest cannot pay for whatever reason, the contract they signed on entry clearly stipulates their soul is forfeit. They're required to pay off their debt through service. All such individuals fall under the effect of a {@spell 指使術} cast as a 9th-level spell, which cannot be willingly broken by the affected individual until their debt is paid in full. What Mahadi does with such defaulters depends on their capabilities. Some become indentured servants, working at Infernal Rapture. If they possess a talent for sales, they might eventually obtain a business to run within the Wandering Emporium.",
 										"If adventurers inform Mahadi (and by extension Asmodeus) about Arkhan's possession of the {@item Hand of Vecna}, Mahadi does everything he can to strike a deal with them, offering any of the gifts listed under \"{@area Mahadi's Deals|29b|x}\" in exchange for the artifact. This is in lieu of the terms normally offered by Asmodeus.",
 										{
 											"type": "image",
@@ -7497,7 +7497,7 @@
 										"Mahadi has the power to make deals at the direction and with the authority of Asmodeus as if he were an archdevil (see {@adventure appendix A|BGDIA|10}). All such deals must be presented to the other party without alteration, and they are not negotiable. In all such agreements, Asmodeus wants one thing only: a character signing one of these contracts gives up their soul forever. After the signing character reaches 17th level, if at any point they die, their death is permanent, with no chance to return from the grave. Asmodeus takes their soul and makes them a {@creature pit fiend}, in his service for eternity.",
 										"Mahadi can offer the following gifts in exchange for a soul contract:",
 										"{@b Magic Item}. Asmodeus gifts the adventurer with a {@item rod of lordly might}, to which only the recipient and its direct descendants can attune.",
-										"{@b Resurrection}. Asmodeus sends one of his loyal priest followers to cast {@spell true resurrection} on a deceased character.",
+										"{@b Resurrection}. Asmodeus sends one of his loyal priest followers to cast {@spell 完全復活術} on a deceased character.",
 										"{@b Tiefling Transformation}. Asmodeus transforms the character into a {@race tiefling} with a direct infernal bloodline to him. Substitute the character's racial traits with {@race tiefling} racial traits."
 									]
 								},
@@ -7553,7 +7553,7 @@
 									"id": "2a1",
 									"entries": [
 										"As the owner and host of Infernal Rapture, Mahadi takes his responsibilities very seriously. Every patron that enters the demiplane that houses his establishment must sign an infernal contract. It presents a very simple arrangement stipulating that patrons must pay for everything consumed and all services used before they leave.",
-										"Mahadi employs many servants, each of them under the effect of a {@spell geas} spell to provide the best service they possibly can and appear happy while they work. Most of these individuals are former patrons.",
+										"Mahadi employs many servants, each of them under the effect of a {@spell 指使術} spell to provide the best service they possibly can and appear happy while they work. Most of these individuals are former patrons.",
 										"Upon entry into Infernal Rapture, guests are escorted to a private chamber where they may lounge on pillows, cushions, and divans as they place orders for extravagant dishes from across the planes of existence and enjoy a variety of spa services that range from the simple and mundane to the exotic and bizarre.",
 										"Since Infernal Rapture exists in a demiplane, it doesn't technically reside in the Nine Hells. If someone wanted to meet with creatures unable or unwilling to travel to the Nine Hells (or even just Avernus), this establishment provides a possible meeting location. Of course, entrance to the demiplane must be negotiated with Mahadi, with the promise of appropriate payment.",
 										"Each chamber that exists inside Infernal Rapture is created for a specific purpose. When that purpose ends and the occupants of the chamber leave, that room ceases to exist unless Mahadi deems otherwise.",
@@ -7563,7 +7563,7 @@
 											"id": "2a2",
 											"entries": [
 												"The dining menu at Infernal Rapture changes daily, providing a fixed-price selection. Sample menus are provided as player handouts in {@adventure appendix E|BGDIA|14}. A full meal costs one {@item soul coin|BGDIA}. Unlike food consumed elsewhere in Avernus, which is uniformly terrible, the food at Infernal Rapture tastes delicious.",
-												"Special food requests can be filled, but they must be made weeks in advance and can be costly. Mahadi charges from five to ten {@item Soul Coin|BGDIA|soul coins} for an exotic request, depending on the difficulty involved in fulfilling it. Consuming a meal at Infernal Rapture has the same benefits as a {@spell heroes' feast} spell, with the added effect that those who eat the food have disadvantage on Wisdom ({@skill Insight}) checks made against Mahadi."
+												"Special food requests can be filled, but they must be made weeks in advance and can be costly. Mahadi charges from five to ten {@item Soul Coin|BGDIA|soul coins} for an exotic request, depending on the difficulty involved in fulfilling it. Consuming a meal at Infernal Rapture has the same benefits as a {@spell 英雄宴} spell, with the added effect that those who eat the food have disadvantage on Wisdom ({@skill Insight}) checks made against Mahadi."
 											]
 										},
 										{
@@ -7615,9 +7615,9 @@
 											"type": "list",
 											"items": [
 												"Unless Burney decided otherwise, once any creature less powerful than a deity has taken three steps from her, they can no longer remember her or having interacted with her specifically.",
-												"Burney is under the effect of a permanent {@spell mind blank} spell, and cannot be detected by magical or mundane means unless she wishes it. In exchange for this blessing, Burney can take no direct action against the denizens of the Nine Hells, though she can certainly enlist the help of those who can.",
-												"Burney always knows the location of the Wandering Emporium and can transport herself there as though by a {@spell word of recall} spell. This explains why Burney simply seems to appear amid the fully deployed marketplace each morning it is active to provide service and tell stories.",
-												"Once each day, when Burney so desires, she can instantly transport herself to the court of Bahamut via a powerful blessing akin to the {@spell plane shift} spell."
+												"Burney is under the effect of a permanent {@spell 心靈屏障} spell, and cannot be detected by magical or mundane means unless she wishes it. In exchange for this blessing, Burney can take no direct action against the denizens of the Nine Hells, though she can certainly enlist the help of those who can.",
+												"Burney always knows the location of the Wandering Emporium and can transport herself there as though by a {@spell 回返真言} spell. This explains why Burney simply seems to appear amid the fully deployed marketplace each morning it is active to provide service and tell stories.",
+												"Once each day, when Burney so desires, she can instantly transport herself to the court of Bahamut via a powerful blessing akin to the {@spell 異界傳送} spell."
 											]
 										},
 										{
@@ -7687,7 +7687,7 @@
 									"entries": [
 										"Z'neth is a bitter, old {@creature hobgoblin warlord} who buys and sells {@creature Larva|DMG|larvae} (see {@book chapter 2|DMG|2|Hades} of the {@book Dungeon Master's Guide|DMG} for statistics). Mahadi facilitated Z'neth's rise to power, helping him destroy entire kingdoms on the Material Plane. Z'neth's conquests eventually caught the eye of the mighty god Maglubiyet, who offered Z'neth a command on the battlefields of Gehenna. Before he could wrack up his first victory on that plane, however, Mahadi collected on Z'neth's debt and bore him away to Avernus, where he languishes in obscurity, far from the planar battlefield he had hoped to die on.",
 										"Z'neth procures larvae from yugoloths and sells them at marked-up prices to hags and other interested buyers, giving half his proceeds to Mahadi in exchange for food and other necessities. Z'neth's wares are of little interest to adventurers. However, Z'neth is fond of using his profits to hire assassins to kill Mahadi, which the rakshasa finds endlessly amusing.",
-										"If the characters pay his establishment a visit, Z'neth offers them nine {@item Soul Coin|BGDIA|soul coins} (all he has) for Mahadi's head. A {@spell geas} spell prevents the hobgoblin from divulging Mahadi's true form. Mahadi greets Z'neth's would-be assassins with a smile and is more than happy to accept Z'neth's {@item Soul Coin|BGDIA|soul coins} as payment for goods and services at his fine restaurant.",
+										"If the characters pay his establishment a visit, Z'neth offers them nine {@item Soul Coin|BGDIA|soul coins} (all he has) for Mahadi's head. A {@spell 指使術} spell prevents the hobgoblin from divulging Mahadi's true form. Mahadi greets Z'neth's would-be assassins with a smile and is more than happy to accept Z'neth's {@item Soul Coin|BGDIA|soul coins} as payment for goods and services at his fine restaurant.",
 										{
 											"type": "entries",
 											"name": "Larvae",
@@ -7817,7 +7817,7 @@
 									"name": "Symbols and Shackles",
 									"id": "2ba",
 									"entries": [
-										"The symbols on the walls prevent creatures from teleporting into and out of the cell. For example, a creature can't use {@spell misty step} or {@spell dimension door} to enter or leave the cell. However, the cell does not prohibit creatures from entering or leaving via altered forms. For example, a creature in gaseous form can slip between the bars to enter or leave the cell, as can any creature thin enough to pass between the bars.",
+										"The symbols on the walls prevent creatures from teleporting into and out of the cell. For example, a creature can't use {@spell 迷蹤步} or {@spell 次元門} to enter or leave the cell. However, the cell does not prohibit creatures from entering or leaving via altered forms. For example, a creature in gaseous form can slip between the bars to enter or leave the cell, as can any creature thin enough to pass between the bars.",
 										"Only Zariel can unlock Thavius's shackles, though a creature can break them with a successful DC 25 Strength ({@skill Athletics}) check. The shackles can also be attacked; they have AC 19, a damage threshold of 15, hp 20, immunity to poison and psychic damage, and immunity to bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't adamantine."
 									]
 								}
@@ -7843,7 +7843,7 @@
 						},
 						"Smiler has an unnerving smile\u2014hence his name. When he sees the characters, his smile widens as he leaps down to greet them.",
 						"A more apt name for this eladrin would be Smiler the Beguiler, as he's constantly trying to intoxicate others with his relentless optimism and shocking recklessness. Smiler thinks he can accomplish anything with a positive attitude and some death-defying stunt. Although he admits others might end up getting killed by his actions, he believes he can bend the multiverse to his whims if he tries hard enough. He's really quite insane.",
-						"One of Smiler's favorite antics is to use a {@spell hallucinatory terrain} spell to create a little bit of the Feywild in Avernus: a beautiful woodland glade in which to lose himself for a few hours while he meditates and plots.",
+						"One of Smiler's favorite antics is to use a {@spell 幻景} spell to create a little bit of the Feywild in Avernus: a beautiful woodland glade in which to lose himself for a few hours while he meditates and plots.",
 						{
 							"type": "entries",
 							"id": "2bd",
@@ -7938,7 +7938,7 @@
 								"Map 4.1 shows a cross-section of the scab interior, the features of which are as follows:",
 								"{@b Darkness}. The scab contains no light sources unless the text states otherwise. The demons infesting the scab rely on {@sense darkvision} to see.",
 								"{@b Interior Surfaces}. All tunnels and chambers were dug out by demons using their claws or, in some cases, their teeth.",
-								"{@b Pools of Blood}. Pools of blood fill the areas shown on map 4.1. The pools are difficult terrain. Any humanoid that enters or starts its turn in a pool must make a DC 13 Wisdom saving throw. On a failed save, the creature gains the flaw, \"I am cruel and uncaring toward others,\" for the next 8 hours. This flaw overrides any conflicting personality trait. A {@spell dispel evil and good} spell or similar magic removes the flaw.",
+								"{@b Pools of Blood}. Pools of blood fill the areas shown on map 4.1. The pools are difficult terrain. Any humanoid that enters or starts its turn in a pool must make a DC 13 Wisdom saving throw. On a failed save, the creature gains the flaw, \"I am cruel and uncaring toward others,\" for the next 8 hours. This flaw overrides any conflicting personality trait. A {@spell 反制善惡} spell or similar magic removes the flaw.",
 								"{@b Tunnel Dimensions}. Unless noted otherwise, tunnels are 10 feet wide. At various points, the ceilings are so low that Medium characters must crawl to pass underneath them."
 							]
 						},
@@ -7977,7 +7977,7 @@
 												"The scab on one side of this narrow passage is stripped away, partially revealing one of the citadel's stained glass windows. The opaque blue and yellow panes depict the contemplative face of a beautiful angel."
 											]
 										},
-										"A {@spell detect magic} spell reveals that the window radiates an aura of abjuration magic. The window is unbreakable, and no one can enter the citadel from here. Any creature of good alignment that touches the window gains 20 temporary hit points. A creature affected by the window's magic cannot be affected by the window again for 24 hours."
+										"A {@spell 偵測魔法} spell reveals that the window radiates an aura of abjuration magic. The window is unbreakable, and no one can enter the citadel from here. Any creature of good alignment that touches the window gains 20 temporary hit points. A creature affected by the window's magic cannot be affected by the window again for 24 hours."
 									]
 								},
 								{
@@ -8018,7 +8018,7 @@
 											]
 										},
 										"Three {@condition invisible} {@creature Barlgura||barlguras} cling to the walls of this chamber, their claws digging into the soft walls. The demons wait for prey to enter the room before attacking. They hungrily pursue more elusive prey.",
-										"The barlguras tore the floating chunk of scab from the center of the ceiling, causing blood to pour out of the wound. A character who expends five uses of a {@item healer's kit|PHB} and succeeds on a DC 15 Wisdom ({@skill Medicine}) check bandages the wound effectively enough to stop the downpour. This process takes 5 minutes and exposes the character to the blood's effects (see \"{@area Interior Features|2c4|x}\"). A {@spell cure wounds} spell or similar magic cast on the wound closes it, stanching the blood flow."
+										"The barlguras tore the floating chunk of scab from the center of the ceiling, causing blood to pour out of the wound. A character who expends five uses of a {@item healer's kit|PHB} and succeeds on a DC 15 Wisdom ({@skill Medicine}) check bandages the wound effectively enough to stop the downpour. This process takes 5 minutes and exposes the character to the blood's effects (see \"{@area Interior Features|2c4|x}\"). A {@spell 治療傷勢} spell or similar magic cast on the wound closes it, stanching the blood flow."
 									]
 								},
 								{
@@ -8149,7 +8149,7 @@
 											"name": "Treasure",
 											"id": "2da",
 											"entries": [
-												"A {@spell detect magic} spell reveals six magic items in the niches, including a black sack made of stitched flesh, a lustrous black gem shaped like a human baby's fist, an {@item iron flask} containing a berserk {@creature fiendish flesh golem|BGDIA} that can't be controlled, and three {@item Soul Coin|BGDIA|soul coins}. The sack is Yiggleblight's {@i soul bag}, which is of no use to the characters. The black gem is the night hag's {@i heartstone}. (For more information on these two magic items, see the \"{@creature Night Hag}\" entry in the {@book Monster Manual|MM}.)",
+												"A {@spell 偵測魔法} spell reveals six magic items in the niches, including a black sack made of stitched flesh, a lustrous black gem shaped like a human baby's fist, an {@item iron flask} containing a berserk {@creature fiendish flesh golem|BGDIA} that can't be controlled, and three {@item Soul Coin|BGDIA|soul coins}. The sack is Yiggleblight's {@i soul bag}, which is of no use to the characters. The black gem is the night hag's {@i heartstone}. (For more information on these two magic items, see the \"{@creature Night Hag}\" entry in the {@book Monster Manual|MM}.)",
 												"Yiggleblight also kept a collection of poisons in six small, stoppered tubes made from human finger bones. Each flask holds a single dose of a different kind of poison: {@item Burnt Othur Fumes}, {@item Carrion Crawler Mucus}, {@item Essence of Ether}, {@item Malice}, {@item Oil of Taggit}, and {@item Torpor} (see \"{@book Poisons|DMG|8|Poisons}\" in chapter 8 of the {@book Dungeon Master's Guide|DMG} for the effects of each). A character with a {@item poisoner's kit|PHB} can use it to take tiny samples of each poison for analysis. After spending 1 minute analyzing a poison, the character can identify it and its effects with a successful DC 15 Intelligence ({@skill Nature}) check. The character's proficiency bonus applies to the check if the character is proficient with the poisoner's kit.",
 												"The only other valuable items are three 3-pound orbs of polished obsidian (100 gp each) that can be used as arcane focuses for spellcasting.",
 												"Other curios include an empty casket sized for a human infant, a copper cowbell, a rope noose, a nothic's shriveled claw on the end of a black cord, a soot-stained wooden coffer containing three teeth from a red dragon wyrmling, a dead tomato plant in a ceramic pot adorned with images of dancing cherubs, and nine gnoll skulls."
@@ -8199,7 +8199,7 @@
 											]
 										},
 										"Three {@creature Vrock||vrocks} and six {@creature Gnoll||gnolls} dance around the statue, reveling in their evil madness. The vrocks are quick to use their spores, even if it means infecting their gnoll allies. The demons and gnolls fight to the death.",
-										"The statue is carved out of hardened scab. A {@spell detect magic} spell reveals that it radiates an aura of evocation magic. Any demon or gnoll with at least 1 hit point remaining that starts its turn within 30 feet of the statue regains 10 hit points.",
+										"The statue is carved out of hardened scab. A {@spell 偵測魔法} spell reveals that it radiates an aura of evocation magic. Any demon or gnoll with at least 1 hit point remaining that starts its turn within 30 feet of the statue regains 10 hit points.",
 										"If Lulu is with the characters, she recognizes that the statue is a crude likeness of Yeenoghu and encourages the characters to destroy it.",
 										"The statue is a Large object with AC 17, 60 hit points, and immunity to poison and psychic damage. If the statue is destroyed, it explodes. Each creature within 30 feet of the exploding statue must make a DC 15 Dexterity saving throw, taking 22 ({@dice 4d10}) piercing damage on a failed save, or half as much damage on a successful one."
 									]
@@ -8258,7 +8258,7 @@
 											"id": "2e6",
 											"entries": [
 												"The doors, like the citadel itself, are indestructible. The runes around them say, in Celestial: \"Against evil, we stand united. Only the pure of heart can part these holy gates.\"",
-												"A {@spell detect magic} spell reveals an aura of abjuration magic around the double door, which can be opened only by a creature of good alignment while Lulu is within 60 feet of the door. Lulu herself can open the doors, if need be. If Lulu is alive but not present when the characters try to enter the citadel, the doors remain locked. The characters receive a telepathic message from an unfamiliar female voice, saying, \"Bring Lulu here, and I'll let you inside.\" Only when the characters return with Lulu can the doors be opened. If Lulu died earlier in the adventure, she's waiting for them inside the citadel, just beyond the doors.",
+												"A {@spell 偵測魔法} spell reveals an aura of abjuration magic around the double door, which can be opened only by a creature of good alignment while Lulu is within 60 feet of the door. Lulu herself can open the doors, if need be. If Lulu is alive but not present when the characters try to enter the citadel, the doors remain locked. The characters receive a telepathic message from an unfamiliar female voice, saying, \"Bring Lulu here, and I'll let you inside.\" Only when the characters return with Lulu can the doors be opened. If Lulu died earlier in the adventure, she's waiting for them inside the citadel, just beyond the doors.",
 												"When the doors open, a bright white light pours out, filling area S14. Any fiend or undead that enters or starts its turn in the light must succeed on a DC 22 Constitution saving throw, taking 44 ({@dice 8d10}) radiant damage on a failed save, or half as much damage on a successful one. Fiends and undead can't pass through the doorway of the citadel even while the doors are open."
 											]
 										},
@@ -8309,7 +8309,7 @@
 							]
 						},
 						"Lulu has all her hit points if she's restored to life by the citadel's magic. However, she has no memories between the time the characters last saw her and now.",
-						"The holy power of the citadel restores the characters, and they gain the benefits of a long rest. If a creature gained a flaw from a blood pool or similar effect, the flaw is removed. Casting {@spell detect magic} in the Bleeding Citadel reveals that the whole structure radiates auras of abjuration and evocation magic.",
+						"The holy power of the citadel restores the characters, and they gain the benefits of a long rest. If a creature gained a flaw from a blood pool or similar effect, the flaw is removed. Casting {@spell 偵測魔法} in the Bleeding Citadel reveals that the whole structure radiates auras of abjuration and evocation magic.",
 						"The interior of the citadel is one large alabaster chamber brightly lit by magically created sunlight shining through windows. The sword atop the dais is the {@item Sword of Zariel|BGDIA} (see {@adventure Appendix C|BGDIA|12|{@item Sword of Zariel|BGDIA}}). The carvings on the dais read, in Celestial, \"The hero who becomes one with this blade exists no longer.\"",
 						"The characters can't claim the sword until they complete the Idyllglen memory (see \"{@area Idyllglen|2ed|x}\" below).",
 						{
@@ -8448,9 +8448,9 @@
 									"id": "2f7",
 									"entries": [
 										"This 30-foot-tall, white marble statue stands atop a 2-foot-high raised dais and depicts an armored, blindfolded angel in a calm, protective stance, with her sword drawn and wings unfurled. The dais is carved with the following words, in Common: \"Zariel, guardian of Idyllglen. Offer prayers to Lathander, and his light will shield thee.\"",
-										"This statue of Zariel is a Gargantuan object with AC 17, 300 hit points, a damage threshold of 15, and immunity to poison, psychic, and radiant damage. A {@spell detect magic} spell reveals that the statue radiates an aura of abjuration magic.",
+										"This statue of Zariel is a Gargantuan object with AC 17, 300 hit points, a damage threshold of 15, and immunity to poison, psychic, and radiant damage. A {@spell 偵測魔法} spell reveals that the statue radiates an aura of abjuration magic.",
 										"Any fiend that starts its turn within 15 feet of the statue causes it to flare with radiant energy. Each time the statue flares, every fiend within 30 feet of it must make a DC 15 Constitution saving throw, taking 18 ({@dice 4d8}) radiant damage on a failed save, or half as much damage on a successful one.",
-										"Any character who touches the statue and uses an action to offer a prayer to Lathander gains the benefit of a {@spell protection from evil and good} spell for 1 hour. A character can gain this benefit only once while in the memory."
+										"Any character who touches the statue and uses an action to offer a prayer to Lathander gains the benefit of a {@spell 防護善惡} spell for 1 hour. A character can gain this benefit only once while in the memory."
 									]
 								},
 								{
@@ -8582,7 +8582,7 @@
 										},
 										"The five human {@creature Guard||guards} are named Caladra Telmaster, Esselyn Xharn, Jai Wen, Tal Hannefar, and Yaerklos Summerlast. Their armor is covered in the ichor of Yeenoghu's demons. The ichor has driven the guards mad, making them hunger for humanoid flesh. When they notice the characters, the guards attack.",
 										"If a character kills a guard, Lulu's mind attempts to punish the character. That character must succeed on a DC 15 Wisdom saving throw or gain 1 level of {@condition exhaustion} as Lulu's mind saps the character's energy.",
-										"A guard's madness can be cured with a {@spell dispel evil and good}, {@spell greater restoration}, or {@spell remove curse} spell. Guards who are cured of their madness thank the characters and explain that they were battling demons in the fields when they suddenly felt an overwhelming desire to consume humanoid flesh. These guards are eager to return to the battle in the fields, disappearing as they pass through the hazy border.",
+										"A guard's madness can be cured with a {@spell 反制善惡}, {@spell 高等復原術}, or {@spell 移除詛咒} spell. Guards who are cured of their madness thank the characters and explain that they were battling demons in the fields when they suddenly felt an overwhelming desire to consume humanoid flesh. These guards are eager to return to the battle in the fields, disappearing as they pass through the hazy border.",
 										{
 											"type": "entries",
 											"name": "Next Event",
@@ -8698,7 +8698,7 @@
 											]
 										},
 										"The angel is Zariel (use the {@creature solar} stat block), and the winged mammoth is Lulu the {@creature hollyphant|BGDIA} in shapechanged form. After ridding Idyllglen of Yeenoghu, Lulu and Zariel introduce themselves to the characters, healing them as best they can. While these introductions happen, the original Hellriders ({@creature Knight||knights}) appear on {@creature Warhorse||warhorses} and kill any remaining demons and gnolls. One of these Hellriders, a woman in her thirties with a fresh, deep cut on her cheek, thanks the characters and introduces herself as Yael. She gives a wink before lining up to join the rest of the battalion. The characters might also recognize Olanthius, Haruman, and other original Hellriders they have come across during their travels in Avernus.",
-										"Zariel can cast the {@spell resurrection} spell up to three times. She uses this magic to resurrect as many dead characters as she can.",
+										"Zariel can cast the {@spell 復活術} spell up to three times. She uses this magic to resurrect as many dead characters as she can.",
 										"As Zariel prepares to lead her forces through the portal into Avernus, all other creatures except for her, Lulu, and the characters stop moving and responding as if frozen in time. Zariel turns to the characters and says, \"Yeenoghu slaughtered those I swore to protect. I can stop him and others like him. I might have to give up all I stand for, but I could stem the tide of chaos and save many lives from the demonic terrors of the Abyss. Were you in my place, would you risk it all to save others?\"",
 										"Zariel lets each character answer her question in turn. She thanks them for their responses, then utters a blessing to Lathander over the characters. Characters who answered that they would risk it all as Zariel did each gain a {@reward charm of vitality}. Characters who answered that they would not risk it all to stop the demon lords each gain a {@reward charm of restoration}. (See \"{@book Charms|DMG|7|Charms}\" in chapter 7 of the {@book Dungeon Master's Guide|DMG} for the benefits of these supernatural gifts.) Characters who can't or won't answer the question receive nothing.",
 										"Once Zariel bestows her supernatural charms, Lulu's Idyllglen memory ends. A flash of light brings all the characters (including dead ones) back to the Bleeding Citadel so that one of them might finally claim the {@item Sword of Zariel|BGDIA}.",
@@ -8836,7 +8836,7 @@
 												"Zariel's tone turns more somber as she says, \"You have made an enemy of Asmodeus this day. We have that in common now. I wish you strength and good fortune\u2014and if ever you have need of my power, hold this feather aloft and invoke my name. I shall come to your aid.\""
 											]
 										},
-										"Zariel pulls a single golden feather from one of her wings and hands it to the character closest to her. A creature that holds this feather can cast {@spell planar ally} as an action, calling Zariel and Lulu only, after which the feather dissolves into a ray of sunlight. If the two are called to aid the characters, they do so for up to 1 hour, with no payment asked for in return.",
+										"Zariel pulls a single golden feather from one of her wings and hands it to the character closest to her. A creature that holds this feather can cast {@spell 異界盟友} as an action, calling Zariel and Lulu only, after which the feather dissolves into a ray of sunlight. If the two are called to aid the characters, they do so for up to 1 hour, with no payment asked for in return.",
 										{
 											"type": "insetReadaloud",
 											"id": "31c",
@@ -8866,7 +8866,7 @@
 									"id": "31e",
 									"entries": [
 										"{@creature Baphomet|MTF} and {@creature Yeenoghu|MTF} are fighting to claim Avernus for themselves, and {@creature Kostchtchie|BGDIA} (assuming the characters released him in {@area chapter 3|22a|x}) wants his hammer back. None of them can be trusted. Demon lords are savagery incarnate, and they take orders from no one.",
-										"The extent to which Baphomet, Kostchtchie, and Yeenoghu are present in Avernus makes it easy for characters to commune with any of these demon lords using {@spell contact other plane} spells or similar magic."
+										"The extent to which Baphomet, Kostchtchie, and Yeenoghu are present in Avernus makes it easy for characters to commune with any of these demon lords using {@spell 異界探知} spells or similar magic."
 									]
 								},
 								{
@@ -8940,7 +8940,7 @@
 									"name": "Lulu Falls",
 									"id": "325",
 									"entries": [
-										"For Zariel to fall beyond redemption is the worst outcome for Lulu. This unimaginable tragedy shatters the hollyphant's mind, leaving Lulu insane. Roll or choose the specific effects of her madness from the {@table long-term madness||Long-Term Madness table} in {@adventure chapter 8|DMG|-1} of the {@book Dungeon Master's Guide|DMG}, but this madness can be overcome only by a {@spell greater restoration} spell or similar magic."
+										"For Zariel to fall beyond redemption is the worst outcome for Lulu. This unimaginable tragedy shatters the hollyphant's mind, leaving Lulu insane. Roll or choose the specific effects of her madness from the {@table long-term madness||Long-Term Madness table} in {@adventure chapter 8|DMG|-1} of the {@book Dungeon Master's Guide|DMG}, but this madness can be overcome only by a {@spell 高等復原術} spell or similar magic."
 									]
 								}
 							]
@@ -9110,7 +9110,7 @@
 									"id": "33b",
 									"entries": [
 										"If the characters still possess the {@item Shield of the Hidden Lord|BGDIA}, Zariel blithely declares that she would consider trading Elturel for it. From within the shield, the pit fiend Gargauth begs and sobs and promises the world to the characters if they spare its life and find a way to restore the devil to its former glory. These are empty promises, though Gargauth's fear is real.",
-										"If the characters give her the shield, Zariel casts {@spell dispel evil and good} on it. Her spell causes Gargauth to manifest as a miserable, malformed {@creature pit fiend} at half its hit point maximum and with 4 levels of {@condition exhaustion}. She commands the characters to destroy the wretch. If they succeed, she casually dismisses them and ignores any attempt by the characters to hold her to promises made without a contract.",
+										"If the characters give her the shield, Zariel casts {@spell 反制善惡} on it. Her spell causes Gargauth to manifest as a miserable, malformed {@creature pit fiend} at half its hit point maximum and with 4 levels of {@condition exhaustion}. She commands the characters to destroy the wretch. If they succeed, she casually dismisses them and ignores any attempt by the characters to hold her to promises made without a contract.",
 										"If the characters press Zariel for a formal agreement before giving her the shield, she presents a fair contract. However, she refuses to both free Elturel and return it to the Material Plane, promising only one or the other in exchange for the shield alone."
 									]
 								}
@@ -10884,7 +10884,7 @@
 										"This four-story stone structure constantly streams smoke of unusual colors from various vents and chimneys. From the elaborate showroom spanning the bottom two floors, alchemist Avery Sonshal (neutral male human {@creature mage}) maintains his family's longstanding monopoly on {@item smokepowder|WDH} production in Baldur's Gate.",
 										"While {@item smokepowder|WDH} is reserved for the Council of Four and Gond's High House of Wonders, the shop sells a variety of lesser alchemical items to the public, from torches with colored flames to smoke grenades and fireworks, some of them enhanced with harmless illusions. While the windowless workshop filling the building's upper two stories is strictly off-limits, its stairwell blocked by a massive iron vault door and a {@creature thug} hired from the Bannerless Legion, the mutton-chopped Avery is usually happy to chat with customers and other alchemical enthusiasts on the lower floors.",
 										"At the moment, however, Avery is visibly troubled. Recently, someone managed to break into the upper workshop while he was sleeping and steal four kegs of {@item smokepowder|WDH}. In their place, he found a drawing of a phoenix. Avery is terrified of what the thieves might do with the powder\u2014he's all too aware that someone with that much {@item smokepowder|WDH} could blow up a portion of the High Hall, Wyrm's Rock, or any number of other fortifications. Yet as horrifying as he finds those possibilities, he seems more concerned about himself: {@item smokepowder|WDH} security is his responsibility, and he can't tell the city government about the theft without getting punished for negligence. Yet if he keeps quiet and the thieves use the powder, he'll obviously be implicated. The only solution is to hire someone discreet and trustworthy to track down and recover the missing kegs of {@item smokepowder|WDH} before it's too late.",
-										"If {@item smokepowder|WDH} is set on fire, dropped, or otherwise handled roughly, it explodes and deals fire damage to each creature or object within 20 feet of it: {@dice 1d6} for a handful, {@dice 9d6} for a keg. A successful DC 12 Dexterity saving throw halves the damage. Casting {@spell dispel magic} on {@item smokepowder|WDH} renders it permanently inert."
+										"If {@item smokepowder|WDH} is set on fire, dropped, or otherwise handled roughly, it explodes and deals fire damage to each creature or object within 20 feet of it: {@dice 1d6} for a handful, {@dice 9d6} for a keg. A successful DC 12 Dexterity saving throw halves the damage. Casting {@spell 解除魔法} on {@item smokepowder|WDH} renders it permanently inert."
 									]
 								},
 								{
@@ -11029,7 +11029,7 @@
 										"The oldest temple in Baldur's Gate, the Water Queen's House clings to its enormous pier like a monster of the deep, its stone walls trailing over the side and descending down beneath the waves and river mud. At the pier's tip, a huge fountain in the shape of a sinking ship sprays water high, reminding faithful of the price of failing to appease Umberlee.",
 										"The intimidating Allandra Grey, a chaotic evil female human {@creature priest}, leads the temple's score of waveservants, most of them women widowed or orphaned by the sea. Ordinary Baldurians rarely see the waveservants, and never step inside the temple. When the faithful wish to make offerings, they must ring a bell by the door. Two waveservants (chaotic evil female human {@creature Acolyte||acolytes}) answer the door, one accepting the offering inside while the other says a short prayer in the doorway. Once the prayer is spoken and the donation collected, they step back and close the door.",
 										"Though no outsiders know exactly how the temple's finances work, the dour waveservants buy little in the markets save essentials. The rest of the tithes are carried in solemn procession down crumbling, moss-covered stairs that cling to the outside of the temple and descend into the murky water. The waveservants disappear below the water for a few minutes, only to return empty-handed. What happens to the treasures is anyone's guess, with some suggesting they're hidden in underwater vaults. Others believe the gifts are borne away by Umberlee herself. In truth, the waveservants leave the treasures at the bottom of the staircase, where they are fetched within the hour by {@dice 2d6} {@creature sahuagin} led by a {@creature sahuagin priestess}. The sahuagin make the long trip from the Sea of Swords to obtain these treasures, and in exchange, they refrain from attacking the city, its harbor, and ships heading out to sea.",
-										"If the waveservants wish harm to befall a ship or its crew, they leave a clam with the treasure in the water. When the clam is opened, it magically recites up to 25 words in Common. This information helps the sahuagin identify the ship. The sahuagin priestess uses a {@spell tongues} spell to translate the clam's words, then executes an attack on the ship during the next new moon."
+										"If the waveservants wish harm to befall a ship or its crew, they leave a clam with the treasure in the water. When the clam is opened, it magically recites up to 25 words in Common. This information helps the sahuagin identify the ship. The sahuagin priestess uses a {@spell 巧舌術} spell to translate the clam's words, then executes an attack on the ship during the next new moon."
 									]
 								}
 							]
@@ -12591,7 +12591,7 @@
 										"A valuable piece of information that can't be acquired by any other means",
 										"A single task that the archdevil or one of its minions can complete within the next nine days",
 										"A supernatural gift manifesting as a charm (see \"{@book Supernatural Gifts|DMG|7|Supernatural Gifts}\" in chapter 7 of the {@book Dungeon Master's Guide|DMG} and \"{@area Archdevil Charms|414|x}\")",
-										"The benefit of a {@spell wish} spell (with no {@condition exhaustion} for using an effect other than duplicating another spell)"
+										"The benefit of a {@spell 祈願術} spell (with no {@condition exhaustion} for using an effect other than duplicating another spell)"
 									]
 								}
 							]
@@ -12616,7 +12616,7 @@
 									"items": [
 										"The character's soul is forfeit when the character dies (that is, the character is reborn in the Nine Hells as a lemure).",
 										"The character loses all monetary wealth and property, or a powerful magic item (determined by the DM), to the devil.",
-										"The character grows horns, a tail, or some other devilish features that can't be removed by any means short of divine intervention (though illusions or disguises can conceal them). As long as these marks persist, the character detects as a fiend when subjected to {@spell detect evil and good} spells or similar magic.",
+										"The character grows horns, a tail, or some other devilish features that can't be removed by any means short of divine intervention (though illusions or disguises can conceal them). As long as these marks persist, the character detects as a fiend when subjected to {@spell 偵測善惡} spells or similar magic.",
 										"The character gains a new flaw. A character who exhibits behavior inconsistent with this flaw has disadvantage on all attack rolls, ability checks, and saving throws until the behavior changes to match the flaw."
 									]
 								}
@@ -12727,7 +12727,7 @@
 									"id": "412",
 									"entries": [
 										"The devil produces sheet music with the deal written on it. To enter the contract, the devil and the character making the deal must sing or play the discordant song, which remains stuck in their heads until the deal is fulfilled.",
-										"Soaking the sheet music in holy water destroys and voids the contract, and causes the character and the devil to lose the ability to speak. A {@spell greater restoration} spell or similar magic ends the effect on its recipient."
+										"Soaking the sheet music in holy water destroys and voids the contract, and causes the character and the devil to lose the ability to speak. A {@spell 高等復原術} spell or similar magic ends the effect on its recipient."
 									]
 								},
 								{
@@ -12778,7 +12778,7 @@
 							"name": "Charm of Hellish Rebuke",
 							"id": "418",
 							"entries": [
-								"A fiery halo appears above your head when you receive this charm. This charm allows you to cast the {@spell hellish rebuke} spell (9th-level version) as a reaction. Once used nine times, the charm vanishes from you, as does the fiery halo."
+								"A fiery halo appears above your head when you receive this charm. This charm allows you to cast the {@spell 煉獄叱喝} spell (9th-level version) as a reaction. Once used nine times, the charm vanishes from you, as does the fiery halo."
 							]
 						},
 						{

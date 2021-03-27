@@ -398,7 +398,7 @@
 									"entries": [
 										"The dryad-hags also lend each character a woven crown of willow branches\u2014an uncommon magic item called a {@item crown of the forest|IMR}. They insist that the crowns be worn at all times for the characters' own safety, claiming (truthfully) that the crowns will allow the characters to see the sunbeam tripwires and step safely through them. However, the crowns also intensify the hags' illusion of themselves as dryads and Olitor as a satyr, make the unicorn Banrion appear to be a fiendish, haggard beast, and make the fey in the unicorn's care appear as vicious kobolds.",
 										"While wearing a crown, a character automatically fails any Intelligence ({@skill Investigation}) check made to see through an illusion. An illusion that is touched still has its true nature revealed. However, a character wearing the crown has such a strong sense that the illusion is real that they might not know which of their senses to believe.",
-										"If a crown is closely examined by a character who succeeds on a DC 20 Intelligence ({@skill Nature}) or Wisdom ({@skill Perception}) check, or with a {@spell detect magic} spell cast using a 3rd-level or higher spell slot, the nature of its magic is discovered."
+										"If a crown is closely examined by a character who succeeds on a DC 20 Intelligence ({@skill Nature}) or Wisdom ({@skill Perception}) check, or with a {@spell 偵測魔法} spell cast using a 3rd-level or higher spell slot, the nature of its magic is discovered."
 									]
 								},
 								{
@@ -649,7 +649,7 @@
 									"name": "Lynx's Manor",
 									"id": "03b",
 									"entries": [
-										"Lynx resides in a narrow, multistory house in a fine part of the city. While she claims ownership of the place, she has merely taken over the manor from its current owner. That owner (whose identity is left to your determination) is kept alive and bound within an extradimensional prison, treated as a permanent {@spell Leomund's tiny hut} held inside a permanent {@spell rope trick} spell that can be opened only by Lynx. When the rope from the spell hangs down, it is disguised as a curtain pull in the manor library.",
+										"Lynx resides in a narrow, multistory house in a fine part of the city. While she claims ownership of the place, she has merely taken over the manor from its current owner. That owner (whose identity is left to your determination) is kept alive and bound within an extradimensional prison, treated as a permanent {@spell 李歐蒙小屋} held inside a permanent {@spell 通天繩} spell that can be opened only by Lynx. When the rope from the spell hangs down, it is disguised as a curtain pull in the manor library.",
 										"If the characters accept Lynx's invitation, she meets them while strolling the long hallways of her manor, the walls of which are filled with fine paintings. Rather than noting their artists or subjects, however, Lynx describes each painting based on where she stole it from.",
 										{
 											"type": "entries",
@@ -705,7 +705,7 @@
 									"name": "Sir Ursas's Manor",
 									"id": "040",
 									"entries": [
-										"Sir Ursas resides in a veritable stronghold located outside the city limits. Its grounds are surrounded by a vast and intricate hedge maze under a permanent {@spell guards and wards} spell. Any creature navigating the maze on their own without guidance must succeed on a DC 18 Wisdom saving throw or become disoriented and lost. Such creatures are unable to find their way to the manor, as all paths appear to only exit the maze.",
+										"Sir Ursas resides in a veritable stronghold located outside the city limits. Its grounds are surrounded by a vast and intricate hedge maze under a permanent {@spell 銅牆鐵壁} spell. Any creature navigating the maze on their own without guidance must succeed on a DC 18 Wisdom saving throw or become disoriented and lost. Such creatures are unable to find their way to the manor, as all paths appear to only exit the maze.",
 										"If the characters accept his invitation, Ursas meets them at the maze's entrance and guides them to an ornate gazebo in a hidden courtyard to talk.",
 										{
 											"type": "entries",
@@ -770,7 +770,7 @@
 								"Each mechanical guide is programmed to teleport through space and time to the adventure's set locations, effectively dropping the characters at the start of {@adventure chapter 3|IMR|3} or {@adventure chapter 4|IMR|4}. Each guide can return to its agent's manor at any time.",
 								"Each guide is an unaligned Medium construct with AC 20, 50 hit points, and a speed of 20 feet. It has no attacks, and has a +0 modifier for all its ability scores.",
 								"Each guide has 6 charges, and regains {@dice 1d6} expended charges daily at dawn. Teleporting itself and the party to either adventure locale or back to its home manor costs a guide 1 charge. A guide can also be commanded to spend 1 or more charges to manipulate time in the local area at either adventure location. See \"{@area Manipulating Time|049|x}\" below for more information.",
-								"All damage dealt to a guide can be restored during a long rest with a successful DC 14 Dexterity check using thieves' tools or tinker's tools. A damaged guide can also be restored to full hit points by the use of a {@spell mending} spell or similar magic. If reduced to 0 hit points, the guide is destroyed and no longer functions\u2014possibly stranding the characters in the distant past. {@adventure Chapter 3|IMR|3} and {@adventure chapter 4|IMR|4} each offer appropriate suggestions for how the characters might repair or replace a destroyed guide.",
+								"All damage dealt to a guide can be restored during a long rest with a successful DC 14 Dexterity check using thieves' tools or tinker's tools. A damaged guide can also be restored to full hit points by the use of a {@spell 修復術} spell or similar magic. If reduced to 0 hit points, the guide is destroyed and no longer functions\u2014possibly stranding the characters in the distant past. {@adventure Chapter 3|IMR|3} and {@adventure chapter 4|IMR|4} each offer appropriate suggestions for how the characters might repair or replace a destroyed guide.",
 								"Each guide follows the party and obeys all the characters' commands. If two characters issue commands to the guide at the same time, you decide how the commands are resolved.",
 								{
 									"type": "entries",
@@ -851,7 +851,7 @@
 									"name": "Who's Who",
 									"id": "04f",
 									"entries": [
-										"According to game lore, Nolzur belonged to the Company of Seven, a famed group of adventurers whose names are immortalized in spells, artifacts, and magic items such as {@item Keoghtom's ointment}, {@item Quaal's feather token}, {@item Heward's handy haversack}, and {@spell Tasha's hideous laughter}. Nolzur was a noted thief, illusionist, and alchemist, most famous for creating {@item Nolzur's marvelous pigments}."
+										"According to game lore, Nolzur belonged to the Company of Seven, a famed group of adventurers whose names are immortalized in spells, artifacts, and magic items such as {@item Keoghtom's ointment}, {@item Quaal's feather token}, {@item Heward's handy haversack}, and {@spell 塔莎狂笑術}. Nolzur was a noted thief, illusionist, and alchemist, most famous for creating {@item Nolzur's marvelous pigments}."
 									]
 								}
 							]
@@ -1057,7 +1057,7 @@
 									"id": "061",
 									"entries": [
 										"The stone table here is the first piece of stone cut for the tomb's excavation. It holds a number of important documents of Moghadam's creation, including the master map of the tomb. This map features a notation in Undercommon: \"The true master of the tomb is he who plans its construction.\"",
-										"Characters who have a chance to look around this area can also find {@item calligrapher's supplies|PHB}; a {@item forgery kit|PHB}; {@item Spell Scroll||spell scrolls} of {@spell arcane lock}, {@spell glyph of warding}, and {@spell legend lore}; a {@item wand of secrets}; and a strongbox containing 30 pp."
+										"Characters who have a chance to look around this area can also find {@item calligrapher's supplies|PHB}; a {@item forgery kit|PHB}; {@item Spell Scroll||spell scrolls} of {@spell 祕法鎖}, {@spell 守衛銘文}, and {@spell 通曉傳奇}; a {@item wand of secrets}; and a strongbox containing 30 pp."
 									]
 								}
 							]
@@ -1073,7 +1073,7 @@
 									"name": "Creatures",
 									"id": "063",
 									"entries": [
-										"The two {@creature Umber Hulk||umber hulks} have symbols magically scribed on their mandibles by Moghadam, placing them under the effect of a permanent {@spell dominate monster} spell. Their handlers (at area B when the characters first arrive) know the command words that compel the hulks into service.",
+										"The two {@creature Umber Hulk||umber hulks} have symbols magically scribed on their mandibles by Moghadam, placing them under the effect of a permanent {@spell 支配怪物} spell. Their handlers (at area B when the characters first arrive) know the command words that compel the hulks into service.",
 										"Unless ordered otherwise, the umber hulks stay in this area, defending themselves if necessary. If the characters are at the tomb site long enough, they might witness the umber hulks carving out new areas of the dungeon in the blank part of the map."
 									]
 								},
@@ -1109,7 +1109,7 @@
 										{
 											"type": "list",
 											"items": [
-												"It knows the {@spell thaumaturgy} cantrip.",
+												"It knows the {@spell 奇術} cantrip.",
 												"It has resistance to fire damage.",
 												"It has {@sense darkvision} out to a range of 60 feet.",
 												"It speaks Common and Infernal."
@@ -1255,7 +1255,7 @@
 									"name": "Manipulating Time",
 									"id": "077",
 									"entries": [
-										"Having a mechanical guide spend 1 charge in this area causes one of the muralists to arrive here to collect more blood, for use in either {@area area 3|065|x} or 10. Spending 2 charges also restores a measure of health to Nolzur, equivalent to the effect of a {@spell cure wounds} spell."
+										"Having a mechanical guide spend 1 charge in this area causes one of the muralists to arrive here to collect more blood, for use in either {@area area 3|065|x} or 10. Spending 2 charges also restores a measure of health to Nolzur, equivalent to the effect of a {@spell 治療傷勢} spell."
 									]
 								}
 							]
@@ -1290,7 +1290,7 @@
 									"name": "Treasure",
 									"id": "07b",
 									"entries": [
-										"The girallon wears a golden armband (worth 250 gp) on one of its left arms, scribed by Moghadam with magical symbols that place the creature under the effect of a permanent {@spell dominate monster} spell. Phenex ({@area area 14|093|x}) knows the command words that compel the girallon into service."
+										"The girallon wears a golden armband (worth 250 gp) on one of its left arms, scribed by Moghadam with magical symbols that place the creature under the effect of a permanent {@spell 支配怪物} spell. Phenex ({@area area 14|093|x}) knows the command words that compel the girallon into service."
 									]
 								},
 								{
@@ -1393,7 +1393,7 @@
 									"name": "Treasure",
 									"id": "088",
 									"entries": [
-										"The girallon wears a golden armband (worth 250 gp) on one of its left arms, scribed by Moghadam with magical symbols that place the creature under the effect of a permanent {@spell dominate monster} spell. Phenex ({@area area 14|093|x}) knows the command words that compel the girallon into service."
+										"The girallon wears a golden armband (worth 250 gp) on one of its left arms, scribed by Moghadam with magical symbols that place the creature under the effect of a permanent {@spell 支配怪物} spell. Phenex ({@area area 14|093|x}) knows the command words that compel the girallon into service."
 									]
 								},
 								{
@@ -1484,7 +1484,7 @@
 											"type": "list",
 											"items": [
 												"The gold chest has four {@item Potion of Greater Healing||potions of greater healing}, a {@item potion of flying}, and a {@item potion of poison}.",
-												"The silver chest contains {@item Spell Scroll||spell scrolls} of {@spell guards and wards}, {@spell summon lesser demons|XGE} (see {@adventure appendix C|IMR|8}), and {@spell teleportation circle}; and a {@item wand of web}.",
+												"The silver chest contains {@item Spell Scroll||spell scrolls} of {@spell 銅牆鐵壁}, {@spell summon lesser demons|XGE} (see {@adventure appendix C|IMR|8}), and {@spell 傳送法陣}; and a {@item wand of web}.",
 												"The oak chest holds 278 pp, ninety-seven small gems (worth 10 gp each), and a peridot (5,000 gp)."
 											]
 										}
@@ -1554,7 +1554,7 @@
 									"id": "099",
 									"entries": [
 										"As long as the worshipers chant, the ceremony fueling the balor's prison ({@area area 6|072|x}) remains active. They continue to chant while they are physically able and while Phenex commands them. The ceremony fuels Phenex as well, allowing him to maintain it without need for sustenance or sleep.",
-										"Anyone entering the chapel while the ceremony is underway must succeed on a DC 15 Wisdom saving throw or fall under an effect equivalent to a {@spell mass suggestion} spell. While a character is under this effect, Phenex can direct them to sit and join the ceremony. Any character who does so takes up the chant, and has their Constitution score reduced by 1 each round on initiative count 0. A character reduced to 0 hit points while under this effect dies and has their body and all possessions transformed into a chunk of black rock (see below). A character under the effect of the ceremony can make another saving throw at the end of each turn, ending the effect with a success.",
+										"Anyone entering the chapel while the ceremony is underway must succeed on a DC 15 Wisdom saving throw or fall under an effect equivalent to a {@spell 群體暗示術} spell. While a character is under this effect, Phenex can direct them to sit and join the ceremony. Any character who does so takes up the chant, and has their Constitution score reduced by 1 each round on initiative count 0. A character reduced to 0 hit points while under this effect dies and has their body and all possessions transformed into a chunk of black rock (see below). A character under the effect of the ceremony can make another saving throw at the end of each turn, ending the effect with a success.",
 										"(This version of the ceremony is more potent than that suffered by the other worshipers, who would otherwise have all turned to black rock by now. Phenex is concentrating his magic in an effort to defeat the characters.)",
 										"If Phenex is defeated, any remaining worshipers immediately cease chanting and collapse into exhausted unconsciousness. Once a character is freed from the ceremony and out of combat, their hit point maximum is restored at a rate of 1 hit point per round. Anyone transformed into a black rock unfortunately remains in this condition."
 									]
@@ -1564,7 +1564,7 @@
 									"name": "Black Rocks",
 									"id": "09a",
 									"entries": [
-										"When a worshiper's life energy has been drained by the ceremony, they are transformed into a large black rock, carried out of the tomb, and set on the hillside (where they'll eventually form the image of a grinning skull). A {@spell greater restoration} or {@spell wish} spell can end the {@condition petrified} condition for one victim, restoring them and their gear."
+										"When a worshiper's life energy has been drained by the ceremony, they are transformed into a large black rock, carried out of the tomb, and set on the hillside (where they'll eventually form the image of a grinning skull). A {@spell 高等復原術} or {@spell 祈願術} spell can end the {@condition petrified} condition for one victim, restoring them and their gear."
 									]
 								},
 								{
@@ -1573,7 +1573,7 @@
 									"id": "09b",
 									"entries": [
 										"This block of strange material glows with an inner light of opalescent blue, owing to the missing components of the {@i Infernal Machine of Lum the Mad} wired into its workings. There are three such components, each a deep sapphire blue. Removing one component safely requires a successful DC 14 Dexterity check using thieves' tools, jeweler's tools, or tinker's tools.",
-										"In addition, Tarnhem's flaming whip and lightning-imbued longsword have also been worked into the altar. On a failed check to remove a missing component, these weapons cast a {@spell lightning bolt} or a {@spell fireball} at the character making the check (a 50 percent chance for either spell; save DC 16 for both). If Tarnhem is freed, he comes here directly to recover these weapons, and is the only creature that can do so. Anyone else attempting to claim them automatically triggers a {@spell lightning bolt} or a {@spell fireball}."
+										"In addition, Tarnhem's flaming whip and lightning-imbued longsword have also been worked into the altar. On a failed check to remove a missing component, these weapons cast a {@spell 閃電束} or a {@spell 火球術} at the character making the check (a 50 percent chance for either spell; save DC 16 for both). If Tarnhem is freed, he comes here directly to recover these weapons, and is the only creature that can do so. Anyone else attempting to claim them automatically triggers a {@spell 閃電束} or a {@spell 火球術}."
 									]
 								},
 								{
@@ -1719,7 +1719,7 @@
 									"name": "Curtains",
 									"id": "0ac",
 									"entries": [
-										"The first three curtains are sheets of thick webbing that function as the product of the {@spell web} spell. The fourth is a disguised {@creature trapper|VGM} kept by Seodra as a pet, and which attacks anyone who passes by it except Seodra and Moghadam.",
+										"The first three curtains are sheets of thick webbing that function as the product of the {@spell 蛛網術} spell. The fourth is a disguised {@creature trapper|VGM} kept by Seodra as a pet, and which attacks anyone who passes by it except Seodra and Moghadam.",
 										"Once the characters move beyond the curtains, read:",
 										{
 											"type": "insetReadaloud",
@@ -2013,7 +2013,7 @@
 									"name": "Oak Door",
 									"id": "0c9",
 									"entries": [
-										"Anyone who listens at the door to the west and succeeds on a DC 12 Wisdom ({@skill Perception}) check hears a moaning that rises and fades away (caused by strong breezes in {@area area 2|0cd|x}). Opening the door causes the breeze to fill this corridor, creating the effect of a {@spell gust of wind} spell."
+										"Anyone who listens at the door to the west and succeeds on a DC 12 Wisdom ({@skill Perception}) check hears a moaning that rises and fades away (caused by strong breezes in {@area area 2|0cd|x}). Opening the door causes the breeze to fill this corridor, creating the effect of a {@spell 造風術} spell."
 									]
 								},
 								{
@@ -2384,7 +2384,7 @@
 									"id": "0ee",
 									"entries": [
 										"The result of one of Thessalar's grand experiments, {@creature Andras|IMR} has the body of a male human and the head of a massive snowy owl. Like that of any owl, his head can rotate almost fully around for 360-degree vision.",
-										"The prisoners are two of Moghadam's thieves, who Andras is pressing for additional information as to their raid and Moghadam's plans. However, the torturer is almost impossible to understand, with his speech resembling the hoots and clicks of an owl. Conversing with Andras requires a successful DC 10 Wisdom ({@skill Insight}) check or a {@spell speak with animals} spell, but the torturer speaks to the characters only in bold threats. In combat, Andras uses weapons coated in {@item Blood of the Lycanthrope|IMR|blood of the lycanthrope poison} (see {@adventure appendix C|IMR|8}). He uses the {@creature assassin} stat block with the following changes:",
+										"The prisoners are two of Moghadam's thieves, who Andras is pressing for additional information as to their raid and Moghadam's plans. However, the torturer is almost impossible to understand, with his speech resembling the hoots and clicks of an owl. Conversing with Andras requires a successful DC 10 Wisdom ({@skill Insight}) check or a {@spell 動物交談術} spell, but the torturer speaks to the characters only in bold threats. In combat, Andras uses weapons coated in {@item Blood of the Lycanthrope|IMR|blood of the lycanthrope poison} (see {@adventure appendix C|IMR|8}). He uses the {@creature assassin} stat block with the following changes:",
 										{
 											"type": "list",
 											"items": [
@@ -3115,7 +3115,7 @@
 									"name": "Statue of Moloch",
 									"id": "13c",
 									"entries": [
-										"The eyes of the statue are the largest rubies ever recovered from the underground lake, and were cut and faceted by the temple's first priests. With a successful DC 12 Intelligence ({@skill Arcana}) check or a {@spell detect magic} spell, a character discerns that the gem eyes are a focal point for the magic of the temple, and are magically connected to the various control panels making use of the missing components from the {@i Infernal Machine of Lum the Mad}. A successful DC 12 Wisdom ({@skill Perception}) check made to examine the gems reveals that they are connected to the statue with silver wires similar to those seen in Thessalar's labs.",
+										"The eyes of the statue are the largest rubies ever recovered from the underground lake, and were cut and faceted by the temple's first priests. With a successful DC 12 Intelligence ({@skill Arcana}) check or a {@spell 偵測魔法} spell, a character discerns that the gem eyes are a focal point for the magic of the temple, and are magically connected to the various control panels making use of the missing components from the {@i Infernal Machine of Lum the Mad}. A successful DC 12 Wisdom ({@skill Perception}) check made to examine the gems reveals that they are connected to the statue with silver wires similar to those seen in Thessalar's labs.",
 										"The gems can be removed with a successful DC 20 Dexterity check using thieves' tools. However, doing so deactivates any control panel still utilizing components from the {@i Infernal Machine} in the temple (in areas 9, 14, 15, 16, and 22). This disrupts the experiments and frees the bound creatures in all those areas.",
 										"The {@creature eidolon|MTF} in this area (see below) can enter the statue to transform it into a {@creature sacred statue|MTF}. The statue can be attacked to destroy it, preventing the eidolon from animating it. When not occupied by the eidolon, the statue has AC 17, 50 hit points, resistance to piercing and slashing damage, and immunity to poison and psychic damage. The statue is also vulnerable to the set of superior mason's tools found in {@area area 11|08a|x} of {@adventure chapter 3|IMR|3}. A character proficient with mason's tools can use the superior set to destroy the statue with a successful DC 13 Dexterity check.",
 										"If the sacred statue is destroyed, the eidolon can enter one of the other appropriate statues in area 24."
@@ -3340,7 +3340,7 @@
 									"name": "Manipulating Time",
 									"id": "155",
 									"entries": [
-										"Having a mechanical guide spend 1 charge in this area taps into the ritual magic Seodra is using to craft the demilich's skull, causing a random character to age by one year. This effect can be reversed by casting a {@spell remove curse} spell using a 6th-level spell slot."
+										"Having a mechanical guide spend 1 charge in this area taps into the ritual magic Seodra is using to craft the demilich's skull, causing a random character to age by one year. This effect can be reversed by casting a {@spell 移除詛咒} spell using a 6th-level spell slot."
 									]
 								}
 							]
@@ -3554,7 +3554,7 @@
 									"entries": [
 										"Uncut rubies and other gems are piled and sorted here according to size\u2014two hundred tiny stones (worth 10 gp each), one hundred small stones (25 gp each), twenty medium stones (100 gp each), and five large stones (200 gp each).",
 										"A small cask holds cut and polished rubies\u2014fifty small gems (worth 100 gp each), ten medium gems (150 gp each), and five large gems (250 gp each).",
-										"In addition, five magic gems and stones are stored in individual coffers scattered about the room\u2014an {@item Elemental Gem, Yellow Diamond||elemental gem (earth)}, an {@item Ioun stone of vitality|IMR} (see {@adventure appendix C|IMR|8}), and three {@item Spell Gem|OotA|spell gems} (see {@adventure appendix C|IMR|8}). Two of the spell gems are {@item Spell Gem (Lapis lazuli)|OotA|lapis lazuli} holding {@spell identify} and {@spell unseen servant}. The third is a {@item Spell Gem (Quartz)|OotA|quartz} holding {@spell locate object}."
+										"In addition, five magic gems and stones are stored in individual coffers scattered about the room\u2014an {@item Elemental Gem, Yellow Diamond||elemental gem (earth)}, an {@item Ioun stone of vitality|IMR} (see {@adventure appendix C|IMR|8}), and three {@item Spell Gem|OotA|spell gems} (see {@adventure appendix C|IMR|8}). Two of the spell gems are {@item Spell Gem (Lapis lazuli)|OotA|lapis lazuli} holding {@spell 鑑定術} and {@spell 隱形僕役}. The third is a {@item Spell Gem (Quartz)|OotA|quartz} holding {@spell 物品定位術}."
 									]
 								},
 								{
@@ -3704,7 +3704,7 @@
 								"The other agent arrives with a full complement of a dozen servants (use the {@creature cultist} stat block).",
 								"During the raid, both agents attempt to attune to the {@i Infernal Machine}. You can decide which one is successful or allow chance to decide (see \"Complications\" below), taking into account the actions of the characters if they support one agent or the other.",
 								"During the fight, both agents shout out accusations that reveal the other's true natures. Those natures are then confirmed by the agents themselves. Any injury dealt to {@creature Lynx Creatlach|IMR} shows the unnatural construction of her undead flesh and the rune-scribed skeleton beneath it. Any injury dealt to {@creature Sir Ursas|IMR} causes him to shout out in rage, swearing vengeance \"in the name of my unholy patron, Bel!\"",
-								"If either agent gains control of the {@i Infernal Machine}, they immediately use it to attempt to defeat their rival. (The machine has all its normal functions except its {@spell wish} ability, which will require additional programming.) If confronted by the characters, the agent turns the {@i Infernal Machine} against them. If the characters leave the agent in control of the machine, the agent departs with it to the Nine Hells when their rival has been dealt with."
+								"If either agent gains control of the {@i Infernal Machine}, they immediately use it to attempt to defeat their rival. (The machine has all its normal functions except its {@spell 祈願術} ability, which will require additional programming.) If confronted by the characters, the agent turns the {@i Infernal Machine} against them. If the characters leave the agent in control of the machine, the agent departs with it to the Nine Hells when their rival has been dealt with."
 							]
 						},
 						{
@@ -3755,11 +3755,11 @@
 										],
 										[
 											"66\u201370",
-											"A spellcaster fighting for Lynx casts a {@spell lightning bolt} that streaks across the battlefield to strike targets as you determine."
+											"A spellcaster fighting for Lynx casts a {@spell 閃電束} that streaks across the battlefield to strike targets as you determine."
 										],
 										[
 											"71\u201375",
-											"A spellcaster fighting for Sir Ursas casts a {@spell fireball} that explodes at a location of your determination."
+											"A spellcaster fighting for Sir Ursas casts a {@spell 火球術} that explodes at a location of your determination."
 										],
 										[
 											"76\u201380",
@@ -3880,7 +3880,7 @@
 							"id": "18b",
 							"entries": [
 								"As written, the mechanical guides can safely teleport the characters to and from the specific adventure locations. If it fits with your campaign, you might opt to allow teleportation to other locations in time and space with a successful DC 20 Intelligence ({@skill Arcana}) check. A failed check causes the characters to be misdirected physically or temporally, as you determine. If the characters claim any missing components of the {@i Infernal Machine}, those components can be added to the mechanical guide, providing a +2 bonus to this check per component.",
-								"You might decide that neither agent would ever allow the components they already possess to leave their sight, or that the characters are the first ones to have come across any missing components. If so, Lynx's guide is powered by a dangerous combination of living {@spell teleport} and {@spell time stop} spells, and might malfunction as you see fit. Sir Ursas's guide is a captured quarut (an inevitable that seeks to uphold the laws of space and time), and which is forced to use its powers as Ursas demands. Though the quarut is programmed to prevent it from revealing its plight outright, it might provide clues during the adventure that all is not as it seems."
+								"You might decide that neither agent would ever allow the components they already possess to leave their sight, or that the characters are the first ones to have come across any missing components. If so, Lynx's guide is powered by a dangerous combination of living {@spell 傳送術} and {@spell 時間停止} spells, and might malfunction as you see fit. Sir Ursas's guide is a captured quarut (an inevitable that seeks to uphold the laws of space and time), and which is forced to use its powers as Ursas demands. Though the quarut is programmed to prevent it from revealing its plight outright, it might provide clues during the adventure that all is not as it seems."
 							]
 						},
 						{
@@ -3904,7 +3904,7 @@
 									"type": "list",
 									"items": [
 										"It has {@sense truesight} out to a range of 60 feet.",
-										"It can cast the {@spell light} cantrip at will.",
+										"It can cast the {@spell 光亮術} cantrip at will.",
 										"Its Petrifying Gaze trait turns creatures into metal, wood, or porcelain (the medusa's choice) rather than stone."
 									]
 								},
@@ -4177,7 +4177,7 @@
 											"name": "The Void",
 											"id": "1ad",
 											"entries": [
-												"This black card spells disaster. Your soul is drawn from your body and held within a soul gem in the Temple of Moloch (with the gemsmith in {@area area 31|151|x}). While your soul is trapped in this way, your body is {@condition incapacitated}. {@spell Divination}, {@spell contact other plane}, or a similar spell of 4th level or higher reveals the location of the soul gem. You draw no more cards."
+												"This black card spells disaster. Your soul is drawn from your body and held within a soul gem in the Temple of Moloch (with the gemsmith in {@area area 31|151|x}). While your soul is trapped in this way, your body is {@condition incapacitated}. {@spell 預言術}, {@spell 異界探知}, or a similar spell of 4th level or higher reveals the location of the soul gem. You draw no more cards."
 											]
 										}
 									]

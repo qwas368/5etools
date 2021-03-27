@@ -811,7 +811,7 @@
 							"id": "033",
 							"entries": [
 								"If the chest is opened, it appears to be empty, but a character who actually feels inside the chest will find a rod that protrudes vertically from the bottom. This lever moves easily, and if it is pulled with any force it will open a trapdoor in this square that covers a 30-foot-deep covered pit (see the sidebar). Someone who falls in takes damage from a 30-foot fall as well as from the spikes and the poison.",
-								"The trapdoor over this pit is 3 feet thick and can't be detected by sounding, and it is technically not a trap, so a {@spell find traps} spell doesn't reveal it. A {@spell true seeing} spell reveals a tiny rectangular gap where the door meets the floor. Once the trapdoor falls away, the pit remains open thereafter."
+								"The trapdoor over this pit is 3 feet thick and can't be detected by sounding, and it is technically not a trap, so a {@spell 尋找陷阱} spell doesn't reveal it. A {@spell 真知術} spell reveals a tiny rectangular gap where the door meets the floor. Once the trapdoor falls away, the pit remains open thereafter."
 							]
 						}
 					]
@@ -851,7 +851,7 @@
 							"name": "Aura",
 							"id": "038",
 							"entries": [
-								"The devil face radiates an aura of transmutation magic if {@spell detect magic} is used on it, and a casting of {@spell detect evil and good} or a paladin's use of {@classFeature Divine Sense|Paladin||1} reveals it as a desecrated place."
+								"The devil face radiates an aura of transmutation magic if {@spell 偵測魔法} is used on it, and a casting of {@spell 偵測善惡} or a paladin's use of {@classFeature Divine Sense|Paladin||1} reveals it as a desecrated place."
 							]
 						},
 						{
@@ -1056,7 +1056,7 @@
 							],
 							"footnotes": [
 								"¹An illusion covering a crawlway to {@area 11|048}",
-								"²This door can be opened by a knock spell or destroyed with {@spell disintegrate}",
+								"²This door can be opened by a knock spell or destroyed with {@spell 解離術}",
 								"³An illusion covering a crawlway to {@area 14|051}",
 								"⁴An illusion covering a crawlway to {@area 13|04d}"
 							]
@@ -1119,8 +1119,8 @@
 							"id": "04a",
 							"entries": [
 								"A close look at the open and outstretched hands of the statue will determine that a large gem (a 100 gp blue quartz fits perfectly) will fit in a carved depression in each of the three remaining hands, while the broken one has no such concavity. If three large gems of any sort are placed within the hands, the stony digits will close and crush them to powder, dump the remains on the floor, and return to their normal positions.",
-								"If this process is repeated until ten gems (or more) are crushed, a {@spell magic mouth} spell is triggered and speaks the following words: \"Your sacrifice was not in vain. Look to the fourth to find your gain.\"",
-								"As these words are uttered, an invisible {@item gem of seeing} will come into being in the palm of the broken-off arm. The gem must be found, and the character so doing will need to wipe it free of a magical substance before it can be seen or used. Note that if the arm is carelessly moved, the gem will fall out and roll away. {@spell See invisibility} or any other sort of searching except by careful feeling will be useless. Describe the gem, once it is wiped clean and visible, as an oval diamond, with two flat and polished sides, very clear, and about 1 inch in diameter by a quarter-inch thick. It will operate only twelve times, then shatter."
+								"If this process is repeated until ten gems (or more) are crushed, a {@spell 魔嘴術} spell is triggered and speaks the following words: \"Your sacrifice was not in vain. Look to the fourth to find your gain.\"",
+								"As these words are uttered, an invisible {@item gem of seeing} will come into being in the palm of the broken-off arm. The gem must be found, and the character so doing will need to wipe it free of a magical substance before it can be seen or used. Note that if the arm is carelessly moved, the gem will fall out and roll away. {@spell 識破隱形} or any other sort of searching except by careful feeling will be useless. Describe the gem, once it is wiped clean and visible, as an oval diamond, with two flat and polished sides, very clear, and about 1 inch in diameter by a quarter-inch thick. It will operate only twelve times, then shatter."
 							]
 						}
 					]
@@ -1203,7 +1203,7 @@
 							"name": "Aura",
 							"id": "054",
 							"entries": [
-								"A casting of {@spell detect evil and good} or a paladin's use of {@classFeature Divine Sense|Paladin||1} identifies the chapel as a consecrated place. (What a puzzle! Could the demilich actually have been of good alignment?)"
+								"A casting of {@spell 偵測善惡} or a paladin's use of {@classFeature Divine Sense|Paladin||1} identifies the chapel as a consecrated place. (What a puzzle! Could the demilich actually have been of good alignment?)"
 							]
 						},
 						{
@@ -1236,7 +1236,7 @@
 							"name": "Altar",
 							"id": "058",
 							"entries": [
-								"The centerpiece of the chapel is a block of strange material that glows with an inner light of opalescent blue. (If the altar is specifically targeted by a {@spell detect evil and good} spell, it registers very faintly as a desecrated object.) If the altar is touched by living matter, a {@spell lightning bolt} spell (save DC 15) will streak down the center aisle. After this bolt comes forth, the altar turns a fiery blue-red, and if it thereafter is touched by any object it will explode as a {@spell fireball} spell (save DC 15)."
+								"The centerpiece of the chapel is a block of strange material that glows with an inner light of opalescent blue. (If the altar is specifically targeted by a {@spell 偵測善惡} spell, it registers very faintly as a desecrated object.) If the altar is touched by living matter, a {@spell 閃電束} spell (save DC 15) will streak down the center aisle. After this bolt comes forth, the altar turns a fiery blue-red, and if it thereafter is touched by any object it will explode as a {@spell 火球術} spell (save DC 15)."
 							]
 						},
 						{
@@ -1244,7 +1244,7 @@
 							"name": "Archway",
 							"id": "059",
 							"entries": [
-								"Just as in other locations around the tomb, the mists that obscure the archway can't be penetrated with any sort of vision or magic. (If a character moves close to the archway and asks about it, explain that none of the stones of the arch glow.) The skeleton, of course, misleads the party, for any character passing through the portal will enter a 10-foot-by-10-foot room where their sex and alignment are reversed by a powerful magic. Exiting the room and re-entering the archway will restore original alignment, but also deals 3 ({@damage 1d6}) psychic damage. Going back a third time will reverse sex again, but the individual will be teleported in the manner of the archway in {@area 10|045}. Only a {@spell wish} spell will restore both alignment and sex. If alignment is restored by entering the orange portal, a {@spell remove curse} or {@spell greater restoration} spell will then restore original sex."
+								"Just as in other locations around the tomb, the mists that obscure the archway can't be penetrated with any sort of vision or magic. (If a character moves close to the archway and asks about it, explain that none of the stones of the arch glow.) The skeleton, of course, misleads the party, for any character passing through the portal will enter a 10-foot-by-10-foot room where their sex and alignment are reversed by a powerful magic. Exiting the room and re-entering the archway will restore original alignment, but also deals 3 ({@damage 1d6}) psychic damage. Going back a third time will reverse sex again, but the individual will be teleported in the manner of the archway in {@area 10|045}. Only a {@spell 祈願術} spell will restore both alignment and sex. If alignment is restored by entering the orange portal, a {@spell 移除詛咒} or {@spell 高等復原術} spell will then restore original sex."
 							]
 						},
 						{
@@ -1330,7 +1330,7 @@
 								"A character who listens with an ear to the door will hear far-off music and happy singing, obviously coming from the other side of the door."
 							]
 						},
-						"No amount of forcing or spells will open the door. The only way to continue northward is to use a {@spell disintegrate} spell on the door or physically destroy it (it has 100 hit points).",
+						"No amount of forcing or spells will open the door. The only way to continue northward is to use a {@spell 解離術} spell on the door or physically destroy it (it has 100 hit points).",
 						"If the characters destroy the door, read:",
 						{
 							"type": "insetReadaloud",
@@ -1349,8 +1349,8 @@
 					"name": "17. Magical Secret Door",
 					"id": "063",
 					"entries": [
-						"This entrance to the remainder of the tomb is on the wall adjoining the stairway that leads down. It can be found by mundane means, requiring a successful DC 20 Wisdom ({@skill Perception}) check, but nothing will enable it to be opened until either the area is viewed through a {@item gem of seeing}, a {@spell true seeing} spell is cast, or a {@spell detect magic} spell is used to determine the door's magic aura (abjuration).",
-						"After the magic of the door is identified, a {@spell dispel magic} or {@spell remove curse} spell is needed to remove the guard that prevents the door from being opened. Once this is accomplished, the secret door can be opened easily from either side."
+						"This entrance to the remainder of the tomb is on the wall adjoining the stairway that leads down. It can be found by mundane means, requiring a successful DC 20 Wisdom ({@skill Perception}) check, but nothing will enable it to be opened until either the area is viewed through a {@item gem of seeing}, a {@spell 真知術} spell is cast, or a {@spell 偵測魔法} spell is used to determine the door's magic aura (abjuration).",
+						"After the magic of the door is identified, a {@spell 解除魔法} or {@spell 移除詛咒} spell is needed to remove the guard that prevents the door from being opened. Once this is accomplished, the secret door can be opened easily from either side."
 					]
 				},
 				{
@@ -1393,7 +1393,7 @@
 								"Beyond the door, a stairway leads down. The way is blocked by thick webbing that fills the area from steps to ceiling."
 							]
 						},
-						"The steps down to the chamber at the end are filled with {@spell web||webs} (as the spell) which can only be removed by magical fire (a {@spell burning hands} spell, a {@item flame tongue} sword, or the like). Any character trying to break through them will become hopelessly entangled and can't get loose unless the webs are burned away or the character is freed by a wish spell.",
+						"The steps down to the chamber at the end are filled with {@spell web||webs} (as the spell) which can only be removed by magical fire (a {@spell 燃燒之手} spell, a {@item flame tongue} sword, or the like). Any character trying to break through them will become hopelessly entangled and can't get loose unless the webs are burned away or the character is freed by a wish spell.",
 						"If the characters clear away the webs and descend to the foot of the stairway, read:",
 						{
 							"type": "insetReadaloud",
@@ -1409,7 +1409,7 @@
 							"name": "Creature",
 							"id": "06a",
 							"entries": [
-								"The false crypt is the home of a false lich that is actually a magically prepared {@creature greater zombie|TftYP}. Between strikes the creature will gesture with its hands as if readying a spell. If it is struck by the golden mace it will make a roaring bellow (produced by a {@spell magic mouth} spell), and the weapon will obviously stagger it (roll dice and shake your head ruefully) every time the mace is used. The third time it is struck by the glowing mace, the false lich will instantly wither and disappear in a puff of dust, and the mace will shatter."
+								"The false crypt is the home of a false lich that is actually a magically prepared {@creature greater zombie|TftYP}. Between strikes the creature will gesture with its hands as if readying a spell. If it is struck by the golden mace it will make a roaring bellow (produced by a {@spell 魔嘴術} spell), and the weapon will obviously stagger it (roll dice and shake your head ruefully) every time the mace is used. The third time it is struck by the glowing mace, the false lich will instantly wither and disappear in a puff of dust, and the mace will shatter."
 							]
 						},
 						"If the characters investigate the room's contents, they can see a jade coffer, the dead monster's fallen crown, and a fine leather bag (its condition is a give-away-it isn't rotten) all within easy reach. The furnishings and decorations are of no value.",
@@ -1421,7 +1421,7 @@
 								"At the moment when the false lich disappears, the room will start to shake and stones will begin to come down from the ceiling. Obviously the place is beginning to collapse, but take your time detailing the increasing rumblings, tremors, grinding noises, falling hunks of ceiling, and so forth to the players."
 							]
 						},
-						"Now begin counting slowly to 10, and it is odds on that there will be a stampede up the stairs to get away! A {@spell programmed illusion} spell affecting the entire false crypt will produce the full effects of a cave-in, complete with tactile components. Actual dust will billow up the stairs, while bits of stone begin to fall in the east-west tunnel and then in the north-south tunnel and the stairs reached from the pit. If the party runs out, ask them if they thought it was too hard a dungeon.",
+						"Now begin counting slowly to 10, and it is odds on that there will be a stampede up the stairs to get away! A {@spell 預置幻象} spell affecting the entire false crypt will produce the full effects of a cave-in, complete with tactile components. Actual dust will billow up the stairs, while bits of stone begin to fall in the east-west tunnel and then in the north-south tunnel and the stairs reached from the pit. If the party runs out, ask them if they thought it was too hard a dungeon.",
 						{
 							"type": "entries",
 							"name": "Treasure",
@@ -1435,7 +1435,7 @@
 							"name": "False Ending",
 							"id": "06d",
 							"entries": [
-								"If this outcome doesn't make the players suspicious enough to take another run through to check things out, put the adventure away for use when you have a different group (or the same ones) inquiring about one of the references in the \"Legend of the Tomb.\" Note that something so simple as a {@spell commune} spell will reveal that the demilich has not been destroyed."
+								"If this outcome doesn't make the players suspicious enough to take another run through to check things out, put the adventure away for use when you have a different group (or the same ones) inquiring about one of the references in the \"Legend of the Tomb.\" Note that something so simple as a {@spell 通神術} spell will reveal that the demilich has not been destroyed."
 							]
 						}
 					]
@@ -1555,7 +1555,7 @@
 								"A thick silver mist, shot through with delicate streamers of gold, partially blocks your view of the area that lies ahead."
 							]
 						},
-						"The mists make the entire area heavily obscured. A {@spell detect evil and good} spell cast in the area, or a paladin's use of {@classFeature Divine Sense|Paladin||1}, indicates that this is a consecrated place.",
+						"The mists make the entire area heavily obscured. A {@spell 偵測善惡} spell cast in the area, or a paladin's use of {@classFeature Divine Sense|Paladin||1}, indicates that this is a consecrated place.",
 						"Any creature that steps into the mist must make a DC 15 Intelligence saving throw. On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them. This effect lasts until the character can breathe the clean air above ground under the warm sun.",
 						{
 							"type": "entries",
@@ -1741,9 +1741,9 @@
 							"name": "Cursed Gem",
 							"id": "089",
 							"entries": [
-								"The gem can be easily claimed. Casting a {@spell detect evil and good} spell reveals it to be a desecrated object. On a casting of detect magic, the gem gives off a strong aura of conjuration\u2014so strong that the detecting character will get the vague feeling that the {@spell wish} spell is involved in the gem's magic.",
-								"The gem is actually a cursed magic item. If any character touches it and attempts to cast a {@spell wish} spell using it, a reversed or distorted version of the wish's fulfillment will bring harm to that character and all named in the wish.",
-								"Then, immediately after the evil {@spell wish} spell has transpired, the gem begins to pulse with reddish lights, growing progressively stronger, brighter and hotter. Roll initiative. On initiative count 1, the stone explodes, absolutely killing any character within a 15-foot radius in a wave of searing radiation and flames. The gem remains as a noisome mass of stinking purplish mold which bubbles and chuckles. In one week the mass will again re-form as a glowing orange gem."
+								"The gem can be easily claimed. Casting a {@spell 偵測善惡} spell reveals it to be a desecrated object. On a casting of detect magic, the gem gives off a strong aura of conjuration\u2014so strong that the detecting character will get the vague feeling that the {@spell 祈願術} spell is involved in the gem's magic.",
+								"The gem is actually a cursed magic item. If any character touches it and attempts to cast a {@spell 祈願術} spell using it, a reversed or distorted version of the wish's fulfillment will bring harm to that character and all named in the wish.",
+								"Then, immediately after the evil {@spell 祈願術} spell has transpired, the gem begins to pulse with reddish lights, growing progressively stronger, brighter and hotter. Roll initiative. On initiative count 1, the stone explodes, absolutely killing any character within a 15-foot radius in a wave of searing radiation and flames. The gem remains as a noisome mass of stinking purplish mold which bubbles and chuckles. In one week the mass will again re-form as a glowing orange gem."
 							]
 						},
 						{
@@ -1785,7 +1785,7 @@
 							"id": "08d",
 							"entries": [
 								"The crown negates the pillars' levitation effect for anyone who dons it and enables the wearer to see within the hall as if in normal daylight\u2014but outside this place the wearer is {@condition blinded|phb|blind}. As soon as a creature puts on the crown, the wearer knows that the crown can be removed only by touching the scepter to it, but doesn't find out the exact procedure.",
-								"If the golden knob is touched to the crown, the wearer can remove the headgear. If the silver end of the scepter is touched to the crown, the wearer is instantly snuffed out, turning to a fetid powder that can't be brought back to life no matter what ({@spell wish} spells notwithstanding)."
+								"If the golden knob is touched to the crown, the wearer can remove the headgear. If the silver end of the scepter is touched to the crown, the wearer is instantly snuffed out, turning to a fetid powder that can't be brought back to life no matter what ({@spell 祈願術} spells notwithstanding)."
 							]
 						},
 						{
@@ -1852,7 +1852,7 @@
 							"entries": [
 								"If the threshold of the chamber is crossed by any creature, one set of swords will fly off the wall and attack the individual so doing. The two {@creature flying sword||flying swords} will both attack, and the shield (statistics as the swords, but no attacks) will interpose itself to take hits meant for the swords. This trio will attack until they are destroyed or the one who violated their area is dead. Surviving weapons and shields return to their former positions after the offender is hacked to pieces.",
 								"Worse still, if the threshold is crossed a second time, another pair of blades and a shield will attack, and each set gains a cumulative +1 bonus to attack and damage rolls, as well as 1 hit point more than the previous set.",
-								"Only the following spells will affect these items: {@spell telekinesis} sends all three items of a set back to their original position; {@spell heat metal} will cause one item to fall to pieces; {@spell disintegrate} will destroy all items of a set; {@spell magic weapon} will cause a sword to become a plain iron weapon."
+								"Only the following spells will affect these items: {@spell 心靈遙控} sends all three items of a set back to their original position; {@spell 灼熱金屬} will cause one item to fall to pieces; {@spell 解離術} will destroy all items of a set; {@spell 魔化武器} will cause a sword to become a plain iron weapon."
 							]
 						}
 					]
@@ -1920,7 +1920,7 @@
 								"The walls of the area ahead are untarnished and gleaming copper panels set between rare woods inlaid with ivory. The ceiling is silver, formed so as to reflect and amplify light brought into the place. The chamber widens to the south, where a set of gently sloping steps leads upward. The six steps, from nearest to farthest, are made of onyx, pink marble, lapis, black marble, yellow serpentine, and malachite."
 							]
 						},
-						"Upon the black marble step is a large, cylindrical key of bronze, hereafter called the Second Key, for all to behold. It has an {@spell antipathy/sympathy} spell cast upon it (save DC 17) that repels humanoids (the antipathy effect). At the head of the steps are a pair of huge doors."
+						"Upon the black marble step is a large, cylindrical key of bronze, hereafter called the Second Key, for all to behold. It has an {@spell 嫌惡/共感術} spell cast upon it (save DC 17) that repels humanoids (the antipathy effect). At the head of the steps are a pair of huge doors."
 					]
 				},
 				{
@@ -1952,18 +1952,18 @@
 							"entries": [
 								"If the door is attacked by force it will not budge, but if it is scratched or nicked it will turn red in that spot, and if it is cut by a sharp weapon it will begin to gush forth blood\u2014the blood of all those who have died within the tomb! The red flow will cascade down the steps and fill the area to the top of the southernmost step in 6 rounds, and each round thereafter it will rise higher and encompass one more step. If unchecked, the flow of blood will fill the foyer to the ceiling in 20 rounds.",
 								"Fire of any sort, magical or otherwise, turns the blood to a poison gas, which is fatal, and all characters in the foyer area are dead, with no saving throw, while any in the 5-foot-wide passage to the throne room are slain unless they succeed on a DC 17 Constitution saving throw.",
-								"Casting one or more {@spell cure wounds}s spells on the door in any combination that expends four spell slots (such as four 1st-level castings, two 2nd-level, or one 4th-level) will stanch the flow of blood, as will a {@spell heal} spell. If other magic is used against the blood, only the following spells will have any effect:",
+								"Casting one or more {@spell 治療傷勢}s spells on the door in any combination that expends four spell slots (such as four 1st-level castings, two 2nd-level, or one 4th-level) will stanch the flow of blood, as will a {@spell 治癒術} spell. If other magic is used against the blood, only the following spells will have any effect:",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
-										"{@spell Cone of cold} freezes the blood and halts the flow for 3 rounds.",
-										"{@spell Create or destroy water} turns the blood to water.",
-										"{@spell Disintegrate} destroys all the blood.",
-										"{@spell Levitate} coagulates the blood and causes it to rise up as a Huge red {@creature ochre jelly}.",
-										"{@spell Polymorph} changes the blood into seven {@creature wight||wights}, which attack immediately.",
-										"{@spell Purify food and drink} turns all the blood to poison gas. A character caught in the gas must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for 48 hours.",
-										"{@spell Raise dead} or {@spell resurrection} destroys all the blood and causes a shade to appear on the top stair. The shade blesses the characters so that they benefit as if they had just finished a long rest."
+										"{@spell 寒冰錐} freezes the blood and halts the flow for 3 rounds.",
+										"{@spell 造水/枯水術} turns the blood to water.",
+										"{@spell 解離術} destroys all the blood.",
+										"{@spell 浮空術} coagulates the blood and causes it to rise up as a Huge red {@creature ochre jelly}.",
+										"{@spell 變形術} changes the blood into seven {@creature wight||wights}, which attack immediately.",
+										"{@spell 淨化飲食} turns all the blood to poison gas. A character caught in the gas must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for 48 hours.",
+										"{@spell 喚醒死者} or {@spell 復活術} destroys all the blood and causes a shade to appear on the top stair. The shade blesses the characters so that they benefit as if they had just finished a long rest."
 									]
 								}
 							]
@@ -1989,7 +1989,7 @@
 							"name": "Statues",
 							"id": "0a3",
 							"entries": [
-								"Each statue has a magical aura, but they are merely hunks of metal; they do nothing. Each registers to the casting of {@spell detect evil and good} as a desecrated object, and the visage of each of these iron statues is most fearsome and terrifying.",
+								"Each statue has a magical aura, but they are merely hunks of metal; they do nothing. Each registers to the casting of {@spell 偵測善惡} as a desecrated object, and the visage of each of these iron statues is most fearsome and terrifying.",
 								"Moving a statue can be done, but it requires a combined Strength of 48. Moving the statue in the northwest corner reveals a ring pull in the western wall which will raise a small plug of stone and enable the party to enter a small chute which takes them into the corridor that goes west."
 							]
 						},
@@ -2116,7 +2116,7 @@
 								"The skull belongs to Acererak, the demilich who lies in wait for the characters. When they joined the halves of the {@i First Key}, that act called his soul back to the Material Plane, and their use of the {@i Second Key} to enter the vault alerted him that he must be prepared to do battle in order to survive yet more centuries.",
 								"All that now remains of Acererak the lich are the dust of his bones. This bit is enough! If any of the treasure in the crypt is touched, the dust swirls into the air and forms a man-like shape. If this shape is ignored, it will dissipate in 3 rounds, for it can only advance and threaten, not harm. Any physical attack will give it 1 point of energy, however, and a damaging spell cast on it gives it a number of points of energy equal to the level of the spell slot expended (1 point for a cantrip). Each point of energy is equivalent to a hit point, and if 50 hit points are thus gained, the dust will form into a {@creature ghost} controlled by Acererak, and this thing will attack immediately. (The dust will seem to waver and fall back if it is struck by blow or spell, as if suffering actual damage, so formation of the ghost isn't too improbable.)",
 								"If any character is so foolish as to touch the skull of the demilich, a terrible thing occurs. Acererak rises into the air upon the touch, and it slowly scans the party prior to attacking. The {@creature demilich} has the Trap the Soul action and access to its lair actions, but not lair traits. It can tell which members of the party are the most powerful, and it uses Trap the Soul on them first.",
-								"There are two jewels set into the skull's eye sockets (50,000 gp rubies) and six pointed (marquis cut) diamonds set as teeth in the jaw (each diamond is worth 5,000 gp). If all these gems are filled with souls and the skull is still intact and still being opposed, it will pronounce a curse upon the remaining characters which will teleport them randomly in a 300-mile radius, each subjected to a {@spell bestow curse} spell (save DC 17) that lasts until dispelled. If the curse is removed, the character must make a DC 17 Wisdom saving throw. On a failed save, the character must permanently decrease one ability score by 2, or two ability scores by 1 each. This secondary effect is instantaneous and can't be dispelled."
+								"There are two jewels set into the skull's eye sockets (50,000 gp rubies) and six pointed (marquis cut) diamonds set as teeth in the jaw (each diamond is worth 5,000 gp). If all these gems are filled with souls and the skull is still intact and still being opposed, it will pronounce a curse upon the remaining characters which will teleport them randomly in a 300-mile radius, each subjected to a {@spell 降咒} spell (save DC 17) that lasts until dispelled. If the curse is removed, the character must make a DC 17 Wisdom saving throw. On a failed save, the character must permanently decrease one ability score by 2, or two ability scores by 1 each. This secondary effect is instantaneous and can't be dispelled."
 							]
 						},
 						{

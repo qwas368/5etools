@@ -2455,7 +2455,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 2nd-level druid {@variantrule optional class features|tce|optional feature}}",
-				"You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the {@spell find familiar} spell, without material components.",
+				"You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the {@spell 尋獲魔寵} spell, without material components.",
 				"When you cast the spell in this way, the familiar is a fey instead of a beast, and the familiar disappears after a number of hours equal to half your druid level."
 			]
 		},
@@ -2469,7 +2469,7 @@
 			"isClassFeatureVariant": true,
 			"entries": [
 				"{@i 2nd-level druid feature (enhances Wild Shape)}",
-				"You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the {@spell find familiar} spell, without material components.",
+				"You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the {@spell 尋獲魔寵} spell, without material components.",
 				"When you cast the spell in this way, the familiar is a fey instead of a beast, and the familiar disappears after a number of hours equal to half your druid level."
 			]
 		},
@@ -3598,9 +3598,9 @@
 				{
 					"type": "list",
 					"items": [
-						"You know the {@spell guidance} cantrip.",
-						"You have the {@spell guiding bolt} spell prepared. It counts as a druid spell for you, and it doesn't count against the number of spells you can have prepared.",
-						"You can cast {@spell guiding bolt} without expending a spell slot. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"You know the {@spell 指導術} cantrip.",
+						"You have the {@spell 光導箭} spell prepared. It counts as a druid spell for you, and it doesn't count against the number of spells you can have prepared.",
+						"You can cast {@spell 光導箭} without expending a spell slot. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 					]
 				},
 				"If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a short or long rest, and it destroys the previous map."
@@ -3756,23 +3756,23 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell burning hands}, {@spell cure wounds}"
+							"{@spell 燃燒之手}, {@spell 治療傷勢}"
 						],
 						[
 							"3rd",
-							"{@spell flaming sphere}, {@spell scorching ray}"
+							"{@spell 熾焰法球}, {@spell 灼熱射線}"
 						],
 						[
 							"5th",
-							"{@spell plant growth}, {@spell revivify}"
+							"{@spell 植物滋長}, {@spell 回生術}"
 						],
 						[
 							"7th",
-							"{@spell aura of life}, {@spell fire shield}"
+							"{@spell 生命靈光}, {@spell 火焰護盾}"
 						],
 						[
 							"9th",
-							"{@spell flame strike}, {@spell mass cure wounds}"
+							"{@spell 焰擊術}, {@spell 群體治療傷勢}"
 						]
 					]
 				}
@@ -3919,7 +3919,7 @@
 					]
 				},
 				"If you lose your map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a short or long rest, and it destroys the previous map.",
-				"You can cast the {@spell augury} and {@spell guiding bolt} spells without expending a spell slot and without preparing the spell, provided you use the star map as the spellcasting focus. You can cast a spell from the map in this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+				"You can cast the {@spell 卜筮} and {@spell 光導箭} spells without expending a spell slot and without preparing the spell, provided you use the star map as the spellcasting focus. You can cast a spell from the map in this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
 		{
@@ -4072,19 +4072,19 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell locate animals or plants}, {@spell scorching ray}"
+							"{@spell 動植物定位術}, {@spell 灼熱射線}"
 						],
 						[
 							"5th",
-							"{@spell fireball}, {@spell plant growth}"
+							"{@spell 火球術}, {@spell 植物滋長}"
 						],
 						[
 							"7th",
-							"{@spell aura of life}, {@spell fire shield}"
+							"{@spell 生命靈光}, {@spell 火焰護盾}"
 						],
 						[
 							"9th",
-							"{@spell flame strike}, {@spell raise dead}"
+							"{@spell 焰擊術}, {@spell 喚醒死者}"
 						]
 					]
 				}
@@ -4346,7 +4346,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you gain the services of a spirit that watches over you and protects you from harm. Whenever you finish a long rest, you gain the benefits of a {@spell death ward} spell. The spell's duration is extended to 24 hours."
+				"At 10th level, you gain the services of a spirit that watches over you and protects you from harm. Whenever you finish a long rest, you gain the benefits of a {@spell 防死護咒} spell. The spell's duration is extended to 24 hours."
 			]
 		},
 		{
@@ -4360,7 +4360,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, the bestial spirits you commune with protect you when you are vulnerable. If you are reduced to 0 hit points or are {@condition incapacitated} against your will, you can immediately gain the benefits of {@spell conjure animals} as if it was cast with a 9th-level spell slot. It summons four beasts of your choice that are challenge rating 2 or lower. The conjured beasts appear within 20 feet of you. If they receive no commands from you, they protect you from harm and attack your foes. The spell lasts for 1 hour.",
+				"Starting at 14th level, the bestial spirits you commune with protect you when you are vulnerable. If you are reduced to 0 hit points or are {@condition incapacitated} against your will, you can immediately gain the benefits of {@spell 召喚動物} as if it was cast with a 9th-level spell slot. It summons four beasts of your choice that are challenge rating 2 or lower. The conjured beasts appear within 20 feet of you. If they receive no commands from you, they protect you from harm and attack your foes. The spell lasts for 1 hour.",
 				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		},
@@ -4409,7 +4409,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you gain the ability to reach beyond death's veil in search of knowledge. Using this feature, you can cast {@spell speak with dead} without material components, and you understand what the target of this casting says. It can understand your questions, even if you don't share a language or it is not intelligent enough to speak.",
+				"At 6th level, you gain the ability to reach beyond death's veil in search of knowledge. Using this feature, you can cast {@spell 死者交談術} without material components, and you understand what the target of this casting says. It can understand your questions, even if you don't share a language or it is not intelligent enough to speak.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."
 			]
 		},
@@ -4438,7 +4438,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your mastery of death allows you to tread the paths used by ghosts and other spirits. Using this feature, you can cast {@spell etherealness}. Once the spell ends, you can't cast it with this feature again until you finish a short or long rest."
+				"At 14th level, your mastery of death allows you to tread the paths used by ghosts and other spirits. Using this feature, you can cast {@spell 跨入乙太界}. Once the spell ends, you can't cast it with this feature again until you finish a short or long rest."
 			]
 		},
 		{
@@ -4577,7 +4577,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, the nature spirits you commune with protect you when you are the most defenseless. If you are reduced to 0 hit points or are {@condition incapacitated} against your will, you can immediately gain the benefits of {@spell conjure animals} as if it were cast with a 9th-level spell slot. It summons four beasts of your choice that are challenge rating 2 or lower. The conjured beasts appear within 20 feet of you. If they receive no commands from you, they protect you from harm and attack your foes. The spell lasts for 1 hour, requiring no concentration, or until you dismiss it (no action required).",
+				"Starting at 14th level, the nature spirits you commune with protect you when you are the most defenseless. If you are reduced to 0 hit points or are {@condition incapacitated} against your will, you can immediately gain the benefits of {@spell 召喚動物} as if it were cast with a 9th-level spell slot. It summons four beasts of your choice that are challenge rating 2 or lower. The conjured beasts appear within 20 feet of you. If they receive no commands from you, they protect you from harm and attack your foes. The spell lasts for 1 hour, requiring no concentration, or until you dismiss it (no action required).",
 				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		},
@@ -4617,7 +4617,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"Your symbiotic link to fungus and your ability to tap into the cycle of life and death grants you access to certain spells. At 1st level, you learn the {@spell chill touch} cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Spores Spells table.",
+				"Your symbiotic link to fungus and your ability to tap into the cycle of life and death grants you access to certain spells. At 1st level, you learn the {@spell 寒顫之觸} cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Spores Spells table.",
 				"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
 				{
 					"type": "table",
@@ -4633,19 +4633,19 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell gentle repose}, {@spell ray of enfeeblement}"
+							"{@spell 遺體防腐}, {@spell 衰弱射線}"
 						],
 						[
 							"5th",
-							"{@spell animate dead}, {@spell gaseous form}"
+							"{@spell 活化死屍}, {@spell 氣化形體}"
 						],
 						[
 							"7th",
-							"{@spell blight}, {@spell confusion}"
+							"{@spell 枯萎術}, {@spell 困惑術}"
 						],
 						[
 							"9th",
-							"{@spell cloudkill}, {@spell contagion}"
+							"{@spell 死雲術}, {@spell 疫病術}"
 						]
 					]
 				}

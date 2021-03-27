@@ -1,5 +1,14 @@
 "use strict";
 
+const displayRewardType = function(item){
+	switch(item){
+		case "Blessing": return "祝福";
+		case "Boon": return "恩惠";
+		case "Charm": return "護咒";
+		default: return item;
+	};
+}
+
 class PageFilterRewards extends PageFilter {
 	constructor () {
 		super();
@@ -13,6 +22,7 @@ class PageFilterRewards extends PageFilter {
 				"Boon",
 				"Charm",
 			],
+			displayFn: displayRewardType
 		});
 	}
 

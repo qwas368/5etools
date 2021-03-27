@@ -204,14 +204,14 @@
 						"The nullifier's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell counterspell} (see \"Reactions\" below)",
-						"{@spell detect magic}",
-						"{@spell dispel magic}",
-						"{@spell see invisibility}"
+						"{@spell 反制法術} (see \"Reactions\" below)",
+						"{@spell 偵測魔法}",
+						"{@spell 解除魔法}",
+						"{@spell 識破隱形}"
 					],
 					"daily": {
 						"1": [
-							"{@spell antimagic field}"
+							"{@spell 反魔法結界}"
 						]
 					},
 					"ability": "cha"
@@ -579,11 +579,11 @@
 				{
 					"name": "Innate Spellcasting (1/Day)",
 					"headerEntries": [
-						"The blood hunter can innately cast {@spell hex}. Its innate spellcasting ability is Intelligence."
+						"The blood hunter can innately cast {@spell 脆弱詛咒}. Its innate spellcasting ability is Intelligence."
 					],
 					"ability": "int",
 					"will": [
-						"{@spell hex}"
+						"{@spell 脆弱詛咒}"
 					],
 					"hidden": [
 						"will"
@@ -690,7 +690,7 @@
 				},
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -723,17 +723,17 @@
 						"Bol'bara's innate spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell eldritch blast}",
-						"{@spell false life}",
-						"{@spell mage armor}",
-						"{@spell mage hand}"
+						"{@spell 魔能爆}",
+						"{@spell 摹造生命}",
+						"{@spell 法師護甲}",
+						"{@spell 法師之手}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell charm person}",
-							"{@spell hex}",
-							"{@spell hold person}",
-							"{@spell invisibility}"
+							"{@spell 魅惑人類}",
+							"{@spell 脆弱詛咒}",
+							"{@spell 人類定身術}",
+							"{@spell 隱形術}"
 						]
 					},
 					"ability": "cha"
@@ -784,7 +784,7 @@
 				{
 					"name": "Zone of Calamity (Costs 2 Actions)",
 					"entries": [
-						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains concentration, up to 1 minute (as if concentrating on a spell)."
+						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell 困惑術} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains concentration, up to 1 minute (as if concentrating on a spell)."
 					]
 				}
 			],
@@ -2480,33 +2480,33 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell minor illusion}",
-								"{@spell shocking grasp}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 次級幻象}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell fog cloud}",
-								"{@spell thunderwave}"
+								"{@spell 治療傷勢}",
+								"{@spell 雲霧術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell hold person}",
-								"{@spell mirror image}",
-								"{@spell misty step}"
+								"{@spell 人類定身術}",
+								"{@spell 鏡影術}",
+								"{@spell 迷蹤步}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell lightning bolt} (see \"Actions\" below)",
-								"{@spell sleet storm}"
+								"{@spell 解除魔法}",
+								"{@spell 閃電束} (see \"Actions\" below)",
+								"{@spell 雪雨暴}"
 							]
 						}
 					},
@@ -2661,12 +2661,12 @@
 						"Mossback Steward's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components."
 					],
 					"will": [
-						"{@spell friends}"
+						"{@spell 交友術}"
 					],
 					"rest": {
 						"1": [
-							"{@spell suggestion}",
-							"{@spell divination}"
+							"{@spell 暗示術}",
+							"{@spell 預言術}"
 						]
 					}
 				}
@@ -2910,31 +2910,31 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell cure wounds}",
-								"{@spell guiding bolt}"
+								"{@spell 命令術}",
+								"{@spell 治療傷勢}",
+								"{@spell 光導箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell spiritual weapon}"
+								"{@spell 次級復原術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell dispel magic}",
-								"{@spell revivify}"
+								"{@spell 解除魔法}",
+								"{@spell 回生術}"
 							]
 						}
 					},
@@ -3027,17 +3027,17 @@
 						"The warlock's innate spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell eldritch blast} (see \"Actions\" below)",
-						"{@spell minor illusion}"
+						"{@spell 魔能爆} (see \"Actions\" below)",
+						"{@spell 次級幻象}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell armor of Agathys}",
-							"{@spell arms of Hadar}",
-							"{@spell counterspell}",
-							"{@spell crown of madness}",
-							"{@spell invisibility}",
-							"{@spell hunger of Hadar}"
+							"{@spell 艾嘉西斯之鎧}",
+							"{@spell 哈達之臂}",
+							"{@spell 反制法術}",
+							"{@spell 瘋狂冠冕}",
+							"{@spell 隱形術}",
+							"{@spell 哈達之欲}"
 						]
 					},
 					"ability": "cha"
@@ -3217,13 +3217,13 @@
 						"The sea fury's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell witch bolt}"
+						"{@spell 巫術箭}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell bestow curse}",
-							"{@spell fear}",
-							"{@spell thunderwave}"
+							"{@spell 降咒}",
+							"{@spell 恐懼術}",
+							"{@spell 雷鳴波}"
 						]
 					},
 					"ability": "cha"
@@ -3574,30 +3574,30 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell produce flame}",
-								"{@spell resistance}",
-								"{@spell thorn whip}"
+								"{@spell 燃火術}",
+								"{@spell 提升抗力}",
+								"{@spell 荊棘之鞭}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell entangle}",
-								"{@spell fog cloud}"
+								"{@spell 糾纏術}",
+								"{@spell 雲霧術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell spike growth}"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 荊棘叢生}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell conjure animals} (reptiles only)"
+								"{@spell 活化死屍}",
+								"{@spell 召喚動物} (reptiles only)"
 							]
 						}
 					},

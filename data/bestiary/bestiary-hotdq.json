@@ -119,7 +119,7 @@
 				13,
 				{
 					"ac": 16,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -164,35 +164,35 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell fog cloud}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 雲霧術}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell invisibility}",
-								"{@spell misty step}",
-								"{@spell scorching ray}"
+								"{@spell 隱形術}",
+								"{@spell 迷蹤步}",
+								"{@spell 灼熱射線}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
+								"{@spell 反制法術}",
 								"{@spell 解除魔法}",
-								"{@spell fireball}"
+								"{@spell 火球術}"
 							]
 						}
 					},
@@ -203,7 +203,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Azbara has two {@item spell scroll (1st level)||scrolls} of {@spell mage armor}."
+						"Azbara has two {@item spell scroll (1st level)||scrolls} of {@spell 法師護甲}."
 					]
 				},
 				{
@@ -311,7 +311,7 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell fog cloud}",
+							"{@spell 雲霧術}",
 							"{@spell 浮空術}"
 						]
 					}
@@ -324,33 +324,33 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
+								"{@spell 光亮術}",
+								"{@spell 法師之手}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell magic missile}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 鑑定術}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell gust of wind}",
-								"{@spell misty step}",
-								"{@spell shatter}"
+								"{@spell 造風術}",
+								"{@spell 迷蹤步}",
+								"{@spell 粉碎音波}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell fly}",
-								"{@spell lightning bolt}"
+								"{@spell 飛行術}",
+								"{@spell 閃電束}"
 							]
 						}
 					},
@@ -816,25 +816,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell longstrider}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
+								"{@spell 大步奔行}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell magic weapon}",
-								"{@spell misty step}"
+								"{@spell 魔化武器}",
+								"{@spell 迷蹤步}"
 							]
 						}
 					},
@@ -975,33 +975,33 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell cure wounds}",
-								"{@spell healing word}",
-								"{@spell sanctuary}"
+								"{@spell 命令術}",
+								"{@spell 治療傷勢}",
+								"{@spell 治癒真言}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell calm emotions}",
-								"{@spell hold person}",
-								"{@spell spiritual weapon}"
+								"{@spell 安定心神}",
+								"{@spell 人類定身術}",
+								"{@spell 靈體武器}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell mass healing word}",
-								"{@spell spirit guardians}"
+								"{@spell 群體治癒真言}",
+								"{@spell 靈體守衛}"
 							]
 						}
 					},
@@ -1214,19 +1214,19 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell charm person}",
-								"{@spell color spray}",
-								"{@spell disguise self}",
-								"{@spell longstrider}"
+								"{@spell 魅惑人類}",
+								"{@spell 七彩噴射}",
+								"{@spell 易容術}",
+								"{@spell 大步奔行}"
 							]
 						}
 					},
@@ -1560,32 +1560,32 @@
 						"0": {
 							"spells": [
 								"{@spell 德魯伊伎倆}",
-								"{@spell guidance}",
+								"{@spell 指導術}",
 								"{@spell 毒氣噴灑}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell entangle}",
-								"{@spell healing word}",
-								"{@spell thunderwave}"
+								"{@spell 治療傷勢}",
+								"{@spell 糾纏術}",
+								"{@spell 治癒真言}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell barkskin}",
-								"{@spell beast sense}",
-								"{@spell spike growth}"
+								"{@spell 樹膚術}",
+								"{@spell 野獸知覺}",
+								"{@spell 荊棘叢生}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell plant growth}",
-								"{@spell water walk}"
+								"{@spell 植物滋長}",
+								"{@spell 水面行走}"
 							]
 						}
 					},
@@ -1711,7 +1711,7 @@
 				13,
 				{
 					"ac": 16,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -1756,55 +1756,55 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell minor illusion}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 次級幻象}",
+								"{@spell 魔法技倆}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell chromatic orb}",
-								"{@spell color spray}",
-								"{@spell mage armor}",
-								"{@spell magic missile}"
+								"{@spell 幻色法球}",
+								"{@spell 七彩噴射}",
+								"{@spell 法師護甲}",
+								"{@spell 魔法飛彈}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell detect thoughts}",
+								"{@spell 偵測思想}",
 								"{@spell 鏡影術}",
-								"{@spell phantasmal force}"
+								"{@spell 魅影之力}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell major image}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 強效幻影}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell greater invisibility}"
+								"{@spell 困惑術}",
+								"{@spell 高等隱形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell mislead}",
-								"{@spell seeming}"
+								"{@spell 假象術}",
+								"{@spell 偽裝術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell globe of invulnerability}"
+								"{@spell 法術無效結界}"
 							]
 						}
 					},
@@ -1815,7 +1815,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Rath has a {@item staff of fire}, and scrolls of {@spell dimension door}, {@spell feather fall}, and {@spell fireball}."
+						"Rath has a {@item staff of fire}, and scrolls of {@spell 次元門}, {@spell 羽落術}, and {@spell 火球術}."
 					]
 				}
 			],
@@ -2119,47 +2119,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell resistance}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 提升抗力}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell cure wounds}",
-								"{@spell healing word}",
-								"{@spell inflict wounds}"
+								"{@spell 命令術}",
+								"{@spell 治療傷勢}",
+								"{@spell 治癒真言}",
+								"{@spell 造成傷勢}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blindness/deafness}",
-								"{@spell lesser restoration}",
-								"{@spell spiritual weapon} (spear)"
+								"{@spell 目盲/耳聾術}",
+								"{@spell 次級復原術}",
+								"{@spell 靈體武器} (spear)"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
 								"{@spell 解除魔法}",
-								"{@spell mass healing word}",
-								"{@spell sending}"
+								"{@spell 群體治癒真言}",
+								"{@spell 短訊術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell death ward}",
-								"{@spell freedom of movement}"
+								"{@spell 防死護咒}",
+								"{@spell 行動自如術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell insect plague}"
+								"{@spell 疫病蟲群}"
 							]
 						}
 					},

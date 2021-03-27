@@ -541,7 +541,7 @@
 									"name": "Treasure",
 									"id": "02f",
 									"entries": [
-										"Inside the chest is a glittery mound of treasure: 210 gp, 410 sp, 3 ep, two {@item Potion of Healing||potions of healing}, and a fake ruby that smells like fresh-baked cherry pie. The ruby has a permanent {@spell prestidigitation} spell cast on it that creates the bakery scent. The jewel doesn't do anything else, but feel free to make it seem more important than it really is. That's the true path of Dungeon Mastery."
+										"Inside the chest is a glittery mound of treasure: 210 gp, 410 sp, 3 ep, two {@item Potion of Healing||potions of healing}, and a fake ruby that smells like fresh-baked cherry pie. The ruby has a permanent {@spell 魔法技倆} spell cast on it that creates the bakery scent. The jewel doesn't do anything else, but feel free to make it seem more important than it really is. That's the true path of Dungeon Mastery."
 									]
 								}
 							]
@@ -791,7 +791,7 @@
 											"rows": [
 												[
 													"1",
-													"{@b Sleep}. The creature falls {@condition unconscious} for {@dice 1d4} rounds, as if under the effect of a {@spell sleep} spell."
+													"{@b Sleep}. The creature falls {@condition unconscious} for {@dice 1d4} rounds, as if under the effect of a {@spell 睡眠術} spell."
 												],
 												[
 													"2",
@@ -1170,7 +1170,7 @@
 									"name": "Treasure",
 									"id": "066",
 									"entries": [
-										"After the destruction of the tiny adventuring party, one of the miniature treasure chests pops open. Inside is an unbelievably tiny {@item wand of magic missiles}. It works normally, but a character has a 50 percent chance of losing it each time it is used or put away. A {@spell detect magic} spell can help find it again."
+										"After the destruction of the tiny adventuring party, one of the miniature treasure chests pops open. Inside is an unbelievably tiny {@item wand of magic missiles}. It works normally, but a character has a 50 percent chance of losing it each time it is used or put away. A {@spell 偵測魔法} spell can help find it again."
 									]
 								}
 							]
@@ -1598,9 +1598,9 @@
 										{
 											"type": "list",
 											"items": [
-												"The flabulator (one of those incomprehensibly named parts) must be connected to the chronomiton (ditto). This requires the flabulator to be the target of a spell that causes a creature to regain hit points, such as {@spell cure wounds}. Drenching the flabulator in a {@item potion of healing} also works.",
-												"The gleep-freeble mechanism must be calibrated by targeting it with a fire-based spell, such as the {@spell fire bolt} cantrip.",
-												"The drockle-spreem tube needs to be carefully primed by being targeted by any ranged spell attack or the {@spell magic missile} spell."
+												"The flabulator (one of those incomprehensibly named parts) must be connected to the chronomiton (ditto). This requires the flabulator to be the target of a spell that causes a creature to regain hit points, such as {@spell 治療傷勢}. Drenching the flabulator in a {@item potion of healing} also works.",
+												"The gleep-freeble mechanism must be calibrated by targeting it with a fire-based spell, such as the {@spell 火焰箭} cantrip.",
+												"The drockle-spreem tube needs to be carefully primed by being targeted by any ranged spell attack or the {@spell 魔法飛彈} spell."
 											]
 										},
 										"Once these tasks are completed, the churd cannon is fully operational and has one charge."
@@ -1979,7 +1979,7 @@
 											"height": 800
 										},
 										"The flameskull wants out of this room. It can't open the door, but a character can open it with a successful DC 17 Strength ({@skill Athletics}) check. However, as soon as anyone enters the room, the heavy door slams shut behind them. Yeah! More slamming doors! It's still unlocked, but it's also still really heavy.",
-										"Once the door is open, the flameskull immediately casts {@spell mage hand}, scoops up Andy the skull, and peaces out. As the skulls pass by the party, a glass vial drops out of Andy's empty eye socket. Anyone can try to catch it with a successful DC 15 Dexterity ({@skill Acrobatics}) check.",
+										"Once the door is open, the flameskull immediately casts {@spell 法師之手}, scoops up Andy the skull, and peaces out. As the skulls pass by the party, a glass vial drops out of Andy's empty eye socket. Anyone can try to catch it with a successful DC 15 Dexterity ({@skill Acrobatics}) check.",
 										"If nobody catches it, it smashes on the ground, and there goes your free potion (see \"Treasure\" below). If the characters leave the flameskull alone, it proceeds to the nearest room with goblins (probably {@area area 20|083|x}) and starts murdering everyone it can see. It's a flameskull. Evil is real in this world, and this fella's super evil."
 									]
 								},
@@ -2159,7 +2159,7 @@
 										"This room has three levers set into the far wall. Something reeeeal good definitely happens if you mess with these levers. Unless you mess with them in the wrong way. I can't in good conscience recommend that, but I'm not here to pass judgment on your choices."
 									]
 								},
-								"The levers are made of fantasy metal. If some dweeb casts {@spell detect magic} on them, the levers radiate an aura of abjuration and conjuration.",
+								"The levers are made of fantasy metal. If some dweeb casts {@spell 偵測魔法} on them, the levers radiate an aura of abjuration and conjuration.",
 								{
 									"type": "entries",
 									"name": "Yank on These Levers",
@@ -2706,7 +2706,7 @@
 												],
 												[
 													"2",
-													"A tiara carved out of one giant sapphire, worth 900 gp. The wearer can cast the {@spell fireball} spell (save DC 12) from the tiara. Once used, this feature can't be used again until the next dawn."
+													"A tiara carved out of one giant sapphire, worth 900 gp. The wearer can cast the {@spell 火球術} spell (save DC 12) from the tiara. Once used, this feature can't be used again until the next dawn."
 												],
 												[
 													"3",
@@ -3043,7 +3043,7 @@
 									"name": "Dungeons IS Dragons",
 									"id": "103",
 									"entries": [
-										"Once Rick is conscious, the dragon focuses its attacks on him. Rick has AC 17 and 138 hit points. He automatically takes half damage from the dragon's attacks even without making saving throws. On each of his turns, Rick casts {@spell fireball} or {@spell lightning bolt}. He'll be doing the heavy lifting for a few rounds, is what I'm saying.",
+										"Once Rick is conscious, the dragon focuses its attacks on him. Rick has AC 17 and 138 hit points. He automatically takes half damage from the dragon's attacks even without making saving throws. On each of his turns, Rick casts {@spell 火球術} or {@spell 閃電束}. He'll be doing the heavy lifting for a few rounds, is what I'm saying.",
 										"That said, when the dragon is close to getting finished off (like, maybe it's got 30 hit points left?), have its next attack arbitrarily and dramatically send Rick to the ground. Oh no! Drama! It's all up to the characters to finish this fight!",
 										"After the dragon is defeated, let the characters give Rick some healing or slap him back to consciousness. Then read this final description:",
 										{
@@ -3114,7 +3114,7 @@
 					"name": "Using a Magic Item",
 					"id": "109",
 					"entries": [
-						"A magic item's description explains how the item works. Handling a magic item is enough to give a character a sense that something is extraordinary about the item. Casting the {@spell identify} spell on the item then reveals its properties. Alternatively, a character can concentrate on the item during a short rest, while being in physical contact with the item. At the end of the rest, the character learns the item's properties. Potions are an exception; a taste is enough to tell the taster what the potion does.",
+						"A magic item's description explains how the item works. Handling a magic item is enough to give a character a sense that something is extraordinary about the item. Casting the {@spell 鑑定術} spell on the item then reveals its properties. Alternatively, a character can concentrate on the item during a short rest, while being in physical contact with the item. At the end of the rest, the character learns the item's properties. Potions are an exception; a taste is enough to tell the taster what the potion does.",
 						"Certain magic items require a user to {@b attune} to them before their magical properties can be used. Attuning to a magic item requires that you spend a short rest concentrating on it (this can't be the same short rest used to learn an item's properties). Depending on the nature of the item, this concentration can take the form of prayers, weapon practice, or meditation. In any case, the concentration period must be uninterrupted. Once you are attuned to an item, you can use its magical properties.",
 						"An item can be attuned to only one creature at a time. A creature can be attuned to no more than three magic items at any given time, and you can attune yourself to only one item during a short rest.",
 						"Your attunement to an item ends if it has been more than 100 feet away from you for 24 hours or if you die. You can also voluntarily end your attunement to an item with another short rest."

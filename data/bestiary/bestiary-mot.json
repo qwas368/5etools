@@ -87,9 +87,9 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell confusion}",
-							"{@spell crown of madness}",
-							"{@spell suggestion}"
+							"{@spell 困惑術}",
+							"{@spell 瘋狂冠冕}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -312,14 +312,14 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell cure wounds}",
-							"{@spell charm person}",
-							"{@spell sleep}"
+							"{@spell 治療傷勢}",
+							"{@spell 魅惑人類}",
+							"{@spell 睡眠術}"
 						],
 						"1e": [
-							"{@spell calm emotions}",
-							"{@spell lesser restoration}",
-							"{@spell plant growth}"
+							"{@spell 安定心神}",
+							"{@spell 次級復原術}",
+							"{@spell 植物滋長}"
 						]
 					},
 					"ability": "cha"
@@ -911,14 +911,14 @@
 						"The archon's spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The archon can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell command}",
-						"{@spell guiding bolt}",
-						"{@spell spare the dying}"
+						"{@spell 命令術}",
+						"{@spell 光導箭}",
+						"{@spell 拯救瀕死}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell crusader's mantle}",
-							"{@spell spirit guardians}"
+							"{@spell 十字軍斗篷}",
+							"{@spell 靈體守衛}"
 						]
 					},
 					"ability": "wis"
@@ -1076,13 +1076,13 @@
 						"The ashen rider's spellcasting ability is Wisdom (spell save {@dc 18}). The rider can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell command}",
-						"{@spell compelled duel}"
+						"{@spell 命令術}",
+						"{@spell 強迫決鬥}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell banishment}",
-							"{@spell blade barrier}"
+							"{@spell 放逐術}",
+							"{@spell 劍刃障壁}"
 						]
 					},
 					"ability": "wis"
@@ -2745,11 +2745,11 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Hythonia's spellcasting ability is Charisma (spell save {@dc 18}). She can innately cast {@spell animate objects} once per day requiring no material components."
+						"Hythonia's spellcasting ability is Charisma (spell save {@dc 18}). She can innately cast {@spell 活化物體} once per day requiring no material components."
 					],
 					"daily": {
 						"1": [
-							"{@spell animate objects}"
+							"{@spell 活化物體}"
 						]
 					},
 					"ability": "cha"
@@ -3045,8 +3045,8 @@
 						"The lampad's spellcasting ability is Charisma ({@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell chill touch} (see \"Actions\" below)",
-						"{@spell gentle repose}"
+						"{@spell 寒顫之觸} (see \"Actions\" below)",
+						"{@spell 遺體防腐}"
 					],
 					"ability": "cha"
 				}
@@ -3168,8 +3168,8 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell banishment}",
-							"{@spell detect evil and good}"
+							"{@spell 放逐術}",
+							"{@spell 偵測善惡}"
 						]
 					},
 					"ability": "wis"
@@ -3330,25 +3330,25 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mage hand}",
-								"{@spell minor illusion}",
-								"{@spell ray of frost} (see \"Actions\" below)"
+								"{@spell 法師之手}",
+								"{@spell 次級幻象}",
+								"{@spell 冷凍射線} (see \"Actions\" below)"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell color spray}",
-								"{@spell expeditious retreat}",
-								"{@spell sleep}"
+								"{@spell 七彩噴射}",
+								"{@spell 腳底抹油}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell blur}",
-								"{@spell cloud of daggers}",
-								"{@spell invisibility}"
+								"{@spell 朦朧術}",
+								"{@spell 匕首之雲}",
+								"{@spell 隱形術}"
 							]
 						}
 					},
@@ -3472,15 +3472,15 @@
 						"The naiad's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell minor illusion}"
+						"{@spell 次級幻象}"
 					],
 					"daily": {
 						"3": [
-							"{@spell phantasmal force}"
+							"{@spell 魅影之力}"
 						],
 						"1e": [
-							"{@spell fly}",
-							"{@spell hypnotic pattern}"
+							"{@spell 飛行術}",
+							"{@spell 催眠圖紋}"
 						]
 					},
 					"ability": "cha"
@@ -3615,10 +3615,10 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell confusion}",
-							"{@spell dispel magic}",
-							"{@spell hold person}",
-							"{@spell suggestion}"
+							"{@spell 困惑術}",
+							"{@spell 解除魔法}",
+							"{@spell 人類定身術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -3827,20 +3827,20 @@
 						"The oracle's spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell guidance}",
-						"{@spell light}",
-						"{@spell thaumaturgy}"
+						"{@spell 指導術}",
+						"{@spell 光亮術}",
+						"{@spell 奇術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell bless}",
-							"{@spell guiding bolt}",
-							"{@spell healing word}",
-							"{@spell hold person}"
+							"{@spell 祝福術}",
+							"{@spell 光導箭}",
+							"{@spell 治癒真言}",
+							"{@spell 人類定身術}"
 						],
 						"1e": [
-							"{@spell augury}",
-							"{@spell scrying}"
+							"{@spell 卜筮}",
+							"{@spell 探知}"
 						]
 					},
 					"ability": "wis"
@@ -3946,15 +3946,15 @@
 						"The oread's spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell fire bolt} (see \"Actions\" below)"
+						"{@spell 火焰箭} (see \"Actions\" below)"
 					],
 					"daily": {
 						"3": [
-							"{@spell burning hands}"
+							"{@spell 燃燒之手}"
 						],
 						"1e": [
-							"{@spell hellish rebuke} (see \"Reactions\" below)",
-							"{@spell scorching ray}"
+							"{@spell 煉獄叱喝} (see \"Reactions\" below)",
+							"{@spell 灼熱射線}"
 						]
 					},
 					"ability": "cha"
@@ -5179,16 +5179,16 @@
 						"The triton's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell ray of frost} (see \"Actions\" below)"
+						"{@spell 冷凍射線} (see \"Actions\" below)"
 					],
 					"daily": {
 						"2": [
-							"{@spell cone of cold}"
+							"{@spell 寒冰錐}"
 						],
 						"1e": [
-							"{@spell fog cloud}",
-							"{@spell gust of wind}",
-							"{@spell wind wall}"
+							"{@spell 雲霧術}",
+							"{@spell 造風術}",
+							"{@spell 風牆術}"
 						]
 					},
 					"ability": "cha"
@@ -5316,8 +5316,8 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell fog cloud}",
-							"{@spell gust of wind}"
+							"{@spell 雲霧術}",
+							"{@spell 造風術}"
 						]
 					},
 					"ability": "wis"

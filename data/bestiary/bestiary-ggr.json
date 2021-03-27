@@ -163,9 +163,9 @@
 						"The archon's innate spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The archon can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell calm emotions}",
-						"{@spell command}",
-						"{@spell compelled duel}"
+						"{@spell 安定心神}",
+						"{@spell 命令術}",
+						"{@spell 強迫決鬥}"
 					],
 					"ability": "wis"
 				}
@@ -725,72 +725,72 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell light}",
-								"{@spell mending}",
-								"{@spell poison spray}",
-								"{@spell shocking grasp}"
+								"{@spell 酸液濺爆}",
+								"{@spell 光亮術}",
+								"{@spell 修復術}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell grease}",
-								"{@spell shield}"
+								"{@spell 偵測魔法}",
+								"{@spell 油膩術}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell alter self}",
-								"{@spell darkvision}",
-								"{@spell enlarge/reduce}",
-								"{@spell hold person}"
+								"{@spell 變造自身}",
+								"{@spell 黑暗視覺}",
+								"{@spell 變巨/縮小術}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell haste}",
-								"{@spell protection from energy}"
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 加速術}",
+								"{@spell 防護能量}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell conjure minor elementals}",
-								"{@spell polymorph}"
+								"{@spell 困惑術}",
+								"{@spell 召喚次級元素生物}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cone of cold}",
-								"{@spell creation}",
-								"{@spell hold monster}"
+								"{@spell 寒冰錐}",
+								"{@spell 造物術}",
+								"{@spell 怪物定身術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell move earth}",
-								"{@spell wall of ice}"
+								"{@spell 地動術}",
+								"{@spell 冰牆術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell prismatic spray}"
+								"{@spell 虹光噴射}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell control weather}"
+								"{@spell 操控天氣}"
 							]
 						}
 					},
@@ -1099,7 +1099,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -1144,23 +1144,23 @@
 						"The witch's innate spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The witch can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell alter self}",
-						"{@spell detect magic}",
-						"{@spell eldritch blast} (at 11th level)",
-						"{@spell false life}",
-						"{@spell levitate} (self only)",
-						"{@spell mage armor} (self only)"
+						"{@spell 變造自身}",
+						"{@spell 偵測魔法}",
+						"{@spell 魔能爆} (at 11th level)",
+						"{@spell 摹造生命}",
+						"{@spell 浮空術} (self only)",
+						"{@spell 法師護甲} (self only)"
 					],
 					"daily": {
 						"1e": [
-							"{@spell circle of death}",
-							"{@spell enthrall}",
-							"{@spell suggestion}"
+							"{@spell 死亡之環}",
+							"{@spell 注目術}",
+							"{@spell 暗示術}"
 						],
 						"3e": [
-							"{@spell hellish rebuke}",
-							"{@spell hex}",
-							"{@spell scorching ray} (at 3rd level)"
+							"{@spell 煉獄叱喝}",
+							"{@spell 脆弱詛咒}",
+							"{@spell 灼熱射線} (at 3rd level)"
 						]
 					},
 					"ability": "cha"
@@ -1553,11 +1553,11 @@
 						"The cackler's innate spellcasting ability is Charisma (spell save {@dc 11}, {@hit 3} to hit with spell attacks). The cackler can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell fire bolt}"
+						"{@spell 火焰箭}"
 					],
 					"daily": {
 						"1": [
-							"{@spell Tasha's hideous laughter}"
+							"{@spell 塔莎狂笑術}"
 						]
 					},
 					"ability": "cha"
@@ -1914,19 +1914,19 @@
 						"The dryad's innate spellcasting ability is Charisma (spell save {@dc 17}). The dryad can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell druidcraft}"
+						"{@spell 德魯伊伎倆}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell dispel magic}",
-							"{@spell entangle}",
-							"{@spell plant growth}",
-							"{@spell spike growth}"
+							"{@spell 解除魔法}",
+							"{@spell 糾纏術}",
+							"{@spell 植物滋長}",
+							"{@spell 荊棘叢生}"
 						],
 						"1e": [
-							"{@spell moonbeam}",
-							"{@spell grasping vine}",
-							"{@spell wall of thorns}"
+							"{@spell 月華之光}",
+							"{@spell 抓攫藤蔓}",
+							"{@spell 棘牆術}"
 						]
 					},
 					"ability": "cha"
@@ -2073,12 +2073,12 @@
 					],
 					"daily": {
 						"2": [
-							"{@spell fireball}"
+							"{@spell 火球術}"
 						],
 						"3e": [
-							"{@spell scorching ray}",
-							"{@spell shield}",
-							"{@spell thunderwave}"
+							"{@spell 灼熱射線}",
+							"{@spell 護盾術}",
+							"{@spell 雷鳴波}"
 						]
 					},
 					"ability": "int"
@@ -2141,7 +2141,7 @@
 				13,
 				{
 					"ac": 16,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -2179,14 +2179,14 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell enlarge/reduce}",
-							"{@spell mage armor} (self only)",
-							"{@spell scorching ray}"
+							"{@spell 變巨/縮小術}",
+							"{@spell 法師護甲} (self only)",
+							"{@spell 灼熱射線}"
 						],
 						"1e": [
-							"{@spell counterspell}",
-							"{@spell dispel magic}",
-							"{@spell protection from energy}"
+							"{@spell 反制法術}",
+							"{@spell 解除魔法}",
+							"{@spell 防護能量}"
 						]
 					},
 					"ability": "int"
@@ -2302,17 +2302,17 @@
 						"The angel's innate spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). The angel can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell command} (as a 2nd-level spell)",
-						"{@spell detect evil and good}"
+						"{@spell 命令術} (as a 2nd-level spell)",
+						"{@spell 偵測善惡}"
 					],
 					"daily": {
 						"1": [
-							"{@spell raise dead}"
+							"{@spell 喚醒死者}"
 						],
 						"3e": [
-							"{@spell charm person} (as a 5th-level spell)",
-							"{@spell darkness}",
-							"{@spell suggestion}"
+							"{@spell 魅惑人類} (as a 5th-level spell)",
+							"{@spell 黑暗術}",
+							"{@spell 暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -2475,64 +2475,64 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell chill touch}",
-								"{@spell mage hand}",
-								"{@spell poison spray}",
-								"{@spell prestidigitation}"
+								"{@spell 酸液濺爆}",
+								"{@spell 寒顫之觸}",
+								"{@spell 法師之手}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell chromatic orb}",
-								"{@spell magic missile}",
-								"{@spell ray of sickness}"
+								"{@spell 幻色法球}",
+								"{@spell 魔法飛彈}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell Melf's acid arrow}",
-								"{@spell ray of enfeeblement}",
-								"{@spell spider climb}",
-								"{@spell web}"
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 衰弱射線}",
+								"{@spell 蛛行術}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell bestow curse}",
-								"{@spell fear}",
-								"{@spell vampiric touch}"
+								"{@spell 活化死屍}",
+								"{@spell 降咒}",
+								"{@spell 恐懼術}",
+								"{@spell 吸血鬼之觸}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell Evard's black tentacles}"
+								"{@spell 枯萎術}",
+								"{@spell 艾伐黑觸手}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell insect plague}"
+								"{@spell 死雲術}",
+								"{@spell 疫病蟲群}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell circle of death}",
-								"{@spell create undead}"
+								"{@spell 死亡之環}",
+								"{@spell 創造不死生物}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}"
+								"{@spell 死亡一指}"
 							]
 						}
 					},
@@ -2686,57 +2686,57 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell druidcraft}",
-								"{@spell produce flame}",
-								"{@spell resistance}",
-								"{@spell thorn whip}"
+								"{@spell 德魯伊伎倆}",
+								"{@spell 燃火術}",
+								"{@spell 提升抗力}",
+								"{@spell 荊棘之鞭}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell faerie fire}",
-								"{@spell thunderwave}"
+								"{@spell 治療傷勢}",
+								"{@spell 妖火術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell beast sense}",
-								"{@spell flame blade}",
-								"{@spell pass without trace}"
+								"{@spell 野獸知覺}",
+								"{@spell 火焰刀}",
+								"{@spell 行蹤無跡}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure animals}",
-								"{@spell dispel magic}",
-								"{@spell plant growth}"
+								"{@spell 召喚動物}",
+								"{@spell 解除魔法}",
+								"{@spell 植物滋長}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell dominate beast}",
-								"{@spell freedom of movement}",
-								"{@spell wall of fire}"
+								"{@spell 支配野獸}",
+								"{@spell 行動自如術}",
+								"{@spell 火牆術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell commune with nature}",
-								"{@spell conjure elemental}",
-								"{@spell scrying}"
+								"{@spell 問道自然}",
+								"{@spell 召喚元素生物}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell transport via plants}",
-								"{@spell wall of thorns}"
+								"{@spell 植物遁走術}",
+								"{@spell 棘牆術}"
 							]
 						}
 					},
@@ -2969,47 +2969,47 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell sacred flame}",
-								"{@spell spare the dying}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 聖焰}",
+								"{@spell 拯救瀕死}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell guiding bolt}",
-								"{@spell healing word}",
-								"{@spell heroism}",
-								"{@spell shield of faith}"
+								"{@spell 光導箭}",
+								"{@spell 治癒真言}",
+								"{@spell 英雄氣概}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell scorching ray}"
+								"{@spell 次級復原術}",
+								"{@spell 灼熱射線}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell blinding smite}",
-								"{@spell crusader's mantle}",
-								"{@spell revivify}"
+								"{@spell 致盲斬}",
+								"{@spell 十字軍斗篷}",
+								"{@spell 回生術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell wall of fire}"
+								"{@spell 放逐術}",
+								"{@spell 火牆術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell flame strike}"
+								"{@spell 焰擊術}"
 							]
 						}
 					},
@@ -3133,12 +3133,12 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell compelled duel}",
-							"{@spell guiding bolt} (as a 5th-level spell)"
+							"{@spell 強迫決鬥}",
+							"{@spell 光導箭} (as a 5th-level spell)"
 						],
 						"1e": [
-							"{@spell daylight}",
-							"{@spell fireball} (as a 6th-level spell)"
+							"{@spell 晝明術}",
+							"{@spell 火球術} (as a 6th-level spell)"
 						]
 					},
 					"ability": "cha"
@@ -3225,7 +3225,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -3263,15 +3263,15 @@
 					],
 					"daily": {
 						"3e": [
-							"{@spell mage armor} (self only)",
-							"{@spell scorching ray}"
+							"{@spell 法師護甲} (self only)",
+							"{@spell 灼熱射線}"
 						],
 						"1e": [
-							"{@spell banishment}",
-							"{@spell cone of cold}",
-							"{@spell dimension door}",
-							"{@spell fireball}",
-							"{@spell ice storm}"
+							"{@spell 放逐術}",
+							"{@spell 寒冰錐}",
+							"{@spell 次元門}",
+							"{@spell 火球術}",
+							"{@spell 冰風暴}"
 						]
 					},
 					"ability": "int"
@@ -3576,23 +3576,23 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mending}",
-								"{@spell resistance}",
-								"{@spell spare the dying}"
+								"{@spell 修復術}",
+								"{@spell 提升抗力}",
+								"{@spell 拯救瀕死}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell sanctuary}"
+								"{@spell 治療傷勢}",
+								"{@spell 聖域術}"
 							]
 						},
 						"2": {
 							"slots": 2,
 							"spells": [
-								"{@spell aid}",
-								"{@spell lesser restoration}"
+								"{@spell 援助術}",
+								"{@spell 次級復原術}"
 							]
 						}
 					},
@@ -3682,12 +3682,12 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell stoneskin}"
+							"{@spell 石膚術}"
 						],
 						"3e": [
-							"{@spell levitate}",
-							"{@spell lightning bolt}",
-							"{@spell thunderwave}"
+							"{@spell 浮空術}",
+							"{@spell 閃電束}",
+							"{@spell 雷鳴波}"
 						]
 					},
 					"ability": "int"
@@ -4034,40 +4034,40 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell poison spray}",
-								"{@spell shillelagh}",
-								"{@spell thorn whip}"
+								"{@spell 毒氣噴灑}",
+								"{@spell 橡棍術}",
+								"{@spell 荊棘之鞭}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell cure wounds}",
-								"{@spell entangle}",
-								"{@spell ray of sickness}"
+								"{@spell 治療傷勢}",
+								"{@spell 糾纏術}",
+								"{@spell 致病射線}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell pass without trace}",
-								"{@spell ray of enfeeblement}",
-								"{@spell spike growth}"
+								"{@spell 行蹤無跡}",
+								"{@spell 衰弱射線}",
+								"{@spell 荊棘叢生}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell dispel magic}",
-								"{@spell plant growth}"
+								"{@spell 活化死屍}",
+								"{@spell 解除魔法}",
+								"{@spell 植物滋長}"
 							]
 						},
 						"4": {
 							"slots": 2,
 							"spells": [
-								"{@spell blight}",
-								"{@spell giant insect}"
+								"{@spell 枯萎術}",
+								"{@spell 巨蟲術}"
 							]
 						}
 					},
@@ -4281,8 +4281,8 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell bless}",
-							"{@spell conjure animals}"
+							"{@spell 祝福術}",
+							"{@spell 召喚動物}"
 						]
 					},
 					"ability": "wis"
@@ -4961,11 +4961,11 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Isperia's innate spellcasting ability is Wisdom (spell save {@dc 23}). Isperia can innately cast {@spell imprisonment} twice per day, requiring no material components."
+						"Isperia's innate spellcasting ability is Wisdom (spell save {@dc 23}). Isperia can innately cast {@spell 禁錮術} twice per day, requiring no material components."
 					],
 					"daily": {
 						"2": [
-							"{@spell imprisonment}"
+							"{@spell 禁錮術}"
 						]
 					},
 					"hidden": [
@@ -4981,74 +4981,74 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance}",
-								"{@spell light}",
-								"{@spell resistance}",
-								"{@spell sacred flame}",
-								"{@spell thaumaturgy}"
+								"{@spell 指導術}",
+								"{@spell 光亮術}",
+								"{@spell 提升抗力}",
+								"{@spell 聖焰}",
+								"{@spell 奇術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell detect evil and good}",
-								"{@spell ensnaring strike}",
-								"{@spell sanctuary}",
-								"{@spell shield of faith}"
+								"{@spell 命令術}",
+								"{@spell 偵測善惡}",
+								"{@spell 誘捕打擊}",
+								"{@spell 聖域術}",
+								"{@spell 虔誠護盾}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell arcane lock}",
-								"{@spell augury}",
-								"{@spell calm emotions}",
-								"{@spell hold person}",
-								"{@spell silence}",
-								"{@spell zone of truth}"
+								"{@spell 祕法鎖}",
+								"{@spell 卜筮}",
+								"{@spell 安定心神}",
+								"{@spell 人類定身術}",
+								"{@spell 沉默術}",
+								"{@spell 誠實之域}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell bestow curse}",
-								"{@spell clairvoyance}",
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell tongues}"
+								"{@spell 降咒}",
+								"{@spell 銳眼術}",
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}",
+								"{@spell 巧舌術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell divination}",
-								"{@spell locate creature}"
+								"{@spell 預言術}",
+								"{@spell 生物定位術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell dispel evil and good}",
-								"{@spell scrying}"
+								"{@spell 反制善惡}",
+								"{@spell 探知}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell word of recall}"
+								"{@spell 回返真言}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell divine word}"
+								"{@spell 聖言術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell antimagic field}"
+								"{@spell 反魔法結界}"
 							]
 						}
 					},
@@ -5227,65 +5227,65 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell chill touch}",
-								"{@spell mage hand}",
-								"{@spell poison spray}",
-								"{@spell prestidigitation}"
+								"{@spell 酸液濺爆}",
+								"{@spell 寒顫之觸}",
+								"{@spell 法師之手}",
+								"{@spell 毒氣噴灑}",
+								"{@spell 魔法技倆}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell entangle}",
-								"{@spell ray of sickness}",
-								"{@spell sleep}"
+								"{@spell 糾纏術}",
+								"{@spell 致病射線}",
+								"{@spell 睡眠術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell Melf's acid arrow}",
-								"{@spell ray of enfeeblement}",
-								"{@spell spider climb}",
-								"{@spell web}"
+								"{@spell 馬友夫強酸箭}",
+								"{@spell 衰弱射線}",
+								"{@spell 蛛行術}",
+								"{@spell 蛛網術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell animate dead}",
-								"{@spell plant growth}",
-								"{@spell vampiric touch}"
+								"{@spell 活化死屍}",
+								"{@spell 植物滋長}",
+								"{@spell 吸血鬼之觸}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell blight}",
-								"{@spell giant insect}",
-								"{@spell grasping vine}"
+								"{@spell 枯萎術}",
+								"{@spell 巨蟲術}",
+								"{@spell 抓攫藤蔓}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell cloudkill}",
-								"{@spell insect plague}"
+								"{@spell 死雲術}",
+								"{@spell 疫病蟲群}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell circle of death}",
-								"{@spell create undead}"
+								"{@spell 死亡之環}",
+								"{@spell 創造不死生物}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell finger of death}",
-								"{@spell forcecage}"
+								"{@spell 死亡一指}",
+								"{@spell 力場監牢}"
 							]
 						}
 					},
@@ -5473,18 +5473,18 @@
 						"The kraul's innate spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The kraul can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell chill touch}",
-						"{@spell poison spray}"
+						"{@spell 寒顫之觸}",
+						"{@spell 毒氣噴灑}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell ray of enfeeblement}",
-							"{@spell ray of sickness}"
+							"{@spell 衰弱射線}",
+							"{@spell 致病射線}"
 						],
 						"1e": [
-							"{@spell animate dead}",
-							"{@spell blight}",
-							"{@spell vampiric touch}"
+							"{@spell 活化死屍}",
+							"{@spell 枯萎術}",
+							"{@spell 吸血鬼之觸}"
 						]
 					},
 					"ability": "wis"
@@ -5724,41 +5724,41 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell friends}",
-								"{@spell light}",
-								"{@spell message}"
+								"{@spell 火焰箭}",
+								"{@spell 交友術}",
+								"{@spell 光亮術}",
+								"{@spell 傳訊術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell alarm}",
-								"{@spell expeditious retreat}",
-								"{@spell shield}"
+								"{@spell 警報術}",
+								"{@spell 腳底抹油}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell arcane lock}",
-								"{@spell detect thoughts}",
-								"{@spell hold person}"
+								"{@spell 祕法鎖}",
+								"{@spell 偵測思想}",
+								"{@spell 人類定身術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell dispel magic}",
-								"{@spell slow}"
+								"{@spell 銳眼術}",
+								"{@spell 解除魔法}",
+								"{@spell 緩速術}"
 							]
 						},
 						"4": {
 							"slots": 2,
 							"spells": [
-								"{@spell locate creature}",
-								"{@spell stoneskin}"
+								"{@spell 生物定位術}",
+								"{@spell 石膚術}"
 							]
 						}
 					},
@@ -5866,20 +5866,20 @@
 						"Lazav's innate spellcasting ability is Intelligence (spell save {@dc 20}). He can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell detect thoughts}",
+						"{@spell 偵測思想}",
 						"{@spell encode thoughts|GGR} (see chapter 2)",
-						"{@spell freedom of movement}",
-						"{@spell vicious mockery} ({@dice 4d4} psychic damage)"
+						"{@spell 行動自如術}",
+						"{@spell 惡毒嘲笑} ({@dice 4d4} psychic damage)"
 					],
 					"daily": {
 						"3e": [
-							"{@spell blur}",
-							"{@spell confusion}",
-							"{@spell mirror image}"
+							"{@spell 朦朧術}",
+							"{@spell 困惑術}",
+							"{@spell 鏡影術}"
 						],
 						"1e": [
-							"{@spell modify memory}",
-							"{@spell Rary's telepathic bond}"
+							"{@spell 修改記憶}",
+							"{@spell 拉瑞心靈聯結}"
 						]
 					},
 					"ability": "int"
@@ -6060,12 +6060,12 @@
 						"The master's innate spellcasting ability is Charisma (spell save {@dc 17}). The master can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell charm person} (as a 3rd-level spell)",
-						"{@spell crown of madness}"
+						"{@spell 魅惑人類} (as a 3rd-level spell)",
+						"{@spell 瘋狂冠冕}"
 					],
 					"daily": {
 						"1": [
-							"{@spell dominate person}"
+							"{@spell 支配人類}"
 						]
 					},
 					"ability": "cha"
@@ -6207,18 +6207,18 @@
 						"The vampire's innate spellcasting ability is Intelligence (spell save {@dc 14}). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell message}"
+						"{@spell 傳訊術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell charm person}",
-							"{@spell hold person}",
-							"{@spell mirror image}",
-							"{@spell sleep}"
+							"{@spell 魅惑人類}",
+							"{@spell 人類定身術}",
+							"{@spell 鏡影術}",
+							"{@spell 睡眠術}"
 						],
 						"1e": [
-							"{@spell gaseous form}",
-							"{@spell major image}"
+							"{@spell 氣化形體}",
+							"{@spell 強效幻影}"
 						]
 					},
 					"ability": "int"
@@ -6317,7 +6317,7 @@
 				12,
 				{
 					"ac": 15,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -6357,20 +6357,20 @@
 					],
 					"will": [
 						"{@spell encode thoughts|GGR} (see chapter 2)",
-						"{@spell friends}"
+						"{@spell 交友術}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell charm person}",
-							"{@spell detect thoughts}",
-							"{@spell mage armor}",
-							"{@spell sleep}",
-							"{@spell suggestion}"
+							"{@spell 魅惑人類}",
+							"{@spell 偵測思想}",
+							"{@spell 法師護甲}",
+							"{@spell 睡眠術}",
+							"{@spell 暗示術}"
 						],
 						"1e": [
-							"{@spell dominate person}",
-							"{@spell mass suggestion}",
-							"{@spell modify memory}"
+							"{@spell 支配人類}",
+							"{@spell 群體暗示術}",
+							"{@spell 修改記憶}"
 						]
 					},
 					"ability": "int"
@@ -6615,87 +6615,87 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell fire bolt}",
-								"{@spell light}",
-								"{@spell prestidigitation}",
-								"{@spell ray of frost}",
-								"{@spell shocking grasp}"
+								"{@spell 火焰箭}",
+								"{@spell 光亮術}",
+								"{@spell 魔法技倆}",
+								"{@spell 冷凍射線}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell detect magic}",
-								"{@spell magic missile}",
-								"{@spell shield}",
-								"{@spell thunderwave}",
-								"{@spell unseen servant}"
+								"{@spell 偵測魔法}",
+								"{@spell 魔法飛彈}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}",
+								"{@spell 隱形僕役}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell enlarge/reduce}",
-								"{@spell flaming sphere}",
-								"{@spell hold person}",
-								"{@spell scorching ray}"
+								"{@spell 朦朧術}",
+								"{@spell 變巨/縮小術}",
+								"{@spell 熾焰法球}",
+								"{@spell 人類定身術}",
+								"{@spell 灼熱射線}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell lightning bolt}",
-								"{@spell slow}"
+								"{@spell 反制法術}",
+								"{@spell 火球術}",
+								"{@spell 閃電束}",
+								"{@spell 緩速術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell confusion}",
-								"{@spell dimension door}",
-								"{@spell fabricate}"
+								"{@spell 困惑術}",
+								"{@spell 次元門}",
+								"{@spell 鬼斧神工}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell conjure elemental}",
-								"{@spell polymorph}",
-								"{@spell wall of fire}",
-								"{@spell wall of force}"
+								"{@spell 召喚元素生物}",
+								"{@spell 變形術}",
+								"{@spell 火牆術}",
+								"{@spell 力牆術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell chain lightning}",
-								"{@spell disintegrate}",
-								"{@spell true seeing}"
+								"{@spell 連環閃電}",
+								"{@spell 解離術}",
+								"{@spell 真知術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell project image}",
-								"{@spell reverse gravity}",
-								"{@spell teleport}"
+								"{@spell 投射幻影}",
+								"{@spell 重力反轉}",
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell control weather}",
-								"{@spell maze}",
-								"{@spell power word stun}"
+								"{@spell 操控天氣}",
+								"{@spell 迷宮術}",
+								"{@spell 律令震懾}"
 							]
 						},
 						"9": {
 							"slots": 1,
 							"spells": [
-								"{@spell prismatic wall}"
+								"{@spell 虹光法牆}"
 							]
 						}
 					},
@@ -7029,12 +7029,12 @@
 						"The ghost's innate spellcasting ability is Wisdom (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell chill touch} (at 5th level, and the ghost regains hit points equal to half the amount of damage the target takes)"
+						"{@spell 寒顫之觸} (at 5th level, and the ghost regains hit points equal to half the amount of damage the target takes)"
 					],
 					"daily": {
 						"1e": [
-							"{@spell sanctuary}",
-							"{@spell spirit guardians} (at 4th level)"
+							"{@spell 聖域術}",
+							"{@spell 靈體守衛} (at 4th level)"
 						]
 					},
 					"ability": "wis"
@@ -7052,7 +7052,7 @@
 								{
 									"type": "item",
 									"name": "Enezesku: Enfeebling Ray.",
-									"entry": "Enezesku's Innate Spellcasting trait includes {@spell ray of enfeeblement}, which he can cast at will."
+									"entry": "Enezesku's Innate Spellcasting trait includes {@spell 衰弱射線}, which he can cast at will."
 								},
 								{
 									"type": "item",
@@ -7067,7 +7067,7 @@
 								{
 									"type": "item",
 									"name": "Vuliev: Teleportation.",
-									"entry": "Vuliev's Innate Spellcasting trait includes {@spell misty step}, which he can cast at will."
+									"entry": "Vuliev's Innate Spellcasting trait includes {@spell 迷蹤步}, which he can cast at will."
 								},
 								{
 									"type": "item",
@@ -7267,7 +7267,7 @@
 				11,
 				{
 					"ac": 14,
-					"condition": "with {@spell mage armor}",
+					"condition": "with {@spell 法師護甲}",
 					"braces": true
 				}
 			],
@@ -7307,12 +7307,12 @@
 					],
 					"daily": {
 						"3": [
-							"{@spell detect thoughts}",
-							"{@spell mage armor}"
+							"{@spell 偵測思想}",
+							"{@spell 法師護甲}"
 						],
 						"1e": [
-							"{@spell clairvoyance}",
-							"{@spell locate object}"
+							"{@spell 銳眼術}",
+							"{@spell 物品定位術}"
 						]
 					},
 					"ability": "int"
@@ -7445,10 +7445,10 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Rakdos's spellcasting ability is Charisma (spell save {@dc 25}). He can innately cast {@spell hellish rebuke} (at 5th level) at will, requiring no material components."
+						"Rakdos's spellcasting ability is Charisma (spell save {@dc 25}). He can innately cast {@spell 煉獄叱喝} (at 5th level) at will, requiring no material components."
 					],
 					"will": [
-						"{@spell hellish rebuke}"
+						"{@spell 煉獄叱喝}"
 					],
 					"ability": "cha",
 					"hidden": [
@@ -7612,27 +7612,27 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell dancing lights}",
-								"{@spell minor illusion}",
-								"{@spell vicious mockery}"
+								"{@spell 舞光術}",
+								"{@spell 次級幻象}",
+								"{@spell 惡毒嘲笑}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell bane}",
-								"{@spell dissonant whispers}",
-								"{@spell silent image}",
-								"{@spell Tasha's hideous laughter}",
-								"{@spell thunderwave}"
+								"{@spell 災禍術}",
+								"{@spell 噪音暗語}",
+								"{@spell 無聲幻影}",
+								"{@spell 塔莎狂笑術}",
+								"{@spell 雷鳴波}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell crown of madness}",
-								"{@spell enthrall}",
-								"{@spell suggestion}"
+								"{@spell 瘋狂冠冕}",
+								"{@spell 注目術}",
+								"{@spell 暗示術}"
 							]
 						}
 					},
@@ -7982,32 +7982,32 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell blade ward}",
-								"{@spell light}",
-								"{@spell message}",
-								"{@spell shocking grasp}"
+								"{@spell 劍刃防護}",
+								"{@spell 光亮術}",
+								"{@spell 傳訊術}",
+								"{@spell 電爪}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell guiding bolt}",
-								"{@spell shield}",
-								"{@spell thunderwave}",
-								"{@spell witch bolt}"
+								"{@spell 光導箭}",
+								"{@spell 護盾術}",
+								"{@spell 雷鳴波}",
+								"{@spell 巫術箭}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell blur}",
-								"{@spell levitate}"
+								"{@spell 朦朧術}",
+								"{@spell 浮空術}"
 							]
 						},
 						"3": {
 							"slots": 2,
 							"spells": [
-								"{@spell lightning bolt}"
+								"{@spell 閃電束}"
 							]
 						}
 					},
@@ -8535,15 +8535,15 @@
 						"The sire's innate spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The sire can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell clairvoyance}",
-						"{@spell crown of madness}",
-						"{@spell major image}",
-						"{@spell suggestion}"
+						"{@spell 銳眼術}",
+						"{@spell 瘋狂冠冕}",
+						"{@spell 強效幻影}",
+						"{@spell 暗示術}"
 					],
 					"daily": {
 						"1e": [
-							"{@spell confusion}",
-							"{@spell mass suggestion}"
+							"{@spell 困惑術}",
+							"{@spell 群體暗示術}"
 						]
 					},
 					"ability": "cha"
@@ -9006,46 +9006,46 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell friends}",
-								"{@spell mage hand}",
-								"{@spell message}"
+								"{@spell 交友術}",
+								"{@spell 法師之手}",
+								"{@spell 傳訊術}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell command}",
-								"{@spell ensnaring strike}",
-								"{@spell shield}"
+								"{@spell 命令術}",
+								"{@spell 誘捕打擊}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell calm emotions}",
-								"{@spell hold person}",
-								"{@spell suggestion}"
+								"{@spell 安定心神}",
+								"{@spell 人類定身術}",
+								"{@spell 暗示術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell clairvoyance}",
-								"{@spell counterspell}",
-								"{@spell dispel magic}"
+								"{@spell 銳眼術}",
+								"{@spell 反制法術}",
+								"{@spell 解除魔法}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell banishment}",
-								"{@spell divination}"
+								"{@spell 放逐術}",
+								"{@spell 預言術}"
 							]
 						},
 						"5": {
 							"slots": 1,
 							"spells": [
-								"{@spell dominate person}"
+								"{@spell 支配人類}"
 							]
 						}
 					},
@@ -9229,15 +9229,15 @@
 						"The thought spy's innate spellcasting ability is Intelligence (spell save {@dc 13}). The thought spy can innately cast the following spells, requiring no components:"
 					],
 					"will": [
-						"{@spell charm person}",
-						"{@spell disguise self}",
+						"{@spell 魅惑人類}",
+						"{@spell 易容術}",
 						"{@spell encode thoughts|GGR} (see chapter 2)"
 					],
 					"daily": {
 						"1e": [
-							"{@spell blur}",
-							"{@spell detect thoughts}",
-							"{@spell gaseous form}"
+							"{@spell 朦朧術}",
+							"{@spell 偵測思想}",
+							"{@spell 氣化形體}"
 						]
 					},
 					"ability": "int"
@@ -9362,22 +9362,22 @@
 						"Trostani's innate spellcasting ability is Wisdom (spell save {@dc 24}). She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell dispel magic}",
-						"{@spell druidcraft}"
+						"{@spell 解除魔法}",
+						"{@spell 德魯伊伎倆}"
 					],
 					"daily": {
 						"3e": [
-							"{@spell bless}",
-							"{@spell conjure animals}",
-							"{@spell giant insect}",
-							"{@spell moonbeam}",
-							"{@spell plant growth}",
-							"{@spell spike growth}",
-							"{@spell suggestion}"
+							"{@spell 祝福術}",
+							"{@spell 召喚動物}",
+							"{@spell 巨蟲術}",
+							"{@spell 月華之光}",
+							"{@spell 植物滋長}",
+							"{@spell 荊棘叢生}",
+							"{@spell 暗示術}"
 						],
 						"1e": [
-							"{@spell conjure fey}",
-							"{@spell mass cure wounds}"
+							"{@spell 召喚精類生物}",
+							"{@spell 群體治療傷勢}"
 						]
 					},
 					"ability": "wis"
@@ -9560,9 +9560,9 @@
 					],
 					"daily": {
 						"1e": [
-							"{@spell expeditious retreat}",
-							"{@spell fog cloud}",
-							"{@spell misty step}"
+							"{@spell 腳底抹油}",
+							"{@spell 雲霧術}",
+							"{@spell 迷蹤步}"
 						]
 					},
 					"ability": "int"
@@ -9598,7 +9598,7 @@
 				{
 					"name": "Petrifying Gaze",
 					"entries": [
-						"The medusa fixes its gaze on one creature within 60 feet of it that it can see and that can see its eyes. The target must make a {@dc 14} Constitution saving throw. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by a {@spell greater restoration} spell or similar magic."
+						"The medusa fixes its gaze on one creature within 60 feet of it that it can see and that can see its eyes. The target must make a {@dc 14} Constitution saving throw. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by a {@spell 高等復原術} spell or similar magic."
 					]
 				}
 			],
@@ -9880,70 +9880,70 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell acid splash}",
-								"{@spell druidcraft}",
-								"{@spell ray of frost}",
+								"{@spell 酸液濺爆}",
+								"{@spell 德魯伊伎倆}",
+								"{@spell 冷凍射線}",
 								"{@spell shape water|XGE}"
 							]
 						},
 						"1": {
 							"slots": 4,
 							"spells": [
-								"{@spell color spray}",
-								"{@spell expeditious retreat}",
-								"{@spell fog cloud}",
-								"{@spell shield}"
+								"{@spell 七彩噴射}",
+								"{@spell 腳底抹油}",
+								"{@spell 雲霧術}",
+								"{@spell 護盾術}"
 							]
 						},
 						"2": {
 							"slots": 3,
 							"spells": [
-								"{@spell enlarge/reduce}",
-								"{@spell gust of wind}"
+								"{@spell 變巨/縮小術}",
+								"{@spell 造風術}"
 							]
 						},
 						"3": {
 							"slots": 3,
 							"spells": [
-								"{@spell counterspell}",
-								"{@spell fly}",
-								"{@spell slow}"
+								"{@spell 反制法術}",
+								"{@spell 飛行術}",
+								"{@spell 緩速術}"
 							]
 						},
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell control water}",
-								"{@spell ice storm}",
-								"{@spell polymorph}"
+								"{@spell 操控水體}",
+								"{@spell 冰風暴}",
+								"{@spell 變形術}"
 							]
 						},
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell conjure elemental}",
-								"{@spell creation}"
+								"{@spell 召喚元素生物}",
+								"{@spell 造物術}"
 							]
 						},
 						"6": {
 							"slots": 1,
 							"spells": [
-								"{@spell move earth}",
-								"{@spell wall of ice}"
+								"{@spell 地動術}",
+								"{@spell 冰牆術}"
 							]
 						},
 						"7": {
 							"slots": 1,
 							"spells": [
-								"{@spell prismatic spray}",
-								"{@spell teleport}"
+								"{@spell 虹光噴射}",
+								"{@spell 傳送術}"
 							]
 						},
 						"8": {
 							"slots": 1,
 							"spells": [
-								"{@spell control weather}",
-								"{@spell dominate monster}"
+								"{@spell 操控天氣}",
+								"{@spell 支配怪物}"
 							]
 						}
 					},
