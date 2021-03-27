@@ -487,8 +487,10 @@
 			"subclassTitle": "Divine Domain",
 			"subclasses": [
 				{
-					"name": "Knowledge Domain",
-					"shortName": "Knowledge",
+					"name": "奧秘領域",
+					"ENG_name": "Knowledge Domain",
+					"shortName": "奧秘",
+					"ENG_shortName": "Knowledge",
 					"source": "PHB",
 					"page": 59,
 					"additionalSpells": [
@@ -528,8 +530,10 @@
 					]
 				},
 				{
-					"name": "Life Domain",
-					"shortName": "Life",
+					"name": "生命領域",
+					"ENG_name": "Knowledge",
+					"shortName": "生命",
+					"ENG_shortName": "Life",
 					"source": "PHB",
 					"page": 60,
 					"srd": true,
@@ -570,8 +574,10 @@
 					]
 				},
 				{
-					"name": "Light Domain",
-					"shortName": "Light",
+					"name": "光明",
+					"ENG_name": "Light Domain",
+					"shortName": "光明",
+					"ENG_shortName": "Light",
 					"source": "PHB",
 					"page": 60,
 					"additionalSpells": [
@@ -616,8 +622,10 @@
 					]
 				},
 				{
-					"name": "Nature Domain",
-					"shortName": "Nature",
+					"name": "自然領域",
+					"ENG_name": "Nature Domain",
+					"shortName": "自然",
+					"ENG_shortName": "Nature",
 					"source": "PHB",
 					"page": 61,
 					"additionalSpells": [
@@ -698,8 +706,10 @@
 					]
 				},
 				{
-					"name": "Trickery Domain",
-					"shortName": "Trickery",
+					"name": "詭術領域",
+					"ENG_name": "Trickery Domain",
+					"shortName": "詭術",
+					"ENG_shortName": "Trickery",
 					"source": "PHB",
 					"page": 62,
 					"additionalSpells": [
@@ -739,8 +749,10 @@
 					]
 				},
 				{
-					"name": "War Domain",
-					"shortName": "War",
+					"name": "戰爭領域",
+					"ENG_name": "War Domain",
+					"shortName": "戰爭",
+					"ENG_shortName": "War",
 					"source": "PHB",
 					"page": 63,
 					"additionalSpells": [
@@ -780,8 +792,10 @@
 					]
 				},
 				{
-					"name": "Death Domain",
-					"shortName": "Death",
+					"name": "死亡領域",
+					"ENG_name": "Death Domain",
+					"shortName": "死亡",
+					"ENG_shortName": "Death",
 					"source": "DMG",
 					"page": 96,
 					"additionalSpells": [
@@ -862,8 +876,10 @@
 					]
 				},
 				{
-					"name": "Arcana Domain",
-					"shortName": "Arcana",
+					"name": "奧秘領域",
+					"ENG_name": "Arcana Domain",
+					"shortName": "奧秘",
+					"ENG_shortName": "Arcana",
 					"source": "SCAG",
 					"page": 125,
 					"additionalSpells": [
@@ -1206,8 +1222,10 @@
 					]
 				},
 				{
-					"name": "Forge Domain",
-					"shortName": "Forge",
+					"name": "鍛造領域",
+					"ENG_name": "Forge Domain",
+					"shortName": "鍛造",
+					"ENG_shortName": "Forge",
 					"source": "XGE",
 					"page": 18,
 					"additionalSpells": [
@@ -1247,8 +1265,10 @@
 					]
 				},
 				{
-					"name": "Grave Domain",
-					"shortName": "Grave",
+					"name": "墳墓領域",
+					"ENG_name": "Grave Domain",
+					"shortName": "墳墓",
+					"ENG_shortName": "Grave",
 					"source": "XGE",
 					"page": 19,
 					"additionalSpells": [
@@ -1461,8 +1481,10 @@
 					]
 				},
 				{
-					"name": "Order Domain",
-					"shortName": "Order",
+					"name": "秩序領域",
+					"ENG_name": "Order Domain",
+					"shortName": "秩序",
+					"ENG_shortName": "Order",
 					"source": "TCE",
 					"page": 31,
 					"otherSources": [

@@ -572,8 +572,10 @@
 			"subclassTitle": "Sorcerous Origin",
 			"subclasses": [
 				{
-					"name": "Draconic Bloodline",
-					"shortName": "Draconic",
+					"name": "龍族血脈",
+					"ENG_name": "Draconic Bloodline",
+					"shortName": "龍族血脈",
+					"ENG_shortName": "Draconic",
 					"source": "PHB",
 					"page": 102,
 					"srd": true,
@@ -585,8 +587,10 @@
 					]
 				},
 				{
-					"name": "Wild Magic",
-					"shortName": "Wild",
+					"name": "狂野魔法",
+					"ENG_name": "Wild Magic",
+					"shortName": "狂野魔法",
+					"ENG_shortName": "Wild",
 					"source": "PHB",
 					"page": 103,
 					"subclassFeatures": [
@@ -736,8 +740,10 @@
 					]
 				},
 				{
-					"name": "Divine Soul",
-					"shortName": "Divine Soul",
+					"name": "神聖之魂",
+					"ENG_name": "Divine Soul",
+					"shortName": "神聖之魂",
+					"ENG_shortName": "Divine",
 					"source": "XGE",
 					"page": 50,
 					"additionalSpells": [
@@ -785,8 +791,10 @@
 					]
 				},
 				{
-					"name": "Shadow Magic",
-					"shortName": "Shadow",
+					"name": "幽影魔法",
+					"ENG_name": "Shadow Magic",
+					"shortName": "幽影魔法",
+					"ENG_shortName": "Shadow",
 					"source": "XGE",
 					"page": 50,
 					"additionalSpells": [
@@ -806,8 +814,10 @@
 					]
 				},
 				{
-					"name": "Storm Sorcery",
-					"shortName": "Storm",
+					"name": "暴風術法",
+					"ENG_name": "Storm Sorcery",
+					"shortName": "暴風術法",
+					"ENG_shortName": "Storm",
 					"source": "XGE",
 					"page": 51,
 					"otherSources": [
@@ -1465,7 +1475,7 @@
 					"type": "entries",
 					"name": "施法法器",
 					"entries": [
-						"You can use an {@item arcane focus|phb} as a spellcasting focus for your sorcerer spells."
+						"你可以使用一個{@item 奧術法器|phb}（第五章），來做為你施放術士法術的法器。"
 					]
 				}
 			]

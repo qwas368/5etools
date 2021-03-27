@@ -1268,7 +1268,7 @@ Parser.monTypeToFullObj = function (type) {
 	if (typeof type === "string") {
 		// handles e.g. "fey"
 		out.type = type;
-		out.asText = type;
+		out.asText = Parser.monTypeToPlural(type);
 		return out;
 	}
 
@@ -1278,11 +1278,11 @@ Parser.monTypeToFullObj = function (type) {
 			if (typeof tag === "string") {
 				// handles e.g. "fiend (devil)"
 				out.tags.push(tag);
-				tempTags.push(tag);
+				tempTags.push(Parser.MonsterTagToDisplay(tag));
 			} else {
 				// handles e.g. "humanoid (Chondathan human)"
 				out.tags.push(tag.tag);
-				tempTags.push(`${tag.prefix} ${tag.tag}`);
+				tempTags.push(`${tag.prefix} ${Parser.MonsterTagToDisplay(tag.tag)}`);
 			}
 		}
 	}
@@ -1291,7 +1291,7 @@ Parser.monTypeToFullObj = function (type) {
 		out.tags.push("swarm");
 		out.asText = `${Parser.sizeAbvToFull(type.swarmSize).toLowerCase()} ${Parser.monTypeToPlural(type.type)}集群`;
 	} else {
-		out.asText = `${type.type}`;
+		out.asText = `${Parser.monTypeToPlural(type.type)}`;
 	}
 	if (tempTags.length) out.asText += ` (${tempTags.join(", ")})`;
 	return out;
@@ -1328,7 +1328,7 @@ Parser.getFullImmRes = function (toParse) {
 	function toString (it, depth = 0) {
 		maxDepth = Math.max(maxDepth, depth);
 		if (typeof it === "string") {
-			return it;
+			return Parser.DamageToDisplay(it);
 		} else if (it.special) {
 			return it.special;
 		} else {

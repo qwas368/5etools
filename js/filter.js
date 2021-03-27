@@ -893,7 +893,8 @@ class FilterBox extends ProxyBase {
 	}
 }
 FilterBox.EVNT_VALCHANGE = "valchange";
-FilterBox.SOURCE_HEADER = "資源";
+FilterBox.SOURCE_HEADER = "Source";
+FilterBox.SOURCE_HEADER_NAME = "資源";
 FilterBox._PILL_STATES = ["ignore", "yes", "no"];
 FilterBox._COMBINE_MODES = ["and", "or", "custom"];
 FilterBox._STORAGE_KEY = "filterBoxState";
@@ -1335,7 +1336,7 @@ class Filter extends FilterBase {
 		};
 		this._addHook("state", item.item, hook);
 		hook();
-
+		console.log(displayText);
 		item.searchText = displayText.toLowerCase();
 
 		return btnPill;
@@ -2012,6 +2013,7 @@ class SourceFilter extends Filter {
 		opts = opts || {};
 
 		opts.header = opts.header === undefined ? FilterBox.SOURCE_HEADER : opts.header;
+		opts.headerName = opts.headerName === undefined ? FilterBox.SOURCE_HEADER_NAME : opts.headerName;
 		opts.displayFn = opts.displayFn === undefined ? item => Parser.sourceJsonToFullCompactPrefix(item.item || item) : opts.displayFn;
 		opts.itemSortFn = opts.itemSortFn === undefined ? (a, b) => SortUtil.ascSortLower(Parser.sourceJsonToFull(a.item), Parser.sourceJsonToFull(b.item)) : opts.itemSortFn;
 		opts.groupFn = opts.groupFn === undefined ? SourceUtil.getFilterGroup : opts.groupFn;

@@ -15,20 +15,23 @@ class PageFilterDeities extends PageFilter {
 	constructor () {
 		super();
 		this._sourceFilter = new SourceFilter();
-		this._pantheonFilter = new Filter({header: "神系", items: []});
+		this._pantheonFilter = new Filter({header: "Pantheon", headerName: "神系", items: []});
 		this._categoryFilter = new Filter({header: "Category", items: [VeCt.STR_NONE]});
 		this._alignmentFilter = new Filter({
-			header: "陣營",
+			header: "Alignment",
+			headerName: "陣營",
 			items: ["L", "NX", "C", "G", "NY", "E", "N"],
 			displayFn: Parser.alignmentAbvToFull,
 			itemSortFn: null,
 		});
 		this._domainFilter = new Filter({
-			header: "領域",
+			header: "Domain",
+			headerName: "領域",
 			items: ["Death", "Knowledge", "Life", "Light", "Nature", VeCt.STR_NONE, "Tempest", "Trickery", "War"],
 		});
 		this._miscFilter = new Filter({
-			header: "雜項",
+			header: "Miscellaneous",
+			headerName: "雜項",
 			items: ["Grants Piety Features", "Has Info", PageFilterDeities._STR_REPRINTED, "SRD"],
 			displayFn: StrUtil.uppercaseFirst,
 			deselFn: (it) => { return it === PageFilterDeities._STR_REPRINTED },

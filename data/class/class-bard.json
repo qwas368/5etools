@@ -72,7 +72,7 @@
 					"短劍"
 				],
 				"tools": [
-					"three {@item musical instrument|PHB|musical instruments} of your choice"
+					"三種你所選擇{@item 樂器|PHB}"
 				],
 				"skills": [
 					{
@@ -105,10 +105,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
-					"(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
-					"{@item Leather armor|phb}, and a {@item dagger|phb}"
+					"(a)一把{@item 刺劍|phb}, (b)一把{@item 長劍|phb}, 或 (c)任何一把{@filter 簡易武器|items|source=phb|category=basic|type=simple weapon}",
+					"(a)一套{@item 大使套裝|phb} 或 (b)一套{@item 表演家套裝|phb}",
+					"(a)一把{@item 魯特琴|phb} 或 (b)任何一把其他{@filter 樂器|items|miscellaneous=mundane|type=instrument}",
+					"一件{@item 皮甲|phb}，以及一把{@item 匕首|phb}"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金錢}",
 				"defaultData": [
@@ -187,7 +187,7 @@
 						}
 					],
 					"tools": [
-						"one {@item musical instrument|PHB} of your choice"
+						"三種你所選擇{@item 樂器|PHB}"
 					]
 				}
 			},
@@ -568,7 +568,8 @@
 				{
 					"name": "知識學院",
 					"ENG_name": "College of Lore",
-					"shortName": "Lore",
+					"shortName": "知識",
+					"ENG_shortName": "Lore",
 					"source": "PHB",
 					"page": 54,
 					"srd": true,
@@ -581,7 +582,8 @@
 				{
 					"name": "勇氣學院",
 					"ENG_name": "College of Valor",
-					"shortName": "Valor",
+					"shortName": "勇氣",
+					"ENG_shortName": "Valor",
 					"source": "PHB",
 					"page": 55,
 					"subclassFeatures": [
@@ -652,7 +654,8 @@
 				{
 					"name": "迷惑學院",
 					"ENG_name": "College of Glamour",
-					"shortName": "Glamour",
+					"shortName": "迷惑",
+					"ENG_shortName": "Glamour",
 					"source": "XGE",
 					"page": 14,
 					"additionalSpells": [
@@ -673,7 +676,8 @@
 				{
 					"name": "劍舞學院",
 					"ENG_name": "College of Swords",
-					"shortName": "Swords",
+					"shortName": "劍舞",
+					"ENG_shortName": "Swords",
 					"source": "XGE",
 					"page": 15,
 					"subclassFeatures": [
@@ -685,7 +689,8 @@
 				{
 					"name": "低語學院",
 					"ENG_name": "College of Whispers",
-					"shortName": "Whispers",
+					"shortName": "低語",
+					"ENG_shortName": "Whispers",
 					"source": "XGE",
 					"page": 16,
 					"subclassFeatures": [

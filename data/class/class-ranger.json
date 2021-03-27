@@ -429,8 +429,10 @@
 			"subclassTitle": "Ranger Archetype",
 			"subclasses": [
 				{
-					"name": "Beast Master",
-					"shortName": "Beast Master",
+					"name": "獸王",
+					"ENG_name": "Beast Master",
+					"shortName": "獸王",
+					"ENG_shortName": "Beast Master",
 					"source": "PHB",
 					"page": 93,
 					"subclassFeatures": [
@@ -441,8 +443,10 @@
 					]
 				},
 				{
-					"name": "Hunter",
-					"shortName": "Hunter",
+					"name": "獵人",
+					"ENG_name": "Hunter",
+					"shortName": "獵人",
+					"ENG_shortName": "Hunter",
 					"source": "PHB",
 					"page": 93,
 					"srd": true,
@@ -591,7 +595,8 @@
 				{
 					"name": "幽域追蹤者",
 					"ENG_name": "Gloom Stalker",
-					"shortName": "Gloom Stalker",
+					"shortName": "幽域追蹤者",
+					"ENG_shortName": "Gloom Stalker",
 					"source": "XGE",
 					"page": 41,
 					"additionalSpells": [
@@ -625,7 +630,8 @@
 				{
 					"name": "境界行者",
 					"ENG_name": "Horizon Walker",
-					"shortName": "Horizon Walker",
+					"shortName": "境界行者",
+					"ENG_shortName": "Horizon Walker",
 					"source": "XGE",
 					"page": 42,
 					"additionalSpells": [
@@ -659,7 +665,8 @@
 				{
 					"name": "怪物殺手",
 					"ENG_name": "Monster Slayer",
-					"shortName": "Monster Slayer",
+					"shortName": "怪物殺手",
+					"ENG_shortName": "Monster Slayer",
 					"source": "XGE",
 					"page": 43,
 					"additionalSpells": [
@@ -2387,8 +2394,10 @@
 			"subclassTitle": "Ranger Conclave",
 			"subclasses": [
 				{
-					"name": "Beast Conclave",
-					"shortName": "Beast Conclave",
+					"name": "野獸密會",
+					"ENG_name": "Beast Conclave",
+					"shortName": "野獸密會",
+					"ENG_shortName": "Beast Conclave",
 					"source": "UATheRangerRevised",
 					"page": 5,
 					"subclassFeatures": [
@@ -2400,8 +2409,10 @@
 					]
 				},
 				{
-					"name": "Deep Stalker Conclave",
-					"shortName": "Deep Stalker Conclave",
+					"name": "深域追跡者密會",
+					"ENG_name": "Deep Stalker Conclave",
+					"shortName": "深域追跡者密會",
+					"ENG_shortName": "Deep Stalker Conclave",
 					"source": "UATheRangerRevised",
 					"page": 7,
 					"additionalSpells": [
@@ -2434,8 +2445,10 @@
 					]
 				},
 				{
-					"name": "Hunter Conclave",
-					"shortName": "Hunter Conclave",
+					"name": "獵人密會",
+					"ENG_name": "Hunter Conclave",
+					"shortName": "獵人密會",
+					"ENG_shortName": "Hunter Conclave",
 					"source": "UATheRangerRevised",
 					"page": 7,
 					"subclassFeatures": [
@@ -2447,8 +2460,10 @@
 					]
 				},
 				{
-					"name": "Horizon Walker (UA)",
-					"shortName": "Horizon Walker (UA)",
+					"name": "境界行者",
+					"ENG_name": "Horizon Walker (UA)",
+					"shortName": "境界行者",
+					"ENG_shortName": "Horizon Walker (UA)",
 					"source": "UARangerAndRogue",
 					"page": 1,
 					"isReprinted": true,
@@ -2516,8 +2531,10 @@
 					]
 				},
 				{
-					"name": "Monster Slayer (UA)",
-					"shortName": "Monster Slayer (UA)",
+					"name": "怪物殺手",
+					"ENG_name": "Monster Slayer (UA)",
+					"shortName": "怪物殺手",
+					"ENG_shortName": "Monster Slayer (UA)",
 					"source": "UAATrioOfSubclasses",
 					"page": 3,
 					"isReprinted": true,
@@ -2553,7 +2570,8 @@
 				{
 					"name": "幽域追蹤者",
 					"ENG_name": "Gloom Stalker",
-					"shortName": "Gloom Stalker",
+					"shortName": "幽域追蹤者",
+					"ENG_shortName": "Gloom Stalker",
 					"source": "XGE",
 					"page": 41,
 					"additionalSpells": [
@@ -2588,7 +2606,8 @@
 				{
 					"name": "境界行者",
 					"ENG_name": "Horizon Walker",
-					"shortName": "Horizon Walker",
+					"shortName": "境界行者",
+					"ENG_shortName": "Horizon Walker",
 					"source": "XGE",
 					"page": 42,
 					"additionalSpells": [
@@ -2623,7 +2642,8 @@
 				{
 					"name": "怪物殺手",
 					"ENG_name": "Monster Slayer",
-					"shortName": "Monster Slayer",
+					"shortName": "怪物殺手",
+					"ENG_shortName": "Monster Slayer",
 					"source": "XGE",
 					"page": 43,
 					"additionalSpells": [

@@ -252,6 +252,7 @@ class PageFilterSpells extends PageFilter {
 		});
 		const classFilter = new Filter({
 			header: "Class",
+			headerName: "職業",
 			groupFn: it => it.userData,
 		});
 		const subclassFilter = new Filter({
@@ -261,16 +262,18 @@ class PageFilterSpells extends PageFilter {
 		});
 		const variantClassFilter = new Filter({
 			header: "Optional/Variant Class",
+			headerName: "變體職業",
 			nests: {},
 			groupFn: it => it.userData,
 		});
 		const classAndSubclassFilter = new MultiFilter({header: "Classes", mode: "or", filters: [classFilter, subclassFilter, variantClassFilter]});
 		const raceFilter = new Filter({
 			header: "Race",
+			headerName: "種族",
 			nests: {},
 			groupFn: it => it.userData,
 		});
-		const backgroundFilter = new Filter({header: "Background"});
+		const backgroundFilter = new Filter({header: "Background", headerName: "背景"});
 		const metaFilter = new Filter({
 			header: "Components & Miscellaneous", headerName: "構材＆雜項",
 			items: [...PageFilterSpells._META_FILTER_BASE_ITEMS, "Ritual", "SRD", "Has Images", "Has Token"],
@@ -286,6 +289,7 @@ class PageFilterSpells extends PageFilter {
 		});
 		const subSchoolFilter = new Filter({
 			header: "Subschool",
+			headerName: "子學派",
 			items: [],
 			displayFn: Parser.spSchoolAbvToFull,
 		});
@@ -313,6 +317,7 @@ class PageFilterSpells extends PageFilter {
 		});
 		const checkFilter = new Filter({
 			header: "Ability Check",
+			headerName: "能力檢定",
 			items: ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
 			displayFn: PageFilterSpells.getFilterAbilityCheck,
 			itemSortFn: null,
@@ -338,6 +343,7 @@ class PageFilterSpells extends PageFilter {
 		});
 		const rangeFilter = new Filter({
 			header: "Range",
+			headerName: "射程",
 			items: [
 				PageFilterSpells.F_RNG_SELF,
 				PageFilterSpells.F_RNG_TOUCH,
@@ -361,7 +367,7 @@ class PageFilterSpells extends PageFilter {
 		this._classAndSubclassFilter = classAndSubclassFilter;
 		this._raceFilter = raceFilter;
 		this._backgroundFilter = backgroundFilter;
-		this._eldritchInvocationFilter = new Filter({header: "Eldritch Invocation"});
+		this._eldritchInvocationFilter = new Filter({header: "Eldritch Invocation", headerName:"魔能祈喚"});
 		this._metaFilter = metaFilter;
 		this._schoolFilter = schoolFilter;
 		this._subSchoolFilter = subSchoolFilter;

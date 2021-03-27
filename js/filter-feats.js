@@ -9,6 +9,7 @@ class PageFilterFeats extends PageFilter {
 
 		this._asiFilter = new Filter({
 			header: "Ability Bonus",
+			headerName: "屬性加值",
 			items: [
 				"str",
 				"dex",

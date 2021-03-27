@@ -313,8 +313,10 @@
 			"subclassTitle": "Sacred Oath",
 			"subclasses": [
 				{
-					"name": "Oath of Devotion",
-					"shortName": "Devotion",
+					"name": "奉獻之誓",
+					"ENG_name": "Oath of Devotion",
+					"shortName": "奉獻",
+					"ENG_shortName": "Oath of Devotion",
 					"source": "PHB",
 					"page": 85,
 					"srd": true,
@@ -352,8 +354,10 @@
 					]
 				},
 				{
-					"name": "Oath of the Ancients",
-					"shortName": "Ancients",
+					"name": "遠古之誓",
+					"ENG_name": "Oath of Ancients",
+					"shortName": "遠古",
+					"ENG_shortName": "Oath of Ancients",
 					"source": "PHB",
 					"page": 86,
 					"additionalSpells": [
@@ -390,8 +394,10 @@
 					]
 				},
 				{
-					"name": "Oath of Vengeance",
-					"shortName": "Vengeance",
+					"name": "復仇之誓",
+					"ENG_name": "Oath of Vengeance",
+					"shortName": "復仇",
+					"ENG_shortName": "Oath of Vengeance",
 					"source": "PHB",
 					"page": 87,
 					"additionalSpells": [
@@ -428,8 +434,10 @@
 					]
 				},
 				{
-					"name": "Oathbreaker",
-					"shortName": "Oathbreaker",
+					"name": "破誓者",
+					"ENG_name": "Oathbreaker",
+					"shortName": "破誓者",
+					"ENG_shortName": "Oathbreaker",
 					"source": "DMG",
 					"page": 97,
 					"additionalSpells": [
@@ -466,8 +474,10 @@
 					]
 				},
 				{
-					"name": "Oath of the Crown",
-					"shortName": "Crown",
+					"name": "王冠之誓",
+					"ENG_name": "Oath of the Crown",
+					"shortName": "王冠",
+					"ENG_shortName": "Crown",
 					"source": "SCAG",
 					"page": 132,
 					"additionalSpells": [
@@ -659,8 +669,10 @@
 					]
 				},
 				{
-					"name": "Oath of Conquest",
-					"shortName": "Conquest",
+					"name": "征服之誓",
+					"ENG_name": "Oath of the Conquest",
+					"shortName": "征服",
+					"ENG_shortName": "Conquest",
 					"source": "XGE",
 					"page": 37,
 					"additionalSpells": [
@@ -697,8 +709,10 @@
 					]
 				},
 				{
-					"name": "Oath of Redemption",
-					"shortName": "Redemption",
+					"name": "救贖之誓",
+					"ENG_name": "Oath of the Redemption",
+					"shortName": "救贖",
+					"ENG_shortName": "Redemption",
 					"source": "XGE",
 					"page": 38,
 					"additionalSpells": [

@@ -487,8 +487,10 @@
 			"subclassTitle": "Druid Circle",
 			"subclasses": [
 				{
-					"name": "Circle of the Land",
-					"shortName": "Land",
+					"name": "大地結社",
+					"ENG_name": "Circle of the Land",
+					"shortName": "大地",
+					"ENG_shortName": "Circle of the Land",
 					"source": "PHB",
 					"page": 68,
 					"srd": true,
@@ -662,8 +664,10 @@
 					]
 				},
 				{
-					"name": "Circle of the Moon",
-					"shortName": "Moon",
+					"name": "月亮結社",
+					"ENG_name": "Circle of the Moon",
+					"shortName": "月亮",
+					"ENG_shortName": "Circle of the Moon",
 					"source": "PHB",
 					"page": 69,
 					"additionalSpells": [
@@ -734,8 +738,10 @@
 					]
 				},
 				{
-					"name": "Circle of Dreams",
-					"shortName": "Dreams",
+					"name": "夢境結社",
+					"ENG_name": "Circle of the Dreams",
+					"shortName": "夢境",
+					"ENG_shortName": "Circle of the Dreams",
 					"source": "XGE",
 					"page": 22,
 					"subclassFeatures": [
@@ -746,8 +752,10 @@
 					]
 				},
 				{
-					"name": "Circle of the Shepherd",
-					"shortName": "Shepherd",
+					"name": "牧人結社",
+					"ENG_name": "Circle of the Shepherd",
+					"shortName": "牧人",
+					"ENG_shortName": "Shepherd",
 					"source": "XGE",
 					"page": 23,
 					"subclassFeatures": [
@@ -841,8 +849,10 @@
 					]
 				},
 				{
-					"name": "Circle of Spores",
-					"shortName": "Spores",
+					"name": "孢子結社",
+					"ENG_name": "Circle of Spores",
+					"shortName": "孢子",
+					"ENG_shortName": "Circle Spores",
 					"source": "TCE",
 					"page": 36,
 					"otherSources": [

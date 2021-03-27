@@ -172,8 +172,10 @@
 			"subclassTitle": "Martial Archetype",
 			"subclasses": [
 				{
-					"name": "Battle Master",
-					"shortName": "Battle Master",
+					"name": "戰鬥大師",
+					"ENG_name": "Battle Master",
+					"shortName": "戰鬥大師",
+					"ENG_shortName": "Battle Master",
 					"source": "PHB",
 					"page": 73,
 					"subclassFeatures": [
@@ -190,8 +192,10 @@
 					]
 				},
 				{
-					"name": "Champion",
-					"shortName": "Champion",
+					"name": "勇士",
+					"ENG_name": "Champion",
+					"shortName": "勇士",
+					"ENG_shortName": "Champion",
 					"source": "PHB",
 					"page": 72,
 					"srd": true,
@@ -204,8 +208,10 @@
 					]
 				},
 				{
-					"name": "Eldritch Knight",
-					"shortName": "Eldritch Knight",
+					"name": "魔能騎士",
+					"ENG_name": "Eldritch Knight",
+					"shortName": "魔能騎士",
+					"ENG_shortName": "Eldritch Knight",
 					"source": "PHB",
 					"page": 74,
 					"spellcastingAbility": "int",
@@ -498,8 +504,10 @@
 					]
 				},
 				{
-					"name": "Purple Dragon Knight (Banneret)",
-					"shortName": "Purple Dragon Knight (Banneret)",
+					"name": "紫龍騎士(旗將)",
+					"ENG_name": "Purple Dragon Knight (Banneret)",
+					"shortName": "紫龍騎士(旗將)",
+					"ENG_shortName": "Purple Dragon Knight (Banneret)",
 					"source": "SCAG",
 					"page": 128,
 					"subclassFeatures": [
@@ -640,8 +648,10 @@
 					]
 				},
 				{
-					"name": "Arcane Archer",
-					"shortName": "Arcane Archer",
+					"name": "魔射手",
+					"ENG_name": "Arcane Archer",
+					"shortName": "魔射手",
+					"ENG_shortName": "Arcane Archer",
 					"source": "XGE",
 					"page": 28,
 					"subclassFeatures": [
@@ -656,8 +666,10 @@
 					]
 				},
 				{
-					"name": "Cavalier",
-					"shortName": "Cavalier",
+					"name": "騎兵",
+					"ENG_name": "Cavalier",
+					"shortName": "騎兵",
+					"ENG_shortName": "Cavalier",
 					"source": "XGE",
 					"page": 30,
 					"subclassFeatures": [
@@ -669,8 +681,10 @@
 					]
 				},
 				{
-					"name": "Samurai",
-					"shortName": "Samurai",
+					"name": "武士",
+					"ENG_name": "Samurai",
+					"shortName": "武士",
+					"ENG_shortName": "Samurai",
 					"source": "XGE",
 					"page": 31,
 					"subclassFeatures": [

@@ -413,8 +413,10 @@
 			"subclassTitle": "Roguish Archetype",
 			"subclasses": [
 				{
-					"name": "Arcane Trickster",
-					"shortName": "Arcane Trickster",
+					"name": "詭術師",
+					"ENG_name": "Arcane Trickster",
+					"shortName": "詭術師",
+					"ENG_shortName": "Arcane Trickster",
 					"source": "PHB",
 					"page": 97,
 					"spellcastingAbility": "int",
@@ -713,8 +715,10 @@
 					]
 				},
 				{
-					"name": "Assassin",
-					"shortName": "Assassin",
+					"name": "刺客",
+					"ENG_name": "Assassin",
+					"shortName": "刺客",
+					"ENG_shortName": "Assassin",
 					"source": "PHB",
 					"page": 97,
 					"subclassFeatures": [
@@ -725,8 +729,10 @@
 					]
 				},
 				{
-					"name": "Thief",
-					"shortName": "Thief",
+					"name": "竊賊",
+					"ENG_name": "Thief",
+					"shortName": "竊賊",
+					"ENG_shortName": "Thief",
 					"source": "PHB",
 					"page": 97,
 					"srd": true,
@@ -764,8 +770,10 @@
 					]
 				},
 				{
-					"name": "Inquisitive",
-					"shortName": "Inquisitive",
+					"name": "審訊者",
+					"ENG_name": "Inquisitive",
+					"shortName": "審訊者",
+					"ENG_shortName": "Inquisitive",
 					"source": "XGE",
 					"page": 45,
 					"subclassFeatures": [
@@ -776,8 +784,10 @@
 					]
 				},
 				{
-					"name": "Mastermind",
-					"shortName": "Mastermind",
+					"name": "策士",
+					"ENG_name": "Mastermind",
+					"shortName": "策士",
+					"ENG_shortName": "Mastermind",
 					"source": "XGE",
 					"page": 46,
 					"otherSources": [
@@ -794,8 +804,10 @@
 					]
 				},
 				{
-					"name": "Scout",
-					"shortName": "Scout",
+					"name": "斥侯",
+					"ENG_name": "Scout",
+					"shortName": "斥侯",
+					"ENG_shortName": "Scout",
 					"source": "XGE",
 					"page": 47,
 					"subclassFeatures": [
@@ -806,8 +818,10 @@
 					]
 				},
 				{
-					"name": "Swashbuckler",
-					"shortName": "Swashbuckler",
+					"name": "風流劍客",
+					"ENG_name": "Swashbuckler",
+					"shortName": "風流劍客",
+					"ENG_shortName": "Swashbuckler",
 					"source": "XGE",
 					"page": 48,
 					"otherSources": [

@@ -118,7 +118,7 @@ class PageFilterRaces extends PageFilter {
 			],
 			itemSortFn: PageFilterRaces.filterAscSortAsi,
 		});
-		this._baseRaceFilter = new Filter({header: "Base Race"});
+		this._baseRaceFilter = new Filter({header: "Base Race", header: "基本種族"});
 		this._speedFilter = new Filter(
 			{
 				header: "Speed",

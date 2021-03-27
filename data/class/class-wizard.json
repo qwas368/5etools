@@ -474,8 +474,10 @@
 			"subclassTitle": "Arcane Tradition",
 			"subclasses": [
 				{
-					"name": "School of Abjuration",
-					"shortName": "Abjuration",
+					"name": "防護學派",
+					"ENG_name": "School of Abjuration",
+					"shortName": "防護",
+					"ENG_shortName": "School of Abjuration",
 					"source": "PHB",
 					"page": 115,
 					"subclassFeatures": [
@@ -486,8 +488,10 @@
 					]
 				},
 				{
-					"name": "School of Conjuration",
-					"shortName": "Conjuration",
+					"name": "咒法學派",
+					"ENG_name": "School of Conjuration",
+					"shortName": "咒法",
+					"ENG_shortName": "School of Conjuration",
 					"source": "PHB",
 					"page": 116,
 					"subclassFeatures": [
@@ -498,8 +502,10 @@
 					]
 				},
 				{
-					"name": "School of Divination",
-					"shortName": "Divination",
+					"name": "預言學派",
+					"ENG_name": "School of Divination",
+					"shortName": "預言",
+					"ENG_shortName": "School of Divination",
 					"source": "PHB",
 					"page": 116,
 					"subclassFeatures": [
@@ -510,8 +516,10 @@
 					]
 				},
 				{
-					"name": "School of Enchantment",
-					"shortName": "Enchantment",
+					"name": "惑控學派",
+					"ENG_name": "School of Enchantment",
+					"shortName": "惑控",
+					"ENG_shortName": "School of Enchantment",
 					"source": "PHB",
 					"page": 117,
 					"subclassFeatures": [
@@ -522,8 +530,10 @@
 					]
 				},
 				{
-					"name": "School of Evocation",
-					"shortName": "Evocation",
+					"name": "塑能學派",
+					"ENG_name": "School of Evocation",
+					"shortName": "塑能",
+					"ENG_shortName": "School of Evocation",
 					"source": "PHB",
 					"page": 117,
 					"srd": true,
@@ -535,8 +545,10 @@
 					]
 				},
 				{
-					"name": "School of Illusion",
-					"shortName": "Illusion",
+					"name": "幻術學派",
+					"ENG_name": "School of Illusion",
+					"shortName": "幻術",
+					"ENG_shortName": "School of Illusion",
 					"source": "PHB",
 					"page": 118,
 					"additionalSpells": [
@@ -556,8 +568,10 @@
 					]
 				},
 				{
-					"name": "School of Necromancy",
-					"shortName": "Necromancy",
+					"name": "死靈學派",
+					"ENG_name": "School of Necromancy",
+					"shortName": "死靈",
+					"ENG_shortName": "School of Necromancy",
 					"source": "PHB",
 					"page": 118,
 					"subclassFeatures": [
@@ -568,8 +582,10 @@
 					]
 				},
 				{
-					"name": "School of Transmutation",
-					"shortName": "Transmutation",
+					"name": "變化學派",
+					"ENG_name": "School of Transmutation",
+					"shortName": "變化",
+					"ENG_shortName": "School of Transmutation",
 					"source": "PHB",
 					"page": 119,
 					"subclassFeatures": [
@@ -641,8 +657,10 @@
 					]
 				},
 				{
-					"name": "War Magic",
-					"shortName": "War",
+					"name": "戰爭魔法",
+					"ENG_name": "War Magic",
+					"shortName": "戰爭",
+					"ENG_shortName": "War",
 					"source": "XGE",
 					"page": 59,
 					"subclassFeatures": [
@@ -727,8 +745,10 @@
 					]
 				},
 				{
-					"name": "Bladesinging",
-					"shortName": "Bladesinging",
+					"name": "劍詠傳承",
+					"ENG_name": "Bladesinging",
+					"shortName": "劍詠",
+					"ENG_shortName": "Bladesinging",
 					"source": "TCE",
 					"page": 76,
 					"otherSources": [

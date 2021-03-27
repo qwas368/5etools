@@ -474,8 +474,10 @@
 			"subclassTitle": "Monastic Tradition",
 			"subclasses": [
 				{
-					"name": "Way of Shadow",
-					"shortName": "Shadow",
+					"name": "暗影宗",
+					"ENG_name": "Way of Shadow",
+					"shortName": "暗影宗",
+					"ENG_shortName": "Shadow",
 					"source": "PHB",
 					"page": 80,
 					"subclassFeatures": [
@@ -486,8 +488,10 @@
 					]
 				},
 				{
-					"name": "Way of the Four Elements",
-					"shortName": "Four Elements",
+					"name": "四象宗",
+					"ENG_name": "Way of the Four Elements",
+					"shortName": "四象宗",
+					"ENG_shortName": "Four Elements",
 					"source": "PHB",
 					"page": 80,
 					"spellcastingAbility": "wis",
@@ -499,8 +503,10 @@
 					]
 				},
 				{
-					"name": "Way of the Open Hand",
-					"shortName": "Open Hand",
+					"name": "散打宗",
+					"ENG_name": "Way of the Open Hand",
+					"shortName": "散打宗",
+					"ENG_shortName": "Open Hand",
 					"source": "PHB",
 					"page": 79,
 					"srd": true,
@@ -512,8 +518,10 @@
 					]
 				},
 				{
-					"name": "Way of the Long Death",
-					"shortName": "Long Death",
+					"name": "永亡宗",
+					"ENG_name": "Way of the Long Death",
+					"shortName": "永亡宗",
+					"ENG_shortName": "Long Death",
 					"source": "SCAG",
 					"page": 130,
 					"subclassFeatures": [
@@ -576,7 +584,9 @@
 				},
 				{
 					"name": "醉拳宗",
-					"shortName": "Drunken Master",
+					"ENG_name": "Way of the Drunken Master",
+					"shortName": "醉拳宗",
+					"ENG_shortName": "Drunken Master",
 					"source": "XGE",
 					"page": 33,
 					"subclassFeatures": [
@@ -587,8 +597,10 @@
 					]
 				},
 				{
-					"name": "Way of the Kensei",
-					"shortName": "Kensei",
+					"name": "劍聖宗",
+					"ENG_name": "Way of the Kensei",
+					"shortName": "劍聖宗",
+					"ENG_shortName": "Kensei",
 					"source": "XGE",
 					"page": 34,
 					"subclassFeatures": [
@@ -599,8 +611,10 @@
 					]
 				},
 				{
-					"name": "Way of the Sun Soul",
-					"shortName": "Sun Soul",
+					"name": "日魂宗",
+					"ENG_name": "Way of the Sun Soul",
+					"shortName": "日魂宗",
+					"ENG_shortName": "Sun Soul",
 					"source": "XGE",
 					"page": 35,
 					"otherSources": [

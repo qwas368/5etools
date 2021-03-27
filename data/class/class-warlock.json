@@ -384,8 +384,10 @@
 			"subclassTitle": "Otherworldly Patron",
 			"subclasses": [
 				{
-					"name": "The Archfey",
-					"shortName": "Archfey",
+					"name": "至高妖精",
+					"ENG_name": "The Archfey",
+					"shortName": "至高妖精",
+					"ENG_shortName": "The Archfey",
 					"source": "PHB",
 					"page": 108,
 					"additionalSpells": [
@@ -422,8 +424,10 @@
 					]
 				},
 				{
-					"name": "The Fiend",
-					"shortName": "Fiend",
+					"name": "邪魔宗主",
+					"ENG_name": "The Fiend",
+					"shortName": "邪魔宗主",
+					"ENG_shortName": "Fiend",
 					"source": "PHB",
 					"page": 109,
 					"srd": true,
@@ -461,8 +465,10 @@
 					]
 				},
 				{
-					"name": "The Great Old One",
-					"shortName": "Great Old One",
+					"name": "舊日支配者",
+					"ENG_name": "The Great Old One",
+					"shortName": "舊日支配者",
+					"ENG_shortName": "Great Old One",
 					"source": "PHB",
 					"page": 109,
 					"additionalSpells": [
@@ -571,8 +577,10 @@
 					]
 				},
 				{
-					"name": "The Undying",
-					"shortName": "Undying",
+					"name": "​不朽者",
+					"ENG_name": "The Undying",
+					"shortName": "​不朽者",
+					"ENG_shortName": "Undying",
 					"source": "SCAG",
 					"page": 139,
 					"additionalSpells": [
@@ -768,8 +776,10 @@
 					]
 				},
 				{
-					"name": "The Celestial",
-					"shortName": "Celestial",
+					"name": "天界宗主",
+					"ENG_name": "The Celestial",
+					"shortName": "天界宗主",
+					"ENG_shortName": "Celestial",
 					"source": "XGE",
 					"page": 54,
 					"additionalSpells": [
@@ -812,8 +822,10 @@
 					]
 				},
 				{
-					"name": "The Hexblade",
-					"shortName": "Hexblade",
+					"name": "咒劍士",
+					"ENG_name": "The Hexblade",
+					"shortName": "咒劍士",
+					"ENG_shortName": "Hexblade",
 					"source": "XGE",
 					"page": 55,
 					"additionalSpells": [

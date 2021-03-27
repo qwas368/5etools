@@ -2418,7 +2418,7 @@ DataUtil = {
 				{
 					return true;
 				}
-				else if (it.ENG_name != undefined) // rugini code for ENG_name
+				else if (it.ENG_name != undefined) // for ENG_name
 				{
 					var it2 = Object.assign({}, it);
 					it2.name = it.ENG_name;
@@ -2481,7 +2481,8 @@ DataUtil = {
 				if (copyTo[k] == null) {
 					if (impl._MERGE_REQUIRES_PRESERVE[k]) {
 						if (copyTo._copy._preserve && copyTo._copy._preserve[k]) copyTo[k] = copyFrom[k];
-					} else copyTo[k] = copyFrom[k];
+					}
+					else copyTo[k] = copyFrom[k];
 				}
 			});
 
@@ -2907,6 +2908,7 @@ DataUtil = {
 
 	monster: {
 		_MERGE_REQUIRES_PRESERVE: {
+			ENG_name: true,
 			legendaryGroup: true,
 			environment: true,
 			soundClip: true,
