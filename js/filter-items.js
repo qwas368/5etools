@@ -4,7 +4,7 @@ class PageFilterEquipment extends PageFilter {
 	constructor () {
 		super();
 
-		this._typeFilter = new Filter({header: "Type", headerName: "類型", deselFn: (it) => PageFilterItems._DEFAULT_HIDDEN_TYPES.has(it), displayFn: StrUtil.toTitleCase});
+		this._typeFilter = new Filter({header: "Type", headerName: "類型", deselFn: (it) => PageFilterItems._DEFAULT_HIDDEN_TYPES.has(it), displayFn: Parser.ItemTypeToDisplay});
 		this._propertyFilter = new Filter({header: "Property", headerName: "物品屬性", displayFn: StrUtil.uppercaseFirst});
 		this._costFilter = new RangeFilter({header: "Cost", headerName: "價值", min: 0, max: 100, isAllowGreater: true, suffix: " gp"});
 		this._weightFilter = new RangeFilter({header: "Weight", min: 0, max: 100, isAllowGreater: true, suffix: " lb."});

@@ -35694,7 +35694,8 @@
 			]
 		},
 		{
-			"name": "Gaming Set",
+			"name": "遊戲套組",
+			"ENG_name": "Gaming Set",
 			"source": "PHB",
 			"page": 154,
 			"srd": true,

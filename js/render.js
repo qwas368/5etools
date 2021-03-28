@@ -5034,48 +5034,48 @@ Renderer.item = {
 		let showingBase = false;
 		if (item.wondrous) {
 			typeListHtml.push(Parser.ItemTypeToDisplay(`wondrous item${item.tattoo ? ` (tattoo)` : ""}`));
-			typeListText.push(Parser.ItemTypeToDisplay("Wondrous Item"));
+			typeListText.push("Wondrous Item");
 		}
 		if (item.tattoo) {
 			typeListText.push(Parser.ItemTypeToDisplay("tattoo"));
 		}
 		if (item.staff) {
 			typeListHtml.push(Parser.ItemTypeToDisplay("staff"));
-			typeListText.push(Parser.ItemTypeToDisplay("staff"));
+			typeListText.push("staff");
 		}
 		if (item.ammo) {
 			typeListHtml.push(Parser.ItemTypeToDisplay("ammunition"));
-			typeListText.push(Parser.ItemTypeToDisplay("ammunition"));
+			typeListText.push("ammunition");
 		}
 		if (item.firearm) {
 			typeListHtml.push(Parser.ItemTypeToDisplay("firearm"));
-			typeListText.push(Parser.ItemTypeToDisplay("firearm"));
+			typeListText.push("firearm");
 		}
 		if (item.age) {
 			typeListHtml.push(Parser.ItemTypeToDisplay(item.age));
-			typeListText.push(Parser.ItemTypeToDisplay(item.age));
+			typeListText.push(item.age);
 		}
 		if (item.weaponCategory) {
 			typeListHtml.push(`${Parser.ItemTypeToDisplay(`${item.weaponCategory} weapon`)} ${item.baseItem ? ` (${Renderer.get().render(`{@item ${item.baseItem}}`)})` : ""}`);
-			typeListText.push(Parser.ItemTypeToDisplay(`${item.weaponCategory} weapon`));
+			typeListText.push(`${item.weaponCategory} weapon`);
 			showingBase = true;
 		}
 		if (item.staff && item.type !== "M") { // DMG p140: "Unless a staff's description says otherwise, a staff can be used as a quarterstaff."
 			typeListHtml.push(Parser.ItemTypeToDisplay("melee weapon"));
-			typeListText.push(Parser.ItemTypeToDisplay("melee weapon"));
+			typeListText.push("melee weapon");
 		}
 		if (item.type) {
-			const fullType = Parser.ItemTypeToDisplay(Renderer.item.getItemTypeName(item.type));
+			const fullType = Renderer.item.getItemTypeName(item.type);
 
-			if (!showingBase && !!item.baseItem) typeListHtml.push(`${fullType} (${Renderer.get().render(`{@item ${item.baseItem}}`)})`);
+			if (!showingBase && !!item.baseItem) typeListHtml.push(`${Parser.ItemTypeToDisplay(fullType)} (${Renderer.get().render(`{@item ${item.baseItem}}`)})`);
 			else if (item.type === "S") typeListHtml.push(Renderer.get().render(`armor ({@item shield|phb})`));
-			else typeListHtml.push(fullType);
+			else typeListHtml.push(Parser.ItemTypeToDisplay(fullType));
 
 			typeListText.push(fullType);
 		}
 		if (item.poison) {
 			typeListHtml.push(`poison${item.poisonTypes ? ` (${item.poisonTypes.joinConjunct(", ", " 或 ")})` : ""}`);
-			typeListText.push(Parser.ItemTypeToDisplay("poison"));
+			typeListText.push("poison");
 		}
 
 		return [typeListText, typeListHtml.join(", ")];
