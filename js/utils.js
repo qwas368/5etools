@@ -6646,5 +6646,13 @@ function isStringMatch (a, b, case_sensitive) {
 	else 				return a.toUpperCase() === b.toUpperCase();
 }
 
+Parser.ConditionsDiseasesKeyToDisplay = {};
+Parser.ConditionsDiseasesKeyToDisplay["condition"] = "狀態";
+Parser.ConditionsDiseasesKeyToDisplay["disease"] = "疾病";
+Parser.ConditionsDiseasesKeyToDisplay["status"] = "姿態";
+Parser.ConditionsDiseasesToDisplay = function(p){
+	return Parser.translateKeyInMapToDisplay(Parser.ConditionsDiseasesKeyToDisplay, p);
+}
+
 // Haz code
 // ==================

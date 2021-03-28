@@ -14,7 +14,7 @@ class PageFilterConditionsDiseases extends PageFilter {
 			header: "Type",
 			headerName: "類型",
 			items: ["condition", "disease", "status"],
-			displayFn: (type) => type === "c" ? "狀態" : "疾病",
+			displayFn: Parser.ConditionsDiseasesToDisplay,
 			deselFn: (it) => it === "disease" || it === "status",
 		});
 		this._miscFilter = new Filter({header: "Miscellaneous", headerName: "雜項", items: ["SRD", "Has Images", "Has Info"], isSrdFilter: true});

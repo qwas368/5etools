@@ -30,7 +30,7 @@ class ConditionsDiseasesPage extends ListPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="col-0-3 px-0 flex-vh-center lst__btn-toggle-expand self-flex-stretch">[+]</span>
-			<span class="col-3 text-center pl-0">${PageFilterConditionsDiseases.getDisplayProp(it.__prop)}</span>
+			<span class="col-3 text-center pl-0">${Parser.ConditionsDiseasesToDisplay(it.__prop)}</span>
 			<span class="bold col-6-7">${it.name}</span>
 			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${BrewUtil.sourceJsonToStyle(it.source)}>${source}</span>
 			<span class="eng_name hidden">${it.ENG_name ? it.ENG_name : it.name}</span>
