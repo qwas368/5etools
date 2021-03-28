@@ -269,17 +269,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Insight}, {@skill Religion}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Two of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A leather-bound diary, a {@item Ink (1-ounce bottle)|phb|bottle of ink}, an {@item ink pen|phb}, a set of {@item traveler's clothes|phb}, one {@item trinket|phb} of special significance, and a {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -347,7 +347,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Anthropologists leave behind the societies into which they were born to discover what life is like in other parts of the world. They seek to see how other races and civilizations survive - or why they did not. Some anthropologists are driven by intellectual curiosity, while others want the fame and recognition that comes with being the first to discover a new people, a lost tribe, or the truth about an ancient empire's downfall.",
@@ -355,7 +355,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -392,7 +392,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -429,7 +429,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -466,7 +466,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -546,22 +546,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill History}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill 歷史}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Cartographer's tools|phb} or {@item navigator's tools|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item Map or Scroll Case|phb|wooden case} containing a map to a ruin or dungeon, a {@item bullseye lantern|phb}, a {@item miner's pick|phb}, a set of {@item traveler's clothes|phb}, a {@item shovel|phb}, a {@item two-person tent|phb}, a {@item trinket|phb|trinket} recovered from a dig site, and a {@item pouch|phb} containing 25 gp"
 						}
 					]
@@ -630,7 +630,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Few archaeologists can resist the lure of an unexplored ruin or dungeon, particularly if such a site is the source of legends or is rumored to contain the treasures and relics of wizards, warlords, or royalty. Some archaeologists plunder for wealth or fame, while others consider it their calling to illuminate the past or keep the world's greatest treasures from falling into the wrong hands. Whatever their motivations, archaeologists combine the qualities of a scrappy historian with the self-made heroism of a treasure-hunting scoundrel.",
@@ -638,7 +638,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -683,7 +683,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -720,7 +720,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -757,7 +757,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -850,22 +850,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Acrobatics}, {@skill Athletics}"
+							"name": "技能熟練",
+							"entry": "{@skill Acrobatics}, {@skill 運動}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@filter Vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A bronze discus or leather ball, a lucky charm or past trophy, a set of {@item traveler's clothes|phb}, and a {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -935,7 +935,7 @@
 					]
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Competition can forge strong bonds between teammates and rivals or ignite bitter feuds that burn outside the arena. Athletes often apply lessons from their training to their lives in general.",
@@ -944,7 +944,7 @@
 							"caption": "Athlete Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -990,7 +990,7 @@
 							"caption": "Athlete Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1028,7 +1028,7 @@
 							"caption": "Athlete Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1066,7 +1066,7 @@
 							"caption": "Athlete Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1177,17 +1177,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Insight}, {@skill Intimidation}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Two of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "An Azorius insignia, a scroll containing the text of a law important to you, a {@item Ink (1-ounce bottle)|phb|bottle of blue ink}, a {@item ink pen|phb|pen}, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 10 gp (Azorius-minted 1-zino coins)"
 						}
 					]
@@ -1251,7 +1251,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Members of the Azorius Senate tend toward a demeanor of cold dignity and a pragmatic, orderly nature. Steeped in the law as they are, their ideals and priorities revolve around legal issues.",
 						{
@@ -1305,7 +1305,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -1343,7 +1343,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -1381,7 +1381,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -2230,17 +2230,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Insight}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Disguise kit|phb}, and one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Disguise kit|phb}, {@item common clothes|phb}, a Tears of Virulence {@item emblem|phb}, a writ of free agency signed by the Lord Regent, a set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set} you are proficient with, and a {@item pouch|phb} with 15 gp (payment for services rendered)."
 						}
 					]
@@ -2272,14 +2272,14 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -2324,7 +2324,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -2361,7 +2361,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -2398,7 +2398,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -2495,22 +2495,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Intimidation}"
+							"name": "技能熟練",
+							"entry": "{@skill 運動}, {@skill Intimidation}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose one of Celestial, Draconic, Goblin, or Minotaur"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Boros insignia, a feather from an angel's wing, a tattered piece of a Boros banner (a souvenir from a famous battle), a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 2 gp (Boros-minted 1-zino coins)"
 						}
 					]
@@ -2574,7 +2574,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"The Boros Legion is a zealous army, full of righteous energy tempered with military discipline. Its members share its leadership's devotion to the ideals of justice, or they find satisfaction in the more warfare-oriented aspects of the legion's work.",
 						{
@@ -2582,7 +2582,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -2628,7 +2628,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -2666,7 +2666,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -2704,7 +2704,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -2919,22 +2919,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Animal Handling}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill Animal Handling}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@filter Vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item whip|phb}, a {@item two-person tent|phb}, a regional map, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -2964,14 +2964,14 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -3016,7 +3016,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -3053,7 +3053,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -3090,7 +3090,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -3171,22 +3171,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Perception}, {@skill Performance}"
+							"name": "技能熟練",
+							"entry": "{@skill 感知}, {@skill Performance}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Disguise kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Two of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Disguise kit|phb}, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 30 gp."
 						}
 					]
@@ -3202,7 +3202,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Scions of celebrity adventurers must deal with fame that's not theirs, wealth they didn't earn, and expectations they can never hope to meet. These hardships can have adverse effects, but those who cope with them can arrive at a decent attitude and a grounded worldview. Those who fail become bitter\u2014or worse.",
@@ -3210,7 +3210,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -3255,7 +3255,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -3292,7 +3292,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -3329,7 +3329,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -3987,22 +3987,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Nature}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill Nature}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Elven"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item two-person tent|phb}, {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, a {@item holy symbol|phb}, a set of {@item traveler's clothes|phb}, a belt {@item pouch|phb} containing 5 gp"
 						}
 					]
@@ -4038,7 +4038,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -4083,7 +4083,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -4120,7 +4120,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -4157,7 +4157,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -4591,22 +4591,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Stealth}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Disguise kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Dimir insignia, three small knives, a set of dark-colored {@item common clothes|phb}, and the starting equipment of the background described in this chapter for your secondary guild"
 						}
 					]
@@ -4717,7 +4717,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Skilled at infiltration, disguise, and deception, members of House Dimir appear inscrutable. Your true personality and ideals might never manifest, or they might mark you as a quirky member of your secondary guild.",
 						{
@@ -4725,7 +4725,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -4771,7 +4771,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -4809,7 +4809,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -4847,7 +4847,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -5031,12 +5031,12 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Intimidation}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill Intimidation}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "Special (see origin below)"
 						},
 						{
@@ -5046,7 +5046,7 @@
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item dagger|phb}, tattered rags, a loaf of moldy bread, a small cast-off scale belonging to Vorgansharax\u2014the Maimed Virulence, and a {@item pouch|phb} with 5 gp of various coins (salvaged during your escape from Phlan)."
 						}
 					]
@@ -5193,14 +5193,14 @@
 					]
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5245,7 +5245,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5282,7 +5282,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5319,7 +5319,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5442,17 +5442,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill 運動}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Dwarvish and Undercommon "
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item shovel|phb} or a {@item miner's pick|phb}, a {@item block and tackle|phb}, a {@item climber's kit|phb}, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 5 gp"
 						}
 					]
@@ -5488,7 +5488,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5533,7 +5533,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5570,7 +5570,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5607,7 +5607,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -5985,22 +5985,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Intimidation}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Disguise kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Disguise kit|phb}, a {@item costume clothes|phb|costume}, a {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -6077,7 +6077,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"A faceless character usually plays their persona\u2014the hero or extraordinary person they are every day. That's all a facade, though, or a part of them expressed to an extreme. To define a persona, feel free to choose characteristics from other backgrounds, particularly folk hero, hermit, or noble. For the person behind the persona, the one who truly strives to be faceless, consider a distinct set of faceless characteristics. As a result, those with this background have two sets of characteristics, one for their persona, and one for their faceless selves.",
@@ -6085,7 +6085,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -6130,7 +6130,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -6167,7 +6167,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -6204,7 +6204,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -6375,22 +6375,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Investigation}, {@skill Persuasion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Any one of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, {@item merchant's scale|phb}, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -6406,7 +6406,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Being a merchant involved having a head for numbers, a strong personality, the ability to make deals with hostile adversaries, a strong sword arm to fight off bandits, and the intuition for knowing what people want and need. The art of business is the art of finding the best path to profit, and that path might be different with each transaction. It takes a strong mind and a stronger stomach to succeed. So why did you fail?",
@@ -6414,7 +6414,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -6459,7 +6459,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -6496,7 +6496,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -6533,7 +6533,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -6901,7 +6901,8 @@
 			"ENG_name": "Far Traveler"
 		},
 		{
-			"name": "Fisher",
+			"name": "漁民",
+			"ENG_name": "Fisher",
 			"source": "GoS",
 			"page": 29,
 			"entries": [
@@ -6911,26 +6912,27 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill History}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill 歷史}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
-							"entry": "One of your choice"
+							"name": "語言",
+							"entry": "自選一種"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
-							"entry": "{@item Fishing tackle|phb}, a {@item net|phb}, a favorite fishing lure or oiled leather wading boots, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+							"name": "裝備",
+							"entry": "{@item 釣魚用具|phb}，一張{@item 捕網|phb}，最愛的魚餌或者油皮雨靴，一套{@item 旅行者服裝|phb}，以及一個裝有10GP的{@item 囊袋|phb}"
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: Harvest the Water",
+					"name": "特性：捕獲水產",
+					"ENG_name": "Feature: Harvest the Water",
 					"entries": [
-						"You gain advantage on ability checks made using fishing tackle. If you have access to a body of water that sustains marine life, you can maintain a moderate lifestyle while working as a fisher, and you can catch enough food to feed yourself and up to ten other people each day."
+						"你在使用漁具的能力檢定上有優勢。如果你能遇到有海洋生物生活的水域，你可以作為一個漁夫來維持儉樸的生活水平，你可以每天獲取足夠的事物來養活自己和其他10個人。"
 					],
 					"data": {
 						"isFeature": true
@@ -6938,9 +6940,10 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fishing Tale",
+					"name": "捕魚故事",
+					"ENG_name": "Fishing Tale",
 					"entries": [
-						"You can tell a compelling tale, whether tall or true, to impress and entertain others. Once a day, you can tell your story to willing listeners. At the DM's discretion, a number of those listeners become friendly toward you; this is not a magical effect, and continued amicability on their part depends on your actions. You can roll on the following table to help determine the theme of your tale or choose one that best fits your character. Alternatively, work with your DM to create your own fishing tale.",
+						"你可以講一個引人入勝的故事，無論是真是假，都是為了打動和娛樂他人。每天一次，你可以把自己的故事講述給原意的聽眾。根據DM的判斷，一些聽眾會對你表示友好；這並不是一個魔法效果，他們後續的友好表現取決於你的行動。你可以在下表投擲來幫助你決定故事的主題或選擇最適合你的角色的主題。亦或，你和你的DM一起創作自己的捕魚故事。",
 						{
 							"type": "table",
 							"colLabels": [
@@ -6954,35 +6957,35 @@
 							"rows": [
 								[
 									"1",
-									"Lobster Wrestling. You fought in hand-to-hand combat with an immense lobster."
+									"龍蝦摔角。你曾和一只巨大的龍蝦徒手搏鬥過。"
 								],
 								[
 									"2",
-									"It Dragged the Boat. You nearly caught a fish of monstrous size that pulled your boat for miles."
+									"它拖著船。你差點釣到了一條巨大的魚，那條魚拖著你的船游了好幾英里。"
 								],
 								[
 									"3",
-									"Fins of Pure Gold. You caught a sea animal whose fins were made of pure gold, but another fisher stole it."
+									"純金的鰭。你抓到過一條海洋動物，它的鰭竟然是純金的，但是另一個漁夫偷走了它。"
 								],
 								[
 									"4",
-									"Ghost Fish. You are haunted by a ghostly fish that only you can see."
+									"幽靈魚。你被一條只有你能看見的幽靈魚纏住了。"
 								],
 								[
 									"5",
-									"Nemesis Clam. A large clam containing a pearl the size of your head claimed one of your fingers before jetting away; one day, you'll find that clam."
+									"蚌仇血恥。一只巨蚌里面有一顆像你的頭一樣大的珍珠，它在被沖走前夾走了你的一根手指，總有一天，你會找到這只蚌的。"
 								],
 								[
 									"6",
-									"It Swallowed the Sun. You once saw a fish leap from the water and turn day into night."
+									"遮天蔽日。你曾看到一條魚從水里跳出來，把白天變成了晚上。"
 								],
 								[
 									"7",
-									"Dive into the Abyss. You found yourself in an underwater cave leading to the Abyss, and your luck has been sour ever since."
+									"潛向深淵。你發現自己在一個通往深淵的水下洞穴裡，從此你的運氣就變差了。"
 								],
 								[
 									"8",
-									"Love Story. You fell in love with a creature of pure water, but your brief romance ended tragically."
+									"愛情故事。你愛上了一個純水生物，但你那短暫的愛情卻以悲劇告終。"
 								]
 							]
 						}
@@ -6990,15 +6993,16 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵",
+					"ENG_name": "Suggested Characteristics",
 					"entries": [
-						"Fishers succeed only if they spend time at their jobs. As such, most fishers have a strong work ethic, and they admire others who earn their living honestly. Fishers tend to be superstitious, forming attachments to particular fishing lures or special fishing spots. They have a connection to the bodies of water in which they fish, and they think poorly of those whose actions adversely affect their livelihood.",
+						"漁民只有專註在他們的工作上才能成功。因此，大部分的漁民都有很強烈的職業道德，他們欽佩那些誠實謀生的人。漁民往往會有些迷信，會對特定的魚餌和特別的打漁點充滿信念。他們與他們捕魚的水域有關聯，他們也很不待見那些對他們的生計有不利行為的人。",
 						{
 							"type": "table",
-							"caption": "Fisher Personality Traits",
+							"caption": "漁民的個性",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7007,44 +7011,44 @@
 							"rows": [
 								[
 									"1",
-									"I am unmoved by the wrath of nature."
+									"我對自然的憤怒無動於衷。"
 								],
 								[
 									"2",
-									"My friends are my crew; we sink or float together."
+									"我的朋友也是我的船員，我們共同進退。"
 								],
 								[
 									"3",
-									"I need long stretches of quiet to clear my head."
+									"我需要長時間的平靜來理清我的思緒。"
 								],
 								[
 									"4",
-									"Rich folk don't know the satisfaction of hard work."
+									"富人不了解辛勤工作的滿足。"
 								],
 								[
 									"5",
-									"I laugh heartily, feel deeply, and fear nothing."
+									"我開懷大笑，感同身受，無所畏懼。"
 								],
 								[
 									"6",
-									"I work hard; nature offers no handouts."
+									"我努力工作，大自然不會提供施舍。"
 								],
 								[
 									"7",
-									"I dislike bargaining; state your price and mean it."
+									"我不喜歡討價還價，請你明碼標價。"
 								],
 								[
 									"8",
-									"Luck favors me, and I take risks others might not."
+									"幸運眷顧著我，我感冒別人不敢冒的險。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Fisher Ideals",
+							"caption": "漁民的理想",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理想"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7053,36 +7057,36 @@
 							"rows": [
 								[
 									"1",
-									"{@b Camaraderie.} Good people make even the longest voyage bearable. (Good)"
+									"{@b 友誼} 好人即使是最遠的航程也能應對。（善良）"
 								],
 								[
 									"2",
-									"{@b Luck.} Our luck depends on respecting its rules\u2014now throw this salt over your shoulder. (Lawful)"
+									"{@b 幸運} 我的幸運取決於遵守規則\u2014現在把鹽撒在你的肩膀上。（守序）"
 								],
 								[
 									"3",
-									"{@b Daring.} The richest bounty goes to those who risk everything. (Chaotic)"
+									"{@b 勇敢} 最豐厚的獎賞只會給予那些不惜一切的人。（混亂）"
 								],
 								[
 									"4",
-									"{@b Plunder.} Take all that you can and leave nothing for the scavengers. (Evil)"
+									"{@b 掠奪} 帶走你能帶走的一切，不要給拾荒者留下一點東西。（邪惡）"
 								],
 								[
 									"5",
-									"{@b Balance.} Do not fish the same spot twice in a row; suppress your greed, and nature will reward you. (Neutral)"
+									"{@b 平衡} 不要在一個地方連續捕兩次魚，控制你的貪念，自然會給予你回報。（中立）"
 								],
 								[
 									"6",
-									"{@b Hard Work.} No wave can move a soul hard at work. (Any)"
+									"{@b 工作} 沒有波浪能使工作中的靈魂動搖。（任何）"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Fisher Bonds",
+							"caption": "漁民的羈絆",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7091,36 +7095,36 @@
 							"rows": [
 								[
 									"1",
-									"I lost something important in the deep sea, and I intend to find it."
+									"我在深海中失去了重要的東西，我要找到它。"
 								],
 								[
 									"2",
-									"Someone else's greed destroyed my livelihood, and I will be compensated."
+									"某些人的貪婪毀掉了我的生計，我會得到補償的。"
 								],
 								[
 									"3",
-									"I will fish the many famous waters of this land."
+									"我會在這片大陸上的許多著名水域捕魚。"
 								],
 								[
 									"4",
-									"The gods saved me during a terrible storm, and I will honor their gift."
+									"神明在一場糟糕的風暴中拯救了我，而我會尊重他們的恩賜。"
 								],
 								[
 									"5",
-									"My destiny awaits me at the bottom of a particular pond in the Feywild."
+									"我的命運在妖精荒野的一個特別的池塘底部等著我。"
 								],
 								[
 									"6",
-									"I must repay my village's debt."
+									"我必須償還我的村莊的債務。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Fisher Flaws",
+							"caption": "漁民的缺點",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7129,27 +7133,27 @@
 							"rows": [
 								[
 									"1",
-									"I am judgmental, especially of those I deem homebodies or otherwise lazy."
+									"我動不動就評頭論足，尤其對於那些在我看來是家里蹲和懶蟲的人。"
 								],
 								[
 									"2",
-									"I become depressed and anxious if I'm away from the sea too long."
+									"如果我離開大海太久，我會變的沮喪和焦慮。"
 								],
 								[
 									"3",
-									"I have lived a hard life and find it difficult to empathize with others."
+									"我有著艱難的生活，並很難對別人有同情心。"
 								],
 								[
 									"4",
-									"I am inclined to tell long-winded stories at inopportune times."
+									"我傾向於在不合時宜的時候講述冗長的故事。"
 								],
 								[
 									"5",
-									"I work hard, but I play harder."
+									"我努力工作，但我玩的更嗨。"
 								],
 								[
 									"6",
-									"I am obsessed with catching an elusive aquatic beast, often to the detriment of other pursuits."
+									"我沉迷於捕捉一種難以捕捉的水生動物，以至於我經常顧此失彼。"
 								]
 							]
 						}
@@ -7499,22 +7503,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Insight}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Any one of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "One {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, a lucky charm, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
 						}
 					]
@@ -7530,7 +7534,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Some gamble out of necessity. Others do so out of boredom. Still others become addicted to the thrill of winning or losing everything on a turn of fortune. For some, gambling is less a matter of chance and more a matter of seeking every advantage to ensure the outcome. The best gamblers can lose everything, and the worst gamblers sometimes win. Regardless, you can always tell gamblers by the look in their eyes. Lady Luck haunts them.",
@@ -7538,7 +7542,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7583,7 +7587,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7620,7 +7624,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7657,7 +7661,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -7739,17 +7743,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Sleight of Hand}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Thieves' tools|phb}, one type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A battered alms box, a {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}, a cast-off military jacket, cap, or scarf, a set of {@item common clothes|phb}, a belt {@item pouch|phb}, and 10 gp"
 						}
 					]
@@ -7785,7 +7789,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -7830,7 +7834,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -7867,7 +7871,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -7904,7 +7908,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -8003,22 +8007,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Nature}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill Nature}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Poisoner's kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose one of Elvish, Giant, or Kraul"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Golgari insignia, a {@item poisoner's kit|phb}, a pet beetle or spider, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 10 gp worth of mixed coins"
 						}
 					]
@@ -8082,7 +8086,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Members of the Golgari Swarm are unmistakably products of the undercity, ill at ease amid the comforts of civilization. They bring about the same discomfort in others by reminding them of death's inevitable approach.",
 						{
@@ -8090,7 +8094,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8136,7 +8140,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8174,7 +8178,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8212,7 +8216,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8428,17 +8432,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Performance}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}, {@item thieves' tools|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of {@item fine clothes|phb}, a {@item disguise kit|phb}, a {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument} of your choice, a gold-plated ring depicting a smiling face, and a {@item pouch|phb} containing 15 gp"
 						}
 					]
@@ -8455,7 +8459,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Grinners are trained in the art of secrecy and innuendo, and are skilled at hiding in plain sight by being the loudest and brightest person in the room. Their skills in subterfuge and combat lend themselves well to an adventuring lifestyle, and traveling with mercenaries and treasure hunters creates a convenient excuse to journey through lands bent under tyranny.",
@@ -8463,7 +8467,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -8508,7 +8512,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -8545,7 +8549,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -8582,7 +8586,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -8662,22 +8666,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Animal Handling}, {@skill Athletics}"
+							"name": "技能熟練",
+							"entry": "{@skill Animal Handling}, {@skill 運動}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Herbalism kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose one of Draconic, Giant, Goblin, or Sylvan"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Gruul insignia, a {@item hunting trap|phb}, an {@item herbalism kit|phb}, the skull of a boar, a beast-hide cloak, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 10 gp (Azorius 1-zino coins)"
 						}
 					]
@@ -8741,7 +8745,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Gruul ways aren't the ways of civilized folk, and the Gruul have little patience for social niceties. But they do have cherished traditions and values, just as important to them as the different values held by the urban, cosmopolitan culture of Ravnica.",
 						{
@@ -8749,7 +8753,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8795,7 +8799,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8833,7 +8837,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -8871,7 +8875,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -9428,17 +9432,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Sleight of Hand}"
+							"name": "技能熟練",
+							"entry": "{@skill 運動}, {@skill Sleight of Hand}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, {@filter vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Fishing tackle|phb}, {@item dice set|phb}, {@item playing card set|phb}, or {@item Three-Dragon Ante set|phb}, a set of {@item common clothes|phb}, {@item rowboat}, and a belt {@item pouch|phb} containing 5 gp"
 						}
 					]
@@ -9474,7 +9478,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9519,7 +9523,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9556,7 +9560,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9593,7 +9597,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9674,17 +9678,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "Choose two of {@skill Arcana}, {@skill Investigation}, {@skill Religion}, or {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "Choose two of {@skill Arcana}, {@skill Investigation}, {@skill Religion}, or {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose two languages, one of which is exotic (Abyssal, Celestial, Deep Speech, Draconic, Infernal, Primordial, Sylvan, or Undercommon)"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Monster hunter's pack|cos}, a set of {@item common clothes|phb}, one {@item trinket|CoS} of special significance (choose one or roll on the Gothic Trinkets table), and 1 sp"
 						}
 					]
@@ -9760,7 +9764,7 @@
 					]
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"You have learned to live with the terror that haunts you. You are a survivor, who can be very protective of those who bring light into your darkened life.",
@@ -9768,7 +9772,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9813,7 +9817,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9850,7 +9854,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -9887,7 +9891,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10280,17 +10284,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Insight}, {@skill Persuasion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@filter Vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)} and {@filter vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of {@item fine clothes|phb}, a {@item signet ring|phb}, a letter of introduction from your family's trading house, and a purse containing 25 gp"
 						}
 					]
@@ -10338,7 +10342,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10383,7 +10387,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10420,7 +10424,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10457,7 +10461,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10534,22 +10538,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Perception}, {@skill Stealth}"
+							"name": "技能熟練",
+							"entry": "{@skill 感知}, {@skill Stealth}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One racial language"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Forgery kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item forgery kit|phb}, a set of {@item common clothes|phb}, a belt {@item pouch|phb}, and 5 gp"
 						}
 					]
@@ -10586,7 +10590,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10631,7 +10635,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10668,7 +10672,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10705,7 +10709,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -10792,7 +10796,7 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Investigation}, {@skill Persuasion}"
 						},
 						{
@@ -10804,7 +10808,7 @@
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of {@item fine clothes|phb}, house {@item signet ring|phb}, identification papers, and a purse containing 20 gp."
 						}
 					]
@@ -10939,7 +10943,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"House agents are diverse. Consider the house you serve and the work you do when choosing characteristics.",
@@ -10948,7 +10952,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d6",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -10986,7 +10990,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -11024,7 +11028,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -11062,7 +11066,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -11341,17 +11345,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Intimidation}"
+							"name": "技能熟練",
+							"entry": "{@skill 運動}, {@skill Intimidation}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, {@filter vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A simple puzzle box, a scroll containing the basic teachings of the five gods, a {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 15 gp. If you have completed any trials before the start of the campaign, you also have any cartouches you have earned"
 						}
 					]
@@ -11410,7 +11414,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"An initiate's life is focused on the trials, but it doesn't need to be all about the trials. Though some initiates are highly focused on their training, most undergo that training while also experiencing joy, sorrow, love, loss, anger, jealousy, hope, faith, delight\u2014the whole range of mortal emotions and experience. The afterlife might be a constant presence in every initiate's mind, but it is the culmination of a life well-lived\u2014not a replacement for it.",
@@ -11418,7 +11422,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11463,7 +11467,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11500,7 +11504,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11537,7 +11541,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11621,17 +11625,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Investigation}, {@skill Religion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Thieves' tools|phb}, one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item holy symbol|phb}, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
 						}
 					]
@@ -11684,17 +11688,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Animal Handling}, {@skill Stealth}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, {@filter vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of dark {@item common clothes|phb}, {@item pack saddle|phb}, {@item burglar's pack|phb}, and a belt {@item pouch|phb} containing 5 gp"
 						}
 					]
@@ -11724,14 +11728,14 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11776,7 +11780,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11813,7 +11817,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11850,7 +11854,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -11927,22 +11931,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Arcana}, {@skill Investigation}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose one of Draconic, Goblin, or Vedalken"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "An Izzet insignia, one set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, the charred and twisted remains of a failed experiment, a {@item hammer|phb}, a {@item block and tackle|phb}, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 5 gp (Azorius 1-zino coins)"
 						}
 					]
@@ -12009,7 +12013,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Members of the Izzet League embody some combination of chaotic, frenetic energy with intellectual curiosity, in varying proportions. Some are committed to academic pursuits, and others just like explosions.",
 						{
@@ -12017,7 +12021,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -12063,7 +12067,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -12101,7 +12105,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -12139,7 +12143,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -12445,7 +12449,8 @@
 			"hasFluff": true
 		},
 		{
-			"name": "Marine",
+			"name": "海軍",
+			"ENG_name": "Marine",
 			"source": "GoS",
 			"page": 31,
 			"entries": [
@@ -12455,26 +12460,27 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill 運動}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "{@filter Vehicles (water, land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land);vehicle (water)}"
+							"name": "工具熟練",
+							"entry": "{@filter 載具(水)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land);vehicle (water)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
-							"entry": "A {@item dagger|phb} that belonged to a fallen comrade, a folded flag emblazoned with the symbol of your ship or company, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
+							"name": "裝備",
+							"entry": "一把屬於倒下的戰友的{@item 匕首|phb}，一面曡起來的上面裝飾有你的船或團隊的標志的旗幟，一套{@item 旅行者服裝|phb}以及一個裝有10GP的{@item 囊袋|phb}"
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: Steady",
+					"name": "特性：穩步前進",
+					"ENG_name": "Feature: Steady",
 					"entries": [
-						"You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see \"Travel Pace\" in chapter 8 of the Player's Handbook). Additionally, you can automatically find a safe route to land a boat on shore, provided such a route exists."
+						"在受到強行軍 forced march（玩家手冊第八章的步調）的效果之前，你可以每天移動兩倍的正常時間（最多16個小時）。額外的，你可以熟練的找到一條安全的道路將船靠岸。"
 					],
 					"data": {
 						"isFeature": true
@@ -12482,14 +12488,14 @@
 				},
 				{
 					"type": "entries",
-					"name": "Hardship Endured",
+					"name": "艱難苦難",
 					"entries": [
-						"Hardship in your past has forged you into an unstoppable living weapon. This hardship is essential to you and is at the heart of a personal philosophy or ethos that often guides your actions. You can roll on the following table to determine this hardship or choose one that best fits your character.",
+						"過去的苦難把你鍛煉成了一件無人可擋的活體兵器。這種困難對於你來說是必不可少的，而且它是你的人生哲學和精神的核心，常常引導著你的行動。你可以在下表投擲以決定困難或選擇一個最適合你的角色的。",
 						{
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Hardship"
+								"苦難"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -12498,27 +12504,27 @@
 							"rows": [
 								[
 									"1",
-									"Nearly Drowned. You hid underwater to avoid detection by enemies and held your breath for an extremely long time. Just before you would have died, you had a revelation about your existence."
+									"幾近溺死，你躲在水下以免被敵人發現，而且屏住呼吸很長時間。就在你快憋死之前，你暴露了你的存在。"
 								],
 								[
 									"2",
-									"Captured. You spent months enduring thirst, starvation, and torture at the hands of your enemy, but you never broke."
+									"慘遭俘虜，你在你的敵人的手上忍受了數個月的口渴，饑餓和折磨，但是你從未屈服。"
 								],
 								[
 									"3",
-									"Sacrifice. You enabled the escape of your fellow soldiers, but at great cost to yourself. Some of your past comrades may think you're dead."
+									"光榮犧牲，你使你的戰友得以逃脫，但是你付出了巨大的代價。你過去的戰友可能會認為你已經死了。"
 								],
 								[
 									"4",
-									"Juggernaut. No reasonable explanation can explain how you survived a particular battle. Every arrow and bolt missed you. You slew scores of enemies single-handedly and led your comrades to victory."
+									"一夫當關，沒有合理的解釋可以說明你是如何在這場特別的戰鬥中存活下來的。每一支箭矢都錯過了你。你一人擊殺了幾十名敵人並帶領你的戰友取得了勝利。"
 								],
 								[
 									"5",
-									"Stowaway. For days, you hid in the bilge of an enemy ship, surviving on brackish water and foolhardy rats. At the right moment, you crept up to the deck and took over the ship on your own."
+									"偷渡劫船，這幾天來，你一直躲在敵艦的船艙里，靠著鹹水和老鼠為生。在合適的時候，你爬上了甲板，自己接管了船。"
 								],
 								[
 									"6",
-									"Leave None Behind. You carried an injured marine for miles to avoid capture and death."
+									"同生共死，你帶著一名受傷的海軍走了好幾英里，以免被俘或死亡。"
 								]
 							]
 						}
@@ -12526,15 +12532,15 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
-						"Marines are looked up to by other soldiers and respected by their superiors. They are veteran warriors who rarely lose composure on the battlefield. Marines who leave the service tend to work as mercenaries, but their combat experience also makes them excellent adventurers. Though they are self-reliant, marines tend to operate best in groups, valuing camaraderie and the companionship of like-minded individuals.",
+						"海軍受到其他士兵和其上級的尊重。這些老兵很少在戰場上失去鎮靜。退役的海軍往往會擔任僱傭兵，但他們豐富的戰鬥經驗也使他們成為優秀的冒險者。盡管他們是自力更生，但海軍更傾向於團隊合作，重視戰友情誼和志同道合的朋友的友誼。",
 						{
 							"type": "table",
-							"caption": "Marine Personality Traits",
+							"caption": "海軍的個性",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -12543,44 +12549,44 @@
 							"rows": [
 								[
 									"1",
-									"I speak rarely but mean every word I say."
+									"我說話言簡意賅。"
 								],
 								[
 									"2",
-									"I laugh loudly and see the humor in stressful situations."
+									"我笑聲爽朗，會在緊張的情況下感到滑稽。"
 								],
 								[
 									"3",
-									"I prefer to solve problems without violence, but I finish fights decisively."
+									"我不願意用暴力解決問題，但我會果斷的解決戰鬥。"
 								],
 								[
 									"4",
-									"I enjoy being out in nature; poor weather never sours my mood."
+									"我喜歡處在大自然里，糟糕的天氣也不會使我的心情變差。"
 								],
 								[
 									"5",
-									"I am dependable."
+									"我值得信賴。"
 								],
 								[
 									"6",
-									"I am always working on some project or other."
+									"我總是在忙這樣那樣的事情。"
 								],
 								[
 									"7",
-									"I become cantankerous and quiet in the rain."
+									"我在雨里會變得脾氣暴躁，又沉默寡言。"
 								],
 								[
 									"8",
-									"When the sea is within my sight, my mood is jovial and optimistic."
+									"當大海進入我的視線，我的心情會變得愉悅和樂觀。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Marine Ideals",
+							"caption": "海軍理想",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -12589,36 +12595,36 @@
 							"rows": [
 								[
 									"1",
-									"{@b Teamwork.} Success depends on cooperation and communication. (Good)"
+									"{@b 團隊合作} 勝利取決於合作與溝通。（善良）"
 								],
 								[
 									"2",
-									"{@b Code.} The marines' code provides a solution for every problem, and following it is imperative. (Lawful)"
+									"{@b 行為規範} 海軍的行為規範為每一個問題提供了解決方法，遵循它是必要的。（守序）"
 								],
 								[
 									"3",
-									"{@b Embracing.} Life is messy. Throwing yourself into the worst of it is necessary to get the job done. (Chaotic)"
+									"{@b 欣然接受} 生活是混亂的，把自己放在最壞的情況中是完成這項工作的必要條件。（混亂）"
 								],
 								[
 									"4",
-									"{@b Might.} The strong train so that they might rule those who are weak. (Evil)"
+									"{@b 力量至上} 強大的力量能使他們統治弱小的人。（邪惡）"
 								],
 								[
 									"5",
-									"{@b Bravery.} To act when others quake in fear\u2014this is the essence of the warrior. (Any)"
+									"{@b 勇敢的心} 當別人在恐懼中顫抖時採取行動-這是戰士的本質。（任意）"
 								],
 								[
 									"6",
-									"{@b Perseverance.} No injury or obstacle can turn me from my goal. (Any)"
+									"{@b 堅韌不拔} 沒有傷痛和障礙能使我轉移目標。（任意）"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Marine Bonds",
+							"caption": "海軍的羈絆",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -12627,36 +12633,36 @@
 							"rows": [
 								[
 									"1",
-									"I face danger and evil to offset an unredeemable act in my past."
+									"為了彌補我過去無法挽回的行為，我如今面對這威脅和邪惡。"
 								],
 								[
 									"2",
-									"I. Will. Finish. The. Job."
+									"保！證！完！成！任！務！"
 								],
 								[
 									"3",
-									"I must set an example of hope for those who have given up."
+									"我必須為那些已經放棄的人樹立一個希望的榜樣。"
 								],
 								[
 									"4",
-									"I'm searching for a fellow marine captured by an elusive enemy."
+									"我正在尋找我的海軍戰友，他被一個難以找到的敵人俘虜了。"
 								],
 								[
 									"5",
-									"Fear leads to tyranny, and both must be eradicated."
+									"恐懼引領暴政，兩者皆需鏟除。"
 								],
 								[
 									"6",
-									"My commander betrayed my unit, and I will have revenge."
+									"我的長官背叛了我的部隊，我要報仇。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Marine Flaws",
+							"caption": "海軍的缺點",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -12665,27 +12671,27 @@
 							"rows": [
 								[
 									"1",
-									"I grow combative and unpredictable when I drink."
+									"當我喝酒的時候，我會變得好鬥善變。"
 								],
 								[
 									"2",
-									"I find civilian life difficult and struggle to say the right thing in social situations."
+									"我覺得平民的生活很困難，我在社交場合很難說出正確的話。"
 								],
 								[
 									"3",
-									"My intensity can drive others away."
+									"我的緊張讓人避之不及。"
 								],
 								[
 									"4",
-									"I hold grudges and have difficulty forgiving others."
+									"我怨氣滿腹，從不輕易原諒別人。"
 								],
 								[
 									"5",
-									"I become irrational when innocent people are hurt."
+									"當無辜的人受到傷害時，我會變得蠻不講理。"
 								],
 								[
 									"6",
-									"I sometimes stay up all night listening to the ghosts of my fallen enemies."
+									"我有時整晚都能聽見在我面前死去的敵人的鬼魂。"
 								]
 							]
 						}
@@ -12817,17 +12823,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Performance}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of artistic {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} and one {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}, a set of {@item fine clothes|phb}, and a purse containing 10 gp"
 						}
 					]
@@ -12863,7 +12869,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -12908,7 +12914,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -12945,7 +12951,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -12982,7 +12988,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13318,17 +13324,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Intimidation}, {@skill Religion}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Two of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "An Orzhov insignia, a foot-long chain made of ten gold coins, vestments, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 1 pp (an Orzhov-minted 10-zino coin)"
 						}
 					]
@@ -13392,7 +13398,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Members of the Orzhov Syndicate range from the decadent nobility at the top of the oligarchy to the debt-ridden wretches at the bottom. You fall somewhere between those extremes, so you might behave with the arrogance of the very rich or the humility of the impoverished.",
 						{
@@ -13400,7 +13406,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -13446,7 +13452,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -13484,7 +13490,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -13522,7 +13528,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -14021,17 +14027,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Stealth}, {@skill Survival}"
+							"name": "技能熟練",
+							"entry": "{@skill Stealth}, {@skill 求生}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, {@filter vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (land)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A bag of {@item caltrops (bag of 20)|phb}, a small {@item trinket|phb} that connects you to the life you once had before the occupation of Phlan, a {@item healer's kit|phb}, a set of dark {@item common clothes|phb} that includes a cloak and hood, and a belt {@item pouch|phb} containing 5 gp"
 						}
 					]
@@ -14124,7 +14130,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"You have given up the life you knew as a citizen of Phlan. However, the Maimed Virulence's invasion resonates deep inside you. Perhaps you have a few friends or family members who were able to escape with you. Or, perhaps, everyone you held dear either perished or went missing during the fall. You may know of someone who is, against all odds, surviving within the thicket and you long to liberate them from a life of peril within the town.",
@@ -14132,7 +14138,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14177,7 +14183,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14214,7 +14220,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14251,7 +14257,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14335,22 +14341,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Insight}, {@skill Athletics}"
+							"name": "技能熟練",
+							"entry": "{@skill Insight}, {@skill 運動}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} (one of your choice), a token of the life you once knew, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
 						}
 					]
@@ -14386,7 +14392,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14431,7 +14437,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14468,7 +14474,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14505,7 +14511,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -14588,22 +14594,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Medicine}, {@skill Persuasion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Any one of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, {@item fine clothes|phb}, 20 gp"
 						}
 					]
@@ -14619,7 +14625,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Plaintiffs come in many varieties. Some are innocent bystanders who want only fair compensation for their injuries. Others are professional courtroom operatives, going to extreme lengths to appear wronged in pursuit of a large payout.",
@@ -14628,7 +14634,7 @@
 							"caption": "",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14674,7 +14680,7 @@
 							"caption": "",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14712,7 +14718,7 @@
 							"caption": "",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14750,7 +14756,7 @@
 							"caption": "",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14829,22 +14835,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Acrobatics}, {@skill Performance}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose either Abyssal or Giant"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Rakdos insignia, a {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument} (one of your choice), a {@item costume clothes|phb|costume}, a {@item hooded lantern|phb} made of wrought iron, a 10-foot length of chain with sharply spiked links, a {@item tinderbox|phb}, 10 {@item torch|phb|torches}, a set of {@item common clothes|phb}, a belt {@item pouch|phb} containing 10 gp (a mix of Azorius and Boros 1-zino coins), and a bottle of sweet, red juice"
 						}
 					]
@@ -14961,7 +14967,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Members of demonic cults aren't generally known as the kindest or most mentally stable individuals, so you're likely to have something in your nature that distinguishes you from the law-abiding citizens of Ravnica.",
 						{
@@ -14969,7 +14975,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -15015,7 +15021,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -15053,7 +15059,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -15091,7 +15097,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -15320,22 +15326,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill History}, {@skill Investigation}"
+							"name": "技能熟練",
+							"entry": "{@skill 歷史}, {@skill Investigation}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Any one of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "One set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, a ledger from your previous employer containing a small piece of useful information, a set of {@item fine clothes|phb}, and a belt {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -15351,7 +15357,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"If you were happy with your previous internship, the parting of ways might have been amicable. If not, it might have involved armed guards removing you from the premises. If you were passed over at your previous position, it might have left you a blend of seething rage, practiced nonchalance, and keen knowledge of where the bodies are buried (perhaps literally).",
@@ -15359,7 +15365,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -15404,7 +15410,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -15441,7 +15447,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -15478,7 +15484,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -16087,17 +16093,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Stealth}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Disguise kit|phb}, {@item Forgery kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item disguise kit|phb}, a {@item forgery kit|phb}, a set of {@item common clothes|phb}, a belt {@item pouch|phb}, 5 gp"
 						}
 					]
@@ -16133,7 +16139,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16178,7 +16184,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16215,7 +16221,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16252,7 +16258,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16330,22 +16336,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Nature}, {@skill Persuasion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or one {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Choose one of Elvish, Loxodon, or Sylvan"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Selesnya insignia, a {@item healer's kit|phb}, {@item robes|phb}, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 5 gp (Azorius 1-zino coins)"
 						}
 					]
@@ -16410,7 +16416,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"Most members of the Selesnya Conclave are true believers\u2014the tight-knit community allows little room for the cynical or disillusioned. They are spiritual, empathetic, and generally peaceful\u2014unless roused to action. Their flaws and bonds alike grow naturally from their close ties to the community.",
 						{
@@ -16418,7 +16424,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -16464,7 +16470,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -16502,7 +16508,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -16540,7 +16546,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -16748,22 +16754,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Intimidation}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Forgery kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Netherese"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A {@item forgery kit|phb}, a transparent cylinder of shadow that has no opening, a {@item signet ring|phb}, a set of {@item fine clothes|phb}, and 15 gp"
 						}
 					]
@@ -16800,7 +16806,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16845,7 +16851,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16882,7 +16888,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16919,7 +16925,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -16990,7 +16996,8 @@
 			"hasFluff": true
 		},
 		{
-			"name": "Shipwright",
+			"name": "船工",
+			"ENG_name": "Shipwright",
 			"source": "GoS",
 			"page": 33,
 			"entries": [
@@ -17000,26 +17007,27 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill History}, {@skill Perception}"
+							"name": "技能熟練",
+							"entry": "{@skill 歷史}, {@skill 感知}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "{@item Carpenter's tools|phb}, {@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+							"name": "工具熟練",
+							"entry": "{@item 木匠工具|phb}, {@filter 載具(水)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
-							"entry": "A set of well-loved {@item carpenter's tools|phb}, a blank {@item book|phb}, {@item Ink (1-ounce bottle)|phb|1 ounce of ink}, an {@item ink pen|phb}, a set of {@item traveler's clothes|phb}, and a leather {@item pouch|phb} with 10 gp"
+							"name": "裝備",
+							"entry": "一套心愛的{@item 木匠工具|phb}，一本空白的{@item 書|phb}，{@item 墨水(1盎司小瓶裝)|phb|1 ounce of ink}，一根{@item 墨水筆|phb}，一套{@item 旅行者服裝|phb}以及一只裝有10GP的{@item 囊袋|phb}"
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: I'll Patch It!",
+					"name": "特性：我來修好它！",
+					"ENG_name": "Feature: I'll Patch It!",
 					"entries": [
-						"Provided you have carpenter's tools and wood, you can perform repairs on a water vehicle. When you use this ability, you restore a number of hit points to the hull of a water vehicle equal to 5 × your proficiency modifier. A vehicle cannot be patched by you in this way again until after it has been pulled ashore and fully repaired."
+						"只要你有木匠工具和木頭，你就能修理水上交通工具。當你使用這個能力時，你恢複水上交通工具的船殼的生命值等同於5×你的熟練調整值。在交通工具被拖上岸並被安全修複之前，你無法再次使用該方法修理交通工具。"
 					],
 					"data": {
 						"isFeature": true
@@ -17027,14 +17035,15 @@
 				},
 				{
 					"type": "entries",
-					"name": "Life at Sea",
+					"name": "海上生活",
+					"ENG_name": "Life at Sea",
 					"entries": [
-						"Your life at sea and in port has shaped you; you can roll on the following table to determine its impact or choose an element that best fits your character.",
+						"你在海上和港口的生活塑造了你。你可以在下表投擲並決定它的影嚮，或者選擇最適合你的角色的元素。",
 						{
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Sea's Influence"
+								"海上生活"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17043,27 +17052,27 @@
 							"rows": [
 								[
 									"1",
-									"{@b Grand Designs.} You are working on plans and schematics for a new, very fast ship. You must examine as many different kinds of vessels as possible to help ensure the success of your design."
+									"{@b 宏大計劃} 你正在為一艘新的，更大的船做計劃和設計圖。你必須研究盡可能多的不同的交通工具以幫助確保你的設計成功。"
 								],
 								[
 									"2",
-									"{@b Solid and Sound.} You patched up a war galley and prevented it from sinking. The local navy regards you as a friend."
+									"{@b 堅實有力} 你修補了一艘戰船以防止它沉沒。當地海軍視你為朋友。"
 								],
 								[
 									"3",
-									"{@b Favored.} You insisted on thicker planking for a merchant vessel's hull, which saved it from sinking when it smashed against a reef. You have a standing invitation to visit the merchant's distant mansion."
+									"{@b 投桃報李} 你堅持為一艘商船的船殼用更厚的木板，這樣就能避免它撞上暗礁而沉沒。你被永久邀請去拜訪那位商人的遙遠宅邸。"
 								],
 								[
 									"4",
-									"{@b Master of Armaments.} You specialized in designing and mounting defenses for the navy. You easily recognize and determine the quality of such items."
+									"{@b 軍備大師} 你專門為海軍設計和按照了防禦系統。你很容易識別和確認這些項目的質量。"
 								],
 								[
 									"5",
-									"{@b Low Places.} You have contacts in the smuggling outfits along the coast; you occasionally repair the criminals' ships in exchange for coin and favors."
+									"{@b 底層人物} 你和沿海的走私團隊有聯系；你偶爾修理罪犯的船只以獲得錢幣和好處。"
 								],
 								[
 									"6",
-									"{@b Mysteries of the Deep.} You experienced an encounter with a possibly divine being while sailing alone. Work with your DM to determine the secret about the deep waters of the sea that this entity revealed to you."
+									"{@b 神秘深海} 你在獨自航行時遇到了一個可能是神的存在。與你的DM一起確認這個關於深海的秘密。"
 								]
 							]
 						}
@@ -17071,15 +17080,15 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
-						"Shipwrights are resourceful carpenters and designers. They often have a dedicated spot at the local tavern, since shipwrights are invaluable to coastal communities. Some travel with naval fleets and might serve as officers if their temperament suits it. Shipwrights have an affinity for working with their hands and often perform feats of carpentry that others might deem miraculous.",
+						"船工是足智多謀的木匠和設計師。他們在當地酒館經常有個專座，因為船工對於沿海社區來說是無價之寶。有些則和海軍艦隊一起旅行，如果他們的性格合適的話，還有可能被任命為軍官。船工們喜歡用他們雙手工作，而且經常做一些其他人認為不可思議的木工活。",
 						{
 							"type": "table",
-							"caption": "Shipwright Personality Traits",
+							"caption": "船工的個性",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17088,44 +17097,44 @@
 							"rows": [
 								[
 									"1",
-									"I love talking and being heard more than I like to listen."
+									"比起聽別人說，我更喜歡親口說給別人聽。"
 								],
 								[
 									"2",
-									"I'm extremely fond of puzzles."
+									"我敲喜歡智力游戲。"
 								],
 								[
 									"3",
-									"I thrive under pressure."
+									"壓力就是我的動力。"
 								],
 								[
 									"4",
-									"I love sketching and designing objects, especially boats."
+									"我喜歡素描和設計東西，尤其是船。"
 								],
 								[
 									"5",
-									"I'm not afraid of hard work\u2014in fact, I prefer it."
+									"我不害怕困難的工作，實際上我很喜歡。"
 								],
 								[
 									"6",
-									"A pipe, an ale, and the smell of the sea: paradise."
+									"一只煙鬥，一杯麥啤，和海的味道：天堂。"
 								],
 								[
 									"7",
-									"I have an endless supply of cautionary tales related to the sea."
+									"我有無數個關於海的警示故事。"
 								],
 								[
 									"8",
-									"I don't mind getting my hands dirty."
+									"我不在意弄髒我的雙手。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Shipwright Ideals",
+							"caption": "船工的理念",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17134,36 +17143,36 @@
 							"rows": [
 								[
 									"1",
-									"Crew. If everyone on deck pitches in, we'll never sink. (Good)"
+									"船員，如果甲板上的每一個人都使出全力，我們絕不會沉沒。（善良）"
 								],
 								[
 									"2",
-									"Careful Lines. A ship must be balanced according to the laws of the universe. (Lawful)"
+									"精準線條，一艘船必須根據宇宙的法則來保持平衡。（守序）"
 								],
 								[
 									"3",
-									"Invention. Make what you need out of whatever is at hand. (Chaotic)"
+									"發明，手頭上無論有什麼都能做出你需要的東西。（混亂）"
 								],
 								[
 									"4",
-									"Perfection. To measure a being and find it lacking is the greatest disappointment. (Evil)"
+									"完美，測量一個存在並發現它的不足是莫大的失望。（邪惡）"
 								],
 								[
 									"5",
-									"Reflection. Muddied water always clears in time. (Any)"
+									"反思，泥水最終總會清澈。（任意）"
 								],
 								[
 									"6",
-									"Hope. The horizon at sea holds the greatest promise. (Any)"
+									"希望，海上的地平線就是最大的希望。（任意）"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Shipwright Bonds",
+							"caption": "船工的羈絆",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17172,36 +17181,36 @@
 							"rows": [
 								[
 									"1",
-									"I must visit all the oceans of the world and behold the ships that sail there."
+									"我必須遊歷世上所有的海洋，並看看這那里航行的船隻。"
 								],
 								[
 									"2",
-									"Much of the treasure I claim will be used to enrich my community."
+									"我獲得的大部分寶藏都將用來充實我的社區。"
 								],
 								[
 									"3",
-									"I must find a kind of wood rumored to possess magical qualities."
+									"我必須找到一種傳說中具有魔法品質的木頭。"
 								],
 								[
 									"4",
-									"I repair broken things to redeem what's broken in myself."
+									"我修補破碎的東西來彌補我自己的破碎。"
 								],
 								[
 									"5",
-									"I will craft a boat capable of sailing through the most dangerous of storms."
+									"我要造一條能在威脅的風暴中航行的船。"
 								],
 								[
 									"6",
-									"A kraken destroyed my masterpiece; its teeth shall adorn my hearth."
+									"一只海怪毀了我的傑作，它的牙齒將裝飾我的壁爐。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Shipwright Flaws",
+							"caption": "船工的缺點",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17210,27 +17219,27 @@
 							"rows": [
 								[
 									"1",
-									"I don't know when to throw something away. You never know when it might be useful again."
+									"我不知道什麼時候該扔掉些東西。你永遠不知道它什麼時候會再次有用。"
 								],
 								[
 									"2",
-									"I get frustrated to the point of distraction by shoddy craftsmanship."
+									"我被粗糙的手藝制造的瑕疵弄得心煩意亂。"
 								],
 								[
 									"3",
-									"Though I am an excellent crafter, my work tends to look as though it belongs on a ship."
+									"我雖然是個優秀的工匠，但我的作品往往看上去像屬於同一艘船。"
 								],
 								[
 									"4",
-									"I am so obsessed with sketching my ideas for elaborate inventions that I sometimes forget little thing like eating and sleeping."
+									"我太沉迷於為精心設計的發明勾勒我的想法，以至於有時我會忘記吃飯睡覺這類小事。"
 								],
 								[
 									"5",
-									"I'm judgmental of those who are not skilled with tools of some kind."
+									"我喜歡評判那些不熟練使用某種工具的人。"
 								],
 								[
 									"6",
-									"I sometimes take things that don't belong to me, especially if they are very well made."
+									"我有時會拿走不屬於我的東西，特別是如果這件東西制作精良的話。"
 								]
 							]
 						}
@@ -17283,17 +17292,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Arcana}, {@skill Medicine}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Two of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A Simic insignia, a set of {@item common clothes|phb|commoner's clothes}, a {@item book|phb} of research notes, an {@item ink pen|phb}, a {@item Ink (1-ounce bottle)|phb|bottle of squid ink}, a {@item oil (flask)|phb|flask of oil} (made from blubber), a {@item acid (vial)|phb|vial of acid} (derived from digestive juices), a vial of fish scales, a vial of seaweed, a vial of jellyfish stingers, a glass bottle of unidentified slime, and a belt {@item pouch|phb} containing 10 gp (Azorius 1-zino coins)"
 						}
 					]
@@ -17403,7 +17412,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
 						"The bizarre science of the Simic Combine attracts a certain type of personality and encompasses a set of beliefs about the nature of life. Simic members' bonds and flaws derive from their scientific research\u2014including their creation of new life forms, which they can become very attached to.",
 						{
@@ -17411,7 +17420,7 @@
 							"caption": "Personality Traits",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -17457,7 +17466,7 @@
 							"caption": "Ideals",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -17495,7 +17504,7 @@
 							"caption": "Bonds",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -17533,7 +17542,7 @@
 							"caption": "Flaws",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"text-center col-2",
@@ -17739,7 +17748,8 @@
 			"hasFluff": true
 		},
 		{
-			"name": "Smuggler",
+			"name": "走私者",
+			"ENG_name": "Smuggler",
 			"source": "GoS",
 			"page": 34,
 			"entries": [
@@ -17749,26 +17759,27 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Athletics}, {@skill Deception}"
+							"name": "技能熟練",
+							"entry": "{@skill 運動}, {@skill 欺瞞}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
-							"entry": "{@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+							"name": "工具熟練",
+							"entry": "{@filter 載具(水)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
-							"entry": "A fancy leather vest or a pair of leather boots, a set of {@item common clothes|phb}, and a leather {@item pouch|phb} with 15 gp"
+							"name": "裝備",
+							"entry": "一件漂亮的皮衣或皮靴，一套{@item 尋常服裝|phb}，以及一只15GP的{@item 囊袋|phb}"
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: Down Low",
+					"name": "特性：灰色地帶",
+					"ENG_name": "Feature: Down Low",
 					"entries": [
-						"You are acquainted with a network of smugglers who are willing to help you out of tight situations. While in a particular town, city, or other similarly sized community (DM's discretion), you and your companions can stay for free in safe houses. Safe houses provide a poor lifestyle. While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret."
+						"你熟悉一個走私者網絡，他們願意幫助你擺脫困境。在特定的城市，城鎮或類似規糢的社區（DM決定），你和你的同伴能免費住在安全屋里。安全屋提供窮困的生活水平。當住在安全屋里時，你可以選擇對你（和你的同伴）的存在保密。"
 					],
 					"data": {
 						"isFeature": true
@@ -17776,14 +17787,15 @@
 				},
 				{
 					"type": "entries",
-					"name": "Claim to Fame",
+					"name": "成名之舉",
+					"ENG_name": "Claim to Fame",
 					"entries": [
-						"Every smuggler has that one tale that sets them apart from common criminals. By wits, sailing skill, or a silver tongue, you lived to tell the story\u2014and you tell it often. You can roll on the following table to determine your claim or choose one that best fits your character.",
+						"每一個走私者都有一個故事把他們和普通的罪犯區分開來。憑借著機智，航海技術和流利的口語，你活了下來以講述這個故事-而且你經常講述這個故事。你可以在下表投擲以決定你的講述，或選擇一個最適合你的角色的。",
 						{
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Accomplishment"
+								"成就"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17792,27 +17804,27 @@
 							"rows": [
 								[
 									"1",
-									"Spirit of the Whale. You smuggled stolen dwarven spirits in the body of a dead whale being pulled behind a fishing boat. When you delivered the goods, the corpse suddenly exploded, sending whale meat and whiskey bottles for half a mile."
+									"鯨魚的靈魂，你把偷來的矮人靈魂藏進了一條被拖到漁船後面的鯨魚屍體里面。當你搬運貨物時，屍體突然爆炸，把鯨魚肉和威士忌酒瓶送到了半英里外。"
 								],
 								[
 									"2",
-									"Cart and Sword. You drove a cart filled with stolen art through the middle of a battlefield while singing sea shanties to confuse the combatants."
+									"馬車和劍，你一邊駕駛著一輛滿載偷來的工藝品的拖車穿越戰場，一邊唱著水手歌謠迷惑著參戰者們。"
 								],
 								[
 									"3",
-									"The Recruit. You enlisted in another nation's navy for the purpose of smuggling stolen jewels to a distant port. You attained a minor rank before disappearing from the navy and making your way here."
+									"新兵入伍，你參加了另一個國家的海軍，目的是把偷來的珠寶走私到一個遙遠的港口。你從海軍消失並來到這里之前還獲得了一個小軍銜。"
 								],
 								[
 									"4",
-									"River of Shadows. Your riverboat accidentally slipped through the veil into the Shadowfell for several hours. While you were there, you sold some stolen dragonborn artifacts before returning to this plane and paddling home."
+									"暗影之河，你的船不小心劃進了墮影冥界幾個小時，期間，在你回到這個位面並劃船回家之前，你還賣掉了一些偷來的龍裔藝術品。"
 								],
 								[
 									"5",
-									"Gold-Hearted. You agreed to transport a family escaping a war. The baby began to cry at a checkpoint, and you gave the guards all your gold to let you pass. The family never found out about this gesture."
+									"黃金的心，你同意運送一個家庭逃離戰爭。孩子在檢查站哭了起來，你把你所有的金子給了守衛讓你過去。那家人並沒有發現你的舉動。"
 								],
 								[
 									"6",
-									"Playing Both Sides. You once smuggled crates of crossbow bolts and bundles of arrows, each destined for an opposing side in a regional war, at the same time. The buyers arrived within moments of each other but did not discover your trickery."
+									"兩方下註，你曾走私過一箱弩矢和數捆箭矢，並在局部戰爭中將兩者同時運往敵對雙方。雙方買家很快就到場但並沒有發現你的詭計。"
 								]
 							]
 						}
@@ -17820,15 +17832,15 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"entries": [
-						"In general, smugglers value survival, and then profit, above other things. One could be a part of a larger organization, or might run a small smuggling vessel of their own. Smugglers live the lies they have told, and they have a natural ability to recall all the falsehoods and half-truths they have ever spouted.",
+						"一般來說走私者看重生存，其次是利益，而不是其他的。一個人可能是另一個更大的組織的一部分，也可能是自主經營一條小走私船。走私者活在他們所說的謊言當中，他們天生就有能力回憶起他們所說的每一句謊言和每一個半真半假的事實。",
 						{
 							"type": "table",
-							"caption": "Smuggler Personality Traits",
+							"caption": "走私者個性",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17837,44 +17849,44 @@
 							"rows": [
 								[
 									"1",
-									"I love being on the water but hate fishing."
+									"我喜歡獃在在水上但討厭打漁。"
 								],
 								[
 									"2",
-									"I think of everything in terms of monetary value."
+									"我認為一切都能明碼標價。"
 								],
 								[
 									"3",
-									"I never stop smiling."
+									"我總是面帶微笑。"
 								],
 								[
 									"4",
-									"Nothing rattles me; I have a lie for every occasion."
+									"沒什麼東西能使我緊張，我每時每刻都在撒謊。"
 								],
 								[
 									"5",
-									"I love gold but won't cheat a friend."
+									"我熱愛金子，但絕不會欺騙朋友。"
 								],
 								[
 									"6",
-									"I enjoy doing things others believe to be impossible."
+									"我喜歡做那些別人認為不可能的事情。"
 								],
 								[
 									"7",
-									"I become wistful when I see the sun rise over the ocean."
+									"當我看到太陽從海上升起來時，我會變的心煩意亂。"
 								],
 								[
 									"8",
-									"I am no common criminal; I am a mastermind."
+									"我可不是簡單的罪犯，我可是主謀。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Smuggler Ideals",
+							"caption": "走私者的理想",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17883,36 +17895,36 @@
 							"rows": [
 								[
 									"1",
-									"{@b Wealth} Heaps of coins in a secure vault is all I dream of. (Any)"
+									"{@b 財富} 我的夢想就是在一個安全的金庫里堆滿如山的硬幣。（任意）"
 								],
 								[
 									"2",
-									"{@b Smuggler's Code} I uphold the unwritten rules of the smugglers, who do not cheat one another or directly harm innocents. (Lawful)"
+									"{@b 走私者信條} 我堅守走私者的不成文規定，我們絕不互相欺騙或直接傷害無辜者。（守序）"
 								],
 								[
 									"3",
-									"{@b All for a Coin} I'll do nearly anything if it means I turn a profit. (Evil)"
+									"{@b 人為財死} 如果這意味著我能獲利，我幾乎什麼都原意做。（邪惡）"
 								],
 								[
 									"4",
-									"{@b Peace and Prosperity} I smuggle only to achieve a greater goal that benefits my community. (Good)"
+									"{@b 和平興旺} 我走私只是為了實現一個更大的目標，建設我的社區。 (善良)"
 								],
 								[
 									"5",
-									"{@b People} For all my many lies, I place a high value on friendship. (Any)"
+									"{@b 人群} 盡管我謊話連篇，但是我重視友誼。（任意）"
 								],
 								[
 									"6",
-									"{@b Daring} I am most happy when risking everything. (Any)"
+									"{@b 勇於冒險} 當我冒著一些風險時，我是最快樂的（任意）"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Smuggler Bonds",
+							"caption": "走私者的羈絆",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17921,36 +17933,36 @@
 							"rows": [
 								[
 									"1",
-									"My vessel was stolen from me, and I burn with the desire to recover it."
+									"我的船被偷走了，我急切的想找回它。"
 								],
 								[
 									"2",
-									"I intend to become the leader of the network of smugglers that I belong to."
+									"我打算成為我所屬的走私網絡的領導者。"
 								],
 								[
 									"3",
-									"I owe a debt that cannot be repaid in gold."
+									"我欠了一筆不能用黃金償還的債務。"
 								],
 								[
 									"4",
-									"After one last job, I will retire from the business."
+									"做完這最後一單，我就退休。"
 								],
 								[
 									"5",
-									"I was tricked by a fellow smuggler who stole something precious from me. I will find that thief."
+									"我被一個偷了我的貴重物品的同行耍了，我會找到那個小偷。"
 								],
 								[
 									"6",
-									"I give most of my profits to a charitable cause, and I don't like to brag about it."
+									"我把我大部分的利潤都捐給了慈善事業，我並不想吹噓此事。"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Smuggler Flaws",
+							"caption": "走私者的缺點",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -17959,27 +17971,27 @@
 							"rows": [
 								[
 									"1",
-									"Lying is reflexive, and I sometimes engage in it without realizing."
+									"說謊是一種本能，我有時會不由自主的說謊。"
 								],
 								[
 									"2",
-									"I tend to assess my relationships in terms of profit and loss."
+									"我傾向於從盈虧的角度來審視我的關系。"
 								],
 								[
 									"3",
-									"I believe everyone has a price and am cynical toward those who present themselves as virtuous."
+									"我相信萬物皆有價，且對於那些表現的品德高尚的人，我是憤世嫉俗的。"
 								],
 								[
 									"4",
-									"I struggle to trust the words of others."
+									"我努力相信別人的話。"
 								],
 								[
 									"5",
-									"Few people know the real me."
+									"很少人了解真正的我。"
 								],
 								[
 									"6",
-									"Though I act charming, I feel nothing for others and don't know what friendship is."
+									"然我表現的很迷人，但我對別人毫無感覺，不知友情為何物。"
 								]
 							]
 						}
@@ -18331,17 +18343,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill Deception}, {@skill Perception}"
+							"name": "技能熟練",
+							"entry": "{@skill Deception}, {@skill 感知}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter gaming set|items|source=phb|miscellaneous=mundane|type=gaming set}, thieves' tools"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A small knife, a set of {@item common clothes|phb}, a {@item trinket|phb} from the life you stayed behind to defend, a belt {@item pouch|phb} with 10 gp"
 						}
 					]
@@ -18372,14 +18384,14 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18424,7 +18436,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18461,7 +18473,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18498,7 +18510,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18577,22 +18589,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Animal Handling}, {@skill Nature}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Herbalism kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Giant"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Herbalism kit|phb}, a small article of jewelry that is distinct to your tribe, a {@item hunting trap|phb}, a set of {@item common clothes|phb}, and a belt {@item pouch|phb} containing 5 gp"
 						}
 					]
@@ -18623,7 +18635,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Ticklebelly nomads only venture into civilization when necessary. You are social within your tribe, with tribes of other nomads, and even with the stone giant tribes that populate the Giant's Cairn. However, other communities tend to either put you on your guard or put you in a state of wonder. Was it this wonder that enticed you into a life of adventuring? On the other hand, you are fiercely protective of and dedicated to your tribe. Perhaps it was this dedication that led you to venture out; either of your own will or at the behest of your tribe's leaders.",
@@ -18631,7 +18643,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18676,7 +18688,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18713,7 +18725,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18750,7 +18762,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18831,22 +18843,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Investigation}, {@skill Persuasion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Thieves' tools|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "Elvish"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "{@item Thieves' tools|phb}, a gray cloak, Sheriff's insignia (badge) a set of {@item fine clothes|phb}, and 17 gp"
 						}
 					]
@@ -18883,7 +18895,7 @@
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18928,7 +18940,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -18965,7 +18977,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -19002,7 +19014,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -19664,17 +19676,17 @@
 								"items": [
 									{
 										"type": "item",
-										"name": "Skill Proficiencies",
+										"name": "技能熟練",
 										"entry": "{@skill Acrobatics}, {@skill Performance}"
 									},
 									{
 										"type": "item",
-										"name": "Tool Proficiencies",
+										"name": "工具熟練",
 										"entry": "{@item Disguise kit|phb}, one type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
 									},
 									{
 										"type": "item",
-										"name": "Equipment",
+										"name": "裝備",
 										"entry": "An inexpensive but unusual weapon, such as a {@item trident|phb} or {@item net|phb} (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), {@item costume clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
 									}
 								]
@@ -19755,22 +19767,22 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "Skill Proficiencies",
+									"name": "技能熟練",
 									"entry": "{@skill Insight}, {@skill Persuasion}"
 								},
 								{
 									"type": "item",
-									"name": "Tool Proficiencies",
+									"name": "工具熟練",
 									"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, or {@item navigator's tools|phb}, or an additional language"
 								},
 								{
 									"type": "item",
-									"name": "Languages",
+									"name": "語言",
 									"entry": "One of your choice"
 								},
 								{
 									"type": "item",
-									"name": "Equipment",
+									"name": "裝備",
 									"entry": "A set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} (one of your choice) or a {@item mule|phb} and {@item cart|phb}, a letter of introduction from your guild, a set of {@item traveler's clothes|phb}, and a belt {@item pouch|phb} containing 15 gp"
 								}
 							]
@@ -19916,17 +19928,17 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
-							"entry": "{@skill History}, {@skill Religion}"
+							"name": "技能熟練",
+							"entry": "{@skill 歷史}, {@skill Religion}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "One type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools}, one type of {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} or a {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument} (one of your choice), a scroll of your god's teachings, a vizier's cartouche, a set of {@item fine clothes|phb}, and a {@item pouch|phb} containing 25 gp"
 						}
 					]
@@ -19942,7 +19954,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"A vizier's characteristics strongly reflect the ideals and personality of the god they serve.",
@@ -19950,7 +19962,7 @@
 							"type": "table",
 							"colLabels": [
 								"d10",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -20003,7 +20015,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -20040,7 +20052,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -20077,7 +20089,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -20167,22 +20179,22 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies",
+							"name": "技能熟練",
 							"entry": "{@skill Deception}, {@skill Stealth}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies",
+							"name": "工具熟練",
 							"entry": "{@item Poisoner's kit|phb}"
 						},
 						{
 							"type": "item",
-							"name": "Languages",
+							"name": "語言",
 							"entry": "One of your choice"
 						},
 						{
 							"type": "item",
-							"name": "Equipment",
+							"name": "裝備",
 							"entry": "A set of {@item common clothes|phb}, a black cloak with a hood, a {@item poisoner's kit|phb}, and a {@item pouch|phb} containing 10 gp"
 						}
 					]
@@ -20199,7 +20211,7 @@
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "建議特徵","ENG_name": "Suggested Characteristics",
 					"type": "entries",
 					"entries": [
 						"Agents of the Volstrucker are groomed to follow orders without question and to kill without mercy. The trauma that brings one into the order can fester even more strongly against the darkness of a Volstrucker agent's assignments. Officially, no one ever leaves the order\u2014but those desperate enough do whatever it takes to gain some measure of freedom.",
@@ -20207,7 +20219,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Personality Trait"
+								"個性"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -20244,7 +20256,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Ideal"
+								"理念"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -20281,7 +20293,7 @@
 							"type": "table",
 							"colLabels": [
 								"d4",
-								"Bond"
+								"羈絆"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -20310,7 +20322,7 @@
 							"type": "table",
 							"colLabels": [
 								"d4",
-								"Flaw"
+								"缺點"
 							],
 							"colStyles": [
 								"col-2 text-center",
