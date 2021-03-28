@@ -4323,7 +4323,7 @@
 				},
 				{
 					"name": "特性：罪犯人脈",
-					"ENG_name": "Criminal Contact",
+					"ENG_name": "Feature: Criminal Contact",
 					"type": "entries",
 					"entries": [
 						"你有著一個可靠且可以信賴的聯絡人，能做為你與其他罪犯聯絡的橋樑。你知道如何接收或傳遞訊息給你的聯絡人，即使你們之間相隔甚遠也一樣；具體來說，你可能認識當地的信使、貪腐的商隊長、以及能夠為你傳遞訊息的骯髒水手。"
@@ -13099,7 +13099,7 @@
 				},
 				{
 					"name": "特性：特權階級",
-					"ENG_name": "Position of Privilege",
+					"ENG_name": "Feature: Position of Privilege",
 					"type": "entries",
 					"entries": [
 						"由於你的貴族出身，人們會傾向記住你最好的一面。你在上流社會受到歡迎，且人們會認為你有權出現在任何地方。平民盡他所可能遷就你並避免惹惱你，而其他出身高貴的人將你視為他們社交圈的一份子。如果你有需要，你可以獲得接見當地貴族的機會。"
@@ -15867,7 +15867,7 @@
 				},
 				{
 					"name": "特性：船行水路",
-					"ENG_name": "Ship's Passage",
+					"ENG_name": "Feature: Ship's Passage",
 					"type": "entries",
 					"entries": [
 						"當你需要時，你可以替你和你的冒險夥伴弄到一趟在帆船上的免費航行。你可能會搭乘於一艘你曾經服役過的船隻、或另一艘你與有良好關係的船隻（或許這艘船被一位你過去的船員夥伴給指揮）。因為你是請求對方幫助，所以你不能確定行程和航線能滿足你的所有需求。你的DM將會決定你到達你目的地所需要花費的時間。作為免費搭乘的回報，你和你的夥伴們應當在航行中協助船員做事。"
@@ -19633,7 +19633,7 @@
 				},
 				{
 					"name": "特性：間諜人脈",
-					"ENG_name": "Spy Contact",
+					"ENG_name": "Feature: Criminal Contact",
 					"type": "entries",
 					"entries": [
 						"你有著一個可靠且可以信賴的聯絡人，能做為你與其他間諜聯絡的橋樑。你知道如何接收或傳遞訊息給你的聯絡人，即使你們之間相隔甚遠也一樣；具體來說，你可能認識當地的信使、貪腐的商隊長、以及能夠為你傳遞訊息的骯髒水手。"
@@ -19835,6 +19835,7 @@
 		},
 		{
 			"name": "變體貴族 (騎士)",
+			"ENG_name": "Variant Noble (Knight)",
 			"source": "PHB",
 			"page": 136,
 			"_copy": {
@@ -19846,11 +19847,12 @@
 							"mode": "replaceArr",
 							"replace": "Feature: Position of Privilege",
 							"items": {
-								"name": "Feature: Retainers",
+								"name": "特性：家臣",
+								"ENG_name": "Feature: Retainers",
 								"type": "entries",
 								"entries": [
-									"You have the service of three retainers loyal to your family. These retainers can be attendants or messengers, and one might be a majordomo. {@b One of your retainers is a noble who serves as your squire, aiding you in exchange for training on his or her own path to knighthood} (This person could be your bond.). Your two remaining retainers might include a groom to care for your horse and a servant who polishes your armor (and even helps you put it on).",
-									"Your retainers can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if they are frequently endangered or abused."
+									"你有三個效忠於你家族的家臣。這些家臣可以是侍從、信使、且一個可能會是管家。{@b 你的其中一個家臣會是一名貴族，他做為你的扈從以換取他或她成為騎士的訓練。}（這個人可能是你的親戚）。你剩下的兩個家臣可能會包括一名照料你馬匹的馬伕、以及一名保養（且可能協助你穿上）鎧甲的僕從。",
+									"你的家臣可以為你執行平凡的任務，但他們並不會為你而戰，也不會跟隨你前往明顯危險的區域（例如地下城）。如果他們經常被威脅或是虐待，他們會離你而去。"
 								],
 								"data": {
 									"isFeature": true
@@ -19861,68 +19863,19 @@
 							"mode": "insertArr",
 							"index": 1,
 							"items": {
-								"name": "Variant Noble (Knight)",
+								"name": "變體貴族 (騎士)",
+								"ENG_name": "Variant Noble (Knight)",
 								"type": "entries",
 								"entries": [
-									"A knighthood is among the lowest noble titles in most societies, but it can be a path to higher status. If you wish to be a knight, choose the Retainers feature instead of the Position of Privilege feature.",
-									"As an emblem of chivalry and the ideals of courtly love, you might include among your equipment a banner or other token from a noble lord or lady to whom you have given your heart-in a chaste sort of devotion."
+									"騎士身分在大部分的社會文化中是貴族頭銜中最低的階級，但它也可以是一條通往更高地位的途徑。若你想成為一名騎士，請選擇「家臣」特性以取代「特權階級」特性。",
+									"做為騎士精神跟宮廷愛情的象徵，你可以獲得一個來自你決定獻上生命奉獻的貴族領主或女士的旗幟或其他象徵物。"
 								]
 							}
 						}
 					]
 				}
 			},
-			"hasFluff": true,
-			"ENG_name": "Variant Noble (Knight)",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "技能熟練",
-							"entry": "{@skill 歷史}, {@skill 說服}"
-						},
-						{
-							"type": "item",
-							"name": "工具熟練",
-							"entry": "一種{@filter 遊戲套組|items|miscellaneous=mundane|type=gaming set}"
-						},
-						{
-							"type": "item",
-							"name": "語言",
-							"entry": "自選一種"
-						},
-						{
-							"type": "item",
-							"name": "裝備",
-							"entry": "一幅你所奉獻心力的貴族領主或女士所賜予的旗幟或其他象徵物、一套{@item 高級服裝|phb}、一枚{@item 璽戒|phb}、一卷家系族譜、和一個裝有25金幣的錢包"
-						}
-					]
-				},
-				{
-					"name": "變體貴族 (騎士)",
-					"ENG_name": "Variant Noble (Knight)",
-					"type": "entries",
-					"entries": [
-						"騎士身分在大部分的社會文化中是貴族頭銜中最低的階級，但它也可以是一條通往更高地位的途徑。若你想成為一名騎士，請選擇「家臣」特性以取代「特權階級」特性。",
-						"做為騎士精神跟宮廷愛情的象徵，你可以獲得一個來自你決定獻上生命奉獻的貴族領主或女士的旗幟或其他象徵物。"
-					]
-				},
-				{
-					"name": "特性：家臣",
-					"ENG_name": "Retainers",
-					"type": "entries",
-					"entries": [
-						"你有三個效忠於你家族的家臣。這些家臣可以是侍從、信使、且一個可能會是管家。{@b 你的其中一個家臣會是一名貴族，他做為你的扈從以換取他或她成為騎士的訓練。}（這個人可能是你的親戚）。你剩下的兩個家臣可能會包括一名照料你馬匹的馬伕、以及一名保養（且可能協助你穿上）鎧甲的僕從。",
-						"你的家臣可以為你執行平凡的任務，但他們並不會為你而戰，也不會跟隨你前往明顯危險的區域（例如地下城）。如果他們經常被威脅或是虐待，他們會離你而去。"
-					],
-					"data": {
-						"isFeature": true
-					}
-				}
-			]
+			"hasFluff": true
 		},
 		{
 			"name": "變體水手 (海盜)",
@@ -19936,10 +19889,11 @@
 						"mode": "replaceArr",
 						"replace": "Feature: Ship's Passage",
 						"items": {
-							"name": "Feature: Bad Reputation",
+							"name": "特性：惡名昭彰",
+							"ENG_name": "Feature: Bad Reputation",
 							"type": "entries",
 							"entries": [
-								"No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop, since most people will not report your activity to the authorities."
+								"無論你到什麼地方，人們都會因為你的惡名而害怕你。當你身處文明聚落，由於大多數民眾不會向權威機關舉發你的行為，你可以逃過一些輕微的罪行，像是在酒館吃霸王餐或是破門闖入當地商店。"
 							],
 							"data": {
 								"isFeature": true
@@ -19949,41 +19903,7 @@
 				}
 			},
 			"hasFluff": true,
-			"ENG_name": "Variant Sailor (Pirate)",
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "技能熟練",
-							"entry": "{@skill 運動}, {@skill 感知}"
-						},
-						{
-							"type": "item",
-							"name": "工具熟練",
-							"entry": "{@item 領航員工具|phb}、載具（水上）"
-						},
-						{
-							"type": "item",
-							"name": "裝備",
-							"entry": "一根繫繩栓（{@item 棍棒|phb}）、一條{@item 絲繩(50呎)|phb}、一個幸運護符，例如兔腳或中心開孔的小石頭（或你可以從第五章的飾品表中擲骰隨機決定）、一套{@item 尋常服裝|phb}、和一個裝有10金幣的纏腰{@item 囊袋|phb}"
-						}
-					]
-				},
-				{
-					"name": "特性：惡名昭彰",
-					"ENG_name": "Bad Reputation",
-					"type": "entries",
-					"entries": [
-						"無論你到什麼地方，人們都會因為你的惡名而害怕你。當你身處文明聚落，由於大多數民眾不會向權威機關舉發你的行為，你可以逃過一些輕微的罪行，像是在酒館吃霸王餐或是破門闖入當地商店。"
-					],
-					"data": {
-						"isFeature": true
-					}
-				}
-			]
+			"ENG_name": "Variant Sailor (Pirate)"
 		},
 		{
 			"name": "Vizier",
