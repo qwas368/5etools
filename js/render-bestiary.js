@@ -118,7 +118,7 @@ class RenderBestiary {
 		${mon.skill ? `<tr><td colspan="6"><strong>技能：</strong> ${Renderer.monster.getSkillsString(renderer, mon)}</td></tr>` : ""}
 		${mon.vulnerable ? `<tr><td colspan="6"><strong>傷害易傷：</strong> ${Parser.getFullImmRes(mon.vulnerable)}</td></tr>` : ""}
 		${mon.resist ? `<tr><td colspan="6"><strong>傷害抗性：</strong> ${Parser.getFullImmRes(mon.resist)}</td></tr>` : ""}
-		${mon.immune ? `<tr><td colspan="6"><strong傷害免疫：</strong> ${Parser.getFullImmRes(mon.immune)}</td></tr>` : ""}
+		${mon.immune ? `<tr><td colspan="6"><strong>傷害免疫：</strong> ${Parser.getFullImmRes(mon.immune)}</td></tr>` : ""}
 		${mon.conditionImmune ? `<tr><td colspan="6"><strong>狀態免疫：</strong> ${Parser.getFullCondImm(mon.conditionImmune)}</td></tr>` : ""}
 		<tr><td colspan="6"><strong>感官：</strong> ${Renderer.monster.getSensesPart(mon)}</td></tr>
 		<tr><td colspan="6"><strong>語言：</strong> ${Renderer.monster.getRenderedLanguages(mon.languages)}</td></tr>
