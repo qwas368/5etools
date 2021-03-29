@@ -62,24 +62,24 @@
 			"page": 271
 		},
 		{
-			"name": "Alternatives to Epic Boons",
+			"name": "傳奇恩惠替代品",
 			"entries": [
-				"You might decide to grant one of the following rewards to a 20th-level character, instead of awarding an epic boon. These two options can be awarded to a character more than once.",
+				"也許你會選擇給一位20級的角色賦予以下某項獎勵而不是給其獎勵傳奇恩惠。這兩個選項可被多次賦予同一角色。",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Ability Score Improvement",
+							"name": "屬性值加成",
 							"entries": [
-								"The character can increase one ability score by 2 or increase two ability scores by 1 each. The ability score can now be increased above 20, up to a maximum of 30."
+								"該角色可以自選一項屬性提升2，或選擇兩項屬性各自提升1。現在你可以將屬性提升到20以上，上限為30。"
 							]
 						},
 						{
 							"type": "entries",
-							"name": "New Feat",
+							"name": "新專長",
 							"entries": [
-								"The character gains a new feat chosen by the player, but subject to your approval."
+								"角色獲得一項自選的新專長，但需要得到你的許可。"
 							]
 						}
 					]
@@ -89,19 +89,19 @@
 			"page": 230
 		},
 		{
-			"name": "Cleaving Through Creatures",
+			"name": "劈穿生物",
 			"entries": [
-				"If your player characters regularly fight hordes of lower-level monsters, consider using this optional rule to help speed up such fights.",
-				"When a melee attack reduces an undamaged creature to 0 hit points, any excess damage from that attack might carry over to another creature nearby. The attacker targets another creature within reach and, if the original attack roll can hit it, applies any remaining damage to it. If that creature was undamaged and is likewise reduced to 0 hit points, repeat this process, carrying over the remaining damage until there are no valid targets, or until the damage carried over fails to reduce an undamaged creature to 0 hit points."
+				"如果你的玩家角色经常与成群的低级怪物战斗，可以考虑使用这个可选的规则来帮助加快战斗速度。",
+				"当近战攻击使一个未受伤害的生物降低到0点生命时，该攻击的任何多余伤害可以轉移到附近的另一个生物身上。攻击者将目标锁定在另一个可觸及的生物上，如果原来的攻击骰可以命中它，则将任何剩余的伤害轉移到它身上。如果该生物没有受到伤害，同样被降低到0点生命，重复这个过程，将剩余的伤害轉移，直到没有有效的目标，或者直到轉移的伤害无法将一个没有受到伤害的生物降低到0点生命為止。"
 			],
 			"source": "DMG",
 			"page": 272
 		},
 		{
-			"name": "Crafting a Magic Item",
+			"name": "製作魔法物品",
 			"entries": [
-				"Magic items are the DM's purview, so you decide how they fall into the party's possession. As an option, you can allow player characters to craft magic items.",
-				"The creation of a magic item is a lengthy, expensive task. To start, a character must have a formula that describes the construction of the item. The character must also be a spellcaster with spell slots and must be able to cast any spells that the item can produce. Moreover, the character must meet a level minimum determined by the item's rarity, as shown in the Crafting Magic Items table. For example, a 3rd-level character could create a wand of magic missiles (an uncommon item), as long as the character has spell slots and can cast magic missile. That same character could make a +1 weapon (another uncommon item), no particular spell required.",
+				"魔法物品的出現由DM作管理，因此你必須負責設定這些物品如何落入隊伍手中。你也可以選擇讓玩家角色得以用手作的方式來製造魔法物品。",
+				"製造魔法物品是一項費時且所費不貲的工作。在開始之前，角色必須先獲得詳述該物品製作方式的圖紙。該角色也必須是一位擁有法術位的施法者，且必須能夠施展該物品所產生的任何法術。此外，該角色必須達到由該物品稀有度決定的最低等級，如表格「製作魔法物品」所示。例如，一名3級的角色可以創造一把魔法飛彈魔杖（一件非常見的魔法物品），該角色必須擁有法術位，且可以施展法術魔法飛彈。 同樣的角色也可以製造一把+1武器(另一件非常見的魔法物品)，而不需要特定的法術要求。",
 				"You can decide that certain items also require special materials or locations to be created. For example, a character might need {@item alchemist's supplies|phb} to brew a particular potion, or the formula for a flame tongue might require that the weapon be forged with lava.",
 				{
 					"type": "table",
