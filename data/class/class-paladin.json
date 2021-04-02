@@ -282,7 +282,7 @@
 				},
 				"屬性值提升|Paladin||4",
 				"Proficiency Versatility|Paladin||4|UAClassFeatureVariants",
-				"Martial Versatility|Paladin||4|TCE",
+				"戰鬥變通|Paladin||4|TCE",
 				"額外攻擊|Paladin||5",
 				"守護靈光|Paladin||6",
 				{
@@ -1387,15 +1387,15 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blessed Warrior|TCE"
+							"optionalfeature": "受祝福的勇士|TCE"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|TCE"
+							"optionalfeature": "盲鬥|TCE"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|TCE"
+							"optionalfeature": "攔截|TCE"
 						}
 					]
 				}
@@ -1466,7 +1466,8 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Harness Divine Power",
+			"name": "引導神力：神力掌控",
+			"ENG_name": "Channel Divinity: Harness Divine Power",
 			"source": "TCE",
 			"page": 52,
 			"className": "Paladin",
@@ -1474,12 +1475,13 @@
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level paladin {@variantrule optional class features|tce|optional feature}}",
-				"You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest."
+				"{@i 3等聖騎士 {@variantrule optional class features|tce|optional feature}}",
+				"你可以花費一次你的引導神力次數來充能你的法術。你可以用一個附贈動作觸碰你的聖徽並祈禱，你恢復一個環階不超過你熟練加值的一半（向上取整）的法術位。你能使用此特性的次數取決於你此職業的等級：3 級一次；7 級兩次；15 級三次。在完成一次長休後，你將恢復所有已消耗的次數。"
 			]
 		},
 		{
-			"name": "Channel Divinity: Harness Divine Power",
+			"name": "引導神力：神力掌控",
+			"ENG_name": "Channel Divinity: Harness Divine Power",
 			"source": "UAClassFeatureVariants",
 			"page": 6,
 			"className": "Paladin",
@@ -1537,11 +1539,11 @@
 				},
 				{
 					"type": "refClassFeature",
-					"classFeature": "Channel Divinity: Harness Divine Power|Paladin||3|UAClassFeatureVariants"
+					"classFeature": "引導神力：神力掌控|Paladin||3|UAClassFeatureVariants"
 				},
 				{
 					"type": "refClassFeature",
-					"classFeature": "Channel Divinity: Harness Divine Power|Paladin||3|TCE"
+					"classFeature": "引導神力：神力掌控|Paladin||3|TCE"
 				},
 				{
 					"name": "背棄誓言",
@@ -1570,7 +1572,8 @@
 			]
 		},
 		{
-			"name": "Martial Versatility",
+			"name": "戰鬥變通",
+			"ENG_name": "Martial Versatility",
 			"source": "TCE",
 			"page": 52,
 			"className": "Paladin",
@@ -1578,8 +1581,8 @@
 			"level": 4,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level paladin {@variantrule optional class features|tce|optional feature}}",
-				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a {@filter fighting style|optionalfeatures|feature type=FS:P} you know with another fighting style available to paladins. This replacement represents a shift of focus in your martial practice."
+				"{@i 4等聖騎士 {@variantrule optional class features|tce|optional feature}}",
+				"每當你的聖騎士等級達到了可以獲得能力值提升的等級，你可以將一個聖騎士可選擇的戰鬥風格替換為另一個可選擇的{@filter 戰鬥風格|optionalfeatures|feature type=FS:P}。這種變化表示你改變了武術訓練和練習的重點。"
 			]
 		},
 		{

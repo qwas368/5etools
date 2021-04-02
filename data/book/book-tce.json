@@ -704,8 +704,8 @@
 											"type": "list",
 											"columns": 2,
 											"items": [
-												"{@optfeature Blind Fighting|TCE}",
-												"{@optfeature Interception|TCE}",
+												"{@optfeature 盲鬥|TCE}",
+												"{@optfeature 攔截|TCE}",
 												"{@optfeature Superior Technique|TCE}",
 												"{@optfeature Thrown Weapon Fighting|TCE}",
 												"{@optfeature Unarmed Fighting|TCE}"
@@ -843,7 +843,7 @@
 										{
 											"type": "item",
 											"name": "Fighting Style:",
-											"entry": "{@optfeature Interception|TCE},* {@optfeature Protection}"
+											"entry": "{@optfeature 攔截|TCE},* {@optfeature Protection}"
 										},
 										{
 											"type": "item",
@@ -873,7 +873,7 @@
 										{
 											"type": "item",
 											"name": "Fighting Style:",
-											"entry": "{@optfeature Blind Fighting|TCE},* {@optfeature Two-Weapon Fighting}, {@optfeature Unarmed Fighting|TCE}*"
+											"entry": "{@optfeature 盲鬥|TCE},* {@optfeature Two-Weapon Fighting}, {@optfeature Unarmed Fighting|TCE}*"
 										},
 										{
 											"type": "item",
@@ -1275,14 +1275,14 @@
 											"type": "list",
 											"columns": 3,
 											"items": [
-												"{@optfeature Blessed Warrior|TCE}",
-												"{@optfeature Blind Fighting|TCE}",
-												"{@optfeature Interception|TCE}"
+												"{@optfeature 受祝福的勇士|TCE}",
+												"{@optfeature 盲鬥|TCE}",
+												"{@optfeature 攔截|TCE}"
 											]
 										}
 									]
 								},
-								"{@classFeature Channel Divinity: Harness Divine Power|Paladin|PHB|3|TCE} ({@i 3rd-level paladin feature})",
+								"{@classFeature 引導神力：神力掌控|Paladin|PHB|3|TCE} ({@i 3rd-level paladin feature})",
 								"{@classFeature Martial Versatility|Paladin|PHB|4|TCE} ({@i 4th-level paladin feature})"
 							]
 						},
@@ -1384,7 +1384,7 @@
 											"type": "list",
 											"columns": 3,
 											"items": [
-												"{@optfeature Blind Fighting|TCE}",
+												"{@optfeature 盲鬥|TCE}",
 												"{@optfeature Druidic Warrior|TCE}",
 												"{@optfeature Thrown Weapon Fighting|TCE}"
 											]

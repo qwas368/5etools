@@ -1157,11 +1157,11 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|TCE"
+							"optionalfeature": "盲鬥|TCE"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|TCE"
+							"optionalfeature": "攔截|TCE"
 						},
 						{
 							"type": "refOptionalfeature",

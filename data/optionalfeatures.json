@@ -461,7 +461,8 @@
 			]
 		},
 		{
-			"name": "Blind Fighting",
+			"name": "盲鬥",
+			"ENG_name": "Blind Fighting",
 			"source": "TCE",
 			"page": 41,
 			"isClassFeatureVariant": true,
@@ -471,7 +472,7 @@
 				"FS:R"
 			],
 			"entries": [
-				"You have {@sense blindsight} with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature within that range, unless the creature successfully hides from you."
+				"你獲得 10 尺{@sense 盲視}。在 10 尺範圍內，你可以看見除了處於全遮掩後的任何東西，哪怕你正受{@condition 目盲}狀態影響或是處於黑暗之中。另外，你可以看見這個範圍內的{@condition 隱形}生物，除非該生物成功地對你躲藏。"
 			]
 		},
 		{
@@ -2420,7 +2421,8 @@
 			"ENG_name": "Improved Pact Weapon"
 		},
 		{
-			"name": "Interception",
+			"name": "攔截",
+			"ENG_name": "Interception",
 			"source": "TCE",
 			"page": 41,
 			"isClassFeatureVariant": true,
@@ -2429,7 +2431,7 @@
 				"FS:P"
 			],
 			"entries": [
-				"When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by {@dice 1d10} + your proficiency bonus (to a minimum of 0 damage). You must be wielding a {@item shield|phb} or a simple or martial weapon to use this reaction."
+				"當一個你可見的生物攻擊距離你 5 尺範圍內你以外的目標時，你能以一個反應將目標受到的傷害減少{@dice 1d10}+你的熟練加值（最多減少到 0 點傷害）。當你手持一面{@item 盾牌|phb}或者一把簡單或軍用武器時才能執行此反應。"
 			]
 		},
 		{
