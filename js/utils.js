@@ -6555,6 +6555,7 @@ Parser.monsterTagKeyToDisplay["bullywug"] = "狂蛙人";
 Parser.monsterTagKeyToDisplay["kenku"] = "天狗";
 Parser.monsterTagKeyToDisplay["kuo-toa"] = "寇濤魚人";
 Parser.monsterTagKeyToDisplay["sahuagin"] = "沙華魚人";
+Parser.monsterTagKeyToDisplay["locathah"] = "洛卡魚人";
 Parser.monsterTagKeyToDisplay["lizardfolk"] = "蜥蜴人"
 Parser.monsterTagKeyToDisplay["troglodyte"] = "戰蜴人"
 Parser.monsterTagKeyToDisplay["thri-kreen"] = "斯里克林螳螂人"

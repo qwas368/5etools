@@ -2849,7 +2849,7 @@ Renderer.utils = {
 			: await DataUtil.loadJSON(`${Renderer.get().baseUrl}${fluffUrl}`);
 		if (!data) return null;
 
-		let fluff = (data[fluffProp] || []).find(it => it.name === entity.name && it.source === entity.source);
+		let fluff = (data[fluffProp] || []).find(it => (it.name === entity.name || it.name === entity.ENG_name) && it.source === entity.source);
 		if (!fluff) return null;
 
 		// Avoid modifying the original object
