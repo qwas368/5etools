@@ -436,7 +436,8 @@
 			"ENG_name": "Bewitching Whispers"
 		},
 		{
-			"name": "Blessed Warrior",
+			"name": "受祝福的勇士",
+			"ENG_name": "Blessed Warrior",
 			"source": "TCE",
 			"page": 52,
 			"isClassFeatureVariant": true,
@@ -444,7 +445,7 @@
 				"FS:P"
 			],
 			"entries": [
-				"You learn two cantrips of your choice from the {@filter cleric spell list|spells|level=0|class=Cleric}. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list."
+				"你從{@filter 牧師法術列表|spells|level=0|class=Cleric}中選擇兩種戲法習得。這些戲法對你來說是聖騎士法術，這些戲法的施法關鍵能力值是魅力。當你提升此職業的等級時，你能夠將一個已知戲法替換為牧師法術列表中的另一個戲法。"
 			]
 		},
 		{
