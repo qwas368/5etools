@@ -54,7 +54,8 @@
 			]
 		},
 		{
-			"name": "Ambush",
+			"name": "突襲",
+			"ENG_name": "Ambush",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -62,7 +63,7 @@
 				"MV:B"
 			],
 			"entries": [
-				"When you make a Dexterity ({@skill Stealth}) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't {@condition incapacitated}."
+				"當你進行一次敏捷（{@skill 隱匿}）檢定或先攻檢定時，你能夠消耗一枚卓越骰，並將消耗的卓越骰加入檢定中。{@condition 無力}狀態無法使用。"
 			]
 		},
 		{
@@ -312,7 +313,8 @@
 			"ENG_name": "Aspect of the Moon"
 		},
 		{
-			"name": "Bait and Switch",
+			"name": "誘餌戰術",
+			"ENG_name": "Bait and Switch",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -320,8 +322,8 @@
 				"MV:B"
 			],
 			"entries": [
-				"When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks.",
-				"Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+				"當你距離一個盟友 5 尺以內時，你能夠消耗一枚卓越骰，如果你同時消耗 5 尺的移動力，你能與該盟友互換位置，這一移動不會引發藉機攻擊。盟友{@condition 無力}狀態時無法使用。",
+				"擲消耗的卓越骰。直到你的下個回合開始前，你或另一個生物（由你選擇）的AC獲得等於骰值結果的加值。"
 			]
 		},
 		{
@@ -610,7 +612,8 @@
 			"ENG_name": "Boots of the Winding Path"
 		},
 		{
-			"name": "Brace",
+			"name": "警戒",
+			"ENG_name": "Brace",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -618,7 +621,7 @@
 				"MV:B"
 			],
 			"entries": [
-				"When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
+				"當一個生物移動進你的觸及範圍而你手握武器時，你能以一個反應消耗一枚卓越骰對該生物進行一次武器攻擊。如果攻擊命中，將消耗的卓越骰加入此次攻擊的傷害檢定中。"
 			]
 		},
 		{
@@ -991,7 +994,8 @@
 			"ENG_name": "Commander's Strike"
 		},
 		{
-			"name": "Commanding Presence",
+			"name": "領導風範",
+			"ENG_name": "Commanding Presence",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -999,7 +1003,7 @@
 				"MV:B"
 			],
 			"entries": [
-				"When you make a Charisma ({@skill Intimidation}), a Charisma ({@skill Performance}), or a Charisma ({@skill Persuasion}) check, you can expend one superiority die and add the superiority die to the ability check."
+				"當你進行一次魅力（{@skill 威嚇}）、魅力（{@skill 表演}）或魅力（{@skill 說服}）檢定時，你能夠消耗一枚卓越骰，將消耗的卓越骰加入此次能力值檢定中。"
 			]
 		},
 		{
@@ -2064,7 +2068,8 @@
 			"ENG_name": "Gong of the Summit"
 		},
 		{
-			"name": "Grappling Strike",
+			"name": "擒拿擊",
+			"ENG_name": "Grappling Strike",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -2072,7 +2077,7 @@
 				"MV:B"
 			],
 			"entries": [
-				"Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check."
+				"當你在一次近戰武器攻擊命中一個生物時，你能夠立即消耗一枚卓越骰，以一個附贈動作對目標進行一次擒抱（見戰鬥動作的擒抱規則）。將消耗的卓越骰加入你的力量（{@skill 運動}）檢定中。"
 			]
 		},
 		{
@@ -3258,7 +3263,8 @@
 			"ENG_name": "Pushing Attack"
 		},
 		{
-			"name": "Quick Toss",
+			"name": "快手投擲",
+			"ENG_name": "Quick Toss",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -3266,7 +3272,7 @@
 				"MV:B"
 			],
 			"entries": [
-				"As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
+				"以一個附贈動作，你能消耗一枚卓越骰以一件具有投擲屬性的武器進行一次遠程攻擊。在進行此攻擊時，你能拔出一把投擲武器作為攻擊的一部分。如果此次攻擊命中，你能將消耗的卓越骰加入此次攻擊的傷害檢定中。"
 			]
 		},
 		{
@@ -4764,7 +4770,8 @@
 			]
 		},
 		{
-			"name": "Superior Technique",
+			"name": "卓越技巧",
+			"ENG_name": "Superior Technique",
 			"source": "TCE",
 			"page": 41,
 			"isClassFeatureVariant": true,
@@ -4772,8 +4779,8 @@
 				"FS:F"
 			],
 			"entries": [
-				"You learn one {@filter maneuver|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|phb|Battle Master|Battle Master|phb|2-0} archetype. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
-				"You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+				"你從{@class 戰士|phb|戰鬥大師|Battle Master|phb|2-0}武術范型的{@filter 戰技列表|optionalfeatures|feature type=MV:B}中習得一項戰技。如果該戰技需要豁免，則豁免DC為8+你的熟練加值+你的力量或敏捷調整值（由你選擇）。",
+				"你獲得一個{@dice d6}的卓越骰（此卓越骰與任何你能夠其他方式獲得的卓越骰累計）。此卓越骰可用於啟動你的戰技。卓越骰一經使用即消耗，並在完成一次短休或長休后恢復。"
 			]
 		},
 		{
@@ -4836,7 +4843,8 @@
 			]
 		},
 		{
-			"name": "Tactical Assessment",
+			"name": "戰術預估",
+			"ENG_name": "Tactical Assessment",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -4844,7 +4852,7 @@
 				"MV:B"
 			],
 			"entries": [
-				"When you make an Intelligence ({@skill Investigation}), an Intelligence ({@skill History}), or a Wisdom ({@skill Insight}) check, you can expend one superiority die and add the superiority die to the ability check."
+				"當你進行一次智力（{@skill 調查}）、智力（{@skill 歷史}）或睿知（{@skill 感知}）檢定時，你能夠消耗一枚卓越骰，將消耗的卓越骰加入此次能力值檢定中。"
 			]
 		},
 		{
@@ -4896,7 +4904,8 @@
 			"ENG_name": "Thirsting Blade"
 		},
 		{
-			"name": "Thrown Weapon Fighting",
+			"name": "投擲武器戰鬥",
+			"ENG_name": "Thrown Weapon Fighting",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -4905,8 +4914,8 @@
 				"FS:R"
 			],
 			"entries": [
-				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon.",
-				"In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+				"你可以在使用一件帶有投擲屬性武器進行進攻時，將那件武器作為攻擊的一部分而拔出。",
+				"另外，在你以一件投擲武器于遠程攻擊中命中對手時，你的傷害擲骰+2。"
 			]
 		},
 		{
@@ -5170,7 +5179,8 @@
 			]
 		},
 		{
-			"name": "Unarmed Fighting",
+			"name": "徒手戰鬥",
+			"ENG_name": "Unarmed Fighting",
 			"source": "TCE",
 			"page": 42,
 			"isClassFeatureVariant": true,
@@ -5178,8 +5188,8 @@
 				"FS:F"
 			],
 			"entries": [
-				"Your unarmed strikes can deal bludgeoning damage equal to {@damage 1d6} + your Strength modifier on a hit. If you aren't wielding any weapons or a {@item shield|phb} when you make the attack roll, the {@damage d6} becomes a {@damage d8}.",
-				"At the start of each of your turns, you can deal {@damage 1d4} bludgeoning damage to one creature {@condition grappled} by you."
+				"你的徒手打擊可以造成{@damage 1d6}+你力量調整值的鈍擊傷害，如果你沒有手持任何武器或盾牌進行攻擊，傷害骰從{@damage d6}變成{@damage d8}。",
+				"每個你的回合開始時，你可以對被你{@condition 被擒}的生物造成{@damage 1d4}鈍擊傷害。"
 			]
 		},
 		{

@@ -706,9 +706,9 @@
 											"items": [
 												"{@optfeature 盲鬥|TCE}",
 												"{@optfeature 攔截|TCE}",
-												"{@optfeature Superior Technique|TCE}",
-												"{@optfeature Thrown Weapon Fighting|TCE}",
-												"{@optfeature Unarmed Fighting|TCE}"
+												"{@optfeature 卓越技巧|TCE}",
+												"{@optfeature 投擲武器戰鬥|TCE}",
+												"{@optfeature 徒手戰鬥|TCE}"
 											]
 										}
 									]
@@ -873,7 +873,7 @@
 										{
 											"type": "item",
 											"name": "Fighting Style:",
-											"entry": "{@optfeature 盲鬥|TCE},* {@optfeature Two-Weapon Fighting}, {@optfeature Unarmed Fighting|TCE}*"
+											"entry": "{@optfeature 盲鬥|TCE},* {@optfeature Two-Weapon Fighting}, {@optfeature 徒手戰鬥|TCE}*"
 										},
 										{
 											"type": "item",
@@ -963,7 +963,7 @@
 										{
 											"type": "item",
 											"name": "Fighting Style:",
-											"entry": "{@optfeature Defense}, {@optfeature Thrown Weapon Fighting|TCE}*"
+											"entry": "{@optfeature Defense}, {@optfeature 投擲武器戰鬥|TCE}*"
 										},
 										{
 											"type": "item",
@@ -1053,7 +1053,7 @@
 										{
 											"type": "item",
 											"name": "Fighting Style:",
-											"entry": "{@optfeature Unarmed Fighting|TCE}*"
+											"entry": "{@optfeature 徒手戰鬥|TCE}*"
 										},
 										{
 											"type": "item",
@@ -1113,7 +1113,7 @@
 										{
 											"type": "item",
 											"name": "Fighting Style:",
-											"entry": "{@optfeature Archery}, {@optfeature Thrown Weapon Fighting|TCE}*"
+											"entry": "{@optfeature Archery}, {@optfeature 投擲武器戰鬥|TCE}*"
 										},
 										{
 											"type": "item",
@@ -1386,7 +1386,7 @@
 											"items": [
 												"{@optfeature 盲鬥|TCE}",
 												"{@optfeature Druidic Warrior|TCE}",
-												"{@optfeature Thrown Weapon Fighting|TCE}"
+												"{@optfeature 投擲武器戰鬥|TCE}"
 											]
 										}
 									]

@@ -3397,7 +3397,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|TCE"
+							"optionalfeature": "投擲武器戰鬥|TCE"
 						}
 					]
 				}
@@ -4289,7 +4289,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|TCE"
+							"optionalfeature": "投擲武器戰鬥|TCE"
 						}
 					]
 				}
@@ -5034,7 +5034,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|TCE"
+							"optionalfeature": "投擲武器戰鬥|TCE"
 						}
 					]
 				}
