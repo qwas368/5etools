@@ -1102,13 +1102,14 @@
 			]
 		},
 		{
-			"name": "Amulet of the Drunkard",
+			"name": "酒鬼護符",
+			"ENG_name": "Amulet of the Drunkard",
 			"source": "EGW",
 			"page": 265,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"This amulet smells of old, ale-stained wood. While wearing it, you can regain {@dice 4d4 + 4} hit points when you drink a pint of beer, ale, mead, or wine. Once the amulet has restored hit points, it can't do so again until the next dawn."
+				"這枚護符聞起來像散發著淡淡的麥酒香氣的舊木頭。著裝此護符時，你可以喝下一品脫的啤酒，麥酒或紅酒以回復{@dice 4d4 + 4}點生命值。此後直到下一次黎明前，該特性都無法再次使用。"
 			],
 			"hasFluffImages": true
 		},
@@ -2471,12 +2472,12 @@
 			"bonusWeaponAttack": "+1",
 			"bonusAc": "+1",
 			"entries": [
-				"這面旗幟是用厚厚的紅色織物製作而成，高 5 英尺，寬 3 英尺。 戰爭符文顯示在織物上， 上面縫有圓形的金屬板。 它可以附在 10 英尺的桿子上作為旗幟。 捲起或展開旗幟需要一個動作。 旗幟有以下屬性。",
+				"這面旗幟是用厚厚的紅色織物製作而成，高 5 呎，寬 3 呎。 戰爭符文顯示在織物上， 上面縫有圓形的金屬板。 它可以附在 10 呎的桿子上作為旗幟。 捲起或展開旗幟需要一個動作。 旗幟有以下屬性。",
 				{
 					"name": "勇氣印記",
 					"type": "entries",
 					"entries": [
-						"以一個附贈動作，你可以觸摸展開的旗幟，使它散發出勇氣。 你和你的盟友在距離它 20 英尺的範圍內對 {@condition 恐懼} 免疫。 這一好處持續 10 分鐘或直到旗幟被捲起。 一旦你使用了這個屬性，你就不能再使用它， 直到你完成一個短或長休。"
+						"以一個附贈動作，你可以觸摸展開的旗幟，使它散發出勇氣。 你和你的盟友在距離它 20 呎的範圍內對 {@condition 恐懼} 免疫。 這一好處持續 10 分鐘或直到旗幟被捲起。 一旦你使用了這個屬性，你就不能再使用它， 直到你完成一個短或長休。"
 					]
 				},
 				{
@@ -2490,15 +2491,15 @@
 					"type": "entries",
 					"name": "標準之盾",
 					"entries": [
-						"以一個附贈動作，你可以觸摸展開的旗幟並調用這個力量。 任何瞄准你或你的盟友的遠程攻擊骰都有劣勢，只要目標在展開的旗幟 20 英尺內。 此好處持續 1 分鐘或直到旗幟被捲起 。 一旦你使用了這個屬性， 你就不能再使用它， 直到你完成一個短或長休。"
+						"以一個附贈動作，你可以觸摸展開的旗幟並調用這個力量。 任何瞄准你或你的盟友的遠程攻擊骰都有劣勢，只要目標在展開的旗幟 20 呎內。 此好處持續 1 分鐘或直到旗幟被捲起 。 一旦你使用了這個屬性， 你就不能再使用它， 直到你完成一個短或長休。"
 					]
 				},
 				{
 					"name": "戰鬥贈禮",
 					"type": "entries",
 					"entries": [
-						"你可以通過用手指在地上畫出戰爭符文來轉移旗幟的魔法。 你所指向的地點，它會變成了一個半徑為 500 英尺的魔法球形區域的中心。 轉移需要 8 小時的工作，這需要旗幟在你 5 英尺之內，在這期間你選擇生物，生物類型， 或兩者都將受益於魔法。 最後，旗幟被摧毀，該地區獲得以下屬性:",
-						"在半徑 500 英尺的球體中， 你在轉移過程中選擇的生物對 {@condition 恐懼} 免疫， 並在攻擊骰和 AC 上獲得 +1 加值。"
+						"你可以通過用手指在地上畫出戰爭符文來轉移旗幟的魔法。 你所指向的地點，它會變成了一個半徑為 500 呎的魔法球形區域的中心。 轉移需要 8 小時的工作，這需要旗幟在你 5 呎之內，在這期間你選擇生物，生物類型， 或兩者都將受益於魔法。 最後，旗幟被摧毀，該地區獲得以下屬性:",
+						"在半徑 500 呎的球體中， 你在轉移過程中選擇的生物對 {@condition 恐懼} 免疫， 並在攻擊骰和 AC 上獲得 +1 加值。"
 					]
 				}
 			],
@@ -2927,7 +2928,8 @@
 			"ENG_name": "Basket"
 		},
 		{
-			"name": "Battering Shield",
+			"name": "撞擊盾",
+			"ENG_name": "Battering Shield",
 			"source": "EGW",
 			"page": 266,
 			"baseItem": "shield|PHB",
@@ -2940,8 +2942,8 @@
 			"recharge": "dawn",
 			"charges": 3,
 			"entries": [
-				"While holding this iron tower shield, you gain a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.",
-				"Additionally, the shield has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. If you are holding the shield and push a creature within your reach at least 5 feet away, you can expend 1 charge to push that creature an additional 10 feet, knock it {@condition prone}, or both."
+				"持握此鐵制塔盾時，你在盾牌本身的ac加值基礎上獲得ac+1。盾牌共有3發充能，並將于每天黎明時恢復{@dice 1d3}發充能。",
+				"持握此盾牌並嘗試用它推撞一個處於你5尺外的生物時，你可以消耗1發充能使那名生物被額外推開十尺或/並{@condition 伏地}。"
 			]
 		},
 		{
@@ -3434,15 +3436,16 @@
 			"ENG_name": "Black Pearl"
 		},
 		{
-			"name": "Black Sap",
+			"name": "黑色樹液",
+			"ENG_name": "Black Sap",
 			"source": "EGW",
 			"page": 152,
 			"type": "P",
 			"rarity": "none",
 			"value": 30000,
 			"entries": [
-				"This tarry substance harvested from the dark boughs of the death's head willow is a powerful intoxicant. It can be smoked as a concentrate or injected directly into the bloodstream. A creature subjected to a dose of black sap cannot be {@condition charmed} or {@condition frightened} for {@dice 1d6} hours.",
-				"For each dose of black sap consumed, a creature must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for {@dice 2d4} hours\u2014an effect that is cumulative with multiple doses."
+				"這種從死亡之頭柳樹的深色樹枝上採摘的焦油狀物質是一種強大的麻醉劑。它可以作為一種濃縮物來吸食，也可以直接注射到血液中。受到黑色樹液影響的生物在{@dice 1d6}小時內不能被{@condition 魅惑}或{@condition 恐懼}。",
+				"每消耗一劑黑樹液，生物必須通過DC15體質豁免，否則就會進入{@condition 中毒}狀態{@dice 2d4}小時\u2014這個效果在多次使用時是可以累積的。"
 			]
 		},
 		{
@@ -3861,25 +3864,27 @@
 			]
 		},
 		{
-			"name": "Blasting Powder",
+			"name": "爆破粉末",
+			"ENG_name": "Blasting Powder",
 			"source": "EGW",
 			"page": 225,
 			"type": "G",
 			"rarity": "none",
 			"entries": [
-				"This volatile alchemical powder comes in a small pouch. When ignited by an open flame or a fuse, the powder explodes. Each creature within 5 feet of the exploding pouch must make a DC 13 Dexterity saving throw, taking {@damage 3d6} bludgeoning damage on a failed save, or half as much damage on a successful one.",
-				"A character can bind multiple pouches of blasting powder together so they explode at the same time. Each additional pouch increases the damage by {@dice 1d6} (maximum of {@dice 10d6}) and the blast radius by 5 feet (maximum of 20 feet)."
+				"這種揮發性的煉金粉末裝在一個囊袋裡。當被明火或引線點燃時，粉末會爆炸。爆炸小袋5呎範圍內的每個生物都必須進行DC13的敏捷豁免，豁免失敗時受到{@damage 3d6}的暴擊傷害，或者豁免成功時受到一半的傷害。",
+				"一個角色可以將多個爆破粉末捆綁在一起，使它們同時爆炸。每增加一個囊袋，傷害增加1d6（最大10d6），爆炸半徑增加5呎（最大20呎）。"
 			]
 		},
 		{
-			"name": "Blight Ichor",
+			"name": "枯萎靈液",
+			"ENG_name": "Blight Ichor",
 			"source": "EGW",
 			"page": 152,
 			"type": "P",
 			"rarity": "none",
 			"value": 20000,
 			"entries": [
-				"This bitter chartreuse concoction is distilled from a fungus native to the Blightshore badlands. The sickly green liqueur harbors potent psychedelic properties. Provided it is neither a construct nor undead, a creature subjected to a dose of blight ichor gains advantage on Intelligence and Wisdom checks, as well as vulnerability to psychic damage, for 1 hour. For each dose of blight ichor consumed, the creature must succeed on a DC 15 Constitution saving throw or become {@condition poisoned} for {@dice 1d6} hours and suffer the effects of a confusion spell for 1 minute. An undead creature subjected to a dose of blight ichor gains advantage on all Dexterity checks and is immune to the {@condition frightened} condition for 1 hour."
+				"這種苦澀的黃綠色混合液是由一種原產於布萊特海岸荒地的真菌蒸餾而成。這種致病的綠色利口酒具有強烈的迷幻特性。只要它不是構裝體也不是不死生物，使用枯萎靈液的生物在智力和睿智檢定中獲得優勢，以及對精神傷害易傷，持續1小時。每消耗一劑枯萎靈液，該生物必須通過DC15體質豁免，否則就會{@condition 中毒}狀態{@dice 1d6}小時，並受到困惑術影響1分鐘。遭受枯萎靈液的不死生物在所有敏捷檢定中獲得優勢，並免疫{@condition 恐懼}狀態1小時。"
 			]
 		},
 		{
@@ -4799,14 +4804,15 @@
 			"ENG_name": "Brazier of Commanding Fire Elementals"
 		},
 		{
-			"name": "Breathing Bubble",
+			"name": "呼吸罩",
+			"ENG_name": "Breathing Bubble",
 			"source": "EGW",
 			"page": 266,
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This translucent, bubble-like sphere has a slightly tacky outer surface, and you gain the item's benefits only while wearing it over your head like a helmet.",
-				"The bubble contains 1 hour of breathable air. The bubble regains all its expended air daily at dawn."
+				"這個半透明圓形罩子的表面有些粘糊糊的，只有將它像頭盔一樣戴在頭上時才能啟動它的效果。",
+				"罩子內含1小時份的可呼吸空氣。消耗的空氣將在每天黎明時分回復。"
 			]
 		},
 		{
@@ -4945,14 +4951,15 @@
 			"value": 25000
 		},
 		{
-			"name": "Brooch of Living Essence",
+			"name": "生命精華胸針",
+			"ENG_name": "Brooch of Living Essence",
 			"source": "EGW",
 			"page": 266,
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"While wearing this nondescript brooch, spells and anything else that would detect or reveal your creature type treat you as humanoid, and those that would reveal your alignment treat it as neutral."
+				"戴著這枚無明顯特徵的胸針時，法術或其他任何能偵測或揭示你的真實生物類別的方法，都會將你視為類人生物。而那些能夠揭示你所屬陣營的途徑都會將你的陣營視為絕對中立。"
 			]
 		},
 		{
@@ -5102,19 +5109,20 @@
 			]
 		},
 		{
-			"name": "Butcher's Bib",
+			"name": "屠夫圍裙",
+			"ENG_name": "Butcher's Bib",
 			"source": "EGW",
 			"page": 266,
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"This black leather apron is perpetually covered by blood, even after being washed off. You gain the following benefits while wearing the apron:",
+				"這條黑色皮制圍裙上沾滿了無法被去除的血跡。著裝此圍裙時，你獲得如下增益：",
 				{
 					"type": "list",
 					"items": [
-						"Once per turn when you roll damage for a melee attack with a weapon, you can reroll the weapon's damage dice. If you do so, you must use the second total.",
-						"Your weapon attacks that deal slashing damage score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+						"你每輪有一次機會為使用武器所造成的近戰攻擊傷害重擲傷害骰，且你必須接受新的結果。",
+						"你的劈砍武器攻擊在擲出19 或20 時即可造成重擊。"
 					]
 				}
 			],
@@ -6173,7 +6181,7 @@
 					"name": "飛龍殺手",
 					"type": "entries",
 					"entries": [
-						"以一個動作，你可以將爪子指向離你 30 英尺內的龍。 龍必須通過 DC 15 體質豁免，或者在你的下一個回合結束前獲得對所有傷害類型的易商。 此屬性可使用三次。 在下一個黎明，爪子將恢復所有的充能。"
+						"以一個動作，你可以將爪子指向離你 30 呎內的龍。 龍必須通過 DC 15 體質豁免，或者在你的下一個回合結束前獲得對所有傷害類型的易商。 此屬性可使用三次。 在下一個黎明，爪子將恢復所有的充能。"
 					]
 				},
 				{
@@ -6187,8 +6195,8 @@
 					"name": "飛龍防護",
 					"type": "entries",
 					"entries": [
-						"你可以通過用手指在地上畫出飛龍符文符文來轉移魔法。 你所指向的地點， 它會變成了一個半徑為 100 英尺的魔法球形區域的中心。 轉移需要 8 小時的工作， 這需要你在爪子 5 英尺之內。 最後，爪子被摧毀，該區域獲得以下屬性:",
-						"而在 100 英尺半徑的範圍內，任何龍在豁免檢定都有劣勢，飛行速度無法超過 10 英尺。"
+						"你可以通過用手指在地上畫出飛龍符文符文來轉移魔法。 你所指向的地點， 它會變成了一個半徑為 100 呎的魔法球形區域的中心。 轉移需要 8 小時的工作， 這需要你在爪子 5 呎之內。 最後，爪子被摧毀，該區域獲得以下屬性:",
+						"而在 100 呎半徑的範圍內，任何龍在豁免檢定都有劣勢，飛行速度無法超過 10 呎。"
 					]
 				}
 			],
@@ -6664,13 +6672,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Coin of Delving",
+			"name": "測距銅幣",
+			"ENG_name": "Coin of Delving",
 			"source": "EGW",
 			"page": 266,
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This scintillating copper coin sheds dim light in a 5-foot radius. If dropped a distance greater than 5 feet, the coin issues a melodious ringing sound when it hits a surface. Any creature that can hear the chime can determine the distance the coin dropped based on the tone."
+				"這枚閃爍的銅幣可以為其周圍5呎半徑範圍提供微光光照。如果硬幣向下掉落的距離大於5呎，則它在撞擊到任意物體表面後會發出悅耳的鈴聲，任何聽到鈴聲的生物都可以根據音調判斷硬幣掉落的距離。"
 			]
 		},
 		{
@@ -6772,7 +6781,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"這是一個普通，但是相當大的海螺殼 ，上面鐫刻著尤瓦(風暴)符文。 海螺有 2½ 英尺長，重達 20 磅。",
+				"這是一個普通，但是相當大的海螺殼 ，上面鐫刻著尤瓦(風暴)符文。 海螺有 2½ 呎長，重達 20 磅。",
 				"以一個動作，你可以通過向外殼吹氣來施展 {@spell 傳送術} 。 目標是固定的， 並且沒有發生事故或法術偏離目標的機會。 任何通過海螺傳送的人都將出現在該物品的創造者刻上尤瓦(風暴)符文時所指定的特定位置。 它不允許傳送到任何其他目的地。 一旦它的法術被釋放，海螺就不能再使用，直到第二天黎明。"
 			],
 			"attachedSpells": [
@@ -10004,13 +10013,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Dust of Deliciousness",
+			"name": "美味塵",
+			"ENG_name": "Dust of Deliciousness",
 			"source": "EGW",
 			"page": 267,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"This reddish brown dust can be sprinkled over any edible substance to greatly improve the flavor. The dust also dulls the eater's senses: anyone eating food treated with this dust has disadvantage on Wisdom ability checks and Wisdom saving throws for 1 hour. There is enough dust to flavor six servings."
+				"這瓶紅棕色的粉末可以被灑在任意可食用物品上以極大地改善該物品的美味程度。同時，食用被灑上美味塵的食物的人的其他感官將被削弱，並將在接下來一小時內所進行的所有感知檢定和豁免上承受劣勢。一份美味塵可以被使用6次。"
 			]
 		},
 		{
@@ -11057,13 +11067,14 @@
 			"ENG_name": "Explorer's Pack"
 		},
 		{
-			"name": "Explosive Seed",
+			"name": "爆炸種子",
+			"ENG_name": "Explosive Seed",
 			"source": "EGW",
 			"page": 225,
 			"type": "G",
 			"rarity": "none",
 			"entries": [
-				"This acorn-sized sphere of brass contains a small amount of blasting powder and a clockwork trigger. An explosive seed can be thrown up to 30 feet as an action, detonating on impact. Each creature within 5 feet of the exploding seed must make a DC 10 Dexterity saving throw, taking {@damage 1d8} bludgeoning damage on a failed save, or half as much damage on a successful one."
+				"這個橡子大小的黃銅色球體包含少量的{@item 爆破粉末|EGW}和一個發條觸發器。使用一個動作，爆炸種子可以被扔到30呎處，在撞擊時引爆。在爆炸種子5呎範圍內的每個生物必須通過DC10敏捷豁免，豁免失敗時受到{@damage 1d8}的鈍擊傷害，成功時受到一半的傷害。"
 			]
 		},
 		{
@@ -12157,15 +12168,15 @@
 					"name": "和睦羈絆",
 					"type": "entries",
 					"entries": [
-						"以一個動作，你可以用木槌在堅硬的表面上敲出一個點。 在接下來的一分鐘內，當一個生物在距離點的 60 英尺範圍內對另一個生物造成攻擊傷害時，攻擊者所受到的精神傷害等於它對目標造成的傷害的一半。 一旦你使用了這個屬性， 你就不能再使用它，直到你完成一個長休。"
+						"以一個動作，你可以用木槌在堅硬的表面上敲出一個點。 在接下來的一分鐘內，當一個生物在距離點的 60 呎範圍內對另一個生物造成攻擊傷害時，攻擊者所受到的精神傷害等於它對目標造成的傷害的一半。 一旦你使用了這個屬性， 你就不能再使用它，直到你完成一個長休。"
 					]
 				},
 				{
 					"name": "真理餽贈",
 					"type": "entries",
 					"entries": [
-						"你可以通過用手指在地上描出文(朋友)符文來轉移小木槌的魔法。 你所指向的地點，它會變成了一個半徑為 30 英尺的魔法球形區域的中心。 轉移需要 8 小時的工作，這需要小木槌在 5 英尺之內。 最後，木槌被破壞，區域獲得以下屬性:",
-						"當一個生物在 30 英尺半徑範圍內說謊時，該生物將受到 5 點精神傷害並明顯退縮。"
+						"你可以通過用手指在地上描出文(朋友)符文來轉移小木槌的魔法。 你所指向的地點，它會變成了一個半徑為 30 呎的魔法球形區域的中心。 轉移需要 8 小時的工作，這需要小木槌在 5 呎之內。 最後，木槌被破壞，區域獲得以下屬性:",
+						"當一個生物在 30 呎半徑範圍內說謊時，該生物將受到 5 點精神傷害並明顯退縮。"
 					]
 				}
 			],
@@ -12530,15 +12541,16 @@
 			"ENG_name": "Goggles of Night"
 		},
 		{
-			"name": "Goggles of Object Reading",
+			"name": "物品檢識鏡",
+			"ENG_name": "Goggles of Object Reading",
 			"source": "EGW",
 			"page": 267,
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"These leather-framed goggles feature purple crystal lenses. While wearing the goggles, you have advantage on Intelligence ({@skill Arcana}) checks made to reveal information about a creature or object you can see.",
-				"In addition, you can cast the {@spell 鑑定術} spell using the googles. Once you do so, you can't do so again until the next dawn."
+				"這副皮革護目鏡鑲著紫水晶的鏡片。當你著裝這副護目鏡，並試圖回憶所見生物或物品的相關資訊時，你所做的依賴視覺進行的智力（{@skill 奧秘}）檢定擁有優勢。",
+				"著裝此護目鏡時，你可以施展鑒定術。此後直到下一次黎明前，該特性都無法再次使用。"
 			],
 			"attachedSpells": [
 				"identify"
@@ -19116,15 +19128,16 @@
 			"ENG_name": "Moonstone"
 		},
 		{
-			"name": "Moorbounder",
+			"name": "野躍獸",
+			"ENG_name": "Moorbounder",
 			"source": "EGW",
 			"page": 132,
 			"type": "MNT",
 			"rarity": "none",
 			"value": 40000,
 			"entries": [
-				"Beasts of burden are common throughout Xhorhas, and often horses and other riding animals are the best or only option. For those who require speed and have a little more coin to spend, the best option is often a moorbounder. However, moorbounders that haven't undergone proper training or established bonds of trust with their masters tend to attack and even eat their riders.",
-				"Moorbounders can cost anywhere from 300 to 500 gp each. They're often cheaper and more abundant in towns on the wastes than in cities like Rosohna."
+				"該野獸在整個Xhorhas是很常見的，往往馬匹和其他騎乘動物是最好的或唯一的選擇。對於那些需要速度，並且有更多錢可以花的人來說，最好的選擇往往是野躍獸。然而，沒有經過適當訓練或沒有與主人建立信任關係的野躍獸往往會攻擊甚至吃掉他們的騎手。",
+				"野躍獸的價格從300到500gp不等。它們通常在荒原上的城鎮比在Rosohna這樣的城市更便宜、種類更豐富。"
 			]
 		},
 		{
@@ -19162,7 +19175,8 @@
 			]
 		},
 		{
-			"name": "Muroosa Balm",
+			"name": "慕羅沙膏",
+			"ENG_name": "Muroosa Balm",
 			"source": "EGW",
 			"page": 70,
 			"type": "P",
@@ -19172,8 +19186,8 @@
 			"rarity": "none",
 			"value": 10000,
 			"entries": [
-				"This paste made from the muroosa bush is known to help prevent sunburn, but it is also a fire retardant. After spending 1 minute applying a quarter pint of muroosa balm to your skin, you gain resistance against fire damage for 1 hour.",
-				"A dose of muroosa balm sufficient for treating sunburn costs 1 gp."
+				"這種由慕羅沙灌木製成的膏狀物不僅可以幫助防止曬傷，而且還是一種防火劑。在花1分鐘時間將四分之一品脫的慕羅沙膏塗抹在皮膚上後，你將獲得對火焰傷害的抗性1小時。",
+				"一劑足以治療曬傷的慕羅沙膏需要花費1gb。"
 			]
 		},
 		{
@@ -19446,7 +19460,8 @@
 			]
 		},
 		{
-			"name": "Needle of Mending",
+			"name": "修補之針",
+			"ENG_name": "Needle of Mending",
 			"source": "EGW",
 			"page": 268,
 			"baseItem": "dagger|PHB",
@@ -19467,8 +19482,8 @@
 			"bonusWeapon": "+1",
 			"weapon": true,
 			"entries": [
-				"This weapon is a magic dagger disguised as a sewing needle. When you hold it and use a bonus action to speak its command word, it transforms into a dagger or back into a needle.",
-				"You gain a +1 bonus to attack and damage rolls made with the dagger. While holding it, you can use an action to cast the {@spell 修復術} cantrip from it."
+				"這把魔法匕首可以偽裝成縫紉針的模樣。持握它時，你可以用一個附贈動作念出它的命令語，將它變成一把匕首，或變回一根針。",
+				"你在使用該魔法武器發動攻擊檢定與傷害擲骰時獲得+1加值。持握它時，可以任意施展戲法{@spell 修復術}。"
 			],
 			"attachedSpells": [
 				"mending"
@@ -19823,14 +19838,15 @@
 			"ENG_name": "Old masterpiece painting"
 		},
 		{
-			"name": "Olisuba Leaf",
+			"name": "奧利蘇巴葉",
+			"ENG_name": "Olisuba Leaf",
 			"source": "EGW",
 			"page": 70,
 			"type": "P",
 			"rarity": "none",
 			"value": 5000,
 			"entries": [
-				"These dried leaves of the Olisuba tree, when steeped to make a tea, can help a body recover from strenuous activity. If you drink a dose of Olisuba tea during a long rest, your {@condition exhaustion} level is reduced by 2 instead of 1 at the end of that long rest."
+				"將這些乾葉泡茶，可以幫助身體從劇烈的活動中恢復過來。如果在長時間休息時飲用一次奧利蘇巴葉茶，在長時間休息結束時，你的{@condition 力竭}程度會從下降1變成2。"
 			]
 		},
 		{
@@ -22171,14 +22187,15 @@
 			"ENG_name": "Potion of Longevity"
 		},
 		{
-			"name": "Potion of Maximum Power",
+			"name": "極限性能藥水",
+			"ENG_name": "Potion of Maximum Power",
 			"source": "EGW",
 			"page": 268,
 			"type": "P",
 			"rarity": "rare",
 			"entries": [
-				"The first time you cast a damage-dealing spell of 4th level or lower within 1 minute after drinking the potion, instead of rolling dice to determine the damage dealt, you can instead use the highest number possible for each die.",
-				"This glowing purple liquid smells of sugar and plum, but it has a muddy taste."
+				"在飲用此藥水後的一分鐘內，你所施放的第一個可以造成傷害的4環或更低階法術，其傷害骰直接取最大值。",
+				"這瓶紫色發光藥水聞起來像李子和砂糖，但嘗起來卻像泥巴。"
 			]
 		},
 		{
@@ -22667,7 +22684,8 @@
 			]
 		},
 		{
-			"name": "Pride Silk",
+			"name": "驕傲絲綢",
+			"ENG_name": "Pride Silk",
 			"source": "EGW",
 			"page": 103,
 			"type": "G",
@@ -22675,11 +22693,12 @@
 			"weight": 1,
 			"value": 10000,
 			"entries": [
-				"The hearty silk unique to the region has long been a point of pride with the locals. When processed and woven properly, the resulting cloth is pride silk: an extremely flexible material with the durability of tanned leather. Pride silk has become a favorite cloth for use on military ship sails, war banners, and other utilitarian applications, but has also gained popularity in affluent circles. High-end clothing made from pride silk is both fashionable and protective, leading many nobles and wealthy merchants to seek full outfits and formal gowns made with it. The tailors skilled enough to create such outfits are few and far between, so while pride silk might be expensive as a raw material, outfits made of the cloth are prohibitively expensive for most common folk."
+				"特有的厚質絲綢一直是當地人的驕傲。如果加工和編織得當，就能織成驕傲絲綢：一種極富彈性的材料，具有鞣革的耐久性。驕傲絲綢已成為軍艦船帆、戰旗等實用性用途的首選布料，但在富裕階層也受到歡迎。用驕傲絲綢製成的高級服裝既時尚又有保護作用，這使得許多貴族和富商都尋求用它製成的全套服裝和正式禮服。熟練到足以製作這種服裝的裁縫師少之又少，因此，雖然驕傲絲綢作為原材料可能很貴，但用這種布料製作的服裝對大多數普通民眾來說卻貴得離譜。"
 			]
 		},
 		{
-			"name": "Pride Silk Outfit",
+			"name": "驕傲絲綢服裝",
+			"ENG_name": "Pride Silk Outfit",
 			"source": "EGW",
 			"page": 103,
 			"type": "G",
@@ -22687,7 +22706,7 @@
 			"weight": 4,
 			"value": 50000,
 			"entries": [
-				"An outfit made of pride silk weighs 4 pounds and costs 500 gp. If you aren't wearing armor, your base Armor Class is 11 + your Dexterity modifier while wearing it."
+				"一件由{@item 驕傲絲綢|EGW}製成的服裝重4磅，價格500gp。如果你未穿著盔甲時，你的基本護甲等級是11+你穿盔甲時的調整值。"
 			]
 		},
 		{
@@ -23096,7 +23115,7 @@
 					"ENG_name": "Swan Boat",
 					"type": "entries",
 					"entries": [
-						"你可以使用一個動作用這個羽符觸碰一片直徑至少60呎的水體。這個羽符將會消失，且一個50呎長、20尺寬，天鵝外型的船將會出現在該位置。這艘船可以自行航行，並以每小時6哩的速度在水上移動。當在這艘船上時，你可以使用一個動作以命令它移動、或向著最多90度的範圍內轉向。這艘船可以搭載最多32個體型為中型或更小的生物。一個大型生物將被計為四個中型生物，一個巨型生物則計為九個中型生物。這艘船會持續存在長達24小時，並在這之後消失。你能夠以一個動作將這艘船解消。"
+						"你可以使用一個動作用這個羽符觸碰一片直徑至少60呎的水體。這個羽符將會消失，且一個50呎長、20呎寬，天鵝外型的船將會出現在該位置。這艘船可以自行航行，並以每小時6哩的速度在水上移動。當在這艘船上時，你可以使用一個動作以命令它移動、或向著最多90度的範圍內轉向。這艘船可以搭載最多32個體型為中型或更小的生物。一個大型生物將被計為四個中型生物，一個巨型生物則計為九個中型生物。這艘船會持續存在長達24小時，並在這之後消失。你能夠以一個動作將這艘船解消。"
 					]
 				}
 			],
@@ -23897,7 +23916,8 @@
 			"ENG_name": "Ring of Necrotic Resistance"
 		},
 		{
-			"name": "Ring of Obscuring",
+			"name": "遮蔽戒指",
+			"ENG_name": "Ring of Obscuring",
 			"source": "EGW",
 			"page": 269,
 			"type": "RG",
@@ -23906,7 +23926,7 @@
 			"recharge": "dawn",
 			"charges": 3,
 			"entries": [
-				"This band of iron resembles a skull and is cold to the touch. It has 3 charges and regains {@dice 1d3} expended charges daily at dawn. As an action while wearing the ring, you can expend 1 of its charges to cast the {@spell 雲霧術} spell from it, with the following changes: the cloud is centered on you when it first appears, and the spell lasts for 1 minute (no concentration required)."
+				"這個鐵質戒指就像一個頭骨，摸起來很冷。它有3充能，並在每天黎明恢復{@dice 1d3}充能。當帶著戒指時，你可以以一個動作，使用它的1充能，來施放{@spell 雲霧術}，但需要做出以下變動：當雲霧出現時，它以你為中心，並且法術持續1分鐘(無需專注)。"
 			],
 			"attachedSpells": [
 				"fog cloud"
@@ -24128,14 +24148,15 @@
 			"ENG_name": "Ring of Telekinesis"
 		},
 		{
-			"name": "Ring of Temporal Salvation",
+			"name": "暫時的救贖戒指",
+			"ENG_name": "Ring of Temporal Salvation",
 			"source": "EGW",
 			"page": 269,
 			"type": "RG",
 			"rarity": "rare",
 			"reqAttune": true,
 			"entries": [
-				"If you die while wearing this gray crystal ring, you vanish and reappear in an unoccupied space within 5 feet of the space you left (or the nearest unoccupied space). You have a number of hit points equal to {@dice 3d6} + your Constitution modifier. If your hit point maximum is lower than the number of hit points you regain, your hit point maximum rises to a similar amount. If you have any levels of {@condition exhaustion}, reduce your level of {@condition exhaustion} by 1. Once the ring is used, it turns to dust and is destroyed."
+				"如果你在佩戴這枚灰色水晶戒指時死亡，你會消失並重新出現在你離開的空間（或最近的無人空間）5呎內的無人空間。你的生命值等於{@dice 3d6}+你的體力調整值。如果你的生命值上限低於你恢復的生命值數量，你的生命值上限會上升到相等的數值。如果你有任何等級的{@condition 力竭}，減少你的1級{@condition 力竭}一旦戒指被使用，它就會變成塵埃並被摧毀。"
 			]
 		},
 		{
@@ -24786,7 +24807,8 @@
 			"ENG_name": "Rod of Resurrection"
 		},
 		{
-			"name": "Rod of Retribution",
+			"name": "報應權杖",
+			"ENG_name": "Rod of Retribution",
 			"source": "EGW",
 			"page": 269,
 			"type": "RD",
@@ -24796,8 +24818,8 @@
 			"recharge": "dawn",
 			"charges": 3,
 			"entries": [
-				"This adamantine rod is tipped with a glowing crystalline eye. The rod has 3 charges and regains all its expended charges daily at dawn.",
-				"When a creature you can see within 60 feet of you damages you while you are holding this rod, you can use your reaction to expend 1 of the rod's charges to force the creature to make a DC 13 Dexterity saving throw. The creature takes {@damage 2d10} lightning damage on a failed save, or half as much damage on a successful one."
+				"這根精金權杖的頂端有一個發光的水晶眼。權杖有3次充能，每天黎明時恢復所有消耗的費用。",
+				"當你拿著這根權杖的時候，你所能看到的60呎範圍內的生物對你造成傷害時，你可以使用你的反應來消耗權杖的1次充能，迫使該生物進行DC13的敏捷豁免。豁免失敗時，該生物會受到{@damage 2d10}的閃電傷害，或者豁免成功時受到一半的傷害。"
 			]
 		},
 		{
@@ -26622,7 +26644,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Skyship",
+			"name": "飛空船",
+			"ENG_name": "Skyship",
 			"source": "EGW",
 			"page": 72,
 			"type": "AIR",
@@ -26899,15 +26922,16 @@
 			]
 		},
 		{
-			"name": "Soothsalts",
+			"name": "緩解鹽",
+			"ENG_name": "Soothsalts",
 			"source": "EGW",
 			"page": 152,
 			"type": "P",
 			"rarity": "none",
 			"value": 15000,
 			"entries": [
-				"Soothsalts are derived from a naturally occurring crystalline substance discovered throughout the wilds of the Miskath Strand. The crimson crystals have been mined from cavernous veins like those in the mouth of the Miskath Pit and found within smaller geode formations near sites ravaged by the Calamity. Soothsalts are consumed orally in lozenge-sized doses, and frequent users can be identified by the telltale crimson stain around their mouths. A creature subjected to a dose of soothsalts gains advantage on all Intelligence checks for {@dice 1d4} hours.",
-				"For each dose of soothsalts consumed, the creature must succeed on a DC 15 Constitution saving throw or gain one level of {@condition exhaustion}\u2014an effect which is cumulative with multiple doses."
+				"緩解鹽來自于在米斯卡斯大陸荒野中發現的一種天然結晶物質。這種深紅色的晶體是從像米斯卡斯礦坑口那樣的洞穴礦脈中開採出來的，並且在被災害蹂躪的地點附近的小型地層中被發現。緩解鹽是以菱形大小的劑量口服的，經常使用的人可以通過他們嘴邊明顯的深紅色污漬來識別。服用緩解鹽的生物在{@dice 1d4}小時內的所有智力檢定中獲得優勢。",
+				"每服用一劑緩解鹽，生物必須通過DC15的體質豁免，否則獲得一個等級的{@condition 力竭}\u2014這個效果在多次使用時可以累積。"
 			]
 		},
 		{
@@ -28335,7 +28359,8 @@
 			]
 		},
 		{
-			"name": "Staff of the Ivory Claw",
+			"name": "象牙爪杖",
+			"ENG_name": "Staff of the Ivory Claw",
 			"source": "EGW",
 			"page": 270,
 			"rarity": "rare",
@@ -28351,7 +28376,7 @@
 			"bonusSpellAttack": "+1",
 			"staff": true,
 			"entries": [
-				"This gray-and-cerulean staff is topped with a small dragon claw carved from ivory. While holding the staff, you gain a +1 bonus to spell attack rolls. Whenever you score a critical hit with a spell attack, the target takes an extra {@damage 3d6} radiant damage."
+				"這根淺灰色和天藍色的手杖頂端有一個象牙雕刻的小龍爪。持杖時，你的法術攻擊骰得到+1加值。當你發起一次法術攻擊並骰出暴擊時，目標將受到額外的{@damage 3d6}光耀傷害。"
 			]
 		},
 		{
@@ -30865,14 +30890,15 @@
 			]
 		},
 		{
-			"name": "Theki Root",
+			"name": "荔枝根",
+			"ENG_name": "Theki Root",
 			"source": "EGW",
 			"page": 70,
 			"type": "P",
 			"rarity": "none",
 			"value": 300,
 			"entries": [
-				"This thick marsh root tastes bitter but is thought to aid digestive health. When you use an action to consume a dose, you gain advantage on saving throws against the effects of poisonous or toxic substances for 8 hours."
+				"這種厚實的沼澤根味道苦澀，但被認為可以幫助消化系統健康。當你使用行動來服用時，你對有毒或有毒物質的豁免檢定中具有優勢，持續8小時。"
 			]
 		},
 		{
@@ -33272,13 +33298,14 @@
 			]
 		},
 		{
-			"name": "Vox Seeker",
+			"name": "覓音師",
+			"ENG_name": "Vox Seeker",
 			"source": "EGW",
 			"page": 270,
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This clockwork device resembles a metal crab the size of a dinner plate. Every action used to wind up the device allows it to operate for 1 minute, to a maximum of 10 minutes. While operational, the item uses the accompanying {@creature Vox Seeker|EGW} stat block. This automaton is under the DM's control. A vox seeker reduced to 0 hit points is destroyed."
+				"這個發條裝置類似於一個餐盤大小的金屬螃蟹。每次給這個裝置上緊發條時，都允許它行動1分鐘，至多10分鐘。在運行時，該物品使用相應的{@creature Vox Seeker|EGW}統計資料。這個自動機在DM的控制之下。一個降低到0點生命值覓音師的會被摧毀。"
 			]
 		},
 		{
@@ -34727,14 +34754,15 @@
 			]
 		},
 		{
-			"name": "Willowshade Oil",
+			"name": "柳蔭油",
+			"ENG_name": "Willowshade Oil",
 			"source": "EGW",
 			"page": 70,
 			"type": "P",
 			"rarity": "none",
 			"value": 3000,
 			"entries": [
-				"A dark blue oil can be extracted from the rare fruit of the willowshade plant. A creature can use its action to apply the oil to another creature that has been {@condition petrified} for less than 1 minute, causing the {@condition petrified} condition on that creature to end at the start of what would be that creature's next turn."
+				"可以從柳蔭植物的稀有果實中提取出一種深藍色的油。一位生物可以用自己的行動將油塗抹在另一個被{@condition 石化}不到1分鐘的生物身上，使該生物身上的{@condition 石化}狀態在該生物的下一個回合開始時結束。"
 			]
 		},
 		{

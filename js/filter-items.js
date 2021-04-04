@@ -7,11 +7,11 @@ class PageFilterEquipment extends PageFilter {
 		this._typeFilter = new Filter({header: "Type", headerName: "類型", deselFn: (it) => PageFilterItems._DEFAULT_HIDDEN_TYPES.has(it), displayFn: Parser.ItemTypeToDisplay});
 		this._propertyFilter = new Filter({header: "Property", headerName: "物品屬性", displayFn: StrUtil.uppercaseFirst});
 		this._costFilter = new RangeFilter({header: "Cost", headerName: "價值", min: 0, max: 100, isAllowGreater: true, suffix: " gp"});
-		this._weightFilter = new RangeFilter({header: "Weight", min: 0, max: 100, isAllowGreater: true, suffix: " lb."});
+		this._weightFilter = new RangeFilter({header: "Weight", headerName: "重量",min: 0, max: 100, isAllowGreater: true, suffix: " lb."});
 		this._focusFilter = new Filter({header: "Spellcasting Focus",  headerName: "施法法器",items: [...Parser.ITEM_SPELLCASTING_FOCUS_CLASSES], displayFn: Parser.ClassToDisplay});
-		this._damageTypeFilter = new Filter({header: "Weapon Damage Type", displayFn: it => Parser.dmgTypeToFull(it).uppercaseFirst(), itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.dmgTypeToFull(a), Parser.dmgTypeToFull(b))});
+		this._damageTypeFilter = new Filter({header: "Weapon Damage Type",  headerName: "武器傷害類型", displayFn: it => Parser.dmgTypeToFull(it).uppercaseFirst(), itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.dmgTypeToFull(a), Parser.dmgTypeToFull(b))});
 		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Item Group", "SRD", "Has Images", "Has Info"], isSrdFilter: true});
-		this._poisonTypeFilter = new Filter({header: "Poison Type", items: ["ingested", "injury", "inhaled", "contact"], displayFn: StrUtil.toTitleCase});
+		this._poisonTypeFilter = new Filter({header: "Poison Type", headerName:"藥水類型", items: ["ingested", "injury", "inhaled", "contact"], displayFn: Parser.PosisonTypeToDisplay});
 	}
 
 	static mutateForFilters (item) {
@@ -162,7 +162,7 @@ class PageFilterItems extends PageFilterEquipment {
 			};}
 		});
 		this._bonusFilter = new Filter({header: "Bonus", items: ["Armor Class", "Proficiency Bonus", "Spell Attacks", "Spell Save DC", "Saving Throws", "Weapon Attack and Damage Rolls", "Weapon Attack Rolls", "Weapon Damage Rolls"]});
-		this._miscFilter = new Filter({header: "Miscellaneous", headerName: "雜項",items: ["Ability Score Adjustment", "Charges", "Cursed", "Grants Proficiency", "Has Images", "Has Info", "Item Group", "Magic", "Mundane", "Sentient", "SRD"], isSrdFilter: true});
+		this._miscFilter = new Filter({header: "Miscellaneous", headerName: "雜項",items: ["Ability Score Adjustment", "Charges", "Cursed", "Grants Proficiency", "Has Images", "Has Info", "Item Group", "Magic", "Mundane", "Sentient", "SRD"], isSrdFilter: true, displayFn: Parser.ItemMiscToDisplay});
 		this._baseSourceFilter = new SourceFilter({header: "Base Source", selFn: null});
 	}
 

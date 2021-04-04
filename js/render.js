@@ -4961,13 +4961,13 @@ Renderer.item = {
 
 		// mounts
 		if (item.speed != null) damageParts.push(`速度：${item.speed}`);
-		if (item.carryingCapacity) damageParts.push(`Carrying Capacity: ${item.carryingCapacity} lb.`);
+		if (item.carryingCapacity) damageParts.push(`載重：${item.carryingCapacity}磅`);
 
 		// vehicles
 		if (item.vehSpeed || item.capCargo || item.capPassenger || item.crew || item.crewMin || item.crewMax || item.vehAc || item.vehHp || item.vehDmgThresh || item.travelCost || item.shippingCost) {
-			const vehPartUpper = item.vehSpeed ? `速度：${Parser.numberToVulgar(item.vehSpeed)} mph` : null;
+			const vehPartUpper = item.vehSpeed ? `速度：每小時${Parser.numberToVulgar(item.vehSpeed)}哩` : null;
 
-			const vehPartMiddle = item.capCargo || item.capPassenger ? `Carrying Capacity: ${[item.capCargo ? `${Parser.numberToFractional(item.capCargo)} ton${item.capCargo === 0 || item.capCargo > 1 ? "s" : ""} cargo` : null, item.capPassenger ? `${item.capPassenger} passenger${item.capPassenger === 1 ? "" : "s"}` : null].filter(Boolean).join(", ")}` : null;
+			const vehPartMiddle = item.capCargo || item.capPassenger ? `載重：${[item.capCargo ? `${Parser.numberToFractional(item.capCargo)}噸${item.capCargo === 0 || item.capCargo > 1 ? "" : ""}貨物` : null, item.capPassenger ? `${item.capPassenger}位乘員${item.capPassenger === 1 ? "" : ""}` : null].filter(Boolean).join(", ")}` : null;
 
 			const {travelCostFull, shippingCostFull} = Parser.itemVehicleCostsToFull(item);
 

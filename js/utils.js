@@ -6655,5 +6655,30 @@ Parser.ConditionsDiseasesToDisplay = function(p){
 	return Parser.translateKeyInMapToDisplay(Parser.ConditionsDiseasesKeyToDisplay, p);
 }
 
+Parser.ItemMiscKeyToDisplay = {};
+Parser.ItemMiscKeyToDisplay["ability score adjustment"] = "屬性值調整";
+Parser.ItemMiscKeyToDisplay["charges"] = "充能";
+Parser.ItemMiscKeyToDisplay["cursed"] = "詛咒";
+Parser.ItemMiscKeyToDisplay["grants proficiency"] = "熟練增益";
+Parser.ItemMiscKeyToDisplay["has images"] = "有圖片";
+Parser.ItemMiscKeyToDisplay["has info"] = "有資訊";
+Parser.ItemMiscKeyToDisplay["item group"] = "物品套組";
+Parser.ItemMiscKeyToDisplay["magic"] = "魔法物品";
+Parser.ItemMiscKeyToDisplay["mundane"] = "尋常物品";
+Parser.ItemMiscKeyToDisplay["sentient"] = "智能";
+Parser.ItemMiscKeyToDisplay["srd"] = "SRD";
+Parser.ItemMiscToDisplay = function(p){
+	return Parser.translateKeyInMapToDisplay(Parser.ItemMiscKeyToDisplay, p);
+}
+
+Parser.PosisonTypeKeyToDisplay = {};
+Parser.PosisonTypeKeyToDisplay["contact"] = "接觸";
+Parser.PosisonTypeKeyToDisplay["ingested"] = "內服";
+Parser.PosisonTypeKeyToDisplay["inhaled"] = "吸入";
+Parser.PosisonTypeKeyToDisplay["injury"] = "外傷";
+Parser.PosisonTypeToDisplay = function(p){
+	return Parser.translateKeyInMapToDisplay(Parser.PosisonTypeKeyToDisplay, p);
+}
+
 // Haz code
 // ==================

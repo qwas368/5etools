@@ -378,7 +378,8 @@
 			}
 		},
 		{
-			"name": "Acheron Blade",
+			"name": "冥河之刃",
+			"ENG_name": "Acheron Blade",
 			"type": "GV",
 			"requires": [
 				{
@@ -386,26 +387,29 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Acheron Blade ",
+				"namePrefix": "冥河之刃 ",
+				"ENG_namePrefix": "Acheron Blade ",
 				"source": "EGW",
 				"page": 265,
 				"rarity": "rare",
 				"reqAttune": true,
 				"bonusWeapon": "+1",
 				"entries": [
-					"The black blade of this sword is crafted from a mysterious arcane alloy. You gain a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you are immune to effects that turn undead.",
+					"這柄劍的黑色劍刃由一種神秘的奧術合金所製成。你在用該魔法武器發動攻擊檢定與傷害擲骰時獲得{=bonusWeapon}加值。攜帶此劍時，你免疫將你轉化為不死的效果。",
 					{
 						"type": "entries",
-						"name": "Dark Blessing",
+						"name": "黑暗饋贈",
+						"ENG_name": "Dark Blessing",
 						"entries": [
-							"While holding the sword, you can use an action to give yourself {@dice 1d4 + 4} temporary hit points. This property can't be used again until the next dusk."
+							"持握此劍時，你可以用一個動作使自己獲得{@dice 1d4 + 4} 點臨時生命值。此後直到下一次黃昏前，該特性都無法再次使用。"
 						]
 					},
 					{
 						"type": "entries",
-						"name": "Disheartening Strike",
+						"name": "沮喪打擊",
+						"ENG_name": "Disheartening Strike",
 						"entries": [
-							"When you hit a creature with an attack using this weapon, you can fill the target with unsettling dread: the target has disadvantage on the next saving throw it makes before the end of your next turn. The creature ignores this effect if it's immune to the {@condition frightened} condition. Once you use this property, you can't do so again until the next dusk."
+							"你使用此武器發動攻擊並命中一個生物時，你可以讓該目標的內心充滿恐懼與不安。在你的下一回合結束前，該目標進行的的下一次豁免具有劣勢。免疫{@condition 恐慌}的生物將不受此特性影響。此後直到下一次黃昏前，該特性都無法再次使用。"
 						]
 					}
 				]
@@ -912,7 +916,8 @@
 			"ENG_name": "Cast-Off Armor"
 		},
 		{
-			"name": "Corpse Slayer",
+			"name": "屠屍者",
+			"ENG_name": "Corpse Slayer",
 			"type": "GV",
 			"requires": [
 				{
@@ -920,15 +925,16 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Corpse Slayer ",
+				"namePrefix": "屠屍者 ",
+				"ENG_namePrefix": "Corpse Slayer ",
 				"source": "EGW",
 				"page": 266,
 				"rarity": "rare",
 				"reqAttune": true,
 				"bonusWeapon": "+1",
 				"entries": [
-					"You gain a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon.",
-					"When you hit an undead creature with an attack using this weapon, the attack deals an extra {@damage 1d8} damage of the weapon's type, and the creature has disadvantage on saving throws against effects that turn undead until the start of your next turn."
+					"你在使用該魔法武器發動攻擊檢定與傷害擲骰時獲得{=bonusWeapon}1加值。",
+					"你使用此武器發動攻擊並命中一個不死生物時，該生物將額外受到{@damage 1d8}點傷害，傷害類型取決於武器本身的傷害類型。該生物將在你的下一個回合開始前，對引導神力：驅散不死生物的豁免骰具有劣勢。"
 				]
 			}
 		},
@@ -2637,7 +2643,8 @@
 			"ENG_name": "Walloping Ammunition"
 		},
 		{
-			"name": "Weapon of Certain Death",
+			"name": "必死無疑的武器",
+			"ENG_name": "Weapon of Certain Death",
 			"type": "GV",
 			"requires": [
 				{
@@ -2648,12 +2655,13 @@
 				"net": true
 			},
 			"inherits": {
-				"nameSuffix": " of Certain Death",
+				"namePrefix": "必死無疑的 ",
+				"ENG_nameSuffix": " of Certain Death",
 				"source": "EGW",
 				"page": 270,
 				"rarity": "rare",
 				"entries": [
-					"When you damage a creature with an attack using this magic weapon, the target can't regain hit points until the start of your next turn."
+					"當你用這個魔法武器攻擊傷害一個生物時，目標在你的下一個回合開始前不能恢復生命值。"
 				]
 			}
 		},
