@@ -6,18 +6,19 @@
 	},
 	"item": [
 		{
-			"name": "+1 All-Purpose Tool",
+			"name": "+1 萬能工具",
+			"ENG_name": "+1 All-Purpose Tool",
 			"source": "TCE",
 			"page": 119,
 			"rarity": "uncommon",
-			"reqAttune": "by an artificer",
+            "reqAttune": "由一位奇械師",
 			"wondrous": true,
 			"bonusSpellAttack": "+1",
 			"bonusSpellSaveDc": "+1",
 			"entries": [
-				"This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|PHB}). Whatever form the tool takes, you are proficient with it.",
-				"While holding this tool, you gain a +1 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.",
-				"As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
+				"這把簡單的螺絲刀可以轉換為許多種工具：作為一個動作，你可以觸摸這件物品，而後它會轉換為一套由你選擇的工匠工具（見《{@book 玩家手冊|PHB}》的裝備章節以查看{@item artisan's tools|PHB}的表格）。無論這件工具外表如何，你都擁有該工具的熟練項。",
+				"當持握這套工具時，你在你奇械師法術的法術攻擊骰和法術豁免DC上獲得+1加值。",
+				"作為一個動作，你可以凝神於這套工具以引導你的創造力。選擇一項非你已知的來自任意職業的戲法。在未來8小時內，你可以如同奇械師戲法一般施展該戲法。此屬性使用後，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
@@ -32,16 +33,17 @@
 			"bonusSpellAttack": "+1",
 			"bonusSpellSaveDc": "+1",
 			"entries": [
-				"這件護符載有一位神祇的聖徽，由珍稀石料或金屬雕刻。當持握這枚護符時，你在你法術的法術攻擊骰和法術豁免DC上獲得加值，加值取決於護符的稀有度。",
+				"這件護符載有一位神祇的聖徽，由珍稀石料或金屬雕刻。當持握這枚護符時，你在你法術的法術攻擊骰和法術豁免DC上獲得+2加值",
 				"當你穿戴這枚護符時，你可以使用一次你的引導神力而不消耗使用次數。此屬性使用後，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
-			"name": "+1 Arcane Grimoire",
+			"name": "+1 奧法秘典",
+			"ENG_name": "+1 Arcane Grimoire",
 			"source": "TCE",
 			"page": 120,
 			"rarity": "uncommon",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"bonusSpellAttack": "+1",
@@ -50,16 +52,17 @@
 				"Wizard"
 			],
 			"entries": [
-				"While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.",
-				"You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1."
+				"當你持握著這件皮革封皮的書籍時，你可以將其作為你法師法術的法器，你在你法師法術的法術攻擊骰和法術豁免DC上獲得+1加值。",
+				"你可以將其作為法術書。此外，當你使用你的奧術回想特性時，你能夠恢復的法術位環階總和額外增加1環。"
 			]
 		},
 		{
-			"name": "+1 Bloodwell Vial",
+			"name": "+1 血源瓶",
+			"ENG_name": "+1 Bloodwell Vial",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "uncommon",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 0.01,
 			"bonusSpellAttack": "+1",
@@ -68,18 +71,19 @@
 				"Sorcerer"
 			],
 			"entries": [
-				"To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
-				"In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn."
+				"同調此物品時，你需要將你的一些鮮血滴入其中。直到你與它的同調結束前，小瓶無法再次被開啟。若你與小瓶的同調結束，瓶中之血將化為灰燼。你可以在持握或穿戴這個小瓶時將作為法器，同時你在你術士法術的法術攻擊骰和法術豁免DC上獲得+1加值。",
+				"此外，當你使用任意數量的生命骰以恢復生命值時，你可以恢復5點術法點。該特性直到下次黎明前，無法再次被使用。"
 			]
 		},
 		{
-			"name": "+1 Moon Sickle",
+			"name": "+1 月鐮",
+			"ENG_name": "+1 Moon Sickle",
 			"source": "TCE",
 			"page": 133,
 			"baseItem": "sickle|PHB",
 			"type": "M",
 			"rarity": "uncommon",
-			"reqAttune": "by a druid or ranger",
+			"reqAttune": "由一位德魯伊或遊俠",
 			"weight": 2,
 			"weaponCategory": "simple",
 			"property": [
@@ -96,25 +100,26 @@
 			],
 			"weapon": true,
 			"entries": [
-				"This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
-				"When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+				"這把銀刃鐮刀閃爍著柔和的月光。當持握這把魔法武器時，你用其發動的攻擊檢定和傷害擲骰，與你德魯伊或遊俠法術的法術攻擊檢定與法術豁免DC上具有+1加值。",
+				"此外，你可以用鐮刀作為你施展德魯伊或遊俠法術的法器。當你持握這把鐮刀，施展一道恢復生命值的法術時，你可以骰一枚{@dice d4}並將所得結果加入回復的生命值中。"
 			]
 		},
 		{
-			"name": "+1 Rhythm-Maker's Drum",
+			"name": "+1 調律者之鼓",
+			"ENG_name": "+1 Rhythm-Maker's Drum",
 			"source": "TCE",
 			"page": 134,
 			"type": "INS",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 3,
 			"grantsProficiency": true,
 			"bonusSpellAttack": "+1",
 			"bonusSpellSaveDc": "+1",
 			"entries": [
-				"While holding this {@item drum|PHB}, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
-				"As an action, you can play the {@item drum|PHB} to regain one use of your Bardic Inspiration feature. This property of the {@item drum|PHB} can't be used again until the next dawn."
+				"當持握這張{@item 鼓|PHB}時，你在你吟游詩人法術的法術攻擊骰和法術豁免DC上獲得+1加值。",
+				"作為一個動作，你可以演奏這張{@item 鼓|PHB}以恢復一次你詩人激勵特性的使用次數。{@item 鼓|PHB}的此項屬性，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
@@ -157,73 +162,78 @@
 			]
 		},
 		{
-			"name": "+2 All-Purpose Tool",
+            "name": "+2 萬能工具",
+            "ENG_name": "+2 All-Purpose Tool",
 			"source": "TCE",
 			"page": 119,
 			"rarity": "rare",
-			"reqAttune": "by an artificer",
+            "reqAttune": "由一位奇械師",
 			"wondrous": true,
 			"bonusSpellAttack": "+2",
 			"bonusSpellSaveDc": "+2",
 			"entries": [
-				"This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|PHB}). Whatever form the tool takes, you are proficient with it.",
-				"While holding this tool, you gain a +2 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.",
-				"As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
+                "這把簡單的螺絲刀可以轉換為許多種工具：作為一個動作，你可以觸摸這件物品，而後它會轉換為一套由你選擇的工匠工具（見《{@book 玩家手冊|PHB}》的裝備章節以查看{@item artisan's tools|PHB}的表格）。無論這件工具外表如何，你都擁有該工具的熟練項。",
+                "當持握這套工具時，你在你奇械師法術的法術攻擊骰和法術豁免DC上獲得+2加值。",
+                "作為一個動作，你可以凝神於這套工具以引導你的創造力。選擇一項非你已知的來自任意職業的戲法。在未來8小時內，你可以如同奇械師戲法一般施展該戲法。此屬性使用後，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
-			"name": "+2 Amulet of the Devout",
+			"name": "+2 虔信護符",
+			"ENG_name": "+2 Amulet of the Devout",
 			"source": "TCE",
 			"page": 119,
 			"rarity": "rare",
-			"reqAttune": "by a cleric or paladin",
+			"reqAttune": "由一位牧師或聖騎士",
 			"wondrous": true,
 			"weight": 1,
 			"bonusSpellAttack": "+2",
 			"bonusSpellSaveDc": "+2",
 			"entries": [
-				"This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells.",
-				"While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+                "這件護符載有一位神祇的聖徽，由珍稀石料或金屬雕刻。當持握這枚護符時，你在你法術的法術攻擊骰和法術豁免DC上獲得+2加值",
+                "當你穿戴這枚護符時，你可以使用一次你的引導神力而不消耗使用次數。此屬性使用後，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
-			"name": "+2 Arcane Grimoire",
+            "name": "+2 奧法秘典",
+            "ENG_name": "+2 Arcane Grimoire",
 			"source": "TCE",
 			"page": 120,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"bonusSpellAttack": "+2",
 			"bonusSpellSaveDc": "+2",
 			"entries": [
-				"While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.",
-				"You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1."
+                "當你持握著這件皮革封皮的書籍時，你可以將其作為你法師法術的法器，你在你法師法術的法術攻擊骰和法術豁免DC上獲得+2加值。",
+                "你可以將其作為法術書。此外，當你使用你的奧術回想特性時，你能夠恢復的法術位環階總和額外增加1環。"
 			]
 		},
 		{
-			"name": "+2 Bloodwell Vial",
+            "name": "+2 血源瓶",
+            "ENG_name": "+2 Bloodwell Vial",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 0.01,
 			"bonusSpellAttack": "+2",
 			"bonusSpellSaveDc": "+2",
 			"entries": [
-				"To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
-				"In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn."
+                "同調此物品時，你需要將你的一些鮮血滴入其中。直到你與它的同調結束前，小瓶無法再次被開啟。若你與小瓶的同調結束，瓶中之血將化為灰燼。你可以在持握或穿戴這個小瓶時將作為法器，同時你在你術士法術的法術攻擊骰和法術豁免DC上獲得+2加值。",
+                "此外，當你使用任意數量的生命骰以恢復生命值時，你可以恢復5點術法點。該特性直到下次黎明前，無法再次被使用。"
 			]
 		},
 		{
-			"name": "+2 Moon Sickle",
+            "name": "+2 月鐮",
+            "ENG_name": "+2 Moon Sickle",
 			"source": "TCE",
 			"page": 133,
 			"baseItem": "sickle|PHB",
 			"type": "M",
 			"rarity": "rare",
-			"reqAttune": "by a druid or ranger",
+			"reqAttune": "由一位德魯伊或遊俠",
 			"weight": 2,
 			"weaponCategory": "simple",
 			"property": [
@@ -236,25 +246,26 @@
 			"bonusSpellSaveDc": "+2",
 			"weapon": true,
 			"entries": [
-				"This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a +2 bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
-				"When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+                "這把銀刃鐮刀閃爍著柔和的月光。當持握這把魔法武器時，你用其發動的攻擊檢定和傷害擲骰，與你德魯伊或遊俠法術的法術攻擊檢定與法術豁免DC上具有+2加值。",
+                "此外，你可以用鐮刀作為你施展德魯伊或遊俠法術的法器。當你持握這把鐮刀，施展一道恢復生命值的法術時，你可以骰一枚{@dice d4}並將所得結果加入回復的生命值中。"
 			]
 		},
 		{
-			"name": "+2 Rhythm-Maker's Drum",
+			"name": "+2 調律者之鼓",
+			"ENG_name": "+2 Rhythm-Maker's Drum",
 			"source": "TCE",
 			"page": 134,
 			"type": "INS",
 			"rarity": "rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 3,
 			"grantsProficiency": true,
 			"bonusSpellAttack": "+2",
 			"bonusSpellSaveDc": "+2",
 			"entries": [
-				"While holding this {@item drum|PHB}, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
-				"As an action, you can play the {@item drum|PHB} to regain one use of your Bardic Inspiration feature. This property of the {@item drum|PHB} can't be used again until the next dawn."
+				"當持握這張{@item 鼓|PHB}時，你在你吟游詩人法術的法術攻擊骰和法術豁免DC上獲得+2加值。",
+				"作為一個動作，你可以演奏這張{@item 鼓|PHB}以恢復一次你詩人激勵特性的使用次數。{@item 鼓|PHB}的此項屬性，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
@@ -296,73 +307,78 @@
 			]
 		},
 		{
-			"name": "+3 All-Purpose Tool",
+            "name": "+3 萬能工具",
+            "ENG_name": "+3 All-Purpose Tool",
 			"source": "TCE",
 			"page": 119,
 			"rarity": "very rare",
-			"reqAttune": "by an artificer",
+            "reqAttune": "由一位奇械師",
 			"wondrous": true,
 			"bonusSpellAttack": "+3",
 			"bonusSpellSaveDc": "+3",
 			"entries": [
-				"This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|PHB}). Whatever form the tool takes, you are proficient with it.",
-				"While holding this tool, you gain a +3 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.",
-				"As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
+                "這把簡單的螺絲刀可以轉換為許多種工具：作為一個動作，你可以觸摸這件物品，而後它會轉換為一套由你選擇的工匠工具（見《{@book 玩家手冊|PHB}》的裝備章節以查看{@item artisan's tools|PHB}的表格）。無論這件工具外表如何，你都擁有該工具的熟練項。",
+                "當持握這套工具時，你在你奇械師法術的法術攻擊骰和法術豁免DC上獲得+3加值。",
+                "作為一個動作，你可以凝神於這套工具以引導你的創造力。選擇一項非你已知的來自任意職業的戲法。在未來8小時內，你可以如同奇械師戲法一般施展該戲法。此屬性使用後，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
-			"name": "+3 Amulet of the Devout",
+			"name": "+3 虔信護符",
+			"ENG_name": "+3 Amulet of the Devout",
 			"source": "TCE",
 			"page": 119,
 			"rarity": "very rare",
-			"reqAttune": "by a cleric or paladin",
+			"reqAttune": "由一位牧師或聖騎士",
 			"wondrous": true,
 			"weight": 1,
 			"bonusSpellAttack": "+3",
 			"bonusSpellSaveDc": "+3",
 			"entries": [
-				"This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +3 bonus to spell attack rolls and the saving throw DCs of your spells.",
-				"While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+                "這件護符載有一位神祇的聖徽，由珍稀石料或金屬雕刻。當持握這枚護符時，你在你法術的法術攻擊骰和法術豁免DC上獲得+3加值",
+                "當你穿戴這枚護符時，你可以使用一次你的引導神力而不消耗使用次數。此屬性使用後，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
-			"name": "+3 Arcane Grimoire",
+            "name": "+3 奧法秘典",
+            "ENG_name": "+3 Arcane Grimoire",
 			"source": "TCE",
 			"page": 120,
 			"rarity": "very rare",
-			"reqAttune": "by a wizard",
+            "reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"bonusSpellAttack": "+3",
 			"bonusSpellSaveDc": "+3",
 			"entries": [
-				"While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.",
-				"You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1."
+                "當你持握著這件皮革封皮的書籍時，你可以將其作為你法師法術的法器，你在你法師法術的法術攻擊骰和法術豁免DC上獲得+2加值。",
+                "你可以將其作為法術書。此外，當你使用你的奧術回想特性時，你能夠恢復的法術位環階總和額外增加1環。"
 			]
 		},
 		{
-			"name": "+3 Bloodwell Vial",
+            "name": "+3 血源瓶",
+            "ENG_name": "+3 Bloodwell Vial",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "very rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 0.01,
 			"bonusSpellAttack": "+3",
 			"bonusSpellSaveDc": "+3",
 			"entries": [
-				"To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
-				"In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn."
+                "同調此物品時，你需要將你的一些鮮血滴入其中。直到你與它的同調結束前，小瓶無法再次被開啟。若你與小瓶的同調結束，瓶中之血將化為灰燼。你可以在持握或穿戴這個小瓶時將作為法器，同時你在你術士法術的法術攻擊骰和法術豁免DC上獲得+3加值。",
+                "此外，當你使用任意數量的生命骰以恢復生命值時，你可以恢復5點術法點。該特性直到下次黎明前，無法再次被使用。"
 			]
 		},
 		{
-			"name": "+3 Moon Sickle",
+            "name": "+3 月鐮",
+            "ENG_name": "+3 Moon Sickle",
 			"source": "TCE",
 			"page": 133,
 			"baseItem": "sickle|PHB",
 			"type": "M",
 			"rarity": "very rare",
-			"reqAttune": "by a druid or ranger",
+			"reqAttune": "由一位德魯伊或遊俠",
 			"weight": 2,
 			"weaponCategory": "simple",
 			"property": [
@@ -375,25 +391,26 @@
 			"bonusSpellSaveDc": "+3",
 			"weapon": true,
 			"entries": [
-				"This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a bonus to attack and damage rolls made with it, and you gain a +3 bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
-				"When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+                "這把銀刃鐮刀閃爍著柔和的月光。當持握這把魔法武器時，你用其發動的攻擊檢定和傷害擲骰，與你德魯伊或遊俠法術的法術攻擊檢定與法術豁免DC上具有+3加值。",
+                "此外，你可以用鐮刀作為你施展德魯伊或遊俠法術的法器。當你持握這把鐮刀，施展一道恢復生命值的法術時，你可以骰一枚{@dice d4}並將所得結果加入回復的生命值中。"
 			]
 		},
 		{
-			"name": "+3 Rhythm-Maker's Drum",
+			"name": "+3 調律者之鼓",
+            "ENG_name": "+3 Rhythm-Maker's Drum",
 			"source": "TCE",
 			"page": 134,
 			"type": "INS",
 			"rarity": "very rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 3,
 			"grantsProficiency": true,
 			"bonusSpellAttack": "+3",
 			"bonusSpellSaveDc": "+3",
 			"entries": [
-				"While holding this {@item drum|PHB}, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
-				"As an action, you can play the {@item drum|PHB} to regain one use of your Bardic Inspiration feature. This property of the {@item drum|PHB} can't be used again until the next dawn."
+                "當持握這張{@item 鼓|PHB}時，你在你吟游詩人法術的法術攻擊骰和法術豁免DC上獲得+1加值。",
+                "作為一個動作，你可以演奏這張{@item 鼓|PHB}以恢復一次你詩人激勵特性的使用次數。{@item 鼓|PHB}的此項屬性，直到下次黎明前，不能再次使用。"
 			]
 		},
 		{
@@ -546,7 +563,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -717,11 +734,12 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Alchemical Compendium",
+			"name": "煉金總綱",
+			"ENG_name": "Alchemical Compendium",
 			"source": "TCE",
 			"page": 119,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -730,14 +748,14 @@
 				"Wizard"
 			],
 			"entries": [
-				"Acrid odors cling to this stained, heavy volume. The book's metal fittings are copper, iron, lead, silver, and gold, some frozen mid-transition from one metal to another. When found, the book contains the following spells: {@spell 變巨/縮小術}, {@spell 羽落術}, {@spell 石化術}, {@spell 氣化形體}, {@spell 魔化武器}, and {@spell 變形術}. It functions as a spellbook for you.",
-				"While you are holding the book, you can use it as a spellcasting focus for your wizard spells.",
-				"The book has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"這本褪色、厚重的訂本上附著有辛辣的刺鼻氣息。這本書的金屬擬合件由能夠在銅、鐵、鉛、銀與金子這些金屬間轉換的的凝固中間物質組成。這本書在被找到時，包含了以下法術：{@spell 變巨/縮小術}, {@spell 羽落術}, {@spell 石化術}, {@spell 氣化形體}, {@spell 魔化武器}, 和 {@spell 變形術}。你可以將其作為法術書。",
+				"當你持握這本書時，你可以將其作為你法師法術的法器。",
+				"書具有3發充能，且每天黎明時恢復{@dice 1d3}發已消耗的充能。你持握它時，可以通過以下方式消耗充能：",
 				{
 					"type": "list",
 					"items": [
-						"If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the transmutation school.",
-						"As an action, you can touch a nonmagical object that isn't being worn or carried and spend a number of charges to transform the target into another object. For 1 charge, the object can be no larger than 1 foot on a side. You can spend additional charges to increase the maximum dimensions by 2 feet per charge. The new object must have a gold value equal to or less than the original."
+						"如果你花費1分鐘時間研究這本書，你可以消耗1發充能來將你的一道已準備法術替換為書中的另一道法術。新法術必須是變化學派的法術。",
+						"作為一個動作，你可以觸摸一件未被著裝或攜帶的非魔法物件，並消耗一定數量的充能將其轉換為另一個物件。以1發充能變化時，該物件的邊長不能超過1尺。你可以使用更多的充能來使其上限尺寸增加每充能2呎。新物件的價值必須比原物件低或者相等。"
 					]
 				}
 			],
@@ -1540,27 +1558,29 @@
 			]
 		},
 		{
-			"name": "Astral Shard",
+			"name": "星界碎晶",
+			"ENG_name": "Astral Shard",
 			"source": "TCE",
 			"page": 120,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
 				"Sorcerer"
 			],
 			"entries": [
-				"This crystal is a solidified shard of the Astral Plane, swirling with silver mist. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus for your sorcerer spells while you hold or wear it.",
-				"When you use a Metamagic option on a spell while you are holding or wearing the shard, immediately after casting the spell you can teleport to an unoccupied space you can see within 30 feet of you."
+				"作為一個動作，你可以將碎晶附上一件微型物件（如一把武器或一塊珠寶）或摘下。當同調結束時它會掉落下來。當你持握或穿戴碎晶時，你可以將其作為施展術士法術的法器使用。",
+				"當你持握或穿戴碎晶，並在一道法術上應用一種超魔法選項時，可以在施展法術後立即傳送到至多30呎內一個你能看見且未被佔據的位置。"
 			]
 		},
 		{
-			"name": "Astromancy Archive",
+			"name": "星卜编集",
+			"ENG_name": "Astromancy Archive",
 			"source": "TCE",
 			"page": 120,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -1569,14 +1589,14 @@
 				"Wizard"
 			],
 			"entries": [
-				"This brass disc of articulated, concentric rings unfolds into an armillary sphere. As a bonus action, you can unfold it into the sphere or back into a disc. When found, it contains the following spells, which are wizard spells for you while you are attuned to it: {@spell 卜筮}, {@spell 預言術}, {@spell 尋找捷徑}, {@spell 預視術}, {@spell 生物定位術}, and {@spell 物品定位術}. It functions as a spellbook for you, with spells encoded on the rings.",
-				"While you are holding the archive, you can use it as a spellcasting focus for your wizard spells.",
-				"The archive has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"這個以銅圓盤為鉸接件的同心環能夠展開為一隻渾天儀。以一個附贈動作，你可以將其展開為渾天儀或使其收回成一個圓盤。這本書在被找到時，包含了以下法術，且在你與其同調後對你視為法師法術：{@spell 卜筮}, {@spell 預言術}, {@spell 尋找捷徑}, {@spell 預視術}, {@spell 生物定位術} 和 {@spell 物品定位術}。你可以將其作為法術書，法術被編刻在其圓環上。",
+				"當你持握編集時，你可以將其作為你法師法術的法器。",
+				"編集具有3發充能，且每天黎明時恢復{@dice 1d3}發已消耗的充能。你持握它時，可以通過以下方式消耗充能：",
 				{
 					"type": "list",
 					"items": [
-						"If you spend 1 minute studying the archive, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the archive. The new spell must be of the divination school.",
-						"When a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to expend 1 charge and force the creature to roll a {@dice d4} and apply the number rolled as a bonus or penalty (your choice) to the original roll. You can do this after you see the roll but before its effects are applied."
+						"如果你花費1分鐘時間研究此編集，你可以消耗1發充能來將你的一道已準備法術替換為編集中的另一道法術。新法術必須是預言學派的法術。",
+						"當一個30呎內你可見的生物進行一次攻擊檢定、屬性檢定或豁免檢定時，你可以使用你的反應並消耗1發充能使那個生物骰一個{@dice d4}並將其數值作為原擲骰的加值或減值（由你選擇）。你可以在看見擲骰結束，但在宣佈結果之前使用該反應。"
 					]
 				}
 			],
@@ -1590,11 +1610,12 @@
 			]
 		},
 		{
-			"name": "Atlas of Endless Horizons",
+			"name": "寰宇圖纂",
+			"ENG_name": "Atlas of Endless Horizons",
 			"source": "TCE",
 			"page": 120,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -1603,14 +1624,14 @@
 				"Wizard"
 			],
 			"entries": [
-				"This thick book is bound in dark leather, crisscrossed with inlaid silver lines suggesting a map or chart. When found, the book contains the following spells, which are wizard spells for you while you are attuned to the book: {@spell 祕法之門}, {@spell 次元門}, {@spell 異界之門}, {@spell 迷蹤步}, {@spell 異界傳送}, {@spell 傳送法陣}, and {@spell 回返真言}. It functions as a spellbook for you.",
-				"While you are holding the book, you can use it as a spellcasting focus for your wizard spells.",
-				"The book has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"這本厚重的書被包在暗色的皮革中，皮革上紋有描繪了一張地圖或海圖的交錯銀線。這本書在被找到時，包含了以下法術，且在你與其同調後對你視為法師法術：{@spell 祕法之門}, {@spell 次元門}, {@spell 異界之門}, {@spell 迷蹤步}, {@spell 異界傳送}, {@spell 傳送法陣} 和 {@spell 回返真言}。你可以將其作為法術書。",
+				"當你持握這本書時，你可以將其作為你法師法術的法器。",
+				"該書具有3發充能，且每天黎明時恢復{@dice 1d3}發已消耗的充能。你持握它時，可以通過以下方式消耗充能：",
 				{
 					"type": "list",
 					"items": [
-						"If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the conjuration school.",
-						"When you are hit by an attack, you can use your reaction to expend 1 charge to teleport up to 10 feet to an unoccupied space you can see. If your new position is out of range of the attack, it misses you."
+						"如果你花費1分鐘時間研究這本書，你可以消耗1發充能來將你的一道已準備法術替換為書中的另一道法術。新法術必須是咒法學派的法術。",
+						"當你被一次攻擊命中時，你可以使用你的反應並消耗1發充能，傳送到10呎內一個你能看見且未被佔據的位置。若你的新位置在攻擊的攻擊距離以外，那麼此次攻擊失手。"
 					]
 				}
 			],
@@ -2754,7 +2775,8 @@
 			]
 		},
 		{
-			"name": "Barrier Tattoo (Large)",
+			"name": "屏障刺青 (大)",
+			"ENG_name": "Barrier Tattoo (Large)",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "very rare",
@@ -2762,26 +2784,27 @@
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo depicts protective imagery and uses ink that resembles liquid metal.",
+				"該魔法刺青用一根特殊的針製作，用液態金屬般的墨水繪有代表防護的圖案。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Protection",
+					"name": "防護", "ENG_name": "Protection",
 					"entries": [
-						"While you aren't wearing armor, the tattoo grants you an Armor Class of 18. You can use a shield and still gain this benefit."
+						"當你沒有穿戴護甲的時候，刺青會給予你18 AC。你裝備盾牌時，仍可以獲得刺青的增益。"
 					]
 				}
 			]
 		},
 		{
-			"name": "Barrier Tattoo (Medium)",
+			"name": "屏障刺青 (中)",
+			"ENG_name": "Barrier Tattoo (Medium)",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "rare",
@@ -2789,20 +2812,20 @@
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo depicts protective imagery and uses ink that resembles liquid metal.",
+				"該魔法刺青用一根特殊的針製作，用液態金屬般的墨水繪有代表防護的圖案。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Protection",
+					"name": "防護", "ENG_name": "Protection",
 					"entries": [
-						"While you aren't wearing armor, the tattoo grants you an Armor Class of 15 + your Dexterity modifier (maximum of +2). You can use a shield and still gain this benefit."
+						"當你沒有穿戴護甲的時候，刺青會給予你15+敏捷調整值(最大2)AC。你裝備盾牌時，仍可以獲得刺青的增益。"
 					]
 				}
 			]
@@ -2819,7 +2842,7 @@
 				"This tattoo depicts protective imagery and uses ink that resembles liquid metal. While you aren't wearing armor, the tattoo grants you an Armor Class of 15 + your Dexterity modifier (maximum of +2). You can use a shield and still gain this benefit.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -2828,7 +2851,8 @@
 			]
 		},
 		{
-			"name": "Barrier Tattoo (Small)",
+            "name": "屏障刺青 (小)",
+            "ENG_name": "Barrier Tattoo (Small)",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "uncommon",
@@ -2836,20 +2860,20 @@
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo depicts protective imagery and uses ink that resembles liquid metal.",
+				"該魔法刺青用一根特殊的針製作，用液態金屬般的墨水繪有代表防護的圖案。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Protection",
+					"name": "防護", "ENG_name": "Protection",
 					"entries": [
-						"While you aren't wearing armor, the tattoo grants you an Armor Class of 12 + your dexterity bonus. You can use a shield and still gain this benefit."
+						"當你沒有穿戴護甲的時候，刺青會給予你12+敏捷調整值 AC。你裝備盾牌時，仍可以獲得刺青的增益。"
 					]
 				}
 			]
@@ -2866,7 +2890,7 @@
 				"This tattoo depicts protective imagery and uses ink that resembles liquid metal. While you aren't wearing armor, the tattoo grants you an Armor Class of 12 + your Dexterity modifier. You can use a shield and still gain this benefit.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -2886,7 +2910,7 @@
 				"This tattoo depicts protective imagery and uses ink that resembles liquid metal. While you aren't wearing armor, the tattoo grants you an Armor Class of 18. You can use a shield and still gain this benefit.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -3083,11 +3107,12 @@
 			"ENG_name": "Bell"
 		},
 		{
-			"name": "Bell Branch",
+			"name": "鐘鈴聖枝",
+			"ENG_name": "Bell Branch",
 			"source": "TCE",
 			"page": 122,
 			"rarity": "rare",
-			"reqAttune": "by a druid or warlock",
+			"reqAttune": "由一位德魯伊或契術師",
 			"wondrous": true,
 			"weight": 0.01,
 			"recharge": "dawn",
@@ -3097,13 +3122,13 @@
 				"Warlock"
 			],
 			"entries": [
-				"This silver implement is shaped like a tree branch and is strung with small golden bells. The branch is a spellcasting focus for your spells while you hold it.",
-				"The branch has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. You can use the charges in the following ways while holding it:",
+				"這個銀色的小物件看起來就像一根樹枝，上面正掛著許多金色的小鈴鐺。你持握著它時可以將其作為法器。",
+				"樹枝具有3發充能，且每天黎明時恢復{@dice 1d3}發已消耗的充能。你持握它時，可以通過以下方式消耗充能：",
 				{
 					"type": "list",
 					"items": [
-						"As a bonus action, you can expend 1 charge to detect the presence of aberrations, celestials, constructs, elementals, fey, fiends, or undead within 60 feet of you. If such creatures are present and don't have total cover from you, the bells ring softly, their tone indicating the creature types present.",
-						"As an action, you can expend 1 charge to cast {@spell 防護善惡}."
+						"作為一個附贈動作，你可以消耗1發充能以偵測距離你60呎內的異怪、天界生物、構裝體、元素、精類、邪魔與不死生物。若這些生物存在在60呎內且對你沒有處於全身掩護，那麼金鈴便會輕聲作響，它們的音調揭示了所存在生物的種類。",
+						"以一個動作，你可以消耗1發充能施展{@spell 防護善惡}"
 					]
 				}
 			],
@@ -3928,10 +3953,10 @@
 				"Produced by a special needle, this magic tattoo evokes fury in its form and colors.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
@@ -3970,7 +3995,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -5845,7 +5870,7 @@
 			"source": "TCE",
 			"page": 122,
 			"rarity": "very rare",
-			"reqAttune": "by a druid or warlock",
+			"reqAttune": "由一位德魯伊或契術師",
 			"wondrous": true,
 			"weight": 0.01,
 			"entries": [
@@ -6577,7 +6602,8 @@
 			"ENG_name": "Cobbler's Tools"
 		},
 		{
-			"name": "Coiling Grasp Tattoo",
+			"name": "纏爪刺青",
+			"ENG_name": "Coiling Grasp Tattoo",
 			"source": "TCE",
 			"page": 123,
 			"rarity": "uncommon",
@@ -6585,20 +6611,21 @@
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo has long intertwining designs.",
+				"該魔法刺青用一根特殊的針製作，繪有錯雜盤虯的圖案。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Grasping Tendrils",
+					"name": "纏握觸鬚",
+					"ENG_name": "Grasping Tendrils",
 					"entries": [
-						"While the tattoo is on your skin, you can, as an action, cause the tattoo to extrude into inky tendrils, which reach for a creature you can see within 15 feet of you. The creature must succeed on a DC 14 Strength saving throw or take {@damage 3d6} force damage and be {@condition grappled} by you. As an action, the creature can escape the grapple by succeeding on a DC 14 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. The grapple also ends if you halt it (no action required), if the creature is ever more than 15 feet away from you, or if you use this tattoo on a different creature."
+						"當刺青在你的皮膚上時，你可以用一個動作讓刺青伸縮出一團能夠觸及一個15尺內你可見生物的墨黑色觸鬚。目標生物需要進行一次DC14的力量豁免，豁免失敗則受到{@damage 3d6}力場傷害並被你{@condition 被擒}。作為一個動作，被擒抱的生物可以通過DC14的力量（{@skill 運動}）或敏捷（{@skill 特技}）檢定以擺脫擒抱。在你使觸手停止（無需動作），或生物與你相距15尺以上或你對另一個生物使用此刺青時，擒抱也會結束。"
 					]
 				}
 			]
@@ -6615,7 +6642,7 @@
 				"This tattoo has long intertwining designs. While the tattoo is on your skin, you can, as an action, cause the tattoo to extrude into inky tendrils, which reach for a creature you can see within 15 feet of you. The creature must succeed on a DC 14 Strength saving throw or take {@damage 3d6} force damage and be {@condition grappled} by you. As an action, the creature can escape the grapple by succeeding on a DC 14 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check. The grapple also ends if you halt it (no action required), if the creature is ever more than 15 feet away from you, or if you use this tattoo on a different creature.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -7271,7 +7298,7 @@
 			"source": "TCE",
 			"page": 124,
 			"rarity": "very rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -9952,7 +9979,7 @@
 			"source": "TCE",
 			"page": 126,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -10325,7 +10352,8 @@
 			]
 		},
 		{
-			"name": "Eldritch Claw Tattoo",
+			"name": "魔能爪刺青",
+			"ENG_name": "Eldritch Claw Tattoo",
 			"source": "TCE",
 			"page": 126,
 			"rarity": "uncommon",
@@ -10334,27 +10362,29 @@
 			"tattoo": true,
 			"bonusWeapon": "+1",
 			"entries": [
-				"Produced by a special needle, this magic tattoo depicts clawlike forms and other jagged shapes.",
+				"這個繪有爪型或其他鋸齒型圖案的刺青需要用一根特殊的針製作。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magical Strikes",
+					"name": "魔法打擊",
+					"ENG_name": "Magical Strikes",
 					"entries": [
-						"While the tattoo is on your skin, your unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes."
+						"只要該刺青在你的皮膚上，攻擊對非魔法攻擊具有抗性或免疫的目標時，你的徒手打擊視為魔法攻擊，並且你以徒手打擊發動的攻擊檢定和傷害擲骰獲得+1加值。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Eldritch Maul",
+					"name": "魔能巨錘",
+					"ENG_name": "Eldritch Maul",
 					"entries": [
-						"As a bonus action, you can empower the tattoo for 1 minute. For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as inky tendrils launch toward the target. In addition, your melee attacks deal an extra {@damage 1d6} force damage on a hit. Once used, this bonus action can't be used again until the next dawn."
+						"作為一個附贈動作，你可以增強刺青1分鐘。持續時間內，你每次以武器或徒手打擊發動近戰攻擊時，墨水觸鬚會朝著對方噴射而去，使你可以觸及距離你最遠15尺的目標。此外，你的近戰攻擊命中時會造成額外{@damage 1d6}力場傷害。使用後，直到下次黎明前，此附贈動作不能再次使用。"
 					]
 				}
 			]
@@ -10379,7 +10409,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -10419,7 +10449,7 @@
 			"source": "TCE",
 			"page": 127,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
@@ -10468,7 +10498,7 @@
 			"source": "TCE",
 			"page": 127,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -10491,7 +10521,7 @@
 			"source": "TCE",
 			"page": 127,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -10514,7 +10544,7 @@
 			"source": "TCE",
 			"page": 127,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -10537,7 +10567,7 @@
 			"source": "TCE",
 			"page": 127,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -11340,7 +11370,7 @@
 			"source": "TCE",
 			"page": 127,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -11401,20 +11431,21 @@
 			"ENG_name": "Feed (per day)"
 		},
 		{
-			"name": "Feywild Shard",
+			"name": "妖精荒野碎晶",
+			"ENG_name": "Feywild Shard",
 			"source": "TCE",
 			"page": 127,
 			"rarity": "uncommon",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
 				"Sorcerer"
 			],
 			"entries": [
-				"This warm crystal glints with the sunset colors of the Feywild sky and evokes whispers of emotional memory. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
-				"When you use a Metamagic option on a spell while you are holding or wearing the shard, you can roll on the {@table Wild Magic Surge|PHB} table in the {@book Player's Handbook|PHB}. If the result is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.",
-				"If you don't have the Wild Magic Sorcerous Origin, once this property is used to roll on the {@table Wild Magic Surge|PHB} table, it can't be used again until the next dawn."
+				"這塊溫暖的水晶閃爍著妖精荒野天空的暮色,並帶有著喚醒情感記憶的低語。作為一個動作，你可以將碎晶附上一件微型物件（如一把武器或一塊珠寶）或摘下。當同調結束時它會掉落下來。當你持握或穿戴碎晶時，你可以將其作為法器使用",
+				"當你持握或穿戴碎晶，並在一道法術上應用一種超魔法選項時，你可以骰一次《{@book 玩家手冊|PHB}》的{@table 狂野魔法浪湧|PHB}表格。如果結果是一道法術，則其因為過於狂野而不會受到你的超魔法效應影響，若其一般需要專注，則其不需要專注；該法術維持完整的持續時間。",
+				"如果你沒有狂野魔法術法起源，則在投擲{@table 狂野魔法浪湧|PHB}表格後，直到下次黎明前，不能再次使用該屬性。"
 			],
 			"hasFluffImages": true
 		},
@@ -12037,7 +12068,7 @@
 			"source": "TCE",
 			"page": 128,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -12266,10 +12297,10 @@
 				"Produced by a special needle, this tattoo shifts and wavers on the skin, parts of it appearing blurred.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
@@ -12312,7 +12343,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -12971,7 +13002,7 @@
 			"source": "EGW",
 			"page": 271,
 			"rarity": "legendary",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"entries": [
@@ -13145,19 +13176,20 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Guardian Emblem",
+			"name": "守護者紋章",
+			"ENG_name": "Guardian Emblem",
 			"source": "TCE",
 			"page": 128,
 			"rarity": "uncommon",
-			"reqAttune": "by a cleric or paladin",
+			"reqAttune": "由一位牧師或聖騎士",
 			"wondrous": true,
 			"weight": 0.02,
 			"recharge": "dawn",
 			"charges": 3,
 			"entries": [
-				"This emblem is the symbol of a deity or a spiritual tradition. As an action, you can attach the emblem to a suit of armor or a shield or remove it.",
-				"The emblem has 3 charges. When you or a creature you can see within 30 feet of you suffers a critical hit while you're wearing the armor or wielding the shield that bears the emblem, you can use your reaction to expend 1 charge to turn the critical hit into a normal hit instead.",
-				"The emblem regains all expended charges daily at dawn."
+				"這枚紋章是一位神祇或一種超自然傳承的徽章。作為一個動作，你可以將徽章附上一套護甲或一面盾牌或移下。",
+				"徽章具有 3 發充能。當你穿戴著附有徽章的護甲或裝備著附有徽章的盾牌，且你或一個距離你 30 呎內且你可見的生物受到一次重擊時，你可以用一個反應並消耗 1 發充能將重擊命中改為普通命中。",
+				"徽章在每天黎明時恢復所有已消耗的充能。"
 			]
 		},
 		{
@@ -13476,7 +13508,7 @@
 			"page": 137,
 			"tier": "minor",
 			"rarity": "common",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"focus": [
 				"Wizard"
@@ -13587,7 +13619,7 @@
 			"source": "TCE",
 			"page": 128,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -14704,7 +14736,8 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Illuminator's Tattoo",
+			"name": "解文刺青",
+			"ENG_name": "Illuminator's Tattoo",
 			"source": "TCE",
 			"page": 129,
 			"rarity": "common",
@@ -14712,21 +14745,22 @@
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo features beautiful calligraphy, images of writing implements, and the like.",
+				"該魔法刺青用一根特殊的針製作，呈現為優美書法或者書寫工具的圖案。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調", "ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magical Scribing",
+					"name": "魔法書寫",
+					"ENG_name": "Magical Scribing",
 					"entries": [
-						"While this tattoo is on your skin, you can write with your fingertip as if it were an ink pen that never runs out of ink.",
-						"As an action, you can touch a piece of writing up to one page in length and speak a creature's name. The writing becomes {@condition invisible} to everyone other than you and the named creature for the next 24 hours. Either of you can dismiss the invisibility by touching the script (no action required). Once used, this action can't be used again until the next dawn."
+						"當這個刺青在你的皮膚上時，你可以用你的指尖寫字，就如同一支永遠不會斷墨的墨水筆。",
+						"作為一個動作，你可以觸摸一段至多長達一頁的文字，然後說出一個生物的名字。在接下來的24小時內，你所觸摸的文字變為對除你和你所說出名字的生物以外所有人{@condition 隱形}。你們中的一個可以通過觸碰文字來解除隱形（無需動作）。"
 					]
 				}
 			]
@@ -14744,7 +14778,7 @@
 				"As an action, you can touch a piece of writing up to one page in length and speak a creature's name. The writing becomes {@condition invisible} to everyone other than you and the named creature for the next 24 hours. Either of you can dismiss the invisibility by touching the script (no action required). Once used, this action can't be used again until the next dawn.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -15025,7 +15059,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "very rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -15057,7 +15091,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -15089,7 +15123,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -15121,7 +15155,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -15153,7 +15187,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -15186,7 +15220,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -15218,7 +15252,7 @@
 			"type": "INS",
 			"tier": "major",
 			"rarity": "legendary",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
@@ -16976,7 +17010,7 @@
 			"source": "TCE",
 			"page": 129,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -17021,10 +17055,10 @@
 				"Produced by a special needle, this magic tattoo features symbols of life and rebirth.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
@@ -17065,7 +17099,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -17678,7 +17712,7 @@
 			"page": 131,
 			"type": "INS",
 			"rarity": "rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"weight": 2,
 			"grantsProficiency": true,
@@ -18232,7 +18266,8 @@
 			"ENG_name": "Mason's Tools"
 		},
 		{
-			"name": "Masquerade Tattoo",
+			"name": "偽裝刺青",
+			"ENG_name": "Masquerade Tattoo",
 			"source": "TCE",
 			"page": 131,
 			"rarity": "common",
@@ -18240,27 +18275,29 @@
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo appears on your body as whatever you desire.",
+				"該魔法刺青用一根特殊的針製作，顯現為你所想要的樣子。",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fluid Ink",
+					"name": "液態油墨",
+					"ENG_name": "Fluid Ink",
 					"entries": [
-						"As a bonus action, you can shape the tattoo into any color or pattern and move it to any area of your skin. Whatever form it takes, it is always obviously a tattoo. It can range in size from no smaller than a copper piece to an intricate work of art that covers all your skin."
+						"作為一個附贈動作，你可以將刺青變為任意顏色或圖紋，並移動到你皮膚上的任意區域。無論其有著什麼形態，它看起來總是一個刺青。它的尺寸最小可為一枚銅幣，大則可覆蓋你的全身。"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Disguise Self",
+					"name": "易容自我",
+					"ENG_name": "Disguise Self",
 					"entries": [
-						"As an action, you can use the tattoo to cast the {@spell 易容術} spell (DC 13 to discern the disguise). Once the spell is cast from the tattoo, it can't be cast from the tattoo again until the next dawn."
+						"作為一個動作，你可以使用刺青施展{@spell 易容術} 法術（識破難度 DC13）。使用刺青施展這道法術後，直到下次黎明前，不能再次用刺青施展。"
 					]
 				}
 			],
@@ -18287,7 +18324,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -19203,11 +19240,12 @@
 			"ENG_name": "Mystery Key"
 		},
 		{
-			"name": "Nature's Mantle",
+			"name": "自然斗篷",
+			"ENG_name": "Nature's Mantle",
 			"source": "TCE",
 			"page": 133,
 			"rarity": "uncommon",
-			"reqAttune": "by a druid or ranger",
+			"reqAttune": "由一位德魯伊或遊俠",
 			"wondrous": true,
 			"weight": 2,
 			"focus": [
@@ -19215,8 +19253,8 @@
 				"Ranger"
 			],
 			"entries": [
-				"This cloak shifts color and texture to blend with the terrain surrounding you. While wearing the cloak, you can use it as a spellcasting focus for your druid and ranger spells.",
-				"While you are in an area that is lightly obscured, you can {@action Hide} as a bonus action even if you are being directly observed."
+				"這件斗篷能隨著你周圍的環境改變顏色和材質。當穿戴著斗篷時，你可以使用其作為你施展德魯伊和遊俠法術的法器。",
+				"當你處於一處有著輕度遮蔽的區域時，你可以用一個附贈動作進行{@action Hide}動作，即便你能被直接觀察到。"
 			],
 			"hasFluffImages": true
 		},
@@ -20427,7 +20465,7 @@
 			"source": "TCE",
 			"page": 133,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -20479,7 +20517,7 @@
 			"source": "TCE",
 			"page": 133,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -20502,7 +20540,7 @@
 			"source": "TCE",
 			"page": 133,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -20525,7 +20563,7 @@
 			"source": "TCE",
 			"page": 133,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -20548,7 +20586,7 @@
 			"source": "TCE",
 			"page": 133,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -21333,7 +21371,7 @@
 			"source": "TCE",
 			"page": 134,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -22829,13 +22867,14 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Prosthetic Limb",
+			"name": "假肢",
+			"ENG_name": "Prosthetic Limb",
 			"source": "TCE",
 			"page": 134,
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This item replaces a lost limb-a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as an action, and it can't be removed against your will. It detaches if you die."
+				"這件物品替代了一處缺失的肢體——一隻手，一隻臂，一條腿或類似的身體部分。肢體安裝後，其功能與被替換的肢體相同。你可以用一個動作將其著裝或者卸裝，它不能在你非自願的情況下被移除。它會在你死的時候脫落。"
 			],
 			"hasFluffImages": true
 		},
@@ -22844,7 +22883,7 @@
 			"source": "TCE",
 			"page": 134,
 			"rarity": "rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 3,
 			"recharge": "dawn",
@@ -23488,7 +23527,7 @@
 			"page": 134,
 			"type": "INS",
 			"rarity": "rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"entries": [
 				"While holding this concertina, you gain a +2 bonus to the saving throw DC of your bard spells.",
@@ -25776,10 +25815,10 @@
 				"Produced by a special needle, this magic tattoo is dark in color and abstract.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
@@ -25817,7 +25856,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
 						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin. If you have multiple magic tattoos, they count as a single magic item with regard to the number of magic items you can attune to.",
 						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
@@ -25830,7 +25869,7 @@
 			"source": "TCE",
 			"page": 135,
 			"rarity": "rare",
-			"reqAttune": "by a sorcerer",
+			"reqAttune": "由一位術士",
 			"wondrous": true,
 			"weight": 1,
 			"focus": [
@@ -27544,15 +27583,16 @@
 			]
 		},
 		{
-			"name": "Spellwrought Tattoo (1st Level)",
+			"name": "蕴法刺青 (1環)",
+			"ENG_name": "Spellwrought Tattoo (1st Level)",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "common",
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo contains a single {@filter 1st level spell|spells|level=1}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
-				"The Ability modifier for this spell is +3; the Save DC is 13 and the attack bonus is +5."
+				"該魔法刺青用一根特殊的針製作，包含著一個{@filter 1環法術|spells|level=1}，用魔法針紋在你的身上。為了使用此刺青，你必須持針抵住你的皮膚，並說出命令語。針會變為墨水，化為刺青，在你的皮膚上顯現為你喜歡的樣子。刺青在你身上時，你可以施展那道法術而不需要材料成分。在你施展這道法術時，刺青會在法術的持續時間內發出微光。法術結束時，刺青會從你的皮膚上消失。",
+				"該法術屬性調整值+3;豁免DC 13和攻擊加值+5。"
 			]
 		},
 		{
@@ -27568,15 +27608,16 @@
 			]
 		},
 		{
-			"name": "Spellwrought Tattoo (2nd Level)",
+			"name": "蕴法刺青 (2環)",
+			"ENG_name": "Spellwrought Tattoo (2nd Level)",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo contains a single {@filter 2nd level spell|spells|level=2}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
-				"The Ability modifier for this spell is +3; the Save DC is 13 and the attack bonus is +5."
+				"該魔法刺青用一根特殊的針製作，包含著一個{@filter 2環法術|spells|level=2}，用魔法針紋在你的身上。為了使用此刺青，你必須持針抵住你的皮膚，並說出命令語。針會變為墨水，化為刺青，在你的皮膚上顯現為你喜歡的樣子。刺青在你身上時，你可以施展那道法術而不需要材料成分。在你施展這道法術時，刺青會在法術的持續時間內發出微光。法術結束時，刺青會從你的皮膚上消失。",
+				"該法術屬性調整值+3;豁免DC 13和攻擊加值+5。"
 			]
 		},
 		{
@@ -27592,15 +27633,16 @@
 			]
 		},
 		{
-			"name": "Spellwrought Tattoo (3rd Level)",
+			"name": "蕴法刺青 (3環)",
+			"ENG_name": "Spellwrought Tattoo (3rd Level)",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo contains a single {@filter 3rd level spell|spells|level=3}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
-				"The Ability modifier for this spell is +4; the Save DC is 15 and the attack bonus is +7."
+				"該魔法刺青用一根特殊的針製作，包含著一個{@filter 3環法術|spells|level=3}，用魔法針紋在你的身上。為了使用此刺青，你必須持針抵住你的皮膚，並說出命令語。針會變為墨水，化為刺青，在你的皮膚上顯現為你喜歡的樣子。刺青在你身上時，你可以施展那道法術而不需要材料成分。在你施展這道法術時，刺青會在法術的持續時間內發出微光。法術結束時，刺青會從你的皮膚上消失。",
+				"該法術屬性調整值+4;豁免DC 15和攻擊加值+7。"
 			]
 		},
 		{
@@ -27616,15 +27658,16 @@
 			]
 		},
 		{
-			"name": "Spellwrought Tattoo (4th Level)",
+			"name": "蕴法刺青 (4環)",
+			"ENG_name": "Spellwrought Tattoo (4th Level)",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "rare",
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo contains a single {@filter 4th level spell|spells|level=4}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
-				"The Ability modifier for this spell is +4; the Save DC is 15 and the attack bonus is +7."
+				"該魔法刺青用一根特殊的針製作，包含著一個{@filter 4環法術|spells|level=4}，用魔法針紋在你的身上。為了使用此刺青，你必須持針抵住你的皮膚，並說出命令語。針會變為墨水，化為刺青，在你的皮膚上顯現為你喜歡的樣子。刺青在你身上時，你可以施展那道法術而不需要材料成分。在你施展這道法術時，刺青會在法術的持續時間內發出微光。法術結束時，刺青會從你的皮膚上消失。",
+				"該法術屬性調整值+4;豁免DC 15和攻擊加值+7。"
 			]
 		},
 		{
@@ -27640,15 +27683,16 @@
 			]
 		},
 		{
-			"name": "Spellwrought Tattoo (5th Level)",
+			"name": "蕴法刺青 (5環)",
+			"ENG_name": "Spellwrought Tattoo (5th Level)",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "rare",
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo contains a single {@filter 5th level spell|spells|level=5}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
-				"The Ability modifier for this spell is +5; the Save DC is 17 and the attack bonus is +9."
+				"該魔法刺青用一根特殊的針製作，包含著一個{@filter 5環法術|spells|level=5}，用魔法針紋在你的身上。為了使用此刺青，你必須持針抵住你的皮膚，並說出命令語。針會變為墨水，化為刺青，在你的皮膚上顯現為你喜歡的樣子。刺青在你身上時，你可以施展那道法術而不需要材料成分。在你施展這道法術時，刺青會在法術的持續時間內發出微光。法術結束時，刺青會從你的皮膚上消失。",
+				"該法術屬性調整值+5;豁免DC 17和攻擊加值+9。"
 			]
 		},
 		{
@@ -27664,15 +27708,16 @@
 			]
 		},
 		{
-			"name": "Spellwrought Tattoo (Cantrip)",
+			"name": "蕴法刺青 (戲法)",
+			"ENG_name": "Spellwrought Tattoo (Cantrip)",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "common",
 			"wondrous": true,
 			"tattoo": true,
 			"entries": [
-				"Produced by a special needle, this magic tattoo contains a single {@filter cantrip|spells|level=0}, wrought on your skin by a magic needle. To use the tattoo, you must hold the needle against your skin and speak the command word. The needle turns into ink that becomes the tattoo, which appears on the skin in whatever design you like. Once the tattoo is there, you can cast its spell, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin.",
-				"The Ability modifier for this spell is +3; the Save DC is 13 and the attack bonus is +5."
+				"該魔法刺青用一根特殊的針製作，包含著一個的{@filter 戲法|spells|level=0}，用魔法針紋在你的身上。為了使用此刺青，你必須持針抵住你的皮膚，並說出命令語。針會變為墨水，化為刺青，在你的皮膚上顯現為你喜歡的樣子。刺青在你身上時，你可以施展那道法術而不需要材料成分。在你施展這道法術時，刺青會在法術的持續時間內發出微光。法術結束時，刺青會從你的皮膚上消失。",
+				"該法術屬性調整值+3;豁免DC 13和攻擊加值+5"
 			]
 		},
 		{
@@ -27939,7 +27984,7 @@
 			"source": "EGW",
 			"page": 270,
 			"rarity": "very rare",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"weight": 4,
 			"weaponCategory": "simple",
 			"property": [
@@ -31329,7 +31374,7 @@
 			"page": 208,
 			"tier": "major",
 			"rarity": "legendary",
-			"reqAttune": "by a wizard",
+			"reqAttune": "由一位法師",
 			"wondrous": true,
 			"weight": 5,
 			"focus": [
@@ -33617,7 +33662,7 @@
 				},
 				"The detrimental properties of the Wand of Orcus are suppressed while the wand is attuned to {@creature Orcus|MTF} himself.",
 				{
-					"name": "Protection",
+					"name": "防護", "ENG_name": "Protection",
 					"type": "entries",
 					"entries": [
 						"You gain a +3 bonus to Armor Class while holding the wand."
@@ -35276,10 +35321,10 @@
 				"Produced by a special needle, this magic tattoo features designs that emphasize one color.",
 				{
 					"type": "entries",
-					"name": "Tattoo Attunement",
+					"name": "刺青同調","ENG_name": "Tattoo Attunement",
 					"entries": [
-						"To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-						"If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+						"同調此物品時，你需要將針持握，並抵在你想要讓刺青出現的那處皮膚上。當同調完成時，針頭會化為墨水再變成刺青。若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。",
+						"若你與刺青的同調結束，刺青會消失，針頭會再次出現在你的位置中。"
 					]
 				},
 				{
@@ -35904,7 +35949,7 @@
 			"page": 176,
 			"type": "INS",
 			"rarity": "varies",
-			"reqAttune": "by a bard",
+			"reqAttune": "由一位吟遊詩人",
 			"wondrous": true,
 			"items": [
 				"吟遊詩人樂器，安斯翠瑟豎琴",
@@ -36392,7 +36437,8 @@
 			"ENG_name": "Spell Scroll"
 		},
 		{
-			"name": "Spellwrought Tattoo",
+			"name": "蘊法刺青",
+			"ENG_name": "Spellwrought Tattoo",
 			"source": "TCE",
 			"page": 135,
 			"rarity": "varies",

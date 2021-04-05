@@ -6465,7 +6465,7 @@ Parser.itemTypeKeyToDisplay["rod"] = "權杖";
 Parser.itemTypeKeyToDisplay["wand"] = "魔杖";
 Parser.itemTypeKeyToDisplay["ring"] = "戒指";
 Parser.itemTypeKeyToDisplay["wondrous item"] = "奇物";
-Parser.itemTypeKeyToDisplay["wondrous item (tattoo)"] = "奇物(刺青)";
+Parser.itemTypeKeyToDisplay["(tattoo)"] = "(刺青)";
 Parser.itemTypeKeyToDisplay["tattoo"] = "刺青";
 Parser.itemTypeKeyToDisplay["scroll"] = "卷軸";
 Parser.itemTypeKeyToDisplay["potion"] = "藥水";
@@ -6488,7 +6488,7 @@ Parser.ItemTypeToDisplay = function(i){
 	let item_match = i.match(/([^()]*) (\((.*)\))?/);
 	if(item_match && item_match[2]){
 		var type = Parser.translateKeyInMapToDisplay(Parser.itemTypeKeyToDisplay, item_match[1]);
-		return type+" "+item_match[2]
+		return type + " " + Parser.translateKeyInMapToDisplay(Parser.itemTypeKeyToDisplay, item_match[2]);
 	}
 	return Parser.translateKeyInMapToDisplay(Parser.itemTypeKeyToDisplay, i);
 }
