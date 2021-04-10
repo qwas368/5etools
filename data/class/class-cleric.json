@@ -487,9 +487,9 @@
 			"subclassTitle": "Divine Domain",
 			"subclasses": [
 				{
-					"name": "奧秘領域",
+					"name": "知識領域",
 					"ENG_name": "Knowledge Domain",
-					"shortName": "奧秘",
+					"shortName": "知識",
 					"ENG_shortName": "Knowledge",
 					"source": "PHB",
 					"page": 59,
