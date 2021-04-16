@@ -309,12 +309,13 @@
 			]
 		},
 		{
-			"name": "Bluerot",
+			"name": "藍腐病",
+			"ENG_name": "Bluerot",
 			"source": "GoS",
 			"page": 234,
 			"entries": [
-				"This disease targets humanoids. While afflicted with bluerot, a victim grows grotesque blue boils on their face and back. This disease is carried by undead (including the drowned ones in Tammeraut's Fate), and victims most often acquire it through wounds caused by infected creatures. The disease's boils manifest in {@dice 1d4} hours, causing the victim's Constitution and Charisma scores to decrease by {@dice 1d4} each, to a minimum of 3. This is quickly followed by a fever and tingling in the extremities. An infected creature is vulnerable to radiant damage and gains the ability to breathe underwater.",
-				"At the end of each long rest, an infected creature makes a DC 12 Constitution saving throw. On a success, the victim regains 1 point of Constitution and 1 point of Charisma lost to the disease. If the infected creature regains all the points lost to the disease, it is cured. Other effects that raise the victim's ability scores do not cure the disease. On a failed saving throw, the victim takes 18 ({@dice 4d8}) necrotic damage as the boils burst and spread. A creature reduced to 0 hit points by this damage cannot regain hit points until the disease is cured, though it can be stabilized as normal."
+				"這種疾病以類人生物為目標。當被藍腐病折磨時，受害者的臉上和背上會長出怪異的藍色癤。此病由亡靈攜帶（包括《塔默勞特的命運》中被淹死的亡靈），受害者最常通過被感染生物造成的傷口獲得。得病後的癤在{@dice 1d4}小時內顯現，導致受害者的體質和魅力各下降{@dice 1d4}，最低為3，隨後很快會出現發燒和四肢痠痛。被感染的生物容易受到光耀傷害，並獲得水下呼吸的能力。",
+				"在每次長休結束時，一個被感染的生物進行DC 12的體質豁免。如果成功，受害者將恢復因疾病而損失的1點體質和1點魅力。如果被感染的生物恢復了因疾病而損失的所有點數，則被治癒。其他提高受害者能力的效果不會治癒疾病。豁免失敗時，隨著癤的爆裂和擴散，受害者會受到18（{@dice 4d8}）的黯蝕傷害。被此傷害降低到生命值為0的生物在疾病治癒前無法恢復生命點，不過可以像正常情況下一樣穩定傷勢。"
 			]
 		},
 		{

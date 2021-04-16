@@ -54,6 +54,7 @@ class BestiaryPage {
 				cr,
 				group: mon.group || "",
 				alias: (mon.alias || []).map(it => `"${it}"`).join(","),
+				ENG_name: mon.ENG_name ?? mon.name,
 			},
 			{
 				uniqueId: mon.uniqueId ? mon.uniqueId : mI,

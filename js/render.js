@@ -4437,7 +4437,7 @@ Renderer.cultboon = {
 
 Renderer.monster = {
 	getShortName (mon, isTitleCase) {
-		const prefix = mon.isNamedCreature ? "" : isTitleCase ? "The " : "the ";
+		const prefix = mon.isNamedCreature ? "" : isTitleCase ? "" : "";
 		if (mon.shortName === true) return `${prefix}${mon.name}`;
 		else if (mon.shortName) return `${prefix}${!prefix && isTitleCase ? mon.shortName.toTitleCase() : mon.shortName.toLowerCase()}`;
 
@@ -4455,7 +4455,7 @@ Renderer.monster = {
 		} else {
 			const legendaryActions = mon.legendaryActions || 3;
 			const legendaryNameTitle = Renderer.monster.getShortName(mon, true);
-			return `${legendaryNameTitle} 可以採取 ${legendaryActions} 次傳奇動作，${legendaryActions > 1 ? "s" : ""}從以下選項中選擇。傳奇動作只能在另一個生物的回合結束時使用，且一次只能使用一項。 ${legendaryNameTitle} 在它的回合開始時恢復所有已消耗的傳奇動作。`
+			return `${legendaryNameTitle} 可以採取 ${legendaryActions} 次傳奇動作，${legendaryActions > 1 ? "" : ""}從以下選項中選擇。傳奇動作只能在另一個生物的回合結束時使用，且一次只能使用一項。 ${legendaryNameTitle} 在它的回合開始時恢復所有已消耗的傳奇動作。`
 		}
 	},
 
@@ -5108,7 +5108,7 @@ Renderer.item = {
 		}
 
 		if (!isCompact && item.lootTables) {
-			renderStack.push(`<div><span class="bold">Found On: </span>${item.lootTables.sort(SortUtil.ascSortLower).map(tbl => renderer.render(`{@table ${tbl}}`)).join(", ")}</div>`);
+			renderStack.push(`<div><span class="bold">列於：</span>${item.lootTables.sort(SortUtil.ascSortLower).map(tbl => renderer.render(`{@table ${tbl}}`)).join(", ")}</div>`);
 		}
 
 		return renderStack.join("").trim();

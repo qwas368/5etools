@@ -5983,7 +5983,8 @@
 			"ENG_name": "Charlatan's Die"
 		},
 		{
-			"name": "Charm of Plant Command",
+			"name": "命令植物護咒",
+			"ENG_name": "Charm of Plant Command",
 			"source": "GoS",
 			"page": 229,
 			"rarity": "rare",
@@ -5992,8 +5993,8 @@
 			"recharge": "dawn",
 			"charges": 3,
 			"entries": [
-				"This fist-sized charm is made from a bundle of dried plant stems wrapped in silver thread. Hung on a leather thong, it is typically worn around the neck or attached to a belt.",
-				"This charm has 3 charges. While you bear the charm, you can expend 1 charge as an action to cast the {@spell 植物交談術} spell. For the duration of the spell, you also have advantage on Charisma checks made to influence the behavior, demeanor, and attitude of plants. The charm regains all expended charges at dawn each day."
+				"這個拳頭大小的護咒由一束銀線系住的乾枯植物莖幹製成。上面掛著皮帶，通常是掛在脖子或者腰帶上。",
+				"該護咒具有3發充能。當你帶著護咒的時候，你能以一個動作消耗1發充能施展{@spell 植物交談術}。在法術持續期間，你在影響植物的行為舉止、態度方面進行的魅力檢定具有優勢。該護咒在每天黎明時回復所有消耗的充能。"
 			],
 			"attachedSpells": [
 				"speak with plants"
@@ -22712,13 +22713,14 @@
 			]
 		},
 		{
-			"name": "Pressure Capsule",
+			"name": "壓力膠囊",
+			"ENG_name": "Pressure Capsule",
 			"source": "GoS",
 			"page": 229,
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This small capsule is made of beeswax blended with sand and a variety of enchanted water plants. A creature who consumes a pressure capsule ignores the effects of swimming at depths greater than 100 feet (see \"{@book Unusual Environments|dmg|5|Unusual Environments}\" in chapter 5 of the Dungeon Master's Guide)."
+				"這個小小的膠囊由蜜蠟與沙子以及多種具有魔力的水生植物製成。一個吃下壓力膠囊的生物能夠無視在100尺之下更深的水中游泳的效應。（見城主指南第五章中的{@book 非常規環境|dmg|5|Unusual Environments}）。"
 			]
 		},
 		{

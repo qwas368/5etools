@@ -2,12 +2,12 @@
 	"data": [
 		{
 			"type": "section",
-			"name": "Using This Book",
+			"name": "使用這本書",
 			"page": 4,
 			"id": "000",
 			"entries": [
-				"{@i Tasha's Cauldron of Everything} offers a host of new options for Dungeons & Dragons, and our journey through those options is accompanied by the notes of the wizard Tasha. Creator of the spell {@spell 塔莎狂笑術}, Tasha's life is one of the most storied in the D&D multiverse. Raised by Baba Yaga, the Mother of Witches herself, Tasha adventured across the world of Greyhawk and became the friend and sometimes enemy of other famous adventurers, like Mordenkainen. In time, she ruled as the Witch Queen and later changed her name to Iggwilv\u2014a figure of legend who is whispered about, feared, and admired.",
-				" Written for players and Dungeon Masters alike, this book offers options to enhance characters and campaigns in any D&D world, whether you're adventuring in Greyhawk, another official D&D setting, or a world of your own creation.",
+				"{@i 塔莎的萬象坩鍋} 為《龍與地下城》提供了一系列新的選擇，而女巫塔莎的筆記伴隨著我們這些選擇之旅程。 {@spell 塔莎狂笑術}的創造者，塔莎的人生在 D&D 多元宇宙中最有傳奇色彩的人物之一。 她由女巫之母芭芭雅嘎親自扶養長大，塔莎在灰鷹世界中冒險，並成為其他著名冒險者的朋友，有時也是敵人，譬如 魔鄧肯. 隨著時間推移，她以女巫女王的身分進行統治，在那之後她將自己的名子改為Iggwilv\u2014一個傳說中的人物被人們低聲議論、恐懼和崇拜。",
+				"這本書是為玩家和地下城主寫的，它提供了在任何D&D世界中增強角色和戰役的選擇，無論你是在灰鷹、或另一個官方D&D設定中的冒險，還是在你自己創造的世界中的冒險。",
 				{
 					"type": "section",
 					"name": "What You'll Find Within",

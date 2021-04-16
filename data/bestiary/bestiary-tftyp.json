@@ -30,7 +30,7 @@
 					"action": {
 						"mode": "prependArr",
 						"items": {
-							"name": "Multiattack",
+							"name": "多重攻擊","ENG_name": "Multiattack",
 							"entries": [
 								"The amphisbaena makes two attacks, only one of which can be a constrict attack."
 							]
@@ -237,7 +237,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
+						"The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, 命中{@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -271,7 +271,7 @@
 				{
 					"name": "Quarterstaff",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit ({@hit 4} to hit with shillelagh), reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage with shillelagh or if wielded with two hands."
+						"{@atk mw} 命中{@hit 2} to hit ({@hit 4} to hit with shillelagh), reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage with shillelagh or if wielded with two hands."
 					]
 				}
 			],
@@ -304,7 +304,7 @@
 						"items": {
 							"name": "Glaive",
 							"entries": [
-								"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d10 + 2}) slashing damage."
+								"{@atk mw} 命中{@hit 4} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d10 + 2}) slashing damage."
 							]
 						}
 					}
@@ -336,7 +336,7 @@
 						"items": {
 							"name": "Longsword",
 							"entries": [
-								"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d8 + 2}) slashing damage, or 13 ({@damage 2d10 + 2}) slashing damage if used with both hands."
+								"{@atk mw} 命中{@hit 4} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d8 + 2}) slashing damage, or 13 ({@damage 2d10 + 2}) slashing damage if used with both hands."
 							]
 						}
 					}
@@ -413,9 +413,9 @@
 			"cr": "2",
 			"action": [
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage plus 2 ({@damage 1d4}) cold damage."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2}) piercing damage plus 2 ({@damage 1d4}) cold damage."
 					]
 				},
 				{
@@ -515,13 +515,13 @@
 				{
 					"name": "Charge",
 					"entries": [
-						"If the centaur mummy moves at least 20 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 ({@damage 3d6}) piercing damage."
+						"If the centaur mummy moves at least 20 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 ({@damage 3d6}) 穿刺傷害。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The centaur mummy makes two melee attacks, one with its pike and one with its hooves, or it attacks with its pike and uses Dreadful Glare."
 					]
@@ -529,13 +529,13 @@
 				{
 					"name": "Pike",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+						"{@atk mw} 命中{@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d10 + 5}) 穿刺傷害。"
 					]
 				},
 				{
 					"name": "Hooves",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature, it must succeed on a {@dc 14} Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the {@spell 移除詛咒} spell or similar magic."
+						"{@atk mw} 命中{@hit 8}，觸及5呎，單一目標。{@h}12 ({@damage 2d6 + 5}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature, it must succeed on a {@dc 14} Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the {@spell 移除詛咒} spell or similar magic."
 					]
 				},
 				{
@@ -741,7 +741,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The dread warrior makes two melee attacks."
 					]
@@ -749,13 +749,13 @@
 				{
 					"name": "Battleaxe",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if wielded with two hands."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2}) slashing damage, or 7 ({@damage 1d10 + 2}) slashing damage if wielded with two hands."
 					]
 				},
 				{
 					"name": "Javelin",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+						"{@atk mw,rw} 命中{@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) 穿刺傷害。"
 					]
 				}
 			],
@@ -843,7 +843,7 @@
 							"items": {
 								"name": "Shortsword +2",
 								"entries": [
-									"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) piercing damage plus 10 ({@damage 3d6}) poison damage."
+									"{@atk mw} 命中{@hit 9}，觸及5呎，單一目標。{@h}9 ({@damage 1d6 + 6}) piercing damage plus 10 ({@damage 3d6}) poison damage."
 								]
 							}
 						},
@@ -853,7 +853,7 @@
 							"items": {
 								"name": "Hand Crossbow +1",
 								"entries": [
-									"{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+									"{@atk rw} 命中{@hit 8} to hit, range 30/120 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target is also {@condition unconscious} while {@condition poisoned} in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
 								]
 							}
 						}
@@ -951,7 +951,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The spy makes two shortsword attacks."
 					]
@@ -965,13 +965,13 @@
 				{
 					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 10 ({@damage 2d6 + 3}) piercing damage while enlarged."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}6 ({@damage 1d6 + 3}) piercing damage, or 10 ({@damage 2d6 + 3}) piercing damage while enlarged."
 					]
 				},
 				{
 					"name": "Hand Crossbow",
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+						"{@atk rw} 命中{@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) 穿刺傷害。"
 					]
 				},
 				{
@@ -1065,13 +1065,13 @@
 				{
 					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 2}) slashing damage if used with two hands."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 2}) slashing damage if used with two hands."
 					]
 				},
 				{
 					"name": "Longbow",
 					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+						"{@atk rw} 命中{@hit 4} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) 穿刺傷害。"
 					]
 				}
 			],
@@ -1213,7 +1213,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The acolyte has following cleric spells prepared:"
+						"The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, 命中{@hit 4} to hit with spell attacks). The acolyte has following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -1239,7 +1239,7 @@
 				{
 					"name": "Club",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+						"{@atk mw} 命中{@hit 2}，觸及5呎，單一目標。{@h}2 ({@damage 1d4}) bludgeoning damage."
 					]
 				},
 				{
@@ -1293,7 +1293,7 @@
 							"items": {
 								"name": "Morningstar +2",
 								"entries": [
-									"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d8 + 10}) piercing damage."
+									"{@atk mw} 命中{@hit 14} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d8 + 10}) 穿刺傷害。"
 								]
 							}
 						}
@@ -1322,7 +1322,7 @@
 							"mode": "replaceArr",
 							"replace": "Multiattack",
 							"items": {
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"The giant makes two greataxe attacks."
 								]
@@ -1334,7 +1334,7 @@
 							"items": {
 								"name": "Greataxe +2",
 								"entries": [
-									"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}28 ({@damage 3d12 + 9}) slashing damage."
+									"{@atk mw} 命中{@hit 13} to hit, reach 10 ft., one target. {@h}28 ({@damage 3d12 + 9}) slashing damage."
 								]
 							}
 						}
@@ -1356,7 +1356,7 @@
 							"mode": "replaceArr",
 							"replace": "Multiattack",
 							"items": {
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"The giant makes two longsword attacks."
 								]
@@ -1368,7 +1368,7 @@
 							"items": {
 								"name": "Longsword",
 								"entries": [
-									"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) slashing damage, or 21 ({@damage 3d10 + 5}) slashing damage if used with both hands."
+									"{@atk mw} 命中{@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) slashing damage, or 21 ({@damage 3d10 + 5}) slashing damage if used with both hands."
 								]
 							}
 						}
@@ -1473,21 +1473,21 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The gargoyle makes three attacks: one with its bite and two with its claws."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2}) 穿刺傷害。"
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}5 ({@damage 1d6 + 2}) slashing damage."
 					]
 				}
 			],
@@ -1590,15 +1590,15 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The giant crayfish makes two claw attacks."
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "爪抓", "ENG_name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}). The crayfish has two claws, each of which can grapple only one target."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}7 ({@damage 1d10 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}). The crayfish has two claws, each of which can grapple only one target."
 					]
 				}
 			],
@@ -1686,15 +1686,15 @@
 			],
 			"action": [
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, and the target is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the toad can't bite another target."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3}) piercing damage, and the target is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the toad can't bite another target."
 					]
 				},
 				{
 					"name": "Swallow",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one Medium or smaller creature the toad is grappling. {@h}10 ({@damage 2d6 + 3}) piercing damage, the target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the toad, and it takes 10 ({@damage 3d6}) acid damage and 11 ({@damage 2d10}) cold damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.",
+						"{@atk mw} 命中{@hit 5} to hit, reach 5 ft., one Medium or smaller creature the toad is grappling. {@h}10 ({@damage 2d6 + 3}) piercing damage, the target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the toad, and it takes 10 ({@damage 3d6}) acid damage and 11 ({@damage 2d10}) cold damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.",
 						"If the toad dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
 					]
 				}
@@ -1771,15 +1771,15 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The eel makes two bite attacks."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage plus 4 ({@damage 1d8}) lightning damage."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3}) piercing damage plus 4 ({@damage 1d8}) lightning damage."
 					]
 				},
 				{
@@ -1893,7 +1893,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The skeleton makes three scimitar attacks."
 					]
@@ -1901,7 +1901,7 @@
 				{
 					"name": "Scimitar",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage."
+						"{@atk mw} 命中{@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage."
 					]
 				}
 			],
@@ -1967,27 +1967,27 @@
 			"cr": "4",
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The lizard makes two attacks: one with its bite and one with its tail. One attack can be replaced by Swallow."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the lizard can't bite another target."
+						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}16 ({@damage 2d10 + 5}) piercing damage and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the lizard can't bite another target."
 					]
 				},
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+						"{@atk mw} 命中{@hit 7} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) 穿刺傷害。 If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Swallow",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one Medium or smaller creature the lizard is grappling. {@h}16 ({@damage 2d10 + 5}) piercing damage. The target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the lizard, and it takes 10 ({@damage 3d6}) acid damage at the start of each of the lizard's turns. The lizard can have only one target swallowed at a time.",
+						"{@atk mw} 命中{@hit 7} to hit, reach 5 ft., one Medium or smaller creature the lizard is grappling. {@h}16 ({@damage 2d10 + 5}) 穿刺傷害。 The target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the lizard, and it takes 10 ({@damage 3d6}) acid damage at the start of each of the lizard's turns. The lizard can have only one target swallowed at a time.",
 						"If the lizard dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 10 feet of movement, exiting {@condition prone}."
 					]
 				}
@@ -2033,7 +2033,7 @@
 				{
 					"name": "Club",
 					"entries": [
-						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) bludgeoning damage."
+						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}1 ({@damage 1d4 - 1}) bludgeoning damage."
 					]
 				}
 			],
@@ -2091,7 +2091,7 @@
 						"items": {
 							"name": "Greataxe",
 							"entries": [
-								"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d12 + 4}) slashing damage."
+								"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}17 ({@damage 2d12 + 4}) slashing damage."
 							]
 						}
 					}
@@ -2186,7 +2186,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The zombie makes two melee attacks."
 					]
@@ -2194,7 +2194,7 @@
 				{
 					"name": "Empowered Slam",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage and 7 ({@damage 2d6}) necrotic damage."
+						"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4}) bludgeoning damage and 7 ({@damage 2d6}) necrotic damage."
 					]
 				}
 			],
@@ -2276,7 +2276,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Grenl is a 1st-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). She has the following cleric spells prepared:"
+						"Grenl is a 1st-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 11}, 命中{@hit 3} to hit with spell attacks). She has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -2308,13 +2308,13 @@
 				{
 					"name": "Scimitar",
 					"entries": [
-						"{@atk mw} +4, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+						"{@atk mw} +4, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) 穿刺傷害。"
 					]
 				},
 				{
 					"name": "Shortbow",
 					"entries": [
-						"{@atk rw} +4, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+						"{@atk rw} +4, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) 穿刺傷害。"
 					]
 				}
 			],
@@ -2391,9 +2391,9 @@
 			"cr": "1/4",
 			"action": [
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 10} Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 ({@dice 1d6}) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2}) 穿刺傷害。 If the target is a creature, it must succeed on a {@dc 10} Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 ({@dice 1d6}) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies."
 					]
 				}
 			],
@@ -2544,9 +2544,9 @@
 			],
 			"action": [
 				{
-					"name": "Claw",
+					"name": "爪抓", "ENG_name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}27 ({@damage 4d10 + 5}) bludgeoning damage, and the target is {@condition grappled}, escape {@dc 14}. The crab has two claws, each of which can grapple only one target."
+						"{@atk mw} 命中{@hit 9} to hit, reach 10 ft., one target. {@h}27 ({@damage 4d10 + 5}) bludgeoning damage, and the target is {@condition grappled}, escape {@dc 14}. The crab has two claws, each of which can grapple only one target."
 					]
 				}
 			],
@@ -2644,7 +2644,7 @@
 							"mode": "replaceArr",
 							"replace": "Multiattack",
 							"items": {
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"Grugnur makes two longsword attacks."
 								]
@@ -2656,7 +2656,7 @@
 							"items": {
 								"name": "Longsword +2",
 								"entries": [
-									"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d8 + 10}) slashing damage, or 26 ({@damage 3d10 + 10}) slashing damage if used with both hands."
+									"{@atk mw} 命中{@hit 14} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d8 + 10}) slashing damage, or 26 ({@damage 3d10 + 10}) slashing damage if used with both hands."
 								]
 							}
 						}
@@ -2762,7 +2762,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Kaarghaz is a 4th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). He knows the following sorcerer spells:"
+						"Kaarghaz is a 4th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 12}, 命中{@hit 4} to hit with spell attacks). He knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -2815,21 +2815,21 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The troglodyte makes three attacks: one with its bite and two with its claws."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2}) 穿刺傷害。"
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "爪抓", "ENG_name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2}) slashing damage."
 					]
 				}
 			],
@@ -2931,15 +2931,15 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"Kalka-Kylla makes two claw attacks."
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "爪抓", "ENG_name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage, and if the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}. Kalka-Kylla has two claws, each of which can grapple only one target."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}10 ({@damage 2d6 + 3}) bludgeoning damage, and if the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}. Kalka-Kylla has two claws, each of which can grapple only one target."
 					]
 				}
 			],
@@ -2988,7 +2988,7 @@
 							"mode": "replaceArr",
 							"replace": "Multiattack",
 							"items": {
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"The Keeper makes two battleaxe attacks."
 								]
@@ -3000,7 +3000,7 @@
 							"items": {
 								"name": "Battleaxe +2",
 								"entries": [
-									"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}20 ({@damage 3d8 + 7}) slashing damage, or 23 ({@damage 3d10 + 7}) slashing damage if used with both hands."
+									"{@atk mw} 命中{@hit 10} to hit, reach 15 ft., one target. {@h}20 ({@damage 3d8 + 7}) slashing damage, or 23 ({@damage 3d10 + 7}) slashing damage if used with both hands."
 								]
 							}
 						}
@@ -3100,7 +3100,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The kelpie makes two slam attacks."
 					]
@@ -3108,7 +3108,7 @@
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12})."
+						"{@atk mw} 命中{@hit 4} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d8 + 2}) 穿刺傷害。 If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12})."
 					]
 				},
 				{
@@ -3212,7 +3212,7 @@
 						"items": {
 							"name": "Greatsword",
 							"entries": [
-								"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}28 ({@damage 6d6 + 7}) slashing damage plus 7 ({@damage 2d6}) fire damage."
+								"{@atk mw} 命中{@hit 11} to hit, reach 10 ft., one target. {@h}28 ({@damage 6d6 + 7}) slashing damage plus 7 ({@damage 2d6}) fire damage."
 							]
 						}
 					}
@@ -3261,7 +3261,7 @@
 				{
 					"name": "Club",
 					"entries": [
-						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) bludgeoning damage."
+						"{@atk mw} 命中{@hit 1}，觸及5呎，單一目標。{@h}1 ({@damage 1d4 - 1}) bludgeoning damage."
 					]
 				}
 			],
@@ -3453,21 +3453,21 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The kraken makes three tentacle attacks. One of them can be replaced with a bite attack, and any of them can be replaced with Fling."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) piercing damage."
+						"{@atk mw} 命中{@hit 11}，觸及5呎，單一目標。{@h}16 ({@damage 2d8 + 7}) 穿刺傷害。"
 					]
 				},
 				{
 					"name": "Tentacle",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}14 ({@damage 2d6 + 7}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}. The kraken has ten tentacles, each of which can grapple one target."
+						"{@atk mw} 命中{@hit 11} to hit, reach 20 ft., one target. {@h}14 ({@damage 2d6 + 7}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}. The kraken has ten tentacles, each of which can grapple one target."
 					]
 				},
 				{
@@ -3610,7 +3610,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The doppelganger makes two melee attacks."
 					]
@@ -3618,7 +3618,7 @@
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage."
+						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4}) bludgeoning damage."
 					]
 				},
 				{
@@ -3679,7 +3679,7 @@
 						"items": {
 							"name": "Scourge +2",
 							"entries": [
-								"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 17 ({@damage 5d6}) poison damage."
+								"{@atk mw} 命中{@hit 7}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4}) piercing damage plus 17 ({@damage 5d6}) poison damage."
 							]
 						}
 					}
@@ -3770,7 +3770,7 @@
 				{
 					"name": "Blinding Acid",
 					"entries": [
-						"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 30 ft., one target. {@h}16 ({@damage 2d12 + 3}) acid damage, and the target is {@condition blinded} until the start of the nereid's next turn."
+						"{@atk ms,rs} 命中{@hit 5} to hit, reach 5 ft. or range 30 ft., one target. {@h}16 ({@damage 2d12 + 3}) acid damage, and the target is {@condition blinded} until the start of the nereid's next turn."
 					]
 				},
 				{
@@ -3831,7 +3831,7 @@
 						"mode": "prependArr",
 						"items": [
 							{
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"Multiattack. Nimira makes two greatsword attacks."
 								]
@@ -3839,7 +3839,7 @@
 							{
 								"name": "Greatsword",
 								"entries": [
-									"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage, or 16 ({@damage 4d6 + 2}) slashing damage while enlarged."
+									"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}9 ({@damage 2d6 + 2}) slashing damage, or 16 ({@damage 4d6 + 2}) slashing damage while enlarged."
 								]
 							}
 						]
@@ -3892,7 +3892,7 @@
 						"mode": "replaceArr",
 						"replace": "Multiattack",
 						"items": {
-							"name": "Multiattack",
+							"name": "多重攻擊","ENG_name": "Multiattack",
 							"entries": [
 								"Obmi makes three shortsword attacks."
 							]
@@ -4006,7 +4006,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The Ooze Master is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following wizard spells prepared:"
+						"The Ooze Master is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, 命中{@hit 7} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -4084,7 +4084,7 @@
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 3d6 + 3}) bludgeoning damage plus 10 ({@damage 3d6}) acid damage."
+						"{@atk mw} 命中{@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 3d6 + 3}) bludgeoning damage plus 10 ({@damage 3d6}) acid damage."
 					]
 				}
 			],
@@ -4360,7 +4360,7 @@
 							"mode": "replaceArr",
 							"replace": "Multiattack",
 							"items": {
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"The dragon turtle makes three attacks: one with its bite and two with its claws."
 								]
@@ -4522,7 +4522,7 @@
 							"items": {
 								"name": "Tentacle",
 								"entries": [
-									"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage plus 4 ({@damage 1d8}) piercing damage."
+									"{@atk mw} 命中{@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage plus 4 ({@damage 1d8}) 穿刺傷害。"
 								]
 							}
 						}
@@ -4647,7 +4647,8 @@
 			"hasToken": true
 		},
 		{
-			"name": "Sea Lion",
+			"name": "海獅",
+			"ENG_name": "Sea Lion",
 			"source": "TftYP",
 			"page": 242,
 			"otherSources": [
@@ -4697,45 +4698,48 @@
 					"name": "兩棲",
 					"ENG_name": "Amphibious",
 					"entries": [
-						"The sea lion can breathe air and water."
+						"海獅可以在空氣與水中呼吸。"
 					]
 				},
 				{
-					"name": "Keen Smell",
+					"name": "敏銳嗅覺",
+					"ENG_name": "Keen Smell",
 					"entries": [
-						"The sea lion has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+						"海獅依賴嗅覺進行的睿智（感知）檢定具有優勢。"
 					]
 				},
 				{
-					"name": "Pack Tactics",
+					"name": "集群戰術",
+					"ENG_name": "Pack Tactics",
 					"entries": [
-						"The sea lion has advantage on an attack roll against a creature if at least one of the sea lion's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"海獅至少有一個未處於{@condition 無力}的盟友在目標生物 5 尺內時，它對該生物發動的攻擊檢定則具有優勢。"
 					]
 				},
 				{
-					"name": "Swimming Leap",
+					"name": "游泳飛躍",
+					"ENG_name": "Swimming Leap",
 					"entries": [
-						"With a 10-foot swimming start, the sea lion can long jump out of or across the water up to 25 feet."
+						"經過 10 尺距離的游泳後，海獅可以跳出跨越水面或在水中穿越達25尺距離。"
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
-						"The sea lion makes three attacks: one bite attack and two claw attacks."
+						"海獅發動三次攻擊：一次啃咬以及兩次爪擊。"
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "啃咬", "ENG_name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}12 ({@damage 2d8 + 3}) 穿刺傷害。"
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "爪抓", "ENG_name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}12 ({@damage 2d8 + 3}) 穿刺傷害。"
 					]
 				}
 			],
@@ -4884,7 +4888,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Sharwyn is a 1st-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 13}, {@hit 5} to hit with spell attacks). She has the following wizard spells prepared:"
+						"Sharwyn is a 1st-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 13}, 命中{@hit 5} to hit with spell attacks). She has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -4931,7 +4935,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} +4, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw} +4, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) 穿刺傷害。"
 					]
 				}
 			],
@@ -5022,7 +5026,7 @@
 				{
 					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands."
+						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands."
 					]
 				}
 			],
@@ -5131,7 +5135,7 @@
 				{
 					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+						"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}7 ({@damage 1d6 + 4}) 穿刺傷害。"
 					]
 				},
 				{
@@ -5305,19 +5309,19 @@
 				{
 					"name": "Bite (Wolf or Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or be cursed with werewolf lycanthropy."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2}) 穿刺傷害。 If the target is a humanoid, it must succeed on a {@dc 12} Constitution saving throw or be cursed with werewolf lycanthropy."
 					]
 				},
 				{
 					"name": "Claws (Hybrid Form Only)",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+						"{@atk mw} 命中{@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 2d4 + 2}) slashing damage."
 					]
 				},
 				{
 					"name": "Spear (Humanoid Form Only)",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+						"{@atk mw,rw} 命中{@hit 4} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
 					]
 				}
 			],
@@ -5419,7 +5423,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Snurrevin is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). He has the following wizard spells prepared:"
+						"Snurrevin is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 12}, 命中{@hit 4} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -5473,13 +5477,13 @@
 				{
 					"name": "War Pick",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, or 11 ({@damage 2d8 + 2}) piercing damage while enlarged."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}6 ({@damage 1d8 + 2}) piercing damage, or 11 ({@damage 2d8 + 2}) piercing damage while enlarged."
 					]
 				},
 				{
 					"name": "Javelin",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 9 ({@damage 2d6 + 2}) piercing damage while enlarged."
+						"{@atk mw,rw} 命中{@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 9 ({@damage 2d6 + 2}) piercing damage while enlarged."
 					]
 				},
 				{
@@ -5632,7 +5636,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Var is a 12th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following wizard spells prepared:",
+						"Var is a 12th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, 命中{@hit 9} to hit with spell attacks). He has the following wizard spells prepared:",
 						"*Conjuration spell of 1st level or higher"
 					],
 					"spells": {
@@ -5725,7 +5729,7 @@
 				{
 					"name": "Paralyzing Touch",
 					"entries": [
-						"{@atk ms} {@hit 9} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"{@atk ms} 命中{@hit 9} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{
@@ -5874,7 +5878,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"Tecuziztecatl makes two pseudopod attacks."
 					]
@@ -5882,7 +5886,7 @@
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage."
+						"{@atk mw} 命中{@hit 5} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage."
 					]
 				},
 				{
@@ -5969,7 +5973,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The apprentice is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following wizard spells prepared:"
+						"The apprentice is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, 命中{@hit 4} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -6012,7 +6016,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw,rw} 命中{@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) 穿刺傷害。"
 					]
 				}
 			],
@@ -6098,7 +6102,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The warrior makes two melee attacks."
 					]
@@ -6106,13 +6110,13 @@
 				{
 					"name": "Longsword",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
 					]
 				},
 				{
 					"name": "Javelin",
 					"entries": [
-						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+						"{@atk mw,rw} 命中{@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) 穿刺傷害。"
 					]
 				}
 			],
@@ -6221,7 +6225,7 @@
 				{
 					"name": "Thorns",
 					"entries": [
-						"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 30 ft., one target. {@h}8 ({@damage 2d6 + 1}) piercing damage."
+						"{@atk mw,rw} 命中{@hit 3} to hit, reach 5 ft. or range 30 ft., one target. {@h}8 ({@damage 2d6 + 1}) 穿刺傷害。"
 					]
 				}
 			],
@@ -6356,7 +6360,7 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "多重攻擊","ENG_name": "Multiattack",
 					"entries": [
 						"The vampire makes two attacks."
 					]
@@ -6364,7 +6368,7 @@
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 3}) slashing damage. Instead of dealing damage, the vampire can grapple the target, escape {@dc 13}."
+						"{@atk mw} 命中{@hit 6} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 3}) slashing damage. Instead of dealing damage, the vampire can grapple the target, escape {@dc 13}."
 					]
 				},
 				{
@@ -6376,7 +6380,7 @@
 				{
 					"name": "Tloques' Berserker Axe +2",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage."
+						"{@atk mw} 命中{@hit 5}，觸及5呎，單一目標。{@h}9 ({@damage 1d8 + 5}) slashing damage."
 					]
 				}
 			],
@@ -6529,7 +6533,7 @@
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}22 ({@damage 4d8 + 4}) bludgeoning damage plus 9 ({@damage 2d8}) acid damage. If the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative \u22121 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+						"{@atk mw} 命中{@hit 8} to hit, reach 10 ft., one target. {@h}22 ({@damage 4d8 + 4}) bludgeoning damage plus 9 ({@damage 2d8}) acid damage. If the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative \u22121 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
 					]
 				}
 			],
@@ -6586,7 +6590,7 @@
 							"mode": "replaceArr",
 							"replace": "Multiattack",
 							"items": {
-								"name": "Multiattack",
+								"name": "多重攻擊","ENG_name": "Multiattack",
 								"entries": [
 									"The yeti can use its Chilling Gaze and makes two greatsword attacks."
 								]
@@ -6598,7 +6602,7 @@
 							"items": {
 								"name": "Frost Brand Greatsword",
 								"entries": [
-									"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 3 ({@damage 1d6}) cold damage."
+									"{@atk mw} 命中{@hit 6}，觸及5呎，單一目標。{@h}11 ({@damage 2d6 + 4}) slashing damage plus 3 ({@damage 1d6}) cold damage."
 								]
 							}
 						}
@@ -6774,7 +6778,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Yusdrayl is a 2nd-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). She knows the following sorcerer spells:"
+						"Yusdrayl is a 2nd-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 13}, 命中{@hit 5} to hit with spell attacks). She knows the following sorcerer spells:"
 					],
 					"spells": {
 						"0": {
@@ -6815,7 +6819,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw} 命中{@hit 4}，觸及5呎，單一目標。{@h}4 ({@damage 1d4 + 2}) 穿刺傷害。"
 					]
 				}
 			],
